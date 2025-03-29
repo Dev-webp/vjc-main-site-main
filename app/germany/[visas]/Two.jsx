@@ -16,7 +16,7 @@ import Canadastudent from "./Canadapages/Canadastudent";
 import Canadatourist from "./Canadapages/Canadatourist";
 import Canadapr from "./Canadapages/Canadapr";
 import Canadafs from "./Canadapages/Canadafs";
-import Form from '../../Form';
+import Form from './Form';
 
 import USAstud from "./USA-visa/USA-stud";
 import USAbusiness from "./USA-visa/USA-business"
