@@ -64,6 +64,11 @@ import UAEwork from "./UAE-visa/UAE-work";
 import UAEgreen from "./UAE-visa/UAE-green";
 import UAEtourist from "./UAE-visa/UAE-tourist";
 
+import sfgerneralskilledvisa from "./southafricavisas/sfgerneralskilledvisa";
+import sfgerenalworkvisa from "./southafricavisas/sfgerenalworkvisa";
+import sfbusinessvisa from "./southafricavisas/sfbusinessvisa";
+import sftouristvisa from "./southafricavisas/sftouristvisa"
+
 
 
 const countryVisaData = {
@@ -203,6 +208,11 @@ const visaComponents = {
  'uae-work-visa':UAEwork,
  'uae-green-visa':UAEgreen,
  'uae-tourist-visa':UAEtourist,
+
+ 'south-africa-critical-skills-visa':sfgerneralskilledvisa,
+ 'south-africa-general-work-visa':sfgerenalworkvisa,
+ 'south-africa-business-visa':sfbusinessvisa,
+ 'south-africa-tourist-visa':sftouristvisa,
 
 };
 

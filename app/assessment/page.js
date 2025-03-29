@@ -25,7 +25,7 @@ const ContactPage = () => {
   return (
     <>
       
-      <div style={{fontFamily:'Times new roman'}}>
+      <div className="bg-white" style={{fontFamily:'Times new roman'}}>
 
       
       

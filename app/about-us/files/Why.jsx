@@ -33,23 +33,7 @@ const Why = () => {
     }
   ];
 
-  const awards = [
-    {
-      year: "2022",
-      title: "India’s Most Trusted Brand of the Year – Delhi",
-      image: "/path/to/award-image-2022.png"
-    },
-    {
-      year: "2023",
-      title: "India’s Most Trusted Brand of the Year – Delhi",
-      image: "/path/to/award-image-2023.png"
-    },
-    {
-      year: "2024",
-      title: "India’s Most Trusted Brand of the Year – Bengaluru",
-      image: "/path/to/award-image-2024.png"
-    }
-  ];
+  
 
   return (
     <>
@@ -94,29 +78,9 @@ const Why = () => {
         </div>
 
         {/* Awards Section */}
-        <div className="p-8 bg-white rounded-lg shadow-xl max-w-6xl mx-auto mt-12">
-          <h3 className="text-[2rem] font-semibold text-center mb-6 text-dark uppercase text-orange-500">
-            Our Recognitions and Awards
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {awards.map((award, index) => (
-              <div key={index} className="flex flex-col items-center p-4  bg-gray-50 rounded-lg shadow-md">
-                 <Image 
-                  src={award.image} 
-                  alt={award.title} 
-                  width={128} 
-                  height={128} 
-                  className="w-32 h-32 object-cover rounded-full mb-4"
-                  priority 
-                  unoptimized
-                />
-                <h4 className="text-xl font-semibold text-dark mb-2">{award.year}</h4>
-                <p className="text-center text-sm text-gray-600 max-w-xs">{award.title}</p>
-              </div>
-            ))}
+       
           </div>
-        </div>
-      </div>
+        
     </>
   );
 };

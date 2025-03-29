@@ -32,6 +32,10 @@ const visaData = [
   { name: "Study in Denmark", path: "/studyabroad/denmark", image: "/de.jpg" },
   { name: "Study in Dubai", path: "/studyabroad/Dubai", image: "/du.webp" },
   { name: "Study in Luxembourg", path: "/studyabroad/luxembourg", image: "/lux.jpg" },
+  { name: "Study in Hongkong", path: "/studyabroad/hongkong", image: "/hk.jpg" },
+  { name: "Study in UAE", path: "/studyabroad/uae", image: "/ua.jpg" },
+  { name: "Study in Norway", path: "/studyabroad/norway", image: "/norwaystudy.avif" },
+  { name: "Study in Sweden", path: "/studyabroad/sweden", image: "/swedenstudy.jpg" },
 ];
 
 const defaultVisa = {
@@ -56,7 +60,7 @@ const Migrate = () => {
   };
 
   return (
-<div className="relative w-full min-h-screen" style={{fontFamily:'Times new roman'}}>
+<div className="relative w-full min-h-screen">
   {/* Background Animated GIF Positioned Absolutely Behind All Content */}
   <div className="fixed top-0 left-0 w-full h-full -z-10">
   {/* Background Image */}
@@ -75,10 +79,9 @@ const Migrate = () => {
         {/* Two Column Layout */}
         <div className="flex flex-col lg:flex-row gap-10 items-start justify-between">
           {/* Swiper Section */}
-          <div className="w-full lg:w-[48%] mt-6 ml-5">
-            <h2 className="text-2xl font-bold text-gray-300 mb-8 text-center">
-            Unlock Opportunities in 20+ Countries
-            ✨ Find the Perfect Study Destination for You!...
+          <div className="w-full lg:w-[55%] mt-6">
+            <h2 className="text-3xl font-bold text-orange-600 mb-8 text-center">
+              Study Abroad
             </h2>
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
@@ -98,7 +101,7 @@ const Migrate = () => {
                   <SwiperSlide key={visa.path}>
                     <div
                       onClick={() => handleVisaClick(visa)}
-                      className={`relative w-full h-[420px] md:h-[440px] lg:h-[460px] transform transition-all duration-700 overflow-hidden shadow-xl border border-black cursor-pointer ${
+                      className={`relative w-full h-[420px] md:h-[440px] lg:h-[460px] transform transition-all duration-700 overflow-hidden shadow-xl border-4 cursor-pointer ${
                         isActive ? "scale-105 opacity-100 z-30" : "scale-90 opacity-80 z-10"
                       }`}
                     >
@@ -121,24 +124,23 @@ const Migrate = () => {
           </div>
 
           {/* Form Section */}
-          <div className="w-full  lg:w-[40%] mt-12 lg:mt-16">
+          <div className="w-full lg:w-[40%] -mt-6 lg:mt-0">
             <Form />
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-16 bg-gradient-to-r from-white -white to-white p-8 rounded-2xl shadow-lg text-center bg-white opacity-70">
-          <h3 className="text-3xl font-bold text-black mb-4">
-            Study Abroad with <span className="text-orange-600">VJC Overseas:</span>
+        <div className="mt-16 bg-gradient-to-r from-orange-100 via-white to-orange-100 p-8 rounded-2xl shadow-lg text-center">
+          <h3 className="text-2xl font-bold text-orange-600 mb-4">
+            Study Abroad with VJC Overseas: Your Global Education Partner
           </h3>
-          <h3 className="text-2xl font-bold text-blue-500">Your Global Education Partner</h3>
-          <p className="text-black mt-6 text-lg max-w-4xl mx-auto mb-4">
+          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-4">
             At VJC Overseas, we believe that education is not just about textbooks — it's about experiencing the world, broadening your horizons, and preparing for a global future.
           </p>
-          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
+          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-4">
             Our Study Abroad services are designed to guide students through every step of their international education journey, ensuring a seamless and enriching experience.
           </p>
-          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-6">
             We collaborate with top universities and educational institutions across the world, offering you access to a wide range of undergraduate, postgraduate, and diploma programs in:
           </p>
 
@@ -153,15 +155,15 @@ const Migrate = () => {
             ))}
             </div>
 
-          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-6">
           Our team of experienced counsellors provides personalized guidance throughout the process. From choosing the right course and university to visa
            applications and pre-departure orientations, we are with you every step of the way. Our goal is to make your transition to studying abroad as smooth as possible, so you can focus on your studies and make the most of your time overseas.
           </p>
-          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-6">
           Beyond academics, we also understand the importance of cultural integration. We help you connect with student communities, providing support 
           with accommodation, travel, and local resources, ensuring you feel at home no matter where you go.
           </p>
-          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-6">
           Studying abroad is an investment in your future, and with VJC Overseas, you’re not just applying for a course—you’re embarking on a life-changing adventure. Let us help you take the first step 
           towards a world-class education and an exciting new chapter in your life.
           </p>

@@ -11,6 +11,7 @@ import HKstudentvisa from "./HongKongpages/HKstudentvisa";
 import Newzepr from "./Newzealand-visa/Newze-pr"
 import Denbusiness from "./Denmark-visa/Den-business"
 import UAEstud from "./UAE-visa/UAE-stud";
+import sfgerneralskilledvisa from "./southafricavisas/sfgerneralskilledvisa";
 
 import Form from "../Form";
 
@@ -99,7 +100,7 @@ const visaComponents = {
   australia:Ausstud,
   "united-kingdom":UKBvisa,
   "new-zealand":Newzepr,
-  "south-africa":USAstud,
+  "south-africa":sfgerneralskilledvisa,
   "hong-kong":HKstudentvisa,
   denmark:Denbusiness,
   uae:UAEstud,

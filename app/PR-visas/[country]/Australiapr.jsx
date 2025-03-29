@@ -1,127 +1,90 @@
-"use client";
+import React from "react";
 
-import React from 'react';
-
-export default function Australiapr() {
+const AustraliaPRVisa = () => {
   return (
-    <div className="text-gray-800 space-y-6" style={{fontFamily:'Times new Roman'}}>
-      <h2 className="text-2xl font-bold mb-2">
-        <span className="text-orange-600">Australian Permanent Residency (PR)</span> - Frequently Asked Questions (FAQs)
+    <div style={{ fontFamily: "Times New Roman", padding: "20px" }}>
+      <h1 className="text-2xl md:text-3xl font-semibold text-gray-900">
+        Australia Permanent Residency Visa: Your Pathway to a Bright Future Down
+        Under
+      </h1>
+      <h2>
+        Welcome to <span style={{ color: "orange" }}>VJC Overseas</span>, your
+        trusted partner in obtaining Australia Permanent Residency (PR).
       </h2>
-
-      {/* <ol className="space-y-4 list-decimal list-inside">
-        <li>
-          <strong>What are the eligibility requirements for Australian PR?</strong>
-          <p className="mt-1">Age, work experience, educational qualifications, English proficiency, and health & character checks are essential.</p>
-        </li>
-
-        <li>
-          <strong>What are the different pathways to apply for Australian PR?</strong>
-          <ul className="list-disc list-inside pl-5 space-y-1 mt-1">
-            <li>Skilled Migration – Subclass 189, 190, 491</li>
-            <li>Family Sponsorship – Partner & Parent Visas</li>
-            <li>Employer Sponsored – Subclass 186</li>
-            <li>Business & Investment Visas – Subclass 188, 888</li>
-            <li>Graduate Visa – Subclass 485</li>
-            <li>Regional Visas – Subclass 491, 494</li>
-          </ul>
-        </li>
-
-        <li>
-          <strong>What is the Points System for Australian PR?</strong>
-          <p className="mt-1">The system evaluates your age, work experience, education, and language skills. Higher points = better chances.</p>
-        </li>
-
-        <li>
-          <strong>How long does the PR application process take?</strong>
-          <p className="mt-1">Processing time varies by visa subclass. It typically ranges from 6 to 12 months.</p>
-        </li>
-
-        <li>
-          <strong>How much does it cost to apply for PR?</strong>
-          <ul className="list-disc list-inside pl-5 space-y-1 mt-1">
-            <li>Visa application fees</li>
-            <li>Skills assessment & English test fees</li>
-            <li>Medical, police clearance & consultant charges</li>
-          </ul>
-        </li>
-
-        <li>
-          <strong>Can I apply for PR with a criminal record or health issues?</strong>
-          <p className="mt-1">It depends on the severity of the issue. Character & health requirements must be met.</p>
-        </li>
-
-        <li>
-          <strong>What’s the difference between Subclass 189, 190, and 491?</strong>
-          <p className="mt-1">Subclass 189 is independent; 190 is state-sponsored; 491 is regional and leads to PR.</p>
-        </li>
-
-        <li>
-          <strong>Do I need a job offer to apply for PR?</strong>
-          <p className="mt-1">Not always. Subclass 189 doesn’t require a job offer, but employer-sponsored visas do.</p>
-        </li>
-
-        <li>
-          <strong>Can students or graduates apply for PR?</strong>
-          <p className="mt-1">Yes. Use Subclass 485 to work post-study and then transition to PR pathways.</p>
-        </li>
-
-        <li>
-          <strong>What are my chances of getting PR?</strong>
-          <p className="mt-1">Your profile, points score, occupation demand, and visa subclass affect your success rate.</p>
-        </li>
-
-        <li>
-          <strong>How does Regional Visa (Subclass 491) work?</strong>
-          <p className="mt-1">It’s a temporary visa for regional work/stay and leads to PR after 3 years.</p>
-        </li>
-
-        <li>
-          <strong>Can I include my family in my PR application?</strong>
-          <p className="mt-1">Yes. You can include spouse, children, and dependents in your application.</p>
-        </li>
-
-        <li>
-          <strong>What documents are required for PR application?</strong>
-          <ul className="list-disc list-inside pl-5 space-y-1 mt-1">
-            <li>Skills assessment report</li>
-            <li>English language test results</li>
-            <li>Work experience certificates</li>
-            <li>Medical & police clearance</li>
-          </ul>
-        </li>
-
-        <li>
-          <strong>How do I improve my points score?</strong>
-          <p className="mt-1">Gain state nomination, retake language tests, or add work experience/education.</p>
-        </li>
-
-        <li>
-          <strong>What’s the process for Employer-Sponsored PR (Subclass 186)?</strong>
-          <p className="mt-1">Requires job offer, nomination by employer, and meeting experience & English criteria.</p>
-        </li>
-
-        <li>
-          <strong>What happens after I get PR?</strong>
-          <ul className="list-disc list-inside pl-5 space-y-1 mt-1">
-            <li>You receive a visa grant letter</li>
-            <li>Eligible to live, work, and study in Australia</li>
-            <li>Pathway to citizenship after 4 years</li>
-          </ul>
-        </li>
-
-        <li>
-          <strong>What if my PR application is refused?</strong>
-          <p className="mt-1">You can appeal, reapply, or consult professionals for alternative visa options.</p>
-        </li>
-
-        <li>
-          <strong>Should I hire a consultant for my PR application?</strong>
-          <p className="mt-1">
-            Yes, expert consultants like <span className="text-orange-600 font-semibold">VJC Overseas</span> can improve success chances, guide documentation, and reduce delays.
-          </p>
-        </li>
-      </ol> */}
+      <p>
+        Whether you're looking to settle in Australia's bustling cities,
+        picturesque coastal regions, or tranquil rural areas, this visa offers
+        you the opportunity to enjoy a high quality of life, lucrative job
+        opportunities, and a stable future.
+      </p>
+      <h2>What is an Australia Permanent Residency Visa?</h2>
+      <p>
+        An Australia Permanent Residency Visa is a gateway for skilled
+        individuals, families, and professionals to live, work, and enjoy the
+        many benefits of life in Australia. With PR status, you gain access to
+        a range of services, including healthcare, education, and the chance to
+        apply for Australian citizenship.
+      </p>
+      <p>
+        <span style={{ color: "orange" }}>VJC Overseas</span> helps guide you
+        through the visa application process, ensuring you meet all necessary
+        requirements to secure your PR status.
+      </p>
+      <h2>Why Choose Australia?</h2>
+      <p>
+        Australia is a land of opportunity, known for its thriving economy,
+        world-class infrastructure, and diverse culture. As one of the most
+        popular destinations for migrants, it boasts a high standard of living
+        and a work-life balance that many countries strive to achieve.
+      </p>
+      <h2>Job Opportunities in Australia for PR Holders</h2>
+      <ul>
+        <li>Information Technology (IT): Software developers, network engineers, and cybersecurity professionals.</li>
+        <li>Healthcare: Doctors, nurses, allied health professionals, and healthcare administrators.</li>
+        <li>Engineering: Civil, mechanical, electrical, and mining engineers.</li>
+        <li>Construction and Trade: Builders, electricians, plumbers, and carpenters.</li>
+        <li>Education: Teachers, trainers, and education administrators.</li>
+        <li>Business and Finance: Accountants, financial analysts, marketing managers, and HR professionals.</li>
+      </ul>
+      <h2>Salary Range for Australia Permanent Residents</h2>
+      <ul>
+        <li>Information Technology: AU$70,000 to AU$130,000 per year</li>
+        <li>Healthcare: AU$60,000 to AU$250,000 per year</li>
+        <li>Engineering: AU$75,000 to AU$150,000 per year</li>
+        <li>Construction & Trades: AU$60,000 to AU$100,000 per year</li>
+        <li>Business and Finance: AU$70,000 to AU$120,000 per year</li>
+        <li>Education: AU$50,000 to AU$95,000 per year</li>
+      </ul>
+      <h2>Benefits of an Australia Permanent Residency Visa</h2>
+      <ul>
+        <li>Work and Live Anywhere</li>
+        <li>Access to Healthcare</li>
+        <li>Education Opportunities</li>
+        <li>Social Security Benefits</li>
+        <li>Pathway to Citizenship</li>
+      </ul>
+      <h2>How <span style={{ color: "orange" }}>VJC Overseas</span> Can Help</h2>
+      <p>
+        Navigating the Australia PR visa process can be complex, with multiple
+        visa pathways, including skilled migration, family sponsorship, and
+        employer-sponsored visas. At <span style={{ color: "orange" }}>VJC Overseas</span>, we simplify the process by
+        providing expert advice, step-by-step assistance, and ensuring that
+        your application meets the strict requirements set by the Australian
+        Department of Home Affairs.
+      </p>
+      <h2>Get Started Today</h2>
+      <p>
+        Don’t wait any longer to take the next step towards your Australia
+        Permanent Residency. Contact <span style={{ color: "orange" }}>VJC Overseas</span> today to schedule a free
+        consultation. Let us help you unlock the doors to a prosperous future
+        in one of the world’s most sought-after countries.
+      </p>
+      <p>
+        Contact us now for more information on how to apply for your Australia
+        PR visa and start your new life in Australia!
+      </p>
     </div>
   );
-}
+};
+
+export default AustraliaPRVisa;

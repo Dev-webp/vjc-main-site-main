@@ -221,48 +221,7 @@ const Navbar = () => {
   </nav>
 </div>
 
-      {/* Add margin to ensure content below is not hidden */}
-      <div className="mt-0"></div> {/* Adjust the margin if necessary */}
-       
-{/* Floating Vertical Assessment Button with Shaking "FREE" and Arrow */}
-<Link href="/assessment">
-  <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-50 flex flex-col items-center space-y-2">
-    
-    {/* "FREE" Text with Shaking Effect */}
-    <div className="text-white font-bold text-sm bg-green-500 px-3 py-1 rounded-lg shadow-lg animate-shake">
-      FREE
-    </div>
-
-    {/* Bouncing Downward Arrow */}
-    <div className="animate-bounce">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={2}
-        stroke="white"
-        className="w-6 h-6"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </div>
-
-    {/* Vertical Assessment Text */}
-    <div className="flex flex-col items-center text-white font-bold text-sm bg-orange-500 px-3 py-2 rounded-lg shadow-lg transition-transform hover:scale-110 hover:bg-orange-600">
-      <span>A</span>
-      <span>S</span>
-      <span>S</span>
-      <span>E</span>
-      <span>S</span>
-      <span>S</span>
-      <span>M</span>
-      <span>E</span>
-      <span>N</span>
-      <span>T</span>
-    </div>
-
-  </div>
-</Link>
+      
 
 <style>
   {`

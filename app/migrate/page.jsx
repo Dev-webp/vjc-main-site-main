@@ -41,7 +41,7 @@ const ContactPage = () => {
     <>
       {/* Navbar */}
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
+        {/* <Nav /> */}
       </div>
 
       {/* Main Section */}

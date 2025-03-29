@@ -58,7 +58,7 @@ const features = [
         advantages: [
             { id: 1, text: "We provide guidance on university selection, visa documentation, and interview preparation " },
             { id: 2, text: "Ensure a smooth transition from application to arrival at your chosen educational institution." },
-            // { id: 3, text: "Our focus on client satisfaction has earned us the trust of hundreds of students and professionals who have successfully achieved their goals abroad." }
+            { id: 3, text: "Our focus on client satisfaction has earned us the trust of hundreds of students and professionals who have successfully achieved their goals abroad." }
         ],
         image: "/b2.webp"
     },
@@ -78,7 +78,7 @@ const features = [
 
 const Features = () => {
     return (
-        <section className="py-12 relative mt-48 md:mt-0 lg:mt-0">
+        <section className="py-12 relative  md:mt-0 lg:mt-0">
             {/* Background image using Next.js Image */}
             <div className="absolute inset-0 -z-10">
                 <Image
@@ -90,7 +90,7 @@ const Features = () => {
                     priority // Ensures the image loads quickly
                 />
             </div>
-            <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
+            <div className="max-w-7xl mx-auto px-5 -mt-16 md:-mt-0 sm:px-10 md:px-12 lg:px-5">
                 <div className="flex flex-col  space-y-16">
                     <div className="flex flex-col justify-center text-center  mx-auto md:max-w-4xl space-y-5">
                         <h1 className="text-3xl font-semibold text-orange-500 md:text-4xl xl:text-5xl leading-tight uppercase">

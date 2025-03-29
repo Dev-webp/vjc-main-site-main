@@ -6,6 +6,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  
   theme: {
     extend: {
       colors: {
@@ -14,6 +15,7 @@ export default {
         'custom-blue': '#006eb9',
         saffron: '#FF7722',
       },
+      
       screens: {
         tablet: '800px',
       },
@@ -52,6 +54,7 @@ export default {
         },
       },
     },
+    
   },
   plugins: [],
 } satisfies Config;
