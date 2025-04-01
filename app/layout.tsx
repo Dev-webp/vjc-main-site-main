@@ -41,6 +41,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${ptSerif.variable} ${playfairDisplay.variable}`}>
       <head>
+      {/* Google Tag Manager Script */}
+  <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16767451796" />
+  <Script id="google-analytics" strategy="afterInteractive">
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16767451796');
+    `}
+  </Script>
         {/* Facebook Meta Pixel */}
         <Script
           id="fb-pixel"
@@ -59,6 +69,7 @@ export default function RootLayout({
                 fbq('track', 'PageView');
             `,
           }}
+          
         />
       </head>
       <body style={{ fontFamily: 'var(--font-pt-serif)' }}>
