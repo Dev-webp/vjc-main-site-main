@@ -90,7 +90,7 @@ const Features = () => {
                     priority // Ensures the image loads quickly
                 />
             </div>
-            <div className="max-w-7xl mx-auto px-5 -mt-16 md:-mt-0 sm:px-10 md:px-12 lg:px-5">
+            <div className="max-w-7xl mx-auto px-5 -mt-0 md:-mt-0 sm:px-0 md:px-12 lg:px-5">
                 <div className="flex flex-col  space-y-16">
                     <div className="flex flex-col justify-center text-center  mx-auto md:max-w-4xl space-y-5">
                         <h1 className="text-3xl font-semibold text-orange-500 md:text-4xl xl:text-5xl leading-tight uppercase">

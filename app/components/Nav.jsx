@@ -358,7 +358,7 @@ const Navbar = () => {
 
 
      
-<div className="fixed right-0 top-1/3 z-50 flex flex-col max-w-fit">
+<div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col max-w-fit gap-0">
   <Link href="/services">
     <button className="text-white font-bold text-sm bg-[#A67C52] px-3 py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
       Services
