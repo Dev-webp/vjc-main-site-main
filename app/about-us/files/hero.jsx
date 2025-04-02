@@ -9,7 +9,7 @@ const CompOne = () => {
   return (
     <>
       <Nav />
-      <section className="py-4 lg:py-0 mt-2 md:mt-0 lg:mt-10 bg-gradient-to-bl from-white to-white relative">
+      <section className=" py-4 lg:py-0 mt-2 md:mt-0 lg:mt-10 bg-gradient-to-bl from-white to-white relative">
         {/* Parallax Background with Overlay */}
         <div
           className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0"

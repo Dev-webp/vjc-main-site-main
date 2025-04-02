@@ -358,37 +358,26 @@ const Navbar = () => {
 
 
      
-      <div className="fixed right-0 top-1/3 z-50 flex flex-col">
-      <div className="relative group">
+<div className="fixed right-0 top-1/3 z-50 flex flex-col max-w-fit">
   <Link href="/services">
     <button className="text-white font-bold text-sm bg-[#A67C52] px-3 py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
       Services
     </button>
   </Link>
 
-  {/* {/ Dropdown for Services /} */}
-  <ul className="absolute left-full top-0 hidden group-hover:block bg-white text-black shadow-lg w-48">
-    {servicesSubPages.map((service, index) => (
-      <li key={index} className="px-4 py-2 hover:bg-gray-200">
-        <Link href={service.path}>{service.name}</Link>
-      </li>
-    ))}
-  </ul>
-</div>
-
-
   <Link href="/assessment">
-    <div className="text-white font-bold text-sm bg-orange-500 px-3 py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-orange-600">
+    <button className="text-white font-bold text-sm bg-orange-500 px-3 py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-orange-600">
       Assessment
-    </div>
+    </button>
   </Link>
 
   <Link href="/contact-us">
-    <div className="text-white font-bold text-sm bg-[#A67C52] px-3 py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
+    <button className="text-white font-bold text-sm bg-[#A67C52] px-3 py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
       Contact Us
-    </div>
+    </button>
   </Link>
 </div>
+
 
 <div className="bg-orange-500 fixed top-12 w-screen z-50 md:hidden">
   <nav className="flex justify-between items-center py-2 px-4">

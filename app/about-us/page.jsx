@@ -13,6 +13,7 @@ import Why from "./files/Why";
 const page = () => {
   return (
     <>
+    <div className="max-w-full overflow-hidden">
     <Hero/>
     {/* <HeroNext/> */}
     <Why/>
@@ -23,6 +24,7 @@ const page = () => {
     <Three/>
     {/* <Reviews/> */}
     <Footer />
+    </div>
     </>
   )
 }
