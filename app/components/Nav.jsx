@@ -16,7 +16,7 @@ const Navbar = () => {
     
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "About us", path: "/about" },
+    { name: "About us", path: "/about-us" },
     { name: "Migrate To", path: "/migrate" },
     { name: "Study Abroad", path: "/studyabroad" },
     { name: "PR Visas", path: "/pr-visas" },
@@ -32,7 +32,7 @@ const Navbar = () => {
   ];
   const fixedItems = [
     { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/contact-us" },
     { name: "Login", path: "/login" },
   ];
   
@@ -412,7 +412,7 @@ const Navbar = () => {
 </div>
 
 
-<div className="fixed right-2 md:right-0 top-[33vh] z-50 flex flex-col gap-0 max-w-[90vw] w-auto">
+<div className="fixed left-2 md:left-0 top-[33vh] z-50 flex flex-col gap-0 max-w-[90vw] w-auto">
   <Link href="/services">
     <button className="text-white font-bold text-xs sm:text-sm bg-[#A67C52] px-3 sm:px-4 py-4 sm:py-5 md:py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
       Services
@@ -425,12 +425,13 @@ const Navbar = () => {
     </button>
   </Link>
 
-  <Link href="/chat-student">
+  <Link href="/contact-us">
     <button className="text-white font-bold text-xs sm:text-sm bg-[#A67C52] px-3 sm:px-4 py-4 sm:py-5 md:py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
       Contact Us
     </button>
   </Link>
 </div>
+
 
 
 
