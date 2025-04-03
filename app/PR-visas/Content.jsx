@@ -8,7 +8,7 @@ const Content = ({ selectedVisa }) => {
 
   return (
     <div className="text-gray-800 space-y-5 text-base sm:text-lg leading-relaxed">
-      <h2 className="text-2xl sm:text-2xl font-bold flex justify-center">
+      <h2 className="text-2xl sm:text-3xl font-bold">
         Permanent Resident Visa – <span className="text-orange-500">VJC Overseas</span>
       </h2>
 
