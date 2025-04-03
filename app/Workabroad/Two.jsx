@@ -4,44 +4,43 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Globe, ArrowRight, X } from "lucide-react";
 import Form from "./Form"; // Adjust path if needed
-import { X } from "lucide-react";
-
 
 const countriesData = [
   {
     name: "Germany Work Permit",
-    path: "/Workabroad/germany-work-permit",
+    path: "/workabroad/germany-work-permit",
     image: "/germany.jpg",
   },
   {
     name: "Canada Work Permit",
-    path: "/Workabroad/canada-work-permit",
+    path: "/workabroad/canada-work-permit",
     image: "/canada.webp",
   },
   {
     name: "USA H1b Visa",
-    path: "/Workabroad/usa-h1b-visa",
+    path: "/workabroad/usa-h1b-visa",
     image: "/usa1.jpg",
   },
   {
     name: "Australia Work Permit",
-    path: "/Workabroad/australia-work-permit",
+    path: "/workabroad/australia-work-permit",
     image: "/australia.jpg",
   },
   {
     name: "UK Work Permit",
-    path: "/Workabroad/united-kingdom-work-permit",
+    path: "/workabroad/united-kingdom-work-permit",
     image: "/uk1.webp",
   },
   {
     name: "Denmark Work Permit",
-    path: "/Workabroad/denmark-work-permit",
+    path: "/workabroad/denmark-work-permit",
     image: "/de.jpg",
   },
   {
     name: "Dubai Work Permit",
-    path: "/Workabroad/dubai-work-permit",
+    path: "/workabroad/dubai-work-permit",
     image: "/du.webp",
   },
 ];
@@ -50,6 +49,7 @@ const Migrate = () => {
   const router = useRouter();
   const scrollRef = useRef(null);
   const [showPopup, setShowPopup] = useState(true);
+  const [showFormPopup, setShowFormPopup] = useState(true);
 
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -60,7 +60,6 @@ const Migrate = () => {
     }
   };
 
-    const [showFormPopup, setShowFormPopup] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
@@ -71,6 +70,7 @@ const Migrate = () => {
   return (
     <>
       {/* Popup Form Modal */}
+      {/* POPUP FORM */}
       {showFormPopup && (
   <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
     <div className="relative bg-gradient-to-br from-black/50 to-gray/50 -mt-24 md:-mt-24  shadow-2xl p-6 sm:p-6 max-w-md w-full max-h-[80vh] animate-fadeIn">
@@ -84,7 +84,6 @@ const Migrate = () => {
     </div>
   </div>
 )}
-
 
       <main className="w-full bg-white">
         {/* Hero Section */}

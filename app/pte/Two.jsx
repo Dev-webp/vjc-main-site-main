@@ -10,11 +10,11 @@ const Migrate = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
-    { question: "What is IELTS?", answer: "IELTS stands for International English Language Testing System." },
-    { question: "How do I register for IELTS?", answer: "You can register through the official IELTS website or an authorized center." },
-    { question: "What are the different types of IELTS tests?", answer: "IELTS Academic and IELTS General Training are the two main types." },
-    { question: "How is the IELTS scored?", answer: "IELTS scores range from 1 to 9 based on different sections." },
-    { question: "Can I retake the IELTS test?", answer: "Yes, you can retake the test as many times as needed." }
+    { question: "What is the PTE Academic exam, and why is it important?", answer: "PTE Academic is a computer-based English proficiency test accepted by universities and immigration authorities worldwide." },
+    { question: "How can VJC Overseas help me prepare for the PTE exam?", answer: "We offer expert coaching, practice tests, and personalized strategies to help you achieve your target PTE score." },
+    { question: "What are the benefits of joining PTE coaching at VJC Overseas?", answer: "Our coaching includes experienced trainers, flexible schedules, mock tests, and customized study plans." },
+    { question: "How long does it take to prepare for the PTE exam?", answer: "Preparation time varies, but with our structured coaching, most students improve within 4 to 6 weeks." },
+    { question: "How do I enroll in PTE coaching at VJC Overseas?", answer: "Contact us via phone or email, take an initial assessment, and start your customized PTE training." }
   ];
 
   const toggleFAQ = (index) => {

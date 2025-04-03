@@ -4,8 +4,16 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";  // Import useRouter
 
 const Migrate = () => {
+  const router = useRouter();  // Initialize router
+
+  // Define the navigation function
+  const handleNavigation = (path) => {
+    router.push(path);
+  };
+
   // Counter for stats
   const [visaCount, setVisaCount] = useState(0);
   const [languagesCount, setLanguagesCount] = useState(0);
@@ -89,22 +97,40 @@ Don't let the visa interview</h2>
 
     {/* Buttons */}
     <div className="flex flex-col gap-4 w-full max-w-sm">
-      <button className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-blue-700">
+      <button
+        onClick={() => handleNavigation('/ielts')}
+        className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-blue-700"
+      >
         IELTS
       </button>
-      <button className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-green-700">
+      <button
+        onClick={() => handleNavigation('/pte')}
+        className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-green-700"
+      >
         PTE
       </button>
-      <button className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-red-700">
+      <button
+        onClick={() => handleNavigation('/gre')}
+        className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-red-700"
+      >
         GRE
       </button>
-      <button className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-yellow-600">
+      <button
+        onClick={() => handleNavigation('/gmat')}
+        className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-yellow-600"
+      >
         GMAT
       </button>
-      <button className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-purple-700">
+      <button
+        onClick={() => handleNavigation('/toefl')}
+        className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-purple-700"
+      >
         TOEFL
       </button>
-      <button className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-gray-900">
+      <button
+        onClick={() => handleNavigation('/duolingo')}
+        className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-gray-900"
+      >
         DUOLINGO
       </button>
     </div>

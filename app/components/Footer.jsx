@@ -78,7 +78,7 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/company/vjc-overseas/" className="group">
                         <FaLinkedin className="text-white group-hover:text-orange-500" />
                     </a>
-                    <a href="https://www.youtube.com/@vjcoverseas9434" className="group">
+                    <a href="https://www.youtube.com/@Vjcoverseas" className="group">
                         <FaYoutube className="text-white group-hover:text-orange-500" />
                     </a>
                 </div>

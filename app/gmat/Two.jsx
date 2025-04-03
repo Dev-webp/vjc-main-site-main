@@ -10,11 +10,11 @@ const Migrate = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
-    { question: "What is IELTS?", answer: "IELTS stands for International English Language Testing System." },
-    { question: "How do I register for IELTS?", answer: "You can register through the official IELTS website or an authorized center." },
-    { question: "What are the different types of IELTS tests?", answer: "IELTS Academic and IELTS General Training are the two main types." },
-    { question: "How is the IELTS scored?", answer: "IELTS scores range from 1 to 9 based on different sections." },
-    { question: "Can I retake the IELTS test?", answer: "Yes, you can retake the test as many times as needed." }
+    { question: "What is the GMAT exam, and why is it important?", answer: "The GMAT (Graduate Management Admission Test) is a standardized test required for admission to top business schools worldwide. It assesses analytical writing, quantitative, verbal, and integrated reasoning skills." },
+    { question: "How does VJC Overseas help with GMAT preparation?", answer: "We offer expert coaching, structured study plans, practice tests, and personalized strategies to help you achieve a high GMAT score." },
+    { question: "How long does it take to prepare for the GMAT exam?", answer: "Preparation time varies, but with our targeted coaching, most students improve within 8 to 12 weeks based on their initial proficiency level." },
+    { question: "What is the format of the GMAT exam?", answer: "The GMAT consists of four sections: Analytical Writing Assessment, Integrated Reasoning, Quantitative, and Verbal. The total exam duration is about 3 hours and 7 minutes." },
+    { question: "How do I enroll in GMAT coaching at VJC Overseas?", answer: "You can contact us via phone or email, schedule an initial assessment, and start your personalized GMAT training with expert guidance." }
   ];
 
   const toggleFAQ = (index) => {

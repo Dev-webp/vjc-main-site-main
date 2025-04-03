@@ -10,11 +10,11 @@ const Migrate = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
-    { question: "What is IELTS?", answer: "IELTS stands for International English Language Testing System." },
-    { question: "How do I register for IELTS?", answer: "You can register through the official IELTS website or an authorized center." },
-    { question: "What are the different types of IELTS tests?", answer: "IELTS Academic and IELTS General Training are the two main types." },
-    { question: "How is the IELTS scored?", answer: "IELTS scores range from 1 to 9 based on different sections." },
-    { question: "Can I retake the IELTS test?", answer: "Yes, you can retake the test as many times as needed." }
+    { question: "What is the TOEFL exam, and why is it important?", answer: "TOEFL (Test of English as a Foreign Language) is a globally recognized English proficiency test required for admission to universities and colleges in English-speaking countries. It assesses your skills in reading, listening, speaking, and writing." },
+    { question: "How can VJC Overseas help me prepare for the TOEFL exam?", answer: "We offer expert coaching, personalized study plans, practice tests, and proven strategies to help you achieve a high TOEFL score." },
+    { question: "What are the benefits of joining TOEFL coaching at VJC Overseas?", answer: "Our TOEFL coaching includes experienced trainers, flexible schedules, mock tests, interactive practice sessions, and one-on-one guidance to improve your test performance." },
+    { question: "How long does it take to prepare for the TOEFL exam?", answer: "The preparation time varies, but with our structured coaching, most students improve within 4 to 8 weeks, depending on their current English proficiency." },
+    { question: "How do I enroll in TOEFL coaching at VJC Overseas?", answer: "Contact us via phone, email, or visit our center, take a free assessment, and start your customized TOEFL training with expert guidance." }
   ];
 
   const toggleFAQ = (index) => {

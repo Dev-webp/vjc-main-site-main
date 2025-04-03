@@ -12,46 +12,46 @@ import Form from "../Form";
 // Visa options data
 const countryVisaData = {
   "germany-work-permit": [
-    { name: "Opportunity Card", path: "/Workabroad/germany-work-permit/opportunity-card" },
-    { name: "Job Seeker Visa", path: "/Workabroad/germany-work-permit/job-seeker-visa" },
-    { name: "Blue Card", path: "/Workabroad/germany-work-permit/blue-visa" },
-    { name: "Skilled Work Permit Visa", path: "/Workabroad/germany-work-permit/work-permit-visa" },
-    { name: "Employment Visa", path: "/Workabroad/germany-work-permit/employment-visa" },
-    { name: "Freelance Visa", path: "/Workabroad/germany-work-permit/freelance-visa" },
+    { name: "Opportunity Card", path: "/workabroad/germany-work-permit/opportunity-card" },
+    { name: "Job Seeker Visa", path: "/workabroad/germany-work-permit/job-seeker-visa" },
+    { name: "Blue Card", path: "/workabroad/germany-work-permit/blue-visa" },
+    { name: "Skilled Work Permit Visa", path: "/workabroad/germany-work-permit/work-permit-visa" },
+    { name: "Employment Visa", path: "/workabroad/germany-work-permit/employment-visa" },
+    { name: "Freelance Visa", path: "/workabroad/germany-work-permit/freelance-visa" },
   ],
   "canada-work-permit": [
-    { name: "Open Work Permit Visa", path: "/Workabroad/canada-work-permit/open-work-permit" },
-    { name: "W1 Visa", path: "/Workabroad/canada-work-permit/w1-visa" },
-    { name: "LMIA Visa", path: "/Workabroad/canada-work-permit/lmia" },
+    { name: "Open Work Permit Visa", path: "/workabroad/canada-work-permit/open-work-permit" },
+    { name: "W1 Visa", path: "/workabroad/canada-work-permit/w1-visa" },
+    { name: "LMIA Visa", path: "/workabroad/canada-work-permit/lmia" },
   ],
-  "usa-h1b-visa": [{ name: "USA H1b Visa", path: "/Workabroad/usa-h1b-visa" }],
+  "usa-h1b-visa": [{ name: "USA H1b Visa", path: "/workabroad/usa-h1b-visa" }],
   "australia-work-permit": [
-    { name: "Temporary Skills 482 Visa", path: "/Workabroad/australia-work-permit/482-visa" },
-    { name: "Employer 186 Visa", path: "/Workabroad/australia-work-permit/employer-186-visa" },
-    { name: "Skilled Independent Work Visa Subclass 189", path: "/Workabroad/australia-work-permit/work-visa-subclass-189" },
-    { name: "Skilled Nominated Visa Subclass 190", path: "/Workabroad/australia-work-permit/nomited-visa-subclass-190" },
-    { name: "Working Holiday 417 Visa", path: "/Workabroad/australia-work-permit/working-holiday-417-visa" },
+    { name: "Temporary Skills 482 Visa", path: "/workabroad/australia-work-permit/482-visa" },
+    { name: "Employer 186 Visa", path: "/workabroad/australia-work-permit/employer-186-visa" },
+    { name: "Skilled Independent Work Visa Subclass 189", path: "/workabroad/australia-work-permit/work-visa-subclass-189" },
+    { name: "Skilled Nominated Visa Subclass 190", path: "/workabroad/australia-work-permit/nomited-visa-subclass-190" },
+    { name: "Working Holiday 417 Visa", path: "/workabroad/australia-work-permit/working-holiday-417-visa" },
   ],
   "united-kingdom-work-permit": [
-    { name: "Short Term Work Visa", path: "/Workabroad/united-kingdom-work-permit/uk-short-term-work-visa" },
-    { name: "Long Term Work Visa", path: "/Workabroad/united-kingdom-work-permit/uk-long-term-work-visa" },
-    { name: "Health and Care Worker Visa", path: "/Workabroad/united-kingdom-work-permit/uk-health-and-care-worker-visa" },
-    { name: "Skilled Worker Visa", path: "/Workabroad/united-kingdom-work-permit/uk-skilled-worker-visa" },
-    { name: "Tier 2 Visa", path: "/Workabroad/united-kingdom-work-permit/uk-tire-2-visa" },
-    { name: "Tier 4 Visa", path: "/Workabroad/united-kingdom-work-permit/uk-tire-4-visa" },
-    { name: "Work Permit Visa", path: "/Workabroad/united-kingdom-work-permit/uk-work-permit-visa" },
+    { name: "Short Term Work Visa", path: "/workabroad/united-kingdom-work-permit/uk-short-term-work-visa" },
+    { name: "Long Term Work Visa", path: "/workabroad/united-kingdom-work-permit/uk-long-term-work-visa" },
+    { name: "Health and Care Worker Visa", path: "/workabroad/united-kingdom-work-permit/uk-health-and-care-worker-visa" },
+    { name: "Skilled Worker Visa", path: "/workabroad/united-kingdom-work-permit/uk-skilled-worker-visa" },
+    { name: "Tier 2 Visa", path: "/workabroad/united-kingdom-work-permit/uk-tire-2-visa" },
+    { name: "Tier 4 Visa", path: "/workabroad/united-kingdom-work-permit/uk-tire-4-visa" },
+    { name: "Work Permit Visa", path: "/workabroad/united-kingdom-work-permit/uk-work-permit-visa" },
   ],
   "denmark-work-permit": [
-    { name: "Pay Limit Scheme Visa", path: "/Workabroad/denmark-work-permit/denmark-pay-limit-scheme-visa" },
-    { name: "Positive List Visa", path: "/Workabroad/denmark-work-permit/denmark-positive-list-visa" },
-    { name: "Trainee Visa", path: "/Workabroad/denmark-work-permit/denmark-trainee-visa" },
-    { name: "Employment Visa", path: "/Workabroad/denmark-work-permit/denmark-employment-visa" },
+    { name: "Pay Limit Scheme Visa", path: "/workabroad/denmark-work-permit/denmark-pay-limit-scheme-visa" },
+    { name: "Positive List Visa", path: "/workabroad/denmark-work-permit/denmark-positive-list-visa" },
+    { name: "Trainee Visa", path: "/workabroad/denmark-work-permit/denmark-trainee-visa" },
+    { name: "Employment Visa", path: "/workabroad/denmark-work-permit/denmark-employment-visa" },
   ],
   "dubai-work-permit": [
-    { name: "Standard Work Visa", path: "/Workabroad/dubai-work-permit/dubai-standard-work-visa" },
-    { name: "Green Visa", path: "/Workabroad/dubai-work-permit/dubai-green-visa" },
-    { name: "Golden Visa", path: "/Workabroad/dubai-work-permit/dubai-golden-visa" },
-    { name: "Work Permit Visa", path: "/Workabroad/dubai-work-permit/dubai-work-permit-visa" },
+    { name: "Standard Work Visa", path: "/workabroad/dubai-work-permit/dubai-standard-work-visa" },
+    { name: "Green Visa", path: "/workabroad/dubai-work-permit/dubai-green-visa" },
+    { name: "Golden Visa", path: "/workabroad/dubai-work-permit/dubai-golden-visa" },
+    { name: "Work Permit Visa", path: "/workabroad/dubai-work-permit/dubai-work-permit-visa" },
   ],
 };
 
@@ -70,10 +70,10 @@ const backgroundImages = {
   "germany-work-permit": "/germany.jpg",
   "canada-work-permit": "/canada.webp",
   "usa-h1b-visa": "/usabgimg.jpg",
-  "australia-work-permit": "/australiabgimg.jpg",
+  "australia-work-permit": "/australiaresume.jpg",
   "united-kingdom-work-permit": "/ukk.jpg",
-  "denmark-work-permit": "/nzz.jpg",
-  "dubai-work-permit": "/sa666.png",
+  "denmark-work-permit": "/de.jpg",
+  "dubai-work-permit": "/du.webp",
 };
 
 const WorkabroadCountry = () => {
@@ -90,9 +90,10 @@ const WorkabroadCountry = () => {
   }, [params?.country]);
 
   const formattedCountry =
-    currentCountry?.charAt(0).toUpperCase() + currentCountry?.slice(1).replace(/-/g, " ");
-  const visas = countryVisaData[currentCountry] || [];
-  const bgImage = backgroundImages[currentCountry];
+  currentCountry?.charAt(0).toUpperCase() + currentCountry?.slice(1).replace(/-/g, " ");
+const visas = countryVisaData[currentCountry] || [];
+const bgImage = backgroundImages[currentCountry];
+
 
   return (
     <div

@@ -10,11 +10,11 @@ const Migrate = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
-    { question: "What is IELTS?", answer: "IELTS stands for International English Language Testing System." },
-    { question: "How do I register for IELTS?", answer: "You can register through the official IELTS website or an authorized center." },
-    { question: "What are the different types of IELTS tests?", answer: "IELTS Academic and IELTS General Training are the two main types." },
-    { question: "How is the IELTS scored?", answer: "IELTS scores range from 1 to 9 based on different sections." },
-    { question: "Can I retake the IELTS test?", answer: "Yes, you can retake the test as many times as needed." }
+    { question: "What is the IELTS exam, and why do I need it?", answer: "IELTS (International English Language Testing System) is a globally recognized test for study, work, and migration purposes. It assesses your English proficiency in Listening, Reading, Writing, and Speaking." },
+    { question: "How does VJC Overseas help with IELTS preparation?", answer: "We provide expert training, study materials, mock tests, and personalized strategies to help you achieve your desired IELTS score." },
+    { question: "What are the different types of IELTS exams, and which one should I take?", answer: "There are two types: IELTS Academic (for study abroad) and IELTS General Training (for work and migration). We guide you in choosing the right one." },
+    { question: "How long does it take to prepare for the IELTS exam?", answer: "The preparation time depends on your current level, but with our structured coaching, most students improve within 4 to 8 weeks." },
+    { question: "How do I enroll in IELTS coaching at VJC Overseas?", answer: "Contact us via phone or email, take a free assessment, and start your customized IELTS training with us." }
   ];
 
   const toggleFAQ = (index) => {

@@ -7,6 +7,8 @@ import Form from "./Form";
 import Two from "./Two";
 import Footer from "./Footer";
 
+
+
 const textContainerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -36,6 +38,8 @@ const ContactPage = () => {
   const handleImageLoad = () => {
     setIsImageLoaded(true);
   };
+ 
+  
 
   return (
     <>

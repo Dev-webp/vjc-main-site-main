@@ -10,11 +10,11 @@ const Migrate = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
-    { question: "What is IELTS?", answer: "IELTS stands for International English Language Testing System." },
-    { question: "How do I register for IELTS?", answer: "You can register through the official IELTS website or an authorized center." },
-    { question: "What are the different types of IELTS tests?", answer: "IELTS Academic and IELTS General Training are the two main types." },
-    { question: "How is the IELTS scored?", answer: "IELTS scores range from 1 to 9 based on different sections." },
-    { question: "Can I retake the IELTS test?", answer: "Yes, you can retake the test as many times as needed." }
+    { question: "What is the Duolingo English Test, and why is it important?", answer: "The Duolingo English Test (DET) is a computer-based English proficiency test accepted by many universities and institutions worldwide. It is an affordable and convenient alternative to IELTS and TOEFL, with results available within 48 hours." },
+    { question: "How can VJC Overseas help me prepare for the Duolingo English Test?", answer: "We provide expert coaching, personalized study plans, practice tests, and real-time feedback to help you improve your English skills and achieve a high DET score." },
+    { question: "What are the benefits of joining Duolingo English Test coaching at VJC Overseas?", answer: "Our coaching includes experienced trainers, flexible schedules, AI-based mock tests, interactive study materials, and one-on-one mentoring to help you succeed." },
+    { question: "How long does it take to prepare for the Duolingo English Test?", answer: "The preparation time depends on your current English proficiency, but most students improve within 2 to 6 weeks with our structured coaching program." },
+    { question: "How do I enroll in Duolingo English Test coaching at VJC Overseas?", answer: "Contact us via phone, email, or visit our center, take a free assessment, and start your customized Duolingo test preparation with expert guidance." }
   ];
 
   const toggleFAQ = (index) => {

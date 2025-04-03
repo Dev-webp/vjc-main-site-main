@@ -8,12 +8,12 @@ import Form from "./Form";
 import Content from "./Content";
 
 const visaData = [
-  { name: "Canada Permanent Residency Visa", path: "/PR-visas/canadapr", image: "/1.jpg" },
-  { name: "Australia Permanent Residency Visa", path: "/PR-visas/australiapr", image: "/airplane.png" },
-  { name: "UK Permanent Residency Visa", path: "/PR-visas/ukpr", image: "/dmbusi.jpg" },
-  { name: "New Zealand Permanent Residency Visa", path: "/PR-visas/newzealandpr", image: "nzpr.jpg" },
-  { name: "Germany Blue Card Visa", path: "/PR-visas/germanybluecard", image: "/germanypr.jpg" },
-  { name: "USA Green Card", path: "/PR-visas/usagreencard", image: "/usapr.jpg" },
+  { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr", image: "/1.jpg" },
+  { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr", image: "/airplane.png" },
+  { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr", image: "/dmbusi.jpg" },
+  { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/newzealandpr", image: "nzpr.jpg" },
+  { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard", image: "/germanypr.jpg" },
+  { name: "USA Green Card", path: "/pr-visas/usagreencard", image: "/usapr.jpg" },
 ];
 
 const defaultVisa = { name: "Permanent Residency Visa", path: "/PR-visas", image: "/pr1.jpg" };
@@ -74,7 +74,7 @@ const Migrate = () => {
       </div>
 
       {/* ===== BOTTOM SECTION (Content Full Width) ===== */}
-      <div className="w-full p-6 bg-white shadow-md h-[500px] overflow-y-auto">
+      <div className="w-full p-6 bg-white shadow-md h-[700px] overflow-y-auto">
         <Content selectedVisa={selectedVisa} />
       </div>
     </div>

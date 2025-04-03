@@ -30,7 +30,7 @@ const playfairDisplay = Playfair_Display({
 export const metadata: Metadata = {
   title: 'VJC Overseas – World`s Leading Immigration Consultants | 2025',
   description: 'VJC Overseas – World`s top immigration consultants for PR, study, work & investor visas in Canada, Germany, USA, & Australia. Get expert guidance today!',
-  keywords: 'Best Immigration Visa Consultants in Hyderabad, Best Immigration Visa Consultants in Bangalore, Best Immigration Visa Consultants, Visa Consultants, Best Immigration Consultants, Best Visa Consultants, Immigration Visa Consultants, Visa Consultants, PR Visa, Permanent Residency Visa, Germany Opportunity Card, Study or Student Visa Immigration, Job Seeker Visa, Work Permit Visa',
+  keywords: 'australia pr,best immigration consultants in Bangalore,best immigration consultants in Hyderabad,canada immigration,germany job seeker visa,immigration consultants,new zealand immigration,overseas education consultants,study abroad,study abroad consultants,uk visa,usa visa,visa consultant near me,work permit,work visa',
 };
 
 export default function RootLayout({
@@ -41,16 +41,21 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${ptSerif.variable} ${playfairDisplay.variable}`}>
       <head>
-      {/* Google Tag Manager Script */}
-  <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16767451796" />
-  <Script id="google-analytics" strategy="afterInteractive">
-    {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-16767451796');
-    `}
-  </Script>
+        {/* Google Tag Manager */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-587PFF4');
+          `}
+        </Script>
+        {/* End Google Tag Manager */}
+
+        
+        
+
         {/* Facebook Meta Pixel */}
         <Script
           id="fb-pixel"
@@ -69,10 +74,20 @@ export default function RootLayout({
                 fbq('track', 'PageView');
             `,
           }}
-          
         />
       </head>
-      <body style={{ fontFamily: 'var(--font-pt-serif)' }}>
+      <body style={{ fontFamily: 'Times new roman' }}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-587PFF4"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+
         <Nav />
         {children}
         <FloatingWhatsApp />

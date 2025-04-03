@@ -21,18 +21,18 @@ const Navbar = () => {
     { name: "Study Abroad", path: "/studyabroad" },
     { name: "PR Visas", path: "/pr-visas" },
     { name: "Work Abroad", path: "/workabroad" },
-    { name: "Job Seeker Visas", path: "/jobseeker" },
+    { name: "Job Seeker Visas", path: "/jobseeker-visas" },
     
     { name: "Visit Visas", path: "/visitvisas" },
-    { name: "Investor Visas", path: "/investorvisas" },
-    { name: "Schengen Visas", path: "/schengen" },
+    { name: "Investor Visas", path: "/investor-visas" },
+    { name: "Schengen Visas", path: "/schengen-visas" },
     { name: "Resume Marketing", path: "/resume-marketing" },
-    { name: "Coaching/Training", path: "/" },
+    { name: "Coaching/Training", path: "/coaching" },
    
   ];
   const fixedItems = [
     { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact-us" },
+    { name: "Contact", path: "/contact" },
     { name: "Login", path: "/login" },
   ];
   
@@ -49,6 +49,16 @@ const Navbar = () => {
     { name: "Hong Kong", path: "/migrate/hong-kong" },
     { name: "Denmark", path: "/migrate/denmark" },
     { name: "UAE", path: "/migrate/uae" },
+  ];
+  
+  const coachingSubPages = [
+    { name: "IELTS", path: "/ielts" },
+    { name: "GMAT", path: "/gmat" },
+    { name: "GRE", path: "/gre" },
+    { name: "DUOLINGO", path: "/duolingo" },
+    { name: "PTE", path: "/pte" },
+    { name: "TOEFL", path: "/toefl" },
+  
   ];
   
   const workabroadSubPages = [
@@ -115,12 +125,12 @@ const Navbar = () => {
     
   ];
   const jobseeker = [
-    { name: "Germany Jobseeker Visa", path: "/jobseeker/germany-jobseeker-visa" },
-    { name: "Austria Jobseeker Visa", path: "/jobseeker/canada-jobseeker-visa" },
-    { name: "Portugal Jobseeker Visa", path: "/jobseeker/portugal-jobseeker-visa" },
-    { name: "Sweden Jobseeker Visa", path: "/jobseeker/sweden-jobseeker-visa" },
-    { name: "Norway Jobseeker Visa", path: "/jobseeker/norway-jobseeker-visa" },
-    { name: "UAE Jobseeker Visa", path: "/jobseeker/uae-jobseeker-visa" },
+    { name: "Germany Jobseeker Visa", path: "/jobseeker-visas/germany-jobseeker-visa" },
+    { name: "Austria Jobseeker Visa", path: "/jobseeker-visas/austria-jobseeker-visa" },
+    { name: "Portugal Jobseeker Visa", path: "/jobseeker-visas/portugal-jobseeker-visa" },
+    { name: "Sweden Jobseeker Visa", path: "/jobseeker-visas/sweden-jobseeker-visa" },
+    { name: "Norway Jobseeker Visa", path: "/jobseeker-visas/norway-jobseeker-visa" },
+    { name: "UAE Jobseeker Visa", path: "/jobseeker-visas/uae-jobseeker-visa" },
    
   ];
   const servicesSubPages = [
@@ -137,14 +147,14 @@ const Navbar = () => {
   ];
   
   const investorvisasSubPages = [
-    { name: "USA Investor Visa", path: "/investorvisas/usa-investor-visa"},
-    { name: "Canada Investor Visa", path: "/investorvisas/canada-investor-visa"},
-    { name: "Germany Investor Visa", path: "/investorvisas/germany-investor-visa" },
-    { name: "Australia Investor Visa", path: "/investorvisas/australia-investor-visa"},
-    { name: "UK Investor Visa", path: "/investorvisas/uk-investor-visa" },
-    { name: "UAE Investor Visa", path: "/investorvisas/uae-investor-visa"},
-    { name: "Portugal Investor Visa", path: "/investorvisas/portugal-investor-visa" },
-    { name: "Austria Investor Visa", path: "/investorvisas/austria-investor-visa" },
+    { name: "USA Investor Visa", path: "/investor-visas/usa-investor-visa"},
+    { name: "Canada Investor Visa", path: "/investor-visas/canada-investor-visa"},
+    { name: "Germany Investor Visa", path: "/investor-visas/germany-investor-visa" },
+    { name: "Australia Investor Visa", path: "/investor-visas/australia-investor-visa"},
+    { name: "UK Investor Visa", path: "/investor-visas/uk-investor-visa" },
+    { name: "UAE Investor Visa", path: "/investor-visas/uae-investor-visa"},
+    { name: "Portugal Investor Visa", path: "/investor-visas/portugal-investor-visa" },
+    { name: "Austria Investor Visa", path: "/investor-visas/austria-investor-visa" },
    
   ];
   const visitvisasSubPages = [
@@ -163,35 +173,35 @@ const Navbar = () => {
    
   ];
   const schengenSubPages = [
-    { name: "Austria ", path: "/schengen/austria",},
-    { name: "Belgium ", path: "/schengen/belgium", },
-    { name: "Bulgaria ", path: "/schengen/bulgaria",  },
-    { name: "Croatia ", path: "/schengen/croatia",  },
-    { name: "Czech Republic ", path: "/schengen/czech-republic",},
-    { name: "Denmark ", path: "/schengen/denmark",  },
-    { name: "Estonia ", path: "/schengen/estonia",  },
-    { name: "Finland ", path: "/schengen/finland",  },
-    { name: "France ", path: "/schengen/france",  },
-    { name: "Germany ", path: "/schengen/germany",},
-    { name: "Greece ", path: "/schengen/greece",  },
-    { name: "Hungary ", path: "/schengen/hungary",  },
-    { name: "Iceland ", path: "/schengen/iceland",  },
-    { name: "Italy ", path: "/schengen/italy",  },
-    { name: "Latvia ", path: "/schengen/latvia", },
-    { name: "Liechtenstein ", path: "/schengen/liechtenstein", },
-    { name: "Lithuania ", path: "/schengen/lithuania", },
-    { name: "Luxembourg ", path: "/schengen/luxembourg",},
-    { name: "Malta ", path: "/schengen/malta",},
-    { name: "Netherlands ", path: "/schengen/netherlands",},
-    { name: "Norway ", path: "/schengen/norway", },
-    { name: "Poland ", path: "/schengen/poland", },
-    { name: "Portugal ", path: "/schengen/portugal",  },
-    { name: "Romania ", path: "/schengen/romania",  },
-    { name: "Slovakia ", path: "/schengen/slovakia", },
-    { name: "Slovenia ", path: "/schengen/slovenia",  },
-    { name: "Spain ", path: "/schengen/spain", },
-    { name: "Sweden ", path: "/schengen/sweden",},
-    { name: "Switzerland ", path: "/schengen/switzerland", },
+    { name: "Austria ", path: "/schengen-visas/austria",},
+    { name: "Belgium ", path: "/schengen-visas/belgium", },
+    { name: "Bulgaria ", path: "/schengen-visas/bulgaria",  },
+    { name: "Croatia ", path: "/schengen-visas/croatia",  },
+    { name: "Czech Republic ", path: "/schengen-visas/czech-republic",},
+    { name: "Denmark ", path: "/schengen-visas/denmark",  },
+    { name: "Estonia ", path: "/schengen-visas/estonia",  },
+    { name: "Finland ", path: "/schengen-visas/finland",  },
+    { name: "France ", path: "/schengen-visas/france",  },
+    { name: "Germany ", path: "/schengen-visas/germany",},
+    { name: "Greece ", path: "/schengen-visas/greece",  },
+    { name: "Hungary ", path: "/schengen-visas/hungary",  },
+    { name: "Iceland ", path: "/schengen-visas/iceland",  },
+    { name: "Italy ", path: "/schengen-visas/italy",  },
+    { name: "Latvia ", path: "/schengen-visas/latvia", },
+    { name: "Liechtenstein ", path: "/schengen-visas/liechtenstein", },
+    { name: "Lithuania ", path: "/schengen-visas/lithuania", },
+    { name: "Luxembourg ", path: "/schengen-visas/luxembourg",},
+    { name: "Malta ", path: "/schengen-visas/malta",},
+    { name: "Netherlands ", path: "/schengen-visas/netherlands",},
+    { name: "Norway ", path: "/schengen-visas/norway", },
+    { name: "Poland ", path: "/schengen-visas/poland", },
+    { name: "Portugal ", path: "/schengen-visas/portugal",  },
+    { name: "Romania ", path: "/schengen-visas/romania",  },
+    { name: "Slovakia ", path: "/schengen-visas/slovakia", },
+    { name: "Slovenia ", path: "/schengen-visas/slovenia",  },
+    { name: "Spain ", path: "/schengen-visas/spain", },
+    { name: "Sweden ", path: "/schengen-visas/sweden",},
+    { name: "Switzerland ", path: "/schengen-visas/switzerland", },
    
   ];
   
@@ -358,6 +368,27 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
+          ) : item.name === "Coaching/Training" ? (
+            <div className="relative group">
+              <Link
+                href={item.path}
+                className="text-white text-sm lg:text-xs font-semibold px-3.5 hover:bg-white hover:bg-opacity-20 uppercase mt-2"
+              >
+                {item.name}
+              </Link>
+             {/* Visit Visas Submenu - OPEN TO LEFT */}
+             <div className="absolute right-0 mt-3 invisible opacity-0 bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 grid grid-cols-6 gap-2 bg-black bg-opacity-50 p-3 w-[600px] min-h-[100px] shadow-xl z-50 transition-all duration-300 ease-in-out">
+                {coachingSubPages.map((subItem) => (
+                  <Link
+                    href={subItem.path}
+                    key={subItem.name}
+                    className="text-white text-sm font-semibold text-center px-3 py-2 hover:text-orange-500 hover:bg-white hover:bg-opacity-10 transition duration-200 ease-in-out whitespace-normal break-words"
+                  >
+                    {subItem.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           ) : (
             <div className="relative group">
               <Link
@@ -365,7 +396,7 @@ const Navbar = () => {
                 className="text-white text-sm lg:text-xs font-semibold px-3.5  uppercase mt-1"
               >
                 {item.name}
-              </Link>   
+              </Link>
 
 
 
@@ -414,24 +445,23 @@ const Navbar = () => {
 
 <div className="fixed left-2 md:left-0 top-[33vh] z-50 flex flex-col gap-0 max-w-[90vw] w-auto">
   <Link href="/services">
-    <button className="text-white font-bold text-xs sm:text-sm bg-[#A67C52] px-3 sm:px-4 py-4 sm:py-5 md:py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
+    <button className="text-white font-bold text-xs sm:text-sm bg-gradient-to-tr from-orange-500 to-black px-3 sm:px-2 py-4 sm:py-5 md:py-4 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
       Services
     </button>
   </Link>
 
   <Link href="/assessment">
-    <button className="text-white font-bold text-xs sm:text-sm bg-orange-500 px-3 sm:px-4 py-4 sm:py-5 md:py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-orange-600">
+    <button className="text-white font-bold text-xs sm:text-sm bg-orange-500 px-3 sm:px-2 py-4 sm:py-5 md:py-4 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-orange-600">
       Assessment
     </button>
   </Link>
 
   <Link href="/contact-us">
-    <button className="text-white font-bold text-xs sm:text-sm bg-[#A67C52] px-3 sm:px-4 py-4 sm:py-5 md:py-6 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
+    <button className="text-white font-bold text-xs sm:text-sm bg-gradient-to-tr from-black to-orange-500 px-3 sm:px-2 py-4 sm:py-5 md:py-4 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
       Contact Us
     </button>
   </Link>
 </div>
-
 
 
 
@@ -468,9 +498,9 @@ const Navbar = () => {
 
   {/* Dropdown Menu for Small Screens */}
   <div
-    className={`absolute left-0 w-full bg-orange-600 shadow-md transition-all duration-300 ${
-      isMenuOpen ? "top-full opacity-100 visible" : "top-[-300px] opacity-0 invisible"
-    }`}
+    className={`absolute left-0 w-full bg-gradient-to-tr from-black to-orange-600/75 shadow-md transition-all duration-300  ${
+      isMenuOpen ? "top-full opacity-100 visible" : "top-[-300px] opacity-0 invisible" 
+    }`} style={{fontFamily:'Times new roman'}}
   >
     <ul className="flex flex-col text-center py-4 space-y-3 max-h-[500px] overflow-y-auto">
       {menuItems.map((item, index) => (
@@ -482,30 +512,12 @@ const Navbar = () => {
           >
             {item.name}
           </Link>
-          {index < menuItems.length - 1 && <hr className="w-1/2 mx-auto border-white opacity-50" />}
+          {index < menuItems.length - 1 && <hr className="w-1/2 mx-auto border-black opacity-50" />}
         </li>
       ))}
 
       {/* Extra Mobile-only Links */}
-      <li className="mt-3">
-        <Link
-          href="/services"
-          className="text-white text-lg font-semibold hover:underline"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Services
-        </Link>
-      </li>
-      <hr className="w-1/2 mx-auto border-white opacity-50" />
-      <li>
-        <Link
-          href="/contact"
-          className="text-white text-lg font-semibold hover:underline"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Contact Us
-        </Link>
-      </li>
+      
     </ul>
   </div>
 </div>

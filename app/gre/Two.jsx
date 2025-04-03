@@ -10,11 +10,11 @@ const Migrate = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
-    { question: "What is IELTS?", answer: "IELTS stands for International English Language Testing System." },
-    { question: "How do I register for IELTS?", answer: "You can register through the official IELTS website or an authorized center." },
-    { question: "What are the different types of IELTS tests?", answer: "IELTS Academic and IELTS General Training are the two main types." },
-    { question: "How is the IELTS scored?", answer: "IELTS scores range from 1 to 9 based on different sections." },
-    { question: "Can I retake the IELTS test?", answer: "Yes, you can retake the test as many times as needed." }
+    { question: "What is the GRE exam, and why is it important?", answer: "The GRE (Graduate Record Examination) is a standardized test required for admission to graduate and business schools worldwide. It evaluates your analytical writing, verbal reasoning, and quantitative reasoning skills." },
+    { question: "How can VJC Overseas help me prepare for the GRE?", answer: "We provide expert coaching, personalized study plans, full-length practice tests, and proven test-taking strategies to help you achieve a high GRE score." },
+    { question: "What are the benefits of joining GRE coaching at VJC Overseas?", answer: "Our coaching includes experienced trainers, flexible schedules, interactive study sessions, mock exams, and one-on-one guidance to ensure you perform well on test day." },
+    { question: "How long does it take to prepare for the GRE?", answer: "The preparation time varies, but most students see significant improvement within 8 to 12 weeks with our structured coaching." },
+    { question: "How do I enroll in GRE coaching at VJC Overseas?", answer: "Contact us via phone, email, or visit our center, take an initial assessment, and start your customized GRE training with expert guidance." }
   ];
 
   const toggleFAQ = (index) => {
