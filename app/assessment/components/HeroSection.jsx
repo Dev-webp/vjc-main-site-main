@@ -66,7 +66,7 @@ const HeroSection = () => {
     <hr className="border-black w-[48%] ml-auto border-spacing-1 hidden md:block -mt-3" />
 
     {/* Motion Div */}
-    <div className="mt-6">
+    <div className="mt-16">
       <motion.div
         variants={containerVariants(0.4)}
         initial="hidden"

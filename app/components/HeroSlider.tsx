@@ -6,8 +6,8 @@ import Link from "next/link";
 const sliderData = [
   {
     services: [
-      { text: "Apply For Canada Permanent Residency", link: "/canada-pr-visa" },
-      { text: "Apply For Canada Study Visa", link: "/canada-study-visa" },
+      { text: "Apply For Canada Permanent Residency", link: "/PR-visas/canadapr" },
+      { text: "Apply For Canada Study Visa", link: "/migrate/canada/student-visa" },
     ],
     backgroundImage: "/canada.webp",
     title: "Canada",
@@ -15,8 +15,8 @@ const sliderData = [
   },
   {
     services: [
-      { text: "Apply For Australia Permanent Residency Visa", link: "/australia-pr-visa" },
-      { text: "Apply For Australia Study Visa", link: "/australia-study-visa" },
+      { text: "Apply For Australia Permanent Residency Visa", link: "/PR-visas/australiapr" },
+      { text: "Apply For Australia Study Visa", link: "/migrate/australia/student-visa" },
     ],
     backgroundImage: "/australia.jpg",
     title: "Australia",
@@ -26,11 +26,11 @@ const sliderData = [
     services: [
       {
         text: "Apply For Germany Opportunity Card Visa",
-        link: "https://germanyopportunitycard.vjcoverseas.com/",
+        link: "germany-opportunity-card",
       },
       {
         text: "Apply For Germany  Study Visa",
-        link: "https://germanyopportunitycard.vjcoverseas.com/",
+        link: "/migrate/germany/student-visa/",
       }
       
       
@@ -42,7 +42,7 @@ const sliderData = [
   {
     services: [
       { text: "Apply For UK Study Visa", 
-      link: "https://ukstudyvisa.vjcoverseas.com/"
+      link: "/migrate/united-kingdom/student-visa"
      }
     ],
     backgroundImage: "/uk-flag.png",
@@ -52,7 +52,7 @@ const sliderData = [
   {
     services: [
       { text: "Apply For Malta Study Visa", 
-        link: "/" }],
+        link: "/malta" }],
     backgroundImage: "/malta.png",
     title: "Malta",
     gradient: "bg-gradient-to-r from-red-700 to-white", // Malta color gradient
