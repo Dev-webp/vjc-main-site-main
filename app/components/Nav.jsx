@@ -62,13 +62,13 @@ const Navbar = () => {
   ];
   
   const workabroadSubPages = [
-    { name: "Germany Work Permit", path: "/workabroad/germany-work-permit" },
-    { name: "Canada Work Permit", path: "/workabroad/canada-work-permit" },
-    { name: "USA H1b Visa", path: "/workabroad/usa-h1b-visa" },
-    { name: "Australia Work Permit", path: "/workabroad/australia-work-permit" },
-    { name: "UK Work Permit", path: "/workabroad/united-kingdom-work-permit" },
-    { name: "Denmark Work Permit", path: "/workabroad/denmark-work-permit" },
-    { name: "Dubai Work Permit", path: "/workabroad/dubai-work-permit" },
+    { name: "Germany Work Permit", path: "/work-abroad/germany-work-permit" },
+    { name: "Canada Work Permit", path: "/work-abroad/canada-work-permit" },
+    { name: "USA H1b Visa", path: "/work-abroad/usa-h1b-visa" },
+    { name: "Australia Work Permit", path: "/work-abroad/australia-work-permit" },
+    { name: "UK Work Permit", path: "/work-abroad/united-kingdom-work-permit" },
+    { name: "Denmark Work Permit", path: "/work-abroad/denmark-work-permit" },
+    { name: "Dubai Work Permit", path: "/work-abroad/dubai-work-permit" },
   ];
 
   const studyabroadSubPages = [
@@ -99,12 +99,12 @@ const Navbar = () => {
   ];
 
   const prVisaSubPages = [
-    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr" },
-    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr" },
-    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr" },
-    { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/newzelandpr" },
-    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard" },
-    { name: "USA Green Card", path: "/pr-visas/usagreencard" },
+    { name: "Canada Permanent Residency Visa", path: "/PR-visas/canadapr" },
+    { name: "Australia Permanent Residency Visa", path: "/PR-visas/australiapr" },
+    { name: "UK Permanent Residency Visa", path: "/PR-visas/ukpr" },
+    { name: "New Zealand Permanent Residency Visa", path: "/PR-visas/newzelandpr" },
+    { name: "Germany Blue Card Visa", path: "/PR-visas/germanybluecard" },
+    { name: "USA Green Card", path: "/PR-visas/usagreencard" },
   ];
   const resumemarketingSubPages = [
   
