@@ -38,6 +38,31 @@ const Migrate = () => {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute inset-0 bg-black opacity-20" />
+          {/* Content */}
+      <div className="relative z-20 text-center px-4 sm:px-10 mt-32 ">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          Investor Visas
+        </h1>
+ 
+        <p className="text-base sm:text-lg md:text-xl text-white max-w-2xl mx-auto mb-6">
+          Explore global opportunities with our expert Investor Visa guidance.
+          <br />
+          Secure your future in leading countries through strategic investments.
+        </p>
+ 
+        <Link href="/assessment">
+          <button
+            onClick={() => setShowAssessment(true)}
+            className="bg-gradient-to-r from-orange-500 to-white text-black font-semibold
+                       px-2 py-2 sm:px-6 sm:py-3 rounded-full shadow-md
+                       hover:from-orange-600 hover:to-white hover:text-white
+                       transition duration-200  sm:w-auto text-sm sm:text-base"
+          >
+             Free Visa Assessment
+          </button>
+        </Link>
+      </div>
+    
       </div>
 
       {/* Scrollable Cards Section */}

@@ -130,17 +130,17 @@ const Migrate = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-16 bg-gradient-to-r from-orange-100 via-white to-orange-100 p-8 rounded-2xl shadow-lg text-center">
-          <h3 className="text-2xl font-bold text-orange-600 mb-4">
-            Study Abroad with VJC Overseas: Your Global Education Partner
+        <div className="mt-16 bg-gradient-to-r from-black/50 to-black/50 p-8 rounded-2xl shadow-lg text-center">
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Study Abroad with <span className="text-orange-600">VJC Overseas:</span> Your Global Education Partner
           </h3>
-          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-4">
+          <p className="text-white text-lg max-w-4xl mx-auto mb-4">
             At VJC Overseas, we believe that education is not just about textbooks — it's about experiencing the world, broadening your horizons, and preparing for a global future.
           </p>
-          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-4">
+          <p className="text-white text-lg max-w-4xl mx-auto mb-4">
             Our Study Abroad services are designed to guide students through every step of their international education journey, ensuring a seamless and enriching experience.
           </p>
-          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-white text-lg max-w-4xl mx-auto mb-6">
             We collaborate with top universities and educational institutions across the world, offering you access to a wide range of undergraduate, postgraduate, and diploma programs in:
           </p>
 
@@ -155,19 +155,19 @@ const Migrate = () => {
             ))}
             </div>
 
-          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-white text-lg max-w-4xl mx-auto mb-6">
           Our team of experienced counsellors provides personalized guidance throughout the process. From choosing the right course and university to visa
            applications and pre-departure orientations, we are with you every step of the way. Our goal is to make your transition to studying abroad as smooth as possible, so you can focus on your studies and make the most of your time overseas.
           </p>
-          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-white text-lg max-w-4xl mx-auto mb-6">
           Beyond academics, we also understand the importance of cultural integration. We help you connect with student communities, providing support 
           with accommodation, travel, and local resources, ensuring you feel at home no matter where you go.
           </p>
-          <p className="text-gray-700 text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-white text-lg max-w-4xl mx-auto mb-6">
           Studying abroad is an investment in your future, and with VJC Overseas, you’re not just applying for a course—you’re embarking on a life-changing adventure. Let us help you take the first step 
           towards a world-class education and an exciting new chapter in your life.
           </p>
-          <h3 className="text-2xl font-bold text-orange-600 mb-4">
+          <h3 className="text-2xl font-bold text-white mb-4">
           Start your global education journey with VJC Overseas today!
           </h3>
          
