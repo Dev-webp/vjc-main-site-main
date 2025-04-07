@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import Form from "./Form";
 import Content from "./Content";
 
+
 const visaData = [
   { name: "Canada Permanent Residency Visa", path: "/prvisas/canadapr", image: "/1.jpg" },
   { name: "Australia Permanent Residency Visa", path: "/prvisas/australiapr", image: "/airplane.png" },
@@ -38,7 +39,9 @@ const Migrate = () => {
   };
 
   return (
+    <>
     <div className="w-full overflow-x-hidden">
+      
       {/* ===== FULL-WIDTH BACKGROUND IMAGE ===== */}
       <div
         className="w-full min-h-[60vh] bg-cover bg-center relative"
@@ -64,38 +67,41 @@ const Migrate = () => {
 
       {/* ===== FORM & VISA BUTTONS ===== */}
       <div className="w-full px-4 sm:px-6 lg:px-12 py-12 bg-white flex flex-col lg:flex-row gap-8">
-        {/* Left: Form (30%) */}
+        
+        {/* Left: Form (40%) */}
         <div className="w-full lg:w-[40%]">
           <Form />
         </div>
 
-        {/* Right: Visa Buttons (70%) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-  {visaData.map((visa) => (
-    <button
-      key={visa.path}
-      onClick={() => handleVisaClick(visa)}
-      className={`h-40 w-full flex items-center justify-between text-base sm:text-lg font-semibold px-6 py-4 transition duration-300 shadow ${
-        selectedVisa.path === visa.path
-          ? "bg-orange-500 text-white  shadow-orange-400"
-          : "bg-white text-black border border-orange-200  hover:bg-orange-500 hover:text-white"
-      } hover:scale-105`}
-    >
-      <span className="w-3/4">{visa.name}</span>
-      <ArrowRight className="w-5 h-5" />
-    </button>
-  ))}
-</div>
-
-       </div>
-
-      {/* ===== CONTENT BOX BELOW FULL-WIDTH ===== */}
-      <div className="w-full px-4 sm:px-6 lg:px-12 pb-20">
-        <div className="w-full bg-white p-6 ">
-          <Content selectedVisa={selectedVisa} />
+        {/* Right: Visa Buttons (60%) */}
+        <div className="w-full lg:w-[60%] grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {visaData.map((visa) => (
+            <button
+              key={visa.path}
+              onClick={() => handleVisaClick(visa)}
+              className={`h-40 w-full flex items-center justify-between text-base sm:text-lg font-semibold px-6 py-4 transition duration-300 shadow ${
+                selectedVisa.path === visa.path
+                  ? "bg-orange-500 text-white shadow-orange-400"
+                  : "bg-white text-black border border-orange-200 hover:bg-orange-500 hover:text-white"
+              } hover:scale-105`}
+            >
+              <span className="w-3/4 text-left">{visa.name}</span>
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          ))}
         </div>
+
       </div>
-    </div>
+
+      {/* ===== CONTENT SECTION (Always Visible) ===== */}
+      <div className="w-full px-4 sm:px-6 lg:px-12 py-12 bg-white">
+  <Content />
+</div>
+          
+        </div>
+       
+        </>
+    
   );
 };
 

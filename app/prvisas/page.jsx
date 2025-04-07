@@ -7,6 +7,7 @@ import Form from "./Form";
 import Two from "./Two";
 import Footer from "./Footer";
 
+
 const textContainerVariants = {
  
    
@@ -30,9 +31,10 @@ const ContactPage = () => {
 
       {/* Main Section */}
       <Two/>
+    
       
       {/* Other Sections */}
-      <div className="-mt-20">
+      <div className="">
      
       <Footer />
       </div>

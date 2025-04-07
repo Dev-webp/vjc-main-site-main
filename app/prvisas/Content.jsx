@@ -1,14 +1,10 @@
 import React from "react";
 
 const Content = ({ selectedVisa }) => {
-  // Check if it's the default visa
-  const isDefaultContent = selectedVisa?.path === "/PR-visas";
-
-  if (!isDefaultContent) return null;
-
+ 
   return (
-    <div className="text-gray-800 space-y-5 text-base sm:text-lg leading-relaxed">
-      <h2 className="text-2xl sm:text-3xl font-bold">
+    <div className="text-gray-800 space-y-5 text-base sm:text-lg leading-relaxed bg-white">
+      <h2 className="text-2xl sm:text-3xl font-bold flex justify-center">
         Permanent Resident Visa – <span className="text-orange-500">VJC Overseas</span>
       </h2>
 
