@@ -3,7 +3,7 @@ import React from "react";
 const CanadaPR = () => {
   return (
     <div className="text-gray-800 space-y-6 text-lg leading-relaxed" style={{fontFamily:'Times new Roman'}}>
-      <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+      <h2 className="text-2xl md:text-2xl font-semibold text-gray-900">
         Canada Permanent Residence Visa: Your Pathway to a New Life in Canada
       </h2>
 

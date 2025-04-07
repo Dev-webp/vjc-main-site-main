@@ -15,39 +15,39 @@ import Usagreencard from "./Usagreencard";
 const visaData = [
   {
     name: "Canada Permanent Residency Visa",
-    path: "/PR-visas/canadapr",
+    path: "/prvisas/canadapr",
     image: "/canadapr.webp",
   },
   {
     name: "Australia Permanent Residency Visa",
-    path: "/PR-visas/australiapr",
+    path: "/prvisas/australiapr",
     image: "/australia.jpg",
   },
   {
     name: "UK Permanent Residency Visa",
-    path: "/PR-visas/ukpr",
+    path: "/prvisas/ukpr",
     image: "/dmbusi.jpg",
   },
   {
     name: "New Zealand Permanent Residency Visa",
-    path: "/PR-visas/newzelandpr",
+    path: "/prvisas/newzealandpr",
     image: "/nzpr.jpg",
   },
   {
     name: "Germany Blue Card Visa",
-    path: "/PR-visas/germanybluecard",
+    path: "/prvisas/germanybluecard",
     image: "/germanypr.jpg",
   },
   {
     name: "USA Green Card",
-    path: "/PR-visas/usagreencard",
+    path: "/prvisas/usagreencard",
     image: "/usapr.jpg",
   },
 ];
 
 const defaultVisa = {
   name: "Permanent Residency Visa",
-  path: "/PR-visas",
+  path: "/prvisas",
   image: "/1.jpg",
 };
 
@@ -139,17 +139,17 @@ const Migrate = () => {
               <div className="text-gray-700 text-lg leading-relaxed">
                 Please select a visa type from the left to view more detailed information about that particular Permanent Residency visa.
               </div>
-            ) : selectedVisa.path === "/PR-visas/canadapr" ? (
+            ) : selectedVisa.path === "/prvisas/canadapr" ? (
               <CanadaPR />
-            ) : selectedVisa.path === "/PR-visas/australiapr" ? (
+            ) : selectedVisa.path === "/prvisas/australiapr" ? (
               <Australiapr />
-            ) : selectedVisa.path === "/PR-visas/ukpr" ? (
+            ) : selectedVisa.path === "/prvisas/ukpr" ? (
               <UKpr />
-            ) : selectedVisa.path === "/PR-visas/newzelandpr" ? (
+            ) : selectedVisa.path === "/prvisas/newzealandpr" ? (
               <Newzelandpr />
-            ) : selectedVisa.path === "/PR-visas/germanybluecard" ? (
+            ) : selectedVisa.path === "/prvisas/germanybluecard" ? (
               <Germanybluecard />
-            ) : selectedVisa.path === "/PR-visas/usagreencard" ? (
+            ) : selectedVisa.path === "/prvisas/usagreencard" ? (
               <Usagreencard />
             ) : (
               <div className="text-gray-700 text-lg leading-relaxed">

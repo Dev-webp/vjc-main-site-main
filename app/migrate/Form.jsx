@@ -7,27 +7,24 @@ const Form = () => {
   const [age, setAge] = useState('');
   const [experience, setExperience] = useState('');
   const [qualification, setQualification] = useState('');
-  const [country, setCountry] = useState('');  // New state for Country
+  const [country, setCountry] = useState('');
   const [message, setMessage] = useState('');
   const [formStatus, setFormStatus] = useState(null);
   const [loading, setLoading] = useState(false);
   const [popupVisible, setPopupVisible] = useState(false);
 
-  // Close the success popup after 4 seconds
   useEffect(() => {
     if (popupVisible) {
       const timeout = setTimeout(() => {
         setPopupVisible(false);
       }, 4000);
-
-      return () => clearTimeout(timeout); // Cleanup timeout
+      return () => clearTimeout(timeout);
     }
   }, [popupVisible]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    setLoading(true); // Set loading to true when form is being submitted
+    setLoading(true);
 
     const formData = {
       name,
@@ -36,16 +33,14 @@ const Form = () => {
       age,
       experience,
       qualification,
-      country,  // Include country in formData
+      country,
       message,
     };
 
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
@@ -57,9 +52,9 @@ const Form = () => {
         setAge('');
         setExperience('');
         setQualification('');
-        setCountry('');  // Clear country
+        setCountry('');
         setMessage('');
-        setPopupVisible(true); // Show success popup
+        setPopupVisible(true);
       } else {
         setFormStatus('error');
       }
@@ -67,145 +62,114 @@ const Form = () => {
       console.error('Error:', error.message);
       setFormStatus('error');
     } finally {
-      setLoading(false); // Set loading to false once the request is complete
+      setLoading(false);
     }
   };
 
   return (
-    <div className="bg-white p-6 py-4 rounded-lg shadow-2xl max-w-md mx-auto w-full h-[37rem] sm:h-[37rem] md:h-[37rem] lg:h-[36rem] tablet:h-[37rem] shadow-gray-500 mb-6 lg:mb-2" style={{fontFamily: "Times New Roman, serif"}}>
-      <h2 className="text-2xl font-semibold text-center text-gray-800 mt-0 lg:mt-3">Sign up <span style={{color:'rgb(220, 4, 4)'}}> &</span> Get Free Assessment</h2>
-      
-      <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-3 mt-2 lg:mt-2">
-        <div>
-          <label htmlFor="name" className="sr-only">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
-            required
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
+    <div
+      className="bg-white p-6 py-4 rounded-lg shadow-2xl max-w-md mx-auto w-full mb-6 shadow-gray-500"
+      style={{ fontFamily: 'Times New Roman, serif' }}
+    >
+      <h2 className="text-2xl font-semibold text-center text-gray-800 mt-0">
+        Sign up <span style={{ color: 'rgb(220, 4, 4)' }}> &</span> Get Free Assessment
+      </h2>
 
-        <div>
-          <label htmlFor="email" className="sr-only">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
+      <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
 
-        <div>
-          <label htmlFor="phone" className="sr-only">Phone Number</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="Phone Number"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
-            required
-            pattern="\d*"
-            title="Please enter a valid phone number"
-            maxLength={10}
-            minLength={10}
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-        </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-        {/* Country Input */}
-        <div>
-          <label htmlFor="country" className="sr-only">Your Country</label>
-          <input
-            type="text"
-            id="country"
-            name="country"
-            placeholder="Country"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
-            required
-            value={country}
-            onChange={(e) => setCountry(e.target.value)}
-          />
-        </div>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+          required
+          pattern="\d*"
+          maxLength={10}
+          minLength={10}
+          className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+        />
 
-        <div>
-          <label htmlFor="age" className="sr-only">Age</label>
-          <input
-            type="number"
-            id="age"
-            name="age"
-            placeholder="Your Age"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
-            required
-            value={age}
-            onChange={(e) => setAge(e.target.value)}
-          />
-        </div>
+        <input
+          type="text"
+          name="country"
+          placeholder="Country"
+          required
+          className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+          value={country}
+          onChange={(e) => setCountry(e.target.value)}
+        />
 
-        {/* Experience Input */}
-        <div>
-          <label htmlFor="experience" className="sr-only">Experience</label>
-          <select
-            id="experience"
-            name="experience"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
-            value={experience}
-            onChange={(e) => setExperience(e.target.value)}
-          >
-            <option value="">Select Experience</option>
-            <option value="1-2 years">1-2 years</option>
-            <option value="3-5 years">3-5 years</option>
-            <option value="5-7 years">5-7 years</option>
-            <option value="7+ years">7+ years</option>
-          </select>
-        </div>
+        <input
+          type="number"
+          name="age"
+          placeholder="Your Age"
+          required
+          className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+        />
 
-        {/* Qualification Dropdown */}
-        <div>
-          <label htmlFor="qualification" className="sr-only">Qualification</label>
-          <select
-            id="qualification"
-            name="qualification"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
-            value={qualification}
-            onChange={(e) => setQualification(e.target.value)}
-          >
-            <option value="">Select your qualification</option>
-            <option value="High School">High School</option>
-            <option value="Bachelor's Degree">Bachelor&apos;s Degree</option>
-            <option value="Master's Degree">Master&apos;s Degree</option>
-            <option value="Ph.D.">Ph.D.</option>
-            <option value="Diploma">Diploma</option>
-          </select>
-        </div>
+        <select
+          name="experience"
+          className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+          value={experience}
+          onChange={(e) => setExperience(e.target.value)}
+        >
+          <option value="">Select Experience</option>
+          <option value="1-2 years">1-2 years</option>
+          <option value="3-5 years">3-5 years</option>
+          <option value="5-7 years">5-7 years</option>
+          <option value="7+ years">7+ years</option>
+        </select>
 
-        <div>
-          <label htmlFor="message" className="sr-only">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="2"
-            placeholder="Your Message"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out resize-none"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-        </div>
+        <select
+          name="qualification"
+          className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+          value={qualification}
+          onChange={(e) => setQualification(e.target.value)}
+        >
+          <option value="">Select your qualification</option>
+          <option value="High School">High School</option>
+          <option value="Bachelor's Degree">Bachelor's Degree</option>
+          <option value="Master's Degree">Master's Degree</option>
+          <option value="Ph.D.">Ph.D.</option>
+          <option value="Diploma">Diploma</option>
+        </select>
 
-        <div className="flex justify-center">
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="2"
+          className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        ></textarea>
+
+        <div className="w-full flex justify-center">
           <button
             type="submit"
-            className="w-3/4 bg-gray-800 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-20 shadow-lg"
             disabled={loading}
+           className="w-full bg-gray-950 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 shadow-lg mt-2 sm:mt-0 -mb-2 sm:mb-0"
           >
             {formStatus === 'success' ? 'Form Submitted!' : loading ? 'Submitting...' : 'Submit for Free Assessment'}
           </button>

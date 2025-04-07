@@ -19,7 +19,7 @@ const Navbar = () => {
     { name: "About us", path: "/about-us" },
     { name: "Migrate To", path: "/migrate" },
     { name: "Study Abroad", path: "/studyabroad" },
-    { name: "PR Visas", path: "/PR-visas" },
+    { name: "PR Visas", path: "/prvisas" },
     { name: "Work Abroad", path: "/work-abroad" },
     { name: "Job Seeker Visas", path: "/jobseeker-visas" },
     
@@ -99,12 +99,12 @@ const Navbar = () => {
   ];
 
   const prVisaSubPages = [
-    { name: "Canada Permanent Residency Visa", path: "/PR-visas/canadapr" },
-    { name: "Australia Permanent Residency Visa", path: "/PR-visas/australiapr" },
-    { name: "UK Permanent Residency Visa", path: "/PR-visas/ukpr" },
-    { name: "New Zealand Permanent Residency Visa", path: "/PR-visas/newzelandpr" },
-    { name: "Germany Blue Card Visa", path: "/PR-visas/germanybluecard" },
-    { name: "USA Green Card", path: "/PR-visas/usagreencard" },
+    { name: "Canada Permanent Residency Visa", path: "/prvisas/canadapr" },
+    { name: "Australia Permanent Residency Visa", path: "/prvisas/australiapr" },
+    { name: "UK Permanent Residency Visa", path: "/prvisas/ukpr" },
+    { name: "New Zealand Permanent Residency Visa", path: "/prvisas/newzelandpr" },
+    { name: "Germany Blue Card Visa", path: "/prvisas/germanybluecard" },
+    { name: "USA Green Card", path: "/prvisas/usagreencard" },
   ];
   const resumemarketingSubPages = [
   
@@ -278,7 +278,7 @@ const Navbar = () => {
 
 {/* Desktop Navbar */}
 <div className="bg-orange-500 fixed top-12 w-screen z-50 hidden md:block">
-  <nav className="flex justify-between items-center px-2 max-w-7xl py-1.5">
+  <nav className="flex justify-between items-center max-w-6xl py-1.5">
     <div className="flex flex-row -space-x-2 whitespace-nowrap">
       {menuItems.map((item, index) => (
         <React.Fragment key={item.name}>
@@ -516,7 +516,7 @@ const Navbar = () => {
         </li>
       ))}
 
-      {/* Extra Mobile-only Links */}
+      
       
     </ul>
   </div>

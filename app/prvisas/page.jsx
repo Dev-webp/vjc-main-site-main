@@ -29,10 +29,14 @@ const ContactPage = () => {
       </div>
 
       {/* Main Section */}
+      <Two/>
       
       {/* Other Sections */}
-      <Two />
+      <div className="-mt-20">
+     
       <Footer />
+      </div>
+      
 
     </>
   );

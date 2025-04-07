@@ -31,16 +31,7 @@ export default function Home() {
       <Vjcinfo />
       <Footer />
 
-      {/* WhatsApp Icon (floating globally) */}
-      {/* <a
-        href="https://wa.me/+919160449000" // Replace with your WhatsApp number
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-5 bg-[#25D366] p-3 rounded-full shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-110 z-[9999] animate-bounce"
-      >
-        <FaWhatsapp size={40} color="white" />
-      </a> */}
-
+      
     </>
   );
 }

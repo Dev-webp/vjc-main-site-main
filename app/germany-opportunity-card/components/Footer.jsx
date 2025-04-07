@@ -3,6 +3,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTwitter } from 'react
 import { FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
+import Link from 'next/link';
 // import Form from '/Form';  
 import { FaEnvelope } from 'react-icons/fa';
 import { FaPhoneVolume } from "react-icons/fa6";
@@ -76,6 +77,7 @@ const Footer = () => {
 
           {/* Centered Book Free Consultation Button */}
           <div className="flex justify-center items-center p-0 md:p-5 lg:p-0 mt-4 lg:mt-0 tablet:mt-10 ">
+            <Link href='/assessment'>
       
         <button
           className="bg-saffron text-black font-semibold py-2 px-6 mr-4 lg:mr-0 ml-0 lg:ml-0 rounded-lg hover:bg-black hover:text-white transition uppercase mb-6 md:mb-0"
@@ -83,32 +85,11 @@ const Footer = () => {
         >
           Book Free Consultation
         </button>
+        </Link>
       
 
       {/* Popup Modal */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 opacity-100 transition-opacity duration-500 ease-in-out"
-          onClick={closeModal}  // Close the modal if user clicks outside
-        >
-          <div
-            className={`bg-white p-6 rounded-lg shadow-lg max-w-md w-full h-[35rem] mb-14 md:mb-0 lg:mb-0 transform transition-all duration-500 ease-in-out ${
-              isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-            }`}
-            onClick={(e) => e.stopPropagation()}  // Prevent click from closing when clicking inside the modal
-          >
-            <div className="mt-0 md:mt-3 lg:mt-3">
-              {/* <Form />   */}
-            </div>
-            <button
-              className="absolute top-2 right-2 p-2 text-black bg-white rounded-full shadow-lg hover:bg-gray-200"
-              onClick={closeModal}  // Close button inside modal
-            >
-              <FaTimes className="text-xl text-black" />
-            </button>
-          </div>
-        </div>
-      )}
+      
     </div>
 
           {/* Social Media Icons on Right */}

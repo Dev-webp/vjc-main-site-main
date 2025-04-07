@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import Background from '../../../../public/bg-2.png';
 import { useScroll, useTransform, motion } from 'framer-motion';
+import Link from 'next/link';
 import Form from '@/app/components/Form'; // Importing your existing form component
 
 export default function Hero() {
@@ -64,9 +65,11 @@ export default function Hero() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.7, duration: 0.8 }}
                 >
+                    <Link href='/services'>
                     <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 ml-4 md:ml-0 lg:ml-0 rounded-lg shadow-lg transition-all">
                         Explore Services
                     </button>
+                    </Link>
                     <button 
                         className="bg-transparent border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-2 px-6 mt-4 md:mt-0 lg:mt-0 rounded-lg shadow-lg transition-all"
                         onClick={handleFormToggle} // Trigger form visibility toggle

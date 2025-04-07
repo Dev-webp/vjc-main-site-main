@@ -8,17 +8,17 @@ import Form from "./Form";
 import Content from "./Content";
 
 const visaData = [
-  { name: "Canada Permanent Residency Visa", path: "/PR-visas/canadapr", image: "/1.jpg" },
-  { name: "Australia Permanent Residency Visa", path: "/PR-visas/australiapr", image: "/airplane.png" },
-  { name: "UK Permanent Residency Visa", path: "/PR-visas/ukpr", image: "/dmbusi.jpg" },
-  { name: "New Zealand Permanent Residency Visa", path: "/PR-visas/newzealandpr", image: "/images/newzealand.jpg" },
-  { name: "Germany Blue Card Visa", path: "/PR-visas/germanybluecard", image: "/images/germany.jpg" },
-  { name: "USA Green Card", path: "/PR-visas/usagreencard", image: "/images/usa.jpg" },
+  { name: "Canada Permanent Residency Visa", path: "/prvisas/canadapr", image: "/1.jpg" },
+  { name: "Australia Permanent Residency Visa", path: "/prvisas/australiapr", image: "/airplane.png" },
+  { name: "UK Permanent Residency Visa", path: "/prvisas/ukpr", image: "/dmbusi.jpg" },
+  { name: "New Zealand Permanent Residency Visa", path: "/prvisas/newzealandpr", image: "/images/newzealand.jpg" },
+  { name: "Germany Blue Card Visa", path: "/prvisas/germanybluecard", image: "/images/germany.jpg" },
+  { name: "USA Green Card", path: "/prvisas/usagreencard", image: "/images/usa.jpg" },
 ];
 
 const defaultVisa = {
   name: "Permanent Residency Visa",
-  path: "/PR-visas",
+  path: "/prvisas",
   image: "/pr1.jpg",
 };
 

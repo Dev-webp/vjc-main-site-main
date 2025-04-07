@@ -3,7 +3,7 @@ import React from "react";
 const AustraliaPRVisa = () => {
   return (
     <div style={{ fontFamily: "Times New Roman", padding: "20px" }}>
-      <h1 className="text-2xl md:text-3xl font-semibold text-gray-900">
+      <h1 className="text-2xl md:text-2xl font-semibold text-gray-900">
         Australia Permanent Residency Visa: Your Pathway to a Bright Future Down
         Under
       </h1>

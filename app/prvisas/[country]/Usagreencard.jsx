@@ -11,7 +11,7 @@ const UsaGreenCard = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="text-2xl md:text-3xl font-bold">
+      <h2 className="text-2xl md:text-2xl font-bold">
         USA Green Card Visa: Your Path to the American Dream with <span className="text-orange-600">VJC Overseas</span>
       </h2>
 

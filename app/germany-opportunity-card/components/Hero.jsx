@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative flex flex-col lg:flex-row items-center lg:justify-center w-full h-[63rem] md:h-[42rem] lg:h-[40rem] tablet:h-[78rem] bg-cover bg-center bg-blend-overlay transition-all duration-1000 ease-in-out"
+      className="relative flex flex-col lg:flex-row items-center lg:justify-center w-full h-[63rem] md:h-[42rem] lg:h-[40rem] tablet:h-[78rem] bg-cover bg-center bg-blend-overlay transition-all duration-1000 ease-in-out top-20"
     >
       {/* Background Image with next/image */}
       <div className="absolute inset-0 z-0">
