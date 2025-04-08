@@ -201,11 +201,11 @@ const Form = () => {
           ></textarea>
         </div>
 
-        <div className="flex justify-center">
+        <div className="w-full flex justify-center">
           <button
             type="submit"
-            className="w-3/4 bg-gray-800 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 shadow-lg"
             disabled={loading}
+           className="w-full bg-gray-950 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 shadow-lg -mt-4 sm:mt-0  sm:mb-0"
           >
             {formStatus === 'success' ? 'Form Submitted!' : loading ? 'Submitting...' : 'Submit for Free Assessment'}
           </button>

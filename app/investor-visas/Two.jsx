@@ -119,7 +119,7 @@ const Migrate = () => {
         {/* LEFT SIDE: Image + Form */}
         <div className="w-full md:w-1/2 flex flex-col gap-8">
           {/* Image Section */}
-          <div className="w-full flex justify-center md:justify-start">
+          <div className="w-full flex justify-center md:justify-start -mt-20 md:-mt-6">
             <Image
               src="/invest.jpg"
               alt="Migration Image"
@@ -136,7 +136,7 @@ const Migrate = () => {
         </div>
 
 {/* RIGHT SIDE: Combined Text Section */}
-<div className="w-full md:w-1/2 max-w-full h-[120vh] overflow-y-auto pr-4" style={{ fontFamily: 'Times New Roman, serif' }}>
+<div className="w-full md:w-1/2 max-w-full h-[160vh] overflow-y-auto pr-4 -mt-6" style={{ fontFamily: 'Times New Roman, serif' }}>
   <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800">
     <span className="text-orange-600">VJC Overseas</span> - Start Your Investment Journey
   </h2>

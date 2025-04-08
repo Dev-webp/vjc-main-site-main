@@ -76,7 +76,8 @@ const Migrate = () => {
           </div>
 
           {/* RIGHT SECTION - Visa Buttons */}
-          <div className="flex flex-col space-y-10 center justify-start lg:ml-36 mt-10 sm:mt-16">
+          <div className="flex flex-col space-y-10 items-center mt-10 sm:mt-16 lg:ml-36 sm:items-center">
+
             {showButtons &&
               visaData.map((visa, index) => {
                 const isEven = index % 2 === 0;
@@ -142,7 +143,7 @@ const Migrate = () => {
               className="space-y-2"
             >
               <p className="text-xl font-semibold text-black">Popular Job Seeker Visa Destinations:</p>
-              import Link from 'next/link';
+              
 
 <ul className="list-none space-y-2 text-blue-900 text-lg pl-4">
   <li><Link href="/migrate/germany" className="hover:text-black">• Migrate To Germany</Link></li>
@@ -175,7 +176,9 @@ const Migrate = () => {
       >
         <X className="w-5 h-5" />
       </button>
+      <div className="">
       <Form />
+      </div>
     </div>
   </div>
 )}

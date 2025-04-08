@@ -10,7 +10,7 @@ import Why from "./files/Why";
 
 export const metadata = {
   title: 'About VJC Overseas – Trusted Visa & Immigration Experts',
-  description: 'VJC Overseas is a leading visa & immigration consultancy. Get guidance for work, study & PR visas. Trusted for smooth & hassle-free immigration.',
+  description: 'Trusted visa & immigration consultancy for work, study & PR. VJC Overseas offers expert guidance and smooth, stress-free immigration services.',
   keywords: 'immigration consultants, visa consultants, australia pr, work visa, australia pr visa, permanent residency, germany opportunity card, study visa usa, job visa in australia, best immigration consultants in Hyderabad, best immigration consultants in Bangalore, study abroad, visa process, work permit, student visa',
 };
 

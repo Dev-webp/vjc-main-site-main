@@ -143,7 +143,7 @@ const MigrateCountry = () => {
       >
         <div className="w-full lg:w-1/2 lg:ml-16 mt-[-2rem] text-center lg:text-left">
           <h1
-            className="font-semibold uppercase leading-tight text-teal-950 text-3xl sm:text-4xl md:text-5xl lg:text-[3.50rem] mt-12 sm:mt-12"
+            className="font-semibold uppercase leading-tight text-teal-950 text-3xl sm:text-4xl md:text-5xl lg:text-[3.50rem] mt-20 sm:mt-12"
             style={{ fontFamily: "Times New Roman, serif" }}
           >
             Migrate to {country.charAt(0).toUpperCase() + country.slice(1)}

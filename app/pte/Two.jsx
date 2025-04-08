@@ -36,8 +36,8 @@ const Migrate = () => {
       {/* Main Content */}
       <div className="flex flex-col md:flex-row w-full px-4 md:px-8 mt-6">
   {/* Left Section - Buttons + Form */}
-  <div className="w-full md:w-1/3 space-y-4">
-    <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
+  <div className="w-full md:w-1/3 space-y-16">
+    <div className="grid grid-cols-0 flex justify-center md:grid-cols-1 gap-6">
       <Link href="/ielts">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
         IELTS

@@ -79,33 +79,34 @@ const ResumeMarketingBook = () => {
       {/* Top Section */}
       <div className="flex flex-col lg:flex-row justify-center  lg:justify-end items-start gap-10 mt-8">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 space-y-6 px-2 sm:px-4 bg-black bg-opacity-50 mt-12 sm:mt-24 lg:mt-36 lg:pr-18">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-3xl sm:text-4xl font-bold text-white drop-shadow-xl"
-          >
-            Explore Global Resume Marketing
-          </motion.h1>
-          <motion.p
+         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 px-4 sm:px-6 mt-12 sm:mt-20 lg:mt-36">
+           <motion.h1
+             initial={{ opacity: 0, y: -20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8 }}
+            className="text-2xl sm:text-4xl font-bold text-black drop-shadow-xl leading-tight"
+            >
+             Explore Global Resume Marketing
+            </motion.h1>
+  
+           <motion.p
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-base sm:text-lg text-gray-100 drop-shadow"
-          >
-            Promote your resume in top international job markets with our expert support.
-          </motion.p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => router.push("/resume-marketing/canada-resume-marketing")}
-            className="bg-orange-600  hover:bg-orange-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300"
-          >
+            className="text-base sm:text-lg text-black drop-shadow"
+           >
+             Promote your resume in top international job markets with our expert support.
+           </motion.p>
+  
+           <motion.button
+           whileHover={{ scale: 1.05 }}
+           whileTap={{ scale: 0.95 }}
+           onClick={() => router.push("/resume-marketing/canada-resume-marketing")}
+           className="bg-orange-600 hover:bg-orange-700 text-black px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300"
+           >
             Know More
-          </motion.button>
-        </div>
-
+         </motion.button>
+          </div>
         {/* Flip Book */}
         <div className="w-full lg:w-1/2 flex justify-center items-center px-2 sm:px-4 mt-8 lg:mt-0">
           <div className="relative w-[280px] sm:w-[320px] md:w-[450px] h-[420px] sm:h-[460px] md:h-[500px] perspective-[1200px]">
@@ -137,7 +138,7 @@ const ResumeMarketingBook = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
-                    className="text-sm sm:text-base text-gray-200 drop-shadow text-center"
+                    className="text-sm sm:text-base text-white drop-shadow text-center"
                   >
                     Explore our premium resume marketing services in <strong>{countries[currentPage].title.split(" ")[0]}</strong> to get noticed by global employers.
                   </motion.p>
@@ -199,7 +200,7 @@ const ResumeMarketingBook = () => {
     </motion.p>
 
     {/* Scrollable Content Box Starts Here */}
-    <div className="max-h-[400px] sm:max-h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300 space-y-4 text-sm sm:text-base text-black bg-white p-4 border border-gray-500 backdrop-blur-md font-[Times_New_Roman]">
+    <div className="max-h-[400px] sm:max-h-[500px] overflow-y-auto w-full sm:w-[560px] scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300 space-y-4 text-sm sm:text-base text-black bg-white p-4 border border-gray-500 backdrop-blur-md font-[Times_New_Roman]">
       <p className="font-bold text-lg text-black">
         Resume Marketing Services at <span className="text-orange-600">VJC Overseas</span>
       </p>

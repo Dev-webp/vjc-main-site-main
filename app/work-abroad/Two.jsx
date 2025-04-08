@@ -156,9 +156,9 @@ style={{ fontFamily: 'Times New Roman, serif' }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full mt-32 px-4 lg:px-20 relative"
+          className="w-full mt-48 px-4 lg:px-20 relative"
         >
-          <h2 className="text-2xl lg:text-3xl font-semibold text-center mb-6">
+          <h2 className=" flex justify-center text-2xl lg:text-3xl font-semibold text-center md:mt-0">
             Select Your Work Permit Destination
           </h2>
 
@@ -225,7 +225,7 @@ style={{ fontFamily: 'Times New Roman, serif' }}
                 backgroundPosition: "center",
               }}
             />
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/2 mt-10 md:mt-0">
               <Form />
             </div>
           </div>
