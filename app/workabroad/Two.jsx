@@ -4,43 +4,43 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Globe, ArrowRight, X } from "lucide-react";
+import { X } from "lucide-react";
 import Form from "./Form"; // Adjust path if needed
 
 const countriesData = [
   {
     name: "Germany Work Permit",
-    path: "/work-abroad/germany-work-permit",
+    path: "/workabroad/germany-work-permit",
     image: "/germany.jpg",
   },
   {
     name: "Canada Work Permit",
-    path: "/work-abroad/canada-work-permit",
+    path: "/workabroad/canada-work-permit",
     image: "/canada.webp",
   },
   {
     name: "USA H1b Visa",
-    path: "/work-abroad/usa-h1b-visa",
+    path: "/workabroad/usa-h1b-visa",
     image: "/usa1.jpg",
   },
   {
     name: "Australia Work Permit",
-    path: "/work-abroad/australia-work-permit",
+    path: "/workabroad/australia-work-permit",
     image: "/australia.jpg",
   },
   {
     name: "UK Work Permit",
-    path: "/work-abroad/united-kingdom-work-permit",
+    path: "/workabroad/united-kingdom-work-permit",
     image: "/uk1.webp",
   },
   {
     name: "Denmark Work Permit",
-    path: "/work-abroad/denmark-work-permit",
+    path: "/workabroad/denmark-work-permit",
     image: "/de.jpg",
   },
   {
     name: "Dubai Work Permit",
-    path: "/work-abroad/dubai-work-permit",
+    path: "/workabroad/dubai-work-permit",
     image: "/du.webp",
   },
 ];
@@ -69,9 +69,7 @@ const Migrate = () => {
 
   return (
     <>
-      {/* Popup Form Modal */}
-      {/* POPUP FORM */}
-      {showFormPopup && (
+     {showFormPopup && (
   <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
     <div className="relative bg-gradient-to-br from-black/50 to-gray/50 -mt-24 md:-mt-24  shadow-2xl p-6 sm:p-6 max-w-md w-full max-h-[80vh] animate-fadeIn">
       <button
@@ -80,7 +78,9 @@ const Migrate = () => {
       >
         <X className="w-5 h-5" />
       </button>
+      <div className="">
       <Form />
+      </div>
     </div>
   </div>
 )}
@@ -156,9 +156,9 @@ style={{ fontFamily: 'Times New Roman, serif' }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full mt-48 px-4 lg:px-20 relative"
+          className="w-full mt-32 px-4 lg:px-20 relative"
         >
-          <h2 className=" flex justify-center text-2xl lg:text-3xl font-semibold text-center md:mt-0">
+          <h2 className="text-2xl lg:text-3xl font-semibold text-center mb-6">
             Select Your Work Permit Destination
           </h2>
 
@@ -225,7 +225,7 @@ style={{ fontFamily: 'Times New Roman, serif' }}
                 backgroundPosition: "center",
               }}
             />
-            <div className="w-full lg:w-1/2 mt-10 md:mt-0">
+            <div className="w-full lg:w-1/2">
               <Form />
             </div>
           </div>
