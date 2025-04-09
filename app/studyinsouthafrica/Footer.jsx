@@ -1,11 +1,12 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
 
-const Footer = () => {
+const Footer = () => { 
   return (
-    <>
-    <footer className="bg-gradient-to-r from-gray-900  to-gray-800 text-white py-12">
+    <> 
+    <footer className="bg-gradient-to-r from-gray-900  to-gray-800 text-white py-12" style={{fontFamily:'Times new roman'}}>
     <div className="max-w-7xl mx-auto px-5 text-center md:text-left border-b border-gray-700 mb-10">
         {/* Grid for Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-2">
@@ -13,21 +14,21 @@ const Footer = () => {
             <div>
                 <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">About Us</h3>
                 <ul className="space-y-2 text-center ml-2 lg:text-left mb-6 md:mb-0 lg:mb-0">
-                    <li><a href="services" className="hover-underline">Services</a></li>
-                    <li><a href="/" className="hover-underline">Our CEO Message</a></li>
-                    <li><a href="/" className="hover-underline">Our Network</a></li>
-                    <li><a href="/" className="hover-underline">Careers</a></li>
+                    <Link href="services" className="hover-underline">Services</Link>
+                    <Link href="/" className="hover-underline">Our CEO Message</Link>
+                    <Link  href="/" className="hover-underline">Our Network</Link>
+                    <Link  href="/" className="hover-underline">Careers</Link>
                 </ul>
             </div>
             {/* Services */}
             <div>
                 <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">Our Blogs</h3>
                 <ul className="space-y-2 text-center lg:text-left mb-6 md:mb-0 lg:mb-0">
-                    <li><a href="/migrate/canada" className="hover-underline">Canada Immigration</a></li>
-                    <li><a href="/migrate/australia" className="hover-underline">Australia Immigration</a></li>
-                    <li><a href="/migrate/united-states" className="hover-underline">USA Immigration</a></li>
-                    <li><a href="/migrate/germany" className="hover-underline">Germany Immigration</a></li>
-                    <li><a href="/migrate/germany/work-visa" className="hover-underline">Germany Jobs</a></li>
+                    <Link href="/migrate/canada" className="hover-underline">Canada Immigration</Link>
+                    <Link href="/migrate/australia" className="hover-underline">Australia Immigration</Link>
+                    <Link href="/migrate/united-states" className="hover-underline">USA Immigration</Link>
+                    <Link href="/migrate/germany" className="hover-underline">Germany Immigration</Link>
+                    <Link href="/migrate/germany/work-visa" className="hover-underline">Germany Jobs</Link>
                 </ul>
             </div>
 
@@ -35,11 +36,11 @@ const Footer = () => {
             <div>
     <h3 className="text-lg  font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">Settle your future in Abroad</h3>
     <ul className="space-y-1 text-center lg:text-left ml-2 mb-6 md:mb-0 lg:mb-0">
-        <li><a href="/prvisas/canadapr" className="hover-underline">Settle in Canada</a></li>
-        <li><a href="/prvisas/australiapr" className="hover-underline">Settle in Australia</a></li>
-        <li><a href="/prvisas/germanybluecard" className="hover-underline">Settle in Germany</a></li>
-        <li><a href="/prvisas/ukpr" className="hover-underline">Settle in UK</a></li>
-        <li><a href="/prvisas/usagreencard" className="hover-underline">Settle in USA</a></li>
+    <Link href="/prvisas/canadapr" className="hover-underline">Settle in Canada</Link>
+    <Link href="/prvisas/australiapr" className="hover-underline">Settle in Australia</Link>
+        <Link href="/prvisas/germanybluecard" className="hover-underline">Settle in Germany</Link>
+        <Link href="/prvisas/ukpr" className="hover-underline">Settle in UK</Link>
+        <Link href="/prvisas/usagreencard" className="hover-underline">Settle in USA</Link>
         
     </ul>
 </div>
@@ -48,12 +49,12 @@ const Footer = () => {
 <div>
                 <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">Other Services</h3>
                 <ul className="space-y-2 text-center lg:text-left mb-6 md:mb-0 lg:mb-0">
-                    <li><a href="/assessment" className="hover-underline">Free Eligibility Check</a></li>
-                    <li><a href="/" className="hover-underline">Free Counselling</a></li>
-                    <li><a href="/assessment" className="hover-underline">Free Assessment Online</a></li>
-                    <li><a href="/" className="hover-underline">Fast and Easy Process</a></li>
-                    <li><a href="#" className="hover-underline">Professional Job Assistance</a></li>
-                    <li><a href="/resume-marketing" className="hover-underline">High Quality Resume Marketing</a></li>
+                    <Link href="/assessment" className="hover-underline">Free Eligibility Check</Link>
+                    <Link href="/" className="hover-underline">Free Counselling</Link>
+                    <Link href="/assessment" className="hover-underline">Free Assessment Online</Link>
+                    <Link href="/" className="hover-underline">Fast and Easy Process</Link>
+                    <Link href="#" className="hover-underline">Professional Job Assistance</Link>
+                    <Link href="/resume-marketing" className="hover-underline">High Quality Resume Marketing</Link>
                 </ul>
             </div>
 
@@ -62,25 +63,25 @@ const Footer = () => {
             <div>
                 <h3 className="text-lg font-bold text-orange-500 mb-4 uppercase text-center lg:text-left">Follow us</h3>
                 <div className="flex space-x-4 text-center lg:text-left justify-center lg:justify-start">
-                    <a href="https://www.facebook.com/VJCOVERSEAS/" className="group">
+                    <Link href="https://www.facebook.com/VJCOVERSEAS/" className="group">
                         <FaFacebook className="text-white group-hover:text-orange-500" />
-                    </a>
-                    <a href="https://twitter.com/vjcoverseas" className="group">
+                    </Link>
+                    <Link href="https://twitter.com/vjcoverseas" className="group">
                         <FaTwitter className="text-white group-hover:text-orange-500" />
-                    </a>
-                    <a href="https://www.instagram.com/vjc_overseas_bangalore/?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw%3D%3D" className="group">
+                    </Link>
+                    <Link href="https://www.instagram.com/vjc_overseas_bangalore/?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw%3D%3D" className="group">
                         <FaInstagram className="text-white group-hover:text-orange-500" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/vjc-overseas/" className="group">
+                    </Link>
+                    <Link href="https://www.linkedin.com/company/vjc-overseas/" className="group">
                         <FaLinkedin className="text-white group-hover:text-orange-500" />
-                    </a>
-                    <a href="https://www.youtube.com/@Vjcoverseas" className="group">
+                    </Link>
+                    <Link href="https://www.youtube.com/@Vjcoverseas" className="group">
                         <FaYoutube className="text-white group-hover:text-orange-500" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex flex-col items-center justify-center md:items-start mb-6 md:mb-0 mt-6 w-full md:w-auto ml-0 tablet:ml-20 md:ml-0 lg:ml-0">
-            <p className="text-gray-200 font-medium">Email : <a href="mailto:info@vjcoverseas.com" className="hover:text-saffron">info@vjcoverseas.com</a></p>
-            <p className="mt-2 font-medium text-gray-200 ml-0 tablet:ml-2 md:ml-0 lg:ml-0">Contact : <a href="tel:+919160449000" className="hover:text-saffron">+91 9160449000</a></p>
+            <p className="text-gray-200 font-medium">Email : <Link href="mailto:info@vjcoverseas.com" className="hover:text-saffron">info@vjcoverseas.com</Link></p>
+            <p className="mt-2 font-medium text-gray-200 ml-0 tablet:ml-2 md:ml-0 lg:ml-0">Contact : <Link href="tel:+919160449000" className="hover:text-saffron">+91 9160449000</Link></p>
           </div>
             </div>
         </div>
@@ -126,9 +127,9 @@ const Footer = () => {
 <p>TX 75024, USA</p>
 <p className="mt-2 flex items-center justify-center space-x-2 hover:text-saffron">
     <FaWhatsapp size={25} />
-    <a href="tel:+13322012159" className="text-base">
+    <Link href="tel:+13322012159" className="text-base">
         +1 3322012159
-    </a>
+    </Link>
 </p>
 
             {/* Google Map */}
@@ -175,48 +176,10 @@ const Footer = () => {
          {/* Copyright Section */}
          <div className="border-t border-gray-700 pt-6 flex flex-col items-center space-y-4 mt-4">
             <p>&copy; 2024 VJC Overseas. All Rights Reserved.</p>
-            {/* <button
-                className="bg-orange-500 text-black px-4 py-2 rounded-md hover:bg-orange-600"
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            >
-                Book Free Consultation
-            </button> */}
+            
         </div>
 
-        {/* Call to Action & Email Section */}
-        {/* <div className="flex flex-col md:flex-row justify-between mt-8 space-x-6 items-center md:items-start ml-0 lg:ml-10">
-          
-          <div className="flex flex-col items-center md:items-start mb-6 md:mb-0 w-full md:w-auto">
-            <p className="text-gray-300">Email: <a href="mailto:info@vjcoverseas.com" className="hover:text-saffron">info@vjcoverseas.com</a></p>
-            <p className="mt-2 font-semibold text-gray-300">CONTACT: <a href="tel:+919160449000" className="hover:text-saffron">+91 9160449000</a></p>
-          </div>
-
-          
-          <Link href="#form" passHref>
-            <button className="bg-saffron text-black font-semibold py-2 px-6 mr-4 lg:mr-0 ml-0 lg:ml-0 rounded-lg hover:bg-black hover:text-white transition uppercase mb-6 md:mb-0">
-              Book Free Consultation
-            </button>
-          </Link>
-
-          
-          <div className="flex space-x-6 justify-center md:justify-start w-full md:w-auto">
-            <a href="https://www.facebook.com/VJCOVERSEAS/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-saffron">
-              <FaFacebook size={24} />
-            </a>
-            <a href="https://twitter.com/vjcoverseas" target="_blank" rel="noopener noreferrer" className="text-white hover:text-saffron">
-              <FaTwitter size={24} />
-            </a>
-            <a href="https://www.instagram.com/vjc_overseas_bangalore/?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-white hover:text-saffron">
-              <FaInstagram size={24} />
-            </a>
-            <a href="https://www.linkedin.com/company/vjc-overseas/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-saffron">
-              <FaLinkedin size={24} />
-            </a>
-            <a href="https://www.youtube.com/@vjcoverseas9434" target="_blank" rel="noopener noreferrer" className="text-white hover:text-saffron">
-              <FaYoutube size={24} />
-            </a>
-          </div>
-        </div> */}
+       
         </div>
 </footer>
 
