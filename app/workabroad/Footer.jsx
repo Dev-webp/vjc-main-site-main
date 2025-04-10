@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -12,35 +13,69 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-2">
             {/* Navigation */}
             <div>
-                <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">About Us</h3>
-                <ul className="space-y-2 text-center ml-2 lg:text-left mb-6 md:mb-0 lg:mb-0">
-                    <Link href="services" className="hover-underline">Services</Link>
-                    <Link href="/" className="hover-underline">Our CEO Message</Link>
-                    <Link  href="/" className="hover-underline">Our Network</Link>
-                    <Link  href="/" className="hover-underline">Careers</Link>
-                </ul>
-            </div>
+  <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">
+    About Us
+  </h3>
+  <ul className="space-y-2 text-center ml-2 lg:text-left mb-6 md:mb-0 lg:mb-0">
+    <li>
+      <Link href="/services" className="hover-underline">Services</Link>
+    </li>
+    <li>
+      <Link href="/" className="hover-underline">Our CEO Message</Link>
+    </li>
+    <li>
+      <Link href="/" className="hover-underline">Our Network</Link>
+    </li>
+    <li>
+      <Link href="/" className="hover-underline">Careers</Link>
+    </li>
+  </ul>
+</div>
+
             {/* Services */}
             <div>
-                <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">Our Blogs</h3>
-                <ul className="space-y-2 text-center lg:text-left mb-6 md:mb-0 lg:mb-0">
-                    <Link href="/migrate/canada" className="hover-underline">Canada Immigration</Link>
-                    <Link href="/migrate/australia" className="hover-underline">Australia Immigration</Link>
-                    <Link href="/migrate/united-states" className="hover-underline">USA Immigration</Link>
-                    <Link href="/migrate/germany" className="hover-underline">Germany Immigration</Link>
-                    <Link href="/migrate/germany/work-visa" className="hover-underline">Germany Jobs</Link>
-                </ul>
-            </div>
+  <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">
+    Our Blogs
+  </h3>
+  <ul className="space-y-2 text-center lg:text-left mb-6 md:mb-0 lg:mb-0">
+    <li>
+      <Link href="/migrate/canada" className="hover-underline">Canada Immigration</Link>
+    </li>
+    <li>
+      <Link href="/migrate/australia" className="hover-underline">Australia Immigration</Link>
+    </li>
+    <li>
+      <Link href="/migrate/united-states" className="hover-underline">USA Immigration</Link>
+    </li>
+    <li>
+      <Link href="/migrate/germany" className="hover-underline">Germany Immigration</Link>
+    </li>
+    <li>
+      <Link href="/migrate/germany/work-visa" className="hover-underline">Germany Jobs</Link>
+    </li>
+  </ul>
+</div>
+
 
              
             <div>
-    <h3 className="text-lg  font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">Settle your future in Abroad</h3>
-    <ul className="space-y-1 text-center lg:text-left ml-2 mb-6 md:mb-0 lg:mb-0">
+    <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">Settle your future in Abroad</h3>
+    <ul className="space-y-2 text-center lg:text-left mb-6 md:mb-0 lg:mb-0">
+        <li>
     <Link href="/prvisas/canadapr" className="hover-underline">Settle in Canada</Link>
+    </li>
+    <li>
     <Link href="/prvisas/australiapr" className="hover-underline">Settle in Australia</Link>
+    </li>
+     <li>
         <Link href="/prvisas/germanybluecard" className="hover-underline">Settle in Germany</Link>
+        </li>
+        <li>
         <Link href="/prvisas/ukpr" className="hover-underline">Settle in UK</Link>
+        </li>
+        <li>
         <Link href="/prvisas/usagreencard" className="hover-underline">Settle in USA</Link>
+        </li>
         
     </ul>
 </div>
@@ -49,12 +84,24 @@ const Footer = () => {
 <div>
                 <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">Other Services</h3>
                 <ul className="space-y-2 text-center lg:text-left mb-6 md:mb-0 lg:mb-0">
+                    <li>
                     <Link href="/assessment" className="hover-underline">Free Eligibility Check</Link>
+                    </li>
+                    <li>
                     <Link href="/" className="hover-underline">Free Counselling</Link>
+                  </li>
+                  <li>
                     <Link href="/assessment" className="hover-underline">Free Assessment Online</Link>
+                    </li>
+                    <li>
                     <Link href="/" className="hover-underline">Fast and Easy Process</Link>
+                    </li>
+                    <li>
                     <Link href="#" className="hover-underline">Professional Job Assistance</Link>
+                    </li>
+                    <li>
                     <Link href="/resume-marketing" className="hover-underline">High Quality Resume Marketing</Link>
+                    </li>
                 </ul>
             </div>
 
