@@ -7,6 +7,8 @@ import Canada from "./Canada";
 import H1b from "./H1b";
 import Australia from "./Australia";
 import Denmark from "./Denmark";
+import Uk from "./Uk";
+import Dubai from "./Dubai";
 import Form from "../Form";
 
 // Visa options data
@@ -61,8 +63,9 @@ const visaComponents = {
   "canada-work-permit": Canada,
   "usa-h1b-visa": H1b,
   "australia-work-permit": Australia,
-
+  "united-kingdom-work-permit": Uk,
   "denmark-work-permit": Denmark,
+  "dubai-work-permit": Dubai,
 };
 
 // Backgrounds

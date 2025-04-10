@@ -17,7 +17,7 @@ const Navbar = () => {
     
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "About us", path: "/about-us" },
+    // { name: "About us", path: "/about-us" },
     { name: "Migrate To", path: "/migrate" },
     { name: "Study Abroad", path: "/studyabroad" },
     { name: "PR Visas", path: "/prvisas" },
@@ -32,10 +32,10 @@ const Navbar = () => {
   ];
 
   const extraItems = [
-    { name: "About us" },
-    { name: "Services" },
-    { name: "Blog" },
-    { name: "Contact" },
+    { name: "About us", path: "/about-us" },
+    { name: "Services", path: "/services" },
+    { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact-us"},
   ];
 
   const fixedItems = [
@@ -249,15 +249,18 @@ const Navbar = () => {
             </p>
           </div>
 
-         {/* Desktop Menu */}
-      <div className="hidden md:flex items-center space-x-4 mr-6">
-        {extraItems.map((item, index) => (
-          <div key={index} className="flex items-center space-x-1 hover:text-orange-500 cursor-pointer">
-            <span>{item.name}</span>
-            <FaChevronRight size={12} />
-          </div>
-        ))}
+        {/* Desktop Menu */}
+<div className="hidden md:flex items-center space-x-4 mr-6">
+  {extraItems.map((item, index) => (
+    <Link key={index} href={item.path}>
+      <div className="flex items-center space-x-1 hover:text-orange-500 cursor-pointer">
+      <FaChevronRight size={12} />
+        <span>{item.name}</span>
+        
       </div>
+    </Link>
+  ))}
+</div>
     
               <a href="tel:+919160449000" className="flex items-center text-white py-1 px-0 rounded-lg text-xs lg:text-sm whitespace-nowrap font-bold uppercase mr-6">
                 <div className="relative w-6 h-6 mr-2">
@@ -497,31 +500,7 @@ const Navbar = () => {
 
   </nav>
 
-  {/* Dropdown Menu for Small Screens */}
-  {/* <div
-    className={`absolute left-0 w-full bg-gradient-to-tr from-black to-orange-600/75 shadow-md transition-all duration-300  ${
-      isMenuOpen ? "top-full opacity-100 visible" : "top-[-300px] opacity-0 invisible" 
-    }`} style={{fontFamily:'Times new roman'}}
-  >
-    <ul className="flex flex-col text-center py-4 space-y-3 max-h-[500px] overflow-y-auto">
-      {menuItems.map((item, index) => (
-        <li key={item.name}>
-          <Link
-            href={item.path}
-            className="text-white text-lg font-semibold hover:underline"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {item.name}
-          </Link>
-          {index < menuItems.length - 1 && <hr className="w-1/2 mx-auto border-black opacity-50" />}
-        </li>
-      ))}
-
-      
-      
-    </ul>
-  </div> */}
- 
+  
 
 </div>
 
