@@ -4,6 +4,7 @@ import Script from 'next/script'; // Import Next.js Script
 import './globals.css';
 import FloatingWhatsApp from '@/app/components/FloatingWhatsapp';
 import Nav from '@/app/components/Nav';
+import Header from '@/app/components/Header';
 import TawkToChat from '@/app/components/TawkToChat';
 
 // Load Google Fonts using next/font
@@ -89,6 +90,7 @@ export default function RootLayout({
         {/* End Google Tag Manager (noscript) */}
 
         <Nav />
+        {/* <Header/> */}
         {children}
         <FloatingWhatsApp />
         <TawkToChat />

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
 import {
   FaEnvelope,
   FaBars,
@@ -22,7 +23,6 @@ const Navbar = () => {
     { name: "PR Visas", path: "/prvisas" },
     { name: "Work Abroad", path: "/workabroad" },
     { name: "Job Seeker Visas", path: "/jobseeker-visas" },
-    
     { name: "Visit Visas", path: "/visitvisas" },
     { name: "Investor Visas", path: "/investor-visas" },
     { name: "Schengen Visas", path: "/schengen-visas" },
@@ -30,6 +30,14 @@ const Navbar = () => {
     { name: "Coaching/Training", path: "/coaching" },
    
   ];
+
+  const extraItems = [
+    { name: "About us" },
+    { name: "Services" },
+    { name: "Blog" },
+    { name: "Contact" },
+  ];
+
   const fixedItems = [
     { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" },
@@ -212,7 +220,7 @@ const Navbar = () => {
        
       
       {/* Top Section */}
-      <div className="bg-white py-0 px-2 shadow-md z-50 fixed top-0 w-screen">
+      <div className="bg-white py-0 px-2  shadow-md z-50 fixed top-0 w-screen">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           {/* Logo */}
           <div className="flex items-center -ml-5">
@@ -235,52 +243,40 @@ const Navbar = () => {
           </div>
 
           {/* Marquee */}
-          <div className="marquee-container flex-1 mx-4 hidden md:block">
+          <div className="marquee-container flex-1 mx-10 hidden md:block">
             <p className="whitespace-nowrap animate-marquee uppercase text-sm text-gray-800">
               Your Study and Work Abroad Opportunities Await! Explore the world with us. Learn more about visa programs and opportunities today!
             </p>
           </div>
 
-          {/* Contact Info */}
-          <div className="flex items-center space-x-2">
-            <div className="hidden md:flex items-center space-x-2 text-sm text-black uppercase font-semibold italic">
-              {["Bangalore", "Hyderabad", "USA"].map((location) => (
-                <div key={location} className="flex items-center animate-pulse text-custom-blue">
-                  <div className="relative w-5 h-5 mr-1">
-                    <Image src="/loc.png" alt={location} fill className="object-contain" />
-                  </div>
-                  <p>{location}</p>
-                </div>
-              ))}
-            </div>
-             
-            <div className="hidden md:flex items-center space-x-2 text-xs lg:text-sm text-black uppercase font-semibold italic">
-              <div className="flex items-center animate-pulse text-custom-blue">
-                <a href="mailto:info@vjcoverseas.com" className="flex items-center">
-                  <FaEnvelope className="mr-1 w-5 h-5 text-orange-500" />
-                  <p>info@vjcoverseas.com</p>
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <a href="tel:+919160449000" className="flex items-center text-white py-1 px-0 rounded-lg text-xs lg:text-sm whitespace-nowrap font-bold uppercase mr-3">
-                <div className="relative w-6 h-6 mr-1">
+         {/* Desktop Menu */}
+      <div className="hidden md:flex items-center space-x-4 mr-6">
+        {extraItems.map((item, index) => (
+          <div key={index} className="flex items-center space-x-1 hover:text-orange-500 cursor-pointer">
+            <span>{item.name}</span>
+            <FaChevronRight size={12} />
+          </div>
+        ))}
+      </div>
+    
+              <a href="tel:+919160449000" className="flex items-center text-white py-1 px-0 rounded-lg text-xs lg:text-sm whitespace-nowrap font-bold uppercase mr-6">
+                <div className="relative w-6 h-6 mr-2">
                   <Image src="/phone.gif" alt="Phone" fill className="object-contain" />
                 </div>
                 <span className="text-custom-blue">+91 9160449000</span>
               </a>
             </div>
           </div>
-        </div>
-      </div>
+       
+    
       
 
 {/* Desktop Navbar */}
 <div className="bg-orange-500 fixed top-12 w-screen z-50 hidden md:block">
-  <nav className="flex justify-between items-center max-w-6xl py-1.5">
-    <div className="flex flex-row -space-x-2 whitespace-nowrap">
-      {menuItems.map((item, index) => (
+  <div className="max-w-6xl mx-auto">
+    <nav className="flex justify-center items-center py-2 text-xs">
+      <div className="flex flex-row -space-x-2 whitespace-nowrap">
+        {menuItems.map((item, index) => (
         <React.Fragment key={item.name}>
           {item.name === "Study Abroad" ? (
             <div className="relative group">
@@ -304,6 +300,7 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
+            
           ) : item.name === "Resume Marketing" ? (
             <div className="relative group">
               <Link
@@ -423,6 +420,7 @@ const Navbar = () => {
     </div>
   </nav>
 </div>
+</div>
 
 
 <div className="fixed left-2 md:left-0 top-[33vh] z-50 flex flex-col gap-0 max-w-[90vw] w-auto">
@@ -473,13 +471,34 @@ const Navbar = () => {
     </div>
 
     {/* Hamburger Menu */}
-    <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white text-2xl focus:outline-none">
-      {isMenuOpen ? <FaTimes /> : <FaBars />}
-    </button>
+    <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="flex flex-col items-end justify-end text-xs space-y-1">
+  <span className="block h-1 w-8 bg-white rounded"></span>   {/* Big line */}
+  <span className="block h-1 w-6 bg-white rounded"></span>   {/* Smaller line */}
+  <span className="block h-1 w-4 bg-white rounded"></span>   {/* Smallest line */}
+</button>
+{/* Mobile Menu */}
+{isMenuOpen && (
+  <div className="absolute top-full left-0 w-full bg-gradient-to-tr from-orange-500 to-black/80 text-white flex flex-col space-y-2 font-bold p-4 z-50">
+    {menuItems.map((item, index) => (
+      <div key={index} className="border-b border-white/20 pb-2">
+        <a href={item.path} className="hover:text-orange-500 block">
+          {item.name}
+        </a>
+      </div>
+    ))}
+    {extraItems.map((item, index) => (
+      <div key={index} className="flex items-center justify-between border-b border-white/20 pb-2 hover:text-orange-500 cursor-pointer">
+        <span>{item.name}</span>
+        <FaChevronRight size={12} />
+      </div>
+    ))}
+  </div>
+)}
+
   </nav>
 
   {/* Dropdown Menu for Small Screens */}
-  <div
+  {/* <div
     className={`absolute left-0 w-full bg-gradient-to-tr from-black to-orange-600/75 shadow-md transition-all duration-300  ${
       isMenuOpen ? "top-full opacity-100 visible" : "top-[-300px] opacity-0 invisible" 
     }`} style={{fontFamily:'Times new roman'}}
@@ -501,7 +520,9 @@ const Navbar = () => {
       
       
     </ul>
-  </div>
+  </div> */}
+ 
+
 </div>
 
 
