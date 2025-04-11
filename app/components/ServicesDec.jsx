@@ -97,14 +97,15 @@ const ServicesDec = () => {
 
   return (
     <motion.div
-      className="flex items-center justify-center w-auto lg:w-[98.70vw] h-[85rem] lg:h-screen  relative bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url('/comp-21.webp')`,
-      }}
-      initial="hidden"
-      animate="visible"
-      variants={pageVariants}
-    >
+  className="flex items-center justify-center w-screen h-[85rem] lg:h-screen relative bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: `url('/comp-21.webp')`,
+  }}
+  initial="hidden"
+  animate="visible"
+  variants={pageVariants}
+>
+
       {/* Central Button */}
       <motion.div
         className="relative"
