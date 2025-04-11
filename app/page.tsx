@@ -28,7 +28,7 @@ export default function Home() {
       <Suspense fallback={<LoadingIndicator />}>
         <Desc />
         <ServicesDec />
-        {/* <Scroll /> */}
+        <Scroll />
         <NewSteps />
         <CTA />
         <Parallex />
