@@ -2,8 +2,8 @@ import React from "react";
 
 const StudyInNewZealand = () => {
   return (
-    <div style={{ fontFamily: "Times New Roman", padding: "20px",fontSize: "20px" }}>
-      <h1>
+    <div className="max-w-4xl mx-auto px-3 py-8 text-justify text-lg leading-relaxed" style={{ fontFamily: 'Times New Roman, serif' }}>
+      <h1 className="text-3xl font-bold mb-6">
         Welcome to <span style={{ color: "orange" }}>VJC</span> Overseas – Your Gateway to Studying in New Zealand
       </h1>
       <p>

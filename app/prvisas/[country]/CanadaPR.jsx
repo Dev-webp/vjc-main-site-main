@@ -1,13 +1,29 @@
 import React from "react";
+import Image from "next/image";
 
 const CanadaPR = () => {
   return (
-    <div className="text-gray-800 space-y-6 text-lg leading-relaxed" style={{fontFamily:'Times new Roman'}}>
-      <h2 className="text-2xl md:text-2xl font-semibold text-gray-900">
-        Canada Permanent Residence Visa: Your Pathway to a New Life in Canada
-      </h2>
-
-      <p>
+    <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
+      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+      Canada Permanent Residence Visa - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+      </h1>
+       {/* Image and Intro Text Side by Side */}
+             <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+               {/* Image */}
+               <div className="md:w-1/2 w-full">
+                 <Image
+                   src="/Canadian_Permanent_Resident.jpg"
+                   alt="canada permanent residence Guidance by VJC Overseas"
+                   width={700}
+                   height={400}
+                   className="w-full object-cover "
+                   priority
+                 />
+               </div>
+       
+               {/* Text */}
+               <div className="md:w-1/2 text-justify">
+                 <p className="mb-4 mt-4">
         Canada offers one of the most welcoming environments for immigrants worldwide,
         and obtaining a Permanent Residence (PR) Visa is a life-changing opportunity.
         At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we specialize
@@ -16,8 +32,9 @@ const CanadaPR = () => {
         With its high quality of life, excellent healthcare and education systems,
         and abundant job opportunities, Canada promises a future full of possibilities.
       </p>
-
-      <h3 className="text-xl font-semibold text-gray-900">
+      </div>
+      </div>
+      <h3 className="text-xl mt-4 mb-2 font-semibold text-gray-900">
         Why Choose Canada for Permanent Residency?
       </h3>
       <p>
@@ -28,10 +45,10 @@ const CanadaPR = () => {
         Canada offers all that and more.
       </p>
 
-      <h3 className="text-xl font-semibold text-gray-900">
+      <h3 className="text-xl mt-4 mb-2 font-semibold text-gray-900">
         Living Expenses and Lifestyle in Canada
       </h3>
-      <ul className="list-disc pl-6 space-y-2">
+      <ul className="list-disc pl-6 space-y-1">
         <li>
           <strong>Housing:</strong> Monthly rent for a one-bedroom apartment can range
           from CAD 1,200 to CAD 2,500 in major cities like Toronto and Vancouver.
@@ -57,7 +74,7 @@ const CanadaPR = () => {
         enjoy a healthy and active lifestyle.
       </p>
 
-      <h3 className="text-xl font-semibold text-gray-900">
+      <h3 className="text-xl mt-4 mb-2 font-semibold text-gray-900">
         Processing Time for Canada PR Visa
       </h3>
       <p>
@@ -72,10 +89,10 @@ const CanadaPR = () => {
         and paperwork.
       </p>
 
-      <h3 className="text-xl font-semibold text-gray-900">
+      <h3 className="text-xl mt-4 mb-2 font-semibold text-gray-900">
         Visa Fees
       </h3>
-      <ul className="list-disc pl-6 space-y-2">
+      <ul className="list-disc pl-6 space-y-1">
         <li><strong>Principal applicant fee:</strong> CAD 1,365</li>
         <li><strong>Spouse or common-law partner fee:</strong> CAD 1,365</li>
         <li><strong>Dependent child fee:</strong> CAD 230 per child</li>
@@ -87,7 +104,7 @@ const CanadaPR = () => {
         transparent and accurate estimates to ensure you are prepared for all costs involved.
       </p>
 
-      <h3 className="text-xl font-semibold text-gray-900">
+      <h3 className="text-xl mt-4 mb-2 font-semibold text-gray-900">
         Get Started with <span className="text-orange-500 font-semibold">VJC Overseas</span>
       </h3>
       <p>

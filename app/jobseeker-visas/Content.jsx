@@ -1,69 +1,107 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 
-const Content = ({ selectedVisa }) => {
-  // Check if it's the default visa
-  const isDefaultContent = selectedVisa?.path === "/PR-visas";
+const paragraphs = [
+  {
+    text: "At VJC Overseas, we specialize in guiding aspiring professionals through the Job Seeker Visa process. Our experts evaluate your profile and identify the best-fit countries like Germany, Austria, and Sweden based on your qualifications and goals. We provide a detailed consultation to help you understand which country aligns best with your industry. Our team also educates you about the legal requirements, visa success rates, and current employment trends in each destination.",
+    image: "/Job-Seeker-Visa-Guide.jpg",
+  },
+  {
+    text: "We provide personalized resume and cover letter creation services as per international standards. Our team helps you create a CV that stands out in European and global job markets. We ensure your resume highlights relevant skills, uses ATS-friendly formats, and aligns with employer expectations. Cover letters are customized to specific roles, industries, and countries, making your application more compelling.",
+    image: "/job_seeker_visa_1.png",
+  },
+  {
+    text: "With VJC Overseas, you get full support in application documentation, embassy appointments, and interview scheduling. Our dedicated case managers help you compile all necessary paperwork including educational, professional, and financial documents. We ensure that your file meets embassy standards, guide you through online submissions, and coordinate timely interview slot bookings.",
+    image: "/JOB-SEEKER-VISA.png",
+  },
+  {
+    text: "We assist with job portal access, employer outreach strategies, and offer mock interview preparation to boost your confidence and communication skills during job interviews. You’ll get guidance on creating profiles on leading job boards, writing attention-grabbing emails to recruiters, and participating in career fairs. Our mock interviews simulate real employer questions, helping you prepare effectively.",
+    image: "/jobseeker1.png",
+  },
+  {
+    text: "Even after landing abroad, our post-arrival services include accommodation guidance, local tips, and continued support until you're comfortably settled in your new career journey. We help you find affordable and safe housing options, explain local transportation, and support you in registering with local authorities. You’ll also receive cultural orientation and professional networking tips for a smooth transition.",
+    image: "/jobseekwe.avif",
+  },
+];
 
-  if (!isDefaultContent) return null;
+const JobSeekerHelp = () => {
+  const refs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const el = entry.target;
+          if (entry.isIntersecting) {
+            el.classList.add("animate-scroll-text");
+            el.classList.remove("before-scroll");
+          } else {
+            el.classList.remove("animate-scroll-text");
+            el.classList.add("before-scroll");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    refs.current.forEach((ref) => ref && observer.observe(ref));
+
+    return () => {
+      refs.current.forEach((ref) => ref && observer.unobserve(ref));
+    };
+  }, []);
 
   return (
-    <div className="text-gray-800 space-y-5 text-base sm:text-lg leading-relaxed">
-      <h2 className="text-2xl sm:text-3xl font-bold">
-        Permanent Resident Visa – <span className="text-orange-500">VJC Overseas</span>
+    <div className="py-10 px-4 md:px-12 font-times">
+      <style jsx>{`
+        .font-times {
+          font-family: "Times New Roman", Times, serif;
+        }
+        .before-scroll {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        .animate-scroll-text {
+          opacity: 1 !important;
+          transform: translateY(0px) !important;
+          transition: all 0.9s ease-out;
+        }
+      `}</style>
+
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+        How VJC Overseas Supports Your Job Seeker Visa Journey
       </h2>
 
-      <p>
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we understand that securing permanent residency in a new country is a significant milestone in your life. It represents new opportunities, stability, and a fresh start. Whether you’re looking to move for work, education, family reunification, or personal growth, we are committed to helping you navigate the complex visa process with ease and confidence.
-      </p>
-
-      <h3 className="text-xl font-semibold">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Permanent Resident Visa?</h3>
-      <p>
-        With years of experience and expertise in immigration law, <span className="text-orange-500">VJC Overseas</span> stands as a trusted partner for individuals and families looking to become permanent residents in some of the world’s most desirable destinations. Our team of immigration consultants works closely with you to ensure that your application is thorough, accurate, and meets all legal requirements.
-      </p>
-      <p>
-        We specialize in various immigration pathways, including skilled migration, family sponsorships, business investment visas, and more. Our in-depth knowledge of the latest immigration policies and procedures ensures that we can guide you through the complexities of each process to maximize your chances of approval.
-      </p>
-
-      <h3 className="text-xl font-semibold">Permanent Residency – A Gateway to Your Future</h3>
-      <ul className="list-disc list-inside pl-4 space-y-2">
-        <li><strong>Long-Term Stability:</strong> Live, work, and study in your new country indefinitely, without the need for frequent visa renewals.</li>
-        <li><strong>Access to Healthcare and Social Benefits:</strong> Many countries offer permanent residents access to essential healthcare and social services.</li>
-        <li><strong>Pathway to Citizenship:</strong> Permanent residency often leads to citizenship with added rights like voting and passport privileges.</li>
-        <li><strong>Family Reunification:</strong> Sponsor your loved ones and build your future together in your new home country.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold">Our Expertise: Permanent Resident Visa Categories</h3>
-      <ol className="list-decimal list-inside pl-4 space-y-2">
-        <li><strong>Skilled Worker Visa:</strong> For professionals with in-demand skills in destination countries.</li>
-        <li><strong>Family Sponsorship Visa:</strong> Reunite with your spouse, children, or parents easily and legally.</li>
-        <li><strong>Investment & Entrepreneur Visas:</strong> Leverage your business acumen or investments to secure residency.</li>
-        <li><strong>Student to PR Pathway:</strong> Transition from student visa to permanent residency after your studies.</li>
-        <li><strong>Refugee and Humanitarian Visa:</strong> Get support for immigration on humanitarian grounds.</li>
-      </ol>
-
-      <h3 className="text-xl font-semibold">How <span className="text-orange-500">VJC Overseas</span> Can Help</h3>
-      <ul className="list-disc list-inside pl-4 space-y-2">
-        <li><strong>Eligibility Assessment:</strong> We evaluate your profile and recommend suitable PR programs.</li>
-        <li><strong>Visa Strategy:</strong> We craft a tailored immigration strategy based on your background and goals.</li>
-        <li><strong>Application Preparation:</strong> Accurate, timely and professional documentation handling.</li>
-        <li><strong>Document Guidance:</strong> Assistance in gathering and presenting required documents.</li>
-        <li><strong>Ongoing Support:</strong> Stay informed and supported throughout your visa journey.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold">Start Your Journey Today</h3>
-      <p>
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we believe that everyone deserves the chance to build a better future. Our Permanent Resident Visa services are designed to make the immigration process as smooth and hassle-free as possible.
-      </p>
-      <p>
-        Whether you're just starting your immigration journey or need assistance with an ongoing application, our team is ready to help you every step of the way. Get in touch with us today to schedule your consultation and take the first step toward securing your permanent residency!
-      </p>
-
-      <h3 className="text-xl font-semibold">Contact Us Today!</h3>
-      <p>
-        Let <span className="text-orange-500 font-semibold">VJC Overseas</span> be your trusted guide to permanent residency. Reach out to our expert immigration consultants now and start your journey towards a new chapter in life.
-      </p>
+      <div className="space-y-10 ml-6 md:ml-14 mr-6 md:mr-14">
+        {paragraphs.map((item, index) => (
+          <div
+            key={index}
+            ref={(el) => (refs.current[index] = el)}
+            className={`before-scroll flex flex-col ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            } items-center gap-6 md:gap-10`}
+            style={{ transitionDelay: `${index * 0.1}s` }}
+          >
+            <div className="md:w-3/4">
+              <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
+                {item.text}
+              </p>
+            </div>
+            <div className="md:w-1/4 flex justify-center">
+              <Image
+                src={item.image}
+                alt={`Job Seeker Help ${index + 1}`}
+                width={600}
+                height={350}
+                className="object-cover object-center w-full h-[250px] max-w-[400px]"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
-export default Content;
+export default JobSeekerHelp;

@@ -1,87 +1,95 @@
 import React from "react";
+import Image from "next/image";
 
 const AustraliaPRVisa = () => {
   return (
-    <div style={{ fontFamily: "Times New Roman", padding: "20px" }}>
-      <h1 className="text-2xl md:text-2xl font-semibold text-gray-900">
-        Australia Permanent Residency Visa: Your Pathway to a Bright Future Down
-        Under
+    <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman] text-[15px] sm:text-base">
+      <h1 className="flex justify-center text-xl sm:text-2xl font-bold mb-8 text-center">
+        Australia Permanent Residence Visa -{" "}
+        <span className="text-orange-500">&nbsp;VJC Overseas</span>
       </h1>
-      <h2>
-        Welcome to <span style={{ color: "orange" }}>VJC Overseas</span>, your
-        trusted partner in obtaining Australia Permanent Residency (PR).
-      </h2>
+
+      {/* Image and Intro Text Side by Side */}
+      <div className="flex flex-col md:flex-row items-center gap-10 mb-8">
+        {/* Image */}
+        <div className="w-full md:w-1/3">
+          <Image
+            src="/permanent-residency-visa.jpg"
+            alt="australia permanent residence Guidance by VJC Overseas"
+            width={400}
+            height={300}
+            className="w-full h-auto "
+            priority
+          />
+        </div>
+
+        {/* Text */}
+        <div className="w-full md:w-1/2 text-justify">
+          <h2 className="mb-4 mt-4 font-bold">
+            Welcome to <span className="text-orange-500">VJC Overseas</span>,
+          </h2>
+          <p>
+            • <b>Your trusted partner</b> in obtaining Australia Permanent Residency (PR). Whether you're looking to settle in Australia's bustling cities, picturesque coastal regions, or tranquil rural areas, this visa offers you the opportunity to enjoy a high quality of life, lucrative job opportunities, and a stable future.
+          </p>
+        </div>
+      </div>
+
+      <h2 className="font-bold mt-6">• What is an Australia Permanent Residency Visa?</h2>
       <p>
-        Whether you're looking to settle in Australia's bustling cities,
-        picturesque coastal regions, or tranquil rural areas, this visa offers
-        you the opportunity to enjoy a high quality of life, lucrative job
-        opportunities, and a stable future.
-      </p>
-      <h2>What is an Australia Permanent Residency Visa?</h2>
-      <p>
-        An Australia Permanent Residency Visa is a gateway for skilled
-        individuals, families, and professionals to live, work, and enjoy the
-        many benefits of life in Australia. With PR status, you gain access to
-        a range of services, including healthcare, education, and the chance to
-        apply for Australian citizenship.
+        • <b>A gateway for skilled individuals</b> and families to live and work in Australia. PR holders enjoy access to healthcare, education, and a path to Australian citizenship.
       </p>
       <p>
-        <span style={{ color: "orange" }}>VJC Overseas</span> helps guide you
-        through the visa application process, ensuring you meet all necessary
-        requirements to secure your PR status.
+        • <b>VJC Overseas</b> guides you through the application process, helping you meet all criteria confidently.
       </p>
-      <h2>Why Choose Australia?</h2>
+
+      <h2 className="font-bold mt-6">• Why Choose Australia?</h2>
       <p>
-        Australia is a land of opportunity, known for its thriving economy,
-        world-class infrastructure, and diverse culture. As one of the most
-        popular destinations for migrants, it boasts a high standard of living
-        and a work-life balance that many countries strive to achieve.
+        • <b>World-class living standards</b>, strong economy, diverse culture, and excellent public infrastructure make Australia a top migration destination.
       </p>
-      <h2>Job Opportunities in Australia for PR Holders</h2>
-      <ul>
-        <li>Information Technology (IT): Software developers, network engineers, and cybersecurity professionals.</li>
-        <li>Healthcare: Doctors, nurses, allied health professionals, and healthcare administrators.</li>
-        <li>Engineering: Civil, mechanical, electrical, and mining engineers.</li>
-        <li>Construction and Trade: Builders, electricians, plumbers, and carpenters.</li>
-        <li>Education: Teachers, trainers, and education administrators.</li>
-        <li>Business and Finance: Accountants, financial analysts, marketing managers, and HR professionals.</li>
+
+      <h2 className="font-bold mt-6">• Job Opportunities in Australia for PR Holders</h2>
+      <ul className="list-disc pl-6 space-y-1">
+        <li><b>Information Technology (IT):</b> Software developers, network engineers, cybersecurity experts.</li>
+        <li><b>Healthcare:</b> Doctors, nurses, allied health professionals, healthcare admins.</li>
+        <li><b>Engineering:</b> Civil, mechanical, electrical, and mining engineers.</li>
+        <li><b>Construction & Trades:</b> Builders, electricians, plumbers, and carpenters.</li>
+        <li><b>Education:</b> Teachers, trainers, education administrators.</li>
+        <li><b>Business & Finance:</b> Accountants, financial analysts, HR professionals.</li>
       </ul>
-      <h2>Salary Range for Australia Permanent Residents</h2>
-      <ul>
-        <li>Information Technology: AU$70,000 to AU$130,000 per year</li>
-        <li>Healthcare: AU$60,000 to AU$250,000 per year</li>
-        <li>Engineering: AU$75,000 to AU$150,000 per year</li>
-        <li>Construction & Trades: AU$60,000 to AU$100,000 per year</li>
-        <li>Business and Finance: AU$70,000 to AU$120,000 per year</li>
-        <li>Education: AU$50,000 to AU$95,000 per year</li>
+
+      <h2 className="font-bold mt-6">• Salary Range for Australia Permanent Residents</h2>
+      <ul className="list-disc pl-6 space-y-1">
+        <li><b>IT:</b> AU$70,000 - AU$130,000/year</li>
+        <li><b>Healthcare:</b> AU$60,000 - AU$250,000/year</li>
+        <li><b>Engineering:</b> AU$75,000 - AU$150,000/year</li>
+        <li><b>Construction & Trades:</b> AU$60,000 - AU$100,000/year</li>
+        <li><b>Business & Finance:</b> AU$70,000 - AU$120,000/year</li>
+        <li><b>Education:</b> AU$50,000 - AU$95,000/year</li>
       </ul>
-      <h2>Benefits of an Australia Permanent Residency Visa</h2>
-      <ul>
-        <li>Work and Live Anywhere</li>
-        <li>Access to Healthcare</li>
-        <li>Education Opportunities</li>
-        <li>Social Security Benefits</li>
-        <li>Pathway to Citizenship</li>
+
+      <h2 className="font-bold mt-6">• Benefits of an Australia PR Visa</h2>
+      <ul className="list-disc pl-6 space-y-1">
+        <li>Work and live anywhere in Australia</li>
+        <li>Access to Medicare and public healthcare</li>
+        <li>Free or subsidized education</li>
+        <li>Social security benefits</li>
+        <li>Eligibility for Australian citizenship</li>
       </ul>
-      <h2>How <span style={{ color: "orange" }}>VJC Overseas</span> Can Help</h2>
+
+      <h2 className="font-bold mt-6">• How <span className="text-orange-500">VJC Overseas</span> Can Help</h2>
       <p>
-        Navigating the Australia PR visa process can be complex, with multiple
-        visa pathways, including skilled migration, family sponsorship, and
-        employer-sponsored visas. At <span style={{ color: "orange" }}>VJC Overseas</span>, we simplify the process by
-        providing expert advice, step-by-step assistance, and ensuring that
-        your application meets the strict requirements set by the Australian
-        Department of Home Affairs.
-      </p>
-      <h2>Get Started Today</h2>
-      <p>
-        Don’t wait any longer to take the next step towards your Australia
-        Permanent Residency. Contact <span style={{ color: "orange" }}>VJC Overseas</span> today to schedule a free
-        consultation. Let us help you unlock the doors to a prosperous future
-        in one of the world’s most sought-after countries.
+        • <b>Expert advice and personal guidance</b> for skilled migration, family sponsorship, and employer-sponsored visa pathways.
       </p>
       <p>
-        Contact us now for more information on how to apply for your Australia
-        PR visa and start your new life in Australia!
+        • We ensure <b>your application is accurate</b> and aligns with Australian immigration requirements.
+      </p>
+
+      <h2 className="font-bold mt-6">• Get Started Today</h2>
+      <p>
+        • Don’t wait to begin your Australian PR journey. <b>Contact VJC Overseas</b> now for a free consultation and unlock a prosperous future!
+      </p>
+      <p>
+        • We’re here to make your <b>dreams of Australian living a reality</b> — reach out today!
       </p>
     </div>
   );

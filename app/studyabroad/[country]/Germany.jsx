@@ -1,20 +1,37 @@
 import React from 'react';
+import Image from 'next/image';
 
 const GermanyStudyVisa = () => {
   return (
-    <div className="p-6 max-w-5xl mx-auto text-justify">
-      <div className="text-[Times New Roman, serif] text-base md:text-lg leading-7 text-justify space-y-4">
-        <h1 className="text-3xl font-bold mb-4">
-          Germany Study Visa - <span className="text-orange-500">VJC Overseas</span>
-        </h1>
+    <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
+      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+        Study in Germany - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+      </h1>
 
-        <p>
-          Are you dreaming of studying in Germany, one of the most prestigious countries for higher education worldwide?
-          With its world-class universities, innovative research, and diverse culture, Germany is an excellent destination
-          for international students. Whether you are applying for free or paid education, <span className="text-orange-500">VJC Overseas</span> is here to guide you through the entire process, making your journey smooth and hassle-free.
-        </p>
+      {/* Intro section with image on the right */}
+      <div className="flex flex-col md:flex-row items-center gap-10 mb-10">
+        <div className="w-full md:w-2/3">
+          <p>
+            Are you dreaming of studying in Germany, one of the most prestigious countries for higher education worldwide?
+            With its world-class universities, innovative research, and diverse culture, Germany is an excellent destination
+            for international students. Whether you are applying for free or paid education, <span className="text-orange-500">VJC Overseas</span> is here to guide you through the entire process, making your journey smooth and hassle-free.
+          </p>
+        </div>
+        <div className="w-full md:w-1/3">
+          <Image
+            src="/study-in-Germany-.png"
+            alt="Study in Germany"
+            width={500}
+            height={500}
+           
+          />
+        </div>
+      </div>
 
-        <h2 className="text-2xl font-semibold mt-6">Study in Germany: New Changes, Free and Paid Education Eligibility</h2>
+      {/* Full-width content below */}
+      <div className="w-full">
+        <h2 className="text-xl font-semibold mt-6">Study in Germany: New Changes, Free and Paid Education Eligibility</h2>
+
         <h3 className="text-xl font-semibold mt-4">New Changes for Germany Study Visa in 2024</h3>
         <ul className="list-disc pl-5">
           <li>Streamlined Visa Processing: The visa processing time has been reduced in some regions to help students prepare for their academic start dates.</li>
@@ -24,6 +41,7 @@ const GermanyStudyVisa = () => {
 
         <h3 className="text-xl font-semibold mt-4">Free Education in Germany – Eligibility, Benefits, and Advantages</h3>
         <p>Germany is well-known for offering free education at public universities. As of 2024, public universities in Germany still charge minimal administrative fees but no tuition fees for most UG/PG programs.</p>
+
         <h4 className="font-semibold">Eligibility for Free Education:</h4>
         <ul className="list-disc pl-5">
           <li>Course Acceptance: You must be accepted into a recognized public university in Germany.</li>
@@ -41,9 +59,7 @@ const GermanyStudyVisa = () => {
         </ul>
 
         <h3 className="text-xl font-semibold mt-4">Paid Education in Germany – Eligibility, Benefits, and Advantages</h3>
-        <p>
-          Private universities in Germany charge fees ranging from €5,000 to €20,000 per year. They offer niche programs, smaller class sizes, and faster degree completion.
-        </p>
+        <p>Private universities in Germany charge fees ranging from €5,000 to €20,000 per year. They offer niche programs, smaller class sizes, and faster degree completion.</p>
 
         <h4 className="font-semibold">Eligibility for Paid Education:</h4>
         <ul className="list-disc pl-5">
@@ -90,14 +106,16 @@ const GermanyStudyVisa = () => {
           <li><strong>Visa Approval:</strong> Once approved, you’ll receive your German student visa.</li>
         </ol>
 
-        <p><strong>Approximate Visa Fees:</strong> €75–€100 (~₹7,000–₹9,000)</p>
+        <p className="mt-2"><strong>Approximate Visa Fees:</strong> €75–€100 (~₹7,000–₹9,000)</p>
 
         <h3 className="text-xl font-semibold mt-4">Why Choose <span className="text-orange-500">VJC Overseas</span>?</h3>
         <p>
-          At <span className="text-orange-500">VJC Overseas</span>, we specialize in helping Indian students navigate the entire process of studying in Germany. From selecting the right university to visa processing and finding accommodation, we provide complete support and ensure you have the best experience. Our team is dedicated to making your dream of studying in Germany a reality.
+          At <span className="text-orange-500">VJC Overseas</span>, we specialize in helping Indian students navigate the entire process of studying in Germany.
+          From selecting the right university to visa processing and finding accommodation, we provide complete support and ensure you have the best experience.
+          Our team is dedicated to making your dream of studying in Germany a reality.
         </p>
 
-        <p>
+        <p className="mt-2">
           For more information on the study visa process, eligibility, and support for studying in Germany, contact <span className="text-orange-500">VJC Overseas</span> today!
         </p>
       </div>

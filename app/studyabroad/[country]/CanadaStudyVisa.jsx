@@ -1,19 +1,40 @@
 import React from "react";
+import Image from "next/image";
 
 const CanadaStudentVisa = () => {
   return (
-    <div className="p-6 max-w-5xl mx-auto text-justify">
-      <h1 className="text-3xl font-bold mb-4 text-blue-600" style={{ fontFamily: 'Times New Roman' }}>
-        Canada Student Visa: Your Pathway to World-Class Education
+    <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
+      {/* Heading */}
+      <h1 className="flex justify-center text-lg sm:text-2xl md:text-2xl font-bold mb-4 text-center whitespace-nowrap">
+        Study in Canada - <span className="text-orange-500">&nbsp;VJC Overseas</span>
       </h1>
-      <p className="mb-4" style={{ fontFamily: 'Times New Roman' }}>
-        Canada is a top destination for international students, offering a high standard of education, a welcoming multicultural environment, and numerous opportunities for career growth. If you’re planning to study in Canada, obtaining a Canada Student Visa (Study Permit) is an essential step. <span className="text-orange-600">VJC Overseas</span> guides you through the process, ensuring a smooth and successful application journey.
-      </p>
 
-      <h2 className="text-2xl font-semibold mb-2 text-blue-600" style={{ fontFamily: 'Times New Roman' }}>
+      {/* Image and Intro Text Side by Side */}
+      <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+        {/* Image */}
+        <div className="md:w-1/2 w-full">
+          <Image
+            src="/canada-student-visa.jpg"
+            alt="Canada Student Visa"
+            width={600}
+            height={400}
+            className=" w-full object-cover"
+          />
+        </div>
+
+        {/* Text */}
+        <div className="md:w-1/2 text-justify">
+          <p className="mb-4">
+            Canada is a top destination for international students, offering a high standard of education, a welcoming multicultural environment, and numerous opportunities for career growth. If you’re planning to study in Canada, obtaining a Canada Student Visa (Study Permit) is an essential step. <span className="text-orange-600">VJC Overseas</span> guides you through the process, ensuring a smooth and successful application journey.
+          </p>
+        </div>
+      </div>
+
+      {/* Eligibility Criteria */}
+      <h2 className="text-xl mt-4 font-semibold mb-2 text-black">
         Canada Student Visa: Basic Eligibility Criteria
       </h2>
-      <ul className="list-decimal pl-6 mb-4 space-y-2" style={{ fontFamily: 'Times New Roman' }}>
+      <ul className="list-decimal pl-6 mb-2 space-y-2">
         <li>
           <strong>Proof of Acceptance from a Recognized Institution:</strong>
           <ul className="list-disc pl-6">
@@ -53,10 +74,11 @@ const CanadaStudentVisa = () => {
         </li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mb-2 text-green-600" style={{ fontFamily: 'Times New Roman' }}>
+      {/* Documents Required */}
+      <h2 className="text-xl mt-4 font-semibold mb-2 text-green-600">
         Documents Required for Canada Student Visa Application
       </h2>
-      <ul className="list-decimal pl-6 mb-4 space-y-2" style={{ fontFamily: 'Times New Roman' }}>
+      <ul className="list-decimal pl-6 mb-2 space-y-2">
         <li>Valid Passport (at least six months beyond stay period)</li>
         <li>Proof of Acceptance (DLI Letter)</li>
         <li>Proof of Sufficient Funds (bank statements, affidavits)</li>
@@ -71,10 +93,11 @@ const CanadaStudentVisa = () => {
         <li>Biometrics (if required)</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mb-2 text-blue-600" style={{ fontFamily: 'Times New Roman' }}>
+      {/* Steps */}
+      <h2 className="text-xl mt-4 font-semibold mb-2 text-blue-600">
         Steps to Apply for a Canada Student Visa
       </h2>
-      <ol className="list-decimal pl-6 mb-4 space-y-2" style={{ fontFamily: 'Times New Roman' }}>
+      <ol className="list-decimal pl-6 mb-2 space-y-2">
         <li>Prepare Your Documents</li>
         <li>Complete the Application Form (IMM 1294)</li>
         <li>Submit the Application (Online or at VAC)</li>
@@ -83,17 +106,19 @@ const CanadaStudentVisa = () => {
         <li>Receive Your Visa and Letter of Introduction</li>
       </ol>
 
-      <h2 className="text-2xl font-semibold mb-2 text-green-600" style={{ fontFamily: 'Times New Roman' }}>
+      {/* Why VJC Overseas */}
+      <h2 className="text-xl mt-4 font-semibold mb-2 text-green-600">
         Why Choose <span className="text-orange-600">VJC Overseas</span>?
       </h2>
-      <p className="mb-4" style={{ fontFamily: 'Times New Roman' }}>
+      <p className="mb-4">
         At <span className="text-orange-600">VJC Overseas</span>, we understand that the process of applying for a Canadian student visa can be overwhelming. Our experts offer step-by-step guidance, personalized counselling, and help you choose the right course and institution in Canada.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-2 text-black-600" style={{ fontFamily: 'Times New Roman' }}>
+      {/* Call to Action */}
+      <h2 className="text-xl mt-4 font-semibold mb-2 text-black-600">
         Get in Touch Today!
       </h2>
-      <p style={{ fontFamily: 'Times New Roman' }}>
+      <p>
         Start your journey to studying in Canada with the trusted experts at <span className="text-orange-600">VJC Overseas</span>. Contact us today for a consultation and take the first step toward your Canadian dream!
       </p>
     </div>

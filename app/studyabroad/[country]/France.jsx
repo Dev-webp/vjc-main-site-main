@@ -1,60 +1,81 @@
-import React from "react";
-
+import React from 'react';
+import Image from 'next/image';
 const StudyInFrance = () => {
   return (
-    <div style={{ fontFamily: "Times New Roman, serif", padding: "20px",fontSize: "20px" }}>
-      <h1 className="text-3xl md:text-4xl font-bold mb-6" style={{ textAlign: "center", color: "#333" }}>
-        Study in France with <span style={{ color: "orange" }}>VJC Overseas</span>: Your Pathway to a World-Class Education
+    <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
+      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+        Study in France - <span className="text-orange-500">&nbsp;VJC Overseas</span>
       </h1>
-      <p>
-        Are you looking to study in one of the most renowned educational destinations in the world? At
-        <span style={{ color: "orange" }}> VJC Overseas</span>, we offer comprehensive services and guidance to help you navigate the process of studying in France...
+      {/* Image and Intro Text Side by Side */}
+      <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+        {/* Image */}
+        <div className="md:w-1/2 w-full">
+          <Image
+            src="/study-in-france.png"
+            alt="france Student Visa"
+            width={500}
+            height={300}
+            className=" w-full object-cover"
+          />
+        </div>
+        <div className="md:w-1/2 text-justify">
+      <p className="mb-6">
+        Welcome to <span className="text-orange-500">VJC Overseas</span>, your trusted partner in achieving your dream of studying in France.
+        France, celebrated for its world-class education, art, and culture, offers a premium academic experience for international students.
       </p>
-
-      <h2>Why Choose France for Higher Education?</h2>
-      <ul>
-        <li><b>World-Class Education System:</b> France is home to some of the most prestigious universities...</li>
-        <li><b>Affordable Education:</b> Studying in France is more affordable than other destinations...</li>
-        <li><b>Cultural and Linguistic Enrichment:</b> France is known for its rich culture, history, and cuisine...</li>
-        <li><b>Strong Industry Links:</b> Universities in France have close ties with industries for internships...</li>
-        <li><b>Post-Graduation Opportunities:</b> International students can stay and work in France for up to two years...</li>
+      </div>
+      </div>
+      <h2 className="text-xl font-bold mt-4 mb-2">Why Study in France?</h2>
+      <ul className="list-disc list-outside ml-6 space-y-2 mb-6 text-justify">
+        <li><strong>World-Class Education:</strong> France is home to globally renowned institutions and research facilities.</li>
+        <li><strong>Affordable Tuition Fees:</strong> Public universities offer subsidized tuition for international students.</li>
+        <li><strong>Cultural & Linguistic Experience:</strong> Immerse yourself in French language, cuisine, and heritage.</li>
+        <li><strong>Strong Industry Links:</strong> French institutions maintain robust ties with global industries for internships and placements.</li>
+        <li><strong>Post-Study Work Opportunities:</strong> France allows international graduates to stay and work up to two years post-graduation.</li>
+        <li><strong>Quality of Life:</strong> Enjoy a beautiful and vibrant lifestyle while pursuing your studies.</li>
       </ul>
 
-      <h2>Top Universities in France for International Students</h2>
-      <ul>
-        <li><b>Sorbonne University:</b> One of the oldest and most prestigious universities in Paris.</li>
-        <li><b>Université PSL:</b> A leading institution known for research and innovation.</li>
-        <li><b>University of Grenoble Alpes:</b> Located in the Alps, specializing in tech and business.</li>
-        <li><b>HEC Paris:</b> One of Europe’s leading business schools.</li>
-        <li><b>École Normale Supérieure:</b> Offers selective, world-class programs.</li>
+      <h2 className="text-xl font-bold mt-4 mb-2">Top French Universities & Grandes Écoles</h2>
+      <ul className="list-disc list-outside ml-6 space-y-2 mb-6 text-justify">
+        <li><strong>Sorbonne University:</strong> A historic and prestigious university in Paris.</li>
+        <li><strong>Université PSL (Paris Sciences et Lettres):</strong> Known for innovation and academic excellence.</li>
+        <li><strong>University of Grenoble Alpes:</strong> Offers strong programs in tech, business, and research.</li>
+        <li><strong>HEC Paris:</strong> One of the leading business schools in Europe.</li>
+        <li><strong>École Normale Supérieure:</strong> Renowned for elite academic training in humanities and sciences.</li>
       </ul>
 
-      <h2>Tuition Fees for International Students</h2>
-      <p>Here’s an overview of typical costs for international students:</p>
-      <ul>
-        <li>Public Universities: €170 - €450 per year (Undergraduate)</li>
+      <h2 className="text-xl font-bold  mt-4 mb-2">Tuition Fees</h2>
+      <ul className="list-disc list-outside ml-6 space-y-2 mb-6 text-justify">
+        <li>Public Universities (UG): €170 - €450 per year</li>
         <li>Grandes Écoles: €6,000 - €15,000 per year</li>
         <li>Private Institutions: €4,000 - €25,000 per year</li>
       </ul>
-      
-      <h2>Scholarships and Financial Aid</h2>
-      <ul>
-        <li><b>Eiffel Excellence Scholarship:</b> Covers tuition and living costs.</li>
-        <li><b>Charpak Scholarship:</b> For Indian students.</li>
-        <li><b>Erasmus Mundus Scholarships:</b> Joint degrees in Europe.</li>
+
+      <h2 className="text-xl font-bold mt-4 mb-2">Living Expenses</h2>
+      <p className="mb-6 text-justify">
+        Estimated monthly cost of living in France ranges from €800 to €1,200, including accommodation, food, transportation, and other essentials.
+      </p>
+
+      <h2 className="text-xl font-bold  mt-4 mb-2">Scholarships & Financial Aid</h2>
+      <ul className="list-disc list-outside ml-6 space-y-2 mb-6 text-justify">
+        <li>Eiffel Excellence Scholarship – covers tuition and living expenses</li>
+        <li>Charpak Scholarship – specifically for Indian students</li>
+        <li>Erasmus Mundus Scholarships – for joint master’s programs across Europe</li>
       </ul>
 
-      <h2>Benefits of Studying in France with <span style={{ color: "orange" }}>VJC Overseas</span></h2>
-      <ul>
-        <li><b>Expert Guidance:</b> Personalized services to help you choose the right course.</li>
-        <li><b>Visa Assistance:</b> Complete documentation and support.</li>
-        <li><b>Post-Arrival Services:</b> Help with accommodation, airport pickup, and more.</li>
-        <li><b>Career Services:</b> Internship and job placement support.</li>
+      <h2 className="text-xl font-bold  mt-4 mb-2">Why Choose <span className="text-orange-500">VJC Overseas</span>?</h2>
+      <ul className="list-disc list-outside ml-6 space-y-2 mb-6 text-justify">
+        <li>Personalized Counseling</li>
+        <li>University Application Assistance</li>
+        <li>Visa Process Support</li>
+        <li>Pre-Departure Orientation</li>
+        <li>Post-Arrival Assistance</li>
+        <li>Career Counseling & Internship Guidance</li>
       </ul>
 
-      <h2 style={{ textAlign: "center" }}>Start Your Journey to Study in France Today!</h2>
-      <p style={{ textAlign: "center" }}>
-        Get in touch with <span style={{ color: "orange" }}>VJC Overseas</span> to make your study abroad dreams a reality!
+      <h2 className="text-xl font-bold mt-4 mb-2">Get Started Today!</h2>
+      <p className="text-justify">
+        Ready to study in France? <span className="text-orange-500">VJC Overseas</span> is here to guide you every step of the way. Contact us today to explore your options, secure scholarships, and build your dream academic journey in France.
       </p>
     </div>
   );
