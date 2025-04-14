@@ -10,8 +10,8 @@ import {
   ChevronDown,
 } from "lucide-react";
 import Form from "./Form";
-import Content from "./Content"; // ✅ Import the Content component
-import Link from "next/link"; // Import Link from Next.js
+import Content from "./Content";
+import Link from "next/link";
 
 export default function JobSeekerVisaPage() {
   const countries = [
@@ -31,11 +31,22 @@ export default function JobSeekerVisaPage() {
 
   return (
     <div className="bg-gradient-to-br from-[#fdfcfb] to-[#e2d1c3] min-h-screen font-sans">
-      {/* Hero Section with GIF Background */}
-      <div className="relative bg-[url('/joobseeker.gif')] bg-cover bg-center min-h-screen">
-        <div className="relative max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      {/* Hero Section with Video Background */}
+      <div className="relative min-h-screen overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        >
+          <source src="/jobseeker.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           {/* Left Text */}
-          <div className="space-y-6 bg-black/30 p-6 text-white">
+          <div className="space-y-6 bg-black/40 p-6 text-white rounded-xl shadow-lg">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               Apply for a Job Seeker Visa
             </h1>
@@ -55,7 +66,7 @@ export default function JobSeekerVisaPage() {
           </div>
 
           {/* Right Form */}
-          <div>
+          <div className="z-10">
             <Form />
           </div>
         </div>
@@ -87,7 +98,7 @@ export default function JobSeekerVisaPage() {
       </div>
 
       {/* 👉 Content Section Below Buttons */}
-      <Content selectedVisa={{ path: "/PR-visas" }} />
+      <Content selectedVisa={{ path: "/pr-visas" }} />
     </div>
   );
 }
