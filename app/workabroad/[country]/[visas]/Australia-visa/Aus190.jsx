@@ -4,12 +4,12 @@ const AustraliaVisa190 = () => {
   return (
     <div className="p-6 ">
       <div className="max-w-4xl mx-auto   ">
-        <h1 className="text-3xl font-bold text-center mb-6" style={{ fontFamily: "Times New Roman" }}>
+        <h1 className="text-2xl font-bold text-center mb-6" style={{ fontFamily: "Times New Roman" }}>
           Australia Skilled Nominated Visa Subclass 190 - 
           <span className="text-orange-500"> VJC Overseas</span>
         </h1>
 
-        <p className="text-lg mb-4" style={{ fontFamily: "Times New Roman" }}>
+        <p className="text-base mb-4" style={{ fontFamily: "Times New Roman" }}>
           Unlock Your Future in Australia with the Skilled Nominated Visa Subclass 190
         </p>
 
@@ -22,7 +22,7 @@ const AustraliaVisa190 = () => {
           living expenses, and more.
         </p>
 
-        <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>What is the Skilled Nominated Visa Subclass 190?</h2>
+        <h2 className="text-xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>What is the Skilled Nominated Visa Subclass 190?</h2>
         <p className="mb-4" style={{ fontFamily: "Times New Roman" }}>
           The Skilled Nominated Visa Subclass 190 is a permanent visa for skilled workers who are nominated by an
           Australian state or territory. This visa allows you to live and work in Australia, with full access to the
@@ -31,7 +31,7 @@ const AustraliaVisa190 = () => {
           in Australia's labour market.
         </p>
 
-        <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Key Features of the Subclass 190 Visa</h2>
+        <h2 className="text-xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Key Features of the Subclass 190 Visa</h2>
         <ul className="list-disc ml-6 mb-4" style={{ fontFamily: "Times New Roman" }}>
           <li>Permanent Residency: Once granted, this visa gives you and your family permanent residency in Australia.</li>
           <li>Work Rights: The Subclass 190 visa allows you to work in any occupation listed in Australia’s skilled occupation list.</li>
@@ -39,7 +39,7 @@ const AustraliaVisa190 = () => {
           <li>Pathway to Citizenship: After living in Australia for a certain period, you can apply for Australian citizenship.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Eligibility for the Subclass 190 Visa</h2>
+        <h2 className="text-xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Eligibility for the Subclass 190 Visa</h2>
         <ul className="list-disc ml-6 mb-4" style={{ fontFamily: "Times New Roman" }}>
           <li>Occupation: Your occupation must be on Australia’s Skilled Occupation List.</li>
           <li>Skills Assessment: You need to undergo a skills assessment to verify your qualifications and experience.</li>
@@ -47,17 +47,17 @@ const AustraliaVisa190 = () => {
           <li>State Nomination: A state or territory in Australia must nominate you based on your occupation and skills.</li>
         </ul>
 
-        <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Salary Structure and Employment Opportunities in Australia</h2>
+        <h2 className="text-xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Salary Structure and Employment Opportunities in Australia</h2>
         <p className="mb-4" style={{ fontFamily: "Times New Roman" }}>
           Australia offers a competitive salary structure across various industries, providing a high standard of living. Salaries can vary depending on your occupation, experience, and location.
         </p>
         
-        <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Subclass 190 Visa?</h2>
+        <h2 className="text-xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Subclass 190 Visa?</h2>
         <p className="mb-4" style={{ fontFamily: "Times New Roman" }}>
           At <span className="text-orange-500">VJC Overseas</span>, we are committed to guiding you through every step of the Skilled Nominated Visa Subclass 190 application process. Our expert team will ensure that your visa application is processed efficiently, so you can start your new life in Australia as soon as possible.
         </p>
 
-        <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Start Your Journey Today</h2>
+        <h2 className="text-xl font-bold mb-4" style={{ fontFamily: "Times New Roman" }}>Start Your Journey Today</h2>
         <p className="mb-4" style={{ fontFamily: "Times New Roman" }}>
           Ready to begin your new life in Australia with the Skilled Nominated Visa Subclass 190? Contact
           <span className="text-orange-500"> VJC Overseas</span> today for expert advice, personalized guidance, and a seamless visa application process. Let us help you make your dream of living and working in Australia a reality!

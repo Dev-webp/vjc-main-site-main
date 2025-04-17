@@ -68,10 +68,10 @@ const Form = () => {
 
   return (
     <div
-      className="bg-white p-6 py-4 rounded-lg shadow-2xl max-w-md mx-auto w-full mb-6 shadow-gray-500"
+      className="bg-gradient-to-b from-blue-400/60 to-black/80 p-6 py-4  shadow-2xl max-w-md mx-auto w-full mb-6 rounded-lg shadow-gray-500"
       style={{ fontFamily: 'Times New Roman, serif' }}
     >
-      <h2 className="text-2xl font-semibold text-center text-gray-800 mt-0">
+      <h2 className="text-2xl font-semibold text-center  text-white mt-0">
         Sign up <span style={{ color: 'rgb(220, 4, 4)' }}> &</span> Get Free Assessment
       </h2>
 

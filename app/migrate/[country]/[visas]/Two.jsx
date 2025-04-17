@@ -16,6 +16,7 @@ import Canadastudent from "./Canadapages/Canadastudent";
 import Canadatourist from "./Canadapages/Canadatourist";
 import Canadapr from "./Canadapages/Canadapr";
 import Canadafs from "./Canadapages/Canadafs";
+import Canadawork from "./Canadapages/Canadawork"
 import Form from '../../Form';
 
 import USAstud from "./USA-visa/USA-stud";
@@ -158,7 +159,7 @@ const visaComponents = {
   'germany-self-employment-visa': Gselfempvisa,
 
   'canada-pr-visa': Canadapr,
-  'canada-work-permit': Canadapr,
+  'canada-work-permit': Canadawork,
   'canada-student-visa':Canadastudent,
   'canada-tourist-visa': Canadatourist,
   'canada-family-sponsorship-visa': Canadafs,

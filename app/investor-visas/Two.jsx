@@ -9,7 +9,7 @@ import Form from "./Form";
 
 const Migrate = () => {
   const scrollRef = useRef(null);
-  const backgroundImage = "/inevst.webp";
+  const backgroundImage = "/investor-visa1.webp";
 
   const countries = [
     { name: "USA Investor Visa", path: "/investor-visas/usa-investor-visa", image: "/ausinvestment.webp" },
@@ -31,7 +31,7 @@ const Migrate = () => {
   };
 
   return (
-    <div className="relative w-full flex flex-col items-center text-white px-4 sm:px-6 md:px-10 pb-10 bg-white overflow-hidden">
+    <div className="relative w-full bg-black bg-opacity-40 flex flex-col items-center text-white px-4 sm:px-6 md:px-10 pb-10 bg-white overflow-hidden">
       {/* Background Image */}
       <div
         className="relative inset-0  w-screen max-w-none xl:w-[100vw] 3xl:w-[100vw]  h-[600px] sm:h-[600px] md:h-[600px] bg-cover bg-center"
@@ -106,7 +106,7 @@ const Migrate = () => {
 
           <button
             onClick={scrollRight}
-            className="text-gray-700 hover:text-orange-600 bg-white p-2 rounded-full shadow"
+            className="text-gray-700 hover:text-orange-600 bg-white p-2  shadow"
             aria-label="Scroll Right"
           >
             <ChevronRight size={32} />
@@ -121,11 +121,11 @@ const Migrate = () => {
           {/* Image Section */}
           <div className="w-full flex justify-center md:justify-start -mt-20 md:-mt-6">
             <Image
-              src="/invest.jpg"
+              src="/investor-visa.webp"
               alt="Migration Image"
               width={600}
               height={400}
-              className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-full object-cover rounded-xl"
+              className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-full object-cover "
             />
           </div>
 

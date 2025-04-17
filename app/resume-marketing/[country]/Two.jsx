@@ -125,7 +125,7 @@ const Migrate = () => {
           {/* Visa Info Content Box */}
           <div
             className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative md:-mt-32 sm:-mt-20 mt-0"
-            style={{ maxHeight: "900px", minHeight: "550px", overflowY: "auto" }}
+            style={{ maxHeight: "1200px", minHeight: "900px", overflowY: "auto" }}
           >
             {selectedVisa.path === defaultVisa.path ? (
               <div className="text-gray-700 text-lg leading-relaxed">

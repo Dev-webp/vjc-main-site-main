@@ -37,11 +37,14 @@ const Newzestud = () => {
       <ul className='mb-6 ml-8 list-disc'>
           <li><b>World-Class Education: </b>New Zealand is home to some of the world’s top universities, offering internationally recognized degrees and qualifications.</li>
           <li><b>Cultural Diversity: </b>A safe, welcoming environment with diverse cultural experiences.</li>
-          <li><b>Work While You Study: </b>Opportunities to work part-time during your studies and full-time during breaks.</li>
-          <li><b>Post-Study Work Opportunities: </b>New Zealand offers a range of post-study work visas that can help you gain valuable international work experience.</li>
+        
       </ul>
        </div>  
       </div>
+      <ul className='list-disc'>
+      <li><b>Work While You Study: </b>Opportunities to work part-time during your studies and full-time during breaks.</li>
+      <li><b>Post-Study Work Opportunities: </b>New Zealand offers a range of post-study work visas that can help you gain valuable international work experience.</li>
+      </ul>
 
       <h3 className='text-black m-2 font-bold text-lg mb-6'>
      Types of New Zealand Student Visas

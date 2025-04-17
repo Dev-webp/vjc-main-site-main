@@ -6,7 +6,7 @@ const Content = () => {
     return (
         <div style={{
             position: 'relative',
-            padding: '50px',
+            padding: '10px',
             boxSizing: 'border-box',
             backgroundColor: 'white',
             fontFamily: 'Times New Roman',

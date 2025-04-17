@@ -6,7 +6,7 @@ const Content = () => {
         
         <div style={{
             position: 'relative', 
-            padding: '50px', 
+            padding: '10px', 
             boxSizing: 'border-box',
             backgroundColor: 'white', 
             fontFamily:'Times New Roman',
@@ -18,7 +18,7 @@ const Content = () => {
         Germany Freelance Visa - <span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
       </h3>
     </div>
-          <h3 className="text-black font-bold mb-4 text-lg sm:text-xl">
+          <h3 className="text-black font-bold mb-4 text-lxl sm:text-xl">
             Germany Freelance Visa: Your Gateway to a Thriving Freelance Career in Germany
           </h3>
           <p>
@@ -28,7 +28,7 @@ const Content = () => {
           <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
                 <div className="flex-shrink-0 mx-auto lg:mx-0">
                     <Image
-                        src="/gocimg.png"
+                        src="/gfvisaimg.webp"
                         alt="Image description"
                         width={500} // Replace with your image's actual width
                         height={300}
@@ -36,7 +36,7 @@ const Content = () => {
                     />
                 </div>
                 <div className="px-4 lg:px-0">
-                <p className="text-black font-semibold mb-2 text-md sm:text-lg mt-5">
+                <p className="text-black  mb-2 text-md sm:text-lg mt-5">
                     
             At VJC Overseas, we provide expert guidance and support to help you navigate the application process for the Germany Freelance Visa, ensuring your move is seamless and stress-free.
 
@@ -47,7 +47,7 @@ const Content = () => {
           
           
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg mt-3">
             What is the Germany Freelance Visa?
           </h4>
           <p>
@@ -66,7 +66,7 @@ const Content = () => {
             The visa allows freelancers to live and work in Germany for up to three years, with the option to extend it further. It is a highly flexible visa that also opens the door to permanent residency in Germany after a certain period, depending on your professional success and integration into the country’s economy.
           </p>
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg mt-3">
             Who Can Apply for a Germany Freelance Visa?
           </h4>
           <ul>
@@ -87,49 +87,49 @@ const Content = () => {
             </li>
           </ul>
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg mt-3">
             The Application Process
           </h4>
           <ol>
-            <li>
-              Gather Documentation: Collect necessary documents, including proof of qualifications, portfolio, client contracts, and financial proof. Provide a detailed business plan if required for your profession.
+            <li><strong>
+              Gather Documentation:</strong> Collect necessary documents, including proof of qualifications, portfolio, client contracts, and financial proof. Provide a detailed business plan if required for your profession.
             </li>
-            <li>
-              Apply at the German Consulate or Embassy: Submit your application at the nearest German consulate or embassy in your home country. Alternatively, you may apply directly at the Foreigners` Office (Ausländerbehörde) in Germany.
+            <li><strong>
+              Apply at the German Consulate or Embassy:</strong> Submit your application at the nearest German consulate or embassy in your home country. Alternatively, you may apply directly at the Foreigners` Office (Ausländerbehörde) in Germany.
             </li>
-            <li>
-              Approval and Visa Issuance: After review, the German authorities will assess your eligibility. If approved, you will receive a residence permit for freelancing purposes.
+            <li><strong>
+              Approval and Visa Issuance:</strong> After review, the German authorities will assess your eligibility. If approved, you will receive a residence permit for freelancing purposes.
             </li>
-            <li>
-              Permanent Residency: After living and working in Germany for a certain period, freelancers can apply for permanent residency (Niederlassungserlaubnis), provided they have a stable income and have contributed to the local economy.
+            <li><strong>
+              Permanent Residency:</strong> After living and working in Germany for a certain period, freelancers can apply for permanent residency (Niederlassungserlaubnis), provided they have a stable income and have contributed to the local economy.
             </li>
           </ol>
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg mt-3">
             Why Choose Germany for Freelancing?
           </h4>
           <ul>
-            <li>Strong Economy: Germany has the largest economy in Europe, with high demand for freelance professionals in various sectors.</li>
-            <li>Creative Freedom: Freelancers in Germany enjoy independence and can shape their careers to match their passion and skills.</li>
-            <li>Work-Life Balance: Germany offers excellent work-life balance with generous paid vacation days, good healthcare, and focus on well-being.</li>
-            <li>Access to Global Clients: As a freelancer, you`ll have access to an international client base in a global business hub.</li>
-            <li>Networking Opportunities: Germany hosts numerous networking events, conferences, and professional organizations for freelancers.</li>
+            <li><strong>Strong Economy:</strong> Germany has the largest economy in Europe, with high demand for freelance professionals in various sectors.</li>
+            <li><strong>Creative Freedom:</strong> Freelancers in Germany enjoy independence and can shape their careers to match their passion and skills.</li>
+            <li><strong>Work-Life Balance:</strong> Germany offers excellent work-life balance with generous paid vacation days, good healthcare, and focus on well-being.</li>
+            <li><strong>Access to Global Clients:</strong> As a freelancer, you`ll have access to an international client base in a global business hub.</li>
+            <li><strong>Networking Opportunities:</strong> Germany hosts numerous networking events, conferences, and professional organizations for freelancers.</li>
           </ul>
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg mt-3">
             Why Choose VJC Overseas?
           </h4>
           <p>
             At VJC Overseas, we specialize in helping clients secure their Germany Freelance Visa and transition successfully to living and working in Germany. Our expert team ensures you have the best chances of approval through:
           </p>
           <ul>
-            <li>Comprehensive Consultation: Personalized services to meet your freelance goals and requirements.</li>
-            <li>End-to-End Visa Assistance: Document preparation, submission, and interview support handled with precision.</li>
-            <li>In-Depth Knowledge of Immigration Laws: Expertise in German immigration policies and freelance visa requirements.</li>
-            <li>Post-Arrival Support: Assistance with settling into your new life, including advice on accommodation, taxation, and integration.</li>
+            <li><strong>Comprehensive Consultation:</strong> Personalized services to meet your freelance goals and requirements.</li>
+            <li><strong>End-to-End Visa Assistance:</strong> Document preparation, submission, and interview support handled with precision.</li>
+            <li><strong>In-Depth Knowledge of Immigration Laws:</strong> Expertise in German immigration policies and freelance visa requirements.</li>
+            <li><strong>Post-Arrival Support:</strong> Assistance with settling into your new life, including advice on accommodation, taxation, and integration.</li>
           </ul>
       
-          <h4 className="text-black font-bold mb-4 text-lg sm:text-xl">
+          <h4 className="text-black font-semibold mb-4 text-lg sm:text-xl mt-3">
             Ready to Start Your Freelance Career in Germany?
           </h4>
           <p>

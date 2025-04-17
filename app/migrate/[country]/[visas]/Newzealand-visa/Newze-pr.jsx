@@ -34,14 +34,15 @@ const Newzepr = () => {
         What is the New Zealand Permanent Resident Visa?
         </h3>
         <p className='mb-6'>The New Zealand Permanent Resident Visa offers individuals who have already held a New Zealand Resident Visa the opportunity to gain permanent residency. With this visa, you can enjoy all the benefits of a New Zealand citizen, including the ability to:</p>
+        
+         </div>  
+        </div>
         <ul className='mb-6 ml-8 list-disc'>
             <li>Live, work, and study in New Zealand indefinitely.</li>
             <li>Access public services, including healthcare and education.</li>
             <li>Travel freely in and out of New Zealand.</li>
             <li>Travel freely in and out of New Zealand.</li>
         </ul>
-         </div>  
-        </div>
         <h3 className='text-black m-2 font-bold text-lg mb-6'>
        Eligibility Criteria
         </h3>

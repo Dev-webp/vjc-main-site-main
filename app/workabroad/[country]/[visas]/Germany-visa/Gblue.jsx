@@ -2,35 +2,47 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Germany = () => {
   return (
     <div style={{
       position: 'relative', 
-      padding: '50px', 
+      padding: '10px', 
       boxSizing: 'border-box',
       backgroundColor: 'white', 
       fontFamily:'Times New Roman',
       position: 'relative',
       fontSize: "16px", // reduced font size
-        lineHeight: "2.6", 
+        
 overflow: 'hidden',
     }}>
-    <div style={{marginBottom: '30px' }}></div>
-      <h2 className="text-xl md:text-3xl font-bold">
+    <div className="mt-4"></div>
+      <h2 className="text-2xl font-bold mb-4">
         Germany Blue Card Visa: Your Path to Work and Live in Germany
       </h2>
 
-      <p>
+      <p className="text-base mt-3">
         Germany, a global leader in innovation, technology, and culture, attracts skilled professionals from around the world. The <strong>Germany Blue Card</strong> is a special residence permit designed for highly qualified workers who wish to live and work in Germany. If you are looking to advance your career, experience rich cultural heritage, and enjoy an excellent quality of life — this visa is your gateway.
       </p>
 
-      <h3 className="text-lg font-semibold">What is the Germany Blue Card Visa?</h3>
+      <h3 className="text-lg font-semibold mt-3">What is the Germany Blue Card Visa?</h3>
+      <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+      
+        <div className="flex-shrink-0 mx-auto lg:mx-0">
+          <Image
+            src="/gbcvisaimg.webp"
+            alt="Image description"
+            width={500} // Replace with your image's actual width
+            height={300}
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
+          />
+        </div>
       <p>
         The Germany Blue Card is a work and residence permit for highly skilled non-EU nationals. It’s tailored for professionals in engineering, IT, healthcare, research, and more. It also provides benefits like family reunification and a path to permanent residency in as little as 21–33 months.
       </p>
-
-      <h3 className="text-lg font-semibold">Key Benefits of the Germany Blue Card</h3>
+</div>
+      <h3 className="text-lg font-semibold mt-3">Key Benefits of the Germany Blue Card</h3>
       <ul className="list-disc list-inside space-y-2">
         <li><strong>Work and Live in Germany:</strong> Enjoy high standards of living, infrastructure, and opportunities.</li>
         <li><strong>Family Reunification:</strong> Your spouse and children can join you under Blue Card provisions.</li>
@@ -38,7 +50,7 @@ overflow: 'hidden',
         <li><strong>Career Opportunities:</strong> Especially strong in engineering, IT, healthcare, and research fields.</li>
       </ul>
 
-      <h3 className="text-lg font-semibold">Eligibility Criteria</h3>
+      <h3 className="text-lg font-semibold mt-4 text-blue-900">Eligibility Criteria</h3>
       <ul className="list-disc list-inside space-y-2">
         <li><strong>Job Offer:</strong> A valid job offer or contract relevant to your qualifications.</li>
         <li><strong>Higher Education Qualification:</strong> Recognized university degree or equivalent qualification.</li>
@@ -46,19 +58,19 @@ overflow: 'hidden',
         <li><strong>Health Insurance:</strong> Proof of valid health insurance is mandatory.</li>
       </ul>
 
-      <h3 className="text-lg font-semibold">Processing Time</h3>
+      <h3 className="text-lg font-semibold mt-4 text-green-600">Processing Time</h3>
       <p>
         Processing usually takes <strong>4 to 12 weeks</strong>, depending on application volume and personal circumstances. Apply early to avoid delays.
       </p>
 
-      <h3 className="text-lg font-semibold">Germany Blue Card Visa Fees</h3>
+      <h3 className="text-lg font-semibold mt-4 text-blue-900">Germany Blue Card Visa Fees</h3>
       <ul className="list-disc list-inside space-y-2">
         <li><strong>Initial Application:</strong> Approx €100</li>
         <li><strong>Visa Extension:</strong> Typically around €100</li>
         <li><strong>Family Reunification:</strong> €75 to €100 per family member</li>
       </ul>
 
-      <h3 className="text-lg font-semibold">Living Expenses in Germany</h3>
+      <h3 className="text-lg font-semibold mt-4 text-blue-900">Living Expenses in Germany</h3>
       <ul className="list-disc list-inside space-y-2">
         <li><strong>Rent:</strong> €800–€1,500/month in major cities, lower in smaller towns</li>
         <li><strong>Utilities:</strong> €150–€250/month</li>
@@ -68,7 +80,7 @@ overflow: 'hidden',
         <li><strong>Miscellaneous:</strong> €200–€300/month (entertainment, dining, etc.)</li>
       </ul>
 
-      <h3 className="text-lg font-semibold">Lifestyle in Germany</h3>
+      <h3 className="text-lg font-semibold mt-4 text-blue-900">Lifestyle in Germany</h3>
       <ul className="list-disc list-inside space-y-2">
         <li><strong>Work-Life Balance:</strong> Generous vacation days and strong employee rights</li>
         <li><strong>Education & Healthcare:</strong> High-quality and mostly free public services</li>
@@ -76,7 +88,7 @@ overflow: 'hidden',
         <li><strong>Culture & Recreation:</strong> Museums, festivals, outdoor adventures, and more</li>
       </ul>
 
-      <h3 className="text-lg font-semibold">
+      <h3 className="text-lg font-semibold mt-4">
         How <span className="text-orange-600 font-semibold">VJC Overseas</span> Can Help
       </h3>
       <p>
@@ -84,7 +96,7 @@ overflow: 'hidden',
         <span className="text-orange-600 font-semibold">VJC Overseas</span> simplifies your Germany Blue Card application. From document checks to submission and follow-ups, we offer end-to-end support.
       </p>
 
-      <h3 className="text-lg font-semibold">
+      <h3 className="text-lg font-semibold mt-4">
         Contact <span className="text-orange-600 font-semibold">VJC Overseas</span>
       </h3>
       <p>

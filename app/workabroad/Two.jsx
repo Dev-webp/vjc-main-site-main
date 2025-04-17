@@ -4,6 +4,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import Form from "./Form"; // adjust path if needed
 import Wbcontent from "./Wbcontent"; // assuming you have this component
 
@@ -83,9 +84,11 @@ const Migrate = () => {
             <img src={item.image} alt="carousel" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white text-center p-4">
               <h2 className="text-3xl sm:text-5xl font-bold mb-4">{item.text}</h2>
+              <Link href="/assessment">
               <button className="bg-gray-800 hover:bg-orange-500 text-white font-semibold py-2 px-6 transition">
                 Free Assessment
               </button>
+              </Link>
             </div>
           </motion.div>
         ))}
@@ -115,7 +118,7 @@ const Migrate = () => {
       </div>
 
       {/* Bottom Section: Form + Image */}
-      <div className="flex flex-col gap-28 md:flex-row items-center w-full my-10 px-4 md:px-16 gap-8">
+      <div className="flex flex-col gap-48 md:flex-row items-center w-full my-10 px-4 md:px-16">
         
         {/* 40% Left - Form */}
         <div className="w-full md:w-2/6 -mt-36">

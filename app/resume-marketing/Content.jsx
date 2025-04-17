@@ -1,68 +1,190 @@
+"use client";
+
+import Head from "next/head";
 import React from "react";
+import { motion } from "framer-motion";
+import { FaBriefcase, FaLinkedin, FaFileAlt, FaRedo } from "react-icons/fa";
 
-const Content = ({ selectedVisa }) => {
-  // Check if it's the default visa
-  const isDefaultContent = selectedVisa?.path === "/PR-visas";
-
-  if (!isDefaultContent) return null;
-
+const Content = () => {
   return (
-    <div className="text-gray-800 space-y-5 text-base sm:text-lg leading-relaxed">
-      <h2 className="text-2xl sm:text-3xl font-bold">
-        Permanent Resident Visa – <span className="text-orange-500">VJC Overseas</span>
-      </h2>
+    <>
+      <Head>
+        <title>VJC Overseas | Resume Marketing Services</title>
+        <meta
+          name="description"
+          content="Boost your international job prospects with VJC Overseas' expert resume marketing services tailored for countries like the USA, UK, Canada, Australia, and more."
+        />
+      </Head>
 
-      <p>
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we understand that securing permanent residency in a new country is a significant milestone in your life. It represents new opportunities, stability, and a fresh start. Whether you’re looking to move for work, education, family reunification, or personal growth, we are committed to helping you navigate the complex visa process with ease and confidence.
-      </p>
+      {/* Main Container */}
+      <div className="w-full bg-gradient-to-b from-blue-400 to-white min-h-screen sm:h-screen relative  flex items-center justify-center overflow-y-auto sm:overflow-hidden">
+        
+        {/* Small Screen Layout */}
+        <div className="flex flex-col items-center gap-4 p-6 sm:hidden">
+          {/* Top Two Boxes */}
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-left w-full max-w-xs rounded shadow-xl"
+          >
+            <ul className="list-disc ml-4 text-sm font-[Times_New_Roman] space-y-2">
+              <li><FaBriefcase className="inline mr-2 text-orange-600" /> ATS-compliant formatting</li>
+              <li><FaFileAlt className="inline mr-2 text-orange-600" /> Keyword-rich content</li>
+            </ul>
+          </motion.div>
 
-      <h3 className="text-xl font-semibold">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Permanent Resident Visa?</h3>
-      <p>
-        With years of experience and expertise in immigration law, <span className="text-orange-500">VJC Overseas</span> stands as a trusted partner for individuals and families looking to become permanent residents in some of the world’s most desirable destinations. Our team of immigration consultants works closely with you to ensure that your application is thorough, accurate, and meets all legal requirements.
-      </p>
-      <p>
-        We specialize in various immigration pathways, including skilled migration, family sponsorships, business investment visas, and more. Our in-depth knowledge of the latest immigration policies and procedures ensures that we can guide you through the complexities of each process to maximize your chances of approval.
-      </p>
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-left w-full max-w-xs rounded shadow-xl"
+          >
+            <ul className="list-disc ml-4 text-sm font-[Times_New_Roman] space-y-2">
+              <li><FaRedo className="inline mr-2 text-orange-600" /> Industry-specific templates</li>
+              <li><FaLinkedin className="inline mr-2 text-orange-600" /> International HR best practices</li>
+            </ul>
+          </motion.div>
 
-      <h3 className="text-xl font-semibold">Permanent Residency – A Gateway to Your Future</h3>
-      <ul className="list-disc list-inside pl-4 space-y-2">
-        <li><strong>Long-Term Stability:</strong> Live, work, and study in your new country indefinitely, without the need for frequent visa renewals.</li>
-        <li><strong>Access to Healthcare and Social Benefits:</strong> Many countries offer permanent residents access to essential healthcare and social services.</li>
-        <li><strong>Pathway to Citizenship:</strong> Permanent residency often leads to citizenship with added rights like voting and passport privileges.</li>
-        <li><strong>Family Reunification:</strong> Sponsor your loved ones and build your future together in your new home country.</li>
-      </ul>
+          {/* Center Circle Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="z-10"
+          >
+            <img
+              src="/resume-marketing-bg.webp"
+              alt="Resume Marketing Centerpiece"
+              className="w-48 h-48 object-cover rounded-full border-4 border-orange-600 shadow-xl"
+            />
+          </motion.div>
 
-      <h3 className="text-xl font-semibold">Our Expertise: Permanent Resident Visa Categories</h3>
-      <ol className="list-decimal list-inside pl-4 space-y-2">
-        <li><strong>Skilled Worker Visa:</strong> For professionals with in-demand skills in destination countries.</li>
-        <li><strong>Family Sponsorship Visa:</strong> Reunite with your spouse, children, or parents easily and legally.</li>
-        <li><strong>Investment & Entrepreneur Visas:</strong> Leverage your business acumen or investments to secure residency.</li>
-        <li><strong>Student to PR Pathway:</strong> Transition from student visa to permanent residency after your studies.</li>
-        <li><strong>Refugee and Humanitarian Visa:</strong> Get support for immigration on humanitarian grounds.</li>
-      </ol>
+          {/* Bottom Two Boxes */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-left w-full max-w-xs rounded shadow-xl"
+          >
+            <ul className="list-disc ml-4 text-sm font-[Times_New_Roman] space-y-2">
+              <li><FaFileAlt className="inline mr-2 text-orange-600" /> Profile highlights & summaries</li>
+              <li><FaLinkedin className="inline mr-2 text-orange-600" /> LinkedIn profile optimization</li>
+            </ul>
+          </motion.div>
 
-      <h3 className="text-xl font-semibold">How <span className="text-orange-500">VJC Overseas</span> Can Help</h3>
-      <ul className="list-disc list-inside pl-4 space-y-2">
-        <li><strong>Eligibility Assessment:</strong> We evaluate your profile and recommend suitable PR programs.</li>
-        <li><strong>Visa Strategy:</strong> We craft a tailored immigration strategy based on your background and goals.</li>
-        <li><strong>Application Preparation:</strong> Accurate, timely and professional documentation handling.</li>
-        <li><strong>Document Guidance:</strong> Assistance in gathering and presenting required documents.</li>
-        <li><strong>Ongoing Support:</strong> Stay informed and supported throughout your visa journey.</li>
-      </ul>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            viewport={{ once: true }}
+            className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-left w-full max-w-xs rounded shadow-xl"
+          >
+            <ul className="list-disc ml-4 text-sm font-[Times_New_Roman] space-y-2">
+              <li><FaBriefcase className="inline mr-2 text-orange-600" /> Professional cover letters</li>
+              <li><FaRedo className="inline mr-2 text-orange-600" /> Unlimited revisions</li>
+            </ul>
+          </motion.div>
 
-      <h3 className="text-xl font-semibold">Start Your Journey Today</h3>
-      <p>
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we believe that everyone deserves the chance to build a better future. Our Permanent Resident Visa services are designed to make the immigration process as smooth and hassle-free as possible.
-      </p>
-      <p>
-        Whether you're just starting your immigration journey or need assistance with an ongoing application, our team is ready to help you every step of the way. Get in touch with us today to schedule your consultation and take the first step toward securing your permanent residency!
-      </p>
+          {/* Bottom Text */}
+          <div className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-center w-full max-w-md rounded text-sm font-[Times_New_Roman]">
+            <p>
+              Whether you're targeting jobs in <strong>USA, UK, Canada, Australia, Germany, or UAE</strong>, our resume marketing ensures you’re seen by the right recruiters.
+              <span className="text-orange-600"> VJC Overseas </span> is your trusted global career accelerator.
+            </p>
+          </div>
+        </div>
 
-      <h3 className="text-xl font-semibold">Contact Us Today!</h3>
-      <p>
-        Let <span className="text-orange-500 font-semibold">VJC Overseas</span> be your trusted guide to permanent residency. Reach out to our expert immigration consultants now and start your journey towards a new chapter in life.
-      </p>
-    </div>
+        {/* Large Screen Layout */}
+        <div className="hidden sm:grid absolute inset-0 grid-cols-3 grid-rows-3 gap-8 p-8 z-0">
+          {/* Top Text */}
+          <motion.div
+            className="col-span-3 row-start-1 flex items-center justify-center"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <div className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-center w-full sm:max-w-3xl rounded shadow-lg">
+              <p className="text-base font-[Times_New_Roman]">
+                <strong className="text-orange-600">VJC Overseas</strong> crafts resumes that align with global hiring standards and trends. A powerful resume unlocks interviews and builds confidence.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Left Text */}
+          <motion.div
+            className="row-span-1 col-start-1 row-start-2 flex items-center justify-center"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, delay: 1 }}
+            viewport={{ once: true }}
+          >
+            <div className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-left w-64 rounded shadow-xl">
+              <ul className="list-disc ml-4 text-base font-[Times_New_Roman] space-y-2">
+                <li><FaBriefcase className="inline mr-2 text-orange-600" /> ATS-compliant formatting</li>
+                <li><FaFileAlt className="inline mr-2 text-orange-600" /> Keyword-rich content</li>
+                <li><FaRedo className="inline mr-2 text-orange-600" /> Industry-specific templates</li>
+                <li><FaLinkedin className="inline mr-2 text-orange-600" /> International HR best practices</li>
+              </ul>
+            </div>
+          </motion.div>
+
+          {/* Center Image */}
+          <motion.div
+            className="col-start-2 row-start-2 z-10 flex items-center justify-center"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2, delay: 1.5 }}
+            viewport={{ once: true }}
+          >
+            <img
+              src="/resume-marketing-bg.webp"
+              alt="Resume Marketing Centerpiece"
+              className="w-80 h-80 object-cover rounded-full border-4 border-orange-600 shadow-xl"
+            />
+          </motion.div>
+
+          {/* Right Text */}
+          <motion.div
+            className="row-span-1 col-start-3 row-start-2 flex items-center justify-center"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, delay: 2 }}
+            viewport={{ once: true }}
+          >
+            <div className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-left w-64 rounded shadow-xl">
+              <ul className="list-disc ml-4 text-base font-[Times_New_Roman] space-y-2">
+                <li><FaFileAlt className="inline mr-2 text-orange-600" /> Profile highlights & summaries</li>
+                <li><FaLinkedin className="inline mr-2 text-orange-600" /> LinkedIn profile optimization</li>
+                <li><FaBriefcase className="inline mr-2 text-orange-600" /> Professional cover letters</li>
+                <li><FaRedo className="inline mr-2 text-orange-600" /> Unlimited revisions</li>
+              </ul>
+            </div>
+          </motion.div>
+
+          {/* Bottom Text */}
+          <motion.div
+            className="col-span-3 row-start-3 flex items-center justify-center"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: 2.5 }}
+            viewport={{ once: true }}
+          >
+            <div className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-center w-full sm:max-w-3xl rounded font-[Times_New_Roman] text-base">
+              <p>
+                Whether you're targeting jobs in <strong>USA, UK, Canada, Australia, Germany, or UAE</strong>, our resume marketing ensures you’re seen by the right recruiters.
+                <span className="text-orange-600"> VJC Overseas </span> is your trusted global career accelerator.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </>
   );
 };
 

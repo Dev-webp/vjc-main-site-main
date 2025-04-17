@@ -152,7 +152,7 @@ export default function Home() {
               title: "Why Choose a Visa Consultant? The Benefits Explained",
               excerpt: "Navigating the visa process is easier with expert guidance...",
               image: "/schen3.jpg",
-              link: "/schengen",
+              link: "/visitvisas",
             },
           ].map((blog, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">

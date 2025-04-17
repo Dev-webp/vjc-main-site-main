@@ -6,7 +6,7 @@ const Content = () => {
     
     <div style={{
         position: 'relative', 
-        padding: '50px', 
+        padding: '10px', 
         boxSizing: 'border-box',
         backgroundColor: 'white', 
         fontFamily:'Times New Roman',
@@ -52,11 +52,11 @@ const Content = () => {
         helping professionals from various industries start their careers in Germany. With our dedicated team of 
         immigration consultants, we ensure your application is handled with the utmost care and precision, maximizing your chances of success.</p>
     </div>
-    <ol style={{marginBottom:'20px'}}>
+    <ol>
 
      
       <li>
-        <strong>Tailored Visa Solutions:</strong> Germany offers multiple work visa categories depending on your qualifications, experience, and job offer. 
+        <strong className="-mt-2">Tailored Visa Solutions:</strong> Germany offers multiple work visa categories depending on your qualifications, experience, and job offer. 
         Whether you’re an IT professional, engineer, healthcare worker, or skilled tradesperson, we tailor our services to suit your specific needs.
       </li>
       <li>

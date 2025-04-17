@@ -24,7 +24,7 @@ const metaData = {
   ireland:{ },
   spain:{ },
   netherlands:{ },
-  switerland: { },
+  switzerland: { },
   denmark: { },
   dubai: { },
   luxembourg: { },

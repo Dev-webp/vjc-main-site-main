@@ -10,13 +10,13 @@ const Content = () => {
     Germany Dependent Visa- <span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
   </h3>
 </div>
-          <h3 className="text-black font-bold mb-4 text-lg sm:text-xl">
+          <h3 className="text-black font-bold mb-4 mt-3 text-lg sm:text-xl">
             Germany Dependent Visa: Secure Your Familys Future in Germany with VJC Overseas
           </h3>
           <p>
             At VJC Overseas, we understand that moving to a new country is not just about you, but also about your loved ones. If youre planning to live and work in Germany and want to bring your spouse, children, or other dependents along, the Germany Dependent Visa can make that dream a reality. Our expert consultants will guide you through every step of the process, ensuring a smooth and hassle-free experience for you and your family.
           </p>
-          <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+          <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0 mt-3">
           <div className="flex-shrink-0 mx-auto lg:mx-0">
     <Image
       src="/gocimg.png"
@@ -27,7 +27,7 @@ const Content = () => {
     />
   </div>
       <div className="px-4 lg:px-0">
-          <h3 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h3 className="text-black font-semibold mb-2 mt-3 text-md sm:text-lg">
             What is a Germany Dependent Visa?
 </h3>
 
@@ -40,7 +40,7 @@ const Content = () => {
             This visa is ideal for those already residing in Germany on work, student, or other long-term residence permits. It is designed to facilitate family reunification, allowing dependents to maintain a close family bond while enjoying the benefits of living in one of Europes most advanced economies.
           </p>
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black font-semibold mb-2 mt-3 text-md sm:text-lg">
             Who Can Apply for the Germany Dependent Visa?
           </h4>
           <ul>
@@ -55,7 +55,7 @@ const Content = () => {
             </li>
           </ul>
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black font-semibold mt-3 mb-2 text-md sm:text-lg">
             Key Benefits of the Germany Dependent Visa
           </h4>
           <ol>
@@ -65,7 +65,7 @@ const Content = () => {
             <li>Pathway to Permanent Residency: A dependent visa is a crucial step toward eventually obtaining permanent residency (Niederlassungserlaubnis) in Germany.</li>
           </ol>
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black font-semibold mt-3 mb-2 text-md sm:text-lg">
             Eligibility Criteria for the Germany Dependent Visa
           </h4>
           <ul>
@@ -75,7 +75,7 @@ const Content = () => {
             <li>Accommodation: Applicants must provide proof of suitable accommodation for the family in Germany.</li>
           </ul>
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black mt-3 font-semibold mb-2 text-md sm:text-lg">
             Application Process for the Germany Dependent Visa
           </h4>
           <ol>
@@ -86,7 +86,7 @@ const Content = () => {
             <li>Visa Issuance: Once approved, the dependent visa allows travel to Germany.</li>
           </ol>
       
-          <h4 className="text-black font-semibold mb-2 text-md sm:text-lg">
+          <h4 className="text-black mt-3 font-semibold mb-2 text-md sm:text-lg">
             Why Choose VJC Overseas for Your Germany Dependent Visa?
           </h4>
           <ul>
@@ -96,7 +96,7 @@ const Content = () => {
             <li>Personalized Service: We tailor our advice and support to meet your specific needs.</li>
           </ul>
       
-          <h4 className="text-black font-bold mb-4 text-lg sm:text-xl">
+          <h4 className="text-black mt-3 font-bold mb-4 text-lg sm:text-xl">
             Take the First Step Toward Reuniting with Your Loved Ones
           </h4>
           <p>

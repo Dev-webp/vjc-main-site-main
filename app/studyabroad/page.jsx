@@ -6,7 +6,7 @@ export const metadata = {
     "study abroad consultants, overseas education consultants, study abroad with scholarship, study abroad, abroad education consultants, foreign study consultancy, overseas study consultants, abroad for studies, study in UK, study in Canada, study in Australia, study in Germany",
 };
 
-import Nav from "./Nav";
+// import Nav from "./Nav";
 import Two from "./Two";
 import Footer from "./Footer";
 
@@ -14,7 +14,7 @@ const ContactPage = () => {
   return (
     <>
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
+        {/* <Nav /> */}
       </div>
       <Two />
       <Footer />

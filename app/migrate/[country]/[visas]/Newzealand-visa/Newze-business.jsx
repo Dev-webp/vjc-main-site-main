@@ -16,7 +16,7 @@ const Newzebusiness = () => {
             <p className='mb-6'>New Zealand is a hub of innovation, investment opportunities, and a business-friendly environment that attracts entrepreneurs, investors, and business professionals from across the globe. If you're looking to establish or grow your business in this vibrant country, the New Zealand Business Visa is your gateway to success.</p>
 
             <p>At VJC Overseas, we guide you through the entire process of applying for a New Zealand Business Visa, ensuring a smooth, efficient, and successful application. Whether you are looking to invest, establish a new business, or manage an existing one, we have the expertise to help you every step of the way.</p>
-            <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+            <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
                 <div className="flex-shrink-0 mx-auto lg:mx-0">
                     <Image
                         src="/assets/Newzebusiness.png"
@@ -34,7 +34,13 @@ const Newzebusiness = () => {
                     <ul className='mb-6 ml-8 list-decimal'>
                         <li><b>Entrepreneur Work Visa</b>
                             <p>For individuals planning to start or purchase a business in New Zealand. This visa is designed for entrepreneurs who are ready to contribute to the local economy.</p></li>
-                        <li><b>Investor Visa</b>
+                        
+
+                    </ul>
+                </div>
+            </div>
+            <ul className='list-disc'>
+            <li><b>Investor Visa</b>
                             <p>If you have the financial resources and wish to invest in New Zealand, this visa allows you to invest a significant amount of capital in the country, creating business opportunities and helping drive economic growth.</p></li>
                         <li><b>Investor Plus Visa</b>
                             <p>A high-end visa for investors who are willing to invest a larger sum of money and meet additional requirements, offering a faster pathway to residency.</p></li>
@@ -42,12 +48,9 @@ const Newzebusiness = () => {
                             <p>Aimed at individuals wishing to manage or develop a business in New Zealand for an extended period, contributing to the local economy in a more sustained way.</p></li>
                         <li><b>5.	Global Impact Visa</b>
                             <p>This visa is designed for high-impact entrepreneurs and investors who want to bring their ideas and innovations to New Zealand and make a positive impact on its economy.</p></li>
+            </ul>
 
-                    </ul>
-                </div>
-            </div>
-
-            <h3 className='text-black m-2 font-bold text-lg mb-6'>
+            <h3 className='text-black m-2 font-bold text-lg mt-2'>
             Why Choose New Zealand for Your Business?
             </h3>
             

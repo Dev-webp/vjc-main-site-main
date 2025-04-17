@@ -91,14 +91,14 @@ const Navbar = () => {
     { name: "Malaysia", path: "/studyabroad/malaysia" },
     { name: "South Africa", path: "/studyabroad/southafrica" },
     { name: "New Zealand", path: "/studyabroad/newzealand" },
-    { name: "Philippines", path: "/studyabroad/philippiness" },
+    { name: "philippines", path: "/studyabroad/philippines" },
     { name: "Poland", path: "/studyabroad/poland" },
     { name: "Ireland", path: "/studyabroad/ireland" },
     { name: "Spain", path: "/studyabroad/spain" },
     { name: "Netherlands", path: "/studyabroad/netherlands" },
-    { name: "Switzerland", path: "/studyabroad/switerland" },
+    { name: "Switzerland", path: "/studyabroad/switzerland" },
     { name: "Denmark", path: "/studyabroad/denmark" },
-    { name: "Dubai", path: "/studyabroad/Dubai" },
+    { name: "Dubai", path: "/studyabroad/dubai" },
     { name: "Luxembourg", path: "/studyabroad/luxembourg" },
     { name: "Hongkong", path: "/studyabroad/hongkong" },
     { name: "UAE", path: "/studyabroad/uae" },
@@ -355,6 +355,8 @@ const Navbar = () => {
               >
                 {item.name}
               </Link>
+
+
              {/* Visit Visas Submenu - OPEN TO LEFT */}
              <div className="absolute right-0 mt-3 invisible opacity-0 bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 grid grid-cols-6 gap-2 bg-black bg-opacity-50 p-3 w-[600px] min-h-[150px] shadow-xl z-50 transition-all duration-300 ease-in-out">
                 {schengenSubPages.map((subItem) => (
@@ -491,9 +493,11 @@ const Navbar = () => {
     ))}
     {extraItems.map((item, index) => (
       <div key={index} className="flex items-center justify-between border-b border-white/20 pb-2 hover:text-orange-500 cursor-pointer">
-        <span>{item.name}</span>
-        <FaChevronRight size={12} />
+        <a href={item.path} className="hover:text-orange-500 block">
+          {item.name}
+        </a>
       </div>
+       
     ))}
   </div>
 )}
