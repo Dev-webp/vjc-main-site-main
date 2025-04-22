@@ -1,36 +1,25 @@
-"use client";
-
-import { useState } from "react";
-import { motion } from "framer-motion";
-import Nav from "./Nav";
-import Form from "./Form";
+import { metaData } from "../metaData"; // Adjust path if needed
 import Two from "./Two";
 import Footer from "./Footer";
 
-const textContainerVariants = {
- 
-   
-};
+// Dynamic metadata for each country
+export async function generateMetadata({ params }) {
+  const country = params.country?.toLowerCase();
+  const data = metaData[country];
 
-
+  return {
+    title: data?.title || "Migrate Abroad – Explore Global Opportunities | VJC Overseas",
+    description: data?.description || "Expert migration services to work, study, or settle abroad.",
+    keywords: data?.keywords || "study abroad, work visa, PR, VJC Overseas, global education",
+  };
+}
 
 const ContactPage = () => {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
-  };
-
   return (
     <>
-      {/* Navbar */}
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        {/* <Nav /> */}
+        {/* Optional Nav */}
       </div>
-
-      {/* Main Section */}
-      
-      {/* Other Sections */}
       <Two />
       <Footer />
     </>

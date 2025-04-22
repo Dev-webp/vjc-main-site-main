@@ -289,24 +289,24 @@ const defaultBackgroundImages = {
 
 export default function MigrateCountry() {
   const router = useRouter();
-  const { country, visas } = useParams();
+  const { country, visa } = useParams();
   const visasList = useMemo(() => countryVisaData[country] || [], [country]);
   
   const defaultVisaTitle = visasList.length ? visasList[0].name : '';
   const [selectedVisaPath, setSelectedVisaPath] = useState(null);
   const [selectedVisaTitle, setSelectedVisaTitle] = useState(defaultVisaTitle);
   
-  const VisaComponent = visas ? visaComponents[`${country}-${visas}`] : (country === 'germany' ? Goppcardvisa : null);
+  const VisaComponent = visa ? visaComponents[`${country}-${visa}`] : (country === 'germany' ? Goppcardvisa : null);
 
   useEffect(() => {
-    if (visas) {
-      const matchedVisa = visasList.find(v => v.path === `/migrate/${country}/${visas}`);
+    if (visa) {
+      const matchedVisa = visasList.find(v => v.path === `/migrate/${country}/${visa}`);
       if (matchedVisa) {
         setSelectedVisaTitle(matchedVisa.name);
         setSelectedVisaPath(matchedVisa.path);
       }
     }
-  }, [visas, country, visasList]);
+  }, [visa, country, visasList]);
 
   const handleButtonClick = (visa) => {
     console.log('Button clicked:', visa);

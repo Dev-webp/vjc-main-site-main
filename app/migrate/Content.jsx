@@ -4,8 +4,8 @@ import React from 'react';
 
 export default function MigrationPage() {
   return (
-    <div className="bg-white min-h-screen p-6">
-      <div className="max-w-6xl mx-auto bg-white p-8 rounded-2xl shadow-md">
+    <div className="bg-white p-6 min-h-screen">
+      <div className="max-w-6xl mx-auto  shadow-md">
         <h1 className="text-2xl font-bold text-center text-blue-500">Migrate with Confidence: Your Journey Starts Here with VJC Overseas</h1>
         <p className="text-gray-700 mt-4 text-lg">At VJC Overseas, we understand that migration is more than just a relocation – it’s a life-changing decision that requires careful planning, expert advice, and seamless execution. Whether you’re seeking new opportunities for study, work, or a better quality of life in a new country, we are here to guide you every step of the way.</p>
         
