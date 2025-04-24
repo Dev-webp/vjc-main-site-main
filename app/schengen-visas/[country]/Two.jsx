@@ -4,30 +4,25 @@ import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Form from "./Form";
-import USAStudyVisa from "./USAStudyVisa";
-import UAEStudyVisa from "./UAEStudyVisa"
-import CanadaStudyVisa from "./CanadaStudyVisa";
-import AustraliaStudyVisa from "./AustraliaStudyVisa";
-import UKStudyVisa from "./UKStudyVisa";
-import NZStudyVisa from "./NZStudyVisa";
-import HongStudyVisa from "./HongStudyVisa";
-import Germany from "./Germany";
-import Norway from "./Norway";
-import Poland from "./Poland";
-import Switerland from "./Switerland";
-import Sweden from "./Sweden";
-import Spain from "./Spain";
-import Phillipiness from "./Phillipiness";
-import Newzealand from "./Newzealand";
-import Southafrica from "./Southafrica";
-import Singapore from "./Singapore";
-import Malaysia from "./Malaysia";
-import France from "./France";
-import Itlay from "./Itlay";
-import Ireland from "./Ireland";
-import Netherland from "./Netherland";
-import Lux from "./Lux";
-import Dubai from "./Dubai";
+
+import Austriavisit from './Austriavisit';
+import Belgiumvisit from './Belgiumvisit';
+import Bulgariavisit from './Bulgariavisit';
+import Croatiavisit from './Croatiavisit';
+import Czechvisit from './Czechvisit';
+import Denmarkvisit from './Denmarkvisit';  
+import Estoniavisit from './Estoniavisit';
+import Finelandvisit from './Finelandvisit';
+import Francevisit from './Francevisit';
+import Germanyvisit from './Germanyvisit'; 
+import Greecevisit from './Greecevisit';
+import Hungaryvisit from './Hungaryvisit';
+import Icelandvisit from './Icelandvisit';
+import Italyvisit from './Italyvisit';
+import Latviavisit from './Latviavisit';
+import Lithuaniavisit from './Lithuaniavisit';
+import Liechtensteinvisit from './Liechtensteinvisit';
+ 
 
 const visaData = [
   { name: "Austria Visit/Tourist Visa", path: "/schengen-visas/austria", image: "/austriatour.avif" },
@@ -149,57 +144,57 @@ const Migrate = () => {
 
 {/* Visa Info Content Box */}
 <div
-  className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative"
+  className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative -mt-0 md:-mt-24"
   style={{ maxHeight: "700px", minHeight: "1550px", overflowY: "auto" }}
 >
-  {selectedVisa.name === "Study in USA" ? (
-    <USAStudyVisa />
-  ) : selectedVisa.name === "Study in Canada" ? (
-    <CanadaStudyVisa />
-  ) : selectedVisa.name === "Study in Australia" ? (
-    <AustraliaStudyVisa />
-  ) : selectedVisa.name === "Study in Uk" ? (
-    <UKStudyVisa />
-  ) : selectedVisa.name === "Study in New Zealand" ? (
-    <NZStudyVisa />
-  ) : selectedVisa.name === "Study in Hongkong" ? (
-    <HongStudyVisa />
-  ) : selectedVisa.name === "Study in UAE" ? (
-    <UAEStudyVisa />
-  ) : selectedVisa.name === "Study in Germany" ? (
-    <Germany />
-  ) : selectedVisa.name === "Study in Norway" ? (
-    <Norway />
-  ) : selectedVisa.name === "Study in Poland" ? (
-    <Poland />
-  ) : selectedVisa.name === "Study in Switzerland" ? (
-    <Switerland />
-  ) : selectedVisa.name === "Study in Sweden" ? (
-    <Sweden />
-  ) : selectedVisa.name === "Study in Spain" ? (
-    <Spain />
-  ) : selectedVisa.name === "Study in Philippiness" ? (
-    <Phillipiness />
-  ) : selectedVisa.name === "Study in New Zealand" ? (
-    <Newzealand />
-  ) : selectedVisa.name === "Study in South Africa" ? (
-    <Southafrica />
-  ) : selectedVisa.name === "Study in Singapore" ? (
-    <Singapore />
-  ) : selectedVisa.name === "Study in Malaysia" ? (
-    <Malaysia />
-  ): selectedVisa.name === "Study in France" ? (
-    <France />
-  ) : selectedVisa.name === "Study in Italy" ? (
-    <Itlay />
-  ) : selectedVisa.name === "Study in Ireland" ? (
-    <Ireland />
-  ) : selectedVisa.name === "Study in Netherlands" ? (
-    <Netherland />
-  ) : selectedVisa.name === "Study in Luxembourg" ? (
-    <Lux />
-  ) : selectedVisa.name === "Study in Dubai" ? (
-    <Dubai />
+  {selectedVisa.name === "Austria Visit/Tourist Visa" ? (
+    <Austriavisit />
+  ) : selectedVisa.name === "Belgium Visit/Tourist Visa" ? (
+    <Belgiumvisit />
+  ) : selectedVisa.name === "Bulgaria Visit/Tourist Visa" ? (
+    <Bulgariavisit />
+  ) : selectedVisa.name === "Croatia Visit/Tourist Visa" ? (
+    <Croatiavisit />
+  ) : selectedVisa.name === "Czech Republic Visit/Tourist Visa" ? (
+    <Czechvisit />
+  ) : selectedVisa.name === "Denmark Visit/Tourist Visa" ? (
+    <Denmarkvisit />
+  ) : selectedVisa.name === "Estonia Visit/Tourist Visa" ? (
+    <Estoniavisit />
+  ) : selectedVisa.name === "Finland Visit/Tourist Visa" ? (
+    <Finelandvisit />
+  ) : selectedVisa.name === "France Visit/Tourist Visa" ? (
+    <Francevisit />
+  ) : selectedVisa.name === "Germany Visit/Tourist Visa" ? (
+    <Germanyvisit />
+  ) : selectedVisa.name === "Greece Visit/Tourist Visa" ? (
+    <Greecevisit />
+  ) : selectedVisa.name === "Hungary Visit/Tourist Visa" ? (
+    <Hungaryvisit />
+  ) : selectedVisa.name === "Iceland Visit/Tourist Visa" ? (
+    <Icelandvisit />
+  ) : selectedVisa.name === "Italy Visit/Tourist Visa" ? (
+    <Italyvisit />
+  ) : selectedVisa.name === "Latvia Visit/Tourist Visa" ? (
+    <Latviavisit />
+  ) : selectedVisa.name === "Lithuania Visit/Tourist Visa" ? (
+    <Lithuaniavisit />
+  ) : selectedVisa.name === "Liechtenstein Visit/Tourist Visa" ? (
+    <Liechtensteinvisit />
+  // ) : selectedVisa.name === "Study in Malaysia" ? (
+  //   <Malaysia />
+  // ): selectedVisa.name === "Study in France" ? (
+  //   <France />
+  // ) : selectedVisa.name === "Study in Italy" ? (
+  //   <Itlay />
+  // ) : selectedVisa.name === "Study in Ireland" ? (
+  //   <Ireland />
+  // ) : selectedVisa.name === "Study in Netherlands" ? (
+  //   <Netherland />
+  // ) : selectedVisa.name === "Study in Luxembourg" ? (
+  //   <Lux />
+  // ) : selectedVisa.name === "Study in Dubai" ? (
+  //   <Dubai />
   ) : (
     <div className="text-gray-700 text-lg leading-relaxed">
       Please select a visa type from the left to view more details.

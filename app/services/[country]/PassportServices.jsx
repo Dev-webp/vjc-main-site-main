@@ -2,28 +2,31 @@ import Image from 'next/image';
 
 const PassportServices = () => {
   return (
-    <div className="w-full p-8">
-      {/* Flex container for image and text */}
+    <div className="w-full bg-white p-8">
+      {/* Heading */}
+      <div className="text-black  font-serif mb-8" style={{ fontFamily: 'Times New Roman', serif: true }}>
+        <h1 className="text-2xl md:text-2xl font-bold text-center md:text-left">
+          <span className="text-orange-500">Passport Services for VJC Overseas</span>: Your Trusted Partner for Smooth Travel Documentation
+        </h1>
+      </div>
+
+      {/* Image and First Paragraph Side by Side */}
       <div className="flex flex-col md:flex-row items-center mb-8">
         {/* Image */}
         <div className="mb-4 md:mb-0 md:mr-8">
-          <Image src="/passport.jpg" alt="Passport Services" width={400} height={300} className="rounded-lg shadow-md" />
+          <Image src="/passportservices.webp" alt="Passport Services" width={500} height={300} className=" shadow-md" />
         </div>
 
-        {/* Text Content */}
+        {/* First Paragraph */}
         <div className="text-black font-serif" style={{ fontFamily: 'Times New Roman', serif: true }}>
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
-            <span className="text-orange-500">Passport Services for VJC Overseas</span>: Your Trusted Partner for Smooth Travel Documentation
-          </h1>
+          <p className="text-lg">
+            At <span className="text-orange-500">VJC Overseas</span>, we understand how crucial it is to have your passport in order for seamless international travel. Whether you're planning a family vacation, a business trip, or seeking opportunities abroad, having a valid passport is your first step toward your journey. Our passport services are designed to provide you with a hassle-free, fast, and reliable solution for all your passport needs.
+          </p>
         </div>
       </div>
 
       {/* Rest of the content */}
       <div className="text-black font-serif" style={{ fontFamily: 'Times New Roman', serif: true }}>
-        <p className="text-lg mb-4">
-          At <span className="text-orange-500">VJC Overseas</span>, we understand how crucial it is to have your passport in order for seamless international travel. Whether you're planning a family vacation, a business trip, or seeking opportunities abroad, having a valid passport is your first step toward your journey. Our passport services are designed to provide you with a hassle-free, fast, and reliable solution for all your passport needs.
-        </p>
-
         <h2 className="text-2xl font-semibold mb-4">Why Choose <span className="text-orange-500">VJC Overseas</span> for Passport Services?</h2>
         <ul className="list-disc pl-8 mb-4">
           <li>Expert Guidance: We offer personalized consultations and expert guidance to help you understand the passport application or renewal process, ensuring that every step is completed accurately.</li>

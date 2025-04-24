@@ -16,7 +16,6 @@ import {
 } from "react-icons/fa";
 import Form from "./Form";
 
-// TrustedByThousands component moved outside
 function TrustedByThousands() {
   const [count, setCount] = useState(0);
 
@@ -74,6 +73,7 @@ export default function Two() {
   });
 
   const handleRedirect = (path) => {
+
     router.push(path);
   };
 
@@ -94,7 +94,7 @@ export default function Two() {
 
   return (
     <>
-      <section className="min-h-screen flex flex-col bg-white items-center py-4 text-orange-500 mt-16 md:mt-0 shadow-orange-500/30 w-full">
+      <section className="min-h-screen flex flex-col bg-white items-center py-4 text-orange-500 mt-16 md:mt-0 shadow-orange-500/30 w-full overflow-x-hidden">
         {/* Moving Text Below Navbar */}
         <div className="w-full bg-white py-2 overflow-hidden">
           <marquee className="flex items-center text-lg font-bold text-black space-x-8">
@@ -113,56 +113,55 @@ export default function Two() {
           </marquee>
         </div>
 
-        {/* 🔥 Services Section */}
+        {/* Services Section */}
         <section className="bg-gray-100 py-16 flex justify-center w-full">
           <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
             {/* Left Side - Heading and Description */}
-            <div className="w-full lg:w-1/2 text-left">
-              <h2 className="font-extrabold text-4xl">Our Services</h2>
-
-              <p className="text-gray-700 text-lg mt-4 max-w-lg animate-slide-up">
-                Explore our comprehensive range of services designed to make your journey smooth, stress-free, and successful.
-              </p>
-            </div>
-
-           {/* Right Side - Image & Buttons */}
-           <div className="relative w-full lg:w-1/2 flex flex-col-reverse lg:flex-row items-center lg:justify-end lg:ml-36 mt-8 lg:mt-0">
-  
-  {/* Buttons — Stack below the image on small screens, side-left on large screens */}
-  <div className="mt-6 lg:mt-0 lg:absolute lg:left-0 lg:transform lg:-translate-x-1/2 flex flex-col space-y-4 w-full sm:w-auto items-center sm:items-end">
-    {[
-      { icon: FaPassport, label: "Passport Services", link: "/services/passport-services" },
-      { icon: FaPlane, label: "Air Ticketing Services", link: "/services/air-ticketing" },
-      { icon: FaMoneyBillWave, label: "Forex Services", link: "/services/forex-services" },
-      { icon: FaClipboardCheck, label: "Free Assessment", link: "/services/free-assessment" },
-      { icon: FaUserGraduate, label: "Free Counselling", link: "/services/free-counselling" },
-    ].map((service, index) => (
-      <button
-        key={index}
-        onClick={() => handleRedirect(service.link)}
-        className="bg-white shadow-md p-4 rounded-lg flex items-center space-x-3 hover:bg-orange-100 hover:scale-105 transition duration-300 w-60 animate-fade-in"
-      >
-        <service.icon className="text-orange-600 text-xl" />
-        <p className="text-sm font-semibold text-gray-800">{service.label}</p>
-      </button>
-    ))}
-  </div>
-
-  {/* Image — Shrink on small screens */}
-  <div className="relative w-full flex justify-center lg:justify-end">
-    <Image
-      src="/ser1.png"
-      alt="Services Image"
-      width={450}
-      height={300}
-      className="animate-zoom-in w-60 sm:w-80 md:w-[450px]"
-    />
-  </div>
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+  <h2 className="font-extrabold text-3xl sm:text-4xl">Our Services</h2>
+  <p className="text-gray-700 text-lg mt-4 max-w-lg mx-auto lg:mx-0 animate-slide-up">
+    Explore our comprehensive range of services designed to make your journey smooth, stress-free, and successful.
+  </p>
 </div>
+
+
+            {/* Right Side - Image & Buttons */}
+            <div className="relative w-full lg:w-1/2 flex flex-col-reverse lg:flex-row items-center lg:justify-end lg:ml-36 mt-8 lg:mt-0">
+              {/* Buttons */}
+              <div className="mt-6 lg:mt-0 lg:absolute lg:left-0 lg:transform lg:-translate-x-1/2 flex flex-col space-y-4 w-full sm:w-auto items-center sm:items-end">
+                {[
+                  { icon: FaPassport, label: "Passport Services", link: "/services/passport-services" },
+                  { icon: FaPlane, label: "Air Ticketing Services", link: "/services/air-ticketing" },
+                  { icon: FaMoneyBillWave, label: "Forex Services", link: "/services/forex-services" },
+                  { icon: FaClipboardCheck, label: "Free Assessment", link: "/services/free-assessment" },
+                  { icon: FaUserGraduate, label: "Free Counselling", link: "/services/free-counselling" },
+                ].map((service, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handleRedirect(service.link)}
+                    className="bg-white shadow-md p-4 rounded-lg flex items-center space-x-3 hover:bg-orange-100 hover:scale-105 transition duration-300 w-60 animate-fade-in"
+                  >
+                    <service.icon className="text-orange-600 text-xl" />
+                    <p className="text-sm font-semibold text-gray-800">{service.label}</p>
+                  </button>
+                ))}
+              </div>
+
+              {/* Image */}
+              <div className="relative w-full flex justify-center lg:justify-end">
+                <Image
+                  src="/ser1.png"
+                  alt="Services Image"
+                  width={450}
+                  height={300}
+                  className="animate-zoom-in w-60 sm:w-80 md:w-[450px]"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* 🔥 Call to Action (CTA) */}
+        {/* Call to Action */}
         <section className="bg-blue-800 text-white py-12 text-center w-full">
           <h2 className="text-3xl font-bold animate-bounce">Get Started with Us Today!</h2>
           <p className="text-lg mt-2 animate-fade-in">
@@ -176,12 +175,12 @@ export default function Two() {
           </button>
         </section>
 
-        {/* 📝 Inquiry Form Section */}
+        {/* Inquiry Form Section */}
         <section className="bg-gray-100 py-16 w-full">
           <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
             {/* Left Side - Inquiry Form */}
             <div className="w-full lg:w-1/2">
-              <Form /> {/* 🔹 Your form component */}
+              <Form />
             </div>
 
             {/* Right Side - Trust & Testimonial Section */}
@@ -195,22 +194,37 @@ export default function Two() {
               </div>
 
               {/* Image Positioned at Bottom Right */}
-              <div className="relative w-full flex justify-end">
-                <Image 
-                  src="/services.png" 
-                  alt="Trusted" 
-                  width={2440} 
-                  height={2440} 
-                  className="w-full max-w-[520px] h-auto object-contain md:absolute md:right-[-130px] md:-top-[240px] md:w-[520px] md:h-[520px]"
-                />
-              </div>
+              <div className="relative w-full flex justify-center md:flex md:justify-end lg:justify-end">
+  <Image 
+    src="/services.png" 
+    alt="Trusted" 
+    width={2440} 
+    height={2440} 
+    className="
+      w-full 
+      max-w-[520px] 
+      h-auto 
+      object-contain 
+      md:static 
+      md:w-[400px] 
+      md:max-w-[400px] 
+      lg:absolute 
+      lg:right-[-130px] 
+      lg:-top-[240px] 
+      lg:w-[520px] 
+      lg:h-[520px]"
+  />
+</div>
+
             </div>
           </div>
         </section>
 
+          
+
         <TrustedByThousands />
 
-        {/* 🎥 Video Section */}
+        {/* Video Section */}
         <section className="bg-gray-900 text-white py-16 flex flex-col items-center w-full">
           <h2 className="text-3xl font-bold text-orange-400 animate-slide-up">
             Watch How We Can Help You

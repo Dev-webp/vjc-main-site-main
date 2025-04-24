@@ -5,16 +5,21 @@ import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Form from "./Form";
-import CanadaPR from "./CanadaPR";
-import Australiapr from "./Australiapr";
-import UKpr from "./UKpr";
-import Newzelandpr from "./Newzelandpr";
-import Germanybluecard from "./Germanybluecard";
-import Usagreencard from "./Usagreencard";
-
+import Usab1 from "./Usab1";
+import Canadavisit from "./Canadavisit";
+import Usab2 from "./Usab2";
+import Usab1b2 from "./Usab1b2";
+import Australiavisit from "./Australiavisit";
+import UsaVisit from "./UsaVisit";
+import Ukvisit from "./Ukvisit";
+import Dubaivisit from "./Dubaivisit";
+import Denmark from "./Denmark";
+import Austria from "./Austria";
+import Itlay from "./Itlay";
+import Schengen from "./Schengen";
 const visaData = [
 
-  { name: "USA Visit Visa", path: "/visitvisas/usa-visit-visa", image: "/usaimg.webp" },
+  { name: "USA Visit Visa", path: "/visitvisas/usa-visit-visa", image: "/usaplanevisit.jpg" },
   { name: "USA B1 Visa", path: "/visitvisas/usa-b1-visa", image: "/visit1.webp" },
   { name: "USA B2 Visa", path: "/visitvisas/usa-b2-visa", image: "/visit1.webp" },
   { name: "USA B1/B2 Visa", path: "/visitvisas/usa-b1-b2-visa", image: "/visit1.webp" },
@@ -23,7 +28,7 @@ const visaData = [
   { name: "UK Visit Visa", path: "/visitvisas/uk-visit-visa" , image: "/uk1.webp"},
   { name: "Dubai Visit Visa", path: "/visitvisas/dubai-visit-visa", image: "/du.webp" },
   { name: "Denmark Visit Visa", path: "/visitvisas/denmark-visit-visa", image: "/44.webp" },
-  { name: "Austria Visit Visa", path: "/visitvisas/austria-visit-visa" , image: "/12.webp"},
+  { name: "Austria Visit Visa", path: "/visitvisas/austria-visit-visa" , image: "/austriavisitvisa.jpg"},
   { name: "Italy Visit Visa", path: "/visitvisas/italy-visit-visa", image: "/itlay23.webp" },
   { name: "Schengen Visit Visa", path: "/visitvisas/schengen-visit-visa", image: "/schengen.webp" },
  
@@ -88,8 +93,8 @@ const Migrate = () => {
       <div className="relative z-10 w-full bg-white px-4 sm:px-6 lg:px-12 pt-10 pb-16">
         <div className="flex justify-center md:justify-start mb-8 ml-0 md:ml-16">
           <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
-            <span className="block md:text-left text-center">Secure Dream Job,</span>
-            <span className="block text-center">Through Seeker Visa</span>
+            <span className="block md:text-left text-center">"Explore more,</span>
+            <span className="block text-center">one visa away."</span>
           </h2>
         </div>
 
@@ -116,24 +121,36 @@ const Migrate = () => {
           {/* Visa Info Content Box */}
           <div
             className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative md:-mt-32 sm:-mt-20 mt-0"
-            style={{ maxHeight: "700px", minHeight: "450px", overflowY: "auto" }}
+            style={{ maxHeight: "700px", minHeight: "1050px", overflowY: "auto" }}
           >
             {selectedVisa.path === defaultVisa.path ? (
               <div className="text-gray-700 text-lg leading-relaxed">
                 Please select a visa type from the left to view more detailed information about that particular Permanent Residency visa.
               </div>
-            ) : selectedVisa.path === "/Jobseeker/USAInvestorVisa" ? (
-              <CanadaPR />
-            ) : selectedVisa.path === "/PR-visas/australiapr" ? (
-              <Australiapr />
-            ) : selectedVisa.path === "/PR-visas/ukpr" ? (
-              <UKpr />
-            ) : selectedVisa.path === "/PR-visas/newzelandpr" ? (
-              <Newzelandpr />
-            ) : selectedVisa.path === "/PR-visas/germanybluecard" ? (
-              <Germanybluecard />
-            ) : selectedVisa.path === "/PR-visas/usagreencard" ? (
-              <Usagreencard />
+            ) : selectedVisa.path === "/visitvisas/usa-visit-visa" ? (
+              <UsaVisit />
+            ) : selectedVisa.path === "/visitvisas/usa-b1-visa" ? (
+              <Usab1 />
+            ) : selectedVisa.path === "/visitvisas/usa-b2-visa" ? (
+              <Usab2 />
+            ) : selectedVisa.path === "/visitvisas/usa-b1-b2-visa" ? (
+              <Usab1b2 />
+            ) : selectedVisa.path === "/visitvisas/canada-visit-visa" ? (
+              <Canadavisit />
+            ) : selectedVisa.path === "/visitvisas/uk-visit-visa" ? (
+              <Ukvisit />
+            ) : selectedVisa.path === "/visitvisas/australia-visit-visa" ? (
+              <Australiavisit />
+            ) : selectedVisa.path === "/visitvisas/dubai-visit-visa" ? (
+              <Dubaivisit />
+            ) : selectedVisa.path === "/visitvisas/denmark-visit-visa" ? (
+              <Denmark />
+            ) : selectedVisa.path === "/visitvisas/austria-visit-visa" ? (
+              <Austria />
+            ) : selectedVisa.path === "/visitvisas/italy-visit-visa" ? (
+              <Itlay />
+            ) : selectedVisa.path === "/visitvisas/schengen-visit-visa" ? (
+              <Schengen />
             ) : (
               <div className="text-gray-700 text-lg leading-relaxed">
                 Information about <strong>{selectedVisa.name}</strong> will be displayed here.

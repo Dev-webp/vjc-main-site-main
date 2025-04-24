@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 import Form from "./Form";
 import Two from "./Two";
 import Footer from "./Footer";
@@ -25,7 +25,7 @@ const ContactPage = () => {
     <>
       {/* Navbar */}
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
+        {/* <Nav /> */}
       </div>
 
       {/* Main Section */}

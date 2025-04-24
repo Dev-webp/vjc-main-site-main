@@ -11,7 +11,7 @@ const PortugalInvestorVisa = () => {
                 {/* Image */}
                 <div className="md:w-1/2 w-full">
                   <Image
-                    src="/uk-investor-visa.webp"
+                    src="/potugalinvestcontent.png"
                     alt="canada permanent residence Guidance by VJC Overseas"
                     width={400}
                     height={100}

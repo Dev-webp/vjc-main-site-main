@@ -2,37 +2,32 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
+import Form from '../../Form';
+
+
 import Goppcardvisa from './Germany-visa/Goppcardvisa';
 import Jobseeker from './Germany-visa/Jobseeker';
 import Gfreelance from './Germany-visa/Gfreelance';
-
 import Gblue from './Germany-visa/Gblue';
 import Gselfempvisa from './Germany-visa/Gselfempvisa';
+import Gsworkpermitvisa from './Germany-visa/Gsworkpermitvisa';
 
-import Canadastudent from "./Canadapages/Canadastudent";
-import Canadatourist from "./Canadapages/Canadatourist";
-import Canadapr from "./Canadapages/Canadapr";
-import Canadafs from "./Canadapages/Canadafs";
-import Form from '../../Form';
+import Canadaopenwp from './Canadapages/Canadaopenwp';
+import Canadaw1 from './Canadapages/Canadaw1';
+import Canadalmia from './Canadapages/Canadalmia';
 
-import USAstud from "./USA-visa/USA-stud";
-import USAbusiness from "./USA-visa/USA-business"
-import USAh1b from "./USA-visa/USA-h1b"
-import USAinvestor from "./USA-visa/USA-investor"
-import USAtourist from "./USA-visa/USA-tourist"
+import Shortwvisa from './Ukpages/Shortwvisa';
+import Longtermwvisa from './Ukpages/Longtermwvisa';
+import Tier4visa from './Ukpages/Tier4visa';
+import Tier2visa from './Ukpages/Tier2visa';
+import Skilledworkvisa from './Ukpages/Skilledworkvisa';
+import Healthcare from './Ukpages/Healthcare';
 
 import Aus482 from "./Australia-visa/Aus482"
 import Aus186 from "./Australia-visa/Aus186"
 import Aus189 from "./Australia-visa/Aus189"
 import Aus417 from "./Australia-visa/Aus417"
-import Aus190 from "./Australia-visa/Aus190"
-
-
-import UKBvisa from "./UK-visa/UKBvisa";
-import UKTvisa from "./UK-visa/UKTvisa";
-import UKinnovatorvisa from "./UK-visa/UKinnovatorvisa";
-import UKsponvisa from "./UK-visa/UKsponvisa";
-import UKstudvisa from "./UK-visa/UKstudvisa";
+import Aus190 from "./Australia-visa/Aus190";
 
 import HKtourist from "./HongKongpages/HKtourist";
 import HKemployee from "./HongKongpages/HKemployee";
@@ -41,10 +36,10 @@ import HKbusiness from "./HongKongpages/HKbusiness";
 import HKdependent from "./HongKongpages/HKdependent";
 import HKwork from "./HongKongpages/HKwork";
 
-import Denbusiness from "./Denmark-visa/Den-business"
-import Denstud from "./Denmark-visa/Den-stud"
-import Denwork from "./Denmark-visa/Den-work"
-import Dentourist from "./Denmark-visa/Den-tourist"
+import Dentrainee from "./Denmark-visa/Dentrainee"
+import Denpositivelist from "./Denmark-visa/Denpositivelist"
+import Denpaylimit from "./Denmark-visa/Denpaylimit"
+import Denworkemp from "./Denmark-visa/Denworkemp"
 
 import Newzepr from "./Newzealand-visa/Newze-pr"
 import Newzedepen from "./Newzealand-visa/Newze-Depen"
@@ -54,11 +49,19 @@ import Newzetourist from "./Newzealand-visa/Newze-tourist"
 import Newzebusiness from "./Newzealand-visa/Newze-business"
 import Newzework from "./Newzealand-visa/Newze-work"
 
-import UAEstud from "./UAE-visa/UAE-stud";
-import UAEgolden from "./UAE-visa/UAE-golden";
-import UAEwork from "./UAE-visa/UAE-work";
-import UAEgreen from "./UAE-visa/UAE-green";
-import UAEtourist from "./UAE-visa/UAE-tourist";
+import Standardwork from "./Dubai-visa/Standardwork";
+import Dubaigolden from "./Dubai-visa/Dubaigolden";
+import UAEwork from "./Dubai-visa/Standardwork";
+import Dubaigreen from "./Dubai-visa/Dubaigreen";
+import UAEtourist from "./Dubai-visa/UAE-tourist";
+
+
+
+
+
+
+
+
 const countryVisaData = {
   "germany-work-permit": [
     { name: "Opportunity Card", path: "/workabroad/germany-work-permit/opportunity-card" },
@@ -88,7 +91,7 @@ const countryVisaData = {
     { name: "Skilled Worker Visa", path: "/workabroad/united-kingdom-work-permit/uk-skilled-worker-visa" },
     { name: "Tier 2 Visa", path: "/workabroad/united-kingdom-work-permit/uk-tire-2-visa" },
     { name: "Tier 4 Visa", path: "/workabroad/united-kingdom-work-permit/uk-tire-4-visa" },
-    { name: "Work Permit Visa", path: "/workabroad/united-kingdom-work-permit/uk-work-permit-visa" },
+    // { name: "Work Permit Visa", path: "/workabroad/united-kingdom-work-permit/uk-work-permit-visa" },
   ],
   "denmark-work-permit": [
     { name: "Pay Limit Scheme Visa", path: "/workabroad/denmark-work-permit/denmark-pay-limit-scheme-visa" },
@@ -100,8 +103,7 @@ const countryVisaData = {
     { name: "Standard Work Visa", path: "/workabroad/dubai-work-permit/dubai-standard-work-visa" },
     { name: "Green Visa", path: "/workabroad/dubai-work-permit/dubai-green-visa" },
     { name: "Golden Visa", path: "/workabroad/dubai-work-permit/dubai-golden-visa" },
-    { name: "Work Permit Visa", path: "/workabroad/dubai-work-permit/dubai-work-permit-visa" },
-  ],
+ ]
 
 };
 
@@ -111,36 +113,28 @@ const visaComponents = {
   'germany-work-permit-opportunity-card': Goppcardvisa,
   'germany-work-permit-job-seeker-visa': Jobseeker,
   'germany-work-permit-freelance-visa': Gfreelance,
-  
   'germany-work-permit-blue-visa': Gblue,
   'germany-work-permit-employment-visa': Gselfempvisa,
+  'germany-work-permit-work-permit-visa': Gsworkpermitvisa,
 
-  'canada-pr-visa': Canadapr,
-  'canada-work-permit': Canadapr,
-  'canada-student-visa':Canadastudent,
-  'canada-tourist-visa': Canadatourist,
-  'canada-family-sponsorship-visa': Canadafs,
+  'canada-work-permit-open-work-permit': Canadaopenwp,
+  'canada-work-permit-w1-visa':Canadaw1,
+  'canada-work-permit-lmia':Canadalmia,
 
-  'united-states-student-visa':USAstud,
-  'united-states-tourist-visa':USAtourist,
-  'united-states-business-visa':USAbusiness,
- 'united-states-H1B-visa':USAh1b,
- 'united-states-investor-visa':USAinvestor,
+  'united-kingdom-work-permit-uk-short-term-work-visa':Shortwvisa,
+  'united-kingdom-work-permit-uk-long-term-work-visa':Longtermwvisa,
+  'united-kingdom-work-permit-uk-tire-4-visa':Tier4visa,
+  'united-kingdom-work-permit-uk-tire-2-visa':Tier2visa,
+  'united-kingdom-work-permit-uk-skilled-worker-visa':Skilledworkvisa,
+  'united-kingdom-work-permit-uk-health-and-care-worker-visa':Healthcare,
+  
+  'australia-work-permit-482-visa':Aus482,
+ 'australia-work-permit-working-holiday-417-visa':Aus417,
+ 'australia-work-permit-nomited-visa-subclass-190':Aus190,
+ 'australia-work-permit-employer-186-visa':Aus186,
+ 'australia-work-permit-work-visa-subclass-189':Aus189,
 
- 'australia-work-permit-482-visa':Aus482,
- 'australia-work-permit-working-holiday-417-visa':Aus417,
- 'australia-work-permit-nomited-visa-subclass-190':Aus190,
- 'australia-work-permit-employer-186-visa':Aus186,
- 'australia-work-permit-work-visa-subclass-189':Aus189,
-
-
- 'united-kingdom-student-visa':UKstudvisa,
- 'united-kingdom-tourist-visa':UKTvisa,
- 'united-kingdom-business-visa':UKBvisa,
- 'united-kingdom-innovator-visa':UKinnovatorvisa,
- 'united-kingdom-sponsorship-visa':UKsponvisa,
-
- 'new-zealand-permanent-resident-visa':Newzepr,
+'new-zealand-permanent-resident-visa':Newzepr,
  'new-zealand-work-visa':Newzework,
  'new-zealand-student-work-visa':Newzestud,
  'new-zealand-skilled-work-visa':Newzeskillwork,
@@ -155,17 +149,20 @@ const visaComponents = {
  'hong-kong-dependent-visa':HKdependent,
  'hong-kong-work-visa':HKwork,
 
- 'denmark-student-visa':Denstud,
- 'denmark-work-permit-visa':Denwork,
- 'denmark-tourist-visa':Dentourist,
- 'denmark-business-visa':Denbusiness,
+ 'denmark-work-permit-denmark-positive-list-visa':Denpositivelist,
+ 'denmark-work-permit-denmark-employment-visa':Denworkemp,
+ 'denmark-work-permit-denmark-pay-limit-scheme-visa': Denpaylimit,
+ 'denmark-work-permit-denmark-trainee-visa':Dentrainee,
 
- 'uae-student-visa':UAEstud,
- 'uae-golden-visa':UAEgolden,
+ 'dubai-work-permit-dubai-standard-work-visa':Standardwork,
+ 'dubai-work-permit-dubai-golden-visa':Dubaigolden,
  'uae-work-visa':UAEwork,
- 'uae-green-visa':UAEgreen,
+ 'dubai-work-permit-dubai-green-visa':Dubaigreen,
  'uae-tourist-visa':UAEtourist,
 
+
+  
+ 
 };
 
 const defaultBackgroundImages = {

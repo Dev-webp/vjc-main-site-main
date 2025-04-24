@@ -66,7 +66,7 @@ export default function ServicePage() {
       {/* Main Layout */}
       <div className="flex flex-col md:flex-row items-center w-full max-w-6xl px-4 gap-10 relative bg-cover bg-center bg-no-repeat  shadow-xl p-8"
         style={{ backgroundImage: "url('/images/your-background.jpg')" }}>
-        <div className="absolute inset-0 bg-black bg-opacity-50 "></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-400/60 via-white to-orange-500/80 "></div>
         
         {/* Left Section */}
         <motion.div className="md:w-1/2 text-left relative z-10">
@@ -102,7 +102,7 @@ export default function ServicePage() {
 
       {/* Content Section */}
       <div className="flex flex-col items-start w-full max-w-6xl gap-8 mt-10">
-        <motion.div className="w-full p-6 bg-black bg-opacity-10 backdrop-blur-lg text-center max-h-[700px] overflow-y-auto">
+        <motion.div className="w-full p-6 bg-gradient-to-b from-blue-400 to-orange-500/80 backdrop-blur-lg text-center max-h-[700px] overflow-y-auto">
           <h3 className="text-2xl font-bold text-black mb-2">{selectedService.title}</h3>
           
           <div className="text-gray-200">{serviceComponents[selectedService.key]}</div>

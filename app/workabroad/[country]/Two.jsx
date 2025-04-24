@@ -41,7 +41,7 @@ const countryVisaData = {
     { name: "Skilled Worker Visa", path: "/workabroad/united-kingdom-work-permit/uk-skilled-worker-visa" },
     { name: "Tier 2 Visa", path: "/workabroad/united-kingdom-work-permit/uk-tire-2-visa" },
     { name: "Tier 4 Visa", path: "/workabroad/united-kingdom-work-permit/uk-tire-4-visa" },
-    { name: "Work Permit Visa", path: "/workabroad/united-kingdom-work-permit/uk-work-permit-visa" },
+    // { name: "Work Permit Visa", path: "/workabroad/united-kingdom-work-permit/uk-work-permit-visa" },
   ],
   "denmark-work-permit": [
     { name: "Pay Limit Scheme Visa", path: "/workabroad/denmark-work-permit/denmark-pay-limit-scheme-visa" },
@@ -53,7 +53,7 @@ const countryVisaData = {
     { name: "Standard Work Visa", path: "/workabroad/dubai-work-permit/dubai-standard-work-visa" },
     { name: "Green Visa", path: "/workabroad/dubai-work-permit/dubai-green-visa" },
     { name: "Golden Visa", path: "/workabroad/dubai-work-permit/dubai-golden-visa" },
-    { name: "Work Permit Visa", path: "/workabroad/dubai-work-permit/dubai-work-permit-visa" },
+    
   ],
 };
 

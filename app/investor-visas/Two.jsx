@@ -9,17 +9,17 @@ import Form from "./Form";
 
 const Migrate = () => {
   const scrollRef = useRef(null);
-  const backgroundImage = "/investor-visa1.webp";
+  const backgroundImage = "/plane.webp";
 
   const countries = [
-    { name: "USA Investor Visa", path: "/investor-visas/usa-investor-visa", image: "/ausinvestment.webp" },
-    { name: "Canada Investor Visa", path: "/investor-visas/canada-investor-visa", image: "/1.webp" },
-    { name: "Germany Investor Visa", path: "/investor-visas/germany-investor-visa", image: "/germanyinvestment.webp" },
-    { name: "Australia Investor Visa", path: "/investor-visas/australia-investor-visa", image: "/Australiainvestment.webp" },
-    { name: "UK Investor Visa", path: "/investor-visas/uk-investor-visa", image: "/ukinvestment.webp" },
-    { name: "UAE Investor Visa", path: "/investor-visas/uae-investor-visa", image: "/uaeinvestment.webp" },
-    { name: "Portugal Investor Visa", path: "/investor-visas/portugal-investor-visa", image: "/portugalinvestment.webp" },
-    { name: "Austria Investor Visa", path: "/investor-visas/austria-investor-visa", image: "/austriainvest.webp" },
+    { name: "USA Investor Visa", path: "/investor-visas/usa-investor-visa", image: "/usainvest.png" },
+    { name: "Canada Investor Visa", path: "/investor-visas/canada-investor-visa", image: "/canadainvestbg.png" },
+    { name: "Germany Investor Visa", path: "/investor-visas/germany-investor-visa", image: "/canadainvestorbg.png" },
+    { name: "Australia Investor Visa", path: "/investor-visas/australia-investor-visa", image: "/australiainvestbg.png" },
+    { name: "UK Investor Visa", path: "/investor-visas/uk-investor-visa", image: "/ukinvestorvisa.png" },
+    { name: "UAE Investor Visa", path: "/investor-visas/uae-investor-visa", image: "/uaeinvestorbg.png" },
+    { name: "Portugal Investor Visa", path: "/investor-visas/portugal-investor-visa", image: "/potugalinvestorbg.png" },
+    { name: "Austria Investor Visa", path: "/investor-visas/austria-investor-visa", image: "/austriainvestbg.png" },
   ];
 
   const scrollLeft = () => {
@@ -37,7 +37,7 @@ const Migrate = () => {
         className="relative inset-0  w-screen max-w-none xl:w-[100vw] 3xl:w-[100vw]  h-[600px] sm:h-[600px] md:h-[600px] bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-20" />
+        <div className="absolute inset-0 bg-black opacity-40" />
           {/* Content */}
       <div className="relative z-20 text-center px-4 sm:px-10 mt-32 ">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
