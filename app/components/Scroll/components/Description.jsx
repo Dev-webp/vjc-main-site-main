@@ -42,7 +42,7 @@ export default function Description() {
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 px-6 py-4 flex flex-col justify-between text-center mb-28">
                 <h3 className="text-2xl font-bold text-black uppercase mb-0">Canada</h3>
                 <Link href='/assessment'>
-                <button className="px-6 py-2 text-md font-semibold text-white uppercase whitespace-nowrap ml-6 mb-2 md:mt-0 mt-3">
+                <button className="px-6 py-2 text-md font-semibold text-white uppercase whitespace-nowrap ml-6 mb-2">
                     Free Assessment
                 </button>
                 </Link>
@@ -61,11 +61,9 @@ export default function Description() {
         >
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 px-6 py-4 flex flex-col justify-between text-center mb-[5.60rem]">
                 <h3 className="text-2xl font-bold text-black uppercase mb-0">Australia</h3>
-                <Link href='/assessment'>
-                <button className="px-6 py-2 text-md font-semibold text-white uppercase whitespace-nowrap ml-6 mb-8">
+                <button className="px-6 py-2 text-md font-semibold text-white uppercase whitespace-nowrap ml-6 mb-3">
                 Free Assessment
                 </button>
-                </Link>
                 <p className="text-sm text-black max-w-64 mr-8">Know your visa probability<br /> and Eligibility of Permanent<br /> Residency and Study in Australia</p>
             </div>
         </div>
