@@ -74,12 +74,12 @@ export default function Description() {
     </div>
   </div>
 
-  {/* USA */}
+ 
   {/* USA */}
 <div
   className="relative bg-cover bg-center group hover:translate-y-[-10px] transition-all mx-auto mt-14"
   style={{
-    backgroundImage: "url('/usa.png')",
+    backgroundImage: "url('/Usa.png')",
     width: '200px',
     height: '430px',
   }}
