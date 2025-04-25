@@ -47,7 +47,7 @@ export default function Description() {
         </button>
       </Link>
       <p className="text-sm text-black max-w-44 mx-auto mt-2 ml-2">
-        Check your possibilities and planning of expenses to Settle and Study in Canada.
+      Explore your chances and plan expenses to settle & study in Canada.
       </p>
     </div>
   </div>
@@ -69,32 +69,34 @@ export default function Description() {
         </button>
       </Link>
       <p className="text-sm text-black max-w-56 mx-auto mt-2 mr-6">
-        Know your visa probability and Eligibility of Permanent Residency and Study in Australia.
+      Check visa chances & Permanent Residency or study options in Australia.
       </p>
     </div>
   </div>
 
   {/* USA */}
-  <div
-    className="relative bg-cover bg-center group hover:translate-y-[-10px] transition-all mx-auto"
-    style={{
-      backgroundImage: "url('/germany.png')",
-      width: '250px',
-      height: '500px',
-    }}
-  >
-    <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 px-4 py-4 text-center w-full">
-      <h3 className="text-2xl font-bold text-black uppercase mb-0">USA</h3>
-      <Link href="/assessment">
-        <button className="px-6 py-2 text-md font-semibold text-white uppercase whitespace-nowrap mt-2">
-          Free Assessment
-        </button>
-      </Link>
-      <p className="text-sm text-black max-w-64 mx-auto mt-2 mr-3">
-        Check your Documentation and Process for Germany Opportunity Card Visa and Germany Study Visa.
-      </p>
-    </div>
+  {/* USA */}
+<div
+  className="relative bg-cover bg-center group hover:translate-y-[-10px] transition-all mx-auto mt-14"
+  style={{
+    backgroundImage: "url('/usa.png')",
+    width: '200px',
+    height: '430px',
+  }}
+>
+  <div className="absolute bottom-28 mt-1 left-1/2 transform -translate-x-1/2 px-4 py-4 text-center w-full">
+    <h3 className="text-2xl font-bold text-black uppercase mb-0">USA</h3>
+    <Link href="/assessment">
+      <button className="px-6 py-2 text-md font-semibold text-white uppercase whitespace-nowrap mt-2">
+        Free Assessment
+      </button>
+    </Link>
+    <p className="text-sm text-black max-w-52 mx-auto mt-2">
+    Explore your chances & expenses to work or study in the USA.
+    </p>
   </div>
+</div>
+
 
   {/* Germany */}
   <div
