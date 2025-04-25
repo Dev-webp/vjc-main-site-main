@@ -25,15 +25,15 @@ const AustraliaPRVisa = () => {
 
         {/* Text */}
         <div className="w-full md:w-1/2 text-justify">
-          <h2 className="mb-4 mt-4 font-bold">
+          <h2 className=" font-bold">
             Welcome to <span className="text-orange-500">VJC Overseas</span>,
           </h2>
           <p>
-            • <b>Your trusted partner</b> in obtaining Australia Permanent Residency (PR). Whether you're looking to settle in Australia's bustling cities, picturesque coastal regions, or tranquil rural areas, this visa offers you the opportunity to enjoy a high quality of life, lucrative job opportunities, and a stable future.
-          </p>
+            • <b>Your trusted partner</b> in obtaining Australia Permanent Residency (PR). Whether you're looking to settle in Australia's bustling cities, picturesque coastal regions, or tranquil rural areas, 
+         </p>
         </div>
       </div>
-
+      <p className=" -mt-8">this visa offers you the opportunity to enjoy a high quality of life, lucrative job opportunities, and a stable future.</p>
       <h2 className="font-bold mt-6">• What is an Australia Permanent Residency Visa?</h2>
       <p>
         • <b>A gateway for skilled individuals</b> and families to live and work in Australia. PR holders enjoy access to healthcare, education, and a path to Australian citizenship.

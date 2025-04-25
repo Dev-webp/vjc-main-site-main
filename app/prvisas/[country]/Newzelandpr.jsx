@@ -30,13 +30,14 @@ const NewzealandPR = () => {
       <p>
         Are you looking to make New Zealand your permanent home? Whether you’re
         attracted by the stunning landscapes, the vibrant culture, or the high
-        quality of life, a New Zealand Permanent Resident Visa (PR) allows you
-        to live, work, and study indefinitely in this beautiful country. At{" "}
-        <span className="text-orange-600 font-semibold">VJC Overseas</span>, we guide you through the entire process, ensuring a smooth and
-        hassle-free application.
+        quality of life,
       </p>
        </div>
        </div>
+       <p className="-mt-6"> A New Zealand Permanent Resident Visa (PR) allows you
+        to live, work, and study indefinitely in this beautiful country. At{" "}
+        <span className="text-orange-600 font-semibold">VJC Overseas</span>, we guide you through the entire process, ensuring a smooth and
+        hassle-free application. </p>
       <h3 className="text-xl font-semibold text-gray-900 mt-4 mb-2">
         What is the New Zealand Permanent Resident Visa?
       </h3>

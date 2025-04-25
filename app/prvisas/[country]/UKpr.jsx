@@ -13,7 +13,7 @@ const UKPR = () => {
           {/* Image and Intro Text Side by Side */}
                 <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
                   {/* Image */}
-                  <div className="-mt-14">
+                  <div className="">
                     <Image
                       src="/UK-Permanent-Residence.jpg"
                       alt="uk permanent residence Guidance by VJC Overseas"
@@ -26,12 +26,15 @@ const UKPR = () => {
           
                   {/* Text */}
                   <div className="md:w-1/2 text-justify">
-                    <p className="mb-4 mt-4">
-        The UK is one of the most sought-after destinations for individuals looking to build a life in a dynamic and diverse environment. With its strong economy, excellent healthcare system, and world-class education, it’s no surprise that many individuals aim for a UK Permanent Residence Visa (PR), also known as <strong>Indefinite Leave to Remain (ILR)</strong>. At{" "}
+                    <p className="mb-4 ">
+        The UK is one of the most sought-after destinations for individuals looking to build a life in a dynamic and diverse environment. With its strong economy, excellent healthcare system, and world-class education, it’s no surprise that many individuals aim for a UK Permanent Residence Visa (PR),    </p>
+      </div>
+      </div>
+      <p className=" -mt-8">
+      also known as <strong>Indefinite Leave to Remain (ILR)</strong>. At{" "}
         <span className="text-orange-600 font-semibold">VJC Overseas</span>, we are dedicated to helping you navigate the complexities of UK immigration and guide you through the process of obtaining your permanent residence.
+  
       </p>
-      </div>
-      </div>
       <h3 className="text-xl font-semibold mb-2 mt-4">What is the UK Permanent Residence Visa?</h3>
       <p>
         The UK Permanent Residence Visa allows non-British nationals to live and work in the UK indefinitely. After holding this status for a specified period, typically 5 years, applicants can apply for British citizenship. This visa is a major step for individuals looking to settle in the UK and enjoy all the rights and privileges that come with being a permanent resident.

@@ -27,13 +27,14 @@ const CanadaPR = () => {
         Canada offers one of the most welcoming environments for immigrants worldwide,
         and obtaining a Permanent Residence (PR) Visa is a life-changing opportunity.
         At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we specialize
-        in helping individuals and families navigate the complexities of Canada’s
-        immigration process and successfully secure their PR.
-        With its high quality of life, excellent healthcare and education systems,
-        and abundant job opportunities, Canada promises a future full of possibilities.
+        in helping individuals and families navigate the 
       </p>
       </div>
       </div>
+      <p className=" -mt-8">complexities of Canada’s
+        immigration process and successfully secure their PR.
+        With its high quality of life, excellent healthcare and education systems,
+        and abundant job opportunities, Canada promises a future full of possibilities.</p>
       <h3 className="text-xl mt-4 mb-2 font-semibold text-gray-900">
         Why Choose Canada for Permanent Residency?
       </h3>
