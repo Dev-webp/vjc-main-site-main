@@ -33,8 +33,8 @@ const VisitVisas = () => {
           variants={fadeUp}
         >
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-black via-orange-500 to-black bg-clip-text text-transparent">
-  Explore the World with VJC Overseas
-</h1>
+            Explore the World with VJC Overseas
+          </h1>
 
           <p className="text-lg text-gray-600 mt-4">
             Your Gateway to Global Adventures Starts Here
@@ -45,49 +45,47 @@ const VisitVisas = () => {
         </motion.section>
 
         {/* What is a Visit Visa? */}
-<motion.section
-  className="mb-16"
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: true, amount: 0.4 }}
-  variants={fadeUp}
->
-  {/* Top Intro Text */}
-  <div className="mb-10">
-    <h2 className="text-3xl font-semibold mb-4">What is a Visit Visa?</h2>
-    <p className="text-lg text-gray-700">
-      A Visit Visa is a temporary travel document that allows you to enter and stay in a foreign country for leisure, tourism, family visits, or short business trips.
-    </p>
-    <p className="text-lg text-gray-700 mt-4 text-xl">
-      We specialize in providing Visit Visa assistance for over 15+ countries, including:
-    </p>
-  </div>
+        <motion.section
+          className="mb-16"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+          variants={fadeUp}
+        >
+          <div className="mb-10">
+            <h2 className="text-3xl font-semibold mb-4">What is a Visit Visa?</h2>
+            <p className="text-lg text-gray-700">
+              A Visit Visa is a temporary travel document that allows you to enter and stay in a foreign country for leisure, tourism, family visits, or short business trips.
+            </p>
+            <p className="text-lg text-gray-700 mt-4 text-xl">
+              We specialize in providing Visit Visa assistance for over 15+ countries, including:
+            </p>
+          </div>
 
-  {/* List + Image Side by Side */}
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <ul className="list-disc list-inside text-lg text-gray-700 text-xl">
-      <li> USA Visit Visa (B2)</li>
-      <li> UK Standard Visitor Visa</li>
-      <li>Canada Visitor Visa (TRV)</li>
-      <li>Schengen Tourist Visa</li>
-      <li>Australia Visitor Visa (Subclass 600)</li>
-      <li>Dubai Visit Visa</li>
-      <li>Singapore Tourist Visa</li>
-      <li>Japan,  South Korea,Thailand,Malaysia & more</li>
-    </ul>
-    <div className="">
-      <Image
-        src="/visit-visa-image.png"
-        alt="Visit Visa Travel"
-        width={400}
-        height={200}
-        className=" object-cover"
-      />
-    </div>
-  </div>
-</motion.section>
+          <div className="grid md:grid-cols-2 gap-10 items-start">
+            <ul className="list-disc list-inside text-lg text-gray-700 text-xl">
+              <li> USA Visit Visa (B2)</li>
+              <li> UK Standard Visitor Visa</li>
+              <li>Canada Visitor Visa (TRV)</li>
+              <li>Schengen Tourist Visa</li>
+              <li>Australia Visitor Visa (Subclass 600)</li>
+              <li>Dubai Visit Visa</li>
+              <li>Singapore Tourist Visa</li>
+              <li>Japan, South Korea, Thailand, Malaysia & more</li>
+            </ul>
+            <div className="w-full flex justify-center">
+              <Image
+                src="/visit-visa-image.png"
+                alt="Visit Visa Travel"
+                width={400}
+                height={200}
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </motion.section>
 
-        {/* Why Choose */}
+        {/* Why Choose VJC */}
         <motion.section
           className="bg-gradient-to-r from-blue-400 to-orange-500 p-10 sm:p-12 rounded-lg shadow-lg mb-16"
           initial="hidden"
@@ -122,43 +120,43 @@ const VisitVisas = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
-            <div className="overflow-x-auto flex flex-col justify-between">
+          <div className="flex flex-col lg:flex-row gap-10 items-stretch">
+            {/* Table */}
+            <div className="w-full overflow-x-auto">
               <div>
                 <h3 className="text-xl font-semibold text-gray-700 mb-4">
                   Average Cost of Living per Day (for Indian Tourists)
                 </h3>
-                <table className="table-auto w-full text-base border-collapse">
+                <table className="table-auto w-full text-base border-collapse min-w-[600px]">
                   <thead>
                     <tr className="bg-gradient-to-r from-orange-100 to-blue-100 text-gray-800">
-                      <th className="px-6 py-3 border font-semibold">🌍 Country</th>
-                      <th className="px-6 py-3 border font-semibold">💰 Daily Budget (INR)</th>
-                      <th className="px-6 py-3 border font-semibold">📋 Includes</th>
+                      <th className="px-6 py-3 border font-semibold text-left">🌍 Country</th>
+                      <th className="px-6 py-3 border font-semibold text-left">💰 Daily Budget (INR)</th>
+                      <th className="px-6 py-3 border font-semibold text-left">📋 Includes</th>
                     </tr>
                   </thead>
                   <tbody className="text-gray-700">
-  {[
-    ["USA", "₹8,000 – ₹12,000", "🍔 Food, 🚗 Transport, 🏨 Lodging"],
-    ["UK", "₹7,000 – ₹10,000", "🍽️ Meals, 🚇 Commute, 🎟️ Tickets"],
-    ["Canada", "₹6,000 – ₹9,000", "🚌 Transport, 🍲 Meals, 🛏️ Hostel"],
-    ["Australia", "₹7,500 – ₹11,000", "🍷 Dining, 🏄‍♂️ Activities, 🚘 Travel"],
-    ["Dubai", "₹5,000 – ₹9,000", "🏨 Hotels, 🚇 Metro, 🍢 Cuisine"],
-    ["Singapore", "₹4,500 – ₹7,000", "🍜 Food, 🎡 Attractions, 🚈 MRT"],
-    ["Schengen", "₹6,500 – ₹10,000", "🚆 Travel, 🧀 Food, 🖼️ Museums"],
-    ["Thailand", "₹3,000 – ₹5,000", "🌮 Food, 🛍️ Shopping, 🛏️ Stay"],
-    ["Japan", "₹6,000 – ₹9,500", "🚅 Rail pass, 🍣 Sushi, 🏨 Hostel"]
-  ].map(([country, budget, includes], index) => (
-    <tr
-      key={index}
-      className={`hover:bg-orange-50 ${index % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
-    >
-      <td className="px-6 py-3 border">{country}</td>
-      <td className="px-6 py-3 border text-orange-600 font-medium">{budget}</td>
-      <td className="px-6 py-3 border">{includes}</td>
-    </tr>
-  ))}
-</tbody>
-
+                    {[
+                      ["USA", "₹8,000 – ₹12,000", "🍔 Food, 🚗 Transport, 🏨 Lodging"],
+                      ["UK", "₹7,000 – ₹10,000", "🍽️ Meals, 🚇 Commute, 🎟️ Tickets"],
+                      ["Canada", "₹6,000 – ₹9,000", "🚌 Transport, 🍲 Meals, 🛏️ Hostel"],
+                      ["Australia", "₹7,500 – ₹11,000", "🍷 Dining, 🏄‍♂️ Activities, 🚘 Travel"],
+                      ["Dubai", "₹5,000 – ₹9,000", "🏨 Hotels, 🚇 Metro, 🍢 Cuisine"],
+                      ["Singapore", "₹4,500 – ₹7,000", "🍜 Food, 🎡 Attractions, 🚈 MRT"],
+                      ["Schengen", "₹6,500 – ₹10,000", "🚆 Travel, 🧀 Food, 🖼️ Museums"],
+                      ["Thailand", "₹3,000 – ₹5,000", "🌮 Food, 🛍️ Shopping, 🛏️ Stay"],
+                      ["Japan", "₹6,000 – ₹9,500", "🚅 Rail pass, 🍣 Sushi, 🏨 Hostel"]
+                    ].map(([country, budget, includes], index) => (
+                      <tr
+                        key={index}
+                        className={`hover:bg-orange-50 ${index % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
+                      >
+                        <td className="px-6 py-3 border">{country}</td>
+                        <td className="px-6 py-3 border text-orange-600 font-medium">{budget}</td>
+                        <td className="px-6 py-3 border">{includes}</td>
+                      </tr>
+                    ))}
+                  </tbody>
                 </table>
                 <p className="mt-4 text-sm text-gray-500">
                   *Note: These are approximate values and can vary depending on city, time of year, and personal choices.
@@ -169,7 +167,8 @@ const VisitVisas = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between">
+            {/* Form */}
+            <div className="w-full">
               <div>
                 <h3 className="text-xl font-semibold text-gray-700 mb-4">
                   Get Your Free Tourist Visa Assessment
@@ -187,13 +186,13 @@ const VisitVisas = () => {
                   🧳 Always scan and upload your passport and visa docs to a secure cloud folder. It helps in emergencies!
                 </p>
                 <p className="text-gray-700 text-sm">
-                💼 Pack an extra set of clothes in your carry-on bag. You never know if your luggage will be delayed or lost!
+                  💼 Pack an extra set of clothes in your carry-on bag. You never know if your luggage will be delayed or lost!
                 </p>
                 <p className="text-gray-700 text-sm">
-                🔌 Carry a portable power bank. It’s always helpful for long flights or layovers, so you never run out of battery!
+                  🔌 Carry a portable power bank. It’s always helpful for long flights or layovers, so you never run out of battery!
                 </p>
                 <p className="text-gray-700 text-sm">
-                💳 Notify your bank about your travel plans. This way, your credit cards won’t get flagged for suspicious activity when you use them abroad.
+                  💳 Notify your bank about your travel plans. This way, your credit cards won’t get flagged for suspicious activity when you use them abroad.
                 </p>
               </div>
             </div>
