@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+
 const LithuaniaTouristVisa = () => {
   return (
     <div className="text-black px-4 sm:px-8 py-8 max-w-5xl mx-auto">
@@ -13,11 +14,24 @@ const LithuaniaTouristVisa = () => {
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-3">What is the Lithuania Visit/Tourist Visa?</h2>
+      <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                                                                      
+                                                                        <div className="flex-shrink-0 mx-auto lg:mx-0">
+                                                                          <Image
+                                                                            src="/lithunatimg.jpg"
+                                                                            alt="Image description"
+                                                                            width={500} // Replace with your image's actual width
+                                                                            height={300}
+                                                                            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                                          />
+                                                                        </div>
       <p className="mb-4">
         The Lithuania Visit/Tourist Visa is a short-term Schengen visa that allows you to travel to Lithuania for tourism, leisure, or business purposes.
         This visa permits stays of up to 90 days within a 180-day period in Lithuania and other Schengen Area countries.
-        Whether you want to admire the medieval architecture of Vilnius or experience the scenic beauty of Curonian Spit, the Lithuania tourist visa is your gateway to a memorable European experience.
+        Whether you want to admire the medieval architecture of Vilnius or experience the scenic beauty of Curonian 
       </p>
+      </div>
+      <p>Spit, the Lithuania tourist visa is your gateway to a memorable European experience.</p>
 
       <h2 className="text-xl font-semibold mt-6 mb-3">Lithuania Visit/Tourist Visa Validity</h2>
       <p className="mb-2"><strong>Duration of Stay:</strong> The Lithuania Visit Visa allows you to stay for up to 90 days within a 180-day period. This is typically granted as a single-entry or multiple-entry visa, depending on your travel needs.</p>

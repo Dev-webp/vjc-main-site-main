@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Liechtensteinvisit = () => {
 
@@ -10,8 +11,20 @@ const Liechtensteinvisit = () => {
   <p class="mb-4">Planning to visit the picturesque Principality of Liechtenstein? Whether you're exploring its stunning landscapes, historic landmarks, or vibrant cultural heritage, obtaining a tourist visa is your first step towards an unforgettable trip. At VJC Overseas, we guide you through the process of obtaining a Liechtenstein Visit/Tourist Visa, ensuring that your application is seamless and hassle-free.</p>
 
   <h2 class="text-xl font-semibold mt-8 mb-4">What is a Liechtenstein Tourist Visa?</h2>
-  <p class="mb-4">A Liechtenstein Visit/Tourist Visa is a short-term visa that allows travelers to explore the country for tourism, business, or family visits. As Liechtenstein is part of the Schengen Area, obtaining a Schengen visa gives you access to not only Liechtenstein but also 26 other European countries. Whether you're planning to visit for a holiday, attend an event, or simply experience the unique culture of this alpine paradise, this visa is your gateway.</p>
-
+   <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                                                                
+                                                                  <div className="flex-shrink-0 mx-auto lg:mx-0">
+                                                                    <Image
+                                                                      src="/liechtimg.jpg"
+                                                                      alt="Image description"
+                                                                      width={500} // Replace with your image's actual width
+                                                                      height={300}
+                                                                      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                                    />
+                                                                  </div>
+  <p class="mb-4">A Liechtenstein Visit/Tourist Visa is a short-term visa that allows travelers to explore the country for tourism, business, or family visits. As Liechtenstein is part of the Schengen Area, obtaining a Schengen visa gives you access to not only Liechtenstein but also 26 other European countries. Whether you're planning to visit for a holiday, attend an event, or simply</p>
+</div>
+<p> experience the unique culture of this alpine paradise, this visa is your gateway.</p>
   <h2 class="text-xl font-semibold mt-8 mb-4">Visa Validity & Duration</h2>
   <ul class="list-disc pl-6 mb-4">
     <li><strong>Duration of Stay:</strong> A typical Liechtenstein Tourist Visa is valid for a stay of up to 90 days within a 180-day period.</li>

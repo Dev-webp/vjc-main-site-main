@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Estoniavisit = () => {
     return(
@@ -12,11 +13,23 @@ const Estoniavisit = () => {
           experiences, you'll need an Estonia Visit/Tourist Visa, which allows you to stay in the country for tourism or
           leisure purposes.
         </p>
+        <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+              
+                <div className="flex-shrink-0 mx-auto lg:mx-0">
+                  <Image
+                    src="/estoniatimg.jpg"
+                    alt="Image description"
+                    width={500} // Replace with your image's actual width
+                    height={300}
+                    className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                  />
+                </div>
         <p>
           At VJC Overseas, we provide a streamlined process to help you obtain your Estonia Visit/Tourist Visa with ease
           and confidence. Read on to understand everything you need to know about applying for this visa, the documents
           required, and the eligibility criteria.
         </p>
+        </div>
 
         <h2 className="textxl font-semibold mt-4">Estonia Visit/Tourist Visa Overview</h2>
         <p>

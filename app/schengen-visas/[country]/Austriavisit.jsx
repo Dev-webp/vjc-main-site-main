@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Content = () => {
  
@@ -6,16 +7,28 @@ const Content = () => {
 
   return (
     <div className="space-y-6">
-  <h1 className="text-2xl font-bold">Austria Visit/Tourist Visa - Explore the Heart of Europe with VJC Overseas</h1>
+  <h1 className="text-2xl font-bold">Austria Visit/Tourist Visa - Explore the Heart of Europe with <span className="text-orange-500">VJC Overseas</span></h1>
 
   <p>
     Are you planning to visit Austria, the heart of Europe? Whether you’re drawn to the magnificent Alps, historic cities like Vienna and Salzburg, or the rich cultural heritage, VJC Overseas is here to guide you through the Austria Visit/Tourist Visa process. Our experts ensure a smooth, hassle-free application so you can focus on exploring one of Europe's most beautiful destinations.
   </p>
 
   <h2 className="text-xl font-semibold">What is an Austria Visit/Tourist Visa?</h2>
+  <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+
+  <div className="flex-shrink-0 mx-auto lg:mx-0">
+    <Image
+      src="/austriatimg.jpg"
+      alt="Image description"
+      width={500} // Replace with your image's actual width
+      height={300}
+      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+    />
+  </div>
   <p>
     An Austria Visit/Tourist Visa is a short-stay Schengen visa that allows you to travel to Austria for tourism, leisure, or family visits. As Austria is part of the Schengen Area, this visa not only lets you explore Austria but also visit other Schengen countries during your stay, making it a perfect choice for a European adventure.
   </p>
+  </div>
 
   <h2 className="text-xl font-semibold">Austria Visit/Tourist Visa Validity</h2>
   <p>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Italyvisit = () => {
     return(
@@ -17,9 +18,21 @@ const Italyvisit = () => {
       </p>
 
       <h2 className="text-xl font-semibold">What is an Italy Visit/Tourist Visa?</h2>
+       <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                                                      
+                                                        <div className="flex-shrink-0 mx-auto lg:mx-0">
+                                                          <Image
+                                                            src="/italytimg.jpg"
+                                                            alt="Image description"
+                                                            width={500} // Replace with your image's actual width
+                                                            height={300}
+                                                            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                          />
+                                                        </div>
       <p>
         An Italy Visit/Tourist Visa is a Schengen short-stay visa that allows you to stay in Italy for up to 90 days within a 180-day period. This visa is for tourists who are planning to visit Italy for leisure, tourism, or to visit family and friends. It also allows you to travel freely within the Schengen Area, which includes other European countries.
       </p>
+      </div>
 
       <h2 className="text-xl font-semibold">Italy Visit/Tourist Visa Validity</h2>
       <ul className="list-disc ml-6">

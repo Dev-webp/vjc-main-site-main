@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Finelandvisit = () => {
 
@@ -9,8 +10,19 @@ const Finelandvisit = () => {
         <p className="mb-4">Are you planning a trip to Finland for tourism, leisure, or business? With its stunning natural beauty, rich culture, and vibrant cities, Finland is an ideal destination for travelers worldwide. Whether you're looking to explore the stunning Northern Lights, visit the Finnish Lakeland, or experience the vibrant cities of Helsinki and Tampere, obtaining a Finland Visit/Tourist Visa is the first step toward your adventure. VJC Overseas is here to guide you through every step of the visa application process.</p>
   
         <h2 className="text-xl font-semibold mt-6 mb-2">What is a Finland Visit/Tourist Visa?</h2>
+        <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                      
+                        <div className="flex-shrink-0 mx-auto lg:mx-0">
+                          <Image
+                            src="/finlandtimg.jpg"
+                            alt="Image description"
+                            width={500} // Replace with your image's actual width
+                            height={300}
+                            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                          />
+                        </div>
         <p className="mb-4">A Finland Visit/Tourist Visa (Schengen Visa) allows travelers from outside the European Union to visit Finland for tourism, sightseeing, leisure, or short-term business purposes. The Finland Tourist Visa is part of the Schengen Agreement, which permits visa holders to travel freely within the Schengen Area, which includes 26 European countries.</p>
-  
+  </div>
         <h2 className="text-xl font-semibold mt-6 mb-2">Finland Visit Visa Validity and Duration</h2>
         <p className="mb-4">The Finland Visit Visa is generally valid for short stays up to 90 days within a 180-day period. This means that within any six-month window, you can stay in Finland and other Schengen countries for a total of 90 days. Depending on your application and travel plans, you can apply for a multiple-entry or single-entry visa, each with its own set of conditions and validity.</p>
   

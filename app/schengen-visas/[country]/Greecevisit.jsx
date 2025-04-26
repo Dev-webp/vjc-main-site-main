@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Greecevisit = () => {
 
@@ -8,9 +9,19 @@ const Greecevisit = () => {
   <h1 class="text-2xl font-bold mb-6">Greece Visit/Tourist Visa – Your Gateway to an Unforgettable Greek Experience</h1>
 
   <p class="mb-4">Are you dreaming of exploring the ancient ruins, enjoying the sun-kissed beaches, or experiencing the vibrant culture of Greece? If yes, you’ll need a Greece Tourist Visa to travel to this beautiful Mediterranean country. At VJC Overseas, we specialize in helping travellers secure their Greece Visitor Visa with ease and efficiency.</p>
-
+<div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                                          
+                                            <div className="flex-shrink-0 mx-auto lg:mx-0">
+                                              <Image
+                                                src="/greecetimg.webp"
+                                                alt="Image description"
+                                                width={500} // Replace with your image's actual width
+                                                height={300}
+                                                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                              />
+                                            </div>
   <p class="mb-4">Whether you're planning a short stay for leisure, sightseeing, or business, our team provides expert guidance on the visa process. Here’s everything you need to know about the Greece Visit/Tourist Visa, including essential documents, eligibility criteria, and the visa application process.</p>
-
+</div>
   <h2 class="text-xl font-semibold mt-6 mb-2">What is a Greece Visit/Tourist Visa?</h2>
   <p class="mb-4">A Greece Tourist Visa is a short-stay Schengen visa that allows non-EU/EEA nationals to visit Greece for tourism, family visits, or business purposes for a stay of up to 90 days within a 180-day period. Greece is a member of the Schengen Area, meaning the visa grants you access to not only Greece but also 25 other European countries.</p>
 

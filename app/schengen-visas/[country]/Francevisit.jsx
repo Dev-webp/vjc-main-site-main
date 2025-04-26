@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Francevisit = () => {
 
@@ -8,7 +9,19 @@ const Francevisit = () => {
           <p>Dreaming of walking through the romantic streets of Paris, visiting the grand castles of Loire Valley, or indulging in the beauty of the French Riviera? With a France Visit/Tourist Visa, your journey to explore France’s rich culture, history, and art is just a step away. At VJC Overseas, we offer expert guidance and a seamless application process for your France Tourist Visa, making your travel dreams come true.</p>
     
           <h2 className="text-xl font-semibold">What is the France Visit/Tourist Visa?</h2>
+          <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                                
+                                  <div className="flex-shrink-0 mx-auto lg:mx-0">
+                                    <Image
+                                      src="/francetimg.jpg"
+                                      alt="Image description"
+                                      width={500} // Replace with your image's actual width
+                                      height={300}
+                                      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                    />
+                                  </div>
           <p>The France Visit/Tourist Visa is a short-stay Schengen visa that allows travellers to visit France for tourism purposes. Whether you're planning a cultural exploration, a leisure trip, or even a short family visit, this visa grants you the opportunity to experience the best of France for up to 90 days within a 180-day period.</p>
+          </div>
           <p>France is a member of the Schengen Area, which means that once you obtain the France Visit Visa, you can also travel to other Schengen countries with no additional visa required.</p>
     
           <h2 className="text-xl font-semibold">Validity of the France Visit/Tourist Visa</h2>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Czechvisit = () => {
 
@@ -13,6 +14,19 @@ const Czechvisit = () => {
           Dreaming of walking through the charming streets of Prague or visiting the majestic castles of Český Krumlov? 
           The Czech Republic Visit/Tourist Visa is your key to experiencing this captivating European destination.
         </p>
+        <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+              
+                <div className="flex-shrink-0 mx-auto lg:mx-0">
+                  <Image
+                    src="/czechrepublictimg.jpg"
+                    alt="Image description"
+                    width={500} // Replace with your image's actual width
+                    height={300}
+                    className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                  />
+                </div>
+                </div>
+        
   
         <p >
           At <strong>VJC Overseas</strong>, we make the visa process simple, fast, and stress-free — so you can focus on planning your unforgettable adventure.

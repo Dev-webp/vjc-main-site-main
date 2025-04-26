@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Denmartvisit = () =>{
     return (
@@ -10,10 +11,21 @@ const Denmartvisit = () =>{
       <p>
         Planning a vacation to Denmark? Denmark is a dream destination for travellers, known for its stunning landscapes, rich history, modern cities, and the world-famous Danish culture. If you are looking to explore the charm of Copenhagen, visit the picturesque castles, or indulge in Danish culinary delights, a Denmark Visit/Tourist Visa is your gateway to a remarkable experience.
       </p>
-
+<div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+      
+        <div className="flex-shrink-0 mx-auto lg:mx-0">
+          <Image
+            src="/denmarktimg.avif"
+            alt="Image description"
+            width={500} // Replace with your image's actual width
+            height={300}
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+          />
+        </div>
       <p>
         At <strong>VJC Overseas</strong>, we provide expert assistance in obtaining your Denmark Tourist Visa, ensuring that your application process is smooth, hassle-free, and efficient. Whether you're visiting for tourism, leisure, or short-term business meetings, we have all the information you need to make your visa application process as seamless as possible.
       </p>
+      </div>
 
       <h2 className="text-xl font-semibold mt-8">Denmark Visit/Tourist Visa Details</h2>
       <p>

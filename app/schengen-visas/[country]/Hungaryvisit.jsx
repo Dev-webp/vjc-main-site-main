@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Hungaryvisit = () => {
     return(
@@ -9,9 +10,21 @@ const Hungaryvisit = () => {
   </p>
 
   <h2 className="text-xl font-semibold">What is a Hungary Visit/Tourist Visa?</h2>
+  <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                                            
+                                              <div className="flex-shrink-0 mx-auto lg:mx-0">
+                                                <Image
+                                                  src="/hungarytimg.webp"
+                                                  alt="Image description"
+                                                  width={500} // Replace with your image's actual width
+                                                  height={300}
+                                                  className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                />
+                                              </div>
   <p>
     A Hungary Visit/Tourist Visa is a short-term Schengen visa that allows travellers to visit Hungary for tourism, leisure, business meetings, family visits, or other short-term purposes. As a member of the Schengen Area, Hungary permits visa holders to travel to other Schengen countries with the same visa, making it an excellent starting point for those wishing to explore Europe.
   </p>
+  </div>
 
   <h2 className="text-xl font-semibold">Hungary Visit/Tourist Visa Validity</h2>
   <p>

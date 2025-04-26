@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Form from "./Form";
+import Footer from "./Footer";
 
 
 
@@ -63,8 +64,11 @@ const Migrate = () => {
 
   return (
     <section
-      className="py-10 bg-cover bg-center transition-all duration-500 min-h-screen"
-      style={{ backgroundImage: `url(${background})` }}
+      className="py-10 bg-cover bg-center transition-all duration-500 min-h-screen "
+      style={{
+        backgroundImage: `url(${background})`,
+        height: "700px", // smaller background height
+      }}
     >
       <div className="max-w-screen-xl mx-auto px-4">
   <div className="relative flex flex-col lg:flex-row items-center justify-between p-10 gap-10 min-h-screen">
@@ -84,7 +88,7 @@ const Migrate = () => {
         Migrate to Your Dream Country
       </motion.h1>
       <motion.p
-        className="flex text-black tracking-tight text-left md:font-medium max-w-xl lg:max-w-lg mt-6"
+        className="flex text-black tracking-tight text-left md:font-medium max-w-xl lg:max-w-lg mt-2"
         style={{ fontWeight: "bolder", fontFamily: "Times New Roman, serif" }}
         variants={descriptionVariants}
       >
@@ -93,15 +97,15 @@ const Migrate = () => {
     </motion.div>
 
     {/* Form Section - aligned to the right */}
-    <div className="w-full lg:w-1/2 mt-10 lg:mt-4 flex justify-center lg:justify-end">
+    <div className="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center lg:justify-end">
       <Form />
     </div>
   </div>
 {/* </div> */}
 
 
-        <div className="flex justify-center md:justify-start mb-8 ml-5">
-          <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
+        <div className="flex justify-center md:justify-start mb-8 ml-5 ">
+          <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent bg-white">
             <span className="block md:text-left text-center">Migrate to Your Dream</span>
             <span className="block text-center">Country</span>
           </h2>
@@ -126,11 +130,12 @@ const Migrate = () => {
           </div>
 
           {/* Content Display */}
-          <div className="w-full md:w-2/3 overflow-y-auto max-h-[900px] bg-white p-6 rounded-xl shadow-md border border-gray-200 ">
+          <div className="w-full md:w-2/3 overflow-y-auto max-h-[900px] bg-white p-6 rounded-xl shadow-md border border-gray-200 -mt-24">
             <Content />
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 };

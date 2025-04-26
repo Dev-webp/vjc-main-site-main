@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Croatiavisit = () => {
 
@@ -12,9 +13,21 @@ const Croatiavisit = () => {
   </p>
 
   <h2 className="text-xl font-semibold text-black">What is a Croatia Visit/Tourist Visa?</h2>
+  <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+      
+        <div className="flex-shrink-0 mx-auto lg:mx-0">
+          <Image
+            src="/croatiatimg.webp"
+            alt="Image description"
+            width={500} // Replace with your image's actual width
+            height={300}
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+          />
+        </div>
   <p>
     A Croatia Visit/Tourist Visa is a short-stay visa that allows foreign nationals to visit Croatia for tourism purposes. It’s typically valid for stays up to 90 days within a 180-day period. The visa is suitable for those who wish to explore Croatia's picturesque scenery, indulge in the rich culture, and experience the warm Mediterranean climate.
   </p>
+  </div>
 
   <h2 className="text-xl font-semibold text-black">Visa Validity</h2>
   <p>

@@ -6,9 +6,9 @@ export const metadata = {
     "immigration consultants,germany job seeker visa,canada immigration,australia immigration,work visa usa,work permit,canada work permit visa,usa visit visa,australia work visa,canada work visa,uk work permit visa,germany work visa,australia work permit,uk work permit,visa uae",
 };
 
-// import Nav from "./Nav";
+
 import Two from "./Two";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 const ContactPage = () => {
   return (
@@ -17,7 +17,7 @@ const ContactPage = () => {
         {/* <Nav /> */}
       </div>
       <Two />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

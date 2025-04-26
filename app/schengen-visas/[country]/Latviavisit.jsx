@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Latviavisit = () => {
 
@@ -11,8 +12,19 @@ const Latviavisit = () => {
         <p className="mt-4">At VJC Overseas, we specialize in providing expert visa assistance, ensuring a seamless application process. Our team guides you step by step to secure your Latvia tourist visa with ease.</p>
   
         <h2 className="text-xl font-semibold mt-6 mb-2">What is a Latvia Visit/Tourist Visa?</h2>
+        <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                                                              
+                                                                <div className="flex-shrink-0 mx-auto lg:mx-0">
+                                                                  <Image
+                                                                    src="/latviatimg.jpg"
+                                                                    alt="Image description"
+                                                                    width={500} // Replace with your image's actual width
+                                                                    height={300}
+                                                                    className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                                  />
+                                                                </div>
         <p>A Latvia Visit/Tourist Visa allows travelers to explore Latvia for leisure, tourism, or to visit friends and family. As a Schengen Area member, Latvia permits short stays of up to 90 days within a 180-day period for tourism purposes. This visa gives you the flexibility to travel to Latvia as well as other countries in the Schengen Zone, making it a perfect option for those looking to explore multiple European destinations.</p>
-  
+  </div>
         <h2 className="text-xl font-semibold mt-6 mb-2">Latvia Visit/Tourist Visa Validity</h2>
         <ul className="list-disc ml-6">
           <li><strong>Visa Type:</strong> Short-stay Schengen visa (Type C)</li>

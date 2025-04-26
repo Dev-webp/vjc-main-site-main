@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Germanyvisit = () => {
 
@@ -9,8 +10,19 @@ const Germanyvisit = () => {
           <p>Germany is one of Europe's most popular travel destinations, known for its rich history, stunning landscapes, and vibrant cities. Whether you’re visiting for leisure, tourism, or to experience German culture, a Germany Visit/Tourist Visa allows you to enter this dynamic country and explore everything it has to offer. At VJC Overseas, we guide you through the entire process, ensuring a smooth and hassle-free visa application experience.</p>
     
           <h2 className="text-xl font-semibold">What is a Germany Visit/Tourist Visa?</h2>
+           <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                                          
+                                            <div className="flex-shrink-0 mx-auto lg:mx-0">
+                                              <Image
+                                                src="/germanytimg.jpg"
+                                                alt="Image description"
+                                                width={500} // Replace with your image's actual width
+                                                height={300}
+                                                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                              />
+                                            </div>
           <p>A Germany Visit/Tourist Visa is a short-term visa (Schengen visa) that allows non-EU citizens to stay in Germany for a period of up to 90 days within a 180-day timeframe. This visa is primarily for tourism, family visits, business trips, or cultural events. As part of the Schengen Area, a Germany Tourist Visa also allows you to travel freely within other Schengen countries for the duration of your stay.</p>
-    
+    </div>
           <h2 className="text-xl font-semibold">Eligibility for Germany Visit/Tourist Visa</h2>
           <p>To apply for a Germany Visit/Tourist Visa, you must meet certain eligibility criteria. These include:</p>
           <ul className="list-disc list-inside space-y-1">

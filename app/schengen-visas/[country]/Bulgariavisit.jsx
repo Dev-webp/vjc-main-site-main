@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 const Bulgariavisit = () => {
 
     return(
@@ -11,9 +12,21 @@ const Bulgariavisit = () => {
   </p>
 
   <h2 className="text-xl font-semibold">What is a Bulgaria Visit/Tourist Visa?</h2>
+  <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+    
+      <div className="flex-shrink-0 mx-auto lg:mx-0">
+        <Image
+          src="/bulgariatimg.jpg"
+          alt="Image description"
+          width={500} // Replace with your image's actual width
+          height={300}
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+        />
+      </div>
   <p>
     A Bulgaria Visit/Tourist Visa is a short-stay visa that allows travellers to visit Bulgaria for tourism purposes. This visa grants access to the country for sightseeing, exploring cultural landmarks, or attending events. Depending on your travel needs, you can apply for a short-stay Schengen visa (Type C) that allows you to stay in Bulgaria for up to 90 days within a 180-day period.
   </p>
+  </div>
 
   <h2 className="text-xl font-semibold">Visa Validity and Duration</h2>
   <ul className="list-disc ml-6 space-y-2">

@@ -1,13 +1,28 @@
 import React from "react";
+import Image from "next/image";
 const Belgiumvisit = () => {
     return (
 
         <div className="space-y-6">
   <h1 className="text-2xl font-bold">Belgium Visit/Tourist Visa – Your Gateway to Exploring the Heart of Europe</h1>
 
-  <p>
+ 
+  <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+  
+    <div className="flex-shrink-0 mx-auto lg:mx-0">
+      <Image
+        src="/belgiumtimg.jpg"
+        alt="Image description"
+        width={500} // Replace with your image's actual width
+        height={300}
+        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+      />
+    </div>
+    <p>
     Belgium is a country of rich history, vibrant culture, breathtaking architecture, and delicious food. Whether you’re looking to explore its picturesque cities like Brussels, Bruges, and Antwerp, or immerse yourself in its famous art scene and chocolate indulgence, Belgium has something for everyone. To help you enjoy a hassle-free journey, obtaining a Belgium Visit/Tourist Visa is the first step toward your European adventure.
   </p>
+  
+  </div>
   <p>
     At <strong>VJC Overseas</strong>, we make the visa application process for Belgium easy, quick, and efficient. Our experienced consultants are here to guide you every step of the way, ensuring a seamless experience for your Belgium travel.
   </p>

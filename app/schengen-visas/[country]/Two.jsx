@@ -22,6 +22,21 @@ import Italyvisit from './Italyvisit';
 import Latviavisit from './Latviavisit';
 import Lithuaniavisit from './Lithuaniavisit';
 import Liechtensteinvisit from './Liechtensteinvisit';
+
+
+import Netherlandvisit from "./Netherlandvisit";
+import Luxembergvisit from "./Luxembergvisit";
+import Romaniavisit from "./Romaniavisit"
+import Portugalvisit from "./Portugalvisit";
+import Polandvisit from "./Polandvisit";
+import Maltavisit from "./Maltavisit";
+import Norwayvisit from "./Norwayvisit";
+
+import Slovakiavisit from './Slovakiavisit';
+import Sloveniavisit from './Sloveniavisit';
+import Spainvisit from './Spainvisit';
+import Swedenvisit from './Swedenvisit';
+import Switzerlandvisit from './Switzerlandvisit';
  
 
 const visaData = [
@@ -181,20 +196,32 @@ const Migrate = () => {
     <Lithuaniavisit />
   ) : selectedVisa.name === "Liechtenstein Visit/Tourist Visa" ? (
     <Liechtensteinvisit />
-  // ) : selectedVisa.name === "Study in Malaysia" ? (
-  //   <Malaysia />
-  // ): selectedVisa.name === "Study in France" ? (
-  //   <France />
-  // ) : selectedVisa.name === "Study in Italy" ? (
-  //   <Itlay />
-  // ) : selectedVisa.name === "Study in Ireland" ? (
-  //   <Ireland />
-  // ) : selectedVisa.name === "Study in Netherlands" ? (
-  //   <Netherland />
-  // ) : selectedVisa.name === "Study in Luxembourg" ? (
-  //   <Lux />
-  // ) : selectedVisa.name === "Study in Dubai" ? (
-  //   <Dubai />
+  ) : selectedVisa.name === "Slovakia Visit/Tourist Visa" ? (
+    <Slovakiavisit />
+  ): selectedVisa.name === "Slovenia Visit/Tourist Visa" ? (
+    <Sloveniavisit />
+  ) : selectedVisa.name === "Spain Visit/Tourist Visa" ? (
+    <Spainvisit />
+  ) : selectedVisa.name === "Sweden Visit/Tourist Visa" ? (
+    <Swedenvisit />
+  ) : selectedVisa.name === "Switzerland Visit/Tourist Visa" ? (
+    <Switzerlandvisit />
+  ) : selectedVisa.name === "Luxembourg Visit/Tourist Visa" ? (
+    <Luxembergvisit/>
+  ): selectedVisa.name === "Romania Visit/Tourist Visa" ? (
+    <Romaniavisit/>
+  ) : selectedVisa.name === "Portugal Visit/Tourist Visa" ? (
+    <Portugalvisit/>
+  ) : selectedVisa.name === "Poland Visit/Tourist Visa" ? (
+    <Polandvisit/>
+  ) : selectedVisa.name === "Malta Visit/Tourist Visa" ? (
+    <Maltavisit/>
+   ) :selectedVisa.name === "Norway Visit/Tourist Visa"?(
+      <Norwayvisit/>
+    
+  ) : selectedVisa.name === "Netherlands Visit/Tourist Visa" ? (
+    <Netherlandvisit />
+    
   ) : (
     <div className="text-gray-700 text-lg leading-relaxed">
       Please select a visa type from the left to view more details.

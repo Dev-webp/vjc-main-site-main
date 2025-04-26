@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const CtaSection = () => {
   const fadeIn = {
@@ -60,9 +61,11 @@ const CtaSection = () => {
           className="mx-auto max-w-md sm:max-w-xl flex justify-center"
           variants={fadeIn}
         >
+          <Link href='/assessment'>
           <button className="outline-none h-12 px-5 rounded-xl bg-orange-600 text-white flex items-center">
             Book Consultant
           </button>
+          </Link>
         </motion.div>
       </motion.div>
     </div>

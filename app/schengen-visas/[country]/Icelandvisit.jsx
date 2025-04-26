@@ -1,15 +1,27 @@
 import React from "react";
+import Image from "next/image";
 
 const Icelandvisit = () => {
     return(
         <section className="text-black ">
   <div className="max-w-4xl mx-auto space-y-6">
-    <h1 className="text-2xl md:text-2xl font-bold">Iceland Visit/Tourist Visa – VJC Overseas</h1>
+    <h1 className="text-2xl md:text-2xl font-bold">Iceland Visit/Tourist Visa – <span className="text-orange-500">VJC Overseas</span></h1>
     <p>Welcome to VJC Overseas, your trusted partner in securing an Iceland Visit Visa. Whether you’re planning a short vacation to explore Iceland's majestic landscapes or visiting friends and family, our expert team ensures a smooth and hassle-free visa application process. Discover all the details you need to know about the Iceland Tourist Visa, including the required documents, eligibility criteria, and helpful tips to get you one step closer to your dream Icelandic adventure.</p>
 
     <h2 className="text-xl md:text-xl font-semibold">What is the Iceland Tourist Visa?</h2>
+    <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+                                                
+                                                  <div className="flex-shrink-0 mx-auto lg:mx-0">
+                                                    <Image
+                                                      src="/icelandtimg.jpg"
+                                                      alt="Image description"
+                                                      width={500} // Replace with your image's actual width
+                                                      height={300}
+                                                      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                    />
+                                                  </div>
     <p>An Iceland Visit Visa, also known as a Schengen Visa, allows you to travel to Iceland for tourism, family visits, business meetings, or short stays of up to 90 days within a 180-day period. As a member of the Schengen Area, Iceland shares visa policies with 26 European countries, making it easy for travelers to explore multiple destinations with a single visa.</p>
-
+</div>
     <h2 className="text-xl md:text-xl font-semibold">Iceland Tourist Visa Validity</h2>
     <p>The Iceland Tourist Visa is typically valid for short stays of up to 90 days in any 180-day period. You can use the visa to visit Iceland for tourism purposes, family visits, or leisure activities. Please note that the visa cannot be extended beyond the 90-day limit, and travelers must leave Iceland before their visa expires. If you wish to stay longer, you would need to apply for an alternative visa or residence permit.</p>
 
