@@ -6,6 +6,7 @@ import FloatingWhatsApp from '@/app/components/FloatingWhatsapp';
 import Nav from '@/app/components/Nav';
 import Header from '@/app/components/Header';
 import TawkToChat from '@/app/components/TawkToChat';
+import Popupform from '@/app/components/Popupform';
 
 // Load Google Fonts using next/font
 const inter = Inter({
@@ -88,6 +89,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {/* End Google Tag Manager (noscript) */}
+        {/* <Popupform/> */}
 
         <Nav />
         {/* <Header/> */}

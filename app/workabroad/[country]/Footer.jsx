@@ -128,7 +128,7 @@ const Footer = () => {
 <p className="mt-2 flex items-center justify-center space-x-2 hover:text-saffron">
     <FaWhatsapp size={25} />
     <Link href="tel:+13322012159" className="text-base">
-        +1 3322012159
+    +1 660-528-2324
     </Link>
 </p>
 
