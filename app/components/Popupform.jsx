@@ -5,24 +5,32 @@ import Link from "next/link";
 
 const sliderData = [
   {
-    title: "Get 30% Off on Visit Visas",
-    description: "Enjoy limited-time discounts for family and tourist visas.",
-    image: "/germanypopupimg.avif",
+    title: "Easy Visa Application",
+description: "Tourist, work, or family visas made simple.",
+
+image: "/germanypopupimg.avif",
   },
   {
-    title: "Business Visa Offer",
-    description: "Save big on business visa consultations and processing.",
+    title: "Congratulations!",
+description: "You've unlocked a special visa offer. Apply now and save!",
+
     image: "/3.png",
   },
   {
-    title: "Student Visa Deals",
-    description: "Special offers for students planning to study abroad.",
+    title: "Study Abroad Offer",
+description: "Exclusive deals for students applying for overseas education visas.",
     image: "/POPUP2.PNG",
   },
   {
-    title: "Student Visa Deals1",
-    description: "Special offers for students planning to study abroad1.",
+    title: "Tourist Visa Offer",
+    description: "Enjoy special deals on your next travel visa application.",
     image: "/popup3.png",
+  },
+  {
+    title: "Business Visa Offer",
+description: "Get exclusive deals on business visa applications.",
+
+    image: "/popup7.jpg",
   },
 ];
 
@@ -48,11 +56,11 @@ function AutoSlider({ delay = 3000 }) {
         transition={{ duration: 0.5 }}
         className="flex flex-col items-center text-center"
       >
-        <div className="w-[200px] md:w-[280px] aspect-square mb-2">
+        <div className="w-[160px] md:w-[280px] aspect-square mb-2">
           <img
             src={current.image}
             alt={current.title}
-            className="rounded-lg object-cover w-full h-full"
+            className="rounded-lg object-cover w-full h-full "
           />
         </div>
         <h2 className="text-sm md:text-base font-semibold mb-1">{current.title}</h2>
@@ -97,12 +105,12 @@ export default function PopupModal() {
               </div>
 
               {/* Right: Half-Moon Content */}
-<div className="w-full md:w-1/2 bg-gray-800 border border-orange-600 p-8 rounded-l-full md:rounded-l-full md:rounded-r-none flex items-center justify-center overflow-hidden">
+<div className="w-full md:w-1/2  bg-gray-800 border border-orange-600 p-8 rounded-l-full md:rounded-l-full md:rounded-r-none flex items-center justify-center overflow-hidden">
   <div className="text-center max-w-sm px-2">
-    <h2 className="text-3xl font-bold text-white mb-4 leading-tight">
+    <h2 className="text-xl md:text-3xl font-bold text-white mb-4 leading-tight hidden md:block">
       Move Abroad with Confidence
     </h2>
-    <p className="text-white text-base mb-6">
+    <p className="text-white text-base mb-6 hidden md:block">
       Let experts guide you through every step of your visa and immigration process.
       Covering 10+ countries with a proven success record.
     </p>

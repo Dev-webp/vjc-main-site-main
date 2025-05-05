@@ -7,7 +7,7 @@ import Footer from "@/app/components/Footer";
 import Desc from "@/app/components/Scroll/components/Description";
 import NewSteps from "@/app/components/NewSteps";
 import ServicesDec from "@/app/components/ServicesDec";
-// import Popupform from '@/app/components/Popupform';
+import Popupform from '@/app/components/Popupform';
 import Awardsection from '@/app/components/Awardsection';
 
 // Dynamic Imports
@@ -27,7 +27,7 @@ export default function Home() {
     <>
       {/* Critical Content */}
       <Hero />
-      {/* <Popupform/> */}
+      <Popupform/>
       <Suspense fallback={<LoadingIndicator />}>
         <Desc />
         <Awardsection/>
