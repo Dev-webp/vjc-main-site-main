@@ -19,7 +19,7 @@ description: "You've unlocked a special visa offer. Apply now and save!",
   {
     title: "Study Abroad Offer",
 description: "Exclusive deals for students applying for overseas education visas.",
-    image: "/POPUP2.PNG",
+    image: "/POPUP2.png",
   },
   {
     title: "Tourist Visa Offer",
