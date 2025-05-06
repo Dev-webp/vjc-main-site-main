@@ -4,17 +4,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const sliderData = [
-  {
-    title: "Easy Visa Application",
-description: "Tourist, work, or family visas made simple.",
-
-image: "/germanypopupimg.avif",
-  },
+  
   {
     title: "Congratulations!",
 description: "You've unlocked a special visa offer. Apply now and save!",
 
     image: "/3.png",
+  },
+  {
+    title: "Easy Visa Application",
+description: "Tourist, work, or family visas made simple.",
+
+image: "/germanypopupimg.avif",
   },
   {
     title: "Study Abroad Offer",
