@@ -6,8 +6,8 @@ import Link from "next/link";
 const sliderData = [
   {
     services: [
-      { text: "Apply For Canada Permanent Residency", link: "/PR-visas/canadapr" },
-      { text: "Apply For Canada Study Visa", link: "/migrate/canada/student-visa" },
+      { text: "Apply For Canada Permanent Residency", link: "/" },
+      { text: "Apply For Canada Study Visa", link: "/" },
     ],
     backgroundImage: "/canada.webp",
     title: "Canada",
@@ -30,7 +30,7 @@ const sliderData = [
       },
       {
         text: "Apply For Germany  Study Visa",
-        link: "/migrate/germany/student-visa/",
+        link: "/",
       }
       
       
@@ -42,7 +42,7 @@ const sliderData = [
   {
     services: [
       { text: "Apply For UK Study Visa", 
-      link: "/migrate/united-kingdom/student-visa"
+      link: "/"
      }
     ],
     backgroundImage: "/uk-flag.png",
@@ -52,7 +52,7 @@ const sliderData = [
   {
     services: [
       { text: "Apply For Malta Study Visa", 
-        link: "/malta" }],
+        link: "/" }],
     backgroundImage: "/malta.png",
     title: "Malta",
     gradient: "bg-gradient-to-r from-red-700 to-white", // Malta color gradient

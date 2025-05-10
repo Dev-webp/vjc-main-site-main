@@ -23,9 +23,9 @@ const EligibilityRequirements = () => {
 
   return (
     <>
-      <div className="h-auto lg:h-fitbg bg-white">
+      <div className=" mt-24 h-auto lg:h-fitbg bg-white">
         <h2 className="text-[2.50rem] font-semibold mt-6 uppercase text-center mb-2 text-dark">
-          Germany Opportunity Card <span className="text-saffron">Checklist</span>
+          Canada Permanent Residency visa <span className="text-saffron">Checklist</span>
         </h2>
 
         {/* First Section */}
