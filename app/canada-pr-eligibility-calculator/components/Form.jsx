@@ -156,7 +156,7 @@ const Form = () => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="w-2/12 bg-gray-800 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition"
+            className="w-2/6 md:w-2/12 bg-gray-800 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition"
             disabled={loading}
           >
             {formStatus === 'success' ? 'Form Submitted!' : loading ? 'Submitting...' : 'Get My Result'}
