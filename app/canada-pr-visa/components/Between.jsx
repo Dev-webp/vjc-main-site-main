@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Between = () => {
@@ -6,23 +7,22 @@ const Between = () => {
 
   const contactLink = isLargeDevice 
     ? "mailto:info@vjcoverseas.com" 
-    : "tel:+919160449000"; // Change the number accordingly
+    : "tel:+919160449000"; // Update number as needed
 
   return (
     <div className="h-72 md:h-52 lg:h-52 bg-gradient-to-b from-orange-500 to-saffron flex items-center justify-center">
       {/* Left Section - Content Centered */}
       <div className="text-white max-w-[60%] md:max-w-[40%] lg:max-w-[40%] tablet:max-w-[48%] text-center">
-        <h3 className="text-2xl font-semibold mb-2 uppercase">Unlock Your Future with Germany&apos;s Opportunity Card</h3>
-        <p className="text-lg mb-4">Pursue career growth and work opportunities in Germany. Start your journey today!</p>
-        <a href={contactLink}>
+        <h3 className="text-2xl font-semibold mb-2 uppercase">Begin Your Journey to Canada PR</h3>
+        <p className="text-lg mb-4">Settle in Canada permanently, enjoy world-class benefits, and build a successful future. Apply today!</p>
+        <Link href='contact-us'>
           <button className="bg-white text-saffron py-2 px-6 rounded-full hover:bg-black hover:text-saffron transition-all">
             Contact Now
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default Between;
-
