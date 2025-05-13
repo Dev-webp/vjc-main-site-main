@@ -27,7 +27,7 @@ export default function Home() {
     <>
       {/* Critical Content */}
       <Hero />
-      <Popupform/>
+  
       <Suspense fallback={<LoadingIndicator />}>
         <Desc />
         <Awardsection/>
