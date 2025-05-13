@@ -7,7 +7,7 @@ import Nav from '@/app/components/Nav';
 import Header from '@/app/components/Header';
 import TawkToChat from '@/app/components/TawkToChat';
 import Popupform from '@/app/components/Popupform';
-
+import EligibilityBanner from "@/app/components/EligibilityBanner";
 // Load Google Fonts using next/font
 const inter = Inter({
   subsets: ['latin'],
@@ -92,6 +92,7 @@ export default function RootLayout({
         {/* <Popupform/> */}
 
         <Nav />
+        <EligibilityBanner />
         {/* <Header/> */}
         {children}
         <FloatingWhatsApp />

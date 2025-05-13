@@ -428,27 +428,6 @@ const Navbar = () => {
 </div>
 
 
-<div className="fixed left-2 md:left-0 top-[33vh] z-50 flex flex-col gap-0 max-w-[90vw] w-auto">
-  <Link href="/services">
-    <button className="text-white font-bold text-xs sm:text-sm bg-gradient-to-tr from-orange-500 to-black px-3 sm:px-2 py-4 sm:py-5 md:py-4 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
-      Services
-    </button>
-  </Link>
-
-  <Link href="/assessment">
-    <button className="text-white font-bold text-xs sm:text-sm bg-orange-500 px-3 sm:px-2 py-4 sm:py-5 md:py-4 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-orange-600">
-      Assessment
-    </button>
-  </Link>
-
-  <Link href="/contact-us">
-    <button className="text-white font-bold text-xs sm:text-sm bg-gradient-to-tr from-black to-orange-500 px-3 sm:px-2 py-4 sm:py-5 md:py-4 shadow-lg rotate-180 [writing-mode:vertical-lr] transition-transform hover:scale-105 hover:bg-[#8D6E4C]">
-      Contact Us
-    </button>
-  </Link>
-</div>
-
-
 
 
 <div className="bg-orange-500 fixed top-12 w-screen z-50 md:hidden block">
