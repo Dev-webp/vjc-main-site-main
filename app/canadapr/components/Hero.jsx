@@ -11,7 +11,7 @@ const Hero = () => {
       {/* Background Image with next/image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/canadabgimg11.jpg"
+          src="/canadabgimg1.jpg"
           alt="Background Image"
           fill
           style={{ objectFit: 'cover' }}
@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
       {/* White Transparent Overlay */}
-      <div className="absolute inset-0 bg-gray-900 opacity-70 z-0" />
+      <div className="absolute inset-0 bg-gray-900 opacity-50 z-0" />
 
       {/* Content Container */}
       <div className="relative flex flex-col lg:flex-row w-full h-full items-center justify-center mt-0 lg:mt-0 px-4 sm:px-6 lg:px-12 z-10 mb-12">
