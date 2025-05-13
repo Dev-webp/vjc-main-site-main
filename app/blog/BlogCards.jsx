@@ -1,5 +1,6 @@
 'use client';
-import { useState } from 'react';
+
+import './global.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -14,16 +15,16 @@ const blogs = [
   },
   {
     id: 2,
-    title: 'Germany Opportunity Card - Everything. You Neird to Know in 2025',
-    slug: 'how-to-apply-for-canada-student-visa-2026',
-    description: 'An ovement of the new work visa for Bc. Tist professionals migrati. to Germany',
+    title: 'Germany Opportunity Card - Everything You Need to Know in 2025',
+    slug: 'germany-opportunity-card-2025',
+    description: 'An overview of the new work visa for tech professionals migrating to Germany',
     image: '/germany.jpg',
     category: 'Visa Guide',
   },
   {
     id: 3,
     title: 'Working While Studying: Pros & Cons',
-    slug: 'how-to-apply-for-canada-student-visa-2024',
+    slug: 'working-while-studying-pros-cons',
     description: 'Find the balance between academics and income.',
     image: '/WorkingHoliday417Visa.jpg',
     category: 'Work Abroad',
@@ -31,43 +32,37 @@ const blogs = [
   {
     id: 4,
     title: 'Study Abroad Scholarships You Must Know',
-    slug: 'how-to-apply-for-canada-student-visa-2023',
+    slug: 'study-abroad-scholarships',
     description: 'Unlock your education journey with scholarships.',
     image: '/studyabroad.png',
     category: 'Study Tips',
   },
   {
     id: 5,
-    title: 'Countries of Tourist Visas',
-    slug: 'how-to-apply-for-canada-student-visa-2021',
-    description: 'Earn while you learn: best part-time opportunities.',
+    title: 'Countries Offering Tourist Visas',
+    slug: 'countries-tourist-visas',
+    description: 'Top destinations with easy tourist visa options.',
     image: '/balgeriatour.jpg',
     category: 'Visa Guide',
   },
   {
     id: 6,
-    title: 'Serach for your dream countries',
-    slug: 'how-to-apply-for-canada-student-visa-2021',
-    description: 'Earn while you learn: best part-time opportunities.',
+    title: 'Search for Your Dream Country',
+    slug: 'search-dream-country',
+    description: 'Plan your journey to study, work, or migrate abroad.',
     image: '/vjc-gdvisa.jpg',
     category: 'Work Abroad',
   },
-  
 ];
 
 const BlogCards = ({ search = '', category = 'All' }) => {
-  const [showAll, setShowAll] = useState(false);
-
   const filtered = blogs.filter((blog) => {
     const matchesCategory = category === 'All' || blog.category === category;
     const matchesSearch = blog.title.toLowerCase().includes(search.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
-  const visibleBlogs = showAll ? filtered : filtered.slice(0, 3);
-
   return (
-    <>
     <div className='bg-white'>
       <div className="-mt-12 mb-6 bg-white">
         <h2 className="text-4xl bg-gradient-to-r from-black via-orange-500 to-orange-500 bg-clip-text text-transparent">
@@ -76,48 +71,51 @@ const BlogCards = ({ search = '', category = 'All' }) => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-10 bg-white">
-        {visibleBlogs.length > 0 ? (
-          visibleBlogs.map((blog) => (
+        {filtered.length > 0 ? (
+          filtered.map((blog) => (
             <Link href={`/blog/${blog.slug}`} key={blog.id}>
-
-              <div className="cursor-pointer bg-white overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col">
-                
-                {/* Image */}
-                <div className="relative h-48 w-full">
-                  <Image
-                    src={blog.image}
-                    alt={blog.title}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    className="transition-transform hover:scale-105 duration-300"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-6 flex flex-col flex-grow justify-between h-64"> {/* <-- fixed height here */}
-  <div>
-    <span className="text-xs uppercase tracking-wide text-purple-500 font-semibold">
-      {blog.category}
-    </span>
-
-    <h2 className="text-xl font-bold mt-2 text-gray-800 line-clamp-3"> {/* <-- limit title lines */}
-      {blog.title}
-    </h2>
-
-    <p className="text-sm text-gray-600  "> {/* <-- limit description lines */}
-      {blog.description}
-    </p>
-  </div>
-
-  {/* Read More */}
-  <div className="">
-    <span className="text-orange-500 hover:text-purple-800 text-sm font-semibold flex items-center gap-1">
-      Read More →
-    </span>
-  </div>
+              <div className="relative group cursor-pointer overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-80">
+                {/* Image container */}
+                <div className="relative w-[95%] h-full mx-auto overflow-hidden">
+                 
+                 <div className="relative w-[95%] h-full mx-auto overflow-hidden folded-image">
+  <Image
+    src={blog.image}
+    alt={blog.title}
+    fill
+    className="object-cover group-hover:scale-105 transition-transform duration-500"
+  />
 </div>
 
 
+
+                  {/* Bottom-left overlay text box with flip effect */}
+                  <div className="absolute bottom-[-12px] left-[-12px] w-11/12 h-36 perspective">
+                    <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                      {/* Front Side */}
+                      <div className="absolute inset-0 bg-white text-black p-4 rounded-lg backface-hidden">
+                        <span className="text-xs uppercase tracking-wide font-semibold text-black opacity-80">
+                          {blog.category}
+                        </span>
+                        <h2 className="text-md font-bold mt-1 line-clamp-2">
+                          {blog.title}
+                        </h2>
+                      </div>
+
+                      {/* Back Side */}
+                     <div className="absolute inset-0 bg-transparent text-black p-4 transform rotate-y-180 backface-hidden group-hover:bg-black/70 hover:text-white transition-colors duration-500">
+
+  <span className="text-xs uppercase tracking-wide font-semibold opacity-90">
+    {blog.category}
+  </span>
+  <h2 className="text-md font-bold mt-1 line-clamp-2">
+    {blog.title}
+  </h2>
+</div>
+
+                    </div>
+                  </div>
+                </div>
               </div>
             </Link>
           ))
@@ -125,20 +123,7 @@ const BlogCards = ({ search = '', category = 'All' }) => {
           <p className="text-gray-500 text-center col-span-full">No blogs found.</p>
         )}
       </div>
-
-      {/* Load More / Load Less Button */}
-      {filtered.length > 3 && (
-        <div className="flex justify-end mt-6 px-4 sm:px-10">
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="bg-orange-500 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded transition duration-300"
-          >
-            {showAll ? 'Load Less' : 'Load More'}
-          </button>
-        </div>
-      )}
-      </div>
-    </>
+    </div>
   );
 };
 

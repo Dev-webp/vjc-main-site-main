@@ -5,6 +5,10 @@ import { Phone, Mail } from 'lucide-react';
 
 import Image from 'next/image';
 import Canadacomp from './Canadacomp'; 
+import Germanyoppcard from './Germanyoppcard';
+import Workabroad from './Workabroad';
+import Studytips from './Studytips';
+import Visitvisa from './Visitvisa';
 import Form from '../Form'; // 🛑 Make sure to import your Form component
 import Footer from './Footer';
 
@@ -21,43 +25,47 @@ const blogs = [
   {
     id: 2,
     title: 'Germany Opportunity Card - Everything You Need to Know in 2025',
-    slug: 'how-to-apply-for-canada-student-visa-2026',
+    slug: 'germany-opportunity-card-2025',
     description: 'An overview of the new work visa for BC. Tech professionals migrating to Germany',
     image: '/germany.jpg',
     category: 'Visa Guide',
-    // component: <Germanycomp />
+    component: <Germanyoppcard />
   },
   {
     id: 3,
     title: 'Working While Studying: Pros & Cons',
-    slug: 'how-to-apply-for-canada-student-visa-2024',
+    slug: 'working-while-studying-pros-cons',
     description: 'Find the balance between academics and income.',
     image: '/WorkingHoliday417Visa.jpg',
     category: 'Work Abroad',
+     component: <Workabroad />
   },
   {
     id: 4,
     title: 'Study Abroad Scholarships You Must Know',
-    slug: 'how-to-apply-for-canada-student-visa-2023',
+    slug: 'study-abroad-scholarships',
     description: 'Unlock your education journey with scholarships.',
     image: '/studyabroad.png',
     category: 'Study Tips',
+    component: <Studytips/>
   },
   {
     id: 5,
     title: 'Countries of Tourist Visas',
-    slug: 'how-to-apply-for-canada-student-visa-2021',
+    slug: 'countries-tourist-visas',
     description: 'Earn while you learn: best part-time opportunities.',
     image: '/balgeriatour.jpg',
     category: 'Visa Guide',
+    component:<Visitvisa/>
   },
   {
     id: 6,
     title: 'Serach for your dream countries',
-    slug: 'how-to-apply-for-canada-student-visa-2021',
+    slug: 'search-dream-country',
     description: 'Earn while you learn: best part-time opportunities.',
     image: '/vjc-gdvisa.jpg',
     category: 'Work Abroad',
+    component: <Workabroad />
   },
 ];
 
