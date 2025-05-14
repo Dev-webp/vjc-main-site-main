@@ -1,112 +1,88 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import Form from "./Form";
-import Content from "./Content";
+import {
+  FaClock,
+  FaUsers,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaCalendarAlt,
+  FaEnvelope,
+} from 'react-icons/fa';
+import Image from 'next/image';
+import Form from './Form';
 
-const Migrate = () => {
-  
-
-  const toggleFAQ = (index) => {
-    setOpenFAQ(openFAQ === index ? null : index);
-  };
-
+export default function ContactSection() {
   return (
-    <div className="w-full">
-      {/* Top Banner */}
-      <div className="relative w-full h-72">
-        <Image src="/ieltsimg.avif" alt="IELTS Coaching" layout="fill" objectFit="cover" className="w-full" />
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute left-12 bottom-20 text-white">
-          <h1 className="text-3xl font-bold">DUOLINGO Coaching</h1>
-          <p><Link href="/">Home</Link> &gt; DUOLINGO Coaching</p>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div className="flex flex-col md:flex-row w-full px-4 md:px-8 mt-6">
-  {/* Left Section - Buttons + Form */}
-  <div className="w-full md:w-1/3 space-y-4">
-    <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
-      <Link href="/ielts">
-        <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
-        IELTS
-        </button>
-      </Link>
-      <Link href="/pte">
-        <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
-          PTE
-        </button>
-      </Link>
-      <Link href="/gre">
-        <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
-          GRE
-        </button>
-      </Link>
-      <Link href="/gmat">
-        <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
-          GMAT
-        </button>
-      </Link>
-      <Link href="/toefl">
-        <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
-          TOEFL
-        </button>
-      </Link>
-      <Link href="/duolingo">
-        <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
-          DUOLINGO
-        </button>
-      </Link>
-    </div>
-  
-
-
-          <div className=""><Form /></div>
-        </div>
-
-        {/* Right Section - Content with Scrolling */}
-        <div className="w-full md:w-4/5 md:pl-6">
-          <div className="h-[500px] md:h-[650px] overflow-y-auto border rounded-lg p-4 bg-white shadow">
-            <Content />
+    <div className="w-full bg-white">
+      {/* Heading */}
+      <div className="text-center py-12 px-4">
+        {/* Form + Image + Cards Section */}
+        <div className="flex flex-col md:flex-row items-start justify-center gap-10 px-4">
+          {/* Left: Form */}
+          <div className="flex-1 w-full max-w-xl">
+            <Form />
           </div>
 
-          {/* Two Side-by-Side Images */}
-          <div className="flex flex-col md:flex-row justify-between gap-4 mt-6">
-            <Image src="/dmwork.jpg" alt="Sample 1" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" />
-            <Image src="/gtvimage.jpg" alt="Sample 2" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" />
-          </div>
-        </div>
-      </div>
-
-      {/* Help & FAQ Section */}
-      <div className="w-full flex flex-col md:flex-row items-start px-4 md:px-3 mt-6  p-6">
-        {/* Help Box */}
-        <div className="w-full md:w-1/3 bg-white p-16 border border-x-orange-600 text-center">
-          <h2 className="text-xl font-bold text-orange-500">How Can We Help You?</h2>
-          <p className="mt-2 text-gray-600">Contact us for guidance.</p>
-          <p className="mt-2 font-bold">📞  +91 9160449000</p>
-          <p className="mt-1 font-bold">✉️ info@vjcoverseas.com</p>
-        </div>
-        
-        {/* FAQ Section */}
-        <div className="w-full md:w-3/5 ml-0 md:ml-6">
-          {/* <h2 className="text-2xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2> */}
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-b py-4">
-              <button className="w-full text-left flex justify-between items-center text-lg font-semibold text-gray-700" onClick={() => toggleFAQ(index)}>
-                {faq.question}
-                <span className="text-orange-500 text-2xl">{openFAQ === index ? "-" : "+"}</span>
-              </button>
-              {openFAQ === index && <p className="text-gray-600 mt-2">{faq.answer}</p>}
+          {/* Right: Image + Cards */}
+          <div className="flex-1 flex flex-col items-center md:items-start justify-start w-full">
+            {/* Image shifted right slightly */}
+            <div className="relative -mb-4 md:self-center md:pl-12 lg:pl-20">
+              <Image
+                src="/sales-girl-1.png"
+                alt="Contact"
+                width={380}
+                height={300}
+                className="rounded-lg mx-auto md:mx-0"
+              />
             </div>
-          ))}
+
+            {/* Cards (Grid of 6) */}
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+              {/* Card 1 */}
+              <div className="bg-orange-100  p-4 text-center shadow-md hover:shadow-lg transition">
+                <FaClock className="text-orange-500 text-2xl mb-2 mx-auto" />
+                <h4 className="font-bold text-md text-black">Quick Response</h4>
+                <p className="text-sm text-gray-600">Reply within 24 hours</p>
+              </div>
+
+              {/* Card 2 */}
+              <div className="bg-orange-100  p-4 text-center shadow-md hover:shadow-lg transition">
+                <FaUsers className="text-orange-500 text-2xl mb-2 mx-auto" />
+                <h4 className="font-bold text-md text-black">Expert Team</h4>
+                <p className="text-sm text-gray-600">Professional & helpful</p>
+              </div>
+
+              {/* Card 3 */}
+              <div className="bg-orange-100  p-4 text-center shadow-md hover:shadow-lg transition">
+                <FaCalendarAlt className="text-orange-500 text-2xl mb-2 mx-auto" />
+                <h4 className="font-bold text-md text-black">Working Days</h4>
+                <p className="text-sm text-gray-600">Mon - Sat available</p>
+              </div>
+
+              {/* Card 4 - Location */}
+              <div className="bg-orange-100 p-4 text-center shadow-md hover:shadow-lg transition">
+                <FaMapMarkerAlt className="text-orange-500 text-2xl mb-2 mx-auto" />
+                <h4 className="font-bold text-md text-black">Our Location</h4>
+                <p className="text-sm text-gray-600">Banglore,Hyderabad,USA</p>
+              </div>
+
+              {/* Card 5 - Email */}
+              <div className="bg-orange-100  p-4 text-center shadow-md hover:shadow-lg transition">
+                <FaEnvelope className="text-orange-500 text-2xl mb-2 mx-auto" />
+                <h4 className="font-bold text-md text-black">Email Us</h4>
+                <p className="text-sm text-gray-600"> info@vjcoverseas.com</p>
+              </div>
+
+              {/* Card 6 - Phone */}
+              <div className="bg-orange-100  p-4 text-center shadow-md hover:shadow-lg transition">
+                <FaPhoneAlt className="text-orange-500 text-2xl mb-2 mx-auto" />
+                <h4 className="font-bold text-md text-black">Call Us</h4>
+                <p className="text-sm text-gray-600">+91 9160449000</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default Migrate;
+}
