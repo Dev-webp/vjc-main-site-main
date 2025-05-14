@@ -6,7 +6,7 @@ import Link from "next/link";
 const sliderData = [
   {
     services: [
-      { text: "Apply For Canada Permanent Residency", link: "/" },
+      { text: "Apply For Canada Permanent Residency", link: "/migrate-canada-permanent-residency-visa" },
       { text: "Apply For Canada Study Visa", link: "/" },
     ],
     backgroundImage: "/canada.webp",
@@ -32,7 +32,7 @@ const sliderData = [
     gradient: "bg-gradient-to-r from-white to-yellow-500",
   },
   {
-    services: [{ text: "Apply For UK Study Visa", link: "/" }],
+    services: [{ text: "Apply For UK Study Visa", link: "/uk-student-study-visa-benefits-requirments" }],
     backgroundImage: "/uk-flag.png",
     title: "United Kingdom",
     gradient: "bg-gradient-to-r from-blue-500 to-white",

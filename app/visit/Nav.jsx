@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: "AboutUs", path: "/about-us" },
     { name: "MigrateTo", path: "/migrate" },
     { name: "StudyAbroad", path: "/studyabroad" },
-    { name: "PRVisas", path: "/Permanent-Residency-Visas" },
+    { name: "PRVisas", path: "/prvisas" },
     { name: "WorkAbroad", path: "/" },
     { name: "JobSeekerVisas", path: "/" },
     { name: "VisitVisas", path: "/" },
