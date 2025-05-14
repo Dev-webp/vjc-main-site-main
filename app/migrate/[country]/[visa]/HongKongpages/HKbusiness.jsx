@@ -30,7 +30,7 @@ const Content = () => {
     <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
   <div className="flex-shrink-0 mx-auto lg:mx-0">
     <Image
-      src="/ukimage3.jpg"
+      src="/businessvisa.jpg"
       alt="Image description"
       width={500} // Replace with your image's actual width
       height={300}

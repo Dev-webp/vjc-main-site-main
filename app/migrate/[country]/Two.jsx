@@ -79,13 +79,13 @@ const countryVisaData = {
     { name: "Hong Kong Work Visa", path: "/migrate/hong-kong/work-visa" },
   ],
   denmark: [
-    { name: "Denmark Student Visa", path: "/migrate/denmark/work-visa" },
+    { name: "Denmark Student Visa", path: "/migrate/denmark/student-visa" },
     { name: "Denmark Work Permit Visa", path: "/migrate/denmark/work-permit-visa" },
     { name: "Denmark Tourist Visa", path: "/migrate/denmark/tourist-visa" },
     { name: "Denmark Business Visa", path: "/migrate/denmark/business-visa" },
   ],
   uae: [
-    { name: "UAE Student Visa", path: "/migrate/uae/work-visa" },
+    { name: "UAE Student Visa", path: "/migrate/uae/student-visa" },
     { name: "UAE Golden Visa", path: "/migrate/uae/golden-visa" },
   { name: "UAE Work Visa", path: "/migrate/uae/work-visa" },
   { name: "UAE Green Visa", path: "/migrate/uae/green-visa" },
