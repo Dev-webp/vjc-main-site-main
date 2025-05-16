@@ -1,12 +1,9 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
-import Form from "./Form"; // adjust path if needed
-import Wbcontent from "./Wbcontent"; // assuming you have this component
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const countriesData = [
   {
@@ -46,93 +43,69 @@ const countriesData = [
   },
 ];
 
-const carouselImages = [
-  { image: "/germany.jpg", text: "WORK IN GERMANY" },
-  { image: "/canada.webp", text: "WORK IN CANADA " },
-  { image: "/usa1.jpg", text: "OPPORTUNITIES IN USA" },
-];
-
 const Migrate = () => {
   const router = useRouter();
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const scrollRef = useRef(null);
 
-  // Carousel auto change
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
-    }, 3000); // Change image every 3 seconds
-    return () => clearInterval(interval);
-  }, []);
-
-  const handleButtonClick = (path) => {
-    router.push(path);
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -300 : 300,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
-    <div className="flex flex-col w-full bg-white">
+    <main className="w-full bg-white pt-16 pb-0 px-4 lg:px-20">
+      <h2 className="text-2xl lg:text-3xl font-semibold text-center mb-4">
+        Select Your Work Permit Destination
+      </h2>
 
-      {/* Top Full Width Carousel Section */}
-      <div className="relative w-full h-[80vh] overflow-hidden">
-        {carouselImages.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: currentSlide === index ? 1 : 0 }}
-            transition={{ duration: 0.8 }}
-            className="absolute inset-0 w-full h-full"
-          >
-            <img src={item.image} alt="carousel" className="object-cover w-full h-full" />
-            <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white text-center p-4">
-              <h2 className="text-3xl sm:text-5xl font-bold mb-4">{item.text}</h2>
-              <Link href="/assessment">
-              <button className="bg-gray-800 hover:bg-orange-500 text-white font-semibold py-2 px-6 transition">
-                Free Assessment
-              </button>
-              </Link>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Middle Section: 7 Buttons + Wbcontent */}
-      <div className="flex flex-col md:flex-row w-full my-10 px-4 md:px-16 gap-8">
-        
-        {/* 30% Left - Buttons */}
-        <div className="w-full md:w-1/3 flex flex-col gap-4">
-          {countriesData.map((country, idx) => (
-            <button
-              key={idx}
-              onClick={() => handleButtonClick(country.path)}
-              className="flex items-center gap-4 bg-white border border-orange-500 hover:bg-orange-500 rounded-lg p-3 shadow-md transition"
+      <div className="relative">
+        {/* Scrollable Carousel */}
+        <div
+          ref={scrollRef}
+          className="flex overflow-x-auto space-x-4 sm:space-x-6 no-scrollbar scroll-smooth"
+        >
+          {countriesData.map((country, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.05 }}
+              className="min-w-[240px] sm:min-w-[280px] max-w-[300px] h-[220px] sm:h-[260px] rounded-lg bg-white border border-gray-200 cursor-pointer relative overflow-hidden"
+              onClick={() => router.push(country.path)}
             >
-              <img src={country.image} alt={country.name} className="w-12 h-12 object-cover rounded-md" />
-              <span className="font-semibold text-gray-800">{country.name}</span>
-            </button>
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform scale-100 hover:scale-105"
+                style={{ backgroundImage: `url(${country.image})` }}
+              />
+              {/* Overlay */}
+              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-end text-white bg-black/30">
+                <h3 className="text-lg sm:text-xl text-center font-bold">
+                  {country.name}
+                </h3>
+              </div>
+            </motion.div>
           ))}
         </div>
 
-        {/* 70% Right - Wbcontent */}
-        <div className="w-full md:w-2/3">
-          <Wbcontent />
-        </div>
+        {/* Scroll Buttons INSIDE Carousel */}
+        <button
+          onClick={() => scroll("left")}
+          className="absolute top-1/2 -translate-y-1/2 left-0 z-20 bg-blue-700 text-white p-2 rounded-full hover:bg-blue-900 shadow-md"
+        >
+          <ChevronLeft size={24} />
+        </button>
+
+        <button
+          onClick={() => scroll("right")}
+          className="absolute top-1/2 -translate-y-1/2 right-0 z-20 bg-blue-700 text-white p-2 rounded-full hover:bg-blue-900 shadow-md"
+        >
+          <ChevronRight size={24} />
+        </button>
       </div>
-
-      {/* Bottom Section: Form + Image */}
-      <div className="flex flex-col gap-48 md:flex-row items-center w-full my-10 px-4 md:px-16">
-        
-        {/* 40% Left - Form */}
-        <div className="w-full md:w-2/6 -mt-36">
-          <Form />
-        </div>
-
-        {/* 60% Right - Image */}
-        <div className=" w-full md:w-2/5 -mt-28 ">
-          <img src="/workabroadimg2.avif" alt="Work Abroad" className="w-full h-auto " />
-        </div>
-
-      </div>
-
-    </div>
+    </main>
   );
 };
 

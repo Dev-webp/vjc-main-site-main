@@ -69,12 +69,7 @@ export default function HeroSection() {
           transition={{ delay: 1.2 }}
           className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-6"
         >
-          <motion.p
-            variants={itemVariants}
-            className="text-blue-300 font-bold  text-sm tracking-widest uppercase mb-4"
-          >
-            Welcome to Entryway
-          </motion.p>
+          
           <motion.h1
             variants={itemVariants}
             className="text-white tracking-wider leading-10 md:leading-normal text-3xl md:text-5xl md:w-[70%] font-bold mb-4"
@@ -89,7 +84,7 @@ export default function HeroSection() {
           </motion.p>
           <motion.div variants={itemVariants} className="flex gap-4">
             <Link
-              href="/contact"
+              href="/contact-us"
               className="relative overflow-hidden inline-block px-6 py-3 mt-6 rounded-md font-semibold text-white bg-orange-500 group"
             >
               <span className="relative z-10">Contact Us</span>

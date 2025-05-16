@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Nav from "./Nav";
-
+import Wbcontent from "./Wbcontent";
+import Content from "./Content";
 import Two from "./Two";
 import Footer from "./Footer";
 
@@ -41,13 +41,14 @@ const ContactPage = () => {
     <>
       {/* Navbar */}
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
+        
       </div>
 
-     
+     <Content />
 
       {/* Other Sections */}
       <Two />
+      <Wbcontent />
       <div className="-mt-10">
       <Footer />
       </div>

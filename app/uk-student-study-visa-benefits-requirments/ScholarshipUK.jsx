@@ -123,15 +123,16 @@ export default function StudyInUK() {
             custom={3}
             variants={fadeUp}
           >
-            <div className="md:w-1/4 w-full">
-              <Image
-                src="/studyinuk/ukstudy.png"
-                width={400}
-                height={300}
-                alt="Study in UK"
-                className="rounded-md object-cover w-full"
-              />
-            </div>
+           <div className="md:w-1/4 w-full">
+  <img
+    src="https://www.vjcoverseas.com/studyinuk/ukstudy.png"
+    alt="Counseling"
+    title="Counseling"
+    className="object-cover rounded-md w-full h-40"
+  />
+</div>
+
+
             <div className="md:w-3/4 w-full text-gray-700 text-md leading-relaxed">
               <p>
                 Cambridge, or any modern university, the UK offers unmatched academic excellence and career opportunities.

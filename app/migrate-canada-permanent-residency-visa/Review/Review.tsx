@@ -6,31 +6,31 @@ import Image from "next/image";
 const slidesData = [
   {
     image: "/assets/canadapr/Reviews/review1.png",
-    content: "The team at VJC Overseas Bangalore made my dream of studying in the UK a reality. Their guidance and support in securing my education visa were invaluable. I’m so grateful for their help and would recommend them to anyone looking to study abroad.",
+    content: "The team at VJC Overseas Bangalore made my dream of Canada PR Visa a reality. Their guidance and support in securing my education visa were invaluable. I’m so grateful for their help and would recommend them to anyone looking to PR visa.",
     author: "Kavya mopuri",
     title: "UK Study Visa"
   },
   {
     image: "/assets/canadapr/Reviews/review4.png",
-    content: "VJC Overseas Bangalore is the best immigration consultancy I’ve come across. Their team made my permanent residency application process for Australia so simple and hassle-free. I couldn’t be happier with their service!",
+    content: "VJC Overseas Bangalore is the best immigration consultancy I’ve come across. Their team made my permanent residency application process for Canada so simple and hassle-free. I couldn’t be happier with their service!",
     author: "Rohit Naidu",
     title: "Student Visa"
   },
   {
     image: "/assets/canadapr/Reviews/review3.png",
-    content: "As someone who was completely new to the study abroad application process, I was so grateful for the support I received from VJC Overseas. They guided me through every step, helping me secure my education visa without any complications. I highly recommend their services!",
+    content: "Thankyou VJC for providing excellent guidance throughout the application process, with clear explanations and timely support, leading to a successful visa approval for Canada PR, Once again thanks a lot for your support throughout the process.",
     author: "Monisha Vijaykumar",
     title: "Skilled Worker"
   },
   {
     image: "/assets/canadapr/Reviews/review2.png",
-    content: "had an amazing experience with VJC Overseas Bangalore. They helped me with my Australia immigration process, and everything went smoothly from start to finish. Their expertise and dedication are unmatched.",
+    content: "had an amazing experience with VJC Overseas Bangalore. They helped me with my Canada PR visa, and everything went smoothly from start to finish. Their expertise and dedication are unmatched.",
     author: "Sai Preethi",
     title: "Australia Immigration"
   },
   {
     image: "/assets/canadapr/Reviews/review5.png",
-    content: "Excellent work! I would like to thank VJC Overseas help me getting my study visa extension and would highly recommend to everyone to consult with VJC Overseas for visa processes. The whole team is very competitive and helpful.",
+    content: "Excellent work! I would like to thank VJC Overseas help me getting my Canada PR Visa and would highly recommend to everyone to consult with VJC Overseas for visa processes. The whole team is very competitive and helpful.",
     author: "Hanish Mj",
     title: "Investor Program"
   }

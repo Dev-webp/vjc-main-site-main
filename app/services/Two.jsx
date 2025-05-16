@@ -168,7 +168,7 @@ export default function Two() {
             Ready to begin your journey? Our experts are here to help.
           </p>
           <button
-            onClick={() => handleRedirect("/contact")}
+            onClick={() => handleRedirect("/contact-us")}
             className="mt-4 px-6 py-3 bg-orange-400 text-blue-800 font-semibold rounded-full shadow-lg hover:scale-105 transition duration-300"
           >
             Contact Us <FaPhoneAlt className="inline ml-2" />

@@ -68,7 +68,7 @@ export default function TrustedVisaSection() {
           </div>
 
           <Link
-              href="/contact"
+              href="/prvisas/canadapr"
               className="relative overflow-hidden inline-block px-6 py-3 mt-6 rounded-md font-semibold text-white bg-orange-500 group"
             >
               <span className="relative z-10">Explore Canada PR</span>
