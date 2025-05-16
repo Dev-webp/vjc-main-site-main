@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -56,6 +56,28 @@ const Migrate = () => {
     }
   };
 
+  // Auto scroll effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+
+        // Scroll right by 300px
+        scrollRef.current.scrollBy({
+          left: 300,
+          behavior: "smooth",
+        });
+
+        // Loop back to start if at end
+        if (scrollLeft + clientWidth >= scrollWidth - 10) {
+          scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
+        }
+      }
+    }, 2000); // every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <main className="w-full bg-white pt-16 pb-0 px-4 lg:px-20">
       <h2 className="text-2xl lg:text-3xl font-semibold text-center mb-4">
@@ -63,10 +85,9 @@ const Migrate = () => {
       </h2>
 
       <div className="relative">
-        {/* Scrollable Carousel */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto space-x-4 sm:space-x-6 no-scrollbar scroll-smooth"
+          className="scroll-wrapper flex overflow-x-auto space-x-4 sm:space-x-6 scroll-smooth"
         >
           {countriesData.map((country, index) => (
             <motion.div
@@ -75,12 +96,10 @@ const Migrate = () => {
               className="min-w-[240px] sm:min-w-[280px] max-w-[300px] h-[220px] sm:h-[260px] rounded-lg bg-white border border-gray-200 cursor-pointer relative overflow-hidden"
               onClick={() => router.push(country.path)}
             >
-              {/* Background Image */}
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform scale-100 hover:scale-105"
                 style={{ backgroundImage: `url(${country.image})` }}
               />
-              {/* Overlay */}
               <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-end text-white bg-black/30">
                 <h3 className="text-lg sm:text-xl text-center font-bold">
                   {country.name}
@@ -90,14 +109,13 @@ const Migrate = () => {
           ))}
         </div>
 
-        {/* Scroll Buttons INSIDE Carousel */}
+        {/* Scroll Buttons */}
         <button
           onClick={() => scroll("left")}
           className="absolute top-1/2 -translate-y-1/2 left-0 z-20 bg-blue-700 text-white p-2 rounded-full hover:bg-blue-900 shadow-md"
         >
           <ChevronLeft size={24} />
         </button>
-
         <button
           onClick={() => scroll("right")}
           className="absolute top-1/2 -translate-y-1/2 right-0 z-20 bg-blue-700 text-white p-2 rounded-full hover:bg-blue-900 shadow-md"
@@ -105,6 +123,17 @@ const Migrate = () => {
           <ChevronRight size={24} />
         </button>
       </div>
+
+      {/* Inline CSS for scrollbar hiding */}
+      <style jsx>{`
+        .scroll-wrapper {
+          scrollbar-width: none; /* Firefox */
+        }
+
+        .scroll-wrapper::-webkit-scrollbar {
+          display: none; /* Chrome, Safari */
+        }
+      `}</style>
     </main>
   );
 };
