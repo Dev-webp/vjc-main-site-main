@@ -65,7 +65,7 @@ const VisitVisas = () => {
 
         {/* What is a Visit Visa? */}
         <SectionWrapper className="mb-16">
-          <div className="mb-10">
+          <div className="mb-10 ml-8">
             <h2 className="text-3xl font-semibold mb-4">What is a Visit Visa?</h2>
             <p className="text-lg text-gray-700">
               A Visit Visa is a temporary travel document that allows you to enter and stay in a foreign country for leisure, tourism, family visits, or short business trips.
@@ -75,7 +75,7 @@ const VisitVisas = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="grid md:grid-cols-2 gap-8 ml-8 items-start">
             <ul className="list-disc list-inside text-lg text-gray-700 text-xl">
               <li> USA Visit Visa (B2)</li>
               <li> UK Standard Visitor Visa</li>

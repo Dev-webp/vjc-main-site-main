@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Nav from "./Nav";
-import Form from "./Form";
+import Content from "./Content";
 import Two from "./Two";
 import Footer from "./Footer";
 
@@ -32,6 +32,7 @@ const ContactPage = () => {
       
       {/* Other Sections */}
       <Two />
+      <Content />
       <Footer />
 
     </>

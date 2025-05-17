@@ -124,7 +124,8 @@ const Migrate = () => {
             key={currentVisa.bg}
             src={currentVisa.bg}
             alt={`VJC Overseas - ${currentVisa.name} Background`}
-            className="absolute inset-0 w-full h-full object-cover brightness-75 transition-all duration-1000"
+            className="absolute inset-0 w-full h-full object-cover brightness-75 transition-all duration-1000 will-change-transform"
+            style={{ objectPosition: "center", objectFit: "cover" }}
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
             <AnimatePresence mode="wait">
@@ -160,10 +161,9 @@ const Migrate = () => {
         </div>
 
         {/* Visa Content */}
-        <div className="mt-16 px-6 md:px-12">
-          <Content />
-        </div>
+        
       </div>
+    
     </>
   );
 };
