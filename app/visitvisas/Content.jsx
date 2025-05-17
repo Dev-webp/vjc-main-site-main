@@ -18,7 +18,7 @@ const VisitVisas = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -88,7 +88,7 @@ const VisitVisas = () => {
             </ul>
             <div className="w-full flex justify-center">
               <Image
-                src="/visit-visa-image.png"
+                src="/schenvivas.jpg"
                 alt="Visit Visa Travel"
                 width={400}
                 height={200}
@@ -123,57 +123,9 @@ const VisitVisas = () => {
             </p>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-10 items-stretch">
-            {/* Table */}
-            <div className="w-full overflow-x-auto">
-              <h3 className="text-xl font-semibold text-gray-700 mb-4">
-                Average Cost of Living per Day (for Indian Tourists)
-              </h3>
-              <table className="table-auto w-full text-base border-collapse min-w-[600px]">
-                <thead>
-                  <tr className="bg-gradient-to-r from-orange-100 to-blue-100 text-gray-800">
-                    <th className="px-6 py-3 border font-semibold text-left">🌍 Country</th>
-                    <th className="px-6 py-3 border font-semibold text-left">💰 Daily Budget (INR)</th>
-                    <th className="px-6 py-3 border font-semibold text-left">📋 Includes</th>
-                  </tr>
-                </thead>
-                <tbody className="text-gray-700">
-                  {[
-                    ["USA", "₹8,000 – ₹12,000", "🍔 Food, 🚗 Transport, 🏨 Lodging"],
-                    ["UK", "₹7,000 – ₹10,000", "🍽️ Meals, 🚇 Commute, 🎟️ Tickets"],
-                    ["Canada", "₹6,000 – ₹9,000", "🚌 Transport, 🍲 Meals, 🛏️ Hostel"],
-                    ["Australia", "₹7,500 – ₹11,000", "🍷 Dining, 🏄‍♂️ Activities, 🚘 Travel"],
-                    ["Dubai", "₹5,000 – ₹9,000", "🏨 Hotels, 🚇 Metro, 🍢 Cuisine"],
-                    ["Singapore", "₹4,500 – ₹7,000", "🍜 Food, 🎡 Attractions, 🚈 MRT"],
-                    ["Schengen", "₹6,500 – ₹10,000", "🚆 Travel, 🧀 Food, 🖼️ Museums"],
-                    ["Thailand", "₹3,000 – ₹5,000", "🌮 Food, 🛍️ Shopping, 🛏️ Stay"],
-                    ["Japan", "₹6,000 – ₹9,500", "🚅 Rail pass, 🍣 Sushi, 🏨 Hostel"],
-                  ].map(([country, budget, includes], index) => (
-                    <tr
-                      key={index}
-                      className={`hover:bg-orange-50 ${
-                        index % 2 === 0 ? "bg-white" : "bg-gray-50"
-                      }`}
-                    >
-                      <td className="px-6 py-3 border">{country}</td>
-                      <td className="px-6 py-3 border text-orange-600 font-medium">
-                        {budget}
-                      </td>
-                      <td className="px-6 py-3 border">{includes}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-              <p className="mt-4 text-sm text-gray-500">
-                *Note: These are approximate values and can vary depending on city, time of year, and personal choices.
-              </p>
-              <div className="mt-6 bg-orange-50 text-orange-800 p-4 rounded-lg shadow">
-                <strong>💡 Pro Tip:</strong> Booking in advance can save up to 25% of your daily expenses!
-              </div>
-            </div>
-
+          <div className="flex flex-col-reverse lg:flex-row gap-10 items-stretch">
             {/* Form */}
-            <div className="w-full">
+            <div className="w-full order-1 lg:order-2">
               <div>
                 <h3 className="text-xl font-semibold text-gray-700 mb-4">
                   Get Your Free Tourist Visa Assessment
@@ -199,6 +151,64 @@ const VisitVisas = () => {
                 <p className="text-gray-700 text-sm">
                   💳 Notify your bank before international travel to avoid blocked cards.
                 </p>
+              </div>
+            </div>
+
+            {/* Table */}
+            <div className="w-full order-2 lg:order-1 overflow-x-auto">
+              <h3 className="text-xl font-semibold text-gray-700 mb-4">
+                Average Cost of Living per Day (for Indian Tourists)
+              </h3>
+              <table className="table-auto w-full text-base border-collapse min-w-[600px]">
+                <thead>
+                  <tr className="bg-gradient-to-r from-orange-100 to-blue-100 text-gray-800">
+                    <th className="px-6 py-3 border font-semibold text-left">🌍 Country</th>
+                    <th className="px-6 py-3 border font-semibold text-left">💰 Daily Budget (INR)</th>
+                    <th className="px-6 py-3 border font-semibold text-left">📋 Includes</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-700">
+                  {["USA", "UK", "Canada", "Australia", "Dubai", "Singapore", "Schengen", "Thailand", "Japan"].map((country, index) => {
+                    const budgets = [
+                      "₹8,000 – ₹12,000",
+                      "₹7,000 – ₹10,000",
+                      "₹6,000 – ₹9,000",
+                      "₹7,500 – ₹11,000",
+                      "₹5,000 – ₹9,000",
+                      "₹4,500 – ₹7,000",
+                      "₹6,500 – ₹10,000",
+                      "₹3,000 – ₹5,000",
+                      "₹6,000 – ₹9,500",
+                    ];
+                    const includes = [
+                      "🍔 Food, 🚗 Transport, 🏨 Lodging",
+                      "🍽️ Meals, 🚇 Commute, 🎟️ Tickets",
+                      "🚌 Transport, 🍲 Meals, 🛏️ Hostel",
+                      "🍷 Dining, 🏄‍♂️ Activities, 🚘 Travel",
+                      "🏨 Hotels, 🚇 Metro, 🍢 Cuisine",
+                      "🍜 Food, 🎡 Attractions, 🚈 MRT",
+                      "🚆 Travel, 🧀 Food, 🖼️ Museums",
+                      "🌮 Food, 🛍️ Shopping, 🛏️ Stay",
+                      "🚅 Rail pass, 🍣 Sushi, 🏨 Hostel",
+                    ];
+                    return (
+                      <tr
+                        key={index}
+                        className={`hover:bg-orange-50 ${index % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
+                      >
+                        <td className="px-6 py-3 border">{country}</td>
+                        <td className="px-6 py-3 border text-orange-600 font-medium">{budgets[index]}</td>
+                        <td className="px-6 py-3 border">{includes[index]}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+              <p className="mt-4 text-sm text-gray-500">
+                *Note: These are approximate values and can vary depending on city, time of year, and personal choices.
+              </p>
+              <div className="mt-6 bg-orange-50 text-orange-800 p-4 rounded-lg shadow">
+                <strong>💡 Pro Tip:</strong> Booking in advance can save up to 25% of your daily expenses!
               </div>
             </div>
           </div>

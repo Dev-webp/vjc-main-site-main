@@ -2,27 +2,28 @@
 import React, { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Head from "next/head";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Globe, ArrowRight } from "lucide-react";
 import Content from "./Content";
+
 const visaData = [
-  { name: "USA Visit Visa", path: "/visitvisas/usa-visit-visa" },
-  { name: "USA B1 Visa", path: "/visitvisas/usa-b1-visa" },
-  { name: "USA B2 Visa", path: "/visitvisas/usa-b2-visa" },
-  { name: "USA B1/B2 Visa", path: "/visitvisas/usa-b1-b2-visa" },
-  { name: "Canada Visit Visa", path: "/visitvisas/canada-visit-visa" },
-  { name: "Australia Visit Visa", path: "/visitvisas/australia-visit-visa" },
-  { name: "UK Visit Visa", path: "/visitvisas/uk-visit-visa" },
-  { name: "Dubai Visit Visa", path: "/visitvisas/dubai-visit-visa" },
-  { name: "Denmark Visit Visa", path: "/visitvisas/denmark-visit-visa" },
-  { name: "Austria Visit Visa", path: "/visitvisas/austria-visit-visa" },
-  { name: "Italy Visit Visa", path: "/visitvisas/italy-visit-visa" },
-  { name: "Schengen Visit Visa", path: "/visitvisas/schengen-visit-visa" },
+  { name: "USA Visit Visa", path: "/visitvisas/usa-visit-visa", bg: "/usavisvitvisa.jpg" },
+  { name: "USA B1 Visa", path: "/visitvisas/usa-b1-visa", bg: "/h1bvisit.jpg" },
+  { name: "USA B2 Visa", path: "/visitvisas/usa-b2-visa", bg: "/h2usavisit.jpg" },
+  { name: "USA B1/B2 Visa", path: "/visitvisas/usa-b1-b2-visa", bg: "/usabgh1h2.jpg" },
+  { name: "Canada Visit Visa", path: "/visitvisas/canada-visit-visa", bg: "/canadavisitvisa.avif" },
+  { name: "Australia Visit Visa", path: "/visitvisas/australia-visit-visa", bg: "/best-places-to-visit-in-Australia.jpg" },
+  { name: "UK Visit Visa", path: "/visitvisas/uk-visit-visa", bg: "/ukvisitvisas.jpg" },
+  { name: "Dubai Visit Visa", path: "/visitvisas/dubai-visit-visa", bg: "/dubaivisit.avif" },
+  { name: "Denmark Visit Visa", path: "/visitvisas/denmark-visit-visa", bg: "/denmarktimg.avif" },
+  { name: "Austria Visit Visa", path: "/visitvisas/austria-visit-visa", bg: "/austriavisit.jpg" },
+  { name: "Italy Visit Visa", path: "/visitvisas/italy-visit-visa", bg: "/italyvist.jpeg" },
+  { name: "Schengen Visit Visa", path: "/visitvisas/schengen-visit-visa", bg: "/schenvivas.jpg" },
 ];
 
 const defaultVisa = {
   name: "Job Seeker Visa",
-  image: "/usa.webp",
+  bg: "/visitvisas.jpg",
 };
 
 const Migrate = () => {
@@ -30,17 +31,64 @@ const Migrate = () => {
   const pathname = usePathname();
 
   const [selectedVisa, setSelectedVisa] = useState(defaultVisa);
-  const [hoveredVisa, setHoveredVisa] = useState(defaultVisa);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [hoveredVisa, setHoveredVisa] = useState(null);
+  const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
     const foundVisa = visaData.find((visa) => visa.path === pathname);
     setSelectedVisa(foundVisa || defaultVisa);
   }, [pathname]);
 
+  useEffect(() => {
+    if (isHovering) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % visaData.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isHovering]);
+
+  const currentVisa = hoveredVisa || visaData[currentIndex];
+
   const handleVisaClick = (visa) => {
     setSelectedVisa(visa);
     router.push(visa.path);
   };
+
+  const renderVisaCard = (visa, index) => (
+    <motion.div
+      key={visa.name}
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.1 }}
+      className="relative p-4 h-36 rounded-xl shadow-lg transition hover:scale-105 cursor-pointer flex flex-col justify-between overflow-hidden group"
+      onClick={() => handleVisaClick(visa)}
+      onMouseEnter={() => {
+        setHoveredVisa(visa);
+        setIsHovering(true);
+      }}
+      onMouseLeave={() => {
+        setIsHovering(false);
+        setTimeout(() => setHoveredVisa(null), 2000);
+      }}
+      style={{
+        backgroundImage: `url(${visa.bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        border: "1px solid #4b5563",
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-30 z-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div className="relative z-10 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <Globe className="text-orange-400 w-5 h-5" />
+          <h3 className="text-sm font-semibold text-white">{visa.name}</h3>
+        </div>
+        <ArrowRight className="text-gray-300 w-4 h-4" />
+      </div>
+      <p className="text-xs text-white mt-3 relative z-10">Apply Now</p>
+    </motion.div>
+  );
 
   return (
     <>
@@ -51,88 +99,67 @@ const Migrate = () => {
           content="Apply for USA, Canada, Australia, UK, Schengen and other Visit Visas with expert guidance from VJC Overseas."
         />
         <link rel="canonical" href="https://www.vjcoverseas.com/visitvisas" />
+        <meta property="og:image" content={`https://www.vjcoverseas.com${currentVisa.bg}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={`https://www.vjcoverseas.com${currentVisa.bg}`} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "VJC Overseas",
+              "url": "https://www.vjcoverseas.com",
+              "logo": "https://www.vjcoverseas.com/logo.png",
+              "image": visaData.map((visa) => `https://www.vjcoverseas.com${visa.bg}`),
+            }),
+          }}
+        />
       </Head>
 
       <div className="w-full min-h-screen bg-white text-black">
         {/* Hero Section */}
-        <div className="relative">
+        <div className="relative h-[70vh] w-full overflow-hidden">
           <img
-            src="/7.webp"
-            alt="Visa Background"
-            className="w-full h-[70vh] object-cover brightness-75"
+            key={currentVisa.bg}
+            src={currentVisa.bg}
+            alt={`VJC Overseas - ${currentVisa.name} Background`}
+            className="absolute inset-0 w-full h-full object-cover brightness-75 transition-all duration-1000"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-            <motion.h1
-              initial={{ opacity: 0, y: -30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg"
-            >
-              Explore Visit Visas
-            </motion.h1>
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
+            <AnimatePresence mode="wait">
+              <motion.h1
+                key={currentVisa.name}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.6 }}
+                className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg"
+              >
+                {currentVisa.name}
+              </motion.h1>
+            </AnimatePresence>
             <p className="text-lg text-gray-200 mt-4 max-w-xl">
               Choose your destination and begin your journey with VJC Overseas.
             </p>
           </div>
         </div>
 
+        {/* Grid Section 1 */}
         <div className="relative -mt-24 z-10 px-6 md:px-12">
-  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-    {visaData.slice(0, 6).map((visa, index) => (
-      <motion.div
-        key={visa.name}
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: index * 0.1 }}
-        className="bg-gray-700 border border-gray-700 p-4 h-36 rounded-xl hover:bg-orange-500 shadow-lg hover:shadow-orange-500/40 transition hover:scale-105 cursor-pointer flex flex-col justify-between"
-        onClick={() => handleVisaClick(visa)}
-        onMouseEnter={() => setHoveredVisa(visa)}
-        onMouseLeave={() => setHoveredVisa(selectedVisa)}
-      >
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Globe className="text-orange-400 w-5 h-5" />
-            <h3 className="text-sm font-semibold text-white">{visa.name}</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {visaData.slice(0, 6).map((visa, index) => renderVisaCard(visa, index))}
           </div>
-          <ArrowRight className="text-gray-300 w-4 h-4" />
         </div>
-        <p className="text-xs text-white mt-3">
-          Click to learn more about {visa.name}.
-        </p>
-      </motion.div>
-    ))}
-  </div>
-</div>
 
-<div className="relative mt-5 z-0 px-6 md:px-12">
-  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-    {visaData.slice(6, 12).map((visa, index) => (
-      <motion.div
-        key={visa.name}
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: index * 0.1 }}
-        className="bg-gray-700 border border-gray-700 p-4 h-36 rounded-xl hover:bg-orange-500 shadow-lg hover:shadow-orange-500/40 transition hover:scale-105 cursor-pointer flex flex-col justify-between"
-        onClick={() => handleVisaClick(visa)}
-        onMouseEnter={() => setHoveredVisa(visa)}
-        onMouseLeave={() => setHoveredVisa(selectedVisa)}
-      >
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Globe className="text-orange-400 w-5 h-5" />
-            <h3 className="text-sm font-semibold text-white">{visa.name}</h3>
+        {/* Grid Section 2 */}
+        <div className="relative mt-5 z-0 px-6 md:px-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {visaData.slice(6).map((visa, index) => renderVisaCard(visa, index + 6))}
           </div>
-          <ArrowRight className="text-gray-300 w-4 h-4" />
         </div>
-        <p className="text-xs text-white mt-3">
-          Click to learn more about {visa.name}.
-        </p>
-      </motion.div>
-    ))}
-  </div>
-</div>
 
-        {/* Content Component */}
+        {/* Visa Content */}
         <div className="mt-16 px-6 md:px-12">
           <Content />
         </div>
