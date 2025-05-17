@@ -30,9 +30,9 @@ const playfairDisplay = Playfair_Display({
 
 // Metadata configuration
 export const metadata: Metadata = {
-  title: 'VJC Overseas – World`s Leading Immigration Consultants | 2025',
-  description: 'VJC Overseas – World`s top immigration consultants for PR, study, work & investor visas in Canada, Germany, USA, & Australia. Get expert guidance today!',
-  keywords: 'australia pr,best immigration consultants in Bangalore,best immigration consultants in Hyderabad,canada immigration,germany job seeker visa,immigration consultants,new zealand immigration,overseas education consultants,study abroad,study abroad consultants,uk visa,usa visa,visa consultant near me,work permit,work visa',
+  title: 'Best Visa Immigration Consultants in Hyderabad Bangalore PR Visa| Study Visa| Job Seeker Visa| Visit Visa| Investor Visa| Tourist Visa| Dependent Visa| Work Permit Visa',
+  description: 'Best Visa Immigration Consultants in Hyderabad and Bangalore Process for PR Visa, Study Visa, Job Seeker Visa, Visit Visa, Investor Visa, Tourist Visa, Dependent Visa, Work Permit Visa and much more so Settle your Life in Abroad with Permanent Residency Visa, Germany Opportunity Card, Study or Student Visa Immigration, Job Seeker Visa, Work Permit Visa and much more options for your future so Contact Immediately for free Assessment and Check eligibility',
+  keywords: 'Best Visa Immigration Consultants in Hyderabad, Best Immigration Visa Consultants in Bangalore, Best Immigration Visa Consultants, Visa Consultants, Best Immigration Consultants, Best Visa Consultants, Immigration Visa Consultants, Visa Consultants, PR Visa, Permanent Residency Visa, Germany Opportunity Card, Study or Student Visa Immigration, Job Seeker Visa, Work Permit Visa',
 };
 
 export default function RootLayout({

@@ -125,7 +125,7 @@ export default function StudyInUK() {
           >
            <div className="md:w-1/4 w-full">
   <img
-    src="https://www.vjcoverseas.com/studyinuk/ukstudy.png"
+    src="/studyinuk/ukstudy.png"
     alt="Counseling"
     title="Counseling"
     className="object-cover rounded-md w-full h-40"

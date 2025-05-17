@@ -131,6 +131,7 @@ const WbContent = () => {
         </motion.p>
       </motion.div>
     </div>
+    
   );
 };
 
