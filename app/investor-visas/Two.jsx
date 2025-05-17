@@ -113,7 +113,7 @@ const Migrate = () => {
       </motion.div>
 
       {/* Main Content Section */}
-<div className="relative z-10 mt-40 sm:mt-44 md:mt-48 w-full max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-16 px-4">
+<div className="relative z-10 mt-40 sm:mt-44 md:mt-48 w-full max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-24 px-4">
   {/* Left: Image + Form */}
   <div className="w-full md:w-1/2 flex flex-col gap-8">
     {/* Form Section */}

@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 import React, { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
@@ -65,10 +65,15 @@ export default function Hero() {
         <p className="text-md sm:text-lg md:text-xl max-w-2xl mb-6 text-white bg-clip-text text-transparent">
           Join world-class universities and build a successful international career with a UK degree.
         </p>
-        <button className="relative overflow-hidden bg-orange-500 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out group">
-          <span className="relative z-10">Apply Now</span>
-          <span className="absolute top-0 left-[-100%] w-full h-full bg-blue-400 transition-all duration-500 ease-out group-hover:left-0"></span>
-        </button>
+       
+
+<Link href="/assessment">
+  <button className="relative overflow-hidden bg-orange-500 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out group">
+    <span className="relative z-10">Apply Now</span>
+    <span className="absolute top-0 left-[-100%] w-full h-full bg-blue-400 transition-all duration-500 ease-out group-hover:left-0"></span>
+  </button>
+</Link>
+
       </div>
     </section>
   );
