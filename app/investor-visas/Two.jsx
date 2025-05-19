@@ -63,55 +63,56 @@ const Migrate = () => {
         </div>
       </div>
 
-      {/* Scrollable Cards Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="absolute top-[500px] z-20 w-full flex justify-center"
-      >
-        <div className="flex items-center justify-center w-full max-w-7xl space-x-2 px-2">
-          <button
-            onClick={scrollLeft}
-            className="text-gray-700 hover:text-orange-600 bg-white p-2 rounded-full shadow"
-            aria-label="Scroll Left"
-          >
-            <ChevronLeft size={32} />
-          </button>
+<motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="absolute top-[500px] z-20 w-full flex justify-center"
+    >
+      <div className="flex items-center justify-center w-full max-w-7xl space-x-2 px-2">
+        {/* Left Arrow */}
+        <button
+          onClick={scrollLeft}
+          className="w-12 h-12 flex items-center justify-center text-gray-700 hover:text-orange-600 bg-white rounded-full shadow transition-all duration-200"
+          aria-label="Scroll Left"
+        >
+          <ChevronLeft size={28} />
+        </button>
 
-          <div
-            ref={scrollRef}
-            className="flex overflow-x-auto space-x-4 w-full max-w-[1100px] scrollbar-hide scroll-smooth pb-4"
-          >
-            {countries.map((country, index) => (
-              <Link key={index} href={country.path}>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="relative min-w-[220px] max-w-[220px] sm:min-w-[250px] sm:max-w-[250px] h-40 sm:h-48 flex items-center justify-center text-white text-center text-sm sm:text-lg font-semibold shadow-md cursor-pointer rounded-lg overflow-hidden transition-all"
-                  style={{
-                    backgroundImage: `url(${country.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  <div className="absolute inset-0 bg-black bg-opacity-40 z-0" />
-                  <div className="relative z-10 px-3">{country.name}</div>
-                </motion.div>
-              </Link>
-            ))}
-          </div>
-
-          <button
-            onClick={scrollRight}
-            className="text-gray-700 hover:text-orange-600 bg-white p-2 shadow"
-            aria-label="Scroll Right"
-          >
-            <ChevronRight size={32} />
-          </button>
+        {/* Scrollable Card List */}
+        <div
+          ref={scrollRef}
+          className="flex overflow-x-auto space-x-4 w-full max-w-[1100px] scrollbar-hide scroll-smooth pb-4"
+        >
+          {countries.map((country, index) => (
+            <Link key={index} href={country.path}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="relative min-w-[200px] sm:min-w-[250px] h-36 sm:h-48 flex items-center justify-center text-white text-center text-sm sm:text-lg font-semibold shadow-md cursor-pointer rounded-lg overflow-hidden transition-all"
+                style={{
+                  backgroundImage: `url(${country.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                <div className="absolute inset-0 bg-black bg-opacity-40 z-0" />
+                <div className="relative z-10 px-3">{country.name}</div>
+              </motion.div>
+            </Link>
+          ))}
         </div>
-      </motion.div>
 
+        {/* Right Arrow */}
+        <button
+          onClick={scrollRight}
+          className="w-12 h-12 flex items-center justify-center text-gray-700 hover:text-orange-600 bg-white rounded-full shadow transition-all duration-200"
+          aria-label="Scroll Right"
+        >
+          <ChevronRight size={28} />
+        </button>
+      </div>
+    </motion.div>
       {/* Main Content Section */}
 <div className="relative z-10 mt-40 sm:mt-44 md:mt-48 w-full max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-24 px-4">
   {/* Left: Image + Form */}

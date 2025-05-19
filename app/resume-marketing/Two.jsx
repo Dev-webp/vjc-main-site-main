@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   ChevronLeft,
   ChevronRight,
@@ -107,6 +107,15 @@ const BookFlipAnimation = () => {
     router.push(cards[currentPage].path);
   };
 
+  // Auto motion effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentPage((prev) => (prev + 1) % cards.length);
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup
+  }, []);
+
   return (
     <div className="w-full">
       {/* Hero Section with Form and Flip Card */}
@@ -157,10 +166,8 @@ const BookFlipAnimation = () => {
                     className="text-sm sm:text-base text-white drop-shadow text-center"
                   >
                     Explore our premium resume marketing services in{" "}
-                    <strong>
-                      {cards[currentPage].name.split(" ")[0]}
-                    </strong>{" "}
-                    to get noticed by global employers.
+                    <strong>{cards[currentPage].name.split(" ")[0]}</strong> to
+                    get noticed by global employers.
                   </motion.p>
                   <motion.p
                     initial={{ opacity: 0 }}
@@ -228,47 +235,47 @@ const BookFlipAnimation = () => {
         </div>
       </div>
 
-     {/* Resume Samples */}
-<div className="bg-white py-12 px-6 sm:px-10 md:px-20 text-center">
-  <h3 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-8">
-    Check Out Our Sample Resume Designs
-  </h3>
+      {/* Resume Samples */}
+      <div className="bg-white py-12 px-6 sm:px-10 md:px-20 text-center">
+        <h3 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-8">
+          Check Out Our Sample Resume Designs
+        </h3>
 
-  <div className="flex flex-wrap lg:flex-nowrap justify-center gap-6 overflow-x-auto">
-    {[
-      {
-        src: "/resumemarkeingexample.webp",
-        alt: "Sample Resume 1",
-        caption: "Professional & Clean Design",
-      },
-      {
-        src: "/resume-marketing-bg.webp",
-        alt: "Sample Resume 2",
-        caption: "Modern and Creative Style",
-      },
-      {
-        src: "/resumemarketingexample-2.webp",
-        alt: "Sample Resume 3",
-        caption: "Detailed and Comprehensive Layout",
-      },
-    ].map((sample, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center min-w-[300px] max-w-[350px]"
-      >
-        <Image
-          src={sample.src}
-          alt={sample.alt}
-          width={350}
-          height={450}
-          className="rounded-lg shadow-lg object-cover"
-        />
-        <p className="mt-4 text-gray-600 text-sm">{sample.caption}</p>
+        <div className="flex flex-wrap lg:flex-nowrap justify-center gap-6 overflow-x-auto">
+          {[
+            {
+              src: "/resumemarkeingexample.webp",
+              alt: "Sample Resume 1",
+              caption: "Professional & Clean Design",
+            },
+            {
+              src: "/resume-marketing-bg.webp",
+              alt: "Sample Resume 2",
+              caption: "Modern and Creative Style",
+            },
+            {
+              src: "/resumemarketingexample-2.webp",
+              alt: "Sample Resume 3",
+              caption: "Detailed and Comprehensive Layout",
+            },
+          ].map((sample, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center min-w-[300px] max-w-[350px]"
+            >
+              <Image
+                src={sample.src}
+                alt={sample.alt}
+                width={350}
+                height={450}
+                className="rounded-lg shadow-lg object-cover"
+              />
+              <p className="mt-4 text-gray-600 text-sm">{sample.caption}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
-</div>
+    </div>
   );
 };
 
