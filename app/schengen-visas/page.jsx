@@ -6,7 +6,8 @@ import Nav from "./Nav";
 import Form from "./Form";
 import Two from "./Two";
 import Footer from "./Footer";
-
+import Content from "./Content";
+import Text from "./Text";
 const textContainerVariants = {
  
    
@@ -32,6 +33,9 @@ const ContactPage = () => {
      
       {/* Other Sections */}
       <Two />
+      <Text />
+      <Content />
+      
       <Footer />
 
     </>

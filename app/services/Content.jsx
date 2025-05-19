@@ -1,69 +1,142 @@
-import React from "react";
+"use client";
 
-const Content = ({ selectedVisa }) => {
-  // Check if it's the default visa
-  const isDefaultContent = selectedVisa?.path === "/PR-visas";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import {
+  FaPassport,
+  FaPlane,
+  FaMoneyBillWave,
+  FaClipboardCheck,
+  FaUserGraduate,
+} from "react-icons/fa";
+import Link from "next/link";
 
-  if (!isDefaultContent) return null;
+const bgImages = [
+  "/passportservices.png",
+  "/airteckeingservices.png",
+  "/forexservies.png",
+  "/freeassement.png",
+  "/freecouselling.png",
+];
+
+const services = [
+  {
+    icon: FaPassport,
+    label: "Passport Services",
+    link: "/services/passport-services",
+    image: "/passportservices.png",
+  },
+  {
+    icon: FaPlane,
+    label: "Air Ticketing",
+    link: "/services/air-ticketing",
+    image: "/airteckeingservices.png",
+  },
+  {
+    icon: FaMoneyBillWave,
+    label: "Forex Services",
+    link: "/services/forex-services",
+    image: "/forexservies.png",
+  },
+  {
+    icon: FaClipboardCheck,
+    label: "Free Assessment",
+    link: "/services/free-assessment",
+    image: "/freeassement.png",
+  },
+  {
+    icon: FaUserGraduate,
+    label: "Free Counselling",
+    link: "/services/free-counselling",
+    image: "/freecouselling.png",
+  },
+];
+
+export default function ServicesPage() {
+  const [bgIndex, setBgIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % bgImages.length);
+    }, 8000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="text-gray-800 space-y-5 text-base sm:text-lg leading-relaxed">
-      <h2 className="text-2xl sm:text-3xl font-bold">
-        Permanent Resident Visa – <span className="text-orange-500">VJC Overseas</span>
-      </h2>
+    <div className="relative w-full overflow-hidden bg-white text-gray-900">
+      {/* Background Image */}
+      <motion.div
+        key={bgIndex}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2 }}
+        className="absolute top-0 left-0 right-0 bg-cover bg-center z-0 h-[380px] sm:h-[420px] md:h-[500px]"
+        style={{ backgroundImage: `url(${bgImages[bgIndex]})` }}
+      />
+      <div
+        className="absolute top-0 left-0 right-0 bg-black bg-opacity-60 z-0 h-[380px] sm:h-[420px] md:h-[500px]"
+      />
 
-      <p>
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we understand that securing permanent residency in a new country is a significant milestone in your life. It represents new opportunities, stability, and a fresh start. Whether you’re looking to move for work, education, family reunification, or personal growth, we are committed to helping you navigate the complex visa process with ease and confidence.
-      </p>
+      {/* Hero Header */}
+     <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-28 sm:pt-28 pb-10 text-white text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl sm:text-5xl font-extrabold mb-4"
+        >
+          Our Services
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          className="max-w-2xl mx-auto text-lg text-gray-200"
+        >
+          Empowering your journey with expert services in travel, documentation, and education.
+        </motion.p>
+        <Link href="/services/assessment">
+          <button className="mt-6 px-6 py-3 bg-orange-600 hover:bg-blue-400 text-white rounded-lg shadow-lg font-semibold transition duration-300">
+            Apply Now
+          </button>
+        </Link>
+      </div>
 
-      <h3 className="text-xl font-semibold">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Permanent Resident Visa?</h3>
-      <p>
-        With years of experience and expertise in immigration law, <span className="text-orange-500">VJC Overseas</span> stands as a trusted partner for individuals and families looking to become permanent residents in some of the world’s most desirable destinations. Our team of immigration consultants works closely with you to ensure that your application is thorough, accurate, and meets all legal requirements.
-      </p>
-      <p>
-        We specialize in various immigration pathways, including skilled migration, family sponsorships, business investment visas, and more. Our in-depth knowledge of the latest immigration policies and procedures ensures that we can guide you through the complexities of each process to maximize your chances of approval.
-      </p>
+      {/* Services Section */}
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 1 }}
+        className="relative z-10 w-full py-12 px-4 sm:px-6 lg:px-12"
+      >
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-white  mb-8 mt-4 sm:mt-0">
+          What We Offer
+        </h2>
 
-      <h3 className="text-xl font-semibold">Permanent Residency – A Gateway to Your Future</h3>
-      <ul className="list-disc list-inside pl-4 space-y-2">
-        <li><strong>Long-Term Stability:</strong> Live, work, and study in your new country indefinitely, without the need for frequent visa renewals.</li>
-        <li><strong>Access to Healthcare and Social Benefits:</strong> Many countries offer permanent residents access to essential healthcare and social services.</li>
-        <li><strong>Pathway to Citizenship:</strong> Permanent residency often leads to citizenship with added rights like voting and passport privileges.</li>
-        <li><strong>Family Reunification:</strong> Sponsor your loved ones and build your future together in your new home country.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold">Our Expertise: Permanent Resident Visa Categories</h3>
-      <ol className="list-decimal list-inside pl-4 space-y-2">
-        <li><strong>Skilled Worker Visa:</strong> For professionals with in-demand skills in destination countries.</li>
-        <li><strong>Family Sponsorship Visa:</strong> Reunite with your spouse, children, or parents easily and legally.</li>
-        <li><strong>Investment & Entrepreneur Visas:</strong> Leverage your business acumen or investments to secure residency.</li>
-        <li><strong>Student to PR Pathway:</strong> Transition from student visa to permanent residency after your studies.</li>
-        <li><strong>Refugee and Humanitarian Visa:</strong> Get support for immigration on humanitarian grounds.</li>
-      </ol>
-
-      <h3 className="text-xl font-semibold">How <span className="text-orange-500">VJC Overseas</span> Can Help</h3>
-      <ul className="list-disc list-inside pl-4 space-y-2">
-        <li><strong>Eligibility Assessment:</strong> We evaluate your profile and recommend suitable PR programs.</li>
-        <li><strong>Visa Strategy:</strong> We craft a tailored immigration strategy based on your background and goals.</li>
-        <li><strong>Application Preparation:</strong> Accurate, timely and professional documentation handling.</li>
-        <li><strong>Document Guidance:</strong> Assistance in gathering and presenting required documents.</li>
-        <li><strong>Ongoing Support:</strong> Stay informed and supported throughout your visa journey.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold">Start Your Journey Today</h3>
-      <p>
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we believe that everyone deserves the chance to build a better future. Our Permanent Resident Visa services are designed to make the immigration process as smooth and hassle-free as possible.
-      </p>
-      <p>
-        Whether you're just starting your immigration journey or need assistance with an ongoing application, our team is ready to help you every step of the way. Get in touch with us today to schedule your consultation and take the first step toward securing your permanent residency!
-      </p>
-
-      <h3 className="text-xl font-semibold">Contact Us Today!</h3>
-      <p>
-        Let <span className="text-orange-500 font-semibold">VJC Overseas</span> be your trusted guide to permanent residency. Reach out to our expert immigration consultants now and start your journey towards a new chapter in life.
-      </p>
+        <div className="flex flex-wrap justify-center gap-6">
+          {services.map((service, index) => {
+            const isBgMatch = service.image === bgImages[bgIndex];
+            return (
+              <Link key={index} href={service.link}>
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  className={`flex flex-col items-center justify-start ${
+                    isBgMatch ? "bg-blue-300 border-blue-500" : "bg-white border-transparent"
+                  } border-blue-300 hover:bg-blue-50 text-gray-800 rounded-2xl px-6 py-5 w-[160px] sm:w-[180px] shadow-md transition-all duration-300 cursor-pointer border-2`}
+                >
+                  <img
+                    src={service.image}
+                    alt={service.label}
+                    className="w-16 h-16 object-cover rounded-full mb-1 -mt-4 border-2 border-white"
+                  />
+                  <service.icon className="text-blue-600 text-2xl mb-2 mt-1" />
+                  <span className="text-1sm font-semibold text-center">{service.label}</span>
+                </motion.a>
+              </Link>
+            );
+          })}
+        </div>
+      </motion.section>
     </div>
   );
-};
-
-export default Content;
+}

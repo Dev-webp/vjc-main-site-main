@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Form from "./Form"; // Adjust if needed
 import { FaCheckCircle, FaPlaneDeparture, FaBriefcase } from "react-icons/fa";
-
+import Head from "next/head";
 export default function Home() {
   const router = useRouter();
 
@@ -55,6 +55,19 @@ export default function Home() {
   };
 
   return (
+    <>
+      <Head>
+        <title>Apply Schengen Visit/Tourist Visas - VJC Overseas</title>
+        <meta name="description" content="Explore all Schengen countries with VJC Overseas. Easy Schengen Visit & Tourist Visa approvals. Apply now for Austria, Germany, France, Italy and more." />
+        <meta name="keywords" content="Schengen visa, tourist visa, visit visa, Europe visa, VJC Overseas, Austria visa, Germany visa, France visa, Italy visa, Schengen countries visa" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Schengen Visit/Tourist Visas | VJC Overseas" />
+        <meta property="og:description" content="Get fast and easy tourist visa approvals to all Schengen countries. VJC Overseas is your trusted visa consultant." />
+        <meta property="og:image" content="/austriatour.avif" />
+        <meta property="og:url" content="https://www.vjcoverseas.com/schengen-visas" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+
     <div className="bg-gray-100 min-h-screen relative overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative w-full h-[75vh] flex items-center justify-center overflow-hidden">
@@ -85,96 +98,84 @@ export default function Home() {
       </section>
 
       {/* Swiper Section */}
-      <section className="w-full max-w-5xl mx-auto -mt-[20vh] px-4 relative z-20">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 3000 }}
-          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-          className="rounded-lg shadow-lg"
-        >
-          {slides.map((slide, index) => (
-            <SwiperSlide
-              key={index}
-              className="relative cursor-pointer"
-              onClick={() => router.push(slide.path)}
-            >
-              <img
-                src={slide.image}
-                alt={slide.name}
-                className="w-full h-96 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/50 hover:bg-black/70 transition-all rounded-lg">
-                <h2 className="text-white text-2xl font-bold text-center px-4">{slide.name}</h2>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section>
-
-      {/* Form + Visa Cards + Why Choose */}
-      <section className="relative w-full mt-12 rounded-lg overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/allinone.png')" }} />
-        <div className="absolute inset-0 bg-black/60 pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto py-12 px-8 grid md:grid-cols-2 gap-10 items-start text-white">
-          {/* Left Column: Form + Cards */}
-          <div>
-            <div className="p-6 bg-black/60 rounded-lg">
-              <Form />
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-              {/* Tourist Visa */}
-              <VisaCard icon={<FaPlaneDeparture className="text-blue-400 text-2xl" />} title="Tourist Schengen Visa" desc="Visit multiple Schengen countries for tourism and leisure, valid for up to 90 days within 180 days." />
-              {/* Business Visa */}
-              <VisaCard icon={<FaBriefcase className="text-orange-400 text-2xl" />} title="Business Schengen Visa" desc="For professionals traveling for business meetings, conferences, or networking in the Schengen Area." />
-              {/* Family Visit Visa */}
-              <VisaCard icon={<FaCheckCircle className="text-green-400 text-2xl" />} title="Family Visit Visa" desc="Perfect for visiting family or relatives residing in the Schengen region." />
-              {/* Medical Treatment Visa */}
-              <VisaCard icon={<FaPlaneDeparture className="text-purple-400 text-2xl" />} title="Medical Treatment Visa" desc="Travel to Schengen countries for medical care or health consultations." />
-            </div>
-          </div>
-
-          {/* Right Column: Why Choose VJC */}
-          {/* Right Column: Why Choose VJC */}
-<div className="bg-black/60 rounded-lg shadow-md p-6">
-  <h2 className="text-3xl font-bold text-blue-300 mb-6">Why VJC Overseas?</h2>
-  <ul className="space-y-6 text-1sm text-gray-200">
-    {[
-      "Leading visa consultancy with years of expertise.",
-      "99% visa approval rate.",
-      "Hassle-free documentation support.",
-      "Tailored solutions for every visa applicant.",
-      "Trusted by thousands of satisfied clients.",
-      "Affordable and transparent pricing.",
-      "One-on-one expert guidance.",
-      "Up-to-date visa processing knowledge.",
-      "Strong international network with embassies.",
-      "Dedicated customer support team.",
-      "Step-by-step assistance from application to approval.",
-      "Quick and reliable processing timelines.",
-      "24/7 support for urgent visa queries.",
-      "Free visa consultation for first-time applicants.",
-      "100% compliance with immigration rules.",
-      "Personalized travel and visa recommendations.",
-      "Visa success stories from real customers.",
-      "Simplified application process to save time.",
-      "Dedicated professionals for every visa category.",
-      "Your trusted partner in global travel dreams.",
-    ].map((point, i) => (
-      <li key={i} className="flex items-start gap-3">
-        <FaCheckCircle className="text-green-400 mt-1 flex-shrink-0" />
-        <span>{point}</span>
-      </li>
-    ))}
-  </ul>
-</div>
-
+<section className="w-full max-w-5xl mx-auto -mt-[20vh] px-4 relative z-20">
+  <Swiper
+    modules={[Navigation, Pagination, Autoplay]}
+    spaceBetween={20}
+    slidesPerView={1}
+    navigation
+    pagination={{ clickable: true }}
+    autoplay={{ delay: 3000 }}
+    onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+    className="rounded-lg shadow-lg border-2 border-white"
+  >
+    {slides.map((slide, index) => (
+      <SwiperSlide
+        key={index}
+        className="relative cursor-pointer"
+        onClick={() => router.push(slide.path)}
+      >
+        <img
+          src={slide.image}
+          alt={slide.name}
+          className="w-full h-96 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 hover:bg-black/70 transition-all rounded-lg p-4">
+          <h2 className="text-white text-2xl font-bold text-center mb-4">{slide.name}</h2>
+          <button className="bg-orange-500 text-white font-semibold px-4 py-2 rounded-full shadow hover:bg-blue-400 transition">
+            Apply Now
+          </button>
         </div>
-      </section>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</section>
+
+
+     {/* Form + Visa Cards + Why Choose */}
+<section
+  className="relative w-full rounded-lg overflow-hidden bg-cover bg-center"
+  style={{ backgroundImage: "url('/austriavisit.jpg')" }} // Replace with your desired image
+>
+  {/* Optional overlay for readability */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  <div className="relative max-w-7xl mx-auto py-12 px-8 flex flex-col md:flex-row gap-10 items-start text-white">
+    {/* Left Side: Form */}
+    <div className="w-full md:w-1/2">
+      <div className="p-6  rounded-lg">
+        <Form />
+      </div>
     </div>
+
+    {/* Right Side: Visa Cards Vertically */}
+    <div className="w-full md:w-1/2 flex flex-col gap-4 mt-8">
+      <VisaCard
+        icon={<FaPlaneDeparture className="text-blue-400 text-2xl" />}
+        title="Tourist Schengen Visa"
+        desc="Visit multiple Schengen countries for tourism and leisure, valid for up to 90 days within 180 days."
+      />
+      <VisaCard
+        icon={<FaBriefcase className="text-orange-400 text-2xl" />}
+        title="Business Schengen Visa"
+        desc="For professionals traveling for business meetings, conferences, or networking in the Schengen Area."
+      />
+      <VisaCard
+        icon={<FaCheckCircle className="text-green-400 text-2xl" />}
+        title="Family Visit Visa"
+        desc="Perfect for visiting family or relatives residing in the Schengen region."
+      />
+      <VisaCard
+        icon={<FaPlaneDeparture className="text-purple-400 text-2xl" />}
+        title="Medical Treatment Visa"
+        desc="Travel to Schengen countries for medical care or health consultations."
+      />
+    </div>
+  </div>
+</section>
+
+    </div>
+   </>
   );
 }
 
@@ -187,7 +188,7 @@ function VisaCard({ icon, title, desc }) {
         <div className="text-1sm font-bold text-white">{title}</div>
       </div>
       <div className="text-xs text-gray-200">{desc}</div>
-      <Link href="/assesemnt" passHref>
+      <Link href="/assessment" passHref>
         <button className="self-start bg-orange-500 text-white text-xs px-4 py-1 rounded hover:bg-blue-400 transition mt-2">
           Apply Now!
         </button>

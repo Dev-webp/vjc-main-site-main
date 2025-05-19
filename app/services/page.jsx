@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Nav from "./Nav";
-import Form from "./Form";
+import FadeIn from "./FadeIn";
+import Content from "./Content";
 import Two from "./Two";
 import Footer from "./Footer";
-
+import Hero from "./Hero";
 const textContainerVariants = {
  
    
@@ -25,13 +25,14 @@ const ContactPage = () => {
     <>
       {/* Navbar */}
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
+       
       </div>
-
+   <Content />
       {/* Main Section */}
-      
-      {/* Other Sections */}
       <Two />
+      <FadeIn />
+      {/* Other Sections */}
+      <Hero />
       <Footer />
 
     </>
