@@ -20,7 +20,7 @@ const Navbar = () => {
     // { name: "About us", path: "/about-us" },
     { name: "Migrate To", path: "/migrate" },
     { name: "Study Abroad", path: "/studyabroad" },
-    { name: "PR Visas", path: "/prvisas" },
+    { name: "PR Visas", path: "/pr-visas" },
     { name: "Work Abroad", path: "/workabroad" },
     { name: "Job Seeker Visas", path: "/jobseeker-visas" },
     { name: "Visit Visas", path: "/visitvisas" },
@@ -107,12 +107,12 @@ const Navbar = () => {
   ];
 
   const prVisaSubPages = [
-    { name: "Canada Permanent Residency Visa", path: "/prvisas/canadapr" },
-    { name: "Australia Permanent Residency Visa", path: "/prvisas/australiapr" },
-    { name: "UK Permanent Residency Visa", path: "/prvisas/ukpr" },
-    { name: "New Zealand Permanent Residency Visa", path: "/prvisas/newzealandpr" },
-    { name: "Germany Blue Card Visa", path: "/prvisas/germanybluecard" },
-    { name: "USA Green Card", path: "/prvisas/usagreencard" },
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr" },
+    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr" },
+    { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/newzealandpr" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard" },
+    { name: "USA Green Card", path: "/pr-visas/usagreencard" },
   ];
   const resumemarketingSubPages = [
   

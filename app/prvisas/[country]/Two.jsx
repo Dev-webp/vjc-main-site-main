@@ -43,6 +43,7 @@ const visaData = [
     path: "/prvisas/usagreencard",
     image: "/usapr.jpg",
   },
+  
 ];
 
 const defaultVisa = {

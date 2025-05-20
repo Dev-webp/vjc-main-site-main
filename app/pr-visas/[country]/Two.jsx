@@ -1,0 +1,179 @@
+"use client";
+import React, { useState, useEffect } from "react";
+import { useRouter, useParams, usePathname } from "next/navigation";
+import { ArrowRight } from "lucide-react";
+
+import Goppcardvisa from "./Germany-visa/Goppcardvisa";
+import Canadapr from "./Canadapages/Canadawork";
+import Ausstud from "./Australia-visa/Aus-stud";
+import USAstud from "./USA-visa/USA-stud";
+import UKBvisa from "./UK-visa/UKBvisa";
+import HKstudentvisa from "./HongKongpages/HKstudentvisa";
+import Newzepr from "./Newzealand-visa/Newze-pr";
+import Denbusiness from "./Denmark-visa/Den-business";
+import UAEstud from "./UAE-visa/UAE-stud";
+import sfgerneralskilledvisa from "./southafricavisas/sfgerneralskilledvisa";
+import Form from "../Form";
+
+const countryVisaData = {
+  germanybluecard: [
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr", image: "/1.jpg" },
+    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr", image: "/airplane.png" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr", image: "/dmbusi.jpg" },
+    { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/new-zealand-pr", image: "/images/newzealand.jpg" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard", image: "/images/germany.jpg" },
+    { name: "USA Green Card", path: "/pr-visas/usagreencard", image: "/images/usa.jpg" },
+  ],
+  canadapr: [
+    { name: "Canada Express Entry", path: "/pr-visas/canadapr/canada-express-entry" },
+  { name: "Canada Provincial Nominee Program", path: "/pr-visas/canadapr-provincial-nominee-program" },
+  { name: "Canada Quebec Selected Workers Program", path: "/pr-visas/canadapr/canada-quebec-selected-workers-program" },
+   { name: "Canada ICT Program", path: "/pr-visas/canadapr/canada-ict-program" },
+  { name: "Canada FSTP", path: "/pr-visas/canadapr/canada-fstp" },
+  { name: "Canada FSWP", path: "/pr-visas/canadapr/canada-fswp" },
+   { name: "Canada Family Sponsorship", path: "/pr-visas/canadapr/canada-family-sponsership" },
+  { name: "Canada Investor Program", path: "/pr-visas/canadapr/canada-investor-program" },
+  { name: "Canada Start-Up Visa", path: "/pr-visas/canadapr/canada-starup-visa" },
+  { name: "Canada Atlantic Immigration Pilot Program", path: "/pr-visas/canadapr/canada-atlantic-immigration-pilot-program" },
+  { name: "Canada Business Visa", path: "/pr-visas/canadapr/canada-business-visa" },
+  ],
+  "canadapr-provincial-nominee-program":[
+    { name: "Canada Provincial Nominee Program", path: "/pr-visas/canadapr-provincial-nominee-program" },
+    { name: "Canada Prince Edward Island", path: "/pr-visas/canadapr-provincial-nominee-program/canada-prince-edward-island" },
+  { name: "Canada Ontario", path: "/pr-visas/canadapr-provincial-nominee-program/canada-ontario" },
+  { name: "Canada Saskatchewan", path: "/pr-visas/canadapr-provincial-nominee-program/canada-saskatchewan" },
+  { name: "Canada Manitoba", path: "/pr-visas/canadapr-provincial-nominee-program/canada-manitoba" },
+  { name: "Canada Nova Scotia", path: "/pr-visas/canadapr-provincial-nominee-program/canada-nova-scotia" },
+  { name: "Canada Alberta", path: "/pr-visas/canadapr-provincial-nominee-program/canada-alberta" },
+ 
+  ],
+  australiapr: [
+    { name: "189 Skilled Independent Visa", path: "/pr-visas/australiapr/189-skilled-independent-visa" },
+    { name: "190 Skilled Nominated Visa", path: "/pr-visas/australiapr/190-skilled-nominated-visa" },
+    { name: "191	Permanent Residence (Skilled Regional) Visa", path: "/pr-visas/australiapr/191-permanent-residence-visa" },
+    { name: "491	Skilled Work Regional (Provisional) Visa", path: "/pr-visas/australiapr/491-skilled-work-regional-visa" },
+    { name: "494	Skilled Employer Sponsored Regional (Provisional) Visa", path: "/pr-visas/australiapr/494-skilled-employer-sponsered-regional-visa" },
+   
+  ],
+  ukpr: [
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr", image: "/1.jpg" },
+    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr", image: "/airplane.png" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr", image: "/dmbusi.jpg" },
+    { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/new-zealand-pr", image: "/images/newzealand.jpg" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard", image: "/images/germany.jpg" },
+    { name: "USA Green Card", path: "/pr-visas/usagreencard", image: "/images/usa.jpg" },
+  ],
+  "new-zealand-pr": [
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr", image: "/1.jpg" },
+    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr", image: "/airplane.png" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr", image: "/dmbusi.jpg" },
+    { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/new-zealand-pr", image: "/images/newzealand.jpg" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard", image: "/images/germany.jpg" },
+    { name: "USA Green Card", path: "/pr-visas/usagreencard", image: "/images/usa.jpg" },
+  ],
+  usagreencard: [
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr", image: "/1.jpg" },
+    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr", image: "/airplane.png" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr", image: "/dmbusi.jpg" },
+    { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/new-zealand-pr", image: "/images/newzealand.jpg" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard", image: "/images/germany.jpg" },
+    { name: "USA Green Card", path: "/pr-visas/usagreencard", image: "/images/usa.jpg" },
+  ],
+};
+
+const visaComponents = {
+  germanybluecard: Goppcardvisa,
+  canadapr: Canadapr,
+  usagreencard: USAstud,
+  australiapr: Ausstud,
+  ukpr: UKBvisa,
+  "new-zealand-pr": Newzepr,
+  "canadapr-provincial-nominee-program": sfgerneralskilledvisa,
+  "hong-kong": HKstudentvisa,
+  denmark: Denbusiness,
+  uae: UAEstud,
+};
+
+const backgroundImages = {
+  germanybluecard: "/germanybgimg.jpg",
+  canadapr: "/canadabgimg.jpg",
+  usagreencard: "/usabgimg.jpg",
+  australiapr: "/australiabgimg.jpg",
+  ukpr: "/ukk.jpg",
+  "new-zealand-pr": "/nzz.jpg",
+  "south-africa": "/sa666.png",
+  "hong-kong": "/hongkong444.jpg",
+  uae: "/uae333.jpg",
+  denmark: "/denmark222.jpg",
+};
+
+const MigrateCountry = () => {
+  const router = useRouter();
+  const { country } = useParams();
+  const pathname = usePathname();
+
+  const visas = countryVisaData[country] || [];
+  const DefaultVisaComponent = visaComponents[country] || null;
+
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsImageLoaded(true);
+  }, []);
+
+  return (
+    <div className={`relative bg-cover bg-center min-h-screen ${isImageLoaded ? "bg-loaded" : "bg-loading"}`}>
+      <div
+        className="relative flex flex-col lg:flex-row items-center justify-between p-10 gap-10 min-h-screen"
+        style={{
+          backgroundImage: `url(${backgroundImages[country]})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="w-full lg:w-1/2 lg:ml-16 mt-[-2rem] text-center lg:text-left">
+          <h1 className="font-semibold uppercase leading-tight text-teal-950 text-3xl sm:text-4xl md:text-5xl lg:text-[3.50rem] mt-20 sm:mt-12" style={{ fontFamily: "Times New Roman, serif" }}>
+            {country.charAt(0).toUpperCase() + country.slice(1)}
+          </h1>
+          <p className="flex text-black tracking-tight text-center lg:text-left md:font-medium max-w-xl lg:max-w-lg mt-6 font-bold" style={{ fontFamily: "Times New Roman, serif" }}>
+            Discover endless opportunities with our expert immigration services. Whether you’re looking to study or work abroad, we help make your dreams a reality.
+          </p>
+        </div>
+
+        <div className="w-full lg:w-1/2 lg:mr-16 lg:mt-14">
+          <Form />
+        </div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row bg-gradient-to-bl from-white to-orange-50 px-8 py-10 items-center lg:items-start">
+        <div className="w-full lg:w-[400px] flex-shrink-0 px-4 mb-8 lg:mb-0">
+          <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent mb-8 text-center">
+            Visa Options for {country.charAt(0).toUpperCase() + country.slice(1)}
+          </h2>
+          <div className="flex flex-col gap-4 items-center">
+            {visas.map(({ name, path }) => (
+              <button
+                key={path}
+                onClick={() => router.push(path)}
+                className={`w-full sm:w-[350px] flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl shadow-lg transition duration-300 transform hover:scale-105 ${
+                  pathname === path
+                    ? "bg-orange-500 text-white border-orange-500"
+                    : "bg-white text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
+                }`}
+              >
+                {name}
+                <ArrowRight className="w-6 h-6" />
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="w-full lg:flex-1 ml-10 overflow-y-auto max-h-[1000px] px-8 rounded-xl shadow-md border border-gray-200 mt-8 lg:mt-0">
+          {DefaultVisaComponent ? <DefaultVisaComponent /> : <p>Select a visa option to view details.</p>}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MigrateCountry;
