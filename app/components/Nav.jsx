@@ -110,7 +110,7 @@ const Navbar = () => {
     { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr" },
     { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr" },
     { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr" },
-    { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/newzealandpr" },
+    { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/new-zealand-pr" },
     { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard" },
     { name: "USA Green Card", path: "/pr-visas/usagreencard" },
   ];
