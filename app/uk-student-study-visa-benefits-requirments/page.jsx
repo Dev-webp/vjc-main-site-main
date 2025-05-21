@@ -11,7 +11,7 @@ import GuidanceSection from './GuidanceSection';
 import ScholarshipOverview from './ScholarshipOverview';
 import WhyVJC from './WhyVJC';
 import ModalFormWithPopup from '../Popup/Popup';
-import UkImageContent from '../Popup/UkImageContent'; // Adjust path if different
+import UkImageContent from '../Popup/UKImageContent'; // Adjust path if different
 
 
 import { useState } from 'react';
