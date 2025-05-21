@@ -2,22 +2,26 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { ArrowRight } from "lucide-react";
-
-// Germany visa components
-import Goppcardvisa from './Germany-visa/Goppcardvisa';
-import Gworkvisa from './Germany-visa/Gworkvisa';
-import Gstudentvisa from './Germany-visa/Gstudentvisa';
-import Gtouristvisa from './Germany-visa/Gtouristvisa';
-import Gdependentvisa from './Germany-visa/Gdependentvisa';
-import Gselfempvisa from './Germany-visa/Gselfempvisa';
-
-// Canada visa components
-import Canadastudent from "./Canadapages/Canadastudent";
-import Canadatourist from "./Canadapages/Canadatourist";
+import Canadanova from './Canadapages/Canadanova';
+import Canadamanitoba from './Canadapages/Canadamanitoba';
+import Canadapredward from './Canadapages/Canadapredward';
+import Canadaimmigration from './Canadapages/Canadaimmigration';
+import Canadainvestor from './Canadapages/Canadainvestor';
+import Canadafswp from './Canadapages/Canadafswp';
+import Canadafstp from './Canadapages/Canadafstp';
+import Canadafamily from "./Canadapages/Canadafamily";
+import Canadaquebic from "./Canadapages/Canadaquebic";
 import Canadapr from "./Canadapages/Canadapr";
 import Canadaexpress from "./Canadapages/Canadaexpress";
-import Canadawork from "./Canadapages/Canadawork";
-
+import Canadaict from "./Canadapages/Canadaict";
+import Canadaontario from "./Canadapages/Canadaontario";
+import Canadasaskatchewan from "./Canadapages/Canadasaskatchewan";
+import Canadaalberta from "./Canadapages/Canadaalberta";
+import Aus189 from "./Australia-visa/Aus189";
+import Aus190 from "./Australia-visa/Aus190";
+import Aus191 from "./Australia-visa/Aus191";
+import Aus491 from "./Australia-visa/Aus491";
+import Aus494 from "./Australia-visa/Aus494";
 
 // Form component
 import Form from '../../Form';
@@ -41,9 +45,9 @@ const countryVisaData = {
   { name: "Canada FSWP", path: "/pr-visas/canadapr/canada-fswp" },
    { name: "Canada Family Sponsorship", path: "/pr-visas/canadapr/canada-family-sponsership" },
   { name: "Canada Investor Program", path: "/pr-visas/canadapr/canada-investor-program" },
-  { name: "Canada Start-Up Visa", path: "/pr-visas/canadapr/canada-starup-visa" },
+  
   { name: "Canada Atlantic Immigration Pilot Program", path: "/pr-visas/canadapr/canada-atlantic-immigration-pilot-program" },
-  { name: "Canada Business Visa", path: "/pr-visas/canadapr/canada-business-visa" },
+  
   ],
   "canadapr-provincial-nominee-program":[
     { name: "Canada Provincial Nominee Program", path: "/pr-visas/canadapr-provincial-nominee-program" },
@@ -92,28 +96,51 @@ const countryVisaData = {
 
 // Visa component map
 const visaComponents = {
-  "germany-opportunity-card": Goppcardvisa,
-  "germany-work-visa": Gworkvisa,
-  "germany-student-visa": Gstudentvisa,
-  "germany-tourist-visa": Gtouristvisa,
-  "germany-dependent-visa": Gdependentvisa,
-  "germany-self-employment-visa": Gselfempvisa,
-
+  "canadapr-canada-ict-program": Canadaict,
+  "canadapr-canada-fstp": Canadafstp,
+  "canadapr-canada-atlantic-immigration-pilot-program": Canadaimmigration,
+  "canadapr-canada-investor-program": Canadainvestor,
+  "canadapr-canada-fswp": Canadafswp,
+  "canadapr-canada-quebec-selected-workers-program": Canadaquebic,
+  "canadapr-canada-family-sponsership": Canadafamily, 
   "canada-pr-visa": Canadapr,
   "canadapr-canada-express-entry": Canadaexpress,
-  "canada-pr-provincial-nominee-program": Canadastudent,
-  "canada-tourist-visa": Canadatourist,
- 
+ "canadapr-provincial-nominee-program-canada-prince-edward-island": Canadapredward,
+ "canadapr-provincial-nominee-program-canada-ontario": Canadaontario, 
+ "canadapr-provincial-nominee-program-canada-saskatchewan": Canadasaskatchewan,
+ "canadapr-provincial-nominee-program-canada-alberta": Canadaalberta,
+ "canadapr-provincial-nominee-program-canada-manitoba": Canadamanitoba,
+ "canadapr-provincial-nominee-program-canada-nova-scotia": Canadanova,
+ "australiapr-189-skilled-independent-visa": Aus189,
+ "australiapr-190-skilled-nominated-visa": Aus190,
+ "australiapr-191-permanent-residence-visa": Aus191,
+ "australiapr-491-skilled-work-regional-visa": Aus491,
+ "australiapr-494-skilled-employer-sponsered-regional-visa": Aus494,
 };
 
 // Background image per visa
 const visaBackgroundImages = {
-  "/pr-visas/canadapr/canada-express-entry": "/vjc-gop.png",
-  "/migrate/germany/work-visa": "/vjc-gwvisa.jpg",
-  "/migrate/germany/student-visa": "/vjc-gsvisa.jpg",
-  "/migrate/germany/tourist-visa": "/vjc-gtvisa.jpg",
-  "/migrate/germany/dependent-visa": "/vjc-gdvisa.jpg",
-  "/migrate/germany/self-employment-visa": "/vjc-gsevisa.jpg",
+  "/pr-visas/canadapr/canada-express-entry": "/canada-pr-express-entry.jpg",
+  "/pr-visas/canadapr-provincial-nominee-program/canada-prince-edward-island": "/candapr-price-edward-island.jpg",
+  "/pr-visas/canadapr-provincial-nominee-program/canada-ontario": "/canadapr-ornito.jpg",
+  "/pr-visas/canadapr-provincial-nominee-program/canada-saskatchewan": "/canadapr-saskethen.jpg",
+   "/pr-visas/canadapr-provincial-nominee-program/canada-manitoba": "/manitoba-canadapr.jpg",
+   "/pr-visas/canadapr-provincial-nominee-program/canada-nova-scotia": "/canadapr-nova.avif",
+  "/pr-visas/canadapr-provincial-nominee-program/canada-alberta": "/canada-alberta.webp",
+  "/pr-visas/canadapr/canada-quebec-selected-workers-program": "/canadapr-Quebec.jpg",
+  "/pr-visas/canadapr/canada-ict-program": "/candapr-ict.jpg",
+  "/pr-visas/canadapr/canada-fswp": "/canadapr-fswp.jpg",
+  "/pr-visas/canadapr/canada-fstp": "/canada-fstp.jpg",
+  "/pr-visas/canadapr/canada-family-sponsership": "/canadapr-family-sponsership-visa1.webp",
+  "/pr-visas/canadapr/canada-investor-program": "/vjc-gsevisa.jpg",
+  "/pr-visas/canadapr/canada-starup-visa": "/",
+  "/pr-visas/canadapr/canada-atlantic-immigration-pilot-program":"/canada-aipp.png",
+  "/pr-visas/canadapr/canada-business-visa":"/",
+  "/pr-visas/australiapr/189-skilled-independent-visa":"/skilledindependent.png",
+  "/pr-visas/australiapr/190-skilled-nominated-visa":"/skilledwork.png",
+  "/pr-visas/australiapr/191-permanent-residence-visa":"/Australia-s-General-Skilled-Migration-Program.webp",
+  "/pr-visas/australiapr/491-skilled-work-regional-visa":"/subclass-491-visa-pathways.jpg",
+  "/pr-visas/australiapr/494-skilled-employer-sponsered-regional-visa":"/suclass-494-australiapr.jpg",
 };
 
 // Fallback background per country
@@ -149,7 +176,7 @@ export default function MigrateCountry() {
     router.push(visaItem.path);
   };
 
-  const selectedVisaPath = `/migrate/${country}/${visa}`;
+  const selectedVisaPath = `/pr-visas/${country}/${visa}`;
   const currentBackgroundImage =
     visaBackgroundImages[selectedVisaPath] || defaultBackgroundImages[country];
 
@@ -165,7 +192,7 @@ export default function MigrateCountry() {
         }}
       >
         <div className="w-full lg:w-1/2 flex flex-col lg:items-start items-center lg:text-left text-center mt-12 lg:mt-8 lg:ml-16">
-          <h1 className="font-semibold uppercase bg-gradient-to-r from-white to-gray-500 inset-0 bg-black/60 bg-clip-text text-transparent text-4xl lg:text-6xl lg:mb-4 lg:mt-4">
+          <h1 className="font-semibold uppercase bg-white inset-0 bg-black/60 bg-clip-text text-transparent text-4xl lg:text-6xl lg:mb-4 lg:mt-4">
             {selectedVisaTitle}
           </h1>
           <p className="text-white mt-4 lg:mt-2 font-bold">
@@ -178,7 +205,7 @@ export default function MigrateCountry() {
       </div>
 
       {/* Bottom visa section */}
-      <div className="flex flex-col lg:flex-row bg-gradient-to-bl from-white to-orange-50 px-8 py-10">
+      <div className="flex flex-col lg:flex-row bg-white px-8 lg:ml-10 py-10">
         {/* Visa options */}
         <div className="w-full lg:w-[350px] flex-shrink-0 px-4 flex flex-col items-center">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent mb-8 text-center">
@@ -203,7 +230,7 @@ export default function MigrateCountry() {
         </div>
 
         {/* Visa content */}
-        <div className="w-full lg:flex-1 overflow-y-auto max-h-[800px] px-8 rounded-xl shadow-md border border-gray-200 mt-8 lg:mt-0 lg:ml-9">
+        <div className="w-full lg:flex-1 overflow-y-auto max-h-[1030px] px-8 rounded-xl shadow-md border border-gray-200 mt-8 lg:mt-0 lg:ml-9">
           {VisaComponent ? <VisaComponent /> : <p>Select a visa option to view details.</p>}
         </div>
       </div>

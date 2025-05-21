@@ -1,146 +1,105 @@
-import React from "react";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 
-const canadafs = () =>{
-    return (
-        <section
-          style={{
-            position: "relative",
-            padding: "10px",
-            boxSizing: "border-box",
-            backgroundColor: "white",
-            fontFamily: "Times New Roman",
-            overflow: "hidden",
-          }}
-        >
-            <div style={{ marginBottom: "40px" }}>
-            <h3 className="text-2xl font-semibold text-black text-center">
-              Canada Family Sponsorship Visa - <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
-            </h3>
-          </div>
-          <header>
+export default function Next() {
+  return (
+    <>
+      <Head>
+        <title>Express Entry - Canada PR | VJC Overseas</title>
+        <meta name="description" content="Get Canada PR through Express Entry with VJC Overseas. Expert guidance, CRS boosting strategies, and full support." />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Express Entry - Canada PR | VJC Overseas" />
+        <meta property="og:description" content="Fast-track your Canadian immigration through Express Entry with expert help from VJC Overseas." />
+        <meta property="og:image" content="/canadapr-express-entry.png" />
+        <meta property="og:url" content="https://vjcoverseas.com/pr-visas/canadapr/canada-express-entry" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Express Entry Canada PR | VJC Overseas" />
+        <meta name="twitter:description" content="Migrate to Canada via Express Entry - Trusted Guidance from VJC Overseas." />
+        <meta name="twitter:image" content="/images/express-entry-canada.jpg" />
+      </Head>
+
+      <div className="max-w-8xl mx-auto  py-8 bg-white">
+      <h1 className="text-3xl font-bold text-black mb-4">
+              Express Entry – Your Fast Track to Canadian Immigration
+            </h1>
+        <div className="flex flex-col lg:flex-row gap-10 items-center">
+        
+          <div className="lg:w-1/2 w-full overflow-hidden rounded-xl">
+  <Image
+    src="/canadapr-express-entry.png"
+    alt="Express Entry Canada Immigration - VJC Overseas"
+    title="Express Entry Canada Immigration - VJC Overseas"
+    width={600}
+    height={400}
+    className="w-full object-cover transform transition duration-500 hover:scale-105"
+  />
+</div>
+
+
+          <div className="lg:w-1/2 w-full">
             
-           
-          </header>
-    
-          <article>
-            <section style={{ marginBottom: "30px" }}>
-              <h2 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-                Basic Eligibility Criteria for Family Sponsorship Visa
-              </h2>
-              <p style={{ marginBottom: "20px" }}>
-                To be eligible for the Canada Family Sponsorship Visa, both the
-                sponsor and the person being sponsored must meet certain criteria.
-                Below is an overview of the key eligibility requirements:
-              </p>
-              <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Canada is one of the most welcoming countries for immigrants, offering a high standard of living, excellent healthcare, and world-class education. Among the various immigration pathways, Express Entry stands out as the most efficient and streamlined process for skilled workers seeking permanent residency in Canada. At VJC Overseas, we specialize in guiding clients through every step of the Express Entry system to make their Canadian dream a reality.
+            </p>
+          </div>
+        </div>
 
-  <div className="flex-shrink-0 mx-auto lg:mx-0">
-    <Image
-      src="/canadaimg4.jpg"
-      alt="Image description"
-      width={500} // Replace with your image's actual width
-      height={300}
-      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
-    />
-  </div>
-              {/* <h3 className="px-4 lg:px-0">For the Sponsor:</h3> */}
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginBottom: "20px" }}>
-                <li><strong>Status:</strong> The sponsor must be a Canadian citizen or permanent resident.</li>
-                <li><strong>Age:</strong> The sponsor must be at least 18 years old.</li>
-                <li><strong>Financial Capability:</strong> The sponsor must demonstrate the ability to financially support their relative and meet the Minimum Necessary Income (MNI) requirement.</li>
-              
-               
-              </ul>
-              </div>
-               
-              <li>
-                    
-                    <strong>Relationship:</strong> The sponsor must prove a genuine relationship with the individual they wish to sponsor. Eligible family members include:
-                    
-                    
-                  </li>
-                  <li><strong>No Prior Sponsorship Issues:</strong> The sponsor should not have breached previous sponsorship obligations.</li>
-              <ul style={{ listStyleType: "circle", paddingLeft: "20px" }}>
-                    <li>Spouse or common-law partner</li>
-                    <li>Dependent children</li>
-                    <li>Parents and grandparents</li>
-                    <li>Siblings (under certain conditions)</li>
-                    <li>Other relatives in specific situations (e.g., orphaned nieces or nephews)</li>
-                  </ul>
-              
-    
-              <h3 style={{ fontWeight: "bold", marginBottom: "10px" }}>For the Sponsored Person:</h3>
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
-                <li><strong>Relationship Verification:</strong> Must be a close family member as defined by Canadian immigration rules.</li>
-                <li><strong>Health and Security:</strong> Must pass medical and security checks.</li>
-                <li><strong>Proof of Identity:</strong> Must provide documents to prove their identity (e.g., birth certificates, passports).</li>
-              </ul>
-            </section>
-    
-            <section style={{ marginBottom: "30px" }}>
-              <h2 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-                Document Checklist for Canada Family Sponsorship Visa
-              </h2>
-              <p style={{ marginBottom: "20px" }}>
-                A complete and accurate application is crucial to ensure the success of your Family Sponsorship Visa application.
-              </p>
-              <h3 style={{ fontWeight: "bold", marginBottom: "10px" }}>For the Sponsor:</h3>
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginBottom: "20px" }}>
-                <li>Proof of Canadian Citizenship or Permanent Residency</li>
-                <li>Proof of Financial Support (e.g., income tax returns, pay stubs).</li>
-                <li>Completed Sponsorship Forms (e.g., IMM 1344).</li>
-                <li>Proof of Relationship to Sponsored Person (e.g., marriage certificate).</li>
-                <li>Police Certificates (if applicable).</li>
-                <li>Completed and Signed Checklist of Documents.</li>
-              </ul>
-    
-              <h3 style={{ fontWeight: "bold", marginBottom: "10px" }}>For the Sponsored Person:</h3>
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
-                <li>Proof of Identity (e.g., passport, national ID card).</li>
-                <li>Photographs as per IRCC guidelines.</li>
-                <li>Medical Examination Report from an IRCC-approved physician.</li>
-                <li>Police Certificates from countries of residence.</li>
-                <li>Proof of Relationship to Sponsor (e.g., birth or marriage certificates).</li>
-                <li>Additional Supporting Documents (e.g., proof of divorce, if applicable).</li>
-              </ul>
-            </section>
-    
-            <section style={{ marginBottom: "30px" }}>
-              <h2 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-                Steps to Apply for Canada Family Sponsorship Visa
-              </h2>
-              <ol style={{ listStyleType: "decimal", paddingLeft: "20px", marginBottom: "20px" }}>
-                <li>Confirm Eligibility: Ensure both sponsor and sponsored individual meet criteria.</li>
-                <li>Gather Required Documents: Use the document checklist for accuracy.</li>
-                <li>Submit Application: Apply online or via paper application.</li>
-                <li>Wait for Processing: Track your application online through IRCC.</li>
-                <li>Receive Decision: Sponsored individual receives a PR visa upon approval.</li>
-              </ol>
-            </section>
-    
-            <section>
-              <h2 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-                Why Choose VJC Overseas for Your Family Sponsorship Visa?
-              </h2>
-              <p style={{ marginBottom: "20px" }}>
-                Navigating Canadian immigration laws can be overwhelming. At VJC Overseas, we provide expert guidance, assess your case, and help you gather the correct documents to maximize your success.
-              </p>
-              <h3 style={{ fontWeight: "bold", marginBottom: "10px" }}>
-                Ready to Bring Your Family Together in Canada?
-              </h3>
-              <p>
-                Contact VJC Overseas today for a personalized consultation, and let us help you begin your Family Sponsorship Visa journey!
-              </p>
-            </section>
-          </article>
-    
-          <footer style={{ marginTop: "30px", color: "gray" }}>
-            <p>Disclaimer: The information provided is for general informational purposes only and does not constitute legal advice. Always consult a certified immigration consultant for your specific case.</p>
-          </footer>
-        </section>
-    );
+        <div className="mt-10 space-y-6 text-gray-800 text-lg leading-relaxed">
+          <h2 className="text-2xl font-semibold text-orange-700">What is Express Entry?</h2>
+          <p>
+            Express Entry is an online immigration application system introduced by the Government of Canada to manage applications for permanent residence under three federal economic immigration programs:
+          </p>
+          <ul className="list-disc pl-6">
+            <li>Federal Skilled Worker Program (FSWP)</li>
+            <li>Federal Skilled Trades Program (FSTP)</li>
+            <li>Canadian Experience Class (CEC)</li>
+          </ul>
+          <p>
+            Each of these programs targets skilled individuals who can contribute to the Canadian economy. Express Entry uses a points-based system, known as the Comprehensive Ranking System (CRS), to evaluate and rank candidates based on age, education, language proficiency, work experience, and other key factors.
+          </p>
 
-};
+          <h2 className="text-2xl font-semibold text-orange-700">How Express Entry Works</h2>
+          <ol className="list-decimal pl-6">
+            <li>
+              <strong>Creating an Online Profile:</strong> Applicants submit an online profile detailing their qualifications, work history, language test results (IELTS or CELPIP), and educational credentials. Profiles are entered into the Express Entry pool.
+            </li>
+            <li>
+              <strong>Receiving an Invitation to Apply (ITA):</strong> Candidates with the highest CRS scores are issued Invitations to Apply for permanent residence in regular draws conducted by Immigration, Refugees and Citizenship Canada (IRCC).
+            </li>
+          </ol>
+          <p>
+            Once invited, applicants have 60 days to submit a complete PR application with supporting documents.
+          </p>
 
-export default canadafs;
+          <h2 className="text-2xl font-semibold text-orange-700">Boosting Your CRS Score</h2>
+          <p>
+            A strong CRS score increases your chances of receiving an ITA. Our expert consultants help you maximize your score through various strategies, including:
+          </p>
+          <ul className="list-disc pl-6">
+            <li>Improving your language test results</li>
+            <li>Getting Educational Credential Assessments (ECA) for additional degrees</li>
+            <li>Securing a valid job offer from a Canadian employer</li>
+            <li>Applying with your spouse to take advantage of additional points</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold text-orange-700">Why Choose Us?</h2>
+          <ul className="list-disc pl-6">
+            <li><strong>Free Eligibility Assessment:</strong> Discover your chances of success before committing.</li>
+            <li><strong>Personalized Immigration Strategy:</strong> Every applicant is unique. We design a plan tailored to your profile.</li>
+            <li><strong>Document Preparation and Review:</strong> We ensure your application is accurate, complete, and submitted on time.</li>
+            <li><strong>Ongoing Support:</strong> From profile creation to post-landing services, we’re with you at every step.</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold text-orange-700">Start Your Journey Today</h2>
+          <p>
+            The Express Entry system is dynamic, and CRS cut-off scores can change frequently. Acting early and smartly can make all the difference. Let us help you build a future in Canada — a land of opportunities, diversity, and stability.
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}

@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Study Abroad – Explore Global Education Paths | VJC Overseas",
+  title: "Study in UK Canada Australia Germany USA Italy France New Zealand Switzerland Student Visa",
   description:
-    "Get expert guidance to study abroad with VJC Overseas. Explore top universities, countries, scholarships & student visa options. Begin your journey now!",
+    "Study Student Visa Immigration Consultants for UK Canada Australia Germany USA Italy France New Zealand Switzerland Singapore Malaysia South Africa New Zealand Philippines Poland Ireland Spain Netherlands Switzerland Denmark Dubai Luxembourg Hongkong UAE Norway Sweden with Best Student Visa Immigration Consultants in Hyderabad Bangalore",
   keywords:
-    "study abroad consultants, overseas education consultants, study abroad with scholarship, study abroad, abroad education consultants, foreign study consultancy, overseas study consultants, abroad for studies, study in UK, study in Canada, study in Australia, study in Germany",
+    "Study in UK, Study in Canada, Study in USA, Study in Germany, Study in Australia, Study in Italy, Study in France, Study in New Zealand, Study in Philippines, Study in Switzerland, Study in Denmark, Study in Spain, Canada Student Visa, USA Student Visa, Australia Student Visa, Study in Poland, Study in Singapore, Study in Malaysia, UK Student Visa,",
 };
 
 // import Nav from "./Nav";

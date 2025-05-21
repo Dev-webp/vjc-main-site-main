@@ -10,9 +10,9 @@ import USAstud from "./USA-visa/USA-stud";
 import UKBvisa from "./UK-visa/UKBvisa";
 import HKstudentvisa from "./HongKongpages/HKstudentvisa";
 import Newzepr from "./Newzealand-visa/Newze-pr";
-import Denbusiness from "./Denmark-visa/Den-business";
+
 import UAEstud from "./UAE-visa/UAE-stud";
-import sfgerneralskilledvisa from "./southafricavisas/sfgerneralskilledvisa";
+import Canadanominal from "./Canadapages/Canadanominal";
 import Form from "../Form";
 
 const countryVisaData = {
@@ -33,9 +33,9 @@ const countryVisaData = {
   { name: "Canada FSWP", path: "/pr-visas/canadapr/canada-fswp" },
    { name: "Canada Family Sponsorship", path: "/pr-visas/canadapr/canada-family-sponsership" },
   { name: "Canada Investor Program", path: "/pr-visas/canadapr/canada-investor-program" },
-  { name: "Canada Start-Up Visa", path: "/pr-visas/canadapr/canada-starup-visa" },
+  
   { name: "Canada Atlantic Immigration Pilot Program", path: "/pr-visas/canadapr/canada-atlantic-immigration-pilot-program" },
-  { name: "Canada Business Visa", path: "/pr-visas/canadapr/canada-business-visa" },
+ 
   ],
   "canadapr-provincial-nominee-program":[
     { name: "Canada Provincial Nominee Program", path: "/pr-visas/canadapr-provincial-nominee-program" },
@@ -88,23 +88,22 @@ const visaComponents = {
   australiapr: Ausstud,
   ukpr: UKBvisa,
   "new-zealand-pr": Newzepr,
-  "canadapr-provincial-nominee-program": sfgerneralskilledvisa,
+  "canadapr-provincial-nominee-program": Canadanominal,
   "hong-kong": HKstudentvisa,
-  denmark: Denbusiness,
+
   uae: UAEstud,
 };
 
 const backgroundImages = {
-  germanybluecard: "/germanybgimg.jpg",
-  canadapr: "/canadabgimg.jpg",
-  usagreencard: "/usabgimg.jpg",
-  australiapr: "/australiabgimg.jpg",
-  ukpr: "/ukk.jpg",
-  "new-zealand-pr": "/nzz.jpg",
+  germanybluecard: "/germanypr.jpg",
+  canadapr: "/canada-pr.jpeg",
+  usagreencard: "/usapr.jpg",
+  australiapr: "/Australia-PR.jpg",
+  ukpr: "/dmbusi.jpg",
+  "new-zealand-pr": "/nzpr.jpg",
   "south-africa": "/sa666.png",
-  "hong-kong": "/hongkong444.jpg",
-  uae: "/uae333.jpg",
-  denmark: "/denmark222.jpg",
+  "canadapr-provincial-nominee-program": "/canadapr-Provincial-Nominee-Program.jpg",
+ 
 };
 
 const MigrateCountry = () => {
@@ -122,31 +121,38 @@ const MigrateCountry = () => {
   }, []);
 
   return (
-    <div className={`relative bg-cover bg-center min-h-screen ${isImageLoaded ? "bg-loaded" : "bg-loading"}`}>
+    
+    <div className={`relative bg-cover bg-center bg-black/50 min-h-screen ${isImageLoaded ? "bg-loaded" : "bg-loading"}`}>
+    
       <div
-        className="relative flex flex-col lg:flex-row items-center justify-between p-10 gap-10 min-h-screen"
-        style={{
-          backgroundImage: `url(${backgroundImages[country]})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="w-full lg:w-1/2 lg:ml-16 mt-[-2rem] text-center lg:text-left">
-          <h1 className="font-semibold uppercase leading-tight text-teal-950 text-3xl sm:text-4xl md:text-5xl lg:text-[3.50rem] mt-20 sm:mt-12" style={{ fontFamily: "Times New Roman, serif" }}>
-            {country.charAt(0).toUpperCase() + country.slice(1)}
-          </h1>
-          <p className="flex text-black tracking-tight text-center lg:text-left md:font-medium max-w-xl lg:max-w-lg mt-6 font-bold" style={{ fontFamily: "Times New Roman, serif" }}>
-            Discover endless opportunities with our expert immigration services. Whether you’re looking to study or work abroad, we help make your dreams a reality.
-          </p>
-        </div>
+  className="relative flex flex-col lg:flex-row items-center justify-between p-10 gap-10 min-h-screen"
+  style={{
+    backgroundImage: `url(${backgroundImages[country]})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Black Overlay */}
+  <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-        <div className="w-full lg:w-1/2 lg:mr-16 lg:mt-14">
-          <Form />
-        </div>
-      </div>
+  {/* Content on top of overlay */}
+  <div className="relative z-10 w-full lg:w-1/2 lg:ml-16 mt-[-2rem] text-center lg:text-left">
+    <h1 className="font-semibold uppercase leading-tight text-white text-3xl sm:text-4xl md:text-5xl lg:text-[3.50rem] mt-20 sm:mt-12" style={{ fontFamily: "Times New Roman, serif" }}>
+      {country.charAt(0).toUpperCase() + country.slice(1)}
+    </h1>
+    <p className="flex text-white tracking-tight text-center lg:text-left md:font-medium max-w-xl lg:max-w-lg mt-6 font-bold" style={{ fontFamily: "Times New Roman, serif" }}>
+      Discover endless opportunities with our expert immigration services. Whether you’re looking to study or work abroad, we help make your dreams a reality.
+    </p>
+  </div>
+
+  <div className="relative z-10 w-full lg:w-1/2 lg:mr-16 lg:mt-14">
+    <Form />
+  </div>
+</div>
+
 
       <div className="flex flex-col lg:flex-row bg-gradient-to-bl from-white to-orange-50 px-8 py-10 items-center lg:items-start">
-        <div className="w-full lg:w-[400px] flex-shrink-0 px-4 mb-8 lg:mb-0">
+        <div className="w-full lg:w-[400px] flex-shrink-0 px-4 lg:pl-6 mb-8 lg:mb-0">
           <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent mb-8 text-center">
             Visa Options for {country.charAt(0).toUpperCase() + country.slice(1)}
           </h2>

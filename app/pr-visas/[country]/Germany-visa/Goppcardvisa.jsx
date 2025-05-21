@@ -1,98 +1,107 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
-const Content = () => {
+const Germany = () => {
   return (
-    
-    <div style={{
-        position: 'relative', 
-        padding: '50px', 
-        boxSizing: 'border-box',
-        backgroundColor: 'white', 
-        fontFamily:'Times New Roman',
-        position: 'relative',
-  overflow: 'hidden',
-
-      }}>
-      <div style={{marginBottom: '40px' }}>
-  <h3 className="text-2xl font-semibold text-black text-center">
-  Germany Opportunity Card – Your Gateway to a Bright Future - <span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
-  </h3>
-</div>
-
-        
-     
-      <p style={{ marginBottom: '20px' }}>
-        At VJC Overseas, we take immense pride in offering one of the most promising pathways to secure a future in Germany: the Germany Opportunity Card. This new, innovative initiative has opened up exciting prospects for skilled professionals, allowing them to live and work in one of Europe’s most thriving economies.
+    <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
+    <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+    Germany Blue Card Visa - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+    </h1>
+      {/* Image and Intro Text Side by Side */}
+                   <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+                     {/* Image */}
+                     <div className="md:w-1/2 w-full">
+                       <Image
+                         src="/germany-blue-card.jpg"
+                         alt="germany blue card Guidance by VJC Overseas"
+                         width={700}
+                         height={400}
+                         className="w-full object-cover "
+                         priority
+                       />
+                     </div>
+             
+                     {/* Text */}
+                     <div className="md:w-1/2 text-justify">
+                       <p className="mb-4 mt-4">
+        Germany, a global leader in innovation, technology, and culture, attracts skilled professionals from around the world. The <strong>Germany Blue Card</strong> is a special residence permit designed for highly qualified workers who wish to live and work in Germany. If you are looking to advance your career, experience rich cultural heritage, and enjoy an excellent quality of life — this visa is your gateway.
       </p>
-      
-
-      <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-
-  <div className="flex-shrink-0 mx-auto lg:mx-0">
-    <Image
-      src="/gocimg.png"
-      alt="Image description"
-      width={500} // Replace with your image's actual width
-      height={300}
-      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
-    />
-  </div>
-
-  {/* Text Section */}
-  <div className="px-4 lg:px-0">
-    <h3 className="text-black font-bold mb-4 text-lg sm:text-xl">
-      What is the Germany Opportunity Card?
-    </h3>
-    <p className="mb-4 text-sm sm:text-base">
-      The Germany Opportunity Card is a new immigration pathway designed for
-      highly skilled workers from outside the European Union to move to
-      Germany. The card offers a flexible and faster approach to obtaining a
-      residence permit for work purposes, especially for those in fields where
-      there is a recognized skills shortage.
-    </p>
-   
-  </div>
-</div>
-      
-<p className="hidden lg:block">
-  This opportunity card is the perfect solution for individuals seeking to
-  explore career opportunities, enhance professional growth, and experience
-  life in one of the world’s most advanced countries.
-</p>
-
-
-
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Why Choose VJC Overseas?</h3>
-      <p style={{ marginBottom: '20px' }}>
-        At VJC Overseas, our mission is to simplify the process for professionals looking to move to Germany. With our unparalleled expertise and deep understanding of the German immigration system, we ensure that every step of your application is handled with care, precision, and efficiency.
+      </div>
+      </div>
+      <h3 className="text-xl font-semibold mb-2 mt-4">What is the Germany Blue Card Visa?</h3>
+      <p>
+        The Germany Blue Card is a work and residence permit for highly skilled non-EU nationals. It’s tailored for professionals in engineering, IT, healthcare, research, and more. It also provides benefits like family reunification and a path to permanent residency in as little as 21–33 months.
       </p>
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Why is the Germany Opportunity Card a Game Changer?</h3>
-      <ul style={{ marginBottom: '20px' }}>
-        <li><strong style={{color:'rgb(3, 60, 65)', fontWeight:'bolder'}}>1.Faster Processing Times:</strong> The new card allows quicker processing of skilled professionals into Germany`s workforce.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>2.Job Flexibility:</strong> The Germany Opportunity Card allows professionals to enter Germany without needing a prior job offer. You can arrive in Germany and search for a job within your field of expertise once you’re there.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>3.Permanent Residency Path:</strong> After holding the Germany Opportunity Card for a certain number of years, you may be eligible to apply for permanent residency.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>4.Visa Approvals at Record Speed:</strong> Our proven approach ensures that applications are handled efficiently, increasing the likelihood of approval and reducing delays.</li>
+
+      <h3 className="text-xl font-semibold mb-2 mt-4">Key Benefits of the Germany Blue Card</h3>
+      <ul className="list-disc list-inside space-y-1">
+        <li><strong>Work and Live in Germany:</strong> Enjoy high standards of living, infrastructure, and opportunities.</li>
+        <li><strong>Family Reunification:</strong> Your spouse and children can join you under Blue Card provisions.</li>
+        <li><strong>Pathway to Permanent Residency:</strong> Apply after 33 months, or just 21 months with German proficiency.</li>
+        <li><strong>Career Opportunities:</strong> Especially strong in engineering, IT, healthcare, and research fields.</li>
       </ul>
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>VJC Overseas – Your Trusted Partner for Success</h3>
-      <p style={{ marginBottom: '20px' }}>Here at VJC Overseas, we pride ourselves on providing clear, transparent, and expert guidance throughout your journey.</p>
-      <p style={{ marginBottom: '20px' }}>We understand that relocating to a new country can feel overwhelming, but our team is here to make the process seamless and stress-free.</p>
-      <p style={{ marginBottom: '20px' }}>Our unparalleled success in securing visas — with new approvals coming in every alternate day — speaks volumes about our dedication and expertise.</p>
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>The VJC Overseas Advantage:</h3>
-      <ul style={{ marginBottom: '20px', listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>Expert Consultation:</strong> We provide tailored advice on the most effective path for your individual needs.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>Customized Job Search Assistance:</strong> Our extensive network of German employers helps you find the right job to match your skills.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>Comprehensive Visa Support:</strong> From start to finish, we assist with all the required documentation and processes for a smooth visa approval.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>Rapid Success Rate:</strong> With visa approvals every alternate day, we have earned a reputation for being reliable, fast, and results-oriented.</li>
+
+      <h3 className="text-xl font-semibold mb-2 mt-4">Eligibility Criteria</h3>
+      <ul className="list-disc list-inside space-y-1">
+        <li><strong>Job Offer:</strong> A valid job offer or contract relevant to your qualifications.</li>
+        <li><strong>Higher Education Qualification:</strong> Recognized university degree or equivalent qualification.</li>
+        <li><strong>Salary Requirement:</strong> Minimum salary is approx €56,400/year, or €43,992/year for shortage occupations (e.g., IT, engineering, healthcare).</li>
+        <li><strong>Health Insurance:</strong> Proof of valid health insurance is mandatory.</li>
       </ul>
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' , color:'brown', fontWeight:'bold' }}>Success Stories</h3>
-      <p style={{ marginBottom: '20px',fontFamily:'cursive', fontSize:'14px' }}>We are proud to have helped hundreds of professionals and families successfully relocate to Germany. Hear from our satisfied clients who are now thriving in their new careers:</p>
-      <p style={{ marginBottom: '20px',fontFamily:'cursive', fontSize:'14px' }}>``I never thought that applying for the Germany Opportunity Card would be this easy. Thanks to VJC Overseas, my visa was approved quickly, and I found a great job within just a few months.`` — Anjali S., Software Developer</p>
-      <h3 style={{ marginBottom: '20px',fontFamily:'cursive', fontSize:'14px', fontWeight:'bolder' }}>Start Your Journey Today</h3>
-      <p style={{ marginBottom: '20px',fontFamily:'cursive', fontSize:'14px' }}>Ready to take the next step in your career? The Germany Opportunity Card offers a unique chance to live, work, and thrive in one of Europe’s most prosperous countries. With VJC Overseas, your path to success is just a few steps away.</p>
-      <p style={{ marginBottom: '20px', fontSize:'15px', fontWeight:'bolder' }}>Contact us today for a free consultation and let us guide you toward securing your Germany Opportunity Card.</p>
+
+      <h3 className="text-xl font-semibold mb-2 mt-4">Processing Time</h3>
+      <p>
+        Processing usually takes <strong>4 to 12 weeks</strong>, depending on application volume and personal circumstances. Apply early to avoid delays.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2 mt-4">Germany Blue Card Visa Fees</h3>
+      <ul className="list-disc list-inside space-y-1">
+        <li><strong>Initial Application:</strong> Approx €100</li>
+        <li><strong>Visa Extension:</strong> Typically around €100</li>
+        <li><strong>Family Reunification:</strong> €75 to €100 per family member</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold mb-2 mt-4">Living Expenses in Germany</h3>
+      <ul className="list-disc list-inside space-y-1">
+        <li><strong>Rent:</strong> €800–€1,500/month in major cities, lower in smaller towns</li>
+        <li><strong>Utilities:</strong> €150–€250/month</li>
+        <li><strong>Groceries:</strong> €200–€300/month</li>
+        <li><strong>Transport:</strong> €70–€100/month (public transport)</li>
+        <li><strong>Health Insurance:</strong> €100–€800/month depending on coverage</li>
+        <li><strong>Miscellaneous:</strong> €200–€300/month (entertainment, dining, etc.)</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold mb-2 mt-4">Lifestyle in Germany</h3>
+      <ul className="list-disc list-inside space-y-1">
+        <li><strong>Work-Life Balance:</strong> Generous vacation days and strong employee rights</li>
+        <li><strong>Education & Healthcare:</strong> High-quality and mostly free public services</li>
+        <li><strong>Social Security:</strong> Access to pension, unemployment insurance, and more</li>
+        <li><strong>Culture & Recreation:</strong> Museums, festivals, outdoor adventures, and more</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold mb-2 mt-4">
+        How <span className="text-orange-600 font-semibold">VJC Overseas</span> Can Help
+      </h3>
+      <p>
+        With years of experience and a team of experts,{" "}
+        <span className="text-orange-600 font-semibold">VJC Overseas</span> simplifies your Germany Blue Card application. From document checks to submission and follow-ups, we offer end-to-end support.
+      </p>
+
+      <h3 className="text-xl font-semibold mb-2 mt-4">
+        Contact <span className="text-orange-600 font-semibold">VJC Overseas</span>
+      </h3>
+      <p>
+        📞 <strong>+91-9160449000</strong><br />
+        ✉️ <strong>info@vjcoverseas.com</strong>
+      </p>
+
+      <p className="text-sm text-gray-600 italic">
+        *Information is subject to change based on German immigration policies. Always verify with official sources or consult our team.
+      </p>
     </div>
   );
 };
 
-export default Content;
+export default Germany;

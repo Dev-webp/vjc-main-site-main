@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Migrate Overseas with Expert Visa Consultancy | VJC Overseas",
+  title: "Migrate With Canada Permanent Residence PR Visa Australia PR Visa Germany Opportunity Card Visa USA",
   description:
-    " Migrate to your dream destination with VJC Overseas expert visa consultancy. Benefit from tailored immigration services and visa processing. Click now!",
+    " Migrate with Canada PR Visa and Australia PR Visa also Apply for Germany Opportunity Card Visa to settle future with free Sponsorship also Permanent Residency Visas and work in Canada with Open Work Permit Visa or in Germany with Germany Job Seeker Visa and then Australia with Permanent Resident Visa with Best Visa Immigration Consultants in Hyderabad and Bangalore",
   keywords:
-    "immigration consultants,germany job seeker visa,canada immigration,australia immigration,work visa usa,work permit,canada work permit visa,usa visit visa,australia work visa,canada work visa,uk work permit visa,germany work visa,australia work permit,uk work permit,visa uae",
+    "Migrate to Canada, Migrate to Australia, Migrate to Germany, Migrate to UK, Migrate to USA, New Zealand, South Africa, Hong Kong, Denmark, UAE, Canada PR Visa, Canada Permanent Residence Visa, Australia PR Visa, Germany Opportunity Card Visa, USA B1B2, Canada Work Permit Visa, Canada Work Permit, Australia Skilled Work Permit, Germany Job Seeker Visa, Best Visa Immigration Consultants in Hyderabad, Best Visa Immigration Consultants, Visa Immigration Consultants",
 };
 
 
