@@ -10,7 +10,7 @@ import Howto from "../Howto/Howto"
 import Process from "../Processsuccess/Processsuccess"
 import Requirements from "../Requirements/Requirements"
 import Livein from '../Livein/Livein'
-import Footer from "@/app/components/Footer";
+
 const Landing = () => {
   return (
     <div>
@@ -26,7 +26,7 @@ const Landing = () => {
       <CanadaSection></CanadaSection>
       <Whychoose></Whychoose>
       <Livein></Livein>
-      <Footer />
+      
     </div>
   )
 }

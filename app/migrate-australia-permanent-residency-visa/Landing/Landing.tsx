@@ -10,7 +10,6 @@ import Howto from "../Howto/Howto"
 import Process from "../Processsuccess/Processsuccess"
 import Requirements from "../Requirements/Requirements"
 import Livein from '../Livein/Livein'
-import Footer from "@/app/components/Footer";
 import WhyAus from "../WhyAus/WhyAus"
 import Typespr from "../Typespr/Typespr"
 const Landing = () => {
@@ -29,7 +28,7 @@ const Landing = () => {
       <CanadaSection></CanadaSection>
       <Whychoose></Whychoose>
       <Livein></Livein>
-      <Footer />
+      
     </div>
   )
 }
