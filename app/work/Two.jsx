@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Form from "./Form"; // Adjust path if necessary
-import Footer from "./Footer";
+
 
 const Migrate = () => {
   return (

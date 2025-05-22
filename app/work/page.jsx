@@ -27,12 +27,6 @@ const ContactPage = () => {
         
         
       </div>
-
-      <div className=" -mt-16" >
-       
-
-
-      </div>
  
 
 
