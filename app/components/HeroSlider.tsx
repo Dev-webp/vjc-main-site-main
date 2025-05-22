@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
- 
+
 const sliderData = [
   {
     services: [
@@ -44,11 +44,11 @@ const sliderData = [
     gradient: "bg-gradient-to-r from-red-700 to-white",
   },
 ];
- 
+
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
- 
+
   useEffect(() => {
     if (!isHovered) {
       const interval = setInterval(() => {
@@ -57,12 +57,12 @@ const Slider = () => {
       return () => clearInterval(interval);
     }
   }, [isHovered]);
- 
+
   const goToSlide = (index: number) => setCurrentSlide(index);
- 
+
   return (
     <div
-      className="relative w-[22rem] lg:w-[28rem] h-[8rem] max-w-3xl mx-auto bg-gray-900 rounded-lg shadow-lg overflow-hidden"
+      className="relative w-[90%] sm:w-[22rem] md:w-[24rem] lg:w-[28rem] h-auto max-w-3xl mx-auto bg-gray-900 rounded-lg shadow-lg overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -82,9 +82,9 @@ const Slider = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80" />
         </motion.div>
       </AnimatePresence>
- 
+
       {/* Content */}
-      <div className="relative z-10 text-center px-4 py-0">
+      <div className="relative z-10 text-center px-4 py-4 sm:py-3">
         <AnimatePresence mode="wait">
           <motion.div
             key={sliderData[currentSlide].title}
@@ -94,11 +94,11 @@ const Slider = () => {
             transition={{ duration: 0.8 }}
           >
             <h2
-              className={`text-xl lg:text-3xl font-extrabold uppercase text-transparent bg-clip-text ${sliderData[currentSlide].gradient}`}
+              className={`text-lg sm:text-xl lg:text-3xl font-extrabold uppercase text-transparent bg-clip-text ${sliderData[currentSlide].gradient}`}
             >
               {sliderData[currentSlide].title}
             </h2>
-            <ul className={`space-y-1 ${currentSlide >= 3 ? "mt-3" : ""}`}>
+            <ul className={`space-y-1 mt-2`}>
               {sliderData[currentSlide].services.map((service, index) => (
                 <motion.li
                   key={index}
@@ -109,7 +109,7 @@ const Slider = () => {
                 >
                   <Link
                     href={service.link}
-                    className="text-sm lg:text-base underline text-white hover:text-orange-400 transition"
+                    className="text-xs sm:text-sm lg:text-base underline text-white hover:text-orange-400 transition"
                   >
                     {service.text}
                   </Link>
@@ -119,7 +119,7 @@ const Slider = () => {
           </motion.div>
         </AnimatePresence>
       </div>
- 
+
       {/* Progress Dots */}
       <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-1">
         {sliderData.map((_, index) => (
@@ -144,5 +144,5 @@ const Slider = () => {
     </div>
   );
 };
- 
+
 export default Slider;
