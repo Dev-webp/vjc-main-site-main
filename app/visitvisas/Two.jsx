@@ -8,8 +8,6 @@ import Content from "./Content";
 
 const visaData = [
   { name: "USA Visit Visa", path: "/visitvisas/usa-visit-visa", bg: "/usavisvitvisa.jpg" },
-  { name: "USA B1 Visa", path: "/visitvisas/usa-b1-visa", bg: "/h1bvisit.jpg" },
-  { name: "USA B2 Visa", path: "/visitvisas/usa-b2-visa", bg: "/h2usavisit.jpg" },
   { name: "USA B1/B2 Visa", path: "/visitvisas/usa-b1-b2-visa", bg: "/usabgh1h2.jpg" },
   { name: "Canada Visit Visa", path: "/visitvisas/canada-visit-visa", bg: "/canadavisitvisa.avif" },
   { name: "Australia Visit Visa", path: "/visitvisas/australia-visit-visa", bg: "/best-places-to-visit-in-Australia.jpg" },
@@ -146,19 +144,19 @@ const Migrate = () => {
           </div>
         </div>
 
-        {/* Grid Section 1 */}
-        <div className="relative -mt-24 z-10 px-6 md:px-12">
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            {visaData.slice(0, 6).map((visa, index) => renderVisaCard(visa, index))}
-          </div>
-        </div>
+        {/* Grid Section - Two Rows of 5 Columns */}
+<div className="relative -mt-24 z-10 px-6 md:px-12">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    {visaData.slice(0, 5).map((visa, index) => renderVisaCard(visa, index))}
+  </div>
+</div>
 
-        {/* Grid Section 2 */}
-        <div className="relative mt-5 z-0 px-6 md:px-12">
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            {visaData.slice(6).map((visa, index) => renderVisaCard(visa, index + 6))}
-          </div>
-        </div>
+<div className="relative mt-5 z-0 px-6 md:px-12">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    {visaData.slice(5, 10).map((visa, index) => renderVisaCard(visa, index + 5))}
+  </div>
+</div>
+
 
         {/* Visa Content */}
         

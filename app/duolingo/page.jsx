@@ -3,11 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Nav from "./Nav";
-import Two from "./Two";
-// import Content from "./Content";
-// import Form from "./Form";
-
-import Footer from "./Footer";   
+import Two from "./Two"; 
 
 const ContactPage = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -23,7 +19,7 @@ const ContactPage = () => {
         <Two/>
        
       </div>
-      <Footer/>
+      
 
     </>
   );

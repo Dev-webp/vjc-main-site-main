@@ -1,6 +1,6 @@
 import { visaMetaData } from "../../visaMetaData";
 import Two from "./Two";
-import Footer from "./Footer";
+
 
 export async function generateMetadata({ params }) {
   const country = params?.country?.toLowerCase();
@@ -22,7 +22,7 @@ const VisaPage = () => {
         {/* Optional Nav */}
       </div>
       <Two />
-      <Footer />
+
     </>
   );
 };

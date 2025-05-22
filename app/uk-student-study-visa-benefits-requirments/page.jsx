@@ -1,8 +1,8 @@
 "use client"
 import HeroSection from './HeroSection';
 import CTASection from './CTASection';
-import Nav from './Nav';
-import Footer from './Footer';
+
+
 import Studyinuk from './Studyinuk';
 import StudentCounselling from './StudentCounselling';
 import UKAdmissionProcess from './UKAdmissionProcess';
@@ -21,7 +21,7 @@ export default function StudyInUKPage() {
 
   return (
     <>
-      <Nav />
+      
       <HeroSection setIsOpen={setIsOpen}/>
       <ModalFormWithPopup isOpen={isOpen} setIsOpen={setIsOpen} customContent={<UkImageContent />} />
       <ScholarshipUK />
@@ -34,7 +34,7 @@ export default function StudyInUKPage() {
       <CTASection />
       <GuidanceSection />
      
-      <Footer />
+      
     </>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import dynamic from 'next/dynamic';
 import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+
 import React, { useState } from "react";
 import ModalFormWithPopup from '../Popup/Popup';
 
@@ -37,7 +37,7 @@ export default function Home() {
       <Services />
       <Why />
       <Vjcinfo />
-      <Footer />
+      
 
       
     </>

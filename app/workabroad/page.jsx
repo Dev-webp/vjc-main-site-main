@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Wbcontent from "./Wbcontent";
 import Content from "./Content";
 import Two from "./Two";
-import Footer from "./Footer";
+
 
 const textContainerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -49,9 +49,6 @@ const ContactPage = () => {
       {/* Other Sections */}
       <Two />
       <Wbcontent />
-      <div className="-mt-10">
-      <Footer />
-      </div>
       
     </>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
-
+import Image from "next/image";
 const Footer = () => { 
   return (
     <> 
@@ -61,19 +61,19 @@ const Footer = () => {
     <h3 className="text-lg font-bold text-orange-500 mb-1 md:mb-4 lg:mb-2 text-center lg:text-left uppercase">Settle your future in Abroad</h3>
     <ul className="space-y-2 text-center lg:text-left mb-6 md:mb-0 lg:mb-0">
         <li>
-    <Link href="/prvisas/canadapr" className="hover-underline">Settle in Canada</Link>
+    <Link href="/migrate-canada-permanent-residency-visa" className="hover-underline">Settle in Canada</Link>
     </li>
     <li>
-    <Link href="/prvisas/australiapr" className="hover-underline">Settle in Australia</Link>
+    <Link href="/migrate-australia-permanent-residency-visa" className="hover-underline">Settle in Australia</Link>
     </li>
      <li>
-        <Link href="/prvisas/germanybluecard" className="hover-underline">Settle in Germany</Link>
+        <Link href="/germany-opportunity-card" className="hover-underline">Settle in Germany</Link>
         </li>
         <li>
-        <Link href="/prvisas/ukpr" className="hover-underline">Settle in UK</Link>
+        <Link href="/pr-visas/uk" className="hover-underline">Settle in UK</Link>
         </li>
         <li>
-        <Link href="/prvisas/usagreencard" className="hover-underline">Settle in USA</Link>
+        <Link href="/pr-visas/usagreencard" className="hover-underline">Settle in USA</Link>
         </li>
         
     </ul>
@@ -105,31 +105,92 @@ const Footer = () => {
             </div>
 
                 
-            {/* Social Media */}
-            <div>
-                <h3 className="text-lg font-bold text-orange-500 mb-4 uppercase text-center lg:text-left">Follow us</h3>
-                <div className="flex space-x-4 text-center lg:text-left justify-center lg:justify-start">
-                    <Link href="https://www.facebook.com/VJCOVERSEAS/" className="group">
-                        <FaFacebook className="text-white group-hover:text-orange-500" />
-                    </Link>
-                    <Link href="https://twitter.com/vjcoverseas" className="group">
-                        <FaTwitter className="text-white group-hover:text-orange-500" />
-                    </Link>
-                    <Link href="https://www.instagram.com/vjc_overseas_bangalore/?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw%3D%3D" className="group">
-                        <FaInstagram className="text-white group-hover:text-orange-500" />
-                    </Link>
-                    <Link href="https://www.linkedin.com/company/vjc-overseas/" className="group">
-                        <FaLinkedin className="text-white group-hover:text-orange-500" />
-                    </Link>
-                    <Link href="https://www.youtube.com/@Vjcoverseas" className="group">
-                        <FaYoutube className="text-white group-hover:text-orange-500" />
-                    </Link>
-                </div>
-                <div className="flex flex-col items-center justify-center md:items-start mb-6 md:mb-0 mt-6 w-full md:w-auto ml-0 tablet:ml-20 md:ml-0 lg:ml-0">
-            <p className="text-gray-200 font-medium">Email : <Link href="mailto:info@vjcoverseas.com" className="hover:text-saffron">info@vjcoverseas.com</Link></p>
-            <p className="mt-2 font-medium text-gray-200 ml-0 tablet:ml-2 md:ml-0 lg:ml-0">Contact : <Link href="tel:+919160449000" className="hover:text-saffron">+91 9160449000</Link></p>
-          </div>
-            </div>
+           <div>
+  <h3 className="text-lg font-bold text-orange-500 mb-4 uppercase text-center lg:text-left">
+    Follow us
+  </h3>
+
+  {/* Social Media Icons */}
+  <div className="flex space-x-4 text-center lg:text-left justify-center lg:justify-start">
+    <Link href="https://www.facebook.com/VJCOVERSEAS/" className="group">
+      <FaFacebook className="text-white group-hover:text-orange-500" />
+    </Link>
+    <Link href="https://twitter.com/vjcoverseas" className="group">
+      <FaTwitter className="text-white group-hover:text-orange-500" />
+    </Link>
+    <Link
+      href="https://www.instagram.com/vjc_overseas_bangalore/?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw%3D%3D"
+      className="group"
+    >
+      <FaInstagram className="text-white group-hover:text-orange-500" />
+    </Link>
+    <Link href="https://www.linkedin.com/company/vjc-overseas/" className="group">
+      <FaLinkedin className="text-white group-hover:text-orange-500" />
+    </Link>
+    <Link href="https://www.youtube.com/@Vjcoverseas" className="group">
+      <FaYoutube className="text-white group-hover:text-orange-500" />
+    </Link>
+  </div>
+
+  {/* Contact Info */}
+  <div className="flex flex-col items-center justify-center md:items-start mb-6 md:mb-0 mt-6 w-full md:w-auto ml-0 tablet:ml-20 md:ml-0 lg:ml-0">
+    <p className="text-gray-200 font-medium">
+      Email :{" "}
+      <Link href="mailto:info@vjcoverseas.com" className="hover:text-saffron">
+        info@vjcoverseas.com
+      </Link>
+    </p>
+    <p className="mt-2 font-medium text-gray-200">
+      Contact :{" "}
+      <Link href="tel:+919160449000" className="hover:text-saffron">
+        +91 9160449000
+      </Link>
+    </p>
+  </div>
+
+  {/* SEO-Optimized Circular Logos */}
+  <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
+    {/* British Council */}
+    <a
+      href="/vjc-british-council.jpg"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="British Council Certified"
+      aria-label="British Council Certified - VJC Overseas"
+      className="transform hover:scale-110 transition-transform duration-300"
+    >
+      <Image
+        src="/vjc-british-council.jpg"
+        alt="British Council Certification Logo"
+        title="British Council Certified - Study Abroad Partner"
+        width={80}
+        height={80}
+        loading="lazy"
+        className="rounded-full shadow-lg border border-white"
+      />
+    </a>
+
+    {/* ISO Certified */}
+    <a
+      href="/vjc-iso-certifed.jpg"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="ISO 9001:2015 Certified"
+      aria-label="ISO 9001:2015 Certified - VJC Overseas"
+      className="transform hover:scale-110 transition-transform duration-300"
+    >
+      <Image
+        src="/vjc-iso-certifed.jpg"
+        alt="ISO 9001:2015 Certification Logo"
+        title="ISO Certified - Trusted Visa Consultants"
+        width={80}
+        height={80}
+        loading="lazy"
+        className="rounded-full shadow-lg border border-white"
+      />
+    </a>
+  </div>
+</div>
         </div>
 
        

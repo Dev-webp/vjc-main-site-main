@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import BlogCards from './BlogCards'; 
 import Latestblogs from './Latestblogs';
-import Footer from './Footer';
+
 
 const categories = ['All', 'Study Tips', 'Visa Guide', 'Work Abroad', 'News'];
 
@@ -82,7 +82,7 @@ const Page = () => {
         <BlogCards search={search} category={active} />
       </div>
       <Latestblogs/>
-      <Footer/>
+      
     </div>
   );
 };

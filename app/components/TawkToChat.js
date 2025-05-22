@@ -46,8 +46,8 @@ export default function ChatPage() {
     setSessionId(newSessionId);
 
     addDoc(collection(db, "messages"), {
-      text: "👋 Welcome to VJC Overseas Support! How can we assist you today?",
-      sender: "admin",
+      text: "👋 Chat with us for Free Assessment or Get Eligibility Report Today!",
+      sender: "Hadassa",
       sessionId: newSessionId,
       timestamp: serverTimestamp()
     });
@@ -77,7 +77,7 @@ export default function ChatPage() {
     if (!isInWorkingHours() && !showForm) {
       await addDoc(collection(db, "messages"), {
         text: "⚠️ We are currently offline (10 AM - 7 PM IST). Please leave your details.",
-        sender: "admin",
+        sender: "Hadassa",
         sessionId,
         timestamp: serverTimestamp()
       });
@@ -106,7 +106,7 @@ export default function ChatPage() {
 
     await addDoc(collection(db, "messages"), {
       text: "✅ Thanks! We’ll reach out soon.",
-      sender: "admin",
+      sender: "Hadassa",
       sessionId,
       timestamp: serverTimestamp()
     });
@@ -168,7 +168,7 @@ export default function ChatPage() {
               borderRadius: isMobile ? "10px 10px 0 0" : "10px 10px 0 0"
             }}>
               <Image src={logo} alt="VJC Logo" width={30} height={30} style={{ borderRadius: "50%" }} />
-              <span>Chat with VJC Support</span>
+              <span>Chat with Hadassa - Free Online Counselling - VJC Overseas</span>
             </div>
 
             {/* Messages */}
@@ -183,7 +183,7 @@ export default function ChatPage() {
                   maxWidth: "90%",
                   fontSize: 14
                 }}>
-                  <strong>{msg.sender === "user" ? "🧑 You" : "🤖 Admin"}:</strong>
+                  <strong>{msg.sender === "user" ? "🧑 You" : "🤖 Hadassa"}:</strong>
                   <div>{msg.text}</div>
                 </div>
               ))}

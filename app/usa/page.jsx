@@ -4,7 +4,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Nav from "./Nav";
 import Two from "./Two";
-import Footer from "./Footer";
+
 
 const ContactPage = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -37,7 +37,7 @@ const ContactPage = () => {
 
       {/* Other Sections */}
       <Two />
-      <Footer />
+   
     </>
   );
 };

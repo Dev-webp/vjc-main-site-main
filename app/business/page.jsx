@@ -7,7 +7,7 @@ import Two from "./Two";
 import Content from "./Content";
 import Form from "./Form";
 
-import Footer from "./Footer";   
+  
 
 const ContactPage = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -66,7 +66,7 @@ const ContactPage = () => {
 
       
       </div>
-      <Footer />
+    
        
     </>
   );

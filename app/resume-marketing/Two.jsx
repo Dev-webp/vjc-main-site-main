@@ -117,7 +117,7 @@ const BookFlipAnimation = () => {
   }, []);
 
   return (
-    <div className="w-full">
+    <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
       {/* Hero Section with Form and Flip Card */}
       <div
         className="relative w-full min-h-screen flex flex-col lg:flex-row items-start justify-between px-4 py-10 gap-10 lg:gap-[80px] bg-cover bg-center bg-no-repeat"

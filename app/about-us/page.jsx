@@ -5,7 +5,7 @@ import CTA from "./files/cta";
 import Three from "./files/three";
 import Four from "./files/four";
 import Price from "@/app/components/Price";
-import Footer from "./files/Footer";
+
 import Why from "./files/Why";
 
 export const metadata = {
@@ -25,7 +25,7 @@ const page = () => {
     <Four/>
     <Price/>
     <Three/>
-    <Footer />
+   
     </div>
     </>
   )

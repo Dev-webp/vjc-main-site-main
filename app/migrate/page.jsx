@@ -13,11 +13,17 @@ import Two from "./Two";
 const ContactPage = () => {
   return (
     <>
+      <div className="flex flex-col min-h-screen">
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
         {/* <Nav /> */}
       </div>
-      <Two />
+
+      <main className="min-h-full h-full">
+        <Two />
+      </main>
+
       {/* <Footer /> */}
+    </div>
     </>
   );
 };

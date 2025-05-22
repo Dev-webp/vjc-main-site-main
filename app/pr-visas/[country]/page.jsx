@@ -1,6 +1,6 @@
 import { metaData } from "../metaData"; // Adjust path if needed
 import Two from "./Two";
-import Footer from "./Footer";
+
 
 // Dynamic metadata for each country
 export async function generateMetadata({ params }) {
@@ -8,10 +8,10 @@ export async function generateMetadata({ params }) {
   const data = metaData[country];
 
   return {
-    title: data?.title || "Migrate Abroad – Explore Global Opportunities | VJC Overseas",
-    description: data?.description || "Expert migration services to work, study, or settle abroad.",
-    keywords: data?.keywords || "study abroad, work visa, PR, VJC Overseas, global education",
-  };
+     title: 'Permanent Residency PR Visa for Canada Australia Express Entry PR Visa Process Requirements',
+  description: 'Apply for Permanent Residency Visa in Canada and Australia it is also called as Canada PR Visa Process or Australia PR Visa Process also know the Benefits for Canada Express Entry Program and Australia PR Visa Apply Online now and get Requirements for Canada PR Visa and Australia PR Visa Process in 2025 get Australia Immigration PR Visa Process and Canada Immigration PR Visa Process with VJC Overseas',
+  keywords: 'Permanent Residency Visa, PR Visa, Canada Permanent Residency Visa, Australia Permanent Residency Visa, Canada Express Entry, PR Visa Process, PR Visa Requirements, Permanent Residency Visa Requirements, PR Visa Benefits, Canada PR Visa Benefits, Australia PR Visa Benefits, Canada PR Visa Process, Australia PR Visa Process, Canada Permanent Residence Visa, Australia Permanent Residence Visa',
+};
 }
 
 const ContactPage = () => {
@@ -21,7 +21,7 @@ const ContactPage = () => {
         {/* Optional Nav */}
       </div>
       <Two />
-      <Footer />
+     
     </>
   );
 };

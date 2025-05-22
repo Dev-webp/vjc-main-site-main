@@ -2,7 +2,7 @@
 
 import Two from "./Two";
 // import Footer from "./Footer";
-import Footer from "./Footer";
+
 const ContactPage = () => {
   return (
     <>
@@ -10,7 +10,7 @@ const ContactPage = () => {
         {/* <Nav /> */}
       </div>
       <Two />
-     <Footer /> 
+ 
     </>
   );
 };

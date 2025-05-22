@@ -4,7 +4,7 @@ import Script from 'next/script'; // Import Next.js Script
 import './globals.css';
 import FloatingWhatsApp from '@/app/components/FloatingWhatsapp';
 import Nav from '@/app/components/Nav';
-import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
 import TawkToChat from '@/app/components/TawkToChat';
 import Popupform from '@/app/components/Popupform';
 import EligibilityBanner from "@/app/components/EligibilityBanner";
@@ -97,7 +97,9 @@ export default function RootLayout({
         {children}
         <FloatingWhatsApp />
         <TawkToChat />
-
+        
+          <Footer />
+     
         {/* NoScript Pixel (For Users with JS Disabled) */}
         <noscript>
           <img

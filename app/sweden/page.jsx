@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Nav from "./Nav";
 import Form from "./Form";
 import Two from "./Two";
-import Footer from "./Footer";
+
 
 const textContainerVariants = {
  
@@ -31,8 +31,7 @@ const ContactPage = () => {
       {/* Main Section */}
       
       {/* Other Sections */}
-      <Two />
-      <Footer />
+      <Two /> 
 
     </>
   );

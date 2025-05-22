@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import FadeIn from "./FadeIn";
 import Content from "./Content";
 import Two from "./Two";
-import Footer from "./Footer";
+
 import Hero from "./Hero";
 const textContainerVariants = {
  
@@ -33,7 +33,7 @@ const ContactPage = () => {
       <FadeIn />
       {/* Other Sections */}
       <Hero />
-      <Footer />
+    
 
     </>
   );

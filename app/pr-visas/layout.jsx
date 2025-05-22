@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Migrate Overseas with Expert Visa Consultancy | VJC Overseas',
-  description: 'Migrate to your dream destination with VJC Overseas expert visa consultancy. Benefit from tailored immigration services and visa processing. Click now!',
-  keywords: 'immigration consultants, germany job seeker visa, canada immigration, australia immigration, work visa usa, work permit, canada work permit visa, usa visit visa, australia work visa, canada work visa, uk work permit visa, germany work visa, australia work permit, uk work permit, visa uae',
+  title: 'Permanent Residency PR Visa for Canada Australia Express Entry PR Visa Process Requirements',
+  description: 'Apply for Permanent Residency Visa in Canada and Australia it is also called as Canada PR Visa Process or Australia PR Visa Process also know the Benefits for Canada Express Entry Program and Australia PR Visa Apply Online now and get Requirements for Canada PR Visa and Australia PR Visa Process in 2025 get Australia Immigration PR Visa Process and Canada Immigration PR Visa Process with VJC Overseas',
+  keywords: 'Permanent Residency Visa, PR Visa, Canada Permanent Residency Visa, Australia Permanent Residency Visa, Canada Express Entry, PR Visa Process, PR Visa Requirements, Permanent Residency Visa Requirements, PR Visa Benefits, Canada PR Visa Benefits, Australia PR Visa Benefits, Canada PR Visa Process, Australia PR Visa Process, Canada Permanent Residence Visa, Australia Permanent Residence Visa',
 };
 
 export default function MigrateLayout({ children }) {

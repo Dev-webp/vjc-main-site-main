@@ -1,6 +1,6 @@
 import { metaData } from "../metaData"; // Adjust path if needed
 import Two from "./Two";
-import Footer from "./Footer";
+
 
 // Dynamic metadata for each country
 export async function generateMetadata({ params }) {
@@ -21,7 +21,7 @@ const ContactPage = () => {
         {/* Optional Nav */}
       </div>
       <Two />
-      <Footer />
+     
     </>
   );
 };

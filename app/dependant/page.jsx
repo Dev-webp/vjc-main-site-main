@@ -5,9 +5,7 @@ import Image from "next/image";
 import Nav from "./Nav";
 import Two from "./Two";
 import Content from "./Content";
-import Form from "./Form";
-
-import Footer from "./Footer";   
+import Form from "./Form"; 
 
 const ContactPage = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -66,7 +64,7 @@ const ContactPage = () => {
 
       
       </div>
-      <Footer />
+
        
     </>
   );

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Nav from "./Nav";
 
 import Two from "./Two";
-import Footer from "./Footer";
+
 import { notFound } from "next/navigation";
 
 const metaData = {
@@ -58,7 +58,7 @@ export default function CountryClient({ country }) {
         {/* Additional Sections */}
       
         <Two />
-        <Footer />
+      
      
     </>
   );

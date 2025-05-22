@@ -8,7 +8,7 @@ export const metadata = {
 
 // import Nav from "./Nav";
 import Two from "./Two";
-import Footer from "./Footer";
+
 
 const ContactPage = () => {
   return (
@@ -17,7 +17,7 @@ const ContactPage = () => {
         {/* <Nav /> */}
       </div>
       <Two />
-      <Footer />
+      
     </>
   );
 };

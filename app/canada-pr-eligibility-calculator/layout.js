@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <div className={inter.className}>
      {/* Navbar is now included globally */}
       <main>{children}</main> {/* This renders all child pages */}
-      <Footer/>
+    
 
     </div>
   );

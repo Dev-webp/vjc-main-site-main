@@ -20,8 +20,7 @@ import Schengen from "./Schengen";
 const visaData = [
 
   { name: "USA Visit Visa", path: "/visitvisas/usa-visit-visa", image: "/usaplanevisit.jpg" },
-  { name: "USA B1 Visa", path: "/visitvisas/usa-b1-visa", image: "/visit1.webp" },
-  { name: "USA B2 Visa", path: "/visitvisas/usa-b2-visa", image: "/visit1.webp" },
+ 
   { name: "USA B1/B2 Visa", path: "/visitvisas/usa-b1-b2-visa", image: "/visit1.webp" },
   { name: "Canada Visit Visa", path: "/visitvisas/canada-visit-visa" , image: "/canada.webp"},
   { name: "Australia Visit Visa", path: "/visitvisas/australia-visit-visa" , image: "/australiabgimg.jpg"},
