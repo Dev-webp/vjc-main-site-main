@@ -181,15 +181,15 @@ const VisitVisas = () => {
                       "₹6,000 – ₹9,500",
                     ];
                     const includes = [
-                      "🍔 Food, 🚗 Transport, 🏨 Lodging",
-                      "🍽️ Meals, 🚇 Commute, 🎟️ Tickets",
-                      "🚌 Transport, 🍲 Meals, 🛏️ Hostel",
-                      "🍷 Dining, 🏄‍♂️ Activities, 🚘 Travel",
-                      "🏨 Hotels, 🚇 Metro, 🍢 Cuisine",
-                      "🍜 Food, 🎡 Attractions, 🚈 MRT",
-                      "🚆 Travel, 🧀 Food, 🖼️ Museums",
-                      "🌮 Food, 🛍️ Shopping, 🛏️ Stay",
-                      "🚅 Rail pass, 🍣 Sushi, 🏨 Hostel",
+                      " Food, Transport, Lodging",
+                      " Meals, Commute, Tickets",
+                      " Transport, Meals, Hostel",
+                      " Dining, Activities, Travel",
+                      " Hotels, Metro, Cuisine",
+                      " Food, Attractions, MRT",
+                      " Travel, Food, Museums",
+                      " Food, Shopping, Stay",
+                      " Rail pass, Sushi, Hostel",
                     ];
                     return (
                       <tr

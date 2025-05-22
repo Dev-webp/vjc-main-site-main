@@ -3,6 +3,7 @@
 import './global.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const blogs = [
   {
@@ -63,61 +64,57 @@ const BlogCards = ({ search = '', category = 'All' }) => {
   });
 
   return (
-    <div className='bg-white'>
-      <div className="-mt-12 mb-6 bg-white">
-        <h2 className="text-4xl bg-gradient-to-r from-black via-orange-500 to-orange-500 bg-clip-text text-transparent">
+    <div className='bg-gradient-to-br from-white via-orange-50 to-white py-12'>
+      <div className="text-center mb-10">
+        <h2 className="text-4xl font-extrabold bg-gradient-to-r from-black via-orange-500 to-orange-500 bg-clip-text text-transparent drop-shadow-md">
           Featured Blogs
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-10 bg-white">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6 sm:px-10">
         {filtered.length > 0 ? (
           filtered.map((blog) => (
-            <Link href={`/blog/${blog.slug}`} key={blog.id}>
-              <div className="relative group cursor-pointer overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-80">
-                {/* Image container */}
-                <div className="relative w-[95%] h-full mx-auto overflow-hidden">
-                 
-                 <div className="relative w-[95%] h-full mx-auto overflow-hidden folded-image">
-  <Image
-    src={blog.image}
-    alt={blog.title}
-    fill
-    className="object-cover group-hover:scale-105 transition-transform duration-500"
-  />
-</div>
+            <motion.div
+              key={blog.id}
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ type: 'spring', stiffness: 250, damping: 20 }}
+              className="relative group rounded-2xl bg-white border border-orange-100 shadow-xl hover:shadow-2xl hover:shadow-orange-300/30 overflow-hidden transition duration-500"
+            >
+              <Link href={`/blog/${blog.slug}`}>
+                <div className="relative w-full h-64 overflow-hidden">
+                  <Image
+                    src={blog.image}
+                    alt={blog.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10" />
+                </div>
 
+                <div className="relative z-20 p-6">
+                  <span className="inline-block mb-1 text-[10px] font-semibold uppercase tracking-wider text-orange-600">
+                    {blog.category}
+                  </span>
+                  <h3 className="text-lg font-bold text-gray-800 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
+                    {blog.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-500 line-clamp-3">
+                    {blog.description}
+                  </p>
 
-
-                  {/* Bottom-left overlay text box with flip effect */}
-                  <div className="absolute bottom-[-12px] left-[-12px] w-11/12 h-36 perspective">
-                    <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                      {/* Front Side */}
-                      <div className="absolute inset-0 bg-white text-black p-4 rounded-lg backface-hidden">
-                        <span className="text-xs uppercase tracking-wide font-semibold text-black opacity-80">
-                          {blog.category}
-                        </span>
-                        <h2 className="text-md font-bold mt-1 line-clamp-2">
-                          {blog.title}
-                        </h2>
-                      </div>
-
-                      {/* Back Side */}
-                     <div className="absolute inset-0 bg-transparent text-black p-4 transform rotate-y-180 backface-hidden group-hover:bg-black/70 hover:text-white transition-colors duration-500">
-
-  <span className="text-xs uppercase tracking-wide font-semibold opacity-90">
-    {blog.category}
-  </span>
-  <h2 className="text-md font-bold mt-1 line-clamp-2">
-    {blog.title}
-  </h2>
-</div>
-
+                  {/* Unique read more button */}
+                  <div className="mt-6">
+                    <div className="relative inline-block group">
+                      <span className="absolute inset-0 bg-orange-500 rounded-full blur-sm opacity-70 group-hover:scale-105 transition-transform duration-300"></span>
+                      <span className="relative px-4 py-2 bg-white border border-orange-500 text-orange-600 rounded-full font-semibold text-sm transition-all duration-300 group-hover:bg-orange-600 group-hover:text-white">
+                        Read More →
+                      </span>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
           ))
         ) : (
           <p className="text-gray-500 text-center col-span-full">No blogs found.</p>

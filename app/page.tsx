@@ -3,7 +3,7 @@
 import React, { useEffect, Suspense } from "react";
 import dynamic from "next/dynamic";
 import Hero from "@/app/components/Hero";
-import Footer from "@/app/components/Footer";
+
 import Desc from "@/app/components/Scroll/components/Description";
 import NewSteps from "@/app/components/NewSteps";
 import ServicesDec from "@/app/components/ServicesDec";
@@ -39,7 +39,7 @@ export default function Home() {
         <CTA />
         <Parallex />
       </Suspense>
-      
+     
     </>
   );
 }
