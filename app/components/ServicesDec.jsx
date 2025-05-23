@@ -18,7 +18,7 @@ const ServicesDec = () => {
  
   const boxData = [
     {
-      icon: <FaPassport />, title: "PR Visa", content: "Premium Immigration Services For PR Visas To Australia, Canada, New Zealand Etc.", image: "/PR Visa.png", link: "/prvisas",
+      icon: <FaPassport />, title: "PR Visa", content: "Premium Immigration Services For PR Visas To Australia, Canada, New Zealand Etc.", image: "/PR Visa.png", link: "/pr-visas",
     },
     {
       icon: <FaUniversity />, title: "Student Visa", content: "Apply for student visas from the hands of an experienced professional team.", image: "/Student-Visa.png", link: "/studyabroad",
