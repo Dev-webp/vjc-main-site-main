@@ -56,72 +56,201 @@ const blogs = [
   },
 ];
 
-const BlogCards = ({ search = '', category = 'All' }) => {
-  const filtered = blogs.filter((blog) => {
-    const matchesCategory = category === 'All' || blog.category === category;
-    const matchesSearch = blog.title.toLowerCase().includes(search.toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
+export default function BlogCards() {
+  const germanyCard = blogs[1];
+  const otherBlogs = [...blogs.slice(0, 1), ...blogs.slice(2)];
 
   return (
-    <div className='bg-gradient-to-br from-white via-orange-50 to-white py-12'>
-      <div className="text-center mb-10">
-        <h2 className="text-4xl font-extrabold bg-gradient-to-r from-black via-orange-500 to-orange-500 bg-clip-text text-transparent drop-shadow-md">
-          Featured Blogs
-        </h2>
-      </div>
+    <section className=" bg-white"> {/* Reduced top and bottom padding */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 px-4 sm:px-6 lg:px-8">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6 sm:px-10">
-        {filtered.length > 0 ? (
-          filtered.map((blog) => (
+        {/* LEFT MAIN CONTENT */}
+        <div className="lg:col-span-2 space-y-10">
+
+          {/* Hero Blog */}
+          <Link href={`/blog/${otherBlogs[0].slug}`}>
             <motion.div
-              key={blog.id}
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.98 }}
-              transition={{ type: 'spring', stiffness: 250, damping: 20 }}
-              className="relative group rounded-2xl bg-white border border-orange-100 shadow-xl hover:shadow-2xl hover:shadow-orange-300/30 overflow-hidden transition duration-500"
+              whileHover={{ scale: 1.01 }}
+              className="relative h-96 rounded-lg overflow-hidden group"
             >
-              <Link href={`/blog/${blog.slug}`}>
-                <div className="relative w-full h-64 overflow-hidden">
+              <Image
+                src={otherBlogs[0].image}
+                alt={otherBlogs[0].title}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute bottom-6 left-6 z-10 text-white">
+                <h2 className="text-2xl font-bold group-hover:text-orange-400 transition">
+                  {otherBlogs[0].title}
+                </h2>
+                <p className="text-sm mt-1">{otherBlogs[0].description}</p>
+              </div>
+            </motion.div>
+          </Link>
+
+          {/* Two Small Blogs */}
+          <div className="grid sm:grid-cols-2 gap-6">
+            {otherBlogs.slice(1, 3).map(blog => (
+              <Link key={blog.id} href={`/blog/${blog.slug}`}>
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  className="rounded-xl overflow-hidden border border-gray-100 group"
+                >
+                  <div className="relative h-48">
+                    <Image
+                      src={blog.image}
+                      alt={blog.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <span className="text-orange-500 text-xs font-semibold uppercase">{blog.category}</span>
+                    <h3 className="mt-1 font-semibold text-md text-gray-800 group-hover:text-orange-600">{blog.title}</h3>
+                  </div>
+                </motion.div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Other Blogs */}
+          <div className="grid sm:grid-cols-2 gap-6">
+            {otherBlogs.slice(3).map(blog => (
+              <Link key={blog.id} href={`/blog/${blog.slug}`}>
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  className="rounded-xl overflow-hidden border border-gray-100 group"
+                >
+                  <div className="relative h-48">
+                    <Image
+                      src={blog.image}
+                      alt={blog.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <span className="text-orange-500 text-xs font-semibold uppercase">{blog.category}</span>
+                    <h3 className="mt-1 font-semibold text-md text-gray-800 group-hover:text-orange-600">{blog.title}</h3>
+                  </div>
+                </motion.div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* SIDEBAR */}
+        <aside className="space-y-10">
+
+          {/* Germany Opportunity Card on Top */}
+          <div>
+            <Link href={`/blog/${germanyCard.slug}`}>
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="rounded-xl overflow-hidden border border-gray-100 group"
+              >
+                <div className="relative h-48">
                   <Image
-                    src={blog.image}
-                    alt={blog.title}
+                    src={germanyCard.image}
+                    alt={germanyCard.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10" />
                 </div>
+                <div className="p-4">
+                  <span className="text-orange-500 text-xs font-semibold uppercase">{germanyCard.category}</span>
+                  <h3 className="mt-1 font-semibold text-md text-gray-800 group-hover:text-orange-600">{germanyCard.title}</h3>
+                </div>
+              </motion.div>
+            </Link>
+          </div>
 
-                <div className="relative z-20 p-6">
-                  <span className="inline-block mb-1 text-[10px] font-semibold uppercase tracking-wider text-orange-600">
-                    {blog.category}
-                  </span>
-                  <h3 className="text-lg font-bold text-gray-800 group-hover:text-orange-600 transition-colors duration-300 line-clamp-2">
+          {/* Recent Posts */}
+          <div className="border rounded-lg p-4">
+            <h3 className="text-lg font-bold border-b pb-2">Recent Posts</h3>
+            <ul className="space-y-3 text-sm text-gray-700">
+              {blogs.slice(0, 3).map((blog, index) => (
+                <li key={blog.id} className="relative">
+                  <Link
+                    href={`/blog/${blog.slug}`}
+                    className={`hover:text-orange-600 font-medium ${
+                      index === 0 ? 'text-orange-500 animate-pulse' : ''
+                    }`}
+                  >
                     {blog.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-gray-500 line-clamp-3">
-                    {blog.description}
-                  </p>
+                  </Link>
+                  {index === 0 && (
+                    <span className="absolute top-0 right-0 mt-1 mr-2 h-2 w-2 rounded-full bg-orange-500 animate-ping"></span>
+                  )}
+                  <div className="text-xs text-gray-500">{blog.category}</div>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                  {/* Unique read more button */}
-                  <div className="mt-6">
-                    <div className="relative inline-block group">
-                      <span className="absolute inset-0 bg-orange-500 rounded-full blur-sm opacity-70 group-hover:scale-105 transition-transform duration-300"></span>
-                      <span className="relative px-4 py-2 bg-white border border-orange-500 text-orange-600 rounded-full font-semibold text-sm transition-all duration-300 group-hover:bg-orange-600 group-hover:text-white">
-                        Read More →
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
-          ))
-        ) : (
-          <p className="text-gray-500 text-center col-span-full">No blogs found.</p>
-        )}
+          {/* Follow Us */}
+          <div className="border rounded-lg p-4">
+            <h3 className="text-lg font-bold border-b pb-2">Follow Us</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://www.facebook.com/VJCOVERSEAS/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-600"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/vjcoverseas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-600"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@Vjcoverseas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-600"
+                >
+                  YouTube
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/vjc_overseas_bangalore/?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-600"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* YouTube Video (Autoplay, muted, loop) */}
+          <div className="rounded-lg overflow-hidden">
+            <iframe
+              width="100%"
+              height="215"
+              src="https://www.youtube.com/embed/cLNpEry1oPQ?autoplay=1&mute=1&loop=1&playlist=cLNpEry1oPQ&controls=0&showinfo=0&rel=0"
+              title="VJC YouTube"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              className="w-full h-48"
+            />
+          </div>
+        </aside>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default BlogCards;
+}
