@@ -31,7 +31,7 @@ const countryVisaData = {
    { name: "Canada ICT Program", path: "/pr-visas/canadapr/canada-ict-program" },
   { name: "Canada FSTP", path: "/pr-visas/canadapr/canada-fstp" },
   { name: "Canada FSWP", path: "/pr-visas/canadapr/canada-fswp" },
-   { name: "Canada Family Sponsorship", path: "/pr-visas/canadapr/canada-family-sponsership" },
+   { name: "Canada Family Sponsorship", path: "/pr-visas/canadapr/canada-family-sponsorship" },
   { name: "Canada Investor Program", path: "/pr-visas/canadapr/canada-investor-program" },
   
   { name: "Canada Atlantic Immigration Pilot Program", path: "/pr-visas/canadapr/canada-atlantic-immigration-pilot-program" },

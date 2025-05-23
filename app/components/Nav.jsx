@@ -203,14 +203,48 @@ const Navbar = () => {
   ];
 
   const workabroadSubPages = [
-    { name: "Germany Work Permit", path: "/workabroad/germany-work-permit" },
-    { name: "Canada Work Permit", path: "/workabroad/canada-work-permit" },
-    { name: "USA H1b Visa", path: "/workabroad/usa-h1b-visa" },
+    { name: "Germany Work Permit", path: "/workabroad/germany-work-permit",
+       children: [
+        { name: "Opportunity Card", path: "/workabroad/germany-work-permit/opportunity-card" },
+         { name: "Job Seeker Visa", path: "/workabroad/germany-work-permit/job-seeker-visa" },
+          { name: "Blue Card", path: "/workabroad/germany-work-permit/blue-visa" },
+           { name: "Skilled Work permit Visa", path: "/workabroad/germany-work-permit/work-permit-visa" },
+            { name: "Employment Visa", path: "/workabroad/germany-work-permit/employment-visa" },
+             { name: "Freelance Visa", path: "/workabroad/germany-work-permit/freelance-visa" },
+        
+       ],
+     },
+    { name: "Canada Work Permit", path: "/workabroad/canada-work-permit",
+       children: [
+        { name: "Open Work Permit Visa", path: "/workabroad/canada-work-permit/open-work-permit" },
+         { name: "W1 Visa", path: "/workabroad/canada-work-permit/w1-visa" },
+          { name: "LMIA Visa", path: "/workabroad/canada-work-permit/lmia" },
+       ],
+     },
+    { name: "USA H1b Visa", path: "/workabroad/usa-h1b-visa",
+       
+     },
     {
       name: "Australia Work Permit",
       path: "/workabroad/australia-work-permit",
+       children: [
+        { name: "Temporary Skills 482 Visa", path: "/workabroad/australia-work-permit/482-visa" },
+        { name: "Employer 186 Visa", path: "/workabroad/australia-work-permit/employer-186-visa" },
+        { name: "Skilled Independent Work visa Subclass 189", path: "/workabroad/australia-work-permit/work-visa-subclass-189" },
+        { name: "Skilled Nominated Visa Subclass 190", path: "/workabroad/australia-work-permit/nomited-visa-subclass-190" },
+        { name: "Working Holiday 417 Visa", path: "/workabroad/australia-work-permit/working-holiday-417-visa" },
+       ],
     },
-    { name: "UK Work Permit", path: "/workabroad/united-kingdom-work-permit" },
+    { name: "UK Work Permit", path: "/workabroad/united-kingdom-work-permit",
+       children: [
+        { name: "Short Term Work Visa", path: "/workabroad/united-kingdom-work-permit/uk-short-term-work-visa" },
+        { name: "Long Term Work Visa", path: "/workabroad/united-kingdom-work-permit/uk-long-term-work-visa" },
+        { name: "Health and Care Worker Visa", path: "/workabroad/united-kingdom-work-permit/uk-health-and-care-worker-visa" },
+        { name: "Skilled Worker Visa", path: "/workabroad/united-kingdom-work-permit/uk-skilled-worker-visa" },
+        { name: "Tier 2 Visa", path: "/workabroad/united-kingdom-work-permit/uk-tire-2-visa" },
+        { name: "Teir 4 Visa", path: "/workabroad/united-kingdom-work-permit/uk-tire-4-visa" },
+       ],
+     },
     { name: "Denmark Work Permit", path: "/workabroad/denmark-work-permit" },
     { name: "Dubai Work Permit", path: "/workabroad/dubai-work-permit" },
   ];
@@ -243,10 +277,31 @@ const Navbar = () => {
   ];
 
   const prVisaSubPages = [
-    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr" },
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr",
+       children: [
+        { name: "Canada Express Entry ", path: "/pr-visas/canadapr/canada-express-entry" },
+         { name: "Canada Provincial Nominee Program ", path: "/pr-visas/canadapr-provincial-nominee-program" },
+          { name: "Canada Quebee Selected Workers Program ", path: "/pr-visas/canadapr/canada-quebec-selected-workers-program" },
+           { name: "Canada ICT Program ", path: "/pr-visas/canadapr/canada-ict-program" },
+            { name: "Canada FSTP  ", path: "/pr-visas/canadapr/canada-fstp" },
+             { name: "Canada FSWP ", path: "/pr-visas/canadapr/canada-fswp" },
+              { name: "Canada Family Sponsorship ", path: "/pr-visas/canadapr/canada-family-sponsership" },
+               { name: "Canada Investor Program ", path: "/pr-visas/canadapr/canada-investor-program" },
+                { name: "Canada Atlantic Immigration Pilot Program ", path: "/pr-visas/canadapr/canada-atlantic-immigration-pilot-program" },
+
+       ],
+     },
     {
       name: "Australia Permanent Residency Visa",
       path: "/pr-visas/australiapr",
+       children: [
+        { name: "189 Skilled Independent Visa ", path: "/pr-visas/australiapr/189-skilled-independent-visa" },
+          { name: "190 Skilled Nominated Visa ", path: "/pr-visas/australiapr/190-skilled-nominated-visa" },
+            { name: "191 Permanent Residence (Skilled Regional) Visa ", path: "/pr-visas/australiapr/191-permanent-residence-visa" },
+              { name: "491 Skilled Work Regional (Provisional) Visa ", path: "/pr-visas/australiapr/491-skilled-work-regional-visa" },
+                { name: "494 Skilled Employer Sponsored Regional (Provisional) Visa ", path: "/pr-visas/australiapr/494-skilled-employer-sponsered-regional-visa" },
+         
+       ],
     },
     { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr" },
     {
@@ -444,7 +499,30 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-
+ {/* Social Media Icons */}
+          <div className="hidden lg:flex items-center px-5 space-x-4">
+            <a
+              href="https://www.facebook.com/VJCOVERSEAS/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className="hover:text-saffron text-sky-600 text-xl" />
+            </a>
+            <a
+              href="https://x.com/VJCOVERSEAS?t=aRM7qjBL9saJzNwyDzuCCg&s=09"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="hover:text-saffron text-sky-600 text-xl" />
+            </a>
+            <a
+              href="https://www.instagram.com/vjcoverseas_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="hover:text-saffron text-sky-600 text-xl" />
+            </a>
+          </div>
           <a
             href="tel:+919160449000"
             className="flex items-center text-white py-1 px-0 rounded-lg text-xs lg:text-sm whitespace-nowrap font-bold uppercase mr-6"

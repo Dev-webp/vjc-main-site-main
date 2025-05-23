@@ -124,12 +124,23 @@ export default function LatestBlog() {
                 ? 'ml-auto'
                 : 'mr-auto';
 
+              // Unique background and border colors for each card
+              const bgColors = [
+                'bg-orange-50 border-orange-500 text-orange-900',
+                'bg-blue-50 border-blue-500 text-blue-900',
+                'bg-green-50 border-green-500 text-green-900',
+                'bg-purple-50 border-purple-500 text-purple-900',
+                'bg-pink-50 border-pink-500 text-pink-900',
+                'bg-yellow-50 border-yellow-500 text-yellow-900',
+              ];
+              const colorClass = bgColors[blogIndex % bgColors.length];
+
               return (
                 <div
                   key={blog.id + '-' + blogIndex}
-                  className={`absolute left-0 right-0 bg-orange-50 border-l-4 border-orange-500 p-3 rounded-lg shadow-md hover:shadow-xl max-w-[360px] w-[95%] ${zigzagClass}`}
+                  className={`absolute left-0 right-0 p-3 rounded-lg shadow-md hover:shadow-xl max-w-[360px] w-[95%] border-l-4 ${colorClass} ${zigzagClass}`}
                   style={{
-                    height: '140px',
+                    height: '160px',
                     boxSizing: 'border-box',
                     marginBottom: '32px',
                     transform: `translateY(${translateY}px)`,
@@ -137,10 +148,10 @@ export default function LatestBlog() {
                     opacity,
                   }}
                 >
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">{blog.title}</h3>
-                  <p className="text-gray-600 mb-2 text-sm">{blog.description}</p>
-                  <Link href="#" className="text-orange-600 font-medium hover:underline text-sm">
-                    Read More →
+                  <h3 className="text-lg font-semibold mb-2">{blog.title}</h3>
+                  <p className="mb-2 text-sm">{blog.description}</p>
+                  <Link href="#" className="font-medium underline hover:text-opacity-80">
+                    Know More
                   </Link>
                 </div>
               );
