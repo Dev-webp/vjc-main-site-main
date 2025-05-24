@@ -149,6 +149,21 @@ const Column = ({ y }) => {
         <div className={styles.stars}>★★★★★</div> {/* Add star ratings */}
         <p className={styles.name}>- Roopak Mittal</p>
       </div>
+       <div className={styles.gridItem}>
+        <p className={styles.text}>
+        As someone who was completely new to the study abroad application process, I was so grateful for the support I received from VJC Overseas.
+        </p>
+        <div className={styles.stars}>★★★★★</div> {/* Add star ratings */}
+        <p className={styles.name}>- Kavya Mopuri</p>
+      </div>
+
+      <div className={styles.gridItem}>
+        <p className={styles.text}>
+        The team at VJC Overseas Bangalore made my dream of studying in the UK a reality. Their guidance and support in securing my education visa were invaluable.
+        </p>
+        <div className={styles.stars}>★★★★☆</div> {/* Add star ratings */}
+        <p className={styles.name}>- Monisha Vinaykumar</p>
+      </div>
     </motion.div>
   );
 };

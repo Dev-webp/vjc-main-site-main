@@ -3,6 +3,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTwitter } from 'react
 import { FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => { 
   return (
     <> 
@@ -111,27 +113,37 @@ const Footer = () => {
   </h3>
 
   {/* Social Media Icons */}
-  <div className="flex space-x-4 text-center lg:text-left justify-center lg:justify-start">
+  {/* Social Media Icons */}
+<div className="flex flex-col md:flex-row items-center justify-between w-full flex-wrap gap-4 md:gap-8">
+  {/* Social Media Icons */}
+  <div className="flex space-x-3 items-center">
     <Link href="https://www.facebook.com/VJCOVERSEAS/" className="group">
-      <FaFacebook className="text-white group-hover:text-orange-500" />
+      <FaFacebook className="text-blue-500 group-hover:text-orange-500 text-xl" />
     </Link>
     <Link href="https://twitter.com/vjcoverseas" className="group">
-      <FaTwitter className="text-white group-hover:text-orange-500" />
+      <FontAwesomeIcon
+        icon={faXTwitter}
+        className="text-white group-hover:text-orange-500 text-xl"
+      />
     </Link>
-    <Link
-      href="https://www.instagram.com/vjc_overseas_bangalore/?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw%3D%3D"
-      className="group"
-    >
-      <FaInstagram className="text-white group-hover:text-orange-500" />
-    </Link>
+   <Link
+  href="https://www.instagram.com/vjc_overseas_bangalore/?utm_source=qr&igsh=MXZzNXY3dGV1YXg1bw%3D%3D"
+  className="group"
+>
+  <div className="w-6 h-6 rounded-full flex items-center justify-center bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 transition duration-300 group-hover:bg-orange-500">
+    <FaInstagram className="text-white text-sm" />
+  </div>
+</Link>
+
     <Link href="https://www.linkedin.com/company/vjc-overseas/" className="group">
-      <FaLinkedin className="text-white group-hover:text-orange-500" />
+      <FaLinkedin className="text-blue-300 group-hover:text-orange-500 text-xl" />
     </Link>
     <Link href="https://www.youtube.com/@Vjcoverseas" className="group">
-      <FaYoutube className="text-white group-hover:text-orange-500" />
+      <FaYoutube className="text-red-500 group-hover:text-orange-500 text-xl" />
     </Link>
   </div>
 
+</div>
   {/* Contact Info */}
   <div className="flex flex-col items-center justify-center md:items-start mb-6 md:mb-0 mt-6 w-full md:w-auto ml-0 tablet:ml-20 md:ml-0 lg:ml-0">
     <p className="text-gray-200 font-medium">

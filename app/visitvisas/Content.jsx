@@ -137,16 +137,16 @@ const VisitVisas = () => {
               </div>
               <div className="mt-8 p-6 bg-gradient-to-br from-orange-200 via-yellow-100 to-white rounded-xl shadow-lg">
                 <h4 className="text-lg font-medium text-orange-700 mb-2">
-                  🌍 Travel Tip of the Day
+                   Travel Tip of the Day
                 </h4>
                 <p className="text-gray-700 text-sm">
-                  🧳 Always scan and upload your passport and visa docs to a secure cloud folder.
+                   Always scan and upload your passport and visa docs to a secure cloud folder.
                 </p>
                 <p className="text-gray-700 text-sm">
-                  💼 Pack an extra set of clothes in your carry-on bag.
+                   Pack an extra set of clothes in your carry-on bag.
                 </p>
                 <p className="text-gray-700 text-sm">
-                  🔌 Carry a portable power bank for long flights or layovers.
+                   Carry a portable power bank for long flights or layovers.
                 </p>
                 <p className="text-gray-700 text-sm">
                   💳 Notify your bank before international travel to avoid blocked cards.
@@ -162,9 +162,9 @@ const VisitVisas = () => {
               <table className="table-auto w-full text-base border-collapse min-w-[600px]">
                 <thead>
                   <tr className="bg-gradient-to-r from-orange-100 to-blue-100 text-gray-800">
-                    <th className="px-6 py-3 border font-semibold text-left">🌍 Country</th>
-                    <th className="px-6 py-3 border font-semibold text-left">💰 Daily Budget (INR)</th>
-                    <th className="px-6 py-3 border font-semibold text-left">📋 Includes</th>
+                    <th className="px-6 py-3 border font-semibold text-left"> Country</th>
+                    <th className="px-6 py-3 border font-semibold text-left"> Daily Budget (INR)</th>
+                    <th className="px-6 py-3 border font-semibold text-left"> Includes</th>
                   </tr>
                 </thead>
                 <tbody className="text-gray-700">
@@ -208,7 +208,7 @@ const VisitVisas = () => {
                 *Note: These are approximate values and can vary depending on city, time of year, and personal choices.
               </p>
               <div className="mt-6 bg-orange-50 text-orange-800 p-4 rounded-lg shadow">
-                <strong>💡 Pro Tip:</strong> Booking in advance can save up to 25% of your daily expenses!
+                <strong> Pro Tip:</strong> Booking in advance can save up to 25% of your daily expenses!
               </div>
             </div>
           </div>

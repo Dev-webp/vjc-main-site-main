@@ -15,8 +15,8 @@ const StudyInSouthAfrica = () => {
       </p>
       <div className="mt-4 ml-12">
                               <Image
-                                 src="/africa_Study.jpg"
-                                 alt="Study in Singapore"
+                                 src="/africa-study.jpg"
+                                 alt=""
                                  width={500}
                                  height={700}
                                />

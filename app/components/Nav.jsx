@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
+
 import {
   FaEnvelope,
   FaBars,
@@ -245,8 +248,21 @@ const Navbar = () => {
         { name: "Teir 4 Visa", path: "/workabroad/united-kingdom-work-permit/uk-tire-4-visa" },
        ],
      },
-    { name: "Denmark Work Permit", path: "/workabroad/denmark-work-permit" },
-    { name: "Dubai Work Permit", path: "/workabroad/dubai-work-permit" },
+    { name: "Denmark Work Permit", path: "/workabroad/denmark-work-permit",
+      children: [
+        { name: "Pay Limit Scheme Visa", path: "/workabroad/denmark-work-permit/denmark-pay-limit-scheme-visa" },
+         { name: "Positive List Visa", path: "/workabroad/denmark-work-permit/denmark-positive-list-visa" },
+          { name: "Trainee Visa", path: "/workabroad/denmark-work-permit/denmark-trainee-visa" },
+           { name: "Employment Visa", path: "/workabroad/denmark-work-permit/denmark-employment-visa" },
+      ],
+     },
+    { name: "Dubai Work Permit", path: "/workabroad/dubai-work-permit",
+      children: [
+        { name: "Standard Work Visa", path: "/workabroad/dubai-work-permit/dubai-standard-work-visa" },
+        { name: "Green Visa", path: "/workabroad/dubai-work-permit/dubai-green-visa" },
+        { name: "Golden Visa", path: "/workabroad/dubai-work-permit/dubai-golden-visa" },
+      ],
+     },
   ];
 
   const studyabroadSubPages = [
@@ -334,6 +350,7 @@ const Navbar = () => {
     {
       name: "Germany Jobseeker Visa",
       path: "/jobseeker-visas/germany-jobseeker-visa",
+     
     },
     {
       name: "Austria Jobseeker Visa",
@@ -500,7 +517,7 @@ const Navbar = () => {
             ))}
           </div>
  {/* Social Media Icons */}
-          <div className="hidden lg:flex items-center px-5 space-x-4">
+          <div className="hidden lg:flex items-center px-5 space-x-2">
             <a
               href="https://www.facebook.com/VJCOVERSEAS/"
               target="_blank"
@@ -508,20 +525,31 @@ const Navbar = () => {
             >
               <FaFacebook className="hover:text-saffron text-sky-600 text-xl" />
             </a>
-            <a
-              href="https://x.com/VJCOVERSEAS?t=aRM7qjBL9saJzNwyDzuCCg&s=09"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter className="hover:text-saffron text-sky-600 text-xl" />
-            </a>
-            <a
-              href="https://www.instagram.com/vjcoverseas_/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="hover:text-saffron text-sky-600 text-xl" />
-            </a>
+           
+
+           <a
+  href="https://www.instagram.com/vjcoverseas_/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block w-8 h-8 hover:scale-110 transition-transform duration-300"
+>
+  <img
+    src="/instagram-logo-vjc.webp"
+    alt="Instagram"
+    className="w-full h-full object-contain"
+  />
+</a>
+
+             <a
+  href="https://x.com/VJCOVERSEAS?t=aRM7qjBL9saJzNwyDzuCCg&s=09"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FontAwesomeIcon
+    icon={faXTwitter}
+    className="hover:text-saffron text-white bg-black text-1sm"
+  />
+</a>
           </div>
           <a
             href="tel:+919160449000"
@@ -557,7 +585,7 @@ const Navbar = () => {
                       </Link>
 
                       {/* Study Abroad Submenu */}
-                      <div className="absolute left-0 mt-3 invisible opacity-0 bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 grid grid-cols-5 grid-rows-4 gap-2 bg-black bg-opacity-50 p-3 w-[700px] min-h-[200px] shadow-xl z-50 transition-all duration-300 ease-in-out">
+                      <div className="absolute left-0 mt-3 invisible opacity-0 rounded-2xl  bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 grid grid-cols-5 grid-rows-4 gap-2 bg-black bg-opacity-50 p-3 w-[700px] min-h-[200px] shadow-xl z-50 transition-all duration-300 ease-in-out">
                         {studyabroadSubPages.map((subItem) => (
                           <Link
                             href={subItem.path}
@@ -579,7 +607,7 @@ const Navbar = () => {
                       </Link>
 
                       {/* Resume Marketing Submenu - OPEN TO LEFT */}
-                      <div className="absolute right-0 mt-3 invisible opacity-0 bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 grid grid-cols-3 gap-2 bg-black bg-opacity-50 p-3 w-[500px] min-h-[150px] shadow-xl z-50 transition-all duration-300 ease-in-out">
+                      <div className="absolute right-0 mt-3 invisible opacity-0 rounded-2xl  bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 grid grid-cols-3 gap-2 bg-black bg-opacity-50 p-3 w-[500px] min-h-[150px] shadow-xl z-50 transition-all duration-300 ease-in-out">
                         {resumemarketingSubPages.map((subItem) => (
                           <Link
                             href={subItem.path}
@@ -600,7 +628,7 @@ const Navbar = () => {
                         {item.name}
                       </Link>
                       {/* Visit Visas Submenu - OPEN TO LEFT */}
-                      <div className="absolute right-0 mt-3 invisible opacity-0 bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 grid grid-cols-4 gap-2 bg-black bg-opacity-50 p-3 w-[600px] min-h-[150px] shadow-xl z-50 transition-all duration-300 ease-in-out">
+                      <div className="absolute right-0 mt-3 invisible opacity-0  rounded-2xl  bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 grid grid-cols-4 gap-2 bg-black bg-opacity-50 p-3 w-[600px] min-h-[150px] shadow-xl z-50 transition-all duration-300 ease-in-out">
                         {visitvisasSubPages.map((subItem) => (
                           <Link
                             href={subItem.path}
@@ -616,7 +644,7 @@ const Navbar = () => {
                     <div className="relative group">
                       <Link
                         href={item.path}
-                        className="text-white text-sm lg:text-xs font-semibold px-3.5 hover:bg-white hover:bg-opacity-20 uppercase mt-2"
+                        className="text-white text-sm lg:text-xs font-semibold px-3.5 rounded-2xl  hover:bg-white hover:bg-opacity-20 uppercase mt-2"
                       >
                         {item.name}
                       </Link>
@@ -626,6 +654,7 @@ const Navbar = () => {
                         {schengenSubPages.map((subItem) => (
                           <Link
                             href={subItem.path}
+                            
                             key={subItem.name}
                             className="text-white text-sm font-semibold text-center px-3 py-2 hover:text-orange-500 hover:bg-white hover:bg-opacity-10 transition duration-200 ease-in-out whitespace-normal break-words"
                           >
@@ -635,70 +664,76 @@ const Navbar = () => {
                       </div>
                     </div>
                   ) : (
-                    <div className="relative group">
-                      <Link
-                        href={item.path}
-                        className="text-white text-sm lg:text-xs font-semibold px-3.5  uppercase mt-1"
-                      >
-                        {item.name}
-                      </Link>
+                 <div className="relative group">
+  <Link
+    href={item.path}
+    className="text-white text-sm lg:text-xs font-semibold px-3.5 uppercase mt-1"
+  >
+    {item.name}
+  </Link>
 
-                      {[
-                        "Migrate To",
-                        "PR Visas",
-                        "Job Seeker Visas",
-                        "Work Abroad",
-                        "Investor Visas",
-                        "Services",
-                        "Coaching/Training",
-                      ].includes(item.name) && (
-                        <div className="absolute left-0 text-center space-y-6 top-full mt-3 invisible bg-gradient-to-br from-orange-500/60 to-black opacity-0 group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 flex flex-col space-y-2 bg-black bg-opacity-50 p-3 shadow-xl z-50 transition-all duration-300 ease-in-out">
-                          {(item.name === "Migrate To"
-                            ? migrateSubPages
-                            : item.name === "Work Abroad"
-                            ? workabroadSubPages
-                            : item.name === "PR Visas"
-                            ? prVisaSubPages
-                            : item.name === "Services"
-                            ? servicesSubPages
-                            : item.name === "Coaching/Training"
-                            ? coachingSubPages
-                            : item.name === "Investor Visas"
-                            ? investorvisasSubPages
-                            : item.name === "Job Seeker Visas"
-                            ? jobseeker
-                            : []
-                          ).map((subItem) => (
-                            <div
-                              key={subItem.name}
-                              className="relative group/item"
-                            >
-                              <Link
-                                href={subItem.path}
-                                className="text-white text-sm font-semibold text-center px-3 py-2 hover:text-orange-500 hover:bg-white hover:bg-opacity-10 transition duration-200 ease-in-out whitespace-nowrap"
-                              >
-                                {subItem.name}
-                              </Link>
+  {[
+    "Migrate To",
+    "PR Visas",
+    "Job Seeker Visas",
+    "Work Abroad",
+    "Investor Visas",
+    "Services",
+    "Coaching/Training",
+  ].includes(item.name) && (
+   <div className="absolute left-0 top-full mt-4 invisible opacity-0 group-hover:visible group-hover:opacity-100 
+  opacity-0 bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100
+  backdrop-blur-lg border border-white/20 
+  shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl 
+  z-50 transition-all duration-500 ease-out 
+  min-w-[260px] p-4 space-y-2">
 
-                              {/* Nested submenu - only visible on hovering this specific submenu item */}
-                              {subItem.children && (
-                                <div className="absolute left-full top-0 ml-1 invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 bg-gradient-to-br from-orange-500/60 to-black opacity-0 px-2 py-2 shadow-lg transition-opacity duration-300 ease-in-out space-y-1 min-w-[200px] z-50">
-                                  {subItem.children.map((child) => (
-                                    <Link
-                                      key={child.name}
-                                      href={child.path}
-                                      className="block text-white text-sm hover:text-orange-500 px-3 py-1"
-                                    >
-                                      {child.name}
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
+      {(item.name === "Migrate To"
+        ? migrateSubPages
+        : item.name === "Work Abroad"
+        ? workabroadSubPages
+        : item.name === "PR Visas"
+        ? prVisaSubPages
+        : item.name === "Services"
+        ? servicesSubPages
+        : item.name === "Coaching/Training"
+        ? coachingSubPages
+        : item.name === "Investor Visas"
+        ? investorvisasSubPages
+        : item.name === "Job Seeker Visas"
+        ? jobseeker
+        : []
+      ).map((subItem) => (
+        <div key={subItem.name} className="relative group/item">
+          <Link
+            href={subItem.path}
+            className="flex items-center gap-3 px-4 py-2 text-sm  font-medium text-white hover:bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:text-white rounded-xl shadow-inner transition-all duration-300"
+          >
+            <span className="text-orange-400">⦿</span>
+            {subItem.name}
+          </Link>
+
+          {subItem.children && (
+            <div className="absolute left-full top-0 ml-3 invisible  bg-gradient-to-br from-orange-500/60 to-black opacity-0 group-hover/item:visible group-hover/item:opacity-100 bg-white/10 backdrop-blur-lg border border-white/20 shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-xl px-4 py-3 min-w-[220px] z-50 transition-all duration-500 ease-out space-y-2">
+              {subItem.children.map((child) => (
+                <Link
+                  key={child.name}
+                  href={child.path}
+                  className="block text-sm px-3 py-2 text-white hover:bg-orange-500/80 hover:text-white rounded-lg transition-all duration-300"
+                >
+                  {child.name}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  )}
+</div>
+
+
+
                   )}
 
                   {index < menuItems.length - 1 && (
