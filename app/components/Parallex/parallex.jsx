@@ -164,6 +164,21 @@ const Column = ({ y }) => {
         <div className={styles.stars}>★★★★☆</div> {/* Add star ratings */}
         <p className={styles.name}>- Monisha Vinaykumar</p>
       </div>
+       <div className={styles.gridItem}>
+        <p className={styles.text}>
+        We successfully received our F2 visa through the guidance of VJC Overseas. The team’s quick responses and dedicated support were truly commendable.
+        </p>
+        <div className={styles.stars}>★★★★★</div> {/* Add star ratings */}
+        <p className={styles.name}>- Mahesh Kumar</p>
+      </div>
+
+      <div className={styles.gridItem}>
+        <p className={styles.text}>
+        Hi, Everyone on my behalf the staff is very polite.they are always in touch, whenever I want to communicate regarding MY application.Thanks very much for your Genuine Visa Services.
+        </p>
+        <div className={styles.stars}>★★★★★</div> {/* Add star ratings */}
+        <p className={styles.name}>- Jasbir Sheoran</p>
+      </div>
     </motion.div>
   );
 };

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { FaTimes } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
- 
+import Link from "next/link";
 // Import Swiper styles
 import 'swiper/css';
 import {
@@ -21,6 +21,7 @@ const countries = [
     description:
       "Canada is known for its beautiful landscapes and outdoor activities.",
     color: "bg-gradient-to-r from-red-600 to-white",
+    link: "/studycanada",
   },
   {
     name: "Australia study visa",
@@ -28,6 +29,7 @@ const countries = [
     description:
       "Australia is famous for its wildlife, beaches, and cultural diversity.",
     color: "bg-gradient-to-r from-blue-700 to-white",
+    link: "/studyaustralia",
   },
   {
     name: "Usa study visa",
@@ -35,6 +37,7 @@ const countries = [
     description:
       "The USA is famous for its world-class education system and career opportunities.",
     color: "bg-gradient-to-r from-red-600 to-red-600",
+    link: "/usa",
   },
   {
     name: "Germany study visa",
@@ -42,6 +45,7 @@ const countries = [
     description:
       "Germany boasts a strong economy, rich history, and modern infrastructure.",
     color: "bg-gradient-to-r from-black to-yellow-600",
+    link: "/studyingermany",
   },
   {
     name: "Uk study visa",
@@ -49,6 +53,7 @@ const countries = [
     description:
       "The UK is one of the most sought-after destinations for international students and skilled professionals.",
     color: "bg-gradient-to-r from-red-700 to-blue-700",
+    link: "/uk",
   },
   {
     name: "France study visa",
@@ -56,18 +61,21 @@ const countries = [
     description:
       "France is known for its art, cuisine, and historical landmarks.",
     color: "bg-gradient-to-r from-blue-500 to-white",
+    link: "/france",
   },
   {
     name: "Italy study visa",
     image: "/c7.png",
     description: "Italy is famous for its art, architecture, and cuisine.",
     color: "bg-gradient-to-r from-green-600 to-white",
+    link: "/italy",
   },
   {
     name: "Spain study visa",
     image: "/c13.png",
     description: "Spain is known for its vibrant culture, food, and festivals.",
     color: "bg-gradient-to-r from-red-600 to-yellow-600",
+    link: "/spain",
   },
   {
     name: "Netherlands study visa",
@@ -75,6 +83,8 @@ const countries = [
     description:
       "The Netherlands is famous for its windmills, tulips, and canals.",
     color: "bg-gradient-to-r from-red-600 to-blue-600",
+    link: "/studyabroad/netherlands",
+
   },
   {
     name: "UAE study visa",
@@ -82,6 +92,7 @@ const countries = [
     description:
       "The UAE offers a unique blend of ancient traditions and modern technology.",
     color: "bg-gradient-to-r from-green-700 to-white",
+    link: "/studyabroad/uae",
   },
   {
     name: "Switzerland study visa",
@@ -89,6 +100,7 @@ const countries = [
     description:
       "Switzerland is known for its Alps, chocolates, and financial services.",
     color: "bg-gradient-to-r from-red-600 to-white",
+    link: "/switzerland",
   },
   {
     name: "Sweden study visa",
@@ -96,6 +108,7 @@ const countries = [
     description:
       "Sweden is famous for its design, technology, and sustainability.",
     color: "bg-gradient-to-r from-blue-500 to-yellow-500",
+    link: "/sweden",
   },
   {
     name: "South Africa study visa",
@@ -103,6 +116,7 @@ const countries = [
     description:
       "South Africa offers stunning landscapes, fjords, and a rich cultural history.",
     color: "bg-gradient-to-r from-green-500 to-yellow-500",
+    link: "/studyinsouthafrica",
   },
   {
     name: "Singapore study visa",
@@ -110,6 +124,7 @@ const countries = [
     description:
       "Singapore is known for its high-tech infrastructure and cleanliness.",
     color: "bg-gradient-to-r from-red-500 to-white",
+    link: "/singapore",
   },
   {
     name: "New Zealand study visa",
@@ -117,6 +132,7 @@ const countries = [
     description:
       "New Zealand is famous for its beautiful nature, lakes, and high education standards.",
     color: "bg-gradient-to-r from-blue-500 to-white",
+    link: "/studyinnewzealand",
   },
   {
     name: "Malaysia study visa",
@@ -124,6 +140,7 @@ const countries = [
     description:
       "Malaysia offers beautiful beaches, rich history, and amazing food.",
     color: "bg-gradient-to-r from-blue-600 to-yellow-600",
+    link: "/malaysia",
   },
 ];
  
@@ -274,19 +291,20 @@ const CountrySlider = () => {
             transition={{ duration: 1.2, ease: "easeInOut" }}
           >
             <div className="ml-6 mr-4">
-              <h2 className="text-4xl font-bold text-black mb-4 uppercase">
-                {countries[expandedIndex].name}
-              </h2>
-              <p className="text-base text-justify text-black">
-                {countries[expandedIndex].description}
-              </p>
-             <a
-                href={`/`}
-                className="inline-flex items-center mt-6 justify-center bg-gradient-to-r from-sky-500 to-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 ease-in-out"
-              >
-                Read More
-              </a>
-            </div>
+  <h2 className="text-4xl font-bold text-black mb-4 uppercase">
+    {countries[expandedIndex].name}
+  </h2>
+  <p className="text-base text-justify text-black">
+    {countries[expandedIndex].description}
+  </p>
+  <Link
+    href={countries[expandedIndex].link}
+    className="inline-block bg-white text-black hover:bg-orange-500 hover:text-white transition duration-300 font-medium py-2 px-4 rounded-full"
+  >
+    Read More →
+  </Link>
+</div>
+
           </motion.div>
  
           {/* Sponsor Logos over background image */}
