@@ -709,7 +709,7 @@ const Navbar = () => {
             href={subItem.path}
             className="flex items-center gap-3 px-4 py-2 text-sm  font-medium text-white hover:bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 hover:text-white rounded-xl shadow-inner transition-all duration-300"
           >
-            <span className="text-orange-400">⦿</span>
+            
             {subItem.name}
           </Link>
 
