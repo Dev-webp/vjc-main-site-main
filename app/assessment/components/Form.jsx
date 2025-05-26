@@ -12,7 +12,7 @@ const Form = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [mcqAnswers, setMcqAnswers] = useState([]);
-
+  
   // Define country-specific questions and options
   const mcqQuestions = {
     Germany: [

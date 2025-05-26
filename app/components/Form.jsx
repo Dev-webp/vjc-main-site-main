@@ -14,7 +14,13 @@ const Form = () => {
   const [formStatus, setFormStatus] = useState(null);
   const [loading, setLoading] = useState(false);
   const [popupVisible, setPopupVisible] = useState(false);
-
+  const [landingPage, setLandingPage] = useState('');
+// Capture current page URL
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setLandingPage(window.location.href);
+    }
+  }, []);
   // Close the success popup after 4 seconds
   useEffect(() => {
     if (popupVisible) {
@@ -40,6 +46,7 @@ const Form = () => {
       qualification,
       country,  // Include country in formData
       message,
+      landingPage, 
     };
 
     try {

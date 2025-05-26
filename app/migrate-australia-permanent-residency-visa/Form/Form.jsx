@@ -17,7 +17,13 @@ const Form = () => {
   const [popupVisible, setPopupVisible] = useState(false);
 const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
   const controls = useAnimation();
-  
+  const [landingPage, setLandingPage] = useState('');
+  // Capture current page URL
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        setLandingPage(window.location.href);
+      }
+    }, []);
 
   useEffect(() => {
     if (popupVisible) {
@@ -45,6 +51,7 @@ const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
       qualification,
       country,
       message,
+      landingPage,
     };
 
     try {

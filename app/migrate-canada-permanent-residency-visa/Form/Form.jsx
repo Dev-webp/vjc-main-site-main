@@ -16,7 +16,13 @@ const Form = () => {
   const [popupVisible, setPopupVisible] = useState(false);
 
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
-
+  const [landingPage, setLandingPage] = useState('');
+  // Capture current page URL
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        setLandingPage(window.location.href);
+      }
+    }, []);
   useEffect(() => {
     if (popupVisible) {
       const timeout = setTimeout(() => setPopupVisible(false), 4000);
@@ -37,6 +43,7 @@ const Form = () => {
       qualification,
       country,
       message,
+      landingPage,
     };
 
     try {
