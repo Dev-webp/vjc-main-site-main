@@ -162,7 +162,31 @@ export default function HyderabadPage() {
           </ScrollFadeIn>
         </div>
       </section>
-
+     
+      {/* Reviews Section */}
+      <section className="py-12 px-6 bg-gray-100">
+        <ScrollFadeIn>
+          <h2 className="text-3xl font-bold text-center mb-6">What Our Clients Say</h2>
+        </ScrollFadeIn>
+        <ScrollFadeIn>
+          <p className="text-center text-gray-700 mb-8">Watch some of the genuine feedback from our clients</p>
+        </ScrollFadeIn>
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {['hR8BKpLhuU8', 'jCGpCQwuZa8', 'yqvp_8QjkJk'].map((videoId, idx) => (
+            <ScrollFadeIn key={idx} delay={idx * 0.2}>
+              <div className="w-full aspect-video rounded-xl overflow-hidden shadow-lg">
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0`}
+                  title={`Client Testimonial ${idx + 1}`}
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </ScrollFadeIn>
+          ))}
+        </div>
+      </section>
       <section className="py-12 px-6 bg-white" ref={mapRef}>
         <ScrollFadeIn>
           <h2 className="text-2xl font-semibold text-center mb-4">Google Street View – VJC Overseas Hyderabad</h2>
