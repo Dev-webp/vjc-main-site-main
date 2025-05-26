@@ -4,6 +4,11 @@ import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 import Link from "next/link";
 
+// ✅ TypeScript props typing
+type BigVideoProps = {
+  setIsOpen: (value: boolean) => void;
+};
+
 const video = {
   src: "/assets/canadapr/Landing/video1.mp4",
   title: "Work, Live & Settle in Canada with Canada PR Visa - Apply Now",
@@ -29,7 +34,7 @@ const itemVariants = {
   },
 };
 
-export default function HeroSection() {
+export default function BigVideo({ setIsOpen }: BigVideoProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
@@ -69,7 +74,6 @@ export default function HeroSection() {
           transition={{ delay: 1.2 }}
           className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-6"
         >
-          
           <motion.h1
             variants={itemVariants}
             className="text-white tracking-wider leading-10 md:leading-normal text-3xl md:text-5xl md:w-[70%] font-bold mb-4"
@@ -83,18 +87,18 @@ export default function HeroSection() {
             {video.subtitle}
           </motion.p>
           <motion.div variants={itemVariants} className="flex gap-4">
-            <Link
-              href="/contact-us"
+            <button
+              onClick={() => setIsOpen(true)}
               className="relative overflow-hidden inline-block px-6 py-3 mt-6 rounded-md font-semibold text-white bg-orange-500 group"
             >
-              <span className="relative z-10">Contact Us</span>
+              <span className="relative z-10">Apply Now</span>
               <span className="absolute inset-0 bg-sky-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-            </Link>
+            </button>
           </motion.div>
         </motion.div>
       </div>
 
-      {/* Bottom Boxes - Responsive Positioning */}
+      {/* Bottom Boxes */}
       <motion.div
         ref={ref}
         initial="hidden"
@@ -114,7 +118,7 @@ export default function HeroSection() {
             },
           },
         }}
-        className="relative mt-[calc(80vh+40px)]  md:mt-0 md:absolute md:top-[68%] w-full hidden md:flex flex-col md:flex-row justify-center items-center gap-20 pb-20 px-6"
+        className="relative mt-[calc(80vh+40px)] md:mt-0 md:absolute md:top-[68%] w-full hidden md:flex flex-col md:flex-row justify-center items-center gap-20 pb-20 px-6"
       >
         {[
           {
@@ -141,11 +145,8 @@ export default function HeroSection() {
             }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             whileHover={{
-              scale: 1.1, // Zoom effect on hover
-              transition: {
-                duration: 0.3, // Duration of the zoom
-                ease: "easeInOut", // Smooth easing
-              },
+              scale: 1.1,
+              transition: { duration: 0.3, ease: "easeInOut" },
             }}
             className="bg-white shadow-lg p-4 rounded-md text-center w-60 h-48"
           >

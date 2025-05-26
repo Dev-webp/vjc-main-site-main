@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import AnimateHeader from "./AnimateHeader";
-
-
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -15,14 +12,7 @@ const Form = () => {
   const [formStatus, setFormStatus] = useState(null);
   const [loading, setLoading] = useState(false);
   const [popupVisible, setPopupVisible] = useState(false);
-const [landingPage, setLandingPage] = useState('');
 
-  // Capture the full landing URL on component mount
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setLandingPage(window.location.href);
-    }
-  }, []);
   // Close the success popup after 4 seconds
   useEffect(() => {
     if (popupVisible) {
@@ -48,7 +38,6 @@ const [landingPage, setLandingPage] = useState('');
       qualification,
       country,  // Include country in formData
       message,
-       landingPage,
     };
 
     try {
@@ -83,11 +72,9 @@ const [landingPage, setLandingPage] = useState('');
   };
 
   return (
-    <div className="bg-white p-4 py-2 rounded-lg shadow-sm max-w-md mx-auto w-full h-[31rem] md:h-[31rem] lg:h-[33rem] tablet:h-[36rem] shadow-orange-300 mb-6 lg:mb-2">
-      {/* <h2 className="text-2xl font-bold text-center uppercase text-gray-800 mt-0 lg:mt-3">Sign up & Get Free Assessment</h2> */}
-      <h2 className="text-2xl font-bold text-center uppercase text-gray-800 mt-0 lg:mt-1"></h2>
-       <AnimateHeader/>
-
+    <div className="bg-white p-6 py-4  shadow-2xl max-w-md mx-auto w-full h-[37rem] sm:h-[37rem] md:h-[37rem] lg:h-[36rem] tablet:h-[37rem] shadow-gray-500 mb-6 lg:mb-2" style={{fontFamily: "Times New Roman, serif"}}>
+      <h2 className="text-2xl font-semibold text-center text-gray-800 mt-0 lg:mt-3">Sign up <span style={{color:'rgb(220, 4, 4)'}}> &</span> Get Free Assessment</h2>
+      
       <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-3 mt-2 lg:mt-2">
         <div>
           <label htmlFor="name" className="sr-only">Name</label>
@@ -96,7 +83,7 @@ const [landingPage, setLandingPage] = useState('');
             id="name"
             name="name"
             placeholder="Your Name"
-            className="w-full px-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -110,7 +97,7 @@ const [landingPage, setLandingPage] = useState('');
             id="email"
             name="email"
             placeholder="Your Email"
-            className="w-full px-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -124,7 +111,7 @@ const [landingPage, setLandingPage] = useState('');
             id="phone"
             name="phone"
             placeholder="Phone Number"
-            className="w-full px-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
             required
             pattern="\d*"
             title="Please enter a valid phone number"
@@ -143,7 +130,7 @@ const [landingPage, setLandingPage] = useState('');
             id="country"
             name="country"
             placeholder="Country"
-            className="w-full px-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
             required
             value={country}
             onChange={(e) => setCountry(e.target.value)}
@@ -157,7 +144,7 @@ const [landingPage, setLandingPage] = useState('');
             id="age"
             name="age"
             placeholder="Your Age"
-            className="w-full px-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
             required
             value={age}
             onChange={(e) => setAge(e.target.value)}
@@ -170,7 +157,7 @@ const [landingPage, setLandingPage] = useState('');
           <select
             id="experience"
             name="experience"
-            className="w-full px-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
             value={experience}
             onChange={(e) => setExperience(e.target.value)}
           >
@@ -188,7 +175,7 @@ const [landingPage, setLandingPage] = useState('');
           <select
             id="qualification"
             name="qualification"
-            className="w-full px-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out"
             value={qualification}
             onChange={(e) => setQualification(e.target.value)}
           >
@@ -208,25 +195,27 @@ const [landingPage, setLandingPage] = useState('');
             name="message"
             rows="2"
             placeholder="Your Message"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition resize-none"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out resize-none"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
 
-        <button
-          type="submit"
-          className="w-full bg-gray-950 text-white py-2 rounded-lg font-semibold hover:bg-saffron transition-all duration-200 shadow-lg"
-          disabled={loading}
-        >
-          {formStatus === 'success' ? 'Form Submitted!' : loading ? 'Submitting...' : 'Submit for Free Assessment'}
-        </button>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            className="w-3/4 bg-gray-800 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 shadow-lg"
+            disabled={loading}
+          >
+            {formStatus === 'success' ? 'Form Submitted!' : loading ? 'Submitting...' : 'Submit for Free Assessment'}
+          </button>
+        </div>
       </form>
 
       {/* Success Popup */}
       {popupVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">
+          <div className="bg-white p-4 rounded-lg shadow-lg max-w-md w-full text-center">
             <p className="text-xl font-semibold">Submission received, we’ll get back to you shortly!</p>
           </div>
         </div>
@@ -236,6 +225,3 @@ const [landingPage, setLandingPage] = useState('');
 };
 
 export default Form;
-
-
-
