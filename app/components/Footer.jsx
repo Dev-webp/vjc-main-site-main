@@ -213,10 +213,14 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-8 md:space-y-0 md:space-x-8">
              {/* Hyderabad Address */}
              <div className="mb-8 md:mb-0 text-center md:w-1/3">
-  <h3 className="text-lg font-bold uppercase mb-1 text-orange-500">
-    VJC Overseas
-  </h3>
-  <p className="text-lg text-orange-500 font-bold -mt-2 ">(HYDERABAD)</p>
+ <Link href="/hyderabad" passHref>
+  <div className="cursor-pointer">
+    <h3 className="text-lg font-bold uppercase mb-1 text-orange-500">
+      VJC Overseas-HYDERABAD
+    </h3>
+   
+  </div>
+</Link>
             <p className='mt-2'>62/A, Ground Floor,</p>
             <p>Sundari Reddy Bhavan, Fresh Mart,</p>
             <p>Vengalrao Nagar, Sanjeeva Reddy Nagar,</p>
@@ -238,10 +242,14 @@ const Footer = () => {
 
            {/* USA Address */}
            <div className="mb-8 md:mb-0 text-center md:w-1/3">
-  <h3 className="text-lg font-bold uppercase mb-1 text-orange-500">
-    VJC Overseas
-  </h3>
-  <p className="text-lg text-orange-500 font-bold -mt-2 ">(USA)</p>
+ <Link href="/usa/texus" passHref>
+  <div className="cursor-pointer">
+    <h3 className="text-lg font-bold uppercase mb-1 text-orange-500">
+      VJC Overseas-USA
+    </h3>
+   
+  </div>
+</Link>
   <p className="mt-2">7200 Preston Rd, Plano,</p>
 <p>TX 75024, USA</p>
 <p className="mt-2 flex items-center justify-center space-x-2 hover:text-saffron">
@@ -268,10 +276,14 @@ const Footer = () => {
 
         {/* Bangalore Address */}
         <div className="mb-8 md:mb-0 text-center md:w-1/3">
-  <h3 className="text-lg font-bold uppercase mb-1 text-orange-500">
-    VJC Overseas
-  </h3>
-  <p className="text-lg text-orange-500 font-bold -mt-2 ">(BANGALORE)</p>
+   <Link href="/banglore" passHref>
+  <div className="cursor-pointer">
+    <h3 className="text-lg font-bold uppercase mb-1 text-orange-500">
+      VJC Overseas-Banglore
+    </h3>
+   
+  </div>
+</Link>
             <p className='mt-2'>16 & 17, Ground Floor,</p>
             <p>Raheja Arcade,</p>
             <p>5th Block, Koramangala,</p>

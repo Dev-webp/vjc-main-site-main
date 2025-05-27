@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowRight } from 'react-icons/fa'; // Import the arrow icon from react-icons
+import { FaArrowRight } from 'react-icons/fa';
 import Image from 'next/image';
 
 const WhyChooseUs = () => {
@@ -8,25 +8,29 @@ const WhyChooseUs = () => {
       title: 'Competent and Professional',
       description:
         'Our team has years of expertise and a track record of success with all visa procedures.',
-      image: '/cpimg.jpg', // Replace with your actual image path
+      image: '/cpimg.jpg',
+      link: '/components-and-professional',   // Unique link for this card
     },
     {
       title: 'High Rate of Success',
       description:
         'Continental Immigration has assisted thousands of candidates in filing their visa applications successfully.',
-      image: '/cpimg.jpg', // Replace with your actual image path
+      image: '/cpimg.jpg',
+      link: '/components-and-professional',        // Unique link for this card
     },
     {
       title: 'Dedicated Assistance',
       description:
         'You will be allocated a Continental Immigration counsellor to assist you during the process.',
-      image: '/cpimg.jpg', // Replace with your actual image path
+      image: '/cpimg.jpg',
+      link: '/components-and-professional',     // Unique link for this card
     },
     {
       title: 'More Rapid Documentation',
       description:
         'Our centralized document repository securely maintains all your documents in one location, expediting the visa application process.',
-      image: '/cpimg.jpg', // Replace with your actual image path
+      image: '/cpimg.jpg',
+      link: '/components-and-professional',      // Unique link for this card
     },
   ];
 
@@ -46,18 +50,18 @@ const WhyChooseUs = () => {
             className="group border border-orange-400 p-8 rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-gradient-to- flex flex-col justify-between"
           >
             <div className="flex justify-center mb-6">
-            <Image
+              <Image
                 src={reason.image}
                 alt={reason.title}
-                width={96}  // Adjust width
-                height={96} // Adjust height
+                width={96}
+                height={96}
                 className="object-cover rounded-full border-4 border-blue-500"
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-4">{reason.title}</h3>
             <p className="text-gray-600 mb-6">{reason.description}</p>
             <a
-              href="#"
+              href={reason.link}
               className="text-orange-500 flex items-center justify-start font-medium mt-auto"
             >
               Know More <FaArrowRight className="ml-2 text-orange-500" />

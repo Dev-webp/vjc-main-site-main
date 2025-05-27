@@ -18,31 +18,37 @@ export default function ServicesCTA() {
       icon: <FaGlobeAmericas className="text-4xl text-orange-500" />,
       title: "Global Opportunities",
       desc: "Study or settle in your dream country with our guidance.",
+      link: "/workabroad",
     },
     {
       icon: <FaUserGraduate className="text-4xl text-orange-500" />,
       title: "Expert Counseling",
       desc: "Get tailored advice for courses and universities abroad.",
+      link: "/contact-us",
     },
     {
       icon: <FaChalkboardTeacher className="text-4xl text-orange-500" />,
       title: "Test Prep & Training",
       desc: "Prepare for IELTS, TOEFL, and more with our expert trainers.",
+      link: "/coaching",
     },
     {
       icon: <FaPassport className="text-4xl text-orange-500" />,
       title: "Visa Assistance",
       desc: "End-to-end support with your visa documentation and filing.",
+      link: "/assessment",
     },
     {
       icon: <FaUniversity className="text-4xl text-orange-500" />,
       title: "Top University Access",
       desc: "Connect with reputed global institutions and programs.",
+      link: "/studyabroad",
     },
     {
       icon: <FaBriefcase className="text-4xl text-orange-500" />,
       title: "Job Seeker Visas",
       desc: "Explore pathways to work abroad with job-oriented visas.",
+      link: "/jobseeker-visas",
     },
   ];
 
@@ -63,20 +69,19 @@ export default function ServicesCTA() {
         {/* Right Side - Service Highlights */}
         <div className="grid gap-4">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer group"
-            >
-              {service.icon}
-              <div>
-                <h4 className="text-lg font-bold text-black group-hover:text-orange-600 transition-colors duration-300">
-                  {service.title}
-                </h4>
-                <p className="text-sm text-gray-700 group-hover:text-orange-500 transition-colors duration-300">
-                  {service.desc}
-                </p>
+            <Link href={service.link} key={index}>
+              <div className="flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer group">
+                {service.icon}
+                <div>
+                  <h4 className="text-lg font-bold text-black group-hover:text-orange-600 transition-colors duration-300">
+                    {service.title}
+                  </h4>
+                  <p className="text-sm text-gray-700 group-hover:text-orange-500 transition-colors duration-300">
+                    {service.desc}
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -97,11 +102,11 @@ export default function ServicesCTA() {
           className="relative z-10 text-center p-8 sm:p-16"
         >
           <h3 className="text-2xl sm:text-4xl font-bold text-white mb-4">
-            Ready to begin your  journey?
+            Ready to begin your journey?
           </h3>
           <p className="text-white max-w-3xl mx-auto mb-6 text-base sm:text-lg">
             Contact VJC Overseas today for a free consultation and let us help
-            you achieve your  dreams — confidently and affordably.
+            you achieve your dreams — confidently and affordably.
           </p>
 
           <Link href="/assessment">

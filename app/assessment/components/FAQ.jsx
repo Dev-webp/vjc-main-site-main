@@ -10,150 +10,127 @@ const FAQ = () => {
 
   const questions = [
     {
-        question: 'What is the Germany Opportunity Card?',
-        answer: 'Clients often ask for a general overview of the Germany Opportunity Card, which is a points-based immigration system designed to attract skilled workers from outside the European Union to Germany. It allows workers to enter the country and search for a job in their field.',
+      question: 'What is the New Zealand Permanent Residency (PR)?',
+      answer: 'New Zealand Permanent Residency allows you to live, work, and study in New Zealand indefinitely. After holding a PR, you can access many benefits, including healthcare and social security.',
     },
     {
-      question: "Who is eligible to apply for the Germany Opportunity Card?",
+      question: 'How can I apply for New Zealand PR?',
       answer: `
-      <ul>
-          <li>Applicants typically need to have specific qualifications and experience in fields where Germany faces labor shortages. Key eligibility factors include:
-              <ul>
-                  <li>• Educational qualifications (e.g., university degree, vocational training)</li>
-                  <li>• Relevant work experience in specific sectors (e.g., IT, engineering, healthcare)</li>
-                  <li>• Language proficiency (typically at least B1 in German, though some fields might accept English proficiency)</li>
-              </ul>
-          </li>
-      </ul>
-      `
-    },
-    {
-        question: 'How does the points system work for the Opportunity Card?',
-        answer: `
-      <ul>
-          <li>The card operates on a points-based system, where applicants need to accumulate a certain number of points to be eligible. Points are awarded based on factors like:
-              <ul>
-                  <li>•	Education and qualifications</li>
-                  <li>•	Work experience</li>
-                  <li>•	Age (younger applicants may get more points)</li>
-                  <li>•  Language skills</li>
-                  <li>•  Previous stays in Germany</li>
-                  <li>• Other factors like knowledge of German labor market conditions or adaptability/li>
-              </ul>
-          </li>
-      </ul>
-      `
-    },
-    {
-        question: 'How many points are required to apply for the Opportunity Card?',
-        answer: 'The specific number of points required may vary, but it is essential to meet the minimum threshold to apply for the card. Typically, applicants need a set number of points to qualify for the visa and enter Germany to search for work.',
-    },
-    {
-        question: 'Can I apply for the Opportunity Card if I don’t have a job offer in Germany yet?',
-        answer: 'Yes, the Germany Opportunity Card allows skilled workers to enter the country without having a job offer. Once in Germany, applicants have 6 months to find a job that matches their qualifications. During this time, they can look for employment and attend interviews.',
-    },
-    {
-        question: 'Which job sectors are covered under the Opportunity Card?',
-        answer: `
-      <ul>
-          <li>The card targets sectors with high demand for skilled workers, including but not limited to::
-              <ul>
-                  <li>•	Information Technology (IT)</li>
-                  <li>•	Engineering (Mechanical, Electrical, Civil)</li>
-                  <li>•	Healthcare and Nursing/li>
-                  <li>•	Science and Research</li>
-                  <li>•	Skilled trades (e.g., electricians, carpenters)</li>
-                  <li>•	Finance and Business</li>
-              </ul>
-          </li>
-      </ul>
-      `
-    },
-    {
-        question: 'Do I need to speak German to apply?',
-        answer: 'While language proficiency is not a strict requirement for all applicants, having German language skills will give you more points in the application process. Some sectors may accept English as the working language, but generally, knowledge of German will improve your chances of securing employment.',
-    },
-    {
-        question: 'How long can I stay in Germany with the Opportunity Card?',
-        answer: 'The Germany Opportunity Card allows applicants to stay in Germany for up to 6 months to search for a job. If the applicant finds a job, they can then transition to a long-term residence permit.',
-    },
-    {
-        question: 'Can I bring my family with me if I receive the Opportunity Card?',
-        answer: 'Yes, family reunification is generally allowed for skilled workers in Germany. After you find a job and secure your long-term residence permit, you may apply for your spouse and dependent children to join you in Germany.',
-    },
-    {
-        question: 'What documents do I need to apply for the Opportunity Card?',
-        answer:  `
         <ul>
-            <li>Applicants typically need to submit:
-                <ul>
-                    <li>•	Valid passport</li>
-                    <li>•	Proof of education (degrees, diplomas)</li>
-                    <li>•	Work experience certificates (job references, employment contracts)</li>
-                    <li>•	Proof of language proficiency (German or English, depending on the sector)</li>
-                    <li>•	Proof of health insurance (if applicable)</li>
-                    <li>•	Proof of sufficient funds to support yourself during your stay (if necessary)</li>
-                </ul>
-            </li>
+          <li>You can apply through various pathways including:
+            <ul>
+              <li>Skilled Migrant Category (points-based system)</li>
+              <li>Residence from Work visa</li>
+              <li>Family sponsorship</li>
+              <li>Investor or Entrepreneur visas</li>
+            </ul>
+          </li>
         </ul>
-        `
+      `
     },
     {
-        question: 'Is there a maximum age limit for the Opportunity Card?',
-        answer: 'The age of the applicant is a factor in the points system, with younger candidates receiving more points. However, there is no official maximum age limit, though applicants in their 30s and early 40s typically have the best chances of scoring high points.',
+      question: 'What are the eligibility criteria for New Zealand PR under the Skilled Migrant Category?',
+      answer: `
+        <ul>
+          <li>Key eligibility requirements include:
+            <ul>
+              <li>Age under 56 years</li>
+              <li>Relevant work experience and qualifications in demand</li>
+              <li>English language proficiency</li>
+              <li>Health and character requirements</li>
+              <li>Minimum points score based on age, experience, and qualifications</li>
+            </ul>
+          </li>
+        </ul>
+      `
     },
     {
-        question: 'Can I transition from the Opportunity Card to permanent residency in Germany?',
-        answer: 'Yes, once you find a job and meet the requirements, you can apply for a long-term residence permit (also known as the Niederlassungserlaubnis), which can eventually lead to permanent residency in Germany. The length of time required for this process may vary based on your individual situation.',
+      question: 'Can international students apply for PR in New Zealand?',
+      answer: 'Yes, international students who have completed eligible qualifications and gained relevant work experience can apply for PR through pathways like the Skilled Migrant Category or Residence from Work visa.',
     },
     {
-        question: 'How do I apply for the Germany Opportunity Card?',
-        answer: 'The application for the Germany Opportunity Card typically involves submitting an online application through the German immigration portal, providing your personal and professional details, supporting documents, and evidence of your points score. After applying, you will be evaluated based on the points system.',
+      question: 'What types of student visas are available for New Zealand?',
+      answer: `
+        <ul>
+          <li>New Zealand offers different student visas such as:
+            <ul>
+              <li>Student Visa (for full-time study)</li>
+              <li>Visitor Visa (for short courses less than 3 months)</li>
+              <li>Post-study Work Visa (after graduation for work experience)</li>
+            </ul>
+          </li>
+        </ul>
+      `
     },
     {
-        question: 'Can I use the Opportunity Card to look for jobs outside Germany?',
-        answer: 'No, the Germany Opportunity Card is specifically designed for those looking to work in Germany. It is not applicable for job searches in other countries.',
+      question: 'How long can I stay in New Zealand on a Visitor Visa?',
+      answer: 'Visitor visas typically allow stays of up to 6 months for tourism, visiting family, or short-term business activities. Extensions can be applied for in some cases.',
     },
     {
-        question: 'What happens if I don’t find a job within 6 months?',
-        answer: 'If you are unable to secure a job within 6 months, you may need to leave Germany. In some cases, you can apply for an extension or explore other visa options if applicable.',
+      question: 'Do I need to know English to apply for a New Zealand visa?',
+      answer: 'English language proficiency is required for most visa categories, especially for skilled migrant and student visas. You may need to take approved tests like IELTS or TOEFL.',
     },
     {
-        question: 'Is the Opportunity Card a permanent solution for immigration to Germany?',
-        answer: 'No, the Opportunity Card is a temporary visa that allows skilled workers to search for a job in Germany. However, it can lead to a permanent residency permit once you find a job and meet the required criteria.',
+      question: 'Can I work while studying in New Zealand?',
+      answer: 'Yes, most student visas allow you to work up to 20 hours per week during the academic year and full-time during scheduled breaks.',
     },
     {
-        question: 'Can I apply for the Opportunity Card if I am already living in Germany?',
-        answer: 'Yes, if you are already in Germany on another type of visa (such as a student visa or temporary work visa), you may be able to apply for the Germany Opportunity Card while in the country, depending on your current status and eligibility.',
-    }
+      question: 'How do I apply for a New Zealand visa?',
+      answer: `
+        <ul>
+          <li>Applications are mostly submitted online via the Immigration New Zealand website.</li>
+          <li>You will need to provide supporting documents such as passport, proof of funds, health checks, and police certificates.</li>
+          <li>Processing times vary depending on visa type and individual circumstances.</li>
+        </ul>
+      `
+    },
+    {
+      question: 'Can I bring my family with me to New Zealand?',
+      answer: 'Yes, many visa categories allow you to bring your spouse or dependent children. They may also be eligible to work or study while in New Zealand.',
+    },
+    {
+      question: 'What is the pathway from visitor visa to PR in New Zealand?',
+      answer: 'Visitor visas do not directly lead to PR. To apply for PR, you need to qualify under relevant visa categories like Skilled Migrant, Work to Residence, or Family Sponsorship.',
+    },
+    {
+      question: 'Are there any health requirements for New Zealand visas?',
+      answer: 'Yes, applicants must meet health requirements including medical examinations and sometimes chest X-rays to ensure they do not pose a public health risk.',
+    },
+    {
+      question: 'How long does the New Zealand PR process usually take?',
+      answer: 'Processing times vary but typically take several months to over a year depending on the visa pathway and applicant’s documentation.',
+    },
   ];
 
   return (
-    <div className="w-full px-4 text-2xl py-10 relative z-10 bg-white" style={{fontFamily:'Times new roman'}}>
-      <h2 className="text-center text-3xl font-bold mb-8">Dreaming of Germany? We’re Here to Help!</h2>
+    <div className="w-full px-4 text-2xl py-10 relative z-10 bg-white" style={{ fontFamily: 'Times New Roman' }}>
+      <h2 className="text-center text-3xl font-bold mb-8">Planning to Move to New Zealand? Here’s What You Need to Know!</h2>
 
       {/* Decorative line */}
       <div className="flex justify-center items-center mb-8">
-        <div className="w-20 h-1 bg-orange-600"></div>
-        <div className="w-4 h-1 bg-orange-600 mx-2"></div>
-        <div className="w-2 h-1 bg-orange-600 mx-1"></div>
+        <div className="w-20 h-1 bg-green-600"></div>
+        <div className="w-4 h-1 bg-green-600 mx-2"></div>
+        <div className="w-2 h-1 bg-green-600 mx-1"></div>
       </div>
 
       {/* FAQ List */}
-      <div className="max-w-3xl mx-auto" style={{fontFamily:'Times new roman'}}>
+      <div className="max-w-3xl mx-auto" style={{ fontFamily: 'Times New Roman' }}>
         {questions.map((item, index) => (
-          <div key={index} className="border border-orange-500 p-5 mb-4 rounded-lg shadow-md bg-white">
-            <div 
-              className="flex justify-between items-center cursor-pointer" style={{fontFamily:'Times new roman'}}
+          <div key={index} className="border border-green-500 p-5 mb-4 rounded-lg shadow-md bg-white">
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              style={{ fontFamily: 'Times New Roman' }}
               onClick={() => toggleAnswer(index)}
             >
               <span className="text-lg font-bold">{item.question}</span>
-              <span className="text-orange-500">
-                {openIndex === index ? <AiOutlineMinus /> : <AiOutlinePlus />}
-              </span>
+              <span className="text-green-500">{openIndex === index ? <AiOutlineMinus /> : <AiOutlinePlus />}</span>
             </div>
             {openIndex === index && (
-              <div className="faq-answer mt-2 text-black text-lg" style={{fontFamily:'Times new roman'}} dangerouslySetInnerHTML={{ __html: item.answer }}></div>
+              <div
+                className="faq-answer mt-2 text-black text-lg"
+                style={{ fontFamily: 'Times New Roman' }}
+                dangerouslySetInnerHTML={{ __html: item.answer }}
+              ></div>
             )}
           </div>
         ))}
