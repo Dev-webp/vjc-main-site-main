@@ -19,17 +19,17 @@ import Itlay from "./Itlay";
 import Schengen from "./Schengen";
 const visaData = [
 
-  { name: "USA Visit Visa", path: "/visitvisas/usa-visit-visa", image: "/usaplanevisit.jpg" },
+  { name: "USA Visit Visa", path: "/visit-visas/usa-visit-visa", image: "/usaplanevisit.jpg" },
  
-  { name: "USA B1/B2 Visa", path: "/visitvisas/usa-b1-b2-visa", image: "/visit1.webp" },
-  { name: "Canada Visit Visa", path: "/visitvisas/canada-visit-visa" , image: "/canada.webp"},
-  { name: "Australia Visit Visa", path: "/visitvisas/australia-visit-visa" , image: "/australiabgimg.jpg"},
-  { name: "UK Visit Visa", path: "/visitvisas/uk-visit-visa" , image: "/uk1.webp"},
-  { name: "Dubai Visit Visa", path: "/visitvisas/dubai-visit-visa", image: "/du.webp" },
-  { name: "Denmark Visit Visa", path: "/visitvisas/denmark-visit-visa", image: "/44.webp" },
-  { name: "Austria Visit Visa", path: "/visitvisas/austria-visit-visa" , image: "/austriavisitvisa.jpg"},
-  { name: "Italy Visit Visa", path: "/visitvisas/italy-visit-visa", image: "/itlay23.webp" },
-  { name: "Schengen Visit Visa", path: "/visitvisas/schengen-visit-visa", image: "/schengen.webp" },
+  { name: "USA B1/B2 Visa", path: "/visit-visas/usa-b1-b2-visa", image: "/visit1.webp" },
+  { name: "Canada Visit Visa", path: "/visit-visas/canada-visit-visa" , image: "/canada.webp"},
+  { name: "Australia Visit Visa", path: "/visit-visas/australia-visit-visa" , image: "/australiabgimg.jpg"},
+  { name: "UK Visit Visa", path: "/visit-visas/uk-visit-visa" , image: "/uk1.webp"},
+  { name: "Dubai Visit Visa", path: "/visit-visas/dubai-visit-visa", image: "/du.webp" },
+  { name: "Denmark Visit Visa", path: "/visit-visas/denmark-visit-visa", image: "/44.webp" },
+  { name: "Austria Visit Visa", path: "/visit-visas/austria-visit-visa" , image: "/austriavisitvisa.jpg"},
+  { name: "Italy Visit Visa", path: "/visit-visas/italy-visit-visa", image: "/itlay23.webp" },
+  { name: "Schengen Visit Visa", path: "/visit-visas/schengen-visit-visa", image: "/schengen.webp" },
  
 ];
 const defaultVisa = {
@@ -126,29 +126,29 @@ const Migrate = () => {
               <div className="text-gray-700 text-lg leading-relaxed">
                 Please select a visa type from the left to view more detailed information about that particular Permanent Residency visa.
               </div>
-            ) : selectedVisa.path === "/visitvisas/usa-visit-visa" ? (
+            ) : selectedVisa.path === "/visit--visas/usa-visit-visa" ? (
               <UsaVisit />
-            ) : selectedVisa.path === "/visitvisas/usa-b1-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/usa-b1-visa" ? (
               <Usab1 />
-            ) : selectedVisa.path === "/visitvisas/usa-b2-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/usa-b2-visa" ? (
               <Usab2 />
-            ) : selectedVisa.path === "/visitvisas/usa-b1-b2-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/usa-b1-b2-visa" ? (
               <Usab1b2 />
-            ) : selectedVisa.path === "/visitvisas/canada-visit-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/canada-visit-visa" ? (
               <Canadavisit />
-            ) : selectedVisa.path === "/visitvisas/uk-visit-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/uk-visit-visa" ? (
               <Ukvisit />
-            ) : selectedVisa.path === "/visitvisas/australia-visit-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/australia-visit-visa" ? (
               <Australiavisit />
-            ) : selectedVisa.path === "/visitvisas/dubai-visit-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/dubai-visit-visa" ? (
               <Dubaivisit />
-            ) : selectedVisa.path === "/visitvisas/denmark-visit-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/denmark-visit-visa" ? (
               <Denmark />
-            ) : selectedVisa.path === "/visitvisas/austria-visit-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/austria-visit-visa" ? (
               <Austria />
-            ) : selectedVisa.path === "/visitvisas/italy-visit-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/italy-visit-visa" ? (
               <Itlay />
-            ) : selectedVisa.path === "/visitvisas/schengen-visit-visa" ? (
+            ) : selectedVisa.path === "/visit-visas/schengen-visit-visa" ? (
               <Schengen />
             ) : (
               <div className="text-gray-700 text-lg leading-relaxed">

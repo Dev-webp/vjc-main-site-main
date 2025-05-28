@@ -9,28 +9,28 @@ const WhyChooseUs = () => {
       description:
         'Our team has years of expertise and a track record of success with all visa procedures.',
       image: '/cpimg.jpg',
-      link: '/components-and-professional',   // Unique link for this card
+      link: '/competents-and-professional',   // Unique link for this card
     },
     {
       title: 'High Rate of Success',
       description:
         'Continental Immigration has assisted thousands of candidates in filing their visa applications successfully.',
       image: '/cpimg.jpg',
-      link: '/components-and-professional',        // Unique link for this card
+      link: '/immigration-and-student-visa-process',        // Unique link for this card
     },
     {
       title: 'Dedicated Assistance',
       description:
         'You will be allocated a Continental Immigration counsellor to assist you during the process.',
       image: '/cpimg.jpg',
-      link: '/components-and-professional',     // Unique link for this card
+      link: '/dedication-and-immigration-student-visa-process',     // Unique link for this card
     },
     {
       title: 'More Rapid Documentation',
       description:
         'Our centralized document repository securely maintains all your documents in one location, expediting the visa application process.',
       image: '/cpimg.jpg',
-      link: '/components-and-professional',      // Unique link for this card
+      link: '/rapid-documentation',      // Unique link for this card
     },
   ];
 

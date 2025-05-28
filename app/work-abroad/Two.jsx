@@ -8,37 +8,37 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const countriesData = [
   {
     name: "Germany Work Permit",
-    path: "/workabroad/germany-work-permit",
+    path: "/work-abroad/germany-work-permit",
     image: "/germany.jpg",
   },
   {
     name: "Canada Work Permit",
-    path: "/workabroad/canada-work-permit",
+    path: "/work-abroad/canada-work-permit",
     image: "/canada.webp",
   },
   {
     name: "USA H1b Visa",
-    path: "/workabroad/usa-h1b-visa",
+    path: "/work-abroad/usa-h1b-visa",
     image: "/usa1.jpg",
   },
   {
     name: "Australia Work Permit",
-    path: "/workabroad/australia-work-permit",
+    path: "/work-abroad/australia-work-permit",
     image: "/australia.jpg",
   },
   {
     name: "UK Work Permit",
-    path: "/workabroad/united-kingdom-work-permit",
+    path: "/work-abroad/united-kingdom-work-permit",
     image: "/uk1.webp",
   },
   {
     name: "Denmark Work Permit",
-    path: "/workabroad/denmark-work-permit",
+    path: "/work-abroad/denmark-work-permit",
     image: "/de.jpg",
   },
   {
     name: "Dubai Work Permit",
-    path: "/workabroad/dubai-work-permit",
+    path: "/work-abroad/dubai-work-permit",
     image: "/du.webp",
   },
 ];

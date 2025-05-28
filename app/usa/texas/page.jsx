@@ -95,9 +95,7 @@ export default function UsaPage() {
                     alt="USA Office Gallery"
                     className="rounded-xl group-hover:brightness-75 transition duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                    <span className="text-white font-bold text-lg">usa/texus-VJC</span>
-                  </div>
+                  
                 </motion.div>
               ))}
             </div>

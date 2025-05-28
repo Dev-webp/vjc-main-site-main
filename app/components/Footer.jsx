@@ -242,7 +242,7 @@ const Footer = () => {
 
            {/* USA Address */}
            <div className="mb-8 md:mb-0 text-center md:w-1/3">
- <Link href="/usa/texus" passHref>
+ <Link href="/usa/texas" passHref>
   <div className="cursor-pointer">
     <h3 className="text-lg font-bold uppercase mb-1 text-orange-500">
       VJC Overseas-USA

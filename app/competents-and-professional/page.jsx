@@ -22,44 +22,49 @@ const fadeInUp = {
 const VJCCompetentSection = () => {
   return (
     <div
-      className="bg-gradient-to-br from-blue-50 via-white to-orange-100 px-4 py-10 lg:py-20 text-gray-800"
+      className="bg-gradient-to-br from-blue-50 via-white to-orange-100  py-10 lg:py-20 text-gray-800"
       style={{ fontFamily: 'Times New Roman, serif' }}
     >
       <div className="max-w-7xl mx-auto space-y-16">
 
         {/* Top Section */}
         <motion.div
-          className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-start bg-white/80 rounded-xl overflow-hidden shadow-lg"
+         className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-start bg-black/80 overflow-hidden shadow-lg"
+
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <Image
-            src="/study-abroad-vjc.jpg"
-            alt="Top Section Background"
-            fill
-            quality={100}
-            className="absolute inset-0 object-cover opacity-20 z-0"
-          />
+         <div className="absolute inset-0 w-full h-full z-0">
+  <Image
+    src="/plave-vjc-study.webp"
+    alt="Top Section Background"
+    fill
+    quality={100}
+    className="object-cover opacity-40"
+    priority
+  />
+</div>
+
 
           {/* Left Text Content */}
           <motion.div
-            className="relative z-10 p-6 mt-36 lg:pl-20 lg:pr-12 space-y-6"
+            className="relative z-0 p-6 mt-36 lg:pl-20 lg:pr-12 space-y-6"
             custom={0.1}
             variants={fadeInUp}
           >
-            <h2 className="text-3xl font-extrabold text-orange-500 drop-shadow-md">
+            <h2 className="text-3xl font-extrabold text-white drop-shadow-md">
               VJC Overseas: Competent and Professional in Immigration and Student Visa Process
             </h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-white">
               Planning your future abroad? VJC Overseas provides trustworthy and expert guidance for your education, career, and immigration goals.
             </p>
             <div className="flex flex-wrap gap-4">
               
              <Link href="/assessment" passHref>
   <motion.button
-    className="bg-blue-500 text-white px-6 py-2 rounded-full shadow hover:bg-orange-500 transition"
+    className="bg-orange-500 text-white px-6 py-2 rounded-full shadow hover:bg-blue-500 transition"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >

@@ -7,16 +7,16 @@ import { Globe, ArrowRight } from "lucide-react";
 import Content from "./Content";
 
 const visaData = [
-  { name: "USA Visit Visa", path: "/visitvisas/usa-visit-visa", bg: "/usavisvitvisa.jpg" },
-  { name: "USA B1/B2 Visa", path: "/visitvisas/usa-b1-b2-visa", bg: "/usabgh1h2.jpg" },
-  { name: "Canada Visit Visa", path: "/visitvisas/canada-visit-visa", bg: "/canadavisitvisa.avif" },
-  { name: "Australia Visit Visa", path: "/visitvisas/australia-visit-visa", bg: "/best-places-to-visit-in-Australia.jpg" },
-  { name: "UK Visit Visa", path: "/visitvisas/uk-visit-visa", bg: "/ukvisitvisas.jpg" },
-  { name: "Dubai Visit Visa", path: "/visitvisas/dubai-visit-visa", bg: "/dubaivisit.avif" },
-  { name: "Denmark Visit Visa", path: "/visitvisas/denmark-visit-visa", bg: "/denmarktimg.avif" },
-  { name: "Austria Visit Visa", path: "/visitvisas/austria-visit-visa", bg: "/austriavisit.jpg" },
-  { name: "Italy Visit Visa", path: "/visitvisas/italy-visit-visa", bg: "/italyvist.jpeg" },
-  { name: "Schengen Visit Visa", path: "/visitvisas/schengen-visit-visa", bg: "/schenvivas.jpg" },
+  { name: "USA Visit Visa", path: "/visit-visas/usa-visit-visa", bg: "/usavisvitvisa.jpg" },
+  { name: "USA B1/B2 Visa", path: "/visit-visas/usa-b1-b2-visa", bg: "/usabgh1h2.jpg" },
+  { name: "Canada Visit Visa", path: "/visit-visas/canada-visit-visa", bg: "/canadavisitvisa.avif" },
+  { name: "Australia Visit Visa", path: "/visit-visas/australia-visit-visa", bg: "/best-places-to-visit-in-Australia.jpg" },
+  { name: "UK Visit Visa", path: "/visit-visas/uk-visit-visa", bg: "/ukvisitvisas.jpg" },
+  { name: "Dubai Visit Visa", path: "/visit-visas/dubai-visit-visa", bg: "/dubaivisit.avif" },
+  { name: "Denmark Visit Visa", path: "/visit-visas/denmark-visit-visa", bg: "/denmarktimg.avif" },
+  { name: "Austria Visit Visa", path: "/visit-visas/austria-visit-visa", bg: "/austriavisit.jpg" },
+  { name: "Italy Visit Visa", path: "/visit-visas/italy-visit-visa", bg: "/italyvist.jpeg" },
+  { name: "Schengen Visit Visa", path: "/visit-visas/schengen-visit-visa", bg: "/schenvivas.jpg" },
 ];
 
 const defaultVisa = {
