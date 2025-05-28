@@ -161,47 +161,33 @@ const Footer = () => {
   </div>
 
   {/* SEO-Optimized Circular Logos */}
-  <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
-    {/* British Council */}
-    <a
-      href="/vjc-british-council.jpg"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="British Council Certified"
-      aria-label="British Council Certified - VJC Overseas"
-      className="transform hover:scale-110 transition-transform duration-300"
-    >
-      <Image
-        src="/vjc-british-council.jpg"
-        alt="British Council Certification Logo"
-        title="British Council Certified - Study Abroad Partner"
-        width={80}
-        height={80}
-        loading="lazy"
-        className="rounded-full shadow-lg border border-white"
-      />
-    </a>
+{/* SEO-Optimized Circular Logos Without Links */}
+<div className="flex items-center justify-center md:justify-start gap-4 mt-4">
 
-    {/* ISO Certified */}
-    <a
-      href="/vjc-iso-certifed.jpg"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="ISO 9001:2015 Certified"
-      aria-label="ISO 9001:2015 Certified - VJC Overseas"
-      className="transform hover:scale-110 transition-transform duration-300"
-    >
-      <Image
-        src="/vjc-iso-certifed.jpg"
-        alt="ISO 9001:2015 Certification Logo"
-        title="ISO Certified - Trusted Visa Consultants"
-        width={80}
-        height={80}
-        loading="lazy"
-        className="rounded-full shadow-lg border border-white"
-      />
-    </a>
-  </div>
+  {/* British Council */}
+  <Image
+    src="/vjc-british-council.png"
+    alt="British Council Certification Logo"
+    title="British Council Certified - Study Abroad Partner"
+    width={80}
+    height={80}
+    loading="lazy"
+    className="rounded-full shadow-lg border border-white transform hover:scale-110 transition-transform duration-300"
+  />
+
+  {/* ISO Certified */}
+  <Image
+    src="/vjc-iso-certifed.png"
+    alt="ISO 9001:2015 Certification Logo"
+    title="ISO Certified - Trusted Visa Consultants"
+    width={80}
+    height={80}
+    loading="lazy"
+    className="rounded-full shadow-lg border border-white transform hover:scale-110 transition-transform duration-300"
+  />
+
+</div>
+
 </div>
         </div>
 

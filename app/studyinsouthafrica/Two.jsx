@@ -26,37 +26,36 @@ import Malaysia from "./Malaysia";
 import France from "./France";
 import Itlay from "./Itlay";
 
-const visaData = [
-  { name: "Study in USA", path: "/studyabroad/usa", image: "/usa1.jpg" ,component:"./USAStudyVisa"},
-  { name: "Study in Uk", path: "/studyabroad/uk", image: "/uk1.webp" },
-  { name: "Study in Canada", path: "/studyabroad/canada", image: "/canada1.jpg" },
-  { name: "Study in Australia", path: "/studyabroad/australia", image: "/aus1.jpg" },
-  { name: "Study in Germany", path: "/studyabroad/germany", image: "/germany.jpg" },
-  { name: "Study in Italy", path: "/studyabroad/italy", image: "/itlay.jpg" },
-  { name: "Study in France", path: "/studyabroad/france", image: "/france.jpg" },
-  { name: "Study in Singapore", path: "/studyabroad/singapore", image: "/singapore.jpg" },
-  { name: "Study in Malaysia", path: "/studyabroad/malaysia", image: "/m.jpg" },
-  { name: "Study in South Africa", path: "/studyabroad/southafrica", image: "/sa.webp" },
-  { name: "Study in New Zealand", path: "/studyabroad/newzealand", image: "/nz.webp" },
-  { name: "Study in Philippiness", path: "/studyabroad/philippiness", image: "/p.jpg" },
-  { name: "Study in Poland", path: "/studyabroad/poland", image: "/pol.webp" },
-  { name: "Study in Ireland", path: "/studyabroad/ireland", image: "/ir.jpg" },
-  { name: "Study in Spain", path: "/studyabroad/spain", image: "/spa.avif" },
-  { name: "Study in Netherlands", path: "/studyabroad/netherlands", image: "/net.webp" },
-  { name: "Study in Switzerland", path: "/studyabroad/switerland", image: "/sw.webp" },
-  { name: "Study in Denmark", path: "/studyabroad/denmark", image: "/de.jpg" },
-  { name: "Study in Dubai", path: "/studyabroad/Dubai", image: "/du.webp" },
-  { name: "Study in Luxembourg", path: "/studyabroad/luxembourg", image: "/lux.jpg" },
-  { name: "Study in Hongkong", path: "/studyabroad/hongkong", image: "/hk.jpg" },
-  { name: "Study in UAE", path: "/studyabroad/uae", image: "/ua.jpg" },
-  { name: "Study in Norway", path: "/studyabroad/norway", image: "/norwaystudy.avif" },
-  { name: "Study in Sweden", path: "/studyabroad/sweden", image: "/swedenstudy.jpg" },
-
+const visaData = [ { name: "Study in USA", path: "/study-abroad/usa", image: "/usa1.jpg"},
+  { name: "Study in Uk", path: "/study-abroad/uk", image: "/uk1.webp" },
+  { name: "Study in Canada", path: "/study-abroad/canada", image: "/canada1.jpg" },
+  { name: "Study in Australia", path: "/study-abroad/australia", image: "/aus1.jpg" },
+  { name: "Study in Germany", path: "/study-abroad/germany", image: "/germany.jpg" },
+  { name: "Study in Italy", path: "/study-abroad/italy", image: "/itlay.jpg" },
+  { name: "Study in France", path: "/study-abroad/france", image: "/france.jpg" },
+  { name: "Study in Singapore", path: "/study-abroad/singapore", image: "/singapore.jpg" },
+  { name: "Study in Malaysia", path: "/study-abroad/malaysia", image: "/m.jpg" },
+  { name: "Study in South Africa", path: "/study-abroad/southafrica", image: "/sa.webp" },
+  { name: "Study in New Zealand", path: "/study-abroad/newzealand", image: "/nz.webp" },
+  { name: "Study in Philippiness", path: "/study-abroad/philippiness", image: "/p.jpg" },
+  { name: "Study in Poland", path: "/study-abroad/poland", image: "/pol.webp" },
+  { name: "Study in Ireland", path: "/study-abroad/ireland", image: "/ir.jpg" },
+  { name: "Study in Spain", path: "/study-abroad/spain", image: "/spa.avif" },
+  { name: "Study in Netherlands", path: "/study-abroad/netherlands", image: "/net.webp" },
+  { name: "Study in Switzerland", path: "/study-abroad/switerland", image: "/sw.webp" },
+  { name: "Study in Denmark", path: "/study-abroad/denmark", image: "/de.jpg" },
+  { name: "Study in Dubai", path: "/study-abroad/Dubai", image: "/du.webp" },
+  { name: "Study in Luxembourg", path: "/study-abroad/luxembourg", image: "/lux.jpg" },
+  { name: "Study in Hongkong", path: "/study-abroad/hongkong", image: "/hk.jpg" },
+  { name: "Study in UAE", path: "/study-abroad/uae", image: "/ua.jpg" },
+  { name: "Study in Norway", path: "/study-abroad/norway", image: "/norwaystudy.avif" },
+  { name: "Study in Sweden", path: "/study-abroad/sweden", image: "/swedenstudy.jpg" },
 ];
+
 
 const defaultVisa = {
   name: "Study in South Africa",
-  path: "/studyabroad/southafrica",
+  path: "/study-abroad/southafrica",
   image: "/sa.webp",
 };
 
