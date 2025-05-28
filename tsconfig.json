@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/germany-opportunity-card/app/page.js", "app/germany-opportunity-card/app/layout.js", "app/eligibility-calculator/api/send-email/route.ts", "app/migrate-canada-permanent-residency-visa/components/page.js", "app/germany-opportunity-card/page.jsx", "app/my-3d-modal/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/germany-opportunity-card/app/page.js", "app/germany-opportunity-card/app/layout.js", "app/eligibility-calculator/api/send-email/route.ts", "app/migrate-canada-permanent-residency-visa/components/page.js", "app/germany-opportunity-card/page.jsx", "app/my-3d-modal/page.jsx", "app/components/Threedhuman.jsx", "app/threedhuman/page.jsx"],
   "exclude": ["node_modules"]
 }
