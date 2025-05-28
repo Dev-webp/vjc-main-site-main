@@ -15,12 +15,12 @@ import Link from "next/link";
 
 export default function JobSeekerVisaPage() {
   const countries = [
-    { name: "Germany Jobseeker Visa", path: "/jobseeker-visas/germany-jobseeker-visa", icon: <Flag size={32} /> },
-    { name: "Austria Jobseeker Visa", path: "/jobseeker-visas/austria-jobseeker-visa", icon: <Landmark size={32} /> },
-    { name: "Portugal Jobseeker Visa", path: "/jobseeker-visas/portugal-jobseeker-visa", icon: <MapPin size={32} /> },
-    { name: "Sweden Jobseeker Visa", path: "/jobseeker-visas/sweden-jobseeker-visa", icon: <Globe size={32} /> },
-    { name: "Norway Jobseeker Visa", path: "/jobseeker-visas/norway-jobseeker-visa", icon: <Plane size={32} /> },
-    { name: "UAE Jobseeker Visa", path: "/jobseeker-visas/uae-jobseeker-visa", icon: <Briefcase size={32} /> },
+    { name: "Germany Jobseeker Visa", path: "/jobseeker-visas/germany", icon: <Flag size={32} /> },
+    { name: "Austria Jobseeker Visa", path: "/jobseeker-visas/austria", icon: <Landmark size={32} /> },
+    { name: "Portugal Jobseeker Visa", path: "/jobseeker-visas/portugal", icon: <MapPin size={32} /> },
+    { name: "Sweden Jobseeker Visa", path: "/jobseeker-visas/sweden", icon: <Globe size={32} /> },
+    { name: "Norway Jobseeker Visa", path: "/jobseeker-visas/norway", icon: <Plane size={32} /> },
+    { name: "UAE Jobseeker Visa", path: "/jobseeker-visas/uae", icon: <Briefcase size={32} /> },
   ];
 
   const cardsRef = useRef(null);

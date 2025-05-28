@@ -15,19 +15,19 @@ import Australiainvest from "./Australiainvest";
 import Uaeinvest from "./Uaeinvest";
 const visaData = [
 
-  { name: "USA Investor Visa", path: "/investor-visas/usa-investor-visa", image: "/usainvest.png" },
-  { name: "Canada Investor Visa", path: "/investor-visas/canada-investor-visa", image: "/canadainvestbg.png" },
-  { name: "Germany Investor Visa", path: "/investor-visas/germany-investor-visa", image: "/canadainvestorbg.png" },
-  { name: "Australia Investor Visa", path: "/investor-visas/australia-investor-visa", image: "/australiainvestbg2.png" },
-  { name: "UK Investor Visa", path: "/investor-visas/uk-investor-visa", image: "/ukinvestorvisa.png" },
-  { name: "UAE Investor Visa", path: "/investor-visas/uae-investor-visa", image: "/uaeinvestorbg.png" },
-  { name: "Portugal Investor Visa", path: "/investor-visas/portugal-investor-visa", image: "/potugalinvestorbg.png" },
-  { name: "Austria Investor Visa", path: "/investor-visas/austria-investor-visa", image: "/austriainvestbg2.png" },
+  { name: "USA Investor Visa", path: "/investor-visas/usa", image: "/usainvest.png" },
+  { name: "Canada Investor Visa", path: "/investor-visas/canada", image: "/canadainvestbg.png" },
+  { name: "Germany Investor Visa", path: "/investor-visas/germany", image: "/canadainvestorbg.png" },
+  { name: "Australia Investor Visa", path: "/investor-visas/australia", image: "/australiainvestbg2.png" },
+  { name: "UK Investor Visa", path: "/investor-visas/uk", image: "/ukinvestorvisa.png" },
+  { name: "UAE Investor Visa", path: "/investor-visas/uae", image: "/uaeinvestorbg.png" },
+  { name: "Portugal Investor Visa", path: "/investor-visas/portugal", image: "/potugalinvestorbg.png" },
+  { name: "Austria Investor Visa", path: "/investor-visas/austria", image: "/austriainvestbg2.png" },
 ];
 const defaultVisa = {
-  name: "Permanent Residency Visa",
-  path: "/Jobseeker",
-  image: "/.jpg",
+  name: "investor Visa",
+  path: "/investor-visas",
+  image: "/usainvest.png",
 };
 
 const Migrate = () => {
@@ -118,21 +118,21 @@ const Migrate = () => {
               <div className="text-gray-700 text-lg leading-relaxed">
                 Please select a visa type from the left to view more detailed information about that particular Permanent Residency visa.
               </div>
-            ) : selectedVisa.path === "/investor-visas/canada-investor-visa" ? (
+            ) : selectedVisa.path === "/investor-visas/canada" ? (
               <Canadainvestor />
-            ) : selectedVisa.path === "/investor-visas/austria-investor-visa" ? (
+            ) : selectedVisa.path === "/investor-visas/austria" ? (
               <Austriainvest />
-            ) : selectedVisa.path === "/investor-visas/uk-investor-visa" ? (
+            ) : selectedVisa.path === "/investor-visas/uk" ? (
               <UKin />
-            ) : selectedVisa.path === "/investor-visas/portugal-investor-visa" ? (
+            ) : selectedVisa.path === "/investor-visas/portugal" ? (
               <Portin />
-            ) : selectedVisa.path === "/investor-visas/germany-investor-visa" ? (
+            ) : selectedVisa.path === "/investor-visas/germany" ? (
               <Germanyinvestor />
-            ) : selectedVisa.path === "/investor-visas/usa-investor-visa" ? (
+            ) : selectedVisa.path === "/investor-visas/usa" ? (
               <Usain />
-            ) : selectedVisa.path === "/investor-visas/australia-investor-visa" ? (
+            ) : selectedVisa.path === "/investor-visas/australia "? (
               <Australiainvest />
-            ) : selectedVisa.path === "/investor-visas/uae-investor-visa" ? (
+            ) : selectedVisa.path === "/investor-visas/uae" ? (
               <Uaeinvest />
             ) : (
               <div className="text-gray-700 text-lg leading-relaxed">

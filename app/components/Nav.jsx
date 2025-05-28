@@ -197,12 +197,12 @@ const Navbar = () => {
   ];
 
   const coachingSubPages = [
-    { name: "IELTS", path: "/ielts" },
-    { name: "GMAT", path: "/gmat" },
-    { name: "GRE", path: "/gre" },
-    { name: "DUOLINGO", path: "/duolingo" },
-    { name: "PTE", path: "/pte" },
-    { name: "TOEFL", path: "/toefl" },
+    { name: "IELTS", path: "/coaching/ielts" },
+    { name: "GMAT", path: "/coaching/gmat" },
+    { name: "GRE", path: "/coaching/gre" },
+    { name: "DUOLINGO", path: "/coaching/duolingo" },
+    { name: "PTE", path: "/coaching/pte" },
+    { name: "TOEFL", path: "/coaching/toefl" },
   ];
 
   const workabroadSubPages = [
@@ -328,47 +328,47 @@ const Navbar = () => {
     { name: "USA Green Card", path: "/pr-visas/usagreencard" },
   ];
   const resumemarketingSubPages = [
-    { name: "Canada", path: "/resume-marketing/canada-resume-marketing" },
-    { name: "Germany", path: "/resume-marketing/germany-resume-marketing" },
-    { name: "USA", path: "/resume-marketing/usa-resume-marketing" },
-    { name: "Australia", path: "/resume-marketing/australia-resume-marketing" },
-    { name: "UK", path: "/resume-marketing/uk-resume-marketing" },
-    { name: "Denmark", path: "/resume-marketing/denmark-resume-marketing" },
-    { name: "Ireland", path: "/resume-marketing/ireland-resume-marketing" },
-    { name: "Dubai", path: "/resume-marketing/dubai-resume-marketing" },
-    { name: "Austria", path: "/resume-marketing/austria-resume-marketing" },
-    { name: "Singapore", path: "/resume-marketing/singapore-resume-marketing" },
+    { name: "Canada", path: "/resume-marketing/canada" },
+    { name: "Germany", path: "/resume-marketing/germany" },
+    { name: "USA", path: "/resume-marketing/usa" },
+    { name: "Australia", path: "/resume-marketing/australia" },
+    { name: "UK", path: "/resume-marketing/uk" },
+    { name: "Denmark", path: "/resume-marketing/denmark" },
+    { name: "Ireland", path: "/resume-marketing/ireland" },
+    { name: "Dubai", path: "/resume-marketing/dubai" },
+    { name: "Austria", path: "/resume-marketing/austria" },
+    { name: "Singapore", path: "/resume-marketing/singapore" },
     {
       name: "New Zealand",
-      path: "/resume-marketing/new-zealand-resume-marketing",
+      path: "/resume-marketing/new-zealand",
     },
-    { name: "Malaysia", path: "/resume-marketing/malaysia-resume-marketing" },
-    { name: "Poland", path: "/resume-marketing/poland-resume-marketing" },
-    { name: "Malta", path: "/resume-marketing/malta-resume-marketing" },
+    { name: "Malaysia", path: "/resume-marketing/malaysia" },
+    { name: "Poland", path: "/resume-marketing/poland" },
+    { name: "Malta", path: "/resume-marketing/malta" },
   ];
   const jobseeker = [
     {
       name: "Germany Jobseeker Visa",
-      path: "/jobseeker-visas/germany-jobseeker-visa",
+      path: "/jobseeker-visas/germany",
      
     },
     {
       name: "Austria Jobseeker Visa",
-      path: "/jobseeker-visas/austria-jobseeker-visa",
+      path: "/jobseeker-visas/austria",
     },
     {
       name: "Portugal Jobseeker Visa",
-      path: "/jobseeker-visas/portugal-jobseeker-visa",
+      path: "/jobseeker-visas/portugal",
     },
     {
       name: "Sweden Jobseeker Visa",
-      path: "/jobseeker-visas/sweden-jobseeker-visa",
+      path: "/jobseeker-visas/sweden",
     },
     {
       name: "Norway Jobseeker Visa",
-      path: "/jobseeker-visas/norway-jobseeker-visa",
+      path: "/jobseeker-visas/norway",
     },
-    { name: "UAE Jobseeker Visa", path: "/jobseeker-visas/uae-jobseeker-visa" },
+    { name: "UAE Jobseeker Visa", path: "/jobseeker-visas/uae" },
   ];
   const servicesSubPages = [
     { name: "Profile Evaluation", path: "/services/profile-evaluation" },
@@ -387,41 +387,41 @@ const Navbar = () => {
   ];
 
   const investorvisasSubPages = [
-    { name: "USA Investor Visa", path: "/investor-visas/usa-investor-visa" },
+    { name: "USA Investor Visa", path: "/investor-visas/usa" },
     {
       name: "Canada Investor Visa",
-      path: "/investor-visas/canada-investor-visa",
+      path: "/investor-visas/canada",
     },
     {
       name: "Germany Investor Visa",
-      path: "/investor-visas/germany-investor-visa",
+      path: "/investor-visas/germany",
     },
     {
       name: "Australia Investor Visa",
-      path: "/investor-visas/australia-investor-visa",
+      path: "/investor-visas/australia",
     },
-    { name: "UK Investor Visa", path: "/investor-visas/uk-investor-visa" },
-    { name: "UAE Investor Visa", path: "/investor-visas/uae-investor-visa" },
+    { name: "UK Investor Visa", path: "/investor-visas/uk" },
+    { name: "UAE Investor Visa", path: "/investor-visas/uae" },
     {
       name: "Portugal Investor Visa",
-      path: "/investor-visas/portugal-investor-visa",
+      path: "/investor-visas/portugal",
     },
     {
       name: "Austria Investor Visa",
-      path: "/investor-visas/austria-investor-visa",
+      path: "/investor-visas/austria",
     },
   ];
   const visitvisasSubPages = [
-    { name: "USA Visit Visa", path: "/visit-visas/usa-visit-visa" },
+    { name: "USA Visit Visa", path: "/visit-visas/usa" },
     { name: "USA B1/B2 Visa", path: "/visit-visas/usa-b1-b2-visa" },
-    { name: "Canada Visit Visa", path: "/visit-visas/canada-visit-visa" },
-    { name: "Australia Visit Visa", path: "/visit-visas/australia-visit-visa" },
-    { name: "UK Visit Visa", path: "/visit-visas/uk-visit-visa" },
-    { name: "Dubai Visit Visa", path: "/visit-visas/dubai-visit-visa" },
-    { name: "Denmark Visit Visa", path: "/visit-visas/denmark-visit-visa" },
-    { name: "Austria Visit Visa", path: "/visit-visas/austria-visit-visa" },
-    { name: "Italy Visit Visa", path: "/visit-visas/italy-visit-visa" },
-    { name: "Schengen Visit Visa", path: "/visit-visas/schengen-visit-visa" },
+    { name: "Canada Visit Visa", path: "/visit-visas/canada" },
+    { name: "Australia Visit Visa", path: "/visit-visas/australia" },
+    { name: "UK Visit Visa", path: "/visit-visas/uk" },
+    { name: "Dubai Visit Visa", path: "/visit-visas/dubai" },
+    { name: "Denmark Visit Visa", path: "/visit-visas/denmark" },
+    { name: "Austria Visit Visa", path: "/visit-visas/austria" },
+    { name: "Italy Visit Visa", path: "/visit-visas/italy" },
+    { name: "Schengen Visit Visa", path: "/visit-visas/schengen" },
   ];
   const schengenSubPages = [
     { name: "Austria ", path: "/schengen-visas/austria" },

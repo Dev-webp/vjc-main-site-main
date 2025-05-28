@@ -18,72 +18,72 @@ const cards = [
   {
     name: "Canada Resume Marketing",
     image: "/canadaresume1.webp",
-    path: "/resume-marketing/canada-resume-marketing",
+    path: "/resume-marketing/canada",
   },
   {
     name: "Germany Resume Marketing",
     image: "/germanyresume.jpeg",
-    path: "/resume-marketing/germany-resume-marketing",
+    path: "/resume-marketing/germany",
   },
   {
     name: "USA Resume Marketing",
     image: "/usaresume.jpg",
-    path: "/resume-marketing/usa-resume-marketing",
+    path: "/resume-marketing/usa",
   },
   {
     name: "Australia Resume Marketing",
     image: "/australiaresume.jpg",
-    path: "/resume-marketing/australia-resume-marketing",
+    path: "/resume-marketing/australia",
   },
   {
     name: "UK Resume Marketing",
     image: "/ukresume.jpg",
-    path: "/resume-marketing/uk-resume-marketing",
+    path: "/resume-marketing/uk",
   },
   {
     name: "Denmark Resume Marketing",
     image: "/denmarkresume.jpg",
-    path: "/resume-marketing/denmark-resume-marketing",
+    path: "/resume-marketing/denmark",
   },
   {
     name: "Ireland Resume Marketing",
     image: "/irelandresume.jpg",
-    path: "/resume-marketing/ireland-resume-marketing",
+    path: "/resume-marketing/ireland",
   },
   {
     name: "Dubai Resume Marketing",
     image: "/uaeresume.jpg",
-    path: "/resume-marketing/dubai-resume-marketing",
+    path: "/resume-marketing/dubai",
   },
   {
     name: "Austria Resume Marketing",
     image: "/austriaresume.jpg",
-    path: "/resume-marketing/austria-resume-marketing",
+    path: "/resume-marketing/austria",
   },
   {
     name: "Singapore Resume Marketing",
     image: "/singaporeresume.jpg",
-    path: "/resume-marketing/singapore-resume-marketing",
+    path: "/resume-marketing/singapore",
   },
   {
     name: "New Zealand Resume Marketing",
     image: "/nzresume.jpg",
-    path: "/resume-marketing/new-zealand-resume-marketing",
+    path: "/resume-marketing/new-zealand",
   },
   {
     name: "Malaysia Resume Marketing",
     image: "/malaysiaresume.jpg",
-    path: "/resume-marketing/malaysia-resume-marketing",
+    path: "/resume-marketing/malaysia",
   },
   {
     name: "Poland Resume Marketing",
     image: "/polandresume.jpg",
-    path: "/resume-marketing/poland-resume-marketing",
+    path: "/resume-marketing/poland",
   },
   {
     name: "Malta Resume Marketing",
     image: "/maltaresume.jpg",
-    path: "/resume-marketing/malta-resume-marketing",
+    path: "/resume-marketing/malta",
   },
 ];
 

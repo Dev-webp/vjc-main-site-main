@@ -98,37 +98,37 @@ Don't let the visa interview</h2>
     {/* Buttons */}
     <div className="flex flex-col gap-4 w-full max-w-sm">
       <button
-        onClick={() => handleNavigation('/ielts')}
+        onClick={() => handleNavigation('/coaching/ielts')}
         className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-blue-700"
       >
         IELTS
       </button>
       <button
-        onClick={() => handleNavigation('/pte')}
+        onClick={() => handleNavigation('/coaching/pte')}
         className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-green-700"
       >
         PTE
       </button>
       <button
-        onClick={() => handleNavigation('/gre')}
+        onClick={() => handleNavigation('/coaching/gre')}
         className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-red-700"
       >
         GRE
       </button>
       <button
-        onClick={() => handleNavigation('/gmat')}
+        onClick={() => handleNavigation('/coaching/gmat')}
         className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-yellow-600"
       >
         GMAT
       </button>
       <button
-        onClick={() => handleNavigation('/toefl')}
+        onClick={() => handleNavigation('/coaching/toefl')}
         className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-purple-700"
       >
         TOEFL
       </button>
       <button
-        onClick={() => handleNavigation('/duolingo')}
+        onClick={() => handleNavigation('/coaching/duolingo')}
         className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-gray-900"
       >
         DUOLINGO

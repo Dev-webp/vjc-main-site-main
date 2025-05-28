@@ -22,20 +22,20 @@ import Poland from "./Poland";
 import Malta from "./Malta";
 
 const visaData = [
-  { name: "Canada Resume Marketing", image: "/canadaresume1.webp", path: "/resume-marketing/canada-resume-marketing" },
-  { name: "Germany Resume Marketing", image: "/germanyresume.jpeg", path: "/resume-marketing/germany-resume-marketing" },
-  { name: "USA Resume Marketing", image: "/usaresume.jpg", path: "/resume-marketing/usa-resume-marketing" },
-  { name: "Australia Resume Marketing", image: "/australiaresume.jpg", path: "/resume-marketing/australia-resume-marketing" },
-  { name: "UK Resume Marketing", image: "/ukresume.jpg", path: "/resume-marketing/uk-resume-marketing" },
-  { name: "Denmark Resume Marketing", image: "/denmarkresume.jpg", path: "/resume-marketing/denmark-resume-marketing" },
-  { name: "Ireland Resume Marketing", image: "/irelandresume.jpg", path: "/resume-marketing/ireland-resume-marketing" },
-  { name: "Dubai Resume Marketing", image: "/uaeresume.jpg", path: "/resume-marketing/dubai-resume-marketing" },
-  { name: "Austria Resume Marketing", image: "/austriaresume.jpg", path: "/resume-marketing/austria-resume-marketing" },
-  { name: "Singapore Resume Marketing", image: "/singaporeresume.jpg", path: "/resume-marketing/singapore-resume-marketing" },
-  { name: "New Zealand Resume Marketing", image: "/nzresume.jpg", path: "/resume-marketing/new-zealand-resume-marketing" },
-  { name: "Malaysia Resume Marketing", image: "/malaysiaresume.jpg", path: "/resume-marketing/malaysia-resume-marketing" },
-  { name: "Poland Resume Marketing", image: "/polandresume.jpg", path: "/resume-marketing/poland-resume-marketing" },
-  { name: "Malta Resume Marketing", image: "/maltaresume.jpg", path: "/resume-marketing/malta-resume-marketing" },
+  { name: "Canada Resume Marketing", image: "/canadaresume1.webp", path: "/resume-marketing/canada" },
+  { name: "Germany Resume Marketing", image: "/germanyresume.jpeg", path: "/resume-marketing/germany" },
+  { name: "USA Resume Marketing", image: "/usaresume.jpg", path: "/resume-marketing/usa" },
+  { name: "Australia Resume Marketing", image: "/australiaresume.jpg", path: "/resume-marketing/australia" },
+  { name: "UK Resume Marketing", image: "/ukresume.jpg", path: "/resume-marketing/uk" },
+  { name: "Denmark Resume Marketing", image: "/denmarkresume.jpg", path: "/resume-marketing/denmark" },
+  { name: "Ireland Resume Marketing", image: "/irelandresume.jpg", path: "/resume-marketing/ireland" },
+  { name: "Dubai Resume Marketing", image: "/uaeresume.jpg", path: "/resume-marketing/dubai" },
+  { name: "Austria Resume Marketing", image: "/austriaresume.jpg", path: "/resume-marketing/austria" },
+  { name: "Singapore Resume Marketing", image: "/singaporeresume.jpg", path: "/resume-marketing/singapore" },
+  { name: "New Zealand Resume Marketing", image: "/nzresume.jpg", path: "/resume-marketing/new-zealand" },
+  { name: "Malaysia Resume Marketing", image: "/malaysiaresume.jpg", path: "/resume-marketing/malaysia" },
+  { name: "Poland Resume Marketing", image: "/polandresume.jpg", path: "/resume-marketing/poland" },
+  { name: "Malta Resume Marketing", image: "/maltaresume.jpg", path: "/resume-marketing/malta" },
 ];
 const defaultVisa = {
   name: "Permanent Residency Visa",
@@ -131,35 +131,35 @@ const Migrate = () => {
               <div className="text-gray-700 text-lg leading-relaxed">
               Kickstart your career abroad with the perfect resume marketing strategy. Select your destination, and let us help you stand out to top employers!
               </div>
-            ) : selectedVisa.path === "/resume-marketing/canada-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/canada" ? (
               <CanadaPR />
-            ) : selectedVisa.path === "/resume-marketing/australia-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/australia" ? (
               <Australiapr />
-            ) : selectedVisa.path === "/resume-marketing/uk-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/uk" ? (
               <UKpr />
             ) : selectedVisa.path === "/PR-visas/newzelandpr" ? (
               <Newzelandpr />
-            ) : selectedVisa.path === "/resume-marketing/germany-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/germany" ? (
               <Germanybluecard />
-            ) : selectedVisa.path === "/resume-marketing/usa-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/usa" ? (
               <UsaStudy />
-            ) : selectedVisa.path === "/resume-marketing/denmark-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/denmark" ? (
               <Denmark />
-            ) : selectedVisa.path === "/resume-marketing/ireland-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/ireland" ? (
               <Ireland />
-            ) : selectedVisa.path === "/resume-marketing/dubai-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/dubai" ? (
               <Dubai />
-            ) : selectedVisa.path === "/resume-marketing/austria-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/austria" ? (
               <Austria />
-            ) : selectedVisa.path === "/resume-marketing/singapore-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/singapore" ? (
               <Singapore />
-            ) : selectedVisa.path === "/resume-marketing/new-zealand-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/new-zealand" ? (
               <Newzealand />
-            ) : selectedVisa.path === "/resume-marketing/malaysia-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/malaysia" ? (
               <Malaysia />
-            ) : selectedVisa.path === "/resume-marketing/poland-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/poland" ? (
               <Poland />
-            ) : selectedVisa.path === "/resume-marketing/malta-resume-marketing" ? (
+            ) : selectedVisa.path === "/resume-marketing/malta" ? (
               <Malta />
             ) : (
               <div className="text-gray-700 text-lg leading-relaxed">

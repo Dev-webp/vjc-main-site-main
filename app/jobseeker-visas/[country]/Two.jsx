@@ -13,17 +13,17 @@ import Portugal from "./Portugal";
 import Austria from "./Austria";
 
 const visaData = [
-  { name: "Germany Jobseeker Visa", path: "/jobseeker-visas/germany-jobseeker-visa", image: "/germanyjobseeker.jpg" },
-  { name: "Austria Jobseeker Visa", path: "/jobseeker-visas/austria-jobseeker-visa", image: "/AustriaJobseekerVisa.jpg" },
-  { name: "Portugal Jobseeker Visa", path: "/jobseeker-visas/portugal-jobseeker-visa", image: "/pr.png" },
-  { name: "Sweden Jobseeker Visa", path: "/jobseeker-visas/sweden-jobseeker-visa", image: "/sweden.jpg" },
-  { name: "Norway Jobseeker Visa", path: "/jobseeker-visas/norway-jobseeker-visa", image: "/norway.webp" },
-  { name: "UAE Jobseeker Visa", path: "/jobseeker-visas/uae-jobseeker-visa", image: "/uae.webp" },
+  { name: "Germany Jobseeker Visa", path: "/jobseeker-visas/germany", image: "/germanyjobseeker.jpg" },
+  { name: "Austria Jobseeker Visa", path: "/jobseeker-visas/austria", image: "/AustriaJobseekerVisa.jpg" },
+  { name: "Portugal Jobseeker Visa", path: "/jobseeker-visas/portugal", image: "/pr.png" },
+  { name: "Sweden Jobseeker Visa", path: "/jobseeker-visas/sweden", image: "/sweden.jpg" },
+  { name: "Norway Jobseeker Visa", path: "/jobseeker-visas/norway", image: "/norway.webp" },
+  { name: "UAE Jobseeker Visa", path: "/jobseeker-visas/uae", image: "/uae.webp" },
  
 ];
 const defaultVisa = {
-  name: "Permanent Residency Visa",
-  path: "/jobseeker",
+  name: "job seeker",
+  path: "/jobseeker-visas",
   image: "/pr1.jpg",
 };
 
@@ -115,17 +115,17 @@ const Migrate = () => {
               <div className="text-gray-700 text-lg leading-relaxed">
                 Please select a visa type from the left to view more detailed information about that particular Permanent Residency visa.
               </div>
-            ) : selectedVisa.path === "/jobseeker-visas/austria-jobseeker-visa" ? (
+            ) : selectedVisa.path === "/jobseeker-visas/austria" ? (
               <Austria />
-            ) : selectedVisa.path === "/jobseeker-visas/sweden-jobseeker-visa" ? (
+            ) : selectedVisa.path === "/jobseeker-visas/sweden" ? (
               <Sweden />
-            ) : selectedVisa.path === "/jobseeker-visas/norway-jobseeker-visa" ? (
+            ) : selectedVisa.path === "/jobseeker-visas/norway" ? (
               <Norway />
-            ) : selectedVisa.path === "/jobseeker-visas/uae-jobseeker-visa" ? (
+            ) : selectedVisa.path === "/jobseeker-visas/uae" ? (
               <Uae />
-            ) : selectedVisa.path === "/jobseeker-visas/germany-jobseeker-visa" ? (
+            ) : selectedVisa.path === "/jobseeker-visas/germany" ? (
               <Germany />
-            ) : selectedVisa.path === "/jobseeker-visas/portugal-jobseeker-visa" ? (
+            ) : selectedVisa.path === "/jobseeker-visas/portugal" ? (
               <Portugal />
             ) : (
               <div className="text-gray-700 text-lg leading-relaxed">

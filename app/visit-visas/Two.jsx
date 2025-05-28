@@ -7,16 +7,16 @@ import { Globe, ArrowRight } from "lucide-react";
 import Content from "./Content";
 
 const visaData = [
-  { name: "USA Visit Visa", path: "/visit-visas/usa-visit-visa", bg: "/usavisvitvisa.jpg" },
+  { name: "USA Visit Visa", path: "/visit-visas/usa", bg: "/usavisvitvisa.jpg" },
   { name: "USA B1/B2 Visa", path: "/visit-visas/usa-b1-b2-visa", bg: "/usabgh1h2.jpg" },
-  { name: "Canada Visit Visa", path: "/visit-visas/canada-visit-visa", bg: "/canadavisitvisa.avif" },
-  { name: "Australia Visit Visa", path: "/visit-visas/australia-visit-visa", bg: "/best-places-to-visit-in-Australia.jpg" },
-  { name: "UK Visit Visa", path: "/visit-visas/uk-visit-visa", bg: "/ukvisitvisas.jpg" },
-  { name: "Dubai Visit Visa", path: "/visit-visas/dubai-visit-visa", bg: "/dubaivisit.avif" },
-  { name: "Denmark Visit Visa", path: "/visit-visas/denmark-visit-visa", bg: "/denmarktimg.avif" },
-  { name: "Austria Visit Visa", path: "/visit-visas/austria-visit-visa", bg: "/austriavisit.jpg" },
-  { name: "Italy Visit Visa", path: "/visit-visas/italy-visit-visa", bg: "/italyvist.jpeg" },
-  { name: "Schengen Visit Visa", path: "/visit-visas/schengen-visit-visa", bg: "/schenvivas.jpg" },
+  { name: "Canada Visit Visa", path: "/visit-visas/canada", bg: "/canadavisitvisa.avif" },
+  { name: "Australia Visit Visa", path: "/visit-visas/australia", bg: "/best-places-to-visit-in-Australia.jpg" },
+  { name: "UK Visit Visa", path: "/visit-visas/uk", bg: "/ukvisitvisas.jpg" },
+  { name: "Dubai Visit Visa", path: "/visit-visas/dubai", bg: "/dubaivisit.avif" },
+  { name: "Denmark Visit Visa", path: "/visit-visas/denmark", bg: "/denmarktimg.avif" },
+  { name: "Austria Visit Visa", path: "/visit-visas/austria", bg: "/austriavisit.jpg" },
+  { name: "Italy Visit Visa", path: "/visit-visas/italy", bg: "/italyvist.jpeg" },
+  { name: "Schengen Visit Visa", path: "/visit-visas/schengen", bg: "/schenvivas.jpg" },
 ];
 
 const defaultVisa = {
