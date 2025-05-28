@@ -72,7 +72,7 @@ const Footer = () => {
         <Link href="/germany-opportunity-card" className="hover-underline">Settle in Germany</Link>
         </li>
         <li>
-        <Link href="/pr-visas/uk" className="hover-underline">Settle in UK</Link>
+        <Link href="/pr-visas/ukpr" className="hover-underline">Settle in UK</Link>
         </li>
         <li>
         <Link href="/pr-visas/usagreencard" className="hover-underline">Settle in USA</Link>

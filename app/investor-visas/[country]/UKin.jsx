@@ -78,7 +78,7 @@ const UKInnovatorVisa = () => {
         At <span className="text-orange-500 font-bold">VJC Overseas</span>, we’re committed to supporting your journey. Contact us today to get started!
       </p>
       <div className="text-center mt-6">
-        <Link href="/contact">
+        <Link href="/contact-us">
           <button className="bg-orange-500 text-white px-6 py-3 rounded-lg text-lg shadow-md hover:bg-orange-600 transition-all">
             Get Started
           </button>

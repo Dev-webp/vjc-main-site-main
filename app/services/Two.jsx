@@ -18,7 +18,7 @@ export default function ServicesCTA() {
       icon: <FaGlobeAmericas className="text-4xl text-orange-500" />,
       title: "Global Opportunities",
       desc: "Study or settle in your dream country with our guidance.",
-      link: "/workabroad",
+      link: "/work-abroad",
     },
     {
       icon: <FaUserGraduate className="text-4xl text-orange-500" />,
@@ -42,7 +42,7 @@ export default function ServicesCTA() {
       icon: <FaUniversity className="text-4xl text-orange-500" />,
       title: "Top University Access",
       desc: "Connect with reputed global institutions and programs.",
-      link: "/studyabroad",
+      link: "/study-abroad",
     },
     {
       icon: <FaBriefcase className="text-4xl text-orange-500" />,

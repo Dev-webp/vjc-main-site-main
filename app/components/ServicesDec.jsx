@@ -21,13 +21,13 @@ const ServicesDec = () => {
       icon: <FaPassport />, title: "PR Visa", content: "Premium Immigration Services For PR Visas To Australia, Canada, New Zealand Etc.", image: "/PR Visa.png", link: "/pr-visas",
     },
     {
-      icon: <FaUniversity />, title: "Student Visa", content: "Apply for student visas from the hands of an experienced professional team.", image: "/Student-Visa.png", link: "/studyabroad",
+      icon: <FaUniversity />, title: "Student Visa", content: "Apply for student visas from the hands of an experienced professional team.", image: "/Student-Visa.png", link: "/study-abroad",
     },
     {
       icon: <FaRegHandshake />, title: "Jobseeker Visa", content: "Get started now to open doors with our three-step Jobseeker Visa services that speak for themselves.", image: "/job.png", link: "/jobseeker-visas",
     },
     {
-      icon: <FaMapMarkerAlt />, title: "Visit Visa/Dependent Visa", content: "Visit and dependent visa processing across the globe in a matter of days.", image: "/Visit Visa.png", link: "/visitvisas",
+      icon: <FaMapMarkerAlt />, title: "Visit Visa/Dependent Visa", content: "Visit and dependent visa processing across the globe in a matter of days.", image: "/Visit Visa.png", link: "/visit-visas",
     },
     {
       icon: <FaChalkboardTeacher />, title: "Coaching", content: "Get a high score with guidance from our certified English language specialists.", image: "/33.png", link: "/coaching",
