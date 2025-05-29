@@ -63,7 +63,7 @@ const Migrate = () => {
     <>
       {/* 🔷 Hero Section with Background Image */}
       <section
-        className="bg-cover bg-center transition-all duration-500 pt-10 pb-24"
+        className="bg-cover bg-center lg:h-[740px] transition-all duration-500 pt-10 pb-24"
         style={{
           backgroundImage: `url(${background})`,
         }}
