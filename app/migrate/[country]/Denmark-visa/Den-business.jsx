@@ -1,104 +1,155 @@
-import React from 'react';
-import Image from 'next/image';
-
+import React from "react";
+import Image from "next/image";
 
 const Denbusiness = () => {
-    return (
-        <div className="m-2 p-2" style={{
-            fontFamily: "Times New Roman", backgroundColor: 'white', position: 'relative',
-            overflow: 'hidden',
-        }}>
-            <div style={{ marginBottom: '5%' }}>
-                <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-                    Denmark Business Visa  - VJC Overseas<span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
-                </h3>
-            </div>
-            <p className='mb-6'>
-                Are you planning to explore business opportunities in Denmark? Whether you are attending meetings, conferences, negotiations, or expanding your business network, a <b>Denmark Business Visa</b> is your gateway to engaging with Denmark’s vibrant economy. At VJC Overseas, we simplify the process of obtaining a business visa for Denmark, ensuring a smooth and hassle-free experience.
-            </p>
+  return (
+    <div
+      className="m-2 p-2"
+      style={{
+        fontFamily: "Times New Roman",
+        backgroundColor: "white",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      <div style={{ marginBottom: "5%" }}>
+        <h3 className="text-2xl mt-4 font-semibold text-black text-center">
+          Migrate to Denmark –{" "}
+          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+        </h3>
+      </div>
 
-            <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-                <div className="flex-shrink-0 mx-auto lg:mx-0">
-                    <Image
-                        src="/assets/Denbusiness.png"
-                        alt="Australia Business Visa"
-                        width={500} // Replace with your image's actual width
-                        height={300}
+      <p className="mb-6">
+        Thinking of a better work-life balance, modern infrastructure, and a
+        future full of opportunities? Migrating to Denmark gives you access to a
+        high standard of living, strong social welfare, and a welcoming,
+        inclusive society.
+      </p>
 
-                        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
-                    />
-                </div>
+      <p className="mb-6">
+        Whether you're a skilled professional, entrepreneur, student, or someone
+        looking for permanent settlement, Denmark’s immigration system is
+        structured to attract global talent and innovation.
+      </p>
+      <div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+        <Image
+          src="/migrate/migrate-denmark.png"
+          alt="Migrate - Apply Now"
+          width={900}
+          height={630}
+          className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+          priority
+          unoptimized
+        />
+      </div>
+      <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+        <div>
+          <h4 className="mb-6 text-sky-700">Why Choose Denmark?</h4>
 
-                <div>
-                    <h4 className="mb-6  text-sky-700">Why Choose Denmark for Business?</h4>
-
-                    <p className="mb-6">Denmark is one of Europe’s most attractive business destinations, known for its innovation-driven economy, strong business infrastructure, and a thriving start-up ecosystem. With a strategic location within the European Union and a favourable business environment, Denmark is the perfect place to establish connections and explore new business ventures.</p>
-                </div>
-            </div>
-            <div className="mb-6">
-                <h2 className="mb-6  text-sky-700">Types of Denmark Business Visas</h2>
-
-                <p className='mb-6'>Depending on the purpose and length of your stay, there are different types of Denmark Business Visas available:</p>
-
-                <ul className='ml-8 list-disc mb-6'>
-                    <li><b>1.	Short-term Business Visa (Schengen Visa) </b> For business visits up to 90 days within a 180-day period.</li>
-                    <li><b>2.	Long-term Business Visa </b>For business stays exceeding 90 days, often linked with specific business projects or assignments.</li>
-
-                </ul>
-
-                <p className="mb-6">Whether you’re looking to attend a conference, meet clients, or establish a new business relationship, we can help you choose the right visa category for your needs.</p>
-
-                <h4 className="mb-6  text-sky-700">Requirements for Denmark Business Visa</h4>
-
-                <p className="mb-6">To apply for a Denmark Business Visa, applicants must meet specific requirements, including:</p>
-                <ul className='list-disc mb-6 ml-8'>
-                    <li>A valid passport with at least 3 months validity beyond the planned stay.</li>
-                    <li>Completed visa application form.</li>
-                    <li>Passport-sized photographs meeting Schengen standards.</li>
-                    <li>Proof of financial stability (bank statements, salary slips, etc.).</li>
-                    <li>Invitation letter from a Danish company, detailing the purpose and duration of your visit.</li>
-                    <li>Travel itinerary, including flight bookings and hotel accommodation.</li>
-                    <li>Proof of business ties, such as business registration documents, prior correspondence, or contracts.</li>
-                    <li>Health insurance covering the entire stay in Denmark (minimum coverage of 30,000 EUR).</li>
-                </ul>
-
-                <h4 className="mb-6 text-sky-700">Denmark Business Visa Processing Time</h4>
-                <p>The processing time for a Denmark Business Visa typically takes <b>10 to 15 working days</b>. However, it is advisable to apply at least <b>3 to 4 weeks</b> before your intended travel date to avoid any last-minute delays, especially during peak application seasons. In certain cases, the processing time may vary based on your nationality, application volume, and the completeness of your documents.</p>
-            </div>
-
-            <div className="mb-6">
-                <h4 className="mb-6 text-sky-700">Denmark Business Visa Fees</h4>
-                <p className='mb-6'>The visa fees for a Denmark Business Visa are as follows:</p>
-                <ul className='ml-8 mb-6 list-disc'>
-                    <li><b>Short-term Schengen Business Visa (up to 90 days): </b>  €80 (approx. INR 7,000)</li>
-                    <li><b>Long-term Business Visa (over 90 days): </b> Fees may vary depending on the nature of the business visit and visa type. Please contact us for an accurate quote.</li>
-
-                </ul>
-                <p className='mb-6'>For children between the ages of 6 and 12, a reduced fee of €40 may apply. Children under the age of 6 are usually exempt from visa fees.</p>
-                <p className='mb-6'>Please note that these fees are subject to change based on consular rules, and additional service fees may apply when using our visa services.</p>
-
-                <h4 className="mb-6 text-sky-700">Why Choose VJC Overseas for Your Denmark Business Visa?</h4>
-
-                <p className="mb-6">At VJC Overseas, we are committed to providing professional visa assistance with a focus on accuracy, transparency, and efficiency. Our experienced team will guide you through the entire application process, ensuring that you meet all necessary requirements for a successful visa outcome.</p>
-
-                <ul className='ml-8 mb-6 list-disc'>
-                    <li><b>Expert Guidance: </b> We’ll help you complete your application correctly and prepare all necessary documents.</li>
-                    <li><b>Fast Processing: </b> We prioritize time-sensitive applications and help expedite the process where possible.</li>
-                    <li><b>End-to-End Support:</b> From filling out the visa form to booking appointments, we handle every step for you.</li>
-                </ul>
-
-                <h4 className='mb-6 text-sky-700'>Get Started Today</h4>
-
-                <p className="mb-6">If you’re ready to take your business to Denmark, our team is here to assist you. Contact us today to begin your <b>Denmark Business Visa application</b> and explore the endless opportunities waiting for you in one of Europe’s leading business hubs.</p>
-
-                <p className='font-bold mb-6'>For more information or to schedule a consultation, contact VJC Overseas at +91-9160449000.</p>
-
-                <hr style={{ borderColor: 'black' }} className="mb-6" />
-
-                <p>Please remember that visa rules and fees are subject to change, so it’s always best to consult with us or the relevant consulate for the latest updates before proceeding with your application.</p>
-            </div>
+          <ul className="list-disc list-inside mb-6 text-[16px] text-black">
+            <li>
+              Ranked among the happiest and most livable countries in the world,
+              Denmark offers a holistic lifestyle focused on family, career
+              growth, and community.
+            </li>
+            <li>
+              Thriving Job Market – Demand in IT, engineering, healthcare,
+              education, and construction
+            </li>
+            <li>
+              Work-Life Balance – 37-hour work week, generous holidays, and
+              employee rights
+            </li>
+            <li>
+              Free or Low-Cost Education – Especially for EU/EEA residents and
+              PhD students
+            </li>
+            <li>
+              Eco-Friendly Living – Green cities, cycling culture, and clean
+              public transport
+            </li>
+            <li>
+              Strong Welfare System – Quality healthcare, parental benefits, and
+              social security
+            </li>
+            <li>
+              Safe & Inclusive Society – Low crime rates and equal rights for
+              all residents
+            </li>
+          </ul>
         </div>
-    );
-}
+      </div>
+
+      <div className="mb-6">
+        <h2 className="mb-6 text-sky-700">
+          Popular Denmark Visa & Residence Permit Options
+        </h2>
+
+        <ul className="list-disc list-inside mb-6 text-[16px] text-black">
+          <li>
+            <b>Denmark Positive List Scheme:</b> For skilled professionals whose
+            occupations are in shortage in Denmark (e.g., nurses, engineers, IT
+            professionals)
+          </li>
+          <li>
+            <b>The Pay Limit Scheme:</b> For high-income professionals with a
+            job offer paying above the threshold (DKK 375,000+ per year)
+          </li>
+          <li>
+            <b>Student Visa / Study Permit:</b> For international students
+            accepted into full-time higher education programs
+          </li>
+          <li>
+            <b>Family Reunification Visa:</b> For spouses, partners, and
+            children of Danish citizens or legal residents
+          </li>
+          <li>
+            <b>Startup Denmark Visa:</b> For entrepreneurs with innovative
+            business ideas approved by the Danish Business Authority
+          </li>
+          <li>
+            <b>Permanent Residency & Danish Citizenship:</b> Available after
+            several years of continuous residence and integration
+          </li>
+        </ul>
+      </div>
+
+      <div className="mb-6">
+        <h3 className="mb-6 text-sky-700">Who Can Migrate to Denmark?</h3>
+
+        <ul className="list-disc list-inside mb-6 text-[16px] text-black">
+          <li>Hold a job offer from a Danish employer</li>
+          <li>Work in a profession listed under Denmark’s Positive List</li>
+          <li>Are pursuing higher education in Denmark</li>
+          <li>Want to establish or grow a business in Denmark</li>
+          <li>Have close family members legally living in Denmark</li>
+          <li>
+            Meet language, income, and integration requirements (for PR or
+            citizenship)
+          </li>
+        </ul>
+      </div>
+
+      <div className="mb-6">
+        <h3 className="mb-6 text-sky-700">
+          Denmark Migration Process – Step-by-Step
+        </h3>
+
+        <ol className="list-decimal list-inside mb-6 text-[16px] text-black">
+          <li>Choose Your Visa Pathway (Work, Study, Family, Business)</li>
+          <li>Secure a Job/Admission Offer or Prepare Business Plan</li>
+          <li>Gather Documentation (ID, contracts, education proof, etc.)</li>
+          <li>Apply Online via SIRI (Danish Immigration Service)</li>
+          <li>Await Processing (usually 1–3 months)</li>
+          <li>Receive Residence Permit and Move to Denmark</li>
+          <li>
+            Apply for Permanent Residency (after 8 years or earlier, if
+            eligible)
+          </li>
+        </ol>
+      </div>
+    </div>
+  );
+};
 
 export default Denbusiness;

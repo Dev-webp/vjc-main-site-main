@@ -12,13 +12,7 @@ const Form = () => {
   const [formStatus, setFormStatus] = useState(null);
   const [loading, setLoading] = useState(false);
   const [popupVisible, setPopupVisible] = useState(false);
- const [landingPage, setLandingPage] = useState('');
-// Capture current page URL
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setLandingPage(window.location.href);
-    }
-  }, []);
+
   useEffect(() => {
     if (popupVisible) {
       const timeout = setTimeout(() => {
@@ -41,7 +35,6 @@ const Form = () => {
       qualification,
       country,
       message,
-      landingPage, 
     };
 
     try {

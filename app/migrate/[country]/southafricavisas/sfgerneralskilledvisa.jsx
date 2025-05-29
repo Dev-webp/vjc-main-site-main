@@ -2,61 +2,82 @@ import React from 'react'
 import Image from 'next/image'
 
 const Newzebusiness = () => {
-    return (
-        <div className="w-full flex justify-start px-1 mb-20 bg-white">
-        <div className="w-full bg-white text-black px-1 md:px-16">
-            <h2></h2>
-            <h1 className="text-2xl font-bold mb-6 text-center text-black">
-            Welcome to <span className="text-orange-500">VJC Overseas</span>: Your Trusted Partner for South Africa Critical Skills Visa
-        </h1>
-        <p className="text-lxl leading-relaxed mb-6 mt-10">
-            Are you a skilled professional looking to build a successful career in South Africa? With the demand for highly qualified workers in various sectors, the South Africa Critical Skills Visa offers an excellent opportunity for professionals from across the globe, especially those from India, to live and work in this dynamic country.
+  return (
+    <div>  {/* Added a root div here */}
+      {/* New South Africa Migration Content */}
+      <div className="mt-12 pt-4 px-0 md:px-4 text-black bg-white">
+        <h2 className="text-2xl font-bold mb-6 text-center text-orange-600">
+          Migrate to South Africa – Live Where Culture, Opportunity, and Nature Meet
+        </h2>
+        <p className="mb-6 leading-relaxed text-lg text-sky-600">
+          Looking for a life filled with sunshine, cultural richness, career opportunities, and world-class landscapes? Migrating to South Africa offers a vibrant lifestyle and an exciting gateway to the African continent.
         </p>
-        <p className="text-lxl leading-relaxed mb-6">
-            At VJC Overseas, we are proud to be recognized as one of the Best South Africa Critical Skills Visa Consultants in India, with specialized teams in Hyderabad and Bengaluru. Whether you're an experienced professional in the fields of engineering, healthcare, IT, or any other critical skill sector, our expert consultants will guide you every step of the way to secure your visa and embark on a successful new chapter in South Africa.
+        <p className="mb-6 leading-relaxed text-lg text-sky-600">
+          Whether you're seeking new career paths, entrepreneurial opportunities, or a peaceful retirement, South Africa welcomes skilled professionals, investors, families, and students from around the world.
         </p>
-        
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-orange-600">Why Choose VJC Overseas for Your South Africa Critical Skills Visa?</h2>
-        <ul className="list-disc list-inside space-y-2">
-            <li><strong className="text-gray-400">Expert Consultation Across India:</strong> Our team provides tailored services across India, ensuring you receive the highest level of guidance.</li>
-            <li><strong className="text-gray-400">In-Depth Knowledge of Critical Skills Sectors:</strong> We specialize in engineering, healthcare, IT, teaching, finance, and more.</li>
-            <li><strong className="text-gray-400">Comprehensive Visa Application Assistance:</strong> We streamline the process, ensuring all documents meet eligibility criteria.</li>
-            <li><strong className="text-gray-400">Professional Networking Support:</strong> We help you connect with potential employers in South Africa.</li>
-            <li><strong className="text-gray-400">Local Expertise in Hyderabad and Bengaluru:</strong> Our experienced consultants provide personalized services.</li>
+        <div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+                <Image
+                  src="/migrate/migrate-southafrica.png"
+                  alt="Migrate - Apply Now"
+                  width={900}
+                  height={630}
+                  className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+                  priority
+                  unoptimized
+                />
+              </div>
+
+        <h3 className="text-xl font-semibold mb-4 text-orange-600">Why Migrate to South Africa?</h3>
+        <ul className="list-disc list-inside mb-6 space-y-2 text-gray-700">
+          <li><strong>Booming Sectors:</strong> Demand in IT, engineering, healthcare, finance, and mining</li>
+          <li><strong>Breathtaking Scenery:</strong> Safaris, beaches, vineyards, and mountains</li>
+          <li><strong>Affordable Living:</strong> Lower cost of living compared to many Western countries</li>
+          <li><strong>Cultural Diversity:</strong> 11 official languages and a welcoming population</li>
+          <li><strong>Path to Long-Term Residency:</strong> Options for work, business, and permanent residency</li>
         </ul>
-        
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-orange-600">Pay Scale and Career Prospects in South Africa</h2>
-        <ul className="list-disc list-inside space-y-2">
-            <li><strong className="text-gray-400">Engineers:</strong> ₹6,00,000 to ₹12,00,000 per annum</li>
-            <li><strong className="text-gray-400">Healthcare Professionals:</strong> ₹5,00,000 to ₹15,00,000 per annum</li>
-            <li><strong className="text-gray-400">IT Professionals:</strong> ₹8,00,000 to ₹15,00,000 per annum</li>
-            <li><strong className="text-gray-400">Accountants/Financial Managers:</strong> ₹6,00,000 to ₹14,00,000 per annum</li>
-            <li><strong className="text-gray-400">Teachers:</strong> ₹3,50,000 to ₹7,00,000 per annum</li>
+
+        <h3 className="text-xl font-semibold mb-4 text-orange-600">Popular South African Visa Categories</h3>
+        <ul className="list-disc list-inside mb-6 space-y-2 text-gray-700">
+          <li><strong>Critical Skills Work Visa:</strong> For professionals with expertise listed on South Africa’s Critical Skills List (e.g., ICT, engineering, medical, teaching)</li>
+          <li><strong>General Work Visa:</strong> For those with a confirmed job offer and labor market approval</li>
+          <li><strong>Business Visa:</strong> Ideal for investors or entrepreneurs planning to start or buy a business in South Africa</li>
+          <li><strong>Study Visa:</strong> For international students enrolled at a South African institution</li>
+          <li><strong>Relative’s & Spousal Visa:</strong> For partners, spouses, or dependents of South African citizens or permanent residents</li>
+          <li><strong>Permanent Residency Permit:</strong> Available for individuals who qualify via work, investment, or long-term stay</li>
         </ul>
-        
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-orange-600">Living Expenses in South Africa</h2>
-        <ul className="list-disc list-inside space-y-2">
-            <li><strong className="text-gray-400">Rent:</strong> ₹25,000 to ₹50,000 for a 1-bedroom apartment</li>
-            <li><strong className="text-gray-400">Utilities:</strong> ₹5,000 to ₹8,000 per month</li>
-            <li><strong className="text-gray-400">Food & Groceries:</strong> ₹15,000 to ₹25,000 per month</li>
-            <li><strong className="text-gray-400">Transport:</strong> ₹10,000 to ₹15,000 per month</li>
-            <li><strong className="text-gray-400">Health Insurance:</strong> ₹5,000 to ₹10,000 per month</li>
+
+        <h3 className="text-xl font-semibold mb-4 text-orange-600">Who Is Eligible to Migrate?</h3>
+        <ul className="list-disc list-inside mb-6 space-y-2 text-gray-700">
+          <li>Are a skilled professional with qualifications in demand</li>
+          <li>Have a job offer or intention to establish a business</li>
+          <li>Meet financial or investment thresholds (for business visa)</li>
+          <li>Have family ties in South Africa</li>
+          <li>Meet health and character requirements</li>
         </ul>
-        
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-orange-600">Why Trust VJC Overseas?</h2>
-        <ul className="list-disc list-inside space-y-2">
-            <li><strong className="text-gray-400">Proven Track Record:</strong> We have successfully helped hundreds obtain their South Africa visas.</li>
-            <li><strong className="text-gray-400">Client-Centered Approach:</strong> We provide dedicated support from consultation to approval.</li>
-            <li><strong className="text-gray-400">Transparent & Ethical Services:</strong> No hidden fees or surprise costs.</li>
+
+        <h3 className="text-xl font-semibold mb-4 text-orange-600">South Africa Migration Process – Step-by-Step</h3>
+        <ol className="list-decimal list-inside mb-6 space-y-2 text-gray-700">
+          <li>Choose Your Visa Type</li>
+          <li>Gather Required Documentation</li>
+          <li>Apply via VFS or South African Mission</li>
+          <li>Attend Biometrics Appointment</li>
+          <li>Wait for Visa Processing</li>
+          <li>Receive Visa and Prepare for Relocation</li>
+          <li>Apply for PR (If eligible after temporary stay)</li>
+        </ol>
+
+        <h3 className="text-xl font-semibold mb-4 text-orange-600">Key Documents Often Required:</h3>
+        <ul className="list-disc list-inside mb-6 space-y-2 text-gray-700">
+          <li>Valid passport</li>
+          <li>Qualifications and experience proof</li>
+          <li>Police clearance</li>
+          <li>Health certificate</li>
+          <li>Job offer or business plan (if applicable)</li>
+          <li>Proof of funds</li>
         </ul>
-        
-        <h2 className="text-2xl font-bold mt-8 mb-4 text-black">Start Your Journey Today with VJC Overseas</h2>
-        <p className="text-1xl leading-relaxed mb-6">
-            South Africa is calling for talented professionals, and VJC Overseas is here to help you take the first step toward a rewarding career. Contact us today for expert guidance on the South Africa Critical Skills Visa!
-        </p>
-        </div>
+      </div>
     </div>
-    )
+  )
 }
 
 export default Newzebusiness

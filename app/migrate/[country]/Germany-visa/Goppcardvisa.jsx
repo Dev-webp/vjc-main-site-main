@@ -3,94 +3,118 @@ import Image from "next/image";
 
 const Content = () => {
   return (
-    
-    <div style={{
-        position: 'relative', 
-        padding: '50px', 
-        boxSizing: 'border-box',
-        backgroundColor: 'white', 
-        fontFamily:'Times New Roman',
-        position: 'relative',
-  overflow: 'hidden',
+    <div
+      style={{
+        position: "relative",
+        padding: "50px",
+        boxSizing: "border-box",
+        backgroundColor: "white",
+        fontFamily: "Times New Roman",
+        overflow: "hidden",
+      }}
+    >
+      <div style={{ marginBottom: "40px" }}>
+        <h3 className="text-2xl font-semibold text-orange-600 text-center">
+          Migrate to Germany – Your Gateway to a Brighter Future
+        </h3>
+      </div>
 
-      }}>
-      <div style={{marginBottom: '40px' }}>
-  <h3 className="text-2xl font-semibold text-black text-center">
-  Germany Opportunity Card – Your Gateway to a Bright Future - <span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
-  </h3>
-</div>
-
-        
-     
-      <p style={{ marginBottom: '20px' }}>
-        At VJC Overseas, we take immense pride in offering one of the most promising pathways to secure a future in Germany: the Germany Opportunity Card. This new, innovative initiative has opened up exciting prospects for skilled professionals, allowing them to live and work in one of Europe’s most thriving economies.
+      <p style={{ marginBottom: "20px" }}>
+        Dreaming of a fresh start in one of Europe’s strongest economies?{" "}
+        <span className="text-sky-600 font-medium">Germany</span> offers a
+        wealth of opportunities for skilled professionals, students,
+        entrepreneurs, and families. Whether you're seeking world-class
+        education, high-paying jobs, or a stable lifestyle — migrating to
+        Germany could be your smartest move yet.
       </p>
-      
 
-      <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+      <h3 className="text-orange-600 font-bold mb-2">Why Choose Germany?</h3>
+      <ul className="mb-5 list-disc pl-5 text-gray-800">
+        <li>
+          <strong className="text-sky-600">Thriving Job Market:</strong> Germany
+          is actively seeking international talent in IT, engineering,
+          healthcare, and more.
+        </li>
+        <li>
+          <strong className="text-sky-600">Free or Low-Cost Education:</strong>{" "}
+          Study at prestigious public universities without heavy tuition fees.
+        </li>
+        <li>
+          <strong className="text-sky-600">
+            Stable Economy & High Living Standards:
+          </strong>{" "}
+          Enjoy a safe, efficient, and high-quality lifestyle.
+        </li>
+        <li>
+          <strong className="text-sky-600">Path to Permanent Residency:</strong>{" "}
+          Germany offers clear routes to PR and citizenship.
+        </li>
+      </ul>
 
-  <div className="flex-shrink-0 mx-auto lg:mx-0">
-    <Image
-      src="/gocimg.png"
-      alt="Image description"
-      width={500} // Replace with your image's actual width
-      height={300}
-      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
-    />
-  </div>
+      <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+        <Image
+          src="/migrate/migrate-germany.png"
+          alt="Migrate - Apply Now"
+          width={900}
+          height={630}
+          className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+          priority
+          unoptimized
+        />
+      </div>
 
-  {/* Text Section */}
-  <div className="px-4 lg:px-0">
-    <h3 className="text-black font-bold mb-4 text-lg sm:text-xl">
-      What is the Germany Opportunity Card?
-    </h3>
-    <p className="mb-4 text-sm sm:text-base">
-      The Germany Opportunity Card is a new immigration pathway designed for
-      highly skilled workers from outside the European Union to move to
-      Germany. The card offers a flexible and faster approach to obtaining a
-      residence permit for work purposes, especially for those in fields where
-      there is a recognized skills shortage.
-    </p>
-   
-  </div>
-</div>
-      
-<p className="hidden lg:block">
-  This opportunity card is the perfect solution for individuals seeking to
-  explore career opportunities, enhance professional growth, and experience
-  life in one of the world’s most advanced countries.
-</p>
+      <h3 className="text-orange-600 font-bold mb-2">
+        Popular German Visa Options
+      </h3>
+      <ul className="mb-5 list-disc pl-5 text-gray-800">
+        <li>
+          <strong className="text-sky-600">Skilled Worker Visa:</strong> For
+          professionals with recognized qualifications.
+        </li>
+        <li>
+          <strong className="text-sky-600">Germany Opportunity Card:</strong> A
+          points-based pathway to live and work in Germany.
+        </li>
+        <li>
+          <strong className="text-sky-600">Student Visa:</strong> Study in
+          top-ranked universities with global recognition.
+        </li>
+        <li>
+          <strong className="text-sky-600">Job Seeker Visa:</strong> Stay in
+          Germany for up to 6 months while finding employment.
+        </li>
+        <li>
+          <strong className="text-sky-600">Family Reunion Visa:</strong> Join
+          your spouse or family already living in Germany.
+        </li>
+      </ul>
 
-
-
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Why Choose VJC Overseas?</h3>
-      <p style={{ marginBottom: '20px' }}>
-        At VJC Overseas, our mission is to simplify the process for professionals looking to move to Germany. With our unparalleled expertise and deep understanding of the German immigration system, we ensure that every step of your application is handled with care, precision, and efficiency.
+      <h3 className="text-orange-600 font-bold mb-2">
+        Your Migration Journey, Simplified
+      </h3>
+      <p className="mb-5">
+        At <strong className="text-sky-600">VJC Overseas</strong>, we make your
+        dream of migrating to Germany a reality:
       </p>
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Why is the Germany Opportunity Card a Game Changer?</h3>
-      <ul style={{ marginBottom: '20px' }}>
-        <li><strong style={{color:'rgb(3, 60, 65)', fontWeight:'bolder'}}>1.Faster Processing Times:</strong> The new card allows quicker processing of skilled professionals into Germany`s workforce.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>2.Job Flexibility:</strong> The Germany Opportunity Card allows professionals to enter Germany without needing a prior job offer. You can arrive in Germany and search for a job within your field of expertise once you’re there.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>3.Permanent Residency Path:</strong> After holding the Germany Opportunity Card for a certain number of years, you may be eligible to apply for permanent residency.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>4.Visa Approvals at Record Speed:</strong> Our proven approach ensures that applications are handled efficiently, increasing the likelihood of approval and reducing delays.</li>
+      <ul className="mb-5 list-disc pl-5 text-gray-800">
+        <li>Free Eligibility Assessment</li>
+        <li>Document Verification & Application Guidance</li>
+        <li>Visa Filing & Interview Prep</li>
+        <li>Pre-Departure and Settlement Support</li>
       </ul>
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>VJC Overseas – Your Trusted Partner for Success</h3>
-      <p style={{ marginBottom: '20px' }}>Here at VJC Overseas, we pride ourselves on providing clear, transparent, and expert guidance throughout your journey.</p>
-      <p style={{ marginBottom: '20px' }}>We understand that relocating to a new country can feel overwhelming, but our team is here to make the process seamless and stress-free.</p>
-      <p style={{ marginBottom: '20px' }}>Our unparalleled success in securing visas — with new approvals coming in every alternate day — speaks volumes about our dedication and expertise.</p>
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>The VJC Overseas Advantage:</h3>
-      <ul style={{ marginBottom: '20px', listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>Expert Consultation:</strong> We provide tailored advice on the most effective path for your individual needs.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>Customized Job Search Assistance:</strong> Our extensive network of German employers helps you find the right job to match your skills.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>Comprehensive Visa Support:</strong> From start to finish, we assist with all the required documentation and processes for a smooth visa approval.</li>
-        <li><strong style={{color:'rgb(3, 60, 65)'}}>Rapid Success Rate:</strong> With visa approvals every alternate day, we have earned a reputation for being reliable, fast, and results-oriented.</li>
+
+      <p className="mb-5">
+        Our dedicated experts help you every step of the way — from choosing the
+        right visa to settling in your new home.
+      </p>
+
+      <h3 className="text-orange-600 font-bold mb-2">Who Can Apply?</h3>
+      <ul className="mb-10 list-disc pl-5 text-gray-800">
+        <li>Professionals with degrees/diplomas</li>
+        <li>Students who want international education</li>
+        <li>Entrepreneurs and freelancers</li>
+        <li>Recent graduates looking for global careers</li>
       </ul>
-      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' , color:'brown', fontWeight:'bold' }}>Success Stories</h3>
-      <p style={{ marginBottom: '20px',fontFamily:'cursive', fontSize:'14px' }}>We are proud to have helped hundreds of professionals and families successfully relocate to Germany. Hear from our satisfied clients who are now thriving in their new careers:</p>
-      <p style={{ marginBottom: '20px',fontFamily:'cursive', fontSize:'14px' }}>``I never thought that applying for the Germany Opportunity Card would be this easy. Thanks to VJC Overseas, my visa was approved quickly, and I found a great job within just a few months.`` — Anjali S., Software Developer</p>
-      <h3 style={{ marginBottom: '20px',fontFamily:'cursive', fontSize:'14px', fontWeight:'bolder' }}>Start Your Journey Today</h3>
-      <p style={{ marginBottom: '20px',fontFamily:'cursive', fontSize:'14px' }}>Ready to take the next step in your career? The Germany Opportunity Card offers a unique chance to live, work, and thrive in one of Europe’s most prosperous countries. With VJC Overseas, your path to success is just a few steps away.</p>
-      <p style={{ marginBottom: '20px', fontSize:'15px', fontWeight:'bolder' }}>Contact us today for a free consultation and let us guide you toward securing your Germany Opportunity Card.</p>
     </div>
   );
 };

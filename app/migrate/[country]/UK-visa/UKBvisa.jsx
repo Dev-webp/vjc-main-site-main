@@ -1,80 +1,89 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
-const Content = () => {
-    return (
-        <div style={{
-          position: 'relative',
-          padding: '50px',
-          boxSizing: 'border-box',
-          backgroundColor: 'white',
-          fontFamily: 'Times New Roman',
-          overflow: 'hidden',
-          marginTop:'-7%',
-        }}>
-          <div style={{ marginBottom: '40px', marginTop:'20px' }}>
-            <h3 className="text-2xl font-semibold text-black text-center">
-              UK Business Visa: Your Gateway to Expanding Opportunities with - <span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
-            </h3>
-          </div>
-      
-         
-          <p style={{ marginBottom: '20px' }}>
-            Are you looking to expand your business or investment prospects in the UK? The UK, with its world-class infrastructure, stable economy, and global market access, offers tremendous opportunities for entrepreneurs, investors, and business professionals. Whether youre attending meetings, negotiating deals, or establishing long-term business ventures, a UK Business Visa can be your passport to success.
-          </p>
-      
-          <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-            <div className="flex-shrink-0 mx-auto lg:mx-0">
-              <Image
-                src="/UKBuisnessimage.jpg"
-                alt="UK Business Visa Image"
-                width={500} // Replace with your image's actual width
-                height={300}
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
-              />
-            </div>
-      
-            <div className="px-4 lg:px-0">
-              <h3 className="text-black font-bold mb-4 text-lg sm:text-xl">
-                Types of UK Business Visas
-              </h3>
-              <p className="mb-4 text-sm sm:text-base">
-                The UK offers several types of business-related visas, each tailored to different needs and circumstances. Understanding which one is right for you is crucial to ensuring your visa application process is smooth and efficient.
-              </p>
-              <li><strong style={{ color: 'rgb(3, 60, 65)', fontWeight: 'bolder' }}>UK Start-up Visa:</strong> Ideal for entrepreneurs who want to establish a new business in the UK.</li>
-              <li  style={{marginBottom:'20px'}}><strong style={{ color: 'rgb(3, 60, 65)' }}>UK Innovator Visa:</strong> For experienced businesspeople with a viable business idea and £50,000 investment funds.</li>
-            </div>
-          </div>
-      
-          <ul style={{ marginBottom: '20px', listStyleType: 'disc', paddingLeft: '20px' }}>
-           
-            <li><strong style={{ color: 'rgb(3, 60, 65)' }}>UK Investor Visa (Tier 1):</strong> Designed for individuals with at least £2 million to invest in the UK.</li>
-            <li><strong style={{ color: 'rgb(3, 60, 65)' }}>UK Sole Representative Visa:</strong> For senior employees representing overseas companies in the UK.</li>
-            <li><strong style={{ color: 'rgb(3, 60, 65)' }}>UK Global Talent Visa:</strong> Aimed at highly skilled individuals in sectors like technology, science, and business.</li>
-          </ul>
-      
-          <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Why Choose VJC Overseas?</h3>
-          <p style={{ marginBottom: '20px' }}>
-            Navigating the complexities of the UK Business Visa process requires careful planning and expert guidance. VJC Overseas has a team of experienced consultants who can provide you with personalised support to successfully secure a UK Business Visa.
-          </p>
-      
-          <ul style={{ marginBottom: '20px', listStyleType: 'disc', paddingLeft: '20px' }}>
-            <li><strong style={{ color: 'rgb(3, 60, 65)' }}>Expert Consultation:</strong> Tailored advice on the most effective visa for your goals.</li>
-            <li><strong style={{ color: 'rgb(3, 60, 65)' }}>Document Preparation:</strong> Assistance in gathering and preparing all necessary documents.</li>
-            <li><strong style={{ color: 'rgb(3, 60, 65)' }}>Application Submission:</strong> Efficient handling of the application process.</li>
-            <li><strong style={{ color: 'rgb(3, 60, 65)' }}>Ongoing Support:</strong> Continuous assistance from application to arrival in the UK.</li>
-          </ul>
-      
-          <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px', color: 'brown' }}>Start Your Journey Today</h3>
-          <p style={{ marginBottom: '20px', fontSize: '15px' }}>
-            Ready to take the next step? Contact VJC Overseas today for a consultation on your UK Business Visa application. Our expert team is dedicated to helping you succeed in your business ventures and ensuring that your visa application process is as seamless as possible.
-          </p>
-        </div>
-      );
-      
-  
-    
-    
+const MigrateToUK = () => {
+  return (
+    <div className="m-2 p-2" style={{
+      fontFamily: "Times New Roman",
+      backgroundColor: 'white',
+      position: 'relative',
+      overflow: 'hidden',
+    }}>
+      <h2 className="text-2xl font-bold text-center mt-4 mb-6">Migrate to the United Kingdom – <span className="text-red-600">Your British Dream Starts Here</span></h2>
+
+      <p className="mb-6 m-2">The United Kingdom remains one of the most attractive destinations for individuals seeking high-quality education, career advancement, healthcare access, and cultural richness. Whether you're a skilled worker, student, entrepreneur, or family – migrating to the UK opens doors to a prosperous future.</p>
+
+      <p className="mb-6 m-2 font-semibold">Now is the ideal time to begin your journey toward building a new life in the UK.</p>
+
+      <div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+        <Image
+          src="/migrate/migrate-uk.png"
+          alt="Migrate to UK - Apply Now"
+          width={900}
+          height={630}
+          className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+          priority
+          unoptimized
+        />
+      </div>
+
+      <h3 className='text-sky-800 italic mb-4 m-2'>Why Migrate to the UK?</h3>
+      <ul className='mb-6 ml-8 list-disc'>
+        <li><b>Robust Job Market:</b> High demand in sectors like healthcare, IT, finance, and engineering.</li>
+        <li><b>Top-Tier Education:</b> Study at world-renowned institutions like Oxford and Cambridge.</li>
+        <li><b>Clear PR Pathways:</b> Opportunities for permanent settlement via Skilled Worker and other routes.</li>
+        <li><b>Universal Healthcare:</b> Access to the NHS, one of the best healthcare systems.</li>
+        <li><b>Multicultural Lifestyle:</b> Live in a society known for diversity, history, and global influence.</li>
+      </ul>
+
+      <h3 className='text-sky-800 italic mb-4 m-2'>Popular UK Immigration Options</h3>
+
+      <h4 className='font-bold mb-2 m-2'>Work-Based Visas</h4>
+      <ul className='mb-6 ml-8 list-disc'>
+        <li><b>Skilled Worker Visa:</b> For professionals with job offers from UK employers.</li>
+        <li><b>Health and Care Worker Visa:</b> For medical professionals and caregivers.</li>
+        <li><b>Global Talent Visa:</b> For leaders or potential leaders in academia, research, arts, and tech.</li>
+      </ul>
+
+      <h4 className='font-bold mb-2 m-2'>Student Visas</h4>
+      <ul className='mb-6 ml-8 list-disc'>
+        <li><b>Student Visa:</b> For academic studies in UK institutions.</li>
+        <li><b>Short-term Study Visa:</b> For English language or short courses.</li>
+      </ul>
+
+      <h4 className='font-bold mb-2 m-2'>Family-Based Immigration</h4>
+      <p className='mb-6 m-2'>Join family members who are UK citizens or settled residents through the Family Visa route.</p>
+
+      <h4 className='font-bold mb-2 m-2'>Entrepreneur & Investor Routes</h4>
+      <ul className='mb-6 ml-8 list-disc'>
+        <li><b>Innovator Founder Visa:</b> For entrepreneurs with innovative business ideas.</li>
+        <li><b>Global Business Mobility:</b> For overseas companies transferring employees to the UK.</li>
+      </ul>
+
+      <h4 className='font-bold mb-2 m-2'>Settlement & ILR (Indefinite Leave to Remain)</h4>
+      <p className='mb-6 m-2'>Apply for permanent residency after a qualifying period under work, family, or other visa categories.</p>
+
+      <h3 className='text-sky-800 italic mb-4 m-2'>Your UK Migration Process – Step by Step</h3>
+      <ul className='mb-6 ml-8 list-decimal'>
+        <li>Free Profile Evaluation – Check your eligibility for UK visas.</li>
+        <li>Select the Best Visa Pathway – Tailored to your goals and qualifications.</li>
+        <li>Document Compilation & Application – With professional support.</li>
+        <li>Visa Interview Guidance – Prepare for success at the consulate.</li>
+        <li>Visa Grant & Pre-Arrival Assistance – Step into your UK future.</li>
+      </ul>
+
+      <h3 className='text-sky-800 italic mb-4 m-2'>Who Can Apply?</h3>
+      <ul className='mb-6 ml-8 list-disc'>
+        <li>Healthcare Professionals and IT Specialists</li>
+        <li>Engineers, Finance Experts, and Skilled Workers</li>
+        <li>Students aspiring for higher education</li>
+        <li>Start-up founders and entrepreneurs</li>
+        <li>Families wishing to settle in the UK</li>
+      </ul>
+
+      <p className='mb-6 m-2 font-semibold'>If you are skilled, driven, and dream of a better life – the UK is ready to welcome you.</p>
+    </div>
+  );
 };
 
-export default Content;
+export default MigrateToUK;

@@ -4,9 +4,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+
 export default function MigrationPage() {
+ 
   return (
-    <div className=" p-6 min-h-screen">
+    <div className=" md:p-6 min-h-screen">
       <div className="max-w-6xl mx-auto ">
         <h1 className="text-2xl font-bold text-center text-black">
           Migrate with Confidence: Your Journey Starts Here with{" "}
@@ -20,17 +22,17 @@ export default function MigrationPage() {
           in a new country, we are here to guide you every step of the way.
         </p>
 
-        <a href="https://www.vjcoverseas.com/migrate">
+        <div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
           <Image
-            src="/assets/migrate.png"
+            src="/migrate/migrate.png"
             alt="Migrate - Apply Now"
             width={900}
             height={630}
-            className="w-[20rem] lg:w-[48rem] h-auto mt-6 items-center"
+            className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
             priority
             unoptimized
           />
-        </a>
+        </div>
 
         <h2 className="text-xl font-semibold mt-6">
           Why Migrate with VJC Overseas?
@@ -199,6 +201,8 @@ export default function MigrationPage() {
           step toward a brighter future abroad.
         </p>
       </div>
+     
     </div>
+    
   );
 }

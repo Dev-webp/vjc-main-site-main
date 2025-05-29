@@ -6,6 +6,8 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Form from "./Form";
 import Content from "./Content";
+import ModalFormWithPopup from "../Popup/Popup"; // adjust path if needed
+import MigrateImageContent from "../Popup/MigrateImageContent"
 
 const textContainerVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -48,6 +50,7 @@ const countriesData = [
 ];
 
 const Migrate = () => {
+   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const [background, setBackground] = useState("/migratepageimg.avif");
 
@@ -82,12 +85,18 @@ const Migrate = () => {
               >
                 Migrate to Your Dream Country
               </motion.h1>
+
               <motion.p
                 className="flex text-black tracking-tight text-left md:font-medium max-w-xl lg:max-w-lg mt-2"
-                style={{ fontWeight: "bolder", fontFamily: "Times New Roman, serif" }}
+                style={{
+                  fontWeight: "bolder",
+                  fontFamily: "Times New Roman, serif",
+                }}
                 variants={descriptionVariants}
               >
-                Discover endless opportunities with our expert immigration services. Whether you're looking to study or work abroad, we help make your dreams a reality.
+                Discover endless opportunities with our expert immigration
+                services. Whether you're looking to study or work abroad, we
+                help make your dreams a reality.
               </motion.p>
             </motion.div>
 
@@ -103,11 +112,24 @@ const Migrate = () => {
       <section className="bg-white py-16">
         <div className="max-w-screen-xl mx-auto px-4">
           {/* Title */}
-          <div className="flex justify-center md:justify-start mb-8 ml-5">
-            <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
-              <span className="block md:text-left text-center">Migrate to Your Dream</span>
-              <span className="block text-center">Country</span>
+          <div className="flex flex-col items-center lg:items-start text-center mb-8">
+           <div className="flex justify-center flex-col items-center">
+            <h2 className="text-3xl  font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent text-center md:text-left mb-4">
+              <span className="block ">Migrate to Your Dream Country</span>
+              <span className="block"></span>
             </h2>
+
+            {/* Apply Now Button directly below heading */}
+          
+             <button
+              type="button"
+              className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+              onClick={() => setIsOpen(true)}
+            >
+              <span className="relative z-10">Apply Now</span>
+              <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine pointer-events-none" />
+            </button>
+           </div>
           </div>
 
           {/* Buttons + Content */}
@@ -136,6 +158,7 @@ const Migrate = () => {
           </div>
         </div>
       </section>
+       <ModalFormWithPopup isOpen={isOpen} setIsOpen={setIsOpen} customContent={<MigrateImageContent />}/>
     </>
   );
 };
