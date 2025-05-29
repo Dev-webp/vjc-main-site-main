@@ -9,6 +9,7 @@ import TawkToChat from '@/app/components/TawkToChat';
 import Popupform from '@/app/components/Popupform';
 import EligibilityBanner from "@/app/components/EligibilityBanner";
 
+
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -96,6 +97,7 @@ export default function RootLayout({
         {children}
         <FloatingWhatsApp />
         <TawkToChat />
+       
         <Footer />
       </body>
     </html>
