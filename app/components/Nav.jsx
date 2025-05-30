@@ -303,7 +303,7 @@ const Navbar = () => {
            { name: "Canada ICT Program ", path: "/pr-visas/canada-pr/canada-ict-program" },
             { name: "Canada FSTP  ", path: "/pr-visas/canada-pr/canada-fstp" },
              { name: "Canada FSWP ", path: "/pr-visas/canada-pr/canada-fswp" },
-              { name: "Canada Family Sponsorship ", path: "/pr-visas/canada-pr/canada-family-sponsership" },
+              { name: "Canada Family Sponsorship ", path: "/pr-visas/canada-pr/canada-family-sponsorship" },
                { name: "Canada Investor Program ", path: "/pr-visas/canada-pr/canada-investor-program" },
                 { name: "Canada Atlantic Immigration Pilot Program ", path: "/pr-visas/canada-pr/canada-atlantic-immigration-pilot-program" },
 

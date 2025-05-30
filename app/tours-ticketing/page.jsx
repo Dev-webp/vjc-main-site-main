@@ -7,7 +7,7 @@ import animationData from '../../public/models/travel.json';
 import AirTicketingDetails from './AirTicketingDetails';
 import Tour from './Tour';
 import ExploreDestination from './ExploreDestination';
-
+import Link from 'next/link';
 export default function ExploreDestinations() {
   return (
     <div
@@ -38,10 +38,12 @@ export default function ExploreDestinations() {
             Book the best flights and unforgettable tours—globally trusted, beautifully managed.
           </p>
 
-          <button className="relative inline-block px-10 py-3 font-bold text-white bg-gradient-to-r from-orange-500 via-black to-orange-500 rounded-xl overflow-hidden group shadow-xl animate-pulse-glow">
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-400 via-black to-orange-600 transition-transform duration-500 ease-in-out group-hover:blur-md blur-sm rounded-xl animate-shimmer"></span>
-            <span className="relative z-10">Book Now</span>
-          </button>
+        <Link href="/assessment" passHref>
+  <button className="relative inline-block px-10 py-3 font-bold text-white bg-gradient-to-r from-orange-500 via-black to-orange-500 rounded-xl overflow-hidden group shadow-xl animate-pulse-glow">
+    <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-400 via-black to-orange-600 transition-transform duration-500 ease-in-out group-hover:bg-blue-400 rounded-xl animate-shimmer"></span>
+    <span className="relative z-10">Apply Now</span>
+  </button>
+</Link>
 
           <p className="text-sm text-gray-500 pt-2">
             24/7 booking support. Instant e-ticket delivery. 10,000+ happy flyers.
