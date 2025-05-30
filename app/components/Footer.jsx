@@ -165,15 +165,19 @@ const Footer = () => {
 <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
 
   {/* British Council */}
-  <Image
-    src="/vjc-british-council.png"
-    alt="British Council Certification Logo"
-    title="British Council Certified - Study Abroad Partner"
-    width={80}
-    height={80}
-    loading="lazy"
-    className="rounded-full shadow-lg border border-white transform hover:scale-110 transition-transform duration-300"
-  />
+ 
+            <Image
+             src="/vjc-british-council.png"
+             alt="British Council Certification Logo"
+            title="British Council Certified - Study Abroad Partner"
+              width={80}
+              height={80}
+              className="rounded-full shadow-lg border border-white transform hover:scale-110 transition-transform duration-300"
+              loading="lazy"
+              unoptimized
+            />
+         
+ 
 
   {/* ISO Certified */}
   <Image
@@ -184,6 +188,7 @@ const Footer = () => {
     height={80}
     loading="lazy"
     className="rounded-full shadow-lg border border-white transform hover:scale-110 transition-transform duration-300"
+    unoptimized
   />
 
 </div>

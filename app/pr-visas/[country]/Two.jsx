@@ -16,93 +16,93 @@ import Canadanominal from "./Canadapages/Canadanominal";
 import Form from "../Form";
 
 const countryVisaData = {
-  germanybluecard: [
-    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr", image: "/1.jpg" },
-    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr", image: "/airplane.png" },
-    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr", image: "/dmbusi.jpg" },
+  "germany-blue-card": [
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canada-pr", image: "/1.jpg" },
+    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australia-pr", image: "/airplane.png" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/uk-pr", image: "/dmbusi.jpg" },
     { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/new-zealand-pr", image: "/images/newzealand.jpg" },
-    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard", image: "/images/germany.jpg" },
-    { name: "USA Green Card", path: "/pr-visas/usagreencard", image: "/images/usa.jpg" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germany-blue-card", image: "/images/germany.jpg" },
+    { name: "USA Green Card", path: "/pr-visas/usa-green-card", image: "/images/usa.jpg" },
   ],
-  canadapr: [
-    { name: "Canada Express Entry", path: "/pr-visas/canadapr/canada-express-entry" },
-  { name: "Canada Provincial Nominee Program", path: "/pr-visas/canadapr-provincial-nominee-program" },
-  { name: "Canada Quebec Selected Workers Program", path: "/pr-visas/canadapr/canada-quebec-selected-workers-program" },
-   { name: "Canada ICT Program", path: "/pr-visas/canadapr/canada-ict-program" },
-  { name: "Canada FSTP", path: "/pr-visas/canadapr/canada-fstp" },
-  { name: "Canada FSWP", path: "/pr-visas/canadapr/canada-fswp" },
-   { name: "Canada Family Sponsorship", path: "/pr-visas/canadapr/canada-family-sponsorship" },
-  { name: "Canada Investor Program", path: "/pr-visas/canadapr/canada-investor-program" },
+  "canada-pr": [
+    { name: "Canada Express Entry", path: "/pr-visas/canada-pr/canada-express-entry" },
+  { name: "Canada Provincial Nominee Program", path: "/pr-visas/canada-pr-provincial-nominee-program" },
+  { name: "Canada Quebec Selected Workers Program", path: "/pr-visas/canada-pr/canada-quebec-selected-workers-program" },
+   { name: "Canada ICT Program", path: "/pr-visas/canada-pr/canada-ict-program" },
+  { name: "Canada FSTP", path: "/pr-visas/canada-pr/canada-fstp" },
+  { name: "Canada FSWP", path: "/pr-visas/canada-pr/canada-fswp" },
+   { name: "Canada Family Sponsorship", path: "/pr-visas/canada-pr/canada-family-sponsorship" },
+  { name: "Canada Investor Program", path: "/pr-visas/canada-pr/canada-investor-program" },
   
-  { name: "Canada Atlantic Immigration Pilot Program", path: "/pr-visas/canadapr/canada-atlantic-immigration-pilot-program" },
+  { name: "Canada Atlantic Immigration Pilot Program", path: "/pr-visas/canada-pr/canada-atlantic-immigration-pilot-program" },
  
   ],
-  "canadapr-provincial-nominee-program":[
-    { name: "Canada Provincial Nominee Program", path: "/pr-visas/canadapr-provincial-nominee-program" },
-    { name: "Canada Prince Edward Island", path: "/pr-visas/canadapr-provincial-nominee-program/canada-prince-edward-island" },
-  { name: "Canada Ontario", path: "/pr-visas/canadapr-provincial-nominee-program/canada-ontario" },
-  { name: "Canada Saskatchewan", path: "/pr-visas/canadapr-provincial-nominee-program/canada-saskatchewan" },
-  { name: "Canada Manitoba", path: "/pr-visas/canadapr-provincial-nominee-program/canada-manitoba" },
-  { name: "Canada Nova Scotia", path: "/pr-visas/canadapr-provincial-nominee-program/canada-nova-scotia" },
-  { name: "Canada Alberta", path: "/pr-visas/canadapr-provincial-nominee-program/canada-alberta" },
+  "canada-pr-provincial-nominee-program":[
+    { name: "Canada Provincial Nominee Program", path: "/pr-visas/canada-pr-provincial-nominee-program" },
+    { name: "Canada Prince Edward Island", path: "/pr-visas/canada-pr-provincial-nominee-program/canada-prince-edward-island" },
+  { name: "Canada Ontario", path: "/pr-visas/canada-pr-provincial-nominee-program/canada-ontario" },
+  { name: "Canada Saskatchewan", path: "/pr-visas/canada-pr-provincial-nominee-program/canada-saskatchewan" },
+  { name: "Canada Manitoba", path: "/pr-visas/canada-pr-provincial-nominee-program/canada-manitoba" },
+  { name: "Canada Nova Scotia", path: "/pr-visas/canada-pr-provincial-nominee-program/canada-nova-scotia" },
+  { name: "Canada Alberta", path: "/pr-visas/canada-pr-provincial-nominee-program/canada-alberta" },
  
   ],
-  australiapr: [
-    { name: "189 Skilled Independent Visa", path: "/pr-visas/australiapr/189-skilled-independent-visa" },
-    { name: "190 Skilled Nominated Visa", path: "/pr-visas/australiapr/190-skilled-nominated-visa" },
-    { name: "191	Permanent Residence (Skilled Regional) Visa", path: "/pr-visas/australiapr/191-permanent-residence-visa" },
-    { name: "491	Skilled Work Regional (Provisional) Visa", path: "/pr-visas/australiapr/491-skilled-work-regional-visa" },
-    { name: "494	Skilled Employer Sponsored Regional (Provisional) Visa", path: "/pr-visas/australiapr/494-skilled-employer-sponsered-regional-visa" },
+  "australia-pr": [
+    { name: "189 Skilled Independent Visa", path: "/pr-visas/australia-pr/189-skilled-independent-visa" },
+    { name: "190 Skilled Nominated Visa", path: "/pr-visas/australia-pr/190-skilled-nominated-visa" },
+    { name: "191	Permanent Residence (Skilled Regional) Visa", path: "/pr-visas/australia-pr/191-permanent-residence-visa" },
+    { name: "491	Skilled Work Regional (Provisional) Visa", path: "/pr-visas/australia-pr/491-skilled-work-regional-visa" },
+    { name: "494	Skilled Employer Sponsored Regional (Provisional) Visa", path: "/pr-visas/australia-pr/494-skilled-employer-sponsered-regional-visa" },
    
   ],
-  ukpr: [
-    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr", image: "/1.jpg" },
-    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr", image: "/airplane.png" },
-    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr", image: "/dmbusi.jpg" },
+  "uk-pr": [
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canada-pr", image: "/1.jpg" },
+    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australia-pr", image: "/airplane.png" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/uk-pr", image: "/dmbusi.jpg" },
     { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/new-zealand-pr", image: "/images/newzealand.jpg" },
-    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard", image: "/images/germany.jpg" },
-    { name: "USA Green Card", path: "/pr-visas/usagreencard", image: "/images/usa.jpg" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germany-blue-card", image: "/images/germany.jpg" },
+    { name: "USA Green Card", path: "/pr-visas/usa-green-card", image: "/images/usa.jpg" },
   ],
   "new-zealand-pr": [
-    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr", image: "/1.jpg" },
-    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr", image: "/airplane.png" },
-    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr", image: "/dmbusi.jpg" },
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canada-pr", image: "/1.jpg" },
+    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australia-pr", image: "/airplane.png" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/uk-pr", image: "/dmbusi.jpg" },
     { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/new-zealand-pr", image: "/images/newzealand.jpg" },
-    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard", image: "/images/germany.jpg" },
-    { name: "USA Green Card", path: "/pr-visas/usagreencard", image: "/images/usa.jpg" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germany-blue-card", image: "/images/germany.jpg" },
+    { name: "USA Green Card", path: "/pr-visas/usa-green-card", image: "/images/usa.jpg" },
   ],
-  usagreencard: [
-    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr", image: "/1.jpg" },
-    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australiapr", image: "/airplane.png" },
-    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr", image: "/dmbusi.jpg" },
+ "usa-green-card": [
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canada-pr", image: "/1.jpg" },
+    { name: "Australia Permanent Residency Visa", path: "/pr-visas/australia-pr", image: "/airplane.png" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/uk-r", image: "/dmbusi.jpg" },
     { name: "New Zealand Permanent Residency Visa", path: "/pr-visas/new-zealand-pr", image: "/images/newzealand.jpg" },
-    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard", image: "/images/germany.jpg" },
-    { name: "USA Green Card", path: "/pr-visas/usagreencard", image: "/images/usa.jpg" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germany-blue-card", image: "/images/germany.jpg" },
+    { name: "USA Green Card", path: "/pr-visas/usa-green-card", image: "/images/usa.jpg" },
   ],
 };
 
 const visaComponents = {
-  germanybluecard: Goppcardvisa,
-  canadapr: Canadapr,
-  usagreencard: USAstud,
-  australiapr: Ausstud,
-  ukpr: UKBvisa,
+  "germany-blue-card": Goppcardvisa,
+  "canada-pr": Canadapr,
+  "usa-green-card": USAstud,
+  "australia-pr": Ausstud,
+  "uk-pr": UKBvisa,
   "new-zealand-pr": Newzepr,
-  "canadapr-provincial-nominee-program": Canadanominal,
+  "canada-pr-provincial-nominee-program": Canadanominal,
   "hong-kong": HKstudentvisa,
 
   uae: UAEstud,
 };
 
 const backgroundImages = {
-  germanybluecard: "/germanypr.jpg",
-  canadapr: "/canada-pr.jpeg",
-  usagreencard: "/usapr.jpg",
-  australiapr: "/Australia-PR.jpg",
-  ukpr: "/dmbusi.jpg",
+  "germany-blue-card": "/germanypr.jpg",
+  "canada-pr": "/canada-pr.jpeg",
+  "usa-green-card": "/usapr.jpg",
+  "australia-pr": "/Australia-PR.jpg",
+  "uk-pr": "/dmbusi.jpg",
   "new-zealand-pr": "/nzpr.jpg",
   "south-africa": "/sa666.png",
-  "canadapr-provincial-nominee-program": "/canadapr-Provincial-Nominee-Program.jpg",
+  "canada-pr-provincial-nominee-program": "/canadapr-Provincial-Nominee-Program.jpg",
  
 };
 

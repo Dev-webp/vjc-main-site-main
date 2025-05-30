@@ -9,10 +9,10 @@ const Newzebusiness = () => {
         <h2 className="text-2xl font-bold mb-6 text-center text-orange-600">
           Migrate to South Africa – Live Where Culture, Opportunity, and Nature Meet
         </h2>
-        <p className="mb-6 leading-relaxed text-lg text-sky-600">
+        <p className="mb-6 leading-relaxed text-lg text-black">
           Looking for a life filled with sunshine, cultural richness, career opportunities, and world-class landscapes? Migrating to South Africa offers a vibrant lifestyle and an exciting gateway to the African continent.
         </p>
-        <p className="mb-6 leading-relaxed text-lg text-sky-600">
+        <p className="mb-6 leading-relaxed text-lg text-black">
           Whether you're seeking new career paths, entrepreneurial opportunities, or a peaceful retirement, South Africa welcomes skilled professionals, investors, families, and students from around the world.
         </p>
         <div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">

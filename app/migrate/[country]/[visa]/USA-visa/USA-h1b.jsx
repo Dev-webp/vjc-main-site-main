@@ -27,6 +27,8 @@ const USAh1b = () => {
             height={300}
 
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
+            priority
+            unoptimized
           />
         </div>
 

@@ -7,7 +7,18 @@ const Newzebusiness = () => {
           <h1 className="text-2xl font-bold text-center mb-6">South Africa Tourist Visa – VJC Overseas</h1>
           
           <p className="mb-4">Welcome to VJC Overseas, your trusted partner in obtaining a South Africa Tourist Visa with ease and efficiency. Whether you’re planning a short getaway, a thrilling adventure, or an immersive cultural experience, our expert services will ensure you meet all the requirements for a seamless travel experience.</p>
-          
+          <div className="flex justify-center items-center w-full">
+  <Image
+     src="/migrate/migratesub/south-tourist.png"
+    alt="Australia Business Visa"
+    width={500}
+    height={300}
+    priority
+    unoptimized
+    className="w-full max-w-xs mt-5 sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
+  />
+</div>
+
           <h2 className="text-1xl font-semibold mt-6">Why Visit South Africa?</h2>
           <ul className="list-disc list-inside mb-4">
             <li>Explore Iconic Landmarks – Table Mountain, Victoria & Alfred Waterfront, and the iconic Cape of Good Hope.</li>

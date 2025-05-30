@@ -35,15 +35,17 @@ const canadafs = () =>{
               </p>
               <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
 
-  <div className="flex-shrink-0 mx-auto lg:mx-0">
-    <Image
-      src="/canadaimg4.jpg"
-      alt="Image description"
-      width={500} // Replace with your image's actual width
-      height={300}
-      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
-    />
-  </div>
+   <div className="flex-shrink-0 my-4 mx-auto lg:mx-0">
+      <Image
+        src="/canadaimg4.jpg"
+        alt="Image description"
+        width={500} // Replace with your image's actual width
+        height={300}
+        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
+        priority
+        unoptimized
+      />
+    </div>
               {/* <h3 className="px-4 lg:px-0">For the Sponsor:</h3> */}
               <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginBottom: "20px" }}>
                 <li><strong>Status:</strong> The sponsor must be a Canadian citizen or permanent resident.</li>

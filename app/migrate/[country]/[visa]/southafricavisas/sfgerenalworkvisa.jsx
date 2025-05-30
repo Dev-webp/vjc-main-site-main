@@ -19,7 +19,17 @@ const Newzebusiness = () => {
             <p className='mb-6'>Are you looking to work in South Africa? The South Africa General Work Visa is the perfect pathway for skilled workers from abroad to explore exciting career opportunities in one of Africa's most dynamic economies.</p>
     
             <p>At VJC Overseas, we guide you through the entire visa application process, helping you secure your future in South Africa and unlock a world of career possibilities.</p>
-    
+   <div className="flex justify-center items-center w-full">
+                          <Image
+                            src="/migrate/migratesub/south-work.png"
+                            alt="Australia Business Visa"
+                            width={500}
+                            height={300}
+                            priority
+                            unoptimized
+                            className="w-full max-w-xs mt-5 sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
+                          />
+                        </div>
             <h3 className='text-black m-2 font-bold text-lg mb-6'>What is the South Africa General Work Visa?</h3>
             <p className='mb-6'>The South Africa General Work Visa allows foreign nationals to work in South Africa for up to five years. This visa is ideal for professionals with specialized skills that are in demand by South African employers.</p>
     

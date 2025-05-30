@@ -295,39 +295,39 @@ const Navbar = () => {
   ];
 
   const prVisaSubPages = [
-    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canadapr",
+    { name: "Canada Permanent Residency Visa", path: "/pr-visas/canada-pr",
        children: [
-        { name: "Canada Express Entry ", path: "/pr-visas/canadapr/canada-express-entry" },
-         { name: "Canada Provincial Nominee Program ", path: "/pr-visas/canadapr-provincial-nominee-program" },
-          { name: "Canada Quebee Selected Workers Program ", path: "/pr-visas/canadapr/canada-quebec-selected-workers-program" },
-           { name: "Canada ICT Program ", path: "/pr-visas/canadapr/canada-ict-program" },
-            { name: "Canada FSTP  ", path: "/pr-visas/canadapr/canada-fstp" },
-             { name: "Canada FSWP ", path: "/pr-visas/canadapr/canada-fswp" },
-              { name: "Canada Family Sponsorship ", path: "/pr-visas/canadapr/canada-family-sponsership" },
-               { name: "Canada Investor Program ", path: "/pr-visas/canadapr/canada-investor-program" },
-                { name: "Canada Atlantic Immigration Pilot Program ", path: "/pr-visas/canadapr/canada-atlantic-immigration-pilot-program" },
+        { name: "Canada Express Entry ", path: "/pr-visas/canada-pr/canada-express-entry" },
+         { name: "Canada Provincial Nominee Program ", path: "/pr-visas/canada-pr-provincial-nominee-program" },
+          { name: "Canada Quebee Selected Workers Program ", path: "/pr-visas/canada-pr/canada-quebec-selected-workers-program" },
+           { name: "Canada ICT Program ", path: "/pr-visas/canada-pr/canada-ict-program" },
+            { name: "Canada FSTP  ", path: "/pr-visas/canada-pr/canada-fstp" },
+             { name: "Canada FSWP ", path: "/pr-visas/canada-pr/canada-fswp" },
+              { name: "Canada Family Sponsorship ", path: "/pr-visas/canada-pr/canada-family-sponsership" },
+               { name: "Canada Investor Program ", path: "/pr-visas/canada-pr/canada-investor-program" },
+                { name: "Canada Atlantic Immigration Pilot Program ", path: "/pr-visas/canada-pr/canada-atlantic-immigration-pilot-program" },
 
        ],
      },
     {
       name: "Australia Permanent Residency Visa",
-      path: "/pr-visas/australiapr",
+      path: "/pr-visas/australia-pr",
        children: [
-        { name: "189 Skilled Independent Visa ", path: "/pr-visas/australiapr/189-skilled-independent-visa" },
-          { name: "190 Skilled Nominated Visa ", path: "/pr-visas/australiapr/190-skilled-nominated-visa" },
-            { name: "191 Permanent Residence (Skilled Regional) Visa ", path: "/pr-visas/australiapr/191-permanent-residence-visa" },
-              { name: "491 Skilled Work Regional (Provisional) Visa ", path: "/pr-visas/australiapr/491-skilled-work-regional-visa" },
-                { name: "494 Skilled Employer Sponsored Regional (Provisional) Visa ", path: "/pr-visas/australiapr/494-skilled-employer-sponsered-regional-visa" },
+        { name: "189 Skilled Independent Visa ", path: "/pr-visas/australia-pr/189-skilled-independent-visa" },
+          { name: "190 Skilled Nominated Visa ", path: "/pr-visas/australia-pr/190-skilled-nominated-visa" },
+            { name: "191 Permanent Residence (Skilled Regional) Visa ", path: "/pr-visas/australia-pr/191-permanent-residence-visa" },
+              { name: "491 Skilled Work Regional (Provisional) Visa ", path: "/pr-visas/australia-pr/491-skilled-work-regional-visa" },
+                { name: "494 Skilled Employer Sponsored Regional (Provisional) Visa ", path: "/pr-visas/australia-pr/494-skilled-employer-sponsered-regional-visa" },
          
        ],
     },
-    { name: "UK Permanent Residency Visa", path: "/pr-visas/ukpr" },
+    { name: "UK Permanent Residency Visa", path: "/pr-visas/uk-pr" },
     {
       name: "New Zealand Permanent Residency Visa",
       path: "/pr-visas/new-zealand-pr",
     },
-    { name: "Germany Blue Card Visa", path: "/pr-visas/germanybluecard" },
-    { name: "USA Green Card", path: "/pr-visas/usagreencard" },
+    { name: "Germany Blue Card Visa", path: "/pr-visas/germany-blue-card" },
+    { name: "USA Green Card", path: "/pr-visas/usa-green-card" },
   ];
   const resumemarketingSubPages = [
     { name: "Canada", path: "/resume-marketing/canada" },

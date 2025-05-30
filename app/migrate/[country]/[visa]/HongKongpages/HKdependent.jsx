@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Content = () => {
   return (
@@ -39,11 +40,16 @@ const Content = () => {
           </p>
         </div>
         <div className="lg:w-1/3">
-          <img
-            src="/hong-kongdependtentvisa.jpg"
-            alt="Hong Kong Family Visa"
-            className="rounded-lg shadow-md w-full h-auto object-cover"
-          />
+         <Image
+              src="/hong-kongdependtentvisa.jpg"
+              alt="Image description"
+              width={500} // Replace with your image's actual width
+              height={300}
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
+              priority
+              unoptimized
+            />
+       
         </div>
       </div>
 

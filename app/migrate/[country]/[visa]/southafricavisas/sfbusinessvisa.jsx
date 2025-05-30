@@ -12,6 +12,17 @@ const Newzebusiness = () => {
             <h2 className="text-1xl font-semibold mt-6">Why Choose South Africa for Your Business?</h2>
             <p className="mb-4">South Africa is one of the most dynamic economies on the African continent and a gateway to opportunities across the Southern African Development Community (SADC). As a thriving hub for international trade, innovation, and industry, South Africa offers unmatched potential for business growth and expansion.</p>
             
+            <div className="flex justify-center items-center w-full">
+                      <Image
+                        src="/migrate/migratesub/south-business.png"
+                        alt="Australia Business Visa"
+                        width={500}
+                        height={300}
+                        priority
+                        unoptimized
+                        className="w-full max-w-xs mt-5 sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
+                      />
+                    </div>
             <h2 className="text-1xl font-semibold mt-6">South Africa Business Visa Overview</h2>
             <p className="mb-4">The South African Business Visa is designed for foreign nationals who wish to enter South Africa for the purpose of running or investing in a business. This visa is granted to entrepreneurs, investors, and those who plan to start or buy a business in the country.</p>
             

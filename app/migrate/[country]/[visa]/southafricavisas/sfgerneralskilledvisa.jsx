@@ -15,7 +15,17 @@ const Newzebusiness = () => {
         <p className="text-lxl leading-relaxed mb-6">
             At VJC Overseas, we are proud to be recognized as one of the Best South Africa Critical Skills Visa Consultants in India, with specialized teams in Hyderabad and Bengaluru. Whether you're an experienced professional in the fields of engineering, healthcare, IT, or any other critical skill sector, our expert consultants will guide you every step of the way to secure your visa and embark on a successful new chapter in South Africa.
         </p>
-        
+           <div className="flex justify-center items-center w-full">
+                              <Image
+                                src="/migrate/migratesub/south-skilled.png"
+                                alt="Australia Business Visa"
+                                width={500}
+                                height={300}
+                                priority
+                                unoptimized
+                                className="w-full max-w-xs mt-5 sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
+                              />
+                            </div>
         <h2 className="text-1xl font-bold mt-8 mb-4 text-orange-600">Why Choose VJC Overseas for Your South Africa Critical Skills Visa?</h2>
         <ul className="list-disc list-inside space-y-2">
             <li><strong className="text-gray-400">Expert Consultation Across India:</strong> Our team provides tailored services across India, ensuring you receive the highest level of guidance.</li>
