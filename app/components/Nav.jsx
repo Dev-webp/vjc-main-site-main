@@ -31,6 +31,8 @@ const Navbar = () => {
     { name: "Schengen Visas", path: "/schengen-visas" },
     { name: "Resume Marketing", path: "/resume-marketing" },
     { name: "Coaching/Training", path: "/coaching" },
+    { name: "Tours/Ticketing", path: "/tours-ticketing" },
+
   ];
 
   const extraItems = [
