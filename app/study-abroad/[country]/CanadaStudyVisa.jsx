@@ -19,6 +19,8 @@ const CanadaStudentVisa = () => {
             width={600}
             height={400}
             className=" w-full object-cover"
+            priority
+            unoptimized
           />
         </div>
 

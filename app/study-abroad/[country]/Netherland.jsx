@@ -18,7 +18,8 @@ const StudyNetherlands = () => {
                   alt="Study in Germany"
                   width={500}
                   height={500}
-                 
+                 priority
+                 unoptimized
                 />
               </div>
             </div>

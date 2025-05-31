@@ -33,6 +33,8 @@ const USAStudyVisa = () => {
               fill
               className="object-cover rounded-lg"
               sizes="(max-width: 808px) 100vw, 50vw"
+              priority
+              unoptimized
             />
           </div>
         </div>

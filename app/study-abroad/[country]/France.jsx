@@ -16,6 +16,8 @@ const StudyInFrance = () => {
             width={500}
             height={300}
             className=" w-full object-cover"
+            priority
+            unoptimized
           />
         </div>
         <div className="md:w-1/2 text-justify">

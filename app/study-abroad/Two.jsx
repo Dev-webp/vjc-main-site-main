@@ -60,23 +60,22 @@ const Migrate = () => {
   };
 
   return (
-<div className="relative w-full min-h-screen">
-  {/* Background Animated GIF Positioned Absolutely Behind All Content */}
-  <div className="fixed top-0 left-0 w-full h-full -z-10">
-  {/* Background Image */}
-  <img
-    src="/airr.gif"
-    alt="Animated Background"
-    className="w-full h-full object-cover"
-  />
-
-  {/* Black Transparent Overlay */}
-  <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
-</div>
+    <div className="relative pt-10 w-full min-h-screen">
+      {/* Background Animated GIF with Next.js Image */}
+      <div className="fixed top-0 left-0 w-full h-full -z-10 relative">
+        <Image
+          src="/airr.gif"
+          alt="Animated Background"
+          fill
+          className="object-cover"
+          priority
+          unoptimized
+        />
+        <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+      </div>
 
       {/* Page Content */}
-      <div className="relative z-10 px-4 sm:px-6 lg:px-12 py-10 ">
-        {/* Two Column Layout */}
+      <div className="relative z-10 px-4 sm:px-6 lg:px-12 py-10">
         <div className="flex flex-col lg:flex-row gap-10 items-start justify-between">
           {/* Swiper Section */}
           <div className="w-full lg:w-[55%] mt-6">
@@ -102,7 +101,9 @@ const Migrate = () => {
                     <div
                       onClick={() => handleVisaClick(visa)}
                       className={`relative w-full h-[420px] md:h-[440px] lg:h-[460px] transform transition-all duration-700 overflow-hidden shadow-xl border-4 cursor-pointer ${
-                        isActive ? "scale-105 opacity-100 z-30" : "scale-90 opacity-80 z-10"
+                        isActive
+                          ? "scale-105 opacity-100 z-30"
+                          : "scale-90 opacity-80 z-10"
                       }`}
                     >
                       <Image
@@ -145,32 +146,34 @@ const Migrate = () => {
           </p>
 
           {/* 20 Countries List */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mb-6 text-lg text-left">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mb-6 text-lg text-left list-disc list-inside">
             {visaData.map((visa) => (
               <li key={visa.path}>
-                <Link href={visa.path} className="text-blue-600 hover:underline hover:text-orange-800 transition duration-300">
+                <Link
+                  href={visa.path}
+                  className="text-blue-800 hover:underline hover:text-orange-800 transition duration-300"
+                >
                   {visa.name.replace("Study in ", "")}
                 </Link>
               </li>
             ))}
-            </div>
+          </div>
 
           <p className="text-white text-lg max-w-4xl mx-auto mb-6">
-          Our team of experienced counsellors provides personalized guidance throughout the process. From choosing the right course and university to visa
-           applications and pre-departure orientations, we are with you every step of the way. Our goal is to make your transition to studying abroad as smooth as possible, so you can focus on your studies and make the most of your time overseas.
+            Our team of experienced counsellors provides personalized guidance throughout the process. From choosing the right course and university to visa
+            applications and pre-departure orientations, we are with you every step of the way. Our goal is to make your transition to studying abroad as smooth as possible, so you can focus on your studies and make the most of your time overseas.
           </p>
           <p className="text-white text-lg max-w-4xl mx-auto mb-6">
-          Beyond academics, we also understand the importance of cultural integration. We help you connect with student communities, providing support 
-          with accommodation, travel, and local resources, ensuring you feel at home no matter where you go.
+            Beyond academics, we also understand the importance of cultural integration. We help you connect with student communities, providing support 
+            with accommodation, travel, and local resources, ensuring you feel at home no matter where you go.
           </p>
           <p className="text-white text-lg max-w-4xl mx-auto mb-6">
-          Studying abroad is an investment in your future, and with VJC Overseas, you’re not just applying for a course—you’re embarking on a life-changing adventure. Let us help you take the first step 
-          towards a world-class education and an exciting new chapter in your life.
+            Studying abroad is an investment in your future, and with VJC Overseas, you’re not just applying for a course—you’re embarking on a life-changing adventure. Let us help you take the first step 
+            towards a world-class education and an exciting new chapter in your life.
           </p>
           <h3 className="text-2xl font-bold text-white mb-4">
-          Start your global education journey with VJC Overseas today!
+            Start your global education journey with VJC Overseas today!
           </h3>
-         
         </div>
       </div>
     </div>

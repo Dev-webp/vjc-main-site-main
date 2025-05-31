@@ -19,6 +19,8 @@ const StudyInSouthAfrica = () => {
                                  alt=""
                                  width={500}
                                  height={700}
+                                 priority
+                                 unoptimized
                                />
                                </div>
       <h2 className="text-xl md-2 font-semibold mt-4">Why Study in South Africa?</h2>

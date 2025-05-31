@@ -3,33 +3,35 @@ import Image from "next/image";
 const StudyInDubai = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
-    {/* Heading */}
-    <h1 className="flex justify-center text-lg sm:text-2xl md:text-2xl font-bold mb-4 text-center whitespace-nowrap">
-      Study in Dubai - <span className="text-orange-500">&nbsp;VJC Overseas</span>
-    </h1>
-{/* Image and Intro Text Side by Side */}
-            <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
-              {/* Image */}
-              <div className="mt-8 md:w-1/2 w-full">
-                <Image
-                  src="/study-in-dubai.webp"
-                  alt="Canada Student Visa"
-                  width={600}
-                  height={400}
-                  className=" w-full object-cover"
-                />
-              </div>
-      
-              {/* Text */}
-              <div className="md:w-1/2 mt-8 text-justify">
-                <p className="mb-4">
-        Are you considering studying abroad? Dubai, the hub of global education, is calling you! With world-class
-        universities, a vibrant multicultural environment, and limitless opportunities, Dubai is the ideal destination
-        for international students. <span className="text-orange-500">VJC Overseas</span> is here to guide you through
-        every step of your academic journey in this thriving city.
-      </p>
+      {/* Heading */}
+      <h1 className="flex justify-center text-lg sm:text-2xl md:text-2xl font-bold mb-4 text-center whitespace-nowrap">
+        Study in Dubai - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+      </h1>
+      {/* Image and Intro Text Side by Side */}
+      <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+        {/* Image */}
+        <div className="mt-8 md:w-1/2 w-full">
+          <Image
+            src="/study-in-dubai.webp"
+            alt="Canada Student Visa"
+            width={600}
+            height={400}
+            className=" w-full object-cover"
+            priority
+            unoptimized
+          />
+        </div>
+
+        {/* Text */}
+        <div className="md:w-1/2 mt-8 text-justify">
+          <p className="mb-4">
+            Are you considering studying abroad? Dubai, the hub of global education, is calling you! With world-class
+            universities, a vibrant multicultural environment, and limitless opportunities, Dubai is the ideal destination
+            for international students. <span className="text-orange-500">VJC Overseas</span> is here to guide you through
+            every step of your academic journey in this thriving city.
+          </p>
+        </div>
       </div>
-     </div>
       <h2 className="text-xl font-semibold mb-2 mt-4">Why Study in Dubai?</h2>
       <ul className="list-disc ml-6 space-y-1">
         <li><strong>World-Class Education:</strong> Dubai is home to prestigious universities such as the University of Wollongong in Dubai, the American University in Dubai, and Dubai University of Science and Technology.</li>

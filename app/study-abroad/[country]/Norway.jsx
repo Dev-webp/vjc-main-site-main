@@ -4,21 +4,22 @@ import Image from 'next/image';
 const StudyInNorway = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
-                 <h1 className="flex justify-center text-lg sm:text-2xl md:text-2xl font-bold mb-8 text-center whitespace-nowrap">
-                Study in the Norway - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+      <h1 className="flex justify-center text-lg sm:text-2xl md:text-2xl font-bold mb-8 text-center whitespace-nowrap">
+        Study in the Norway - <span className="text-orange-500">&nbsp;VJC Overseas</span>
       </h1>
       <p className="mt-4 text-lg" style={{ fontFamily: 'Times New Roman' }}>
         Norway is not only known for its breathtaking landscapes and high standard of living, but it also offers exceptional education that attracts students from all over the world. If you're considering studying abroad, Norway should be on your radar. <span style={{ color: 'orange' }}>VJC Overseas</span> specializes in helping students navigate the process of studying in Norway by providing comprehensive guidance on everything from university fees to the unique benefits of living and learning in this Scandinavian country.
       </p>
       <div className="mt-3 ml-6 mb-4">
-                                                 <Image
-                                                     src="/study-in-norway.jpg"
-                                                     alt="Study in Singapore"
-                                                     width={700}
-                                                     height={600}
-                                                    
-                                                   />
-                                                   </div>
+        <Image
+          src="/study-in-norway.jpg"
+          alt="Study in Singapore"
+          width={700}
+          height={600}
+          priority
+          unoptimized
+        />
+      </div>
       <h2 className="text-xl font-semibold mt-4 mb-2" style={{ fontFamily: 'Times New Roman' }}>Why Study in Norway?</h2>
       <ul className="list-disc pl-6 text-lg" style={{ fontFamily: 'Times New Roman' }}>
         <li><strong>No Tuition Fees at Public Universities:</strong> Study at top universities without tuition costs.</li>
@@ -27,7 +28,7 @@ const StudyInNorway = () => {
         <li><strong>Work While Studying:</strong> Part-time work opportunities for international students.</li>
         <li><strong>High Quality of Life:</strong> Norway is known for its sustainable and progressive society.</li>
       </ul>
-      
+
       <h2 className="text-xl font-semibold mt-4 mb-2" style={{ fontFamily: 'Times New Roman' }}>Cost of Studying in Norway: Fees Breakdown</h2>
       <ul className="list-disc pl-6 text-lg" style={{ fontFamily: 'Times New Roman' }}>
         <li><strong>Application Fees:</strong> Most public universities do not charge application fees.</li>
@@ -53,12 +54,12 @@ const StudyInNorway = () => {
         <li>BI Norwegian Business School</li>
         <li>University of Tromsø – The Arctic University of Norway</li>
       </ul>
-      
+
       <h2 className="text-xl font-semibold mt-4 mb-2" style={{ fontFamily: 'Times New Roman' }}>Scholarships and Financial Aid</h2>
       <p className="text-lg" style={{ fontFamily: 'Times New Roman' }}>
         There are various scholarships available for international students in Norway. Some universities offer scholarships for non-EU/EEA students, and government-sponsored programs support students from developing countries.
       </p>
-      
+
       <h2 className="text-xl font-semibold mt-4 mb-2" style={{ fontFamily: 'Times New Roman' }}>Apply Now with <span style={{ color: 'orange' }}>VJC Overseas</span></h2>
       <p className="text-lg" style={{ fontFamily: 'Times New Roman' }}>
         <span style={{ color: 'orange' }}>VJC Overseas</span> provides expert guidance and personalized support for students wishing to study in Norway. We help with university selection, applications, and settling into your new academic life.

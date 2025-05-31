@@ -3,20 +3,21 @@ import Image from 'next/image';
 
 const StudyInSweden = () => {
   return (
-   
+
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
-    <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
-      Study in Sweden - <span className="text-orange-500">&nbsp;VJC Overseas</span>
-    </h1>
-    <div className="mt-3 ml-24 mb-4">
-                                                     <Image
-                                                         src="/study-in-sweden.png"
-                                                         alt="Study in Singapore"
-                                                         width={500}
-                                                         height={400}
-                                                        
-                                                       />
-                                                       </div>
+      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+        Study in Sweden - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+      </h1>
+      <div className="mt-3 ml-24 mb-4">
+        <Image
+          src="/study-in-sweden.png"
+          alt="Study in Singapore"
+          width={500}
+          height={400}
+          priority
+          unoptimized
+        />
+      </div>
       <p className="mb-6">
         Sweden is renowned for its high-quality education, innovative research, and diverse cultural experiences.
         As one of the most desirable study destinations in Europe, Sweden offers an exceptional education system

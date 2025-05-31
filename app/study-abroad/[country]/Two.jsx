@@ -4,12 +4,12 @@ import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Form from "./Form";
-import USAStudyVisa from "./USAStudyVisa";
-import UAEStudyVisa from "./UAEStudyVisa"
+import USAStudyVisa from "./usa";
+import UAEStudyVisa from "./uae"
 import CanadaStudyVisa from "./CanadaStudyVisa";
 import AustraliaStudyVisa from "./AustraliaStudyVisa";
-import UKStudyVisa from "./UKStudyVisa";
-import NZStudyVisa from "./NZStudyVisa";
+import UKStudyVisa from "./uk";
+import NZStudyVisa from "./Newzealand";
 import HongStudyVisa from "./HongStudyVisa";
 import Germany from "./Germany";
 import Norway from "./Norway";

@@ -17,6 +17,7 @@ const StudyInPoland = () => {
                       height={200}
                       className="w-full object-cover rounded-lg"
                       priority
+                      unoptimized
                     />
                   </div>
           

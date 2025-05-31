@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
 import Form from '../../Form';
-
+import Link from "next/link";
 
 import Goppcardvisa from './Germany-visa/Goppcardvisa';
 import Jobseeker from './Germany-visa/Jobseeker';
@@ -219,13 +219,18 @@ const defaultBackgroundImages = {
 const WorkabroadCountry = () => {
   const router = useRouter();
   const { country, visas } = useParams();
+
   const visasList = countryVisaData[country] || [];
-  
   const defaultVisaTitle = visasList.length ? visasList[0].name : '';
+
   const [selectedVisaPath, setSelectedVisaPath] = useState(null);
   const [selectedVisaTitle, setSelectedVisaTitle] = useState(defaultVisaTitle);
-  
-  const VisaComponent = visas ? visaComponents[`${country}-${visas}`] : (country === 'germany-work-permit' ? Goppcardvisa : null);
+
+  const VisaComponent = visas
+    ? visaComponents[`${country}-${visas}`]
+    : country === 'germany-work-permit'
+    ? Goppcardvisa
+    : null;
 
   useEffect(() => {
     if (visas) {
@@ -237,18 +242,10 @@ const WorkabroadCountry = () => {
     }
   }, [visas, country, visasList]);
 
-  const handleButtonClick = (visa) => {
-    if (selectedVisaPath !== visa.path) {
-      setSelectedVisaPath(visa.path);
-      setSelectedVisaTitle(visa.name);
-      router.push(visa.path);
-    }
-  };
-  
   const currentBackgroundImage =
     (selectedVisaPath && visaBackgroundImages[selectedVisaPath]) ||
     defaultBackgroundImages[country];
-  
+
   return (
     <div>
       <div
@@ -278,17 +275,25 @@ const WorkabroadCountry = () => {
             Visa Options for {country?.toUpperCase()}
           </h2>
           <div className="flex flex-col gap-4 items-center w-full">
-            {visasList.map((visa) => (
-              <button
-                key={visa.path}
-                onClick={() => handleButtonClick(visa)}
-                className={`w-full lg:w-[350px] flex items-center justify-between text-lg font-semibold border border-orange-500 px-6 py-4 rounded-xl shadow-lg transition hover:bg-orange-500 hover:text-white
-                  ${selectedVisaPath === visa.path ? 'bg-orange-500 text-white' : 'bg-white text-black'}`}
-              >
-                {visa.name}
-                <ArrowRight className="w-6 h-6" />
-              </button>
-            ))}
+           {visasList.map(({ name, path }) => {
+  const isSelected = selectedVisaPath === path;
+  return (
+    <Link
+      key={path}
+      href={path}
+      className={`w-full max-w-[320px] flex items-center justify-between text-sm sm:text-lg font-semibold 
+        border border-orange-500 px-4 sm:px-6 py-3 sm:py-4 rounded-xl shadow-md transition duration-300
+        ${isSelected 
+          ? 'bg-orange-500 text-white shadow-2xl'  // permanent "hover" style for selected
+          : 'bg-white text-black hover:shadow-2xl hover:bg-orange-500 hover:text-white' // default with hover
+        }`}
+    >
+      <span className=" cursor-pointer">{name}</span>
+      <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
+    </Link>
+  );
+})}
+
           </div>
         </div>
 

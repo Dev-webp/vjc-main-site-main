@@ -3,6 +3,7 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const countriesData = [
@@ -56,24 +57,21 @@ const Migrate = () => {
     }
   };
 
-  // Auto scroll effect
   useEffect(() => {
     const interval = setInterval(() => {
       if (scrollRef.current) {
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
 
-        // Scroll right by 300px
         scrollRef.current.scrollBy({
           left: 300,
           behavior: "smooth",
         });
 
-        // Loop back to start if at end
         if (scrollLeft + clientWidth >= scrollWidth - 10) {
           scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
         }
       }
-    }, 2000); // every 4 seconds
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -90,23 +88,29 @@ const Migrate = () => {
           className="scroll-wrapper flex overflow-x-auto space-x-4 sm:space-x-6 scroll-smooth"
         >
           {countriesData.map((country, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05 }}
-              className="min-w-[240px] sm:min-w-[280px] max-w-[300px] h-[220px] sm:h-[260px] rounded-lg bg-white border border-gray-200 cursor-pointer relative overflow-hidden"
-              onClick={() => router.push(country.path)}
-            >
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform scale-100 hover:scale-105"
-                style={{ backgroundImage: `url(${country.image})` }}
-              />
-              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-end text-white bg-black/30">
-                <h3 className="text-lg sm:text-xl text-center font-bold">
-                  {country.name}
-                </h3>
-              </div>
-            </motion.div>
-          ))}
+  <Link
+    href={country.path}
+    key={index}
+    className="min-w-[240px] sm:min-w-[280px] max-w-[300px] h-[220px] sm:h-[260px] rounded-lg bg-white border border-gray-200 cursor-pointer relative overflow-hidden block"
+  >
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      className="w-full h-full relative"
+    >
+      <div
+        className="w-full h-full bg-cover bg-center transition-transform scale-100 hover:scale-105"
+        style={{ backgroundImage: `url(${country.image})` }}
+      />
+
+      <div className="absolute inset-0 bg-black/30 flex items-end p-4 sm:p-6">
+        <h3 className="text-lg sm:text-xl font-bold text-white w-full text-center">
+          {country.name}
+        </h3>
+      </div>
+    </motion.div>
+  </Link>
+))}
+
         </div>
 
         {/* Scroll Buttons */}
@@ -124,7 +128,6 @@ const Migrate = () => {
         </button>
       </div>
 
-      {/* Inline CSS for scrollbar hiding */}
       <style jsx>{`
         .scroll-wrapper {
           scrollbar-width: none; /* Firefox */

@@ -14,6 +14,8 @@ const UAEStudentVisa = () => {
             alt="Study in UK"
             fill
             className=" object-cover"
+            priority
+            unoptimized
             sizes="(max-width: 698px) 100vw, 45vw"
           />
         </div>

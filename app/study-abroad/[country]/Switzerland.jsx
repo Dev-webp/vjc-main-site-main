@@ -18,6 +18,7 @@ const StudyInSwitzerland = () => {
                                    height={350}
                                    className="object-cover "
                                    priority
+                                   unoptimized
                                  />
                              
       <h2 className="text-xl font-semibold mt-4 mb-2">Why Study in Switzerland?</h2>

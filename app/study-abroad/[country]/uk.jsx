@@ -15,6 +15,8 @@ const UKStudyGuide = () => {
             fill
             className=" object-cover"
             sizes="(max-width: 698px) 100vw, 45vw"
+            priority
+            unoptimized
           />
         </div>
       </div>

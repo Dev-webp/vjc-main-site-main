@@ -19,7 +19,8 @@ const StudyInSingapore = () => {
                          alt="Study in Singapore"
                          width={500}
                          height={700}
-                        
+                        priority
+                        unoptimized
                        />
                      </div>
                    </div>

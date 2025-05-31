@@ -49,6 +49,8 @@ const StudyInMalaysia = () => {
                                       alt="Study in Singapore"
                                       width={500}
                                       height={600}
+                                      priority
+                                      unoptimized
                                      
                                     />
       <h2 className="text-xl mb-2 font-semibold mt-4">Cost of Living in Malaysia</h2>

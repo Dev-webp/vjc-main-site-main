@@ -19,6 +19,7 @@ const AustraliaStudentVisa = () => {
             height={300}
             className="w-full object-cover rounded-lg"
             priority
+            unoptimized
           />
         </div>
 

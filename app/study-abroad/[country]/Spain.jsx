@@ -18,6 +18,7 @@ export default function StudyInSpain() {
                             height={50}
                             className="object-cover "
                             priority
+                            unoptimized
                           />
                           </div>
       <h2 className="text-xl font-semibold mt-4 mb-2">Why Study in Spain? Top Benefits of Studying Abroad in Spain</h2>
