@@ -8,7 +8,7 @@ import Form from "./Form";
 import Content from "./Content";
 import ModalFormWithPopup from "../Popup/Popup"; // adjust path if needed
 import MigrateImageContent from "../Popup/MigrateImageContent"
-
+import Link from "next/link";
 const textContainerVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -138,15 +138,16 @@ const Migrate = () => {
             <div className="w-full md:w-1/3">
               {countriesData.map(({ name, path, image }) => (
                 <div key={path} className="mb-4 w-full flex justify-center">
-                  <button
-                    className="w-[350px] flex items-center justify-between text-lg font-semibold bg-white text-black border border-orange-500 px-6 py-4 rounded-xl transition duration-300 
-                      shadow-lg shadow-orange-200 hover:shadow-2xl hover:shadow-orange-400 
-                      hover:bg-orange-500 hover:text-white transform hover:scale-105"
-                    onClick={() => handleCountryClick(path, image)}
-                  >
-                    {name}
-                    <ArrowRight className="w-6 h-6 transition duration-300" />
-                  </button>
+                  <Link
+  href={path}
+  className="w-[350px] flex items-center justify-between text-lg font-semibold bg-white text-black border border-orange-500 px-6 py-4 rounded-xl transition duration-300 
+    shadow-lg shadow-orange-200 hover:shadow-2xl hover:shadow-orange-400 
+    hover:bg-orange-500 hover:text-white transform hover:scale-105"
+>
+  {name}
+  <ArrowRight className="w-6 h-6 transition duration-300" />
+</Link>
+
                 </div>
               ))}
             </div>

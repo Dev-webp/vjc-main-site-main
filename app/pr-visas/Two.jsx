@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Form from "./Form";
 import Content from "./Content";
+import Link from "next/link";
 
 
 const visaData = [
@@ -76,19 +77,20 @@ const Migrate = () => {
         {/* Right: Visa Buttons (60%) */}
         <div className="w-full lg:w-[60%] grid grid-cols-1 sm:grid-cols-2 gap-4">
           {visaData.map((visa) => (
-            <button
-              key={visa.path}
-              onClick={() => handleVisaClick(visa)}
-              className={`h-40 w-full flex items-center justify-between text-base sm:text-lg font-semibold px-6 py-4 transition duration-300 shadow ${
-                selectedVisa.path === visa.path
-                  ? "bg-orange-500 text-white shadow-orange-400"
-                  : "bg-white text-black border border-orange-200 hover:bg-orange-500 hover:text-white"
-              } hover:scale-105`}
-            >
-              <span className="w-3/4 text-left">{visa.name}</span>
-              <ArrowRight className="w-5 h-5" />
-            </button>
-          ))}
+  <Link href={visa.path} key={visa.path} className="w-full block">
+    <div
+      className={`h-40 w-full flex items-center justify-between text-base sm:text-lg font-semibold px-6 py-4 transition duration-300 shadow ${
+        selectedVisa.path === visa.path
+          ? "bg-orange-500 text-white shadow-orange-400"
+          : "bg-white text-black border border-orange-200 hover:bg-orange-500 hover:text-white"
+      } hover:scale-105`}
+    >
+      <span className="w-3/4 text-left">{visa.name}</span>
+      <ArrowRight className="w-5 h-5" />
+    </div>
+  </Link>
+))}
+
         </div>
 
       </div>

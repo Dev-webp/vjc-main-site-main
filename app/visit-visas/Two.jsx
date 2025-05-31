@@ -5,7 +5,7 @@ import Head from "next/head";
 import { motion, AnimatePresence } from "framer-motion";
 import { Globe, ArrowRight } from "lucide-react";
 import Content from "./Content";
-
+import Link from "next/link"; 
 const visaData = [
   { name: "USA Visit Visa", path: "/visit-visas/usa", bg: "/usavisvitvisa.jpg" },
   { name: "USA B1/B2 Visa", path: "/visit-visas/usa-b1-b2-visa", bg: "/usabgh1h2.jpg" },
@@ -53,14 +53,13 @@ const Migrate = () => {
     router.push(visa.path);
   };
 
-  const renderVisaCard = (visa, index) => (
+ const renderVisaCard = (visa, index) => (
+  <Link href={visa.path} key={visa.name} className="block">
     <motion.div
-      key={visa.name}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 }}
       className="relative p-4 h-36 rounded-xl shadow-lg transition hover:scale-105 cursor-pointer flex flex-col justify-between overflow-hidden group"
-      onClick={() => handleVisaClick(visa)}
       onMouseEnter={() => {
         setHoveredVisa(visa);
         setIsHovering(true);
@@ -86,7 +85,9 @@ const Migrate = () => {
       </div>
       <p className="text-xs text-white mt-3 relative z-10">Apply Now</p>
     </motion.div>
-  );
+  </Link>
+);
+
 
   return (
     <>

@@ -15,6 +15,7 @@ import sfgerneralskilledvisa from "./southafricavisas/sfgerneralskilledvisa";
 import ModalFormWithPopup from "../../Popup/Popup"; // adjust path if needed
 import MigrateImageContent from "../../Popup/MigrateImageContent"
 import Form from "../Form";
+import Link from "next/link";
 
 const countryVisaData = {
   germany: [
@@ -253,16 +254,17 @@ const MigrateCountry = () => {
           </div>
 
           <div className="flex flex-col gap-4 items-center">
-            {visas.map(({ name, path }) => (
-              <button
-                key={path}
-                className="w-full sm:w-[350px] flex items-center justify-between text-lg font-semibold bg-white text-black border border-orange-500 px-6 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:bg-orange-500 hover:text-white transform hover:scale-105 transition duration-300"
-                onClick={() => router.push(path)}
-              >
-                {name}
-                <ArrowRight className="w-6 h-6 text-black transition duration-300" />
-              </button>
-            ))}
+           {visas.map(({ name, path }) => (
+  <Link
+    key={path}
+    href={path}
+    className="w-full sm:w-[350px] flex items-center justify-between text-lg font-semibold bg-white text-black border border-orange-500 px-6 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:bg-orange-500 hover:text-white transform hover:scale-105 transition duration-300"
+  >
+    {name}
+    <ArrowRight className="w-6 h-6 text-black transition duration-300" />
+  </Link>
+))}
+
           </div>
         </div>
 

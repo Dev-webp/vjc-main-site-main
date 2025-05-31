@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useMemo } from "react";
 import { useRouter, useParams } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
+import Link from "next/link";
 
 
 import Goppcardvisa from './Germany-visa/Goppcardvisa';
@@ -350,17 +351,18 @@ export default function MigrateCountry() {
               Visa Options for {country?.toUpperCase()}
             </h2>
             <div className="flex flex-col gap-4 items-center w-full">
-              {visasList.map((visa) => (
-                <button
-                  key={visa.path}
-                  onClick={() => handleButtonClick(visa)}
-                  className={`w-full lg:w-[350px] flex items-center justify-between text-lg font-semibold border border-orange-500 px-6 py-4 rounded-xl shadow-lg transition hover:bg-orange-500 hover:text-white
-                    ${selectedVisaPath === visa.path ? 'bg-orange-500 text-white' : 'bg-white text-black'}`}
-                >
-                  {visa.name}
-                  <ArrowRight className="w-6 h-6" />
-                </button>
-              ))}
+             {visasList.map((visa) => (
+  <Link
+    key={visa.path}
+    href={visa.path}
+    className={`w-full lg:w-[350px] flex items-center justify-between text-lg font-semibold border border-orange-500 px-6 py-4 rounded-xl shadow-lg transition hover:bg-orange-500 hover:text-white
+      ${selectedVisaPath === visa.path ? 'bg-orange-500 text-white' : 'bg-white text-black'}`}
+  >
+    {visa.name}
+    <ArrowRight className="w-6 h-6" />
+  </Link>
+))}
+
             </div>
           </div>
   

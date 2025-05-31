@@ -222,7 +222,7 @@ const VisitVisas = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+919876543210"
+              href="tel:+919160449000"
               className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-green-400"
             >
               📞 Call Now

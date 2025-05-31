@@ -54,15 +54,16 @@ export default function JobSeekerVisaPage() {
               Explore top countries like Germany, Austria, and UAE to jumpstart your career abroad.
               Our experts at VJC Overseas are ready to guide you every step of the way.
             </p>
-            <motion.button
-              onClick={handleScrollDown}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow-md transition"
-            >
-              <span>Know More</span>
-              <ChevronDown size={24} />
-            </motion.button>
+           <Link href="/assessemnt">
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold shadow-md transition cursor-pointer"
+  >
+    <span>Apply Now</span>
+    <ChevronDown size={24} />
+  </motion.div>
+</Link>
           </div>
 
           {/* Right Form */}

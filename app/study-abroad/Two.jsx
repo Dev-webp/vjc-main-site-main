@@ -62,17 +62,22 @@ const Migrate = () => {
   return (
     <div className="relative pt-10 w-full min-h-screen">
       {/* Background Animated GIF with Next.js Image */}
-      <div className="fixed top-0 left-0 w-full h-full -z-10 relative">
-        <Image
-          src="/airr.gif"
-          alt="Animated Background"
-          fill
-          className="object-cover"
-          priority
-          unoptimized
-        />
+     <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full h-full object-cover"
+  >
+    <source src="/jobseeker.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+</div>
+
         <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
-      </div>
+      
 
       {/* Page Content */}
       <div className="relative z-10 px-4 sm:px-6 lg:px-12 py-10">
@@ -83,45 +88,45 @@ const Migrate = () => {
               Study Abroad
             </h2>
             <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              navigation
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 3000 }}
-              loop={true}
-              spaceBetween={0}
-              slidesPerView={1.6}
-              centeredSlides={true}
-              grabCursor={true}
-              onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-            >
-              {visaData.map((visa, index) => {
-                const isActive = index === activeIndex;
-                return (
-                  <SwiperSlide key={visa.path}>
-                    <div
-                      onClick={() => handleVisaClick(visa)}
-                      className={`relative w-full h-[420px] md:h-[440px] lg:h-[460px] transform transition-all duration-700 overflow-hidden shadow-xl border-4 cursor-pointer ${
-                        isActive
-                          ? "scale-105 opacity-100 z-30"
-                          : "scale-90 opacity-80 z-10"
-                      }`}
-                    >
-                      <Image
-                        src={visa.image}
-                        alt={visa.name}
-                        fill
-                        className="object-cover object-center"
-                        quality={100}
-                        priority
-                      />
-                      <div className="absolute inset-0 bg-black/20 flex items-center justify-center text-white font-bold text-2xl sm:text-3xl text-center p-6">
-                        {visa.name}
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
+  modules={[Navigation, Pagination, Autoplay]}
+  navigation
+  pagination={{ clickable: true }}
+  autoplay={{ delay: 3000 }}
+  loop={true}
+  spaceBetween={0}
+  slidesPerView={1.6}
+  centeredSlides={true}
+  grabCursor={true}
+  onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+>
+  {visaData.map((visa, index) => {
+    const isActive = index === activeIndex;
+    return (
+      <SwiperSlide key={visa.path}>
+        <Link href={visa.path}>
+          <div
+            className={`relative w-full h-[420px] md:h-[440px] lg:h-[460px] transform transition-all duration-700 overflow-hidden shadow-xl border-4 cursor-pointer ${
+              isActive ? "scale-105 opacity-100 z-30" : "scale-90 opacity-80 z-10"
+            }`}
+          >
+            <Image
+              src={visa.image}
+              alt={visa.name}
+              fill
+              className="object-cover object-center"
+              quality={100}
+              priority
+            />
+            <div className="absolute inset-0 bg-black/20 flex items-center justify-center text-white font-bold text-2xl sm:text-3xl text-center p-6">
+              {visa.name}
+            </div>
+          </div>
+        </Link>
+      </SwiperSlide>
+    );
+  })}
+</Swiper>
+
           </div>
 
           {/* Form Section */}
@@ -131,27 +136,27 @@ const Migrate = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-16 bg-gradient-to-r from-black/50 to-black/50 p-8 rounded-2xl shadow-lg text-center">
-          <h3 className="text-2xl font-bold text-white mb-4">
+        <div className="mt-16 bg-gradient-to-r from-white/50 to-white/50 p-8 rounded-2xl shadow-lg text-center">
+          <h3 className="text-2xl font-bold text-black mb-4">
             Study Abroad with <span className="text-orange-500">VJC Overseas:</span> Your Global Education Partner
           </h3>
-          <p className="text-white text-lg max-w-4xl mx-auto mb-4">
+          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
             At VJC Overseas, we believe that education is not just about textbooks — it's about experiencing the world, broadening your horizons, and preparing for a global future.
           </p>
-          <p className="text-white text-lg max-w-4xl mx-auto mb-4">
+          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
             Our Study Abroad services are designed to guide students through every step of their international education journey, ensuring a seamless and enriching experience.
           </p>
-          <p className="text-white text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
             We collaborate with top universities and educational institutions across the world, offering you access to a wide range of undergraduate, postgraduate, and diploma programs in:
           </p>
 
           {/* 20 Countries List */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mb-6 text-lg text-left list-disc list-inside">
+          <div className="grid grid-cols-2 bg-white sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mb-6 text-lg text-left list-disc list-inside">
             {visaData.map((visa) => (
               <li key={visa.path}>
                 <Link
                   href={visa.path}
-                  className="text-blue-800 hover:underline hover:text-orange-800 transition duration-300"
+                  className="text-blue-500 hover:underline hover:text-black transition duration-300"
                 >
                   {visa.name.replace("Study in ", "")}
                 </Link>
@@ -159,15 +164,15 @@ const Migrate = () => {
             ))}
           </div>
 
-          <p className="text-white text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
             Our team of experienced counsellors provides personalized guidance throughout the process. From choosing the right course and university to visa
             applications and pre-departure orientations, we are with you every step of the way. Our goal is to make your transition to studying abroad as smooth as possible, so you can focus on your studies and make the most of your time overseas.
           </p>
-          <p className="text-white text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
             Beyond academics, we also understand the importance of cultural integration. We help you connect with student communities, providing support 
             with accommodation, travel, and local resources, ensuring you feel at home no matter where you go.
           </p>
-          <p className="text-white text-lg max-w-4xl mx-auto mb-6">
+          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
             Studying abroad is an investment in your future, and with VJC Overseas, you’re not just applying for a course—you’re embarking on a life-changing adventure. Let us help you take the first step 
             towards a world-class education and an exciting new chapter in your life.
           </p>

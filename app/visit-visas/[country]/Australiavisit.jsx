@@ -20,14 +20,14 @@ export default function AustraliaVisitVisa() {
         </div>
       </div>
 
-      <h2 className="text-xl mt-4 mb-2 font-semibold">🛂 What is an <span className="text-blue-400">Australia</span> Visit Visa?</h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> What is an <span className="text-blue-400">Australia</span> Visit Visa?</h2>
       <p>
         The Australia Visit Visa (Subclass 600) allows Indian citizens to visit Australia for tourism, visiting family or
         friends, or for short business trips. Whether you're heading there for a vacation, a special family occasion, or a
         quick business meeting, this visa is your ticket to one of the most vibrant countries in the world.
       </p>
 
-      <h2 className="text-xl mt-4 mb-2 font-semibold">✅ Key Features:</h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> Key Features:</h2>
       <ul className="list-disc list-inside">
         <li>Stay duration: Up to 3, 6, or 12 months depending on the visa granted.</li>
         <li>Purpose: Tourism, family visits, short-term business activities.</li>
@@ -35,7 +35,7 @@ export default function AustraliaVisitVisa() {
         <li>Multiple entry options available.</li>
       </ul>
 
-      <h2 className="text-xl mt-4 mb-2 font-semibold">📆 <span className="text-blue-400">Australia</span> Visit Visa Validity</h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> <span className="text-blue-400">Australia</span> Visit Visa Validity</h2>
       <p>
         The visa can be single or multiple entry. Validity generally ranges from 3 months to 1 year, but some visitors may be
         granted longer validity based on personal circumstances or travel history.
@@ -45,7 +45,7 @@ export default function AustraliaVisitVisa() {
       </p>
 
       <div className="border border-gray-300 p-4 rounded bg-gray-50 mt-4">
-        <h2 className="text-xl mb-2 font-semibold">💰 <span className="text-blue-400">Australia</span> Visit Visa Fees from India (2025)</h2>
+        <h2 className="text-xl mb-2 font-semibold"> <span className="text-blue-400">Australia</span> Visit Visa Fees from India (2025)</h2>
         <table className="w-full text-left border-collapse">
           <thead>
             <tr>
@@ -70,7 +70,7 @@ export default function AustraliaVisitVisa() {
         <p className="mt-2 text-sm text-gray-700">Note: Service charges and VFS fees are additional. Contact <span className="text-orange-500">VJC Overseas</span> for exact fees & expert application support.</p>
       </div>
 
-      <h2 className="text-xl mt-6 mb-2 font-semibold">🧾 Cost of Living in <span className="text-blue-400">Australia</span> for Indian Visitors</h2>
+      <h2 className="text-xl mt-6 mb-2 font-semibold"> Cost of Living in <span className="text-blue-400">Australia</span> for Indian Visitors</h2>
       <table className="w-full text-left border-collapse">
         <thead>
           <tr>
@@ -103,37 +103,37 @@ export default function AustraliaVisitVisa() {
         </tbody>
       </table>
       <p className="mt-2 font-semibold text-blue-700">
-        👉 Tip: Travel insurance is highly recommended and often required. We can help you choose the best plan.
+         Tip: Travel insurance is highly recommended and often required. We can help you choose the best plan.
       </p>
 
-      <h2 className="text-xl mt-6 mb-2 font-semibold">🌟 Why Choose <span className="text-orange-500">VJC Overseas</span> for Your <span className="text-blue-400">Australia</span> Visit Visa?</h2>
+      <h2 className="text-xl mt-6 mb-2 font-semibold"> Why Choose <span className="text-orange-500">VJC Overseas</span> for Your <span className="text-blue-400">Australia</span> Visit Visa?</h2>
       <ul className="list-disc list-inside">
-        <li>✔️ 100% Document Assistance</li>
-        <li>✔️ Visa Interview Preparation</li>
-        <li>✔️ Transparent Fees – No Hidden Costs</li>
-        <li>✔️ Experienced Australia Visa Consultants</li>
-        <li>✔️ Personalized Travel & Budget Guidance</li>
+        <li> 100% Document Assistance</li>
+        <li> Visa Interview Preparation</li>
+        <li> Transparent Fees – No Hidden Costs</li>
+        <li>Experienced Australia Visa Consultants</li>
+        <li>Personalized Travel & Budget Guidance</li>
       </ul>
 
-      <h2 className="text-xl mt-6 mb-2 font-semibold">📌 Useful Tips for Indian Travelers to <span className="text-blue-400">Australia</span></h2>
+      <h2 className="text-xl mt-6 mb-2 font-semibold"> Useful Tips for Indian Travelers to <span className="text-blue-400">Australia</span></h2>
       <ul className="list-disc list-inside">
-        <li>🌐 Language: English is widely spoken.</li>
-        <li>🪙 Currency: 1 AUD ≈ ₹55 (subject to fluctuation)</li>
-        <li>⏰ Time Difference: Australia is 4.5 to 5.5 hours ahead of India.</li>
-        <li>📶 SIM Cards: Local SIM cards available at airport or stores – Optus, Telstra & Vodafone are popular.</li>
-        <li>💡 Weather: Australia has opposite seasons to India – plan accordingly!</li>
-        <li>🍛 Indian Food: Easily available in cities like Sydney, Melbourne, Brisbane, and Perth.</li>
+        <li> Language: English is widely spoken.</li>
+        <li> Currency: 1 AUD ≈ ₹55 (subject to fluctuation)</li>
+        <li> Time Difference: Australia is 4.5 to 5.5 hours ahead of India.</li>
+        <li> SIM Cards: Local SIM cards available at airport or stores – Optus, Telstra & Vodafone are popular.</li>
+        <li> Weather: Australia has opposite seasons to India – plan accordingly!</li>
+        <li> Indian Food: Easily available in cities like Sydney, Melbourne, Brisbane, and Perth.</li>
       </ul>
 
-      <h2 className="text-xl mt-6 mb-2 font-semibold">📞 Ready to Explore <span className="text-blue-400">Australia</span>? Apply with <span className="text-orange-500">VJC Overseas</span> Today!</h2>
+      <h2 className="text-xl mt-6 mb-2 font-semibold"> Ready to Explore <span className="text-blue-400">Australia</span>? Apply with <span className="text-orange-500">VJC Overseas</span> Today!</h2>
       <p>
         Don’t let paperwork hold you back from the adventure of a lifetime. With <span className="text-orange-500">VJC Overseas</span> by your side, your Australia
         Visit Visa is just a step away.
       </p>
       <p>
-        📞 Call us now at <a href="tel:+919160449000" className="text-blue-600 underline">+91-9160449000</a><br />
-        📧 Email: <a href="mailto:info@vjcoverseas.com" className="text-blue-600 underline">info@vjcoverseas.com</a><br />
-        🌐 <a href="https://www.vjcoverseas.com" className="text-blue-600 underline">www.vjcoverseas.com</a>
+         Call us now at <a href="tel:+919160449000" className="text-blue-600 underline">+91-9160449000</a><br />
+         Email: <a href="mailto:info@vjcoverseas.com" className="text-blue-600 underline">info@vjcoverseas.com</a><br />
+         <a href="https://www.vjcoverseas.com" className="text-blue-600 underline">www.vjcoverseas.com</a>
       </p>
       <p className="mt-2">Your journey begins here. Let’s make Australia happen!</p>
     </div>

@@ -11,6 +11,7 @@ import Sweden from "./Sweden";
 import Germany from "./Germany";
 import Portugal from "./Portugal";
 import Austria from "./Austria";
+import Link from "next/link";
 
 const visaData = [
   { name: "Germany Jobseeker Visa", path: "/jobseeker-visas/germany", image: "/germanyjobseeker.jpg" },
@@ -89,21 +90,25 @@ const Migrate = () => {
         <div className="w-full flex flex-col md:flex-row gap-8 md:gap-10 items-start">
           {/* Visa Buttons Section */}
           <div className="w-full md:w-1/3">
-            {visaData.map((visa) => (
-              <div key={visa.path} className="mb-4 w-full">
-                <button
-                  className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg ${
-                    selectedVisa.path === visa.path
-                      ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
-                      : "bg-transparent text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
-                  } transform hover:scale-105`}
-                  onClick={() => handleVisaClick(visa)}
-                >
-                  {visa.name}
-                  <ArrowRight className="w-6 h-6" />
-                </button>
-              </div>
-            ))}
+    
+
+{visaData.map((visa) => (
+  <div key={visa.path} className="mb-4 w-full">
+    <Link href={visa.path} className="w-full block">
+      <div
+        className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg transform hover:scale-105 ${
+          selectedVisa.path === visa.path
+            ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
+            : "bg-transparent text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
+        }`}
+      >
+        {visa.name}
+        <ArrowRight className="w-6 h-6" />
+      </div>
+    </Link>
+  </div>
+))}
+
           </div>
 
           {/* Visa Info Content Box */}

@@ -25,6 +25,8 @@ const countryVisaData = {
     { name: "Open Work Permit Visa", path: "/work-abroad/canada-work-permit/open-work-permit" },
     { name: "W1 Visa", path: "/work-abroad/canada-work-permit/w1-visa" },
     { name: "LMIA Visa", path: "/work-abroad/canada-work-permit/lmia" },
+    { name: "CANADA WORK PERMIT", path: "/migrate/canada/work-permit" },
+    { name: "CANADA EXPRESS ENTRY", path: "/pr-visas/canada-pr/canada-express-entry" },
   ],
   "usa-h1b-visa": [{ name: "USA H1b Visa", path: "/work-abroad/usa-h1b-visa" }],
   "australia-work-permit": [

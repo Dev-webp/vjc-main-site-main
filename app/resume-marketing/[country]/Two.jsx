@@ -20,6 +20,7 @@ import Newzealand from "./Newzealand";
 import Malaysia from "./Malaysia";
 import Poland from "./Poland";
 import Malta from "./Malta";
+import Link from "next/link";
 
 const visaData = [
   { name: "Canada Resume Marketing", image: "/canadaresume1.webp", path: "/resume-marketing/canada" },
@@ -105,21 +106,24 @@ const Migrate = () => {
         <div className="w-full flex flex-col md:flex-row gap-8 md:gap-10 items-start">
           {/* Visa Buttons Section */}
           <div className="w-full md:w-1/3">
-            {visaData.map((visa) => (
-              <div key={visa.path} className="mb-4 w-full">
-                <button
-                  className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg ${
-                    selectedVisa.path === visa.path
-                      ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
-                      : "bg-transparent text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
-                  } transform hover:scale-105`}
-                  onClick={() => handleVisaClick(visa)}
-                >
-                  {visa.name}
-                  <ArrowRight className="w-6 h-6" />
-                </button>
-              </div>
-            ))}
+           {visaData.map((visa) => (
+  <Link
+    key={visa.path}
+    href={visa.path}
+    className={`block mb-4 w-full no-underline`}
+  >
+    <div
+      className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg ${
+        selectedVisa.path === visa.path
+          ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
+          : "bg-transparent text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
+      } transform hover:scale-105`}
+    >
+      {visa.name}
+      <ArrowRight className="w-6 h-6" />
+    </div>
+  </Link>
+))}
           </div>
 
           {/* Visa Info Content Box */}

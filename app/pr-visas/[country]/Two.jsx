@@ -10,6 +10,7 @@ import USAstud from "./USA-visa/USA-stud";
 import UKBvisa from "./UK-visa/UKBvisa";
 import HKstudentvisa from "./HongKongpages/HKstudentvisa";
 import Newzepr from "./Newzealand-visa/Newze-pr";
+import Link from "next/link";
 
 import UAEstud from "./UAE-visa/UAE-stud";
 import Canadanominal from "./Canadapages/Canadanominal";
@@ -157,20 +158,21 @@ const MigrateCountry = () => {
             Visa Options for {country.charAt(0).toUpperCase() + country.slice(1)}
           </h2>
           <div className="flex flex-col gap-4 items-center">
-            {visas.map(({ name, path }) => (
-              <button
-                key={path}
-                onClick={() => router.push(path)}
-                className={`w-full sm:w-[350px] flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl shadow-lg transition duration-300 transform hover:scale-105 ${
-                  pathname === path
-                    ? "bg-orange-500 text-white border-orange-500"
-                    : "bg-white text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
-                }`}
-              >
-                {name}
-                <ArrowRight className="w-6 h-6" />
-              </button>
-            ))}
+           {visas.map(({ name, path }) => (
+  <Link href={path} key={path} className="w-full sm:w-[350px] block">
+    <div
+      className={`flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl shadow-lg transition duration-300 transform hover:scale-105 ${
+        pathname === path
+          ? "bg-orange-500 text-white border-orange-500"
+          : "bg-white text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
+      }`}
+    >
+      {name}
+      <ArrowRight className="w-6 h-6" />
+    </div>
+  </Link>
+))}
+
           </div>
         </div>
 

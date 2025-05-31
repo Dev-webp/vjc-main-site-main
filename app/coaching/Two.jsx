@@ -96,44 +96,40 @@ Don't let the visa interview</h2>
     </h2>
 
     {/* Buttons */}
-    <div className="flex flex-col gap-4 w-full max-w-sm">
-      <button
-        onClick={() => handleNavigation('/coaching/ielts')}
-        className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-blue-700"
-      >
-        IELTS
-      </button>
-      <button
-        onClick={() => handleNavigation('/coaching/pte')}
-        className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-green-700"
-      >
-        PTE
-      </button>
-      <button
-        onClick={() => handleNavigation('/coaching/gre')}
-        className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-red-700"
-      >
-        GRE
-      </button>
-      <button
-        onClick={() => handleNavigation('/coaching/gmat')}
-        className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-yellow-600"
-      >
-        GMAT
-      </button>
-      <button
-        onClick={() => handleNavigation('/coaching/toefl')}
-        className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-purple-700"
-      >
-        TOEFL
-      </button>
-      <button
-        onClick={() => handleNavigation('/coaching/duolingo')}
-        className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-gray-900"
-      >
-        DUOLINGO
-      </button>
-    </div>
+   
+<div className="flex flex-col gap-4 w-full max-w-sm">
+  <div className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-blue-700">
+    <Link href="/coaching/ielts" className="block w-full text-center">
+      IELTS
+    </Link>
+  </div>
+  <div className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-green-700">
+    <Link href="/coaching/pte" className="block w-full text-center">
+      PTE
+    </Link>
+  </div>
+  <div className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-red-700">
+    <Link href="/coaching/gre" className="block w-full text-center">
+      GRE
+    </Link>
+  </div>
+  <div className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-yellow-600">
+    <Link href="/coaching/gmat" className="block w-full text-center">
+      GMAT
+    </Link>
+  </div>
+  <div className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-purple-700">
+    <Link href="/coaching/toefl" className="block w-full text-center">
+      TOEFL
+    </Link>
+  </div>
+  <div className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-gray-900">
+    <Link href="/coaching/duolingo" className="block w-full text-center">
+      DUOLINGO
+    </Link>
+  </div>
+</div>
+
   </div>
 
   {/* Right Section - Text */}

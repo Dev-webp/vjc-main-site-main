@@ -110,23 +110,26 @@ export default function Home() {
     className="rounded-lg shadow-lg border-2 border-white"
   >
     {slides.map((slide, index) => (
-      <SwiperSlide
-        key={index}
-        className="relative cursor-pointer"
-        onClick={() => router.push(slide.path)}
-      >
-        <img
-          src={slide.image}
-          alt={slide.name}
-          className="w-full h-96 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 hover:bg-black/70 transition-all rounded-lg p-4">
-          <h2 className="text-white text-2xl font-bold text-center mb-4">{slide.name}</h2>
-          <button className="bg-orange-500 text-white font-semibold px-4 py-2 rounded-full shadow hover:bg-blue-400 transition">
-            Apply Now
-          </button>
-        </div>
-      </SwiperSlide>
+      <SwiperSlide key={index} className="relative cursor-pointer">
+  <Link href={slide.path} passHref className="block w-full h-full">
+    <div className="relative w-full h-full">
+      <img
+        src={slide.image}
+        alt={slide.name}
+        className="w-full h-96 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+      />
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 hover:bg-black/70 transition-all rounded-lg p-4">
+        <h2 className="text-white text-2xl font-bold text-center mb-4">
+          {slide.name}
+        </h2>
+        <span className="bg-orange-500 text-white font-semibold px-4 py-2 rounded-full shadow hover:bg-blue-400 transition">
+          Apply Now
+        </span>
+      </div>
+    </div>
+  </Link>
+</SwiperSlide>
+
     ))}
   </Swiper>
 </section>

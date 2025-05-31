@@ -22,6 +22,7 @@ import Aus190 from "./Australia-visa/Aus190";
 import Aus191 from "./Australia-visa/Aus191";
 import Aus491 from "./Australia-visa/Aus491";
 import Aus494 from "./Australia-visa/Aus494";
+import Link from "next/link";
 
 // Form component
 import Form from '../../Form';
@@ -213,19 +214,20 @@ export default function MigrateCountry() {
           </h2>
           <div className="flex flex-col gap-4 items-center w-full">
             {visasList.map((visaItem) => {
-              const isActive = visaItem.path.endsWith(visa);
-              return (
-                <button
-                  key={visaItem.path}
-                  onClick={() => handleButtonClick(visaItem)}
-                  className={`w-full lg:w-[350px] flex items-center justify-between text-lg font-semibold border border-orange-500 px-6 py-4 rounded-xl shadow-lg transition hover:bg-orange-500 hover:text-white
-                  ${isActive ? "bg-orange-500 text-white" : "bg-white text-black"}`}
-                >
-                  {visaItem.name}
-                  <ArrowRight className="w-6 h-6" />
-                </button>
-              );
-            })}
+  const isActive = visaItem.path.endsWith(visa);
+  return (
+    <Link href={visaItem.path} key={visaItem.path} className="w-full lg:w-[350px] block">
+      <div
+        className={`flex items-center justify-between text-lg font-semibold border border-orange-500 px-6 py-4 rounded-xl shadow-lg transition hover:bg-orange-500 hover:text-white
+        ${isActive ? "bg-orange-500 text-white" : "bg-white text-black"}`}
+      >
+        {visaItem.name}
+        <ArrowRight className="w-6 h-6" />
+      </div>
+    </Link>
+  );
+})}
+
           </div>
         </div>
 

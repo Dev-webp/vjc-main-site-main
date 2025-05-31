@@ -29,7 +29,7 @@ import Netherland from "./Netherland";
 import Lux from "./Lux";
 import Dubai from "./Dubai";
 import Denmark from "./Denmark";
-
+import Link from "next/link";
 const visaData = [
   { name: "Study in USA", path: "/study-abroad/usa", image: "/usa1.jpg" ,component:"./USAStudyVisa"},
   { name: "Study in Uk", path: "/study-abroad/uk", image: "/uk1.webp" },
@@ -128,17 +128,19 @@ const Migrate = () => {
           <div className="w-full md:w-1/3">
             {visaData.map((visa) => (
               <div key={visa.path} className="mb-4 w-full">
-                <button
-                  className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg ${
-                    selectedVisa.path === visa.path
-                      ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
-                      : "bg-transparent text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
-                  } transform hover:scale-105`}
-                  onClick={() => handleVisaClick(visa)}
-                >
-                  {visa.name}
-                  <ArrowRight className="w-6 h-6" />
-                </button>
+                <Link href={visa.path} className="block w-full">
+  <div
+    className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg ${
+      selectedVisa.path === visa.path
+        ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
+        : "bg-transparent text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
+    } transform hover:scale-105`}
+  >
+    {visa.name}
+    <ArrowRight className="w-6 h-6" />
+  </div>
+</Link>
+
               </div>
             ))}
           </div>

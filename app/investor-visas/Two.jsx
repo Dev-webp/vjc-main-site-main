@@ -146,20 +146,20 @@ const Migrate = () => {
                </h2>
        
                <p className="text-base sm:text-lg mb-3 text-gray-800 flex items-start gap-2">
-                 <FaRegLightbulb className="text-orange-500 mt-1" />
+               
                  We specialize in turning migration dreams into reality through investment-led visa solutions tailored to your profile.
                </p>
        
                <p className="text-base sm:text-lg mb-3 text-gray-800 flex items-start gap-2">
-                 <FaCheckCircle className="text-orange-500 mt-1" />
+                
                  Fill out the form and let our consultants guide you through every step of the investor visa process.
                </p>
        
                <ul className="list-disc list-inside space-y-2 mb-4 text-gray-800 pl-5">
-                 <li><FaCheckCircle className="inline text-orange-500 mr-2" /> Expert Visa Consultation</li>
-                 <li><FaCheckCircle className="inline text-orange-500 mr-2" /> Tailored Investment Pathways</li>
-                 <li><FaCheckCircle className="inline text-orange-500 mr-2" /> End-to-End Support</li>
-                 <li><FaGlobeAmericas className="inline text-orange-500 mr-2" /> Global Opportunities Await</li>
+                 <li> Expert Visa Consultation</li>
+                 <li>Tailored Investment Pathways</li>
+                 <li> End-to-End Support</li>
+                 <li> Global Opportunities Await</li>
                </ul>
        
                <p className="text-base sm:text-lg text-gray-800 italic">Global Visions. Trusted Guidance.</p>
@@ -178,7 +178,7 @@ const Migrate = () => {
                  </p>
        
                  <p>
-                   Whether you're in <FaMapMarkerAlt className="inline text-orange-600" /> Hyderabad, Bengaluru, or any other city, our experts are ready to help.
+                   Whether you're in  Hyderabad, Bengaluru, or any other city, our experts are ready to help.
                  </p>
        
                  <h4 className="text-lg font-semibold mt-4">Why Choose Us?</h4>

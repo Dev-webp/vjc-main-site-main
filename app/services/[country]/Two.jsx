@@ -10,7 +10,7 @@ import ForexServices from "./ForexServices";
 import FreeAssessment from "./FreeAssessment";
 import FreeCounselling from "./FreeCounselling";
 import Form from "./Form";
-
+import Link from "next/link";
 const services = [
   { key: "passport-services", title: "Passport Services", image: "/passport.webp", icon: <Globe size={20} /> },
   { key: "air-ticketing", title: "Air Ticketing", image: "/airtecket.png", icon: <Plane size={20} /> },
@@ -69,35 +69,38 @@ export default function ServicePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-blue-400/60 via-white to-orange-500/80 "></div>
         
         {/* Left Section */}
-        <motion.div className="md:w-1/2 text-left relative z-10">
+        <motion.div className="md:w-1/4 text-left relative z-10">
           <h3 className="text-3xl font-bold text-white mb-4 ml-44">{selectedService.title}</h3>
           <Image src={selectedService.image} alt={selectedService.title} width={500} height={300} className=" shadow-md mx-auto mb-4" />
         </motion.div>
 
         {/* Right Section */}
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:w-1/2 relative z-10">
+import Link from "next/link";
+
+// Inside your return JSX:
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:w-3/4 relative z-10">
   {services.map((service) => (
-    <motion.button
+    <Link
       key={service.key}
-      onClick={() => {
-        router.push(`/services/${service.key}`, { scroll: false });
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          router.replace(`/services/${service.key}`); // Prevent full page reload
-        }, 100);
-      }}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className={`flex items-center justify-center gap-2 p-4 min-h-12 w-full  text-lg font-semibold transition-all duration-300 shadow-md ${
-        selectedService.key === service.key
-          ? "bg-orange-700 text-white scale-105"
-          : "bg-white bg-opacity-10 backdrop-blur-lg hover:bg-opacity-30"
-      }`}
+      href={`/services/${service.key}`}
+      scroll={false}
+      className="w-full"
     >
-      {service.icon} {service.title}
-    </motion.button>
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className={`flex items-center justify-center  min-h-32 w-42 text-lg font-semibold transition-all duration-300 shadow-md cursor-pointer ${
+          selectedService.key === service.key
+            ? "bg-orange-700 text-white scale-105"
+            : "bg-white bg-opacity-10 backdrop-blur-lg hover:bg-opacity-30"
+        }`}
+      >
+        {service.icon} {service.title}
+      </motion.div>
+    </Link>
   ))}
 </div>
+
 </div>
 
       {/* Content Section */}

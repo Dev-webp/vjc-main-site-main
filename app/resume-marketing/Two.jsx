@@ -13,6 +13,7 @@ import { useRouter } from "next/navigation";
 import Form from "./Form";
 import Content from "./Content";
 import Image from "next/image";
+import Link from "next/link";
 
 const cards = [
   {
@@ -144,41 +145,43 @@ const BookFlipAnimation = () => {
 
           <div className="relative w-[280px] sm:w-[320px] md:w-[450px] h-[420px] sm:h-[460px] md:h-[500px] perspective-[1200px]">
             <AnimatePresence mode="wait">
-              <motion.div
-                key={currentPage}
-                initial={{ rotateY: 90, opacity: 0 }}
-                animate={{ rotateY: 0, opacity: 1 }}
-                exit={{ rotateY: -90, opacity: 0 }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
-                onClick={handlePageClick}
-                className="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer overflow-hidden flex flex-col justify-center items-center text-center text-white"
-                style={{
-                  backgroundImage: `url(${cards[currentPage].image})`,
-                  transformStyle: "preserve-3d",
-                  backfaceVisibility: "hidden",
-                }}
-              >
-                <div className="bg-black bg-opacity-30 w-full h-full flex flex-col justify-center items-center p-4 sm:p-6">
-                  <motion.p
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 }}
-                    className="text-sm sm:text-base text-white drop-shadow text-center"
-                  >
-                    Explore our premium resume marketing services in{" "}
-                    <strong>{cards[currentPage].name.split(" ")[0]}</strong> to
-                    get noticed by global employers.
-                  </motion.p>
-                  <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.8 }}
-                    className="text-xs text-gray-300 mt-2 sm:mt-3"
-                  >
-                    (Click anywhere to open details)
-                  </motion.p>
-                </div>
-              </motion.div>
+              <Link href={cards[currentPage].path} passHref className="absolute inset-0 w-full h-full">
+  <motion.div
+    key={currentPage}
+    initial={{ rotateY: 90, opacity: 0 }}
+    animate={{ rotateY: 0, opacity: 1 }}
+    exit={{ rotateY: -90, opacity: 0 }}
+    transition={{ duration: 0.6, ease: "easeInOut" }}
+    className="w-full h-full bg-cover bg-center cursor-pointer overflow-hidden flex flex-col justify-center items-center text-center text-white"
+    style={{
+      backgroundImage: `url(${cards[currentPage].image})`,
+      transformStyle: "preserve-3d",
+      backfaceVisibility: "hidden",
+    }}
+  >
+    <div className="bg-black bg-opacity-30 w-full h-full flex flex-col justify-center items-center p-4 sm:p-6">
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="text-sm sm:text-base text-white drop-shadow text-center"
+      >
+        Explore our premium resume marketing services in{" "}
+        <strong>{cards[currentPage].name.split(" ")[0]}</strong> to
+        get noticed by global employers.
+      </motion.p>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8 }}
+        className="text-xs text-gray-300 mt-2 sm:mt-3"
+      >
+        (Click anywhere to open details)
+      </motion.p>
+    </div>
+  </motion.div>
+</Link>
+
             </AnimatePresence>
 
             {/* Navigation Buttons */}
