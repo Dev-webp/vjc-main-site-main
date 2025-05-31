@@ -124,7 +124,14 @@ const ServicesDec = () => {
  
   {currentImage === "/ser.png" && (
     <div className="absolute inset-0 flex flex-col mt-52 ml-4 items-center justify-center text-black text-center">
-      <h2 className="text-2xl font-bold">Our Services</h2>
+
+
+<Link href="/services">
+  <h2 className="text-2xl font-bold cursor-pointer hover:text-blue-600 transition">
+    Our Services
+  </h2>
+</Link>
+
       <p className="mt-2 text-sm px-4">Discover a range of top-notch services designed to meet your needs.</p>
     </div>
   )}

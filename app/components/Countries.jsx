@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { FaTimes } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import Link from "next/link";
+import Link from 'next/link';
 // Import Swiper styles
 import 'swiper/css';
 import {
@@ -68,17 +68,17 @@ const countries = [
       
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/canada"
           className="inline-block px-4 py-2 bg-orange-600 text-white text-sm font-medium rounded-md hover:bg-blue-400 transition"
         >
           Know More
-        </link>
+        </Link>
       </div>
     </div>
   ),
   color: "bg-gradient-to-r from-red-600 to-white",
-  link: "/study-abroad/canada"
+  Link: "/study-abroad/canada"
 }
 ,
 
@@ -133,12 +133,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/australia"
           className="inline-block px-4 py-2 bg-orange-700 text-white text-sm font-medium rounded-md hover:bg-blue-800 transition"
         >
           Know More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -195,12 +195,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/usa"
           className="inline-block px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700 transition"
         >
           Know More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -258,12 +258,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/germany"
           className="inline-block px-4 py-2 bg-yellow-600 text-black text-sm font-medium rounded-md hover:bg-yellow-700 transition"
         >
           Know More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -315,12 +315,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/uk"
           className="inline-block px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-md hover:bg-blue-800 transition"
         >
           Know More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -377,12 +377,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abraod/france"
           className="inline-block px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-md hover:bg-blue-800 transition"
         >
           Know More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -413,12 +413,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abraod/italy"
           className="inline-block px-4 py-2 bg-green-700 text-white text-sm font-medium rounded-md hover:bg-green-800 transition"
         >
           Learn More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -449,12 +449,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/spain"
           className="inline-block px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700 transition"
         >
           Learn More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -487,12 +487,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/netherlands"
           className="inline-block px-4 py-2 bg-blue-700 text-white text-sm font-medium rounded-md hover:bg-blue-800 transition"
         >
           Learn More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -549,12 +549,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/uae"
           className="inline-block px-4 py-2 bg-green-700 text-white text-sm font-medium rounded-md hover:bg-green-800 transition"
         >
           Know More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -603,12 +603,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abraod/switzerland"
           className="inline-block px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700 transition"
         >
           Learn More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -657,12 +657,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/sweden"
           className="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition"
         >
           Learn More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -695,12 +695,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/southafrica"
           className="inline-block px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition"
         >
           Learn More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -748,12 +748,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/singapore"
           className="inline-block px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700 transition"
         >
           Learn More
-        </link>
+        </Link>
       </div>
     </div>
   )
@@ -801,12 +801,12 @@ const countries = [
       </div>
 
       <div className="pt-2">
-        <link
+        <Link
           href="/study-abroad/newzealand"
           className="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition"
         >
           Learn More
-        </link>
+        </Link>
       </div>
     </div>
   )
