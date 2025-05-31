@@ -75,9 +75,9 @@ export default function ServicePage() {
         </motion.div>
 
         {/* Right Section */}
-import Link from "next/link";
 
-// Inside your return JSX:
+
+
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:w-3/4 relative z-10">
   {services.map((service) => (
     <Link

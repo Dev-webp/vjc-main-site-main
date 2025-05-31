@@ -75,8 +75,16 @@ const countryVisaData = {
     { name: "Open Work Permit Visa", path: "/work-abroad/canada-work-permit/open-work-permit" },
     { name: "W1 Visa", path: "/work-abroad/canada-work-permit/w1-visa" },
     { name: "LMIA Visa", path: "/work-abroad/canada-work-permit/lmia" },
+    { name: "CANADA WORK PERMIT", path: "/migrate/canada/work-permit" },
+    { name: "CANADA EXPRESS ENTRY", path: "/pr-visas/canada-pr/canada-express-entry" },
   ],
-  "usa-h1b-visa": [{ name: "USA H1b Visa", path: "/work-abroad/usa-h1b-visa" }],
+  "usa-h1b-visa": [
+    { name: "USA H1b Visa", path: "/work-abroad/usa-h1b-visa" }, 
+    { name: "USA Tourist Visa", path: "/migrate/united-states/tourist-visa" },
+    { name: "USA Visit Visa", path: "/visit-visas/usa" },
+    { name: "USA Investor Visa", path: "/investor-visas/usa" },
+    { name: "USA Resume Marketing", path: "/resume-marketing/usa" },
+    ],
   "australia-work-permit": [
     { name: "Temporary Skills 482 Visa", path: "/work-abroad/australia-work-permit/482-visa" },
     { name: "Employer 186 Visa", path: "/work-abroad/australia-work-permit/employer-186-visa" },
@@ -91,7 +99,6 @@ const countryVisaData = {
     { name: "Skilled Worker Visa", path: "/work-abroad/united-kingdom-work-permit/uk-skilled-worker-visa" },
     { name: "Tier 2 Visa", path: "/work-abroad/united-kingdom-work-permit/uk-tire-2-visa" },
     { name: "Tier 4 Visa", path: "/work-abroad/united-kingdom-work-permit/uk-tire-4-visa" },
-    // { name: "Work Permit Visa", path: "/workabroad/united-kingdom-work-permit/uk-work-permit-visa" },
   ],
   "denmark-work-permit": [
     { name: "Pay Limit Scheme Visa", path: "/work-abroad/denmark-work-permit/denmark-pay-limit-scheme-visa" },
@@ -99,13 +106,15 @@ const countryVisaData = {
     { name: "Trainee Visa", path: "/work-abroad/denmark-work-permit/denmark-trainee-visa" },
     { name: "Employment Visa", path: "/work-abroad/denmark-work-permit/denmark-employment-visa" },
   ],
- "dubai-work-permit": [
+  "dubai-work-permit": [
     { name: "Standard Work Visa", path: "/work-abroad/dubai-work-permit/dubai-standard-work-visa" },
     { name: "Green Visa", path: "/work-abroad/dubai-work-permit/dubai-green-visa" },
     { name: "Golden Visa", path: "/work-abroad/dubai-work-permit/dubai-golden-visa" },
- ]
-
+     { name: "Dubai Visit Visa", path: "/visit-visas/dubai" },
+    { name: "Study in Dubai", path: "/study-abroad/dubai" },
+  ],
 };
+
 
 
 

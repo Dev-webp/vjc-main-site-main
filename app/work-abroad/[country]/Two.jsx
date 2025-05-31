@@ -28,7 +28,13 @@ const countryVisaData = {
     { name: "CANADA WORK PERMIT", path: "/migrate/canada/work-permit" },
     { name: "CANADA EXPRESS ENTRY", path: "/pr-visas/canada-pr/canada-express-entry" },
   ],
-  "usa-h1b-visa": [{ name: "USA H1b Visa", path: "/work-abroad/usa-h1b-visa" }],
+  "usa-h1b-visa": [
+    { name: "USA H1b Visa", path: "/work-abroad/usa-h1b-visa" }, 
+    { name: "USA Tourist Visa", path: "/migrate/united-states/tourist-visa" },
+    { name: "USA Visit Visa", path: "/visit-visas/usa" },
+    { name: "USA Investor Visa", path: "/investor-visas/usa" },
+    { name: "USA Resume Marketing", path: "/resume-marketing/usa" },
+    ],
   "australia-work-permit": [
     { name: "Temporary Skills 482 Visa", path: "/work-abroad/australia-work-permit/482-visa" },
     { name: "Employer 186 Visa", path: "/work-abroad/australia-work-permit/employer-186-visa" },
@@ -54,6 +60,8 @@ const countryVisaData = {
     { name: "Standard Work Visa", path: "/work-abroad/dubai-work-permit/dubai-standard-work-visa" },
     { name: "Green Visa", path: "/work-abroad/dubai-work-permit/dubai-green-visa" },
     { name: "Golden Visa", path: "/work-abroad/dubai-work-permit/dubai-golden-visa" },
+     { name: "Dubai Visit Visa", path: "/visit-visas/dubai" },
+    { name: "Study in Dubai", path: "/study-abroad/dubai" },
   ],
 };
 
