@@ -54,7 +54,7 @@ export default function JobSeekerVisaPage() {
               Explore top countries like Germany, Austria, and UAE to jumpstart your career abroad.
               Our experts at VJC Overseas are ready to guide you every step of the way.
             </p>
-           <Link href="/assessemnt">
+           <Link href="/assessment">
   <motion.div
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}

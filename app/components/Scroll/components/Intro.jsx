@@ -3,11 +3,15 @@ import Image from 'next/image';
 import Background from '../../../../public/bg-2.png';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Link from 'next/link';
-import Form from '@/app/components/Form'; // Importing your existing form component
+import Form from '@/app/components/Form'; // Your existing form component
+import ModalFormWithPopup from "../../../Popup/Popup"; // Adjust path if needed
+import HomeImageContent from '../../../Popup/Home'; // Import your custom content
 
 export default function Hero() {
-    const [showForm, setShowForm] = useState(false); // State to control form visibility
+    const [showForm, setShowForm] = useState(false); // Not used anymore but kept if needed elsewhere
     const container = useRef();
+    const [isOpen, setIsOpen] = useState(false);
+
     const { scrollYProgress } = useScroll({
         target: container,
         offset: ['start start', 'end start']
@@ -16,11 +20,11 @@ export default function Hero() {
     const y = useTransform(scrollYProgress, [0, 1], ["0vh", "150vh"]);
 
     const handleFormToggle = () => {
-        setShowForm(!showForm); // Toggle form visibility
+        setShowForm(!showForm);
     };
 
     const handleCloseForm = () => {
-        setShowForm(false); // Close form
+        setShowForm(false);
     };
 
     return (
@@ -39,7 +43,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.8 }}
                 >
-                    Turning your global dreams to reality with <br/> VJC Overseas
+                    Turning your global dreams to reality with <br /> VJC Overseas
                 </motion.h1>
                 <motion.h1
                     className="text-[3vw] md:text-[1rem] max-w-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-orange-500 to-orange-600 drop-shadow-lg uppercase"
@@ -56,7 +60,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
                 >
-                    At VJC Overseas, we feel that your international journey deserves the best guidance. We simplify the complex process with our experienced team on your side so that you don&apos;t have to face it alone. Up to now, we&apos;ve already helped over 1,000 people achieve their global dreams and are now continuing our support for many more. So, let us be trusted partners in your journey towards a brighter future.  
+                    At VJC Overseas, we feel that your international journey deserves the best guidance. We simplify the complex process with our experienced team on your side so that you don't have to face it alone. Up to now, we've already helped over 1,000 people achieve their global dreams and are now continuing our support for many more. So, let us be trusted partners in your journey towards a brighter future.
                 </motion.p>
 
                 <motion.div
@@ -66,33 +70,41 @@ export default function Hero() {
                     transition={{ delay: 0.7, duration: 0.8 }}
                 >
                     <Link href='/services'>
-                    <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 ml-4 md:ml-0 lg:ml-0 rounded-lg shadow-lg transition-all">
-                        Explore Services
-                    </button>
+                        <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 ml-4 md:ml-0 lg:ml-0 rounded-lg shadow-lg transition-all">
+                            Explore Services
+                        </button>
                     </Link>
-                    <button 
+                    <button
+                        type="button"
                         className="bg-transparent border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-2 px-6 mt-4 md:mt-0 lg:mt-0 rounded-lg shadow-lg transition-all"
-                        onClick={handleFormToggle} // Trigger form visibility toggle
+                        onClick={() => setIsOpen(true)} // Open the modal
                     >
                         Contact Our Experts
                     </button>
                 </motion.div>
             </div>
 
-            {/* Conditionally Render the Form */}
+            {/* Optional legacy form (not used if modal is active) */}
             {showForm && (
                 <div className="fixed top-16 inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 z-20">
                     <div className="relative bg-white rounded-lg p-8 w-[30rem]">
-                        <button 
-                            onClick={handleCloseForm} // Close the form
+                        <button
+                            onClick={handleCloseForm}
                             className="absolute top-4 right-2 text-xl w-16 h-16 text-gray-700 hover:text-gray-900"
                         >
                             &times;
                         </button>
-                        <Form /> {/* Importing your form here */}
+                        <Form />
                     </div>
                 </div>
             )}
+
+            {/* Modal Form with Custom Content */}
+            <ModalFormWithPopup
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                customContent={<HomeImageContent/>}
+            />
         </div>
     );
 }

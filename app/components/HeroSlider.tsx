@@ -38,7 +38,7 @@ const sliderData = [
     gradient: "bg-gradient-to-r from-blue-500 to-white",
   },
   {
-    services: [{ text: "Apply For Malta Study Visa", link: "/" }],
+    services: [{ text: "Apply For Malta Study Visa", link: "/study-in-malta" }],
     backgroundImage: "/malta.png",
     title: "Malta",
     gradient: "bg-gradient-to-r from-red-700 to-white",

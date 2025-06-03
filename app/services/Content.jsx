@@ -1,7 +1,9 @@
 "use client";
-
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import ModalFormWithPopup from "../Popup/Popup"; // Adjust path if needed
+import ServicesImageContent from '../Popup/ServicesImageContent'; // Import your custom content
 import {
   FaPassport,
   FaPlane,
@@ -54,6 +56,8 @@ const services = [
 
 export default function ServicesPage() {
   const [bgIndex, setBgIndex] = useState(0);
+   const [isOpen, setIsOpen] = useState(false);
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -95,11 +99,13 @@ export default function ServicesPage() {
         >
           Empowering your journey with expert services in travel, documentation, and education.
         </motion.p>
-        <Link href="/services/assessment">
-          <button className="mt-6 px-6 py-3 bg-orange-600 hover:bg-blue-400 text-white rounded-lg shadow-lg font-semibold transition duration-300">
-            Apply Now
-          </button>
-        </Link>
+       <button
+  onClick={() => setIsOpen(true)}
+  className="mt-6 px-6 py-3 bg-orange-600 hover:bg-blue-400 text-white rounded-lg shadow-lg font-semibold transition duration-300"
+>
+  Apply Now
+</button>
+
       </div>
 
       {/* Services Section */}
@@ -124,11 +130,15 @@ export default function ServicesPage() {
                     isBgMatch ? "bg-blue-300 border-blue-500" : "bg-white border-transparent"
                   } border-blue-300 hover:bg-blue-50 text-gray-800 rounded-2xl px-6 py-5 w-[160px] sm:w-[180px] shadow-md transition-all duration-300 cursor-pointer border-2`}
                 >
-                  <img
-                    src={service.image}
-                    alt={service.label}
-                    className="w-16 h-16 object-cover rounded-full mb-1 -mt-4 border-2 border-white"
-                  />
+                 <Image
+  src={service.image}
+  alt={service.label}
+  width={64}
+  height={64}
+  className="w-16 h-16 object-cover rounded-full mb-1 -mt-4 border-2 border-white"
+  unoptimized
+/>
+
                   <service.icon className="text-blue-600 text-2xl mb-2 mt-1" />
                   <span className="text-1sm font-semibold text-center">{service.label}</span>
                 </motion.a>
@@ -137,6 +147,13 @@ export default function ServicesPage() {
           })}
         </div>
       </motion.section>
+      <ModalFormWithPopup
+  isOpen={isOpen}
+  setIsOpen={setIsOpen}
+  customContent={<ServicesImageContent />}
+/>
+
     </div>
+    
   );
 }
