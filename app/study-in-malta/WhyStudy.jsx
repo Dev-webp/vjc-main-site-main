@@ -68,24 +68,22 @@ export default function WhyStudy() {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
-            <div className="overflow-hidden  transition-transform duration-300 ">
+            <div className="overflow-hidden -mt-64 md:mt-0  transition-transform duration-300 ">
               <Image
-  src="/study-in-malta-process.png"
-  alt="Step-by-step process to study in Malta for international students"
-  width={680}
-  height={780}
-  priority
-  unoptimized
-  title="Study in Malta Process - VJC Overseas"
-  loading="eager"
-/>
+                src="/study-in-malta-process.png"
+                alt="Study in Malta"
+                width={680}
+                height={780}
+                priority
+              unoptimized
 
+              />
             </div>
           </div>
         </div>
 
         {/* Step-by-step Process */}
-        <div className="mt-6 mb-0">
+        <div className="mb-0 -mt-48 md:mt-4">
           <h3 className="text-3xl font-bold mb-8 text-blue-900">Step-by-Step: Study in Malta Process</h3>
           <ol className="list-decimal list-inside  text-gray-700">
             <li>

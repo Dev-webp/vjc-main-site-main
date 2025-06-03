@@ -5,7 +5,7 @@ import Form from './Form';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import ModalFormWithPopup from "../Popup/Popup";
-import MaltaImageContent from "../Popup/MaltaImageContent"; // adjust path if needed
+import MaltaImageContent from "../Popup/MaltaImageContent";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,60 +19,57 @@ export default function Hero() {
         autoPlay
         loop
         muted
-        unoptimized
         playsInline
       />
       <div className="absolute inset-0 bg-black bg-opacity-90"></div>
 
       {/* Main Content */}
-      <div className="relative z-10 w-full px-4 md:px-12 pt-16 pb-8 max-w-[1440px] mx-auto">
-        <div className="flex flex-col md:flex-row items-start justify-between gap-12">
+      <div className="relative z-10 w-full px-4 sm:px-6 md:px-12 pt-16 pb-8 max-w-[1440px] mx-auto">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Left Content */}
           <motion.div
-            className="md:w-1/2 mt-4 md:pl-10"
+            className="w-full lg:w-1/2 flex flex-col lg:pl-20 items-center lg:items-start mt-4"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
           >
-            {/* Top Image */}
-            <div className="mx-auto md:mx-0 w-[560px]">
+            {/* Images */}
+            <div className="w-full max-w-[500px]">
               <Image
                 src="/1.gif"
                 alt="Work in Germany"
-                width={560}
+                width={600}
                 height={350}
-                className="rounded-lg"
+                className="rounded-lg w-full h-auto"
                 priority
-                unoptimized
               />
-
-              {/* Award Image */}
-              <div className="flex flex-col items-center mt-4 space-y-2">
+              <div className="flex justify-center mt-4">
                 <Image
                   src="/award-vjc.png"
                   alt="Award VJC"
-                  width={500}
-                  height={250}
+                  width={400}
+                  height={200}
+                  className="w-full h-auto"
                   priority
-                  unoptimized
                 />
               </div>
             </div>
 
             {/* Heading */}
-            <h1 className="mt-8 text-5xl font-bold text-white max-w-[560px] pl-7 leading-tight">
-              Study Abroad in Malta with - <span className="text-5xl font-semibold text-orange-500 typing-animation">VJC Overseas</span>
+            <h1 className="mt-6 text-3xl sm:text-3xl lg:text-5xl font-bold text-white text-center lg:text-left px-2 sm:px-0 leading-tight">
+              Study Abroad in Malta with - 
+              <span className="text-orange-500 typing-animation">VJC Overseas</span>
             </h1>
 
             {/* Description */}
-            <p className="text-lg text-gray-200 max-w-[560px] pl-6 mt-4">
+            <p className="text-base sm:text-lg text-gray-200 text-center lg:text-left mt-4 max-w-[500px] px-2 sm:px-0">
               Explore your academic journey in the heart of the Mediterranean – quality education, rich culture, and an affordable lifestyle.
             </p>
 
             {/* Apply Button */}
-            <div className="flex justify-center mt-6">
+            <div className="mt-6 w-full flex justify-center lg:justify-start">
               <button
-                className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold shadow-lg transition duration-300 max-w-[560px] w-full md:w-auto"
+                className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold shadow-lg transition duration-300 w-full sm:w-auto"
                 onClick={() => setIsOpen(true)}
               >
                 Apply Now
@@ -82,24 +79,26 @@ export default function Hero() {
 
           {/* Right Form */}
           <motion.div
-            className="md:w-1/2"
+            className="w-full lg:w-1/2"
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <Form />
+            <div className="w-full max-w-md mx-auto">
+              <Form />
+            </div>
           </motion.div>
         </div>
-
-      
       </div>
-  {/* Modal popup component */}
-        <ModalFormWithPopup
-          isOpen={isOpen}
-          setIsOpen={setIsOpen}
-          customContent={<MaltaImageContent />}
-        />
-      {/* Typing animation style */}
+
+      {/* Modal popup */}
+      <ModalFormWithPopup
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        customContent={<MaltaImageContent />}
+      />
+
+      {/* Typing animation styles */}
       <style jsx>{`
         .typing-animation {
           white-space: nowrap;
@@ -113,7 +112,7 @@ export default function Hero() {
 
         @keyframes typing {
           to {
-            width: 12ch; /* length of "VJC Overseas" */
+            width: 12ch;
           }
         }
 

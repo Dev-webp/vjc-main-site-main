@@ -40,7 +40,7 @@ export default function FinalSteps() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12">
+    <section className="max-w-7xl mx-auto px-6 py-0 lg:-mt-8 -mt-6">
       {/* Step 5: Visa with Image */}
       <div className="flex flex-col md:flex-row items-center bg-gradient-to-r from-orange-100 via-orange-50 to-white border-l-8 border-orange-500 rounded-lg p-8 mb-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
         {/* Text Section */}
