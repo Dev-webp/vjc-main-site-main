@@ -10,7 +10,7 @@ import Workabroad from './Workabroad';
 import Studytips from './Studytips';
 import Visitvisa from './Visitvisa';
 import Form from '../Form'; // 🛑 Make sure to import your Form component
-import Footer from './Footer';
+
 
 const blogs = [
   {
@@ -142,7 +142,7 @@ const BlogDetails = () => {
         </div>
 
       </div>
-      <Footer/>
+   
     </div>
   );
 };

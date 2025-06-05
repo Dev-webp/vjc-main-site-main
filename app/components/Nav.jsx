@@ -340,13 +340,33 @@ const Navbar = () => {
     { name: "Dubai", path: "/resume-marketing/dubai" },
     { name: "Austria", path: "/resume-marketing/austria" },
     { name: "Singapore", path: "/resume-marketing/singapore" },
-    {
-      name: "New Zealand",
-      path: "/resume-marketing/new-zealand",
-    },
+    {name: "New Zealand",path: "/resume-marketing/new-zealand" },
     { name: "Malaysia", path: "/resume-marketing/malaysia" },
     { name: "Poland", path: "/resume-marketing/poland" },
     { name: "Malta", path: "/resume-marketing/malta" },
+  ];
+   const toursticketingSubPages = [
+    { name: "Europe", path: "/tours-ticketing/europe" },
+    { name: "USA ",  path: "/tours-ticketing/usa" },
+    { name: "Australia", path: "/tours-ticketing/australia" },
+    { name: "Canada ",  path: "/tours-ticketing/canada" },
+    { name: "France ", path: "/tours-ticketing/france" },
+    { name: "Italy ", path: "/tours-ticketing/italy" },
+    { name: "Switzerland ",  path: "/tours-ticketing/switzerland" },
+    { name: "Dubai ",  path: "/tours-ticketing/dubai" },
+    { name: "Turkey ",  path: "/tours-ticketing/turkey" },
+    { name: "Malaysia ", path: "/tours-ticketing/malaysia" },
+    { name: "Singapore ", path: "/tours-ticketing/singapore" },
+    { name: "Greece ", path: "/tours-ticketing/greece" },
+    { name: "Bali", path: "/tours-ticketing/bali" },
+    { name: "Andaman ", path: "/tours-ticketing/andaman" },   
+    { name: "Thailand ", path: "/tours-ticketing/thailand" }, 
+    { name: "Philippines ", path: "/tours-ticketing/philippines" },
+    { name: "Maldives",  path: "/tours-ticketing/maldives" },
+    { name: "Fiji Island ",  path: "/tours-ticketing/fiji-island" },   
+    { name: "Azerbaijan ",  path: "/tours-ticketing/azerbaijan" }, 
+    { name: "Austria ",  path: "/tours-ticketing/austria" },
+    { name: "South Africa ", path: "/tours-ticketing/south-africa" },
   ];
   const jobseeker = [
     {
@@ -660,6 +680,29 @@ const Navbar = () => {
                           >
                             {subItem.name}
                           </Link>
+                        ))}    
+                      </div>
+                    </div>
+                   ) : item.name === "Tours/Ticketing" ? (
+                    <div className="relative group">
+                      <Link
+                        href={item.path}
+                        className="text-white text-sm lg:text-xs font-semibold px-3.5 rounded-2xl  hover:bg-white hover:bg-opacity-20 uppercase mt-2"
+                      >
+                        {item.name}
+                      </Link>
+
+                      {/* Visit Visas Submenu - OPEN TO LEFT */}
+                      <div className="absolute right-0 mt-3 invisible opacity-0  rounded-2xl bg-gradient-to-br  from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100 grid grid-cols-6 gap-2 bg-black bg-opacity-50 p-3 w-[600px] min-h-[150px] shadow-xl z-50 transition-all duration-300 ease-in-out">
+                        {toursticketingSubPages.map((subItem) => (
+                          <Link
+                            href={subItem.path}
+                            
+                            key={subItem.name}
+                            className="text-white text-sm font-semibold text-center px-3 py-2 hover:text-orange-500 hover:bg-white hover:bg-opacity-10 transition duration-200 ease-in-out whitespace-normal break-words"
+                          >
+                            {subItem.name}
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -680,6 +723,7 @@ const Navbar = () => {
     "Investor Visas",
     "Services",
     "Coaching/Training",
+    "Tours/Ticketing",
   ].includes(item.name) && (
    <div className="absolute left-0 top-full mt-4 invisible opacity-0 group-hover:visible group-hover:opacity-100 
   opacity-0 bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100
@@ -699,6 +743,7 @@ const Navbar = () => {
         : item.name === "Coaching/Training"
         ? coachingSubPages
         : item.name === "Investor Visas"
+      
         ? investorvisasSubPages
         : item.name === "Job Seeker Visas"
         ? jobseeker
