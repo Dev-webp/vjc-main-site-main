@@ -67,7 +67,7 @@ export default function ToursPage() {
   }, [filtered]);
 
   return (
-    <div className="min-h-screen bg-white p-6 space-y-6">
+    <div className="bg-white p-6 pt-6 pb-2 space-y-4">
       <div className="text-center">
         <input
           type="text"
@@ -79,7 +79,7 @@ export default function ToursPage() {
       </div>
 
       {/* Row 1: scroll left */}
-      <div className="overflow-hidden whitespace-nowrap leading-none">
+      <div className="overflow-hidden whitespace-nowrap leading-none group">
         <div
           ref={firstRowRef}
           className="flex gap-4 w-max"
@@ -87,6 +87,7 @@ export default function ToursPage() {
             animation: firstRowWidth
               ? `marqueeLeft 50s linear infinite`
               : 'none',
+            animationPlayState: 'running',
           }}
         >
           {duplicatedList.map((item, i) => (
@@ -104,7 +105,7 @@ export default function ToursPage() {
       </div>
 
       {/* Row 2: scroll right */}
-      <div className="overflow-hidden whitespace-nowrap leading-none">
+      <div className="overflow-hidden whitespace-nowrap leading-none group">
         <div
           ref={secondRowRef}
           className="flex gap-4 w-max"
@@ -112,6 +113,7 @@ export default function ToursPage() {
             animation: secondRowWidth
               ? `marqueeRight 60s linear infinite`
               : 'none',
+            animationPlayState: 'running',
           }}
         >
           {duplicatedList.map((item, i) => (
@@ -129,6 +131,10 @@ export default function ToursPage() {
       </div>
 
       <style jsx>{`
+        .group:hover div {
+          animation-play-state: paused !important;
+        }
+
         @keyframes marqueeLeft {
           0% {
             transform: translateX(0);
@@ -137,6 +143,7 @@ export default function ToursPage() {
             transform: translateX(-${firstRowWidth}px);
           }
         }
+
         @keyframes marqueeRight {
           0% {
             transform: translateX(-${secondRowWidth}px);

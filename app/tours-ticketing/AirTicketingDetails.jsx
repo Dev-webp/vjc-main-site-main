@@ -24,7 +24,8 @@ const services = [
 
 export default function AirTicketingDetails() {
   return (
-    <div className="px-6 md:px-20 py-10 bg-gray-50 text-gray-800">
+    <div className="px-6 md:px-20 pt-2 pb-10 bg-gray-50 text-gray-800">
+
       <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">What We Offer in Air Ticketing</h2>
 
       {/* Services Grid */}
