@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -29,38 +30,33 @@ const StudentVisaProcess = () => {
     { name: "Sweden", path: "/sweden" },
   ];
 
-  // Counts state
   const [studentsPlaced, setStudentsPlaced] = useState(1);
   const [countriesCount, setCountriesCount] = useState(1);
   const [universitiesCount, setUniversitiesCount] = useState(1);
 
-  // Max values for counters
-  const maxStudents = 12500;
-  const maxCountries = countries.length; // 25
+  const maxStudents = 50000;
+  const maxCountries = countries.length;
   const maxUniversities = 150;
 
   useEffect(() => {
-    let studentCounter = 1;
-    let countryCounter = 1;
-    let universityCounter = 1;
+    let s = 1, c = 1, u = 1;
 
-    // Intervals for animation speed
     const studentInterval = setInterval(() => {
-      studentCounter += 50;
-      setStudentsPlaced(studentCounter > maxStudents ? maxStudents : studentCounter);
-      if (studentCounter >= maxStudents) clearInterval(studentInterval);
+      s += 50;
+      setStudentsPlaced(s > maxStudents ? maxStudents : s);
+      if (s >= maxStudents) clearInterval(studentInterval);
     }, 20);
 
     const countryInterval = setInterval(() => {
-      countryCounter += 1;
-      setCountriesCount(countryCounter > maxCountries ? maxCountries : countryCounter);
-      if (countryCounter >= maxCountries) clearInterval(countryInterval);
+      c += 1;
+      setCountriesCount(c > maxCountries ? maxCountries : c);
+      if (c >= maxCountries) clearInterval(countryInterval);
     }, 100);
 
     const universityInterval = setInterval(() => {
-      universityCounter += 2;
-      setUniversitiesCount(universityCounter > maxUniversities ? maxUniversities : universityCounter);
-      if (universityCounter >= maxUniversities) clearInterval(universityInterval);
+      u += 2;
+      setUniversitiesCount(u > maxUniversities ? maxUniversities : u);
+      if (u >= maxUniversities) clearInterval(universityInterval);
     }, 30);
 
     return () => {
@@ -70,48 +66,79 @@ const StudentVisaProcess = () => {
     };
   }, []);
 
+  const bgImages = [
+    "/study-abroad-vjc.jpg",
+    "/study-abroad.jpg",
+    "/studying-abroad-1.webp",
+    "/texus-vjc.jpg",
+    "/turckey-tour.jpg",
+  ];
+  const [currentBg, setCurrentBg] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBg((prev) => (prev + 1) % bgImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 text-gray-800">
-      {/* Heading */}
-      <h1 className="text-4xl font-bold text-blue-900 mb-8 text-center">
-        Student Visa Process with <span className="text-orange-500"> VJC Overseas </span> 
+    <div className="max-w-6xl mx-auto px-4 py-8 text-gray-800">
+      <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-6 text-center">
+        Student Visa Process with <span className="text-orange-500">VJC Overseas</span>
       </h1>
 
-      {/* Country Buttons */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-center mb-10">
-        {countries.map((c, i) => (
-          <Link key={i} href={c.path}>
-            <div className="px-4 py-3 border border-blue-500 rounded-xl text-center text-blue-400 hover:bg-orange-500 hover:text-white transition font-semibold shadow-md text-sm sm:text-base cursor-pointer">
-              {c.name} Student Visa
-            </div>
-          </Link>
-        ))}
+      {/* Country Buttons with Full Labels */}
+      <div
+        className="rounded-xl p-4 mb-10 transition-all duration-1000 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${bgImages[currentBg]})`,
+          backgroundBlendMode: "multiply",
+          backgroundColor: "rgba(0,0,0,0.6)",
+        }}
+      >
+        <h2 className="text-xl text-white font-bold text-center mb-4">
+          Choose Your Destination
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+          {countries.map((c, i) => (
+            <Link key={i} href={c.path}>
+  <div className="px-4 py-3 bg-white/70 text-black border border-white rounded-lg text-sm font-semibold hover:bg-orange-500 hover:text-white hover:underline underline-offset-4 transition-all duration-300 shadow cursor-pointer text-center">
+    {c.name} Student Visa Process
+  </div>
+</Link>
+
+          ))}
+        </div>
       </div>
 
-      {/* Content Paragraphs */}
-      <div className="max-w-3xl mx-auto space-y-6 text-justify text-gray-700">
+      {/* Description Section */}
+      <div className="max-w-3xl mx-auto space-y-4 text-sm text-gray-700 text-justify">
         <p>
-          Navigating the student visa process can seem overwhelming, but with VJC Overseas by your side, it becomes a straightforward and manageable journey. We provide expert guidance from start to finish, ensuring all your documents, applications, and requirements are handled accurately and efficiently.
+          Navigating the student visa process can seem overwhelming, but with <span className="text-orange-500">  VJC Overseas</span> by your side, it becomes a straightforward and manageable journey. We provide expert guidance from start to finish, ensuring all your documents, applications, and requirements are handled accurately and efficiently.
         </p>
         <p>
-          Our dedicated counsellors stay updated with the latest immigration policies and visa regulations for popular study destinations like the USA, Canada, UK, Australia, Germany, and more. This means you receive reliable advice tailored to your specific country of interest.
+         Our dedicated counsellors stay updated with the latest immigration policies and visa regulations for popular study destinations like the USA, Canada, UK, Australia, Germany, and more. This means you receive reliable advice tailored to your specific country of interest.
         </p>
         <p>
           From helping you select the right course and university to assisting with the visa interview preparation, we offer comprehensive support that maximizes your chances of visa approval. We also provide post-visa services such as pre-departure briefings and assistance with accommodation and travel arrangements.
         </p>
         <p>
-          Studying abroad opens a world of opportunities, and VJC Overseas is committed to making your dream come true. Our transparent, step-by-step approach and personalized care ensure that your student visa process is smooth, stress-free, and successful.
+          Studying abroad opens a world of opportunities, and <span className="text-orange-500">  VJC Overseas </span>is committed to making your dream come true. Our transparent, step-by-step approach and personalized care ensure that your student visa process is smooth, stress-free, and successful.
         </p>
         <p>
           In recent times, the student visa landscape has seen major shifts. Many countries have implemented more digitized systems for visa applications, and several are now fast-tracking student permits to boost their international education sectors post-COVID. This opens up quicker, more efficient routes for students who meet the right criteria.
         </p>
         <p>
-          Additionally, emerging destinations like Germany, Ireland, and Sweden have become increasingly popular due to low tuition fees, extended post-study work visas, and growing job markets. VJC Overseas stays ahead of these trends, ensuring our students take full advantage of the latest opportunities available globally.
+          Additionally, emerging destinations like Germany, Ireland, and Sweden have become increasingly popular due to low tuition fees, extended post-study work visas, and growing job markets. <span className="text-orange-500">  VJC Overseas</span> stays ahead of these trends, ensuring our students take full advantage of the latest opportunities available globally.
         </p>
+        <p>At <span className="text-orange-500">  VJC Overseas</span>, we continuously monitor global education trends and visa reforms to provide our students with the most up-to-date, competitive, and strategic advice. Whether you're aiming for top-ranked universities or cost-effective programs with strong career prospects, our expert guidance ensures that you never miss an opportunity. With our tailored approach and global insights, your dream to study abroad becomes a powerful reality — secure, successful, and future-ready.
+
+</p>
       </div>
 
-      {/* Autoplay Video */}
-      <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl max-w-5xl mx-auto mt-8">
+      {/* YouTube Video */}
+      <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg max-w-5xl mx-auto mt-6">
         <iframe
           width="100%"
           height="300"
@@ -123,19 +150,19 @@ const StudentVisaProcess = () => {
         />
       </div>
 
-      {/* CTA Counters */}
-      <div className="mt-8 bg-orange-500 rounded-xl shadow-lg p-8 max-w-4xl mx-auto flex flex-col sm:flex-row justify-around text-center gap-8">
+      {/* CTA Stats */}
+      <div className="mt-6 bg-gradient-to-r from-blue-500 to-orange-500 rounded-xl shadow-lg px-6 py-6 max-w-4xl mx-auto flex flex-col sm:flex-row justify-around text-center gap-6 sm:gap-4">
         <div>
-          <h2 className="text-5xl font-bold text-white">{studentsPlaced.toLocaleString()}+</h2>
-          <p className="mt-2 text-gray-700 font-semibold">Students Placed</p>
+          <h2 className="text-4xl font-bold text-white">{studentsPlaced.toLocaleString()}+</h2>
+          <p className="mt-1 text-white text-sm font-medium">Students Placed</p>
         </div>
         <div>
-          <h2 className="text-5xl font-bold text-white">{countriesCount}</h2>
-          <p className="mt-2 text-gray-700 font-semibold">Countries Covered</p>
+          <h2 className="text-4xl font-bold text-white">{countriesCount}</h2>
+          <p className="mt-1 text-white text-sm font-medium">Countries Covered</p>
         </div>
         <div>
-          <h2 className="text-5xl font-bold text-white">{universitiesCount}+</h2>
-          <p className="mt-2 text-gray-700 font-semibold">Universities Partnered</p>
+          <h2 className="text-4xl font-bold text-white">{universitiesCount}+</h2>
+          <p className="mt-1 text-white text-sm font-medium">Universities Partnered</p>
         </div>
       </div>
     </div>

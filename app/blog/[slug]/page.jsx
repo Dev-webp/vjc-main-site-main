@@ -77,8 +77,8 @@ const BlogDetails = () => {
 
   useEffect(() => {
     let start = 0;
-    const end = 12500;
-    const duration = 3000;
+    const end = 50000;
+    const duration = 1000;
     const stepTime = Math.abs(Math.floor(duration / end));
     const timer = setInterval(() => {
       start += 50;
