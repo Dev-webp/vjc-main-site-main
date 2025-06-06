@@ -26,7 +26,7 @@ const blogs = [
     {
       id: 4,
       title: 'Study Abroad Scholarships You Must Know',
-      slug: 'study-abroad-scholarships-you-must-know',
+      slug: 'student-visa-process',
       description: 'Unlock your education journey with scholarships.',
       image: '/studyabroad.png',
       category: 'Study Tips',

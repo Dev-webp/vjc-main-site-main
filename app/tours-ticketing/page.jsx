@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
 import animationData from '../../public/models/travel.json';
@@ -9,8 +9,12 @@ import Tour from './Tour';
 import ExploreDestination from './ExploreDestination';
 import Link from 'next/link';
 import Destinations from './Destinations';
+import ModalFormWithPopup from "../Popup/Popup";
+import MaltaImageContent from "../Popup/Toursandtickeing";
 
 export default function ExploreDestinations() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div
       className="relative min-h-screen bg-white text-gray-800 overflow-hidden font-serif"
@@ -50,12 +54,13 @@ export default function ExploreDestinations() {
               Book the best flights and unforgettable tours—globally trusted, beautifully managed.
             </p>
 
-            <Link href="/assessment">
-              <button className="relative inline-block px-8 py-3 font-bold text-white bg-gradient-to-r from-orange-500 via-black to-orange-500 rounded-xl overflow-hidden group shadow-xl animate-pulse-glow">
-                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-400 via-black to-orange-600 transition-transform duration-500 ease-in-out group-hover:bg-blue-400 rounded-xl animate-shimmer"></span>
-                <span className="relative z-10">Apply Now</span>
-              </button>
-            </Link>
+            <button
+              className="relative inline-block px-8 py-3 font-bold text-white bg-gradient-to-r from-orange-500 via-black to-orange-500 rounded-xl overflow-hidden group shadow-xl animate-pulse-glow"
+              onClick={() => setIsOpen(true)}
+            >
+              <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-400 via-black to-orange-600 transition-transform duration-500 ease-in-out group-hover:bg-blue-400 rounded-xl animate-shimmer"></span>
+              <span className="relative z-10">Apply Now</span>
+            </button>
 
             <p className="text-sm text-gray-300 pt-2">
               24/7 booking support. Instant e-ticket delivery. 10,000+ happy flyers.
@@ -79,11 +84,17 @@ export default function ExploreDestinations() {
       {/* Other Sections */}
       <div>
         <Destinations />
-       
-          <AirTicketingDetails />
+        <AirTicketingDetails />
         <Tour />
         <ExploreDestination />
       </div>
+
+      {/* Modal */}
+      <ModalFormWithPopup
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        customContent={<MaltaImageContent />}
+      />
     </div>
   );
 }

@@ -1,68 +1,145 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
-const StudyAbroad = () => {
+const StudentVisaProcess = () => {
+  const countries = [
+    { name: "USA", path: "/usa" },
+    { name: "UK", path: "/uk" },
+    { name: "Canada", path: "/canada" },
+    { name: "Australia", path: "/australia" },
+    { name: "Germany", path: "/studyingermany" },
+    { name: "Italy", path: "/italy" },
+    { name: "France", path: "/france" },
+    { name: "Singapore", path: "/singapore" },
+    { name: "Malaysia", path: "/malaysia" },
+    { name: "South Africa", path: "/south-africa" },
+    { name: "New Zealand", path: "/newzealand" },
+    { name: "Philippines", path: "/philippines" },
+    { name: "Poland", path: "/poland" },
+    { name: "Ireland", path: "/ireland" },
+    { name: "Spain", path: "/spain" },
+    { name: "Netherlands", path: "/netherlands" },
+    { name: "Switzerland", path: "/switzerland" },
+    { name: "Denmark", path: "/denmark" },
+    { name: "Dubai", path: "/dubai" },
+    { name: "Luxembourg", path: "/luxembourg" },
+    { name: "Hongkong", path: "/hongkong" },
+    { name: "UAE", path: "/uae" },
+    { name: "Norway", path: "/norway" },
+    { name: "Sweden", path: "/sweden" },
+  ];
+
+  // Counts state
+  const [studentsPlaced, setStudentsPlaced] = useState(1);
+  const [countriesCount, setCountriesCount] = useState(1);
+  const [universitiesCount, setUniversitiesCount] = useState(1);
+
+  // Max values for counters
+  const maxStudents = 12500;
+  const maxCountries = countries.length; // 25
+  const maxUniversities = 150;
+
+  useEffect(() => {
+    let studentCounter = 1;
+    let countryCounter = 1;
+    let universityCounter = 1;
+
+    // Intervals for animation speed
+    const studentInterval = setInterval(() => {
+      studentCounter += 50;
+      setStudentsPlaced(studentCounter > maxStudents ? maxStudents : studentCounter);
+      if (studentCounter >= maxStudents) clearInterval(studentInterval);
+    }, 20);
+
+    const countryInterval = setInterval(() => {
+      countryCounter += 1;
+      setCountriesCount(countryCounter > maxCountries ? maxCountries : countryCounter);
+      if (countryCounter >= maxCountries) clearInterval(countryInterval);
+    }, 100);
+
+    const universityInterval = setInterval(() => {
+      universityCounter += 2;
+      setUniversitiesCount(universityCounter > maxUniversities ? maxUniversities : universityCounter);
+      if (universityCounter >= maxUniversities) clearInterval(universityInterval);
+    }, 30);
+
+    return () => {
+      clearInterval(studentInterval);
+      clearInterval(countryInterval);
+      clearInterval(universityInterval);
+    };
+  }, []);
+
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10 text-gray-800">
-      <h1 className="text-3xl md:text-4xl font-bold text-orange-600 mb-4">
-        Study Abroad with VJC Overseas: Your Global Education Partner
+    <div className="max-w-6xl mx-auto px-4 py-12 text-gray-800">
+      {/* Heading */}
+      <h1 className="text-4xl font-bold text-blue-900 mb-8 text-center">
+        Student Visa Process with <span className="text-orange-500"> VJC Overseas </span> 
       </h1>
 
-      <p className="mb-6">
-        At VJC Overseas, we believe that education is not just about textbooks — it's about experiencing the world, broadening your horizons, and preparing for a global future.
-      </p>
+      {/* Country Buttons */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-center mb-10">
+        {countries.map((c, i) => (
+          <Link key={i} href={c.path}>
+            <div className="px-4 py-3 border border-blue-500 rounded-xl text-center text-blue-400 hover:bg-orange-500 hover:text-white transition font-semibold shadow-md text-sm sm:text-base cursor-pointer">
+              {c.name} Student Visa
+            </div>
+          </Link>
+        ))}
+      </div>
 
-      <p className="mb-6">
-        Our Study Abroad services are designed to guide students through every step of their international education journey, ensuring a seamless and enriching experience.
-      </p>
+      {/* Content Paragraphs */}
+      <div className="max-w-3xl mx-auto space-y-6 text-justify text-gray-700">
+        <p>
+          Navigating the student visa process can seem overwhelming, but with VJC Overseas by your side, it becomes a straightforward and manageable journey. We provide expert guidance from start to finish, ensuring all your documents, applications, and requirements are handled accurately and efficiently.
+        </p>
+        <p>
+          Our dedicated counsellors stay updated with the latest immigration policies and visa regulations for popular study destinations like the USA, Canada, UK, Australia, Germany, and more. This means you receive reliable advice tailored to your specific country of interest.
+        </p>
+        <p>
+          From helping you select the right course and university to assisting with the visa interview preparation, we offer comprehensive support that maximizes your chances of visa approval. We also provide post-visa services such as pre-departure briefings and assistance with accommodation and travel arrangements.
+        </p>
+        <p>
+          Studying abroad opens a world of opportunities, and VJC Overseas is committed to making your dream come true. Our transparent, step-by-step approach and personalized care ensure that your student visa process is smooth, stress-free, and successful.
+        </p>
+        <p>
+          In recent times, the student visa landscape has seen major shifts. Many countries have implemented more digitized systems for visa applications, and several are now fast-tracking student permits to boost their international education sectors post-COVID. This opens up quicker, more efficient routes for students who meet the right criteria.
+        </p>
+        <p>
+          Additionally, emerging destinations like Germany, Ireland, and Sweden have become increasingly popular due to low tuition fees, extended post-study work visas, and growing job markets. VJC Overseas stays ahead of these trends, ensuring our students take full advantage of the latest opportunities available globally.
+        </p>
+      </div>
 
-      <p className="mb-6">
-        We collaborate with top universities and educational institutions across the world, offering you access to a wide range of undergraduate, postgraduate, and diploma programs in:
-      </p>
+      {/* Autoplay Video */}
+      <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl max-w-5xl mx-auto mt-8">
+        <iframe
+          width="100%"
+          height="300"
+          src="https://www.youtube.com/embed/cLNpEry1oPQ?autoplay=1&mute=1&loop=1&playlist=cLNpEry1oPQ&controls=0&showinfo=0&rel=0"
+          title="VJC Overseas Student Visa Process"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+      </div>
 
-      <ul className="list-disc list-inside mb-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-2">
-        <li>USA</li>
-        <li>UK</li>
-        <li>Canada</li>
-        <li>Australia</li>
-        <li>Germany</li>
-        <li>Italy</li>
-        <li>France</li>
-        <li>Singapore</li>
-        <li>Malaysia</li>
-        <li>South Africa</li>
-        <li>New Zealand</li>
-        <li>Philippines</li>
-        <li>Poland</li>
-        <li>Ireland</li>
-        <li>Spain</li>
-        <li>Netherlands</li>
-        <li>Switzerland</li>
-        <li>Denmark</li>
-        <li>Dubai</li>
-        <li>Luxembourg</li>
-        <li>Hongkong</li>
-        <li>UAE</li>
-        <li>Norway</li>
-        <li>Sweden</li>
-      </ul>
-
-      <p className="mb-6">
-        Our team of experienced counsellors provides personalized guidance throughout the process. From choosing the right course and university to visa applications and pre-departure orientations, we are with you every step of the way. Our goal is to make your transition to studying abroad as smooth as possible, so you can focus on your studies and make the most of your time overseas.
-      </p>
-
-      <p className="mb-6">
-        Beyond academics, we also understand the importance of cultural integration. We help you connect with student communities, providing support with accommodation, travel, and local resources, ensuring you feel at home no matter where you go.
-      </p>
-
-      <p className="mb-6">
-        Studying abroad is an investment in your future, and with VJC Overseas, you’re not just applying for a course—you’re embarking on a life-changing adventure. Let us help you take the first step towards a world-class education and an exciting new chapter in your life.
-      </p>
-
-      <p className="text-lg font-medium mt-8">
-        Start your global education journey with VJC Overseas today!
-      </p>
+      {/* CTA Counters */}
+      <div className="mt-8 bg-orange-500 rounded-xl shadow-lg p-8 max-w-4xl mx-auto flex flex-col sm:flex-row justify-around text-center gap-8">
+        <div>
+          <h2 className="text-5xl font-bold text-white">{studentsPlaced.toLocaleString()}+</h2>
+          <p className="mt-2 text-gray-700 font-semibold">Students Placed</p>
+        </div>
+        <div>
+          <h2 className="text-5xl font-bold text-white">{countriesCount}</h2>
+          <p className="mt-2 text-gray-700 font-semibold">Countries Covered</p>
+        </div>
+        <div>
+          <h2 className="text-5xl font-bold text-white">{universitiesCount}+</h2>
+          <p className="mt-2 text-gray-700 font-semibold">Universities Partnered</p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default StudyAbroad;
+export default StudentVisaProcess;
