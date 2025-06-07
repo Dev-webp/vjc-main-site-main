@@ -3,8 +3,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Form from './ui/Form';
 
-export default function Hero({ setIsOpen }) {
-  const sectionRef = useRef(null);
+interface HeroProps {
+  setIsOpen: (value: boolean) => void;
+}
+
+export default function Hero({ setIsOpen }: HeroProps) {
+  const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -73,22 +77,23 @@ export default function Hero({ setIsOpen }) {
             priority
           />
           <h1 className="text-white text-3xl sm:text-[2.5rem] lg:text-[3rem] lg:ml-28 lg:ml-16 font-bold leading-tight text-center lg:text-left uppercase">
-  <span style={{ fontFamily: 'Times New Roman, Times, serif' }}>
-    <span className="bg-gradient-to-r from-red-600 via-white to-blue-600 bg-clip-text text-transparent font-extrabold">
-      AUSTRALIA
-    </span>{' '}
-    <span className="bg-gradient-to-r from-red-700 via-white to-blue-600 bg-clip-text text-transparent font-extrabold">
-      PR </span>
-    
-     with <br /><span className="text-saffron text-center lg:ml-8">VJC OVERSEAS</span>
-  </span>
-</h1>
+            <span style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+              <span className="bg-gradient-to-r from-red-600 via-white to-blue-600  bg-clip-text text-transparent font-extrabold">
+                AUSTRALIA
+              </span>{' '}
+              <span className="bg-gradient-to-r from-red-700 via-white to-blue-600 bg-clip-text text-transparent font-extrabold">
+                PR
+              </span>
+              {' '}<span className='lg:ml-24'>with</span><br />
+              <span className="text-saffron text-center ">VJC OVERSEAS</span>
+            </span>
+          </h1>
 
-<p className="text-white text-sm sm:text-base text-center lg:ml-14 lg:text-left max-w-xl">
-  Secure your future with a <span className="font-semibold text-saffron">Australia Permanent Residency</span>. 
-  With expert immigration guidance from <span className="font-semibold text-saffron">VJC Overseas</span>, 
-  take confident steps toward settling in one of the world’s most welcoming and opportunity-rich countries.
-</p>
+          <p className="text-white text-sm sm:text-base text-center lg:ml-14 lg:text-left max-w-xl">
+            Secure your future with a <span className="font-semibold text-saffron">Australia Permanent Residency</span>. 
+            With expert immigration guidance from <span className="font-semibold text-saffron">VJC Overseas</span>, 
+            take confident steps toward settling in one of the world’s most welcoming and opportunity-rich countries.
+          </p>
 
           <div className="w-full flex justify-center lg:justify-center mt-2">
             <button

@@ -3,8 +3,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Form from './ui/Form';
 
-export default function Hero({ setIsOpen }) {
-  const sectionRef = useRef(null);
+interface HeroProps {
+  setIsOpen: (value: boolean) => void;
+}
+
+export default function Hero({ setIsOpen }: HeroProps) {
+  const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
