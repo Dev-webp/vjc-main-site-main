@@ -1,19 +1,18 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import Form from './Form';
 import { motion } from 'framer-motion';
-import { FaUniversity, FaUserGraduate, FaGraduationCap, FaGlobe } from "react-icons/fa";
-
+import { FaUniversity, FaUserGraduate, FaGraduationCap, FaGlobe, FaHandshake, FaAward } from "react-icons/fa";
+import CountUp from 'react-countup';
+ import Image from 'next/image';
 const iconContent = [
   {
     id: 0,
     icon: <FaUserGraduate className="text-3xl" />,
     label: 'Student Counselling',
     points: [
-      'Expert guidance for course and university selection.',
-      'Personalized counseling based on academic and career goals.',
-      'Support through application, visa process, and beyond.'
+      'Our certified counselors offer one-on-one personalized guidance to identify the right course and university based on their academic background,financial profile.',
+      'From shortlisting institutions to drafting the perfect Statement of Purpose (SOP), we assist throughout the process with mock interviews.',
+      'We don’t stop at the application — our support continues through visa filing, travel arrangements, and post-landing guidance.'
     ],
   },
   {
@@ -21,9 +20,9 @@ const iconContent = [
     icon: <FaUniversity className="text-3xl" />,
     label: 'Top Universities',
     points: [
-      'Globally ranked institutions like Oxford, Cambridge, and Imperial College.',
-      'Innovative curriculum with research opportunities.',
-      'Recognition across industries worldwide.'
+      'The UK is home to globally renowned universities like Oxford, Cambridge, and Imperial College, with diverse programs in STEM, business, arts, and more.',
+      'Degrees from these institutions carry prestige and are accepted across industries and continents, boosting your employability.',
+      'UK institutions integrate theoretical knowledge with practical learning, allowing you to engage in real-world research and industry-linked projects.'
     ],
   },
   {
@@ -31,9 +30,9 @@ const iconContent = [
     icon: <FaGraduationCap className="text-3xl" />,
     label: 'Scholarships',
     points: [
-      'Wide range of scholarships for international students.',
-      'Government and university-funded aid.',
-      'Merit-based and need-based options available.'
+      'UK offers an extensive range of scholarships to international students including Chevening, Commonwealth, GREAT Scholarships and university-specific awards.',
+      'Scholarships cover partial to full tuition fees and even living expenses in some cases, significantly reducing the financial burden.',
+      'We help identify scholarship eligibility and provide application assistance to maximize your chances of receiving aid.'
     ],
   },
   {
@@ -41,14 +40,13 @@ const iconContent = [
     icon: <FaGlobe className="text-3xl" />,
     label: 'Global Exposure',
     points: [
-      'Multicultural classrooms and communities.',
-      'Networking with global leaders and thinkers.',
-      'Access to international internships and exchanges.'
+      'Studying in the UK provides an opportunity to immerse yourself in a multicultural environment with peers from over 150 countries.',
+      'International exposure enhances your adaptability, communication skills, and global mindset – traits highly valued by employers.',
+      'Universities also offer global internships, study exchange programs, and networking with global industry experts.'
     ],
   },
 ];
 
-// Animation variants
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: (i = 1) => ({
@@ -75,46 +73,20 @@ export default function StudyInUK() {
   return (
     <section className="w-full bg-white px-4 md:px-12 py-10">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 lg:items-stretch">
-        
-        {/* Form First in Small Screens */}
-        <motion.div
-          className="block lg:hidden rounded-xl p-6 bg-gradient-to-b from-white to-orange-500 shadow-md"
-          initial="hidden"
-          animate="visible"
-          custom={6}
-          variants={fadeUp}
-        >
-          <h3 className="text-2xl font-semibold text-gray-900 ml-4 mb-4">
-            Sign up & Get Free{" "}
-            <span className="text-black font-extrabold bg-gradient-to-r from-red-600 to-black bg-clip-text text-transparent animate-pulse">
-              UK
-            </span>{" "}
-            Assessment
-          </h3>
-          <Form />
-        </motion.div>
-
-        {/* Left Column - Content */}
-        <div className="lg:w-2/3 flex flex-col space-y-6 h-full">
+        <div className="lg:w-full flex flex-col space-y-6 h-full">
           <motion.h2
-            className="text-3xl md:text-3xl font-bold text-gray-900"
+            className="text-3xl md:text-3xl text-center font-bold text-gray-900"
             initial="hidden"
             animate="visible"
             custom={1}
             variants={fadeUp}
           >
-            Study in UK – Start Your Global Education Journey with <span className='text-orange-500'>VJC Overseas</span>
+            Study in <span className="bg-gradient-to-r from-blue-700  to-red-600 bg-clip-text text-transparent font-extrabold">
+    UK
+  </span> – Start Your Global Education Journey with <span className='text-orange-500'>VJC Overseas</span>
           </motion.h2>
 
-          <motion.p
-            className="text-gray-700 text-md leading-relaxed"
-            initial="hidden"
-            animate="visible"
-            custom={2}
-            variants={fadeUp}
-          >
-            The United Kingdom is a top choice for international students due to its world-renowned universities, globally accepted degrees, and multicultural environment. Whether you dream of studying at Oxford,
-          </motion.p>
+         
 
           <motion.div
             className="flex flex-col md:flex-row gap-4 items-start"
@@ -123,22 +95,37 @@ export default function StudyInUK() {
             custom={3}
             variants={fadeUp}
           >
-           <div className="md:w-1/4 w-full">
-  <img
-    src="/studyinuk/ukstudy.png"
-    alt="Counseling"
-    title="Counseling"
-    className="object-cover rounded-md w-full h-40"
-  />
-</div>
+            <div className="md:w-1/4 ">
+            
 
+<Image
+  src="/studyinuk/ukstudy.png"
+  alt="Study UK"
+  title="Study in UK"
+  width={500} // You can adjust this based on your layout
+  height={60}
+  className="object-cover rounded-md  "
+  unoptimized
+/>
 
+            </div>
             <div className="md:w-3/4 w-full text-gray-700 text-md leading-relaxed">
-              <p>
-                Cambridge, or any modern university, the UK offers unmatched academic excellence and career opportunities.
-                With over 400,000 international students each year, the UK remains a preferred destination for higher education.
-                Institutions in the UK blend tradition and innovation, offering industry-relevant programs and global opportunities.
+             <motion.p
+            className="text-gray-700 text-md leading-relaxed"
+            initial="hidden"
+            animate="visible"
+            custom={2}
+            variants={fadeUp}
+          >
+            The United Kingdom is a premier education hub, offering centuries-old universities, diverse courses, and a rich multicultural environment. At  <span className='text-orange-500'>VJC Overseas</span>, we don’t just help you apply—we help you thrive.
+          </motion.p>
+              <p className='mb-2'>
+                Whether it’s a world-class degree in engineering or a foundation course in arts, the UK is a melting pot of innovation and tradition. With over 400,000 international students, its education system is designed to develop global citizens.
               </p>
+               <p className='mb-2'>
+                The UK’s universities consistently rank among the top in the world, providing cutting-edge research facilities and highly qualified faculty. Students benefit from a wide array of programs tailored to meet the demands of the global job market, ensuring they graduate with skills that employers value.
+              </p>
+              <p><span className='text-orange-500'>VJC Overseas</span> is committed to guiding you through every step — from choosing the right university and course, handling visa formalities, to helping you settle comfortably in the UK. Our expert counselors provide personalized support to make your study abroad dream a reality.</p>
             </div>
           </motion.div>
 
@@ -172,31 +159,57 @@ export default function StudyInUK() {
             custom={5}
             variants={fadeUp}
           >
-            <ul className="list-disc list-inside space-y-2">
+            <ol className="list-decimal list-inside space-y-3">
               {iconContent[selected].points.map((point, index) => (
-                <li key={index}>{point}</li>
+                <li key={index}>
+                  <span className="font-semibold text-gray-800">Step {index + 1}:</span> {point}
+                </li>
               ))}
-            </ul>
+            </ol>
           </motion.div>
-        </div>
 
-        {/* Right Column - Form on Large Screens Only */}
-        <motion.div
-          className="hidden lg:block lg:w-1/2 rounded-xl p-6 bg-gradient-to-b from-white to-orange-500 shadow-md h-full"
-          initial="hidden"
-          animate="visible"
-          custom={6}
-          variants={fadeUp}
-        >
-          <h3 className="text-2xl font-semibold text-gray-900 ml-4 mb-4">
-            Sign up & Get Free{" "}
-            <span className="text-black font-extrabold bg-gradient-to-r from-red-600 to-black bg-clip-text text-transparent animate-pulse">
-              UK
-            </span>{" "}
-            Assessment
-          </h3>
-          <Form />
-        </motion.div>
+          {/* 🔥 Feature Section with Background */}
+         
+
+{/* Feature Section with BG + Counter */}
+<motion.div
+  className="relative mt-12 rounded-xl overflow-hidden shadow-lg"
+  initial="hidden"
+  animate="visible"
+  custom={6}
+  variants={fadeUp}
+>
+  {/* 🔥 Background Image */}
+  <div className="absolute inset-0 bg-[url('/study-in-uk-process.jpg')] bg-cover bg-center">
+    <div className="absolute inset-0 bg-black opacity-70" />
+  </div>
+
+  {/* Feature Content */}
+  <div className="relative z-10 grid md:grid-cols-3 gap-8 p-6 md:p-8 text-white text-center">
+    <div>
+      <FaAward className="text-4xl text-yellow-400 mx-auto" />
+      <h4 className="mt-2 text-lg font-bold">Students Placed</h4>
+      <p className="text-3xl font-extrabold text-orange-400">
+        <CountUp end={1000} duration={10} />
+      </p>
+      <p className="text-sm mt-1">Guided into top UK universities for UG, PG, MBA & more.</p>
+    </div>
+    <div>
+      <FaHandshake className="text-4xl text-yellow-400 mx-auto" />
+      <h4 className="mt-2 text-lg font-bold">UK University Tie-ups</h4>
+      <p className="text-3xl font-extrabold text-orange-400">40+</p>
+      <p className="text-sm mt-1">Direct partnerships ensuring fast, easy applications.</p>
+    </div>
+    <div>
+      <FaGlobe className="text-4xl text-yellow-400 mx-auto" />
+      <h4 className="mt-2 text-lg font-bold">Global Careers</h4>
+      <p className="text-3xl font-extrabold text-orange-400">100%</p>
+      <p className="text-sm mt-1">Graduates land roles in MNCs, start-ups & global sectors.</p>
+    </div>
+  </div>
+</motion.div>
+
+        </div>
       </div>
     </section>
   );

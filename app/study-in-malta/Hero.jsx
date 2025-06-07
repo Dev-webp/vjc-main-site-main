@@ -67,7 +67,7 @@ export default function Hero() {
             </p>
 
             {/* Apply Button */}
-            <div className="mt-6 w-full flex justify-center lg:justify-start">
+            <div className="mt-6 w-full flex justify-center lg:justify-center">
               <button
                 className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold shadow-lg transition duration-300 w-full sm:w-auto"
                 onClick={() => setIsOpen(true)}

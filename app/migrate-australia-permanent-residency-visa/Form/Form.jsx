@@ -1,235 +1,213 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
-import Formleft from "../Formleft/Formleft";
+'use client';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import {
+  FaFileAlt,
+  FaPassport,
+  FaMapMarkedAlt,
+  FaChartLine,
+  FaHandshake,
+  FaAward,
+} from "react-icons/fa";
+import CountUp from 'react-countup';
+import Image from 'next/image';
 
+const iconContent = [
+  {
+    id: 0,
+    icon: <FaFileAlt className="text-3xl" />,
+    label: 'Eligibility Check',
+    points: [
+      'We evaluate your age, education, work experience, and language skills to determine eligibility for PR.',
+      'Guidance on maximizing points under Australia’s Skilled Migration system.',
+      'Transparent assessment with no hidden conditions or fees.',
+    ],
+  },
+  {
+    id: 1,
+    icon: <FaMapMarkedAlt className="text-3xl" />,
+    label: 'SkillSelect & State Nomination',
+    points: [
+      'Expression of Interest (EOI) creation with expert guidance.',
+      'Support for state/territory nomination pathways tailored to your profile.',
+      'Real-time updates on invitations, occupation ceilings, and nomination trends.',
+    ],
+  },
+  {
+    id: 2,
+    icon: <FaPassport className="text-3xl" />,
+    label: 'Document Assistance',
+    points: [
+      'Complete support in collecting, preparing, and verifying your documents.',
+      'Help with skill assessment, IELTS/PTE, police clearance, medicals, etc.',
+      'Avoid delays and rejections with our thorough verification process.',
+    ],
+  },
+  {
+    id: 3,
+    icon: <FaChartLine className="text-3xl" />,
+    label: 'Post-Visa Support',
+    points: [
+      'Job search assistance, housing support, and pre-departure briefing.',
+      'Help with Medicare, banking, education, and relocation setup.',
+      'Support to eventually transition from PR to Australian citizenship.',
+    ],
+  },
+];
 
-const Form = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [age, setAge] = useState("");
-  const [experience, setExperience] = useState("");
-  const [qualification, setQualification] = useState("");
-  const [country, setCountry] = useState("");
-  const [message, setMessage] = useState("");
-  const [popupVisible, setPopupVisible] = useState(false);
-const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
-  const controls = useAnimation();
-  const [landingPage, setLandingPage] = useState('');
-  // Capture current page URL
-    useEffect(() => {
-      if (typeof window !== 'undefined') {
-        setLandingPage(window.location.href);
-      }
-    }, []);
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  }),
+};
+
+export default function AustraliaPRSection() {
+  const [selected, setSelected] = useState(0);
 
   useEffect(() => {
-    if (popupVisible) {
-      const timeout = setTimeout(() => setPopupVisible(false), 4000);
-      return () => clearTimeout(timeout);
-    }
-  }, [popupVisible]);
-
-  useEffect(() => {
-  if (inView) {
-    controls.start("visible");
-  } else {
-    controls.start("hidden");
-  }
-}, [inView, controls]);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const payload = {
-      name,
-      email,
-      phone,
-      age,
-      experience,
-      qualification,
-      country,
-      message,
-      landingPage,
-    };
-
-    try {
-      const res = await fetch("/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      if (res.ok) {
-        setPopupVisible(true);
-        setName("");
-        setEmail("");
-        setPhone("");
-        setAge("");
-        setExperience("");
-        setQualification("");
-        setCountry("");
-        setMessage("");
-      } else {
-        const errorData = await res.json();
-        console.error("Server error:", errorData);
-        alert("Failed to send form. Please try again later.");
-      }
-    } catch (error) {
-      console.error("Network error:", error);
-      alert("An unexpected error occurred.");
-    }
-  };
+    const interval = setInterval(() => {
+      setSelected((prev) => (prev + 1) % iconContent.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section
-      ref={ref}
-      className="w-full py-10 px-4 bg-white bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url(/assets/canadapr/formbg1.png)" }}
-    >
-      <div className="max-w-6xl mx-auto bg-white/90 backdrop-blur-md rounded-xl overflow-hidden flex flex-col-reverse md:flex-row">
-        <div className="w-full md:w-1/2">
-          <Formleft inView={inView} />
-        </div>
+    <section className="w-full bg-white px-4 md:px-8 py-12">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 lg:items-stretch">
+        <div className="lg:w-full flex flex-col space-y-6 h-full">
+          <motion.h2
+            className="text-3xl md:text-3xl text-center font-bold text-gray-900"
+            initial="hidden"
+            animate="visible"
+            custom={1}
+            variants={fadeUp}
+          >
+            Work in <span className="bg-gradient-to-r from-yellow-600 to-red-600 bg-clip-text text-transparent font-extrabold">
+              Australia PR Visa
+            </span> – Empower Your Career with <span className='text-orange-500'>VJC Overseas</span>
+          </motion.h2>
 
-        <motion.div
-          initial="hidden"
-          animate={controls}
-          variants={{
-            hidden: { opacity: 0, x: 100 },
-            visible: {
-              opacity: 1,
-              x: 0,
-              transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
-            },
-          }}
-          className="w-full md:w-1/2 p-6 md:p-10 bg-gradient-to-br from-orange-50 via-orange-100 to-orange-200"
-        >
-          <h2 className="text-2xl md:text-3xl font-extrabold text-sky-800 text-center mb-8">
-            Sign up <span className="text-red-600">&</span> Get{" "}
-            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 animate-pulse">
-              AUSTRALIA
-            </span>{" "}
-            Assessment
-          </h2>
+          <motion.div
+            className="flex flex-col md:flex-row gap-4 items-start"
+            initial="hidden"
+            animate="visible"
+            custom={3}
+            variants={fadeUp}
+          >
+           <div className="md:w-1/4">
+  <Image
+    src="/Australian-PR.png"
+    alt="Australia PR"
+    title="Australia PR Visa"
+    unoptimized
+    width={800}
+    height={80}
+    className="object-cover h-[280px] rounded-md"
+  />
+</div>
 
-          <form onSubmit={handleSubmit} className="space-y-6 text-gray-900">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
+            <div className="md:w-3/4 w-full text-gray-700 text-md leading-relaxed">
+              <motion.p
+                className="text-gray-700 text-md leading-relaxed"
+                initial="hidden"
+                animate="visible"
+                custom={2}
+                variants={fadeUp}
+              >
+                Looking to take your career global? With a Permanent Residency (PR) Visa, your professional journey begins in one of the world’s most stable, welcoming, and opportunity-rich countries—Australia.
+              </motion.p>
+              <ul className="list-disc pl-5 mt-3 space-y-2 text-[15px]">
+                <li><strong>Unlock a World of Job Opportunities:</strong> Work in any industry, for any employer, anywhere in Australia—no separate work permit needed.</li>
+                <li><strong>High-Paying Jobs & Skill Demand:</strong> From IT and engineering to healthcare and finance, skilled talent is in demand.</li>
+                <li><strong>No Job Offer? No Problem!</strong> Apply for PR and unlock top opportunities even after arrival.</li>
+                <li><strong>Equal Access to Growth:</strong> Upskilling, government training, and business support—PR holders get it all.</li>
+                <li><strong>Pathway to Citizenship:</strong> Every working day builds toward your Australian citizenship.</li>
+                <li><strong>Work-Life Balance:</strong> Flexible hours, paid leaves, and life in one of the happiest countries.</li>
+              </ul>
+            </div>
+          </motion.div>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+          <motion.div
+            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+            initial="hidden"
+            animate="visible"
+            custom={4}
+            variants={fadeUp}
+          >
+            {iconContent.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => setSelected(item.id)}
+                className={`flex flex-col items-center justify-center p-4 rounded-xl shadow transition-all duration-300 text-center ${selected === item.id
+                  ? 'bg-orange-500 text-white'
+                  : 'bg-white text-gray-800 hover:bg-orange-500 hover:text-white'
+                  }`}
+              >
+                {item.icon}
+                <p className="text-sm mt-2">{item.label}</p>
+              </button>
+            ))}
+          </motion.div>
 
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              required
-              maxLength={10}
-              minLength={10}
-              pattern="\d{10}"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm"
-              value={phone}
-              onChange={(e) => {
-                const onlyNums = e.target.value.replace(/\D/g, "");
-                setPhone(onlyNums);
-              }}
-            />
+          <motion.div
+            className="bg-gray-50 p-4 rounded-md shadow-md text-gray-700"
+            initial="hidden"
+            animate="visible"
+            custom={5}
+            variants={fadeUp}
+          >
+            <ol className="list-decimal list-inside space-y-3">
+              {iconContent[selected].points.map((point, index) => (
+                <li key={index}>
+                  <span className="font-semibold text-gray-800">Step {index + 1}:</span> {point}
+                </li>
+              ))}
+            </ol>
+          </motion.div>
 
-            <input
-              type="text"
-              name="country"
-              placeholder="Country"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm"
-              value={country}
-              onChange={(e) => setCountry(e.target.value)}
-            />
+          <motion.div
+            className="relative mt-12 rounded-xl overflow-hidden shadow-lg"
+            initial="hidden"
+            animate="visible"
+            custom={6}
+            variants={fadeUp}
+          >
+            <div className="absolute inset-0 bg-[url('/Australia-PR.jpg')] bg-cover bg-center">
+              <div className="absolute inset-0 bg-black opacity-70" />
+            </div>
 
-            <input
-              type="number"
-              name="age"
-              placeholder="Your Age"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm"
-              value={age}
-              onChange={(e) => setAge(e.target.value)}
-            />
-
-            <select
-              name="experience"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm"
-              value={experience}
-              onChange={(e) => setExperience(e.target.value)}
-            >
-              <option value="">Select Experience</option>
-              <option value="1-2 years">1-2 years</option>
-              <option value="3-5 years">3-5 years</option>
-              <option value="5-7 years">5-7 years</option>
-              <option value="7+ years">7+ years</option>
-            </select>
-
-            <select
-              name="qualification"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm"
-              value={qualification}
-              onChange={(e) => setQualification(e.target.value)}
-            >
-              <option value="">Select your qualification</option>
-              <option value="High School">High School</option>
-              <option value="Bachelor's Degree">Bachelor's Degree</option>
-              <option value="Master's Degree">Master's Degree</option>
-              <option value="Ph.D.">Ph.D.</option>
-              <option value="Diploma">Diploma</option>
-            </select>
-
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows={4}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none shadow-sm"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            ></textarea>
-
-            <button
-              type="submit"
-              className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-md font-semibold transition-all duration-200 shadow-md"
-            >
-              Submit for Free Assessment
-            </button>
-          </form>
-
-          {popupVisible && (
-            <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
-              <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">
-                <p className="text-lg font-semibold text-orange-700">
-                  Submission received! We’ll get back to you shortly.
+            <div className="relative z-10 grid md:grid-cols-3 gap-8 p-6 md:p-8 text-white text-center">
+              <div>
+                <FaAward className="text-4xl text-yellow-400 mx-auto" />
+                <h4 className="mt-2 text-lg font-bold">PR Success</h4>
+                <p className="text-3xl font-extrabold text-orange-400">
+                  <CountUp end={2500} duration={30} /> +
                 </p>
+                <p className="text-sm mt-1">Australia PRs granted via VJC Overseas expertise.</p>
+              </div>
+              <div>
+                <FaHandshake className="text-4xl text-yellow-400 mx-auto" />
+                <h4 className="mt-2 text-lg font-bold">Visa Consultations</h4>
+                <p className="text-3xl font-extrabold text-orange-400">15K+</p>
+                <p className="text-sm mt-1">Global clients trust our PR guidance.</p>
+              </div>
+              <div>
+                <FaChartLine className="text-4xl text-yellow-400 mx-auto" />
+                <h4 className="mt-2 text-lg font-bold">Approval Rate</h4>
+                <p className="text-3xl font-extrabold text-orange-400">97%</p>
+                <p className="text-sm mt-1">Clients achieve PR and settle in Australia.</p>
               </div>
             </div>
-          )}
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
-};
-
-export default Form;
+}

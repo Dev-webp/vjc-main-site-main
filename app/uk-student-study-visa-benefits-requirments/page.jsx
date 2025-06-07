@@ -21,8 +21,9 @@ export default function StudyInUKPage() {
 
   return (
     <>
-      
+    
       <HeroSection setIsOpen={setIsOpen}/>
+     
       <ModalFormWithPopup isOpen={isOpen} setIsOpen={setIsOpen} customContent={<UkImageContent />} />
       <ScholarshipUK />
       <StudentCounselling />

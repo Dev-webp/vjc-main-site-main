@@ -1,167 +1,112 @@
-"use client";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
-import { useInView } from "framer-motion";
+'use client';
+import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
+import Form from './ui/Form';
 
-interface HeroSectionProps {
-  setIsOpen: (value: boolean) => void;
-}
-
-const videoData = {
-  src: "/assets/auspr/aus.mp4",
-  title: "Your Path to Australia: A Complete Guide to the Permanent Residence Visa Process",
-  subtitle: "Expert guidance and seamless processing for Australia PR Visas.",
-};
-
-const overlayVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 60 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.9, ease: "easeOut" },
-  },
-};
-
-const infoBoxes = [
-  {
-    icon: "🛂",
-    title: "Australia PR Eligibility",
-    desc: "Check if you qualify for Australia Permanent Residency.",
-  },
-  {
-    icon: "📝",
-    title: "Step-by-Step Process",
-    desc: "Complete support through each stage of your PR application.",
-  },
-  {
-    icon: "💼",
-    title: "Career Opportunities",
-    desc: "Explore your professional future in Australia with PR.",
-  },
-];
-
-const InfoBox = ({ icon, title, desc }: { icon: string; title: string; desc: string }) => (
-  <motion.div
-    variants={{
-      hidden: { opacity: 0, y: 100, scale: 0.8 },
-      visible: { opacity: 1, y: 0, scale: 1 },
-    }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
-    whileHover={{
-      scale: 1.03,
-      boxShadow: "0 8px 20px rgba(251, 146, 60, 0.5)",
-      backgroundColor: "rgba(253, 186, 116, 0.3)",
-    }}
-    className="bg-orange-200 shadow-md p-4 rounded-md text-center w-60 h-48 cursor-pointer transition-colors duration-300"
-  >
-    <div className="text-yellow-500 text-3xl mb-2">{icon}</div>
-    <h3 className="font-bold text-lg mb-1 text-orange-600">{title}</h3>
-    <p className="text-sm text-gray-600">{desc}</p>
-  </motion.div>
-);
-
-export default function BigVideo({ setIsOpen }: HeroSectionProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
-  const controls = useAnimation();
+export default function Hero({ setIsOpen }) {
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(false);
+          void sectionRef.current?.offsetWidth;
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
     }
-  }, [isInView, controls]);
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <div className="relative min-h-[96vh] md:min-h-[110vh] w-full bg-white overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-x-0 top-0 h-[90vh]">
-        <motion.div
-          initial={{ opacity: 0, y: 300 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="absolute inset-0 w-full h-full"
-        >
-          <video
-            key={videoData.src}
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover"
-          >
-            <source src={videoData.src} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </motion.div>
+    <section
+      ref={sectionRef}
+      className="relative min-h-screen pt-36 pb-8 px-4 md:px-6 lg:px-14 lg:-mt-14 overflow-hidden flex items-center justify-center"
+    >
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className={`absolute inset-0 w-full h-full object-cover transition-all duration-[1500ms] ease-out transform ${
+          isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
+        }`}
+      >
+        <source src="/assets/auspr/aus.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-        {/* Overlay Content */}
-        <motion.div
-          variants={overlayVariants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 1.2 }}
-          className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-6"
-        >
-          <motion.h1
-            variants={itemVariants}
-            className="text-white tracking-wider leading-10 md:leading-normal text-3xl md:text-5xl md:w-[70%] font-bold mb-4"
-          >
-            {videoData.title}
-          </motion.h1>
-          <motion.p
-            variants={itemVariants}
-            className="text-gray-200 tracking-widest max-w-xl mb-6"
-          >
-            {videoData.subtitle}
-          </motion.p>
-          <motion.div variants={itemVariants} className="flex gap-4">
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/90 z-0 pointer-events-none" />
+
+      {/* Content */}
+      <div className="relative z-8 w-full max-w-[1440px] md:ml-4 flex flex-col lg:flex-row items-center justify-center gap-10">
+        {/* Left Side */}
+        <div className="flex flex-col items-center lg:items-start w-full lg:w-1/2 space-y-4">
+          <Image
+            src="/1.gif"
+            alt="Study in Sweden"
+            width={900}
+            height={500}
+            className="w-full max-w-[700px] mx-auto"
+            priority
+          />
+          <Image
+            src="/award-vjc.png"
+            alt="VJC Award"
+            width={600}
+            height={300}
+            className="w-full max-w-[500px] mx-auto"
+            priority
+          />
+          <h1 className="text-white text-3xl sm:text-[2.5rem] lg:text-[3rem] lg:ml-28 lg:ml-16 font-bold leading-tight text-center lg:text-left uppercase">
+  <span style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+    <span className="bg-gradient-to-r from-red-600 via-white to-blue-600 bg-clip-text text-transparent font-extrabold">
+      AUSTRALIA
+    </span>{' '}
+    <span className="bg-gradient-to-r from-red-700 via-white to-blue-600 bg-clip-text text-transparent font-extrabold">
+      PR </span>
+    
+     with <br /><span className="text-saffron text-center lg:ml-8">VJC OVERSEAS</span>
+  </span>
+</h1>
+
+<p className="text-white text-sm sm:text-base text-center lg:ml-14 lg:text-left max-w-xl">
+  Secure your future with a <span className="font-semibold text-saffron">Australia Permanent Residency</span>. 
+  With expert immigration guidance from <span className="font-semibold text-saffron">VJC Overseas</span>, 
+  take confident steps toward settling in one of the world’s most welcoming and opportunity-rich countries.
+</p>
+
+          <div className="w-full flex justify-center lg:justify-center mt-2">
             <button
               onClick={() => setIsOpen(true)}
-              className="relative overflow-hidden inline-block px-6 py-3 mt-6 rounded-md font-semibold text-white bg-orange-500 group"
+              className="bg-saffron text-white py-2 px-6 rounded-lg hover:bg-sky-500 transition"
             >
-              <span className="relative z-10">Apply Now</span>
-              <span className="absolute inset-0 bg-sky-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out" />
+              Apply Now
             </button>
-          </motion.div>
-        </motion.div>
-      </div>
+          </div>
+        </div>
 
-      {/* Animated Info Boxes */}
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={controls}
-        variants={{
-          hidden: { opacity: 0, y: 100, scale: 0.8 },
-          visible: {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            transition: {
-              type: "spring",
-              damping: 20,
-              stiffness: 100,
-              delayChildren: 0.3,
-              staggerChildren: 0.25,
-            },
-          },
-        }}
-        className="relative mt-[calc(80vh+40px)] md:mt-0 md:absolute md:top-[68%] w-full hidden md:flex flex-col md:flex-row justify-center items-center gap-20 pb-20 px-6"
-      >
-        {infoBoxes.map((box, idx) => (
-          <InfoBox key={idx} {...box} />
-        ))}
-      </motion.div>
-    </div>
+        {/* Right Side Form */}
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <div className="w-full max-w-lg">
+            <Form />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
