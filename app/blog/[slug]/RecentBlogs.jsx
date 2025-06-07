@@ -5,7 +5,7 @@ import Image from 'next/image';
 const RecentBlogs = ({ blogs, currentSlug }) => {
   const recent = blogs
     .filter((b) => b.slug !== currentSlug)
-    .slice(0, 4);
+    .slice(0, 3);
 
   return (
     <div className="mt-10 w-full">

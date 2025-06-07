@@ -9,15 +9,15 @@ const USAStudyVisa = () => {
       style={{ fontFamily: "Times New Roman, serif" }}
     >
       {/* TOP: Left side heading + image + content, Right side form */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         {/* LEFT SIDE: heading, image, content */}
         <div className="flex flex-col">
-          <h1 className="text-3xl font-bold mb-6 text-center lg:text-left">
-            Comprehensive USA Student Visa Process –{" "}
+          <h1 className="text-3xl font-bold mb-4 text-center lg:text-left">
+             USA Student Visa Process –{" "}
             <span className="text-orange-500">VJC Overseas</span>
           </h1>
 
-          <div className="relative h-64 w-full  overflow-hidden mb-6">
+          <div className="relative h-64 w-full  overflow-hidden mb-4">
             <Image
               src="/usa-student-visa-process.jpg"
               alt="Study in USA"
@@ -31,7 +31,7 @@ const USAStudyVisa = () => {
             <p>
               If you aspire to pursue higher education in the United States, the
               USA Student Visa is your gateway to world-class universities and
-              enriching cultural experiences. At VJC Overseas, we provide
+              enriching cultural experiences. At <span className="text-orange-500">VJC Overseas</span>, we provide
               comprehensive support throughout your entire visa application
               journey, ensuring a smooth and successful approval.
             </p>
@@ -56,7 +56,7 @@ const USAStudyVisa = () => {
         </div>
       </div>
      
-            <h2 className="text-xl font-semibold text-blue-700 mt-6">
+            <h2 className="text-xl font-semibold text-blue-700 mt-2 mb-2">
               USA Student Visa Categories
             </h2>
             <p>
@@ -67,7 +67,7 @@ const USAStudyVisa = () => {
               requirements which we help you navigate with expert precision.
             </p>
 
-            <h2 className="text-xl font-semibold mt-6">Step-by-Step Process</h2>
+            <h2 className="text-xl font-semibold mt-4 mb-2">Step-by-Step Process</h2>
             <ul className="list-disc list-inside space-y-3">
               <li>
                 <strong>Step 1: Secure Admission</strong> – Apply and gain
@@ -142,7 +142,7 @@ const USAStudyVisa = () => {
 <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 items-center mb-12">
   {/* Text Left (70%) */}
   <div className="lg:col-span-7 space-y-4 text-justify text-gray-800 leading-relaxed">
-    <h2 className="text-xl font-semibold mb-3">Why Choose VJC Overseas?</h2>
+    <h2 className="text-xl font-semibold mb-3">Why Choose <span className="text-orange-500">VJC Overseas</span> ?</h2>
     <ul className="list-disc list-inside space-y-3">
       <li>
         <strong>Personalized University Shortlisting:</strong> We assess your
@@ -168,7 +168,7 @@ const USAStudyVisa = () => {
         <h2 className="text-xl font-semibold mb-3">Conclusion</h2>
         <p className="mb-5">
           Embarking on your academic journey in the USA unlocks unparalleled
-          opportunities for education and career advancement. With VJC Overseas’
+          opportunities for education and career advancement. With <span className="text-orange-500">VJC Overseas</span>’
           expert visa guidance, you can confidently navigate the application
           process and focus on your studies and future success.
         </p>
@@ -177,7 +177,7 @@ const USAStudyVisa = () => {
           Ireland, and Sweden, all supported by our dedicated visa assistance
           services for international students.
         </p>
-        <p className="text-sm italic">
+        <p className="text-sm font-bold italic">
           Disclaimer: Visa policies and fees may change without notice. Please
           consult official government websites for the most current information.
         </p>

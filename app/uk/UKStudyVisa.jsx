@@ -1,117 +1,199 @@
 import React from "react";
+import Image from "next/image";
+import Form from "./Form";
 
-const UKStudyGuide = () => {
+const UKStudyVisa = () => {
   return (
-    <div className="p-6 max-w-5xl mx-auto text-justify">
-      <h1 className="text-2xl md:text-3xl font-bold text-blue-500 mb-4" style={{ fontFamily: 'Times New Roman' }}>
-        Study in the UK: A Comprehensive Guide to UK Study Visas, Universities, Fees, and Admission Process
-      </h1>
+    <div
+      className="max-w-7xl mx-auto px-4 py-8"
+      style={{ fontFamily: "Times New Roman, serif" }}
+    >
+      {/* TOP: Left side heading + image + content, Right side form */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        {/* LEFT SIDE: heading, image, content */}
+        <div className="flex flex-col">
+          <h1 className="text-3xl font-bold mb-4 text-center lg:text-left">
+             UK Student Visa Process –{" "}
+            <span className="text-orange-500">VJC Overseas</span>
+          </h1>
 
-      <p className="mb-4" style={{ fontFamily: 'Times New Roman' }}>
-        The UK has long been a favourite destination for international students seeking world-class education, cultural diversity, and outstanding career opportunities. With its rich history, vibrant cities, and renowned institutions, it’s no wonder that the UK remains one of the top choices for students worldwide. If you’re considering studying in the UK, this guide provides an overview of the UK study visa process, some top universities, their fee structures, and the admission process to help you navigate your journey from application to graduation.
+          <div className="relative h-64 w-full overflow-hidden mb-4">
+            <Image
+              src="/study-in-uk-process.jpg"
+              alt="Study in UK"
+              fill
+              className="object-cover"
+              unoptimized
+            />
+          </div>
+
+          <div className="space-y-5 text-justify text-gray-800 leading-relaxed">
+            <p>
+              Planning to study in the United Kingdom? The UK Student Visa is
+              your ticket to prestigious universities and a globally respected
+              education system. At{" "}
+              <span className="text-orange-500">VJC Overseas</span>, we offer
+              complete support for your UK student visa application, from start
+              to finish.
+            </p>
+
+            <h2 className="text-xl font-semibold">Why Study in the UK?</h2>
+            <p>
+              The UK is home to historic universities like Oxford and Cambridge,
+              offering degrees that are internationally recognized. The
+              innovative curriculum, cultural diversity, and opportunities for
+              part-time work during study make it an attractive choice for
+              students seeking both academic excellence and global exposure.
+            </p>
+          </div>
+        </div>
+
+        {/* RIGHT SIDE: Form */}
+        <div className="lg:ml-6">
+          <Form />
+        </div>
+      </div>
+
+      <h2 className="text-xl font-semibold text-blue-800 mt-2 mb-2">
+        UK Student Visa Categories
+      </h2>
+      <p>
+        The primary visa for studying in the UK is the{" "}
+        <strong>Student Visa (formerly Tier 4)</strong>, applicable to full-time
+        students enrolled in recognized institutions. We also assist with
+        Child Student Visas and Short-Term Study Visas as needed.
       </p>
 
-      <h2 className="text-2xl font-bold text-blue-500 mt-6 mb-3" style={{ fontFamily: 'Times New Roman' }}>
-        UK Study Visa: An Overview
-      </h2>
-      <ol className="list-decimal pl-6 space-y-2" style={{ fontFamily: 'Times New Roman' }}>
-        <li>Choose Your Course and University: You must be accepted into a recognized UK institution and obtain a Confirmation of Acceptance for Studies (CAS).</li>
-        <li>Check Visa Requirements:
-          <ul className="list-disc pl-6">
-            <li>Unconditional offer from a UK institution</li>
-            <li>Sufficient financial support for tuition and living costs</li>
-            <li>Meet English language requirements (IELTS/TOEFL)</li>
-          </ul>
+      <h2 className="text-xl font-semibold mt-4 mb-2">Step-by-Step Process</h2>
+      <ul className="list-disc list-inside space-y-3">
+        <li>
+          <strong>Step 1: Get CAS (Confirmation of Acceptance for Studies)</strong> – Issued by your UK institution.
         </li>
-        <li>Complete Visa Application:
-          <ul className="list-disc pl-6">
-            <li>Valid passport</li>
-            <li>Proof of CAS</li>
-            <li>Proof of funds (~£1,023/month in London or £850 outside)</li>
-            <li>English language test results</li>
-            <li>Visa fee (~£348 for Tier 4 student visa)</li>
-          </ul>
+        <li>
+          <strong>Step 2: Prepare Your Documents</strong> – Gather academic,
+          financial, and language proficiency records.
         </li>
-        <li>Attend Biometrics Appointment</li>
-        <li>Wait for Visa Decision (typically up to 3 weeks)</li>
-        <li>Arrival in the UK: Visa is valid for the course duration plus extra time.</li>
-      </ol>
-
-      <h2 className="text-2xl font-bold text-blue-500 mt-6 mb-3" style={{ fontFamily: 'Times New Roman' }}>
-        Top UK Universities and Their Fee Structure
-      </h2>
-      <ul className="list-disc pl-6 space-y-3" style={{ fontFamily: 'Times New Roman' }}>
-        <li><strong>University of Oxford</strong><br />
-        Undergraduate: £26,770 – £38,010/year<br />
-        Postgraduate: £24,000 – £45,000/year</li>
-
-        <li><strong>University of Cambridge</strong><br />
-        Undergraduate: £22,227 – £58,038/year<br />
-        Postgraduate: £22,000 – £45,000/year</li>
-
-        <li><strong>London School of Economics (LSE)</strong><br />
-        Undergraduate: £22,000 – £31,000/year<br />
-        Postgraduate: £24,000 – £45,000/year</li>
-
-        <li><strong>University College London (UCL)</strong><br />
-        Undergraduate: £20,000 – £35,000/year<br />
-        Postgraduate: £20,000 – £50,000/year</li>
-
-        <li><strong>University of Edinburgh</strong><br />
-        Undergraduate: £19,000 – £34,000/year<br />
-        Postgraduate: £21,000 – £40,000/year</li>
-
-        <li><strong>University of Manchester</strong><br />
-        Undergraduate: £20,000 – £33,000/year<br />
-        Postgraduate: £22,000 – £40,000/year</li>
+        <li>
+          <strong>Step 3: Apply Online</strong> – Complete the UK visa
+          application form on the official UKVI website.
+        </li>
+        <li>
+          <strong>Step 4: Pay Visa Fee & IHS</strong> – Includes a visa fee and
+          Immigration Health Surcharge.
+        </li>
+        <li>
+          <strong>Step 5: Book & Attend Biometric Appointment</strong> – Submit
+          fingerprints and documents at a visa application center.
+        </li>
+        <li>
+          <strong>Step 6: Receive Visa Decision</strong> – Once granted, begin
+          travel planning for your studies in the UK.
+        </li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-blue-500 mt-6 mb-3" style={{ fontFamily: 'Times New Roman' }}>
-        Admission Process for UK Universities
-      </h2>
-      <ol className="list-decimal pl-6 space-y-2" style={{ fontFamily: 'Times New Roman' }}>
-        <li>Research and Choose a Course</li>
-        <li>Meet Entry Requirements:
-          <ul className="list-disc pl-6">
-            <li>Academic qualifications (A-Levels, IB, etc.)</li>
-            <li>English proficiency test</li>
-            <li>Portfolio (for arts)</li>
-            <li>Letters of recommendation (for PG)</li>
+      {/* SECOND SECTION: Image + Points */}
+      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 lg:ml-14 items-center mb-12 mt-8">
+        <div className="lg:col-span-4 h-[350px] w-[350px]  relative overflow-hidden">
+          <Image
+            src="/studyinuk/ukstudy.png"
+            alt="UK Study Costs"
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+
+        <div className="lg:col-span-6 space-y-6 text-justify text-gray-800 leading-relaxed">
+          <h2 className="text-xl font-semibold mb-3">
+            UK Study Visa Costs & Financial Planning
+          </h2>
+          <ul className="list-disc list-inside space-y-3">
+            <li>
+              <strong>Tuition Fees:</strong> Tuition typically ranges between
+              £10,000 and £30,000 per year depending on your university and
+              course.
+            </li>
+            <li>
+              <strong>Living Expenses:</strong> The UK Home Office requires
+              proof of around £1,023 to £1,334 per month for living costs.
+            </li>
+            <li>
+              <strong>Visa Fees:</strong> The Student Visa application costs
+              £490 (approx.) as of the latest update.
+            </li>
+            
+            <li>
+  <strong>Proof of Funds:</strong> Students must demonstrate they have sufficient funds to cover tuition and living costs. This typically involves showing bank statements or financial sponsorship letters.
+</li>
+<li>
+  <strong>Accommodation Costs:</strong> Rent varies greatly based on the city and housing type. London accommodation may range between £600–£1,200 per month, while smaller cities are more affordable.
+</li>
+
+<li>
+  <strong>Part-Time Job Allowance:</strong> Students on a UK Student Visa can work up to 20 hours per week during term time and full-time during holidays to help cover living expenses.
+</li>
+
+
           </ul>
-        </li>
-        <li>Application Submission:
-          <ul className="list-disc pl-6">
-            <li>UG: Apply via UCAS (max 5 choices)</li>
-            <li>PG: Direct university application</li>
+        </div>
+      </div>
+
+      {/* Why Choose VJC Overseas */}
+      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 items-center mb-12">
+        <div className="lg:col-span-7 space-y-4 text-justify text-gray-800 leading-relaxed">
+          <h2 className="text-xl font-semibold mb-3">
+            Why Choose <span className="text-orange-500">VJC Overseas</span>?
+          </h2>
+          <ul className="list-disc list-inside space-y-3">
+            <li>
+              <strong>Expert Profile Analysis:</strong> Get matched with the
+              right UK university based on your academic strengths.
+            </li>
+            <li>
+              <strong>Visa Guidance:</strong> Our specialists ensure error-free
+              documentation and timely submission.
+            </li>
+            <li>
+              <strong>Mock Interviews & SOP Help:</strong> Get prepared with
+              personalized training and Statement of Purpose review.
+            </li>
+            <li>
+              <strong>Accommodation & Forex Help:</strong> Full pre-departure
+              assistance for travel, stay, and currency exchange.
+            </li>
           </ul>
-        </li>
-        <li>Attend Interview (if required)</li>
-        <li>Receive and Accept Offer Letter</li>
-        <li>Apply for Student Visa (with CAS)</li>
-      </ol>
 
-      <h2 className="text-2xl font-bold text-blue-500 mt-6 mb-3" style={{ fontFamily: 'Times New Roman' }}>
-        Cost of Living in the UK
-      </h2>
-      <ul className="list-disc pl-6 space-y-2" style={{ fontFamily: 'Times New Roman' }}>
-        <li>London: £1,200 – £1,800/month</li>
-        <li>Outside London: £900 – £1,300/month</li>
-        <li>Cost includes housing, food, transport, leisure</li>
-        <li>Students can work part-time (up to 20 hrs/week)</li>
-      </ul>
+          <div className="mt-10 max-w-4xl mx-auto text-justify text-gray-700 leading-relaxed">
+            <h2 className="text-xl font-semibold mb-3">Conclusion</h2>
+            <p className="mb-5">
+              The UK is a hub for excellence in education and research. With{" "}
+              <span className="text-blue-800">VJC Overseas</span> by your side,
+              you can make the journey from application to arrival seamless and
+              stress-free.
+            </p>
+            <p className="mb-5">
+              We also offer guidance for countries like Australia, Canada, and
+              New Zealand—making your global study dream a reality.
+            </p>
+            <p className="text-sm font-bold italic">
+              Disclaimer: Visa fees and rules are subject to change. Always
+              verify from official UKVI sources.
+            </p>
+          </div>
+        </div>
 
-      <h2 className="text-2xl font-bold text-blue-500 mt-6 mb-3" style={{ fontFamily: 'Times New Roman' }}>
-        Conclusion
-      </h2>
-      <p className="mb-4" style={{ fontFamily: 'Times New Roman' }}>
-        Studying in the UK offers not just an academic challenge but also an opportunity to immerse yourself in a rich cultural experience. With a well-structured visa process, world-renowned universities, and a diverse student community, the UK is an excellent choice for international students.
-      </p>
-
-      <p className="mb-4 font-semibold text-orange-500" style={{ fontFamily: 'Times New Roman' }}>
-        At <span className="text-orange-500 font-bold">VJC Overseas</span>, we specialize in helping students navigate every step of the study abroad process—from selecting the right university to obtaining your visa and arriving in the UK. Contact us today to get started on your path to studying in the UK!
-      </p>
+        <div className="lg:col-span-3 w-full h-[350px] relative rounded-lg overflow-hidden">
+          <Image
+            src="/study-abroad-vjcoversaes.png"
+            alt="Why Choose VJC Overseas"
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+      </div>
     </div>
   );
 };
 
-export default UKStudyGuide;
+export default UKStudyVisa;

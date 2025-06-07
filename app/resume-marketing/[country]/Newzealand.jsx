@@ -1,16 +1,27 @@
-import { FaCheckCircle, FaGlobeAmericas, FaPlaneDeparture, FaBriefcase, FaFileAlt, FaMoneyBillWave } from 'react-icons/fa';
+
+import Image from "next/image";
 
 export default function NewZealandResumeServices() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
-    <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
-     New-Zealand Resume Marketing Services - <span className="text-orange-500">&nbsp;VJC Overseas</span>
-    </h1>
+      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+        New-Zealand Resume Marketing Services - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+      </h1>
 
       <p>
         Welcome to <span className="text-orange-500">VJC Overseas</span>, your trusted partner in navigating career opportunities and marketing your resume for a successful job search in New Zealand. Our specialized resume marketing services are designed to help you stand out and unlock the doors to your dream job in one of the most sought-after work destinations worldwide.
       </p>
-
+<div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+                   <Image
+                     src="/resume/resume11.png"
+                     alt="Migrate - Apply Now"
+                     width={900}
+                     height={630}
+                     className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+                     priority
+                     unoptimized
+                   />
+                 </div>
       <h2 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">Why Choose <span className="text-orange-500">VJC Overseas</span> for New Zealand Resume Marketing?</h2>
       <p>
         As experts in career services for New Zealand, we understand the nuances of the local job market. From crafting a tailored resume that aligns with New Zealand's job requirements to offering valuable insights into salary structures, living standards, work opportunities, and more, we are here to ensure your success.
@@ -19,21 +30,21 @@ export default function NewZealandResumeServices() {
       <h2 className="text-xl mt-4 mb-2 text-black font-semibold">Key Features of Our New Zealand Resume Marketing Services:</h2>
 
       <div>
-        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold flex items-center gap-2"><FaFileAlt /> Custom Resume Writing and Optimization for New Zealand</h3>
+        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">Custom Resume Writing and Optimization for New Zealand</h3>
         <p>
           Our team of expert resume writers is experienced in creating compelling resumes and cover letters that meet New Zealand’s hiring standards. We use the latest SEO techniques to ensure your resume ranks high in Applicant Tracking Systems (ATS), giving you a better chance of getting noticed by employers.
         </p>
       </div>
 
       <div>
-        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold flex items-center gap-2"><FaMoneyBillWave /> In-depth Knowledge of New Zealand’s Salary Structures</h3>
+        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">In-depth Knowledge of New Zealand’s Salary Structures</h3>
         <p>
           Understanding salary expectations is crucial for a successful job search. At <span className="text-orange-500">VJC Overseas</span>, we provide accurate and up-to-date insights into the salary structure in New Zealand across various industries. Whether you're in healthcare, engineering, IT, or hospitality, we guide you in setting realistic salary expectations and negotiating your pay package effectively.
         </p>
       </div>
 
       <div>
-        <h3 className="text-xl  mt-4 mb-2 text-blue-400 font-semibold flex items-center gap-2"><FaGlobeAmericas /> Living Standards in New Zealand</h3>
+        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">Living Standards in New Zealand</h3>
         <p>
           New Zealand offers a great quality of life, with a balance between work and leisure that attracts professionals worldwide. We provide valuable information about living standards in New Zealand, covering:
         </p>
@@ -48,7 +59,7 @@ export default function NewZealandResumeServices() {
       </div>
 
       <div>
-        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold flex items-center gap-2"><FaBriefcase /> Work Opportunities in New Zealand</h3>
+        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">Work Opportunities in New Zealand</h3>
         <p>
           New Zealand boasts a thriving job market with numerous opportunities in sectors such as:
         </p>
@@ -65,7 +76,7 @@ export default function NewZealandResumeServices() {
       </div>
 
       <div>
-        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold flex items-center gap-2"><FaCheckCircle /> Attractive Benefits of Working in New Zealand</h3>
+        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">Attractive Benefits of Working in New Zealand</h3>
         <ul className="list-disc pl-6">
           <li>Work-life balance: New Zealand is renowned for its relaxed lifestyle, offering ample opportunities to enjoy outdoor activities and family time.</li>
           <li>Healthcare: Access to high-quality healthcare services, with options for public and private health coverage.</li>
@@ -76,7 +87,7 @@ export default function NewZealandResumeServices() {
       </div>
 
       <div>
-        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold flex items-center gap-2"><FaPlaneDeparture /> Post-Job Search Support</h3>
+        <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">Post-Job Search Support</h3>
         <p>
           Even after your job search is over, our commitment to your success doesn’t stop. We provide continued support with career counseling, interview preparation, and negotiation strategies, ensuring that you start your new role with confidence.
         </p>

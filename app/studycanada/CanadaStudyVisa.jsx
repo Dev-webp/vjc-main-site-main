@@ -1,103 +1,204 @@
+'use client';
+
 import React from "react";
+import Image from "next/image";
+import Form from "./Form";
 
-const CanadaStudentVisa = () => {
+const CanadaStudyVisa = () => {
   return (
-    <div className="p-6 max-w-5xl mx-auto text-justify">
-      <h1 className="text-3xl font-bold mb-4 text-blue-600" style={{ fontFamily: 'Times New Roman' }}>
-        Canada Student Visa: Your Pathway to World-Class Education
-      </h1>
-      <p className="mb-4" style={{ fontFamily: 'Times New Roman' }}>
-        Canada is a top destination for international students, offering a high standard of education, a welcoming multicultural environment, and numerous opportunities for career growth. If you’re planning to study in Canada, obtaining a Canada Student Visa (Study Permit) is an essential step. <span className="text-orange-600">VJC Overseas</span> guides you through the process, ensuring a smooth and successful application journey.
+    <div
+      className="max-w-7xl mx-auto px-4 py-8"
+      style={{ fontFamily: "Times New Roman, serif" }}
+    >
+      {/* TOP SECTION */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        {/* LEFT CONTENT */}
+        <div className="flex flex-col">
+          <h1 className="text-3xl font-bold mb-4 text-center lg:text-left">
+            <span className="text-red-500">Canada</span> Study Visa Process –{" "}
+            <span className="text-orange-500">VJC Overseas</span>
+          </h1>
+
+          <div className="relative h-64 w-full overflow-hidden mb-4">
+            <Image
+              src="/How-to-apply-student-visa-in-Canada.jpg"
+              alt="Study in Canada"
+              fill
+              className="object-cover"
+              unoptimized
+            />
+          </div>
+
+          <div className="space-y-5 text-justify text-gray-800 leading-relaxed">
+            <p>
+              Dreaming of studying in <span className="text-red-500">Canada</span>? With world-class institutions,
+              diverse culture, and a student-friendly immigration process, Canada
+              is one of the most preferred destinations for international students.
+              <span className="text-orange-500"> VJC Overseas</span> helps you every step
+              of the way—from application to arrival.
+            </p>
+
+            <h2 className="text-xl font-semibold">Why Study in <span className="text-red-500">Canada</span>?</h2>
+           <p>
+  Canada offers globally recognized degrees, affordable tuition, and
+  work opportunities during and after studies. From research-intensive
+  universities to career-focused colleges, students gain both academic
+  excellence and practical exposure in a multicultural environment. 
+  <span className="font-semibold">Graduates also benefit from generous post-study work visas and clear PR pathways, making <span className="text-red-500">Canada</span> an ideal long-term destination.</span>
+</p>
+
+          </div>
+        </div>
+
+        {/* RIGHT FORM */}
+        <div className="lg:ml-6">
+          <Form />
+        </div>
+      </div>
+
+      <h2 className="text-xl font-semibold text-blue-800 mt-2 mb-2">
+        <span className="text-red-500">Canada</span> Student Visa Categories
+      </h2>
+      <p>
+        The main permit for international students in <span className="text-red-500">Canada</span> is the{" "}
+        <strong>Study Permit</strong>. VJC Overseas also provides assistance for
+        short-term visas for language or exchange programs, and dependent visas
+        for family members.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-2 text-blue-600" style={{ fontFamily: 'Times New Roman' }}>
-        Canada Student Visa: Basic Eligibility Criteria
-      </h2>
-      <ul className="list-decimal pl-6 mb-4 space-y-2" style={{ fontFamily: 'Times New Roman' }}>
-        <li>
-          <strong>Proof of Acceptance from a Recognized Institution:</strong>
-          <ul className="list-disc pl-6">
-            <li>You must have an acceptance letter from a Designated Learning Institution (DLI) in Canada.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Sufficient Financial Resources:</strong>
-          <ul className="list-disc pl-6">
-            <li>You must demonstrate funds for tuition, living expenses, and return travel.</li>
-            <li>Approx. CAD 10,000 (excluding Quebec); extra for dependents.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>No Criminal Record:</strong>
-          <ul className="list-disc pl-6">
-            <li>Submit a police certificate confirming a clean record.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Health and Medical Requirements:</strong>
-          <ul className="list-disc pl-6">
-            <li>Medical exams may be needed depending on your country or stay duration.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Intention to Leave Canada after Studies:</strong>
-          <ul className="list-disc pl-6">
-            <li>Show ties to home country (family, job, assets).</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Language Proficiency:</strong>
-          <ul className="list-disc pl-6">
-            <li>IELTS, TOEFL, TEF may be required based on institution language.</li>
-          </ul>
-        </li>
-      </ul>
+      <h2 className="text-xl font-semibold mt-4 mb-2">Step-by-Step Process</h2>
 
-      <h2 className="text-2xl font-semibold mb-2 text-green-600" style={{ fontFamily: 'Times New Roman' }}>
-        Documents Required for Canada Student Visa Application
-      </h2>
-      <ul className="list-decimal pl-6 mb-4 space-y-2" style={{ fontFamily: 'Times New Roman' }}>
-        <li>Valid Passport (at least six months beyond stay period)</li>
-        <li>Proof of Acceptance (DLI Letter)</li>
-        <li>Proof of Sufficient Funds (bank statements, affidavits)</li>
-        <li>Passport-sized Photographs (as per Canadian visa norms)</li>
-        <li>Statement of Purpose (SOP)</li>
-        <li>Police Clearance Certificate</li>
-        <li>Medical Examination Results (if applicable)</li>
-        <li>Language Proficiency Test Results (IELTS/TOEFL/TEF)</li>
-        <li>Transcripts and Educational Certificates</li>
-        <li>Statement of Funds and relationship proof (for dependents)</li>
-        <li>Visa Application Forms and Fees (IMM 1294)</li>
-        <li>Biometrics (if required)</li>
-      </ul>
+<div className="grid grid-cols-1 lg:grid-cols-10 gap-6 items-start mb-8">
+  {/* LEFT: Step-by-step list (70%) */}
+  <div className="lg:col-span-7">
+    <ul className="list-disc list-inside space-y-3 text-gray-800 leading-relaxed text-justify">
+      <li>
+        <strong>Step 1: Get Letter of Acceptance (LOA)</strong> – From a Designated Learning Institution (DLI).
+      </li>
+      <li>
+        <strong>Step 2: Gather Documents</strong> – Academic transcripts, financial proof, passport, SOP, etc.
+      </li>
+      <li>
+        <strong>Step 3: Apply for Study Permit</strong> – Submit application via the IRCC online portal or VFS.
+      </li>
+      <li>
+        <strong>Step 4: Biometrics Appointment</strong> – Schedule and attend biometric enrollment at a VAC.
+      </li>
+      <li>
+        <strong>Step 5: Visa Decision</strong> – Once approved, you’ll receive your Port of Entry (POE) Letter of Introduction.
+      </li>
+      <li>
+        <strong>Step 6: Fly to Canada</strong> – Carry your documents and start your education journey!
+      </li>
+    </ul>
+  </div>
 
-      <h2 className="text-2xl font-semibold mb-2 text-blue-600" style={{ fontFamily: 'Times New Roman' }}>
-        Steps to Apply for a Canada Student Visa
-      </h2>
-      <ol className="list-decimal pl-6 mb-4 space-y-2" style={{ fontFamily: 'Times New Roman' }}>
-        <li>Prepare Your Documents</li>
-        <li>Complete the Application Form (IMM 1294)</li>
-        <li>Submit the Application (Online or at VAC)</li>
-        <li>Attend Biometrics Appointment (if applicable)</li>
-        <li>Wait for Processing</li>
-        <li>Receive Your Visa and Letter of Introduction</li>
-      </ol>
+  {/* RIGHT: Image (30%) */}
+  <div className="lg:col-span-3 w-full h-[200px] relative  overflow-hidden">
+    <Image
+      src="/canada-student.avif" // ✅ Replace with your actual image path
+      alt="Canada Study Visa Steps"
+      fill
+      className="object-cover"
+      unoptimized
+    />
+  </div>
+</div>
 
-      <h2 className="text-2xl font-semibold mb-2 text-green-600" style={{ fontFamily: 'Times New Roman' }}>
-        Why Choose <span className="text-orange-600">VJC Overseas</span>?
-      </h2>
-      <p className="mb-4" style={{ fontFamily: 'Times New Roman' }}>
-        At <span className="text-orange-600">VJC Overseas</span>, we understand that the process of applying for a Canadian student visa can be overwhelming. Our experts offer step-by-step guidance, personalized counselling, and help you choose the right course and institution in Canada.
-      </p>
 
-      <h2 className="text-2xl font-semibold mb-2 text-black-600" style={{ fontFamily: 'Times New Roman' }}>
-        Get in Touch Today!
-      </h2>
-      <p style={{ fontFamily: 'Times New Roman' }}>
-        Start your journey to studying in Canada with the trusted experts at <span className="text-orange-600">VJC Overseas</span>. Contact us today for a consultation and take the first step toward your Canadian dream!
-      </p>
+      {/* COST SECTION */}
+      <div className="grid grid-cols-1 lg:grid-cols-10 gap-0 lg:ml-14 items-center mb-12 mt-8">
+        <div className="lg:col-span-4 h-[350px] w-[350px] relative overflow-hidden">
+          <Image
+            src="/student-visa-process-canada.jpg"
+            alt="Canada Study Costs"
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+
+        <div className="lg:col-span-6 space-y-6 text-justify text-gray-800 leading-relaxed">
+          <h2 className="text-xl font-semibold mb-3">
+            <span className="text-red-500">Canada</span> Study Visa Costs & Financial Planning
+          </h2>
+          <ul className="list-disc list-inside space-y-3">
+            <li>
+              <strong>Tuition Fees:</strong> Range from CAD 13,000–CAD 35,000 per year depending on course and institution.
+            </li>
+            <li>
+              <strong>Living Expenses:</strong> IRCC requires proof of at least CAD 10,000 per year (outside Quebec).
+            </li>
+            <li>
+              <strong>Visa Application Fee:</strong> The Canadian study permit fee is approximately CAD 150.
+            </li>
+            <li>
+              <strong>GIC Requirement:</strong> Students applying via SDS stream need to purchase a CAD 10,000 Guaranteed Investment Certificate.
+            </li>
+            <li>
+              <strong>Medical & Biometrics:</strong> Costs for medical exam (CAD 100–150) and biometrics (CAD 85) may apply.
+            </li>
+            <li>
+              <strong>Part-Time Work:</strong> Students can work up to 20 hours per week during sessions and full-time in scheduled breaks.
+            </li>
+            <li>
+              <strong>Accommodation:</strong> Costs range from CAD 500–CAD 1,200/month depending on city and lifestyle.
+            </li>
+            <li>
+              <strong>Scholarships:</strong> VJC assists in applying to institutional and provincial scholarships where eligible.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* WHY VJC OVERSEAS */}
+      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 items-center mb-12">
+        <div className="lg:col-span-7 space-y-4 text-justify text-gray-800 leading-relaxed">
+          <h2 className="text-xl font-semibold mb-3">
+            Why Choose <span className="text-orange-500">VJC Overseas</span>?
+          </h2>
+          <ul className="list-disc list-inside space-y-3">
+            <li>
+              <strong>University Selection:</strong> Personalized recommendations based on course, budget, and goals.
+            </li>
+            <li>
+              <strong>End-to-End Support:</strong> From document prep to visa filing, we've got you covered.
+            </li>
+            <li>
+              <strong>SDS & Non-SDS Filing:</strong> Guidance for both streams with high visa success rates.
+            </li>
+            <li>
+              <strong>Pre-Departure & Forex Help:</strong> Assistance with travel bookings, housing, GIC setup & currency exchange.
+            </li>
+          </ul>
+
+          <div className="mt-10 max-w-4xl mx-auto text-justify text-gray-700 leading-relaxed">
+            <h2 className="text-xl font-semibold mb-3">Conclusion</h2>
+            <p className="mb-5">
+              <span className="text-red-500">Canada</span> is one of the safest and most promising destinations for international students. With{" "}
+              <span className="text-blue-800">VJC Overseas</span>, you get more than consultation—you get a dedicated partner.
+            </p>
+            <p className="mb-5">
+              We also support study visas for UK, Australia, New Zealand, and Europe. Let us help shape your global education journey!
+            </p>
+            <p className="text-sm font-bold italic">
+              Disclaimer: Fees and immigration policies may change. Always confirm with official IRCC sources.
+            </p>
+          </div>
+        </div>
+
+        <div className="lg:col-span-3 w-full h-[350px] relative rounded-lg overflow-hidden">
+          <Image
+            src="/study-abroad-vjcoversaes.png"
+            alt="Why Choose VJC Overseas"
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+      </div>
     </div>
   );
 };
 
-export default CanadaStudentVisa;
+export default CanadaStudyVisa;

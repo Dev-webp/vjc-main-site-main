@@ -13,7 +13,17 @@ export default function AustraliaResumeMarketing() {
             At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we specialize in Resume Marketing Services tailored for the Australian job market. Whether you're a skilled professional, a fresh graduate, or planning to relocate, our customized strategies ensure that your resume doesn’t just get noticed — it gets shortlisted.
           </p>
   
-
+ <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+             <Image
+               src="/resume/resume4.png"
+               alt="Migrate - Apply Now"
+               width={900}
+               height={630}
+               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+               priority
+               unoptimized
+             />
+           </div>
       {/* Why Choose Section */}
       <h3 className="text-lg font-semibold mt-8 mb-2 text-black">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Resume Marketing?</h3>
       <ul className="list-disc list-inside space-y-1">

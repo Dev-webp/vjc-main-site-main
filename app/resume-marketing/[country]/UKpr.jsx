@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function UkResumeMarketing() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
@@ -11,7 +12,17 @@ export default function UkResumeMarketing() {
       <p className="mb-4">
         At <span className="text-orange-500">VJC Overseas</span>, we specialize in crafting professional UK resumes that will help you stand out in a competitive job market. Whether you are a fresh graduate or an experienced professional, our resume marketing services are tailored to showcase your skills, qualifications, and achievements to potential employers in the UK.
       </p>
-
+ <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+             <Image
+               src="/resume/resume5.png"
+               alt="Migrate - Apply Now"
+               width={900}
+               height={630}
+               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+               priority
+               unoptimized
+             />
+           </div>
       <h2 className="text-xl mt-4 font-semibold text-blue-400 mb-2">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your UK Resume Marketing?</h2>
       <p className="mb-2">
         Our team of expert resume writers and career consultants understands the nuances of the UK job market and knows what employers look for in a high-quality resume. With our resume marketing services, we ensure your CV speaks to your strengths and experiences, helping you secure the job of your dreams.

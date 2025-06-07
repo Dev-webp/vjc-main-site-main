@@ -1,3 +1,6 @@
+
+import Image from "next/image";
+
 export default function GermanyResumeMarketing() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
@@ -8,6 +11,17 @@ export default function GermanyResumeMarketing() {
         Are you looking to secure a job in Germany? <span className="text-orange-500">VJC Overseas</span> is your trusted partner in navigating the competitive German job market. Our Germany Resume Marketing Services are designed to enhance your profile, optimize your resume, and guide you through the application process with a focus on work opportunities, salary structures, and lifestyle benefits. Let us help you craft the perfect resume and get you on the path to success in Germany.
       </p>
 
+ <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+             <Image
+               src="/resume/resume2.png"
+               alt="Migrate - Apply Now"
+               width={900}
+               height={630}
+               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+               priority
+               unoptimized
+             />
+           </div>
       <h2 className="text-xl font-semibold text-blue-400  mt-4 mb-2">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Germany Job Search?</h2>
       <p className="mb-4">
         Finding a job in Germany requires more than just a great resume—it demands a strategic approach to marketing your skills to potential employers. At <span className="text-orange-500">VJC Overseas</span>, we specialize in tailoring your resume and LinkedIn profile to meet the demands of the German job market. Our team of experts works closely with you to ensure that your resume highlights your strengths and showcases your qualifications, making you stand out from the competition.

@@ -7,30 +7,24 @@ import Form from './Form';
 
 const StudentVisaProcess = () => {
   const countries = [
-    { name: "USA", path: "/usa" },
+        { name: "USA", path: "/usa" },
     { name: "UK", path: "/uk" },
-    { name: "Canada", path: "/canada" },
-    { name: "Australia", path: "/australia" },
+    { name: "Canada", path: "/studycanada" },
+    { name: "Australia", path: "/studyaustralia" },
     { name: "Germany", path: "/studyingermany" },
     { name: "Italy", path: "/italy" },
     { name: "France", path: "/france" },
     { name: "Singapore", path: "/singapore" },
     { name: "Malaysia", path: "/malaysia" },
-    { name: "South Africa", path: "/south-africa" },
-    { name: "New Zealand", path: "/newzealand" },
+    { name: "South Africa", path: "/studyinsouthafrica" },
+    { name: "New Zealand", path: "/studyinnewzealand" },
     { name: "Philippines", path: "/philippines" },
     { name: "Poland", path: "/poland" },
     { name: "Ireland", path: "/ireland" },
     { name: "Spain", path: "/spain" },
-    { name: "Netherlands", path: "/netherlands" },
-    { name: "Switzerland", path: "/switzerland" },
-    { name: "Denmark", path: "/denmark" },
-    { name: "Dubai", path: "/dubai" },
-    { name: "Luxembourg", path: "/luxembourg" },
-    { name: "Hongkong", path: "/hongkong" },
-    { name: "UAE", path: "/uae" },
-    { name: "Norway", path: "/norway" },
     { name: "Sweden", path: "/sweden" },
+    { name: "Norway", path: "/norway" },
+    
   ];
 
   const bgImages = [

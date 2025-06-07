@@ -1,3 +1,5 @@
+
+import Image from "next/image";
 export default function UsaResumeMarketing() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
@@ -8,6 +10,17 @@ export default function UsaResumeMarketing() {
       <h2 className="text-xl font-semibold text-black mt-4 mb-2">
         Welcome to <span className="text-orange-500">VJC Overseas</span> – Your Gateway to Successful Career Opportunities in the USA
       </h2>
+       <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+                   <Image
+                     src="/resume/resume3.png"
+                     alt="Migrate - Apply Now"
+                     width={900}
+                     height={630}
+                     className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+                     priority
+                     unoptimized
+                   />
+                 </div>
       <p className="mb-4">
         At <span className="text-orange-500">VJC Overseas</span>, we understand that finding the right job in the USA can be challenging. That’s why we specialize in providing USA Resume Marketing Services that will make your resume stand out in the competitive U.S. job market. Whether you're looking for a career boost, applying for a new role, or relocating to the United States for work, our comprehensive resume marketing services are designed to help you achieve your professional goals.
       </p>

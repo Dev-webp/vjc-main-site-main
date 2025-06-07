@@ -8,7 +8,7 @@ import Form from "./Form";
 import CanadaPR from "./CanadaPR";
 import Australiapr from "./Australiapr";
 import UKpr from "./UKpr";
-import Newzelandpr from "./Newzelandpr";
+
 import Germanybluecard from "./Germanybluecard";
 import UsaStudy from "./UsaStudy";
 import Denmark from "./Denmark";
@@ -87,7 +87,7 @@ const Migrate = () => {
               </p>
             </motion.div>
 
-            <div className="w-full lg:w-1/2 mt-8 lg:mt-12">
+            <div className="w-full lg:w-1/2 mt-8 lg:mt-24">
               <Form />
             </div>
           </div>
@@ -141,8 +141,7 @@ const Migrate = () => {
               <Australiapr />
             ) : selectedVisa.path === "/resume-marketing/uk" ? (
               <UKpr />
-            ) : selectedVisa.path === "/PR-visas/newzelandpr" ? (
-              <Newzelandpr />
+            
             ) : selectedVisa.path === "/resume-marketing/germany" ? (
               <Germanybluecard />
             ) : selectedVisa.path === "/resume-marketing/usa" ? (

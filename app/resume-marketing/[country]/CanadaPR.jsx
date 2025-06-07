@@ -1,78 +1,142 @@
-import { FaBriefcase, FaMapMarkerAlt, FaLaptopCode, FaStethoscope, FaUniversity, FaHammer, FaUsers, FaHandshake } from 'react-icons/fa';
+import Image from "next/image";
 
 export default function CanadaResumeMarketingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
-    <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
-     Canada Resume Marketing Services - <span className="text-orange-500">&nbsp;VJC Overseas</span>
-    </h1>
+      <h1 className="text-center text-2xl sm:text-3xl font-bold mb-8">
+        Canada Resume Marketing Services –{" "}
+        <span className="text-orange-500">VJC Overseas</span>
+      </h1>
 
       <p className="mb-4">
-        Welcome to <span className="text-orange-500">VJC Overseas</span> – Your Gateway to Success in Canada! If you're planning to move to Canada for work, study, or business, one of the most crucial steps is having a strong, professional resume that stands out. With the right resume, you can unlock new opportunities, land the job of your dreams, and start building a successful career in Canada.
+        Welcome to <span className="text-orange-500">VJC Overseas</span> – Your
+        trusted partner for launching a successful career in Canada. Whether
+        you're planning to move to Canada for work, education, or business, a
+        professionally written resume is essential to grab the attention of
+        Canadian employers and increase your job opportunities.
       </p>
+      {/* 🔽 SMALL IMAGE INSERTED HERE */}
+      <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+             <Image
+               src="/resume/resume1.png"
+               alt="Migrate - Apply Now"
+               width={900}
+               height={630}
+               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+               priority
+               unoptimized
+             />
+           </div>
       <p className="mb-4">
-        That's where our Canada Resume Marketing Services come in. At <span className="text-orange-500">VJC Overseas</span>, we specialize in creating tailored resumes for Canadian job markets, ensuring that you stand out to employers and maximize your chances of securing your ideal position.
+        Our Canada Resume Marketing Services are designed to align your
+        professional profile with Canadian industry standards, improving your
+        chances of securing interviews and employment in your target field.
       </p>
+
       <p className="mb-4">
-        Whether you're a recent graduate, an experienced professional, or an executive looking for a career transition, our expert team is here to guide you every step of the way.
+        From recent graduates to experienced professionals and executives
+        seeking career transitions, we provide end-to-end support tailored to
+        your goals in the Canadian job market.
       </p>
 
-      <h2 className="text-xl font-semibold text-blue-400 mt-4 mb-2">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Canada Resume Marketing Services?</h2>
+      <h2 className="text-xl font-semibold text-blue-400 mt-6 mb-2">
+        Why Choose <span className="text-orange-500">VJC Overseas</span> for
+        Your Resume Marketing in Canada?
+      </h2>
       <ul className="list-disc ml-6 mb-4">
-        <li>Professional Resume Writing: Our skilled writers craft resumes that effectively showcase your skills, experience, and accomplishments, customized to match Canadian employers’ expectations.</li>
-        <li>ATS Optimization: We ensure that your resume is ATS-friendly so it passes through automated systems used by most Canadian employers.</li>
-        <li>Cover Letters & LinkedIn Profiles: Enhance your chances with tailored cover letters and LinkedIn profile optimization, offering a holistic approach to your career journey.</li>
-        <li>Job Search Strategies: We don’t just stop at resume writing; we provide guidance on finding job openings in Canada, applying effectively, and networking with industry professionals.</li>
+        <li>
+          Customized resume writing to match Canadian employer expectations.
+        </li>
+        <li>
+          Optimized for Applicant Tracking Systems (ATS) to improve shortlisting
+          chances.
+        </li>
+        <li>
+          Professional cover letters and LinkedIn profile enhancements for a
+          strong online presence.
+        </li>
+        <li>
+          Personalized job search strategies and application guidance for
+          targeted results.
+        </li>
       </ul>
 
-      <h2 className="text-xl font-semibold text-black mt-4 mb-2">What to Expect When Working in Canada: Salary Structure, Living Style, and Work Opportunities</h2>
+      <h2 className="text-xl font-semibold text-black mt-6 mb-2">
+        Working in Canada: Salary Structure, Job Prospects, and Living Standards
+      </h2>
 
-      <h3 className="text-xl font-semibold text-blue-400 mt-4 mb-2">Salary Structure in Canada</h3>
+      <h3 className="text-xl font-semibold text-blue-400 mt-4 mb-2">
+        Canadian Salary Expectations
+      </h3>
       <ul className="list-disc ml-6 mb-4">
-        <li>Entry-Level Jobs: $35,000 - $50,000 CAD per year.</li>
-        <li>Mid-Level Professionals: $50,000 - $80,000 CAD per year.</li>
-        <li>Senior Professionals: $80,000 - $120,000+ CAD per year.</li>
-        <li>IT and Tech Industry: Professionals in this sector can earn $70,000 - $150,000 CAD per year, depending on expertise.</li>
+        <li>Entry-Level Roles: CAD $35,000 – $50,000 annually</li>
+        <li>Mid-Level Professionals: CAD $50,000 – $80,000 annually</li>
+        <li>Senior Positions: CAD $80,000 – $120,000+ annually</li>
+        <li>
+          IT & Tech Sector: CAD $70,000 – $150,000 depending on experience
+        </li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-blue-400 mt-4 mb-2">Work Opportunities</h3>
-      <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-        <li><FaLaptopCode className="inline mr-2 text-orange-500" /> Information Technology & Software Development</li>
-        <li><FaUsers className="inline mr-2 text-orange-500" /> Engineering & Architecture</li>
-        <li><FaStethoscope className="inline mr-2 text-orange-500" /> Healthcare & Medicine</li>
-        <li><FaUniversity className="inline mr-2 text-orange-500" /> Finance & Accounting</li>
-        <li><FaHandshake className="inline mr-2 text-orange-500" /> Education & Teaching</li>
-        <li><FaHammer className="inline mr-2 text-orange-500" /> Hospitality & Tourism</li>
-        <li><FaBriefcase className="inline mr-2 text-orange-500" /> Skilled Trades (Carpentry, Plumbing, etc.)</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold text-blue-400 mt-4 mb-2">Living Style in Canada</h3>
+      <h3 className="text-xl font-semibold text-blue-400 mt-4 mb-2">
+        Top Industries Hiring in Canada
+      </h3>
       <ul className="list-disc ml-6 mb-4">
-        <li>Affordable Healthcare: As a resident, you will have access to Canada’s universal healthcare system.</li>
-        <li>Safe and Welcoming Environment: Canada is one of the safest countries in the world, with low crime rates and a reputation for being welcoming to immigrants.</li>
-        <li>Work-Life Balance: Canadians enjoy a healthy work-life balance with generous vacation time and public holidays.</li>
+        <li>Information Technology and Software Development</li>
+        <li>Engineering and Architecture</li>
+        <li>Healthcare and Medical Services</li>
+        <li>Finance and Accounting</li>
+        <li>Education and Training</li>
+        <li>Hospitality and Tourism</li>
+        <li>Skilled Trades (Carpentry, Plumbing, etc.)</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-blue-400 mt-4 mb-2">Benefits of Working in Canada</h3>
+      <h3 className="text-xl font-semibold text-blue-400 mt-4 mb-2">
+        Canadian Lifestyle and Work Culture
+      </h3>
+      <ul className="list-disc ml-6 mb-4">
+        <li>Access to universal healthcare as a permanent resident</li>
+        <li>Safe and inclusive society with diverse communities</li>
+        <li>Excellent work-life balance and employee rights</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-blue-400 mt-4 mb-2">
+        Benefits of Working in Canada
+      </h3>
       <ol className="list-decimal ml-6 mb-6">
-        <li>Competitive Salaries: Canada offers attractive salaries and fair compensation for your work, ensuring financial stability.</li>
-        <li>Healthcare Benefits: As a resident, you’ll have access to universal healthcare, with most medical services covered under provincial health plans.</li>
-        <li>Pension Plans: Many employers offer pension plans, contributing to your long-term financial security.</li>
-        <li>Paid Vacation: Most employers offer 2-3 weeks of paid vacation, along with statutory holidays.</li>
-        <li>Career Growth: Canada encourages professional development and offers abundant opportunities for career advancement.</li>
+        <li>Competitive salary packages and employee benefits</li>
+        <li>Free or subsidized healthcare services</li>
+        <li>Pension and retirement plans for long-term security</li>
+        <li>Paid vacation, sick leave, and statutory holidays</li>
+        <li>Career advancement and skill development opportunities</li>
       </ol>
 
-      <h2 className="text-xl font-semibold text-blue-400 mt-4 mb-2">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Canadian Journey?</h2>
+      <h2 className="text-xl font-semibold text-blue-400 mt-6 mb-2">
+        Why Trust <span className="text-orange-500">VJC Overseas</span> with
+        Your Career in Canada?
+      </h2>
       <p className="mb-4">
-        At <span className="text-orange-500">VJC Overseas</span>, we provide more than just resume writing services. Our dedicated team works closely with you to ensure you’re fully prepared to pursue career opportunities in Canada. From creating the perfect resume to guiding you through job market trends and salary expectations, we offer comprehensive support to help you succeed in your Canadian career journey.
+        At <span className="text-orange-500">VJC Overseas</span>, we do more
+        than write resumes. We position you for success in the Canadian job
+        market by understanding your goals and transforming your experience into
+        compelling documents that attract employers and recruiters. We provide
+        insights into market trends, employer preferences, and help you stay
+        ahead in a competitive landscape.
       </p>
 
-      <h2 className="text-xl font-semibold text-blue-400 mt-4 mb-2">Ready to Begin Your Career in Canada?</h2>
+      <h2 className="text-xl font-semibold text-blue-400 mt-6 mb-2">
+        Start Your Canadian Career Journey Today
+      </h2>
       <p className="mb-4">
-        Let’s get started today! Contact us for a free consultation, and let our expert team craft the perfect resume to elevate your career in Canada. We’re here to help you make the right impression and land the job of your dreams in one of the most thriving economies in the world.
+        Ready to take the first step toward your dream job in Canada? Contact{" "}
+        <span className="text-orange-500">VJC Overseas</span> today for a free
+        consultation. Let us help you create a powerful resume and marketing
+        strategy that opens doors and accelerates your success.
       </p>
 
-      <h2 className="text-xl font-semibold text-blue-400 mb-4"> <span className="text-orange-500">VJC Overseas</span> – Your Bridge to a Bright Future in Canada!</h2>
+      <h2 className="text-xl font-semibold text-blue-400 mb-4">
+        <span className="text-orange-500">VJC Overseas</span> – Your Partner in
+        Global Career Success
+      </h2>
     </div>
   );
 }
