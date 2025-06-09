@@ -19,7 +19,7 @@ const UKPR = () => {
                       alt="uk permanent residence Guidance by VJC Overseas"
                       width={300}
                       height={700}
-                     
+                     unoptimized
                       priority
                     />
                   </div>

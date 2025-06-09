@@ -81,15 +81,16 @@ const WorkPermitProcess = () => {
         <h2 className="text-xl text-white font-bold text-center mb-4">
           Choose Your Country for Work Permit
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3">
-          {countries.map((c, i) => (
-            <Link key={i} href={c.path}>
-              <div className="px-4 py-3 bg-white/70 text-black border border-white rounded-lg text-sm font-semibold hover:bg-orange-500 hover:text-white hover:underline underline-offset-4 transition-all duration-300 shadow cursor-pointer text-center">
-                {c.name} Work Permit Process
-              </div>
-            </Link>
-          ))}
-        </div>
+        <div className="grid md:ml-28 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 sm:gap-3">
+  {countries.map((c, i) => (
+    <Link key={i} href={c.path}>
+      <div className="px-3 py-3 bg-white/70 text-black border border-white rounded-md text-xl sm:text-sm font-semibold hover:bg-orange-500 hover:text-white hover:underline underline-offset-4 transition-all duration-300 shadow cursor-pointer text-center">
+        {c.name} Work Permit process
+      </div>
+    </Link>
+  ))}
+</div>
+
       </div>
 
       {/* Updated Description */}

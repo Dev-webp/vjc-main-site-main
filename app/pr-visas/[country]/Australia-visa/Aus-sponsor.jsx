@@ -28,6 +28,7 @@ const Aussponsor = () => {
                         alt="Australia Sponsorship Visa"
                         width={500} height={300}
                         className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-70 object-contain shadow-lg rounded-lg"
+                        unoptimized
                     />
                 </div>
             </div>

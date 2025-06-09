@@ -23,6 +23,7 @@ export default function OntarioPNP() {
             title="Ontario Immigrant Nominee Program – VJC Overseas"
             className="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
             priority
+            unoptimized
           />
           <span className="absolute bottom-2 left-2 bg-black/60 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
             Ontario PNP Canada

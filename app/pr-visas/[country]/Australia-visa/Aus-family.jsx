@@ -33,6 +33,7 @@ const Ausfamily = () => {
             width={500} // Replace with your image's actual width
             height={300}
             className="w-full text-center max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-70 object-contain shadow-lg rounded-lg"
+            unoptimized
           />
         </div>
       </div>

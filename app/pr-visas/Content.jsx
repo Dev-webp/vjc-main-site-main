@@ -62,6 +62,8 @@ const Content = ({ selectedVisa }) => {
             alt="PR Visa Support"
             width={500}
             height={450}
+           unoptimized
+          
           
           />
         </div>

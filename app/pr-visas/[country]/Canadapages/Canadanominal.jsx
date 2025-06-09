@@ -33,6 +33,7 @@ export default function NextPNP() {
               height={400}
               className="w-full h-auto object-cover rounded"
               priority
+              unoptimized
             />
           </div>
         </div>

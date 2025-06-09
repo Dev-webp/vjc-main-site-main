@@ -29,6 +29,7 @@ const USAinvestor = () => {
     width={500} // Replace with your image's actual width
     height={300} // Replace with your image's actual height
     className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
+    unoptimized
   />
 </div>
 

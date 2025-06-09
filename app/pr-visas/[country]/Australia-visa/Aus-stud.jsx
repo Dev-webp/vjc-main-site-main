@@ -20,6 +20,7 @@ const AustraliaPRVisa = () => {
             height={300}
             className="w-full h-auto "
             priority
+            unoptimized
           />
         </div>
 

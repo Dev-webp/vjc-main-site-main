@@ -21,6 +21,7 @@ const UsaGreenCard = () => {
             width={300}
             height={700}
             priority
+            unoptimized
           />
         </div>
 

@@ -36,6 +36,7 @@ export default function Next() {
     width={600}
     height={400}
     className="w-full object-cover transform transition duration-500 hover:scale-105"
+    unoptimized
   />
 </div>
 

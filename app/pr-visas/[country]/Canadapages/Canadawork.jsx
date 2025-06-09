@@ -18,6 +18,7 @@ const CanadaPR = () => {
                    height={400}
                    className="w-full object-cover "
                    priority
+                   unoptimized
                  />
                </div>
        
