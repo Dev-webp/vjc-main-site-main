@@ -10,42 +10,44 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const universities = [
- {
-  name: "Harvard University",
-  undergraduate: "$54,269/year",
-  postgraduate: "$50,000 – $70,000/year",
-  image: "/harvard-university-campus.jpg",
-  description: "Harvard University, located in Cambridge, Massachusetts, is the oldest and one of the most prestigious Ivy League institutions in the world. Known for its academic excellence, world-class faculty, and influential alumni, Harvard offers unmatched opportunities across fields like law, medicine, business, and science. A degree from Harvard signifies global prestige, leadership, and lifelong impact."
-},
+
   {
-  name: "Massachusetts Institute of Technology",
-  undergraduate: "$53,790/year",
-  postgraduate: "$53,790/year",
-  image: "/Massachusetts-Institute-of-Technology.jpg",
-  description: "MIT is renowned worldwide for its cutting-edge research and innovation in science, engineering, and technology."
-},
+    name: "TUM – Technical University of Munich",
+    undergraduate: "Free or €250/semester",
+    postgraduate: "Free or €250/semester",
+    image: "/germany-best-university-TUM.jpg",
+    description: "TUM is Germany’s top-ranked technical university, known for innovation in engineering, science, and technology. It offers research-driven programs and strong ties with global industries."
+  },
   {
-  name: "Princeton University",
-  undergraduate: "$57,410/year",
-  postgraduate: "$57,410/year",
-  image: "/princeton-university-campus.jpg",
-  description: "Princeton University is an Ivy League institution known for its strong focus on undergraduate education, groundbreaking research, and historic campus."
-},
-{
-  name: "Stanford University",
-  undergraduate: "$56,169/year",
-  postgraduate: "$56,169/year",
-  image: "/standford-university-usa.jpg",
-  description: "Stanford University is renowned for its entrepreneurial spirit, cutting-edge research, and close ties to Silicon Valley."
-},
- {
-  name: "California Institute of Technology",
-  undergraduate: "$60,864/year",
-  postgraduate: "$60,864/year",
-  image: "/califorina-institute-of-technology.jpg",
-  description: "Caltech is a world leader in science and engineering, known for its small size, rigorous academics, and groundbreaking research."
-},
+    name: "LMU – Ludwig Maximilian University of Munich",
+    undergraduate: "Free (Semester fees apply)",
+    postgraduate: "Free (Semester fees apply)",
+    image: "/Ludwig-Maximilian-University-of-Munich-germany.jpeg",
+    description: "LMU is one of Europe’s leading academic and research institutions with a long tradition of excellence in humanities, medicine, and science."
+  },
+  {
+    name: "Heidelberg University",
+    undergraduate: "Approx. €1500/semester (non-EU)",
+    postgraduate: "Approx. €1500/semester (non-EU)",
+    image: "/Universität-Heidelberg-best-university-germany.webp",
+    description: "Germany’s oldest university, known for its excellence in research and interdisciplinary programs in medicine, law, and natural sciences."
+  },
+  {
+    name: "Humboldt University of Berlin",
+    undergraduate: "Free (Semester contribution required)",
+    postgraduate: "Free (Semester contribution required)",
+    image: "/berlin-humboldt-universities-best-study-in-germany.jpg",
+    description: "Humboldt is a prestigious institution in Berlin, celebrated for academic freedom, critical thinking, and excellence in arts, humanities, and social sciences."
+  },
+  {
+    name: "University of Bonn",
+    undergraduate: "Free (Semester fee ~€300)",
+    postgraduate: "Free (Semester fee ~€300)",
+    image: "/university-of-bonn-best-in-germany.jpeg",
+    description: "An elite research university known for economics, math, neuroscience, and political science. Bonn combines tradition with innovation."
+  }
 ];
+
 
 const UKUniversities = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -143,7 +145,7 @@ const UKUniversities = () => {
 
       {/* Scroll target section */}
       <section id="details-section" className="w-full bg-white p-10 text-center">
-        <h2 className="text-2xl font-bold text-blue-900">More About UK Universities</h2>
+        <h2 className="text-2xl font-bold text-blue-900">More About Germany Universities</h2>
         
       </section>
     </>
