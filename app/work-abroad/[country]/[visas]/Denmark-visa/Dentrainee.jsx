@@ -22,6 +22,7 @@ const DenmarkTraineeVisa = () => {
             width={300}
             height={200}
             className="rounded-md shadow-lg w-full h-auto"
+            unoptimized
           />
         </div>
       </div>

@@ -42,6 +42,7 @@ const canadafs = () =>{
       width={500} // Replace with your image's actual width
       height={300}
       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+      unoptimized
     />
   </div>
               {/* <h3 className="px-4 lg:px-0">For the Sponsor:</h3> */}

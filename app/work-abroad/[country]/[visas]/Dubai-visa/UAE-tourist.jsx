@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 const UAEtourist = () => {
     return (
@@ -17,12 +18,15 @@ const UAEtourist = () => {
             </p>
             <div className="flex mb-6 justify-center flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
             <div className="flex-shrink-0 mx-auto lg:mx-0">
-                <img
-                    src="/assets/UAEtourist.png"
-                    alt="Australia Business Visa"
-
-                    className="w-full max-w-xs mt-5 sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg" />
-            </div>
+               <Image
+            src="/assets/UAEtourist.png"
+            alt="UAE Tourist Visa"
+            layout="fill"
+            objectFit="contain"
+            className="rounded-lg"
+            unoptimized
+          />
+          </div>
             </div>
             <h3 className='text-black m-2 font-bold text-lg mb-6'>
                 Types of UAE Tourist Visas

@@ -26,8 +26,9 @@ const UAEstud = () => {
                     alt="Australia Business Visa"
                     width={500} // Replace with your image's actual width
                     height={300}
-
+unoptimized
                     className="w-full max-w-xs mt-5 sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg" />
+    
             </div>
             <div>
                 <h3 className='text-black m-2 font-bold text-lg mb-6'>

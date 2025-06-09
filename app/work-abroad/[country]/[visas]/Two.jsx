@@ -41,13 +41,6 @@ import Denpositivelist from "./Denmark-visa/Denpositivelist"
 import Denpaylimit from "./Denmark-visa/Denpaylimit"
 import Denworkemp from "./Denmark-visa/Denworkemp"
 
-import Newzepr from "./Newzealand-visa/Newze-pr"
-import Newzedepen from "./Newzealand-visa/Newze-Depen"
-import Newzeskillwork from "./Newzealand-visa/Newze-skillwork"
-import Newzestud from "./Newzealand-visa/Newze-stud"
-import Newzetourist from "./Newzealand-visa/Newze-tourist"
-import Newzebusiness from "./Newzealand-visa/Newze-business"
-import Newzework from "./Newzealand-visa/Newze-work"
 
 import Standardwork from "./Dubai-visa/Standardwork";
 import Dubaigolden from "./Dubai-visa/Dubaigolden";
@@ -143,13 +136,6 @@ const visaComponents = {
  'australia-work-permit-employer-186-visa':Aus186,
  'australia-work-permit-work-visa-subclass-189':Aus189,
 
-'new-zealand-permanent-resident-visa':Newzepr,
- 'new-zealand-work-visa':Newzework,
- 'new-zealand-student-work-visa':Newzestud,
- 'new-zealand-skilled-work-visa':Newzeskillwork,
- 'new-zealand-business-visa':Newzebusiness,
- 'new-zealand-tourist-visa':Newzetourist,
- 'new-zealand-dependent-visa':Newzedepen,
 
  'hong-kong-student-visa':HKstudentvisa,
  'hong-kong-employment-visa':HKemployee,

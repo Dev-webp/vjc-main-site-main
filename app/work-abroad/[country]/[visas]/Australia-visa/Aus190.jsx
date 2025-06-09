@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AustraliaVisa190 = () => {
   return (
@@ -12,7 +13,17 @@ const AustraliaVisa190 = () => {
         <p className="text-base mb-4" style={{ fontFamily: "Times New Roman" }}>
           Unlock Your Future in Australia with the Skilled Nominated Visa Subclass 190
         </p>
-
+ <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+             <Image
+               src="/Aus-work-abroad/work-abroad4.png"
+               alt="Migrate - Apply Now"
+               width={900}
+               height={630}
+               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+               priority
+               unoptimized
+             />
+           </div>
         <p className="mb-4" style={{ fontFamily: "Times New Roman" }}>
           Are you looking for the best pathway to live and work in Australia? The Skilled Nominated Visa Subclass 190
           offers a fantastic opportunity for skilled professionals to make Australia their home. At

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AustraliaVisa189 = () => {
   return (
@@ -14,7 +15,17 @@ const AustraliaVisa189 = () => {
       <p className="text-base">
         The Skilled Independent Work Visa Subclass 189 allows skilled workers to live and work in Australia on a permanent basis. Unlike employer-sponsored visas, the Subclass 189 is a point-based system where your eligibility is determined by factors such as age, education, work experience, and language skills.
       </p>
-      
+       <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+             <Image
+               src="/Aus-work-abroad/work-abroad3.png"
+               alt="Migrate - Apply Now"
+               width={900}
+               height={630}
+               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+               priority
+               unoptimized
+             />
+           </div>
       <h2 className="text-xl font-bold mt-6">Eligibility for the Skilled Independent Work Visa Subclass 189</h2>
       <ul className="list-disc pl-5 text-base">
         <li>Skills Assessment: Your occupation must be listed on Australia's Skilled Occupation List (SOL).</li>

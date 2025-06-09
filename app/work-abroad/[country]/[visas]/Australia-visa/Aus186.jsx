@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AustraliaEmployer186 = () => {
   return (
@@ -11,7 +12,17 @@ const AustraliaEmployer186 = () => {
         country and help you grow your business. At <span className="text-orange-600">VJC Overseas</span>, we specialize in guiding both employers
         and employees through the process of obtaining this highly sought-after visa.
       </p>
-
+ <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+             <Image
+               src="/Aus-work-abroad/work-abroad2.png"
+               alt="Migrate - Apply Now"
+               width={900}
+               height={630}
+               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+               priority
+               unoptimized
+             />
+           </div>
       <h2 className="text-xl font-bold mt-3">What is the Australia Employer 186 Visa?</h2>
       <p>
         The Employer Nomination Scheme (ENS) 186 visa allows skilled workers nominated by an

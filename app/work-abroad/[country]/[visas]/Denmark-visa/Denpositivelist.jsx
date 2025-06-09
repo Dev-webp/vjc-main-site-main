@@ -28,6 +28,7 @@ const DenmarkPositiveListVisa = () => {
             layout="responsive"
             objectFit="cover"
             className="rounded-md"
+            unoptimized
           />
         </div>
       </div>

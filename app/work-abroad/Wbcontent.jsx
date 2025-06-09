@@ -2,37 +2,32 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  AdjustmentsVerticalIcon,
-  GlobeAltIcon,
-  ArrowRightOnRectangleIcon,
-  ChartBarIcon,
-} from "@heroicons/react/24/solid";
 
+import Image from "next/image";
 const points = [
   {
-    icon: AdjustmentsVerticalIcon,
+   
     title: "1. Tailored Career Pathways",
     description:
       "We understand that each individual’s career journey is unique. Our expert consultants work closely with you to understand your skills, experience, and aspirations, helping you find the perfect job abroad that matches your goals. Whether you're a healthcare professional, engineer, IT specialist, or tradesperson, we have the right opportunities waiting for you.We take the time to evaluate your professional profile in detail, ensuring that every recommendation we make is aligned with your long-term ambitions. With access to top-tier employers and global markets, we not only help you secure a job, but also empower you to build a meaningful and sustainable international career. Our personalized guidance ensures that you step into your new role with confidence and clarity.",
     showImage: true,
   },
   {
-    icon: GlobeAltIcon,
+   
     title: "2. Global Network of Employers",
     description:
       "Our extensive network of trusted international employers spans across various industries and countries. From Canada and the Middle East to Australia and Europe, we collaborate with leading companies looking to hire qualified professionals from diverse fields. With VJC Overseas, you’ll have access to some of the best job offers available worldwide.",
     showImage: false,
   },
   {
-    icon: ArrowRightOnRectangleIcon,
+    
     title: "3. Hassle-Free Immigration and Relocation Support",
     description:
       "We know that moving abroad can be overwhelming, which is why we provide end-to-end support, from visa and work permit assistance to relocation advice. Our dedicated team ensures you navigate the entire process smoothly, so you can focus on what truly matters – your career growth and new experiences.",
     showImage: false,
   },
   {
-    icon: ChartBarIcon,
+    
     title: "4. Long-Term Success",
     description:
       "Our commitment to your success doesn't end with securing a job. We are here for the long haul, offering guidance and support throughout your overseas employment, helping you adapt to your new workplace and environment, and ensuring you thrive in your international career.",
@@ -96,19 +91,22 @@ const WbContent = () => {
                 className="flex flex-col lg:flex-row items-start gap-6"
               >
                 <div className="flex items-start gap-4 flex-1">
-                  <Icon className="h-8 w-8 text-orange-500 mt-1 flex-shrink-0" />
+                 
                   <div>
                     <h5 className="text-lg font-semibold">{point.title}</h5>
                     <p className="text-gray-700 mt-2">{point.description}</p>
                   </div>
                 </div>
 
-                {point.showImage && (
+              {point.showImage && (
   <div className="w-full lg:flex-1">
-    <img
+    <Image
       src="/Work-Abroad-for-a-Year.png"
       alt="Work Abroad"
+      width={400} // You can adjust width and height as needed
+      height={300}
       className="w-full h-auto max-w-md mx-auto rounded object-cover"
+      unoptimized
     />
   </div>
 )}

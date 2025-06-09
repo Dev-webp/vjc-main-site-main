@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Australia482Visa = () => {
   return (
@@ -14,6 +15,17 @@ const Australia482Visa = () => {
         vibrant countries. Read on to discover everything you need to know about the Australian Temporary Skills 482
         Visa, including salary expectations, living costs, and lifestyle benefits.
       </p>
+       <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+             <Image
+               src="/Aus-work-abroad/work-abroad1.png"
+               alt="Migrate - Apply Now"
+               width={900}
+               height={630}
+               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+               priority
+               unoptimized
+             />
+           </div>
       <h2 className="text-xl font-bold mt-3">What is the Australia Temporary Skills 482 Visa?</h2>
       <p>
         The Temporary Skill Shortage (TSS) Visa Subclass 482 is designed for skilled workers who want to work in

@@ -16,6 +16,7 @@ const DenmarkEmploymentVisa = () => {
             width={500}
             height={300}
             className="rounded-lg"
+            unoptimized
           />
         </div>
         <div>

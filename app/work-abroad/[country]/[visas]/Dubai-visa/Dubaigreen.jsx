@@ -23,6 +23,7 @@ const DubaiGreenVisa = () => {
           width={300}
           height={200}
           className="rounded-md shadow-lg mt-4 md:mt-0"
+          unoptimized
         />
       </div>
 

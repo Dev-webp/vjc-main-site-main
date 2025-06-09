@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const DubaiGoldenVisa = () => {
   return (
@@ -18,11 +19,16 @@ const DubaiGoldenVisa = () => {
           </p>
           
         </div>
-        <img
-          src="/dubaigoldenvisa.jpg"
-          alt="Dubai Golden Visa"
-          className="w-full md:w-[300px] h-auto mt-4 md:mt-0 "
-        />
+         <div className="w-full md:w-[300px] h-auto mt-4 md:mt-0 relative">
+    <Image
+      src="/dubaigoldenvisa.jpg"
+      alt="Dubai Golden Visa"
+      width={300}
+      height={200}
+      className="w-full h-auto object-cover"
+      unoptimized
+    />
+  </div>
       </div>
       <p className="mt-2">
             At VJC Overseas, we help you turn that dream into reality. Our expert Dubai Golden Visa consultants guide you through every step – from eligibility assessment to final approval.

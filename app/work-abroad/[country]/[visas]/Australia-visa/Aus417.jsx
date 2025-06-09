@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Australia417Visa = () => {
   return (
@@ -9,7 +10,17 @@ const Australia417Visa = () => {
       <p className="text-base mb-4">
         Explore Australia with the Working Holiday 417 Visa. The Australia Working Holiday 417 Visa is your ticket to an unforgettable experience Down Under! Whether you're looking to travel, explore the rich culture, or earn money while living in one of the most beautiful countries in the world, this visa allows you to do it all.
       </p>
-      
+       <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+             <Image
+              src="/Aus-work-abroad/work-abroad5.png"
+               alt="Migrate - Apply Now"
+               width={900}
+               height={630}
+               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+               priority
+               unoptimized
+             />
+           </div>
       <h2 className="text-xl font-semibold mb-4">What is the Australia Working Holiday 417 Visa?</h2>
       <p className="mb-4">
         The Australia Working Holiday 417 Visa allows individuals from eligible countries to travel and work in Australia for up to 12 months. With this visa, you can take short-term jobs to fund your adventures, immerse yourself in Aussie culture, and create memories that will last a lifetime.

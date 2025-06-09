@@ -25,6 +25,7 @@ const DenmarkPayLimitScheme = () => {
             width={300}
             height={200}
             className="rounded-md object-cover"
+            unoptimized
           />
         </div>
       </div>
