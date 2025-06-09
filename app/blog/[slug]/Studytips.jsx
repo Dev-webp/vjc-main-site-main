@@ -20,6 +20,7 @@ const StudentVisaProcess = () => {
     { name: "Ireland", path: "/ireland" },
     { name: "Spain", path: "/spain" },
     { name: "Sweden", path: "/sweden" },
+
     { name: "Norway", path: "/norway" },
     
   ];

@@ -25,7 +25,7 @@ const blogs = [
   {
     id: 3,
     title: 'Working While Studying: Pros & Cons',
-    slug: 'working-while-studying-pros-cons',
+    slug: 'work-permit-process',
     description: 'Find the balance between academics and income.',
     image: '/WorkingHoliday417Visa.jpg',
     category: 'Work Abroad',
