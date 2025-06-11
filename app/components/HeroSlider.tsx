@@ -7,7 +7,7 @@ const sliderData = [
   {
     services: [
       { text: "Apply For Canada Permanent Residency", link: "/migrate-canada-permanent-residency-visa" },
-      { text: "Apply For Canada Study Visa", link: "/" },
+      { text: "Apply For Canada Study Visa", link: "/study-in-canada" },
     ],
     backgroundImage: "/canada.webp",
     title: "Canada",
@@ -25,7 +25,7 @@ const sliderData = [
   {
     services: [
       { text: "Apply For Germany Opportunity Card Visa", link: "germany-opportunity-card" },
-      { text: "Apply For Germany Study Visa", link: "/" },
+      { text: "Apply For Germany Study Visa", link: "/study-in-germany" },
     ],
     backgroundImage: "/germany.jpg",
     title: "Germany",

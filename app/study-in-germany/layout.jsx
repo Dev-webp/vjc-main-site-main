@@ -1,9 +1,8 @@
 import Script from 'next/script';
-
 export const metadata = {
-  title: 'UK Student Study Abroad Visa Consultants in Hyderabad Requirements and Processing Time',
-    description: 'Best UK Student or Abroad Study Visa Consultants in Hyderabad to know the Requirements of UK Study Visa Applications and also Check the Eligibility to Study in UK, Get Free UK Student Visa Processing and Documentation Apply UK Student Visa Process with Experts of VJC Overseas',
-    keywords: 'Best UK Study Visa Consultants in Hyderabad, UK Student Visa, UK Study Visa, Student Visa for UK, Best UK student Visa Consultants in Hyderabad, UK Visa Process for Students, How To Apply for UK Student Visa, UK Student Visa Requirements, UK Study Visa Application, Documents for UK Student Visa, UK Student Visa 2025, UK Student Visa Checklist, Study in UK Visa Process, UK Student Visa Processing Time, UK Student Visa Eligibility, UK Visa Process',
+  title: 'Germany Student Study Abroad Visa Consultants in Hyderabad Requirements and Processing Time',
+  description: 'Best Germany Student or Abroad Study Visa Consultants in Hyderabad to know the Requirements of Germany Study Visa Applications and also Check the Eligibility to Study in Germany. Get Free Germany Student Visa Processing and Documentation. Apply Germany Student Visa Process with Experts of VJC Overseas.',
+  keywords: 'Best Germany Study Visa Consultants in Hyderabad, Germany Student Visa, Germany Study Visa, Student Visa for Germany, Best Germany Student Visa Consultants in Hyderabad, Germany Visa Process for Students, How To Apply for Germany Student Visa, Germany Student Visa Requirements, Germany Study Visa Application, Documents for Germany Student Visa, Germany Student Visa 2025, Germany Student Visa Checklist, Study in Germany Visa Process, Germany Student Visa Processing Time, Germany Student Visa Eligibility, Germany Visa Process',
 };
 
 export default function ContactLayout({ children }) {
