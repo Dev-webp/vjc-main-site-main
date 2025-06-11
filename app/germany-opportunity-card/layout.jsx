@@ -1,9 +1,9 @@
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'Germany Opportunity Card – Work & Settle in Germany | VJCMETA ',
-    description: 'Apply for Germany`s Opportunity Card to work & settle in Germany. Check eligibility, benefits & process with VJC Overseas. Start today! ',
-    keywords: 'job seeker visa germany,immigration consultants,germany work visa,opportunity card germany,germany work permit,germany visa,germany opportunity card,germany study visa,visa consultant near me,job search visa germany,germany job visa,germany employment visa,germany work permit visa,germany work seeker visa',
+  title: 'Germany Opportunity Card Visa for IT Professional Skilled Workers Chancenkarte Visa ',
+  description: 'Germany Opportunity Card Visa for IT Professionals also for Skilled Workers to Settle in Germany and Get Work Permit Visa for Germany with High Demand IT Jobs Apply Online Germany Chancenkarte Visa and Know the Documents Requirements for Opportunity Card for Germany Visa Online Check Free Eligibility and Free Assessment for Germany Opportunity Card with Points Calculator then Settle your future in Germany ',
+  keywords: 'Germany Opportunity Card Visa, Opportunity Card Visa, Germany Opportunity Card, Opportunity Card Visa for Germany, Chancenkarte Visa, Germany Chancenkarte Visa, IT Professionals, IT Professionals for Germany, Check Free Eligibility, Germany Check Free Eligibility, Germany Free Assessment, Free Assessment, Points Calculator, Germany Points Calculator, Documents Requirements, Germany Documents Requirements',
 };
 
 export default function ContactLayout({ children }) {
