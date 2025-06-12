@@ -16,7 +16,7 @@ const sliderData = [
   {
     services: [
       { text: "Apply For Australia Permanent Residency Visa", link: "/migrate-australia-permanent-residency-visa" },
-      { text: "Apply For Australia Study Visa", link: "/" },
+      { text: "Apply For Australia Study Visa", link: "/study-in-australia" },
     ],
     backgroundImage: "/australia.jpg",
     title: "Australia",

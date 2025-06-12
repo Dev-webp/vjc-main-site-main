@@ -1,23 +1,47 @@
-// components/Popup/AustraliaImageContent.jsx
-import React from "react";
+'use client';
+import React, { useEffect, useState } from "react";
 
-const AustraliaImageContent = () => (
-  <div>
-    <h2 className="text-xl sm:text-3xl font-bold leading-tight bg-gradient-to-r from-orange-500 via-white to-sky-500 bg-clip-text text-transparent drop-shadow-lg flex items-center gap-2">
-      Australia PR 2025
-    </h2>
-    <p className="mt-3 text-sm sm:text-base font-medium text-white leading-relaxed">
-      Secure your{" "}
-      <span className="text-orange-400 font-semibold">
-        Permanent Residency in Australia
-      </span>{" "}
-      and unlock a world of opportunities with a high standard of living, strong job market, and a{" "}
-      <span className="text-orange-400 font-semibold">
-        bright future for your family
-      </span>
-      . Enjoy world-class healthcare, education, and a stable lifestyle in one of the most welcoming countries.
-    </p>
-  </div>
-);
+const backgroundImages = [
+  "/australia.jpg",
+  "/the-university-of-toronto-university-canada.jpg",
+  "/canada-student-full-visa-process.avif",
 
-export default AustraliaImageContent;
+];
+
+const GermanyImageContent = () => {
+  const [bgIndex, setBgIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % backgroundImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div
+      className="relative rounded-xl overflow-hidden pt-4 md:pt-6 px-6 md:px-10 pb-4 text-white"
+      style={{
+        backgroundImage: `url(${backgroundImages[bgIndex]})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        transition: "background-image 1s ease-in-out",
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-0" />
+      <div className="relative z-10 space-y-3 mt-0 md:-mt-4">
+        <h2 className="text-xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 via-white to-blue-400 bg-clip-text text-transparent drop-shadow-lg">
+          Study in Australia 2025
+        </h2>
+        <p className="text-sm sm:text-base font-medium leading-relaxed text-white">
+          Unlock prestigious <span className="text-yellow-400 font-semibold">Australia universities</span> with no tuition fees, strong job opportunities, and global recognition. Get support with{" "}
+          <span className="text-yellow-400 font-semibold">blocked account setup</span>,{" "}
+          <span className="text-yellow-400 font-semibold">student visa process</span>, and customized{" "}
+          <span className="text-yellow-400 font-semibold">study programs</span> that ensure your academic success and cultural experience in Australia.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default GermanyImageContent;
