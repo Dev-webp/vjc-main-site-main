@@ -20,13 +20,13 @@ const HeroWithForm = () => {
       <div className="relative min-h-[100vh] flex items-center justify-center px-4 md:px-12">
         {/* Background */}
         <Image
-          src="/airplane.jpg"
+          src="/forexservies.png"
           alt="VJC Background"
           fill
           className="object-cover z-0"
           priority
         />
-        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-black/70 z-10" />
 
         {/* Main Content */}
         <div className="relative z-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-8 max-w-7xl mx-auto w-full py-10">

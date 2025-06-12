@@ -59,11 +59,7 @@ export default function FreeAssessment() {
         At <span className="text-orange-500">VJC Overseas</span>, we simplify your journey to success. Start your Free Assessment today and explore global opportunities with confidence.
       </p>
       
-      <div className="text-center mt-6">
-        <button className="bg-orange-500 text-white py-2 px-6 text-lg rounded-lg shadow-md hover:bg-orange-600">
-          Start Your Free Assessment
-        </button>
-      </div>
+      
     </div>
   );
 }

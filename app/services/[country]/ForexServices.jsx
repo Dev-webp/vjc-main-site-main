@@ -62,9 +62,7 @@ export default function ForexServices() {
       </p>
 
       <div className="text-center">
-        <button className="bg-orange-500 text-white py-3 px-8 text-lg md:text-xl rounded-lg shadow-md hover:bg-orange-600 transition-all">
-          Start Trading Now
-        </button>
+        
       </div>
     </div>
   );
