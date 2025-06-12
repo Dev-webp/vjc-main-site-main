@@ -82,7 +82,7 @@ const MigrationProcess = () => {
         <h2 className="text-xl text-white font-bold text-center mb-4">
           Select Your Migration Destination
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3">
           {countries.map((c, i) => (
             <Link key={i} href={c.path}>
               <div className="px-4 py-3 bg-white/70 text-black border border-white rounded-lg text-sm font-semibold hover:bg-orange-500 hover:text-white hover:underline underline-offset-4 transition-all duration-300 shadow cursor-pointer text-center">

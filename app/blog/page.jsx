@@ -5,7 +5,7 @@ import BlogCards from './BlogCards';
 import Latestblogs from './Latestblogs';
 
 
-const categories = ['All', 'Study Tips', 'Visa Guide', 'Work Abroad', 'News'];
+const categories = ['All', 'Study Tips', 'Visa Guide', 'Work Abroad'];
 
 const backgroundImages = [
   '/blogimg1.webp',
@@ -32,7 +32,7 @@ const Page = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Background Image Section */}
       <div
-        className="relative h-[90vh] flex flex-col justify-center items-center text-center px-4 md:px-24"
+        className="relative h-[90vh] lg:h-[70vh] flex flex-col justify-center items-center text-center px-4 md:px-24"
         style={{
           backgroundImage: `url(${backgroundImages[currentImage]})`,
           backgroundSize: 'cover',

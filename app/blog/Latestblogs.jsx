@@ -192,6 +192,7 @@ export default function LatestBlog() {
             width={700}
             height={400}
             className="object-cover w-full h-full"
+            unoptimized
           />
         </div>
       </div>

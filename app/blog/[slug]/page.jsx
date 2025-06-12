@@ -1,8 +1,7 @@
-// BlogDetails.jsx
 'use client';
 
 import { useParams } from 'next/navigation';
-import { Phone, Mail, Instagram } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Canadacomp from './Canadacomp';
@@ -13,6 +12,7 @@ import Visitvisa from './Visitvisa';
 import Form from './Form';
 import RecentBlogs from './RecentBlogs';
 import Migrate from './Migrate';
+
 const blogs = [
   {
     id: 1,
@@ -85,7 +85,6 @@ const BlogDetails = () => {
       setCount((prev) => (start >= end ? end : start));
       if (start >= end) clearInterval(timer);
     }, stepTime);
-
     return () => clearInterval(timer);
   }, []);
 
@@ -102,47 +101,55 @@ const BlogDetails = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-8">
-        <div className="w-full md:w-[60%]">
-          {blog.component && <div>{blog.component}</div>}
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        {/* MOBILE FORM: only visible on small screens */}
+        <div className="block md:hidden mb-8">
+          <Form />
         </div>
 
-        <div className="w-full md:w-[35%] flex flex-col gap-6">
-          <div className="p-4">
-            <Form />
+        <div className="flex flex-col md:flex-row gap-8">
+          {/* Blog content */}
+          <div className="w-full md:w-[60%]">
+            {blog.component && <div>{blog.component}</div>}
           </div>
 
-          <div className="bg-white shadow-lg overflow-hidden text-center rounded-lg">
-            <div className="relative w-full h-40">
-              <Image src="/blogcontact.jpg" alt="Contact" fill style={{ objectFit: 'cover' }} />
+          {/* Sidebar for Form + Contact */}
+          <div className="w-full md:w-[35%] flex flex-col gap-6">
+            {/* Desktop Form: hidden on mobile */}
+            <div className="hidden md:block">
+              <Form />
             </div>
 
-            <div className="p-6 flex flex-col items-center justify-center space-y-4 bg-gray-900">
-              <div className="flex flex-col items-center">
-                <Phone className="w-8 h-8 text-purple-600 mb-2" />
-                <p className="text-white font-semibold">Any questions? Contact us below number</p>
-                <p className="text-white font-bold mt-1">+91-9160449000</p>
+            <div className="bg-white shadow-lg overflow-hidden text-center rounded-lg">
+              <div className="relative w-full h-40">
+                <Image src="/blogcontact.jpg" alt="Contact" fill style={{ objectFit: 'cover' }} />
               </div>
 
-              <div className="w-10 border-t border-gray-400 my-4"></div>
+              <div className="p-6 flex flex-col items-center justify-center space-y-4 bg-gray-900">
+                <div className="flex flex-col items-center">
+                  <Phone className="w-8 h-8 text-purple-600 mb-2" />
+                  <p className="text-white font-semibold">Any questions? Contact us below number</p>
+                  <p className="text-white font-bold mt-1">+91-9160449000</p>
+                </div>
 
-              <div className="flex flex-col items-center">
-                <Mail className="w-8 h-8 text-purple-600 mb-2" />
-                <p className="text-white font-semibold">Any questions? Email us below email ID</p>
-                <p className="text-white font-bold mt-1">info@vjcoverseas.com</p>
+                <div className="w-10 border-t border-gray-400 my-4"></div>
+
+                <div className="flex flex-col items-center">
+                  <Mail className="w-8 h-8 text-purple-600 mb-2" />
+                  <p className="text-white font-semibold">Any questions? Email us below email ID</p>
+                  <p className="text-white font-bold mt-1">info@vjcoverseas.com</p>
+                </div>
+
+                <div className="w-10 border-t border-gray-400 my-4"></div>
+
+                <div className="text-white mt-6">
+                  <p className="text-lg font-semibold mb-1">Happy Clients Across the Globe</p>
+                  <p className="text-3xl font-bold text-purple-500 transition-all duration-100">{count.toLocaleString()}+</p>
+                </div>
               </div>
 
-              <div className="w-10 border-t border-gray-400 my-4"></div>
-
-              <div className="text-white mt-6">
-                <p className="text-lg font-semibold mb-1">Happy Clients Across the Globe</p>
-                <p className="text-3xl font-bold text-purple-500 transition-all duration-100">{count.toLocaleString()}+</p>
-              </div>
-
-              {/* Recent Blogs */}
-             
+              <RecentBlogs blogs={blogs} currentSlug={blog.slug} />
             </div>
-             <RecentBlogs blogs={blogs} currentSlug={blog.slug} />
           </div>
         </div>
       </div>
