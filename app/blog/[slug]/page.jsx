@@ -12,7 +12,7 @@ import Studytips from './Studytips';
 import Visitvisa from './Visitvisa';
 import Form from './Form';
 import RecentBlogs from './RecentBlogs';
-
+import Migrate from './Migrate';
 const blogs = [
   {
     id: 1,
@@ -61,12 +61,12 @@ const blogs = [
   },
   {
     id: 6,
-    title: 'Search for your dream countries',
+    title: 'Migartion To Dream Country',
     slug: 'search-dream-country',
     description: 'Earn while you learn: best part-time opportunities.',
-    image: '/vjc-gdvisa.jpg',
+    image: '/migratepageimg.avif',
     category: 'Work Abroad',
-    component: <Workabroad />
+    component: <Migrate />
   },
 ];
 

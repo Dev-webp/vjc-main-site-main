@@ -24,7 +24,7 @@ const blogs = [
   },
   {
     id: 3,
-    title: 'Working While Studying: Pros & Cons',
+    title: 'Work Permit process',
     slug: 'work-permit-process',
     description: 'Find the balance between academics and income.',
     image: '/WorkingHoliday417Visa.jpg',
@@ -32,7 +32,7 @@ const blogs = [
   },
   {
     id: 4,
-    title: 'Study Abroad Scholarships You Must Know',
+    title: 'Study Visa Process You Must Know',
     slug: 'student-visa-process',
     description: 'Unlock your education journey with scholarships.',
     image: '/studyabroad.png',
@@ -48,11 +48,11 @@ const blogs = [
   },
   {
     id: 6,
-    title: 'Search for Your Dream Country',
+    title: 'Migartion To Dream Country',
     slug: 'search-dream-country',
     description: 'Plan your journey to study, work, or migrate abroad.',
-    image: '/vjc-gdvisa.jpg',
-    category: 'Work Abroad',
+    image: '/migratepageimg.avif',
+    category: 'Migrate',
   },
 ];
 
