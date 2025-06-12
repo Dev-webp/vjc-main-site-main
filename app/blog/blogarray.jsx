@@ -1,8 +1,8 @@
 const blogs = [
     {
       id: 1,
-      title: 'How to Apply for Canada Student Visa in 2025',
-      slug: 'how-to-apply-for-canada-student-visa-2025',
+      title: 'Invest in your dream Country',
+      slug: 'invest',
       description: 'A complete checklist for Indian students planning to study in Canada',
       image: '/canada1.jpg',
       category: 'Study Tips',

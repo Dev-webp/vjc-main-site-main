@@ -31,8 +31,7 @@ const ContactPage = () => {
       {/* Main Section */}
       
       {/* Other Sections */}
-      <Two />
-    
+      <Two /> 
 
     </>
   );

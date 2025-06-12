@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import { Phone, Mail } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import Canadacomp from './Canadacomp';
+import Invest from './Invest';
 import Germanyoppcard from './Germanyoppcard';
 import Workabroad from './Workabroad';
 import Studytips from './Studytips';
@@ -12,16 +12,17 @@ import Visitvisa from './Visitvisa';
 import Form from './Form';
 import RecentBlogs from './RecentBlogs';
 import Migrate from './Migrate';
+import Services from './Servies';
 
 const blogs = [
   {
     id: 1,
-    title: 'How to Apply for Canada Student Visa in 2025',
-    slug: 'how-to-apply-for-canada-student-visa-2025',
+    title: 'Invest in your dream Country',
+    slug: 'investor-visas',
     description: 'A complete checklist for Indian students planning to study in Canada',
-    image: '/canada1.jpg',
+    image: '/invest-in-dream-country-2025.jpg',
     category: 'Study Tips',
-    component: <Canadacomp />
+    component: <Invest />
   },
   {
     id: 2,
@@ -68,6 +69,23 @@ const blogs = [
     category: 'Work Abroad',
     component: <Migrate />
   },
+  {
+    id: 7,
+    title: 'Services What We Offer',
+    slug: 'services-what-we-offer',
+    description: 'Ace your embassy interviews with these expert suggestions.',
+    image: '/SkilledNominatedVisaSubclass190.webp',
+    category: 'Visa Guide',
+    component: <Services />
+  },
+   {
+  id: 8,
+  title: 'Coaching & Test Prep Services We Offer',
+  slug: 'coaching-test-prep-services',
+  description: 'Ace your embassy interviews and entrance exams with expert-led coaching and personalized training.',
+  image: '/Start-an-Overseas-Education-Consultancy-vjc.jpg', // Replace with a relevant coaching image
+  category: 'Coaching & Support',
+},
 ];
 
 const BlogDetails = () => {

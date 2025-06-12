@@ -1,147 +1,99 @@
-"use client";
-import { useState, useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { Plane, Globe, DollarSign, ClipboardCheck, Users } from "lucide-react";
-import PassportServices from "./PassportServices";
-import AirTicketing from "./AirTicketing";
-import ForexServices from "./ForexServices";
-import FreeAssessment from "./FreeAssessment";
-import FreeCounselling from "./FreeCounselling";
-import Form from "./Form";
+'use client';
+import React, { useRef } from 'react';
+import Form from './Form';
+import Content from './Content';
+import Image from 'next/image';
+import Link from 'next/link';
 
-const services = [
-  { key: "passport-services", title: "Passport Services", image: "/passport.webp", icon: <Globe size={20} /> },
-  { key: "air-ticketing", title: "Air Ticketing", image: "/airtecket.png", icon: <Plane size={20} /> },
-  { key: "forex-services", title: "Forex Services", image: "/forex.png", icon: <DollarSign size={20} /> },
-  { key: "free-assessment", title: "Free Assessment", image: "/freeassignment.webp", icon: <ClipboardCheck size={20} /> },
-  { key: "free-counselling", title: "Free Counselling", image: "/freeass.jpg", icon: <Users size={20} /> },
-];
+const HeroWithForm = () => {
+  const section1 = useRef(null);
+  const section2 = useRef(null);
+  const section3 = useRef(null);
 
-export default function ServicePage() {
-  const router = useRouter();
-  const pathname = usePathname();
-  const currentKey = pathname.split("/").pop();
-
-  const serviceComponents = {
-    "passport-services": <PassportServices />,
-    "air-ticketing": <AirTicketing />,
-    "forex-services": <ForexServices />,
-    "free-assessment": <FreeAssessment />,
-    "free-counselling": <FreeCounselling />,
+  const scrollTo = (ref) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const [selectedService, setSelectedService] = useState(services[0]);
-
-  useEffect(() => {
-    const foundService = services.find((service) => service.key === currentKey);
-    if (foundService) {
-      setSelectedService(foundService);
-    }
-  }, [currentKey]);
-
   return (
-    <section className="min-h-screen flex flex-col bg-white items-center py-4 text-oranage mt-16 md:mt-0  shadow-orange-500/30">
-      {/* Moving Text Below Navbar */}
-      <div className="w-full bg-white py-2 overflow-hidden">
-        <marquee className="flex items-center text-lg font-bold text-black space-x-8">
-          <Image src="/logo.png" alt="Company Logo" width={80} height={120} className="inline-block mx-2" />
-          {services.map((service, index) => (
-            <span key={index} className="mx-4">{service.title} |</span>
-          ))}
-        </marquee>
-      </div>
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <div className="relative min-h-[100vh] flex items-center justify-center px-4 md:px-12">
+        {/* Background */}
+        <Image
+          src="/airplane.jpg"
+          alt="VJC Background"
+          fill
+          className="object-cover z-0"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60 z-10" />
 
-      {/* Heading Section */}
-      <motion.h2 
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-5xl font-extrabold text-center mb-6 text-black drop-shadow-lg"
-      >
-        Explore Our Services
-      </motion.h2>
-
-      {/* Main Layout */}
-      <div className="flex flex-col md:flex-row items-center w-full max-w-6xl px-4 gap-10 relative bg-cover bg-center bg-no-repeat  shadow-xl p-8"
-        style={{ backgroundImage: "url('/images/your-background.jpg')" }}>
-        <div className="absolute inset-0 bg-black bg-opacity-50 "></div>
-        
-        {/* Left Section */}
-        <motion.div className="md:w-1/2 text-left relative z-10">
-          <h3 className="text-3xl font-bold text-white mb-4 ml-44">{selectedService.title}</h3>
-          <Image src={selectedService.image} alt={selectedService.title} width={500} height={300} className=" shadow-md mx-auto mb-4" />
-        </motion.div>
-
-        {/* Right Section */}
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:w-1/2 relative z-10">
-  {services.map((service) => (
-    <motion.button
-      key={service.key}
-      onClick={() => {
-        router.push(`/services/${service.key}`, { scroll: false });
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          router.replace(`/services/${service.key}`); // Prevent full page reload
-        }, 100);
-      }}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className={`flex items-center justify-center gap-2 p-4 min-h-12 w-full  text-lg font-semibold transition-all duration-300 shadow-md ${
-        selectedService.key === service.key
-          ? "bg-orange-700 text-white scale-105"
-          : "bg-white bg-opacity-10 backdrop-blur-lg hover:bg-opacity-30"
-      }`}
-    >
-      {service.icon} {service.title}
-    </motion.button>
-  ))}
-</div>
+        {/* Main Content */}
+        <div className="relative z-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-8 max-w-7xl mx-auto w-full py-10">
+          {/* Form Section */}
+          {/* Form Section */}
+<div className="w-full lg:w-1/2 order-1 lg:order-2">
+  <Form />
 </div>
 
-      {/* Content Section */}
-      <div className="flex flex-col items-start w-full max-w-6xl gap-8 mt-10">
-        <motion.div className="w-full p-6 bg-black bg-opacity-10 backdrop-blur-lg text-center max-h-[700px] overflow-y-auto">
-          <h3 className="text-2xl font-bold text-black mb-2">{selectedService.title}</h3>
-          
-          <div className="text-gray-200">{serviceComponents[selectedService.key]}</div>
-        </motion.div>
+{/* Text + Images Section */}
+<div className="w-full lg:w-1/2 flex flex-col space-y-6 items-center lg:-mt-14 lg:center text-center lg:text-left mt-10 sm:mt-16 order-2 lg:order-1">
 
-        {/* CTA & Form Section */}
-        <div className="w-full flex flex-col md:flex-row gap-6 p-4">
-          {/* Left: Call-to-Action Box with Background Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative text-white p-6  shadow-lg md:w-1/2 flex flex-col justify-center items-center text-center"
-            style={{
-              backgroundImage: "url('/bar.jpeg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
-            <div className="absolute inset-0 bg-black bg-opacity-50 "></div> {/* Dark Overlay */}
-            <h3 className="text-3xl font-bold mb-2 relative z-10">Get Started Today!</h3>
-            <p className="text-lg relative z-10">Unlock exclusive benefits and hassle-free services with us.</p>
-            <div className="mt-4 bg-white text-orange-700 px-4 py-2  font-semibold relative z-10">
-              Limited Offer: Free Consultation!
+
+            <h1 className="lg:text-4xl sm:text-4xl font-bold text-white">
+              Forex services with <span className="text-orange-500 text-center">VJC Overseas</span>
+            </h1>
+
+            <Image
+              src="/1.gif"
+              alt="USA Study Animated Guide"
+              width={900}
+              height={600}
+              className="w-full max-w-md rounded-lg"
+              priority
+            />
+
+            <Image
+              src="/award-vjc.png"
+              alt="VJC Overseas Award"
+              width={600}
+              height={300}
+              className="w-full max-w-sm rounded-lg"
+              priority
+            />
+
+            <p className="text-orange-300 text-base sm:text-lg">
+              Expert solutions for Study, Investment, and Migration — all under one roof.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+              <Link href="/passport">
+                <span className="cursor-pointer bg-orange-500 hover:bg-blue-400 hover:underline underline-offset-4 decoration-white text-white px-4 py-2 rounded-xl shadow transition duration-200 font-semibold text-base">
+                  Passport Services
+                </span>
+              </Link>
+              <Link href="/air-ticketing" >
+                <span className="cursor-pointer bg-orange-500 hover:bg-blue-400 hover:underline underline-offset-4 decoration-white text-white px-4 py-2 rounded-xl shadow transition duration-200 font-semibold text-base">
+                  Air-ticketing
+                </span>
+              </Link>
+              <Link href="/forex" >
+                <span className="cursor-pointer bg-orange-500 hover:bg-blue-400 hover:underline underline-offset-4 decoration-white text-white px-4 py-2 rounded-xl shadow transition duration-200 font-semibold text-base">
+                  Forex Services
+                </span>
+              </Link>
             </div>
-          </motion.div>
-
-          {/* Right: Form Component */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="md:w-1/2"
-          >
-            <Form />
-          </motion.div>
+          </div>
         </div>
       </div>
-    </section>
+
+      {/* Content Section */}
+      <div className="mt-20 max-w-7xl mx-auto px-4">
+        <Content section1={section1} section2={section2} section3={section3} />
+      </div>
+    </div>
   );
-}
+};
+
+export default HeroWithForm;
