@@ -4,8 +4,8 @@ import React from "react";
 
 const BusinessVisaContent = () => {
   return (
-    <div className="w-full flex justify-start px-1 mb-20">
-      <div className="w-full text-black px-1 md:px-16">
+    <div className="w-full flex justify-start px-1 ">
+      <div className="w-full text-black px-1 ">
         <h1 className="text-2xl font-bold mb-6 text-center text-black">
           GRE Training at <span className="text-orange-500">VJC Overseas</span>: Your Path to Success
         </h1>

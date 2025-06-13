@@ -13,7 +13,7 @@ import Form from './Form';
 import RecentBlogs from './RecentBlogs';
 import Migrate from './Migrate';
 import Services from './Servies';
-
+import Coaching from './Coaching';
 const blogs = [
   {
     id: 1,
@@ -85,6 +85,7 @@ const blogs = [
   description: 'Ace your embassy interviews and entrance exams with expert-led coaching and personalized training.',
   image: '/Start-an-Overseas-Education-Consultancy-vjc.jpg', // Replace with a relevant coaching image
   category: 'Coaching & Support',
+  component: <Coaching />
 },
 ];
 

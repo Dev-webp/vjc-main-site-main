@@ -5,7 +5,7 @@ import React from "react";
 const BusinessVisaContent = () => {
   return (
     <div className="w-full flex justify-start px-1 mb-20">
-      <div className="w-full text-black px-1 md:px-16">
+      <div className="w-full text-black px-1 ">
         <h1 className="text-2xl font-bold mb-6 text-center text-black">
           TOEFL Training at <span className="text-orange-500">VJC Overseas</span>: Unlock Your Path to Success
         </h1>
@@ -38,20 +38,14 @@ const BusinessVisaContent = () => {
           <li><strong>Affordable Packages:</strong> High-quality education at competitive pricing.</li>
         </ul>
     
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Our TOEFL Success Stories</h2>
-        <p className="text-black">
-          Thousands of students have trusted VJC Overseas to guide them through their TOEFL preparation. From improving test-taking strategies to mastering advanced English skills, we’ve helped students secure their dream scores for top universities worldwide.
-        </p>
+      
     
         <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Start Your TOEFL Journey Today</h2>
         <p className="text-black">
           Are you ready to take the first step toward a brighter future? Enroll in our TOEFL preparation course today and get the personalized training you need to succeed. With VJC Overseas, you’re not just preparing for a test – you’re preparing for success in your academic and professional life.
         </p>
     
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Contact Us</h2>
-        <p className="text-gray-600">
-          Phone: +91-9160449000 | Email: info@vjcoverseas.com | Website: www.vjcoverseas.com
-        </p>
+        
       </div>
     </div>
   );

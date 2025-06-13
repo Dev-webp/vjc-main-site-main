@@ -5,7 +5,7 @@ import React from "react";
 const BusinessVisaContent = () => {
   return (
     <div className="w-full flex justify-start px-1 mb-20">
-      <div className="w-full text-black px-1 md:px-16">
+      <div className="w-full text-black px-1 ">
         <h1 className="text-2xl font-bold mb-6 text-center text-black">
           GMAT Training at <span className="text-orange-500">VJC Overseas</span>: Your Pathway to Success
         </h1>
@@ -44,7 +44,7 @@ const BusinessVisaContent = () => {
           Enroll today in our GMAT training program and take the first step toward your business school dream. Contact us now!
         </p>
     
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Contact Us</h2>
+        <h2 className="text-1xl font-bold mt-4 mb-2 text-black">Contact Us</h2>
         <p className="text-gray-600">
           Phone: +91-9160449000 | Email: info@vjcoverseas.com | Website: www.vjcoverseas.com
         </p>

@@ -18,8 +18,9 @@ const ContactPage = () => {
 
   return (
     <>
-      {/* Navbar */}
+   
       <div className="bg-white">
+       
         <Two/>
        
       </div>

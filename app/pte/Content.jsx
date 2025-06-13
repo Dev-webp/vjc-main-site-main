@@ -5,7 +5,7 @@ import React from "react";
 const BusinessVisaContent = () => {
   return (
     <div className="w-full flex justify-start px-1 mb-20">
-      <div className="w-full text-black px-1 md:px-16">
+      <div className="w-full text-black px-1 ">
         <h1 className="text-2xl font-bold mb-6 text-center text-black">
           PTE Training at <span className="text-orange-500">VJC Overseas</span>: Your Path to Success
         </h1>
@@ -46,20 +46,7 @@ const BusinessVisaContent = () => {
           <li><strong>Flexible Payment Options:</strong> Affordable fees with flexible payment plans.</li>
         </ul>
     
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Our PTE Success Stories</h2>
-        <p className="text-gray-600">
-          Many of our students have secured high scores and achieved their academic or migration goals. Join the list of achievers and make your dream a reality with VJC Overseas.
-        </p>
-    
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Book a Free Demo Session Today!</h2>
-        <p className="text-black">
-          Get started with the best PTE training. Join VJC Overseas and take the first step towards achieving your desired PTE score. Contact us today!
-        </p>
-    
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Contact Us</h2>
-        <p className="text-gray-600">
-          Phone: +91-9160449000 | Email: info@vjcoverseas.com | Website: www.vjcoverseas.com
-        </p>
+        
       </div>
     </div>
   );
