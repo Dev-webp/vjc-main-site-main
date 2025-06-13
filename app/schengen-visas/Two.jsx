@@ -11,6 +11,7 @@ import { useState } from "react";
 import Form from "./Form"; // Adjust if needed
 import { FaCheckCircle, FaPlaneDeparture, FaBriefcase } from "react-icons/fa";
 import Head from "next/head";
+import Image from "next/image";
 export default function Home() {
   const router = useRouter();
 
