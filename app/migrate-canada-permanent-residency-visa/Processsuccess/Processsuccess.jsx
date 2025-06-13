@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function ProcessSection() {
   const steps = [
@@ -43,7 +44,7 @@ export default function ProcessSection() {
   ];
 
   return (
-   <div className="relative w-full px-8 md:px-16 tracking-wider lg:px-32 py-14 mt-10 bg-gradient-to-b bg-orange-50">
+    <div className="relative w-full px-8 md:px-16 tracking-wider lg:px-32 py-14 mt-10 bg-gradient-to-b bg-orange-50">
       <motion.div 
         initial={{ opacity: 0, y: -50 }} 
         animate={{ opacity: 1, y: 0 }} 
@@ -51,9 +52,8 @@ export default function ProcessSection() {
         className="text-center mb-12"
       >
         <h2 className="text-2xl lg:text-5xl text-left font-bold text-orange-600">
-          Canada PR Visa  Application Process
+          Canada PR Visa Application Process
         </h2>
-        
       </motion.div>
 
       <div className="space-y-14">
@@ -85,11 +85,14 @@ export default function ProcessSection() {
               viewport={{ once: true }}
               className="md:w-1/2"
             >
-              <div className="w-full h-64 md:h-80 overflow-hidden rounded-lg">
-                <img
+              <div className="relative w-full h-64 md:h-80 overflow-hidden rounded-lg">
+                <Image
                   src={step.image}
                   alt={step.title}
-                  className="w-full h-full object-cover mix-blend-multiply"
+                  fill
+                  className="object-cover mix-blend-multiply rounded-lg"
+                  priority={index === 0}
+                  unoptimized
                 />
               </div>
             </motion.div>

@@ -1,10 +1,12 @@
 'use client';
+
 import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function UKStudyServices() {
   useEffect(() => {
@@ -29,10 +31,14 @@ export default function UKStudyServices() {
         <div className="flex flex-col lg:flex-row items-center gap-12" data-aos="fade-up">
           {/* Image */}
           <div className="lg:w-1/3 w-full">
-            <img
+            <Image
               src="/usa-student-visa-process.png"
               alt="Counselling"
-              className="w-full"
+              width={600}
+              height={500}
+              className="w-full h-auto object-contain"
+              priority
+              unoptimized
             />
           </div>
 
@@ -72,7 +78,16 @@ export default function UKStudyServices() {
           className="mt-16 rounded-xl overflow-hidden relative"
         >
           {/* Background Image with overlay */}
-          <div className="absolute inset-0 bg-[url('/best-universties-in-usa-vjc-overseas.jpg')] bg-cover bg-center">
+          <div className="absolute inset-0">
+            <Image
+              src="/best-universties-in-usa-vjc-overseas.jpg"
+              alt="USA Universities"
+              fill
+              style={{ objectFit: "cover" }}
+              className="z-0"
+              quality={90}
+              unoptimized
+            />
             <div className="absolute inset-0 bg-black opacity-50"></div>
           </div>
 

@@ -27,30 +27,32 @@ const paragraphs = [
 
 const JobSeekerHelp = () => {
   const refs = useRef([]);
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+        if (entry.isIntersecting) {
+          el.classList.add("animate-scroll-text");
+          el.classList.remove("before-scroll");
+        } else {
+          el.classList.remove("animate-scroll-text");
+          el.classList.add("before-scroll");
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const el = entry.target;
-          if (entry.isIntersecting) {
-            el.classList.add("animate-scroll-text");
-            el.classList.remove("before-scroll");
-          } else {
-            el.classList.remove("animate-scroll-text");
-            el.classList.add("before-scroll");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+  const elements = [...refs.current]; // ✅ snapshot copy
 
-    refs.current.forEach((ref) => ref && observer.observe(ref));
+  elements.forEach((ref) => ref && observer.observe(ref));
 
-    return () => {
-      refs.current.forEach((ref) => ref && observer.unobserve(ref));
-    };
-  }, []);
+  return () => {
+    elements.forEach((ref) => ref && observer.unobserve(ref));
+  };
+}, []);
+
 
   return (
     <div className="py-10 px-4 md:px-12 font-times">

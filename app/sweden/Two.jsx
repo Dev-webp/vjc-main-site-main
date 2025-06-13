@@ -42,7 +42,7 @@ const StudentVisaProcess = () => {
       setCurrentBg((prev) => (prev + 1) % bgImages.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [bgImages.length]); // ✅ fixed
 
   return (
     <div className="w-full min-h-screen text-black">

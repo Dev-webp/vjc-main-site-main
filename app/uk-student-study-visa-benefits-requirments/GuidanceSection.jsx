@@ -16,6 +16,7 @@ import {
 } from 'react-icons/bs';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 
 export default function GlobalExposure() {
   useEffect(() => {
@@ -122,9 +123,12 @@ export default function GlobalExposure() {
                   data-aos-delay="300"
                   data-aos-duration="800"
                 >
-                  <img
+                  <Image
                     src={slide.imgSrc}
                     alt={slide.title}
+                    width={400}
+                    height={300}
+                    unoptimized
                     className="w-full max-w-xs md:max-w-sm rounded-lg shadow-lg mx-auto transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>

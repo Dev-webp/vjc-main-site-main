@@ -44,6 +44,7 @@ const VJCOverseasDedicated = () => {
               quality={100}
               className="object-cover opacity-40"
               priority
+              unoptimized
             />
           </div>
 
@@ -90,14 +91,21 @@ const VJCOverseasDedicated = () => {
   viewport={{ once: true }}
   variants={fadeInUp}
 >
-  <motion.img
+  <motion.div
+  className="mx-auto"
+  style={{ maxHeight: '450px', width: 'auto', position: 'relative', height: '100%', minHeight: '350px' }}
+  whileHover={{ scale: 1.03 }}
+  transition={{ type: 'spring', stiffness: 300 }}
+>
+  <Image
     src="/study-abroad-vjcoversaes.png"
     alt="VJC Overseas Team"
-    className="mx-auto"
-    style={{ maxHeight: '450px', width: 'auto' }}
-    whileHover={{ scale: 1.03 }}
-    transition={{ type: 'spring', stiffness: 300 }}
+    layout="fill"
+    objectFit="contain"
+    unoptimized
   />
+</motion.div>
+
   <div className="space-y-6 text-lg text-justify pr-2 font-[Times New Roman]">
     <p>
       At VJC Overseas, we offer dedicated assistance in immigration and student visa processes, ensuring a smooth and successful journey for every client. Whether you're aiming to study abroad or build a new life in another country, our expert consultants are with you at every step—turning your goals into achievements. With years of hands-on experience and an in-depth understanding of international visa regulations, VJC Overseas has earned a reputation as one of the most reliable and client-focused immigration consultancies in India. Our commitment to personalized support and attention to detail sets us apart in a competitive industry.

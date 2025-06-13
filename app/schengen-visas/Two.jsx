@@ -113,11 +113,16 @@ export default function Home() {
       <SwiperSlide key={index} className="relative cursor-pointer">
   <Link href={slide.path} passHref className="block w-full h-full">
     <div className="relative w-full h-full">
-      <img
-        src={slide.image}
-        alt={slide.name}
-        className="w-full h-96 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
-      />
+      <Image
+  src={slide.image}
+  alt={slide.name}
+  width={800}
+  height={400}
+  className="w-full h-96 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+  priority
+  unoptimized
+/>
+
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 hover:bg-black/70 transition-all rounded-lg p-4">
         <h2 className="text-white text-2xl font-bold text-center mb-4">
           {slide.name}

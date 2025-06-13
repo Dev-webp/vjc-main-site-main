@@ -7,7 +7,7 @@ import Form from './Form';
 
 const StudentVisaProcess = () => {
   const countries = [
-        { name: "USA", path: "/usa" },
+    { name: "USA", path: "/usa" },
     { name: "UK", path: "/uk" },
     { name: "Canada", path: "/studycanada" },
     { name: "Australia", path: "/studyaustralia" },
@@ -24,7 +24,6 @@ const StudentVisaProcess = () => {
     { name: "Spain", path: "/spain" },
     { name: "Sweden", path: "/sweden" },
     { name: "Norway", path: "/norway" },
-    
   ];
 
   const bgImages = [
@@ -42,19 +41,16 @@ const StudentVisaProcess = () => {
       setCurrentBg((prev) => (prev + 1) % bgImages.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [bgImages.length]); // ✅ Dependency fix
 
   return (
     <div className="w-full min-h-screen text-black">
-      {/* Top Content */}
-      <div className="w-full px-4  bg-white">
+      <div className="w-full px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <GermanyStudyVisa />
         </div>
       </div>
 
-   
-      {/* Country Buttons Section with Dynamic Background */}
       <div
         className="rounded-xl p-4 mb-10 transition-all duration-1000 bg-cover bg-center"
         style={{

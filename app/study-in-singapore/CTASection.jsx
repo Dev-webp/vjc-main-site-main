@@ -1,10 +1,12 @@
 'use client';
+
 import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function SingaporeStudyServices() {
   useEffect(() => {
@@ -29,10 +31,13 @@ export default function SingaporeStudyServices() {
         <div className="flex flex-col lg:flex-row items-center gap-12" data-aos="fade-up">
           {/* Image */}
           <div className="lg:w-1/3 w-full">
-            <img
+            <Image
               src="/study-in-singapore-full-visa-process.png"
               alt="Counselling"
-              className="w-full"
+              width={500}
+              height={600}
+              className="w-full h-auto"
+              unoptimized
             />
           </div>
 
@@ -72,7 +77,14 @@ export default function SingaporeStudyServices() {
           className="mt-16 rounded-xl overflow-hidden relative"
         >
           {/* Background Image with overlay */}
-          <div className="absolute inset-0 bg-[url('/singapore-student-visa-process.jpg')] bg-cover bg-center">
+          <div className="absolute inset-0">
+            <Image
+              src="/singapore-student-visa-process.jpg"
+              alt="Singapore Visa Process"
+              fill
+              className="object-cover object-center"
+              unoptimized
+            />
             <div className="absolute inset-0 bg-black opacity-50"></div>
           </div>
 

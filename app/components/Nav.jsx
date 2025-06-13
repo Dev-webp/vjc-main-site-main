@@ -553,11 +553,14 @@ const Navbar = () => {
   rel="noopener noreferrer"
   className="inline-block w-8 h-8 hover:scale-110 transition-transform duration-300"
 >
-  <img
-    src="/instagram-logo-vjc.webp"
-    alt="Instagram"
-    className="w-full h-full object-contain"
-  />
+<Image
+  src="/instagram-logo-vjc.webp"
+  alt="Instagram"
+  width={100}  // adjust width
+  height={100} // adjust height
+  className="w-full h-full object-contain"
+  unoptimized
+/>
 </a>
 
              <a

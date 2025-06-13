@@ -45,6 +45,7 @@ const VJCCompetentSection = () => {
               quality={100}
               className="object-cover opacity-40"
               priority
+              unoptimized
             />
           </div>
 
@@ -95,8 +96,7 @@ const VJCCompetentSection = () => {
             variants={fadeInUp}
           >
             <p>
-              VJC Overseas is proud to be recognized for its high rate of success in immigration and student visa processes, helping thousands of clients turn their global aspirations into reality.
-              With years of industry experience, VJC Overseas has become a trusted name in the field of global education and immigration consulting. Our consistently high visa approval rates are the result of expert knowledge, detailed documentation, personalized counseling, and unwavering commitment to client success.
+              VJC Overseas is proud to be recognized for its high rate of success in immigration and student visa processes, helping thousands of clients turn their global aspirations into reality...
             </p>
             <h2 className='font-bold text-2xl'>Why Our Success Rate Stands Out</h2>
           </motion.div>
@@ -104,59 +104,12 @@ const VJCCompetentSection = () => {
             <Image
               src="/study-abroad-vjcoversaes.png"
               alt="VJC Support Team"
-              width={300}
-              height={150}
+              width={500}
+              height={300}
+              className="rounded-xl"
+              unoptimized
             />
           </motion.div>
-        </motion.div>
-
-        {/* Additional Paragraph */}
-        <p className="text-lg text-justify px-6  md:px-24 text-gray-700">
-          At VJC Overseas, we understand that each visa application is unique and requires a customized approach.
-          We go beyond basic application support by offering strategic guidance and detailed documentation support tailored to your specific profile. Our process starts with a deep assessment of your educational background, work experience, and long-term goals to match you with the right country, program, or immigration stream.
-          Whether it’s a student visa, work visa, PR (permanent residency), or dependent visa, our team of certified consultants ensures that every application is error-free, well-documented, and aligned with the latest immigration policies.
-          Our high success rate reflects not only our expertise but also our meticulous approach to visa filing and preparation.
-        </p>
-
-        {/* Highlight Cards */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-0"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {[
-            {
-              title: 'Success in Student Visas',
-              desc: 'For students, securing a visa is the most critical step after receiving an admission offer. VJC Overseas specializes in handling student visa applications for top destinations such as Canada, the UK, USA, Australia, Germany, and New Zealand. Our team guides students through the entire visa journey, including financial documentation, SOP preparation, interview guidance, and visa lodgment.',
-              color: 'orange-500',
-              textColor: 'blue-800',
-            },
-            {
-              title: 'Trusted by Thousands, Driven by Results',
-              desc: 'What makes VJC Overseas a top choice for visa aspirants is not just our knowledge but our client-centric approach. We believe that your success is our success, and every team member is dedicated to ensuring the best possible outcome. This attitude has earned us the trust of thousands of clients, many of whom refer friends and family after experiencing our services.',
-              color: 'blue-500',
-              textColor: 'orange-700',
-            },
-            {
-              title: 'Transparent & Client-Centric',
-              desc: 'By keeping a close watch on visa requirements and embassy updates, we ensure that our students submit strong and compliant applications. This diligence has helped us maintain an impressive track record of student visa approvals, even in complex or time-sensitive cases. We don’t take shortcuts or offer false promises. Instead, we offer honest advice, realistic timelines, and full transparency throughout the process. Our commitment to ethical practices and client satisfaction continues to drive our outstanding results.',
-              color: 'green-500',
-              textColor: 'green-700',
-            },
-          ].map((card, idx) => (
-            <motion.div
-              key={idx}
-              className={`bg-white/70 backdrop-blur-lg rounded-xl shadow-lg p-6 border-l-4 border-${card.color} hover:scale-105 transition`}
-              custom={idx}
-              variants={fadeInUp}
-            >
-              <h3 className={`text-xl font-bold mb-2 text-${card.textColor}`}>
-                {card.title}
-              </h3>
-              <p className="text-gray-700">{card.desc}</p>
-            </motion.div>
-          ))}
         </motion.div>
 
         {/* Why Choose Section */}
@@ -178,10 +131,12 @@ const VJCCompetentSection = () => {
 
           <div className="flex flex-col lg:flex-row items-center ml-6 lg:ml-24 gap-24">
             <motion.div className="lg:w-1/3 w-full" variants={fadeInUp}>
-              <img
+              <Image
                 src="/studyinuk/uksteps.png"
                 alt="Why VJC"
-                className="w-full"
+                width={400}
+                height={300}
+                className="rounded-xl w-full h-auto"
               />
             </motion.div>
             <motion.div

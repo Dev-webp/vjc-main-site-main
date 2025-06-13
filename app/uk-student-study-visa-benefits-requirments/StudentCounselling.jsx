@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { FaRegClipboard } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -33,7 +34,7 @@ export default function StudentCounselling() {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: false, // <- animation replays on scroll
+      once: false,
     });
   }, []);
 
@@ -52,15 +53,22 @@ export default function StudentCounselling() {
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 mb-12">
           {/* Left Image */}
           <div className="lg:w-1/4 w-full" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="/studyinuk/Counseling.png" // Replace with your actual image path
+            <Image
+              src="/studyinuk/Counseling.png"
               alt="Counselling"
+              width={350}
+              height={350}
               className="w-full h-auto shadow-md rounded-lg"
+              unoptimized
             />
           </div>
 
           {/* Right Text */}
-          <div className="lg:w-3/4 w-full text-gray-700 text-base space-y-4" data-aos="fade-up" data-aos-delay="200">
+          <div
+            className="lg:w-3/4 w-full text-gray-700 text-base space-y-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <p>
               We are partnered with over 230+ leading institutions across Canada, Australia, the UK, New Zealand,
               Denmark, and Sweden. Our expert counselors assess your academic background, financial situation, and

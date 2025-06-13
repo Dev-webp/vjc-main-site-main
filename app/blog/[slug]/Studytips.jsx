@@ -33,33 +33,34 @@ const StudentVisaProcess = () => {
   const maxCountries = countries.length;
   const maxUniversities = 150;
 
-  useEffect(() => {
-    let s = 1, c = 1, u = 1;
+ useEffect(() => {
+  let s = 1, c = 1, u = 1;
 
-    const studentInterval = setInterval(() => {
-      s += 50;
-      setStudentsPlaced(s > maxStudents ? maxStudents : s);
-      if (s >= maxStudents) clearInterval(studentInterval);
-    }, 20);
+  const studentInterval = setInterval(() => {
+    s += 50;
+    setStudentsPlaced(s > maxStudents ? maxStudents : s);
+    if (s >= maxStudents) clearInterval(studentInterval);
+  }, 20);
 
-    const countryInterval = setInterval(() => {
-      c += 1;
-      setCountriesCount(c > maxCountries ? maxCountries : c);
-      if (c >= maxCountries) clearInterval(countryInterval);
-    }, 100);
+  const countryInterval = setInterval(() => {
+    c += 1;
+    setCountriesCount(c > maxCountries ? maxCountries : c);
+    if (c >= maxCountries) clearInterval(countryInterval);
+  }, 100);
 
-    const universityInterval = setInterval(() => {
-      u += 2;
-      setUniversitiesCount(u > maxUniversities ? maxUniversities : u);
-      if (u >= maxUniversities) clearInterval(universityInterval);
-    }, 30);
+  const universityInterval = setInterval(() => {
+    u += 2;
+    setUniversitiesCount(u > maxUniversities ? maxUniversities : u);
+    if (u >= maxUniversities) clearInterval(universityInterval);
+  }, 30);
 
-    return () => {
-      clearInterval(studentInterval);
-      clearInterval(countryInterval);
-      clearInterval(universityInterval);
-    };
-  }, []);
+  return () => {
+    clearInterval(studentInterval);
+    clearInterval(countryInterval);
+    clearInterval(universityInterval);
+  };
+}, [maxStudents, maxCountries, maxUniversities]);
+
 
   const bgImages = [
     "/study-abroad-vjc.jpg",
@@ -70,12 +71,13 @@ const StudentVisaProcess = () => {
   ];
   const [currentBg, setCurrentBg] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentBg((prev) => (prev + 1) % bgImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+ useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentBg((prev) => (prev + 1) % bgImages.length);
+  }, 5000);
+  return () => clearInterval(interval);
+}, [bgImages.length]);
+
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 text-gray-800">

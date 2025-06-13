@@ -56,13 +56,13 @@ const WorkPermitProcess = () => {
   ];
   const [currentBg, setCurrentBg] = useState(0);
 
-  useEffect(() => {
+   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentBg((prev) => (prev + 1) % bgImages.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
-
+  }, [bgImages.length]); // ✅ now safe
+  
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 text-gray-800">
       <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-6 text-center">

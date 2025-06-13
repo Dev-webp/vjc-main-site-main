@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-
+import Image from "next/image";
 const sliderData = [
   
   {
@@ -58,11 +58,13 @@ function AutoSlider({ delay = 3000 }) {
         className="flex flex-col items-center text-center"
       >
         <div className="w-[160px] md:w-[280px] aspect-square mb-2">
-          <img
-            src={current.image}
-            alt={current.title}
-            className="rounded-lg object-cover w-full h-full "
-          />
+          <Image
+    src={current.image}
+    alt={current.title}
+    fill
+    className="object-cover rounded-lg"
+    priority // optional: use if it's above-the-fold
+  />
         </div>
         <h2 className="text-sm md:text-base font-semibold mb-1">{current.title}</h2>
         <p className="text-gray-600 text-xs md:text-sm">{current.description}</p>

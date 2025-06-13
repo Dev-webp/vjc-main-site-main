@@ -16,7 +16,7 @@ const CoachingTraining = () => {
   const [studentsCount, setStudentsCount] = useState(1);
   const [partnersCount, setPartnersCount] = useState(1);
 
-  const maxStudents = 10000; // Adjust as per your real number
+  const maxStudents = 10000;
   const maxPartners = 120;
 
   useEffect(() => {
@@ -38,15 +38,15 @@ const CoachingTraining = () => {
       clearInterval(studentInterval);
       clearInterval(partnerInterval);
     };
-  }, []);
+  }, [maxStudents, maxPartners]); // ✅ Added dependencies
 
   const bgImages = [
     "/student-in-germany-student-visa.png",
     "/student-working-with-a-college-counsleor.jpg",
     "/study-sycess.jpg",
     "/studying-abroad-1.webp",
-   
   ];
+  
   const [currentBg, setCurrentBg] = useState(0);
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const CoachingTraining = () => {
       setCurrentBg((prev) => (prev + 1) % bgImages.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [bgImages.length]); // ✅ Added dependency
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 text-gray-800">
@@ -85,8 +85,7 @@ const CoachingTraining = () => {
         </div>
       </div>
 
-      {/* Course Content Description */}
-       {/* Coaching Info Section */}
+      {/* Coaching Info Section */}
       <div className="max-w-3xl mx-auto space-y-4 text-sm text-gray-700 text-justify">
         <p>
           At <span className="text-orange-500">VJC Overseas</span>, we prepare you for top international exams through result-driven strategies, expert coaching, and tech-enabled learning.
@@ -107,8 +106,6 @@ const CoachingTraining = () => {
 
       {/* Coaching Process Breakdown */}
       <div className="max-w-5xl mx-auto mt-6 bg-white rounded-xl shadow-lg p-6 sm:p-10 flex flex-col sm:flex-row items-start gap-8">
-       
-
         <div className="space-y-2 text-gray-800 text-sm">
           <div>
             <h3 className="text-base font-semibold text-orange-500">1. Diagnostic Evaluation</h3>
@@ -137,9 +134,8 @@ const CoachingTraining = () => {
               Appear for full-length simulations followed by intensive score-boosting masterclasses.
             </p>
           </div>
-          
         </div>
-         <div className="flex-shrink-0">
+        <div className="flex-shrink-0">
           <Image
             src="/Coaching-and-training.png"
             alt="Coaching Process"
@@ -150,22 +146,24 @@ const CoachingTraining = () => {
         </div>
       </div>
 
-        <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg max-w-5xl mx-auto mt-6">
+      {/* Video Embed */}
+      <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg max-w-5xl mx-auto mt-6">
         <iframe
           width="100%"
           height="300"
-           src="https://www.youtube.com/embed/cLNpEry1oPQ?autoplay=1&mute=1&loop=1&playlist=cLNpEry1oPQ&controls=0&showinfo=0&rel=0"
+          src="https://www.youtube.com/embed/cLNpEry1oPQ?autoplay=1&mute=1&loop=1&playlist=cLNpEry1oPQ&controls=0&showinfo=0&rel=0"
           title="VJC Overseas Migration Services"
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen
         />
       </div>
+
       {/* CTA Stats Section */}
       <div
         className="mt-12 rounded-xl shadow-lg bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/study-sycess.jpg')", // Place image in /public folder
+          backgroundImage: "url('/study-sycess.jpg')",
           backgroundColor: "rgba(0, 0, 0, 0.6)",
           backgroundBlendMode: "overlay",
         }}

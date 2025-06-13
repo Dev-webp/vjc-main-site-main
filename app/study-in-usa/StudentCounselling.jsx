@@ -5,6 +5,7 @@ import { FaRegClipboard } from "react-icons/fa";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 const items = [
   {
@@ -33,7 +34,7 @@ export default function StudentCounselling() {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: false, // <- animation replays on scroll
+      once: false,
     });
   }, []);
 
@@ -52,10 +53,13 @@ export default function StudentCounselling() {
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 mb-12">
           {/* Left Image */}
           <div className="lg:w-1/4 w-full" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="/student-working-with-a-college-counsleor.jpg" // Replace with your actual image path
+            <Image
+              src="/student-working-with-a-college-counsleor.jpg"
               alt="Counselling"
-              className="w-full h-auto shadow-md rounded-lg"
+              width={400}
+              height={300}
+              className="w-full h-auto shadow-md rounded-lg object-cover"
+              priority
             />
           </div>
 

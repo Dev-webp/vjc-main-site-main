@@ -37,12 +37,12 @@ const StudentVisaProcess = () => {
 
   const [currentBg, setCurrentBg] = useState(0);
 
-  useEffect(() => {
+   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentBg((prev) => (prev + 1) % bgImages.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [bgImages.length]); // ✅ fixed
 
   return (
     <div className="w-full min-h-screen text-black">

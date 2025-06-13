@@ -190,7 +190,10 @@ export default function StudyInUK() {
       <FaAward className="text-4xl text-yellow-400 mx-auto" />
       <h4 className="mt-2 text-lg font-bold">Students Placed</h4>
       <p className="text-3xl font-extrabold text-orange-400">
-        <CountUp end={1000} duration={10} />
+        <CountUp end={1000} duration={10} /> 
+
+
+    +
       </p>
       <p className="text-sm mt-1">Guided into top UK universities for UG, PG, MBA & more.</p>
     </div>

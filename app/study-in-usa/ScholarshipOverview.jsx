@@ -10,6 +10,7 @@ import {
   Globe,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const steps = [
   {
@@ -112,10 +113,14 @@ export default function ScholarshipStepsUSA() {
 
           {/* Right: Image */}
           <div className="flex items-center justify-center">
-            <img
+            <Image
               src="/usa-student-scholarships.png"
               alt="USA Scholarships"
-              className="w-80 md:w-[450px] h-auto object-contain rounded-xl shadow-lg transition-transform duration-500 hover:scale-105"
+              width={450}
+              height={300}
+              className="rounded-xl shadow-lg transition-transform duration-500 hover:scale-105 object-contain"
+              priority
+              unoptimized
             />
           </div>
         </motion.div>

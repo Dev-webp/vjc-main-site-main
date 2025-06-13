@@ -71,6 +71,7 @@ export default function Hero({ setIsOpen }) {
             height={300}
             className="w-full max-w-[500px] mx-auto"
             priority
+            unoptimized
           />
           <h1 className="text-white text-3xl sm:text-[2.5rem] lg:text-[3rem] lg:ml-16 font-bold leading-tight text-center lg:text-left uppercase">
             <span style={{ fontFamily: 'Times New Roman, Times, serif' }}>

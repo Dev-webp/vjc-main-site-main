@@ -1,10 +1,12 @@
 'use client';
+
 import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function UKStudyServices() {
   useEffect(() => {
@@ -29,10 +31,13 @@ export default function UKStudyServices() {
         <div className="flex flex-col lg:flex-row items-center gap-12" data-aos="fade-up">
           {/* Image */}
           <div className="lg:w-1/3 w-full">
-            <img
+            <Image
               src="/germany-visa-steps.png"
               alt="Counselling"
-              className="w-full"
+              width={600}
+              height={500}
+              className="w-full h-auto"
+              unoptimized
             />
           </div>
 
@@ -88,7 +93,7 @@ export default function UKStudyServices() {
               Get Started Today
             </h3>
             <p className="text-white text-1sm max-w-3xl mx-auto mb-6">
-             Your dream of studying in Germany begins with a single step. Let VJC Overseas be your trusted partner in turning that dream into reality. Book a free consultation and begin your visa process with confidence!
+              Your dream of studying in Germany begins with a single step. Let VJC Overseas be your trusted partner in turning that dream into reality. Book a free consultation and begin your visa process with confidence!
             </p>
 
             <Link href="/assessment">

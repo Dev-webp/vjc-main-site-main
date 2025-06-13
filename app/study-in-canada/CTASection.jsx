@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import Image from "next/image"; // ✅ Imported Image
 
 export default function GermanyStudyServices() {
   useEffect(() => {
@@ -25,7 +26,14 @@ export default function GermanyStudyServices() {
         <div className="flex flex-col lg:flex-row items-center gap-12" data-aos="fade-up">
           {/* Image */}
           <div className="lg:w-1/3 w-full">
-            <img src="/student-in-germany-student-visa.png" alt="Germany Visa Steps" className="w-full" />
+            <Image
+              src="/student-in-germany-student-visa.png"
+              alt="Germany Visa Steps"
+              width={600}
+              height={600}
+              className="w-full h-auto object-contain"
+              unoptimized={true}
+            />
           </div>
 
           {/* Bullet Points */}
@@ -84,7 +92,6 @@ export default function GermanyStudyServices() {
             </Link>
           </motion.div>
         </motion.div>
-
       </div>
     </section>
   );

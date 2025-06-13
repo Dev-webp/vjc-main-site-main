@@ -13,27 +13,28 @@ export default function Hero({ setIsOpen }) {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(false);
+        void sectionRef.current?.offsetWidth;
+        setIsVisible(true);
+      }
+    },
+    { threshold: 0.5 }
+  );
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(false);
-          void sectionRef.current?.offsetWidth;
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
+  const currentRef = sectionRef.current;
+  if (currentRef) {
+    observer.observe(currentRef);
+  }
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+  return () => {
+    if (currentRef) observer.unobserve(currentRef);
+  };
+}, []);
 
-    return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
-    };
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {

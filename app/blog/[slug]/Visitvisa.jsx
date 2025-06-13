@@ -18,33 +18,34 @@ const MigrationProcess = () => {
   const maxCountries = countries.length;
   const maxPartners = 200;
 
-  useEffect(() => {
-    let m = 1, c = 1, p = 1;
+ useEffect(() => {
+  let m = 1, c = 1, p = 1;
 
-    const migrantInterval = setInterval(() => {
-      m += 100;
-      setMigrantsPlaced(m > maxMigrants ? maxMigrants : m);
-      if (m >= maxMigrants) clearInterval(migrantInterval);
-    }, 20);
+  const migrantInterval = setInterval(() => {
+    m += 100;
+    setMigrantsPlaced(m > maxMigrants ? maxMigrants : m);
+    if (m >= maxMigrants) clearInterval(migrantInterval);
+  }, 20);
 
-    const countryInterval = setInterval(() => {
-      c += 1;
-      setCountriesCount(c > maxCountries ? maxCountries : c);
-      if (c >= maxCountries) clearInterval(countryInterval);
-    }, 100);
+  const countryInterval = setInterval(() => {
+    c += 1;
+    setCountriesCount(c > maxCountries ? maxCountries : c);
+    if (c >= maxCountries) clearInterval(countryInterval);
+  }, 100);
 
-    const partnerInterval = setInterval(() => {
-      p += 3;
-      setPartnersCount(p > maxPartners ? maxPartners : p);
-      if (p >= maxPartners) clearInterval(partnerInterval);
-    }, 30);
+  const partnerInterval = setInterval(() => {
+    p += 3;
+    setPartnersCount(p > maxPartners ? maxPartners : p);
+    if (p >= maxPartners) clearInterval(partnerInterval);
+  }, 30);
 
-    return () => {
-      clearInterval(migrantInterval);
-      clearInterval(countryInterval);
-      clearInterval(partnerInterval);
-    };
-  }, []);
+  return () => {
+    clearInterval(migrantInterval);
+    clearInterval(countryInterval);
+    clearInterval(partnerInterval);
+  };
+}, [maxMigrants, maxCountries, maxPartners]); // ✅ fixed dependencies
+
 
   const bgImages = [
     "/study-abroad-vjc.jpg",
@@ -56,11 +57,12 @@ const MigrationProcess = () => {
   const [currentBg, setCurrentBg] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentBg((prev) => (prev + 1) % bgImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  const interval = setInterval(() => {
+    setCurrentBg((prev) => (prev + 1) % bgImages.length);
+  }, 5000);
+  return () => clearInterval(interval);
+}, [bgImages.length]); // ✅ now safe
+
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 text-gray-800">

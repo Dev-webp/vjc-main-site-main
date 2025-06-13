@@ -15,31 +15,28 @@ export default function Hero({ setIsOpen }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
+    const observedElement = sectionRef.current;
+  
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(false);
-          void sectionRef.current?.offsetWidth;
+          void observedElement?.offsetWidth;
           setIsVisible(true);
         }
       },
       { threshold: 0.5 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+  
+    if (observedElement) {
+      observer.observe(observedElement);
     }
-
+  
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (observedElement) {
+        observer.unobserve(observedElement);
+      }
     };
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % backgroundImages.length);
-    }, 5000); // Change image every 5 seconds
-    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -55,6 +52,7 @@ export default function Hero({ setIsOpen }) {
           fill
           className={`object-cover transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
           priority
+          unoptimized
         />
         <div className="absolute inset-0 bg-black/80 z-10" />
       </div>
@@ -69,7 +67,8 @@ export default function Hero({ setIsOpen }) {
             width={900}
             height={500}
             className="w-full max-w-[700px] mx-auto"
-            priority
+            
+            unoptimized
           />
           <Image
             src="/award-vjc.png"
@@ -78,6 +77,7 @@ export default function Hero({ setIsOpen }) {
             height={300}
             className="w-full max-w-[500px] mx-auto"
             priority
+            unoptimized
           />
           <h1 className="text-white text-3xl sm:text-[2.5rem] lg:text-[3rem] lg:ml-16 font-bold leading-tight text-center lg:text-left uppercase">
             <span style={{ fontFamily: 'Times New Roman, Times, serif' }}>

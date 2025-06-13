@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function UKStudyServices() {
   useEffect(() => {
@@ -29,16 +30,18 @@ export default function UKStudyServices() {
         <div className="flex flex-col lg:flex-row items-center gap-12" data-aos="fade-up">
           {/* Image */}
           <div className="lg:w-1/3 w-full">
-            <img
+            <Image
               src="/studyinuk/uksteps.png"
               alt="Counselling"
-              className="w-full"
+              width={500}
+              height={400}
+              className="w-full h-auto object-contain"
             />
           </div>
 
           {/* Bullet Points */}
           <div className="lg:w-2/3 w-full space-y-6 text-black">
-            {[ 
+            {[
               "Personalized University & Course Counselling: Get tailored advice on top UK universities and programs that match your profile and career goals.",
               "Complete Application & Visa Guidance: End-to-end support, from preparing your application to securing your UK student visa.",
               "Experienced Counsellors: Friendly, qualified experts with up-to-date knowledge of UK immigration and education policies.",
@@ -72,7 +75,14 @@ export default function UKStudyServices() {
           className="mt-16 rounded-xl overflow-hidden relative"
         >
           {/* Background Image with overlay */}
-          <div className="absolute inset-0 bg-[url('/studyinuk/c1.png')] bg-cover bg-center">
+          <div className="absolute inset-0">
+            <Image
+              src="/studyinuk/c1.png"
+              alt="UK CTA Background"
+              fill
+              className="object-cover"
+              unoptimized
+            />
             <div className="absolute inset-0 bg-black opacity-50"></div>
           </div>
 

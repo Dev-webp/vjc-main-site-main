@@ -45,6 +45,7 @@ const VJCCompetentSection = () => {
               quality={100}
               className="object-cover opacity-40"
               priority
+              unoptimized
             />
           </div>
 
@@ -106,6 +107,7 @@ const VJCCompetentSection = () => {
               alt="VJC Support Team"
               width={300}
               height={150}
+              unoptimized
             />
           </motion.div>
         </motion.div>
@@ -174,11 +176,15 @@ const VJCCompetentSection = () => {
 
           <div className="flex flex-col lg:flex-row items-center ml-6 lg:ml-24 gap-24">
             <motion.div className="lg:w-1/3 w-full" variants={fadeInUp}>
-              <img
-                src="/studyinuk/uksteps.png"
-                alt="Why VJC"
-                className="w-full"
-              />
+             <Image
+  src="/studyinuk/uksteps.png"
+  alt="Why VJC"
+  width={600}
+  height={400}
+  className="w-full h-auto"
+  unoptimized
+/>
+
             </motion.div>
             <motion.div
               className="lg:w-2/3 w-full space-y-6 text-black"

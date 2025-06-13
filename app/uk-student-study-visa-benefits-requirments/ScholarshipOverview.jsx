@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { FileText, Clock, Star, Users, GraduationCap, HandCoins, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -120,15 +121,16 @@ export default function ScholarshipSteps() {
 
           {/* Image Side */}
           <div className="flex items-center justify-center">
-            <img
+            <Image
               src="/studyinuk/process.png"
               alt="UK Scholarships"
+              width={350}
+              height={300}
+              unoptimized
               className="w-64 md:w-86 h-auto object-contain rounded-xl shadow-lg transition-transform duration-500 hover:scale-105"
             />
           </div>
         </motion.div>
-
-      
       </div>
     </section>
   );

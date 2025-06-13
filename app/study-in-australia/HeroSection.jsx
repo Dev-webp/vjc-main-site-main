@@ -8,52 +8,53 @@ export default function Hero({ setIsOpen }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(false);
-          void sectionRef.current?.offsetWidth;
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
+  const observedElement = sectionRef.current;
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(false);
+        void observedElement?.offsetWidth;
+        setIsVisible(true);
       }
-    };
-  }, []);
+    },
+    { threshold: 0.5 }
+  );
+
+  if (observedElement) {
+    observer.observe(observedElement);
+  }
+
+  return () => {
+    if (observedElement) {
+      observer.unobserve(observedElement);
+    }
+  };
+}, []);
+
 
   return (
     <section
-  ref={sectionRef}
-  className="relative min-h-screen pt-36 pb-8 px-4 md:px-6 lg:px-14 lg:-mt-14 overflow-hidden flex items-center justify-center"
->
-  {/* Background Image */}
-  <div 
-    className={`absolute inset-0 w-full h-full transition-all duration-[1500ms] ease-out transform ${
-      isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-    }`}
-  >
-    <Image
-      src="studyindubai/bg.jpg" // Replace with your image path
-      alt="Background"
-      fill
-      className="object-cover"
-      unoptimized={true}
-    />
-  </div>
+      ref={sectionRef}
+      className="relative min-h-screen pt-36 pb-8 px-4 md:px-6 lg:px-14 lg:-mt-14 overflow-hidden flex items-center justify-center"
+    >
+      {/* Background Image */}
+      <div
+        className={`absolute inset-0 w-full h-full transition-all duration-[1500ms] ease-out transform ${
+          isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
+        }`}
+      >
+        <Image
+          src="/studyindubai/bg.jpg"
+          alt="Background"
+          fill
+          className="object-cover"
+          unoptimized
+        />
+      </div>
 
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/50 z-0 pointer-events-none" />
-  
-  
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/50 z-0 pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-8 w-full max-w-[1440px] md:ml-4 flex flex-col lg:flex-row items-center justify-center gap-10">
@@ -65,7 +66,8 @@ export default function Hero({ setIsOpen }) {
             width={900}
             height={500}
             className="w-full max-w-[700px] mx-auto"
-            priority
+            
+            unoptimized
           />
           <Image
             src="/award-vjc.png"
@@ -74,16 +76,16 @@ export default function Hero({ setIsOpen }) {
             height={300}
             className="w-full max-w-[500px] mx-auto"
             priority
+            unoptimized
           />
           <h1 className="text-white text-3xl sm:text-[2.5rem] lg:text-[3rem] lg:ml-16 font-bold leading-tight text-center lg:text-left uppercase">
             <span style={{ fontFamily: 'Times New Roman, Times, serif' }}>
-  Study in{' '}
-  <span className="bg-gradient-to-r from-blue-700 via-white to-red-600 bg-clip-text text-transparent font-extrabold">
-    Australia
-  </span>{' '}
-  with <span className="text-saffron">VJC OVERSEAS</span>
-</span>
-
+              Study in{' '}
+              <span className="bg-gradient-to-r from-blue-700 via-white to-red-600 bg-clip-text text-transparent font-extrabold">
+                Australia
+              </span>{' '}
+              with <span className="text-saffron">VJC OVERSEAS</span>
+            </span>
           </h1>
           <p className="text-white text-sm sm:text-base text-center lg:ml-4 lg:text-left max-w-xl">
             Begin your academic journey in one of the world's most innovative and student-friendly nations.
