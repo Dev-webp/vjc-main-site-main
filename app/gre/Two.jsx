@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import Content from './content';
+import Content from './Content';
 import Form from './Form';
 import Image from 'next/image';
 import Link from 'next/link';
