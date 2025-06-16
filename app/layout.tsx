@@ -43,6 +43,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${ptSerif.variable} ${playfairDisplay.variable}`}>
       <head>
+                <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/LOGO-VJC.png.png" />
+        <meta name="theme-color" content="#0f172a" />
+
         {/* ✅ Google Ads (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16767451796"
