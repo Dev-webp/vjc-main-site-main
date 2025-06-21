@@ -70,7 +70,7 @@ const CountriesData = () => {
         </div>
 
         {/* Right Side - Display Selected Country Component */}
-        <div className="w-full lg:w-[70%]">
+        <div className="w-full  lg:w-[70%]">
           {!selectedCountry ? (
             <>
              

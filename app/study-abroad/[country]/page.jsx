@@ -3,9 +3,9 @@ import CountryClient from "./CountryClient";
 // Metadata map
 const metaData = {
   usa: {
-    title: "Study in USA – Top Universities & Visa Support | VJC Overseas",
-    description: "Get expert guidance to study in the USA. Explore top universities, scholarships, courses & student visa options with VJC Overseas. Start today!",
-    keywords:" study abroad, usa visa, abroad education consultants, visa for united states, golden visa, study abroad consultants, usa visa application, overseas study consultants, foreign study consultancy, abroad for studies, best immigration consultants in hyderabad, best immigration consultants in bangalore, foreign study consultancy, foreign education consultants, study in usa",
+    title: "Study in USA Student Visa Process F1 Documents Check List Best Abroad Universities in USA",
+    description: "Get USA Student Visa F1 Process and Study in USA with Best Abroad Universities to settle in America also know the Study Documents Check list and Requirements to F1 Study Abroad in USA with Best USA Student Study Visa Consultants in Hyderabad also Find Top Most Universities in USA and Apply Online for USA Study Visa Process with Fast Admissions at Lowest Tuition Courses Fees with Top International Educational Consultants in Hyderabad Bangalore",
+    keywords:" Study in USA, USA student visa, USA F1 visa process, USA education consultants, study abroad USA, Best Abroad Universities, top US universities, USA visa consultants, USA student visa requirements, visa for USA students, immigration consultants for USA, how to apply USA Study Visa, USA Student Study Visa Consultants in Hyderabad, Top Most Universities in USA, Apply Online for USA Study Visa Process, Lowest Tuition Courses Fees, Top International Educational Consultants in Hyderabad, Top International Educational Consultants in Bangalore",
   },
   canada: {
     title: "Study in Canada – Top Universities & Visa Support | VJC",

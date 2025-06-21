@@ -79,7 +79,7 @@ const HeroSection = () => {
     </div>
 
     {/* Form Container */}
-    <div className="absolute top-[80%] sm:top-[90%] left-1/2 transform -translate-x-1/2 -translate-y-1/3 bg-white border border-orange-500 w-full max-w-[900px] h-[400px] flex justify-center items-center shadow-lg rounded-lg mt-60">
+    <div className="absolute top-[80%] sm:top-[90%] left-1/2 transform -translate-x-1/2 -translate-y-1/3 bg-white border border-orange-500 w-full bg-gradient-to-br from-blue-200 via-white to-orange-300 max-w-[900px] h-[400px] flex justify-center items-center shadow-lg rounded-lg mt-60">
       <div className="w-full flex justify-center">
         <Form /> 
       </div>

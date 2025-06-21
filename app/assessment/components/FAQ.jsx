@@ -103,7 +103,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="w-full px-4 text-2xl py-10 relative z-10 bg-white" style={{ fontFamily: 'Times New Roman' }}>
+    <div className="w-full px-4 text-2xl py-10 relative z-10 " style={{ fontFamily: 'Times New Roman' }}>
       <h2 className="text-center text-3xl font-bold mb-8">Planning to Move to New Zealand? Here’s What You Need to Know!</h2>
 
       {/* Decorative line */}
