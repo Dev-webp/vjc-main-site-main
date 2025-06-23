@@ -1,56 +1,45 @@
-"use client";
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
+const nodemailer = require("nodemailer");
 
-import AdminLogin from "./AdminLogin";
-import AdminDashboard from "./AdminDashboard";
-import { useEffect, useState } from "react";
-import { db } from "@/app/lib/firebase";
-import { collection, onSnapshot, query } from "firebase/firestore";
-import { Bell } from "lucide-react";
+admin.initializeApp();
 
-export default function AdminPage() {
-  const [authenticated, setAuthenticated] = useState(false);
-  const [loginData, setLoginData] = useState({ username: "", password: "" });
-  const [notificationCount, setNotificationCount] = useState(0);
+const gmailEmail = "vjcbangalore@gmail.com";
+const gmailAppPassword = "wirgofubrbiqcvlq";
+const notificationRecipient = "vjcbangalore@gmail.com"; // send to yourself
 
-  useEffect(() => {
-    if (authenticated) return;
-    const q = query(collection(db, "messages"));
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      const userStartedSessions = new Map();
-      snapshot.docs.forEach((doc) => {
-        const data = doc.data();
-        if (data.sender === "user") {
-          const existing = userStartedSessions.get(data.sessionId);
-          if (!existing || data.timestamp?.toMillis() < existing) {
-            userStartedSessions.set(data.sessionId, data.timestamp?.toMillis?.());
-          }
-        }
-      });
-      setNotificationCount(userStartedSessions.size);
-    });
-    return () => unsubscribe();
-  }, [authenticated]);
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: gmailEmail,
+    pass: gmailAppPassword,
+  },
+});
 
-  const handleLogin = () => {
-    if (loginData.username === "admin" && loginData.password === "admin123") {
-      setAuthenticated(true);
-      setNotificationCount(0);
-    } else {
-      alert("Invalid credentials");
+exports.notifyNewMessage = functions.firestore
+  .document("messages/{messageId}")
+  .onCreate(async (snap, context) => {
+    const data = snap.data();
+
+    // Optional: Log for debugging
+    console.log("Function triggered, message data:", data);
+
+    const mailOptions = {
+      from: `Chatbot Notification <${gmailEmail}>`,
+      to: notificationRecipient,
+      subject: "New Chatbot Message Received",
+      html: `
+        <h2>New message from chatbot</h2>
+        <p><strong>Sender:</strong> ${data.sender || "(unknown)"}</p>
+        <p><strong>Text:</strong> ${data.text}</p>
+      `,
+    };
+
+    try {
+      await transporter.sendMail(mailOptions);
+      console.log("Notification email sent!");
+    } catch (error) {
+      console.error("Error sending email:", error);
     }
-  };
-
-  if (!authenticated) {
-    return (
-      <AdminLogin
-        loginData={loginData}
-        setLoginData={setLoginData}
-        handleLogin={handleLogin}
-        notificationCount={notificationCount}
-        Bell={Bell}
-      />
-    );
-  }
-
-  return <AdminDashboard />;
-}
+    return null;
+  });
