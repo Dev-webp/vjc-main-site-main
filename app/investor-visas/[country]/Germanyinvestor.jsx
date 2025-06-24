@@ -14,16 +14,16 @@ export default function GermanyInvestorVisa() {
           
         </div>
         <div className="md:w-1/2 flex justify-center items-center">
-          <Image src="/germanyinvestcontent.jpg" alt="Germany Investor Visa" width={500} height={400} className=" shadow-lg" />
+          <Image src="/germanyinvestcontent.jpg" alt="Germany Investor Visa" width={500} height={400} unoptimized className=" shadow-lg" />
         </div>
       </div>
       <p className="mb-2 -mt-8">Germany’s robust economy, highly skilled workforce, and innovative business environment make it one of the best countries to start and manage a business. With a Germany Investor Visa, you gain access to the European Union market, a large consumer base, and excellent infrastructure for business operations.</p>
       <div>
-        <h2 className="text-xl mt-4 font-semibold mb-2">📅 Germany Investor Visa Validity and Duration</h2>
+        <h2 className="text-xl mt-4 font-semibold mb-2"> Germany Investor Visa Validity and Duration</h2>
         <p className="mb-4">The Germany Investor Visa is granted for a period of 3 months initially. After this, it can be extended for up to 3 years, provided the investment continues to meet the visa’s requirements. During this period, the investor must demonstrate that their business is contributing positively to the German economy.</p>
         <p className="mb-4">After five years of residing in Germany with the Investor Visa, you may be eligible to apply for permanent residency (Niederlassungserlaubnis). However, continuous business operations and compliance with visa regulations are essential for successful application.</p>
 
-        <h2 className="text-xl mt-4 font-semibold mb-2">✅ Eligibility for Germany Investor Visa</h2>
+        <h2 className="text-xl mt-4 font-semibold mb-2"> Eligibility for Germany Investor Visa</h2>
         <ul className="list-disc list-inside mb-4">
           <li>Financial Investment Requirement: Minimum of €250,000.</li>
           <li>Business Plan: Must demonstrate job creation and economic impact.</li>
@@ -33,7 +33,7 @@ export default function GermanyInvestorVisa() {
           <li>German Language Skills: Advantageous but not always required.</li>
         </ul>
 
-        <h2 className="text-xl mt-4 font-semibold mb-2">📄 Documents Required for Germany Investor Visa Application</h2>
+        <h2 className="text-xl mt-4 font-semibold mb-2"> Documents Required for Germany Investor Visa Application</h2>
         <ul className="list-disc list-inside mb-4">
           <li>Valid Passport</li>
           <li>Proof of Investment</li>
@@ -45,7 +45,7 @@ export default function GermanyInvestorVisa() {
           <li>Proof of Accommodation</li>
         </ul>
 
-        <h2 className="text-xl mt-4 font-semibold mb-2">🌟 Benefits of Germany Investor Visa</h2>
+        <h2 className="text-xl mt-4 font-semibold mb-2"> Benefits of Germany Investor Visa</h2>
         <ul className="list-disc list-inside mb-4">
           <li>Access to European Union Market</li>
           <li>Freedom to Travel within Schengen Area</li>
@@ -54,19 +54,19 @@ export default function GermanyInvestorVisa() {
           <li>Path to Permanent Residency</li>
         </ul>
 
-        <h2 className="text-xl mt-4 font-semibold mb-2">🔍 Key Considerations for Germany Investor Visa</h2>
+        <h2 className="text-xl mt-4 font-semibold mb-2"> Key Considerations for Germany Investor Visa</h2>
         <ul className="list-disc list-inside mb-4">
           <li>Economic Impact</li>
           <li>Long-Term Commitment</li>
           <li>Adherence to Business Regulations</li>
         </ul>
 
-        <h2 className="text-xl mt-4 font-semibold mb-2">💼 Why Choose Germany for Investment?</h2>
+        <h2 className="text-xl mt-4 font-semibold mb-2"> Why Choose Germany for Investment?</h2>
         <p className="mb-4">Germany stands as one of the most attractive destinations for international investors. The country’s stable political environment, robust legal system, and skilled workforce create an ideal setting for both new and established businesses. Additionally, Germany offers a range of incentives for entrepreneurs, including tax breaks and grants for innovative start-ups and growing businesses.</p>
 
-        <h2 className="text-xl mt-4 font-semibold mb-2">🚀 Take the First Step Toward Your Germany Investor Visa</h2>
+        <h2 className="text-xl mt-4 font-semibold mb-2"> Take the First Step Toward Your Germany Investor Visa</h2>
         <p className="mb-4">Are you ready to explore the possibilities with the Germany Investor Visa? At <span className="text-orange-500">VJC Overseas</span>, we specialize in helping investors like you navigate the visa application process, providing expert advice, and ensuring you meet all the requirements for a smooth and successful application.</p>
-        <p className="font-semibold">📞 Contact <span className="text-orange-500">VJC Overseas</span> today for personalized guidance on securing your Germany Investor Visa and taking your first step toward business success in Germany!</p>
+        <p className="font-semibold"> Contact <span className="text-orange-500">VJC Overseas</span> today for personalized guidance on securing your Germany Investor Visa and taking your first step toward business success in Germany!</p>
       </div>
     </div>
   );

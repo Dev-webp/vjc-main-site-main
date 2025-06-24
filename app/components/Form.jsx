@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from 'react';
 
@@ -9,33 +9,32 @@ const Form = () => {
   const [age, setAge] = useState('');
   const [experience, setExperience] = useState('');
   const [qualification, setQualification] = useState('');
-  const [country, setCountry] = useState('');  // New state for Country
+  const [country, setCountry] = useState('');
   const [message, setMessage] = useState('');
   const [formStatus, setFormStatus] = useState(null);
   const [loading, setLoading] = useState(false);
   const [popupVisible, setPopupVisible] = useState(false);
   const [landingPage, setLandingPage] = useState('');
-// Capture current page URL
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setLandingPage(window.location.href);
     }
   }, []);
-  // Close the success popup after 4 seconds
+
   useEffect(() => {
     if (popupVisible) {
       const timeout = setTimeout(() => {
         setPopupVisible(false);
       }, 4000);
 
-      return () => clearTimeout(timeout); // Cleanup timeout
+      return () => clearTimeout(timeout);
     }
   }, [popupVisible]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    setLoading(true); // Set loading to true when form is being submitted
+    setLoading(true);
 
     const formData = {
       name,
@@ -44,9 +43,9 @@ const Form = () => {
       age,
       experience,
       qualification,
-      country,  // Include country in formData
+      country,
       message,
-      landingPage, 
+      landingPage,
     };
 
     try {
@@ -66,9 +65,9 @@ const Form = () => {
         setAge('');
         setExperience('');
         setQualification('');
-        setCountry('');  // Clear country
+        setCountry('');
         setMessage('');
-        setPopupVisible(true); // Show success popup
+        setPopupVisible(true);
       } else {
         setFormStatus('error');
       }
@@ -76,9 +75,12 @@ const Form = () => {
       console.error('Error:', error.message);
       setFormStatus('error');
     } finally {
-      setLoading(false); // Set loading to false once the request is complete
+      setLoading(false);
     }
   };
+
+  // ✅ Hydration fix
+  if (!landingPage) return null;
 
   return (
     <div className="bg-white p-4 py-2 rounded-lg shadow-sm max-w-md mx-auto w-full h-[35rem] md:h-[32rem] lg:h-[32rem] tablet:h-[35rem] shadow-orange-300 mb-6 lg:mb-2">
@@ -131,7 +133,6 @@ const Form = () => {
           />
         </div>
 
-        {/* Country Input */}
         <div>
           <label htmlFor="country" className="sr-only">Your Country</label>
           <input
@@ -160,7 +161,6 @@ const Form = () => {
           />
         </div>
 
-        {/* Experience Input */}
         <div>
           <label htmlFor="experience" className="sr-only">Experience</label>
           <select
@@ -178,7 +178,6 @@ const Form = () => {
           </select>
         </div>
 
-        {/* Qualification Dropdown */}
         <div>
           <label htmlFor="qualification" className="sr-only">Qualification</label>
           <select
@@ -219,7 +218,6 @@ const Form = () => {
         </button>
       </form>
 
-      {/* Success Popup */}
       {popupVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">

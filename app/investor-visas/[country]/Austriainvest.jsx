@@ -9,25 +9,25 @@ export default function AustriaInvestorVisa() {
       
 
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">💼 What is the Austria Investor Visa?</h2>
+        <h2 className="text-2xl font-semibold mb-2">What is the Austria Investor Visa?</h2>
         <div className="md:flex gap-6">
           <div className="md:w-1/2">
             <p className="mb-4">The Austria Investor Visa is tailored for high-net-worth individuals looking to contribute to the Austrian economy. It allows for establishing or expanding a business, or investing in projects that stimulate growth and job creation. Investors gain residency rights and access to the EU’s single market.</p>
           </div>
           <div className=" md:w-1/2 flex justify-center items-center">
-            <Image src="/austriainvestbg.png" alt="Austria Investor Visa" width={200} height={100} className="" />
+            <Image src="/austriainvestbg.png" alt="Austria Investor Visa" width={200} height={100} unoptimized />
           </div>
         </div>
       </div>
 
-      <h2 className="text-xl mt-4 font-semibold mb-2">📅 Austria Investor Visa Validity and Residence</h2>
+      <h2 className="text-xl mt-4 font-semibold mb-2"> Austria Investor Visa Validity and Residence</h2>
       <ul className="list-disc list-inside mb-4">
         <li>Initial Validity: Up to 12 months of residency and business rights in Austria.</li>
         <li>Renewal Options: Extendable as long as investment obligations are met.</li>
         <li>Permanent Residency: Available after 5 years of continuous stay.</li>
       </ul>
 
-      <h2 className="text-xl mt-4 font-semibold mb-2">✅ Eligibility Criteria for Austria Investor Visa</h2>
+      <h2 className="text-xl mt-4 font-semibold mb-2"> Eligibility Criteria for Austria Investor Visa</h2>
       <ul className="list-disc list-inside mb-4">
         <li>Minimum financial investment in Austrian economy (business, company, real estate).</li>
         <li>Proof of substantial personal assets and financial capability.</li>
@@ -36,7 +36,7 @@ export default function AustriaInvestorVisa() {
         <li>No criminal record.</li>
       </ul>
 
-      <h2 className="text-xl mt-4 font-semibold mb-2">📄 Required Documents for Austria Investor Visa</h2>
+      <h2 className="text-xl mt-4 font-semibold mb-2"> Required Documents for Austria Investor Visa</h2>
       <ul className="list-disc list-inside mb-4">
         <li>Valid passport (minimum 6 months validity).</li>
         <li>Investment documents and project outline.</li>
@@ -47,7 +47,7 @@ export default function AustriaInvestorVisa() {
         <li>Proof of accommodation in Austria.</li>
       </ul>
 
-      <h2 className="text-xl mt-4 font-semibold mb-2">📝 How to Apply for the Austria Investor Visa?</h2>
+      <h2 className="text-xl mt-4 font-semibold mb-2"> How to Apply for the Austria Investor Visa?</h2>
       <ol className="list-decimal list-inside mb-4">
         <li>Gather required documents.</li>
         <li>Submit application through the Austrian embassy or consulate.</li>
@@ -57,7 +57,7 @@ export default function AustriaInvestorVisa() {
         <li>Initiate business or investment activities in Austria.</li>
       </ol>
 
-      <h2 className="text-xl mt-4 font-semibold mb-2">🌟 Advantages of the Austria Investor Visa</h2>
+      <h2 className="text-xl mt-4 font-semibold mb-2"> Advantages of the Austria Investor Visa</h2>
       <ul className="list-disc list-inside mb-4">
         <li>Access to 27 Schengen countries.</li>
         <li>Stable economy with high standards of living.</li>
@@ -65,11 +65,10 @@ export default function AustriaInvestorVisa() {
         <li>Family members can be included in application.</li>
         <li>Comprehensive healthcare and education systems.</li>
       </ul>
-
-      <h2 className="text-xl mt-4 font-semibold mb-2">🏢 Why Choose Austria for Your Investment?</h2>
+      <h2 className="text-xl mt-4 font-semibold mb-2"> Why Choose Austria for Your Investment?</h2>
       <p className="mb-4">Austria provides an unmatched environment for entrepreneurs with its supportive infrastructure, transparent regulations, and investment-friendly policies. From real estate to technology, Austria offers incredible potential for global investors looking to diversify.</p>
 
-      <h2 className="text-xl mt-4 font-semibold mb-2">📞 Start Your Austria Investment Journey Today!</h2>
+      <h2 className="text-xl mt-4 font-semibold mb-2">Start Your Austria Investment Journey Today!</h2>
       <p className="mb-4">Let <span className="text-orange-500">VJC Overseas</span> help you navigate your path to Austrian residency and success. Contact us now to explore your eligibility and begin a prosperous chapter in Austria.</p>
     </div>
   );

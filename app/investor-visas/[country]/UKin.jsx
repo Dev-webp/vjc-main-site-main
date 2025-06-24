@@ -19,6 +19,7 @@ const UKInnovatorVisa = () => {
                 height={100}
                 className=""
                 priority
+                unoptimized
               />
             </div>
     

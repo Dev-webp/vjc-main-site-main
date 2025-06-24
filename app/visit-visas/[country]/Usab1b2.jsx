@@ -12,12 +12,12 @@ export default function USAB1B2Visa() {
           <p>Are you an Indian citizen planning to travel to the United States for business meetings, conferences, tourism, or to visit family and friends? The USA B1/B2 Visa is your all-access pass to experience the American dream – temporarily. At <span className="text-orange-500">VJC Overseas</span>, we help you navigate the complexities of the B1/B2 visa process with unmatched expertise and personalized guidance.</p>
           </div>
         <div className=" mt-8 md:mt-0">
-          <Image src="/b1b2usa.webp" alt="USA B1/B2 Visa" width={550} height={250} className="ml-14 shadow-md" />
+          <Image src="/b1b2usa.webp" alt="USA B1/B2 Visa" width={550} height={250} className="ml-14 shadow-md" unoptimized />
         </div>
      
 
       <section>
-        <h3 className="text-xl mt-4 mb-2 font-bold">🛂 What is a USA B1/B2 Visa?</h3>
+        <h3 className="text-xl mt-4 mb-2 font-bold"> What is a USA B1/B2 Visa?</h3>
         <p>The B1/B2 Visa is a non-immigrant, temporary visitor visa that combines:</p>
         <ul className="list-disc ml-6">
           <li><strong>B1 Visa (Business):</strong> For attending conferences, meetings, negotiations, or settling estates.</li>
@@ -27,7 +27,7 @@ export default function USAB1B2Visa() {
       </section>
 
       <section>
-        <h3 className="text-xl mt-4 mb-2 font-bold">📅 Validity & Duration</h3>
+        <h3 className="text-xl mt-4 mb-2 font-bold"> Validity & Duration</h3>
         <ul className="list-disc ml-6">
           <li>Validity: The USA B1/B2 visa for Indian citizens is typically issued for 10 years (Multiple Entry).</li>
           <li>Stay per visit: Up to 6 months per entry (subject to approval at the port of entry).</li>
@@ -36,7 +36,7 @@ export default function USAB1B2Visa() {
       </section>
 
       <section>
-        <h3 className="text-xl mt-4 mb-2 font-bold">💸 Cost of Living in the USA – Plan Smartly</h3>
+        <h3 className="text-xl mt-4 mb-2 font-bold"> Cost of Living in the USA – Plan Smartly</h3>
         <div className="bg-gray-100 p-4 rounded-lg shadow-inner">
           <table className="w-full text-left border-collapse">
             <thead>
@@ -55,22 +55,22 @@ export default function USAB1B2Visa() {
             </tbody>
           </table>
         </div>
-        <p className="text-sm mt-2">💡 Tip: Cities like New York, San Francisco, and LA are costlier. Opt for suburbs or mid-sized cities for a budget-friendly stay.</p>
+        <p className="text-sm mt-2"> Tip: Cities like New York, San Francisco, and LA are costlier. Opt for suburbs or mid-sized cities for a budget-friendly stay.</p>
       </section>
 
       <section>
-        <h3 className="text-xl mt-4 mb-2 font-bold">🌟 Why Apply for a B1/B2 Visa with VJC Overseas?</h3>
+        <h3 className="text-xl mt-4 mb-2 font-bold"> Why Apply for a B1/B2 Visa with VJC Overseas?</h3>
         <ul className="list-disc ml-6">
-          <li>✅ Expert Visa Consultation – 15+ years of success with USA visa applications</li>
-          <li>✅ Mock Interview Prep – Ace your visa interview with confidence</li>
-          <li>✅ Complete Documentation Support – Zero errors, higher approval rate</li>
-          <li>✅ Transparent Guidance – No false promises, only results</li>
-          <li>✅ Fast-Track Appointments (Subject to availability)</li>
+          <li> Expert Visa Consultation – 15+ years of success with USA visa applications</li>
+          <li> Mock Interview Prep – Ace your visa interview with confidence</li>
+          <li> Complete Documentation Support – Zero errors, higher approval rate</li>
+          <li> Transparent Guidance – No false promises, only results</li>
+          <li> Fast-Track Appointments (Subject to availability)</li>
         </ul>
       </section>
 
       <section>
-        <h3 className="text-xl mt-4 mb-2 font-bold">🧳 Who Should Apply?</h3>
+        <h3 className="text-xl mt-4 mb-2 font-bold"> Who Should Apply?</h3>
         <ul className="list-disc ml-6">
           <li>Business Professionals attending events, client meetings, or investment summits</li>
           <li>Families visiting children or relatives</li>
@@ -80,7 +80,7 @@ export default function USAB1B2Visa() {
       </section>
 
       <section>
-        <h3 className="text-xl mt-4 mb-2 font-bold">🔑 Key USA B1/B2 Visa Requirements for Indians</h3>
+        <h3 className="text-xl mt-4 mb-2 font-bold"> Key USA B1/B2 Visa Requirements for Indians</h3>
         <ul className="list-disc ml-6">
           <li>Valid Indian passport</li>
           <li>DS-160 Confirmation</li>
@@ -92,7 +92,7 @@ export default function USAB1B2Visa() {
       </section>
 
       <section>
-        <h3 className="text-xl mt-4 mb-2 font-bold">💬 Common Questions Indians Ask About the USA B1/B2 Visa</h3>
+        <h3 className="text-xl mt-4 mb-2 font-bold"> Common Questions Indians Ask About the USA B1/B2 Visa</h3>
         <ul className="list-disc ml-6">
           <li><strong>Q: Can I work in the USA on a B1/B2 visa?</strong> <br />No. This is a non-employment visa. Any paid activity in the U.S. is prohibited.</li>
           <li><strong>Q: Can I study on a B2 Visa?</strong> <br />Short-term recreational courses may be allowed, but full-time academic study is not.</li>
@@ -101,11 +101,11 @@ export default function USAB1B2Visa() {
       </section>
 
       <section className="text-center">
-        <h3 className="text-xl mt-4 mb-2 font-bold">🚀 Start Your Journey to the USA Today</h3>
+        <h3 className="text-xl mt-4 mb-2 font-bold"> Start Your Journey to the USA Today</h3>
         <p>At <span className="text-orange-500">VJC Overseas</span>, we’ve helped thousands of Indian travellers successfully obtain their USA B1/B2 Visas. Whether you're a business leader, globetrotter, or simply want to meet loved ones in the States – we’re here to help, every step of the way.</p>
-        <p className="mt-2">📞 Call Now: +91-9160449000</p>
-        <p>🌐 Visit Us: www.vjcoverseas.com</p>
-        <p className="mt-2 font-semibold">📍 Walk into your nearest VJC Overseas office today!</p>
+        <p className="mt-2"> Call Now: +91-9160449000</p>
+        <p> Visit Us: www.vjcoverseas.com</p>
+        <p className="mt-2 font-semibold"> Walk into your nearest VJC Overseas office today!</p>
       </section>
     </div>
   );

@@ -57,7 +57,7 @@ export default function HeroSection() {
               height={112} 
               priority
               unoptimized
-              className="w-[23rem] lg:w-[27rem] h-[7rem]"
+              className="w-full max-w-xs lg:max-w-md h-auto mx-auto"
             />
 
             <Slider /> 

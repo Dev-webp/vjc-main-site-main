@@ -11,7 +11,7 @@ export default function CanadaVisitVisa() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 items-center">
         <div>
           
-           <Image src="/canada-visitor-visa.jpg" alt="USA B1 Visa" width={300} height={250} className="" />
+           <Image src="/canada-visitor-visa.jpg" alt="USA B1 Visa" width={300} height={250} className="" unoptimized/>
         </div>
         <div>
           <p>
@@ -24,14 +24,14 @@ export default function CanadaVisitVisa() {
       <p> or a family visit,
             VJC Overseas simplifies the process for Indian citizens to apply for and obtain their Canada Tourist Visa
             hassle-free. </p>
-      <h2 className="text-xl mt-4 mb-2 font-semibold">✈️ What is a Canada Visit Visa?</h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> What is a Canada Visit Visa?</h2>
       <p>
         A Canada Visit Visa is a short-term entry permit that allows foreign nationals, including Indians, to enter
         Canada for tourism, family visits, or business purposes. It is typically issued for up to 6 months, but the final
         duration is at the discretion of the Canadian border officer.
       </p>
 
-      <h2 className="text-xl mt-4 mb-2 font-semibold">🔍 Key Features:</h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> Key Features:</h2>
       <ul className="list-disc list-inside">
         <li>Type: Single or Multiple Entry</li>
         <li>Validity: Up to 10 years or until passport expiry (whichever comes first)</li>
@@ -41,7 +41,7 @@ export default function CanadaVisitVisa() {
       </ul>
 
       <div className="border border-gray-300 p-4 rounded bg-gray-50 mt-4">
-        <h2 className="text-xl mb-2 font-semibold">💰 Cost of Living in Canada for Visitors</h2>
+        <h2 className="text-xl mb-2 font-semibold"> Cost of Living in Canada for Visitors</h2>
         <p>Understanding the cost of living is essential for budgeting your trip. Here’s an estimated breakdown:</p>
         <ul className="list-disc list-inside mt-2">
           <li>Accommodation (Hotel/Airbnb): ₹70,000 – ₹1,50,000</li>
@@ -51,11 +51,11 @@ export default function CanadaVisitVisa() {
           <li>Travel Insurance: ₹3,000 – ₹6,000</li>
         </ul>
         <p className="mt-2 font-semibold text-blue-700">
-          💡 Pro Tip: Opt for a travel insurance plan that covers medical expenses, trip cancellations, and baggage loss.
+           Pro Tip: Opt for a travel insurance plan that covers medical expenses, trip cancellations, and baggage loss.
         </p>
       </div>
 
-      <h2 className="text-xl mt-4 mb-2 font-semibold">📄 Canada Visit Visa Requirements for Indian Citizens</h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> Canada Visit Visa Requirements for Indian Citizens</h2>
       <ul className="list-disc list-inside">
         <li>A valid Indian passport</li>
         <li>Proof of funds (bank statements, tax returns)</li>
@@ -67,7 +67,7 @@ export default function CanadaVisitVisa() {
         <li>Completed application forms (IMM 5257 & supporting documents)</li>
       </ul>
 
-      <h2 className="text-xl mt-4 mb-2 font-semibold">💼 Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Canada Tourist Visa?</h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Canada Tourist Visa?</h2>
       <p>
         At VJC Overseas, we understand that international travel involves careful planning. Our experienced visa
         consultants assist you at every step – from documentation to visa interview prep.
@@ -80,12 +80,12 @@ export default function CanadaVisitVisa() {
         <li>High success rate for Canada tourist visas from India</li>
       </ul>
 
-      <h2 className="text-xl mt-4 mb-2 font-semibold">🔑 Frequently Asked Questions (FAQ)</h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> Frequently Asked Questions (FAQ)</h2>
       <p><strong>Q. Can I extend my Canada Visit Visa?</strong><br />Yes, you can apply for an extension while you’re in Canada, ideally 30 days before your status expires.</p>
       <p><strong>Q. How much bank balance is required for a Canada tourist visa from India?</strong><br />Generally, a minimum of ₹3–5 lakhs should be shown, but the amount may vary depending on your trip duration and expenses.</p>
       <p><strong>Q. Is travel insurance mandatory?</strong><br />Yes, though not strictly mandatory for all, it is highly recommended, especially for medical emergencies.</p>
 
-      <h2 className="text-xl mt-4 mb-2 font-semibold">🌎 Top Attractions to Explore in Canada</h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> Top Attractions to Explore in Canada</h2>
       <ul className="list-disc list-inside">
         <li>Niagara Falls – A natural wonder at the US-Canada border</li>
         <li>Banff National Park – For breathtaking mountain views</li>
@@ -94,15 +94,15 @@ export default function CanadaVisitVisa() {
         <li>Vancouver – Coastal beauty and urban buzz</li>
       </ul>
 
-      <h2 className="text-xl mt-4 mb-2 font-semibold">📞 Start Your Canada Journey with <span className="text-orange-500">VJC Overseas</span></h2>
+      <h2 className="text-xl mt-4 mb-2 font-semibold"> Start Your Canada Journey with <span className="text-orange-500">VJC Overseas</span></h2>
       <p>
         Don’t let paperwork and process delays slow down your travel dreams. VJC Overseas ensures a smooth, transparent,
         and success-oriented visa process for Indian citizens.
       </p>
       <p>
-        📍 Visit us at your nearest branch or <br />
-        📞 Call now for a FREE consultation: <a href="tel:+919160449000" className="text-blue-600 underline">+91-9160449000</a> <br />
-        🌐 Or apply online at: <a href="https://www.vjcoverseas.com" className="text-blue-600 underline">www.vjcoverseas.com</a>
+         Visit us at your nearest branch or <br />
+         Call now for a FREE consultation: <a href="tel:+919160449000" className="text-blue-600 underline">+91-9160449000</a> <br />
+        Or apply online at: <a href="https://www.vjcoverseas.com" className="text-blue-600 underline">www.vjcoverseas.com</a>
       </p>
     </div>
   );

@@ -46,7 +46,7 @@ const VisitVisas = () => {
           name="description"
           content="Explore the world with VJC Overseas – Your trusted partner for Visit Visa services from India."
         />
-        <link rel="canonical" href="https://www.vjcoverseas.com/visitvisas" />
+        <link rel="canonical" href="https://www.vjcoverseas.com/visit-visas" />
       </Head>
 
       <div className="bg-white text-black px-4 sm:px-6 md:px-12 py-8">
@@ -93,6 +93,7 @@ const VisitVisas = () => {
                 width={400}
                 height={200}
                 className="object-cover rounded-lg"
+                unoptimized
               />
             </div>
           </div>

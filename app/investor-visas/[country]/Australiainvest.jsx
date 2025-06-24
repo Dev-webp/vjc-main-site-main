@@ -23,7 +23,7 @@ export default function AustraliaInvestorVisa() {
             alt="Australia Investment Visa"
             width={400}
             height={300}
-            className=""
+            unoptimized
           />
         </div>
       </div>

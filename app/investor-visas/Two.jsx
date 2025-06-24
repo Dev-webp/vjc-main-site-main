@@ -131,6 +131,7 @@ const Migrate = () => {
         height={400}
         className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-full  "
         priority
+        unoptimized
       />
     </div>
   </div>

@@ -9,7 +9,7 @@ export default function AustraliaVisitVisa() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 items-center">
         <div>
          
-          <Image src="/Australia-Visit-Visa.jpg" alt="USA B1 Visa" width={250} height={200} className="rounded-lg" />
+          <Image src="/Australia-Visit-Visa.jpg" alt="USA B1 Visa" width={250} height={200} className="rounded-lg" unoptimized/>
         </div>
         <div>
           <p>

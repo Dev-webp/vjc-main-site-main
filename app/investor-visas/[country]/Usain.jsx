@@ -20,6 +20,7 @@ const USAInvestorVisa = () => {
             height={100}
             className=""
             priority
+            unoptimized
           />
         </div>
 

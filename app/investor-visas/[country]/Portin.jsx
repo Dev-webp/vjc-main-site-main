@@ -17,6 +17,7 @@ const PortugalInvestorVisa = () => {
                     height={100}
                     className=""
                     priority
+                    unoptimized
                   />
                 </div>
         
