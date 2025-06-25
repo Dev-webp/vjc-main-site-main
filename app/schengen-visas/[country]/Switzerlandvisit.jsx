@@ -17,6 +17,8 @@ const Switzerlandvisit = () => {
                                                                                 width={500} // Replace with your image's actual width
                                                                                 height={300}
                                                                                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                                                unoptimized
+
                                                                               />
                                                                             </div>
           <p>To enjoy all that Switzerland has to offer, you will need a valid Switzerland Visit/Tourist Visa. Here at <strong>VJC Overseas</strong>, we provide you with expert guidance and assistance to ensure your visa application process is smooth, simple, and hassle-free.</p>

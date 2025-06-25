@@ -272,6 +272,7 @@ const BookFlipAnimation = () => {
                 width={350}
                 height={450}
                 className="rounded-lg shadow-lg object-cover"
+                unoptimized
               />
               <p className="mt-4 text-gray-600 text-sm">{sample.caption}</p>
             </div>

@@ -15,7 +15,7 @@ export default function LuxembourgTouristVisa() {
       <h1 className="flex flex-col items-center text-lg sm:text-2xl md:text-2xl font-bold mb-6 text-center">
         <span>Luxembourg Tourist Visa from India – <span className="text-orange-500">VJC Overseas</span></span>
       </h1>
-      <h2 className="text-xl font-bold mt-4 mb-2">✨ Discover Luxembourg: Europe's Hidden Gem</h2>
+      <h2 className="text-xl font-bold mt-4 mb-2"> Discover Luxembourg: Europe's Hidden Gem</h2>
       {/* Introduction Section */}
       <div className="grid md:grid-cols-2 gap-10 items-center">
         {/* Left Text */}
@@ -34,12 +34,13 @@ export default function LuxembourgTouristVisa() {
             width={500}
             height={700}
             className="object-cover shadow-lg"
+            unoptimized
           />
         </div>
       </div>
       <p>Whether you're exploring the capital, Luxembourg City, or the picturesque village of Vianden, Luxembourg promises an unforgettable experience.</p>
       {/* Key Details */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">🛂 Luxembourg Tourist Visa: Key Details</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Luxembourg Tourist Visa: Key Details</h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Visa Type:</strong> Short-Term Schengen Visa</li>
         <li><strong>Validity:</strong> Up to 90 days within a 180-day period</li>
@@ -47,7 +48,7 @@ export default function LuxembourgTouristVisa() {
       </ul>
 
       {/* Visa Fees */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">💰 Luxembourg Visa Fees for Indian Citizens</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Luxembourg Visa Fees for Indian Citizens</h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Adults (12 years & above):</strong> €90 (~₹8,114)</li>
         <li><strong>Children (6–11 years):</strong> €45 (~₹4,057)</li>
@@ -56,7 +57,7 @@ export default function LuxembourgTouristVisa() {
       <p className="italic mb-6">Note: Fees are subject to change based on exchange rates and embassy policies.</p>
 
       {/* Required Documents */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">📄 Required Documents</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Required Documents</h2>
       <ul className="list-disc list-inside mb-6">
         <li>Completed Visa Application Form: Signed and dated</li>
         <li>Passport: Valid for at least 3 months beyond intended stay, with two blank pages</li>
@@ -72,7 +73,7 @@ export default function LuxembourgTouristVisa() {
       <p className="italic mb-6">Note: All documents must be in English or accompanied by certified translations.</p>
 
       {/* Must-See Places */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">🗺️ Must-See Places in Luxembourg</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Must-See Places in Luxembourg</h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Luxembourg City:</strong> Explore the UNESCO-listed Old Town, Bock Casemates, and Grand Ducal Palace.</li>
         <li><strong>Vianden Castle:</strong> A stunning hilltop castle offering panoramic views.</li>
@@ -82,7 +83,7 @@ export default function LuxembourgTouristVisa() {
       </ul>
 
       {/* Tips for Smooth Visa Application */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">📅 Tips for a Smooth Visa Application</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Tips for a Smooth Visa Application</h2>
       <ul className="list-disc list-inside mb-6">
         <li>Apply Early: Submit at least 4–6 weeks before your travel date.</li>
         <li>Complete Documentation: Incomplete applications may cause delays.</li>
@@ -91,7 +92,7 @@ export default function LuxembourgTouristVisa() {
       </ul>
 
       {/* Application Process */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">🛂 Application Process</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Application Process</h2>
       <ul className="list-disc list-inside mb-6">
         <li>Schedule an Appointment: Through the Luxembourg Embassy or VFS Global.</li>
         <li>Prepare Documents: As per the official checklist.</li>
@@ -101,11 +102,11 @@ export default function LuxembourgTouristVisa() {
       </ul>
 
       {/* Why Choose */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">🌐 Why Choose VJC Overseas?</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Why Choose VJC Overseas?</h2>
       <ul className="list-disc list-inside mb-6">
-        <li>✅ Expert Guidance and Personalized Assistance</li>
-        <li>✅ Timely Updates and Latest Visa Information</li>
-        <li>✅ Comprehensive Services from Document Preparation to Appointment Scheduling</li>
+        <li> Expert Guidance and Personalized Assistance</li>
+        <li> Timely Updates and Latest Visa Information</li>
+        <li> Comprehensive Services from Document Preparation to Appointment Scheduling</li>
       </ul>
 
       {/* Contact CTA */}

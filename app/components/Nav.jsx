@@ -30,7 +30,7 @@ const Navbar = () => {
     { name: "Investor Visas", path: "/investor-visas" },
     { name: "Schengen Visas", path: "/schengen-visas" },
     { name: "Resume Marketing", path: "/resume-marketing" },
-    { name: "Coaching/Training", path: "/coaching" },
+    { name: "Coaching/Training", path: "/coaching-training" },
     { name: "Tours/Ticketing", path: "/tours-ticketing" },
 
   ];
@@ -199,12 +199,12 @@ const Navbar = () => {
   ];
 
   const coachingSubPages = [
-    { name: "IELTS", path: "/coaching/ielts" },
-    { name: "GMAT", path: "/coaching/gmat" },
-    { name: "GRE", path: "/coaching/gre" },
-    { name: "DUOLINGO", path: "/coaching/duolingo" },
-    { name: "PTE", path: "/coaching/pte" },
-    { name: "TOEFL", path: "/coaching/toefl" },
+    { name: "IELTS", path: "/coaching-training/ielts" },
+    { name: "GMAT", path: "/coaching-training/gmat" },
+    { name: "GRE", path: "/coaching-training/gre" },
+    { name: "DUOLINGO", path: "/coaching-training/duolingo" },
+    { name: "PTE", path: "/coaching-training/pte" },
+    { name: "TOEFL", path: "/coaching-training/toefl" },
   ];
 
   const workabroadSubPages = [

@@ -18,6 +18,8 @@ const Greecevisit = () => {
                                                 width={500} // Replace with your image's actual width
                                                 height={300}
                                                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                unoptimized
+
                                               />
                                             </div>
   <p class="mb-4">Whether you're planning a short stay for leisure, sightseeing, or business, our team provides expert guidance on the visa process. Here’s everything you need to know about the Greece Visit/Tourist Visa, including essential documents, eligibility criteria, and the visa application process.</p>

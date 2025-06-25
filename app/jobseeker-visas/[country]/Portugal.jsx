@@ -43,6 +43,7 @@ const PortugalJobseekerVisa = () => {
       height={400}
       className="w-full object-cover"
       priority
+      unoptimized
     />
   </div>
 </div>

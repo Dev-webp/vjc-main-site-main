@@ -39,13 +39,13 @@ Don't let the visa interview</h2>
       {/* 6 Images Grid */}
       {/* Horizontal Scrollable Image Row */}
 <div className="flex gap-0 overflow-x-auto mt-6 scrollbar-hide px-4 md:justify-center">
-  <Image src="/germany.jpg" alt="Image 1" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" />
-  <Image src="/canada.webp" alt="Image 2" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" />
-  <Image src="/hk.jpg" alt="Image 3" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" />
-  <Image src="/australia.jpg" alt="Image 4" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" />
-  <Image src="/uk-flag.png" alt="Image 5" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" />
-  <Image src="/uaebgimgnew.jpg" alt="Image 6" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" />
-  <Image src="/usapr.jpg" alt="Image 7" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" />
+  <Image src="/germany.jpg" alt="Image 1" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" unoptimized />
+  <Image src="/canada.webp" alt="Image 2" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" unoptimized />
+  <Image src="/hk.jpg" alt="Image 3" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" unoptimized/>
+  <Image src="/australia.jpg" alt="Image 4" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" unoptimized />
+  <Image src="/uk-flag.png" alt="Image 5" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" unoptimized />
+  <Image src="/uaebgimgnew.jpg" alt="Image 6" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" unoptimized/>
+  <Image src="/usapr.jpg" alt="Image 7" width={200} height={200} className="w-40 h-40 object-cover flex-shrink-0" unoptimized />
 </div>
 
 
@@ -99,32 +99,32 @@ Don't let the visa interview</h2>
    
 <div className="flex flex-col gap-4 w-full max-w-sm">
   <div className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-blue-700">
-    <Link href="/coaching/ielts" className="block w-full text-center">
+    <Link href="/coaching-training/ielts" className="block w-full text-center">
       IELTS
     </Link>
   </div>
   <div className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-green-700">
-    <Link href="/coaching/pte" className="block w-full text-center">
+    <Link href="/coaching-training/pte" className="block w-full text-center">
       PTE
     </Link>
   </div>
   <div className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-red-700">
-    <Link href="/coaching/gre" className="block w-full text-center">
+    <Link href="/coaching-training/gre" className="block w-full text-center">
       GRE
     </Link>
   </div>
   <div className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-yellow-600">
-    <Link href="/coaching/gmat" className="block w-full text-center">
+    <Link href="/coaching-training/gmat" className="block w-full text-center">
       GMAT
     </Link>
   </div>
   <div className="bg-gradient-to-r from-orange-600 to-gray-800 text-white py-2 px-4 rounded-lg w-full hover:bg-purple-700">
-    <Link href="/coaching/toefl" className="block w-full text-center">
+    <Link href="/coaching-training/toefl" className="block w-full text-center">
       TOEFL
     </Link>
   </div>
   <div className="bg-gradient-to-r from-gray-800 to-orange-600 text-white py-2 px-4 rounded-lg w-full hover:bg-gray-900">
-    <Link href="/coaching/duolingo" className="block w-full text-center">
+    <Link href="/coaching-training/duolingo" className="block w-full text-center">
       DUOLINGO
     </Link>
   </div>

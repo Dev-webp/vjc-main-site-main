@@ -41,7 +41,7 @@ const visaData = [
 const defaultVisa = {
   name: "Permanent Residency Visa",
   path: "/Jobseeker",
-  image: "/.jpg",
+  image: "/1.jpg",
 };
 
 const Migrate = () => {

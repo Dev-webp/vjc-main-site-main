@@ -19,6 +19,7 @@ const Germanyvisit = () => {
                                                 width={500} // Replace with your image's actual width
                                                 height={300}
                                                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                unoptimized
                                               />
                                             </div>
           <p>A Germany Visit/Tourist Visa is a short-term visa (Schengen visa) that allows non-EU citizens to stay in Germany for a period of up to 90 days within a 180-day timeframe. This visa is primarily for tourism, family visits, business trips, or cultural events. As part of the Schengen Area, a Germany Tourist Visa also allows you to travel freely within other Schengen countries for the duration of your stay.</p>

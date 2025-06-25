@@ -38,32 +38,32 @@ const Migrate = () => {
   {/* Left Section - Buttons + Form */}
   <div className="w-full md:w-1/3 space-y-16">
   <div className="grid grid-cols-0 flex justify-center md:grid-cols-1 gap-6">
-      <Link href="/coaching/ielts">
+      <Link href="/coaching-training/ielts">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
         IELTS
         </button>
       </Link>
-      <Link href="/coaching/pte">
+      <Link href="/coaching-training/pte">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           PTE
         </button>
       </Link>
-      <Link href="/coaching/gre">
+      <Link href="/coaching-training/gre">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           GRE
         </button>
       </Link>
-      <Link href="/coaching/gmat">
+      <Link href="/coaching-training/gmat">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           GMAT
         </button>
       </Link>
-      <Link href="/coaching/toefl">
+      <Link href="/coaching-training/toefl">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           TOEFL
         </button>
       </Link>
-      <Link href="/coaching/duolingo">
+      <Link href="/coaching-training/duolingo">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           DUOLINGO
         </button>
@@ -83,8 +83,8 @@ const Migrate = () => {
 
           {/* Two Side-by-Side Images */}
           <div className="flex flex-col md:flex-row justify-between gap-4 mt-6">
-            <Image src="/dmwork.jpg" alt="Sample 1" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" />
-            <Image src="/gtvimage.jpg" alt="Sample 2" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" />
+            <Image src="/dmwork.jpg" alt="Sample 1" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" unoptimized/>
+            <Image src="/gtvimage.jpg" alt="Sample 2" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" unoptimized />
           </div>
         </div>
       </div>

@@ -20,6 +20,7 @@ const Liechtensteinvisit = () => {
                                                                       width={500} // Replace with your image's actual width
                                                                       height={300}
                                                                       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                                      unoptimized
                                                                     />
                                                                   </div>
   <p class="mb-4">A Liechtenstein Visit/Tourist Visa is a short-term visa that allows travelers to explore the country for tourism, business, or family visits. As Liechtenstein is part of the Schengen Area, obtaining a Schengen visa gives you access to not only Liechtenstein but also 26 other European countries. Whether you're planning to visit for a holiday, attend an event, or simply</p>

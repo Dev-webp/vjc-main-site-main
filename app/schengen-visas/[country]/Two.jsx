@@ -74,8 +74,8 @@ const visaData = [
 
 const defaultVisa = {
   name: "Study Abroad with VJC",
-  path: "/studyabroad",
-  image: "/study-default.jpg",
+  path: "/study-abroad",
+
 };
 
 const Migrate = () => {
@@ -102,6 +102,7 @@ const Migrate = () => {
       {/* ===== TOP SECTION ===== */}
       <div
         className="relative w-full min-h-[90vh] bg-cover bg-center"
+      
         style={{ backgroundImage: `url(${selectedVisa.image})` }}
       >
         <div className="absolute inset-0 bg-black/50 z-0" />

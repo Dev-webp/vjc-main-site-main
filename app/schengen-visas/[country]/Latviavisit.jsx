@@ -21,6 +21,7 @@ const Latviavisit = () => {
                                                                     width={500} // Replace with your image's actual width
                                                                     height={300}
                                                                     className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                                    unoptimized
                                                                   />
                                                                 </div>
         <p>A Latvia Visit/Tourist Visa allows travelers to explore Latvia for leisure, tourism, or to visit friends and family. As a Schengen Area member, Latvia permits short stays of up to 90 days within a 180-day period for tourism purposes. This visa gives you the flexibility to travel to Latvia as well as other countries in the Schengen Zone, making it a perfect option for those looking to explore multiple European destinations.</p>

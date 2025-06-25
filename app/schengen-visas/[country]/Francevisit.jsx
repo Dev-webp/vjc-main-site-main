@@ -18,6 +18,7 @@ const Francevisit = () => {
                                       width={500} // Replace with your image's actual width
                                       height={300}
                                       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                      unoptimized
                                     />
                                   </div>
           <p>The France Visit/Tourist Visa is a short-stay Schengen visa that allows travellers to visit France for tourism purposes. Whether you're planning a cultural exploration, a leisure trip, or even a short family visit, this visa grants you the opportunity to experience the best of France for up to 90 days within a 180-day period.</p>

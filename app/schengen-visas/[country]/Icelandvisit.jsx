@@ -18,6 +18,8 @@ const Icelandvisit = () => {
                                                       width={500} // Replace with your image's actual width
                                                       height={300}
                                                       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
+                                                      unoptimized
+
                                                     />
                                                   </div>
     <p>An Iceland Visit Visa, also known as a Schengen Visa, allows you to travel to Iceland for tourism, family visits, business meetings, or short stays of up to 90 days within a 180-day period. As a member of the Schengen Area, Iceland shares visa policies with 26 European countries, making it easy for travelers to explore multiple destinations with a single visa.</p>

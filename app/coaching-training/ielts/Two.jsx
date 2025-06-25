@@ -10,11 +10,11 @@ const Migrate = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
-    { question: "What is the GMAT exam, and why is it important?", answer: "The GMAT (Graduate Management Admission Test) is a standardized test required for admission to top business schools worldwide. It assesses analytical writing, quantitative, verbal, and integrated reasoning skills." },
-    { question: "How does VJC Overseas help with GMAT preparation?", answer: "We offer expert coaching, structured study plans, practice tests, and personalized strategies to help you achieve a high GMAT score." },
-    { question: "How long does it take to prepare for the GMAT exam?", answer: "Preparation time varies, but with our targeted coaching, most students improve within 8 to 12 weeks based on their initial proficiency level." },
-    { question: "What is the format of the GMAT exam?", answer: "The GMAT consists of four sections: Analytical Writing Assessment, Integrated Reasoning, Quantitative, and Verbal. The total exam duration is about 3 hours and 7 minutes." },
-    { question: "How do I enroll in GMAT coaching at VJC Overseas?", answer: "You can contact us via phone or email, schedule an initial assessment, and start your personalized GMAT training with expert guidance." }
+    { question: "What is the IELTS exam, and why do I need it?", answer: "IELTS (International English Language Testing System) is a globally recognized test for study, work, and migration purposes. It assesses your English proficiency in Listening, Reading, Writing, and Speaking." },
+    { question: "How does VJC Overseas help with IELTS preparation?", answer: "We provide expert training, study materials, mock tests, and personalized strategies to help you achieve your desired IELTS score." },
+    { question: "What are the different types of IELTS exams, and which one should I take?", answer: "There are two types: IELTS Academic (for study abroad) and IELTS General Training (for work and migration). We guide you in choosing the right one." },
+    { question: "How long does it take to prepare for the IELTS exam?", answer: "The preparation time depends on your current level, but with our structured coaching, most students improve within 4 to 8 weeks." },
+    { question: "How do I enroll in IELTS coaching at VJC Overseas?", answer: "Contact us via phone or email, take a free assessment, and start your customized IELTS training with us." }
   ];
 
   const toggleFAQ = (index) => {
@@ -22,14 +22,14 @@ const Migrate = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="max-w-full overflow-hidden">
       {/* Top Banner */}
       <div className="relative w-full h-72">
         <Image src="/ieltsimg.avif" alt="IELTS Coaching" layout="fill" objectFit="cover" className="w-full" />
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute left-12 bottom-20 text-white">
-          <h1 className="text-3xl font-bold">GMAT Coaching</h1>
-          <p><Link href="/">Home</Link> &gt; GMAT Coaching</p>
+          <h1 className="text-3xl font-bold">IELTS Coaching</h1>
+          <p><Link href="/">Home</Link> &gt; IELTS Coaching</p>
         </div>
       </div>
 
@@ -37,33 +37,33 @@ const Migrate = () => {
       <div className="flex flex-col md:flex-row w-full px-4 md:px-8 mt-6">
   {/* Left Section - Buttons + Form */}
   <div className="w-full md:w-1/3 space-y-16">
-  <div className="grid grid-cols-0 flex justify-center md:grid-cols-1 gap-6">
-      <Link href="/coaching/ielts">
+    <div className="grid grid-cols-0 flex justify-center md:grid-cols-1 gap-6">
+      <Link href="/coaching-training/ielts">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
         IELTS
         </button>
       </Link>
-      <Link href="/coaching/pte">
+      <Link href="/coaching-training/pte">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           PTE
         </button>
       </Link>
-      <Link href="/coaching/gre">
+      <Link href="/coaching-training/gre">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           GRE
         </button>
       </Link>
-      <Link href="/coaching/gmat">
+      <Link href="/coaching-training/gmat">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           GMAT
         </button>
       </Link>
-      <Link href="/coaching/toefl">
+      <Link href="/coaching-training/toefl">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           TOEFL
         </button>
       </Link>
-      <Link href="/coaching/duolingo">
+      <Link href="/coaching-training/duolingo">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           DUOLINGO
         </button>
@@ -83,8 +83,8 @@ const Migrate = () => {
 
           {/* Two Side-by-Side Images */}
           <div className="flex flex-col md:flex-row justify-between gap-4 mt-6">
-            <Image src="/dmwork.jpg" alt="Sample 1" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" />
-            <Image src="/gtvimage.jpg" alt="Sample 2" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" />
+            <Image src="/dmwork.jpg" alt="Sample 1" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" unoptimized />
+            <Image src="/gtvimage.jpg" alt="Sample 2" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" unoptimized />
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@ const ServicesDec = () => {
       icon: <FaMapMarkerAlt />, title: "Visit Visa/Dependent Visa", content: "Visit and dependent visa processing across the globe in a matter of days.", image: "/Visit Visa.png", link: "/visit-visas",
     },
     {
-      icon: <FaChalkboardTeacher />, title: "Coaching", content: "Get a high score with guidance from our certified English language specialists.", image: "/33.png", link: "/coaching",
+      icon: <FaChalkboardTeacher />, title: "Coaching", content: "Get a high score with guidance from our certified English language specialists.", image: "/33.png", link: "/coaching-training",
     },
     {
       icon: <FaMoneyCheckAlt />, title: "Investor Visa", content: "Work With Us For Stress Free Processing Of Investor Visa To Top European Nations.", image: "/Investor Visa.png", link: "/investor-visas",

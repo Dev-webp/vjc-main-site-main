@@ -34,6 +34,7 @@ export default function NetherlandsTouristVisa() {
             width={500}
             height={700}
             className="object-cover  shadow-lg"
+            unoptimized
           />
         </div>
       </div>
@@ -45,13 +46,13 @@ export default function NetherlandsTouristVisa() {
       </p>
 
       {/* Visa Validity */}
-      <h2 className="text-xl font-semibold mt-4 mb-2">✅ Visa Validity</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2"> Visa Validity</h2>
       <p className="mb-6">
         Short-Stay Visa (Type C): Valid for up to 90 days within a 180-day period. Single-entry / Multiple-entry options available based on purpose and travel history.
       </p>
 
       {/* Visa Fees */}
-      <h2 className="text-xl font-semibold mt-4 mb-2">💶 Netherlands Visa Fees</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2"> Netherlands Visa Fees</h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Adults (12 years and above):</strong> €80 (~₹7,200)</li>
         <li><strong>Children (6-11 years):</strong> €40 (~₹3,600)</li>
@@ -59,8 +60,8 @@ export default function NetherlandsTouristVisa() {
       </ul>
       <p className="mb-6 italic">Note: VFS service charges and courier fees may apply additionally.</p>
 
-      {/* Required Documents */}
-      <h2 className="text-xl font-semibold mt-4 mb-2">📑 Required Documents for Netherlands Tourist Visa</h2>
+    
+      <h2 className="text-xl font-semibold mt-4 mb-2"> Required Documents for Netherlands Tourist Visa</h2>
       <ul className="list-disc list-inside mb-6">
         <li>Valid Passport (Minimum 3 months validity beyond return date, at least 2 blank pages)</li>
         <li>Visa Application Form (Duly filled and signed)</li>
@@ -75,7 +76,7 @@ export default function NetherlandsTouristVisa() {
       </ul>
 
       {/* Top Places to Visit */}
-      <h2 className="text-xl font-semibold mt-4 mb-2">🌍 Top Places to Visit in the Netherlands</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2"> Top Places to Visit in the Netherlands</h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Amsterdam:</strong> Explore the world-famous canals, Rijksmuseum, Anne Frank House, and Van Gogh Museum.</li>
         <li><strong>Keukenhof Gardens:</strong> A springtime paradise of over 7 million tulips in bloom.</li>
@@ -88,13 +89,13 @@ export default function NetherlandsTouristVisa() {
       </ul>
 
       {/* Why Choose */}
-      <h2 className="text-xl font-semibold mt-4 mb-2">🛫 Why Choose VJC Overseas for Your Netherlands Visa?</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2"> Why Choose VJC Overseas for Your Netherlands Visa?</h2>
       <ul className="list-disc list-inside mb-6">
-        <li>✅ Expert Visa Assistance</li>
-        <li>✅ End-to-End Documentation Support</li>
-        <li>✅ Visa Interview Guidance</li>
-        <li>✅ Proven Track Record with High Approval Rates</li>
-        <li>✅ Transparent Process & Timely Updates</li>
+        <li> Expert Visa Assistance</li>
+        <li> End-to-End Documentation Support</li>
+        <li> Visa Interview Guidance</li>
+        <li> Proven Track Record with High Approval Rates</li>
+        <li> Transparent Process & Timely Updates</li>
       </ul>
 
       {/* Contact CTA */}

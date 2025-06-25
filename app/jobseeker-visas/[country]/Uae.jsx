@@ -16,6 +16,7 @@ const UAEJobseekerVisa = () => {
             height={60}
             className="object-contain"
             priority
+            unoptimized
           />
         </div>
       </div>
@@ -113,6 +114,7 @@ const UAEJobseekerVisa = () => {
             height={400}
             className="w-full object-cover"
             priority
+            unoptimized
           />
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function GermanyStudyServices() {
 
         {/* Heading */}
         <div className="text-center" data-aos="fade-down">
-          <h2 className="text-4xl font-bold mb-4">Our GERMANY Study Services</h2>
+          <h2 className="text-4xl font-bold mb-4">Our Canada Study Services</h2>
           <p className="text-lg text-gray-800">From admission to arrival – we've got you covered.</p>
         </div>
 
@@ -39,11 +39,11 @@ export default function GermanyStudyServices() {
           {/* Bullet Points */}
           <div className="lg:w-2/3 w-full space-y-6 text-black">
             {[
-              "Student Visa Types: Understand the critical difference between an Applicant Visa (Visum zur Studienbewerbung) and a Student Visa (Visum zu Studienzwecken). The Applicant Visa is ideal if you’re still awaiting admission confirmation, giving you time in Germany to attend interviews or entrance exams. Once admitted, you can convert it into a full Student Visa without leaving the country.",
+              "Student Visa Types: Understand the critical difference between an Applicant Visa (Visum zur Studienbewerbung) and a Student Visa (Visum zu Studienzwecken). The Applicant Visa is ideal if you’re still awaiting admission confirmation, giving you time in canada to attend interviews or entrance exams. Once admitted, you can convert it into a full Student Visa without leaving the country.",
               "Blocked Account Setup: Guidance on opening a mandatory blocked account with the required balance for visa approval.",
               "Document Preparation: From compiling your university admission letter, language proficiency certificates (IELTS/TestDaF), and valid passport to arranging health insurance, CV, and motivation letter – we walk you through each step, ensuring zero document errors or omissions that could delay your visa approval.",
               "Interview Preparation: Get ready for your visa interview with mock sessions led by expert counselors.",
-              "Post-Arrival Support: Registration, accommodation, and orientation guidance once you land in Germany."
+              "Post-Arrival Support: Registration, accommodation, and orientation guidance once you land in Canada."
             ].map((text, index) => (
               <div key={index} className="flex items-start gap-4" data-aos="fade-right" data-aos-delay={index * 100}>
                 <div className="text-orange-500 text-2xl mt-1">
@@ -78,10 +78,10 @@ export default function GermanyStudyServices() {
             className="relative z-10 text-center p-6 sm:p-10"
           >
             <h3 className="text-3xl font-bold text-white mb-2">
-              Start Your German Education Journey
+              Start Your canada Education Journey
             </h3>
             <p className="text-white text-1sm max-w-3xl mx-auto mb-6">
-              Germany offers world-class education with low or no tuition fees. Let VJC Overseas simplify your journey from application to arrival. Get expert guidance and visa support today!
+              canada offers world-class education with low or no tuition fees. Let VJC Overseas simplify your journey from application to arrival. Get expert guidance and visa support today!
             </p>
 
             <Link href="/assessment">

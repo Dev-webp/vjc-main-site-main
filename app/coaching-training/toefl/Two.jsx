@@ -10,11 +10,11 @@ const Migrate = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
-    { question: "What is the PTE Academic exam, and why is it important?", answer: "PTE Academic is a computer-based English proficiency test accepted by universities and immigration authorities worldwide." },
-    { question: "How can VJC Overseas help me prepare for the PTE exam?", answer: "We offer expert coaching, practice tests, and personalized strategies to help you achieve your target PTE score." },
-    { question: "What are the benefits of joining PTE coaching at VJC Overseas?", answer: "Our coaching includes experienced trainers, flexible schedules, mock tests, and customized study plans." },
-    { question: "How long does it take to prepare for the PTE exam?", answer: "Preparation time varies, but with our structured coaching, most students improve within 4 to 6 weeks." },
-    { question: "How do I enroll in PTE coaching at VJC Overseas?", answer: "Contact us via phone or email, take an initial assessment, and start your customized PTE training." }
+    { question: "What is the TOEFL exam, and why is it important?", answer: "TOEFL (Test of English as a Foreign Language) is a globally recognized English proficiency test required for admission to universities and colleges in English-speaking countries. It assesses your skills in reading, listening, speaking, and writing." },
+    { question: "How can VJC Overseas help me prepare for the TOEFL exam?", answer: "We offer expert coaching, personalized study plans, practice tests, and proven strategies to help you achieve a high TOEFL score." },
+    { question: "What are the benefits of joining TOEFL coaching at VJC Overseas?", answer: "Our TOEFL coaching includes experienced trainers, flexible schedules, mock tests, interactive practice sessions, and one-on-one guidance to improve your test performance." },
+    { question: "How long does it take to prepare for the TOEFL exam?", answer: "The preparation time varies, but with our structured coaching, most students improve within 4 to 8 weeks, depending on their current English proficiency." },
+    { question: "How do I enroll in TOEFL coaching at VJC Overseas?", answer: "Contact us via phone, email, or visit our center, take a free assessment, and start your customized TOEFL training with expert guidance." }
   ];
 
   const toggleFAQ = (index) => {
@@ -28,8 +28,8 @@ const Migrate = () => {
         <Image src="/ieltsimg.avif" alt="IELTS Coaching" layout="fill" objectFit="cover" className="w-full" />
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute left-12 bottom-20 text-white">
-          <h1 className="text-3xl font-bold">PTE Coaching</h1>
-          <p><Link href="/">Home</Link> &gt; PTE Coaching</p>
+          <h1 className="text-3xl font-bold">TOEFL Coaching</h1>
+          <p><Link href="/">Home</Link> &gt; TOEFL Coaching</p>
         </div>
       </div>
 
@@ -37,33 +37,33 @@ const Migrate = () => {
       <div className="flex flex-col md:flex-row w-full px-4 md:px-8 mt-6">
   {/* Left Section - Buttons + Form */}
   <div className="w-full md:w-1/3 space-y-16">
-    <div className="grid grid-cols-0 flex justify-center md:grid-cols-1 gap-6">
-      <Link href="/coaching/ielts">
+  <div className="grid grid-cols-0 flex justify-center md:grid-cols-1 gap-6">
+      <Link href="/coaching-training/ielts">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
         IELTS
         </button>
       </Link>
-      <Link href="/coaching/pte">
+      <Link href="/coaching-training/pte">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           PTE
         </button>
       </Link>
-      <Link href="/coaching/gre">
+      <Link href="/coaching-training/gre">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           GRE
         </button>
       </Link>
-      <Link href="/coaching/gmat">
+      <Link href="/coaching-training/gmat">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           GMAT
         </button>
       </Link>
-      <Link href="/coaching/toefl">
+      <Link href="/coaching-training/toefl">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           TOEFL
         </button>
       </Link>
-      <Link href="/coaching/duolingo">
+      <Link href="/coaching-training/duolingo">
         <button className="w-52 md:w-80 bg-gradient-to-r from-white to-orange-400 border border-orange-600 text-black p-2 rounded-lg hover:bg-gray-700 hover:text-white">
           DUOLINGO
         </button>
@@ -83,8 +83,8 @@ const Migrate = () => {
 
           {/* Two Side-by-Side Images */}
           <div className="flex flex-col md:flex-row justify-between gap-4 mt-6">
-            <Image src="/dmwork.jpg" alt="Sample 1" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" />
-            <Image src="/gtvimage.jpg" alt="Sample 2" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" />
+            <Image src="/dmwork.jpg" alt="Sample 1" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" unoptimized />
+            <Image src="/gtvimage.jpg" alt="Sample 2" width={400} height={300} className="w-full md:w-1/2 rounded-lg shadow" unoptimized />
           </div>
         </div>
       </div>

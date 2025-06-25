@@ -13,7 +13,7 @@ export default function RomaniaTouristVisa() {
       
       {/* Heading */}
       <h1 className="flex flex-col items-center text-lg sm:text-2xl md:text-2xl font-bold mb-6 text-center">
-        <span>✈️ Romania Visit/Tourist Visa – <span className="text-orange-500">Explore Europe’s Hidden Gem</span> with VJC Overseas</span>
+        <span> Romania Visit/Tourist Visa – <span className="text-orange-500">Explore Europe’s Hidden Gem</span> with VJC Overseas</span>
       </h1>
       <h2 className="text-xl font-bold mt-4 mb-2">Discover Romania – A Land of Enchanting Castles and Natural Wonders</h2>
       {/* Intro Section */}
@@ -36,6 +36,7 @@ export default function RomaniaTouristVisa() {
             width={500}
             height={700}
             className="object-cover  shadow-lg"
+            unoptimized
           />
         </div>
 
@@ -45,7 +46,7 @@ export default function RomaniaTouristVisa() {
           </p>
       {/* Visa Details */}
       <h2 className="text-2xl font-bold mt-12 mb-4 flex items-center gap-2">
-        🛂 Romania Tourist Visa Details
+         Romania Tourist Visa Details
       </h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Visa Validity:</strong> Short-stay visa (Type C) – Up to 90 days within 180 days</li>
@@ -55,7 +56,7 @@ export default function RomaniaTouristVisa() {
 
       {/* Visa Fees */}
       <h2 className="text-2xl font-bold mt-12 mb-4 flex items-center gap-2">
-        💰 Romania Tourist Visa Fees
+         Romania Tourist Visa Fees
       </h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Short-Stay Visa (Type C):</strong> €80 (~₹7,200)</li>
@@ -68,7 +69,7 @@ export default function RomaniaTouristVisa() {
 
       {/* Required Documents */}
       <h2 className="text-2xl font-bold mt-12 mb-4 flex items-center gap-2">
-        📄 Required Documents for Romania Tourist Visa
+         Required Documents for Romania Tourist Visa
       </h2>
       <ul className="list-disc list-inside mb-6">
         <li>Valid passport (minimum 3 months validity after return)</li>
@@ -84,7 +85,7 @@ export default function RomaniaTouristVisa() {
 
       {/* Top Attractions */}
       <h2 className="text-2xl font-bold mt-12 mb-4 flex items-center gap-2">
-        🌍 Top Tourist Attractions in Romania
+         Top Tourist Attractions in Romania
       </h2>
       <p className="mb-4">
         Romania offers a magical travel experience for every visitor—be it history lovers, nature enthusiasts, or adventure seekers.
@@ -101,20 +102,20 @@ export default function RomaniaTouristVisa() {
 
       {/* Why Choose Us */}
       <h2 className="text-2xl font-bold mt-12 mb-4 flex items-center gap-2">
-        ✅ Why Choose VJC Overseas?
+         Why Choose VJC Overseas?
       </h2>
       <ul className="list-disc list-inside mb-6">
-        <li>✅ Hassle-free Romania visa application support</li>
-        <li>✅ Expert advice on correct documentation</li>
-        <li>✅ Personalized itinerary planning help</li>
-        <li>✅ End-to-end customer service</li>
-        <li>✅ High success rate for tourist visas</li>
+        <li> Hassle-free Romania visa application support</li>
+        <li> Expert advice on correct documentation</li>
+        <li> Personalized itinerary planning help</li>
+        <li> End-to-end customer service</li>
+        <li> High success rate for tourist visas</li>
       </ul>
 
       {/* CTA Section */}
       <div className="mt-10 text-center">
         <p className="text-lg font-bold text-orange-600 mb-2">
-          📞 Start Your Romania Visa Application Today!
+           Start Your Romania Visa Application Today!
         </p>
         <p className="mb-2">Contact <span className="font-bold text-orange-500">VJC Overseas</span> for a free consultation!</p>
         <p className="mb-2">Call/WhatsApp: <a href="tel:+919160449000" className="text-blue-600">+91-9160449000</a></p>

@@ -97,6 +97,7 @@ useEffect(() => {
                 width={600}
                 height={350}
                 className="object-cover object-center w-full h-[250px] max-w-[400px]"
+                unoptimized
               />
             </div>
           </div>

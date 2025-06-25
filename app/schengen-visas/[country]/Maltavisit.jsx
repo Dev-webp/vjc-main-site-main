@@ -34,6 +34,7 @@ export default function MaltaTouristVisa() {
             width={500}
             height={700}
             className="object-cover shadow-lg"
+            unoptimized
           />
         </div>
       </div>
@@ -42,7 +43,7 @@ export default function MaltaTouristVisa() {
       </p>
 
       {/* Visa Requirements */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">🛂 Malta Tourist Visa Requirements</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Malta Tourist Visa Requirements</h2>
       <ul className="list-disc list-inside mb-6">
         <li>Valid Passport (at least two blank pages, valid three months beyond departure)</li>
         <li>Completed Visa Application Form</li>
@@ -55,20 +56,20 @@ export default function MaltaTouristVisa() {
       </ul>
 
       {/* Visa Fees */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">💰 Malta Tourist Visa Fees</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Malta Tourist Visa Fees</h2>
       <ul className="list-disc list-inside mb-6">
         <li>Standard Schengen Visa Fee: €80 (~₹7,200)</li>
       </ul>
       <p className="italic mb-6">Note: Additional service charges may apply when applying through a visa application centre.</p>
 
       {/* Visa Validity */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">⏳ Visa Validity</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Visa Validity</h2>
       <p className="mb-6">
         Malta tourist visas are usually issued for short stays up to 90 days within a 180-day period. The final validity depends on your travel itinerary and supporting documents.
       </p>
 
       {/* Top Attractions */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">🏛️ Must-See Attractions in Malta</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Must-See Attractions in Malta</h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Valletta:</strong> UNESCO World Heritage capital with Baroque architecture, Grand Master's Palace, and National Museum of Archaeology.</li>
         <li><strong>Gozo Island:</strong> Scenic countryside and Ġgantija Temples, older than the pyramids of Egypt.</li>
@@ -78,7 +79,7 @@ export default function MaltaTouristVisa() {
       </ul>
 
       {/* Travel Tips */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">✈️ Travel Tips for Indian Tourists</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Travel Tips for Indian Tourists</h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Best Time to Visit:</strong> April to June and September to October</li>
         <li><strong>Currency:</strong> Euro (€)</li>
@@ -87,12 +88,12 @@ export default function MaltaTouristVisa() {
       </ul>
 
       {/* Why Choose */}
-      <h2 className="text-xl font-semibold mt-8 mb-2">✅ Why Choose VJC Overseas for Your Malta Visa?</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Why Choose VJC Overseas for Your Malta Visa?</h2>
       <ul className="list-disc list-inside mb-6">
-        <li>✅ Expert Guidance and Personalized Assistance</li>
-        <li>✅ Complete Documentation Support</li>
-        <li>✅ High Success Rate with Fast Processing</li>
-        <li>✅ Transparent Fees and No Hidden Charges</li>
+        <li> Expert Guidance and Personalized Assistance</li>
+        <li> Complete Documentation Support</li>
+        <li> High Success Rate with Fast Processing</li>
+        <li>Transparent Fees and No Hidden Charges</li>
       </ul>
 
       {/* Contact CTA */}

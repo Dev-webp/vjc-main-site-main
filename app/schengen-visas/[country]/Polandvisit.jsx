@@ -26,6 +26,9 @@ export default function PolandTouristVisa() {
     <p className="mb-6">
       Poland is a captivating country where medieval charm meets modern vibrancy. From the cobbled streets of Kraków to the majestic Tatra Mountains, Poland offers a rich tapestry of culture, history, and natural beauty. Whether you're drawn by stunning castles, picturesque towns, or the warmth of Polish hospitality, your unforgettable European journey starts with a Poland Tourist Visa.
     </p>
+    <p className="mb-6">
+            Let VJC Overseas be your trusted visa partner in making this dream trip a reality.
+          </p>
   </div>
 
   {/* Right Side Image */}
@@ -36,13 +39,12 @@ export default function PolandTouristVisa() {
       width={500}
       height={700}
       className="object-cover"
+      unoptimized
     />
   </div>
 </div>
 
-          <p className="mb-6">
-            Let VJC Overseas be your trusted visa partner in making this dream trip a reality.
-          </p>
+          
     
           <h2 className="text-xl font-semibold mt-4 mb-2">Why Visit Poland?</h2>
           <ul className="list-disc list-inside mb-6">

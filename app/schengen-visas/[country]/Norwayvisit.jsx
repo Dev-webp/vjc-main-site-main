@@ -21,25 +21,11 @@ export default function NorwayTouristVisa() {
         {/* Left Side Text */}
         <div>
           <h2 className="text-xl font-bold mt-4 mb-2">Dreaming of Norway? Let VJC Overseas Help You Get There!</h2>
-          <p className="mb-6">
+          <p className="mb-2">
             Norway, the Land of the Midnight Sun and spectacular Northern Lights, is one of the most enchanting travel destinations in Europe. With its dramatic landscapes, pristine fjords, and vibrant culture, Norway promises an unforgettable travel experience. Whether you're planning a leisure trip, visiting family, or exploring the country's natural wonders, <span className="text-orange-500 font-semibold">VJC Overseas</span> simplifies your journey with expert Norway Visit Visa assistance.
           </p>
-        </div>
-
-        {/* Right Side Image */}
-        <div className="flex justify-center">
-          <Image
-            src="/norwaytouristcontent.webp" // Make sure this image is inside your public folder
-            alt="Norway Tourist Attractions"
-            width={500}
-            height={600}
-            className="object-cover  shadow-lg"
-          />
-        </div>
-      </div>
-
-      {/* Why Visit Norway */}
-      <h2 className="text-xl font-semibold mt-10 mb-2">🇳🇴 Why Visit Norway?</h2>
+          {/* Why Visit Norway */}
+      <h2 className="text-xl font-semibold mt-10 mb-2"> Why Visit Norway?</h2>
       <ul className="list-disc list-inside mb-6">
         <li>Northern Lights in Tromsø</li>
         <li>Cruises through the majestic Norwegian Fjords</li>
@@ -48,20 +34,36 @@ export default function NorwayTouristVisa() {
         <li>Midnight sun in Nordkapp (North Cape)</li>
         <li>Charming towns like Ålesund and Flam</li>
       </ul>
+        </div>
+
+        {/* Right Side Image */}
+        <div className="flex justify-center">
+          <Image
+            src="/norwaytouristcontent.webp" // Make sure this image is inside your public folder
+            alt="Norway Tourist Attractions"
+            width={400}
+            height={400}
+            className="object-cover  shadow-lg"
+            unoptimized
+          />
+        </div>
+      </div>
+
+      
 
       {/* Visa Key Info */}
-      <h2 className="text-xl font-semibold mt-4 mb-2">📄 Norway Tourist Visa – Key Information</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2"> Norway Tourist Visa – Key Information</h2>
       
-      <p className="mb-2"><strong>✅ Visa Validity:</strong> Short-stay Schengen Tourist Visa: Valid for up to 90 days within a 180-day period. Multiple-entry options available depending on application and travel history.</p>
+      <p className="mb-2"><strong> Visa Validity:</strong> Short-stay Schengen Tourist Visa: Valid for up to 90 days within a 180-day period. Multiple-entry options available depending on application and travel history.</p>
 
-      <p className="mb-2"><strong>💶 Visa Fees:</strong><br/>
+      <p className="mb-2"><strong> Visa Fees:</strong><br/>
         Adults: €80 (approx. ₹7,200)<br/>
         Children (6–12 years): €40 (approx. ₹3,600)<br/>
         Children under 6: Free<br/>
         <em>Note: VFS service charges and courier/biometric charges may apply.</em>
       </p>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">📃 Required Documents</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2"> Required Documents</h2>
       <ul className="list-disc list-inside mb-6">
         <li>Valid Passport (min. 3 months validity beyond intended stay)</li>
         <li>Visa Application Form (filled and signed)</li>
@@ -76,7 +78,7 @@ export default function NorwayTouristVisa() {
       </ul>
 
       {/* Top Places */}
-      <h2 className="text-xl font-semibold mt-4 mb-2">🏞️ Top Places to Visit in Norway</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2"> Top Places to Visit in Norway</h2>
       <ul className="list-disc list-inside mb-6">
         <li><strong>Oslo:</strong> Norway’s cultural capital with museums, art, and waterfront beauty.</li>
         <li><strong>Bergen:</strong> Gateway to the fjords with colourful houses and historic Bryggen.</li>
@@ -89,7 +91,7 @@ export default function NorwayTouristVisa() {
       </ul>
 
       {/* Why Choose VJC Overseas */}
-      <h2 className="text-xl font-semibold mt-4 mb-2">✈️ Why Choose VJC Overseas for Your Norway Visa?</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2"> Why Choose VJC Overseas for Your Norway Visa?</h2>
       <ul className="list-disc list-inside mb-6">
         <li>15+ Years of Expertise in Schengen Visa Applications</li>
         <li>Personalized Visa Guidance & Documentation Support</li>
@@ -100,7 +102,7 @@ export default function NorwayTouristVisa() {
 
       {/* Call to Action */}
       <p className="text-lg font-semibold text-orange-600 mt-6">
-        📞 Ready to Explore Norway? Contact VJC Overseas Today!
+         Ready to Explore Norway? Contact VJC Overseas Today!
       </p>
       <p className="mt-4">
         Let us take care of your Norway tourist visa process from start to finish. With our hassle-free services, all you need to do is pack your bags!
