@@ -506,15 +506,19 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center ml-4">
-            <div className="relative h-8 w-8">
-              <Image
-                src="/message.gif"
-                alt="News"
-                fill
-                className="object-contain"
-              />
-            </div>
+          <div className="hidden md:flex items-center ml-3">
+            <div className="relative h-10 w-10">
+  <video
+    src="/message1.mp4"
+    alt="News"
+    className="object-contain"
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+  />
+</div>
           </div>
 
           {/* Marquee */}
@@ -578,14 +582,17 @@ const Navbar = () => {
             href="tel:+919160449000"
             className="flex items-center text-white py-1 px-0 rounded-lg text-xs lg:text-sm whitespace-nowrap font-bold uppercase mr-6"
           >
-            <div className="relative w-6 h-6 mr-2">
-              <Image
-                src="/phone.gif"
-                alt="Phone"
-                fill
-                className="object-contain"
-              />
-            </div>
+            <div className="relative w-8 h-8 mr-2">
+  <video
+    src="/message.mp4"
+    className="object-contain"
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+  />
+</div>
             <span className="text-custom-blue">+91 9160449000</span>
           </a>
         </div>

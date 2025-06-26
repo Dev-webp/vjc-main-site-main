@@ -123,6 +123,7 @@ const metaData = {
 };
 
 export async function generateMetadata({ params }) {
+    const resolvedParams = await params;
   const country = params.country.toLowerCase();
   const data = metaData[country];
 
