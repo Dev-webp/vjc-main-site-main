@@ -17,9 +17,7 @@ export async function generateMetadata({ params }) {
 const ContactPage = () => {
   return (
     <>
-      <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        {/* Optional Nav */}
-      </div>
+    
       <Two />
      
     </>
