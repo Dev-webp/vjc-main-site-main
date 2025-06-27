@@ -1,8 +1,8 @@
 export const metaData = {
     germany: {
-      title: "Migrate to Germany with VJC Overseas – Your Pathway Abroad",
-      description: "Start your journey to Germany with expert guidance from VJC Overseas. Study, work, or settle with complete visa and migration support.",
-      keywords: "study in Germany, work in Germany, germany visa consultants, migrate to Germany, jobs in Germany, germany study abroad, germany education, germany careers, germany studies, germany study visa, germany job vacancy, germany job search, germany student visa, vacancies in Germany, job openings in Germany, germany career opportunities"
+      title: "Migrate to Germany with Opportunity Card Work Permit Visa for Software IT Professionals Chancenkarte Visa",
+      description: "Migrate and Apply for Germany Opportunity Card Visa for Software Engineers IT Professionals also Germany Chancenkarte Visa Settle your Future with Germany Work Permit Visa for Tech Job Professionals Get Job Search with Germany Job Seeker Visa for Indians with Best Job Search Visa Immigration Consultants in Hyderabad",
+      keywords: "Migrate to Germany, Germany Opportunity Card Visa, Germany Chancenkarte Visa, Software IT Professionals, Germany Work Permit Visa, Software Engineers, IT Professionals, Chancenkarte Visa, Tech Job Professionals, Job Professionals, Germany Job Seeker Visa, Germany Job Seeker Visa for Indians, Job Search Visa, Best Visa Immigration Consultants in Hyderabad, Germany Visa Immigration Consultants, Visa Immigration Consultants, Opportunity Card"
     },
     canada: {
       title: "Migrate to Canada – Study, Work & PR | VJC Overseas",
