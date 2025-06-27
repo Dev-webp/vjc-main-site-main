@@ -13,20 +13,17 @@ const FloatingWhatsApp = () => (
     >
       {/* WhatsApp Icon */}
       <span
-        className="bg-[#25d366] p-2 lg:p-4 rounded-full shadow-lg transform transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#128c7e]"
+        className="bg-[#25d366] p-2 lg:p-4 rounded-full transform transition-all duration-300 ease-in-out group-hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#128c7e]"
         style={{
           minWidth: 44,
           minHeight: 44,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          boxShadow: "0 0 16px 4px rgb(235, 123, 3), 0 2px 8px rgba(0,0,0,0.12)", // WhatsApp green glow + soft drop shadow
         }}
       >
         <FaWhatsapp size={30} color="white" aria-hidden="true" focusable="false" />
-      </span>
-      {/* Text next to the icon */}
-      <span className=" text-white bg-[#25d366] cursor-pointer rounded-md px-1 lg:px-2 py-1 lg:py-2 text-sm font-semibold shadow-lg transform transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl">
-        Send Message
       </span>
     </a>
   </div>
