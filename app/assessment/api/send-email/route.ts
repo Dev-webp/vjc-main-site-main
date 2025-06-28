@@ -51,31 +51,59 @@ const mcqQuestions = {
   ]
 };
 
+type CountryKey = keyof typeof mcqQuestions;
+
 export async function POST(request: Request) {
-  const { name, email, phone, age, message, selectedCountry, mcqAnswers, landingPage } = await request.json();
+  const data = await request.json();
 
-  let mcqDetails = "";
-  if (selectedCountry && mcqQuestions[selectedCountry]) {
-    mcqDetails = mcqQuestions[selectedCountry]
-      .map((q, idx) => `Q${idx + 1}: ${q.question}\nA: ${mcqAnswers[idx] ?? ""}\n`)
+  const landingPage = data.landingPage ?? "";
+
+  // For the "normal" form
+  const isNormalForm = !!(data.experience || data.qualification);
+
+  let details = `Landing Page: ${landingPage}\n\n`;
+
+  if (isNormalForm) {
+    details += `Name: ${data.name ?? ""}
+Email: ${data.email ?? ""}
+Phone: ${data.phone ?? ""}
+Country: ${data.country ?? ""}
+Age: ${data.age ?? ""}
+Experience: ${data.experience ?? ""}
+Qualification: ${data.qualification ?? ""}
+Message: ${data.message ?? ""}
+`;
+  } else if (
+    data.selectedCountry &&
+    data.mcqAnswers &&
+    (data.selectedCountry in mcqQuestions)
+  ) {
+    // assessment/MCQ form
+    const countryKey = data.selectedCountry as CountryKey;
+    let mcqDetails = mcqQuestions[countryKey]
+      .map((q, idx) => `Q${idx + 1}: ${q.question}\nA: ${data.mcqAnswers[idx] ?? ""}\n`)
       .join('\n');
-  } else {
-    mcqDetails = "No MCQ Answers Recorded\n";
-  }
-
-  const emailText = `
-Landing Page: ${landingPage}
-
-Selected Country: ${selectedCountry}
+    details += `Selected Country: ${data.selectedCountry}
 
 ${mcqDetails}
 
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-Age: ${age}
-Message: ${message}
+Name: ${data.name ?? ""}
+Email: ${data.email ?? ""}
+Phone: ${data.phone ?? ""}
+Age: ${data.age ?? ""}
+Message: ${data.message ?? ""}
 `;
+  } else {
+    // fallback for any other form
+    details += `Name: ${data.name ?? ""}
+Email: ${data.email ?? ""}
+Phone: ${data.phone ?? ""}
+Message: ${data.message ?? ""}
+`;
+  }
+
+  // Add landing page again at the end
+  details += `\nLanding Page: ${landingPage}\n`;
 
   try {
     const transporter = nodemailer.createTransport({
@@ -90,10 +118,9 @@ Message: ${message}
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: 'vjcbangalore@gmail.com',
-      subject: 'New Contact Form Submission From assessment',
-      text: emailText,
+      subject: `New Contact Form Submission from ${data.landingPage ?? "Unknown URL"}`,
+      text: details,
     };
-
     const info = await transporter.sendMail(mailOptions);
     console.log('Email sent: ', info.response);
     return NextResponse.json({ message: 'Email sent successfully' });

@@ -51,6 +51,8 @@ const mcqQuestions = {
   ]
 };
 
+type CountryKey = keyof typeof mcqQuestions;
+
 export async function POST(request: Request) {
   const data = await request.json();
 
@@ -71,9 +73,14 @@ Experience: ${data.experience ?? ""}
 Qualification: ${data.qualification ?? ""}
 Message: ${data.message ?? ""}
 `;
-  } else if (data.selectedCountry && data.mcqAnswers) {
+  } else if (
+    data.selectedCountry &&
+    data.mcqAnswers &&
+    (data.selectedCountry in mcqQuestions)
+  ) {
     // assessment/MCQ form
-    let mcqDetails = mcqQuestions[data.selectedCountry]
+    const countryKey = data.selectedCountry as CountryKey;
+    let mcqDetails = mcqQuestions[countryKey]
       .map((q, idx) => `Q${idx + 1}: ${q.question}\nA: ${data.mcqAnswers[idx] ?? ""}\n`)
       .join('\n');
     details += `Selected Country: ${data.selectedCountry}
@@ -109,11 +116,11 @@ Message: ${data.message ?? ""}
     });
 
     const mailOptions = {
-  from: process.env.EMAIL_USER,
-  to: 'vjcbangalore@gmail.com',
-  subject: `New Contact Form Submission from ${data.landingPage ?? "Unknown URL"}`,
-  text: details,
-};
+      from: process.env.EMAIL_USER,
+      to: 'vjcbangalore@gmail.com',
+      subject: `New Contact Form Submission from ${data.landingPage ?? "Unknown URL"}`,
+      text: details,
+    };
     const info = await transporter.sendMail(mailOptions);
     console.log('Email sent: ', info.response);
     return NextResponse.json({ message: 'Email sent successfully' });
