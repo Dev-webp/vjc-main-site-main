@@ -22,6 +22,7 @@ import Aus190 from "./Australia-visa/Aus190";
 import Aus191 from "./Australia-visa/Aus191";
 import Aus491 from "./Australia-visa/Aus491";
 import Aus494 from "./Australia-visa/Aus494";
+import Noc from "./Canadapages/Noc";
 import Link from "next/link";
 
 // Form component
@@ -39,6 +40,7 @@ const countryVisaData = {
   ],
   "canada-pr": [
     { name: "Canada Express Entry", path: "/pr-visas/canada-pr/canada-express-entry" },
+     { name: "National Occupational Codes List ", path: "/pr-visas/canada-pr/national-occupational-codes-list"},
   { name: "Canada Provincial Nominee Program", path: "/pr-visas/canada-pr-provincial-nominee-program" },
   { name: "Canada Quebec Selected Workers Program", path: "/pr-visas/canada-pr/canada-quebec-selected-workers-program" },
    { name: "Canada ICT Program", path: "/pr-visas/canada-pr/canada-ict-program" },
@@ -105,6 +107,7 @@ const visaComponents = {
   "canada-pr-canada-quebec-selected-workers-program": Canadaquebic,
   "canada-pr-canada-family-sponsorship": Canadafamily, 
   "canada-pr-visa": Canadapr,
+  "canada-pr-national-occupational-codes-list": Noc,
   "canada-pr-canada-express-entry": Canadaexpress,
  "canada-pr-provincial-nominee-program-canada-prince-edward-island": Canadapredward,
  "canada-pr-provincial-nominee-program-canada-ontario": Canadaontario, 
@@ -129,6 +132,7 @@ const visaBackgroundImages = {
    "/pr-visas/canada-pr-provincial-nominee-program/canada-nova-scotia": "/canadapr-nova.avif",
   "/pr-visas/canada-pr-provincial-nominee-program/canada-alberta": "/canada-alberta.webp",
   "/pr-visas/canada-pr/canada-quebec-selected-workers-program": "/canadapr-Quebec.jpg",
+  "/pr-visas/canada-pr/national-occupational-codes-list": "/national-occupational-codes-list.webp",
   "/pr-visas/canada-pr/canada-ict-program": "/candapr-ict.jpg",
   "/pr-visas/canada-pr/canada-fswp": "/canadapr-fswp.jpg",
   "/pr-visas/canada-pr/canada-fstp": "/canada-fstp.jpg",
