@@ -197,9 +197,14 @@ export default function MigrateCountry() {
         }}
       >
         <div className="w-full lg:w-1/2 flex flex-col lg:items-start items-center lg:text-left text-center mt-12 lg:mt-8 lg:ml-16">
-          <h1 className="font-semibold uppercase bg-white inset-0 bg-black/60 bg-clip-text text-transparent text-4xl lg:text-6xl lg:mb-4 lg:mt-4">
-            {selectedVisaTitle}
-          </h1>
+          {country && (
+  <h2 className="uppercase text-orange-500 text-2xl lg:text-6xl font-bold mb-2">
+    {country.charAt(0).toUpperCase() + country.slice(1)}
+  </h2>
+)}
+<h1 className="font-semibold uppercase bg-white inset-0 bg-black/60 bg-clip-text text-transparent text-4xl lg:text-6xl lg:mb-4 lg:mt-4">
+  {selectedVisaTitle}
+</h1>
           <p className="text-white mt-4 lg:mt-2 font-bold">
             Discover endless opportunities with our expert immigration services.
           </p>

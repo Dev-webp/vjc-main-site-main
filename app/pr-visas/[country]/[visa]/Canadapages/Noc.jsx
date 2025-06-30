@@ -94,7 +94,7 @@ export default function NocCanada2025WithAllLevels() {
   marginBottom: "1rem",
   color: "#d32f2f",
   fontWeight: "bold",      // makes text bold
-  fontSize: "1.8 rem"       // adjust size as you want, e.g. 2.5rem or "32px"
+  fontSize: "2rem"       // adjust size as you want, e.g. 2.5rem or "32px"
 }}>
   NOC Canada 2025 – Find Your Occupation In-Demand List
 </h1>
@@ -245,7 +245,7 @@ export default function NocCanada2025WithAllLevels() {
       {/* All remaining content below the table */}
       <div style={{ margin: "2.5rem auto 0", maxWidth: "900px" }}>
         <p style={{ fontSize: "1.08rem", color: "#444" }}>
-          At <strong>[Your Company Name]</strong>, we specialize in helping professionals like you identify your NOC code, assess your eligibility, and guide you through every step of the immigration process—whether it’s Express Entry, PNP (Provincial Nominee Program), or job-based visas.
+          At <strong>[VJC Overseas]</strong>, we specialize in helping professionals like you identify your NOC code, assess your eligibility, and guide you through every step of the immigration process—whether it’s Express Entry, PNP (Provincial Nominee Program), or job-based visas.
         </p>
         <div style={{ margin: "1.5rem 0" }}>
           <strong>Why the NOC 2025 List Matters</strong>

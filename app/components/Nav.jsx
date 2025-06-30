@@ -298,6 +298,7 @@ const Navbar = () => {
     { name: "Canada Permanent Residency Visa", path: "/pr-visas/canada-pr",
        children: [
         { name: "Canada Express Entry ", path: "/pr-visas/canada-pr/canada-express-entry" },
+          { name: "National Occupational Codes List ", path: "/pr-visas/canada-pr/national-occupational-codes-list"},
          { name: "Canada Provincial Nominee Program ", path: "/pr-visas/canada-pr-provincial-nominee-program" },
           { name: "Canada Quebee Selected Workers Program ", path: "/pr-visas/canada-pr/canada-quebec-selected-workers-program" },
            { name: "Canada ICT Program ", path: "/pr-visas/canada-pr/canada-ict-program" },
