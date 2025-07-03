@@ -5,12 +5,12 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { allNews } from './news-data';
 import slugify from './slugify';
+import Form from './form'; // Adjust if your form is in a different location
 
 const mainStory = allNews[0];
 const nextStories = allNews.slice(1, 5);
 const visaNews = allNews.slice(5, 9);
 
-// --- NewsTickerBar (cleaned up, less "masala") ---
 function NewsTickerBar({ news }) {
   const [active, setActive] = useState(0);
   const intervalRef = useRef(null);
@@ -26,7 +26,7 @@ function NewsTickerBar({ news }) {
     <div className="w-full flex justify-center px-2 z-10 mt-20 relative">
       <div className="w-full max-w-6xl rounded-2xl overflow-hidden shadow-lg border border-[#dbeafe] bg-white mt-8">
         <div className="flex items-center gap-2 px-4 py-2 bg-[#1681c4] text-white font-semibold text-base rounded-t-2xl">
-          <Image src="/logo-vjc.png" alt="VJC Overseas Logo" width={38} height={38} className="h-9 w-9 rounded shadow border-2 border-[#ff9000] bg-white" />
+          <Image src="/LOGO-VJC.png" alt="VJC Overseas Logo" width={38} height={38} className="h-9 w-9 rounded shadow border-2 border-[#ff9000] bg-white" />
           <span className="text-lg font-bold tracking-wide">Latest Headlines</span>
         </div>
         <div className="relative h-20 bg-white">
@@ -68,7 +68,6 @@ function NewsTickerBar({ news }) {
   );
 }
 
-// --- Main Layout ---
 export default function LatestNewsMagazine() {
   return (
     <main className="min-h-screen w-full bg-gradient-to-b from-[#f7fafc] to-white">
@@ -168,64 +167,93 @@ export default function LatestNewsMagazine() {
           </div>
         </div>
       </div>
+
       <style jsx global>{`
         html, body {
           font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
         }
         button.group {
-      position: relative;
-      overflow: hidden;
-    }
-    button.group::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        120deg,
-        rgba(22, 129, 196, 0.09) 0%,
-        rgba(22, 129, 196, 0.14) 50%,
-        rgba(255, 144, 0, 0.13) 100%
-      );
-      transform: translateX(-80%);
-      transition: transform 0.5s cubic-bezier(.55,.06,.68,.19);
-      z-index: 1;
-      pointer-events: none;
-    }
-    button.group:hover::before {
-      transform: translateX(120%);
-      transition: transform 1.3s cubic-bezier(.55,.06,.68,.19);
-    }
-    button.group:hover {
-      background: linear-gradient(90deg, #1681c4 60%, #ff9000 100%);
-      color: #fff;
-      box-shadow: 0 7px 32px 0 #1681c488;
-    }
+          position: relative;
+          overflow: hidden;
+        }
+        button.group::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            120deg,
+            rgba(22, 129, 196, 0.09) 0%,
+            rgba(22, 129, 196, 0.14) 50%,
+            rgba(255, 144, 0, 0.13) 100%
+          );
+          transform: translateX(-80%);
+          transition: transform 0.5s cubic-bezier(.55,.06,.68,.19);
+          z-index: 1;
+          pointer-events: none;
+        }
+        button.group:hover::before {
+          transform: translateX(120%);
+          transition: transform 1.3s cubic-bezier(.55,.06,.68,.19);
+        }
+        button.group:hover {
+          background: linear-gradient(90deg, #1681c4 60%, #ff9000 100%);
+          color: #fff;
+          box-shadow: 0 7px 32px 0 #1681c488;
+        }
       `}</style>
-      <div
-  className="w-full py-10 flex justify-center items-center mt-10 bg-cover bg-center relative"
-  style={{
-    backgroundImage: "url('/Beautiful-Canada-Stanley-Park.webp')",
-  }}
->
-  {/* Black overlay */}
-  <div className="absolute inset-0 bg-black/60 pointer-events-none" />
 
-  <div className="max-w-3xl w-full px-5 text-center flex flex-col items-center z-10 relative">
-    <h3 className="text-3xl font-extrabold text-white mb-3 drop-shadow">Ready to Start Your Visa Journey?</h3>
-    <p className="text-white text-lg mb-5">
-      Book a free, no-obligation consultation with our experienced counselors today and take the first step towards your dream career abroad!
-    </p>
-    <Link href="/assessment">
-      <button className="relative overflow-hidden bg-white text-[#1681c4] font-bold px-8 py-3 rounded-full shadow-lg text-lg border-none outline-none group transition-all duration-200 hover:text-white">
-        <span className="relative z-10">Book Free Consultation</span>
-        {/* Water effect shimmer */}
-        <span className="pointer-events-none absolute inset-0 z-0 transition-all" aria-hidden="true" />
-      </button>
-    </Link>
-  </div>
-  
-</div>
+      
+
+      {/* --- The Form and Why Choose Us Section --- */}
+      <div className="max-w-5xl mx-auto my-12 px-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* The Form */}
+          <div className=" p-6">
+            <Form />
+          </div>
+          {/* The Attractive Section */}
+          <div className="flex flex-col items-center text-center p-6 bg-gradient-to-br from-[#1681c4]/10 to-[#ff9000]/10 rounded-2xl shadow border border-[#dbeafe]">
+            <Image
+              src="/LOGO-VJC.png"
+              alt="Start Your Journey"
+              width={180}
+              height={180}
+              className="mb-4"
+              unoptimized
+            />
+           <h4 className="text-2xl font-bold mb-3 text-[#1681c4]">Why Choose VJC Overseas?</h4>
+<p className="text-gray-600 text-base mb-4 text-center">
+  At VJC Overseas, we pride ourselves on delivering a 100% transparent process led by experienced visa experts who guide you every step of the way. Our team offers fast and reliable service, providing personalized counseling tailored to your aspirations and ensuring your journey is smooth from start to finish. With a high visa success rate, end-to-end support—including university applications, SOP assistance, and ongoing help even after you arrive—we’ve earned the trust of over 10,000 happy clients. Choose us for honest advice, no hidden charges, and a commitment to making your dream career abroad a reality.
+</p>
+            <Link href="/about-us">
+              <button className="bg-[#1681c4] hover:bg-[#ff9000] text-white font-semibold px-5 py-2 rounded-full transition">
+                Learn More About Us
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* Call-to-action Banner */}
+      <div
+        className="w-full py-10 flex justify-center items-center mt-10 bg-cover bg-center relative"
+        style={{
+          backgroundImage: "url('/Beautiful-Canada-Stanley-Park.webp')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+        <div className="max-w-3xl w-full px-5 text-center flex flex-col items-center z-10 relative">
+          <h3 className="text-3xl font-extrabold text-white mb-3 drop-shadow">Ready to Start Your Visa Journey?</h3>
+          <p className="text-white text-lg mb-5">
+            Book a free, no-obligation consultation with our experienced counselors today and take the first step towards your dream career abroad!
+          </p>
+          <Link href="/assessment">
+            <button className="relative overflow-hidden bg-white text-[#1681c4] font-bold px-8 py-3 rounded-full shadow-lg text-lg border-none outline-none group transition-all duration-200 hover:text-white">
+              <span className="relative z-10">Book Free Consultation</span>
+              <span className="pointer-events-none absolute inset-0 z-0 transition-all" aria-hidden="true" />
+            </button>
+          </Link>
+        </div>
+      </div>
     </main>
-    
   );
 }

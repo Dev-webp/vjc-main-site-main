@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import slugify from '../slugify'; // Adjust the path if your slugify utility is elsewhere
-
+import Form from './form'; // Adjust if your form is in a different location
 export default function NewsArticleClient({ story, otherStories }) {
   // Modal logic
   const [modalOpen, setModalOpen] = useState(false);
@@ -184,6 +184,36 @@ export default function NewsArticleClient({ story, otherStories }) {
           scrollbar-width: none;
         }
       `}</style>
+        {/* --- The Form and Why Choose Us Section --- */}
+      <div className="max-w-6xl mx-auto px-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* The Form */}
+          <div className=" p-6">
+            <Form />
+          </div>
+          {/* The Attractive Section */}
+          <div className="flex flex-col items-center text-center p-6 bg-gradient-to-br from-[#1681c4]/10 to-[#ff9000]/10 rounded-2xl shadow border border-[#dbeafe]">
+            <Image
+              src="/LOGO-VJC.png"
+              alt="Start Your Journey"
+              width={180}
+              height={180}
+              className="mb-4"
+              unoptimized
+            />
+           <h4 className="text-2xl font-bold mb-3 text-[#1681c4]">Why Choose VJC Overseas?</h4>
+<p className="text-gray-600 text-base mb-4 text-center">
+  At VJC Overseas, we pride ourselves on delivering a 100% transparent process led by experienced visa experts who guide you every step of the way. Our team offers fast and reliable service, providing personalized counseling tailored to your aspirations and ensuring your journey is smooth from start to finish. With a high visa success rate, end-to-end support—including university applications, SOP assistance, and ongoing help even after you arrive—we’ve earned the trust of over 10,000 happy clients. Choose us for honest advice, no hidden charges, and a commitment to making your dream career abroad a reality.
+</p>
+            <Link href="/about-us">
+              <button className="bg-[#1681c4] hover:bg-[#ff9000] text-white font-semibold px-5 py-2 rounded-full transition">
+                Learn More About Us
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
+    
   );
 }
