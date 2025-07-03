@@ -10,10 +10,10 @@ export const metaData = {
       keywords: "Migrate to Canada, Permanent Residence Visa, PR Visa, Canada Visit Tourist Visa, Benefits of Canada PR Visa, Canada Visa Immigration Consultants in Hyderabad, Canada Student Visa, Canada PR Visa Check List, Canada Visa Process, Study in Canada, Canada Work Permit Visa Process, Canada Visa Process, Best Visa Immigration Consultants in Hyderabad, Canada Visa Immigration Consultants, Visa Immigration Consultants"
     },
     
-    australia: {
-      title: "Migrate to Australia – Explore Study & Job Options | VJC Overseas",
-      description: "Dreaming of Australia? Get assistance for studying, working or settling down under.",
-      keywords: "Australia student visa, work visa, PR Australia"
+    "united-states": {
+      title: "Migrate to USA Student Visa H1b B1B2 Visit Tourist Visa with Best Visa Immigration Consultants",
+      description: "Migrate to USA America with H1B B1B2 Visa Student Visit Tourist Business Visa and Settle your life in USA with Best Immigration Visa Consultants in Hyderabad and Bangalore Get Top Most Universities List for Study in USA also Explore the USA with B1B2 Visa and invest your business with USA eb5 or Business Visa and for IT Professionals grab USA H1b Visa in Lucky Draw also make eligible for USA Green Card and Enjoy the Benefits",
+      keywords: "Migrate to USA, USA H1b Visa, USA B1B2 Visa, USA Student Visa, Study in USA, USA Tourist Visa, USA Visit Visa, USA Business Visa, USA Investor Visa, USA Green Card, IT Professionals, Top Most Universities List, Best Immigration Visa Consultants in Hyderabad, Best Immigration Visa Consultants, Immigration Visa Consultants, America Visa, Green Card, USA  B1B2 Visa Process, USA H1b Visa Process, USA lucky Draw, USA Green Card Benefits"
     },
     // Add more countries here
   };
