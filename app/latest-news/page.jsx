@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { allNews } from './news-data';
 import slugify from './slugify';
-import Form from './form'; // Adjust if your form is in a different location
+import Form from './Form'; // Adjust if your form is in a different location
 
 const mainStory = allNews[0];
 const nextStories = allNews.slice(1, 5);

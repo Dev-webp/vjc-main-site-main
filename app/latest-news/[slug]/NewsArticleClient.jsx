@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import slugify from '../slugify'; // Adjust the path if your slugify utility is elsewhere
-import Form from './form'; // Adjust if your form is in a different location
+import Form from './Form'; // Adjust if your form is in a different location
 export default function NewsArticleClient({ story, otherStories }) {
   // Modal logic
   const [modalOpen, setModalOpen] = useState(false);
