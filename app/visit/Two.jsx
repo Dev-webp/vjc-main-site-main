@@ -22,6 +22,7 @@ const Migrate = () => {
             width={900} 
             height={500} 
             className="shadow-lg"
+            unoptimized
           />
         </div>
 

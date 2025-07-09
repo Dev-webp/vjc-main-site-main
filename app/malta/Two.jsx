@@ -84,6 +84,7 @@ const Migrate = () => {
             width={600} 
             height={400} 
             className="w-[90%] sm:w-[80%] md:w-auto"
+            unoptimized
           />
         </div>
 

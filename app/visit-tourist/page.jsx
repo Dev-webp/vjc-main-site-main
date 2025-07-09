@@ -51,6 +51,7 @@ const ContactPage = () => {
       layout="fill" 
       objectFit="cover" 
       className="absolute inset-0 w-full h-full p-6" 
+      unoptimized
     />
   </div>
 

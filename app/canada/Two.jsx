@@ -84,6 +84,7 @@ const AustraliaVisaSection = () => {
   width={500} // Set an appropriate width
   height={500} // Set an appropriate height
   className="max-w-full lg:max-w-[100%] h-auto shadow-lg object-contain"
+  unoptimized
 />
   </div>
 

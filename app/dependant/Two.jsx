@@ -22,6 +22,7 @@ const Migrate = () => {
             width={900} 
             height={500} 
             className="shadow-lg"
+            unoptimized
           />
         </div>
 
@@ -44,7 +45,7 @@ const Migrate = () => {
   <Link href="/visit">
     <button className="flex items-center w-full md:w-60  shadow-md hover:shadow-lg transition h-[100px]">
       
-      <Image src="/visitvisaimg1.jpg" alt="Visa 1" width={50} height={100} className="w-20 h-20 p-1" />
+      <Image src="/visitvisaimg1.jpg" alt="Visa 1" width={50} height={100} className="w-20 h-20 p-1" unoptimized />
       <span className="flex-1 text-center text-white font-semibold p-3">
       VISIT VISA
       </span>
@@ -53,7 +54,7 @@ const Migrate = () => {
 
 <Link href="/visit-tourist">
     <button className="flex items-center w-full md:w-60   shadow-md hover:shadow-lg transition h-[100px]">
-      <Image src="/visit-touristvisa.jpg" alt="Visa 2" width={50} height={100} className="w-20 h-20 p-1" />
+      <Image src="/visit-touristvisa.jpg" alt="Visa 2" width={50} height={100} className="w-20 h-20 p-1 unoptimized" />
       <span className="flex-1 text-center text-white font-semibold p-3">
        VISIT-TOURIST VISA
       </span>
@@ -74,7 +75,7 @@ const Migrate = () => {
 
     <Link href="/business">
     <button className="flex items-center w-full md:w-60  shadow-md hover:shadow-lg transition h-[100px]">
-      <Image src="/bvimg1.jpg" alt="Visa 4" width={50} height={100} className="w-20 h-20 p-1" />
+      <Image src="/bvimg1.jpg" alt="Visa 4" width={50} height={100} className="w-20 h-20 p-1" unoptimized/>
       <span className="flex-1 text-center text-white font-semibold p-3">
         BUSINESS VISA
       </span>

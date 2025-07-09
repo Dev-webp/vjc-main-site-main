@@ -11,6 +11,7 @@ export default function NewsArticlePage({ params }) {
   const story = allNews.find(n => slugify(n.title) === slug) || allNews[0];
   const otherStories = allNews.filter(n => slugify(n.title) !== slug);
 
+
   return (
     <NewsArticleClient story={story} otherStories={otherStories} />
   );
