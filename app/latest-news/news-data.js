@@ -385,7 +385,7 @@ export const allNews = [
   {
   title: "Changes to UK visa and settlement rules after the 2025 immigration white paper",
   summary: "The UK government introduces sweeping reforms in the 2025 white paper, impacting settlement eligibility and visa sponsorship.",
-  image: "/How-immigration-could-muddy-the-job-numbers-in-US.jpg",
+  image: "/UK-flag-with-approved-Stamp-visa-and-passport.jpg",
   tag: "UK",
   time: "1h ago",
   readTime: "2 min read",
