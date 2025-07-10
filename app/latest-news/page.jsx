@@ -5,11 +5,12 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { allNews } from './news-data';
 import slugify from './slugify';
-import Form from './Form'; // Adjust if your form is in a different location
+import Form from './Form';
 
 const mainStory = allNews[0];
 const nextStories = allNews.slice(1, 5);
 const visaNews = allNews.slice(5, 9);
+const latestUpdates = allNews.slice(9, 13);
 
 function NewsTickerBar({ news }) {
   const [active, setActive] = useState(0);
@@ -101,7 +102,7 @@ export default function LatestNewsMagazine() {
           </div>
         </section>
 
-        {/* Latest News */}
+        {/* More Top Stories */}
         <div>
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">More Top Stories</h2>
@@ -166,52 +167,48 @@ export default function LatestNewsMagazine() {
             ))}
           </div>
         </div>
+
+        {/* 🔥 Latest Updates Section */}
+        <div>
+          <div className="flex items-center justify-between mb-4 mt-6">
+            <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Latest Global Immigration Updates</h2>
+            <Link href="/latest-news" className="text-[#ff9000] text-sm font-semibold hover:underline">View All</Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {latestUpdates.map((item, i) => (
+              <Link
+                href={`/latest-news/${slugify(item.title)}`}
+                key={i}
+                className="flex flex-col bg-gradient-to-br from-[#1681c4]/5 to-[#ff9000]/10 rounded-xl shadow-md border border-[#dbeafe] hover:shadow-xl transition group overflow-hidden"
+              >
+                <div className="relative">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={400}
+                    height={150}
+                    className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    unoptimized
+                  />
+                  <span className="absolute top-2 right-2 bg-white text-[#1681c4] px-2 py-0.5 rounded text-xs font-semibold shadow border border-[#1681c4]">{item.tag}</span>
+                </div>
+                <div className="flex-1 flex flex-col px-3 py-2 bg-white">
+                  <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
+                  <p className="text-xs text-gray-500 mb-1">{item.summary}</p>
+                  <div className="flex gap-2 text-xs text-gray-400 mt-auto">{item.time} &middot; {item.readTime}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
 
-      <style jsx global>{`
-        html, body {
-          font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-        }
-        button.group {
-          position: relative;
-          overflow: hidden;
-        }
-        button.group::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(
-            120deg,
-            rgba(22, 129, 196, 0.09) 0%,
-            rgba(22, 129, 196, 0.14) 50%,
-            rgba(255, 144, 0, 0.13) 100%
-          );
-          transform: translateX(-80%);
-          transition: transform 0.5s cubic-bezier(.55,.06,.68,.19);
-          z-index: 1;
-          pointer-events: none;
-        }
-        button.group:hover::before {
-          transform: translateX(120%);
-          transition: transform 1.3s cubic-bezier(.55,.06,.68,.19);
-        }
-        button.group:hover {
-          background: linear-gradient(90deg, #1681c4 60%, #ff9000 100%);
-          color: #fff;
-          box-shadow: 0 7px 32px 0 #1681c488;
-        }
-      `}</style>
-
-      
-
-      {/* --- The Form and Why Choose Us Section --- */}
+      {/* Form & Why Choose Us */}
       <div className="max-w-5xl mx-auto my-12 px-3">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* The Form */}
-          <div className=" p-6">
+          <div className="p-6">
             <Form />
           </div>
-          {/* The Attractive Section */}
           <div className="flex flex-col items-center text-center p-6 bg-gradient-to-br from-[#1681c4]/10 to-[#ff9000]/10 rounded-2xl shadow border border-[#dbeafe]">
             <Image
               src="/LOGO-VJC.png"
@@ -221,10 +218,10 @@ export default function LatestNewsMagazine() {
               className="mb-4"
               unoptimized
             />
-           <h4 className="text-2xl font-bold mb-3 text-[#1681c4]">Why Choose VJC Overseas?</h4>
-<p className="text-gray-600 text-base mb-4 text-center">
-  At VJC Overseas, we pride ourselves on delivering a 100% transparent process led by experienced visa experts who guide you every step of the way. Our team offers fast and reliable service, providing personalized counseling tailored to your aspirations and ensuring your journey is smooth from start to finish. With a high visa success rate, end-to-end support—including university applications, SOP assistance, and ongoing help even after you arrive—we’ve earned the trust of over 10,000 happy clients. Choose us for honest advice, no hidden charges, and a commitment to making your dream career abroad a reality.
-</p>
+            <h4 className="text-2xl font-bold mb-3 text-[#1681c4]">Why Choose VJC Overseas?</h4>
+            <p className="text-gray-600 text-base mb-4 text-center">
+              At VJC Overseas, we pride ourselves on delivering a 100% transparent process led by experienced visa experts who guide you every step of the way. Our team offers fast and reliable service, providing personalized counseling tailored to your aspirations and ensuring your journey is smooth from start to finish.
+            </p>
             <Link href="/about-us">
               <button className="bg-[#1681c4] hover:bg-[#ff9000] text-white font-semibold px-5 py-2 rounded-full transition">
                 Learn More About Us
@@ -233,7 +230,8 @@ export default function LatestNewsMagazine() {
           </div>
         </div>
       </div>
-      {/* Call-to-action Banner */}
+
+      {/* Call-to-Action */}
       <div
         className="w-full py-10 flex justify-center items-center mt-10 bg-cover bg-center relative"
         style={{
