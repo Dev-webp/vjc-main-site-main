@@ -383,6 +383,96 @@ export const allNews = [
   </p>`,
   },
   {
+  title: "US to triple visa cost for Indians in 2026; apply now to avoid ₹20,000 hike",
+  summary: "The US government is set to increase visa application fees significantly, impacting thousands of Indian applicants.",
+  image: "/visa-fee-increse-2025.webp",
+  tag: "US",
+  readTime: "2 min read",
+content: `
+  <p>
+    The <strong>US government</strong> has announced a major hike in visa application fees set to take effect in <strong>early 2026</strong>. This change is expected to impact Indian professionals, students, and travelers, with costs increasing by up to <strong>₹20,000</strong> for popular visa categories like H-1B, F-1, and B-2.
+  </p>
+
+  <p>
+    The decision follows an internal Department of State and USCIS review, aiming to adjust processing fees to meet inflation and operational costs. While the final structure will be confirmed by the end of 2025, preliminary drafts indicate that both <strong>non-immigrant and immigrant visa fees</strong> will be significantly revised.
+  </p>
+
+  <h2>Which Visas Will Be Affected?</h2>
+  <ul>
+    <li><strong>H-1B (Skilled Worker):</strong> Application and renewal charges expected to rise by over 40%.</li>
+    <li><strong>F-1 (Student Visa):</strong> SEVIS and processing fees likely to increase sharply for Indian students.</li>
+    <li><strong>B-1/B-2 (Visitor Visa):</strong> Tourist and business travel visa costs will also see notable hikes.</li>
+    <li><strong>Family & Employment-Based Green Cards:</strong> Application costs for permanent residency pathways to be restructured.</li>
+  </ul>
+
+  <p>
+    Experts at VJC Overseas recommend starting your application process <strong>before mid-2025</strong> to lock in current rates and avoid paying the inflated fees next year.
+  </p>
+
+  <blockquote>
+    "Applying now could save you nearly ₹20,000 depending on your visa type. Early action matters more than ever." – VJC Overseas Visa Analyst
+  </blockquote>
+
+  <h2>Why This Matters for Indian Applicants</h2>
+  <p>
+    India is consistently among the top countries for US visa applications, especially in the skilled worker and student categories. A sharp rise in fees could lead to longer wait times, tighter appointment slots, and heavier financial planning for families.
+  </p>
+
+  <p>
+    For students, especially, the increased cost might affect decisions around destination countries. Some may look toward Canada, Australia, or Europe as more affordable alternatives.
+  </p>
+
+  <p>
+    If you're planning to study, work, or move to the US — now is the ideal window to act. Contact VJC Overseas today for fast-track guidance and personalized application support.
+  </p>
+`
+},
+{
+  title: "Sweden to map immigrants' values to boost integration",
+  summary: "The Swedish government is launching a new initiative to better understand the values and skills of immigrants.",
+  image: "/Sweden-to-map-immigrants-values-to-boost-integration.png", // Replace with your actual image path
+  tag: "Sweden",
+  readTime: "2 min read",
+ content: `
+  <p>
+    The Swedish government has unveiled a new integration policy that includes <strong>mapping immigrants' personal and cultural values</strong> as part of a broader strategy to improve social cohesion and successful settlement.
+  </p>
+
+  <p>
+    Officials say the initiative is aimed at better understanding how incoming migrants align with Swedish societal norms and democratic values, helping policymakers develop more effective orientation and support programs.
+  </p>
+
+  <h2>What Does the 'Values Mapping' Include?</h2>
+  <ul>
+    <li><strong>Questionnaires & Interviews:</strong> Migrants will be asked about beliefs related to gender equality, LGBTQ+ rights, education, religion, and civic duties.</li>
+    <li><strong>Voluntary Participation:</strong> Authorities clarified that participation will be encouraged, not forced, but incentives may be offered for those who engage.</li>
+    <li><strong>Tailored Integration Plans:</strong> Based on the responses, immigrants may receive customized civic and cultural training to help them better integrate.</li>
+  </ul>
+
+  <p>
+    The plan is part of Sweden’s growing efforts to address challenges in migrant integration, especially in suburban communities where economic and cultural divides remain significant.
+  </p>
+
+  <blockquote>
+    "Integration is a two-way street — understanding each other's values helps build stronger communities." – Swedish Integration Minister
+  </blockquote>
+
+  <h2>Why It’s Controversial</h2>
+  <p>
+    Critics argue that the policy may risk stereotyping or profiling new arrivals, while supporters claim it encourages transparency and better alignment with national identity.
+  </p>
+
+  <p>
+    Sweden continues to welcome skilled workers, students, and refugees, but stresses that integration is essential for long-term stability. Authorities say this new value-mapping step is about creating mutual understanding — not exclusion.
+  </p>
+
+  <p>
+    If you're planning to migrate to Sweden, staying informed about evolving integration policies is key. VJC Overseas provides expert counseling and updates tailored to your destination and goals.
+  </p>
+`
+
+},
+  {
   title: "Changes to UK visa and settlement rules after the 2025 immigration white paper",
   summary: "The UK government introduces sweeping reforms in the 2025 white paper, impacting settlement eligibility and visa sponsorship.",
   image: "/UK-flag-with-approved-Stamp-visa-and-passport.jpg",

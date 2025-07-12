@@ -10,7 +10,8 @@ import Form from './Form';
 const mainStory = allNews[0];
 const nextStories = allNews.slice(1, 5);
 const visaNews = allNews.slice(5, 9);
-const latestUpdates = allNews.slice(9, 13);
+const allLatestUpdates = allNews.slice(9, 20); // More items for show more
+const tickerNews = allNews.slice(5, 9);
 
 function NewsTickerBar({ news }) {
   const [active, setActive] = useState(0);
@@ -70,9 +71,14 @@ function NewsTickerBar({ news }) {
 }
 
 export default function LatestNewsMagazine() {
+  const [visibleCount, setVisibleCount] = useState(4);
+  const hasMore = visibleCount < allLatestUpdates.length;
+
+  const showMore = () => setVisibleCount((prev) => prev + 4);
+
   return (
     <main className="min-h-screen w-full bg-gradient-to-b from-[#f7fafc] to-white">
-      <NewsTickerBar news={allNews.slice(5, 9)} />
+      <NewsTickerBar news={tickerNews} />
 
       <div className="max-w-6xl mx-auto flex flex-col gap-10 w-full pt-6 px-2 md:px-0">
         {/* Main Story */}
@@ -101,6 +107,72 @@ export default function LatestNewsMagazine() {
             </Link>
           </div>
         </section>
+
+      {/* 🔥 Latest Updates Section */}
+<div>
+  <div className="flex items-center justify-between mb-4 mt-6">
+    <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Latest Global Immigration Updates</h2>
+    <Link href="/latest-news" className="text-[#ff9000] text-sm font-semibold hover:underline">View All</Link>
+  </div>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    {allLatestUpdates.slice(0, visibleCount).map((item, i) => (
+      <motion.div
+        key={i}
+        initial={{ opacity: 0, x: 80 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: i * 0.1 }}
+      >
+        <Link
+          href={`/latest-news/${slugify(item.title)}`}
+          className="flex flex-col h-full bg-gradient-to-br from-[#1681c4]/5 to-[#ff9000]/10 rounded-xl shadow-md border border-[#dbeafe] hover:shadow-xl transition group overflow-hidden"
+        >
+          <div className="relative">
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={400}
+              height={150}
+              className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+              unoptimized
+            />
+            <span className="absolute top-2 right-2 bg-white text-[#1681c4] px-2 py-0.5 rounded text-xs font-semibold shadow border border-[#1681c4]">
+              {item.tag}
+            </span>
+          </div>
+          <div className="flex-1 flex flex-col justify-between px-3 py-2 bg-white min-h-[160px] max-h-[180px]">
+            <div>
+              <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
+              <p className="text-xs text-gray-500 mb-1 line-clamp-2">{item.summary}</p>
+            </div>
+            <div className="flex gap-2 text-xs text-gray-400">{item.time} &middot; {item.readTime}</div>
+          </div>
+        </Link>
+      </motion.div>
+    ))}
+  </div>
+
+  {/* Show More / Show Less */}
+  <div className="flex justify-center mt-6">
+    {visibleCount < allLatestUpdates.length ? (
+      <button
+        onClick={showMore}
+        className="px-5 py-2 bg-[#1681c4] text-white text-sm font-medium rounded hover:bg-[#0f5e91] transition"
+      >
+        Show More
+      </button>
+    ) : (
+      <button
+        onClick={() => setVisibleCount(4)}
+        className="px-5 py-2 bg-[#ff9000] text-white text-sm font-medium rounded hover:bg-[#e07d00] transition"
+      >
+        Show Less
+      </button>
+    )}
+  </div>
+</div>
+
+
 
         {/* More Top Stories */}
         <div>
@@ -161,40 +233,6 @@ export default function LatestNewsMagazine() {
                 <div className="flex-1 flex flex-col px-3 py-2">
                   <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
                   <div className="text-xs text-gray-500 mb-1">{item.summary}</div>
-                  <div className="flex gap-2 text-xs text-gray-400 mt-auto">{item.time} &middot; {item.readTime}</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* 🔥 Latest Updates Section */}
-        <div>
-          <div className="flex items-center justify-between mb-4 mt-6">
-            <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Latest Global Immigration Updates</h2>
-            <Link href="/latest-news" className="text-[#ff9000] text-sm font-semibold hover:underline">View All</Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {latestUpdates.map((item, i) => (
-              <Link
-                href={`/latest-news/${slugify(item.title)}`}
-                key={i}
-                className="flex flex-col bg-gradient-to-br from-[#1681c4]/5 to-[#ff9000]/10 rounded-xl shadow-md border border-[#dbeafe] hover:shadow-xl transition group overflow-hidden"
-              >
-                <div className="relative">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={400}
-                    height={150}
-                    className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    unoptimized
-                  />
-                  <span className="absolute top-2 right-2 bg-white text-[#1681c4] px-2 py-0.5 rounded text-xs font-semibold shadow border border-[#1681c4]">{item.tag}</span>
-                </div>
-                <div className="flex-1 flex flex-col px-3 py-2 bg-white">
-                  <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
-                  <p className="text-xs text-gray-500 mb-1">{item.summary}</p>
                   <div className="flex gap-2 text-xs text-gray-400 mt-auto">{item.time} &middot; {item.readTime}</div>
                 </div>
               </Link>
