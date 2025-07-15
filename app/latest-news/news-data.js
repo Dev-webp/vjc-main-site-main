@@ -382,6 +382,100 @@ export const allNews = [
     to balance opportunity with transparency.
   </p>`,
   },
+
+    
+
+
+
+  {
+  title: "Los Angeles joins ACLU lawsuit against Trump's immigration raids",
+  summary: "Los Angeles backs the ACLU in a federal lawsuit challenging Trump-era immigration raids, citing violations of constitutional rights.",
+  image: "/Los-Angeles-joins-ACLu-lawsuit-against-Trump-immigration-raids.jpeg",
+  tag: "US",
+  readTime: "2 min read",
+  content: `
+    <p>
+      In a significant move, the <strong>City of Los Angeles</strong> has officially joined the <strong>ACLU's federal lawsuit</strong> against the <strong>Trump administration’s immigration raids</strong>, citing violations of civil liberties and due process. The lawsuit challenges sweeping enforcement actions that allegedly targeted immigrant communities without proper legal protocols.
+    </p>
+
+    <p>
+      According to city officials and legal experts, the raids — many of which occurred without warrants or prior notice — breached constitutional protections, particularly the <strong>Fourth and Fourteenth Amendments</strong>. The ACLU and other plaintiffs argue that these actions led to wrongful detentions and unnecessary fear among law-abiding immigrant families.
+    </p>
+
+    <h2>What the Lawsuit Claims</h2>
+    <ul>
+      <li><strong>Unlawful Search & Seizure:</strong> ICE conducted home raids without proper judicial warrants.</li>
+      <li><strong>Racial Profiling:</strong> Communities of color were disproportionately targeted.</li>
+      <li><strong>Violation of Due Process:</strong> Detainees were often denied timely access to legal counsel.</li>
+    </ul>
+
+    <p>
+      The lawsuit is gaining national attention as more cities and advocacy groups express solidarity. Los Angeles Mayor's Office emphasized that the city “will not stand by” while immigrant communities are treated unfairly.
+    </p>
+
+    <blockquote>
+      "Our immigrant neighbors deserve justice, not fear and harassment. We are proud to support this legal challenge." – LA Mayor's Office
+    </blockquote>
+
+    <h2>Why This Matters for Immigrants in the US</h2>
+    <p>
+      For many immigrants — including Indian professionals, students, and families — legal uncertainty has grown due to inconsistent enforcement practices. This lawsuit could set a precedent that limits government overreach in the future.
+    </p>
+
+    <p>
+      <strong>VJC Overseas</strong> advises clients in the US or planning to migrate to stay updated on immigration policy changes. Ensuring legal documentation, proper visa status, and lawful presence remains critical.
+    </p>
+
+    <p>
+      If you have immigration concerns or seek lawful pathways to live and work in the US, contact VJC Overseas for expert legal consultation and visa support.
+    </p>
+  `
+},
+ {
+  title: "UK businesses urged to act fast as immigration reforms clash with industrial strategy",
+  summary: "The UK government is implementing new immigration reforms that could impact the labor market.",
+  image: "/UK-businesses-urged-to-act-fast-as-immigration-reforms-clash-with-industrial-strategy.webp",
+  tag: "UK",
+  readTime: "2 min read",
+  content: `
+    <p>
+      The <strong>UK government</strong> has introduced sweeping immigration reforms that are sparking concern among business leaders and trade associations. These changes — which include tighter visa rules, increased salary thresholds, and stricter sponsorship compliance — may pose a direct challenge to the UK's long-term industrial and labor strategy.
+    </p>
+
+    <p>
+      Starting in <strong>early 2025</strong>, businesses hiring from abroad must meet new salary minimums, with the <strong>Skilled Worker Visa threshold</strong> increasing from £26,200 to £38,700. While aimed at reducing net migration, experts warn it could deepen existing labor shortages across healthcare, logistics, IT, and construction.
+    </p>
+
+    <h2>Key Changes in UK Immigration Policy</h2>
+    <ul>
+      <li><strong>Salary Threshold Hike:</strong> Minimum salary for overseas workers raised significantly.</li>
+      <li><strong>Family Sponsorship Barriers:</strong> New income requirements for dependent visas.</li>
+      <li><strong>Sector Impact:</strong> Critical sectors like care homes and agriculture face recruitment challenges.</li>
+      <li><strong>Reduced Shortage Occupation Benefits:</strong> Lower salary discounts removed for many roles.</li>
+    </ul>
+
+    <p>
+      Business groups like the <strong>CBI</strong> and <strong>British Chambers of Commerce</strong> have urged the government to align immigration with industrial priorities — particularly as local talent pipelines are still recovering from the pandemic and Brexit transitions.
+    </p>
+
+    <blockquote>
+      “UK businesses can't grow without workers. We need immigration policy to support — not slow down — our recovery.” – UK Business Coalition
+    </blockquote>
+
+    <h2>What This Means for Indian Professionals</h2>
+    <p>
+      The UK has long been a top destination for Indian IT specialists, healthcare professionals, and students. These reforms may make it harder for mid-level professionals and dependent family members to qualify under the new rules.
+    </p>
+
+    <p>
+      <strong>VJC Overseas</strong> recommends acting swiftly — apply for UK opportunities before the new rules are fully enforced. Planning ahead could save thousands in eligibility and relocation costs.
+    </p>
+
+    <p>
+      If you’re aiming for a UK career, education, or PR track — let <strong>VJC Overseas</strong> guide you with expert documentation, employer tie-ups, and personalized assistance.
+    </p>
+  `
+},
   {
   title: "US to triple visa cost for Indians in 2026; apply now to avoid ₹20,000 hike",
   summary: "The US government is set to increase visa application fees significantly, impacting thousands of Indian applicants.",
