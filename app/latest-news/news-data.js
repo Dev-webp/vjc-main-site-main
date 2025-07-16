@@ -386,7 +386,99 @@ export const allNews = [
     
 
 
+ {
+  title: "Indian student’s US visa put on hold for not having a ‘public’ Reddit account",
+  summary: "A recent case highlights the challenges faced by international students in the US, as one Indian student's visa application was delayed due to the lack of a public Reddit account.",
+  image: "/us-visa.webp",
+  tag: "US",
+  readTime: "2 min read",
+  content: `
+    <p>
+      In a bizarre and concerning incident, an <strong>Indian student</strong> traveling to the <strong>United States for higher studies</strong> reportedly had their <strong>student visa put on hold</strong> after being questioned about their <strong>online presence — particularly a Reddit account</strong>.
+    </p>
 
+    <p>
+      According to the student, the visa officer at the consulate asked for <strong>social media handles</strong> as part of the standard DS-5535 “extreme vetting” process. When the student mentioned they used Reddit but kept the account private, the officer allegedly responded by placing the visa “under administrative processing.”
+    </p>
+
+    <h2>Why a Reddit Account?</h2>
+    <ul>
+      <li><strong>US Visa vetting now includes digital footprints</strong> like social media activity.</li>
+      <li><strong>Reddit accounts</strong> with no public history or posts are considered “suspicious” by some officials.</li>
+      <li>This move raises <strong>privacy vs. transparency concerns</strong> among international applicants.</li>
+    </ul>
+
+    <p>
+      The incident sparked a wave of reactions online, with many calling it an <strong>overreach of surveillance</strong>. Experts point out that while visa officers can review social media, **having a private or inactive account is not grounds for visa denial**.
+    </p>
+
+    <blockquote>
+      “How is a private Reddit account a threat? This is profiling at its worst.” – Anonymous Redditor
+    </blockquote>
+
+    <h2>What This Means for Future Students</h2>
+    <p>
+      Students planning to pursue education in the US are now advised to:
+    </p>
+    <ul>
+      <li>Ensure your <strong>social media handles are declared truthfully</strong> on DS-160/DS-5535.</li>
+      <li>Keep a <strong>professional digital footprint</strong>, even if private.</li>
+      <li>Avoid deleting accounts or suspicious activity before your interview.</li>
+    </ul>
+
+    <p>
+      <strong>VJC Overseas</strong> strongly advises students to be well-prepared for potential digital background checks. While this case may be rare, it highlights how even minor online activity — or lack of it — can complicate your visa process.
+    </p>
+
+    <p>
+      For expert counseling and visa prep assistance, contact <strong>VJC Overseas</strong>. We help students clear interviews with confidence and full documentation.
+    </p>
+  `
+},
+{
+  title: "Travel alert: Indian embassy flags exit routes for citizens in Iran, no evacuation call yet",
+  summary: "The Indian embassy in Tehran has issued a travel advisory for Indian nationals, identifying safe exit routes amid escalating tensions in the region. However, no official evacuation is currently underway.",
+  image: "/no-isreal.avif",
+  tag: "Iran",
+  readTime: "2 min read",
+  content: `
+    <p>
+      Amid rising tensions in the Middle East, the <strong>Indian Embassy in Tehran</strong> has issued a <strong>travel advisory</strong> for Indian nationals currently residing in or visiting Iran. The advisory outlines potential <strong>exit routes</strong> and emphasizes caution, though it clearly states that <strong>no formal evacuation order</strong> has been issued at this time.
+    </p>
+
+    <p>
+      The embassy’s statement comes as the security situation in the region remains volatile due to ongoing geopolitical conflict. Indian officials have identified multiple travel options for citizens who may wish to leave the country voluntarily, including <strong>commercial flights</strong> and <strong>land routes through neighboring countries</strong>.
+    </p>
+
+    <h2>What the Advisory Says</h2>
+    <ul>
+      <li>All Indian citizens in Iran are urged to <strong>stay alert</strong> and <strong>avoid crowded or politically sensitive areas</strong>.</li>
+      <li>Embassy has listed <strong>international airports in Tehran, Shiraz, and Isfahan</strong> as key exit points.</li>
+      <li>No need to panic, but travelers are encouraged to keep travel documents ready.</li>
+    </ul>
+
+    <p>
+      The embassy has also advised citizens to register with the embassy via email or WhatsApp in case further communication becomes necessary. A 24x7 emergency helpline has been activated for any urgent support.
+    </p>
+
+    <blockquote>
+      "We are closely monitoring the situation. There is no cause for alarm, but Indian nationals are advised to exercise caution." – Indian Embassy, Tehran
+    </blockquote>
+
+    <h2>What This Means for Travelers</h2>
+    <p>
+      While no mass evacuation is currently underway, the situation is dynamic. Travelers with plans to visit or transit through Iran are advised to <strong>defer non-essential travel</strong> until further updates are issued.
+    </p>
+
+    <p>
+      <strong>VJC Overseas</strong> urges all students, professionals, and Indian passport holders in Iran or neighboring regions to stay updated via official embassy channels and avoid misinformation.
+    </p>
+
+    <p>
+      If you're currently in Iran and need assistance with safe exit options, rebooking flights, or immigration queries, please contact <strong>VJC Overseas</strong> for guidance and real-time updates.
+    </p>
+  `
+},
   {
   title: "Los Angeles joins ACLU lawsuit against Trump's immigration raids",
   summary: "Los Angeles backs the ACLU in a federal lawsuit challenging Trump-era immigration raids, citing violations of constitutional rights.",
