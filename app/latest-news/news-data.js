@@ -389,7 +389,7 @@ export const allNews = [
  {
   title: "Indian student’s US visa put on hold for not having a ‘public’ Reddit account",
   summary: "A recent case highlights the challenges faced by international students in the US, as one Indian student's visa application was delayed due to the lack of a public Reddit account.",
-  image: "/us-visa.webp",
+  image: "/us-holds-student-visas.jpeg",
   tag: "US",
   readTime: "2 min read",
   content: `
