@@ -384,7 +384,104 @@ export const allNews = [
   },
 
     
+ 
 
+  {
+  title: "USCIS visa bulletin August 2025 brings major relief for Indian applicants | All updates explained",
+  summary: "The August 2025 USCIS visa bulletin brings long-awaited relief for Indian green card applicants, especially in the EB-2 and EB-3 categories. Here’s what’s changing and how it impacts your US immigration prospects.",
+  image: "/The-Visa-Bulletin.webp",
+  tag: "US",
+  readTime: "2 min read",
+  content: `
+    <p>
+      The <strong>USCIS Visa Bulletin for August 2025</strong> has introduced significant advancements in priority dates for <strong>Indian applicants</strong> waiting under the <strong>employment-based (EB-2 and EB-3) green card categories</strong>. These updates are being celebrated by thousands of skilled professionals currently on H-1B visas.
+    </p>
+
+    <h2>Key Highlights of the August 2025 Bulletin</h2>
+    <ul>
+      <li><strong>EB-2 India:</strong> Final Action Date advanced by 8 months, now at March 2014.</li>
+      <li><strong>EB-3 India:</strong> Date moved forward to January 2014, offering relief to many long-time waiters.</li>
+      <li><strong>Faster Green Card Processing:</strong> USCIS has hinted at additional resources to handle backlogs more efficiently.</li>
+    </ul>
+
+    <p>
+      Immigration experts believe this movement may be the result of unused visa spillover from family-based categories and better backlog management. For Indian professionals, this could mean a shorter wait time to adjust status and gain permanent residency.
+    </p>
+
+    <blockquote>
+      “This is the most encouraging bulletin for Indians in years. The backlog is finally showing signs of breaking.” – Immigration Attorney
+    </blockquote>
+
+    <h2>What This Means for Applicants</h2>
+    <p>
+      If you are an Indian national currently in the US under an H-1B visa and your priority date now falls within the new final action dates:
+    </p>
+    <ul>
+      <li>Consult your immigration attorney immediately to prepare your <strong>I-485 Adjustment of Status</strong> application.</li>
+      <li>Ensure your documentation and medical exams are up-to-date.</li>
+      <li>Watch out for USCIS notifications and deadlines.</li>
+    </ul>
+
+    <p>
+      <strong>VJC Overseas</strong> recommends Indian applicants monitor future bulletins closely as movements may vary month-to-month. This bulletin, however, is a step in the right direction.
+    </p>
+
+    <p>
+      For expert assistance on green card applications, priority date evaluation, and USCIS documentation, reach out to <strong>VJC Overseas</strong> today.
+    </p>
+  `
+},
+
+ {
+  title: "Canada: Welcoming Talent with Open Arms",
+  summary: "Canada’s immigration system is a global model, emphasizing economic contributions and diversity. In 2025, it aims to welcome 500,000 newcomers.",
+  image: "/Major-Update-to-Canadas-Immigration-System.jpg",
+  tag: "Canada",
+  readTime: "2 min read",
+  content: `
+    <p>
+      Canada has emerged as one of the most <strong>welcome destinations</strong> for international talent, offering a progressive immigration system that embraces diversity, innovation, and global skills.
+    </p>
+
+    <p>
+      In 2025, the Canadian government has set an ambitious target to invite <strong>over 500,000 new immigrants</strong>, focusing primarily on skilled workers, international graduates, and family reunification.
+    </p>
+
+    <h2>Why Choose Canada?</h2>
+    <ul>
+      <li><strong>Express Entry & PNP:</strong> Fast-track programs for skilled professionals and graduates.</li>
+      <li><strong>Post-Study Work Opportunities:</strong> International students can work and apply for PR easily.</li>
+      <li><strong>Family-Friendly Policies:</strong> Bring your dependents with full rights and access to healthcare and education.</li>
+      <li><strong>High Quality of Life:</strong> Safe cities, excellent public services, and multicultural communities.</li>
+    </ul>
+
+    <p>
+      Canada’s open immigration policies make it easier for students and professionals to build a long-term future. With a strong demand for tech, healthcare, engineering, and finance roles, <strong>your talent is in high demand</strong>.
+    </p>
+
+    <blockquote>
+      “Canada is not just looking for workers — it's looking for future citizens who can thrive and grow.” – Immigration, Refugees and Citizenship Canada (IRCC)
+    </blockquote>
+
+    <h2>Opportunities for Students</h2>
+    <p>
+      Canada's education system is globally ranked. After graduation, students can:
+    </p>
+    <ul>
+      <li>Get a <strong>Post-Graduation Work Permit (PGWP)</strong> valid for up to 3 years.</li>
+      <li>Gain <strong>Canadian work experience</strong> that counts toward PR eligibility.</li>
+      <li>Apply for PR through the <strong>Canadian Experience Class (CEC)</strong>.</li>
+    </ul>
+
+    <p>
+      <strong>VJC Overseas</strong> supports students and professionals with end-to-end services — from university admissions to PR guidance. Our experts simplify the process and boost your success rate.
+    </p>
+
+    <p>
+      Begin your journey to a better future in Canada with <strong>VJC Overseas</strong>. Your dreams deserve a country that welcomes you with open arms.
+    </p>
+  `
+},
 
  {
   title: "Indian student’s US visa put on hold for not having a ‘public’ Reddit account",
