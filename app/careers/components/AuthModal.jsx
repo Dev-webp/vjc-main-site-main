@@ -1,7 +1,9 @@
 'use client'
+
 import { useState } from 'react'
 import { useAuth } from './AuthContext'
 import { Eye, EyeOff } from 'lucide-react'
+import Image from 'next/image'
 
 export default function AuthModal({ onClose }) {
   const { signIn, signUp } = useAuth()
@@ -39,7 +41,13 @@ export default function AuthModal({ onClose }) {
 
         {/* Logo */}
         <div className="flex justify-center mb-4">
-          <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={100}
+            height={40}
+            className="object-contain h-10 w-auto"
+          />
         </div>
 
         {/* Title */}

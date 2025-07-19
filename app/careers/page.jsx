@@ -11,7 +11,16 @@ const availableJobs = [
     location: "Bangalore",
     description: "Provide guidance to students for overseas education opportunities",
     skills: ["Counseling", "Education", "Communication"],
-    salary: "₹35,000 - ₹45,000"
+    salary: "₹35,000 - ₹45,000",
+    details: [
+      "Guide students for overseas education",
+      "Provide university selection advice",
+      "Assist with application process",
+      "Support visa documentation",
+      "Follow up with students post-application",
+      "Strong communication required",
+      "Target-driven approach expected"
+    ]
   },
   {
     id: 2,
@@ -20,7 +29,16 @@ const availableJobs = [
     location: "Bangalore",
     description: "Assist clients with visa and immigration processes",
     skills: ["Visa Processing", "Documentation", "Legal Knowledge"],
-    salary: "₹40,000 - ₹50,000"
+    salary: "₹40,000 - ₹50,000",
+    details: [
+      "Consultation for visa options",
+      "Document verification and processing",
+      "Stay updated with immigration rules",
+      "Communicate with embassies",
+      "CRM usage for tracking applications",
+      "Coordinate with legal team",
+      "Client handling with professionalism"
+    ]
   },
   {
     id: 3,
@@ -29,7 +47,16 @@ const availableJobs = [
     location: "Bangalore",
     description: "Oversee operations of our Bangalore branch",
     skills: ["Management", "Leadership", "Sales"],
-    salary: "₹60,000 - ₹75,000"
+    salary: "₹60,000 - ₹75,000",
+    details: [
+      "Lead and manage the branch team",
+      "Achieve monthly sales targets",
+      "Conduct performance reviews",
+      "Ensure smooth operations",
+      "Client relationship management",
+      "Implement new strategies",
+      "Coordinate with HO and regional teams"
+    ]
   }
 ];
 
@@ -45,15 +72,20 @@ export default function JobsPage() {
 
   return (
     <div className="min-h-screen mt-12 bg-gray-50">
-      {/* 🔵 Hero Section */}
-      <div className="bg-blue-600 text-white py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center px-2">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Discover Your Career Opportunity</h1>
-          <p className="text-lg md:text-xl mb-8">Explore exciting roles and grow with us</p>
+      {/* 🔵 Hero Section with Background */}
+      <div
+        className="relative bg-cover bg-center bg-no-repeat py-24 px-4"
+        style={{ backgroundImage: "url('/hiring.png')" }}
+      >
+        {/* Black overlay */}
+        <div className="absolute inset-0 bg-black opacity-70"></div>
+        <div className="relative max-w-6xl mx-auto text-center text-white z-10 px-2">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">Discover Your Career Opportunity</h1>
+          <p className="text-lg md:text-2xl mb-8">Explore exciting roles and grow with us</p>
 
-          {/* 🔍 Search Bar (Fully responsive, stacked layout) */}
+          {/* 🔍 Search Bar */}
           <div className="w-full">
-            <div className="flex flex-col md:flex-row gap-4 bg-gray-100 p-4 md:p-6 rounded-xl shadow-md max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row gap-4 bg-white/80 p-4 md:p-6 rounded-xl shadow-md max-w-4xl mx-auto">
               <input
                 type="text"
                 placeholder="Job title or keyword"
@@ -97,11 +129,20 @@ export default function JobsPage() {
 
         {/* Job Cards */}
         {filteredJobs.length > 0 ? (
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredJobs.map(job => (
-              <JobCard key={job.id} job={job} />
-            ))}
-          </div>
+         <div className="w-full px-4 pb-4">
+  <div className="flex flex-col lg:flex-row lg:gap-6">
+    {filteredJobs.map((job) => (
+      <div
+        key={job.id}
+        className="w-full lg:w-[350px] mb-6 lg:mb-0"
+        style={{ display: 'flex', flexDirection: 'column', flexShrink: 0 }}
+      >
+        <JobCard job={job} />
+      </div>
+    ))}
+  </div>
+</div>
+
         ) : (
           <div className="text-center text-gray-500 py-20">
             <h3 className="text-xl font-semibold mb-2">😔 No jobs found</h3>
