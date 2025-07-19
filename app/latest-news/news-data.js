@@ -383,9 +383,108 @@ export const allNews = [
   </p>`,
   },
 
-    
- 
 
+  
+
+
+
+
+{
+  title: "UK Study Visa Applications Drop After Post-Study Work Restrictions",
+  summary: "The UK government's changes to post-study work rights have led to a noticeable decline in international student interest.",
+  image: "/UK-Post-Study-Work-Visa.jpg",
+  tag: "UK",
+  readTime: "2 min read",
+  content: `
+    <p>
+      The <strong>UK study visa</strong> scenario has taken a turn as new government restrictions on <strong>post-study work rights</strong> are now in effect. These changes are impacting international student interest and application volumes.
+    </p>
+
+    <h2>What Changed?</h2>
+    <ul>
+      <li>The UK government announced a ban on bringing dependents for most postgraduate courses.</li>
+      <li>Graduate route (post-study work) under scrutiny for future tightening.</li>
+      <li>Universities are reporting a drop in enrollment projections for 2025.</li>
+    </ul>
+
+    <p>
+      International students, especially from India and Nigeria, have expressed concerns over these changes, citing return on investment and career prospects as key factors in their decision-making.
+    </p>
+
+    <blockquote>
+      “Many students are reconsidering their plans to study in the UK due to uncertainty around job opportunities after graduation.” – Education Consultant
+    </blockquote>
+
+    <h2>Impact on Indian Students</h2>
+    <p>
+      Indian students have historically been among the largest cohorts in UK higher education. With these new restrictions:
+    </p>
+    <ul>
+      <li>Interest is shifting towards destinations like Canada and Australia.</li>
+      <li>Postgraduate program enrollments expected to decline by up to 20%.</li>
+      <li>Agents and consultants are urging clarity and stability in policy.</li>
+    </ul>
+
+    <p>
+      <strong>VJC Overseas</strong> advises students to assess long-term migration goals and career outcomes before selecting a destination. UK still offers top-tier education, but new rules must be factored in.
+    </p>
+
+    <p>
+      For personalized counseling, country comparison, and admission support, contact <strong>VJC Overseas</strong> today.
+    </p>
+  `
+},
+
+ {
+  title: "Immigration Changes from July 2025 in Australia",
+  summary: "Australia is set to implement significant changes to its immigration policies in July 2025, impacting skilled workers and international students.",
+  image: "/australia-immigartion-changes.jpg",
+  tag: "Australia",
+  readTime: "2 min read",
+  content: `
+    <p>
+      Australia has long been one of the <strong>top destinations for skilled professionals and international students</strong>. With a strong economy and multicultural society, it's an attractive choice for migration.
+    </p>
+
+    <p>
+      In July 2025, the Australian government is introducing <strong>major reforms</strong> to streamline skilled migration, improve pathways to Permanent Residency (PR), and better align with workforce demands.
+    </p>
+
+    <h2>Why Choose Australia?</h2>
+    <ul>
+      <li><strong>New PR Pathways:</strong> Fast-tracked PR options for high-demand sectors like IT, healthcare, and engineering.</li>
+      <li><strong>Post-Study Work Rights:</strong> Extended work permits for international graduates from top institutions.</li>
+      <li><strong>Family Inclusion:</strong> Bring your spouse and children with access to healthcare and education.</li>
+      <li><strong>Stable Economy & Lifestyle:</strong> High-quality life, safety, and world-class public services.</li>
+    </ul>
+
+    <p>
+      With these upcoming changes, <strong>Australia aims to attract highly skilled global talent</strong> and support long-term settlement for qualified individuals and families.
+    </p>
+
+    <blockquote>
+      “Australia’s immigration reboot focuses on skilled individuals who can contribute to the nation’s future.” – Department of Home Affairs
+    </blockquote>
+
+    <h2>Opportunities for Students</h2>
+    <p>
+      Australia is home to globally recognized universities and institutions. After graduation, students can:
+    </p>
+    <ul>
+      <li>Access extended <strong>Post-Study Work Visas</strong> (up to 4 years based on course level).</li>
+      <li>Accumulate <strong>Australian work experience</strong> for PR eligibility.</li>
+      <li>Apply through <strong>Skilled Independent (189)</strong> or <strong>State Nominated (190)</strong> visa streams.</li>
+    </ul>
+
+    <p>
+      <strong>VJC Overseas</strong> provides full support — from university selection and visa filing to PR consultation. We stay updated with the latest immigration reforms so you don’t have to.
+    </p>
+
+    <p>
+      Start your journey to a new life in Australia with <strong>VJC Overseas</strong>. Let's make your migration dream a successful reality.
+    </p>
+  `
+},
   {
   title: "USCIS visa bulletin August 2025 brings major relief for Indian applicants | All updates explained",
   summary: "The August 2025 USCIS visa bulletin brings long-awaited relief for Indian green card applicants, especially in the EB-2 and EB-3 categories. Here’s what’s changing and how it impacts your US immigration prospects.",
