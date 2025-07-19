@@ -1,4 +1,15 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
+import withBundleAnalyzer from '@next/bundle-analyzer';
+
+const withAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
-module.exports = withBundleAnalyzer({});
+
+const nextConfig = {
+  api: {
+    bodyParser: {
+      sizeLimit: '300mb', // 💥 300MB limit
+    },
+  },
+};
+
+export default withAnalyzer(nextConfig);

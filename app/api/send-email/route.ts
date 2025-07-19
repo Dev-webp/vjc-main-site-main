@@ -1,69 +1,130 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+// ✅ MCQ Question Sets
 const mcqQuestions = {
   Germany: [
     { question: "Select your age", options: ["Below 18", "18 to 35", "35 to 40", "Above 40"] },
     { question: "Qualification", options: ["Is your qualification and University fully recognized", "Is your qualification and University Partially recognized"] },
-    { question:"Relevant Work Experience", options:["5 years in the last 7 years","2 Years in the last 5 years"] },
-    { question:"German Language Proficiency", options:["A2 level","B1 Level","B2 and above"] },
-    { question:"English Language Proficiency: C1 Level", options:["Yes","No"] },
-    { question:"Previous Legal Stay in Germany", options:["Yes","No"] },
-    { question:"Spouse Qualifying", options:["Yes","No"] },
+    { question: "Relevant Work Experience", options: ["5 years in the last 7 years", "2 Years in the last 5 years"] },
+    { question: "German Language Proficiency", options: ["A2 level", "B1 Level", "B2 and above"] },
+    { question: "English Language Proficiency: C1 Level", options: ["Yes", "No"] },
+    { question: "Previous Legal Stay in Germany", options: ["Yes", "No"] },
+    { question: "Spouse Qualifying", options: ["Yes", "No"] },
   ],
   Canada: [
-    { question: "Your age group", options: ["Below 18", "18 - 35", "36", "37","38","39","40","41","42","43","44","45","46","47 or more"] },
-    { question: "Your years of work experience", options: ["1 year", "2 year", "3 year", "4 year","5 year","6 year","7 or more Years"] },
-    { question: "Your highest qualification", options: ["Ph.D","Masters","Diploma after Bachelors","Bachelors","Diploma after secondary"] },
-    { question:"Your English Proficiency", options:["Very High Proficiency","High Proficiency","Moderate Proficiency","Basic Proficiency","No Proficiency"]},
-    { question:"Your French Proficiency", options:["Very High Proficiency","High Proficiency","Moderate Proficiency","Basic Proficiency","No Proficiency"]},
-    { question:"Are you married?", options:["Yes","No"] },
-    { question:"Have you worked in Canada for 1 or more years?", options:["Yes","No"]},
-    { question:"Have you Studied in Canada for 2 or more years?", options:["Yes","No"]},
-    { question:"Do you have an adult relative in Canada on a PR visa/is a citizen?", options:["Yes","No"]},
+    { question: "Your age group", options: ["Below 18", "18 - 35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47 or more"] },
+    { question: "Your years of work experience", options: ["1 year", "2 year", "3 year", "4 year", "5 year", "6 year", "7 or more Years"] },
+    { question: "Your highest qualification", options: ["Ph.D", "Masters", "Diploma after Bachelors", "Bachelors", "Diploma after secondary"] },
+    { question: "Your English Proficiency", options: ["Very High Proficiency", "High Proficiency", "Moderate Proficiency", "Basic Proficiency", "No Proficiency"] },
+    { question: "Your French Proficiency", options: ["Very High Proficiency", "High Proficiency", "Moderate Proficiency", "Basic Proficiency", "No Proficiency"] },
+    { question: "Are you married?", options: ["Yes", "No"] },
+    { question: "Have you worked in Canada for 1 or more years?", options: ["Yes", "No"] },
+    { question: "Have you Studied in Canada for 2 or more years?", options: ["Yes", "No"] },
+    { question: "Do you have an adult relative in Canada on a PR visa/is a citizen?", options: ["Yes", "No"] },
   ],
   USA: [
-    { question: "Select your age", options: ["18-24", "25-32", "33-39", "40-44","45 and above"] },
-    { question: "Your highest qualification", options: ["Ph.D","Masters","Diploma after Bachelors","Bachelors","Diploma after secondary","Ph.D related to Your work profile","Related to STEM"] },
-    { question:"Your total work experience", options:["Less than 1 year","1 year","2 year","3 year","4 year","5 year","6 year","7 year","8 years or more years"]},
-    { question:"Your English", options:["Very High Proficiency","High Proficiency","Moderate Proficiency","Basic Proficiency","No Proficiency"]},
-    { question:"Do you hold a job offer from UK and an approved sponsor, and is at an appropraite skill level?", options:["YES","NO"]}
+    { question: "Select your age", options: ["18-24", "25-32", "33-39", "40-44", "45 and above"] },
+    { question: "Your highest qualification", options: ["Ph.D", "Masters", "Diploma after Bachelors", "Bachelors", "Diploma after secondary", "Ph.D related to Your work profile", "Related to STEM"] },
+    { question: "Your total work experience", options: ["Less than 1 year", "1 year", "2 year", "3 year", "4 year", "5 year", "6 year", "7 year", "8 years or more years"] },
+    { question: "Your English", options: ["Very High Proficiency", "High Proficiency", "Moderate Proficiency", "Basic Proficiency", "No Proficiency"] },
+    { question: "Do you hold a job offer from UK and an approved sponsor, and is at an appropriate skill level?", options: ["YES", "NO"] },
   ],
   UK: [
-    { question: "Select your age", options: ["18-24", "25-32", "33-39", "40-44","45 and above"] },
-    { question: "Your highest qualification", options: ["Ph.D","Masters","Diploma after Bachelors","Bachelors","Diploma after secondary","Ph.D related to Your work profile","Related to STEM"] },
-    { question:"Your total work experience", options:["Less than 1 year","1 year","2 year","3 year","4 year","5 year","6 year","7 year","8 years or more years"]},
-    { question:"Your English", options:["Very High Proficiency","High Proficiency","Moderate Proficiency","Basic Proficiency","No Proficiency"]},
-    { question:"Do you hold a job offer from UK and an approved sponsor, and is at an appropraite skill level?", options:["YES","NO"]}
+    { question: "Select your age", options: ["18-24", "25-32", "33-39", "40-44", "45 and above"] },
+    { question: "Your highest qualification", options: ["Ph.D", "Masters", "Diploma after Bachelors", "Bachelors", "Diploma after secondary", "Ph.D related to Your work profile", "Related to STEM"] },
+    { question: "Your total work experience", options: ["Less than 1 year", "1 year", "2 year", "3 year", "4 year", "5 year", "6 year", "7 year", "8 years or more years"] },
+    { question: "Your English", options: ["Very High Proficiency", "High Proficiency", "Moderate Proficiency", "Basic Proficiency", "No Proficiency"] },
+    { question: "Do you hold a job offer from UK and an approved sponsor, and is at an appropriate skill level?", options: ["YES", "NO"] },
   ],
-  Australia:[
-    { question: "Select your age", options: ["18-24", "25-32", "33-39", "40-44","45 and above"] },
-    { question: "Your highest qualification", options: ["Ph.D","Masters","Diploma after Bachelors","Bachelors","Diploma after secondary","Ph.D related to Your work profile","Related to STEM"] },
-    { question:"Your total work experience", options:["Less than 1 year","1 year","2 year","3 year","4 year","5 year","6 year","7 year","8 years or more years"]},
-    { question:"Your English", options:["Very High Proficiency","High Proficiency","Moderate Proficiency","Basic Proficiency","No Proficiency"]},
+  Australia: [
+    { question: "Select your age", options: ["18-24", "25-32", "33-39", "40-44", "45 and above"] },
+    { question: "Your highest qualification", options: ["Ph.D", "Masters", "Diploma after Bachelors", "Bachelors", "Diploma after secondary", "Ph.D related to Your work profile", "Related to STEM"] },
+    { question: "Your total work experience", options: ["Less than 1 year", "1 year", "2 year", "3 year", "4 year", "5 year", "6 year", "7 year", "8 years or more years"] },
+    { question: "Your English", options: ["Very High Proficiency", "High Proficiency", "Moderate Proficiency", "Basic Proficiency", "No Proficiency"] },
   ],
   Newzealand: [
-    { question: "Select your age", options: ["18-24", "25-32", "33-39", "40-44","45 and above"] },
-    { question: "Your highest qualification", options: ["Ph.D","Masters","Diploma after Bachelors","Bachelors","Diploma after secondary","Ph.D related to Your work profile","Related to STEM"] },
-    { question:"Your total work experience", options:["Less than 1 year","1 year","2 year","3 year","4 year","5 year","6 year","7 year","8 years or more years"]},
-    { question:"Your English", options:["Very High Proficiency","High Proficiency","Moderate Proficiency","Basic Proficiency","No Proficiency"]},
-    { question:"Do you hold a job offer from UK and an approved sponsor, and is at an appropraite skill level?", options:["YES","NO"]}
+    { question: "Select your age", options: ["18-24", "25-32", "33-39", "40-44", "45 and above"] },
+    { question: "Your highest qualification", options: ["Ph.D", "Masters", "Diploma after Bachelors", "Bachelors", "Diploma after secondary", "Ph.D related to Your work profile", "Related to STEM"] },
+    { question: "Your total work experience", options: ["Less than 1 year", "1 year", "2 year", "3 year", "4 year", "5 year", "6 year", "7 year", "8 years or more years"] },
+    { question: "Your English", options: ["Very High Proficiency", "High Proficiency", "Moderate Proficiency", "Basic Proficiency", "No Proficiency"] },
+    { question: "Do you hold a job offer from UK and an approved sponsor, and is at an appropriate skill level?", options: ["YES", "NO"] },
   ]
 };
 
 type CountryKey = keyof typeof mcqQuestions;
 
 export async function POST(request: Request) {
+  const contentType = request.headers.get('content-type');
+
+  // ✅ Handle Job + Resume upload form
+  if (contentType?.includes('multipart/form-data')) {
+    const formData = await request.formData();
+
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const phone = formData.get('phone') as string;
+    const selectedJob = formData.get('selectedJob') as string;
+    const message = formData.get('message') as string;
+    const landingPage = formData.get('landingPage') as string;
+    const resumeFile = formData.get('resume') as File;
+
+    let attachment = null;
+    if (resumeFile && typeof resumeFile === 'object') {
+      const buffer = Buffer.from(await resumeFile.arrayBuffer());
+      attachment = {
+        filename: resumeFile.name,
+        content: buffer,
+      };
+    }
+
+    const jobDetails = `
+New Job Application:
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Job Title: ${selectedJob}
+Message: ${message}
+Landing Page: ${landingPage}
+`;
+
+    try {
+      const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS,
+        },
+        tls: { rejectUnauthorized: true },
+      });
+
+      const mailOptions = {
+        from: process.env.EMAIL_USER,
+        to: 'vjcbangalore@gmail.com',
+        subject: `New Job Application - ${selectedJob} from ${name}`,
+        text: jobDetails,
+        attachments: attachment ? [attachment] : [],
+      };
+
+      const info = await transporter.sendMail(mailOptions);
+      console.log('Job Email sent:', info.response);
+
+      return NextResponse.json({ message: 'Job application email sent successfully' });
+    } catch (error: any) {
+      console.error('Error sending job email:', error.message);
+      return NextResponse.json({ message: 'Error sending job email', error: error.message }, { status: 500 });
+    }
+  }
+
+  // ✅ Handle contact forms and MCQ assessments
   const data = await request.json();
-
   const landingPage = data.landingPage ?? "";
-
-  // For the "normal" form
   const isNormalForm = !!(data.experience || data.qualification);
 
   let details = `Landing Page: ${landingPage}\n\n`;
 
   if (isNormalForm) {
+    // Standard contact form
     details += `Name: ${data.name ?? ""}
 Email: ${data.email ?? ""}
 Phone: ${data.phone ?? ""}
@@ -73,20 +134,14 @@ Experience: ${data.experience ?? ""}
 Qualification: ${data.qualification ?? ""}
 Message: ${data.message ?? ""}
 `;
-  } else if (
-    data.selectedCountry &&
-    data.mcqAnswers &&
-    (data.selectedCountry in mcqQuestions)
-  ) {
-    // assessment/MCQ form
+  } else if (data.selectedCountry && data.mcqAnswers && (data.selectedCountry in mcqQuestions)) {
+    // MCQ assessment form
     const countryKey = data.selectedCountry as CountryKey;
-    let mcqDetails = mcqQuestions[countryKey]
+    const mcqDetails = mcqQuestions[countryKey]
       .map((q, idx) => `Q${idx + 1}: ${q.question}\nA: ${data.mcqAnswers[idx] ?? ""}\n`)
       .join('\n');
-    details += `Selected Country: ${data.selectedCountry}
 
-${mcqDetails}
-
+    details += `Selected Country: ${data.selectedCountry}\n\n${mcqDetails}
 Name: ${data.name ?? ""}
 Email: ${data.email ?? ""}
 Phone: ${data.phone ?? ""}
@@ -94,7 +149,7 @@ Age: ${data.age ?? ""}
 Message: ${data.message ?? ""}
 `;
   } else {
-    // fallback for any other form
+    // Fallback form
     details += `Name: ${data.name ?? ""}
 Email: ${data.email ?? ""}
 Phone: ${data.phone ?? ""}
@@ -102,7 +157,6 @@ Message: ${data.message ?? ""}
 `;
   }
 
-  // Add landing page again at the end
   details += `\nLanding Page: ${landingPage}\n`;
 
   try {
@@ -118,14 +172,15 @@ Message: ${data.message ?? ""}
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: 'vjcbangalore@gmail.com',
-      subject: `New Contact Form Submission from ${data.landingPage ?? "Unknown URL"}`,
+      subject: `New Contact Form Submission from ${landingPage || "Unknown URL"}`,
       text: details,
     };
+
     const info = await transporter.sendMail(mailOptions);
-    console.log('Email sent: ', info.response);
+    console.log('Form Email sent:', info.response);
     return NextResponse.json({ message: 'Email sent successfully' });
   } catch (error: any) {
-    console.error('Error sending email:', error.message);
+    console.error('Error sending form email:', error.message);
     return NextResponse.json({ message: 'Error sending email', error: error.message }, { status: 500 });
   }
 }

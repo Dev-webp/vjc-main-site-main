@@ -1,0 +1,12 @@
+// app/layout.jsx
+import { AuthProvider } from './components/AuthContext'
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
+    </html>
+  );
+}
