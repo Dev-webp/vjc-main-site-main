@@ -1,7 +1,10 @@
+// app/admin/layout.jsx
+
 export default function AdminLayout({ children }) {
-    return (
-      <html>
-        <body>{children}</body>
-      </html>
-    );
-  }
+  return (
+    <>
+      {/* You can wrap with a div, section, or other layout components */}
+      {children}
+    </>
+  );
+}
