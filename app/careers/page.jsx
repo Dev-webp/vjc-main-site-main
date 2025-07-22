@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import JobCard from './components/JobCard';
-
+import Main from './main';
 const availableJobs = [
   {
     id: 1,
@@ -195,6 +195,9 @@ export default function JobsPage() {
           </div>
         )}
       </div>
+      <div className="pt-24 sm:pt-24 md:pt-12 lg:pt-12 xl:pt-12">
+      <Main />
+    </div>
     </div>
   );
 }
