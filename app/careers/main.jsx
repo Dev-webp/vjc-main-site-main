@@ -28,7 +28,7 @@ export default function App() {
   } catch (e) {
     console.error("Error parsing Firebase config from Canvas global:", e);
     // Set a user-friendly error message, but still try to use the default config if parsing failed
-    setError("Error loading Firebase configuration. Please ensure the '__firebase_config' global variable is a valid JSON string.");
+    // setError("Error loading Firebase configuration. Please ensure the '__firebase_config' global variable is a valid JSON string."); // Removed from UI
     firebaseConfig = { // Fallback to hardcoded if parsing fails
       apiKey: "AIzaSyCvN2_0SkmcODcqOVqg3Tl0sRmwyHvaSdo",
       authDomain: "vjc-project.firebaseapp.com",
@@ -317,8 +317,8 @@ export default function App() {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-  const [userId, setUserId] = useState(null);
+  const [error, setError] = useState(''); // This state will still be used internally for console logs
+  const [userId, setUserId] = useState(null); // This state will still be used internally for authentication
   const [db, setDb] = useState(null);
   const [auth, setAuth] = useState(null);
   const [isAuthReady, setIsAuthReady] = useState(false);
@@ -341,7 +341,7 @@ export default function App() {
     // This often happens if the __firebase_config global variable is not set
     // or contains invalid JSON in the Canvas environment.
     if (Object.keys(firebaseConfig).length === 0 || !firebaseConfig.apiKey) {
-      setError("Firebase configuration is missing or invalid. Please ensure Firebase is correctly set up in your environment. " +
+      console.error("Firebase configuration is missing or invalid. Please ensure Firebase is correctly set up in your environment. " +
                 "This typically means the '__firebase_config' global variable needs to be a valid JSON string " +
                 "containing your Firebase project's configuration (apiKey, authDomain, projectId, etc.).");
       setIsAuthReady(true); // Mark auth as ready to avoid perpetual loading, but with an error.
@@ -360,17 +360,66 @@ export default function App() {
         if (user) {
           setUserId(user.uid);
         } else {
-          try {
-            if (initialAuthToken) {
-              await signInWithCustomToken(firebaseAuth, initialAuthToken);
-            } else {
-              await signInAnonymously(firebaseAuth);
+          // Attempt to retrieve a stored anonymous user ID from localStorage
+          const storedAnonUid = localStorage.getItem('vjc_anon_uid');
+          if (storedAnonUid) {
+            try {
+              // Try to sign in with the custom token if available, or re-authenticate with stored anon UID
+              if (initialAuthToken) {
+                await signInWithCustomToken(firebaseAuth, initialAuthToken);
+              } else {
+                // Firebase doesn't have a direct `signInWithUid` for anonymous users.
+                // The best approach is to try to re-use the session if it's still valid,
+                // or sign in anonymously again which might re-use the existing anon user if session is gone.
+                // For direct re-authentication with a specific UID, you'd typically need a custom token generated on a backend.
+                // Since we're in a client-side context, we'll try anonymous sign-in which Firebase tries to link if possible.
+                await signInAnonymously(firebaseAuth);
+                // After anonymous sign-in, if the UID is different, it means a new anon user was created.
+                // We should update localStorage in that case.
+                if (firebaseAuth.currentUser && firebaseAuth.currentUser.uid !== storedAnonUid) {
+                    localStorage.setItem('vjc_anon_uid', firebaseAuth.currentUser.uid);
+                }
+              }
+              setUserId(firebaseAuth.currentUser?.uid); // Use the current user's UID
+            } catch (authError) {
+              console.error("Firebase re-authentication failed with stored UID, signing in anonymously:", authError);
+              // If re-authentication fails, clear stored UID and try fresh anonymous sign-in
+              localStorage.removeItem('vjc_anon_uid');
+              try {
+                await signInAnonymously(firebaseAuth);
+                const newAnonUid = firebaseAuth.currentUser?.uid || crypto.randomUUID();
+                localStorage.setItem('vjc_anon_uid', newAnonUid);
+                setUserId(newAnonUid);
+              } catch (freshAnonError) {
+                console.error("Fresh anonymous sign-in failed:", freshAnonError);
+                if (freshAnonError.code === 'auth/too-many-requests') {
+                  // setError("Too many authentication attempts. Please try again after a short while."); // Removed from UI
+                  console.error("Too many authentication attempts. Please try again after a short while.");
+                } else {
+                  // setError(`Firebase authentication failed: ${freshAnonError.message}.`); // Removed from UI
+                  console.error(`Firebase authentication failed: ${freshAnonError.message}.`);
+                }
+                setUserId(crypto.randomUUID()); // Fallback to a random ID if all else fails
+              }
             }
-            setUserId(firebaseAuth.currentUser?.uid || crypto.randomUUID());
-          } catch (authError) {
-            console.error("Firebase authentication failed:", authError);
-            setError(`Firebase authentication failed: ${authError.message}.`);
-            setUserId(crypto.randomUUID());
+          } else {
+            // No stored UID, proceed with initial anonymous sign-in
+            try {
+              await signInAnonymously(firebaseAuth);
+              const newAnonUid = firebaseAuth.currentUser?.uid || crypto.randomUUID();
+              localStorage.setItem('vjc_anon_uid', newAnonUid);
+              setUserId(newAnonUid);
+            } catch (anonError) {
+              console.error("Initial anonymous sign-in failed:", anonError);
+              if (anonError.code === 'auth/too-many-requests') {
+                // setError("Too many authentication attempts. Please try again after a short while."); // Removed from UI
+                console.error("Too many authentication attempts. Please try again after a short while.");
+              } else {
+                // setError(`Firebase authentication failed: ${anonError.message}.`); // Removed from UI
+                console.error(`Firebase authentication failed: ${anonError.message}.`);
+              }
+              setUserId(crypto.randomUUID());
+            }
           }
         }
         setIsAuthReady(true);
@@ -379,7 +428,7 @@ export default function App() {
       return () => unsubscribe();
     } catch (e) {
       console.error("Failed to initialize Firebase:", e);
-      setError(`Failed to initialize Firebase: ${e.message}. Please check console for details.`);
+      // setError(`Failed to initialize Firebase: ${e.message}. Please check console for details.`); // Removed from UI
       setIsAuthReady(true);
     }
   }, [firebaseConfig, initialAuthToken]); // Added firebaseConfig and initialAuthToken to dependencies
@@ -504,11 +553,11 @@ export default function App() {
 
   const handleAskQuestion = async () => {
     if (!question.trim()) {
-      setError('Please enter a question.');
+      setError('Please enter a question.'); // This error will still be set internally, but not displayed
       return;
     }
     if (!isAuthReady) {
-      setError('Authentication not ready. Please wait a moment.');
+      setError('Authentication not ready. Please wait a moment.'); // This error will still be set internally, but not displayed
       return;
     }
 
@@ -646,7 +695,7 @@ export default function App() {
               >
                 Start Conversation
               </button>
-              {error && <p className="text-red-500 text-sm mt-2 text-center">{error}</p>}
+              {/* Error messages are now only logged to console */}
             </div>
           </div>
         ) : (
@@ -683,7 +732,6 @@ export default function App() {
                   )}
                 </div>
               ))}
-              {/* Removed messagesEndRef */}
             </div>
 
             {/* Input and Buttons */}
@@ -737,22 +785,12 @@ export default function App() {
                 )}
               </div>
 
-              {error && (
-                <div className="mt-3 p-2 bg-red-100 border border-red-400 text-red-700 rounded-xl text-sm text-center">
-                  <p className="font-medium">Error:</p>
-                  <p>{error}</p>
-                </div>
-              )}
+              {/* Error messages are now only logged to console */}
             </div>
           </>
         )}
 
-        {/* Display userId for debugging/multi-user context */}
-        {userId && (
-          <p className="mt-4 text-xs sm:text-sm text-gray-500 text-center flex-shrink-0">
-            User ID: {userId}
-          </p>
-        )}
+        {/* User ID is now hidden */}
       </div>
     </div>
   );
