@@ -388,7 +388,97 @@ export const allNews = [
 
 
 
-
+{
+  title: "New Zealand Student Visa Work Hours Increased",
+  summary: "New Zealand has increased in-study work hours for international students from 20 to 25 hours per week, effective November 2025.",
+  image: "/New-Zealand-Student-Visa-Working-Hours.webp",
+  tag: "New Zealand",
+  readTime: "2 min read",
+  content: `
+    <p>
+      The <strong>New Zealand Government</strong> has announced a major change to student visa regulations, allowing international students to work up to <strong>25 hours per week</strong> during term time, starting <strong>November 3, 2025</strong>. This move aims to provide students with better financial stability and work experience while studying.
+    </p>
+ 
+    <h2>What Changed?</h2>
+    <ul>
+      <li>Work limit increased from 20 to 25 hours per week during academic terms.</li>
+      <li>Full-time work rights remain during semester breaks and holidays.</li>
+      <li>Short-term study abroad and exchange students are now eligible for work rights.</li>
+    </ul>
+ 
+    <p>
+      The adjustment is part of New Zealand’s strategy to attract more international students and strengthen its global education market. It aligns with the country's goal of doubling its international education market by 2034.
+    </p>
+ 
+    <blockquote>
+      “This policy change will give international students greater flexibility to manage living expenses while gaining valuable work experience.” – Education Official
+    </blockquote>
+ 
+    <h2>Impact on Students</h2>
+    <p>
+      For Indian and other international students, this means:
+    </p>
+    <ul>
+      <li>Better opportunities to balance study and part-time work.</li>
+      <li>Potential increase in overall employability through local work exposure.</li>
+      <li>Smoother pathway to post-study work visas.</li>
+    </ul>
+ 
+    <p>
+      <strong>VJC Overseas</strong> advises students planning to study in New Zealand to leverage this benefit while ensuring compliance with visa regulations.
+    </p>
+ 
+    <p>
+      For personalized guidance on New Zealand study visas and admissions, contact <strong>VJC Overseas</strong> today.
+    </p>
+  `
+},
+ 
+ {
+  title: "Schengen Visa Rules Simplified for Travelers",
+  summary: "The EU has introduced a new 'cascade visa system' and relaxed Schengen visa rules for select nationalities to boost travel.",
+  image: "/Schenegen-visa-new-rules.png",
+  tag: "Europe",
+  readTime: "2 min read",
+  content: `
+    <p>
+      The <strong>European Union</strong> has rolled out major updates to the <strong>Schengen visa process</strong> aimed at making travel easier for tourists and business travelers. The new rules, including a 'cascade system,' allow travelers to apply through one country’s embassy even when visiting multiple Schengen nations.
+    </p>
+ 
+    <h2>What Changed?</h2>
+    <ul>
+      <li>Schengen visas can now be issued with multiple-entry validity for up to 5 years based on past travel history.</li>
+      <li>The new 'cascade visa system' allows applications through any participating member state, simplifying multi-country visits.</li>
+      <li>Processing times have been reduced, and digital applications are being introduced across several embassies.</li>
+    </ul>
+ 
+    <p>
+      The policy aims to attract more tourists and improve flexibility for frequent travelers. It also enhances business travel convenience across the 27 Schengen member states.
+    </p>
+ 
+    <blockquote>
+      “This update will significantly reduce the burden on travelers and encourage more multi-destination tourism in Europe.” – EU Travel Official
+    </blockquote>
+ 
+    <h2>Impact on Travelers</h2>
+    <p>
+      The simplified rules mean:
+    </p>
+    <ul>
+      <li>Easier and faster application procedures.</li>
+      <li>Greater flexibility for planning multi-country European trips.</li>
+      <li>Reduced waiting times for frequent business and leisure travelers.</li>
+    </ul>
+ 
+    <p>
+      <strong>VJC Overseas</strong> suggests applicants take advantage of these relaxed rules and plan their Schengen trips early, as the peak season is expected to bring high demand.
+    </p>
+ 
+    <p>
+      For detailed guidance on Schengen visa applications, contact <strong>VJC Overseas</strong> today.
+    </p>
+  `
+},
 {
   title: "UK Study Visa Applications Drop After Post-Study Work Restrictions",
   summary: "The UK government's changes to post-study work rights have led to a noticeable decline in international student interest.",

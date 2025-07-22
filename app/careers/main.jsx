@@ -547,7 +547,7 @@ export default function App() {
       setShowGreeting(false); // Hide greeting, show main chat
       setError(''); // Clear any previous name input errors
     } else {
-      setError("Please enter your name to proceed.");
+      setError("Please enter your name to proceed."); // This error will still be set internally, but not displayed
     }
   };
 
@@ -572,10 +572,12 @@ export default function App() {
     try {
       let finalLink = "";
       const lowerCaseQuestion = userQuestionForPrompt.toLowerCase();
+      let isSpecificVjcJobQuery = false;
 
       // Determine the final link based on specific queries or general relevance
       if (lowerCaseQuestion.includes("job") && (lowerCaseQuestion.includes("vjc") || lowerCaseQuestion.includes("vj overseas"))) {
         finalLink = "https://vjcoverseas.com/careers";
+        isSpecificVjcJobQuery = true; // Flag for specific handling
       } else if (lowerCaseQuestion.includes("latest-updates") || lowerCaseQuestion.includes("latest updates") || lowerCaseQuestion.includes("news") || lowerCaseQuestion.includes("recent news")) {
         finalLink = "https://vjcoverseas.com/latest-news";
       } else if (lowerCaseQuestion.includes("link is not opening") || lowerCaseQuestion.includes("broken link") || lowerCaseQuestion.includes("link not working")) {
@@ -589,66 +591,72 @@ export default function App() {
         }
       }
 
-      // Construct the prompt for the AI, without including the link in the main generation instruction
-      const prompt = `You are an AI assistant for VJC Overseas, specializing in overseas education, work visas, and tourist visas.
-      The user's name is ${userName || 'valued client'}.
-      Start your response with "Dear ${userName || 'valued client'}, regarding your query about ${userQuestionForPrompt.substring(0, 50)}${userQuestionForPrompt.length > 50 ? '...' : ''}:"
-      Then, provide a detailed answer in 10-20 numbered points. Each point should be on a new line. If points are not suitable, provide a clear and concise paragraph.
-      Crucially, ensure your response stays strictly within the context of the user's current question and the preceding conversation. For example, if the conversation is about "study abroad" and the user asks "why USA", focus on reasons why the USA is a top *study* destination (e.g., academic excellence, research opportunities, IT sector opportunities relevant to academics/post-study careers, post-study work permits for students, etc.), and do not diverge into general work or migration reasons unless explicitly asked.
-      If the query is related to a specific country or opportunity (e.g., Germany Opportunity Card, USA tours), explain it thoroughly.
-      When including URLs, please provide them as plain text (e.g., https://example.com/), and do not use Markdown link formatting ([text](url)). My frontend will handle converting plain URLs to clickable links.
-      Here are the available topics and their corresponding base URLs: ${JSON.stringify(allLinks.map(l => ({ name: l.name, url: l.url })))}.
-      Here is the user's question: "${userQuestionForPrompt}"
+      let aiResponseText = '';
 
-      Now, answer the following question: "${userQuestionForPrompt}"`; // Removed linkText from here
+      // If it's a specific VJC job query, provide only the link directly
+      if (isSpecificVjcJobQuery) {
+        aiResponseText = `Dear ${userName || 'valued client'}, for job opportunities at VJC Overseas, please visit our careers page: ${finalLink}`;
+      } else {
+        // Construct the prompt for the AI
+        const prompt = `You are an AI assistant for VJC Overseas, specializing in overseas education, work visas, and tourist visas.
+        The user's name is ${userName || 'valued client'}.
+        Start your response with "Dear ${userName || 'valued client'}, regarding your query about ${userQuestionForPrompt.substring(0, 50)}${userQuestionForPrompt.length > 50 ? '...' : ''}:"
+        Then, provide a detailed answer in 10-20 numbered points. Each point should be on a new line. If points are not suitable, provide a clear and concise paragraph.
+        Crucially, ensure your response stays strictly within the context of the user's current question and the preceding conversation. For example, if the conversation is about "study abroad" and the user asks "why USA", focus on reasons why the USA is a top *study* destination (e.g., academic excellence, research opportunities, IT sector opportunities relevant to academics/post-study careers, post-study work permits for students, etc.), and do not diverge into general work or migration reasons unless explicitly asked.
+        If the query is related to a specific country or opportunity (e.g., Germany Opportunity Card, USA tours), explain it thoroughly.
+        When including URLs, please provide them as plain text (e.g., https://example.com/), and do not use Markdown link formatting ([text](url)). My frontend will handle converting plain URLs to clickable links.
+        Here are the available topics and their corresponding base URLs: ${JSON.stringify(allLinks.map(l => ({ name: l.name, url: l.url })))}.
+        Here is the user's question: "${userQuestionForPrompt}"
 
-      let chatHistory = [];
-      chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+        Now, answer the following question: "${userQuestionForPrompt}"`;
 
-      const payload = { contents: chatHistory };
-      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${geminiApiKey}`;
+        let chatHistory = [];
+        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
 
-      const response = await fetch(apiUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
+        const payload = { contents: chatHistory };
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${geminiApiKey}`;
 
-      const result = await response.json();
-
-      if (result.candidates && result.candidates.length > 0 &&
-          result.candidates[0].content && result.candidates[0].content.parts &&
-          result.candidates[0].content.parts.length > 0) {
-        let text = result.candidates[0].content.parts[0].text;
-
-        // Remove Markdown bolding (**text**)
-        text = text.replace(/\*\*(.*?)\*\*/g, '$1');
-
-        // Append the determined finalLink after the AI's response
-        if (finalLink) {
-          if (lowerCaseQuestion.includes("link is not opening") || lowerCaseQuestion.includes("broken link") || lowerCaseQuestion.includes("link not working")) {
-            text += `\n\nIt seems you're having trouble with a link. Please ensure your internet connection is stable or try copying the link and pasting it directly into your browser. For general information, you can always visit our homepage: ${finalLink}`;
-          } else if (lowerCaseQuestion.includes("job") && (lowerCaseQuestion.includes("vjc") || lowerCaseQuestion.includes("vj overseas"))) {
-             text += `\n\nFor job opportunities at VJC Overseas, please visit our careers page: ${finalLink}`;
-          } else if (lowerCaseQuestion.includes("latest-updates") || lowerCaseQuestion.includes("latest updates") || lowerCaseQuestion.includes("news") || lowerCaseQuestion.includes("recent news")) {
-             text += `\n\nFor the latest news and updates from VJC Overseas, please visit: ${finalLink}`;
-          } else {
-            text += `\n\nFor more detailed information, please visit: ${finalLink}`;
-          }
-        }
-
-
-        // This regex will now correctly pick up plain URLs and convert them to clickable links
-        const urlRegex = /(https?:\/\/[^\s]+)/g;
-        text = text.replace(urlRegex, (url) => {
-          return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${url}</a>`;
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
         });
 
-        setMessages(prevMessages => [...prevMessages, { sender: 'ai', text: text, avatar: 'vjc-logo' }]);
-      } else {
-        setMessages(prevMessages => [...prevMessages, { sender: 'ai', text: 'Apologies, I could not generate a response at this moment. Please try rephrasing your question.', avatar: 'vjc-logo' }]);
-        console.error("Gemini API response structure unexpected:", result);
+        const result = await response.json();
+
+        if (result.candidates && result.candidates.length > 0 &&
+            result.candidates[0].content && result.candidates[0].content.parts &&
+            result.candidates[0].content.parts.length > 0) {
+          aiResponseText = result.candidates[0].content.parts[0].text;
+
+          // Remove Markdown bolding (**text**)
+          aiResponseText = aiResponseText.replace(/\*\*(.*?)\*\*/g, '$1');
+
+          // Append the determined finalLink after the AI's response
+          if (finalLink) {
+            if (lowerCaseQuestion.includes("link is not opening") || lowerCaseQuestion.includes("broken link") || lowerCaseQuestion.includes("link not working")) {
+              aiResponseText += `\n\nIt seems you're having trouble with a link. Please ensure your internet connection is stable or try copying the link and pasting it directly into your browser. For general information, you can always visit our homepage: ${finalLink}`;
+            } else if (lowerCaseQuestion.includes("latest-updates") || lowerCaseQuestion.includes("latest updates") || lowerCaseQuestion.includes("news") || lowerCaseQuestion.includes("recent news")) {
+               aiResponseText += `\n\nFor the latest news and updates from VJC Overseas, please visit: ${finalLink}`;
+            } else {
+              aiResponseText += `\n\nFor more detailed information, please visit: ${finalLink}`;
+            }
+          }
+        } else {
+          // Fallback message if AI cannot generate a response, without apology
+          aiResponseText = `Dear ${userName || 'valued client'}, I'm currently unable to provide a detailed answer to your question. Could you please try rephrasing it, or ask a different question? For general information, please visit: ${finalLink}`;
+          console.error("Gemini API response structure unexpected or empty:", result);
+        }
       }
+
+      // This regex will now correctly pick up plain URLs and convert them to clickable links
+      const urlRegex = /(https?:\/\/[^\s]+)/g;
+      aiResponseText = aiResponseText.replace(urlRegex, (url) => {
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${url}</a>`;
+      });
+
+      setMessages(prevMessages => [...prevMessages, { sender: 'ai', text: aiResponseText, avatar: 'vjc-logo' }]);
+
     } catch (err) {
       console.error("Error fetching from Gemini API:", err);
       setMessages(prevMessages => [...prevMessages, { sender: 'ai', text: 'I am experiencing a technical difficulty. Please try again later.', avatar: 'vjc-logo' }]);
