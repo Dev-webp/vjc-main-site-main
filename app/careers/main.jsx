@@ -6,32 +6,44 @@ import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged }
 import { getFirestore } from 'firebase/firestore';
 
 export default function App() {
-  // Ensure these global variables are defined in the environment.
-  // __app_id, __firebase_config, and __initial_auth_token are provided by the Canvas environment.
-  // If you are running this code outside of Canvas, you will need to define them.
+  // Rely solely on Canvas globals or hardcoded defaults, as process.env is not available in client-side React in this environment.
   const appId = typeof __app_id !== 'undefined' && __app_id ? __app_id : 'default-app-id';
 
-  // Attempt to parse firebaseConfig from the global variable.
-  // If __firebase_config is not defined or is not valid JSON, it will default to a predefined config.
-  let firebaseConfig = {
-    apiKey: "AIzaSyCvN2_0SkmcODcqOVqg3Tl0sRmwyHvaSdo", // Using the API key from your provided firebase.js
-    authDomain: "vjc-project.firebaseapp.com",
-    projectId: "vjc-project",
-    storageBucket: "vjc-project.appspot.com",
-    messagingSenderId: "232845886321",
-    appId: "1:232845886321:web:fbef48eda41d6c188b2cd0",
-    measurementId: "G-JPH0CGYTXT"
-  };
+  let firebaseConfig = {};
   try {
-    const envConfig = typeof __firebase_config !== 'undefined' && __firebase_config ? JSON.parse(__firebase_config) : {};
-    // Merge environment config with the default, prioritizing environment config
-    firebaseConfig = { ...firebaseConfig, ...envConfig };
+    if (typeof __firebase_config !== 'undefined' && __firebase_config) {
+      firebaseConfig = JSON.parse(__firebase_config);
+    } else {
+      // Fallback to hardcoded config if no Canvas global is provided
+      firebaseConfig = {
+        apiKey: "AIzaSyCvN2_0SkmcODcqOVqg3Tl0sRmwyHvaSdo",
+        authDomain: "vjc-project.firebaseapp.com",
+        projectId: "vjc-project",
+        storageBucket: "vjc-project.appspot.com",
+        messagingSenderId: "232845886321",
+        appId: "1:232845886321:web:fbef48eda41d6c188b2cd0",
+        measurementId: "G-JPH0CGYTXT"
+      };
+    }
   } catch (e) {
-    console.error("Error parsing __firebase_config from environment:", e);
-    // Error message for the user will still show if the parsing failed,
-    // but the app will attempt to use the hardcoded config.
+    console.error("Error parsing Firebase config from Canvas global:", e);
+    // Set a user-friendly error message, but still try to use the default config if parsing failed
+    setError("Error loading Firebase configuration. Please ensure the '__firebase_config' global variable is a valid JSON string.");
+    firebaseConfig = { // Fallback to hardcoded if parsing fails
+      apiKey: "AIzaSyCvN2_0SkmcODcqOVqg3Tl0sRmwyHvaSdo",
+      authDomain: "vjc-project.firebaseapp.com",
+      projectId: "vjc-project",
+      storageBucket: "vjc-project.appspot.com",
+      messagingSenderId: "232845886321",
+      appId: "1:232845886321:web:fbef48eda41d6c188b2cd0",
+      measurementId: "G-JPH0CGYTXT"
+    };
   }
-  const initialAuthToken = typeof __initial_auth_token !== 'undefined' && __initial_auth_token ? __initial_auth_token : null;
+
+  const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+  // Use the hardcoded API key as requested, as process.env is not available here.
+  const geminiApiKey = "AIzaSyAUKN3JqIpKvuESCS2GM5egcUiBxLPAiiE";
+
 
   // --- Extracted Links from your Navbar Component ---
   // This array contains all the names and paths from your provided Navbar structure.
@@ -269,7 +281,7 @@ export default function App() {
     { "name": "Denmark Visit Visa", "url": "https://vjcoverseas.com/visit-visas/denmark" },
     { "name": "Austria Visit Visa", "url": "https://vjcoverseas.com/visit-visas/austria" },
     { "name": "Italy Visit Visa", "url": "https://vjcoverseas.com/visit-visas/italy" },
-    { "name": "Schengen Visit Visa", "url": "https://vjcoverseas.com/visit-visas/schengen" },
+    { "name": "Schengen Visit Visa", "url": "https://vjcoverseas.com/schengen-visas/schengen" },
     { "name": "Austria ", "url": "https://vjcoverseas.com/schengen-visas/austria" },
     { "name": "Belgium ", "url": "https://vjcoverseas.com/schengen-visas/belgium" },
     { "name": "Bulgaria ", "url": "https://vjcoverseas.com/schengen-visas/bulgaria" },
@@ -320,12 +332,7 @@ export default function App() {
   // Voice input states
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = useRef(null);
-  const messagesEndRef = useRef(null); // Ref for scrolling to bottom of chat
-
-  // Scroll to bottom of messages whenever messages update
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  // Removed messagesEndRef and its useEffect for auto-scrolling
 
 
   // Initialize Firebase and set up auth listener
@@ -514,60 +521,43 @@ export default function App() {
     setQuestion(''); // Clear input field
 
     try {
-      let linkText = "";
+      let finalLink = "";
       const lowerCaseQuestion = userQuestionForPrompt.toLowerCase();
 
-      // Check for job-related queries specifically for VJC
-      if (lowerCaseQuestion.includes("job") || lowerCaseQuestion.includes("career") || lowerCaseQuestion.includes("hiring") || lowerCaseQuestion.includes("opportunities")) {
-        if (lowerCaseQuestion.includes("vjc") || lowerCaseQuestion.includes("vj overseas")) {
-          linkText = "For job opportunities at VJC Overseas, please visit our careers page: https://vjcoverseas.com/careers";
-        }
-      }
-      // Check for latest updates/news queries
-      else if (lowerCaseQuestion.includes("latest-updates") || lowerCaseQuestion.includes("latest updates") || lowerCaseQuestion.includes("news") || lowerCaseQuestion.includes("recent news")) {
-        linkText = "For the latest news and updates from VJC Overseas, please visit: https://vjcoverseas.com/latest-news";
-      }
-      // Check for specific broken link scenario
-      else if (lowerCaseQuestion.includes("link is not opening") || lowerCaseQuestion.includes("broken link") || lowerCaseQuestion.includes("link not working")) {
-        linkText = "It seems you're having trouble with a link. Please ensure your internet connection is stable or try copying the link and pasting it directly into your browser. For general information, you can always visit our homepage: https://vjcoverseas.com/";
-      }
-
-
-      // If not a specific job or news query for VJC, then try to find a relevant link from allLinks
-      if (!linkText) {
+      // Determine the final link based on specific queries or general relevance
+      if (lowerCaseQuestion.includes("job") && (lowerCaseQuestion.includes("vjc") || lowerCaseQuestion.includes("vj overseas"))) {
+        finalLink = "https://vjcoverseas.com/careers";
+      } else if (lowerCaseQuestion.includes("latest-updates") || lowerCaseQuestion.includes("latest updates") || lowerCaseQuestion.includes("news") || lowerCaseQuestion.includes("recent news")) {
+        finalLink = "https://vjcoverseas.com/latest-news";
+      } else if (lowerCaseQuestion.includes("link is not opening") || lowerCaseQuestion.includes("broken link") || lowerCaseQuestion.includes("link not working")) {
+        finalLink = "https://vjcoverseas.com/"; // Direct to homepage for broken link reports
+      } else {
         const relevantLink = findRelevantLink(userQuestionForPrompt);
         if (relevantLink) {
-          linkText = `You can find more details here: ${relevantLink.url}`;
+          finalLink = relevantLink.url;
         } else {
-          linkText = "For more details on our services, please visit our website: https://vjcoverseas.com/";
+          finalLink = "https://vjcoverseas.com/"; // Default to homepage if no specific link found
         }
       }
 
-
+      // Construct the prompt for the AI, without including the link in the main generation instruction
       const prompt = `You are an AI assistant for VJC Overseas, specializing in overseas education, work visas, and tourist visas.
       The user's name is ${userName || 'valued client'}.
       Start your response with "Dear ${userName || 'valued client'}, regarding your query about ${userQuestionForPrompt.substring(0, 50)}${userQuestionForPrompt.length > 50 ? '...' : ''}:"
       Then, provide a detailed answer in 10-20 numbered points. Each point should be on a new line. If points are not suitable, provide a clear and concise paragraph.
-      Crucially, ensure your response stays strictly within the context of the user's current question and the preceding conversation. For example, if the conversation is about "study abroad" and the user asks "why USA", focus on reasons why the USA is a top *study* destination (e.g., IT sector opportunities relevant to academics/post-study careers), and do not diverge into general work or migration reasons unless explicitly asked.
+      Crucially, ensure your response stays strictly within the context of the user's current question and the preceding conversation. For example, if the conversation is about "study abroad" and the user asks "why USA", focus on reasons why the USA is a top *study* destination (e.g., academic excellence, research opportunities, IT sector opportunities relevant to academics/post-study careers, post-study work permits for students, etc.), and do not diverge into general work or migration reasons unless explicitly asked.
       If the query is related to a specific country or opportunity (e.g., Germany Opportunity Card, USA tours), explain it thoroughly.
-      If the query is about job opportunities at VJC Overseas, refer them to the careers page: https://vjcoverseas.com/careers.
-      If the query is about latest updates or news, refer them to the latest news page: https://vjcoverseas.com/latest-news.
-      If the user mentions a link not working, suggest checking their internet connection or manually navigating, and offer the homepage.
       When including URLs, please provide them as plain text (e.g., https://example.com/), and do not use Markdown link formatting ([text](url)). My frontend will handle converting plain URLs to clickable links.
-      Always conclude your answer by suggesting the user visit the VJC Overseas website for more details, using the most relevant link if found, otherwise the homepage.
       Here are the available topics and their corresponding base URLs: ${JSON.stringify(allLinks.map(l => ({ name: l.name, url: l.url })))}.
       Here is the user's question: "${userQuestionForPrompt}"
 
-      Now, answer the following question: "${userQuestionForPrompt}"
-      ${linkText}`;
+      Now, answer the following question: "${userQuestionForPrompt}"`; // Removed linkText from here
 
       let chatHistory = [];
       chatHistory.push({ role: "user", parts: [{ text: prompt }] });
 
       const payload = { contents: chatHistory };
-      // Hardcoding the API key as requested by the user.
-      const apiKey = "AIzaSyAUKN3JqIpKvuESCS2GM5egcUiBxLPAiiE";
-      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${geminiApiKey}`;
 
       const response = await fetch(apiUrl, {
         method: 'POST',
@@ -584,6 +574,20 @@ export default function App() {
 
         // Remove Markdown bolding (**text**)
         text = text.replace(/\*\*(.*?)\*\*/g, '$1');
+
+        // Append the determined finalLink after the AI's response
+        if (finalLink) {
+          if (lowerCaseQuestion.includes("link is not opening") || lowerCaseQuestion.includes("broken link") || lowerCaseQuestion.includes("link not working")) {
+            text += `\n\nIt seems you're having trouble with a link. Please ensure your internet connection is stable or try copying the link and pasting it directly into your browser. For general information, you can always visit our homepage: ${finalLink}`;
+          } else if (lowerCaseQuestion.includes("job") && (lowerCaseQuestion.includes("vjc") || lowerCaseQuestion.includes("vj overseas"))) {
+             text += `\n\nFor job opportunities at VJC Overseas, please visit our careers page: ${finalLink}`;
+          } else if (lowerCaseQuestion.includes("latest-updates") || lowerCaseQuestion.includes("latest updates") || lowerCaseQuestion.includes("news") || lowerCaseQuestion.includes("recent news")) {
+             text += `\n\nFor the latest news and updates from VJC Overseas, please visit: ${finalLink}`;
+          } else {
+            text += `\n\nFor more detailed information, please visit: ${finalLink}`;
+          }
+        }
+
 
         // This regex will now correctly pick up plain URLs and convert them to clickable links
         const urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -679,7 +683,7 @@ export default function App() {
                   )}
                 </div>
               ))}
-              <div ref={messagesEndRef} /> {/* For auto-scrolling */}
+              {/* Removed messagesEndRef */}
             </div>
 
             {/* Input and Buttons */}
