@@ -10,7 +10,7 @@ import Form from './Form';
 const mainStory = allNews[0];
 const nextStories = allNews.slice(1, 5);
 const visaNews = allNews.slice(5, 9);
-const allLatestUpdates = allNews.slice(9, 20); // More items for show more
+const allLatestUpdates = allNews.slice(9); // More items for show more
 const tickerNews = allNews.slice(5, 9);
 
 function NewsTickerBar({ news }) {

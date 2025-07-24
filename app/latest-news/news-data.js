@@ -386,7 +386,106 @@ export const allNews = [
 
   
 
+{
+  title: "Where can Indians travel visa-free in 2025? Here's the full list of 59 countries",
+  summary: "As of 2025, Indian passport holders can travel to 59 countries without a visa or with visa-on-arrival/e-visa access. Here's the complete list and what you need to know.",
+  image: "/indians-free-visas-for-54-countries.webp",
+  tag: "Visa-Free Travel",
+  readTime: "2 min read",
+  content: `
+    <p>
+      In 2025, the <strong>Indian passport</strong> continues to improve in global ranking, granting Indian citizens visa-free, visa-on-arrival, or e-visa access to <strong>59 countries</strong>. This opens exciting travel possibilities for Indian tourists, students, and business travelers.
+    </p>
 
+    <h2>Visa-Free Countries for Indians (2025)</h2>
+    <p>
+      Indian passport holders can travel <strong>visa-free</strong to several countries across Asia, the Caribbean, Africa, and Oceania. Here are some popular ones:
+    </p>
+    <ul>
+      <li>Bhutan</li>
+      <li>Nepal</li>
+      <li>Indonesia</li>
+      <li>Jamaica</li>
+      <li>Barbados</li>
+      <li>Fiji</li>
+      <li>Serbia</li>
+      <li>Trinidad and Tobago</li>
+      <li>Mauritius</li>
+      <li>Micronesia</li>
+    </ul>
+
+    <h2>Visa-on-Arrival & e-Visa Access</h2>
+    <p>
+      In addition to visa-free countries, Indians can also get <strong>visa-on-arrival</strong> or apply for an <strong>e-Visa</strong> in over 30 other countries like:
+    </p>
+    <ul>
+      <li>Thailand</li>
+      <li>Maldives</li>
+      <li>Kenya</li>
+      <li>Laos</li>
+      <li>Qatar</li>
+      <li>Sri Lanka</li>
+      <li>Tanzania</li>
+      <li>Zambia</li>
+    </ul>
+
+    <blockquote>
+      “Visa-free access helps Indian travelers explore new destinations with fewer formalities, saving time and money.” – Travel Expert
+    </blockquote>
+
+    <h2>Travel Tips</h2>
+    <ul>
+      <li>Check entry requirements before booking—some may still need proof of accommodation or return tickets.</li>
+      <li>Keep your passport valid for at least 6 months from the date of travel.</li>
+      <li>Always carry printed copies of important documents like travel insurance and itinerary.</li>
+    </ul>
+
+    <p>
+      For the latest updates on visa policies, and personalized travel support, reach out to <strong>VJC Overseas</strong>. We're here to make your global travel dreams a reality.
+    </p>
+  `
+},
+ 
+ {
+  title: "US Visa row: Infosys clarifies, 'Our dependence on H-1B reducing",
+  summary: "Infosys has responded to recent discussions around H-1B visa usage, stating that the company is strategically reducing its reliance on the visa program.",
+  image: "/depencies-on-hlb-visa-infosys.jpg",
+  tag: "USA",
+  readTime: "2 min read",
+  content: `
+    <p>
+      <strong>Infosys</strong>, one of India's leading IT services companies, has issued a clarification following debates surrounding the <strong>H-1B visa program</strong> in the United States. The company emphasized that it has been steadily decreasing its reliance on H-1B visas over recent years.
+    </p>
+
+    <h2>What Did Infosys Say?</h2>
+    <ul>
+      <li>Infosys stated it is actively investing in local hiring within the U.S. and other global markets.</li>
+      <li>The company confirmed a shift towards building local talent pipelines, reducing the need for visa-dependent roles.</li>
+      <li>It noted that digital transformation demands are being met increasingly by local employees trained in-house.</li>
+    </ul>
+
+    <p>
+      This clarification comes amid increased scrutiny of outsourcing firms and their role in utilizing H-1B visas, which are typically reserved for high-skilled foreign workers.
+    </p>
+
+    <blockquote>
+      “We are committed to localization and creating job opportunities in the markets where we operate,” – Infosys Spokesperson
+    </blockquote>
+
+    <h2>Why This Matters</h2>
+    <p>
+      The move aligns with U.S. policy directions encouraging domestic hiring and reducing overdependence on foreign talent through temporary work visas. It also reflects a broader trend among IT firms adapting to new visa norms and geopolitical challenges.
+    </p>
+
+    <p>
+      <strong>VJC Overseas</strong> recommends aspiring H-1B applicants to stay informed about changes and explore alternative visa options or countries as part of their career planning strategy.
+    </p>
+
+    <p>
+      For personalized H-1B and U.S. work visa guidance, contact <strong>VJC Overseas</strong> today.
+    </p>
+  `
+},
 
 {
   title: "New Zealand Student Visa Work Hours Increased",
