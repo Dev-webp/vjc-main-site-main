@@ -386,6 +386,7 @@ export const allNews = [
 
   
 
+
 {
   title: "Where can Indians travel visa-free in 2025? Here's the full list of 59 countries",
   summary: "As of 2025, Indian passport holders can travel to 59 countries without a visa or with visa-on-arrival/e-visa access. Here's the complete list and what you need to know.",
@@ -486,6 +487,7 @@ export const allNews = [
     </p>
   `
 },
+
 
 {
   title: "New Zealand Student Visa Work Hours Increased",
