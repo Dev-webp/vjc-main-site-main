@@ -20,18 +20,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${ptSerif.variable} ${playfairDisplay.variable}`}>
-      <head />
-      <body style={{ fontFamily: 'Times New Roman' }}>
-        {/* ✅ Static Components */}
-        <Nav />
-        <EligibilityBanner />
-        {children}
-        <ClientWidgets />
-        <Footer />
-
-        {/* ✅ Google Ads (gtag.js) */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-16767451796" strategy="lazyOnload" />
-        <Script id="gtag-init" strategy="lazyOnload">
+      <head>
+        {/* ✅ Google Ads Global Site Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16767451796"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -41,24 +36,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
 
         {/* ✅ Facebook Pixel */}
-        <Script id="fb-pixel" strategy="lazyOnload">
+        <Script id="facebook-pixel" strategy="afterInteractive">
           {`
-            !function(f,b,e,v,n,t,s){
-              if(f.fbq)return;n=f.fbq=function(){
-                n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;
-              n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
-              t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)
-            }(window, document, 'script',
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '2003555746606868');
             fbq('track', 'PageView');
           `}
         </Script>
+      </head>
+      <body style={{ fontFamily: 'Times New Roman' }}>
+        <Nav />
+        <EligibilityBanner />
+        {children}
+        <ClientWidgets />
+        <Footer />
 
-        {/* ✅ Facebook Pixel (noscript fallback) */}
+        {/* ✅ Facebook Pixel fallback for noscript */}
         <noscript>
           <img
             height="1"

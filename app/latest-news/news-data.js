@@ -448,47 +448,52 @@ export const allNews = [
 },
  
  {
-  title: "US Visa row: Infosys clarifies, 'Our dependence on H-1B reducing",
-  summary: "Infosys has responded to recent discussions around H-1B visa usage, stating that the company is strategically reducing its reliance on the visa program.",
-  image: "/depencies-on-hlb-visa-infosys.jpg",
+  title: "US tightens visa interview waiver rules from September 2: Here’s what changes for applicants",
+  summary: "Starting September 2, the US will enforce stricter rules for visa interview waivers, affecting many Indian applicants. Here's what changes.",
+  image: "/US-tightens-visa-interview-waiver-rules-from-September-2-Heres-what-changes-for-applicants.png",
   tag: "USA",
   readTime: "2 min read",
   content: `
     <p>
-      <strong>Infosys</strong>, one of India's leading IT services companies, has issued a clarification following debates surrounding the <strong>H-1B visa program</strong> in the United States. The company emphasized that it has been steadily decreasing its reliance on H-1B visas over recent years.
+      The United States is set to tighten the eligibility criteria for <strong>visa interview waivers</strong> starting <strong>September 2</strong>, affecting thousands of applicants worldwide, especially from high-volume countries like India.
     </p>
 
-    <h2>What Did Infosys Say?</h2>
+    <h2>What’s Changing?</h2>
     <ul>
-      <li>Infosys stated it is actively investing in local hiring within the U.S. and other global markets.</li>
-      <li>The company confirmed a shift towards building local talent pipelines, reducing the need for visa-dependent roles.</li>
-      <li>It noted that digital transformation demands are being met increasingly by local employees trained in-house.</li>
+      <li>Applicants renewing visas in the same category may no longer be automatically eligible for an interview waiver.</li>
+      <li>More in-person interviews will be required, especially for first-time applicants and those whose previous visas expired long ago.</li>
+      <li>U.S. consulates may begin re-evaluating waiver eligibility on a case-by-case basis instead of broader blanket waivers.</li>
     </ul>
 
     <p>
-      This clarification comes amid increased scrutiny of outsourcing firms and their role in utilizing H-1B visas, which are typically reserved for high-skilled foreign workers.
+      These updates are part of the U.S. State Department’s efforts to maintain security while managing increasing visa demand post-COVID.
     </p>
 
     <blockquote>
-      “We are committed to localization and creating job opportunities in the markets where we operate,” – Infosys Spokesperson
+      “Interview waivers were extended broadly during the pandemic — this change reflects a return to more standard procedures,” – U.S. Embassy Official
     </blockquote>
 
-    <h2>Why This Matters</h2>
+    <h2>Who Will Be Most Affected?</h2>
     <p>
-      The move aligns with U.S. policy directions encouraging domestic hiring and reducing overdependence on foreign talent through temporary work visas. It also reflects a broader trend among IT firms adapting to new visa norms and geopolitical challenges.
+      <strong>Indian students, business travelers, and work visa holders</strong> who previously benefited from dropbox/waiver options may now face delays or additional steps. This includes categories like B1/B2, H-1B, and F-1 renewals.
+    </p>
+
+    <h2>What You Should Do</h2>
+    <ul>
+      <li>Apply early to account for longer processing times.</li>
+      <li>Monitor U.S. Embassy updates regularly.</li>
+      <li>Be prepared with documentation in case you're called for an interview.</li>
+    </ul>
+
+    <p>
+      <strong>VJC Overseas</strong> advises all U.S.-bound visa applicants to stay alert and prepare for these policy shifts.
     </p>
 
     <p>
-      <strong>VJC Overseas</strong> recommends aspiring H-1B applicants to stay informed about changes and explore alternative visa options or countries as part of their career planning strategy.
-    </p>
-
-    <p>
-      For personalized H-1B and U.S. work visa guidance, contact <strong>VJC Overseas</strong> today.
+      For detailed guidance on U.S. visa processes and interview prep, contact <strong>VJC Overseas</strong> today.
     </p>
   `
 },
-
-
 {
   title: "New Zealand Student Visa Work Hours Increased",
   summary: "New Zealand has increased in-study work hours for international students from 20 to 25 hours per week, effective November 2025.",
