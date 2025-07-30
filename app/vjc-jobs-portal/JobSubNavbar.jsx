@@ -41,7 +41,7 @@ const JobSubNavbar = ({
       } top-[90px] lg:top-[80px]`}
     >
       <div className="w-full px-2 py-2 flex justify-center bg-transparent">
-        <div className="w-full max-w-[1280px] flex items-center justify-between gap-2 bg-white/90 backdrop-blur-md border border-orange-300 px-4 py-2 rounded-full shadow-md">
+        <div className="w-full max-w-[1280px] flex items-center justify-between gap-2 bg-white backdrop-blur-md border border-orange-300 px-4 py-2 rounded-full shadow-md">
 
           {/* Country Dropdown */}
           <div className="flex items-center gap-1 min-w-[120px]">

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { X } from "lucide-react";
 
 const skillOptions = [
@@ -181,7 +182,17 @@ const Page = () => {
       >
         <div className="flex items-center gap-4">
           {profileImage ? (
-            <img src={profileImage} alt="Profile" className="w-16 h-16 rounded-full" />
+            <div className="relative w-16 h-16 rounded-full overflow-hidden">
+              <Image
+                src={profileImage}
+                alt="Profile"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+                unoptimized
+                priority
+              />
+            </div>
           ) : (
             <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-gray-500">
               No Image

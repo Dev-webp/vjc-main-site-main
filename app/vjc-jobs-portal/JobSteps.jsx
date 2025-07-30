@@ -39,7 +39,7 @@ const JobSteps = () => {
   ];
 
   return (
-    <div className="w-full  lg:mt-24 mt-28 -mb-14 lg:-mb-8">
+    <div className="w-full  lg:mt-28 mt-32 -mb-16 lg:-mb-14">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between gap-4">
           {steps.map((step, idx) => (

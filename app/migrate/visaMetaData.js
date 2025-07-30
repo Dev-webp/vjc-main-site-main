@@ -1,9 +1,9 @@
 export const visaMetaData = {
   germany: {
     "opportunity-card": {
-      title: " Germany Opportunity Card by VJC Overseas – Chancekarte",
-      description: "Explore Germany’s Opportunity Card – Chancekarte with VJC Overseas. Your opportunity to live, work, and grow in Germany starts here.",
-      keywords: "chancekarte, germany opportunity card, germany job seeker visa, germany work visa, opportunity card Germany, germany work permit, job search visa Germany, germany work visa from india, germany job visa, germany work permit visa, germany employment visa, germany work permit from india, work permit germany requirements,apply Germany opportunity card, Germany work seeker visa",
+      title: "Germany Opportunity Card Visa for Skilled IT Professionals Job Seeker Work Permit Visa 2025",
+      description: "Apply Online for Germany Opportunity Card Visa to live and settle also Job Search with Germany Job Seeker Visa and it is also called as Chancenkarte Germany Visa for Life Settlement by Skilled Worker Visa with Best Visa Immigration Consultants in Hyderabad for Free Assessment and Free eligibility check for Germany Opportunity Card Process online.",
+      keywords: "Germany Opportunity Card, Germany Opportunity Card Visa 2025, Opportunity Card Visa Germany, German Job Seeker Visa, Work in Germany, Migrate to Germany, Germany Skilled Immigration, Germany Work Visa for Indians, Germany points-based visa, Germany PR Process, Germany Visa Eligibility, Apply for Germany Opportunity Card, Skilled Worker Visa, Best Visa and Immigration Consultants for Germany, IT Professionals",
     },
     "work-visa": {
       title: "Germany Work Visa 2025 | Expert Help by VJC Overseas",

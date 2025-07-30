@@ -46,7 +46,7 @@ const ClientLayout = ({ children }) => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-blue-50">
+    <div className="relative min-h-screen bg-white">
       {/* ✅ Google Tag */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-16767451796"

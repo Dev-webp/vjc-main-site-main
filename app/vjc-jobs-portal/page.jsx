@@ -4,10 +4,35 @@ import { motion } from "framer-motion";
 import LoginModal from "./LoginModal";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+
+const companyLogos = [
+  "/hp.png",
+  "/ibm.png",
+  "/tcs.png",
+  "/infosys.png",
+  "/google.webp",
+  "/amazon.jpg",
+  "/hcl.png",
+  "/accenture.png",
+  "/apple.webp",
+  "/Microsoft.webp",
+  "/Kalven-logo.png",
+  "/LOGO-VJC.png",
+  "/Deloitte-Logo.png",
+  "/intel.png",
+];
+
 const countries = [
   "UAE", "Luxembourg", "UK", "Ireland", "Singapore",
   "Malaysia", "Germany", "Canada", "Australia", "South Africa", "Denmark",
+];
+
+const newsTickerMessages = [
+  "Visa sponsorship available for skilled tech professionals 🌍",
+  "Explore high-paying jobs in Germany, Canada, and Australia 🚀",
+  "Resume feedback and visa consultation now available 💼",
+  "Upload your resume and fast-track your overseas career 📤",
+  "Jobs open for React, Node.js, DevOps, and AWS specialists 💻",
 ];
 
 const JobPortalPage = () => {
@@ -52,18 +77,12 @@ const JobPortalPage = () => {
       )}
 
       <div className="px-4 pt-6 pb-12 max-w-7xl mx-auto">
-        <motion.h1
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-4xl sm:text-5xl font-extrabold text-center mb-6 text-blue-900"
-        >
-          Explore Global Job Opportunities with{" "}
-          <span className="text-orange-500">VJC Overseas</span>
-        </motion.h1>
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-6 text-blue-900">
+          Explore Global Job Opportunities with <span className="text-orange-500">VJC Overseas</span>
+        </h1>
 
         {user && (
-          <div className="flex items-center justify-center gap-4 mb-10">
+          <div className="flex items-center justify-center gap-4 mb-6">
             {profileImage ? (
               <Image
                 src={profileImage}
@@ -88,6 +107,53 @@ const JobPortalPage = () => {
           </div>
         )}
 
+        {/* 📰 News Ticker */}
+        <div className="overflow-hidden bg-orange-200 border border-orange-500 rounded px-4 py-2 mb-8">
+          <div className="whitespace-nowrap hover:[animation-play-state:paused] animate-marquee text-blue-900 font-medium">
+            {newsTickerMessages.map((msg, idx) => (
+              <span key={idx} className="inline-block mr-16">🚀 {msg}</span>
+            ))}
+          </div>
+        </div>
+
+        {/* 🏢 Company Logos Section */}
+        <h2 className="text-xl sm:text-3xl font-semibold text-center text-blue-900 mb-6">Companies We’re Tied Up With</h2>
+        
+        {/* Forward Scroll */}
+        <div className="overflow-hidden whitespace-nowrap mb-2 relative">
+          <div className="animate-marquee inline-flex gap-3 sm:gap-5 md:gap-7 py-1">
+            {companyLogos.concat(companyLogos).map((logo, idx) => (
+              <Image
+                key={idx}
+                src={logo}
+                alt="Company Logo"
+                width={80}
+                height={40}
+                className="object-contain rounded shadow w-[60px] sm:w-[80px] md:w-[90px]"
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Reverse Scroll */}
+        <div className="overflow-hidden whitespace-nowrap mb-8 relative">
+          <div className="animate-marquee-reverse inline-flex gap-3 sm:gap-5 md:gap-7 py-1">
+            {companyLogos.concat(companyLogos).map((logo, idx) => (
+              <Image
+                key={idx}
+                src={logo}
+                alt="Company Logo"
+                width={80}
+                height={40}
+                className="object-contain rounded shadow w-[60px] sm:w-[80px] md:w-[90px]"
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* 🌍 Country Cards Section */}
+        <h2 className="text-xl sm:text-3xl font-semibold text-center text-blue-900 mb-8">Countries We Assist With</h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {countries.map((country, index) => {
             const link = `/vjc-jobs-portal/${country.toLowerCase().replace(/\s+/g, "-")}`;
@@ -99,7 +165,6 @@ const JobPortalPage = () => {
                 onClick={(e) => handleCardClick(e, link)}
               >
                 <div className="flip-card-inner">
-                  {/* Front Side */}
                   <div
                     className="flip-card-front"
                     style={{
@@ -115,7 +180,6 @@ const JobPortalPage = () => {
                     </div>
                   </div>
 
-                  {/* Back Side */}
                   <div
                     className="flip-card-back"
                     style={{
@@ -126,9 +190,7 @@ const JobPortalPage = () => {
                   >
                     <div className="w-full h-full bg-black/60 flex flex-col items-center justify-center p-4 rounded-2xl">
                       <h2 className="text-white text-xl font-bold mb-3">{country}</h2>
-                      <button
-                        className="bg-white text-black rounded-full px-5 py-2 text-sm font-semibold hover:bg-yellow-300 transition"
-                      >
+                      <button className="bg-white text-black rounded-full px-5 py-2 text-sm font-semibold hover:bg-yellow-300 transition">
                         Apply Now
                       </button>
                     </div>
@@ -140,7 +202,7 @@ const JobPortalPage = () => {
         </div>
       </div>
 
-      {/* Flip card styles */}
+      {/* Flip Card & Marquee Animations */}
       <style jsx>{`
         .flip-card {
           background-color: transparent;
@@ -178,6 +240,24 @@ const JobPortalPage = () => {
         }
         .flip-card-back {
           transform: rotateY(180deg);
+        }
+
+        .animate-marquee {
+          animation: marquee 20s linear infinite;
+        }
+
+        .animate-marquee-reverse {
+          animation: marquee-reverse 20s linear infinite;
+        }
+
+        @keyframes marquee {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
+        }
+
+        @keyframes marquee-reverse {
+          0% { transform: translateX(-50%); }
+          100% { transform: translateX(0%); }
         }
       `}</style>
     </div>
