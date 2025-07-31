@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
   return (
@@ -21,11 +22,17 @@ const Content = () => {
 
       <p style={{ marginBottom: "20px" }}>
         Dreaming of a fresh start in one of Europe’s strongest economies?{" "}
-        <span className="text-sky-600 font-medium">Germany</span> offers a
-        wealth of opportunities for skilled professionals, students,
-        entrepreneurs, and families. Whether you're seeking world-class
-        education, high-paying jobs, or a stable lifestyle — migrating to
-        Germany could be your smartest move yet.
+        <Link
+          href="https://vjcoverseas.com/migrate/germany"
+          className="font-bold text-black hover:underline"
+        >
+          Migrate to Germany
+        </Link>{" "}
+        with the right guidance and support. Germany offers a wealth of
+        opportunities for skilled professionals, students, entrepreneurs, and
+        families. Whether you're seeking world-class education, high-paying
+        jobs, or a stable lifestyle — moving to Germany could be your smartest
+        decision yet.
       </p>
 
       <h3 className="text-orange-600 font-bold mb-2">Why Choose Germany?</h3>
@@ -33,7 +40,14 @@ const Content = () => {
         <li>
           <strong className="text-sky-600">Thriving Job Market:</strong> Germany
           is actively seeking international talent in IT, engineering,
-          healthcare, and more.
+          healthcare, and more through options like the{" "}
+          <Link
+            href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa"
+            className="font-bold text-black hover:underline"
+          >
+            Germany Skilled Worker Visa
+          </Link>
+          .
         </li>
         <li>
           <strong className="text-sky-600">Free or Low-Cost Education:</strong>{" "}
@@ -47,8 +61,96 @@ const Content = () => {
         </li>
         <li>
           <strong className="text-sky-600">Path to Permanent Residency:</strong>{" "}
-          Germany offers clear routes to PR and citizenship.
+          Explore long-term career growth and security through the{" "}
+          <Link
+            href="https://www.vjcoverseas.com/pr-visas/germany-blue-card"
+            className="font-bold text-black hover:underline"
+          >
+            Germany PR Visa
+          </Link>
+          , with clear routes to permanent residency and citizenship.
         </li>
+      </ul>
+
+      <h3 className="text-orange-600 font-bold mb-2">
+        Popular German Visa Options
+      </h3>
+      <ul className="mb-5 list-disc pl-5 text-gray-800">
+        <li>
+          <Link
+            href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa"
+            className="font-bold text-black hover:underline"
+          >
+            Germany Skilled Worker Visa
+          </Link>
+          : For professionals with recognized qualifications and work
+          experience.
+        </li>
+        <li>
+          <strong className="text-black">Germany Opportunity Card:</strong>{" "}
+          A points-based pathway to live and work in Germany.
+        </li>
+        <li>
+          <strong className="text-black">Student Visa:</strong> Study in
+          top-ranked universities with global recognition.
+        </li>
+        <li>
+          <strong className="text-black">
+            <Link
+              href="https://vjcoverseas.com/migrate/germany"
+              className="font-bold text-black hover:underline"
+            >
+              Germany Job Seeker Visa
+            </Link>
+          </strong>
+          : Stay in Germany for up to 6 months while finding employment.
+        </li>
+        <li>
+          <strong className="text-black">Family Reunion Visa:</strong> Join your
+          spouse or family already living in Germany.
+        </li>
+      </ul>
+
+      <h3 className="text-orange-600 font-bold mb-2">
+        Your Migration Journey, Simplified
+      </h3>
+      <p className="mb-5">
+        At{" "}
+        <Link
+          href="https://www.vjcoverseas.com/"
+          className="text-orange-600 font-bold hover:underline"
+        >
+          VJC Overseas
+        </Link>
+        , one of{" "}
+        <Link
+          href="https://www.vjcoverseas.com/"
+          className="font-bold text-black hover:underline"
+        >
+          Best Visa Immigration Consultants
+        </Link>
+        , we turn your migration dream into a well-planned reality.
+      </p>
+
+      <p className="mb-2 font-semibold">We offer:</p>
+      <ul className="mb-5 list-disc pl-5 text-gray-800">
+        <li>Free Eligibility Assessment</li>
+        <li>Document Verification & Application Guidance</li>
+        <li>Visa Filing & Interview Preparation</li>
+        <li>Pre-Departure and Settlement Support</li>
+      </ul>
+
+      <p className="mb-5">
+        Our dedicated team helps you at every step — from choosing the right
+        visa to securing a smooth transition to your new life in Germany.
+      </p>
+
+      <h3 className="text-orange-600 font-bold mb-2">Who Can Apply?</h3>
+      <ul className="mb-10 list-disc pl-5 text-gray-800">
+        <li>Professionals with degrees/diplomas</li>
+        <li>Students looking for world-class education</li>
+        <li>Entrepreneurs and freelancers</li>
+        <li>Recent graduates aiming for global careers</li>
       </ul>
 
       <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
@@ -63,58 +165,45 @@ const Content = () => {
         />
       </div>
 
-      <h3 className="text-orange-600 font-bold mb-2">
-        Popular German Visa Options
-      </h3>
-      <ul className="mb-5 list-disc pl-5 text-gray-800">
-        <li>
-          <strong className="text-sky-600">Skilled Worker Visa:</strong> For
-          professionals with recognized qualifications.
-        </li>
-        <li>
-          <strong className="text-sky-600">Germany Opportunity Card:</strong> A
-          points-based pathway to live and work in Germany.
-        </li>
-        <li>
-          <strong className="text-sky-600">Student Visa:</strong> Study in
-          top-ranked universities with global recognition.
-        </li>
-        <li>
-          <strong className="text-sky-600">Job Seeker Visa:</strong> Stay in
-          Germany for up to 6 months while finding employment.
-        </li>
-        <li>
-          <strong className="text-sky-600">Family Reunion Visa:</strong> Join
-          your spouse or family already living in Germany.
-        </li>
-      </ul>
-
-      <h3 className="text-orange-600 font-bold mb-2">
-        Your Migration Journey, Simplified
-      </h3>
-      <p className="mb-5">
-        At <strong className="text-sky-600">VJC Overseas</strong>, we make your
-        dream of migrating to Germany a reality:
+      <p className="text-center font-medium">
+        Ready to{" "}
+        <Link
+          href="https://vjcoverseas.com/migrate/germany"
+          className="font-bold text-black hover:underline"
+        >
+          Migrate to Germany
+        </Link>
+        ? <br />
+        Choose{" "}
+        <Link
+          href="https://www.vjcoverseas.com/"
+          className="text-orange-600 font-bold hover:underline"
+        >
+          VJC Overseas
+        </Link>
+        , your trusted partner in global migration. Whether it's the{" "}
+        <Link
+          href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa"
+          className="font-bold text-black hover:underline"
+        >
+          Germany Skilled Worker Visa
+        </Link>
+        ,{" "}
+        <Link
+          href="https://vjcoverseas.com/migrate/germany"
+          className="font-bold text-black hover:underline"
+        >
+          Germany Job Seeker Visa
+        </Link>{" "}
+        or{" "}
+        <Link
+          href="https://www.vjcoverseas.com/pr-visas/germany-blue-card"
+          className="font-bold text-black hover:underline"
+        >
+          Germany PR Visa
+        </Link>{" "}
+        — we provide expert consultation and reliable visa processing support.
       </p>
-      <ul className="mb-5 list-disc pl-5 text-gray-800">
-        <li>Free Eligibility Assessment</li>
-        <li>Document Verification & Application Guidance</li>
-        <li>Visa Filing & Interview Prep</li>
-        <li>Pre-Departure and Settlement Support</li>
-      </ul>
-
-      <p className="mb-5">
-        Our dedicated experts help you every step of the way — from choosing the
-        right visa to settling in your new home.
-      </p>
-
-      <h3 className="text-orange-600 font-bold mb-2">Who Can Apply?</h3>
-      <ul className="mb-10 list-disc pl-5 text-gray-800">
-        <li>Professionals with degrees/diplomas</li>
-        <li>Students who want international education</li>
-        <li>Entrepreneurs and freelancers</li>
-        <li>Recent graduates looking for global careers</li>
-      </ul>
     </div>
   );
 };

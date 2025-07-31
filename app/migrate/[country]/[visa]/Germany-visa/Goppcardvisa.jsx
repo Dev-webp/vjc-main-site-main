@@ -1,64 +1,58 @@
+// app/components/Content.jsx or wherever you use it
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
- 
+
 const Content = () => {
   return (
     <div
-      style={{
-        position: "relative",
-        padding: "10px",
-        boxSizing: "border-box",
-        backgroundColor: "white",
-        fontFamily: "Times New Roman",
-        overflow: "hidden",
-      }}
+      className="overflow-x-hidden px-4 sm:px-6 lg:px-8 py-8 bg-white font-times-new-roman"
     >
-      {/* Main Heading */}
-      <div style={{ marginBottom: "40px" }}>
-        <h1 className="text-2xl font-bold text-black text-center">
-          Germany Opportunity Card – Your Gateway to a Bright Future -{" "}
-          <span className="text-orange-600">VJC Overseas</span>
+      {/* Heading */}
+      <div className="mb-10">
+        <h1 className="text-2xl font-bold text-black text-center leading-snug">
+          <Link href="https://vjcoverseas.com/germany-opportunity-card" className="hover:underline font-semibold">
+            <strong>Germany Opportunity Card</strong>
+          </Link>{" "}
+          – Your Gateway to a Bright Future -{" "}
+          <Link href="https://vjcoverseas.com/" className="hover:underline font-semibold text-orange-600">
+            <strong>VJC Overseas</strong>
+          </Link>
         </h1>
       </div>
- 
-      {/* Paragraph 1 – VJC Overseas + Germany Opportunity Card */}
-      <p className="mb-5">
+
+      {/* Intro Paragraph */}
+      <p className="mb-6 text-base leading-relaxed">
         At{" "}
-        <Link
-          href="https://vjcoverseas.com/"
-          className="hover:underline font-semibold"
-        >
-          VJC Overseas
+        <Link href="https://vjcoverseas.com/" className="hover:underline font-semibold text-orange-600">
+          <strong>VJC Overseas</strong>
         </Link>
         , we take immense pride in offering one of the most promising immigration
         solutions to secure your future in Germany — the{" "}
-        <Link
-          href="https://vjcoverseas.com/germany-opportunity-card"
-          className="hover:underline font-semibold"
-        >
-          Germany Opportunity Card
+        <Link href="https://vjcoverseas.com/germany-opportunity-card" className="hover:underline font-semibold">
+          <strong>Germany Opportunity Card</strong>
         </Link>
         . This innovative, points-based initiative has opened exciting doors for
-        skilled professionals, helping them migrate to Germany and build
-        successful careers in one of Europe’s most thriving economies.
+        skilled professionals to{" "}
+        <Link href="https://vjcoverseas.com/migrate/germany" className="hover:underline font-semibold">
+          <strong>Migrate To Germany</strong>
+        </Link>{" "}
+        and build successful careers in one of Europe’s most thriving economies.
       </p>
- 
-      {/* Image + What is the Germany Opportunity Card */}
-      <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0 mb-6">
-        {/* Image column */}
-        <div className="flex-shrink-0 mx-auto lg:mx-0" style={{ lineHeight: 0 }}>
+
+      {/* Image + Explanation Section */}
+      <div className="flex flex-col lg:flex-row items-start lg:space-x-6 space-y-6 lg:space-y-0 mb-8">
+        {/* Image Section */}
+        <div className="w-full lg:w-1/2 mx-auto">
           <Image
             src="/gocimg.png"
             alt="Germany Opportunity Card"
             width={500}
             height={300}
-            style={{ display: "block", marginBottom: 0 }}
-            className="block w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
+            className="w-full max-w-md mx-auto object-contain rounded-lg shadow-md"
             priority
             unoptimized
           />
-          {/* Quick Facts: shown only on lg+ to fill vertical gap under image */}
           <ul className="hidden lg:block mt-4 text-sm text-gray-700 list-disc pl-5 space-y-1">
             <li>No job offer needed to enter Germany and search locally.</li>
             <li>Points-based pathway for skilled professionals.</li>
@@ -66,191 +60,134 @@ const Content = () => {
             <li>In-demand fields: IT, Engineering, Healthcare.</li>
           </ul>
         </div>
- 
-        <div className="px-4 lg:px-0">
+
+        {/* Text Section */}
+        <div className="w-full lg:w-1/2">
           <h2 className="text-black font-bold mb-3 text-lg sm:text-xl">
             What is the{" "}
-            <Link
-              href="https://vjcoverseas.com/germany-opportunity-card"
-              className="hover:underline"
-            >
-              Germany Opportunity Card
+            <Link href="https://vjcoverseas.com/germany-opportunity-card" className="hover:underline font-semibold">
+              <strong>Germany Opportunity Card</strong>
             </Link>
             ?
           </h2>
-          {/* Paragraph 2 – migrate to Germany */}
-          <p className="mb-4 text-sm sm:text-base">
-            The Germany Opportunity Card is a strategic immigration pathway
-            designed for highly skilled professionals from outside the European
-            Union to live and work in Germany. Introduced as part of Germany’s
-            new points-based immigration system, it offers a flexible and faster
-            route to residency — especially in fields experiencing critical skill
-            shortages like IT, engineering, and healthcare. Whether you're aiming
-            to expand your professional journey or looking to settle in one of
-            the world’s most developed countries, this card provides the ideal
-            path to{" "}
-            <Link
-              href="https://vjcoverseas.com/migrate/germany"
-              className="hover:underline font-semibold"
-            >
-              migrate to Germany
+          <p className="text-sm sm:text-base leading-relaxed">
+            The{" "}
+            <Link href="https://vjcoverseas.com/germany-opportunity-card" className="hover:underline font-semibold">
+              <strong>Germany Opportunity Card</strong>
             </Link>{" "}
-            and explore abundant opportunities.
+            is a strategic immigration pathway designed for highly skilled professionals from outside the EU. It offers a flexible and faster route to residency — especially in fields with skill shortages.
           </p>
         </div>
       </div>
- 
-      {/* Why Choose VJC Overseas */}
-      <h2 className="text-xl font-bold text-black mt-5 mb-3">
-        Why Choose VJC Overseas?
+
+      {/* Why Choose VJC */}
+      <h2 className="text-xl font-bold text-black mt-6 mb-3">
+        Why Choose{" "}
+        <Link href="https://vjcoverseas.com/" className="hover:underline font-semibold text-orange-600">
+          <strong>VJC Overseas</strong>
+        </Link>
+        ?
       </h2>
-      {/* Paragraph 3 – Best Visa Immigration Consultants */}
-      <p className="mb-5">
-        At VJC Overseas, we understand that applying for an international visa
-        can feel overwhelming. Our mission is to simplify the process for skilled
-        professionals and ensure that each stage of the application is completed
-        with precision, clarity, and speed. As one of the{" "}
-        <Link
-          href="https://vjcoverseas.com/"
-          className="hover:underline font-semibold"
-        >
-          Best Visa Immigration Consultants
+      <p className="mb-6 leading-relaxed">
+        At{" "}
+        <Link href="https://vjcoverseas.com/" className="hover:underline font-semibold text-orange-600">
+          <strong>VJC Overseas</strong>
+        </Link>
+        , we simplify your international journey. As one of the{" "}
+        <Link href="https://vjcoverseas.com/" className="hover:underline font-semibold">
+          <strong>Best Visa Immigration Consultants</strong>
         </Link>{" "}
-        in India with offices in Hyderabad and Bangalore, we bring unmatched
-        experience in guiding applicants through the Germany Opportunity Card
-        process.
+        in India, we support you every step of the way.
       </p>
- 
-      {/* Why is the Germany Opportunity Card a Game Changer */}
-      <h2 className="text-xl font-bold text-black mt-5 mb-3">
-        Why is the Germany Opportunity Card a Game Changer?
+
+      {/* Game Changer */}
+      <h2 className="text-xl font-bold text-black mt-6 mb-3">
+        Why is the{" "}
+        <Link href="https://vjcoverseas.com/germany-opportunity-card" className="hover:underline font-semibold">
+          <strong>Germany Opportunity Card</strong>
+        </Link>{" "}
+        a Game Changer?
       </h2>
-      <ul className="list-disc pl-6 mb-5">
-        <li className="mb-2">
-          <strong>Faster Processing Times</strong>
-          <br />
-          The card offers quicker visa approvals, helping you enter the German
-          job market with minimal delays.
+      <ul className="list-disc pl-6 mb-6 space-y-2">
+        <li>
+          <strong>Faster Processing:</strong> Enter the job market with minimal delays.
         </li>
-        <li className="mb-2">
-          <strong>Job Flexibility Without an Offer Letter</strong>
-          <br />
-          One major advantage of the Germany Opportunity Card is that it allows
-          you to enter Germany without a job offer and search for relevant
-          employment while you're there.
+        <li>
+          <strong>No Offer Letter Needed:</strong> Search for jobs directly in Germany.
         </li>
-        <li className="mb-2">
-          <strong>Pathway to Permanent Residency</strong>
-          <br />
-          With continued employment and successful integration, you may become
-          eligible for permanent residency in Germany — a key benefit of this
-          program.
+        <li>
+          <strong>Residency Pathway:</strong> Continued employment can lead to permanent residency.
         </li>
-        <li className="mb-2">
-          <strong>Optimized Application Support</strong>
-          <br />
-          Through our expertise and proven methods, we ensure each application
-          has a high chance of approval — reducing delays and increasing
-          confidence.
+        <li>
+          <strong>Expert Application Support:</strong> Higher success rate with our guidance.
         </li>
       </ul>
- 
-      {/* VJC Overseas – Your Trusted Partner for Success */}
-      <h2 className="text-xl font-bold text-black mt-5 mb-3">
-        VJC Overseas – Your Trusted Partner for Success
+
+      {/* VJC Partner */}
+      <h2 className="text-xl font-bold text-black mt-6 mb-3">
+        <Link href="https://vjcoverseas.com/" className="hover:underline font-semibold text-orange-600">
+          <strong>VJC Overseas</strong>
+        </Link>{" "}
+        – Your Trusted Partner for Success
       </h2>
-      <p className="mb-5">
-        As leading Germany visa consultants, we take pride in offering
-        full-spectrum guidance from consultation to visa approval. With a success
-        rate that includes approvals every alternate day, our process speaks for
-        itself.
+      <p className="mb-6">
+        We offer full-spectrum migration services with proven results.
       </p>
- 
-      {/* The VJC Overseas Advantage */}
-      <h2 className="text-xl font-bold text-black mt-5 mb-3">
-        The VJC Overseas Advantage:
-      </h2>
-      <ul className="list-disc pl-6 mb-5">
-        {/* Paragraph 4 – eligibility for the Germany Opportunity Card */}
-        <li className="mb-2">
-          <strong>Expert Consultation:</strong> We conduct an in-depth assessment
-          to determine your{" "}
-          <Link
-            href="https://vjcoverseas.com/assessment"
-            className="hover:underline"
-          >
-            eligibility for the Germany Opportunity Card
-          </Link>{" "}
-          and create a roadmap tailored to your goals.
+
+      {/* VJC Advantage */}
+      <h2 className="text-xl font-bold text-black mt-6 mb-3">The VJC Advantage:</h2>
+      <ul className="list-disc pl-6 mb-6 space-y-2">
+        <li>
+          <strong>Expert Consultation:</strong> Personal roadmap based on your{" "}
+          <Link href="https://vjcoverseas.com/assessment" className="hover:underline font-semibold">
+            <strong>Eligibility</strong>
+          </Link>
+          .
         </li>
-        <li className="mb-2">
-          <strong>Customized Job Search Assistance:</strong> Our network of
-          recruiters and employers in Germany helps you connect with relevant job
-          opportunities in your domain.
+        <li>
+          <strong>Job Search Assistance:</strong> Connect with openings in your domain.
         </li>
-        <li className="mb-2">
-          <strong>End-to-End Visa Support:</strong> From document verification to
-          embassy submission, we offer complete assistance in ensuring your
-          application is flawless.
+        <li>
+          <strong>End-to-End Visa Support:</strong> From document check to embassy support.
         </li>
-        <li className="mb-2">
-          <strong>Proven Results:</strong> We consistently deliver successful
-          outcomes, which has positioned VJC Overseas as the best visa consultant
-          for Germany opportunities.
+        <li>
+          <strong>Proven Results:</strong> Our track record speaks for itself.
         </li>
       </ul>
- 
-      {/* Success Stories */}
-      <h2 className="text-xl font-bold text-black mt-5 mb-3">Success Stories</h2>
-      <p className="mb-5 text-sm italic">
-        We are proud to have helped hundreds of professionals and families
-        successfully relocate to Germany. Hear from our satisfied clients who are
-        now thriving in their new careers:
-      </p>
-      <p className="mb-5 text-sm italic">
-        ``I never thought that applying for the Germany Opportunity Card would be
-        this easy. Thanks to VJC Overseas, my visa was approved quickly, and I
-        found a great job within just a few months.`` — Anjali S., Software
-        Developer
-      </p>
- 
-      {/* Start Your Journey Today */}
-      <h2 className="text-xl font-bold text-black mt-5 mb-3">
-        Start Your Journey Today
-      </h2>
-      <p className="mb-3 text-sm">Are you ready to build your future in Germany?</p>
-      <p className="mb-5 text-sm">
-        The{" "}
-        <Link
-          href="https://vjcoverseas.com/germany-opportunity-card"
-          className="hover:underline font-semibold"
-        >
-          Germany Opportunity Card
+
+      {/* Testimonial */}
+      <h2 className="text-xl font-bold text-black mt-6 mb-3">Success Stories</h2>
+      <p className="mb-6 italic text-sm">
+        “I never thought the{" "}
+        <Link href="https://vjcoverseas.com/germany-opportunity-card" className="hover:underline font-semibold">
+          <strong>Germany Opportunity Card</strong>
         </Link>{" "}
-        offers the ideal opportunity for you to live, work, and settle in Germany,
-        backed by a streamlined process and professional guidance. Check your{" "}
-        <Link
-          href="https://vjcoverseas.com/assessment"
-          className="hover:underline font-semibold"
-        >
-          eligibility for the Germany Opportunity Card
-        </Link>{" "}
-        today to take the first step. Whether you're looking for migration, career
-        advancement, or long-term residency,{" "}
-        <Link
-          href="https://vjcoverseas.com/"
-          className="hover:underline font-semibold"
-        >
-          VJC Overseas
-        </Link>{" "}
-        is here to make your dream a reality.
+        process could be so smooth. Thanks to{" "}
+        <Link href="https://vjcoverseas.com/" className="hover:underline font-semibold text-orange-600">
+          <strong>VJC Overseas</strong>
+        </Link>
+        , I found a job within months!”
       </p>
-      <p className="mb-5 font-bold">
-        Book a Free Consultation today and let our experts guide you through
-        every step of your Germany Opportunity Card journey.
+
+      {/* Final CTA */}
+      <h2 className="text-xl font-bold text-black mt-6 mb-3">Start Your Journey Today</h2>
+      <p className="mb-2 text-sm">Are you ready to build your future in Germany?</p>
+      <p className="mb-2 text-sm">
+        Check your{" "}
+        <Link href="https://vjcoverseas.com/assessment" className="hover:underline font-semibold">
+          <strong>Eligibility</strong>
+        </Link>{" "}
+        and take the first step today.
+      </p>
+      <p className="mb-6 font-bold text-sm">
+        Book a Free Consultation now. Let{" "}
+        <Link href="https://vjcoverseas.com/" className="hover:underline font-semibold text-orange-600">
+          <strong>VJC Overseas</strong>
+        </Link>{" "}
+        guide your successful migration journey.
       </p>
     </div>
   );
 };
- 
+
 export default Content;
