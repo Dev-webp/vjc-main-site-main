@@ -1,10 +1,11 @@
 "use client";
-import React, { useState, useEffect } from "react";
+
+import React, { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { Filter } from "lucide-react";
-import dummyJobs from "./jobData"; // ✅ external job data
+import dummyJobs from "./jobData";
+import JobCard from "./JobCard";
 
-// 💡 Country-based card styles
 const countryStyles = {
   UAE: { cardBg: "bg-white", titleColor: "text-blue-700", tagColor: "bg-yellow-100 text-yellow-800 border-yellow-300" },
   Germany: { cardBg: "bg-blue-50", titleColor: "text-blue-900", tagColor: "bg-blue-100 text-blue-700 border-blue-300" },
@@ -15,186 +16,133 @@ const countryStyles = {
   Ireland: { cardBg: "bg-pink-50", titleColor: "text-pink-800", tagColor: "bg-pink-100 text-pink-700 border-pink-300" },
   Singapore: { cardBg: "bg-emerald-50", titleColor: "text-emerald-800", tagColor: "bg-emerald-100 text-emerald-700 border-emerald-300" },
   Malaysia: { cardBg: "bg-orange-50", titleColor: "text-orange-800", tagColor: "bg-orange-100 text-orange-700 border-orange-300" },
-  SouthAfrica: { cardBg: "bg-yellow-50", titleColor: "text-yellow-800", tagColor: "bg-yellow-100 text-yellow-700 border-yellow-300" },
+  Southafrica: { cardBg: "bg-yellow-50", titleColor: "text-yellow-800", tagColor: "bg-yellow-100 text-yellow-700 border-yellow-300" },
   Denmark: { cardBg: "bg-indigo-50", titleColor: "text-indigo-800", tagColor: "bg-indigo-100 text-indigo-700 border-indigo-300" },
 };
 
 const filterData = {
-  UAE: { cities: ["Dubai", "Abu Dhabi"], domains: ["CRM", "Education", "IT"] },
-  Germany: { cities: ["Berlin", "Hamburg"], domains: ["IT", "Engineering"] },
-  Canada: { cities: ["Toronto", "Vancouver"], domains: ["Marketing", "Finance"] },
-  Australia: { cities: ["Sydney", "Melbourne"], domains: ["Design", "IT"] },
-  Luxembourg: { cities: ["Luxembourg City"], domains: ["Banking", "IT"] },
-  UK: { cities: ["London", "Manchester"], domains: ["Healthcare", "Education"] },
-  Ireland: { cities: ["Dublin", "Cork"], domains: ["Tech", "Finance"] },
-  Singapore: { cities: ["Singapore"], domains: ["Finance", "Education"] },
-  Malaysia: { cities: ["Kuala Lumpur", "Penang"], domains: ["Manufacturing", "IT"] },
-  SouthAfrica: { cities: ["Cape Town", "Johannesburg"], domains: ["Mining", "IT"] },
-  Denmark: { cities: ["Copenhagen", "Aarhus"], domains: ["Pharma", "IT"] },
+  UAE: { cities: ["Dubai"], domains: ["Semiconductor", "AI", "IT", "Finance", "Administration", "Front Office"] },
+  Germany: { cities: ["Berlin"], domains: ["Sales", "Supply Chain", "Healthcare", "Manufacturing", "Automobile", "IT", "Electrical", "HVAC", "Industrial Safety", "Business Development"] },
+  Canada: { cities: ["Toronto"], domains: ["Banking", "Food Services", "Retail", "Operations", "IT", "Administration", "Engineering", "Sales", "Marketing", "Healthcare", "Construction", "Airlines", "Insurance"] },
+  Australia: { cities: ["Melbourne"], domains: ["IT & Software Testing", "IT & Software Development", "Manufacturing & Engineering", "Automotive", "ICT Sales"] },
+  Luxembourg: { cities: ["Luxembourg City"], domains: ["IT & Software Development", "Mechanical Engineering", "Finance & Banking", "Healthcare", "Sales & Business Development", "Electrical Engineering", "Data & Analytics", "HVAC"] },
+  UK: { cities: ["London"], domains: ["Travel", "Media", "Marketing", "Finance", "Hospitality", "Sales", "Education", "E-commerce"] },
+  Ireland: { cities: ["Dublin"], domains: ["IT & Software Development", "Healthcare", "Mechanical Engineering", "Business & Consulting", "Sales & Marketing", "HVAC", "Data & Analytics", "Electrical Engineering", "Digital Marketing"] },
+  Singapore: { cities: ["Singapore"], domains: ["IT & Software Development", "Biomedical Engineering", "Finance & Banking", "Design & User Experience", "Logistics & Supply Chain", "Cybersecurity", "Urban Development & Planning", "Maritime & Port Management", "Artificial Intelligence"] },
+  Malaysia: { cities: ["Kuala Lumpur"], domains: ["Information Technology", "Finance & Accounting", "Marketing & Advertising", "Human Resources", "Data & Analytics", "Construction & Engineering", "Customer Service", "Creative Design", "Cybersecurity", "Logistics & Supply Chain"] },
+  Southafrica: { cities: ["Johannesburg"], domains: ["Information Technology", "Mining & Engineering", "Finance & Banking", "Healthcare & Nursing", "Energy & Utilities", "Marketing & Branding", "Customer Support", "Infrastructure & Construction", "Cybersecurity", "Logistics & Supply Chain"] },
+  Denmark: { cities: ["Copenhagen"], domains: ["Information Technology", "Renewable Energy", "Pharmaceuticals", "Product Design", "Robotics & Automation", "Shipping & Maritime", "Life Sciences", "Supply Chain & Logistics", "Cloud & DevOps", "Healthcare Technology"] },
 };
 
-const experienceOptions = ["Fresher", "Experienced"];
-
-const JobCard = ({ job, styles }) => {
-  const handleApply = async () => {
-    const user = JSON.parse(localStorage.getItem("vjcUser"));
-    const resume = localStorage.getItem(`resume_uploaded_${user.email}`);
-    const profile = JSON.parse(localStorage.getItem(`resume_data_${user.email}`));
-
-    if (!resume || !profile) {
-      alert("Please complete your profile.");
-      return;
-    }
-
-    const applicationData = {
-      type: "job-application",
-      name: profile.name,
-      email: profile.email,
-      phone: profile.phone,
-      selectedJob: profile.selectedJob,
-      experience: profile.experience,
-      country: profile.country,
-      skills: profile.skills,
-      message: profile.message,
-     
-      appliedJob: {
-        title: job.title,
-        company: job.company,
-        location: job.location,
-        domain: job.domain,
-      },
-      portalUrl: `https://vjcoverseas.com/vjc-jobs-portal/${profile.country.toLowerCase()}`,
-    };
-
-    const res = await fetch("/api/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(applicationData),
-    });
-
-    const result = await res.json();
-
-    if (res.ok) {
-      alert("Application submitted! Check your email.");
-    } else {
-      alert("Failed to send application email.");
-      console.error(result);
-    }
-  };
-
-  return (
-    <div className={`w-full md:w-[95%] lg:w-[90%] mx-auto p-4 rounded-xl shadow-sm mb-4 border transition-all duration-300 hover:shadow-md ${styles.cardBg}`}>
-      <div className="flex justify-between items-center flex-wrap">
-        <h3 className={`${styles.titleColor} font-semibold text-lg mb-1`}>{job.title}</h3>
-        <button
-          onClick={handleApply}
-          className="px-4 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg mt-2 md:mt-0"
-        >
-          Apply Now
-        </button>
-      </div>
-      <p className="text-sm text-gray-700 mb-1">
-        {job.company} - {job.location}
-      </p>
-      <span className="text-xs text-green-600 font-medium">{job.time}</span>
-      <div className="mt-2 flex flex-wrap gap-2 text-xs">
-        {job.tags.map((tag, i) => (
-          <span key={i} className={`px-2 py-1 rounded-full border ${styles.tagColor}`}>
-            {tag}
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-};
+const experienceOptions = ["Entry level", "Mid career", "Senior", "Experienced", "Management", "Director/Head", "Internship"];
 
 const CountryJobsPage = () => {
-  const { country } = useParams();
+  const params = useParams();
   const router = useRouter();
 
-  const [selectedCountry, setSelectedCountry] = useState(country?.replace(/-/g, " ") || "");
+  const [selectedCountry, setSelectedCountry] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedDomain, setSelectedDomain] = useState("");
   const [selectedExperience, setSelectedExperience] = useState("");
+  const [selectedYears, setSelectedYears] = useState("");
+  const [searchKeyword, setSearchKeyword] = useState("");
   const [showFilters, setShowFilters] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const jobsPerPage = 6;
 
   useEffect(() => {
-    if (country) {
-      const name = country.replace(/-/g, " ");
-      const matchedCountry = Object.keys(filterData).find(
-        (c) => c.toLowerCase() === name.toLowerCase().replace(/\s/g, "")
-      );
-      setSelectedCountry(matchedCountry || "");
-    }
-  }, [country]);
+    const current = params?.country?.replace(/-/g, "");
+    const matchedCountry = Object.keys(filterData).find(
+      (c) => c.toLowerCase().replace(/\s/g, "") === current?.toLowerCase()
+    );
+    if (matchedCountry) setSelectedCountry(matchedCountry);
+  }, [params]);
 
-  const filteredJobs = dummyJobs.filter((job) => {
-    return (
+  const handleCountryChange = (country) => {
+    const urlSafe = country.toLowerCase().replace(/\s/g, "");
+    router.push(`/vjc-jobs-portal/${urlSafe}`);
+  };
+
+  const handleShowSuccess = () => {
+    setShowPopup(true);
+    setTimeout(() => setShowPopup(false), 2000);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const keywordFilteredJobs = dummyJobs.filter(
+    (job) =>
+      (!searchKeyword || job.title.toLowerCase().includes(searchKeyword.toLowerCase()) || job.company.toLowerCase().includes(searchKeyword.toLowerCase()) || job.domain.toLowerCase().includes(searchKeyword.toLowerCase())) &&
       job.country === selectedCountry &&
       (!selectedCity || job.city === selectedCity) &&
       (!selectedDomain || job.domain === selectedDomain) &&
-      (!selectedExperience || job.experience === selectedExperience)
-    );
-  });
+      (!selectedExperience || job.experience === selectedExperience) &&
+      (!selectedYears || job.minExperience >= parseInt(selectedYears))
+  );
+
+  const totalPages = Math.ceil(keywordFilteredJobs.length / jobsPerPage);
+  const indexOfLastJob = currentPage * jobsPerPage;
+  const indexOfFirstJob = indexOfLastJob - jobsPerPage;
+  const currentJobs = keywordFilteredJobs.slice(indexOfFirstJob, indexOfLastJob);
 
   const availableCities = filterData[selectedCountry]?.cities || [];
   const availableDomains = filterData[selectedCountry]?.domains || [];
 
   return (
-    <div className="min-h-screen lg:ml-12  bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-100 p-4 sm:p-6">
+      {showPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="bg-green-600 text-white px-6 py-4 rounded-xl shadow-2xl text-lg animate-bounce text-center">
+            🎉 Application sent successfully!
+          </div>
+        </div>
+      )}
+
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold text-blue-800 capitalize">
-          Jobs in {selectedCountry || "Select Country"}
-        </h1>
-        <button
-          className="lg:hidden flex items-center gap-1 text-blue-700 text-sm"
-          onClick={() => setShowFilters(!showFilters)}
-        >
+       
+        <button className="lg:hidden flex items-center gap-2 text-blue-700 text-sm font-medium" onClick={() => setShowFilters(!showFilters)}>
           <Filter size={18} /> Filters
         </button>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-        <aside className={`lg:col-span-1 bg-white rounded-xl shadow-md p-4 space-y-4 ${showFilters ? "block" : "hidden lg:block"}`}>
+      <div className="flex flex-col lg:flex-row gap-6">
+        {/* Filters (Sticky) */}
+        <aside className={`sticky top-28 bg-white shadow-md rounded-xl lg:ml-10 p-4 space-y-4 w-full max-w-sm mx-auto lg:mx-0 lg:w-1/4 h-fit ${showFilters ? "block" : "hidden lg:block"}`}>
           <h2 className="text-lg font-semibold flex justify-between items-center">
             Filters
-            <button
-              className="lg:hidden text-blue-700"
-              onClick={() => setShowFilters(!showFilters)}
-            >
+            <button className="lg:hidden text-blue-700" onClick={() => setShowFilters(!showFilters)}>
               <Filter size={18} />
             </button>
           </h2>
 
+          {/* Country */}
           <div>
             <label className="block font-medium text-sm mb-1">Country</label>
-            <div className="space-y-1 max-h-40 overflow-y-auto">
+            <div className="space-y-1 max-h-40 overflow-y-auto pr-1">
               {Object.keys(filterData).map((c) => (
-                <div key={c} className="flex items-center">
+                <div key={c} className="flex items-center text-sm">
                   <input
                     type="radio"
                     name="country"
                     id={`country-${c}`}
                     checked={selectedCountry === c}
-                    onChange={() => setSelectedCountry(c)}
+                    onChange={() => handleCountryChange(c)}
                     className="mr-2"
                   />
-                  <label htmlFor={`country-${c}`} className="text-sm">
-                    {c}
-                  </label>
+                  <label htmlFor={`country-${c}`}>{c}</label>
                 </div>
               ))}
             </div>
           </div>
 
+          {/* City */}
           {availableCities.length > 0 && (
             <div>
               <label className="block font-medium text-sm mb-1">City</label>
-              <select
-                value={selectedCity}
-                onChange={(e) => setSelectedCity(e.target.value)}
-                className="w-full border rounded px-2 py-1 text-sm"
-              >
+              <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)} className="w-full border rounded px-2 py-1 text-sm">
                 <option value="">All Cities</option>
                 {availableCities.map((city) => (
                   <option key={city} value={city}>{city}</option>
@@ -203,14 +151,11 @@ const CountryJobsPage = () => {
             </div>
           )}
 
+          {/* Domain */}
           {availableDomains.length > 0 && (
             <div>
               <label className="block font-medium text-sm mb-1">Domain</label>
-              <select
-                value={selectedDomain}
-                onChange={(e) => setSelectedDomain(e.target.value)}
-                className="w-full border rounded px-2 py-1 text-sm"
-              >
+              <select value={selectedDomain} onChange={(e) => setSelectedDomain(e.target.value)} className="w-full border rounded px-2 py-1 text-sm">
                 <option value="">All Domains</option>
                 {availableDomains.map((domain) => (
                   <option key={domain} value={domain}>{domain}</option>
@@ -219,36 +164,81 @@ const CountryJobsPage = () => {
             </div>
           )}
 
+          {/* Experience */}
           <div>
             <label className="block font-medium text-sm mb-1">Experience</label>
-            <select
-              value={selectedExperience}
-              onChange={(e) => setSelectedExperience(e.target.value)}
-              className="w-full border rounded px-2 py-1 text-sm"
-            >
+            <select value={selectedExperience} onChange={(e) => setSelectedExperience(e.target.value)} className="w-full border rounded px-2 py-1 text-sm">
               <option value="">All</option>
               {experienceOptions.map((exp) => (
                 <option key={exp} value={exp}>{exp}</option>
               ))}
             </select>
           </div>
+
+          {/* Years */}
+          <div>
+            <label className="block font-medium text-sm mb-1">Years of Experience</label>
+            <select value={selectedYears} onChange={(e) => setSelectedYears(e.target.value)} className="w-full border rounded px-2 py-1 text-sm">
+              <option value="">All</option>
+              {[...Array(6)].map((_, i) => {
+                const year = i + 1;
+                return <option key={year} value={year}>{year}+ Years</option>;
+              })}
+            </select>
+          </div>
         </aside>
 
-        <section className="lg:col-span-3">
-          {filteredJobs.length > 0 ? (
-            filteredJobs.map((job, i) => (
-              <JobCard
-                key={i}
-                job={job}
-                styles={countryStyles[job.country] || countryStyles["UAE"]}
-              />
-            ))
+        {/* Job Cards Stack */}
+        <div className="w-full lg:w-3/4 flex flex-col gap-4">
+         <h1 className="text-3xl text-center font-bold text-blue-800 capitalize">Jobs in {selectedCountry || "Select Country"}</h1>
+          <div className="mb-4">
+            <input
+              type="text"
+              placeholder="🔍 Search jobs by title, company or domain"
+              value={searchKeyword}
+              onChange={(e) => setSearchKeyword(e.target.value)}
+              className="w-full px-5 py-2 border border-gray-300 rounded-full shadow-sm text-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+
+          {currentJobs.length > 0 ? (
+            <>
+              {currentJobs.map((job, i) => (
+                <JobCard
+                  key={i}
+                  job={job}
+                  styles={countryStyles[job.country] || countryStyles["UAE"]}
+                  showSuccess={handleShowSuccess}
+                />
+              ))}
+              <div className="flex justify-center items-center gap-4 mt-8">
+                <button
+                  onClick={() => {
+                    scrollToTop();
+                    setCurrentPage((p) => Math.max(1, p - 1));
+                  }}
+                  disabled={currentPage === 1}
+                  className="px-4 py-1 bg-gray-200 hover:bg-gray-300 rounded-full disabled:opacity-50"
+                >
+                  Previous
+                </button>
+                <span className="text-sm font-medium text-gray-600">Page {currentPage} of {totalPages}</span>
+                <button
+                  onClick={() => {
+                    scrollToTop();
+                    setCurrentPage((p) => Math.min(totalPages, p + 1));
+                  }}
+                  disabled={currentPage === totalPages}
+                  className="px-4 py-1 bg-gray-200 hover:bg-gray-300 rounded-full disabled:opacity-50"
+                >
+                  Next
+                </button>
+              </div>
+            </>
           ) : (
-            <p className="text-gray-600 text-center">
-              No jobs found with current filters.
-            </p>
+            <p className="text-gray-500 text-center mt-8 text-lg">😢 No jobs found. Try adjusting filters or search terms.</p>
           )}
-        </section>
+        </div>
       </div>
     </div>
   );

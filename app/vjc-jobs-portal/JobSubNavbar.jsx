@@ -13,6 +13,7 @@ const JobSubNavbar = ({
   setSelectedCountry,
   searchKeyword,
   setSearchKeyword,
+  onSearchClick, // 🔥 new prop
 }) => {
   const router = useRouter();
   const [showBar, setShowBar] = useState(true);
@@ -34,11 +35,17 @@ const JobSubNavbar = ({
     router.push(`/vjc-jobs-portal/${selected.toLowerCase().replace(/ /g, "-")}`);
   };
 
+  const handleSearchClick = () => {
+    if (onSearchClick) {
+      onSearchClick(); // 🔥 Call parent scroll function
+    }
+  };
+
   return (
     <div
       className={`sticky z-40 transition-all duration-300 ${
         showBar ? "translate-y-0" : "-translate-y-full"
-      } top-[90px] lg:top-[80px]`}
+      } top-[90px] lg:top-[90px]`}
     >
       <div className="w-full px-2 py-2 flex justify-center bg-transparent">
         <div className="w-full max-w-[1280px] flex items-center justify-between gap-2 bg-white backdrop-blur-md border border-orange-300 px-4 py-2 rounded-full shadow-md">
@@ -71,7 +78,10 @@ const JobSubNavbar = ({
           </div>
 
           {/* Search Button */}
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-1.5 text-sm font-medium rounded-full whitespace-nowrap">
+          <button
+            className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-1.5 text-sm font-medium rounded-full whitespace-nowrap"
+            onClick={handleSearchClick}
+          >
             Search
           </button>
         </div>
