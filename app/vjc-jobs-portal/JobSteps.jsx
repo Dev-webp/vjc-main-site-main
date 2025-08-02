@@ -1,64 +1,91 @@
+// JobSteps.jsx
 "use client";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import LoginModal from "./LoginModal";
 
 const JobSteps = () => {
   const [user, setUser] = useState(null);
   const [progress, setProgress] = useState({ step1: false, step2: false });
+  const [showLoginModal, setShowLoginModal] = useState(false);
 
-  useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem("vjcUser"));
+  const fetchUserData = () => {
+    const storedUser = localStorage.getItem("vjcUser");
     if (storedUser) {
-      setUser(storedUser);
+      const parsedUser = JSON.parse(storedUser);
+      setUser(parsedUser);
       setProgress({
         step1: true,
-        step2: localStorage.getItem(`resume_uploaded_${storedUser.email}`) === "true",
+        step2: localStorage.getItem(`resume_uploaded_${parsedUser.email}`) === "true",
       });
+    } else {
+      setUser(null);
+      setProgress({ step1: false, step2: false });
     }
+  };
+
+  useEffect(() => {
+    fetchUserData();
+
+    const handleStorageChange = () => {
+      fetchUserData();
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+    return () => window.removeEventListener("storage", handleStorageChange);
   }, []);
+
+  const handleLoginSuccess = () => {
+    fetchUserData();
+  };
 
   const steps = [
     {
       label: "Sign In",
       icon: "🔐",
       active: progress.step1,
-      link: "#",
+      link: "/vjc-jobs-portal",
     },
     {
       label: "Profile Update",
       icon: "📄",
       active: progress.step1,
-      link: progress.step1 ? "/vjc-jobs-portal/profile" : "#",
+      link: "/vjc-jobs-portal/profile",
     },
     {
       label: "Apply Jobs",
       icon: "🚀",
       active: progress.step2,
-      link: progress.step2 ? "/vjc-jobs-portal" : "#",
+      link: "/vjc-jobs-portal",
     },
   ];
 
+  const handleStepClick = (step) => {
+    if (step.label === "Sign In" && !user) {
+      setShowLoginModal(true);
+      return;
+    }
+    window.location.href = step.link;
+  };
+
   return (
-    <div className="w-full  lg:mt-28 mt-32 -mb-16 lg:-mb-14">
+    <div className="w-full lg:mt-28 mt-32 -mb-16 lg:-mb-14">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between gap-4">
           {steps.map((step, idx) => (
             <React.Fragment key={idx}>
-              <Link
-                href={step.link}
-                className={`flex flex-col items-center min-w-[100px] transition-transform duration-300 ${
-                  step.active ? "cursor-pointer text-blue-700" : "opacity-50 pointer-events-none"
-                }`}
+              <div
+                onClick={() => handleStepClick(step)}
+                className="flex flex-col items-center min-w-[100px] cursor-pointer text-blue-700"
               >
                 <div
                   className={`w-10 h-10 rounded-full flex items-center justify-center text-2xl ${
-                    step.active ? "bg-orange-500 text-white" : "bg-gray-300"
+                    step.active ? "bg-orange-500 text-white" : "bg-gray-300 text-gray-600"
                   }`}
                 >
                   {step.icon}
                 </div>
                 <p className="mt-2 text-sm font-medium text-center">{step.label}</p>
-              </Link>
+              </div>
 
               {idx < steps.length - 1 && (
                 <div className="hidden sm:flex flex-grow h-1 bg-gray-200 relative mx-2">
@@ -73,6 +100,14 @@ const JobSteps = () => {
           ))}
         </div>
       </div>
+
+      {showLoginModal && (
+        <LoginModal
+          setUser={setUser}
+          setShowLoginModal={setShowLoginModal}
+          onSuccess={handleLoginSuccess}
+        />
+      )}
     </div>
   );
 };

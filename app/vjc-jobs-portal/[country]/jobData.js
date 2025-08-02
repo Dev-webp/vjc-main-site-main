@@ -8,7 +8,7 @@ const uaeDubaiJobs = [
     domain: "Semiconductor",
     experience: "Senior",
     minExperience: 5,
-    time: "12 days ago",
+    time: "Recent",
     tags: ["Python", "Linux", "RDMA", "Networking", "Performance Tuning"],
     salary: "$3,000 - $4,000",
     type: "Full–time",
@@ -23,7 +23,7 @@ const uaeDubaiJobs = [
     domain: "AI",
     experience: "Director/Head",
     minExperience: 7,
-    time: "12 days ago",
+    time: "Recent",
     tags: ["AI", "Leadership", "Startup", "Team Building"],
     type: "Full–time",
   },
@@ -36,7 +36,7 @@ const uaeDubaiJobs = [
     domain: "IT",
     experience: "Mid career",
     minExperience: 3,
-    time: "2 days ago",
+    time: "Recent",
     tags: ["Java", "REST API", "Problem Solving", "Database"],
     type: "Full–time",
   },
@@ -49,7 +49,7 @@ const uaeDubaiJobs = [
     domain: "Finance",
     experience: "Mid career",
     minExperience: 4,
-    time: "1 hour ago",
+    time: "Recent",
     tags: ["Accounting", "VAT", "IFRS", "Compliance"],
     salary: "$5,000 - $6,000",
     type: "Full–time",
@@ -63,7 +63,7 @@ const uaeDubaiJobs = [
     domain: "Administration",
     experience: "Mid career",
     minExperience: 2,
-    time: "22 hours ago",
+    time: "Recent",
     tags: ["Office Management", "Scheduling", "Communication"],
     salary: "$5,000 - $6,000",
     type: "Full–time",
@@ -76,8 +76,8 @@ const uaeDubaiJobs = [
     city: "Dubai",
     domain: "Front Office",
     experience: "Entry level",
-    minExperience: 0,
-    time: "Yesterday",
+    minExperience: 2,
+    time: "Recent",
     tags: ["Customer Service", "Clerical", "Greeting Visitors"],
     type: "Full–time",
   },
@@ -90,7 +90,7 @@ const uaeDubaiJobs = [
     domain: "Finance",
     experience: "Entry level",
     minExperience: 1,
-    time: "Yesterday",
+    time: "Recent",
     tags: ["Cash Flow", "LPO", "Accounting"],
     salary: "$500 - $1,000",
     type: "Full–time",
@@ -104,7 +104,7 @@ const uaeDubaiJobs = [
     domain: "Finance",
     experience: "Management",
     minExperience: 5,
-    time: "2 days ago",
+    time: "Recent",
     tags: ["Credit Management", "Collections", "Accounting Software"],
     salary: "$3,000 - $4,000",
     type: "Full–time",
@@ -121,7 +121,7 @@ const londonJobs = [
     domain: "Travel",
     experience: "Mid career",
     minExperience: 3,
-    time: "2 days ago",
+    time: "Recent",
     tags: ["Luxury Travel", "Sales", "Indian Ocean", "Customer Service"],
     type: "Full–time",
   },
@@ -134,7 +134,7 @@ const londonJobs = [
     domain: "Media",
     experience: "Experienced",
     minExperience: 5,
-    time: "3 days ago",
+    time: "Recent",
     tags: ["Presenting", "Fashion", "Jewelry", "Broadcast"],
     type: "Full–time",
   },
@@ -147,7 +147,7 @@ const londonJobs = [
     domain: "Marketing",
     experience: "Internship",
     minExperience: 0,
-    time: "5 days ago",
+    time: "Recent",
     tags: ["Marketing", "Data Analytics", "Intern", "SEO"],
     type: "Internship",
   },
@@ -160,7 +160,7 @@ const londonJobs = [
     domain: "Finance",
     experience: "Mid career",
     minExperience: 3,
-    time: "1 week ago",
+    time: "Recent",
     tags: ["Investment", "Equities", "Indian Market", "Research"],
     type: "Full–time",
   },
@@ -173,7 +173,7 @@ const londonJobs = [
     domain: "Hospitality",
     experience: "Mid career",
     minExperience: 2,
-    time: "3 days ago",
+    time: "Recent",
     tags: ["Cooking", "Indian Cuisine", "Pakistani Cuisine"],
     type: "Full–time",
   },
@@ -186,7 +186,7 @@ const londonJobs = [
     domain: "Sales",
     experience: "Entry level",
     minExperience: 1,
-    time: "4 days ago",
+    time: "Recent",
     tags: ["Sales", "Outbound", "B2B", "Software"],
     type: "Full–time",
   },
@@ -199,7 +199,7 @@ const londonJobs = [
     domain: "Education",
     experience: "Mid career",
     minExperience: 2,
-    time: "5 days ago",
+    time: "Recent",
     tags: ["Academic Admin", "Higher Education", "Registry"],
     type: "Full–time",
   },
@@ -212,7 +212,7 @@ const londonJobs = [
     domain: "E-commerce",
     experience: "Senior",
     minExperience: 5,
-    time: "1 week ago",
+    time: "Recent",
     tags: ["Customer Experience", "Jewelry", "Management"],
     type: "Full–time",
   },
@@ -228,7 +228,7 @@ const canadaJobs = [
     domain: "Banking",
     experience: "Experienced",
     minExperience: 2,
-    time: "1 day ago",
+    time: "Recent",
     type: "Full–time",
     tags: ["Finance", "Client Relations"],
   },
@@ -241,7 +241,7 @@ const canadaJobs = [
     domain: "Sales",
     experience: "Experienced",
     minExperience: 3,
-    time: "2 days ago",
+    time: "Recent",
     type: "Full–time",
     tags: ["B2B", "SaaS", "Salesforce"],
   },
@@ -254,7 +254,7 @@ const canadaJobs = [
     domain: "Healthcare",
     experience: "Experienced",
     minExperience: 5,
-    time: "2 days ago",
+    time: "Recent",
     type: "Full–time",
     tags: ["Healthcare", "Food Safety"],
   },
@@ -267,7 +267,7 @@ const canadaJobs = [
     domain: "Luxury Retail",
     experience: "Experienced",
     minExperience: 6,
-    time: "1 day ago",
+    time: "Recent",
     type: "Full–time",
     tags: ["Retail Ops", "Luxury", "Leadership"],
   },
@@ -280,7 +280,7 @@ const canadaJobs = [
     domain: "IT",
     experience: "Experienced",
     minExperience: 4,
-    time: "13 hours ago",
+    time: "Recent",
     type: "Contractor",
     tags: ["DevOps", "Kubernetes", "OpenShift"],
   },
@@ -293,7 +293,7 @@ const canadaJobs = [
     domain: "FMCG",
     experience: "Experienced",
     minExperience: 5,
-    time: "2 days ago",
+    time: "Recent",
     type: "Full–time",
     tags: ["Enterprise Solutions", "Team Lead"],
   },
@@ -306,7 +306,7 @@ const canadaJobs = [
     domain: "Retail",
     experience: "Experienced",
     minExperience: 3,
-    time: "5 days ago",
+    time: "Recent",
     type: "Full–time",
     tags: ["Retail Sales", "Store Management"],
   },
@@ -319,7 +319,7 @@ const canadaJobs = [
     domain: "Retail",
     experience: "Experienced",
     minExperience: 2,
-    time: "2 days ago",
+    time: "Recent",
     type: "Full–time",
     tags: ["Inventory", "Retail Ops"],
   },
@@ -334,7 +334,7 @@ const germanyJobs = [
     domain: "Sales",
     experience: "Senior",
     minExperience: 6,
-    time: "2 days ago",
+    time: "Recent",
     tags: [
       "General Trade",
       "Distribution Management",
@@ -352,7 +352,7 @@ const germanyJobs = [
     domain: "Supply Chain",
     experience: "Mid career",
     minExperience: 4,
-    time: "6 days ago",
+    time: "Recent",
     tags: [
       "Supply Chain Management",
       "Inventory Management",
@@ -370,7 +370,7 @@ const germanyJobs = [
     domain: "Healthcare",
     experience: "Mid career",
     minExperience: 2,
-    time: "1 week ago",
+    time: "Recent",
     tags: ["Nursing", "OTA", "Room Assistance", "Surgical", "Healthcare"],
   },
   {
@@ -382,7 +382,7 @@ const germanyJobs = [
     domain: "Manufacturing",
     experience: "Senior",
     minExperience: 7,
-    time: "1 day ago",
+    time: "Recent",
     tags: [
       "Production Management",
       "Furnace Maintenance",
@@ -400,7 +400,7 @@ const germanyJobs = [
     domain: "Automobile",
     experience: "Senior",
     minExperience: 8,
-    time: "2 days ago",
+    time: "Recent",
     tags: ["Mechanic", "Repairs", "Vehicles", "Bus", "Truck", "Workshop"],
   },
   {
@@ -412,7 +412,7 @@ const germanyJobs = [
     domain: "IT",
     experience: "Mid career",
     minExperience: 3,
-    time: "5 days ago",
+    time: "Recent",
     tags: ["Java", "Python", "Web Development", "Software Engineering"],
   },
   {
@@ -424,7 +424,7 @@ const germanyJobs = [
     domain: "Electrical",
     experience: "Mid career",
     minExperience: 5,
-    time: "3 weeks ago",
+    time: "Recent",
     tags: ["PLC", "Automation", "Motors", "Installation", "Drives"],
   },
   {
@@ -436,7 +436,7 @@ const germanyJobs = [
     domain: "Healthcare",
     experience: "Entry level",
     minExperience: 1,
-    time: "1 week ago",
+    time: "Recent",
     tags: ["Nurse", "ICU", "Ward", "OT", "CTVS", "Healthcare"],
   },
   {
@@ -448,7 +448,7 @@ const germanyJobs = [
     domain: "HVAC",
     experience: "Junior",
     minExperience: 1,
-    time: "2 days ago",
+    time: "Recent",
     tags: ["AC Maintenance", "Installation", "Repairs"],
   },
   {
@@ -460,7 +460,7 @@ const germanyJobs = [
     domain: "Industrial Safety",
     experience: "Senior",
     minExperience: 10,
-    time: "1 week ago",
+    time: "Recent",
     tags: ["HAZOP", "PSM", "Risk Analysis", "Process Safety"],
   },
   {
@@ -471,8 +471,8 @@ const germanyJobs = [
     city: "Berlin",
     domain: "Business Development",
     experience: "Senior",
-    minExperience: 8,
-    time: "1 day ago",
+    minExperience: 5,
+    time: "Recent",
     tags: [
       "B2B Sales",
       "Aftermarket",
@@ -492,7 +492,7 @@ const australiaJobs = [
     domain: "IT & Software Testing",
     experience: "Mid-level",
     minExperience: 3,
-    time: "17 days ago",
+    time: "Recent",
     tags: ["Testing", "Automation", "Manual", "QA"]
   },
   {
@@ -504,7 +504,7 @@ const australiaJobs = [
     domain: "IT & Software Development",
     experience: "Mid-level",
     minExperience: 3,
-    time: "24 days ago",
+    time: "Recent",
     tags: ["Java", "Selenium", "Agile", "Test Cases"]
   },
   {
@@ -516,7 +516,7 @@ const australiaJobs = [
     domain: "Manufacturing & Engineering",
     experience: "Experienced",
     minExperience: 5,
-    time: "1 month ago",
+    time: "Recent",
     tags: ["Welding", "Stainless Steel", "Pressure Equipment"]
   },
   {
@@ -528,7 +528,7 @@ const australiaJobs = [
     domain: "Automotive",
     experience: "Experienced",
     minExperience: 4,
-    time: "1 month ago",
+    time: "Recent",
     tags: ["Mechanic", "Vehicle Repair", "Engine Service"]
   },
   {
@@ -540,7 +540,7 @@ const australiaJobs = [
     domain: "ICT Sales",
     experience: "Mid-level",
     minExperience: 3,
-    time: "11 days ago",
+    time: "Recent",
     tags: ["B2B", "Tech Sales", "Client Acquisition"]
   },
   {
@@ -552,7 +552,7 @@ const australiaJobs = [
     domain: "Healthcare",
     experience: "Entry level",
     minExperience: 1,
-    time: "5 days ago",
+    time: "Recent",
     tags: ["Nursing", "Aged Care", "Patient Care"]
   },
   {
@@ -564,7 +564,7 @@ const australiaJobs = [
     domain: "HVAC",
     experience: "Junior",
     minExperience: 2,
-    time: "2 weeks ago",
+    time: "Recent",
     tags: ["Air Conditioning", "Maintenance", "Repairs", "Ducting"]
   }
 ];
@@ -579,7 +579,7 @@ const luxembourgJobs = [
     domain: "IT & Software Development",
     experience: "Mid-level",
     minExperience: 3,
-    time: "6 days ago",
+    time: "Recent",
     tags: ["JavaScript", "Node.js", "React", "MySQL"]
   },
   {
@@ -591,7 +591,7 @@ const luxembourgJobs = [
     domain: "Mechanical Engineering",
     experience: "Experienced",
     minExperience: 5,
-    time: "1 week ago",
+    time: "Recent",
     tags: ["CAD", "SolidWorks", "Prototyping", "Manufacturing"]
   },
   {
@@ -603,7 +603,7 @@ const luxembourgJobs = [
     domain: "Finance & Banking",
     experience: "Mid-level",
     minExperience: 4,
-    time: "2 weeks ago",
+    time: "Recent",
     tags: ["Excel", "Budgeting", "Reporting", "Forecasting"]
   },
   {
@@ -615,7 +615,7 @@ const luxembourgJobs = [
     domain: "Healthcare",
     experience: "Entry level",
     minExperience: 1,
-    time: "3 days ago",
+    time: "Recent",
     tags: ["Nursing", "ICU", "Patient Care", "Hospital"]
   },
   {
@@ -627,7 +627,7 @@ const luxembourgJobs = [
     domain: "Sales & Business Development",
     experience: "Senior",
     minExperience: 7,
-    time: "1 day ago",
+    time: "Recent",
     tags: ["B2B", "Sales Strategy", "Client Acquisition"]
   },
   {
@@ -639,7 +639,7 @@ const luxembourgJobs = [
     domain: "Electrical Engineering",
     experience: "Junior",
     minExperience: 2,
-    time: "5 days ago",
+    time: "Recent",
     tags: ["Circuits", "Wiring", "Installations", "Maintenance"]
   },
   {
@@ -651,7 +651,7 @@ const luxembourgJobs = [
     domain: "Data & Analytics",
     experience: "Mid-level",
     minExperience: 3,
-    time: "10 days ago",
+    time: "Recent",
     tags: ["SQL", "Python", "Data Visualization", "Power BI"]
   },
   {
@@ -663,7 +663,7 @@ const luxembourgJobs = [
     domain: "HVAC",
     experience: "Experienced",
     minExperience: 4,
-    time: "1 week ago",
+    time: "Recent",
     tags: ["HVAC", "Installation", "Cooling Systems", "Repairs"]
   }
 ];
@@ -677,7 +677,7 @@ const IrelandJobs = [
   domain: "IT & Software Development",
   experience: "Mid career",
   minExperience: 3,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["React", "Node.js", "Agile", "Microservices"]
 },
 {
@@ -689,7 +689,7 @@ const IrelandJobs = [
   domain: "Healthcare",
   experience: "Entry level",
   minExperience: 1,
-  time: "1 week ago",
+  time: "Recent",
   tags: ["ICU", "Patient Care", "BLS", "Critical Care"]
 },
 {
@@ -701,7 +701,7 @@ const IrelandJobs = [
   domain: "Mechanical Engineering",
   experience: "Mid career",
   minExperience: 4,
-  time: "3 days ago",
+  time: "Recent",
   tags: ["CAD", "SolidWorks", "Design", "Fabrication"]
 },
 {
@@ -713,7 +713,7 @@ const IrelandJobs = [
   domain: "Business & Consulting",
   experience: "Mid career",
   minExperience: 3,
-  time: "5 days ago",
+  time: "Recent",
   tags: ["Process Mapping", "Stakeholder Management", "Agile", "UAT"]
 },
 {
@@ -725,7 +725,7 @@ const IrelandJobs = [
   domain: "Sales & Marketing",
   experience: "Junior",
   minExperience: 2,
-  time: "6 days ago",
+  time: "Recent",
   tags: ["B2B", "Cold Calling", "CRM", "Salesforce"]
 },
 {
@@ -737,7 +737,7 @@ const IrelandJobs = [
   domain: "HVAC",
   experience: "Mid career",
   minExperience: 3,
-  time: "1 week ago",
+  time: "Recent",
   tags: ["HVAC", "Ducting", "Ventilation", "Servicing"]
 },
 {
@@ -749,7 +749,7 @@ const IrelandJobs = [
   domain: "Data & Analytics",
   experience: "Mid career",
   minExperience: 3,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["SQL", "Excel", "Power BI", "ETL"]
 },
 {
@@ -761,7 +761,7 @@ const IrelandJobs = [
   domain: "Electrical Engineering",
   experience: "Senior",
   minExperience: 7,
-  time: "3 weeks ago",
+  time: "Recent",
   tags: ["Wiring", "Switchgear", "Maintenance", "Troubleshooting"]
 },
 {
@@ -773,7 +773,7 @@ const IrelandJobs = [
   domain: "Digital Marketing",
   experience: "Junior",
   minExperience: 2,
-  time: "5 days ago",
+  time: "Recent",
   tags: ["SEO", "Social Media", "Content Marketing", "Google Ads"]
 }
 
@@ -789,7 +789,7 @@ const SingaporeJobs = [
   domain: "IT & Software Development",
   experience: "Mid career",
   minExperience: 3,
-  time: "2 days ago",
+  ttime: "Recent",
   tags: ["Node.js", "React", "MongoDB", "Agile"]
 },
 {
@@ -801,7 +801,7 @@ const SingaporeJobs = [
   domain: "Biomedical Engineering",
   experience: "Entry level",
   minExperience: 1,
-  time: "6 days ago",
+  time: "Recent",
   tags: ["Device Testing", "R&D", "Documentation", "Clinical Trials"]
 },
 {
@@ -813,7 +813,7 @@ const SingaporeJobs = [
   domain: "Finance & Banking",
   experience: "Mid career",
   minExperience: 3,
-  time: "1 week ago",
+  time: "Recent",
   tags: ["Financial Modelling", "Excel", "Forecasting", "Budgeting"]
 },
 {
@@ -825,7 +825,7 @@ const SingaporeJobs = [
   domain: "Design & User Experience",
   experience: "Junior",
   minExperience: 2,
-  time: "3 days ago",
+  time: "Recent",
   tags: ["Figma", "Prototyping", "Wireframes", "User Testing"]
 },
 {
@@ -837,7 +837,7 @@ const SingaporeJobs = [
   domain: "Logistics & Supply Chain",
   experience: "Mid career",
   minExperience: 3,
-  time: "5 days ago",
+  time: "Recent",
   tags: ["Inventory", "Shipping", "Procurement", "ERP"]
 },
 {
@@ -849,7 +849,7 @@ const SingaporeJobs = [
   domain: "Cybersecurity",
   experience: "Mid career",
   minExperience: 4,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["Threat Analysis", "SIEM", "Firewall", "Incident Response"]
 },
 {
@@ -861,7 +861,7 @@ const SingaporeJobs = [
   domain: "Urban Development & Planning",
   experience: "Senior",
   minExperience: 6,
-  time: "2 weeks ago",
+  time: "Recent",
   tags: ["GIS", "Zoning", "Public Policy", "Sustainability"]
 },
 {
@@ -873,7 +873,7 @@ const SingaporeJobs = [
   domain: "Maritime & Port Management",
   experience: "Junior",
   minExperience: 2,
-  time: "1 week ago",
+  time: "Recent",
   tags: ["Port Logistics", "Container Handling", "Safety", "Scheduling"]
 },
 {
@@ -885,7 +885,7 @@ const SingaporeJobs = [
   domain: "Artificial Intelligence",
   experience: "Senior",
   minExperience: 5,
-  time: "3 days ago",
+  time: "Recent",
   tags: ["Deep Learning", "NLP", "TensorFlow", "Model Deployment"]
 }
 ];
@@ -899,7 +899,7 @@ const MalaysiaJobs = [
   domain: "Information Technology",
   experience: "Mid career",
   minExperience: 3,
-  time: "1 day ago",
+  time: "Recent",
   tags: ["Java", "Spring Boot", "REST APIs", "AWS"]
 },
 {
@@ -911,7 +911,7 @@ const MalaysiaJobs = [
   domain: "Finance & Accounting",
   experience: "Mid career",
   minExperience: 4,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["General Ledger", "Tax", "IFRS", "SAP"]
 },
 {
@@ -923,7 +923,7 @@ const MalaysiaJobs = [
   domain: "Marketing & Advertising",
   experience: "Senior",
   minExperience: 5,
-  time: "5 days ago",
+  time: "Recent",
   tags: ["Campaign Strategy", "SEO", "Digital Ads", "Brand Management"]
 },
 {
@@ -935,7 +935,7 @@ const MalaysiaJobs = [
   domain: "Human Resources",
   experience: "Mid career",
   minExperience: 3,
-  time: "3 days ago",
+  time: "Recent",
   tags: ["Recruitment", "Onboarding", "Payroll", "Employee Relations"]
 },
 {
@@ -947,7 +947,7 @@ const MalaysiaJobs = [
   domain: "Data & Analytics",
   experience: "Junior",
   minExperience: 2,
-  time: "4 days ago",
+  time: "Recent",
   tags: ["SQL", "Python", "Power BI", "Data Cleaning"]
 },
 {
@@ -959,7 +959,7 @@ const MalaysiaJobs = [
   domain: "Construction & Engineering",
   experience: "Senior",
   minExperience: 6,
-  time: "6 days ago",
+  time: "Recent",
   tags: ["AutoCAD", "Project Planning", "Site Supervision", "Structural Design"]
 },
 {
@@ -971,7 +971,7 @@ const MalaysiaJobs = [
   domain: "Customer Service",
   experience: "Entry level",
   minExperience: 1,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["CRM", "Problem Solving", "Communication", "Call Handling"]
 },
 {
@@ -983,7 +983,7 @@ const MalaysiaJobs = [
   domain: "Creative Design",
   experience: "Mid career",
   minExperience: 3,
-  time: "1 week ago",
+  time: "Recent",
   tags: ["Adobe Photoshop", "Illustrator", "Branding", "UI Assets"]
 },
 {
@@ -995,7 +995,7 @@ const MalaysiaJobs = [
   domain: "Cybersecurity",
   experience: "Mid career",
   minExperience: 4,
-  time: "3 days ago",
+  time: "Recent",
   tags: ["Pen Testing", "SIEM", "Network Security", "Compliance"]
 },
 {
@@ -1007,7 +1007,7 @@ const MalaysiaJobs = [
   domain: "Logistics & Supply Chain",
   experience: "Mid career",
   minExperience: 3,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["Warehouse", "Shipping", "Freight", "Inventory Management"]
 }
 ];
@@ -1021,7 +1021,7 @@ const DenmarkJobs = [
   domain: "Information Technology",
   experience: "Mid career",
   minExperience: 3,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["React", "JavaScript", "UI/UX", "HTML/CSS"]
 },
 {
@@ -1033,7 +1033,7 @@ const DenmarkJobs = [
   domain: "Renewable Energy",
   experience: "Senior",
   minExperience: 5,
-  time: "1 day ago",
+  time: "Recent",
   tags: ["Turbines", "Wind Farms", "CAD", "Energy Efficiency"]
 },
 {
@@ -1045,7 +1045,7 @@ const DenmarkJobs = [
   domain: "Pharmaceuticals",
   experience: "Mid career",
   minExperience: 4,
-  time: "3 days ago",
+  time: "Recent",
   tags: ["Drug Development", "GMP", "Clinical Trials", "R&D"]
 },
 {
@@ -1057,7 +1057,7 @@ const DenmarkJobs = [
   domain: "Product Design",
   experience: "Mid career",
   minExperience: 3,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["User Research", "Figma", "Prototyping", "Human-Centered Design"]
 },
 {
@@ -1069,7 +1069,7 @@ const DenmarkJobs = [
   domain: "Robotics & Automation",
   experience: "Senior",
   minExperience: 5,
-  time: "4 days ago",
+  time: "Recent",
   tags: ["Python", "ROS", "Embedded Systems", "Sensors"]
 },
 {
@@ -1081,7 +1081,7 @@ const DenmarkJobs = [
   domain: "Shipping & Maritime",
   experience: "Mid career",
   minExperience: 4,
-  time: "5 days ago",
+  time: "Recent",
   tags: ["Naval Architecture", "Logistics", "Shipbuilding", "Maritime Regulations"]
 },
 {
@@ -1093,7 +1093,7 @@ const DenmarkJobs = [
   domain: "Life Sciences",
   experience: "Mid career",
   minExperience: 3,
-  time: "3 days ago",
+  time: "Recent",
   tags: ["SAS", "Data Analysis", "Clinical Trials", "GCP"]
 },
 {
@@ -1105,7 +1105,7 @@ const DenmarkJobs = [
   domain: "Supply Chain & Logistics",
   experience: "Mid career",
   minExperience: 4,
-  time: "6 days ago",
+  time: "Recent",
   tags: ["Procurement", "SAP", "Inventory", "Distribution"]
 },
 {
@@ -1117,7 +1117,7 @@ const DenmarkJobs = [
   domain: "Cloud & DevOps",
   experience: "Mid career",
   minExperience: 3,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["CI/CD", "Docker", "AWS", "Kubernetes"]
 },
 {
@@ -1129,7 +1129,7 @@ const DenmarkJobs = [
   domain: "Healthcare Technology",
   experience: "Mid career",
   minExperience: 3,
-  time: "4 days ago",
+  time: "Recent",
   tags: ["Medical Devices", "Product Testing", "ISO Standards", "Regulatory Affairs"]
 }
 
@@ -1146,7 +1146,7 @@ const SouthafricaJobs = [
   domain: "Information Technology",
   experience: "Mid career",
   minExperience: 3,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["JavaScript", "React", "Node.js", "REST APIs"]
 },
 {
@@ -1158,7 +1158,7 @@ const SouthafricaJobs = [
   domain: "Mining & Engineering",
   experience: "Senior",
   minExperience: 5,
-  time: "1 day ago",
+  time: "Recent",
   tags: ["Open Pit", "Underground", "Safety", "AutoCAD"]
 },
 {
@@ -1170,7 +1170,7 @@ const SouthafricaJobs = [
   domain: "Finance & Banking",
   experience: "Mid career",
   minExperience: 4,
-  time: "3 days ago",
+  time: "Recent",
   tags: ["Forecasting", "Excel", "Reporting", "Risk Analysis"]
 },
 {
@@ -1182,7 +1182,7 @@ const SouthafricaJobs = [
   domain: "Healthcare & Nursing",
   experience: "Mid career",
   minExperience: 3,
-  time: "4 days ago",
+  time: "Recent",
   tags: ["Patient Care", "ICU", "Ward Management", "Medical Records"]
 },
 {
@@ -1194,7 +1194,7 @@ const SouthafricaJobs = [
   domain: "Energy & Utilities",
   experience: "Senior",
   minExperience: 5,
-  time: "5 days ago",
+  time: "Recent",
   tags: ["Power Systems", "Substations", "Load Forecasting", "SCADA"]
 },
 {
@@ -1206,7 +1206,7 @@ const SouthafricaJobs = [
   domain: "Marketing & Branding",
   experience: "Mid career",
   minExperience: 4,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["Content Creation", "Brand Strategy", "Social Media", "Campaigns"]
 },
 {
@@ -1218,7 +1218,7 @@ const SouthafricaJobs = [
   domain: "Customer Support",
   experience: "Entry level",
   minExperience: 1,
-  time: "1 day ago",
+  time: "Recent",
   tags: ["CRM", "Inbound Calls", "Customer Queries", "Communication"]
 },
 {
@@ -1230,7 +1230,7 @@ const SouthafricaJobs = [
   domain: "Infrastructure & Construction",
   experience: "Mid career",
   minExperience: 3,
-  time: "6 days ago",
+  time: "Recent",
   tags: ["Site Planning", "Project Supervision", "CAD", "Piling"]
 },
 {
@@ -1242,7 +1242,7 @@ const SouthafricaJobs = [
   domain: "Cybersecurity",
   experience: "Mid career",
   minExperience: 4,
-  time: "3 days ago",
+  time: "Recent",
   tags: ["Firewall", "Threat Detection", "SIEM", "Incident Response"]
 },
 {
@@ -1254,7 +1254,7 @@ const SouthafricaJobs = [
   domain: "Logistics & Supply Chain",
   experience: "Mid career",
   minExperience: 3,
-  time: "2 days ago",
+  time: "Recent",
   tags: ["Inventory", "Freight", "Distribution", "Procurement"]
 }
 

@@ -157,7 +157,14 @@ const Page = () => {
       localStorage.setItem(`resume_uploaded_${form.email}`, "true");
       localStorage.setItem(`resume_data_${form.email}`, JSON.stringify(form));
 
-      router.push(`/vjc-jobs-portal/${form.country.toLowerCase()}`);
+      const jobKey = sessionStorage.getItem("resume_submitted_for");
+if (jobKey) {
+  // Go back to original job page
+  router.push(`/vjc-jobs-portal/${form.country.toLowerCase()}`);
+} else {
+  router.push(`/vjc-jobs-portal/${form.country.toLowerCase()}`);
+}
+
     } catch (err) {
       alert("Something went wrong.");
       setLoading(false);
