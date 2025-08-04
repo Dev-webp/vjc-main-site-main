@@ -106,12 +106,18 @@ const JobCard = ({ job, styles, showSuccess }) => {
         className={`p-4 rounded-xl shadow-sm mb-4 border transition-all duration-300 hover:shadow-md ${styles.cardBg}`}
       >
         <div className="flex justify-between items-center flex-wrap">
-          <h3 className={`${styles.titleColor} font-semibold text-lg mb-1`}>
+          {/* 🔹 Job Title - now clickable */}
+          <h3
+            onClick={handleApply}
+            className={`${styles.titleColor} font-semibold text-lg mb-1 cursor-pointer text-orange-500 hover:underline hover:text-blue-400 transition-colors`}
+            title="Click to apply"
+          >
             {job.title}
           </h3>
+
           <button
             onClick={handleApply}
-            className="px-4 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg mt-2 md:mt-0"
+            className="px-4 py-1 bg-blue-600 hover:bg-orange-500 text-white text-xs font-semibold rounded-lg mt-2 md:mt-0"
             disabled={alreadyApplied}
           >
             {alreadyApplied ? "Applied ✅" : "Apply Now"}
@@ -130,14 +136,15 @@ const JobCard = ({ job, styles, showSuccess }) => {
 
         <div className="mt-2 flex flex-wrap gap-2 text-xs">
           {Array.isArray(job.tags) &&
-            job.tags.map((tag, i) => (
-              <span
-                key={i}
-                className={`px-2 py-1 rounded-full border ${styles.tagColor}`}
-              >
-                {tag}
-              </span>
-            ))}
+  job.tags.map((tag, i) => (
+    <span
+      key={i}
+      className="px-2 py-1 rounded-full border text-orange-500 border-orange-500 hover:text-blue-400 hover:border-blue-400 transition-colors"
+    >
+      {tag}
+    </span>
+  ))}
+
         </div>
 
         {/* 🔽 Job Description (6-8 lines) */}
