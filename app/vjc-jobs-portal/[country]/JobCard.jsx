@@ -74,7 +74,7 @@ const JobCard = ({ job, styles, showSuccess }) => {
     const resume = localStorage.getItem(`resume_uploaded_${storedUser?.email}`);
 
     if (!storedUser) {
-      setShowLoginModal(true); // 🔑 Show login modal
+      setShowLoginModal(true);
       return;
     }
 
@@ -97,7 +97,6 @@ const JobCard = ({ job, styles, showSuccess }) => {
           setShowLoginModal={setShowLoginModal}
           onSuccess={() => {
             setShowLoginModal(false);
-            // After login, re-run handleApply
             setTimeout(() => handleApply(), 300);
           }}
         />
@@ -118,10 +117,17 @@ const JobCard = ({ job, styles, showSuccess }) => {
             {alreadyApplied ? "Applied ✅" : "Apply Now"}
           </button>
         </div>
+
         <p className="text-sm text-gray-700 mb-1">
           {job.company} - {job.location}
         </p>
+
+        <p className="text-xs text-gray-600 italic mb-2">
+          Domain: {job.domain}
+        </p>
+
         <span className="text-xs text-green-600 font-medium">{job.time}</span>
+
         <div className="mt-2 flex flex-wrap gap-2 text-xs">
           {Array.isArray(job.tags) &&
             job.tags.map((tag, i) => (
@@ -132,6 +138,28 @@ const JobCard = ({ job, styles, showSuccess }) => {
                 {tag}
               </span>
             ))}
+        </div>
+
+        {/* 🔽 Job Description (6-8 lines) */}
+        <div className="mt-4 text-sm text-gray-800 leading-relaxed">
+          <p>
+            Join <strong>{job.company}</strong> as a <strong>{job.title}</strong> in{" "}
+            <strong>{job.location}, {job.country}</strong>. We’re looking for someone with at least{" "}
+            <strong>{job.minExperience}+ years</strong> of experience in{" "}
+            <strong>{job.domain}</strong>.
+          </p>
+          <p>
+            Your responsibilities will include managing inventory, optimizing freight logistics,
+            and collaborating with distribution and procurement teams to ensure seamless operations.
+          </p>
+          <p>
+            You’ll work closely with cross-functional stakeholders and report directly to senior
+            leadership to drive results in a fast-paced environment.
+          </p>
+          <p>
+            Ideal candidates have strong analytical skills, a proactive mindset, and hands-on
+            experience with supply chain software tools.
+          </p>
         </div>
       </div>
     </>

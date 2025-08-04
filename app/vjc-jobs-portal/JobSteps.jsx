@@ -68,14 +68,14 @@ const JobSteps = () => {
   };
 
   return (
-    <div className="w-full lg:mt-28 mt-32 -mb-16 lg:-mb-14">
+    <div className="w-full lg:mt-12 mt-14 -mb-16 lg:-mb-14">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between gap-4">
           {steps.map((step, idx) => (
             <React.Fragment key={idx}>
               <div
                 onClick={() => handleStepClick(step)}
-                className="flex flex-col items-center min-w-[100px] cursor-pointer text-blue-700"
+                className="flex flex-col items-center min-w-[100px] cursor-pointer text-orange-300"
               >
                 <div
                   className={`w-10 h-10 rounded-full flex items-center justify-center text-2xl ${
