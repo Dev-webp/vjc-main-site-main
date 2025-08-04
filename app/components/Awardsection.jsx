@@ -11,21 +11,28 @@ const awards = [
 
 export default function AwardCarouselSliding() {
   return (
-    <div className="w-full py-12 px-4 bg-cover bg-center" style={{ backgroundImage: "url('/awardbgimg.png')" }}>
+    <div
+  className="relative w-full py-12 px-4 bg-cover bg-center"
+  style={{ backgroundImage: "url('/awardbgimg.png')" }}
+>
+
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">
           Our Legacy of Recognition
         </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {awards.map((award, index) => (
             <div key={index} className="flex flex-col items-center justify-center">
-              <Image
-                src={award.image}
-                alt={`Award ${index + 1}`}
-                width={220}
-                height={220}
-                className="object-contain max-h-[200px]"
-              />
+              <div className="relative w-[220px] h-[220px]">
+                <Image
+                  src={award.image}
+                  alt={`Award ${index + 1}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 220px"
+                  className="object-contain"
+                />
+              </div>
               <p className="mt-4 text-center text-sm font-bold text-gray-800">
                 {award.name}
               </p>

@@ -486,25 +486,29 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center -ml-5">
             <Link href="/" className="text-lg font-bold">
-              <div className="relative h-14 w-24">
-                <Image
-                  src="/logo-1.webp"
-                  alt="Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </Link>
-            <Link href="/" className="text-lg font-bold">
-              <div className="relative h-14 w-28 -ml-6">
-                <Image
-                  src="/logo-2.webp"
-                  alt="Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </Link>
+  <div className="relative h-14 w-24">
+    <Image
+      src="/logo-1.webp"
+      alt="Logo 1"
+      fill
+      sizes="(max-width: 768px) 96px, 120px"
+      className="object-contain"
+    />
+  </div>
+</Link>
+
+<Link href="/" className="text-lg font-bold">
+  <div className="relative h-14 w-28 -ml-6">
+    <Image
+      src="/logo-2.webp"
+      alt="Logo 2"
+      fill
+      sizes="(max-width: 768px) 112px, 128px"
+      className="object-contain"
+    />
+  </div>
+</Link>
+
           </div>
 
           <div className="hidden md:flex items-center ml-3">

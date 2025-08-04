@@ -45,7 +45,7 @@ const JobSubNavbar = ({
     <div
       className={`sticky z-40 transition-all duration-300 ${
         showBar ? "translate-y-0" : "-translate-y-full"
-      } top-[90px] lg:top-[90px]`}
+      } top-[100px] lg:top-[90px]`}
     >
       <div className="w-full px-2 py-2 flex justify-center bg-transparent">
         <div className="w-full max-w-[1280px] flex items-center justify-between gap-2 bg-white backdrop-blur-md border border-orange-300 px-4 py-2 rounded-full shadow-md">

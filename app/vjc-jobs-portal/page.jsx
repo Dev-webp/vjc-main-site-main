@@ -7,7 +7,7 @@ import LoginModal from "./LoginModal";
 const companyLogos = [
   "/hp.png", "/ibm.png", "/tcs.png", "/infosys.png", "/google.webp",
   "/amazon.jpg", "/hcl.png", "/accenture.png", "/apple.webp", "/Microsoft.webp",
-  "/Kalven-logo.png", "/LOGO-VJC.png", "/Deloitte-Logo.png", "/intel.png",
+  "/Kalven-logo.png", "/LOGO-VJC.png", "/Deloitte-Logo.png", "/intel.png", "/flipkart-logo.png", "/starbucks.webp",
 ];
 
 const countries = [
@@ -143,9 +143,18 @@ const JobPortalPage = () => {
         </h2>
         <div className="overflow-hidden whitespace-nowrap mb-6 relative">
           <div className="animate-marquee inline-flex gap-5 py-1">
-            {companyLogos.concat(companyLogos).map((logo, idx) => (
-              <Image key={idx} src={logo} alt="Company Logo" width={80} height={40} className="object-contain rounded shadow" />
-            ))}
+           {companyLogos.concat(companyLogos).map((logo, idx) => (
+  <div key={idx} style={{ width: "80px", height: "60px", position: "relative" }}>
+    <Image
+      src={logo}
+      alt={`Company Logo ${idx}`}
+      fill
+      sizes="(max-width: 768px) 80px, 80px"
+      className="object-contain rounded shadow"
+    />
+  </div>
+))}
+
           </div>
         </div>
          
