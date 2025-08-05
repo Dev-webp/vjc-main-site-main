@@ -156,14 +156,20 @@ export async function POST(request: Request) {
     const landingPage = data.landingPage ?? '';
     let details = `Landing Page: ${landingPage}\n\n`;
 
-    if (data.selectedCountry && data.mcqAnswers && mcqQuestions[data.selectedCountry]) {
-      const questions = mcqQuestions[data.selectedCountry];
-      questions.forEach((q, idx) => {
-        details += `Q${idx + 1}: ${q.question}\nA: ${data.mcqAnswers[idx] ?? ''}\n`;
-      });
-    }
+    if (
+  typeof data.selectedCountry === "string" &&
+  data.selectedCountry in mcqQuestions &&
+  data.mcqAnswers
+) {
+  const country = data.selectedCountry as keyof typeof mcqQuestions;
+  const questions = mcqQuestions[country];
 
-    details += `\nName: ${data.name ?? ''}\nEmail: ${data.email ?? ''}\nPhone: ${data.phone ?? ''}\nAge: ${data.age ?? ''}\nExperience: ${data.experience ?? ''}\nQualification: ${data.qualification ?? ''}\nMessage: ${data.message ?? ''}`;
+  questions.forEach((q, idx) => {
+    details += `Q${idx + 1}: ${q.question}\nA: ${data.mcqAnswers[idx] ?? ''}\n`;
+  });
+}
+
+    details += `\nName: ${data.name ?? ''}\nEmail: ${data.email ?? ''}\nPhone: ${data.phone ?? ''}\nCountry: ${data.country ?? ''}\nAge: ${data.age ?? ''}\nExperience: ${data.experience ?? ''}\nQualification: ${data.qualification ?? ''}\nMessage: ${data.message ?? ''}`;
 
     try {
       await createTransporter().sendMail({
@@ -185,6 +191,7 @@ export async function POST(request: Request) {
     const name = formData.get('name') as string;
     const email = formData.get('email') as string;
     const phone = formData.get('phone') as string;
+    const country = formData.get('country') as string;
     const selectedJob = formData.get('selectedJob') as string;
     const message = formData.get('message') as string;
     const landingPage = formData.get('landingPage') as string;
