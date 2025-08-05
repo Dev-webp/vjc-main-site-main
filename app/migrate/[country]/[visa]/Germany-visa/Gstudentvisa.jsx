@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
   return (
@@ -11,7 +12,6 @@ const Content = () => {
         backgroundColor: "white",
         fontFamily: "Times New Roman",
         overflow: "hidden",
-       
       }}
     >
       {/* Centered top heading */}
@@ -23,8 +23,7 @@ const Content = () => {
           marginBottom: "24px",
         }}
       >
-        Germany Student Visa -{" "}
-        <span style={{ color: "orange" }}>VJC Overseas</span>
+        Germany Student Visa - <strong style={{ color: "orange" }}>VJC Overseas</strong>
       </h3>
 
       <p style={{ marginBottom: "20px" }}>
@@ -32,16 +31,15 @@ const Content = () => {
         <a
           href="https://vjcoverseas.com/study-abroad/germany"
           target="_blank"
-          style={{ fontWeight: "bold" }}
+          style={{ fontWeight: "bold", color: "orange" }}
         >
           Study in Germany
         </a>
         , one of the most prestigious countries for higher education worldwide?
         With its world-class universities, innovative research, and diverse
-        culture, Germany is an excellent destination for international students.
+        culture, <strong style={{ color: "black" }}>Study in Germany</strong> is an excellent destination for international students.
         Whether you are applying for free or paid education,{" "}
-        <span style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</span>{" "}
-        is here to guide you through the entire process, making your journey
+        <strong style={{ color: "black" }}>VJC Overseas</strong> is here to guide you through the entire process, making your journey
         smooth and hassle-free.
       </p>
 
@@ -60,21 +58,22 @@ const Content = () => {
 
         <div className="px-4 lg:px-0">
           <h3 className="text-black font-bold mb-4 text-lg sm:text-xl">
-            Study in Germany: New Changes, Free and Paid Education Eligibility
+            <strong style={{ color: "black" }}>Study in Germany</strong>: New Changes, Free and Paid Education Eligibility
           </h3>
           <p className="mb-4 text-sm sm:text-base">
             Germany has made a few changes to its{" "}
             <a
               href="https://vjcoverseas.com/migrate/germany/student-visa"
               target="_blank"
-              style={{ fontWeight: "bold" }}
+              style={{ fontWeight: "bold", color: "orange" }}
             >
               Germany Student Visa
             </a>{" "}
             regulations for international students in 2024. These changes are
             designed to make the process more streamlined and accessible,
             ensuring that students can easily navigate the system and pursue
-            their academic goals.
+            their academic goals.{" "}
+            <strong style={{ color: "black" }}>Germany Student Visa</strong>
           </p>
         </div>
       </div>
@@ -224,6 +223,22 @@ const Content = () => {
           show proof of sufficient funds for your living expenses.
         </li>
       </ul>
+      <h3 style={{ fontWeight: "bold", marginTop: "20px" }}>
+  Explore the Germany Opportunity Card – A New Pathway to Work in Germany
+</h3>
+
+<p style={{ marginTop: "10px", marginBottom: "20px" }}>
+  Germany has recently introduced the{" "}
+  <Link href="https://www.vjcoverseas.com/germany-opportunity-card" passHref>
+  <span style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}>
+    Germany Opportunity Card
+  </span>
+</Link>
+
+  , a points-based immigration pathway designed to attract skilled foreign professionals. This new initiative allows qualified individuals to enter Germany without a prior job offer, search for employment, and transition smoothly into the workforce. It’s an ideal route for those who meet specific criteria in education, experience, language skills, and age. If you’re exploring flexible options to start your career in Germany, the <strong>Germany Opportunity Card</strong> could be the perfect alternative to traditional work visas—offering freedom, opportunity, and a structured path to success.
+</p>
+
+
 
       <h3 className="text-black font-bold mb-4 text-lg sm:text-xl">
         Benefits and Advantages:
@@ -328,13 +343,14 @@ const Content = () => {
         <a
           href="https://vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa"
           target="_blank"
-          style={{ fontWeight: "bold" }}
+          style={{ fontWeight: "bold", color: "orange" }}
         >
           Germany Skilled Worker Visa
         </a>{" "}
         or study visa generally takes about 6–8 weeks. However, it may vary
         depending on the region and specific circumstances, so it is recommended
-        to apply as early as possible.
+        to apply as early as possible.{" "}
+        <strong style={{ color: "black" }}>Germany Skilled Worker Visa</strong>
       </p>
 
       <h3 className="text-black font-bold mb-4 text-lg sm:text-xl">
@@ -355,10 +371,10 @@ const Content = () => {
       </p>
 
       <h3 className="text-black font-bold mb-4 text-lg sm:text-xl">
-        Why Choose <span style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</span>?
+        Why Choose <strong style={{ color: "black" }}>VJC Overseas</strong>?
       </h3>
       <p>
-        At <span style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</span>,
+        At <strong style={{ color: "black" }}>VJC Overseas</strong>,
         we specialize in helping Indian students navigate the entire process of
         studying in Germany. From selecting the right university to visa
         processing, and finding accommodation, we provide complete support and
@@ -366,18 +382,20 @@ const Content = () => {
         <a
           href="https://vjcoverseas.com/"
           target="_blank"
-          style={{ fontWeight: "bold", color: "#0d4d4d" }}
+          style={{ fontWeight: "bold", color: "orange" }}
         >
           Best Visa Immigration Consultant
         </a>
         , our team is dedicated to making your dream of studying in Germany a
-        reality.
+        reality. <strong style={{ color: "black" }}>Best Visa Immigration Consultant</strong>
       </p>
+
       <h4>
         For more information on the study visa process, eligibility, and support
         for studying in Germany, contact{" "}
-        <a  href="https://vjcoverseas.com/"
-          target="_blank" style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</a>{" "}
+        <Link href="/contact">
+          <strong style={{ color: "orange" }}>VJC Overseas</strong>
+        </Link>{" "}
         today!
       </h4>
     </div>

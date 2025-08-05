@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
   return (
@@ -13,17 +14,21 @@ const Content = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl font-semibold text-black text-center">
-          Germany Dependent Visa-{" "}
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+          Germany Dependent Visa - <span className="text-black font-bold">VJC Overseas</span>
         </h3>
       </div>
       <h3 className="text-black font-bold mb-4 mt-3 text-lg sm:text-xl">
-        Germany Dependent Visa: Secure Your Familys Future in Germany with VJC
-        Overseas
+        Germany Dependent Visa: Secure Your Familys Future in Germany with{" "}
+        <span className="text-black font-bold">VJC Overseas</span>
       </h3>
       <p>
-        At VJC Overseas, we understand that moving to a new country is not just
-        about you, but also about your loved ones. If youre planning to live and
+        At{" "}
+        <Link href="https://vjcoverseas.com/" legacyBehavior>
+          <a target="_blank" className="text-orange-600 font-bold">
+            VJC Overseas
+          </a>
+        </Link>
+        , we understand that moving to a new country is not just about you, but also about your loved ones. If youre planning to live and
         work in Germany and want to bring your spouse, children, or other
         dependents along, the Germany Dependent Visa can make that dream a
         reality. Our expert consultants will guide you through every step of the
@@ -35,7 +40,7 @@ const Content = () => {
           <Image
             src="/gocimg.png"
             alt="Image description"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
             priority
@@ -63,6 +68,15 @@ const Content = () => {
         facilitate family reunification, allowing dependents to maintain a close
         family bond while enjoying the benefits of living in one of Europes most
         advanced economies.
+      </p>
+      <p>
+        If you're planning to apply for the{" "}
+        <Link href="https://vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa" legacyBehavior>
+          <a target="_blank" className="text-orange-600 font-bold">
+            Germany Skilled Worker Visa
+          </a>
+        </Link>
+        , the dependent visa ensures your family can be with you as you build your career abroad.
       </p>
 
       <h4 className="text-black font-semibold mb-2 mt-3 text-md sm:text-lg">
@@ -109,8 +123,13 @@ const Content = () => {
         </li>
         <li>
           Pathway to Permanent Residency: A dependent visa is a crucial step
-          toward eventually obtaining permanent residency
-          (Niederlassungserlaubnis) in Germany.
+          toward eventually obtaining permanent residency in Germany. Many families use this pathway to transition to the{" "}
+          <Link href="https://vjcoverseas.com/pr-visas/germany-blue-card" legacyBehavior>
+            <a target="_blank" className="text-orange-600 font-bold">
+              Germany PR Visa
+            </a>
+          </Link>
+          .
         </li>
       </ol>
 
@@ -138,6 +157,23 @@ const Content = () => {
           for the family in Germany.
         </li>
       </ul>
+
+      {/* New Inserted Section Starts Here */}
+      <div className="mt-4">
+        <h4 className="text-black font-bold">
+          Explore the Germany Opportunity Card – A New Pathway to Work in Germany
+        </h4>
+        <p className="mt-2">
+          Germany has recently introduced the{" "}
+          <Link href="https://www.vjcoverseas.com/germany-opportunity-card" legacyBehavior>
+            <a target="_blank" className="text-orange-600 font-bold">
+              Germany Opportunity Card
+            </a>
+          </Link>
+          , a points-based immigration pathway designed to attract skilled foreign professionals. This new initiative allows qualified individuals to enter Germany without a prior job offer, search for employment, and transition smoothly into the workforce. It's an ideal route for those who meet specific criteria in education, experience, language skills, and age. If you’re exploring flexible options to start your career in Germany, the <strong>Germany Opportunity Card</strong> could be the perfect alternative to traditional work visas—offering freedom, opportunity, and a structured path to success.
+        </p>
+      </div>
+      {/* New Inserted Section Ends Here */}
 
       <h4 className="text-black mt-3 font-semibold mb-2 text-md sm:text-lg">
         Application Process for the Germany Dependent Visa
@@ -168,7 +204,7 @@ const Content = () => {
       </ol>
 
       <h4 className="text-black mt-3 font-semibold mb-2 text-md sm:text-lg">
-        Why Choose VJC Overseas for Your Germany Dependent Visa?
+        Why Choose <span className="text-black font-bold">VJC Overseas</span> for Your Germany Dependent Visa?
       </h4>
       <ul>
         <li>
@@ -189,15 +225,34 @@ const Content = () => {
         </li>
       </ul>
 
+      <p>
+        If your family member is planning to{" "}
+        <Link href="https://vjcoverseas.com/study-abroad/germany" legacyBehavior>
+          <a target="_blank" className="text-orange-600 font-bold">
+            Study in Germany
+          </a>
+        </Link>
+        , a dependent visa also allows you to accompany and support them during their academic journey.
+      </p>
+
       <h4 className="text-black mt-3 font-bold mb-4 text-lg sm:text-xl">
         Take the First Step Toward Reuniting with Your Loved Ones
       </h4>
       <p>
         Living and working in Germany is a fantastic opportunity for you and
         your family. With the Germany Dependent Visa, you can ensure that your
-        loved ones join you on this exciting journey. Contact VJC Overseas today
-        to begin the application process and take the first step toward a
+        loved ones join you on this exciting journey. Contact{" "}
+        <span className="text-black font-bold">VJC Overseas</span> today to begin the application process and take the first step toward a
         brighter future in Germany.
+      </p>
+      <p>
+        As one of the{" "}
+        <Link href="https://vjcoverseas.com/" legacyBehavior>
+          <a target="_blank" className="text-orange-600 font-bold">
+            Best Visa Immigration Consultants
+          </a>
+        </Link>
+        , <span className="text-black font-bold">VJC Overseas</span> is committed to making your family reunification journey as seamless as possible.
       </p>
       <p>
         Reach out to our experts for a free consultation and make your family
