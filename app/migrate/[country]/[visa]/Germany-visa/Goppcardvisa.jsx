@@ -54,7 +54,7 @@ const Content = () => {
           <p className="leading-relaxed">
             The <strong style={{ color: "#000000" }}>Germany Opportunity Card</strong> is a strategic immigration pathway designed for highly skilled professionals from outside the European Union to live and work in Germany. Introduced as part of Germany’s new points-based immigration system, it offers a flexible and faster route to residency — especially in fields experiencing critical skill shortages like IT, engineering, and healthcare. Whether you're aiming to expand your professional journey or looking to settle in one of the world’s most developed countries, this card provides the ideal path to{" "}
             <Link href="https://vjcoverseas.com/migrate-to-germany/">
-              <span style={{ color: "orange" }}><strong>migrate to Germany</strong></span>
+              <span style={{ color: "orange" }}><strong>Migrate to Germany</strong></span>
             </Link>{" "}
             and explore abundant opportunities.
           </p>
@@ -99,7 +99,7 @@ const Content = () => {
       <p className="mb-6 leading-relaxed">
         As leading Germany visa consultants, we take pride in offering full-spectrum guidance from consultation to visa approval. With a success rate that includes approvals every alternate day, our process speaks for itself. Our team ensures top-notch advice whether you're applying from Hyderabad, Bangalore, or across India. You can begin by checking your{" "}
         <Link href="https://vjcoverseas.com/assessment">
-          <span style={{ color: "orange" }}><strong>eligibility for the Germany Opportunity Card</strong></span>
+          <span style={{ color: "orange" }}><strong>Eligibility for the Germany Opportunity Card</strong></span>
         </Link>
         .
       </p>
@@ -141,7 +141,7 @@ const Content = () => {
         </p>
         <p className="mt-2 leading-relaxed">
   The <strong style={{ color: "#000000" }}>Germany Opportunity Card</strong> offers the ideal opportunity for you to live, work, and settle in Germany, backed by a streamlined process and professional guidance. Check your{" "}
-  <strong style={{ color: "#000000" }}>eligibility for the Germany Opportunity Card</strong> today to take the first step. Whether you're looking for migration, career advancement, or long-term residency, <strong style={{ color: "#000000" }}>VJC Overseas</strong> is here to make your dream a reality.
+  <strong style={{ color: "#000000" }}>Eligibility for the Germany Opportunity Card</strong> today to take the first step. Whether you're looking for migration, career advancement, or long-term residency, <strong style={{ color: "#000000" }}>VJC Overseas</strong> is here to make your dream a reality.
 </p>
 
         <p className="mt-2 leading-relaxed font-bold text-black">
