@@ -14,10 +14,10 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [mobileSubMenu, setMobileSubMenu] = useState({});
+  
   const menuItems = [
     { name: "Home", path: "/" },
     // { name: "About us", path: "/about-us" },
@@ -41,7 +41,36 @@ const Navbar = () => {
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact-us" },
   ];
-
+   const getSubMenu = (itemName) => {
+    switch (itemName) {
+      case "Migrate To":
+        return migrateSubPages;
+      case "PR Visas":
+        return prVisaSubPages;
+      case "Job Seeker Visas":
+        return jobseeker;
+      case "Work Abroad":
+        return workabroadSubPages;
+      case "Investor Visas":
+        return investorvisasSubPages;
+      case "Services":
+        return servicesSubPages;
+      case "Coaching/Training":
+        return coachingSubPages;
+      case "Resume Marketing":
+        return resumemarketingSubPages;
+      case "Study Abroad":
+        return studyabroadSubPages;
+      case "Tours/Ticketing":
+        return toursticketingSubPages;
+      case "Visit Visas":
+        return visitvisasSubPages;
+      case "Schengen Visas":
+        return schengenSubPages;
+      default:
+        return null;
+    }
+  };
   const fixedItems = [
     { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" },
@@ -477,7 +506,12 @@ const Navbar = () => {
     { name: "Sweden ", path: "/schengen-visas/sweden" },
     { name: "Switzerland ", path: "/schengen-visas/switzerland" },
   ];
-
+   const toggleMobileSubMenu = (itemName) => {
+    setMobileSubMenu((prev) => ({
+      ...prev,
+      [itemName]: !prev[itemName],
+    }));
+  };
   return (
     <header>
       {/* Top Section */}
@@ -486,29 +520,25 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center -ml-5">
             <Link href="/" className="text-lg font-bold">
-  <div className="relative h-14 w-24">
-    <Image
-      src="/logo-1.webp"
-      alt="Logo 1"
-      fill
-      sizes="(max-width: 768px) 96px, 120px"
-      className="object-contain"
-    />
-  </div>
-</Link>
-
-<Link href="/" className="text-lg font-bold">
-  <div className="relative h-14 w-28 -ml-6">
-    <Image
-      src="/logo-2.webp"
-      alt="Logo 2"
-      fill
-      sizes="(max-width: 768px) 112px, 128px"
-      className="object-contain"
-    />
-  </div>
-</Link>
-
+              <div className="relative h-14 w-24">
+                <Image
+                  src="/logo-1.webp"
+                  alt="Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </Link>
+            <Link href="/" className="text-lg font-bold">
+              <div className="relative h-14 w-28 -ml-6">
+                <Image
+                  src="/logo-2.webp"
+                  alt="Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center ml-3">
@@ -805,8 +835,7 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
-
-      <div className="bg-orange-500 fixed top-12 w-screen z-50 md:hidden block">
+<div className="bg-orange-500 fixed top-12 w-screen z-50 md:hidden block">
         <nav className="flex justify-between items-center py-2 px-4">
           <div className="flex items-center space-x-2 text-xs lg:text-sm text-black uppercase font-semibold italic">
             <div className="flex items-center animate-pulse text-black">
@@ -850,37 +879,77 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="flex flex-col items-end justify-end text-xs space-y-1"
           >
-            <span className="block h-1 w-8 bg-white rounded"></span>{" "}
-            {/* Big line */}
-            <span className="block h-1 w-6 bg-white rounded"></span>{" "}
-            {/* Smaller line */}
-            <span className="block h-1 w-4 bg-white rounded"></span>{" "}
-            {/* Smallest line */}
+            <span className="block h-1 w-8 bg-white rounded"></span>
+            <span className="block h-1 w-6 bg-white rounded"></span>
+            <span className="block h-1 w-4 bg-white rounded"></span>
           </button>
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className="absolute top-full left-0 w-full bg-gradient-to-tr from-orange-500 to-black/80 text-white flex flex-col space-y-2 font-bold p-4 z-50">
-              {menuItems.map((item, index) => (
-                <div key={index} className="border-b border-white/20 pb-2">
-                  <a href={item.path} className="hover:text-orange-500 block">
-                    {item.name}
-                  </a>
-                </div>
-              ))}
-              {extraItems.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-between border-b border-white/20 pb-2 hover:text-orange-500 cursor-pointer"
-                >
-                  <a href={item.path} className="hover:text-orange-500 block">
-                    {item.name}
-                  </a>
-                </div>
-              ))}
-            </div>
-          )}
         </nav>
+        {/* Mobile Menu with submenus */}
+        {isMenuOpen && (
+          <div className="absolute top-full left-0 w-full bg-gradient-to-tr from-orange-500 to-black/80 text-white flex flex-col space-y-2 font-bold p-4 z-50 max-h-[80vh] overflow-y-auto">
+            {menuItems.map((item, index) => {
+              const submenu = getSubMenu(item.name);
+              return (
+                <div key={index} className="border-b border-white/20 pb-2">
+                  <div className="flex items-center justify-between">
+                    <a href={item.path} className="hover:text-orange-500 block">
+                      {item.name}
+                    </a>
+                    {submenu && (
+                      <button
+                        type="button"
+                        onClick={() => toggleMobileSubMenu(item.name)}
+                        className={`focus:outline-none ml-2 ${mobileSubMenu[item.name] ? "rotate-180" : ""}`}
+                        aria-label="Toggle Submenu"
+                      >
+                        <FaChevronDown />
+                      </button>
+                    )}
+                  </div>
+                  {submenu && mobileSubMenu[item.name] && (
+                    <div className="mt-2 ml-2 flex flex-col space-y-1">
+                      {submenu.map((subItem) => (
+                        <div key={subItem.name}>
+                          <a
+                            href={subItem.path}
+                            className="text-white bg-black/10 rounded px-2 py-1 mb-1 hover:bg-orange-600 hover:text-white block text-xs"
+                          >
+                            {subItem.name}
+                          </a>
+                          {subItem.children && (
+                            <div className="ml-4 flex flex-col space-y-1">
+                              {subItem.children.map((child) => (
+                                <a
+                                  key={child.name}
+                                  href={child.path}
+                                  className="text-white bg-black/20 rounded px-2 py-1 hover:bg-orange-400 hover:text-white block text-[11px]"
+                                >
+                                  {child.name}
+                                </a>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+            {extraItems.map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-between border-b border-white/20 pb-2 hover:text-orange-500 cursor-pointer"
+              >
+                <a href={item.path} className="hover:text-orange-500 block">
+                  {item.name}
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
+    
 
       <style>
         {`

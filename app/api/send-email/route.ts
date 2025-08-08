@@ -91,7 +91,7 @@ export async function POST(request: Request) {
     if (data.type === 'job-application' && data.email) {
       const name = data.name ?? 'VJC User';
       const jobTitle = data.appliedJob?.title ?? 'a job';
-      const jobCountryUrl = data.portalUrl || 'https://vjc-overseas.com/vjc-jobs-portal';
+      const jobCountryUrl = data.portalUrl || 'https://vjc-overseas.com/abroad-jobs-work-permit.com';
 
       const message = `Hello ${name},\n\nThank you for applying to "${jobTitle}" via the VJC Overseas Job Portal.\nWe've successfully received your application.\n\nYou can explore more jobs here: ${jobCountryUrl}\n\nJob Details:\n- Job Title: ${data.appliedJob?.title}\n- Company: ${data.appliedJob?.company}\n- Location: ${data.appliedJob?.location}\n- Domain: ${data.appliedJob?.domain}\n\nYour submitted profile:\n- Name: ${data.name}\n- Email: ${data.email}\n- Phone: ${data.phone}\n- Experience: ${data.experience}\n- Country: ${data.country}\n- Resume: ${data.resumeName ?? 'Not provided'}\n- Skills: ${(data.skills || []).join(', ')}\n- Message: ${data.message || 'N/A'}\n\nBest regards,\nVJC Overseas Team`;
 

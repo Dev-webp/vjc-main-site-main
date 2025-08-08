@@ -32,7 +32,7 @@ const JobSubNavbar = ({
   const handleCountryChange = (e) => {
     const selected = e.target.value;
     setSelectedCountry(selected);
-    router.push(`/vjc-jobs-portal/${selected.toLowerCase().replace(/ /g, "-")}`);
+    router.push(`/abroad-jobs-work-permit.com/${selected.toLowerCase().replace(/ /g, "-")}`);
   };
 
   const handleSearchClick = () => {

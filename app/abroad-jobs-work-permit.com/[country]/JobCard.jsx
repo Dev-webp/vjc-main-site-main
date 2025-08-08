@@ -52,7 +52,7 @@ const JobCard = ({ job, styles, showSuccess }) => {
         location: job.location,
         domain: job.domain,
       },
-      portalUrl: `https://vjcoverseas.com/vjc-jobs-portal/${profile.country.toLowerCase()}`,
+      portalUrl: `https://vjcoverseas.com/abroad-jobs-work-permit.com/${profile.country.toLowerCase()}`,
     };
 
     const res = await fetch("/api/send-email", {
@@ -80,7 +80,7 @@ const JobCard = ({ job, styles, showSuccess }) => {
 
     if (!resume) {
       sessionStorage.setItem("resume_submitted_for", jobKey);
-      router.push("/vjc-jobs-portal/profile");
+      router.push("/abroad-jobs-work-permit.com/profile");
     } else {
       applyForJob();
     }

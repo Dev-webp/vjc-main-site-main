@@ -61,7 +61,7 @@ const CountryJobsPage = () => {
 
   const handleCountryChange = (country) => {
     const urlSafe = country.toLowerCase().replace(/\s/g, "");
-    router.push(`/vjc-jobs-portal/${urlSafe}`);
+    router.push(`/abroad-jobs-work-permit.com/${urlSafe}`);
   };
 
   const handleShowSuccess = () => {

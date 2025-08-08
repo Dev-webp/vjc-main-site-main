@@ -142,7 +142,7 @@ const Page = () => {
       }
     }
 
-    data.append("landingPage", "/vjc-jobs-portal");
+    data.append("landingPage", "/abroad-jobs-work-permit.com");
 
     try {
       const res = await fetch("/api/send-email", {
@@ -158,7 +158,7 @@ const Page = () => {
       localStorage.setItem(`resume_data_${form.email}`, JSON.stringify(form));
 
       const jobKey = sessionStorage.getItem("resume_submitted_for");
-      router.push(`/vjc-jobs-portal/${form.country.toLowerCase()}`);
+      router.push(`/abroad-jobs-work-permit.com/${form.country.toLowerCase()}`);
 
     } catch (err) {
       alert("Something went wrong.");

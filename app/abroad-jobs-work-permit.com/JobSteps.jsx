@@ -43,19 +43,19 @@ const JobSteps = () => {
       label: "Sign In",
       icon: "🔐",
       active: progress.step1,
-      link: "/vjc-jobs-portal",
+      link: "/abroad-jobs-work-permit.com",
     },
     {
       label: "Profile Update",
       icon: "📄",
       active: progress.step1,
-      link: "/vjc-jobs-portal/profile",
+      link: "/abroad-jobs-work-permit.com/profile",
     },
     {
       label: "Apply Jobs",
       icon: "🚀",
       active: progress.step2,
-      link: "/vjc-jobs-portal",
+      link: "/abroad-jobs-work-permit.com",
     },
   ];
 

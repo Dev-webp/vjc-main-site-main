@@ -164,7 +164,7 @@ const JobPortalPage = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {countries.map((country, index) => {
-            const link = `/vjc-jobs-portal/${country.toLowerCase().replace(/\s+/g, "-")}`;
+            const link = `/abroad-jobs-work-permit.com/${country.toLowerCase().replace(/\s+/g, "-")}`;
             const bgImg = `/job-images/${country.toLowerCase().replace(/\s+/g, "-")}.webp`;
             return (
               <div key={index} className="flip-card cursor-pointer" onClick={() => handleCardClick(link)}>
