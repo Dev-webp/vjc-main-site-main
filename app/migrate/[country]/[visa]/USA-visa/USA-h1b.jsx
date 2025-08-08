@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image'; 
-
+import Image from 'next/image';
+import Link from 'next/link';
 
 const USAh1b = () => {
   return (
@@ -10,12 +10,12 @@ const USAh1b = () => {
     }}>
       <div style={{ marginBottom: '5%' }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          USA H1B Visa  - VJC Overseas<span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
+          USA H1B Visa  - <span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
         </h3>
       </div>
-      <h3 className='mb-6 m-2 text-sky-800 text-lg'>H1B Visa for USA: Complete Guide by VJC Overseas</h3>
+      <h3 className='mb-6 m-2 text-sky-800 text-lg'>H1B Visa for USA: Complete Guide by <b className="text-sky-800">VJC Overseas</b></h3>
       <p className="text-black m-2  mb-6">
-        The <b>H1B Visa</b> is one of the most sought-after work visas in the United States, allowing skilled professionals to work in specialty occupations for U.S. employers. If you’re looking to work in the USA on an H1B Visa, VJC Overseas is here to guide you through the entire process—from understanding the eligibility requirements to providing expert assistance with document submission and tracking your application’s progress.
+        The <b>H1B Visa</b> is one of the most sought-after work visas in the United States, allowing skilled professionals to work in specialty occupations for U.S. employers. If you’re looking to work in the USA on an <b>H1B Visa</b>, <Link href="https://vjcoverseas.com/"><span style={{ color: 'orange' }}>VJC Overseas</span></Link> is here to guide you through the entire process—from understanding the eligibility requirements to providing expert assistance with document submission and tracking your application’s progress.
       </p>
 
       <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -23,9 +23,8 @@ const USAh1b = () => {
           <Image
             src="/assets/USAh1b.png"
             alt="Australia Business Visa"
-            width={500} 
+            width={500}
             height={300}
-
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
             priority
             unoptimized
@@ -34,106 +33,107 @@ const USAh1b = () => {
 
         <div>
           <h4 className="mb-6 m-2 font-bold text-black">What is an H1B Visa?</h4>
-
-          <p className="mb-6">The H1B Visa is a non-immigrant visa that enables U.S. companies to employ foreign workers in roles that require specialized knowledge and a bachelor's degree or higher (or equivalent). These roles are typically in fields like IT, engineering, healthcare, finance, and other technical sectors.</p>
+          <p className="mb-6">The <b>H1B Visa</b> is a non-immigrant visa that enables U.S. companies to employ foreign workers in roles that require specialized knowledge and a bachelor's degree or higher (or equivalent). These roles are typically in fields like IT, engineering, healthcare, finance, and other technical sectors.</p>
         </div>
       </div>
 
+      {/* NEW CONTENT ADDED BELOW */}
+      <div className="mt-10 text-black">
+        <h2 className="text-2xl font-bold mb-4">USA H1B Visa – Your Guide to Working in the U.S. with VJC Overseas</h2>
+        <p className="mb-4">The <Link href="https://www.vjcoverseas.com/work-abroad/usa-h1b-visa"><span style={{ color: "orange" }}>H1B Work Visa</span></Link> is one of the most sought-after U.S. work permits for skilled professionals across the globe. Designed for individuals with specialized knowledge and qualifications, this non-immigrant visa grants access to high-demand sectors such as IT, engineering, healthcare, finance, and more. At <b>VJC Overseas</b>, we offer expert assistance to help professionals secure the <b>H1B Work Visa</b> and unlock global career opportunities.</p>
 
+        <h3 className="font-bold text-lg mb-2">What is the H1B Visa?</h3>
+        <p className="mb-4">The <b>H1B Visa</b> enables foreign nationals to work legally in the United States in specialty occupations that typically require a bachelor’s degree or higher. It is employer-sponsored and allows individuals to work for a U.S.-based company under specific conditions.</p>
 
+        <h3 className="font-bold text-lg mb-2">Top Industries that Sponsor H1B Visas:</h3>
+        <ul className="list-disc ml-6 mb-4">
+          <li>Software & Information Technology</li>
+          <li>Engineering (Mechanical, Electrical, Civil)</li>
+          <li>Data Science & Artificial Intelligence</li>
+          <li>Healthcare (Physicians, Nurses, Lab Technicians)</li>
+          <li>Financial Services & Accounting</li>
+          <li>Research & Academic Fields</li>
+        </ul>
 
+        <p className="mb-4">One of the major advantages of the H1B is its dual-intent nature, which means it can also serve as a gateway to <Link href="https://www.vjcoverseas.com/pr-visas/usa-green-card"><span style={{ color: "orange" }}>US Permanent Residency</span></Link> for those wishing to settle in the U.S.</p>
 
-      <h4 className="mb-6 m-2 font-bold text-lg text-black">H1B Visa Eligibility</h4>
-      <p className="mb-6 m-2">To qualify for an H1B Visa, you must meet the following criteria:</p>
+        <h3 className="font-bold text-lg mb-2">H1B Visa Eligibility Criteria</h3>
+        <ul className="list-disc ml-6 mb-4">
+          <li>You must have a valid job offer from a U.S.-based employer.</li>
+          <li>The role should require a bachelor’s degree or equivalent specialized knowledge.</li>
+          <li>You should possess the necessary academic qualifications and/or relevant work experience.</li>
+          <li>The sponsoring employer must submit a Labor Condition Application (LCA) to the U.S. Department of Labor.</li>
+          <li>You must not have violated any prior U.S. immigration laws.</li>
+        </ul>
+        <p className="mb-4">Professionals considering the H1B as a route to <Link href="https://www.vjcoverseas.com/migrate/united-states"><span style={{ color: "orange" }}>Migrate to United States</span></Link> permanently will find it an effective first step.</p>
 
-      <ul className='ml-8 mb-6 list-decimal'>
-        <li><b>Specialty Occupation: </b> You must be applying for a job in a specialized field that requires a minimum of a bachelor’s degree or equivalent.</li>
-        <li><b>Employer Sponsorship: </b>You must have a job offer from a U.S. employer who is willing to sponsor your visa.</li>
-        <li><b>Educational Qualifications: </b>You should hold at least a bachelor’s degree or its equivalent in the specific field required for the job.</li>
-        <li><b>Labour Condition Application(LCA): </b> Your employer must file an LCA with the Department of Labour to confirm that hiring a foreign worker will not adversely affect the working conditions or wages of U.S. workers.</li>
-      </ul>
+        <h3 className="font-bold text-lg mb-2">Key Benefits of the H1B Visa</h3>
+        <ul className="list-disc ml-6 mb-4">
+          <li>Initial Validity: 3 years, extendable up to 6 years</li>
+          <li>Portability: Allows job change with new employer sponsorship</li>
+          <li>Dependents: Spouse and children under 21 can accompany on H4 Visa</li>
+          <li>Travel: Multiple re-entries allowed during visa validity</li>
+          <li>Green Card Path: Supports permanent residency application</li>
+        </ul>
 
-      <h4 className="mb-6 m-2 font-bold text-lg text-black">Key Features of the H1B Visa</h4>
+        <h3 className="font-bold text-lg mb-2">H1B Visa Application Process</h3>
+        <ol className="list-decimal ml-6 mb-4">
+          <li>Employer Sponsorship – A U.S. company offers you a qualifying job and initiates the petition.</li>
+          <li>LCA Filing – Employer files a Labor Condition Application to ensure fair wages.</li>
+          <li>H1B Registration & Lottery – Details are submitted for the annual H1B lottery.</li>
+          <li>USCIS Petition Filing – If selected, your employer submits the full petition.</li>
+          <li>Visa Interview – Attend an interview at the U.S. Embassy/Consulate in your country.</li>
+          <li>Visa Issuance – Upon approval, enter the U.S. and begin working.</li>
+        </ol>
 
-      <ul className='list-disc mb-6 ml-8'>
-        <li><b>Duration: </b>The H1B Visa is typically granted for an initial period of 3 years, with the possibility of extending up to 6 years.</li>
-        <li><b>Dependents: </b>You can bring your spouse and children under 21 on an H4 Visa. However, your spouse may not be authorized to work unless they apply for and receive specific work authorization.</li>
-        <li><b>Dual Intent:  </b>The H1B Visa allows for dual intent, meaning you can apply for a green card (permanent residency) while on an H1B Visa.</li>
-      </ul>
-      <h4 className="mb-6 m-2 font-bold text-lg text-black">H1B Visa Process & Timeline</h4>
-      <p className="mb-6 m-2">The application process for the H1B Visa involves several steps and careful preparation. Below is an overview of the H1B Visa application process and the typical timeline:</p>
+        <h3 className="font-bold text-lg mb-2">Processing Time:</h3>
+        <ul className="list-disc ml-6 mb-4">
+          <li>Regular: 2 to 6 months</li>
+          <li>Premium (optional): 15 calendar days</li>
+        </ul>
 
-      <h4 className="mb-6 italic m-2 text-sky-700">1. Employer Petition Filing (April - June)</h4>
-      <p className='mb-6 m-2'>The U.S. employer must submit a Labour Condition Application (LCA) to the U.S. Department of Labour. This process typically begins in <b>April</b>, with applications being filed for the next fiscal year.</p>
-      <h4 className="mb-6 italic m-2 text-sky-700">2. H1B Registration & Lottery (March - April)</h4>
-      <p className='mb-6 m-2'>The U.S. Citizenship and Immigration Services (USCIS) conducts a lottery to select which petitions will be processed, as there is an annual cap of 65,000 visas, with an additional 20,000 visas available for applicants with a U.S. master's degree or higher.</p>
+        <h3 className="font-bold text-lg mb-2">Required Documents</h3>
+        <p className="font-semibold italic mb-2">For Employers:</p>
+        <ul className="list-disc ml-6 mb-4">
+          <li>Approved LCA</li>
+          <li>Company incorporation and tax documents</li>
+          <li>Employer support letter</li>
+        </ul>
+        <p className="font-semibold italic mb-2">For Applicants:</p>
+        <ul className="list-disc ml-6 mb-4">
+          <li>Valid passport</li>
+          <li>DS-160 confirmation</li>
+          <li>Job offer letter</li>
+          <li>Educational transcripts and certificates</li>
+          <li>Updated resume/CV</li>
+          <li>Experience letters</li>
+          <li>Passport-size photographs</li>
+          <li>Previous visa copies (if applicable)</li>
+        </ul>
 
-      <h4 className="mb-6 italic m-2 text-sky-700">3. Petition Filing with USCIS (April - May)</h4>
-      <p className='mb-6 m-2'>Once selected in the lottery, the employer files the official H1B petition with USCIS.</p>
+        <h3 className="font-bold text-lg mb-2">H1B Cap and Lottery</h3>
+        <ul className="list-disc ml-6 mb-4">
+          <li>65,000 under the regular quota</li>
+          <li>20,000 for individuals with U.S. master’s degrees</li>
+          <li>Cap-exempt employers include universities, non-profits, and research institutions</li>
+        </ul>
 
-      <h4 className="mb-6 italic m-2 text-sky-700">4. USCIS Processing (2-6 months)</h4>
-      <p className='mb-6 m-2'>The standard processing time for USCIS to review and adjudicate the H1B petition is typically <b>2 to 6 months</b>. For faster processing, an employer can opt for <b>premium processing</b>, which guarantees a decision within <b>15 calendar days</b> for an additional fee.</p>
+        <h3 className="font-bold text-lg mb-2">Considering Other Visa Options?</h3>
+        <p className="mb-4">If you're planning a short visit or business trip to the U.S., explore the <Link href="https://vjcoverseas.com/visit-visas/usa"><span style={{ color: "orange" }}>USA Visit Visa</span></Link>. For those looking to pursue education, check the <Link href="https://vjcoverseas.com/migrate/united-states/student-visa"><span style={{ color: "orange" }}>USA Study Visa</span></Link> page for detailed guidance on F1 and M1 visas.</p>
 
-      <h4 className="mb-6 italic text-sky-700">5. Visa Approval & Consular Processing (2-6 weeks)</h4>
-      <p className='mb-6 m-2'>If your H1B petition is approved, you may need to attend a visa interview at a U.S. consulate in your home country. After the visa is stamped in your passport, you are allowed to enter the U.S. and begin working with the sponsoring employer.</p>
+        <h3 className="font-bold text-lg mb-2">Why Choose Best Visa Immigration Consultants?</h3>
+        <p className="mb-4">As one of the <Link href="https://vjcoverseas.com/"><span style={{ color: "orange" }}>Best Visa Immigration Consultants</span></Link> in the field, <b>VJC Overseas</b> ensures every detail of your <b>H1B</b> application is thoroughly handled. We offer:</p>
+        <ul className="list-disc ml-6 mb-4">
+          <li>Step-by-step document preparation</li>
+          <li>Filing and registration support</li>
+          <li>Premium processing consultation</li>
+          <li>Dependent visa support</li>
+          <li>Transition guidance from <b>H1B</b> to Green Card</li>
+        </ul>
 
-      <h4 className="mb-6 m-2 font-bold text-lg text-black">H1B Visa Document Checklist</h4>
-      <p className='mb-6 m-2'>The following documents are typically required during the H1B Visa application process:</p>
-      <h4 className="mb-6 italic m-2 text-sky-700">For the Employer:</h4>
-      <ul className='list-disc mb-6 ml-8'>
-        <li><b>Labour Condition Application (LCA):  </b>Filed with the Department of Labour.</li>
-        <li><b>Employer’s Tax Returns:  </b>Latest tax returns or financial documents to prove the company’s ability to pay the required wages.</li>
-        <li><b>Employer Support Letter: </b>A letter detailing the job offer and the nature of the work.</li>
-        <li><b>Company’s Incorporation Documents:  </b>Proof of the company’s establishment and legitimacy.</li>
-      </ul>
-
-      <h4 className="mb-6 m-2 italic text-sky-700">For the Applicant(Employee):</h4>
-      <ul className='list-disc mb-6 ml-8'>
-        <li><b>Passport: </b>Valid for at least 6 months after the intended date of entry into the U.S.</li>
-        <li><b>Educational Certificates: </b>Copies of your degree(s) and transcripts.</li>
-        <li><b>Resume/ Curriculum Vitae(CV): </b>A detailed CV highlighting your qualifications and work experience.</li>
-        <li><b>Work Experience Letters:  </b>Letters from previous employers verifying your work experience.</li>
-        <li><b>Job Offer Letter:</b> From your U.S. employer detailing your role, salary, and duration of employment.</li>
-        <li><b>Visa Application Forms (DS-160):</b> To be filled out online for consular processing.</li>
-        <li><b>Photographs:</b> Passport-sized photos for the visa application process.</li>
-        <li><b>Pay Stubs & Tax Documents (if applicable):</b> If you have been in the U.S. before, provide the last few pay stubs and tax returns.</li>
-      </ul>
-
-      <h4 className="mb-6 m-2 text-lg font-bold">H1B Visa Processing Time</h4>
-      <p className='mb-6 m-2'>The processing time for an H1B Visa can vary based on several factors:</p>
-
-      <ul className='list-disc mb-6 ml-8'>
-        <li><b>Regular Processing:   </b>Typically <b>2 to 6 months</b> from petition submission to approval.</li>
-        <li><b>Premium Processing: </b>With <b>premium processing</b>, USCIS will adjudicate the petition within <b>15 calendar days</b> for an additional fee.</li>
-        <li><b>Visa Appointment:  </b>After approval, consular processing may take 2-6 weeks depending on the U.S. consulate’s availability for visa interviews.</li>
-
-      </ul>
-
-      <h4 className="mb-6 m-2 text-lg font-bold">H1B Visa Cap and Exemptions</h4>
-      <ul className='list-disc mb-6 ml-8'>
-        <li><b>Regular cap: </b>The annual cap for the H1B Visa is set at 65,000 visas per fiscal year, with an additional 20,000 reserved for individuals with a U.S. master's degree or higher.</li>
-        <li><b>Exemptions: </b>Certain employers, like universities, non-profit organizations, and research institutions, may be exempt from the H1B cap.</li>
-      </ul>
-
-      <h4 className="mb-6 m-2 text-lg font-bold">Why Choose VJC Overseas for Your H1B Visa?</h4>
-      <p className='mb-6 m-2'>At VJC Overseas, we have an expert team of immigration consultants and legal advisors who specialize in the H1B Visa process. We offer personalized assistance to guide you through each step of the process, ensuring that your application is complete, accurate, and submitted on time. Our goal is to maximize your chances of approval and to make the entire process as smooth as possible.</p>
-
-      <h4 className="mb-6 m-2 italic text-sky-700">Our Service include: </h4>
-
-      <ul className='list-disc mb-6 ml-8'>
-        <li><b>Detailed Guidance:</b> We help you understand every aspect of the H1B process.</li>
-        <li><b>Document Review:</b> Ensure that all required documents are in order and meet USCIS specifications.</li>
-        <li><b>Form Filing & Petition Assistance:</b> Our team will help file all necessary forms and petitions on your behalf.</li>
-        <li><b>Premium Processing:</b> We assist with premium processing requests to expedite your application.</li>
-      </ul>
-
-      <h4 className="mb-6 m-2 text-lg font-bold">Contact Us Today!</h4>
-      <p className='mb-6 m-2'>If you're looking to apply for an H1B Visa, reach out to VJC Overseas today for professional assistance. Our team is dedicated to helping you take the next step in your career in the United States. Let us handle the paperwork and process so you can focus on what matters most—your future.</p>
-      <p className='mb-6 m-2'> </p>
-      <p className='mb-6 m-2 font-bold'>For more details or to schedule a consultation, contact us today! </p>
-
-      
-
+        <h3 className="font-bold text-lg mb-2">Start Your H1B Journey Today</h3>
+        <p className="mb-6">Whether you're a tech expert, healthcare professional, or financial analyst, the <b>H1B Visa</b> could be your ticket to global career success. Reach out to <b>VJC Overseas</b> today for complete guidance from job offer to visa stamping and beyond.</p>
+      </div>
     </div>
   );
 }

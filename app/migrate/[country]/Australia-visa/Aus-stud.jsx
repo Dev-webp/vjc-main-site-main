@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Ausstud = () => {
   return (
@@ -15,8 +16,9 @@ const Ausstud = () => {
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
           Migrate to Australia with -{" "}
-          <span className="text-orange-600">VJC Overseas:</span> Start Your New
-          Life in One of the World's Safest & Most Livable Countries
+          <span className="text-orange-600">VJC Overseas</span>
+          : Start Your New Life in One of the World's Safest & Most Livable
+          Countries
         </h3>
       </div>
 
@@ -26,8 +28,10 @@ const Ausstud = () => {
         market, and vibrant multicultural environment. With multiple immigration
         pathways and a transparent points-based system, migrating to Australia
         has never been more accessible. At{" "}
-        <b className="text-sky-600">VJC Overseas</b>, we help you understand the
-        best visa options suited to your profile and guide you through every
+        <Link href="https://vjcoverseas.com/" target="_blank">
+          <span className="text-orange-600 font-semibold">VJC Overseas</span>
+        </Link>
+        , we help you understand the best visa options suited to your profile and guide you through every
         step of your migration journey.
       </p>
 
@@ -125,13 +129,14 @@ const Ausstud = () => {
           <li>Visa Decision – 4 to 8 months wait.</li>
         </ol>
 
-        <h4 className="mb-2 text-sky-600 font-semibold">
+        <h4 className="mb-2 font-semibold text-sky-600">
           How VJC Overseas Supports You
         </h4>
         <p className="mb-4 text-gray-800">
-          With <b className="text-orange-600">over a decade of expertise</b>,
-          our certified consultants provide:
-        </p>
+  With over a decade of expertise, our certified consultants provide:
+</p>
+
+
         <ul className="list-disc ml-8 mb-6 text-gray-800">
           <li>Free eligibility check & consultation</li>
           <li>Skill assessment & EOI guidance</li>
@@ -145,11 +150,136 @@ const Ausstud = () => {
         <p className="mb-6 text-gray-800">
           Ready for a new life in Australia?{" "}
           <span className="text-orange-600 font-semibold">
-            Contact VJC Overseas
+            contact VJC Overseas
           </span>{" "}
-          now to get your profile evaluated and begin your migration journey
-          with expert guidance.
+          and begin your migration journey with expert guidance.
         </p>
+
+        <div className="mb-8 text-gray-800">
+          <h4 className="text-sky-600 font-semibold mb-2">
+            Migrate to Australia with{" "}
+            <b className="text-gray-900">VJC Overseas</b> – Your Trusted Partner
+            for a Better Life
+          </h4>
+          <p>
+            Australia remains a top destination for individuals and families
+            looking to build a secure and prosperous future. From skilled
+            professionals and students to entrepreneurs and permanent residents,
+            the country offers dynamic opportunities across various sectors. At{" "}
+            <b className="text-gray-900">VJC Overseas</b>, we make your dream to
+            migrate to Australia a seamless reality with customized visa
+            support, expert consultation, and a step-by-step application process.
+          </p>
+          <br />
+          <h4 className="text-sky-600 font-semibold mb-2">
+            Why Choose Australia for Migration?
+          </h4>
+          <ul className="list-disc ml-6">
+            <li>
+              <b className="text-orange-600">
+                Robust Economy & Job Market:
+              </b>{" "}
+              With booming industries like IT, engineering, construction, and
+              healthcare, there is high demand for skilled workers.
+            </li>
+            <li>
+              <b className="text-orange-600">High Quality of Life:</b> Excellent
+              healthcare, world-class education, safety, and a strong work-life
+              balance make it a top choice for families.
+            </li>
+            <li>
+              <b className="text-orange-600">Pathways to PR & Citizenship:</b>{" "}
+              Migrating to Australia can be your gateway to{" "}
+              <Link
+                href="https://www.vjcoverseas.com/pr-visas/australia-pr"
+                target="_blank"
+              >
+                <span className="text-orange-600">
+                  Australia Permanent Residency
+                </span>
+              </Link>{" "}
+              and eventually, Australian citizenship.
+            </li>
+            <li>
+              <b className="text-orange-600">Multicultural Society:</b>{" "}
+              Australia is welcoming, diverse, and inclusive—perfect for a fresh
+              start.
+            </li>
+          </ul>
+          <br />
+          <h4 className="text-sky-600 font-semibold mb-2">
+            Explore Your Best Visa Options
+          </h4>
+          <p>
+            Whether you're a skilled worker, graduate, or sponsored employee, we
+            help you choose the most suitable visa route. For individuals
+            looking to live and work in Australia, the{" "}
+            <Link
+              href="https://www.vjcoverseas.com/work-abroad/australia-work-permit"
+              target="_blank"
+            >
+              <span className="text-orange-600">Australia Work Visa</span>
+            </Link>{" "}
+            is one of the most efficient ways to start your journey. This visa
+            provides access to a wide range of employment sectors and can even
+            lead to permanent settlement.
+          </p>
+          <p className="mt-2">
+            Are you planning to stay long-term? Our experts will guide you
+            through the process of applying for{" "}
+            <b className="text-gray-900">Australia Permanent Residency</b>,
+            helping you take full advantage of healthcare, education benefits,
+            and long-term security.
+          </p>
+          <br />
+          <h4 className="text-sky-600 font-semibold mb-2">
+            Skilled Professionals – Make the Most of Australia's Demand
+          </h4>
+          <p>
+            If you are a skilled individual with qualifications that match
+            Australia's needs, then{" "}
+            <Link
+              href="https://www.vjcoverseas.com/work-abroad/australia-work-permit/nomited-visa-subclass-190"
+              target="_blank"
+            >
+              <span className="text-orange-600">Australia Skilled Migration</span>
+            </Link>{" "}
+            programs like Subclass 190 or Subclass 189 are tailored for you.
+            These visa subclasses are part of Australia’s General Skilled
+            Migration (GSM) pathway, which uses a points-based system to select
+            eligible candidates.
+          </p>
+          <br />
+          <h4 className="text-sky-600 font-semibold mb-2">
+            Work with the Best in the Industry
+          </h4>
+          <p>
+            With thousands of successful visa approvals and years of experience,{" "}
+            <Link href="https://vjcoverseas.com/" target="_blank">
+              <span className="text-orange-600">
+                Best Visa Immigration Consultants
+              </span>
+            </Link>{" "}
+            From evaluating your profile and preparing your documents to
+            handling submissions and updates, our team ensures a stress-free
+            experience throughout your migration journey.
+          </p>
+          <br />
+          <h4 className="text-sky-600 font-semibold mb-2">
+            Begin Your Australian Dream with{" "}
+            <b className="text-blue-600">VJC Overseas</b>
+          </h4>
+          <p>
+            Don’t let complicated procedures stop your migration goals. At{" "}
+            <b className="text-gray-900">VJC Overseas</b>, we simplify the visa
+            process and provide personalized support every step of the way.
+            Whether you're applying for a work visa, skilled migration, or PR,
+            we are here to ensure your move is smooth, fast, and successful.
+            <br />
+            <br />
+            Get in touch with us today to start your Australia migration process with confidence.
+          </p>
+        </div>
       </div>
     </div>
   );

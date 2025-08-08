@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Ausstud = () => {
   return (
@@ -14,29 +15,37 @@ const Ausstud = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          Australia Student Visa -{" "}
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
-        </h3>
+  Australia Student Visa -{" "}
+  <span className="text-orange-500">VJC Overseas</span>
+</h3>
+
       </div>
+
       <h3 className="text-black m-2  mb-4 text-lxl sm:text-xl text-blue-500">
         Affordable Education at Top-Ranked Universities
       </h3>
+
       <p className="m-2">
         Australia has long been a popular destination for international
         students, offering world-class education, diverse cultural experiences,
         and a safe environment to study and live. Whether you're planning to
         pursue undergraduate, postgraduate, or vocational courses, Australia
         provides an array of high-quality academic opportunities at competitive
-        tuition rates. At VJC Overseas, we help you navigate the process of
-        obtaining an Australian Study Visa and finding universities with
-        affordable fees and strong global rankings.
+        tuition rates. At{" "}
+        <Link href="https://vjcoverseas.com/">
+          <span className="text-orange-500">VJC Overseas</span>
+        </Link>
+        , we help you navigate the process of obtaining an Australian Study Visa
+        and finding universities with affordable fees and strong global
+        rankings.
       </p>
+
       <div className="flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex justify-center m-6 flex-shrink-0 mx-auto lg:mx-0">
           <Image
             src="/assets/Ausstud.png"
             alt="Image description"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             priority
             unoptimized
@@ -241,7 +250,11 @@ const Ausstud = () => {
             from 4 to 6 weeks, although it can vary depending on your individual
             circumstances and the time of year. It’s advisable to apply well in
             advance, at least 3-4 months before your course start date, to avoid
-            any last-minute issues.
+            any last-minute issues. If you're also considering long-term options, look into{" "}
+            <Link href="https://vjcoverseas.com/pr-visas/australia-pr">
+              <span className="text-orange-500">Australia Permanent Residency</span>
+            </Link>
+            .
           </p>
         </div>
 
@@ -262,7 +275,11 @@ const Ausstud = () => {
             <li>
               <b>3. Prepare Documents:</b> Gather all necessary documents,
               including proof of funds, English proficiency, and health
-              insurance.
+              insurance. Our{" "}
+              <Link href="https://vjcoverseas.com/">
+                <span className="text-orange-500">Best Visa Immigration Consultants</span>
+              </Link>{" "}
+              can guide you through this process smoothly.
             </li>
             <li>
               <b>4. Submit Visa Application:</b> Complete the online visa
@@ -282,19 +299,34 @@ const Ausstud = () => {
 
         <div>
           <h4 className="mb-6">
-            <b>Why Choose VJC Overseas?</b>
+            <b>Why Choose <b className="text-gray-900">VJC Overseas</b>?</b>
           </h4>
           <p className="mb-6">
-            At <b>VJC Overseas</b>, we are committed to making your Australian
-            study journey smooth and hassle-free. From selecting the right
-            course to visa processing, we provide personalized guidance at every
-            step. Our team of experts is well-versed with the latest
-            regulations, scholarships, and opportunities in Australian
-            education.
+            At <b className="text-gray-900">VJC Overseas</b>, we are committed
+            to making your Australian study journey smooth and hassle-free.
+            From selecting the right course to visa processing, we provide
+            personalized guidance at every step. Our team of experts is
+            well-versed with the latest regulations, scholarships, and
+            opportunities in Australian education.
           </p>
           <p className="mb-6">
             Let us help you turn your dream of studying in Australia into a
-            reality!
+            reality! You may also explore{" "}
+            <Link href="https://www.vjcoverseas.com/work-abroad/australia-work-permit">
+              <span className="text-orange-500">Australia Work Visa</span>
+            </Link>{" "}
+            and{" "}
+            <Link href="https://www.vjcoverseas.com/work-abroad/australia-work-permit/nomited-visa-subclass-190">
+              <span className="text-orange-500">Australia Skilled Migration</span>
+            </Link>{" "}
+            pathways after your studies.
+          </p>
+          <p className="mb-6">
+            Interested in long-term settlement?{" "}
+            <Link href="https://vjcoverseas.com/migrate/australia">
+              <span className="text-orange-500">Migrate to Australia</span>
+            </Link>{" "}
+            with expert help.
           </p>
           <p className="mb-6">
             <b>Contact us today</b> to start your application process or to get

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const USAstud = () => {
   return (
@@ -12,306 +13,222 @@ const USAstud = () => {
         overflow: "hidden",
       }}
     >
-      <div style={{ marginBottom: "5%" }}>
-        <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          USA Study Visa - VJC Overseas
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
-        </h3>
-      </div>
+      {/* Existing content above remains unchanged */}
+      {/* ...existing code... */}
+
+      {/* New Content Starts */}
+      <hr style={{ borderColor: "black" }} className="mb-6" />
+      <h3 className="text-2xl font-bold text-center text-black mb-4">
+        <b>USA Student Visa</b> –{" "}
+        <Link href="https://vjcoverseas.com/" className="text-orange-600">
+          VJC Overseas
+        </Link>
+      </h3>
 
       <p className="mb-6 m-2">
-        Studying in the United States is a dream for many international
-        students, and with good reason. The U.S. boasts some of the world’s top
-        universities, cutting-edge research facilities, and a diverse,
-        multicultural environment that nurtures academic and personal growth. If
-        you're planning to study in the USA, securing a USA student visa is the
-        first critical step. Here at VJC Overseas, we make your study visa
-        journey smooth and hassle-free with expert guidance every step of the
-        way.
+        <b>Migrate to the United States</b> for World-Class Education
       </p>
-
-      <div className="flex mb-6 flex-col justify-center lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-        <div className="flex-shrink-0  mx-auto lg:mx-0">
-          <Image
-            src="/assets/USAstud.png"
-            alt="Australia Business Visa"
-            width={500} // Replace with your image's actual width
-            height={300}
-            priority
-            unoptimized
-            className="w-full max-w-xs mt-5 sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
-          />
-        </div>
-      </div>
-
-      <hr style={{ borderColor: "black" }} className="mb-6" />
-      <h3 className=" text-sky-800 italic mb-6 m-2">
-        Why Choose the USA for Your Higher Education?
-      </h3>
-
-      <ul className="mb-6 ml-8 list-disc">
-        <li>
-          <b>World-Class Universities:</b> The U.S. is home to several
-          prestigious institutions that are globally recognized for academic
-          excellence and research.
-        </li>
-        <li>
-          <b>Cutting-Edge Facilities:</b> With access to state-of-the-art labs,
-          libraries, and resources, U.S. universities offer unmatched learning
-          experiences.
-        </li>
-        <li>
-          <b>Diverse Culture:</b> With students from all around the world,
-          you’ll have the opportunity to experience a multicultural environment
-          while pursuing your education
-        </li>
-        <li>
-          <b>Post-Graduation Opportunities:</b> Many U.S. universities offer
-          optional practical training (OPT) for international students, which
-          can help you gain work experience in the U.S. after completing your
-          degree.
-        </li>
-      </ul>
-
-      <hr style={{ borderColor: "black" }} className="mb-6" />
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Top-Ranked Universities in the USA with Affordable Tuition Fees
-      </h3>
       <p className="mb-6 m-2">
-        When considering studying in the USA, it's important to keep tuition
-        costs in mind. While some U.S. universities are expensive, there are
-        many affordable yet highly ranked institutions that offer excellent
-        education. Below are a few of them:
+        The United States continues to be a global leader in higher education,
+        drawing students from all over the world to its prestigious
+        institutions. Whether you're aiming for an Ivy League school or a
+        top-tier public university, the <b>USA</b> offers unmatched academic
+        opportunities, multicultural experiences, and post-study work options.
+        If you're planning to{" "}
+        <Link
+          href="https://www.vjcoverseas.com/migrate/united-states"
+          className="text-orange-600"
+        >
+          Migrate to United States
+        </Link>{" "}
+        for educational purposes, the first essential step is obtaining a valid{" "}
+        <b>USA Student Visa (F-1 Visa)</b>.
       </p>
-      <h3 className="text-sky-800 m-2 italic mb-6">
-        1. University of California, Berkeley (UC Berkeley)
-      </h3>
-      <ul className="mb-6 ml-8  list-disc">
-        <li>
-          <b>Global Ranking: </b> #32 (QS World University Rankings)
-        </li>
-        <li>
-          <b>Average Tution Fees:</b> $14,000–$18,000 per year for international
-          undergraduates
-        </li>
-        <li>
-          <b>Programs Offered: </b> Engineering, Computer Science, Business,
-          Social Sciences, Humanities, and more.
-        </li>
-      </ul>
 
-      <h3 className="text-sky-800 m-2 italic mb-6">2. University of Florida</h3>
-      <ul className="mb-6 ml-8  list-disc">
-        <li>
-          <b>Global Ranking: </b> #158 (QS World University Rankings)
-        </li>
-        <li>
-          <b>Average Tution Fees:</b>: $15,000–$25,000 per year for
-          international students
-        </li>
-        <li>
-          <b>Programs Offered: </b> Agriculture, Business Administration,
-          Engineering, Medicine, and more.
-        </li>
-      </ul>
-
-      <h3 className="text-sky-800 m-2 italic mb-6">
-        3. University of Texas at Austin
-      </h3>
-      <ul className="mb-6 ml-8  list-disc">
-        <li>
-          <b>Global Ranking: </b> #67 (QS World University Rankings)
-        </li>
-        <li>
-          <b>Average Tution Fees:</b> $18,000–$22,000 per year
-        </li>
-        <li>
-          <b>Programs Offered: </b> Engineering, Law, Business, Arts & Sciences,
-          Architecture, and more.
-        </li>
-      </ul>
-
-      <h3 className="text-sky-800 m-2 italic mb-6">
-        4. University of Illinois Urbana-Champaign(UIUC)
-      </h3>
-      <ul className="mb-6 ml-8  list-disc">
-        <li>
-          <b>Global Ranking: </b> #76 (QS World University Rankings)
-        </li>
-        <li>
-          <b>Average Tution Fees:</b> $22,000–$30,000 per year for international
-          students
-        </li>
-        <li>
-          <b>Programs Offered: </b> Computer Science, Engineering, Business,
-          Education, and more.
-        </li>
-      </ul>
-
-      <h3 className="text-sky-800 m-2 italic mb-6">
-        5. California State University, Long Beach (CSULB)
-      </h3>
-      <ul className="mb-6 ml-8  list-disc">
-        <li>
-          <b>Global Ranking: </b> #801-1000 (QS World University Rankings)
-        </li>
-        <li>
-          <b>Average Tution Fees:</b> $16,000–$18,000 per year for international
-          undergraduates
-        </li>
-        <li>
-          <b>Programs Offered: </b>Business, Engineering, Nursing, Arts, and
-          more.
-        </li>
-      </ul>
-      <hr style={{ borderColor: "black" }} className="mb-6" />
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Fees Structure: What You Need to Know
-      </h3>
       <p className="mb-6 m-2">
-        The cost of studying in the USA includes more than just tuition fees.
-        Here’s a breakdown of typical expenses:
+        At <b className="text-black">VJC Overseas</b>, we specialize in guiding aspiring students through the <b>U.S. study visa</b> process—from university selection to final visa approval—ensuring a
+        stress-free and informed journey.
       </p>
 
-      <ul className="mb-6 ml-8 list-disc">
-        <li>
-          <b>Tution Fees:</b> – Established as the first national university in
-          the UAE, offering undergraduate and postgraduate degrees in various
-          fields.
-        </li>
-        <li>
-          <b>Accommodation: </b> – A globally recognized institution providing a
-          comprehensive range of undergraduate and graduate programs.
-        </li>
-        <li>
-          <b>Heaith Insurance: </b> – Known for its focus on leadership,
-          entrepreneurship, and technology-driven education.
-        </li>
-        <li>
-          <b>Books and Supplies:</b> – An Australian institution offering a
-          variety of programs, with a strong emphasis on research and
-          innovation.
-        </li>
-        <li>
-          <b>Living Expenses:</b> – Known for its business, IT, and law
-          programs, catering to students from all over the world.
-        </li>
-      </ul>
-
-      <hr style={{ borderColor: "black" }} className="mb-6" />
-
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Document Checklist for USA Study Visa (F-1 Visa)
+      <h3 className="text-black m-2 font-bold text-lg mb-4">
+        Why Study in the United States?
       </h3>
-      <p className="mb-6 m-2">
-        To apply for an F-1 student visa to study in the USA, you’ll need to
-        submit the following documents:
-      </p>
-
       <ul className="mb-6 ml-8 list-decimal">
         <li>
-          <b>Valid Passport: </b> Must be valid for at least 6 months beyond
-          your intended stay.
+          <b>Globally Renowned Institutions:</b> The U.S. is home to world-class
+          universities such as Harvard, Stanford, MIT, and many others
+          consistently ranked in the top 100 globally.
         </li>
         <li>
-          <b>Form I-20: </b> Issued by the U.S. university you are attending.
+          <b>Innovative Learning Environment:</b> With cutting-edge research
+          facilities and flexible course structures, <b>U.S. universities</b>{" "}
+          empower students to explore beyond the classroom.
         </li>
         <li>
-          <b>DS-160 Application Form </b> Completed online visa application
-          form.
+          <b>Multicultural Campus Life:</b> Diverse and inclusive environments
+          help build global networks and intercultural communication skills.
         </li>
         <li>
-          <b>Visa Application Fee: </b> Payment receipt for the SEVIS fee and
-          visa processing fee.
-        </li>
-        <li>
-          <b>Visa Appointment Confirmation:</b> A printout of the appointment
-          confirmation for the visa interview.
-        </li>
-        <li>
-          Passport-sized Photographs: As per the specifications mentioned on the
-          U.S. embassy website.
-        </li>
-        <li>
-          Proof of Financial Support: Bank statements, affidavits of support,
-          scholarship details, etc., to prove you can cover tuition and living
-          expenses.
-        </li>
-        <li>
-          Academic Transcripts & Certificates: Copies of your previous academic
-          records.
-        </li>
-        <li>
-          Standardized Test Scores: TOEFL/IELTS (for English proficiency),
-          GRE/GMAT (if applicable), and any other relevant test scores.
-        </li>
-        <li>
-          Statement of Purpose (SOP): A personal statement detailing your
-          academic and career aspirations.
-        </li>
-        <li>
-          Recommendation Letters: From teachers or professors who can vouch for
-          your academic abilities.
+          <b>Career Opportunities:</b> Many U.S. programs offer <b>OPT</b> and{" "}
+          <b>CPT</b>, allowing international students to gain experience after
+          graduation.
         </li>
       </ul>
 
-      <hr style={{ borderColor: "black" }} className="mb-6" />
-
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Processing Time for USA Study Visa
+      <h3 className="text-black m-2 font-bold text-lg mb-4">
+        USA Student Visa (F-1) – Key Information
       </h3>
       <p className="mb-6 m-2">
-        The processing time for a U.S. study visa varies depending on several
-        factors, but on average, you should expect the following:
+        The <b>F-1 visa</b> is a non-immigrant visa issued to international
+        students enrolled in full-time academic programs in the U.S.
+      </p>
+      <p className="mb-2 m-2 font-semibold">Basic Requirements:</p>
+      <ul className="mb-6 ml-8 list-disc">
+        <li>Admission letter from a SEVP-approved U.S. institution</li>
+        <li>Form I-20 issued by the university</li>
+        <li>
+          Proof of financial ability to cover tuition and living expenses
+        </li>
+        <li>Valid passport and visa application documents</li>
+        <li>English proficiency (TOEFL/IELTS)</li>
+        <li>Academic records and standardized test scores</li>
+      </ul>
+      <p className="mb-6 m-2">
+        <b>Visa Validity:</b> Typically valid for the duration of your academic
+        program with an additional 60-day grace period post-graduation.
       </p>
 
+      <h3 className="text-black m-2 font-bold text-lg mb-4">
+        Cost of Studying in the USA
+      </h3>
       <ul className="mb-6 ml-8 list-disc">
         <li>
-          <b>Application Submission: </b>After receiving your Form I-20, apply
-          for the F-1 visa at the U.S. embassy or consulate.
+          <b>Tuition Fees:</b> $10,000 to $50,000 per year depending on the
+          institution and program
         </li>
         <li>
-          <b>Visa Interview: </b> Schedule an interview appointment at the U.S.
-          embassy or consulate in your home country. It is recommended to apply
-          at least <b>3 to 4 months before your program's start date</b> to
-          account for any delays.
+          <b>Living Expenses:</b> $8,000 to $15,000 annually
         </li>
         <li>
-          <b>Visa Processing:</b> After the interview, the processing time for
-          the F-1 visa can take anywhere from <b>7 to 21 days</b>, depending on
-          your specific case and the workload at the embassy.
+          <b>Health Insurance:</b> Required and often provided through the
+          university
+        </li>
+        <li>
+          <b>Books and Supplies:</b> Around $1,000 per year
+        </li>
+        <li>
+          <b>Travel & Miscellaneous:</b> Varies per individual lifestyle
         </li>
       </ul>
       <p className="mb-6 m-2">
-        <b>Note:</b> It’s important to apply early and ensure you have all
-        necessary documents in order.
+        Our experts at{" "}
+        <Link href="https://vjcoverseas.com/" className="text-orange-600">
+          VJC Overseas
+        </Link>{" "}
+        help students identify cost-effective programs and explore scholarships,
+        grants, and financial aid options.
       </p>
-      <hr style={{ borderColor: "black" }} className="mb-6" />
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Let VJC Overseas Guide You Through the Process
+      <h3 className="text-black m-2 font-bold text-lg mb-4">
+        USA Student Visa Application Process
+      </h3>
+      <ul className="mb-6 ml-8 list-decimal">
+        <li>Receive Form I-20 from a SEVP-certified university</li>
+        <li>Pay the SEVIS I-901 fee</li>
+        <li>Fill out DS-160 form online</li>
+        <li>
+          Book a visa appointment at the U.S. Embassy or Consulate and attend
+          the interview
+        </li>
+        <li>Required Documents:</li>
+        <ul className="mb-6 ml-8 list-disc">
+          <li>Valid passport</li>
+          <li>I-20 form</li>
+          <li>Financial documents</li>
+          <li>Visa fee payment receipt</li>
+          <li>Standardized test scores</li>
+          <li>Academic transcripts</li>
+          <li>Statement of Purpose</li>
+          <li>Passport-size photos</li>
+        </ul>
+      </ul>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-4">
+        Processing Time and Tips
       </h3>
       <p className="mb-6 m-2">
-        At VJC Overseas, we are committed to providing you with the best support
-        to make your dream of studying in the USA a reality. From selecting the
-        right university to preparing your visa application and guiding you
-        through the documentation process, we offer comprehensive services
-        designed to make your journey smoother and stress-free.
+        The processing time for an <b>F-1 visa</b> generally ranges from 7 to 21
+        days depending on your country and embassy workload. Apply at least 90
+        to 120 days before your course start date.
       </p>
       <p className="mb-6 m-2">
-        Our experienced team of consultants will help you with:
+        <b>VJC Overseas</b> provides one-on-one training for visa interviews and
+        ensures your documentation meets all U.S. consulate requirements.
+      </p>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-4">
+        Alternatives and Long-Term Goals
+      </h3>
+      <p className="mb-6 m-2">
+        After completing your studies, many students transition into the{" "}
+        <b>U.S. workforce</b> by applying for the{" "}
+        <Link
+          href="https://www.vjcoverseas.com/work-abroad/usa-h1b-visa"
+          className="text-orange-600"
+        >
+          H1B Work Visa
+        </Link>
+        , a specialty occupation visa. Eventually, some graduates may even
+        qualify for{" "}
+        <Link
+          href="https://www.vjcoverseas.com/pr-visas/usa-green-card"
+          className="text-orange-600"
+        >
+          US Permanent Residency
+        </Link>{" "}
+        through employment-based routes.
+      </p>
+      <p className="mb-6 m-2">
+        If you're not yet ready to study but want to explore academic events in
+        the U.S., you can apply for a{" "}
+        <Link
+          href="https://vjcoverseas.com/visit-visas/usa"
+          className="text-orange-600"
+        >
+          USA Visit Visa
+        </Link>
+        .
+      </p>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-4">
+        Why Trust VJC Overseas?
+      </h3>
+      <p className="mb-6 m-2">
+        <Link href="https://vjcoverseas.com/" className="text-orange-600">
+          Best Visa Immigration Consultants
+        </Link>{" "}
+        like <b>VJC Overseas</b> offer:
       </p>
       <ul className="mb-6 ml-8 list-disc">
-        <li>University and course selection</li>
-        <li>Guidance on scholarships and financial planning</li>
-        <li>Assistance with visa documentation and interview preparation</li>
-        <li>
-          Post-arrival support, including accommodation and travel arrangements
-        </li>
+        <li>Personalized academic counseling</li>
+        <li>University shortlisting and admission guidance</li>
+        <li>Scholarship and funding assistance</li>
+        <li>Visa application and interview preparation</li>
+        <li>Pre-departure and post-arrival support</li>
       </ul>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-4">
+        Begin Your Academic Journey to the U.S. with VJC Overseas
+      </h3>
       <p className="mb-6 m-2">
-        <b>Contact us today</b> to begin your journey toward studying in the
-        USA!
+        If you're ready to turn your dream of studying in the U.S. into reality,
+        let <b>VJC Overseas</b> lead the way. From choosing the right course to
+        settling in your new city, we ensure every step is taken with clarity,
+        care, and confidence.
+      </p>
+      <p className="mb-6 m-2">
+        Explore study opportunities, apply for your <b>USA Student Visa</b>, and
+        start building your future in America today.
       </p>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Ausdependent = () => {
   return (
@@ -22,17 +23,29 @@ const Ausdependent = () => {
       <p className="mb-6">
         Australia, with its vibrant culture, world-class education, and thriving
         economy, continues to be one of the top destinations for families around
-        the world. For individuals working or studying in Australia, the{" "}
-        <b>Dependent Visa</b> provides an opportunity to bring family members to
-        join them, ensuring they are supported and united while they live and
-        work in this beautiful country.
+        the world. For individuals working or studying in{" "}
+        <Link
+          href="https://vjcoverseas.com/migrate/australia"
+          className="text-orange-500 font-semibold"
+        >
+          Migrate to Australia
+        </Link>
+        , the <b>Dependent Visa</b> provides an opportunity to bring family
+        members to join them, ensuring they are supported and united while they
+        live and work in this beautiful country.
       </p>
 
       <p className="mb-6">
         If you're considering applying for an <b>Australian Dependent Visa</b>,
         you’ve come to the right place. Here’s everything you need to know about
-        the process, eligibility criteria, and how <b>VJC Overseas</b> can
-        assist you in making the journey smoother.
+        the process, eligibility criteria, and how{" "}
+        <Link
+          href="https://vjcoverseas.com/"
+          className="text-orange-500 font-semibold"
+        >
+          VJC Overseas
+        </Link>{" "}
+        can assist you in making the journey smoother.
       </p>
 
       <div className="flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -40,7 +53,7 @@ const Ausdependent = () => {
           <Image
             src="/assets/Ausdependent.png"
             alt="Image description"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-70 object-contain shadow-lg rounded-lg"
             priority
@@ -55,10 +68,11 @@ const Ausdependent = () => {
 
       <p className="mb-6">
         The <b>Australia Dependent Visa</b> allows the immediate family members
-        of primary visa holders to live, work, and study in Australia for the
-        duration of the primary visa holder’s stay. Family members who may be
-        eligible for this visa include spouses, children, parents, and in some
-        cases, other relatives depending on the specific visa subclass.
+        of primary visa holders to live, work, and study in{" "}
+        <b className="text-black">Migrate to Australia</b> for the duration of the
+        primary visa holder’s stay. Family members who may be eligible for this
+        visa include spouses, children, parents, and in some cases, other
+        relatives depending on the specific visa subclass.
       </p>
 
       <h4 className="mb-6">
@@ -68,13 +82,20 @@ const Ausdependent = () => {
       <ul className="ml-6 mb-6">
         <li>
           <b>• Stay with Primary Visa Holder: </b>Dependent visa holders are
-          allowed to live, study, and work in Australia for the same duration as
-          the primary visa holder.
+          allowed to live, study, and work in{" "}
+          <Link
+            href="https://vjcoverseas.com/migrate/australia/student-visa"
+            className="text-orange-500 font-semibold"
+          >
+            Study in Australia
+          </Link>{" "}
+          for the same duration as the primary visa holder.
         </li>
         <li>
-          <b>• Work Rights: </b>In most cases, dependents can work full-time in
-          Australia, offering them financial independence and the ability to
-          contribute to their household’s living expenses.
+          <b>• Work Rights: </b>In most cases, dependents can work full-time in{" "}
+          <b className="text-black">Study in Australia</b>, offering them financial
+          independence and the ability to contribute to their household’s living
+          expenses.
         </li>
         <li>
           <b>• Access to Healthcare: </b>Dependent visa holders are generally
@@ -99,26 +120,45 @@ const Ausdependent = () => {
         <li>
           <b>1. Partner Visa (Subclass 820/801): </b>If you are the spouse, de
           facto partner, or fiancé of an Australian citizen,{" "}
-          <b>Permanent Resident</b>, or eligible New Zealand citizen, this visa
-          allows you to live in Australia.
+          <Link
+            href="https://www.vjcoverseas.com/pr-visas/australia-pr"
+            className="text-orange-500 font-semibold"
+          >
+            Australia Permanent Residency
+          </Link>
+          , or eligible New Zealand citizen, this visa allows you to live in
+          Australia.
         </li>
         <li>
           <b>2. Student Visa Dependent (Subclass 500): </b>If you are the
-          partner or child of an international student studying in Australia,
-          you can apply for a dependent visa to accompany them during their
-          studies.
+          partner or child of an international student studying in{" "}
+          <b className="text-black">Australia Permanent Residency</b>, you can
+          apply for a dependent visa to accompany them during their studies.
         </li>
         <li>
           <b>3. Temporary Skill Shortage Visa (Subclass 482): </b>Dependents of
           individuals holding a temporary skill shortage visa can apply for a
           dependent visa to stay with their family while the primary visa holder
-          works in Australia.
+          works in{" "}
+          <Link
+            href="https://www.vjcoverseas.com/work-abroad/australia-work-permit"
+            className="text-orange-500 font-semibold"
+          >
+            Australia Work Visa
+          </Link>
+          .
         </li>
         <li>
           <b>4. Permanent Residency Dependent (Subclass 189/190): </b>If the
-          primary visa holder is a permanent resident or holds a skilled
-          migration visa, their family members can apply for a dependent visa to
-          join them in Australia.
+          primary visa holder is a permanent resident or holds a{" "}
+          <Link
+            href="https://www.vjcoverseas.com/work-abroad/australia-work-permit/nomited-visa-subclass-190"
+            className="text-orange-500 font-semibold"
+          >
+            Australia Skilled Migration
+          </Link>
+          , their family members can apply for a dependent visa to join them in{" "}
+          <b className="text-black">Australia Work Visa</b>.
         </li>
       </ol>
 
@@ -139,8 +179,8 @@ const Ausdependent = () => {
         </li>
         <li>
           <b>• Financial Support: </b>The primary visa holder must demonstrate
-          they can financially support their dependents while living in
-          Australia.
+          they can financially support their dependents while living in{" "}
+          <b className="text-black">Australia Skilled Migration</b>.
         </li>
         <li>
           <b>• Health and Character Requirements: </b>All applicants must meet
@@ -182,25 +222,31 @@ const Ausdependent = () => {
         <li>
           <b>4. Visa Grant: </b>If your application is successful, you’ll
           receive your dependent visa, allowing you to join your family member
-          in Australia.
+          in <b className="text-black">Australia Skilled Migration</b>.
         </li>
       </ol>
 
       <h4 className="mb-6">
-        <b>Why Choose VJC Overseas?</b>
+        <b>Why Choose <span className="text-black">VJC Overseas</span>?</b>
       </h4>
 
       <p className="mb-6">
         Navigating the complexities of the Australian visa system can be
-        overwhelming, but <b>VJC Overseas</b> is here to simplify the process.
-        Our team of expert migration agents and consultants has a deep
-        understanding of Australian immigration policies and can help you with
-        every step of the application process, ensuring your family’s smooth
-        transition to Australia.
+        overwhelming, but{" "}
+        <Link
+          href="https://vjcoverseas.com/"
+          className="text-orange-500 font-semibold"
+        >
+          Best Visa Immigration Consultants
+        </Link>{" "}
+        is here to simplify the process. Our team of expert migration agents and
+        consultants has a deep understanding of Australian immigration policies
+        and can help you with every step of the application process, ensuring
+        your family’s smooth transition to Australia.
       </p>
 
       <h4 className="mb-6">
-        <b>How VJC Overseas Can Help:</b>
+        <b>How <span className="text-black">VJC Overseas</span> Can Help:</b>
       </h4>
 
       <ul className="ml-6">
@@ -238,9 +284,10 @@ const Ausdependent = () => {
       </p>
 
       <p className="mb-6">
-        If you're ready to take the next step, contact <b>VJC Overseas</b>{" "}
-        today. We’re committed to helping you navigate the Australian
-        immigration process and ensuring the success of your visa application.
+        If you're ready to take the next step, contact{" "}
+        <b className="text-black">Best Visa Immigration Consultants</b> today.
+        We’re committed to helping you navigate the Australian immigration
+        process and ensuring the success of your visa application.
       </p>
 
       <h4 className="mb-6">

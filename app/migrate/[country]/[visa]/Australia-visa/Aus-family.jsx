@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Ausfamily = () => {
   return (
@@ -19,212 +20,251 @@ const Ausfamily = () => {
         </h3>
       </div>
 
-      <p className="mb-6">
-        Australia is a dream destination for many families across the globe,
-        offering world-class healthcare, education, and a high standard of
-        living. If you're looking to bring your family members to Australia, the{" "}
-        <strong>Australia Family</strong> Visa is the perfect pathway for you.
-        Whether you wish to reunite with your spouse, children, parents, or
-        other close relatives, Australia’s family reunion visa programs offer
-        various options to suit different circumstances.
-      </p>
+      {/* NEW CONTENT STARTS HERE */}
+      <div className="mt-8">
+        <h3 className="text-xl font-bold text-black mb-4">
+          <b className="text-black">Australia Family Visa</b> –{" "}
+          <span className="text-orange-500 font-semibold">VJC Overseas</span>
+        </h3>
 
-      <p className="mb-6">
-        At <strong>VJC Overseas</strong>, we understand the emotional and
-        practical challenges of being separated from your loved ones. Our expert
-        migration consultants are here to guide you through the process,
-        ensuring that your family reunification journey is as smooth and
-        efficient as possible. Let’s take a closer look at the different types
-        of Australia Family Visas available and how they can help bring your
-        family together.
-      </p>
+        <p className="mb-6">
+          Australia is a dream destination for many families around the world, known for its safety, world-class
+          healthcare, excellent education system, and a multicultural society.
+          If your goal is to reunite with your loved ones, the{" "}
+          <b className="text-black">Australia Family Visa</b> provides the
+          perfect pathway to build a life together in this vibrant and
+          prosperous country.
+        </p>
+        <p className="mb-6">
+          Whether you want to sponsor a spouse, child, parent, or other
+          dependent relatives,{" "}
+          <Link
+            href="https://vjcoverseas.com/"
+            className="text-orange-500 font-semibold"
+          >
+            VJC Overseas
+          </Link>{" "}
+          offers expert support throughout the process, ensuring each family reunification journey is handled
+          with care, accuracy, and speed.
+        </p>
 
-      <div className="flex-col justify-center lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-        <div className="flex  justify-center m-6 flex-shrink-0 mx-auto lg:mx-0">
+        <h4 className="font-semibold mb-2">Family Visa Categories in Australia</h4>
+        <p className="mb-6">
+          Australia offers several visa streams
+          under the family migration program, tailored to different
+          circumstances and relationships. Here are the main types:
+        </p>
+
+        {/* IMAGE MOVED TO THIS SECTION */}
+        <div className="flex justify-center my-6">
           <Image
             src="/assets/Ausfamily.png"
-            alt="Image description"
-            width={500} // Replace with your image's actual width
+            alt="Australia Family Visa"
+            width={500}
             height={300}
             className="w-full text-center max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-70 object-contain shadow-lg rounded-lg"
             priority
             unoptimized
           />
         </div>
+
+        <h5 className="font-semibold">1. Partner Visa (Subclass 820 & 801)</h5>
+        <p className="mb-6">
+          For individuals in genuine relationships with 
+          Australian citizens or permanent
+          residents, the Partner Visa allows temporary and eventually permanent
+          residency. It includes:
+        </p>
+        <ul className="ml-8 list-disc mb-6">
+          <li>
+            <b>Temporary Visa (Subclass 820)</b> – for staying in 
+            Australia during application processing
+          </li>
+          <li>
+            <b>Permanent Visa (Subclass 801)</b> – granted after demonstrating
+            the stability of your relationship
+          </li>
+        </ul>
+        <p className="mb-6">
+          This visa supports both married and de facto couples, including
+          same-sex relationships.
+        </p>
+
+        <h5 className="font-semibold">2. Parent Visa (Subclass 103 & 804)</h5>
+        <p className="mb-6">
+          Parents of Australian citizens or
+          permanent residents may apply to live in 
+          Australia permanently. Popular options
+          include:
+        </p>
+        <ul className="ml-8 list-disc mb-6">
+          <li>
+            <b>Parent Visa (Subclass 103)</b> – standard processing and lower
+            cost
+          </li>
+          <li>
+            <b>Contributory Parent Visa (Subclass 143)</b> – faster processing
+            with a higher fee
+          </li>
+        </ul>
+
+        <h5 className="font-semibold">3. Child Visa (Subclass 101 & 802)</h5>
+        <p className="mb-6">
+          Designed for dependent children of 
+          Australian citizens or permanent
+          residents:
+        </p>
+        <ul className="ml-8 list-disc mb-6">
+          <li>
+            <b>Child Visa (Subclass 101)</b> – for children outside 
+            Australia
+          </li>
+          <li>
+            <b>Adoption Visa (Subclass 102)</b> – for adopted children or legal
+            wards
+          </li>
+          <li>
+            <b>Child Visa (Subclass 802)</b> – for children already in 
+            Australia
+          </li>
+        </ul>
+
+        <h5 className="font-semibold">4. Other Family Visas</h5>
+        <ul className="ml-8 list-disc mb-6">
+          <li>
+            <b>Aged Dependent Relative Visa (Subclass 114)</b> – for elderly
+            relatives financially reliant on an 
+            Australian sponsor
+          </li>
+          <li>
+            <b>Remaining Relative Visa (Subclass 115)</b> – for individuals who
+            have no other close family outside 
+            Australia
+          </li>
+          <li>
+            <b>Carer Visa (Subclass 116)</b> – for family members providing
+            long-term care to a relative with a serious medical condition
+          </li>
+        </ul>
+
+        <h5 className="font-semibold">5. Visitor Visas for Family</h5>
+        <p className="mb-6">
+          If your goal is short-term visitation rather than migration, the{" "}
+          <b>Visitor Visa (Subclass 600)</b> enables family visits of up to 12
+          months. It's ideal for spending quality time with your loved ones
+          without the need for permanent relocation.
+        </p>
+
+        <h4 className="font-semibold mb-2">Why Work with VJC Overseas?</h4>
+        <ul className="mb-6 list-disc ml-8">
+          <li>
+            <b>Personalized Strategy:</b> Every family’s situation is different.
+            We help you identify the best visa stream and ensure your application
+            meets all immigration requirements.
+          </li>
+          <li>
+            <b>End-to-End Support:</b> From assessing eligibility to gathering
+            documents and lodging your application, we’re with you at every
+            stage.
+          </li>
+          <li>
+            <b>Faster, Accurate Processing:</b> Our experienced consultants
+            streamline your case to avoid unnecessary delays and minimize the
+            risk of rejections.
+          </li>
+          <li>
+            <b>Ethical & Transparent Services:</b> You’ll receive honest advice,
+            a clear roadmap, and transparent pricing—no surprises, ever.
+          </li>
+        </ul>
+
+        <h4 className="font-semibold mb-2">A New Life Together Starts Here</h4>
+        <p className="mb-6">
+          Choosing to reunite with family through migration is a significant and
+          rewarding journey. Whether you're starting life with a partner,
+          bringing your children to access better opportunities, or supporting
+          aging parents, 
+          Australia provides a stable and
+          supportive environment to grow together.
+        </p>
+        <p className="mb-6">
+          For those who wish to{" "}
+          <Link
+            href="https://vjcoverseas.com/migrate/australia"
+            className="text-orange-500 font-semibold"
+          >
+            Migrate to Australia
+          </Link>{" "}
+          through family sponsorship or any skilled program,{" "}
+          <b className="text-black">VJC Overseas</b> provides customized support
+          and guidance.
+        </p>
+        <p className="mb-6">
+          Families who pursue educational opportunities for their children can
+          also explore the{" "}
+          <Link
+            href="https://vjcoverseas.com/migrate/australia/student-visa"
+            className="text-orange-500 font-semibold"
+          >
+            Study in Australia
+          </Link>{" "}
+          visa options, while staying connected through family reunification.
+        </p>
+        <p className="mb-6">
+          Additionally, if you're planning to sponsor family while working in 
+          Australia, you may want to check out the{" "}
+          <Link
+            href="https://www.vjcoverseas.com/work-abroad/australia-work-permit"
+            className="text-orange-500 font-semibold"
+          >
+            Australia Work Visa
+          </Link>{" "}
+          options, which offer flexibility and support for both primary
+          applicants and dependents.
+        </p>
+        <p className="mb-6">
+          Permanent residents can also invite their families through long-term
+          solutions under{" "}
+          <Link
+            href="https://www.vjcoverseas.com/pr-visas/australia-pr"
+            className="text-orange-500 font-semibold"
+          >
+            Australia Permanent Residency
+          </Link>
+          , offering security and access to benefits in 
+          Australia.
+        </p>
+        <p className="mb-6">
+          If you're eligible under a skill-based category,{" "}
+          <Link
+            href="https://www.vjcoverseas.com/work-abroad/australia-work-permit/nomited-visa-subclass-190"
+            className="text-orange-500 font-semibold"
+          >
+            Australia Skilled Migration
+          </Link>{" "}
+          pathways open the door for your entire household to thrive.
+        </p>
+        <p className="mb-6">
+          As one of the{" "}
+          <Link
+            href="https://vjcoverseas.com/"
+            className="text-orange-500 font-semibold"
+          >
+            Best Visa Immigration Consultants
+          </Link>{" "}
+          in the industry, we’re proud to stand by your side in every step of
+          your migration journey.
+        </p>
+
+        <h4 className="font-semibold mb-2">Ready to Reunite with Your Family in Australia?</h4>
+        <p className="mb-6">
+          Contact{" "}
+          <b className="text-black">VJC Overseas</b> today to start your{" "}
+          <b className="text-black">Australia Family Visa</b> application. Let
+          us help you bring your family closer—because no one should be
+          separated from those they love.
+        </p>
       </div>
-
-      <h4 className="mb-6 font-semibold">Types of Australia Family Visas</h4>
-
-      <h5 className="font-semibold">1. Partner Visa (Subclass 820 & 801)</h5>
-      <p className="mb-6">
-        For married or de facto couples, the Partner Visa allows one partner to
-        live in Australia while waiting for the permanent visa. It includes two
-        stages:
-      </p>
-      <ul className="ml-8 list-disc mb-6">
-        <li>
-          <strong>Temporary Visa (Subclass 820):</strong> Granted initially,
-          allowing you to stay in Australia while your application is processed.
-        </li>
-        <li>
-          <strong>Permanent Visa (Subclass 801):</strong> This visa is granted
-          once you’ve proven the genuineness of your relationship over time.
-        </li>
-      </ul>
-      <p className="mb-6">
-        Whether you are in a married or de facto relationship, the Partner Visa
-        provides a pathway to permanent residency for your spouse or partner.
-      </p>
-
-      <h5 className="font-semibold">2. Parent Visa (Subclass 103 & 804)</h5>
-      <p className="mb-6">
-        If you have children living in Australia and wish to be close to them,
-        the Parent Visa is the ideal option. There are several types, but the
-        most common ones are:
-      </p>
-      <ul className="ml-8 list-disc mb-6">
-        <li>
-          <strong>Parent Visa (Subclass 103):</strong> A permanent visa for
-          parents of Australian citizens, permanent residents, or eligible New
-          Zealand citizens. This visa allows you to join your family in
-          Australia on a permanent basis.
-        </li>
-        <li>
-          <strong>Contributory Parent Visa (Subclass 143):</strong> A quicker
-          option, but with a higher application fee. It allows for faster
-          processing and grants permanent residency.
-        </li>
-      </ul>
-      <p className="mb-6">
-        Whether you are in a married or de facto relationship, the Parent Visa
-        provides a pathway to permanent residency for your parent(s).
-      </p>
-
-      <h5 className="font-semibold">3. Child Visa (Subclass 101 & 802)</h5>
-      <p className="mb-6">
-        Parents who are Australian citizens or permanent residents can sponsor
-        their children to join them in Australia.
-      </p>
-      <ul className="ml-8 list-disc mb-6">
-        <li>
-          <strong>Child Visa (Subclass 101):</strong> For children outside
-          Australia, allowing them to join their parents.
-        </li>
-        <li>
-          <strong>Adoption Visa (Subclass 102):</strong> For children adopted by
-          Australian citizens or permanent residents.
-        </li>
-      </ul>
-      <p className="mb-6">
-        This visa is also available for stepchildren, biological children, and
-        those in the legal custody of the applicant.
-      </p>
-
-      <h5 className="font-semibold">4. Other Family Member Visas</h5>
-      <p className="mb-6">
-        Besides the immediate family members, Australia also offers options for
-        extended family members to migrate. These include:
-      </p>
-      <ul className="ml-8 list-disc mb-6">
-        <li>
-          <strong>Aged Dependent Relative Visa (Subclass 114):</strong> For
-          elderly relatives who rely on their Australian family member for
-          support.
-        </li>
-        <li>
-          <strong>Remaining Relative Visa (Subclass 115):</strong> For relatives
-          who have no other close family members outside Australia.
-        </li>
-        <li>
-          <strong>Carer Visa (Subclass 116):</strong> For those who are required
-          to provide personal care to an Australian relative with a medical
-          condition.
-        </li>
-      </ul>
-
-      <h5 className="font-semibold">5. Visitor Visas for Family Visits</h5>
-      <p className="mb-6">
-        If your primary intention is to visit your family in Australia
-        temporarily, the <strong>Visitor Visa (Subclass 600)</strong> may be an
-        option. While this visa doesn’t offer permanent residency, it allows you
-        to stay in Australia for up to 12 months while spending time with your
-        loved ones.
-      </p>
-
-      <h4 className="mb-6 font-semibold">
-        Why Choose VJC Overseas for Your Australia Family Visa?
-      </h4>
-
-      <h5 className="font-semibold">1. Expert Advice and Guidance</h5>
-      <p className="mb-6">
-        Navigating the immigration system can be overwhelming, but with VJC
-        Overseas, you have a team of certified migration experts by your side.
-        We understand the nuances of the Australian visa system and can help you
-        determine the best option for your specific family circumstances.
-      </p>
-
-      <h5 className="font-semibold">2. Tailored Solutions</h5>
-      <p className="mb-6">
-        Every family is unique, and we believe in providing personalized advice
-        to meet your needs. Whether you’re applying for a partner visa or
-        sponsoring your elderly parents, we’ll tailor our services to ensure the
-        best possible outcome.
-      </p>
-
-      <h5 className="font-semibold">3. End-to-End Support</h5>
-      <p className="mb-6">
-        From initial consultation to document preparation, submission, and
-        follow-up, we provide end-to-end support throughout the visa application
-        process. Our dedicated team ensures all paperwork is in order,
-        minimizing the risk of delays or rejections.
-      </p>
-
-      <h5 className="font-semibold">4. Faster Processing Times</h5>
-      <p className="mb-6">
-        While processing times can vary depending on the visa type, we help you
-        optimize your application to avoid common pitfalls that could cause
-        unnecessary delays. With <strong>VJC Overseas</strong>, you’ll receive
-        the guidance you need to complete your application efficiently and
-        accurately.
-      </p>
-
-      <h5 className="font-semibold">5. Transparency and Integrity</h5>
-      <p className="mb-6">
-        We believe in transparent communication with our clients. You’ll be kept
-        informed at every step of the process, and there are no hidden fees or
-        surprises. Our goal is to ensure that your visa application is handled
-        with the utmost professionalism.
-      </p>
-
-      <h4 className="mb-6 font-semibold">
-        The Path to a Bright Future Together
-      </h4>
-
-      <p className="mb-6">
-        Securing an <strong>Australia Family Visa</strong> is not just about
-        paperwork; it’s about reuniting with the people who matter most to you.
-        Whether you’re starting a new life with your partner, bringing your
-        children to Australia for better opportunities, or caring for your
-        elderly parents, our team at <strong>VJC Overseas</strong> is here to
-        make your dream of family reunification a reality.
-      </p>
-
-      <p className="mb-6">
-        Let us help you navigate the complex{" "}
-        <strong>Immigration Process</strong>, ensuring that you and your loved
-        ones can begin your new life together in Australia. Contact us today to
-        learn more about your options and start your family visa journey with
-        confidence!
-      </p>
-
-      <hr style={{ borderColor: "black" }} className="mb-6" />
-
-      <p>
-        This unique content is tailored for VJC Overseas to attract and inform
-        potential clients seeking to reunite with their family in Australia. It
-        emphasizes the company’s expertise, providing a clear and comprehensive
-        overview of available visa options.
-      </p>
     </div>
   );
 };

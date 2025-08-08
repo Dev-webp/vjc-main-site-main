@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Aussponsor = () => {
   return (
@@ -20,12 +21,17 @@ const Aussponsor = () => {
       </div>
 
       <p className="m-2 mb-6">
-        Are you looking to move to Australia for work, study, or long-term
-        settlement? One of the most sought-after pathways is through an
+        Are you looking to{" "}
+        <Link href="https://vjcoverseas.com/migrate/australia" className="text-orange-600 font-semibold">
+          Migrate to Australia
+        </Link>{" "}
+        for work, study, or long-term settlement? One of the most sought-after pathways is through an
         Australia Sponsorship Visa, a system that enables individuals to live,
-        work, and thrive in one of the world’s most dynamic countries. At VJC
-        Overseas, we are committed to helping you navigate the complexities of
-        Australia’s immigration process, ensuring that you find the right
+        work, and thrive in one of the world’s most dynamic countries. At{" "}
+        <Link href="https://vjcoverseas.com/" className="text-orange-600 font-semibold">
+          VJC Overseas
+        </Link>
+        , we are committed to helping you navigate the complexities of Australia’s immigration process, ensuring that you find the right
         sponsorship visa suited to your skills, background, and aspirations.
       </p>
 
@@ -34,7 +40,7 @@ const Aussponsor = () => {
           <Image
             src="/assets/AusSponsor.png"
             alt="Australia Sponsorship Visa"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             priority
             unoptimized
@@ -60,7 +66,11 @@ const Aussponsor = () => {
           The sponsorship process can vary depending on the visa type, but all
           sponsorship visas provide a unique opportunity for skilled individuals
           to live in Australia, access quality healthcare, education, and a
-          range of professional opportunities.
+          range of professional opportunities, especially through pathways like{" "}
+          <Link href="https://www.vjcoverseas.com/work-abroad/australia-work-permit" className="text-orange-600 font-semibold">
+            Australia Work Visa
+          </Link>
+          .
         </p>
 
         <h4 className="mb-6">
@@ -92,8 +102,11 @@ const Aussponsor = () => {
           </li>
           <li>
             <b>• Medium-term Stream:</b> For occupations on the Medium and
-            Long-term Strategic Skills List (MLTSSL), offering a pathway to
-            permanent residency.
+            Long-term Strategic Skills List (MLTSSL), offering a pathway to{" "}
+            <Link href="https://www.vjcoverseas.com/pr-visas/australia-pr" className="text-orange-600 font-semibold">
+              Australia Permanent Residency
+            </Link>
+            .
           </li>
         </ul>
 
@@ -107,7 +120,7 @@ const Aussponsor = () => {
           visa requires applicants to have worked with the nominating employer
           for a certain period and to meet specific skill and experience
           requirements. It is one of the most popular options for those seeking{" "}
-          <b>Permanent Residence Visa</b> through employer sponsorship.
+          <b>Australia Permanent Residency</b> through employer sponsorship.
         </p>
 
         <h4 className="text-blue-800 italic mb-6">
@@ -119,7 +132,11 @@ const Aussponsor = () => {
           Australia. As part of Australia's initiative to support the
           development of regional areas, this visa provides a pathway for
           skilled workers to live and work in designated regional areas and, in
-          some cases, leads to permanent residency.
+          some cases, leads to permanent residency through{" "}
+          <Link href="https://www.vjcoverseas.com/work-abroad/australia-work-permit/nomited-visa-subclass-190" className="text-orange-600 font-semibold">
+            Australia Skilled Migration
+          </Link>
+          .
         </p>
 
         <h4 className="text-blue-800 italic mt-6">
@@ -144,7 +161,7 @@ const Aussponsor = () => {
               <b>• Work in Australia:</b> With a sponsorship visa, you can take
               up employment opportunities that are specifically aligned with
               your skills and experience. You may even be able to transition to
-              permanent residency in the future.
+              <b> Australia Permanent Residency</b> in the future.
             </li>
             <li>
               <b>• Pathway to Permanent Residency:</b> Many sponsorship visas
@@ -177,9 +194,13 @@ const Aussponsor = () => {
 
           <p className="mb-6">
             Navigating the sponsorship visa process can be complex, with
-            ever-evolving regulations and strict documentation requirements. At
-            VJC Overseas, we offer expert guidance to help you through every
-            step of the process:
+            ever-evolving regulations and strict documentation requirements. At{" "}
+            <b className="text-black font-semibold">VJC Overseas</b>, we offer expert guidance to help you through every
+            step of the process, whether you want to{" "}
+            <Link href="https://vjcoverseas.com/migrate/australia/student-visa" className="text-orange-600 font-semibold">
+              Study in Australia
+            </Link>{" "}
+            or settle permanently.
           </p>
 
           <ul className="ml-4 mb-6">
@@ -218,7 +239,7 @@ const Aussponsor = () => {
           </h4>
 
           <p className="mb-6">
-            At VJC Overseas, we understand that each immigration case is unique.
+            At <b className="text-black font-semibold">VJC Overseas</b>, we understand that each immigration case is unique.
             Whether you are seeking to sponsor a skilled worker, apply for a
             family reunion visa, or explore opportunities for permanent
             residency, our expert consultants offer personalized services
@@ -228,10 +249,14 @@ const Aussponsor = () => {
           </p>
 
           <p className="mb-6">
-            If you are looking to secure an Australia Sponsorship Visa, let VJC
-            Overseas be your trusted partner. With years of experience and a
+            If you are looking to secure an Australia Sponsorship Visa, let{" "}
+            <b className="text-black font-semibold">VJC Overseas</b> be your trusted partner. With years of experience and a
             deep understanding of the Australian immigration system, we will
-            work tirelessly to help you achieve your goals.
+            work tirelessly to help you achieve your goals with the{" "}
+            <Link href="https://vjcoverseas.com/" className="text-orange-600 font-semibold">
+              Best Visa Immigration Consultants
+            </Link>
+            .
           </p>
 
           <h4 className="mb-6">
@@ -239,7 +264,7 @@ const Aussponsor = () => {
           </h4>
 
           <p className="mb-6">
-            Reach out to VJC Overseas to book your consultation and take the
+            Reach out to <b className="text-black font-semibold">VJC Overseas</b> to book your consultation and take the
             first step towards making Australia your home. Our team is here to
             assist with any questions you have about sponsorship visas and guide
             you through the process with confidence.
@@ -252,7 +277,7 @@ const Aussponsor = () => {
 
           <hr style={{ borderColor: "black" }} className="mb-6" />
 
-          <p>Let VJC Overseas be your gateway to a new life in Australia!</p>
+          <p>Let <b className="text-black font-semibold">VJC Overseas</b> be your gateway to a new life in Australia!</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Ausbusiness = () => {
   return (
@@ -14,32 +15,24 @@ const Ausbusiness = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          Australia Business Visa -{" "}
+          <b className="text-black">Australia Business Visa</b> -{" "}
           <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
         </h3>
       </div>
       <h3 className="text-black text-center m-2 text-blue-600 mb-4 text-lxl sm:text-xl mb-6">
-        Australia Business Visa: Your Gateway to Entrepreneurial Success in
-        Australia
+        <b className="text-black">Australia Business Visa: Your Gateway to Entrepreneurial Success in Australia</b>
       </h3>
 
       <p className="mb-6">
-        Australia is known for its robust economy, diverse business
-        opportunities, and attractive quality of life. For entrepreneurs,
-        investors, and business professionals, the Australia Business Visa is
-        the perfect way to tap into the country’s dynamic market. Whether you're
-        looking to expand your business or start a new venture, the Australia
-        Business Visa offers a pathway for business people to live, work, and
-        grow their enterprises in one of the world’s most prosperous nations.
+        Australia is known for its robust economy, diverse business opportunities, and attractive quality of life. For entrepreneurs, investors, and business professionals, the Australia Business Visa is the perfect way to tap into the country’s dynamic market. Whether you're looking to expand your business or start a new venture, the Australia Business Visa offers a pathway for business people to live, work, and grow their enterprises in one of the world’s most prosperous nations.
       </p>
 
       <p className="mb-6">
-        At <b>VJC Overseas</b>, we specialize in helping clients navigate the
-        complexities of obtaining the right visa to build and scale their
-        businesses in Australia. In this guide, we will provide key insights
-        into Australia’s Business Visa categories, eligibility criteria, and the
-        application process to ensure that your business aspirations are on the
-        right track.
+        At{" "}
+        <Link href="https://vjcoverseas.com/" className="text-black font-bold">
+          VJC Overseas
+        </Link>
+        , we specialize in helping clients navigate the complexities of obtaining the right visa to build and scale their businesses in Australia. In this guide, we will provide key insights into Australia’s Business Visa categories, eligibility criteria, and the application process to ensure that your business aspirations are on the right track.
       </p>
 
       <div className="flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -47,7 +40,7 @@ const Ausbusiness = () => {
           <Image
             src="/assets/Ausbusiness.png"
             alt="Australia Business Visa"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-70 object-contain shadow-lg rounded-lg"
             priority
@@ -56,231 +49,185 @@ const Ausbusiness = () => {
         </div>
       </div>
 
-      <h4 className="mb-6">
-        <b>What is the Australia Business Visa?</b>
-      </h4>
-
-      <p className="mb-6">
-        The <b>Australia Business</b> Visa allows entrepreneurs, investors, and
-        business owners to enter and stay in Australia to manage, establish, or
-        invest in a business. It provides a range of pathways for individuals
-        who want to capitalize on Australia’s thriving economy, whether by
-        starting a new business, buying into an existing one, or investing in a
-        state or territory’s growth.
-      </p>
-
-      <p className="mb-6">
-        Australia offers several types of business visas, each catering to
-        different needs and goals. These visas are designed to encourage
-        innovation, investment, and business development across the country.
-      </p>
-
-      <div className="mb-6">
-        <h4 className="mb-6">
-          <b>Key Types of Australia Business Visas</b>
-        </h4>
+      <div className="mt-10 space-y-6">
+        <h3 className="text-2xl font-semibold text-black text-center">
+          <b className="text-black">Australia Business Visa –</b>{" "}
+          <span className="text-orange-500">VJC Overseas</span>
+        </h3>
 
         <p>
-          1.{" "}
-          <b>
-            Business Innovation and Investment (Provisional) Visa (subclass 188)
-          </b>{" "}
-          The Subclass 188 visa is ideal for individuals looking to manage or
-          invest in a business in Australia. It is a temporary visa with
-          pathways to permanent residency. The visa has several streams:
+          <b className="text-black">Start, Expand, and Thrive in Australia’s Dynamic Business Landscape</b>
         </p>
-        <ul className="ml-8 list-disc mb-6">
-          <li>
-            <b>Business Innovation Stream:</b> For those with a successful
-            business background who wish to own and manage a business in
-            Australia.
-          </li>
-          <li>
-            <b>Investor Stream:</b> For individuals willing to invest at least
-            AUD 2.5 million in Australian state or territory government bonds.
-          </li>
-          <li>
-            <b>Significant Investor Stream:</b> For high-net-worth individuals
-            ready to invest AUD 5 million into complying investments in
-            Australia.
-          </li>
-          <li>
-            <b>Entrepreneur Stream:</b> For those who have a viable business
-            idea and are supported by a state or territory government to start a
-            business in Australia.
-          </li>
-        </ul>
-
-        <p className="mb-6">
-          <b>2. Business Talent (Permanent) Visa (subclass 132)</b> This
-          permanent visa is designed for business owners and entrepreneurs with
-          significant business experience and a proven track record of success.
-          It allows individuals to establish or manage a business in Australia
-          with the potential for long-term growth. To be eligible, applicants
-          need to be nominated by a state or territory government and meet
-          certain financial thresholds.
-        </p>
-
-        <p className="mb-6">
-          <b>3. Temporary Skill Shortage Visa (subclass 482)</b> This visa is
-          ideal for individuals who need to fill skill shortages in Australian
-          businesses. It is a temporary work visa, but it allows employers to
-          hire skilled workers from overseas for roles that are not easily
-          filled locally. This visa can be a stepping stone for business owners
-          looking to employ skilled workers in their Australian operations.
-        </p>
-
-        <p className="mb-6">
-          <b>4. Global Talent Visa (subclass 858)</b> The Global Talent Visa is
-          designed for high-calibre individuals with exceptional skills in
-          specific sectors such as technology, engineering, finance, and health.
-          Entrepreneurs and business innovators with groundbreaking ideas or
-          expertise in emerging industries can apply for this visa, with the
-          potential to contribute significantly to Australia’s economic growth.
-        </p>
-      </div>
-
-      <div className="mb-6">
-        <h4>
-          <b>Key Benefits of the Australia Business Visa</b>
-        </h4>
-
-        <ul className="ml-8 mb-6">
-          <li>
-            <b>• Access to a Thriving Economy:</b> With one of the world’s
-            highest GDP growth rates and a stable business environment,
-            Australia is an excellent location for business development and
-            investment.
-          </li>
-          <li>
-            <b>• Pathway to Permanent Residency:</b> Many business visas, such
-            as the Subclass 188 and Subclass 132, offer pathways to permanent
-            residency, allowing you and your family to enjoy the long-term
-            benefits of living and working in Australia.
-          </li>
-          <li>
-            <b>• Support for Entrepreneurs:</b> Australia’s government offers
-            various incentives and support programs for entrepreneurs, including
-            grants, mentoring, and financial assistance.
-          </li>
-          <li>
-            <b>• Live in a World-Class Country:</b> Beyond business, Australia
-            offers a high quality of life, excellent healthcare, education, and
-            a vibrant cultural scene.
-          </li>
-          <li>
-            <b>• Access to International Markets:</b> As a member of multiple
-            free trade agreements, Australia provides easy access to global
-            markets, including Asia, the United States, and Europe.
-          </li>
-        </ul>
-
-        <h4 className="mb-6">
-          <b>Eligibility Criteria for the Australia Business Visa</b>
-        </h4>
-
-        <p className="mb-6">
-          While the exact eligibility requirements vary depending on the
-          specific visa subclass, common criteria include:
-        </p>
-
-        <ul className="ml-8 mb-6 list-disc">
-          <li>
-            <b>• Business Experience:</b> Depending on the visa stream,
-            applicants may need to demonstrate a history of successful business
-            ownership or management.
-          </li>
-          <li>
-            <b>• Investment Capital:</b> For some visa types, there are minimum
-            investment thresholds that must be met, such as investing AUD 1
-            million or more in Australia.
-          </li>
-          <li>
-            <b>• Nomination:</b> Some business visas require applicants to be
-            nominated by an Australian state or territory government.
-          </li>
-          <li>
-            <b>• English Language Proficiency:</b> Some applicants may need to
-            meet a certain level of English language ability.
-          </li>
-          <li>
-            <b>• Health and Character Requirements:</b> Applicants must pass
-            medical and character checks as part of the visa application
-            process.
-          </li>
-        </ul>
-
-        <h4 className="mb-6">
-          <b>Application Process</b>
-        </h4>
-
-        <p className="mb-6">
-          The process for applying for an Australian Business Visa can be
-          complex, with various steps depending on the specific visa subclass.
-          The general steps include:
-        </p>
-
-        <ol className="ml-24 mb-6">
-          <li>
-            <b>1. Expression of Interest (EOI):</b> Submit an EOI to indicate
-            your interest in applying for a business visa.
-          </li>
-          <li>
-            <b>2. State Nomination:</b> For certain visa subclasses, you must be
-            nominated by a state or territory government.
-          </li>
-          <li>
-            <b>3. Visa Application:</b> Submit your visa application once you
-            meet all requirements and have been nominated.
-          </li>
-          <li>
-            <b>4. Visa Decision:</b> Wait for a decision from the Department of
-            Home Affairs regarding your application.
-          </li>
-        </ol>
-
-        <h4 className="mb-6">
-          <b>Why Choose VJC Overseas for Your Business Visa?</b>
-        </h4>
-
-        <p className="mb-6">
-          At <b>VJC Overseas</b>, we understand that the process of obtaining an
-          Australian Business Visa can be overwhelming. Our team of experts is
-          here to guide you every step of the way, from selecting the right visa
-          subclass to preparing your application and ensuring that all
-          requirements are met.
-        </p>
-
-        <p className="mb-6">
-          With years of experience in immigration and visa services, we take a
-          personalized approach to every client’s needs. Our in-depth knowledge
-          of Australian immigration laws, combined with our commitment to
-          providing tailored solutions, makes us your trusted partner for
-          securing an Australian Business Visa.
-        </p>
-
-        <hr style={{ borderColor: "black" }} className="mb-6" />
-
-        <h5 className="mb-6">
-          <b>Contact Us Today</b>
-        </h5>
-
-        <p className="mb-6">
-          If you’re ready to take the next step in growing your business in
-          Australia, VJC Overseas is here to help. Contact us today for a
-          consultation, and let us assist you in navigating the complex world of{" "}
-          <b>Australian Business Immigration</b>.
-        </p>
-
-        <hr style={{ borderColor: "black" }} className="mb-6" />
 
         <p>
-          This content highlights the key aspects of the Australia Business Visa
-          in a detailed and informative manner, helping prospective applicants
-          understand their options and the application process. If you need more
-          tailored advice or specific assistance, we at VJC Overseas are here to
-          guide you toward a successful future in Australia.
+          Australia stands out as one of the most stable and prosperous economies in the world. With its forward-thinking government, abundant natural resources, and robust global trade network, it is no surprise that entrepreneurs and investors see the <b className="text-black">Australia Business Visa</b> as a premier opportunity to establish or grow their ventures.
         </p>
+
+        <p>
+          Whether you are a seasoned business owner, an innovative entrepreneur, or a high-net-worth investor, this visa category provides a strategic gateway into a thriving economy backed by innovation, security, and international access.
+        </p>
+
+        <p>
+          At <b className="text-black"><Link href="https://vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link></b>, we empower ambitious professionals like you to explore, plan, and secure your future in Australia through expert visa consulting, end-to-end documentation, and personalized immigration pathways.
+        </p>
+
+        <p>
+          <b className="text-black">What is the Australia Business Visa?</b>
+        </p>
+
+        <p>
+          The <b className="text-black">Australia Business Visa</b> allows foreign nationals to manage, establish, or invest in businesses in Australia. It enables visa holders and their families to live in Australia while contributing to its economic development through entrepreneurship, innovation, or investment.
+        </p>
+
+        <p>
+          If you're already exploring options to{" "}
+          <Link
+            href="https://vjcoverseas.com/migrate/australia"
+            className="text-orange-500"
+          >
+            Migrate to Australia
+          </Link>
+          , this visa offers a viable path for business-minded individuals to do so while building financial and professional success.
+        </p>
+
+        <p><b className="text-black">Types of Business Visas in Australia</b></p>
+
+        <p>
+          <b className="text-black">Australia offers multiple business visa subclasses to suit varied objectives:</b>
+        </p>
+
+        <p>
+          <b className="text-black">1. Business Innovation and Investment (Provisional) Visa – Subclass 188</b>
+          <br />
+          This temporary visa is ideal for those looking to manage a new or existing business or make a significant investment in Australia. Streams include:
+        </p>
+
+        <ul className="list-disc ml-6">
+          <li>Business Innovation Stream: For individuals with proven business skills wanting to operate a business in Australia.</li>
+          <li>Investor Stream: Requires a minimum AUD 2.5 million investment in Australian government or business.</li>
+          <li>Significant Investor Stream: Designed for high-net-worth individuals investing AUD 5 million or more.</li>
+          <li>Entrepreneur Stream: For those with innovative ideas backed by state/territory government endorsement.</li>
+        </ul>
+
+        <p>
+          <b className="text-black">2. Business Talent (Permanent) Visa – Subclass 132</b>
+          <br />
+          This visa grants permanent residency to business owners with a successful track record and substantial net assets who wish to operate a business in Australia. State or territory nomination is mandatory.
+        </p>
+
+        <p>
+          <b className="text-black">3. Temporary Skill Shortage Visa – Subclass 482</b>
+          <br />
+          If your business in Australia is in need of talent, this visa enables you to recruit global professionals. It complements your hiring plans as part of the{" "}
+          <Link
+            href="https://www.vjcoverseas.com/work-abroad/australia-work-permit"
+            className="text-orange-500"
+          >
+            Australia Work Visa
+          </Link>{" "}
+          program.
+        </p>
+
+        <p>
+          <b className="text-black">4. Global Talent Visa – Subclass 858</b>
+          <br />
+          Perfect for professionals and entrepreneurs with world-class skills in sectors like tech, health, and fintech. If you’re bringing advanced expertise into Australia’s economy, this visa offers fast-track permanent residency.
+        </p>
+
+        <p><b className="text-black">Benefits of the Australia Business Visa</b></p>
+
+        <ul className="list-disc ml-6">
+          <li>
+            <b className="text-black">Path to{" "}
+              <Link
+                href="https://www.vjcoverseas.com/pr-visas/australia-pr"
+                className="text-orange-500"
+              >
+                Australia Permanent Residency
+              </Link>:</b>{" "}
+              Many business visas offer a route to permanent residency, allowing you and your family to build a future in Australia.
+          </li>
+          <li><b className="text-black">Global Market Access:</b> With trade agreements across Asia, the U.S., and Europe, businesses in Australia enjoy easy access to international markets.</li>
+          <li><b className="text-black">Quality of Life:</b> Australia provides a high standard of living, a world-class healthcare system, and exceptional education.</li>
+          <li><b className="text-black">Business-Friendly Climate:</b> Government support, innovation grants, and simplified regulations help new businesses flourish.</li>
+        </ul>
+
+        <p><b className="text-black">Eligibility Criteria</b></p>
+
+        <p>
+          Each visa subclass has unique requirements, but in general, applicants must:
+        </p>
+
+        <ul className="list-disc ml-6">
+          <li>Demonstrate business ownership or executive experience.</li>
+          <li>Show substantial personal and business assets.</li>
+          <li>Be nominated by a state or territory.</li>
+          <li>Meet English language, health, and character standards.</li>
+        </ul>
+
+        <p>
+          If you or a family member is also considering options to{" "}
+          <b className="text-black">Study in Australia</b> while managing business operations, some visa streams support dependent education benefits as well.
+        </p>
+
+        <p><b className="text-black">Application Process</b></p>
+
+        <ul className="list-disc ml-6">
+          <li>Submit an Expression of Interest (EOI)</li>
+          <li>Secure State/Territory Nomination</li>
+          <li>Prepare and Lodge the Visa Application</li>
+          <li>Await Decision from Immigration Authorities</li>
+        </ul>
+
+        <p>
+          Due to the complexity and documentation involved, professional guidance ensures accuracy and timeliness.
+        </p>
+
+        <p><b className="text-black">Why Choose Best Visa Immigration Consultants?</b></p>
+
+        <p>
+          As one of the{" "}
+          <Link href="https://vjcoverseas.com/" className="text-orange-500">
+            Best Visa Immigration Consultants
+          </Link>,{" "}
+          <b className="text-black">VJC Overseas</b> has decades of expertise in guiding professionals, investors, and entrepreneurs toward successful visa outcomes. Here's how we stand out:
+        </p>
+
+        <ul className="list-disc ml-6">
+          <li>Expert Guidance Across All Subclasses</li>
+          <li>Tailored Business Migration Strategies</li>
+          <li>In-Depth Document Review & Submission</li>
+          <li>Assistance with Investment Planning & Nomination</li>
+          <li>End-to-End Visa Processing Support</li>
+        </ul>
+
+        <p>
+          If you're pursuing a skilled trade route instead, our team can also assist you with{" "}
+          <Link
+            href="https://www.vjcoverseas.com/work-abroad/australia-work-permit/nomited-visa-subclass-190"
+            className="text-orange-500"
+          >
+            Australia Skilled Migration
+          </Link>{" "}
+          pathways tailored to your expertise.
+        </p>
+
+        <p>
+          <b className="text-black">Build Your Future in Australia</b>
+          <br />
+          Whether you’re an entrepreneur launching a new startup, a corporate leader expanding your enterprise, or an investor aiming to grow your capital—Australia welcomes you.
+        </p>
+
+        <p>
+          <b className="text-black">VJC Overseas</b> is here to guide you every step of the way.
+        </p>
+<p>
+  <b className="text-black">Ready to turn your business vision into an Australian reality?</b>
+  <br />
+  Contact <b className="text-black">VJC Overseas</b> today and let’s get started with your{" "}
+  <b className="text-black">Australia Business Visa</b> application.
+</p>
+
       </div>
     </div>
   );

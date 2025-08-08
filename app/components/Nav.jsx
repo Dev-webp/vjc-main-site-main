@@ -17,7 +17,7 @@ import {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mobileSubMenu, setMobileSubMenu] = useState({});
-  
+const [mobileSubSubMenu, setMobileSubSubMenu] = useState({});
   const menuItems = [
     { name: "Home", path: "/" },
     // { name: "About us", path: "/about-us" },
@@ -507,11 +507,19 @@ const Navbar = () => {
     { name: "Switzerland ", path: "/schengen-visas/switzerland" },
   ];
    const toggleMobileSubMenu = (itemName) => {
-    setMobileSubMenu((prev) => ({
-      ...prev,
-      [itemName]: !prev[itemName],
-    }));
-  };
+  setMobileSubMenu((prev) => ({
+    ...prev,
+    [itemName]: !prev[itemName],
+  }));
+  // Close all sub-submenus when toggling a main submenu
+  setMobileSubSubMenu({});
+};
+const toggleMobileSubSubMenu = (itemName) => {
+  setMobileSubSubMenu((prev) => ({
+    ...prev,
+    [itemName]: !prev[itemName],
+  }));
+};
   return (
     <header>
       {/* Top Section */}
@@ -886,68 +894,108 @@ const Navbar = () => {
         </nav>
         {/* Mobile Menu with submenus */}
         {isMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-gradient-to-tr from-orange-500 to-black/80 text-white flex flex-col space-y-2 font-bold p-4 z-50 max-h-[80vh] overflow-y-auto">
-            {menuItems.map((item, index) => {
-              const submenu = getSubMenu(item.name);
-              return (
-                <div key={index} className="border-b border-white/20 pb-2">
-                  <div className="flex items-center justify-between">
-                    <a href={item.path} className="hover:text-orange-500 block">
-                      {item.name}
-                    </a>
-                    {submenu && (
-                      <button
-                        type="button"
-                        onClick={() => toggleMobileSubMenu(item.name)}
-                        className={`focus:outline-none ml-2 ${mobileSubMenu[item.name] ? "rotate-180" : ""}`}
-                        aria-label="Toggle Submenu"
+  <div className="absolute top-full left-0 w-full bg-gradient-to-tr from-orange-500 to-black/80 text-white flex flex-col space-y-2 font-bold p-4 z-50 max-h-[80vh] overflow-y-auto">
+    {menuItems.map((item, index) => {
+      const submenu = getSubMenu(item.name);
+      // Only show first-level submenu for Migrate To, PR Visas, etc.
+      if (
+        [
+          "Migrate To",
+          "PR Visas",
+          "Job Seeker Visas",
+          "Work Abroad",
+          "Investor Visas",
+          "Services",
+          "Coaching/Training",
+          "Resume Marketing",
+          "Study Abroad",
+          "Tours/Ticketing",
+          "Visit Visas",
+          "Schengen Visas",
+        ].includes(item.name)
+      ) {
+        return (
+          <div key={index} className="border-b border-white/20 pb-2">
+            <div className="flex items-center justify-between">
+              <a href={item.path} className="hover:text-orange-500 block">
+                {item.name}
+              </a>
+              {submenu && (
+                <button
+                  type="button"
+                  onClick={() => toggleMobileSubMenu(item.name)}
+                  className={`focus:outline-none ml-2 ${mobileSubMenu[item.name] ? "rotate-180" : ""}`}
+                  aria-label="Toggle Submenu"
+                >
+                  <FaChevronDown />
+                </button>
+              )}
+            </div>
+            {/* Show submenu (countries) */}
+            {submenu && mobileSubMenu[item.name] && (
+              <div className="mt-2 ml-2 flex flex-col space-y-1">
+                {submenu.map((subItem) => (
+                  <div key={subItem.name}>
+                    <div className="flex items-center justify-between">
+                      <a
+                        href={subItem.path}
+                        className="text-white bg-black/10 rounded px-2 py-1 mb-1 hover:bg-orange-600 hover:text-white block text-xs"
                       >
-                        <FaChevronDown />
-                      </button>
+                        {subItem.name}
+                      </a>
+                      {subItem.children && (
+                        <button
+                          type="button"
+                          onClick={() => toggleMobileSubSubMenu(subItem.name)}
+                          className={`focus:outline-none ml-2 ${mobileSubSubMenu[subItem.name] ? "rotate-180" : ""}`}
+                          aria-label="Toggle Sub-Submenu"
+                        >
+                          <FaChevronDown size={12} />
+                        </button>
+                      )}
+                    </div>
+                    {/* Show sub-submenu (country subpages) */}
+                    {subItem.children && mobileSubSubMenu[subItem.name] && (
+                      <div className="ml-4 flex flex-col space-y-1">
+                        {subItem.children.map((child) => (
+                          <a
+                            key={child.name}
+                            href={child.path}
+                            className="text-white bg-black/20 rounded px-2 py-1 hover:bg-orange-400 hover:text-white block text-[11px]"
+                          >
+                            {child.name}
+                          </a>
+                        ))}
+                      </div>
                     )}
                   </div>
-                  {submenu && mobileSubMenu[item.name] && (
-                    <div className="mt-2 ml-2 flex flex-col space-y-1">
-                      {submenu.map((subItem) => (
-                        <div key={subItem.name}>
-                          <a
-                            href={subItem.path}
-                            className="text-white bg-black/10 rounded px-2 py-1 mb-1 hover:bg-orange-600 hover:text-white block text-xs"
-                          >
-                            {subItem.name}
-                          </a>
-                          {subItem.children && (
-                            <div className="ml-4 flex flex-col space-y-1">
-                              {subItem.children.map((child) => (
-                                <a
-                                  key={child.name}
-                                  href={child.path}
-                                  className="text-white bg-black/20 rounded px-2 py-1 hover:bg-orange-400 hover:text-white block text-[11px]"
-                                >
-                                  {child.name}
-                                </a>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-            {extraItems.map((item, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-between border-b border-white/20 pb-2 hover:text-orange-500 cursor-pointer"
-              >
-                <a href={item.path} className="hover:text-orange-500 block">
-                  {item.name}
-                </a>
+                ))}
               </div>
-            ))}
+            )}
           </div>
-        )}
+        );
+      }
+      // For menu items without submenus
+      return (
+        <div key={index} className="border-b border-white/20 pb-2">
+          <a href={item.path} className="hover:text-orange-500 block">
+            {item.name}
+          </a>
+        </div>
+      );
+    })}
+    {extraItems.map((item, index) => (
+      <div
+        key={index}
+        className="flex items-center justify-between border-b border-white/20 pb-2 hover:text-orange-500 cursor-pointer"
+      >
+        <a href={item.path} className="hover:text-orange-500 block">
+          {item.name}
+        </a>
+      </div>
+    ))}
+  </div>
+)}
       </div>
     
 

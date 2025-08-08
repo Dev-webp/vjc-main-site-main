@@ -3,22 +3,15 @@
 import { useState } from 'react';
 import { useAuth } from './AuthContext';
 import ApplicationForm from './ApplicationForm';
-import AuthModal from './AuthModal';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
 
 export default function JobCard({ job }) {
   const { user } = useAuth();
-  const [showAuthModal, setShowAuthModal] = useState(false);
   const [showApplication, setShowApplication] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleApply = () => {
-    if (!user) {
-      setShowAuthModal(true);
-    } else {
-      setShowApplication(true);
-    }
+    setShowApplication(true); // Always open form
   };
 
   return (
@@ -85,8 +78,7 @@ export default function JobCard({ job }) {
         Apply Now
       </button>
 
-      {/* Modals */}
-      {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+      {/* Application Form Modal */}
       {showApplication && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <ApplicationForm job={job} onClose={() => setShowApplication(false)} />
