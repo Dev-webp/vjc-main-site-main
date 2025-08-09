@@ -9,13 +9,13 @@ const Newzebusiness = () => {
         }}>
             <div style={{ marginBottom: '5%' }}>
                 <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-                    New Zealand Business Visa  - VJC Overseas<span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
+                    New Zealand Business Visa  - <span style={{ color: 'rgb(220, 4, 4)' }}><b>VJC Overseas</b></span>
                 </h3>
             </div>
             
-            <p className='mb-6'>New Zealand is a hub of innovation, investment opportunities, and a business-friendly environment that attracts entrepreneurs, investors, and business professionals from across the globe. If you're looking to establish or grow your business in this vibrant country, the New Zealand Business Visa is your gateway to success.</p>
+            <p className='mb-6'>New Zealand is a hub of innovation, investment opportunities, and a business-friendly environment that attracts entrepreneurs, investors, and business professionals from across the globe. If you're looking to establish or grow your business in this vibrant country, the <a href="https://vjcoverseas.com/" style={{ color: 'orange' }}>Best Visa Immigration Consultants</a> can guide you to success.</p>
 
-            <p>At VJC Overseas, we guide you through the entire process of applying for a New Zealand Business Visa, ensuring a smooth, efficient, and successful application. Whether you are looking to invest, establish a new business, or manage an existing one, we have the expertise to help you every step of the way.</p>
+            <p>At <a href="https://vjcoverseas.com/" style={{ color: 'orange' }}>VJC Overseas</a>, we guide you through the entire process of applying for a New Zealand Business Visa, ensuring a smooth, efficient, and successful application. Whether you are looking to invest, establish a new business, or manage an existing one, we have the expertise to help you every step of the way.</p>
             <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
                 <div className="flex-shrink-0 mx-auto lg:mx-0">
                     <Image
@@ -35,8 +35,6 @@ const Newzebusiness = () => {
                     <ul className='mb-6 ml-8 list-decimal'>
                         <li><b>Entrepreneur Work Visa</b>
                             <p>For individuals planning to start or purchase a business in New Zealand. This visa is designed for entrepreneurs who are ready to contribute to the local economy.</p></li>
-                        
-
                     </ul>
                 </div>
             </div>
@@ -64,7 +62,7 @@ const Newzebusiness = () => {
             <h3 className='text-black m-2 font-bold text-lg mb-6'>
             Visa Requirements
             </h3>
-            <p className='mb-6'>The requirements for a New Zealand Business Visa will depend on the type of visa you are applying for. However, typical criteria include:</p>
+            <p className='mb-6'>The requirements for a New Zealand Business Visa will depend on the type of visa you are applying for. However, typical criteria include: If your goal is <a href="https://www.vjcoverseas.com/study-abroad/newzealand" style={{ color: 'orange' }}>Study in New Zealand</a>, you will also need to meet specific educational prerequisites.</p>
             <ul className='list-decimal mb-6 ml-8'>
                <li>Proof of business experience and qualifications</li>
                <li>Evidence of sufficient funds for investment or business operations</li>
@@ -76,7 +74,7 @@ const Newzebusiness = () => {
             <h3 className='text-black m-2 font-bold text-lg mb-6'>
             Visa Fees and Processing Time</h3>
             
-            <p className='mb-6'>The application fees for New Zealand Business Visas vary depending on the type of visa you are applying for. Below are general fee guidelines:</p>
+            <p className='mb-6'>The application fees for New Zealand Business Visas vary depending on the type of visa you are applying for. For those aiming for <a href="https://vjcoverseas.com/migrate/new-zealand" style={{ color: 'orange' }}>Migrate to New Zealand</a> opportunities, certain investment and residency pathways may have different fee structures.</p>
             <ul className='list-decimal mb-6 ml-8'>
                 <li><b>Entrepreneur Work Visa:  </b>NZD 2,490 (including the application fee and immigration levy)</li>
                 <li><b>Investor Visa:  </b>NZD 3,700 - NZD 4,500 (depending on the investment amount and the complexity of the application)</li>
@@ -86,7 +84,7 @@ const Newzebusiness = () => {
             </ul>
 
             <h3 className='text-black m-2 font-bold text-lg mb-6'>Processing Time</h3>
-            <p className='mb-6'>The processing time for New Zealand Business Visas can vary based on the complexity of your application and the specific visa category. On average, the processing time is:</p>
+            <p className='mb-6'>The processing time for New Zealand Business Visas can vary based on the complexity of your application and the specific visa category. On average, the processing time is: If you are also considering <a href="https://vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: 'orange' }}>New Zealand Permanent Residency</a>, the timeframe may differ depending on the pathway chosen.</p>
             <ul className='mb-6 ml-8 list-disc'>
                 <li><b>Entrepreneur Work Visa: </b>NZD 330 - NZD 500</li>
                 <li><b>Investor Visa:</b> NZD 100 - NZD 250 (if applicable)</li>.
@@ -95,7 +93,7 @@ const Newzebusiness = () => {
             </ul>
             <p>These times are estimates, and it is always advisable to apply well in advance of your intended travel or business start date.</p>
             <h3 className='text-black m-2 font-bold text-lg mb-6'>How We Can Help You</h3>
-            <p className='mb-6'>Navigating the visa application process can be complex, but with VJC Overseas, you don’t have to do it alone. Our experienced consultants offer:</p>
+            <p className='mb-6'>Navigating the visa application process can be complex, but with <b>VJC Overseas</b>, you don’t have to do it alone. Our experienced consultants offer:</p>
             
             <ul className='list-disc mb-6 ml-8'>
                 <li><b>Expert Guidance:  </b>Our team has in-depth knowledge of New Zealand’s immigration policies and business landscape. We provide tailored advice for your unique situation.</li>
@@ -105,7 +103,7 @@ const Newzebusiness = () => {
 
             </ul>
             <h3 className='text-black m-2 font-bold text-lg mb-6'>Start Your Business Journey in New Zealand Today</h3>
-            <p className='mb-6'>With its strong economy, high quality of life, and abundant business opportunities, New Zealand is the perfect place for your entrepreneurial ventures. Let VJC Overseas help you navigate the application process and take the first step toward building your business in New Zealand.</p>
+            <p className='mb-6'>With its strong economy, high quality of life, and abundant business opportunities, New Zealand is the perfect place for your entrepreneurial ventures. Let <b>VJC Overseas</b> help you navigate the application process and take the first step toward building your business in New Zealand.</p>
             <p className='mb-6'><b>Contact us today</b> to schedule a consultation, and let’s turn your business dreams into reality in New Zealand!</p>
             <hr style={{ borderColor: 'black' }} className="mb-6" />
             <p className='mb-6'>Feel free to adjust the fees and processing time based on the most current information or specific service offerings.</p>

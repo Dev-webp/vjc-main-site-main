@@ -14,12 +14,13 @@ const Content = () => {
         marginTop: "-7%",
       }}
     >
-      <div style={{ marginBottom: "40px" }}>
-        <h3 className="text-2xl font-semibold text-black text-center">
-          UK Innovator Visa -{" "}
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
-        </h3>
-      </div>
+     <div style={{ marginTop: "20px", marginBottom: "40px" }}>
+  <h3 className="text-2xl font-semibold text-black text-center">
+    UK Innovator Visa -{" "}
+    <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+  </h3>
+</div>
+
       <div style={{ marginBottom: "40px" }}>
         <h3 className="text-1xl font-semibold text-blue-500 text-center">
           Unlocking Opportunities with the UK Innovator Visa: A Gateway to
@@ -28,8 +29,14 @@ const Content = () => {
       </div>
 
       <p style={{ marginBottom: "20px" }}>
-        In today’s fast-paced global economy, the United Kingdom stands as a
-        beacon for innovation, offering a wealth of opportunities for
+        In today’s fast-paced global economy, the{" "}
+        <a
+          href="https://www.vjcoverseas.com/study-abroad/uk"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Study in UK
+        </a>{" "}
+        remains a beacon for innovation, offering a wealth of opportunities for
         entrepreneurs looking to expand their businesses and make an impact on
         the world. If you’re an ambitious individual with a ground-breaking
         idea, the UK Innovator Visa could be your key to success.
@@ -50,11 +57,18 @@ const Content = () => {
           />
         </div>
         <p style={{ marginBottom: "20px" }}>
-          At VJC Overseas, we specialize in guiding dynamic entrepreneurs like
-          you through the UK’s immigration process. Whether you’re starting a
-          new venture or scaling an existing one, the Innovator Visa offers you
-          the chance to bring your vision to life in one of the most vibrant
-          business environments on the planet.
+          At{" "}
+          <a
+            href="https://www.vjcoverseas.com/"
+            style={{ color: "orange", fontWeight: "bold" }}
+          >
+            Best Visa Immigration Consultants
+          </a>
+          , we specialize in guiding dynamic entrepreneurs like you through the
+          UK’s immigration process. Whether you’re starting a new venture or
+          scaling an existing one, the Innovator Visa offers you the chance to
+          bring your vision to life in one of the most vibrant business
+          environments on the planet.
         </p>
       </div>
 
@@ -93,7 +107,14 @@ const Content = () => {
         <li>
           <strong>Longer Duration & Path to Settlement:</strong> Stay in the UK
           for up to 3 years, with the possibility of extension and eligibility
-          for Indefinite Leave to Remain (ILR) after 3 years.
+          for{" "}
+          <a
+            href="https://www.vjcoverseas.com/pr-visas/uk-pr"
+            style={{ color: "orange", fontWeight: "bold" }}
+          >
+            UK Permanent Residency
+          </a>{" "}
+          after 3 years.
         </li>
         <li>
           <strong>Access to the UK’s Thriving Ecosystem:</strong> Connect with
@@ -187,17 +208,36 @@ const Content = () => {
         to bring their ideas to life and expand their businesses in one of the
         world’s most dynamic economies. Whether you’re looking to launch a
         startup or grow an existing business, the UK provides a platform to
-        transform your vision into reality.
+        transform your vision into reality. If your long-term plan is to{" "}
+        <a
+          href="https://vjcoverseas.com/migrate/united-kingdom"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Migrate to United Kingdom
+        </a>
+        , this visa can be a perfect first step.
       </p>
       <p style={{ marginBottom: "20px" }}>
-        At VJC Overseas, we’re committed to supporting you on your
-        entrepreneurial journey. Our team of immigration experts ensures a
-        seamless process, from securing your endorsement to guiding you through
-        the visa application.
+        At{" "}
+        <a
+          href="https://www.vjcoverseas.com/"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          VJC Overseas
+        </a>
+        , we’re committed to supporting you on your entrepreneurial journey. Our
+        team of immigration experts ensures a seamless process, from securing
+        your endorsement to guiding you through the visa application.
       </p>
       <h3 style={{ color: "brown", fontWeight: "bold", marginBottom: "20px" }}>
-        Start your innovation journey with VJC Overseas — where opportunities
-        meet expertise.
+        Start your innovation journey with{" "}
+        <a
+          href="https://www.vjcoverseas.com/work-abroad/united-kingdom-work-permit"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          UK Skilled Immigration
+        </a>{" "}
+        — where opportunities meet expertise.
       </h3>
     </div>
   );

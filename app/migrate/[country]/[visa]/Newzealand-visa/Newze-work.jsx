@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Newzework = () => {
   return (
@@ -14,8 +15,7 @@ const Newzework = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          New Zealand Work Visa - VJC Overseas
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+          New Zealand Work Visa - <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
         </h3>
       </div>
 
@@ -24,15 +24,27 @@ const Newzework = () => {
         progressive countries? A New Zealand Work Visa allows you to live and
         work in New Zealand, experiencing a high quality of life while advancing
         your career in a country renowned for its innovative industries, strong
-        economy, and welcoming people.
+        economy, and welcoming people. Whether your goal is temporary employment,
+        long-term work, or even a pathway to{" "}
+        <Link href="https://vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>
+          New Zealand Permanent Residency
+        </Link>
+        , our expert team can guide you at every stage.
       </p>
       <p className="mb-6">
-        Whether you’re seeking a temporary role, a long-term job, or a path to
-        permanent residency, we’re here to guide you through the process. At VJC
-        Overseas, we specialize in making the visa application process as smooth
-        and straightforward as possible.
+        At{" "}
+        <Link href="https://vjcoverseas.com/" style={{ color: "orange" }}>
+          VJC Overseas
+        </Link>
+        , recognized as one of the{" "}
+        <Link href="https://vjcoverseas.com/" style={{ color: "orange" }}>
+          Best Visa Immigration Consultants
+        </Link>
+        , we make the visa application process smooth, straightforward, and
+        stress-free.
       </p>
       <hr style={{ borderColor: "black" }} className="mb-6" />
+
       <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex-shrink-0 justify-center mx-auto lg:mx-0">
           <Image
@@ -46,6 +58,7 @@ const Newzework = () => {
           />
         </div>
       </div>
+
       <h3 className=" m-2 font-bold text-black text-lg mb-6">
         Types of New Zealand Work Visas
       </h3>
@@ -56,28 +69,29 @@ const Newzework = () => {
       <ul className="mb-6 ml-8 list-decimal">
         <li className="mb-6">
           <b>Essential Skills Work Visa </b>
-          For tourists wishing to stay in New Zealand for leisure, sightseeing,
-          or visiting family/friends.
+          – For skilled professionals needed in shortage areas.
         </li>
         <li className="mb-6">
           <b>Accredited Employer Work Visa (AEWV) </b>
-          For travellers who wish to enter and exit New Zealand multiple times
-          within a set period.
+          – For applicants with a job offer from an accredited employer.
         </li>
         <li className="mb-6">
           <b>Post-study Work Visa</b>
-          For travellers who are passing through New Zealand on their way to
-          another destination.
+          – For graduates who wish to gain work experience after completing their
+          studies.
         </li>
         <li className="mb-6">
           <b>Working Holiday Visa </b>
-          For tourists wishing to stay in New Zealand for leisure, sightseeing,
-          or visiting family/friends.
+          – For young travelers wanting to experience New Zealand while working
+          part-time.
         </li>
         <li className="mb-6">
           <b>Residence Visa (Skilled Migrant Category) </b>
-          For tourists wishing to stay in New Zealand for leisure, sightseeing,
-          or visiting family/friends.
+          – For skilled workers seeking to{" "}
+          <Link href="https://vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>
+            Migrate to New Zealand
+          </Link>{" "}
+          permanently.
         </li>
       </ul>
 
@@ -87,7 +101,7 @@ const Newzework = () => {
         Eligibility Criteria
       </h3>
       <p className="mb-6">
-        To apply for a New Zealand Tourist Visa, you’ll need to meet certain
+        To apply for a New Zealand Work Visa, you’ll need to meet certain
         requirements:
       </p>
       <ul className="list-disc mb-6 ml-8">
@@ -95,18 +109,26 @@ const Newzework = () => {
         <li>Relevant qualifications or experience for the role.</li>
         <li>Proof of good health and character.</li>
         <li>
-          Meet the English language proficiency requirements (if applicable).
+          Meeting the English language proficiency requirements (if applicable).
         </li>
       </ul>
       <p className="mb-6">
-        For some work visas, you may also need to demonstrate that the job offer
-        is from a recognized and accredited employer.
+        For some work visas, your employer must be accredited under Immigration
+        New Zealand’s framework.
       </p>
-      <h3 className=" m-2 font-bold text-black text-lg mb-6">Visa Fees</h3>
+      <p className="mb-6">
+        If you are an international student and plan to{" "}
+        <Link href="https://www.vjcoverseas.com/study-abroad/newzealand" style={{ color: "orange" }}>
+          Study in New Zealand
+        </Link>
+        , the post-study work visa could be your bridge to long-term settlement
+        and employment.
+      </p>
 
+      <h3 className=" m-2 font-bold text-black text-lg mb-6">Visa Fees</h3>
       <p className="mb-6">
         The cost of a New Zealand Work Visa varies depending on the type of visa
-        and your specific circumstances. Below are the general fee ranges:
+        and your specific circumstances:
       </p>
       <ul className="list-disc mb-6 ml-8">
         <li>
@@ -127,19 +149,18 @@ const Newzework = () => {
         </li>
       </ul>
       <p className="mb-6">
-        Please note that fees are subject to change, and additional costs may
-        apply for dependent family members or for medical examinations, police
-        clearances, and translations of documents.
+        Fees are subject to change and may include additional costs for dependent
+        family members, medical checks, police clearances, and translations.
       </p>
+
       <hr style={{ borderColor: "black" }} className="mb-6" />
+
       <h3 className="  text-black font-bold m-2  text-lg mb-6">
         Processing Time
       </h3>
-
       <p className="mb-6">
-        Processing times for New Zealand Work Visas can vary depending on the
-        visa type, your country of origin, and the complexity of your
-        application. However, as a general guide:
+        Processing times can vary depending on the visa type and your country of
+        origin:
       </p>
       <ul className="list-decimal mb-6 ml-8">
         <li>
@@ -160,50 +181,45 @@ const Newzework = () => {
         </li>
       </ul>
       <p className="mb-6">
-        For faster processing, it’s important to ensure that your application is
-        complete and includes all required documentation. We at VJC Overseas can
-        help you gather and prepare your materials, ensuring a quicker turn
-        around.
+        With <b>VJC Overseas</b>, you benefit from expert preparation and faster
+        turnaround by submitting complete, accurate applications from the start.
       </p>
+
       <hr style={{ borderColor: "black" }} className="mb-6" />
+
       <h3 className=" m-2 font-bold text-black text-lg mb-6">
         Why Choose VJC Overseas?
       </h3>
       <p className="mb-6">
-        Navigating the New Zealand work visa process can be complex, but with
-        VJC Overseas, you can rest assured that you're in good hands. Our expert
-        team of immigration consultants will help you:
+        Expert Guidance – Years of experience in handling New Zealand visas.
+        Tailored Solutions – Advice designed to suit your professional and
+        personal goals.
+        Full Application Support – From documentation to final submission.
+        Transparent Process – No hidden fees or surprises.
       </p>
-      <ul className="mb-6 list-disc">
-        <li>
-          Assess your eligibility and recommend the best visa option for you.
-        </li>
-        <li>Prepare your application and supporting documents accurately.</li>
-        <li>Offer personalized advice to improve your chances of approval.</li>
-        <li>
-          Provide updates on your application status and ensure compliance with
-          New Zealand’s immigration laws.
-        </li>
-      </ul>
       <p className="mb-6">
-        We have helped thousands of individuals from various industries achieve
-        their dream of working in New Zealand. With our expertise and dedication
-        to customer service, you can focus on your career goals while we handle
-        the paperwork.
+        We’ve successfully assisted thousands of professionals and families to
+        live and work in New Zealand. Our in-depth knowledge of the immigration
+        process ensures your application is in the best possible hands.
       </p>
-      <hr style={{ borderColor: "black" }} className="mb-6" />
+
       <h3 className=" m-2 font-bold text-black text-lg mb-6">
-        Start Your Journey to New Zealand Today!
+        Start Your Journey Today
       </h3>
       <p className="mb-6">
-        Ready to work in New Zealand? Let VJC Overseas help you secure the right
-        visa to make your dream a reality. Contact us for a free consultation,
-        and take the first step toward a successful career in New Zealand!
+        If you’re ready to take the next step in your career and life, contact{" "}
+        <b>VJC Overseas</b> today. Whether your goal is short-term work
+        experience or a path to permanent settlement, we’re here to make it
+        happen.
       </p>
-      <p className="mb-6">Contact Us | Book a Consultation</p>
-      <hr style={{ borderColor: "black" }} className="mb-6" />
       <p className="mb-6">
-        Let us help you take the next step in your career journey!
+        Call us: +91-9160449000
+        <br />
+        Email: info@vjcoverseas.com
+      </p>
+      <p className="mb-6">
+        Start your journey with <b>VJC Overseas</b> – your trusted partner in
+        New Zealand immigration success.
       </p>
     </div>
   );

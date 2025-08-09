@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
   return (
@@ -14,29 +15,28 @@ const Content = () => {
         marginTop: "-7%",
       }}
     >
-      <div style={{ marginBottom: "40px" }}>
-        <h3 className="text-2xl font-semibold text-black text-center">
-          UK Tourist Visa -{" "}
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
-        </h3>
-      </div>
-      {/* <div style={{ marginBottom: '40px' }}>
-            <h3 className="text-3xl font-semibold text-black text-center">
-              UK Tourist Visa: Your Gateway to Exploring the Best of the United Kingdom
-            </h3>
-          </div> */}
+      <div style={{ marginTop: "20px", marginBottom: "40px" }}>
+  <h3 className="text-2xl font-semibold text-black text-center">
+    UK Tourist Visa -{" "}
+    <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+  </h3>
+</div>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
         Your Trusted Partner for UK Tourist Visa Applications
       </h3>
       <p style={{ marginBottom: "30px" }}>
-        If you`re planning to visit the United Kingdom for leisure, sightseeing,
+        If you`re planning to visit the <b className="text-black">United Kingdom</b> for leisure, sightseeing,
         or visiting family and friends, a UK Tourist Visa (also known as a
         Standard Visitor Visa) is the first step in making your dream trip a
         reality. Whether it`s exploring the iconic landmarks of London, enjoying
         the picturesque landscapes of the Scottish Highlands, or immersing
         yourself in the rich cultural history of the UK, this visa allows you to
-        experience all that the country has to offer.
+        experience all that the country has to offer. If you are planning to{" "}
+        <Link href="https://vjcoverseas.com/migrate/united-kingdom" style={{ color: "orange" }}>
+          Migrate to United Kingdom
+        </Link>{" "}
+        in the future, starting with a tourist visit can help you understand the country better.
       </p>
       <div
         className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0"
@@ -56,7 +56,11 @@ const Content = () => {
 
         <div>
           <p style={{ marginBottom: "20px" }}>
-            At VJC Overseas, we understand the complexities involved in applying
+            At{" "}
+            <Link href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>
+              VJC Overseas
+            </Link>
+            , we understand the complexities involved in applying
             for a UK Tourist Visa, and we`re here to guide you through every
             step of the process to ensure a hassle-free experience. Below is
             everything you need to know about the UK Tourist Visa, from
@@ -72,7 +76,11 @@ const Content = () => {
         visit the UK for up to 6 months. This visa is ideal for those looking to
         travel for tourism, to visit family or friends, or to engage in
         short-term business activities. The visa permits multiple entries within
-        the validity period, giving you flexibility to plan your visit.
+        the validity period, giving you flexibility to plan your visit. Some travelers also explore{" "}
+        <Link href="https://www.vjcoverseas.com/pr-visas/uk-pr" style={{ color: "orange" }}>
+          UK Permanent Residency
+        </Link>{" "}
+        options after experiencing life in the UK.
       </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
@@ -83,7 +91,7 @@ const Content = () => {
         However, some nationalities benefit from visa-free entry for short stays
         (usually up to 6 months). To find out whether you need a visa, it`s
         important to check the UK government website or consult with an
-        immigration expert at VJC Overseas. We offer personalized advice
+        immigration expert at <b className="text-black">VJC Overseas</b>. We offer personalized advice
         tailored to your nationality and circumstances.
       </p>
 
@@ -199,6 +207,13 @@ const Content = () => {
         </li>
         <li>Inconsistent or unclear information in the application.</li>
       </ul>
+      <p style={{ marginBottom: "20px" }}>
+        Some travelers who face rejections later consider{" "}
+        <Link href="https://www.vjcoverseas.com/work-abroad/united-kingdom-work-permit" style={{ color: "orange" }}>
+          UK Skilled Immigration
+        </Link>{" "}
+        as an alternative pathway.
+      </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
         Why Choose VJC Overseas?
@@ -227,6 +242,13 @@ const Content = () => {
           monitoring.
         </li>
       </ul>
+      <p style={{ marginBottom: "20px" }}>
+        We are recognized as one of the{" "}
+        <Link href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>
+          Best Visa Immigration Consultants
+        </Link>{" "}
+        with a strong track record of success.
+      </p>
 
       <h3 style={{ color: "brown", fontWeight: "bold", marginBottom: "20px" }}>
         Start Your Journey Today
@@ -238,12 +260,16 @@ const Content = () => {
           fontSize: "14px",
         }}
       >
-        Let VJC Overseas guide you through the process of obtaining your UK
+        Let <b className="text-black">VJC Overseas</b> guide you through the process of obtaining your UK
         Tourist Visa. Contact us for a consultation, and embark on your
-        adventure to explore the beauty of the United Kingdom.
+        adventure to explore the beauty of the UK. You can also{" "}
+        <Link href="https://www.vjcoverseas.com/study-abroad/uk" style={{ color: "orange" }}>
+          Study in UK
+        </Link>{" "}
+        if you are planning for higher education opportunities.
       </p>
       <p style={{ marginBottom: "20px" }}>
-        Contact VJC Overseas to ensure a seamless UK Tourist Visa application
+        Contact <b className="text-black">VJC Overseas</b> to ensure a seamless UK Tourist Visa application
         experience. Let us guide you through the process, so you can focus on
         enjoying your adventure in the UK.
       </p>

@@ -29,7 +29,17 @@ const Newzedepen = () => {
         the New Zealand Dependant Visa offers a pathway to reunite with your
         loved ones. This visa allows your spouse, children, or parents to live
         with you in New Zealand, giving them the opportunity to experience the
-        beautiful country while you continue your stay.
+        beautiful country while you continue your stay. For expert assistance,
+        trust{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          style={{ color: "orange", fontWeight: "bold" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Best Visa Immigration Consultants
+        </a>{" "}
+        who can guide you through the entire process.
       </p>
 
       <div className="flex mb-6 flex-col justify-center lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -108,7 +118,16 @@ const Newzedepen = () => {
         </li>
         <li>
           <b>Pathway to Residency: </b>For many families, the Dependant Visa is
-          a first step towards permanent residency in New Zealand.
+          a first step towards permanent residency in{" "}
+          <a
+            href="https://vjcoverseas.com/pr-visas/new-zealand-pr"
+            style={{ color: "orange", fontWeight: "bold" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            New Zealand Permanent Residency
+          </a>
+          .
         </li>
       </ul>
       <h3 className=" m-2 text-sky-800 text-lg mb-6">
@@ -162,7 +181,27 @@ const Newzedepen = () => {
       <p className="mb-6">
         Please note: These fees are indicative and may change. For the most
         accurate fee information, consult with an immigration advisor or visit
-        the official New Zealand Immigration website.
+        the official New Zealand Immigration website. If you want to{" "}
+        <a
+          href="https://vjcoverseas.com/pr-visas/new-zealand-pr"
+          style={{ color: "orange", fontWeight: "bold" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Study in New Zealand
+        </a>{" "}
+        or explore opportunities to{" "}
+        <a
+          href="https://vjcoverseas.com/migrate/new-zealand"
+          style={{ color: "orange", fontWeight: "bold" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Migrate to New Zealand
+        </a>
+        , our team at{" "}
+        <b style={{ color: "black" }}>VJC Overseas</b> can help you with the right
+        guidance.
       </p>
 
       <h3 className=" m-2 text-sky-800 text-lg mb-6">Processing Time</h3>
@@ -186,7 +225,9 @@ const Newzedepen = () => {
       <p className="mb-6">
         For the most up-to-date processing times and to ensure that your
         application is handled smoothly, we recommend submitting complete
-        documentation and ensuring all forms are filled out correctly.
+        documentation and ensuring all forms are filled out correctly. Trust{" "}
+        <b style={{ color: "black" }}>Best Visa Immigration Consultants</b> for
+        the best results.
       </p>
       <h3 className="text-sky-800 m-2  text-lg mb-6">
         How to Apply for a New Zealand Dependant Visa
@@ -227,12 +268,21 @@ const Newzedepen = () => {
         Need Help with Your Application?
       </h3>
       <p className="mb-6">
-        At <b>VJC Overseas</b>, we specialize in helping families navigate the
-        complexities of New Zealand’s immigration process. Our expert team will
-        guide you through every step of the Dependant Visa application, ensuring
-        that your family’s reunion is as smooth and efficient as possible.
-        Whether you’re applying for your spouse, child, or parent, we’re here to
-        provide you with personalized support and expert advice.
+        At{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          style={{ color: "orange", fontWeight: "bold" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VJC Overseas
+        </a>
+        , we specialize in helping families navigate the complexities of New
+        Zealand’s immigration process. Our expert team will guide you through
+        every step of the Dependant Visa application, ensuring that your family’s
+        reunion is as smooth and efficient as possible. Whether you’re applying
+        for your spouse, child, or parent, we’re here to provide you with
+        personalized support and expert advice.
       </p>
       <p className="mb-6">
         <b>Contact us today</b> to schedule a consultation, and start the

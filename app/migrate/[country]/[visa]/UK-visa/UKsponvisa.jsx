@@ -1,5 +1,7 @@
+
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
   return (
@@ -14,48 +16,57 @@ const Content = () => {
         marginTop: "-7%",
       }}
     >
-      <div style={{ marginBottom: "40px" }}>
+      <div style={{ marginBottom: "40px", marginTop: "20px" }}>
+
         <h3 className="text-2xl font-semibold text-black text-center">
           UK Sponsorship Visa -{" "}
           <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
         </h3>
       </div>
-      {/* <div style={{ marginBottom: '40px' }}>
-            <h3 className="text-3xl font-semibold text-black text-center">
-              UK Sponsorship Visa: A Gateway to Opportunities for International Talent
-            </h3>
-          </div>
-       */}
+
       <p style={{ marginBottom: "20px" }}>
-        The UK has long been a popular destination for individuals seeking to
-        advance their careers, pursue higher education, or embark on new
-        business ventures. One of the key pathways to enter the UK for work or
-        study is through a UK Sponsorship Visa, which allows employers or
-        educational institutions to sponsor qualified international candidates
-        to live and work in the country.
+        The{" "}
+        <Link
+          href="https://www.vjcoverseas.com/study-abroad/uk"
+          style={{ color: "orange" }}
+        >
+          Study in UK
+        </Link>{" "}
+        has long been a popular destination for individuals seeking to advance
+        their careers, pursue higher education, or embark on new business
+        ventures. One of the key pathways to enter the UK for work or study is
+        through a UK Sponsorship Visa, which allows employers or educational
+        institutions to sponsor qualified international candidates to live and
+        work in the country.
       </p>
+
       <div
         className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0"
         style={{ marginBottom: "20px" }}
       >
         <div className="flex-shrink-0 mx-auto lg:mx-0">
-           <Image
-                      src="/uksponsorship.jpg"
-                      alt="UK Business Visa Image"
-                      width={500}
-                      height={300}
-                      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
-                      priority
-                      unoptimized
-                    />
+          <Image
+            src="/uksponsorship.jpg"
+            alt="UK Business Visa Image"
+            width={500}
+            height={300}
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
+            priority
+            unoptimized
+          />
         </div>
         <div>
           <p style={{ marginBottom: "20px" }}>
             If you are considering moving to the UK for work or study,
-            understanding the details of the UK Sponsorship Visa is crucial. At
-            VJC Overseas, we provide expert guidance and support to ensure that
-            your visa application process is as smooth and successful as
-            possible.
+            understanding the details of the UK Sponsorship Visa is crucial. At{" "}
+            <Link
+              href="https://www.vjcoverseas.com/"
+              style={{ color: "orange" }}
+            >
+              Best Visa Immigration Consultants
+            </Link>
+            , we provide expert guidance and support to ensure that your visa
+            application process is as smooth and successful as possible.
           </p>
         </div>
       </div>
@@ -78,6 +89,17 @@ const Content = () => {
         educational institution. In both cases, the sponsor must hold a valid
         sponsorship license and be authorized to issue a certificate of
         sponsorship to the applicant.
+      </p>
+
+      {/* Added new sentence here */}
+      <p style={{ marginBottom: "20px" }}>
+        At{" "}
+        <Link href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>
+          VJC Overseas
+        </Link>
+        , we specialize in helping applicants understand the sponsorship
+        process, meet eligibility criteria, and submit strong, error-free
+        applications.
       </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
@@ -138,7 +160,14 @@ const Content = () => {
         </li>
         <li>
           <strong>Path to Permanent Residency:</strong> Most work-related visas
-          offer a pathway to Indefinite Leave to Remain (ILR) after five years.
+          offer a pathway to{" "}
+          <Link
+            href="https://www.vjcoverseas.com/pr-visas/uk-pr"
+            style={{ color: "orange" }}
+          >
+            UK Permanent Residency
+          </Link>{" "}
+          after five years.
         </li>
         <li>
           <strong>Family Support:</strong> Bring your spouse, children, and
@@ -183,7 +212,7 @@ const Content = () => {
       </ol>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-        Why Choose VJC Overseas?
+        Why Choose <b style={{ color: "black" }}>VJC Overseas</b>?
       </h3>
       <ul
         style={{
@@ -216,17 +245,32 @@ const Content = () => {
       <p style={{ marginBottom: "20px" }}>
         The UK Sponsorship Visa opens doors to incredible opportunities for
         international talent. Whether you’re seeking employment, education, or
-        professional growth, the UK offers a world of possibilities.
+        professional growth, the UK offers a world of possibilities, including{" "}
+        <Link
+          href="https://www.vjcoverseas.com/work-abroad/united-kingdom-work-permit"
+          style={{ color: "orange" }}
+        >
+          UK Skilled Immigration
+        </Link>
+        .
       </p>
       <p style={{ marginBottom: "20px" }}>
-        At VJC Overseas, we are dedicated to making your journey seamless. Our
-        experienced professionals will guide you every step of the way, ensuring
-        a successful application. Contact us today and let us help you achieve
-        your dreams in the UK!
+        At <b style={{ color: "black" }}>VJC Overseas</b>, we are dedicated to
+        making your journey seamless. Our experienced professionals will guide
+        you every step of the way, ensuring a successful application. Contact us
+        today and let us help you{" "}
+        <Link
+          href="https://vjcoverseas.com/migrate/united-kingdom"
+          style={{ color: "orange" }}
+        >
+          Migrate to United Kingdom
+        </Link>
+        !
       </p>
       <h3 style={{ color: "brown", fontWeight: "bold", marginBottom: "20px" }}>
-        Begin your UK journey with VJC Overseas — where your aspirations meet
-        our expertise.
+        Begin your <b style={{ color: "black" }}>UK journey</b> with{" "}
+        <b style={{ color: "black" }}>VJC Overseas</b> — where your aspirations
+        meet our expertise.
       </h3>
     </div>
   );

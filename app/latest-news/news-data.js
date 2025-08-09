@@ -388,6 +388,133 @@ export const allNews = [
 
 
 {
+  "title": "USA Government Offers Full Scholarships for International Students (2025): Bachelor’s, Master’s, and PhD Programs",
+  "summary": "In 2025, the U.S. Government is offering fully funded scholarships for international students to study at the top 16 universities in the USA. Here's everything you need to know about eligibility, benefits, and how to apply.",
+  "image": "/usa-phd-free-scholorships.png",
+  "tag": "Study in USA",
+  "readTime": "2 min read",
+  "content": `
+    <p>
+      In 2025, the <strong>U.S. Government</strong> is offering <strong>fully funded scholarships</strong> to international students for 
+      <strong>Bachelor’s, Master’s, and PhD programs</strong> at the <strong>top 16 universities in the United States</strong>. 
+      This initiative makes it possible to study in the U.S. with all major expenses covered.
+    </p>
+
+    <h2>What's Included in the Scholarship?</h2>
+    <p>The scholarship offers comprehensive financial support, including:</p>
+    <ul>
+      <li>100% tuition fee coverage</li>
+      <li>Monthly living allowance</li>
+      <li>Health insurance</li>
+      <li>Airfare to and from the U.S.</li>
+      <li>Research and academic materials stipend</li>
+    </ul>
+
+    <h2>Top U.S. Universities Covered</h2>
+    <p>The scholarships apply to leading universities such as:</p>
+    <ul>
+      <li>Harvard University</li>
+      <li>Massachusetts Institute of Technology (MIT)</li>
+      <li>Stanford University</li>
+      <li>Yale University</li>
+      <li>University of Chicago</li>
+      <li>Columbia University</li>
+      <li>Princeton University</li>
+      <li>UC Berkeley</li>
+      <li>Caltech</li>
+      <li>Johns Hopkins University</li>
+    </ul>
+
+    <h2>Who is Eligible?</h2>
+    <p>International students meeting the following criteria are eligible:</p>
+    <ul>
+      <li>Non-U.S. citizens</li>
+      <li>Excellent academic background</li>
+      <li>Strong leadership or extracurricular activities</li>
+      <li>Proof of English proficiency (TOEFL/IELTS)</li>
+      <li>Letters of recommendation and personal statement</li>
+    </ul>
+
+    <h2>Application Timeline (2025)</h2>
+    <ul>
+      <li><strong>Opens:</strong> August–September 2025</li>
+      <li><strong>Deadline:</strong> December 2025</li>
+      <li><strong>Program Starts:</strong> Fall 2026</li>
+    </ul>
+
+    <blockquote>
+      “These U.S. scholarships are not just financial aid—they're gateways to academic excellence, global exposure, and career growth.” – Education Consultant
+    </blockquote>
+
+    <h2>Application Tips</h2>
+    <ul>
+      <li>Start your application early and track deadlines.</li>
+      <li>Tailor your statement of purpose to reflect your goals and values.</li>
+      <li>Seek help from mentors or study abroad consultants for a strong application.</li>
+    </ul>
+
+    <p>
+      For expert guidance on applying to U.S. universities with scholarships, reach out to <strong>VJC Overseas</strong>. 
+      We’ll support you through every step—from choosing the right course to acing your application.
+    </p>
+  `
+},
+ 
+{
+  "title": "Switzerland Calling? New Schengen Visa Rules Could Change How Indians Travel",
+  "summary": "In 2025, Switzerland and the EU are introducing updated Schengen visa rules that may impact how Indian travelers apply, stay, and move across Europe. Here's what you need to know.",
+  "image": "/switzerland-schengen-visa-rules.webp",
+  "tag": "Schengen Visa Update",
+  "readTime": "2 min read",
+  "content": `
+    <p>
+      Planning a trip to Switzerland or Europe in 2025? The <strong>Schengen visa rules are getting an update</strong>—and Indian travelers need to pay attention. 
+      These new policies could affect visa duration, processing times, and even multi-country access within the Schengen zone.
+    </p>
+
+    <h2>🔁 What's Changing in Schengen Visa Policy?</h2>
+    <p>
+      The European Union, including Switzerland, is rolling out reforms to make visa processing more efficient and secure. Key updates include:
+    </p>
+    <ul>
+      <li>More flexible <strong>multi-entry visa options</strong></li>
+      <li><strong>Digital visa application</strong> platform to reduce paperwork</li>
+      <li>Faster processing for verified frequent travelers</li>
+      <li>Stricter background checks for first-time applicants</li>
+    </ul>
+
+    <h2>📍 How Does This Affect Indian Travelers?</h2>
+    <ul>
+      <li>Indian passport holders may find it easier to get multi-year, multi-entry visas</li>
+      <li>Schengen visa holders can still travel freely to countries like Switzerland, France, Germany, Italy, and more</li>
+      <li>New digital systems mean shorter consulate visits and faster document submissions</li>
+    </ul>
+
+    <h2>💼 Business & Student Travel Impact</h2>
+    <p>
+      For <strong>students and business travelers</strong>, these rule changes are significant. 
+      If you have a travel history to Schengen countries, you could qualify for longer-duration visas and fewer reapplications.
+    </p>
+
+    <blockquote>
+      “The new Schengen visa rules bring both opportunities and responsibilities. Frequent travelers with clean records will benefit most.” – Visa Consultant
+    </blockquote>
+
+    <h2>📝 Tips for Smooth Schengen Visa Approval</h2>
+    <ul>
+      <li>Apply at least 3–4 weeks before your travel date</li>
+      <li>Keep a consistent travel history and documentation</li>
+      <li>Submit confirmed hotel bookings and return flights</li>
+      <li>Use official digital platforms for faster processing</li>
+    </ul>
+
+    <p>
+      For the latest Schengen updates, personalized visa assistance, and fast-tracked applications, reach out to <strong>VJC Overseas</strong>. 
+      Whether it's Switzerland or all of Europe—your next adventure starts with the right visa.
+    </p>
+  `
+}, 
+{
   title: "Where can Indians travel visa-free in 2025? Here's the full list of 59 countries",
   summary: "As of 2025, Indian passport holders can travel to 59 countries without a visa or with visa-on-arrival/e-visa access. Here's the complete list and what you need to know.",
   image: "/indians-free-visas-for-54-countries.webp",

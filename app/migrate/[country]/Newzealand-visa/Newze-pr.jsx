@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Newzepr = () => {
   return (
@@ -14,24 +15,40 @@ const Newzepr = () => {
       </div>
 
       <p className="mb-4 text-gray-700">
-        Dreaming of a fresh start in a peaceful, progressive, and naturally stunning country? New Zealand offers more than just breathtaking landscapes — it’s a place to build a future, raise a family, and grow your career.
+        Dreaming of a fresh start in a peaceful, progressive, and naturally stunning country?{" "}
+        <Link href="https://vjcoverseas.com/pr-visas/new-zealand-pr" className="text-orange-600 font-semibold">
+          New Zealand Permanent Residency
+        </Link>{" "}
+        opens the door to world-class career opportunities, excellent education, and a safe lifestyle for you and your family. New Zealand offers more than just breathtaking landscapes — it’s a place to build a future, raise a family, and grow your career.
+      </p>
+      <p className="mb-4 text-gray-700">
+        If you’re looking for guidance from{" "}
+        <Link href="https://vjcoverseas.com/" className="text-orange-600 font-semibold">
+          Best Visa Immigration Consultants
+        </Link>
+        , our experts at{" "}
+        <Link href="https://vjcoverseas.com/" className="text-orange-600 font-semibold">
+          VJC Overseas
+        </Link>{" "}
+        ensure your migration journey is smooth, transparent, and stress-free from start to finish.
       </p>
       <p className="mb-6 text-gray-700">
         From its stable economy and high-quality education to its world-class healthcare and safe society, migrating to New Zealand can be one of the best decisions of your life.
       </p>
-<div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
-                <Image
-                  src="/migrate/migrate-newzealand.png"
-                  alt="Migrate - Apply Now"
-                  width={900}
-                  height={630}
-                  className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
-                  priority
-                  unoptimized
-                />
-              </div>
+
+      <div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+        <Image
+          src="/migrate/migrate-newzealand.png"
+          alt="Migrate - Apply Now"
+          width={900}
+          height={630}
+          className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+          priority
+          unoptimized
+        />
+      </div>
+
       <div className="flex flex-col lg:flex-row lg:space-x-6 mb-6">
-        
         <div>
           <h3 className='text-orange-600 font-bold text-lg mb-3 mt-4 lg:mt-0'>Why Choose New Zealand?</h3>
           <ul className='list-disc ml-6 text-gray-800'>
@@ -48,7 +65,12 @@ const Newzepr = () => {
       <ul className='list-disc ml-6 text-gray-800 mb-6'>
         <li><b>Skilled Migrant Category Resident Visa:</b> For skilled professionals who meet points-based criteria (EOI + invitation).</li>
         <li><b>Accredited Employer Work Visa (AEWV):</b> For those with a job offer from an accredited employer.</li>
-        <li><b>Student Visa:</b> Study full-time and work part-time; full-time during breaks.</li>
+        <li><b>Student Visa:</b> Study in{" "}
+          <Link href="https://www.vjcoverseas.com/study-abroad/newzealand" className="text-orange-600 font-semibold">
+            Study in New Zealand
+          </Link>{" "}
+          full-time and work part-time; work full-time during semester breaks.
+        </li>
         <li><b>Family & Partner Visas:</b> For spouses, partners, children, or parents of citizens or residents.</li>
         <li><b>Entrepreneur & Investor Visas:</b> For those starting or investing in NZ businesses.</li>
       </ul>
@@ -86,7 +108,11 @@ const Newzepr = () => {
 
       <h3 className='text-orange-600 font-bold text-lg mb-3'>Ready to Migrate to New Zealand?</h3>
       <p className='mb-4 text-gray-700'>
-        Now is the perfect time to begin your journey to a better life in New Zealand. Get a <b className="text-sky-600">free eligibility check</b>, explore your best visa options, and let our experts take care of the rest.
+        Whether you are applying for skilled migration, a student visa, or a{" "}
+        <Link href="https://vjcoverseas.com/migrate/new-zealand/work-visa" className="text-orange-600 font-semibold">
+          New Zealand Work visa
+        </Link>
+        , our experienced team will guide you at every step. Now is the perfect time to begin your journey to a better life in New Zealand. Get a <b className="text-sky-600">free eligibility check</b>, explore your best visa options, and let our experts take care of the rest.
       </p>
 
       <h3 className='text-orange-600 font-bold text-lg mb-3'>Contact Us</h3>

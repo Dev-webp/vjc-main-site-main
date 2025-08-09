@@ -14,8 +14,7 @@ const Newzestud = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          New Zealand Student Visa - VJC Overseas
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+          New Zealand Student Visa - <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
         </h3>
       </div>
       <h3 className="text-blue-500 text-center m-2 font-bold text-lg mb-6">
@@ -25,12 +24,12 @@ const Newzestud = () => {
       <p className="mb-6">
         New Zealand is a country known for its breath taking landscapes,
         welcoming people, and top-tier education system. If you’re planning to
-        study in New Zealand, obtaining a Student Visa is the first step toward
+        <a href="https://www.vjcoverseas.com/study-abroad/newzealand" style={{ color: "orange" }}> Study in New Zealand</a>, obtaining a Student Visa is the first step toward
         making your academic dreams a reality.
       </p>
 
       <p>
-        At VJC Overseas, we understand the significance of a smooth visa
+        At <a href="https://vjcoverseas.com/" style={{ color: "orange" }}>VJC Overseas</a>, we understand the significance of a smooth visa
         application process. Our experienced team is here to guide you through
         every step of applying for a New Zealand Student Visa, ensuring that you
         meet all the requirements and increase your chances of approval.
@@ -82,7 +81,7 @@ const Newzestud = () => {
       </h3>
       <p className="mb-6">
         There are several types of student visas based on the duration of your
-        course and other factors:
+        course and other factors. Many students who later aim for <a href="https://vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>New Zealand Permanent Residency</a> start with these visa types:
       </p>
       <ul className="list-decimal mb-6 ml-8">
         <li>
@@ -186,21 +185,24 @@ const Newzestud = () => {
       </p>
       <h3 className="text-black m-2 font-bold text-lg mb-6">Processing Time</h3>
       <p className="mb-6">
-        The processing time for a New Zealand Permanent Resident Visa typically
+        The processing time for a <a href="https://vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>Migrate to New Zealand</a> Permanent Resident Visa typically
         takes between 4 to 6 months from the date of submission, depending on
         the complexity of your application and the volume of applications being
         processed at that time. While processing times may vary, our experienced
-        team at VJC Overseas ensures your application is complete, accurate, and
+        team at <b style={{ color: "black" }}>VJC Overseas</b> ensures your application is complete, accurate, and
         submitted promptly, helping to speed up the process.
       </p>
       <h3 className="text-black m-2 font-bold text-lg mb-6">
         Why Choose VJC Overseas?
       </h3>
+      <p className="mb-6">
+        Choosing the <a href="https://vjcoverseas.com/" style={{ color: "orange" }}>Best Visa Immigration Consultants</a> can make all the difference in your
+        success rate.
+      </p>
       <ul className="list-decimal mb-6 ml-8">
         <li>
           <b>Expert Guidance: </b>Our immigration consultants are trained
-          professionals with years of experience in handling New Zealand PR
-          visas.
+          professionals with years of experience in handling <b style={{ color: "black" }}>New Zealand Permanent Residency</b> visas.
         </li>
         <li>
           <b>Tailored Solutions: </b>We provide tailored advice based on your
@@ -218,16 +220,16 @@ const Newzestud = () => {
       </ul>
       <h3 className="text-black m-2 font-bold text-lg mb-6">Processing Time</h3>
       <p className="mb-6">
-        Ready to take the first step toward studying in New Zealand? Contact VJC
-        Overseas today, and our team will help you with every aspect of your
-        Student Visa application. We’re here to make your journey smooth,
+        Ready to take the first step toward studying in <b style={{ color: "black" }}>New Zealand</b>? Contact <b style={{ color: "black" }}>VJC Overseas</b>
+        today, and our team will help you with every aspect of your Student Visa
+        application. We’re here to make your journey smooth,
         hassle-free, and successful!
       </p>
       <p className="mb-6">+91-91604490000 | www.vjcoverseas.com</p>
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <p className="mb-6">
         This content is designed to inform and guide prospective students about
-        the New Zealand Student Visa process, and provide clear details about
+        the <b style={{ color: "black" }}>New Zealand Student Visa</b> process, and provide clear details about
         the application steps, fees, and processing times.
       </p>
     </div>

@@ -27,14 +27,27 @@ const Newzetourist = () => {
         welcoming locals, is one of the world’s top destinations for travellers.
         Whether you're here to explore the stunning beaches, majestic mountains,
         or immerse yourself in the rich Maori heritage, a New Zealand Tourist
-        Visa is the first step toward making your dream vacation come true.
+        Visa is the first step toward making your dream vacation come true.{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          style={{ color: "orange", textDecoration: "none" }}
+        >
+          Best Visa Immigration Consultants
+        </a>
+        .
       </p>
       <p className="mb-6">
-        At VJC Overseas, we make the process of obtaining your New Zealand
-        Tourist Visa seamless and hassle-free. From the moment you reach out to
-        us, our expert team will guide you through the application process,
-        ensuring you meet all the necessary requirements for a successful visa
-        approval.
+        At{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          style={{ color: "orange", textDecoration: "none" }}
+        >
+          VJC Overseas
+        </a>
+        , we make the process of obtaining your New Zealand Tourist Visa seamless
+        and hassle-free. From the moment you reach out to us, our expert team
+        will guide you through the application process, ensuring you meet all the
+        necessary requirements for a successful visa approval.
       </p>
 
       <div className="flex mb-6 flex-col justify-center lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -55,7 +68,14 @@ const Newzetourist = () => {
       </h3>
       <p className="mb-6">
         New Zealand offers a range of visas based on the nature of your visit,
-        including:
+        including:{" "}
+        <a
+          href="https://vjcoverseas.com/pr-visas/new-zealand-pr"
+          style={{ color: "orange", textDecoration: "none" }}
+        >
+          New Zealand Permanent Residency
+        </a>
+        .
       </p>
       <ul className="mb-6 ml-8 list-decimal">
         <li className="mb-6">
@@ -84,7 +104,14 @@ const Newzetourist = () => {
       </h3>
       <p className="mb-6">
         To apply for a New Zealand Tourist Visa, you’ll need to meet certain
-        requirements:
+        requirements. Many students also{" "}
+        <a
+          href="https://www.vjcoverseas.com/study-abroad/newzealand"
+          style={{ color: "orange", textDecoration: "none" }}
+        >
+          Study in New Zealand
+        </a>{" "}
+        while exploring its beauty.
       </p>
       <ul className="list-disc mb-6 ml-8">
         <li>
@@ -117,7 +144,15 @@ const Newzetourist = () => {
       <p className="mb-6">
         The visa fee for a New Zealand Tourist Visa can vary depending on the
         specific type of visa you apply for. As of the latest update, the
-        approximate fees are as follows:
+        approximate fees are as follows. Many migrants choose this visa before
+        they{" "}
+        <a
+          href="https://vjcoverseas.com/migrate/new-zealand"
+          style={{ color: "orange", textDecoration: "none" }}
+        >
+          Migrate to New Zealand
+        </a>
+        .
       </p>
       <ul className="list-disc mb-6 ml-8">
         <li>
@@ -162,13 +197,14 @@ const Newzetourist = () => {
         Ready to Apply?
       </h3>
       <p className="mb-6">
-        Let VJC Overseas help you make your New Zealand adventure a reality.
-        Whether you’re planning a short getaway or a longer stay, we’re here to
-        ensure that your visa application is processed smoothly and efficiently.
+        Let <b>VJC Overseas</b> help you make your New Zealand adventure a
+        reality. Whether you’re planning a short getaway or a longer stay, we’re
+        here to ensure that your visa application is processed smoothly and
+        efficiently.
       </p>
       <p className="mb-6">
-        <b>Contact Us</b> today to begin your New Zealand Tourist Visa
-        application. We’re here to assist you every step of the way!
+       <b>Contact Us</b> today to begin your <b>New Zealand Tourist Visa</b> application. We’re here to assist you every step of the way!
+
       </p>
     </div>
   );
