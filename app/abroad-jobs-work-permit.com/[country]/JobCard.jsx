@@ -86,47 +86,61 @@ const JobCard = ({ job, styles, showSuccess }) => {
     }
   };
 
-  const fullDescription = `
-Join **${job.company}** as a **${job.title}** in **${job.location}**, **${job.country}**. We’re looking for someone with at least **${job.minExperience}+ years** of experience in **${job.domain}**.
-Your responsibilities will include managing inventory, optimizing freight logistics, collaborating with procurement teams, and ensuring seamless operations.
+  // Merge keywords from job.tags into the JD naturally
+  const keywordString = Array.isArray(job.tags) && job.tags.length
+    ? job.tags.map(tag => `• ${tag}`).join("\n")
+    : "";
+
+const fullDescription = `
+Join **${job.company}** as a **${job.title}** in **${job.location}**, **${job.country}**. 
+We are on the lookout for a highly skilled professional with **${job.minExperience}+ years** of proven expertise in the field of **${job.domain}**. 
+The ideal candidate will bring strong technical skills, leadership qualities, and the ability to work with cutting-edge tools and technologies, including ${job.tags.join(", ")}, as well as other advanced engineering resources.
+
+Your role will require you to take ownership of a variety of high-impact tasks, such as:
+- Managing and executing complex electrical circuit design projects from start to finish.
+- Creating detailed AutoCAD drafts and technical drawings to meet project specifications.
+- Leading system testing and troubleshooting to ensure flawless operation.
+- Overseeing procurement processes, tracking inventory, and ensuring timely availability of materials.
+- Coordinating with cross-functional teams, including project managers, designers, and procurement officers, to deliver projects on time.
+- Ensuring compliance with all relevant safety standards, regulatory guidelines, and engineering codes.
+- Monitoring and optimizing engineering processes to enhance efficiency and reduce costs.
+
+**Key Skills & Tools:**
+${keywordString}
 
 **Key Responsibilities:**
-- Oversee daily supply chain operations to meet company goals.
-- Optimize distribution and delivery schedules to improve efficiency.
-- Maintain accurate inventory records and manage stock levels.
-- Liaise with vendors, suppliers, and customers to ensure timely deliveries.
-- Implement and monitor KPIs to evaluate performance.
-- Manage budgets, costs, and resource allocation.
-- Ensure compliance with all import/export regulations and company policies.
-- Lead cross-functional teams to deliver supply chain improvements.
-- Work with technology teams to improve ERP & supply chain tools.
-- Identify and mitigate supply chain risks.
+- Oversee daily engineering operations to ensure that all deliverables are met within defined timelines.
+- Optimize resource allocation and ensure efficiency in design and execution phases.
+- Maintain accurate, up-to-date technical documentation for all ongoing projects.
+- Establish and manage relationships with vendors and suppliers to ensure the timely delivery of components.
+- Implement Key Performance Indicators (KPIs) to evaluate and improve system performance.
+- Drive innovation initiatives to enhance system reliability, reduce downtime, and improve product quality.
 
 **Required Skills:**
-- Strong problem-solving and analytical skills.
-- Proficiency in supply chain software (SAP, Oracle, etc.).
-- Excellent communication and negotiation abilities.
-- Ability to manage multiple priorities in a fast-paced environment.
-- Leadership skills with experience managing teams.
+- Strong problem-solving and analytical thinking abilities for tackling technical challenges.
+- Advanced proficiency with CAD tools, simulation software, and electrical testing equipment.
+- Excellent communication and documentation skills to convey complex ideas clearly.
+- Proven ability to manage multiple priorities in a high-performance, fast-paced environment.
 
 **Preferred Qualifications:**
-- Bachelor's degree in Supply Chain Management or related field.
-- Certification in logistics or operations management (APICS, CSCP, etc.).
-- Experience in international logistics and customs clearance.
+- A Bachelor's degree in Electrical Engineering, Electronics, or a related technical field.
+- Professional certifications in electronics, automation systems, or related disciplines.
+- Demonstrated experience in managing large-scale, international engineering projects.
 
 **Additional Perks:**
-- Competitive salary and performance-based bonuses.
-- Health insurance and retirement benefits.
-- Opportunities for career growth and professional development.
-- A collaborative, dynamic, and diverse work culture.
+- A competitive salary of **${job.salary}**, supplemented by project-based performance incentives.
+- Comprehensive health coverage and career growth programs tailored to your professional development.
+- Opportunities to work with advanced engineering technologies and global project teams.
 
-If you are ready to take on this challenging yet rewarding role, apply today via **[vjcoverseas.com](https://vjcoverseas.com)** and become part of a forward-thinking organization driving change in the industry.
+If you are ready to take the next big step in your career, apply via 
+**[vjcoverseas.com](https://vjcoverseas.com)** and become an integral part of an innovative engineering team that values skill, dedication, and forward-thinking solutions.
 `;
+
 
   const formatDescription = (text) => {
     return text
-      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>") // bold headings & keywords
-      .replace(/\b(\d+\+?\s?years?)\b/gi, "<strong>$1</strong>") // bold years of experience
+      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+      .replace(/\b(\d+\+?\s?years?)\b/gi, "<strong>$1</strong>")
       .replace(
         /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
         `<a href="$2" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-orange-500">$1</a>`
