@@ -19,17 +19,64 @@ const UAEstud = () => {
         </h2>
 
         <p className="mb-4 text-gray-800">
-          Looking to advance your career, grow a business, or enjoy a luxurious
-          lifestyle? Migrating to the UAE offers unmatched economic growth,
-          tax-free income, and a cosmopolitan living environment right at the
-          crossroads of Asia, Europe, and Africa.
-          </p>
-        <p className="mb-4 text-gray-800">
-          With booming industries, world-class infrastructure, and vibrant
-          multicultural cities like Dubai and Abu Dhabi, the UAE attracts
-          professionals, entrepreneurs, students, and families from all over the
-          world.
+          Looking to elevate your career, expand your business, or embrace a
+          luxurious lifestyle? Migrating to the UAE offers unmatched
+          possibilities — from tax-free income to world-class infrastructure —
+          all in a country that sits at the crossroads of Asia, Europe, and
+          Africa. With booming industries and vibrant cities like Dubai and Abu
+          Dhabi, it’s no surprise that the UAE has become a global hub for
+          professionals, entrepreneurs, students, and families.
         </p>
+
+        <p className="mb-4 text-gray-800">
+          At{" "}
+          <b className="font-bold text-black">VJC Overseas</b>
+          , one of the{" "}
+          <a
+            href="https://vjcoverseas.com/"
+            className="font-bold text-orange-600 no-underline"
+          >
+            Best Visa Immigration Consultants
+          </a>{" "}
+          for Middle East migration, we guide you through every step of the
+          process with precision and care. Whether you’re aiming for employment,
+          investment, or education, we help you secure the right visa pathway
+          while making your move seamless and stress-free.
+        </p>
+
+        <h3 className="text-lg font-bold text-sky-600 mt-6 mb-2">
+          Why Migrate to the UAE?
+        </h3>
+        <ul className="list-disc ml-6 mb-4 text-gray-700">
+          <li>
+            <b>Rapid Economic Growth —</b> Thriving industries such as finance,
+            real estate, tourism, technology, and renewable energy
+          </li>
+          <li>
+            <b>Modern Infrastructure —</b> Iconic skyscrapers, efficient
+            transport, and smart city innovations
+          </li>
+          <li>
+            <b>Flexible Visa Options —</b> From employment permits to long-term
+            residency schemes
+          </li>
+          <li>
+            <b>Tax-Free Income —</b> Maximize your earning potential without
+            personal income tax
+          </li>
+          <li>
+            <b>Diverse & Inclusive Society —</b> Expats make up over 80% of the
+            population
+          </li>
+          <li>
+            <b>Top-tier Education & Healthcare —</b> International schools and
+            advanced medical facilities
+          </li>
+          <li>
+            <b>Unmatched Lifestyle —</b> Year-round sunshine, luxury shopping,
+            beaches, and cultural experiences
+          </li>
+        </ul>
 
         <div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
           <Image
@@ -43,39 +90,18 @@ const UAEstud = () => {
           />
         </div>
 
-        <h3 className="text-lg font-bold text-sky-600 mt-6 mb-2">
-          Why Migrate to the UAE?
-        </h3>
-        <ul className="list-disc ml-6 mb-4 text-gray-700">
-          <li>
-            <b>Rapid Economic Growth —</b> Leading sectors include finance, real
-            estate, tourism, technology, and renewable energy
-          </li>
-          <li>
-            <b>Modern Infrastructure —</b> Iconic skyscrapers, advanced
-            transport, and smart city initiatives
-          </li>
-          <li>
-            <b>Flexible Visa Options —</b> From work permits and golden visas to
-            student and family residency visas
-          </li>
-          <li>
-            <b>Tax-Free Income —</b> Personal income tax exemption enhances your
-            earning potential
-          </li>
-          <li>
-            <b>Diverse & Inclusive —</b> Expats make up over 80% of the
-            population, creating a truly global community
-          </li>
-          <li>
-            <b>Quality Education & Healthcare —</b> International schools and
-            hospitals with world-class standards
-          </li>
-          <li>
-            <b>Excellent Lifestyle —</b> Year-round sunshine, luxury shopping,
-            beaches, and entertainment
-          </li>
-        </ul>
+        <p className="mb-4 text-gray-800">
+          Many new residents start with work or business opportunities and later
+          explore study options, such as enrolling in top universities under
+          the{" "}
+          <a
+            href="https://vjcoverseas.com/study-abroad/uae"
+            className="font-bold text-orange-600 no-underline"
+          >
+            Study in UAE
+          </a>{" "}
+          pathway.
+        </p>
 
         <h3 className="text-lg font-bold text-orange-600 mt-6 mb-2">
           Popular UAE Visa Categories
@@ -83,40 +109,59 @@ const UAEstud = () => {
         <ul className="list-disc ml-6 mb-4 text-gray-700">
           <li>
             <b>Employment Visa</b> – For skilled professionals with job offers
-            in the UAE’s in-demand sectors
+            from UAE-based employers
           </li>
           <li>
-            <b>Student Visa</b> – For international students enrolled in UAE
-            universities or colleges
+            <b>Student Visa</b> – For international students enrolled in
+            recognized institutions
           </li>
           <li>
-            <b>Investor & Business Visa</b> – Long-term residence options under
-            the UAE Golden Visa program
+            <b>Investor & Business Visa</b> – Often linked to the prestigious
+            Golden Visa program
           </li>
           <li>
-            <b>Family Visa</b> – For spouses, children, and dependents of UAE
-            residents
+            <b>Family Visa</b> – For dependents of UAE residents
           </li>
           <li>
             <b>Golden Visa</b> – 5- or 10-year renewable residency for
-            exceptional talents, investors, entrepreneurs, and students
+            exceptional talents and investors
           </li>
         </ul>
+
+        <p className="mb-4 text-gray-800">
+          If your goal is career advancement, the{" "}
+          <a
+            href="https://vjcoverseas.com/migrate/uae/work-visa"
+            className="font-bold text-orange-600 no-underline"
+          >
+            UAE Work Visa
+          </a>{" "}
+          is one of the most sought-after permits, opening doors to high-demand
+          industries and competitive salaries. For those seeking more stability
+          and freedom, the{" "}
+          <a
+            href="https://www.vjcoverseas.com/migrate/uae/green-visa"
+            className="font-bold text-orange-600 no-underline"
+          >
+            UAE Green Visa
+          </a>{" "}
+          offers long-term residency without employer sponsorship, making it
+          ideal for freelancers, investors, and skilled professionals.
+        </p>
 
         <h3 className="text-lg font-bold text-sky-600 mt-6 mb-2">
           Who Can Migrate to the UAE?
         </h3>
         <ul className="list-disc ml-6 mb-4 text-gray-700">
-          <li>Have a valid job offer from a UAE-based employer</li>
+          <li>Have a valid job offer from a UAE employer</li>
           <li>
-            Are an investor or entrepreneur ready to establish or grow a
-            business
+            Are an investor or entrepreneur starting or expanding a business
           </li>
           <li>Are pursuing higher education in the UAE</li>
-          <li>Have close family members legally residing in the UAE</li>
+          <li>Have close family members who are UAE residents</li>
           <li>
-            Qualify for long-term Golden Visa programs based on talent or
-            investment
+            Qualify for long-term residency through investment or talent
+            recognition
           </li>
         </ul>
 
@@ -124,54 +169,65 @@ const UAEstud = () => {
           UAE Migration Process – How It Works
         </h3>
         <ul className="list-decimal ml-6 mb-4 text-gray-700">
-          <li>Determine Your Visa Type</li>
+          <li>Determine Your Visa Type – Based on work, business, study, or family connections</li>
           <li>
-            Prepare Documentation (passport, job offer, financials, education
-            certificates)
+            Prepare Documentation – Passport, job offer letter, financial proof, and educational certificates
           </li>
-          <li>Submit Application via UAE Immigration or Sponsor</li>
-          <li>Undergo Medical Tests and Biometrics</li>
-          <li>Receive Visa Approval & Entry Permit</li>
+          <li>Submit Application – Through UAE immigration portals or via an employer/sponsor</li>
+          <li>Medical Tests & Biometrics – Required for most residency permits</li>
+          <li>Receive Approval & Entry Permit – Travel to the UAE with legal authorization</li>
           <li>
-            Complete Residency Formalities Upon Arrival (Emirates ID, Health
-            Insurance)
+            Complete Residency Formalities – Emirates ID registration, health insurance, and visa stamping
           </li>
-          <li>Enjoy Life and Work in the UAE</li>
+        </ul>
+
+        <h3 className="text-lg font-bold text-sky-600 mt-6 mb-2">
+          How VJC Overseas Supports Your Journey
+        </h3>
+        <p className="mb-4 text-gray-800">
+          We specialize in simplifying the UAE migration process with:
+        </p>
+        <ul className="list-disc ml-6 mb-4 text-gray-700">
+          <li>Tailored eligibility assessments</li>
+          <li>Professional visa application preparation</li>
+          <li>Job search and employer sponsorship guidance</li>
+          <li>Investor visa and Golden Visa advisory services</li>
+          <li>Pre-departure and post-arrival relocation assistance</li>
         </ul>
 
         <h3 className="text-lg font-bold text-sky-600 mt-6 mb-2">
           Target SEO Keywords
         </h3>
         <ul className="list-disc ml-6 mb-4 text-gray-700">
-          <li>Migrate to UAE from India / Philippines / Egypt</li>
-          <li>UAE work visa requirements 2025</li>
-          <li>How to get UAE Golden Visa</li>
-          <li>UAE student visa process</li>
-          <li>UAE residency visa for investors</li>
-          <li>Family visa in UAE</li>
+          Best Visa Immigration Consultants
+          VJC Overseas
+          Study in UAE
+          UAE Work Visa
+          UAE Green Visa
+          Migrate to UAE from India / Philippines / Egypt
+          UAE work visa requirements 2025
+          How to get UAE Golden Visa
+          UAE student visa process
+          UAE residency visa for investors
+          Family visa in UAE
         </ul>
 
         <h3 className="text-lg font-bold text-orange-600 mt-6 mb-2">
-          How We Support Your UAE Migration Journey
-        </h3>
-        <p className="mb-4 text-gray-800">
-          At VJC Overseas, we specialize in simplifying your move to the UAE:
-        </p>
-        <ul className="list-disc ml-6 mb-4 text-gray-700">
-          <li>Personalized visa eligibility assessments</li>
-          <li>Professional visa application assistance</li>
-          <li>Job search and sponsorship support</li>
-          <li>Investor visa and Golden Visa advisory</li>
-          <li>Pre-departure and post-arrival relocation services</li>
-        </ul>
-
-        <h3 className="text-lg font-bold text-sky-600 mt-6 mb-2">
           Ready to Start Your UAE Migration?
         </h3>
         <p className="mb-4 text-gray-800">
-          The UAE is more than a destination — it’s your next chapter of success
-          and adventure.
+          The UAE is more than a destination — it’s a platform for success.{" "}
+          <a
+            href="https://vjcoverseas.com/"
+            className="font-bold text-orange-600 no-underline"
+          >
+            VJC Overseas
+          </a>{" "}
+          can help you achieve your dreams. Whether your goal is professional
+          growth, academic advancement, or entrepreneurial expansion, the right
+          visa pathway can make it happen.
         </p>
+
         <ul className="list-disc ml-6 mb-4 text-gray-700">
           <li>Explore your best visa options</li>
           <li>Receive tailored advice from migration experts</li>
@@ -180,6 +236,10 @@ const UAEstud = () => {
         <p className="text-center font-semibold text-orange-600">
           Contact us today for a free consultation and take your first step
           toward thriving in the UAE!
+        </p>
+
+        <p className="mt-4 text-gray-800">
+          Call us at +91-9160449000 or visit www.vjcoverseas.com to get started.
         </p>
       </div>
     </div>

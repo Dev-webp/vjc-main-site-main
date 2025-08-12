@@ -79,7 +79,7 @@ const Form = () => {
       style={{ fontFamily: 'Times New Roman, serif' }}
     >
       <h2 className="text-2xl font-semibold text-center  text-white mt-0">
-        Sign up <span style={{ color: 'rgb(220, 4, 4)' }}> &</span> Get Free Assessment
+        Sign up <span style={{ color: 'rgb(220, 4, 4)' }}> &</span> Get Free Job Assistance
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -178,7 +178,7 @@ const Form = () => {
             disabled={loading}
            className="w-full bg-gray-950 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 shadow-lg mt-2 sm:mt-0 -mb-2 sm:mb-0"
           >
-            {formStatus === 'success' ? 'Form Submitted!' : loading ? 'Submitting...' : 'Submit for Free Assessment'}
+            {formStatus === 'success' ? 'Form Submitted!' : loading ? 'Submitting...' : 'Submit for Job Assistance'}
           </button>
         </div>
       </form>

@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
-export default function TrustedVisaSection() {
+export default function TrustedVisaSection({ setIsOpen }) {
   return (
     <section className="relative bg-white py- px-6 md:pl-20 md:px-16 overflow-hidden">
       {/* Background Image */}
@@ -67,13 +66,14 @@ export default function TrustedVisaSection() {
             </div>
           </div>
 
-          <Link
-              href="/pr-visas/canadapr"
-              className="relative overflow-hidden inline-block px-6 py-3 mt-6 rounded-md font-semibold text-white bg-orange-500 group"
-            >
-              <span className="relative z-10">Explore Canada PR</span>
-              <span className="absolute inset-0 bg-sky-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-            </Link>
+          {/* Button opens popup */}
+          <button
+            onClick={() => setIsOpen(true)}
+            className="relative overflow-hidden inline-block px-6 py-3 mt-6 rounded-md font-semibold text-white bg-orange-500 group"
+          >
+            <span className="relative z-10">Explore Canada PR</span>
+            <span className="absolute inset-0 bg-sky-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+          </button>
         </motion.div>
 
         {/* Right Image */}

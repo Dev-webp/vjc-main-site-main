@@ -1,7 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
+  // custom class to disable underline on hover & normal for links
+  const noUnderlineLinkClass =
+    "text-orange-600 font-bold hover:no-underline no-underline";
+
   return (
     <div
       style={{
@@ -24,32 +29,42 @@ const Content = () => {
       <div className="flex flex-col lg:flex-row items-start gap-4 mb-6">
         <div className="lg:w-2/3">
           <p style={{ marginBottom: "20px" }}>
-            At VJC Overseas, we specialize in helping families reunite in Hong
-            Kong by providing expert services for the Hong Kong Dependent Visa.
-            Whether you're joining a spouse, parent, or child who is a Hong
-            Kong resident, we are here to guide you through the entire visa
-            application process. With our in-depth knowledge of Hong Kong
-            immigration laws and efficient service, you can be assured of a
-            smooth application process.
+            At{" "}
+            <span style={{ fontWeight: "bold", color: "black" }}>VJC Overseas</span>
+            , we understand how important it is for families to be together,
+            especially when relocating internationally. Our dedicated team
+            specializes in assisting applicants for the Hong Kong Dependent
+            Visa, ensuring that every step of the process is handled with
+            professionalism, accuracy, and care. Whether you are joining a
+            spouse, parent, or child who is already a Hong Kong resident, our
+            mission is to make the visa journey stress-free so you can focus on
+            reuniting with your loved ones.
           </p>
           <p style={{ marginBottom: "20px" }}>
-            Our team works closely with you from the initial consultation to the
-            final approval, ensuring every step is handled with care and
-            precision. We aim to simplify the visa process, so you can focus on
-            reuniting with your loved ones.
+            With years of expertise and recognition as one of the{" "}
+            <Link
+              href="https://vjcoverseas.com/"
+              className={noUnderlineLinkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Best Visa Immigration Consultants
+            </Link>
+            , we provide a complete end-to-end service — from consultation and
+            eligibility checks to document preparation, submission, and
+            follow-up with immigration authorities.
           </p>
         </div>
         <div className="lg:w-1/3">
-         <Image
-              src="/hong-kongdependtentvisa.jpg"
-              alt="Image description"
-              width={500} // Replace with your image's actual width
-              height={300}
-              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
-              priority
-              unoptimized
-            />
-       
+          <Image
+            src="/hong-kongdependtentvisa.jpg"
+            alt="Hong Kong Dependent Visa - VJC Overseas"
+            width={500} // Replace with your image's actual width
+            height={300}
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
+            priority
+            unoptimized
+          />
         </div>
       </div>
 
@@ -65,25 +80,25 @@ const Content = () => {
             What is the Hong Kong Dependent Visa?
           </h3>
           <p style={{ marginBottom: "20px" }}>
-            The Hong Kong Dependent Visa allows dependents (spouses, children,
-            or parents) of individuals who are Hong Kong permanent residents, or
-            holders of a Hong Kong Employment or Investment Visa, to live in
-            Hong Kong. This visa is designed to help families stay together
-            while one member works or resides in Hong Kong.
+            The Hong Kong Dependent Visa is designed to allow eligible family
+            members of Hong Kong permanent residents or holders of visas such as
+            the Hong Kong Employment Visa or Investment Visa to live in Hong
+            Kong. It’s a crucial pathway for families who wish to maintain close
+            bonds while one member is working, studying, or doing business in
+            the city.
           </p>
-          <p style={{ marginBottom: "20px" }}>Dependents may include:</p>
+          <p style={{ marginBottom: "20px" }}>Dependents under this visa category may include:</p>
           <ul style={{ marginBottom: "20px" }}>
             <li>
-              Spouses: Legally married partners (same-sex marriage is also
-              accepted).
+              Spouses: Legally married partners (including same-sex marriages
+              recognized in the sponsor’s country).
             </li>
             <li>
-              Children: Unmarried children under the age of 18, or those over 18
-              but financially dependent due to mental or physical disabilities.
+              Children: Unmarried children under the age of 18, or adult children
+              who are financially dependent due to physical or mental conditions.
             </li>
             <li>
-              Parents: Parents of a Hong Kong resident, if they are financially
-              dependent.
+              Parents: Dependent parents of a Hong Kong resident or visa holder.
             </li>
           </ul>
 
@@ -94,26 +109,37 @@ const Content = () => {
               marginBottom: "20px",
             }}
           >
-            Eligibility Criteria
+            Who is Eligible to Apply?
           </h3>
           <p style={{ marginBottom: "20px" }}>
-            To be eligible for a Hong Kong Dependent Visa, the sponsor (the
-            primary visa holder) must meet certain criteria, including:
+            To qualify for a Dependent Visa, the sponsor must:
           </p>
           <ul style={{ marginBottom: "20px" }}>
             <li>
-              Being a Hong Kong permanent resident or a holder of a valid
-              employment, investment, or other relevant visa.
+              Be a Hong Kong permanent resident or hold a valid visa such as an{" "}
+              <Link
+                href="https://www.vjcoverseas.com/migrate/hong-kong/employment-visa"
+                className={noUnderlineLinkClass}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Migrate to Hong Kong Employment Visa
+              </Link>
+              , investment, or other eligible visa.
             </li>
             <li>
-              The sponsor must be able to prove they can financially support
-              their dependents.
+              Demonstrate financial ability to support the dependent(s) without
+              relying on public assistance.
             </li>
             <li>
-              Dependents must meet the general immigration requirements,
-              including having no criminal record.
+              Provide suitable accommodation for the dependent(s).
             </li>
           </ul>
+          <p style={{ marginBottom: "20px" }}>
+            In addition, the applicant must satisfy the general immigration
+            requirements, such as having no criminal record and being in good
+            health.
+          </p>
 
           <h3
             style={{
@@ -122,29 +148,34 @@ const Content = () => {
               marginBottom: "20px",
             }}
           >
-            Application Process
+            Step-by-Step Hong Kong Dependent Visa Process
           </h3>
           <ol style={{ marginBottom: "20px" }}>
             <li>
-              <strong>Preparation of Documents:</strong> We help you gather and
-              prepare all necessary documents, including proof of relationship,
-              financial statements, and sponsor’s documents.
+              <strong>Consultation & Eligibility Assessment:</strong> At{" "}
+              <span style={{ fontWeight: "bold", color: "black" }}>VJC Overseas</span>, we start with an in-depth review of your
+              circumstances to confirm eligibility and prepare a customized
+              checklist.
             </li>
             <li>
-              <strong>Application Submission:</strong> Once all documents are in
-              order, we will submit your application to the Hong Kong
-              Immigration Department.
+              <strong>Document Preparation:</strong> We assist with compiling all
+              essential documents, including relationship proof, sponsor’s
+              identity papers, financial records, and accommodation details.
             </li>
             <li>
-              <strong>Visa Approval:</strong> The processing time typically
-              takes between 4 to 8 weeks. However, this can vary depending on
-              individual circumstances or if additional information is required.
+              <strong>Application Submission:</strong> Your application is filed
+              with the Hong Kong Immigration Department, following all
+              procedural guidelines.
             </li>
             <li>
-              <strong>Visa Issuance:</strong> Upon approval, the dependent visa
-              will be issued. If the applicant is overseas, they may need to
-              submit their passport to the nearest Hong Kong consulate for
-              stamping.
+              <strong>Application Review & Processing:</strong> Typical
+              processing takes 4–8 weeks, though complex cases may require more
+              time.
+            </li>
+            <li>
+              <strong>Visa Issuance & Entry:</strong> Upon approval, the visa
+              label or entry permit is issued, allowing you to travel and begin
+              your life in Hong Kong with your family.
             </li>
           </ol>
 
@@ -155,15 +186,23 @@ const Content = () => {
               marginBottom: "20px",
             }}
           >
-            Processing Time
+            Processing Time & Fees
           </h3>
           <p style={{ marginBottom: "20px" }}>
-            The processing time for the Hong Kong Dependent Visa typically
-            ranges from 4 to 8 weeks. However, some cases may take longer
-            depending on the complexity of the application or additional
-            documentation requested by the Immigration Department. We at VJC
-            Overseas are committed to providing timely updates and ensuring a
-            smooth process from start to finish.
+            Standard Processing: Usually 4–8 weeks.
+          </p>
+          <p style={{ marginBottom: "20px" }}>
+            Visa Fee: HKD 230 per dependent.
+          </p>
+          <p style={{ marginBottom: "20px" }}>
+            Additional Costs: May apply for extensions, translations, or
+            expedited services.
+          </p>
+          <p style={{ marginBottom: "20px" }}>
+            Our consultants at{" "}
+            <span style={{ fontWeight: "bold", color: "black" }}>VJC Overseas</span>{" "}
+            will keep you informed at every stage, ensuring you always know
+            where your application stands.
           </p>
 
           <h3
@@ -173,23 +212,33 @@ const Content = () => {
               marginBottom: "20px",
             }}
           >
-            Visa Fees
+            Why Hong Kong is Ideal for Families
           </h3>
-          <ul style={{ marginBottom: "20px" }}>
-            <li>
-              <strong>Visa Application Fee:</strong> HKD 230 (for each dependent
-              application).
-            </li>
-            <li>
-              <strong>Additional Charges:</strong> There may be additional
-              charges for specific services, such as visa extensions or document
-              translations, depending on your case.
-            </li>
-          </ul>
           <p style={{ marginBottom: "20px" }}>
-            Please note that these fees are subject to change, and we will
-            provide an accurate estimate when you consult with us for your
-            specific application.
+            When you{" "}
+            <Link
+              href="https://www.vjcoverseas.com/migrate/hong-kong/"
+              className={noUnderlineLinkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Migrate to Hong Kong
+            </Link>{" "}
+            (read more here), you’re choosing one of the safest, cleanest, and
+            most modern cities in the world. Families benefit from excellent
+            public transport, a low crime rate, and access to world-class
+            education. If your children plan to further their academics,
+            opportunities to{" "}
+            <Link
+              href="https://www.vjcoverseas.com/study-abroad/hongkong"
+              className={noUnderlineLinkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Study in Hong Kong
+            </Link>{" "}
+            are abundant, with top-ranking universities and diverse
+            international schools available.
           </p>
 
           <h3
@@ -199,25 +248,24 @@ const Content = () => {
               marginBottom: "20px",
             }}
           >
-            Why Choose VJC Overseas?
+            Why Choose VJC Overseas for Your Dependent Visa?
           </h3>
           <ul style={{ marginBottom: "20px" }}>
             <li>
-              Expert Knowledge: Our team has a deep understanding of Hong Kong
-              immigration policies, ensuring your application complies with all
-              requirements.
+              Proven Expertise: Years of successful Hong Kong visa applications
+              from{" "}
+              <span style={{ fontWeight: "bold", color: "black" }}>VJC Overseas</span>.
             </li>
             <li>
-              Personalized Service: We provide tailored assistance for your
-              unique situation, ensuring you meet all eligibility criteria.
+              Personalized Guidance: Every family situation is unique, and we
+              tailor our approach accordingly.
             </li>
             <li>
-              Efficiency: We handle all the paperwork and submission process to
-              ensure a seamless and hassle-free experience.
+              Full-Service Assistance: From form filling to liaising with
+              immigration, we handle everything.
             </li>
             <li>
-              Transparent Pricing: We provide clear and upfront information
-              about all fees, with no hidden charges.
+              Transparency: Clear fee structures and no hidden charges.
             </li>
           </ul>
 
@@ -228,13 +276,14 @@ const Content = () => {
               marginBottom: "20px",
             }}
           >
-            Get Started Today
+            Begin Your Family’s New Chapter in Hong Kong
           </h3>
           <p style={{ marginBottom: "20px" }}>
-            Whether you're planning to reunite with your family in Hong Kong or
-            seeking advice on your dependent visa application, VJC Overseas is
-            here to help. Contact us today to schedule a consultation and begin
-            your journey towards living in Hong Kong with your loved ones.
+            Whether your goal is to join a spouse on an employment visa or to
+            bring your children to one of Asia’s top education hubs,{" "}
+            <span style={{ fontWeight: "bold", color: "black" }}>VJC Overseas</span>{" "}
+            is here to make it happen. We simplify the immigration process so you
+            can focus on the moments that matter most — being together.
           </p>
           <p
             style={{
@@ -243,8 +292,17 @@ const Content = () => {
               fontSize: "15px",
             }}
           >
-            For inquiries or further assistance, feel free to reach out to us
-            via phone or email, or fill out the contact form on our website.
+            Call us today at +91-9160449000 or visit our website{" "}
+            <Link
+              href="https://vjcoverseas.com/"
+              className={noUnderlineLinkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              VJC Overseas
+            </Link>{" "}
+            to schedule your consultation and start your journey toward living
+            together in Hong Kong.
           </p>
         </div>
       </div>

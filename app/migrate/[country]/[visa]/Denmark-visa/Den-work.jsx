@@ -13,11 +13,11 @@ const Denwork = () => {
       }}
     >
       <div style={{ marginBottom: "5%" }}>
-        <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          Denmark Work Permit Visa - VJC Overseas
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
-        </h3>
-      </div>
+  <h3 className="text-2xl mt-4 font-semibold text-black text-center">
+    Denmark Work Permit Visa - <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+  </h3>
+</div>
+
 
       <p className="mb-6">
         Looking to work in Denmark? Denmark offers an excellent work-life
@@ -26,19 +26,27 @@ const Denwork = () => {
         seeking employment in tech, healthcare, engineering, or other fields, a
         Denmark Work Permit Visa is the first step to achieving your career
         goals in one of the happiest and most progressive countries in Europe.
+        We are recognized among the{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Best Visa Immigration Consultants
+        </a>{" "}
+        for our expertise.
       </p>
       <p className="mb-6">
-        At <b>VJC Overseas</b>, we specialize in guiding you through the process
-        of obtaining a Denmark Work Permit Visa. With our expert team by your
-        side, you can confidently navigate the visa process and begin your
-        professional journey in Denmark.
+        At <b>VJC Overseas</b>, we specialize in guiding you through the process of obtaining a{" "}
+        Denmark Work Permit Visa. With our expert team by your side, you
+        can confidently navigate the visa process and begin your professional
+        journey in Denmark.
       </p>
       <div className="flex mb-6 flex-col justify-center lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <Image
             src="/assets/Denworkpermit.png"
             alt="Australia Business Visa"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             priority
             unoptimized
@@ -83,13 +91,20 @@ const Denwork = () => {
       <p className="mb-6">
         Each visa type has specific criteria and documentation requirements. Our
         team at <b>VJC Overseas</b> will help you determine which work permit
-        option is best for your skills and career aspirations.
+        option is best for your skills and career aspirations. Many clients who{" "}
+        <a
+          href="https://vjcoverseas.com/study-abroad/denmark"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Study in Denmark
+        </a>{" "}
+        later transition to a Denmark Work Permit Visa.
       </p>
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <h4 className="mb-6 text-lg font-bold text-bold">Eligibility Criteria</h4>
       <p className="mb-6">
-        To be eligible for a Denmark Work Permit Visa, you generally need to
-        meet the following criteria:
+        To be eligible for a Denmark Work Permit Visa, you generally need
+        to meet the following criteria:
       </p>
       <ul className="mb-6 ml-8 list-disc">
         <li>A valid job offer from a recognized employer in Denmark.</li>
@@ -109,9 +124,9 @@ const Denwork = () => {
         Denmark Work Permit Visa Processing Time
       </h4>
       <p className="mb-6">
-        The processing time for a Denmark Work Permit Visa typically varies
-        depending on the type of work permit and your specific case. On average,
-        you can expect:
+        The processing time for a Denmark Work Permit Visa typically
+        varies depending on the type of work permit and your specific case. On
+        average, you can expect:
       </p>
       <ul className="mb-6 ml-8 list-disc">
         <li>
@@ -127,7 +142,14 @@ const Denwork = () => {
       <p className="mb-6">
         We recommend applying well in advance to ensure there are no delays,
         particularly if you need to secure housing or other arrangements before
-        arrival.
+        arrival. We also assist those who{" "}
+        <a
+          href="https://www.vjcoverseas.com/migrate/denmark"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Migrate to Denmark
+        </a>{" "}
+        for work purposes.
       </p>
       <hr style={{ borderColor: "black" }} className="mb-6" />
 
@@ -135,8 +157,8 @@ const Denwork = () => {
         Denmark Work Permit Visa Fees
       </h4>
       <p className="mb-6">
-        The visa fees for a Denmark Work Permit Visa vary depending on the type
-        of permit you are applying for. On average:
+        The visa fees for a Denmark Work Permit Visa vary depending on
+        the type of permit you are applying for. On average:
       </p>
       <ul className="mb-6 ml-8 list-disc">
         <li>
@@ -156,7 +178,14 @@ const Denwork = () => {
         work permit, and any additional services you may require, such as
         expedited processing or biometric data collection. <b>VJC Overseas</b>{" "}
         will provide you with an exact breakdown of the costs involved based on
-        your specific application.
+        your specific application. We even support applicants for{" "}
+        <a
+          href="https://www.vjcoverseas.com/migrate/denmark/business-visa"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Denmark Business Visa
+        </a>{" "}
+        applications.
       </p>
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <h4 className="mb-6 font-bold text-lg text-bold">
@@ -187,8 +216,14 @@ const Denwork = () => {
         </li>
       </ul>
       <p className="mb-6">
-        Take the first step toward your career in Denmark today. Contact VJC
-        Overseas to begin your Denmark Work Permit Visa application.
+        Take the first step toward your career in Denmark today. Contact{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          VJC Overseas
+        </a>{" "}
+        to begin your Denmark Work Permit Visa application.
       </p>
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <h4 className="mb-6 font-bold text-lg text-bold">

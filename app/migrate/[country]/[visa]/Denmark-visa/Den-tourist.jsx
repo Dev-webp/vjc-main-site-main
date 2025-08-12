@@ -14,18 +14,18 @@ const Dentourist = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          Denmark Tourist Visa - VJC Overseas
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+          <span style={{ color: "black" }}>Denmark Tourist Visa</span> -{" "}
+          <span style={{ color: "orange" }}>VJC Overseas</span>
         </h3>
       </div>
 
       <p className="mb-6">
         Are you dreaming of exploring Denmark’s charming cities, stunning
-        coastal landscapes, and rich cultural heritage? At VJC Overseas, we make
+        coastal landscapes, and rich cultural heritage? At <b style={{ color: "black" }}>VJC Overseas</b>, we make
         it easier for you to obtain a Denmark Tourist Visa so you can experience
         the best of this beautiful Scandinavian country. Whether you’re visiting
         for leisure, tourism, or short business activities, we’re here to guide
-        you through every step of the application process.
+        you through every step of the application process. Our team is among the <a href="https://vjcoverseas.com/" style={{ color: "orange", fontWeight: "bold" }}>Best Visa Immigration Consultants</a> in the industry.
       </p>
       <div className="flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex justify-center m-6 flex-shrink-0 mx-auto lg:mx-0 ">
@@ -46,7 +46,7 @@ const Dentourist = () => {
         A Denmark Tourist Visa is a short-stay Schengen visa that allows you to
         visit Denmark for tourism, family visits, or business trips. With this
         visa, you can enjoy up to 90 days of travel within a 180-day period in
-        Denmark and other Schengen Area countries.
+        Denmark and other Schengen Area countries. If you wish to <a href="https://www.vjcoverseas.com/migrate/denmark" style={{ color: "orange", fontWeight: "bold" }}>Migrate to Denmark</a> in the future, a tourist visit can be a great start.
       </p>
       <p className="mb-6">
         Denmark is known for its vibrant cities, historic sites, and natural
@@ -86,7 +86,7 @@ const Dentourist = () => {
         <li>
           <b>Visa Application Form: </b>Complete the Schengen visa application
           form, which can be downloaded from the embassy’s website or obtained
-          from VJC Overseas.
+          from <b style={{ color: "black" }}>VJC Overseas</b>.
         </li>
       </ul>
 
@@ -102,7 +102,7 @@ const Dentourist = () => {
       </p>
       <p className="mb-6">
         In urgent cases, an expedited processing option may be available, but
-        additional fees may apply. Our experts at VJC Overseas will keep you
+        additional fees may apply. Our experts at <b style={{ color: "black" }}>VJC Overseas</b> will keep you
         updated throughout the process to ensure that your visa application is
         processed efficiently.
       </p>
@@ -129,14 +129,15 @@ const Dentourist = () => {
       <p className="mb-6">
         Note: Visa fees are subject to change and may vary depending on your
         nationality. The fee must be paid in local currency equivalent at the
-        time of submission.
+        time of submission. For business-related visits, check our <a href="https://www.vjcoverseas.com/migrate/denmark/business-visa" style={{ color: "orange", fontWeight: "bold" }}>Denmark Business Visa</a> page.
       </p>
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <h3 className="mb-6 text-sky-800 italic">
-        Why Choose VJC Overseas for Your Denmark Tourist Visa Application?
-      </h3>
+  Why Choose <span className="font-semibold text-sky-800">VJC Overseas</span> for Your Denmark Tourist Visa Application?
+</h3>
+
       <p className="mb-6">
-        At VJC Overseas, we specialize in visa services and have a proven track
+        At <b style={{ color: "black" }}>VJC Overseas</b>, we specialize in visa services and have a proven track
         record of helping clients successfully obtain their{" "}
         <b>Denmark Tourist Visa</b> with minimal hassle. Our team of experts
         will assist you with:
@@ -161,13 +162,18 @@ const Dentourist = () => {
       </ul>
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <h3 className="mb-6 text-sky-800 italic">
-        How to Apply for a Denmark Tourist Visa with VJC Overseas
-      </h3>
+  How to Apply for a Denmark Tourist Visa with{" "}
+  <b className="text-sky-800 font-semibold">VJC Overseas</b>
+</h3>
+
+
+
+
       <ol className="mb-6 list-decimal ml-8">
         <li>
-          <b>Consultation: </b>Reach out to VJC Overseas for a consultation. Our
+          <b>Consultation: </b>Reach out to <b style={{ color: "black" }}>VJC Overseas</b> for a consultation. Our
           team will assess your eligibility and provide guidance on the
-          documentation required.
+          documentation required. If you plan to <a href="https://vjcoverseas.com/study-abroad/denmark" style={{ color: "orange", fontWeight: "bold" }}>Study in Denmark</a>, we can also guide you through that process.
         </li>
         <li>
           <b>Document Submission: </b>Gather all necessary documents, including
@@ -176,7 +182,7 @@ const Dentourist = () => {
         </li>
         <li>
           <b>Application Processing: </b>Submit your completed visa application
-          to the nearest Denmark embassy or consulate through VJC Overseas.
+          to the nearest Denmark embassy or consulate through <b style={{ color: "black" }}>VJC Overseas</b>.
         </li>
         <li>
           <b>Visa Approval: </b>Once approved, we will notify you and arrange
@@ -186,9 +192,9 @@ const Dentourist = () => {
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <h3 className="mb-6 text-sky-800 italic">Contact Us</h3>
       <p className="mb-6">
-        Ready to start your journey to Denmark? Contact VJC Overseas today for a
+        Ready to start your journey to Denmark? Contact <a href="https://vjcoverseas.com/" style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</a> today for a
         hassle-free visa application process. Our experienced consultants will
-        make sure your <b>Denmark Tourist Visa</b> application is handled
+        make sure your Denmark Tourist Visa application is handled
         efficiently and professionally.
       </p>
       <div className="mb-6 ml-8">
@@ -203,7 +209,7 @@ const Dentourist = () => {
         </p>
       </div>
       <p className="mb-8">
-        Let VJC Overseas be your trusted partner in exploring the magic of
+        Let <b style={{ color: "black" }}>VJC Overseas</b> be your trusted partner in exploring the magic of
         Denmark!
       </p>
     </div>

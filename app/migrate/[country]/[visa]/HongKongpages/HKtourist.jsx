@@ -1,7 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
+  // custom class to disable underline on hover & normal for links
+  const noUnderlineLinkClass =
+    "text-orange-600 font-bold hover:no-underline no-underline";
+
   return (
     <div
       style={{
@@ -19,86 +24,89 @@ const Content = () => {
           <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
         </h3>
       </div>
+
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-        Hong Kong Tourist Visa Information – VJC Overseas
+        Hong Kong Tourist Visa –{" "}
+        <span style={{ fontWeight: "bold", color: "black" }}>VJC Overseas</span>
       </h3>
-      <p style={{ marginBottom: "20px" }}></p>
 
       <p style={{ marginBottom: "20px" }}>
-        Planning a trip to the vibrant city of Hong Kong? Whether youre visiting
-        for sightseeing, shopping, or cultural exploration, securing the right
-        visa is a crucial first step in your journey. At VJC Overseas, we offer
-        expert assistance in obtaining your Hong Kong Tourist Visa quickly and
-        efficiently, so you can focus on enjoying your travel experience.
+        If you’re dreaming of exploring one of Asia’s most dynamic destinations,
+        a Hong Kong Tourist Visa is your gateway to unforgettable experiences.
+        Whether it’s the dazzling skyline, bustling shopping districts, or rich
+        cultural heritage, Hong Kong offers a perfect mix of modernity and
+        tradition for every traveler. At{" "}
+        <span style={{ fontWeight: "bold", color: "black" }}>VJC Overseas</span>
+        , we specialize in making your travel seamless, handling the visa
+        process with precision so you can focus on enjoying your trip.
       </p>
 
-      <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-        <div className="flex-shrink-0 mx-auto lg:mx-0">
-          <Image
-            src="/ukimage4.jpg"
-            alt="Image description"
-            width={500} // Replace with your image's actual width
-            height={300}
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
-            priority
-            unoptimized
-          />
-        </div>
+      <p style={{ marginBottom: "20px" }}>
+        Recognized among the{" "}
+        <Link
+          href="https://vjcoverseas.com/"
+          className={noUnderlineLinkClass}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Best Visa Immigration Consultants
+        </Link>
+        , our expertise extends beyond just tourist visas—we assist with
+        education, work, and business migration to Hong Kong, ensuring clients
+        have a one-stop solution for all their travel and migration needs.
+      </p>
 
-        <div className="px-4 lg:px-0">
-          <h3
-            style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}
-          >
-            Hong Kong Tourist Visa Overview
-          </h3>
-          <p style={{ marginBottom: "20px" }}>
-            Hong Kong, a world-renowned metropolis, offers a wide array of
-            attractions, from its stunning skyline to rich history, bustling
-            markets, and diverse culinary delights. While many nationalities can
-            visit Hong Kong visa-free for short stays, others may require a
-            tourist visa depending on their country of origin.
-          </p>
-          <p style={{ marginBottom: "20px" }}>
-            A Hong Kong Tourist Visa is typically issued for leisure or
-            recreational purposes and is valid for stays of up to 14 or 30 days,
-            depending on your nationality and the type of visa you are applying
-            for.
-          </p>
-        </div>
-      </div>
+      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
+        Why Visit Hong Kong?
+      </h3>
+      <p style={{ marginBottom: "20px" }}>
+        Hong Kong isn’t just a travel destination; it’s an experience. The city
+        blends Eastern traditions with Western conveniences, making it a
+        fascinating place for first-time visitors and seasoned travelers alike.
+        From Victoria Peak’s sweeping views to the vibrant markets of Mong Kok
+        and the serene temples tucked away in urban corners, Hong Kong offers
+        endless opportunities to explore. And if you’re considering your academic
+        journey, you can also{" "}
+        <Link
+          href="https://www.vjcoverseas.com/study-abroad/hongkong"
+          className={noUnderlineLinkClass}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Study in Hong Kong
+        </Link>
+        , with access to globally ranked universities.
+      </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
         Who Needs a Hong Kong Tourist Visa?
       </h3>
+      <p style={{ marginBottom: "20px" }}>
+        While many nationalities enjoy visa-free entry for short stays, others
+        must apply for a Hong Kong Tourist Visa before arrival. You’ll need a
+        visa if:
+      </p>
       <ul style={{ marginBottom: "20px" }}>
+        <li>You are from a visa-required country.</li>
+        <li>You plan to stay longer than the visa-free period.</li>
         <li>
-          Individuals from visa-required countries (as per Hong Kong immigration
-          policies).
+          You are visiting for leisure but your nationality does not have a visa
+          exemption agreement with Hong Kong.
         </li>
-        <li>
-          First-time travelers or those without a visa exemption agreement.
-        </li>
-        <li>Those intending to stay longer than the visa-free period.</li>
       </ul>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-        Hong Kong Tourist Visa Types
+        Types of Hong Kong Tourist Visas
       </h3>
       <ul style={{ marginBottom: "20px" }}>
         <li>
-          <strong style={{ color: "rgb(3, 60, 65)" }}>
-            Single Entry Tourist Visa:
-          </strong>{" "}
-          Valid for one entry to Hong Kong. This visa allows you to stay in Hong
-          Kong for up to 14 or 30 days, depending on your nationality.
+          <strong>Single Entry Tourist Visa</strong> – Allows one-time entry,
+          valid for up to 14 or 30 days depending on your nationality.
         </li>
         <li>
-          <strong style={{ color: "rgb(3, 60, 65)" }}>
-            Multiple Entry Tourist Visa:
-          </strong>{" "}
-          Ideal for those who plan to visit Hong Kong multiple times within a
-          specific timeframe. This visa can be valid for up to 6 months or more,
-          depending on the application review.
+          <strong>Multiple Entry Tourist Visa</strong> – Ideal for frequent
+          travelers, valid for up to 6 months or more, allowing repeated visits
+          during the validity period.
         </li>
       </ul>
 
@@ -106,88 +114,94 @@ const Content = () => {
         Visa Requirements
       </h3>
       <ul style={{ marginBottom: "20px" }}>
-        <li>
-          A valid passport with at least six months of validity remaining.
-        </li>
-        <li>A completed visa application form.</li>
-        <li>Passport-sized photographs (according to specifications).</li>
-        <li>Proof of return flight ticket.</li>
-        <li>Hotel booking or an invitation letter from a host in Hong Kong.</li>
-        <li>
-          Proof of sufficient funds to cover your stay (bank statements, pay
-          slips, etc.).
-        </li>
-        <li>
-          Additional documents, if requested (e.g., employment letter, travel
-          itinerary).
-        </li>
+        <li>A valid passport with at least six months remaining.</li>
+        <li>Completed application form.</li>
+        <li>Recent passport-sized photographs.</li>
+        <li>Proof of return or onward travel.</li>
+        <li>Hotel booking confirmation or invitation letter from a Hong Kong resident.</li>
+        <li>Financial proof (bank statements, pay slips, etc.).</li>
+        <li>Additional documents if requested by immigration authorities.</li>
       </ul>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-        Processing Time for Hong Kong Tourist Visa
+        Processing Time
       </h3>
       <p style={{ marginBottom: "20px" }}>
-        The processing time for a Hong Kong Tourist Visa typically ranges from 4
-        to 7 working days. However, this can vary depending on your nationality
-        and the completeness of your application. To avoid any delays, it is
-        important to submit all the required documents and ensure your
-        application is accurate.
-      </p>
-      <p style={{ marginBottom: "20px" }}>
-        For urgent travel plans, we can assist in expediting the process with
-        Express Processing for faster approval. Please reach out to our team for
-        more information on this service.
+        Most Hong Kong Tourist Visas are processed in 4–7 working days,
+        although this may vary based on nationality and application details.
+        For urgent travel, our Express Processing service ensures faster
+        approval.
       </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-        Hong Kong Tourist Visa Fees
+        Visa Fees (Approximate)
       </h3>
       <ul style={{ marginBottom: "20px" }}>
-        <li>
-          <strong style={{ color: "rgb(3, 60, 65)" }}>
-            Single Entry Visa:
-          </strong>{" "}
-          $60 - $100 (USD), valid for 14 or 30 days.
-        </li>
-        <li>
-          <strong style={{ color: "rgb(3, 60, 65)" }}>
-            Multiple Entry Visa:
-          </strong>{" "}
-          $120 - $150 (USD), valid for 6 months (or longer).
-        </li>
+        <li>Single Entry: $60–$100 USD (valid for 14–30 days).</li>
+        <li>Multiple Entry: $120–$150 USD (valid for 6 months or longer).</li>
       </ul>
-      <p style={{ marginBottom: "20px" }}>
-        Note: Fees may be subject to change depending on the consulate/embassy
-        and processing method. Our team at VJC Overseas will provide you with
-        the most accurate and up-to-date fee structure for your application.
-      </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-        How VJC Overseas Can Help You
+        How VJC Overseas Can Help
       </h3>
+      <p style={{ marginBottom: "20px" }}>
+        From guiding you through the required paperwork to liaising directly with
+        Hong Kong immigration authorities, we handle the details so you don’t
+        have to. Our services include:
+      </p>
       <ul style={{ marginBottom: "20px" }}>
-        <li>Visa consultation to determine your eligibility.</li>
-        <li>Assistance with document preparation.</li>
-        <li>Expedited processing for urgent cases.</li>
-        <li>Ongoing support throughout the visa process.</li>
+        <li>Eligibility assessment.</li>
+        <li>Document verification and preparation.</li>
+        <li>Application submission and follow-up.</li>
+        <li>Expedited processing for urgent trips.</li>
       </ul>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-        Get Started Today!
+        Beyond Tourism – Your Gateway to Hong Kong Opportunities
       </h3>
       <p style={{ marginBottom: "20px" }}>
-        Ready to apply for your Hong Kong Tourist Visa? Contact VJC Overseas
-        today to begin your visa application process. Our team is here to assist
-        you with every step, ensuring a smooth and efficient experience.
+        Many travelers who visit Hong Kong for leisure eventually fall in love
+        with the city’s energy and explore ways to{" "}
+        <Link
+          href="https://www.vjcoverseas.com/migrate/hong-kong/"
+          className={noUnderlineLinkClass}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Migrate to Hong Kong
+        </Link>{" "}
+        for work, study, or business. Skilled professionals can apply for a{" "}
+        <Link
+          href="https://www.vjcoverseas.com/migrate/hong-kong/employment-visa"
+          className={noUnderlineLinkClass}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Hong Kong Employment Visa
+        </Link>
+        , while entrepreneurs can explore business visa options. With{" "}
+        <span style={{ fontWeight: "bold", color: "black" }}>VJC Overseas</span>{" "}
+        as your trusted partner, your journey can seamlessly transition from
+        tourism to long-term settlement.
       </p>
-      <p style={{ marginBottom: "20px", fontWeight: "bold", fontSize: "15px" }}>
-        Call us at +91-9160449000 or email us at www.vjcoverseas.com to get
-        started.
-      </p>
-      <p style={{ marginBottom: "20px", fontSize: "12px", color: "gray" }}>
-        Note: Visa requirements and fees are subject to change. Always check the
-        official Hong Kong Immigration website or consult with VJC Overseas for
-        the latest updates.
+
+      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
+        Start Your Application Today
+      </h3>
+      <p style={{ marginBottom: "20px" }}>
+        Your Hong Kong adventure starts with a well-prepared visa application.
+        Contact{" "}
+        <Link
+          href="https://vjcoverseas.com/"
+          className="text-orange-600 font-bold  hover:no-underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VJC Overseas
+        </Link>{" "}
+        today and let our team make the process effortless. With years of
+        expertise and a client-first approach, we ensure that your journey
+        begins on the right note.
       </p>
     </div>
   );

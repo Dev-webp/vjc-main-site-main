@@ -14,17 +14,16 @@ const Denbusiness = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          Denmark Business Visa - VJC Overseas
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+          Denmark Business Visa - <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
         </h3>
       </div>
       <p className="mb-6">
-        Are you planning to explore business opportunities in Denmark? Whether
-        you are attending meetings, conferences, negotiations, or expanding your
-        business network, a <b>Denmark Business Visa</b> is your gateway to
-        engaging with Denmark’s vibrant economy. At VJC Overseas, we simplify
-        the process of obtaining a business visa for Denmark, ensuring a smooth
-        and hassle-free experience.
+        Are you planning to expand your professional network, attend high-level business meetings, or explore new opportunities in one of Europe’s most dynamic economies?{" "}
+        <b style={{ color: "black" }}>VJC Overseas</b> is here to make your journey seamless with our expert guidance in obtaining a Denmark Business Visa. 
+        We specialize in helping professionals, entrepreneurs, and investors enter Denmark with ease, ensuring a hassle-free process from application to approval.
+      </p>
+      <p className="mb-6">
+        Recognized among the <a href="https://vjcoverseas.com/" style={{ color: "orange", fontWeight: "bold" }}>Best Visa Immigration Consultants</a> in the industry, we bring unmatched expertise in handling all Denmark visa categories. Whether your trip is short-term for a conference or long-term for a strategic project, our team ensures your application meets all Schengen requirements while reflecting your professional intent clearly.
       </p>
 
       <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -32,7 +31,7 @@ const Denbusiness = () => {
           <Image
             src="/Denmark-Visit.jpg"
             alt="Australia Business Visa"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             priority
             unoptimized
@@ -46,38 +45,37 @@ const Denbusiness = () => {
           </h4>
 
           <p className="mb-6">
-            Denmark is one of Europe’s most attractive business destinations,
-            known for its innovation-driven economy, strong business
-            infrastructure, and a thriving start-up ecosystem. With a strategic
-            location within the European Union and a favourable business
-            environment, Denmark is the perfect place to establish connections
-            and explore new business ventures.
+            Denmark is one of Europe’s most attractive business destinations, known for its innovation-driven economy, strong business infrastructure, and a thriving start-up ecosystem. 
+            With a strategic location within the European Union and a favourable business environment, Denmark is the perfect place to establish connections and explore new business ventures.
+          </p>
+
+          <p className="mb-6">
+            Many business travelers also see Denmark as a stepping stone to other goals — for example, exploring educational prospects such as{" "}
+            <a href="https://vjcoverseas.com/study-abroad/denmark" style={{ color: "orange", fontWeight: "bold" }}>Study in Denmark</a>, 
+            or even transitioning to long-term settlement options like <b style={{ color: "black" }}>Migrate to Denmark</b>. 
+            The country’s open approach to talent ensures that international professionals can integrate smoothly into its vibrant business culture.
           </p>
         </div>
       </div>
+
       <div className="mb-6">
         <h2 className="mb-6  text-sky-700">Types of Denmark Business Visas</h2>
 
         <p className="mb-6">
-          Depending on the purpose and length of your stay, there are different
-          types of Denmark Business Visas available:
+          Depending on your purpose and duration of stay, you may apply for:
         </p>
 
         <ul className="ml-8 list-disc mb-6">
           <li>
-            <b>1. Short-term Business Visa (Schengen Visa) </b> For business
-            visits up to 90 days within a 180-day period.
+            <b>Short-term Business Visa (Schengen Visa)</b> – For visits of up to 90 days within a 180-day period, ideal for meetings, negotiations, and networking.
           </li>
           <li>
-            <b>2. Long-term Business Visa </b>For business stays exceeding 90
-            days, often linked with specific business projects or assignments.
+            <b>Long-term Business Visa</b> – For stays beyond 90 days, often linked to specific business projects, assignments, or company setups.
           </li>
         </ul>
 
         <p className="mb-6">
-          Whether you’re looking to attend a conference, meet clients, or
-          establish a new business relationship, we can help you choose the
-          right visa category for your needs.
+          Our consultants at <b>VJC Overseas</b> will assess your objectives and recommend the most suitable visa type, ensuring your application is strategically prepared.
         </p>
 
         <h4 className="mb-6  text-sky-700">
@@ -85,123 +83,86 @@ const Denbusiness = () => {
         </h4>
 
         <p className="mb-6">
-          To apply for a Denmark Business Visa, applicants must meet specific
-          requirements, including:
+          To qualify for a Denmark Business Visa, applicants must provide:
         </p>
         <ul className="list-disc mb-6 ml-8">
-          <li>
-            A valid passport with at least 3 months validity beyond the planned
-            stay.
-          </li>
-          <li>Completed visa application form.</li>
-          <li>Passport-sized photographs meeting Schengen standards.</li>
-          <li>
-            Proof of financial stability (bank statements, salary slips, etc.).
-          </li>
-          <li>
-            Invitation letter from a Danish company, detailing the purpose and
-            duration of your visit.
-          </li>
-          <li>
-            Travel itinerary, including flight bookings and hotel accommodation.
-          </li>
-          <li>
-            Proof of business ties, such as business registration documents,
-            prior correspondence, or contracts.
-          </li>
-          <li>
-            Health insurance covering the entire stay in Denmark (minimum
-            coverage of 30,000 EUR).
-          </li>
+          <li>A valid passport (with at least 3 months validity beyond departure date)</li>
+          <li>Completed Schengen visa application form</li>
+          <li>Passport-sized photos meeting specifications</li>
+          <li>Proof of financial stability (bank statements, payslips, etc.)</li>
+          <li>Invitation letter from a Danish company outlining visit purpose and duration</li>
+          <li>Detailed travel itinerary including flight and accommodation bookings</li>
+          <li>Proof of business ties (registration documents, prior correspondence, contracts)</li>
+          <li>Valid health insurance with a minimum €30,000 coverage</li>
         </ul>
+
+        <p className="mb-6">
+  These requirements also help lay the foundation for other future immigration options, such as applying for a{" "}
+  <a href="https://www.vjcoverseas.com/migrate/denmark/work-permit-visa" style={{ color: "orange", fontWeight: "bold" }}>
+    Denmark Work Permit Visa
+  </a>{" "}
+  or exploring pathways to <b>Migrate to Denmark</b> permanently.
+</p>
+
 
         <h4 className="mb-6 text-sky-700">
           Denmark Business Visa Processing Time
         </h4>
         <p>
-          The processing time for a Denmark Business Visa typically takes{" "}
-          <b>10 to 15 working days</b>. However, it is advisable to apply at
-          least <b>3 to 4 weeks</b> before your intended travel date to avoid
-          any last-minute delays, especially during peak application seasons. In
-          certain cases, the processing time may vary based on your nationality,
-          application volume, and the completeness of your documents.
+          Processing for a Denmark Business Visa usually takes <b>10–15 working days</b>. 
+          We recommend applying at least <b>3–4 weeks</b> in advance to avoid last-minute issues.
         </p>
       </div>
 
       <div className="mb-6">
         <h4 className="mb-6 text-sky-700">Denmark Business Visa Fees</h4>
         <p className="mb-6">
-          The visa fees for a Denmark Business Visa are as follows:
+          Fees:
         </p>
         <ul className="ml-8 mb-6 list-disc">
-          <li>
-            <b>Short-term Schengen Business Visa (up to 90 days): </b> €80
-            (approx. INR 7,000)
-          </li>
-          <li>
-            <b>Long-term Business Visa (over 90 days): </b> Fees may vary
-            depending on the nature of the business visit and visa type. Please
-            contact us for an accurate quote.
-          </li>
+          <li><b>Short-term (up to 90 days):</b> €80 (~₹7,000)</li>
+          <li><b>Long-term (over 90 days):</b> Varies by case; please consult us</li>
         </ul>
+        <p className="mb-6">Children (6–12 years): €40 (~₹3,500)</p>
+        <p className="mb-6">Children under 6: Exempt</p>
         <p className="mb-6">
-          For children between the ages of 6 and 12, a reduced fee of €40 may
-          apply. Children under the age of 6 are usually exempt from visa fees.
-        </p>
-        <p className="mb-6">
-          Please note that these fees are subject to change based on consular
-          rules, and additional service fees may apply when using our visa
-          services.
+          Additional service charges may apply for document handling, expedited services, or embassy scheduling.
         </p>
 
         <h4 className="mb-6 text-sky-700">
-          Why Choose VJC Overseas for Your Denmark Business Visa?
+          Why Choose <b>VJC Overseas</b>?
         </h4>
 
         <p className="mb-6">
-          At VJC Overseas, we are committed to providing professional visa
-          assistance with a focus on accuracy, transparency, and efficiency. Our
-          experienced team will guide you through the entire application
-          process, ensuring that you meet all necessary requirements for a
-          successful visa outcome.
+          With decades of combined experience, <b>VJC Overseas</b> ensures accuracy, transparency, and efficiency in every application. Our services include:
         </p>
 
         <ul className="ml-8 mb-6 list-disc">
-          <li>
-            <b>Expert Guidance: </b> We’ll help you complete your application
-            correctly and prepare all necessary documents.
-          </li>
-          <li>
-            <b>Fast Processing: </b> We prioritize time-sensitive applications
-            and help expedite the process where possible.
-          </li>
-          <li>
-            <b>End-to-End Support:</b> From filling out the visa form to booking
-            appointments, we handle every step for you.
-          </li>
+          <li><b>Documentation Review:</b> Eliminating errors that could lead to delays</li>
+          <li><b>Form Assistance:</b> Ensuring your application meets all Danish and Schengen requirements</li>
+          <li><b>Timely Submissions:</b> Managing embassy appointments and deadlines</li>
+          <li><b>Continuous Updates:</b> Keeping you informed at every stage</li>
         </ul>
+
+        <p className="mb-6">
+          We also assist with other pathways such as{" "}
+          <a href="https://www.vjcoverseas.com/migrate/denmark" style={{ color: "orange", fontWeight: "bold" }}>Migrate to Denmark</a> for clients planning long-term relocation.
+        </p>
 
         <h4 className="mb-6 text-sky-700">Get Started Today</h4>
 
         <p className="mb-6">
-          If you’re ready to take your business to Denmark, our team is here to
-          assist you. Contact us today to begin your{" "}
-          <b>Denmark Business Visa application</b> and explore the endless
-          opportunities waiting for you in one of Europe’s leading business
-          hubs.
+          Your professional opportunities in Denmark are just one application away. Let <a href="https://vjcoverseas.com" style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</a> guide you with precision and care, from your Denmark Business Visa application to any future immigration goals.
         </p>
 
         <p className="font-bold mb-6">
-          For more information or to schedule a consultation, contact VJC
-          Overseas at +91-9160449000.
+          Contact us today at +91-9160449000 or visit www.vjcoverseas.com to get started.
         </p>
 
         <hr style={{ borderColor: "black" }} className="mb-6" />
 
         <p>
-          Please remember that visa rules and fees are subject to change, so
-          it’s always best to consult with us or the relevant consulate for the
-          latest updates before proceeding with your application.
+          Please remember that visa rules and fees are subject to change, so it’s always best to consult with us or the relevant consulate for the latest updates before proceeding with your application.
         </p>
       </div>
     </div>

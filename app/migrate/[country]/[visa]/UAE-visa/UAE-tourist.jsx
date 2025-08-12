@@ -14,20 +14,35 @@ const UAEtourist = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          UAE Tourist Visa - VJC Overseas
+          UAE Tourist Visa -{" "}
           <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
         </h3>
       </div>
 
       <p className="mb-6">
-        The United Arab Emirates (UAE) is one of the most popular travel
-        destinations in the world, known for its modern architecture, luxurious
-        lifestyle, and vibrant culture. Whether you’re visiting for a holiday,
-        business, or to explore the rich history of the region, securing the
-        right tourist visa is the first step to experiencing all that the UAE
-        has to offer. At VJC Overseas, we make the process of obtaining your UAE
-        tourist visa simple, quick, and hassle-free.
+        The United Arab Emirates (UAE) has earned its reputation as one of the
+        world’s most sought-after travel destinations, thanks to its
+        awe-inspiring skyline, pristine beaches, luxury shopping, and cultural
+        richness. Whether you’re traveling for leisure, attending a business
+        meeting, or exploring educational opportunities such as{" "}
+        <b style={{ color: "darkorange", fontWeight: "bold" }}>
+          <a
+            href="https://vjcoverseas.com/study-abroad/uae"
+            style={{ color: "darkorange", textDecoration: "none" }}
+          >
+            Study in UAE
+          </a>
+        </b>
+        , securing the right tourist visa is your gateway to experiencing the
+        country’s charm. At{" "}
+        <b style={{ color: "black", fontWeight: "bold" }}>
+          VJC Overseas
+        </b>
+        , we make obtaining your UAE Tourist Visa a seamless, transparent, and
+        efficient process, ensuring you focus on the excitement of your upcoming
+        journey rather than the paperwork.
       </p>
+
       <div className="flex mb-6 justify-center flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <Image
@@ -41,47 +56,48 @@ const UAEtourist = () => {
           />
         </div>
       </div>
+
       <h3 className="text-black m-2 font-bold text-lg mb-6">
         Types of UAE Tourist Visas
       </h3>
       <p className="mb-6">
-        The UAE offers several types of tourist visas depending on the duration
-        of your stay and the purpose of your visit. These include:
+        The UAE offers several types of tourist visas tailored to different
+        travel plans:
       </p>
       <ul className="mb-6 ml-8 list-decimal">
         <li>
-          <b>Short-Term Tourist Visa (30 days):</b> Ideal for short holidays or
-          business visits.
+          <b>Short-Term Tourist Visa (30 days):</b> Ideal for brief vacations
+          or short business visits.
         </li>
         <li>
-          <b>Long-Term Tourist Visa (90 days):</b> Perfect for those planning a
-          more extended stay or multiple visits throughout the year.
+          <b>Long-Term Tourist Visa (90 days):</b> Perfect for extended stays or
+          multiple purposes during a single visit.
         </li>
         <li>
-          <b>Multiple Entry Visa:</b> Allows visitors to enter and exit the UAE
-          multiple times within a specified period.
+          <b>Multiple Entry Visa:</b> Enables visitors to enter and exit the UAE
+          multiple times within the validity period.
         </li>
       </ul>
-      <p>
-        We assist you in selecting the best visa type based on your travel
-        plans, and our experts ensure that all requirements are met for a smooth
-        application process.
+      <p className="mb-6">
+        Our team at{" "}
+        <b style={{ color: "black", fontWeight: "bold" }}>
+          VJC Overseas
+        </b>{" "}
+        assesses your travel goals and guides you to the most suitable visa
+        type, ensuring all documentation meets UAE immigration requirements.
       </p>
 
       <h3 className="text-black m-2 font-bold text-lg mb-6">Processing Time</h3>
       <p className="mb-6">
-        The typical processing time for a UAE tourist visa through VJC Overseas
-        is between 3 to 7 business days. However, the exact time may vary
-        depending on the type of visa, the nationality of the applicant, and any
-        additional documentation that may be required. For urgent travel plans,
-        we also offer expedited processing services to help you get your visa in
-        as little as 24 to 48 hours.
+        The typical processing time for a UAE Tourist Visa ranges between 3 to 7
+        business days, depending on nationality, type of visa, and completeness
+        of your documents. For urgent travel needs, we provide express
+        processing, often delivering approvals within 24 to 48 hours.
       </p>
 
       <h3 className="text-black m-2 font-bold text-lg mb-6">Visa Fees</h3>
       <p className="mb-6">
-        The visa fees for UAE tourist visas depend on the type and duration of
-        the visa:
+        Visa fees vary based on the type and duration of your stay:
       </p>
       <ul className="list-decimal mb-6 ml-8">
         <li>
@@ -95,116 +111,140 @@ const UAEtourist = () => {
         </li>
       </ul>
       <p>
-        Please note that visa fees are subject to change based on the latest
-        regulations from the UAE government. At VJC Overseas, we provide you
-        with the most up-to-date pricing and ensure there are no hidden fees.
+        We provide updated fee information and ensure complete transparency so
+        you know exactly what to expect.
+      </p>
+
+      <p className="mb-6">
+        Whether you’re visiting family, exploring business opportunities, or
+        simply experiencing the UAE’s luxury lifestyle, a UAE Tourist Visa allows
+        you to enjoy the country’s attractions with ease. Our consultants assist
+        with quick and hassle-free applications, ensuring you have a smooth
+        travel experience. Discover the beauty of the Emirates and explore
+        possibilities to{" "}
+        <b style={{ color: "darkorange", fontWeight: "bold" }}>
+          <a
+            href="https://vjcoverseas.com/migrate/uae"
+            style={{ color: "darkorange", textDecoration: "none" }}
+          >
+            Migrate to UAE
+          </a>
+        </b>{" "}
+        in the future.
       </p>
 
       <h3 className="text-black m-2 font-bold text-lg mb-6">
         Living Expenses and Lifestyle in the UAE
       </h3>
       <p className="mb-6">
-        When planning a trip to the UAE, it’s essential to understand the cost
-        of living and the lifestyle you can expect. The UAE offers a unique
-        blend of luxury and affordability, with options for every type of
-        traveller.
+        Before traveling, it’s helpful to understand the cost of living and what
+        life in the UAE has to offer:
       </p>
       <ul className="list-disc mb-6 ml-8">
         <li>
-          <b>Accommodation:</b> Hotel prices range from budget options (starting
-          at AED 150 per night) to luxury resorts and five-star hotels (starting
-          at AED 600+ per night).
+          <b>Accommodation</b> – From budget hotels starting at AED 150 per night
+          to luxury resorts above AED 600.
         </li>
         <li>
-          <b>Food:</b> Dining out in the UAE can vary greatly. Budget meals at
-          local eateries may cost around AED 20-40, while dining at high-end
-          restaurants can start at AED 100 or more per person.
+          <b>Food</b> – Affordable meals from AED 20–40 at local eateries, while
+          fine dining starts at AED 100+.
         </li>
         <li>
-          <b>Transportation:</b> Public transport is affordable, with metro
-          rides starting from AED 3. Taxis typically charge around AED 12 for
-          the first 1 km, with an additional cost per kilometre.
+          <b>Transportation</b> – Public metro fares from AED 3, and taxis
+          starting at AED 12.
         </li>
         <li>
-          <b>Shopping & Entertainment:</b> The UAE is home to world-renowned
-          shopping malls, entertainment parks, and cultural attractions. Costs
-          can range from inexpensive local markets to high-end shopping
-          experiences.
+          <b>Entertainment & Shopping</b> – Home to mega malls like The Dubai
+          Mall, traditional souks, and theme parks.
         </li>
       </ul>
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Lifestyle in the UAE
-      </h3>
       <p className="mb-6">
-        The UAE boasts a cosmopolitan lifestyle, where modern living meets
-        traditional Arabic culture. The country is famous for its:
-      </p>
-      <ul className="list-disc mb-6 ml-8">
-        <li>
-          <b>Luxury shopping malls</b> like The Dubai Mall and Mall of the
-          Emirates.
-        </li>
-        <li>
-          <b>Cultural attractions</b> like the Louvre Abu Dhabi, Dubai Opera,
-          and the historic Al Fahidi Fort.
-        </li>
-        <li>
-          <b>Outdoor activities</b> such as desert safaris, beach clubs, and
-          water sports.
-        </li>
-        <li>
-          <b>Vibrant nightlife</b> in cities like Dubai and Abu Dhabi, with
-          numerous clubs, bars, and restaurants offering international cuisine.
-        </li>
-      </ul>
-      <p>
-        The UAE is also known for its commitment to safety, cleanliness, and
-        top-tier customer service, ensuring that visitors feel comfortable and
-        welcome at all times.
+        The UAE’s cosmopolitan lifestyle blends modernity with tradition, making
+        it a favorite among global travelers. It’s also a hub for opportunities
+        such as obtaining a{" "}
+        <b style={{ color: "darkorange", fontWeight: "bold" }}>
+          <a
+            href="https://vjcoverseas.com/migrate/uae/work-visa"
+            style={{ color: "darkorange", textDecoration: "none" }}
+          >
+            UAE Work Visa
+          </a>
+        </b>{" "}
+        for career growth or applying for the prestigious{" "}
+        <b style={{ color: "darkorange", fontWeight: "bold" }}>
+          <a
+            href="https://vjcoverseas.com/migrate/uae/golden-visa"
+            style={{ color: "darkorange", textDecoration: "none" }}
+          >
+            UAE Golden Visa
+          </a>
+        </b>{" "}
+        for long-term residence.
       </p>
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Why Choose VJC Overseas?
-      </h3>
+      <h3 className="text-black m-2 font-bold text-lg mb-6">Why Choose VJC Overseas?</h3>
       <p className="mb-6">
-        At VJC Overseas, we are dedicated to providing a seamless visa
-        application experience. Our team of experts is well-versed in UAE
-        immigration requirements, ensuring that your application is processed
-        smoothly and quickly. We assist with everything from document submission
-        to tracking your visa status, so you can focus on planning your trip.
+        As one of the{" "}
+        <b style={{ color: "darkorange", fontWeight: "bold" }}>
+          <a
+            href="https://vjcoverseas.com/"
+            style={{ color: "darkorange", textDecoration: "none" }}
+          >
+            Best Visa Immigration Consultants
+          </a>
+        </b>
+        , <b style={{ color: "black", fontWeight: "bold" }}>VJC Overseas</b> offers
+        unmatched expertise in UAE visa processing. Our services go beyond filing
+        paperwork — we provide:
       </p>
+      <ul className="mb-6 ml-8 list-disc">
+        <li>
+          <b>Expert Guidance</b> – Tailored advice based on your travel purpose and
+          profile.
+        </li>
+        <li>
+          <b>Efficient Processing</b> – Minimizing delays through accurate
+          documentation.
+        </li>
+        <li>
+          <b>Comprehensive Support</b> – From travel insurance to accommodation
+          suggestions.
+        </li>
+      </ul>
       <p className="mb-6">
-        We also provide advice on travel insurance, accommodation, and other
-        aspects of your trip to make your visit to the UAE as enjoyable as
-        possible.
+        Whether you’re visiting for leisure, considering business opportunities, or
+        planning to settle in the UAE, our team ensures you are well-prepared for
+        your trip.
       </p>
 
       <h3 className="text-black m-2 font-bold text-lg mb-6">Apply Now</h3>
       <p className="mb-6">
-        Ready to explore the UAE? Apply for your tourist visa today with VJC
-        Overseas. Our team is here to help guide you through the process,
-        ensuring that you receive your visa on time and without any
-        complications.
+        Embark on your UAE journey with confidence. Contact{" "}
+        <b style={{ color: "darkorange", fontWeight: "bold" }}>
+          <a
+            href="https://vjcoverseas.com/"
+            style={{ color: "darkorange", textDecoration: "none" }}
+          >
+            VJC Overseas
+          </a>
+        </b>{" "}
+        today to apply for your Tourist Visa and take the first step toward exploring this
+        vibrant country. Whether it’s a short vacation or the beginning of a longer
+        plan to live, work, or study in the UAE, we are here to guide you every
+        step of the way.
       </p>
-      <p>
-        Contact us at{" "}
-        <a href="tel:+919160449000" className="text-blue-500">
-          +91-9160449000
-        </a>{" "}
-        or visit{" "}
-        <a href="http://www.vjcoverseas.com" className="text-blue-500">
-          www.vjcoverseas.com
-        </a>{" "}
-        for further inquiries, and let us help you start your journey to the
-        UAE!
-      </p>
+     <p>
+  +91-9160449000
+</p>
+
+
 
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <p className="mb-6">
-        Note: All visa fees, processing times, and requirements are subject to
-        change based on UAE government policies. Please consult with our experts
-        for the latest information before applying.
+        Note: Visa fees, processing times, and regulations are subject to change as
+        per UAE government policies. Please consult our team for the latest updates
+        before applying.
       </p>
     </div>
   );

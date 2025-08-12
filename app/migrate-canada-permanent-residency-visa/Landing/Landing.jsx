@@ -22,7 +22,8 @@ const Landing = () => {
       <BigVideo setIsOpen={setIsOpen}></BigVideo>
        <ModalFormWithPopup isOpen={isOpen} setIsOpen={setIsOpen} customContent={<CanadaImageContent />} />
       <Form></Form>
-      <TrustedVisa></TrustedVisa>
+       <TrustedVisa setIsOpen={setIsOpen} />
+   <ModalFormWithPopup isOpen={isOpen} setIsOpen={setIsOpen} customContent={<CanadaImageContent />} />
       <Howto></Howto>
       <Process></Process>
       <Requirements></Requirements>

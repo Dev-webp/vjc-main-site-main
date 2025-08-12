@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const UAEgreen = () => {
   return (
@@ -14,9 +15,10 @@ const UAEgreen = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          UAE Green Visa - VJC Overseas
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
-        </h3>
+  UAE Green Visa - <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+</h3>
+
+
       </div>
 
       <h3 className="text-blue-500 text-start m-2 font-bold text-lg mb-6">
@@ -24,25 +26,123 @@ const UAEgreen = () => {
       </h3>
 
       <p className="mb-6">
-        The UAE has become one of the most attractive destinations for
-        professionals, skilled workers, and investors seeking to live and work
-        in a dynamic, modern economy. With the introduction of the Green Visa,
-        the UAE aims to offer a more flexible and sustainable alternative to the
-        traditional employment visa, focusing on skilled talent, freelancers,
-        and investors. At VJC Overseas, we guide you through the entire process
-        of obtaining a Green Visa and provide the necessary insights to ensure
-        your successful transition to life in the UAE.
+        The UAE is a land of opportunities for ambitious professionals,
+        entrepreneurs, and investors who want to live in a thriving, modern
+        economy. With the introduction of the{" "}
+        <span style={{ fontWeight: "normal" }}>UAE Green Visa</span>, the country has
+        opened a new gateway for highly skilled individuals, freelancers, and
+        business owners who wish to enjoy long-term residency without the
+        constraints of traditional sponsorship.
       </p>
 
-      <p>
-        Launched in 2021, the UAE Green Visa is a long-term residency permit
-        designed to attract highly skilled professionals, investors,
-        entrepreneurs, freelancers, and specialized talents to the UAE. Unlike
-        the traditional work visa, the Green Visa does not require sponsorship
-        from an employer, which means greater freedom and flexibility for
-        holders. It is ideal for those who wish to establish long-term residence
-        in the UAE, without being tied to a specific employer.
+      <p className="mb-6">
+        As one of the{" "}
+        <Link href="https://vjcoverseas.com/" legacyBehavior>
+          <a
+            style={{
+              color: "orange",
+              fontWeight: "bold",
+              textDecoration: "none",
+            }}
+          >
+            Best Visa Immigration Consultants
+          </a>
+        </Link>{" "}
+        in the industry,{" "}
+        <b style={{ color: "black", fontWeight: "bold" }}>VJC Overseas</b> is
+        committed to guiding you through every step of the process. Whether
+        you’re aiming for a fresh career move, building a business, or settling
+        with your family, our expert consultants ensure a smooth and successful
+        relocation experience to the UAE.
       </p>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-6">What is the UAE Green Visa?</h3>
+
+      <p className="mb-6">
+        Launched in 2021, the Green Visa is a long-term residency permit
+        designed for:
+      </p>
+
+      <ul className="mb-6 ml-8 list-decimal">
+        <li>
+          Skilled workers with advanced qualifications and experience.
+        </li>
+        <li>
+          Freelancers and self-employed professionals across industries such as
+          technology, healthcare, engineering, and the arts.
+        </li>
+        <li>Investors and entrepreneurs who want to establish or expand their businesses in the UAE.</li>
+        <li>
+          Specialists and researchers in critical fields like science,
+          innovation, and medicine.
+        </li>
+      </ul>
+
+      <p className="mb-6">
+        Unlike the traditional{" "}
+        <Link href="https://vjcoverseas.com/migrate/uae/work-visa" legacyBehavior>
+          <a
+            style={{
+              color: "orange",
+              fontWeight: "bold",
+              textDecoration: "none",
+            }}
+          >
+            UAE Work Visa
+          </a>
+        </Link>{" "}
+        that requires sponsorship from a single employer, the Green Visa gives you
+        the flexibility to work for multiple companies or operate independently.
+        This makes it an ideal choice for individuals who value professional
+        freedom and long-term stability.
+      </p>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-6">
+        Why the UAE is the Right Choice for Professionals and Students
+      </h3>
+
+      <p className="mb-6">
+        The UAE is not just a hub for skilled professionals—it’s also a
+        world-class education destination. Many international students choose to{" "}
+        <Link href="https://vjcoverseas.com/study-abroad/uae" legacyBehavior>
+          <a
+            style={{
+              color: "orange",
+              fontWeight: "bold",
+              textDecoration: "none",
+            }}
+          >
+            Study in UAE
+          </a>
+        </Link>{" "}
+        because of its globally recognized universities, multicultural
+        environment, and career opportunities after graduation. With initiatives
+        like the{" "}
+        <span style={{ fontWeight: "normal" }}>Green Visa</span>, the UAE is making it easier for students to
+        transition into long-term residents after completing their studies.
+      </p>
+
+      <p className="mb-6">
+        Designed for skilled professionals, freelancers, and investors, the{" "}
+        <span style={{ fontWeight: "normal" }}>UAE Green Visa</span>{" "}
+        offers flexible residency options without the need for a sponsor. It is
+        an excellent pathway for those who wish to work and live independently
+        in the Emirates. With our expert guidance, you can complete the process
+        efficiently and{" "}
+        <Link href="https://vjcoverseas.com/migrate/uae" legacyBehavior>
+          <a
+            style={{
+              color: "orange",
+              fontWeight: "bold",
+              textDecoration: "none",
+            }}
+          >
+            Migrate to UAE
+          </a>
+        </Link>{" "}
+        to enjoy its economic and lifestyle benefits.
+      </p>
+
       <div className="flex mb-6 flex-col justify-center lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <Image
@@ -56,49 +156,29 @@ const UAEgreen = () => {
           />
         </div>
       </div>
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Who Can Apply for the UAE Green Visa?
-      </h3>
-      <p className="mb-6">The Green Visa is designed for:</p>
-      <ul className="mb-6 ml-8 list-decimal">
-        <li>
-          Skilled workers with a high level of education and specialized
-          knowledge.
-        </li>
-        <li>
-          Freelancers and self-employed professionals in fields such as
-          technology, healthcare, engineering, and the arts.
-        </li>
-        <li>Investors and entrepreneurs with businesses in the UAE.</li>
-        <li>
-          Highly skilled talent, such as researchers and specialists, in
-          critical sectors like science, technology, and healthcare.
-        </li>
-      </ul>
-      <p>
-        This visa gives you the flexibility to live and work independently or
-        under multiple employers, without being restricted to a single sponsor.
-      </p>
 
       <h3 className="text-black m-2 font-bold text-lg mb-6">
         Living Expenses in the UAE
       </h3>
+
       <p className="mb-6">
         The UAE is known for its high standard of living, but the cost of living
         can vary depending on the emirate you choose to reside in and your
         lifestyle. Here's a general breakdown of living expenses in the UAE:
       </p>
+
       <ul className="list-disc mb-6 ml-8">
         <li>
           <b>Accommodation:</b> Rent is one of the biggest expenses in the UAE.
           In cities like Dubai and Abu Dhabi, monthly rents can range from AED
           3,000 for a small apartment to AED 10,000 or more for a larger,
-          premium property in central areas.
+          premium property in central areas. Sharjah and Ajman offer more
+          budget-friendly options.
         </li>
         <li>
           <b>Utilities:</b> Utility bills (electricity, water, internet, etc.)
-          typically cost between AED 400 to AED 1,200 per month, depending on
-          the size of your accommodation and usage.
+          typically cost between AED 400 to AED 1,200 per month, depending on the
+          size of your accommodation and usage.
         </li>
         <li>
           <b>Groceries and Food:</b> You can expect to spend around AED 1,000 to
@@ -119,130 +199,134 @@ const UAEgreen = () => {
           provider.
         </li>
       </ul>
-      <p>
+
+      <p className="mb-6">
         Overall, the cost of living in the UAE is manageable, especially when
         you compare it to other global cities like London, New York, or Paris,
         offering a luxurious lifestyle with tax-free income.
       </p>
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Lifestyle in the UAE
-      </h3>
-      <p className="mb-6">
-        The UAE is known for its unique blend of modernity and tradition. Life
-        here is fast-paced, with endless opportunities for career advancement,
-        entertainment, and personal growth. As a Green Visa holder, you’ll
-        experience:
-      </p>
-      <ul className="list-disc mb-6 ml-8">
-        <li>
-          <b>Modern Infrastructure:</b> State-of-the-art facilities, including
-          world-class shopping malls, top-tier restaurants, and luxury hotels,
-          make life in the UAE convenient and enjoyable.
-        </li>
-        <li>
-          <b>Cultural Diversity:</b> With a large expat community, the UAE
-          offers a multicultural environment that fosters both business and
-          social interaction, making it easy to network and build connections.
-        </li>
-        <li>
-          <b>Leisure Activities:</b> From desert safaris and shopping festivals
-          to luxury yacht tours and sports events, the UAE offers a wide variety
-          of recreational activities for all interests.
-        </li>
-        <li>
-          <b>Tax-Free Income:</b> One of the major benefits of living in the UAE
-          is that it is a tax-free country, meaning you can keep your full
-          income without worrying about income tax deductions.
-        </li>
-        <li>
-          <b>Safety:</b> The UAE is one of the safest countries in the world
-          with low crime rates and high living standards, making it an ideal
-          destination for individuals and families alike.
-        </li>
-      </ul>
+      <h3 className="text-black m-2 font-bold text-lg mb-6">Lifestyle and Opportunities in the UAE</h3>
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Processing Time for the UAE Green Visa
-      </h3>
       <p className="mb-6">
-        The processing time for a UAE Green Visa typically ranges between 2 to 4
-        weeks, depending on the complexity of your application, the type of
-        profession, and whether all required documentation is submitted
-        correctly. VJC Overseas provides assistance in gathering the necessary
-        documents and ensuring your application is processed smoothly and
-        efficiently.
-      </p>
-
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        UAE Green Visa Fees
-      </h3>
-      <p className="mb-6">
-        The cost of applying for a Green Visa can vary depending on your
-        situation, but here’s an approximate breakdown of the main fees:
-      </p>
-      <ul className="list-decimal mb-6 ml-8">
-        <li>
-          <b>Application Fees:</b> Fees for the Green Visa application can range
-          from AED 2,000 to AED 3,000.
-        </li>
-        <li>
-          <b>Medical Examination:</b> Around AED 300 to AED 800, depending on
-          the type of examination.
-        </li>
-        <li>
-          <b>Emirates ID:</b> AED 200 to AED 400, depending on the duration of
-          the card.
-        </li>
-        <li>
-          <b>Residence Permit Fees:</b> AED 500 to AED 1,000.
-        </li>
-      </ul>
-      <p>
-        Please note that additional fees may apply depending on the category of
-        the visa (e.g., for dependents or if a family visa is also being applied
-        for). VJC Overseas will help you understand all the fees associated with
-        your Green Visa application, ensuring there are no surprises along the
-        way.
-      </p>
-
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Why Choose VJC Overseas?
-      </h3>
-      <p className="mb-6">
-        At VJC Overseas, we specialize in making your transition to the UAE as
-        smooth as possible. With our in-depth knowledge of the UAE immigration
-        process and our personalized services, we guide you through each step,
-        from gathering the necessary documents to submitting your application.
+        Holding a Green Visa means you’ll enjoy a lifestyle that blends business
+        growth with leisure:
       </p>
 
       <ul className="list-disc mb-6 ml-8">
         <li>
-          <b>Expert Guidance:</b> We provide professional advice tailored to
-          your specific career or business profile.
+          <b>World-Class Infrastructure:</b> Ultra-modern facilities, from malls
+          to sports arenas.
         </li>
         <li>
-          <b>Fast and Efficient Processing:</b> We handle all the paperwork,
-          saving you time and effort in securing your Green Visa.
+          <b>Cultural Diversity:</b> A melting pot of over 200 nationalities,
+          fostering global networking.
         </li>
         <li>
-          <b>Customer-Centric Approach:</b> Our team is dedicated to ensuring
-          that your experience in the UAE is positive and successful, offering
-          ongoing support throughout your stay.
+          <b>Entertainment & Leisure:</b> Desert safaris, luxury cruises,
+          international concerts, and shopping festivals.
+        </li>
+        <li>
+          <b>Tax-Free Income:</b> Earn without income tax deductions, maximizing
+          your savings.
+        </li>
+        <li>
+          <b style={{ color: "black", fontWeight: "bold" }}>UAE Golden Visa</b>{" "}
+          ranks among the safest countries in
+          the world, with low crime rates.
         </li>
       </ul>
 
-      <p>
-        Whether you're a highly skilled professional, an entrepreneur, or a
-        freelancer looking to settle in the UAE, the Green Visa is your ticket
-        to a brighter future. Contact VJC Overseas today, and let us help you
-        take the next step in your career and life in the UAE.
+      <h3 className="text-black m-2 font-bold text-lg mb-6">Green Visa vs. UAE Golden Visa</h3>
+
+      <p className="mb-6">
+        Many clients ask about the difference between the{" "}
+        <Link href="https://vjcoverseas.com/migrate/uae/golden-visa" legacyBehavior>
+          <a
+            style={{
+              color: "orange",
+              fontWeight: "bold",
+              textDecoration: "none",
+            }}
+          >
+            UAE Golden Visa
+          </a>
+        </Link>{" "}
+        and the Green Visa. While the Golden Visa is tailored for investors,
+        entrepreneurs, and exceptional talents, offering up to 10 years of
+        residency, the Green Visa focuses more on skilled professionals,
+        freelancers, and entrepreneurs who want 5 years of renewable residency
+        with flexibility in employment.
       </p>
 
-      <hr style={{ borderColor: "black" }} className="mb-6" />
+      <h3 className="text-black m-2 font-bold text-lg mb-6">
+        Processing Time & Fees
+      </h3>
+
       <p className="mb-6">
-        For more information or to begin your Green Visa application, contact
-        VJC Overseas today!
+        Processing Time: Typically 2–4 weeks, depending on documentation and
+        application type.
+      </p>
+      <p className="mb-6">
+        Application Fee: AED 2,000–AED 3,000.
+      </p>
+      <p className="mb-6">
+        Medical Test: AED 300–AED 800.
+      </p>
+      <p className="mb-6">
+        Emirates ID: AED 200–AED 400.
+      </p>
+      <p className="mb-6">
+        Residence Permit Fee: AED 500–AED 1,000.
+      </p>
+
+      <p className="mb-6">
+        At <b style={{ color: "black", fontWeight: "bold" }}>VJC Overseas</b>, we
+        ensure your paperwork is accurate, complete, and submitted on time to
+        avoid delays.
+      </p>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-6">
+        Why Choose VJC Overseas for Your Green Visa Application?
+      </h3>
+
+      <p className="mb-6">
+        Choosing the right consultancy is key to a stress-free immigration
+        process. At{" "}
+        <Link href="https://vjcoverseas.com" legacyBehavior>
+          <a
+            style={{
+              color: "orange",
+              fontWeight: "bold",
+              textDecoration: "none",
+            }}
+          >
+            VJC Overseas
+          </a>
+        </Link>
+        , we offer:
+      </p>
+
+      <ul className="list-disc mb-6 ml-8">
+        <li>End-to-end guidance for visa applications.</li>
+        <li>Expert advice tailored to your profession, education, or business goals.</li>
+        <li>Assistance with medical tests, Emirates ID processing, and housing advice.</li>
+        <li>Ongoing support even after you settle in the UAE.</li>
+      </ul>
+
+      <p className="mb-6">
+        Whether you are a student planning to continue your career in the UAE, a
+        freelancer looking for independence, or a skilled worker seeking a
+        long-term future, the Green Visa could be your gateway to success.
+      </p>
+
+      <p className="mb-6 font-bold text-black">
+        Start your UAE journey today with VJC Overseas!
+      </p>
+
+      <p className="mb-6">
+        Contact our team for professional, personalized guidance and secure your
+        place in one of the most dynamic economies in the world.
       </p>
     </div>
   );

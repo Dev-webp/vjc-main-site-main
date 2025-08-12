@@ -39,10 +39,11 @@ export default function BangalorePage() {
   <div className="absolute inset-0 z-0">
     <Image
       src="/Bangalore-vjc.jpg" // Your Bangalore background
-      alt="Bangalore Background"
+      alt="Best Immigration Consultancy in Banglore"
       fill
       className="object-cover object-center"
       priority
+      unoptimized
     />
   </div>
   <div className="absolute inset-0 bg-black/50 z-10" />

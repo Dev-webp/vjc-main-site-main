@@ -133,7 +133,7 @@ ${keywordString}
 - Opportunities to work with advanced engineering technologies and global project teams.
 
 If you are ready to take the next big step in your career, apply via 
-**[vjcoverseas.com](https://vjcoverseas.com)** and become an integral part of an innovative engineering team that values skill, dedication, and forward-thinking solutions.
+**[VJC-Overseas](https://vjcoverseas.com)** and become an integral part of an innovative engineering team that values skill, dedication, and forward-thinking solutions.
 `;
 
 
@@ -219,7 +219,7 @@ If you are ready to take the next big step in your career, apply via
           onClick={() => setExpanded(!expanded)}
           className="mt-2 text-blue-600 hover:text-orange-500 text-xs underline"
         >
-          {expanded ? "Show Less" : "Know More"}
+          {expanded ? "Show Less" : "Explore"}
         </button>
       </div>
     </>

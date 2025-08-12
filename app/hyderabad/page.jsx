@@ -38,7 +38,7 @@ export default function HyderabadPage() {
       <section className="relative w-full h-[60vh] overflow-hidden">
         <Image
           src="/vjc-hyd.jpg"
-          alt="Hyderabad Background"
+          alt="Best Visa Consultancy in Hyderabad"
           layout="fill"
           objectFit="cover"
           className="z-0"

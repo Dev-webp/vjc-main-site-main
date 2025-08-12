@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
   return (
@@ -23,9 +24,18 @@ const Content = () => {
       <p style={{ marginBottom: "20px" }}>
         Studying in Hong Kong offers a unique opportunity to experience
         world-class education in one of the most dynamic cities in Asia. Whether
-        you`re pursuing undergraduate, postgraduate, or language studies, a Hong
+        you’re pursuing undergraduate, postgraduate, or language studies, a Hong
         Kong Student Visa is your ticket to a truly international academic
-        experience.
+        experience. When applying through{" "}
+        <Link
+          href="https://vjcoverseas.com/"
+          className="text-orange-600 font-bold"
+          style={{ textDecoration: "none" }}
+        >
+          Best Visa Immigration Consultants
+        </Link>
+        , you benefit from expert guidance and personalized support every step
+        of the way.
       </p>
 
       <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -33,7 +43,7 @@ const Content = () => {
           <Image
             src="/HKimage2.jpg"
             alt="Hong Kong Student Visa"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
             priority
@@ -54,6 +64,21 @@ const Content = () => {
           </p>
         </div>
       </div>
+
+      <p className="mb-4 text-sm sm:text-base">
+        For those aiming to{" "}
+        <Link
+          href="https://www.vjcoverseas.com/study-abroad/hongkong"
+          className="text-orange-600 font-bold"
+          style={{ textDecoration: "none" }}
+        >
+          Study in Hong Kong
+        </Link>
+        , the destination offers not only excellent academic programs but also
+        proximity to major business hubs, making it an ideal choice for students
+        planning to build an international career.
+      </p>
+
       <p className="mb-4 text-sm sm:text-base">
         With a diverse range of study programs and courses, Hong Kong offers
         something for every student aiming for a successful future.
@@ -112,11 +137,33 @@ const Content = () => {
           records if needed.
         </li>
         <li>
-          Submit your application to the Hong Kong Immigration Department.
+          Submit your application to the{" "}
+          <Link
+            href="https://vjcoverseas.com/migrate/hong-kong"
+            className="text-orange-600 font-bold"
+            style={{ textDecoration: "none" }}
+          >
+            Migrate to Hong Kong
+          </Link>{" "}
+          Immigration Department.
         </li>
-        <li>Wait for visa processing, which typically takes 4-8 weeks.</li>
+        <li>Wait for visa processing, which typically takes 4–8 weeks.</li>
         <li>Receive your student visa upon approval.</li>
       </ol>
+
+      <p className="mb-4 text-sm sm:text-base">
+        If your long-term plans go beyond academics and you decide to{" "}
+        <strong>Migrate to Hong Kong</strong> for work or entrepreneurship, you
+        can transition into other visa categories, such as employment or the{" "}
+        <Link
+          href="https://www.vjcoverseas.com/migrate/hong-kong/business-visa"
+          className="text-orange-600 font-bold"
+          style={{ textDecoration: "none" }}
+        >
+          Migrate to Hong Kong Business Visa
+        </Link>
+        , to continue building your career.
+      </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
         Visa Fees
@@ -146,7 +193,7 @@ const Content = () => {
         The standard processing time for a Hong Kong Student Visa is generally
         between 4 to 8 weeks from the date your application is submitted to the
         Immigration Department. Processing times may vary depending on the
-        volume of applications and completeness of your application. It’s
+        volume of applications and completeness of your submission. It’s
         advisable to apply well in advance to avoid delays.
       </p>
 
@@ -156,7 +203,7 @@ const Content = () => {
       <ul style={{ marginBottom: "20px" }}>
         <li>
           <strong style={{ color: "rgb(3, 60, 65)" }}>Visa Extension:</strong>{" "}
-          You must apply for an extension if you need to stay beyond your visa`s
+          You must apply for an extension if you need to stay beyond your visa’s
           expiration.
         </li>
         <li>
@@ -179,7 +226,9 @@ const Content = () => {
       >
         As a student, you’ll experience vibrant city life, excellent public
         transportation, and a diverse food scene. Hong Kong offers a high
-        standard of living and plenty of opportunities to explore.
+        standard of living and plenty of opportunities to explore. It’s also a
+        gateway to other Asian destinations, adding even more value to your
+        academic journey.
       </p>
 
       <h3 style={{ color: "brown", fontWeight: "bold", marginBottom: "20px" }}>
@@ -192,14 +241,28 @@ const Content = () => {
           fontSize: "14px",
         }}
       >
-        Ready to take the next step? With VJC Overseas, your path to success in
-        Hong Kong is just a few steps away.
+        Ready to take the next step? With{" "}
+        <Link
+          href="https://vjcoverseas.com/"
+          className="text-orange-600 font-bold"
+          style={{ textDecoration: "none" }}
+        >
+          VJC Overseas
+        </Link>
+        , your path to success in Hong Kong is just a few steps away. Whether
+        you’re coming solely for studies or envisioning a long-term plan to work
+        or do business after graduation, our team is here to guide you from
+        application to arrival.
       </p>
       <p
-        style={{ marginBottom: "20px", fontSize: "15px", fontWeight: "bolder" }}
+        style={{
+          marginBottom: "20px",
+          fontSize: "15px",
+          fontWeight: "bolder",
+        }}
       >
-        Contact us today for a free consultation and let us guide you toward
-        securing your Hong Kong Student Visa.
+        Contact us today for a free consultation and let us help you secure your
+        Hong Kong Student Visa with confidence.
       </p>
     </div>
   );

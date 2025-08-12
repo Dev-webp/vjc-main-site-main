@@ -279,7 +279,7 @@ const defaultBackgroundImages = {
   "/migrate/denmark/tourist-visa":"/dmtour.jpg",
   "/migrate/denmark/business-visa":"/dmbusi.jpg",
   "/migrate/uae/student-visa":"/uaestudent.avif",
-  "/migrate/uae/golden-visa":"/goldvisa.jpg",
+  "/migrate/uae/golden-visa":"/uae-golden-visa-vjc-overseas.webp",
   "/migrate/uae/work-visa":"/uaework.webp",
   "/migrate/uae/green-visa":"/greenvisa.png",
   "/migrate/uae/tourist-visa":"/uaetour.jpg",

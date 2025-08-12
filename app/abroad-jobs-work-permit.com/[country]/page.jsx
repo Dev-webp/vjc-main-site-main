@@ -26,7 +26,7 @@ const filterData = {
   Canada: { cities: ["Toronto"], domains: ["Banking", "Food Services", "Retail", "Operations", "IT", "Administration", "Engineering", "Sales", "Marketing", "Healthcare", "Construction", "Airlines", "Insurance"] },
   Australia: { cities: ["Melbourne"], domains: ["IT & Software Testing", "IT & Software Development", "Manufacturing & Engineering", "Automotive", "ICT Sales"] },
   Luxembourg: { cities: ["Luxembourg City"], domains: ["IT & Software Development", "Mechanical Engineering", "Finance & Banking", "Healthcare", "Sales & Business Development", "Electrical Engineering", "Data & Analytics", "HVAC"] },
-  UK: { cities: ["London"], domains: ["Travel", "Media", "Marketing", "Finance", "Hospitality", "Sales", "Education", "E-commerce"] },
+  UK: { cities: ["London"], domains: ["Travel", "Media", "Marketing", "Finance", "Hospitality", "Sales", "Education", "E-commerce","IT",] },
   Ireland: { cities: ["Dublin"], domains: ["IT & Software Development", "Healthcare", "Mechanical Engineering", "Business & Consulting", "Sales & Marketing", "HVAC", "Data & Analytics", "Electrical Engineering", "Digital Marketing"] },
   Singapore: { cities: ["Singapore"], domains: ["IT & Software Development", "Biomedical Engineering", "Finance & Banking", "Design & User Experience", "Logistics & Supply Chain", "Cybersecurity", "Urban Development & Planning", "Maritime & Port Management", "Artificial Intelligence"] },
   Malaysia: { cities: ["Kuala Lumpur"], domains: ["Information Technology", "Finance & Accounting", "Marketing & Advertising", "Human Resources", "Data & Analytics", "Construction & Engineering", "Customer Service", "Creative Design", "Cybersecurity", "Logistics & Supply Chain"] },

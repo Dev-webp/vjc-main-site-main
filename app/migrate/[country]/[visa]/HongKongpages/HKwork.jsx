@@ -1,7 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
+  const KeywordLink = ({ href, children }) => (
+    <Link
+      href={href}
+      style={{ color: "rgb(220, 4, 4)", fontWeight: "normal", textDecoration: "none" }}
+    >
+      {children}
+    </Link>
+  );
+
+  const BoldKeyword = ({ children }) => (
+    <strong style={{ color: "black", fontWeight: "bold" }}>{children}</strong>
+  );
+
   return (
     <div
       style={{
@@ -22,11 +36,16 @@ const Content = () => {
 
       <p style={{ marginBottom: "20px" }}>
         If you’re looking to work in one of the world’s most dynamic and
-        exciting cities, a Hong Kong work visa is your key to unlocking career
-        opportunities in this global financial hub. At VJC Overseas, we provide
-        expert guidance and streamlined services to help you navigate the
-        process of obtaining a work visa for Hong Kong, ensuring a smooth
-        transition for both you and your career.
+        exciting cities, a{" "}
+        <KeywordLink href="https://www.vjcoverseas.com/migrate/hong-kong/employment-visa">
+          Migrate To Hong Kong Employment Visa
+        </KeywordLink>{" "}
+        is your key to unlocking career opportunities in this global financial
+        hub. At{" "}
+        <BoldKeyword>VJC Overseas</BoldKeyword>,
+        we provide expert guidance and streamlined services to help you
+        navigate the process of obtaining a work visa for Hong Kong, ensuring a
+        smooth transition for both you and your career.
       </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
@@ -37,7 +56,7 @@ const Content = () => {
           <Image
             src="/ukimage5.webp"
             alt="Image description"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
             priority
@@ -51,8 +70,11 @@ const Content = () => {
           career opportunities in various sectors, including finance,
           technology, logistics, and hospitality. Whether you’re an
           entrepreneur, skilled worker, or professional looking to expand your
-          horizons, Hong Kong provides a favourable environment for growth and
-          development.
+          horizons,{" "}
+          <KeywordLink href="https://www.vjcoverseas.com/migrate/hong-kong">
+            Migrate to Hong Kong
+          </KeywordLink>{" "}
+          provides a favourable environment for growth and development.
         </p>
       </div>
 
@@ -83,8 +105,13 @@ const Content = () => {
           receive training that will enhance their professional development.
         </li>
         <li>
-          <strong>Entrepreneur Visa:</strong> For business owners and investors
-          who plan to start a new business or join an existing one in Hong Kong.
+          <strong>
+            Entrepreneur Visa (Also called{" "}
+            <BoldKeyword>VJC Overseas</BoldKeyword>{" "}
+            Investment Visa):
+          </strong>{" "}
+          For business owners and investors who plan to start a new business or
+          join an existing one in Hong Kong.
         </li>
       </ul>
 
@@ -112,7 +139,11 @@ const Content = () => {
         </li>
         <li>
           Good character – You must not have any criminal record and must comply
-          with all Hong Kong immigration regulations.
+          with all Hong Kong immigration regulations. For more details, visit{" "}
+          <KeywordLink href="https://www.vjcoverseas.com/study-abroad/hongkong">
+            Study In Hong Kong
+          </KeywordLink>
+          .
         </li>
       </ul>
 
@@ -126,8 +157,12 @@ const Content = () => {
         category, and the volume of applications being processed at the time.
       </p>
       <p style={{ marginBottom: "20px" }}>
-        At VJC Overseas, we ensure that your application is completed accurately
-        and submitted in a timely manner to avoid unnecessary delays.
+        At{" "}
+        <BoldKeyword>
+          VJC Overseas
+        </BoldKeyword>{" "}
+        , we ensure that your application is completed accurately and submitted
+        in a timely manner to avoid unnecessary delays.
       </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
@@ -156,7 +191,12 @@ const Content = () => {
       </ul>
       <p style={{ marginBottom: "20px" }}>
         Please note that fees are subject to change, and there may be additional
-        charges depending on the processing requirements.
+        charges depending on the processing requirements. For trusted advice,
+        consult the{" "}
+        <KeywordLink href="https://vjcoverseas.com/">
+          Best Visa Immigration Consultants
+        </KeywordLink>
+        .
       </p>
 
       <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
@@ -187,9 +227,10 @@ const Content = () => {
       </h3>
       <p style={{ marginBottom: "20px" }}>
         Are you ready to take the next step in your career by working in Hong
-        Kong? Contact VJC Overseas today for expert assistance with your Hong
-        Kong work visa application. Let us help you make your Hong Kong dream a
-        reality!
+        Kong? Contact{" "}
+        <KeywordLink href="https://vjcoverseas.com/">VJC Overseas</KeywordLink>{" "}
+        today for expert assistance with your Hong Kong work visa application.
+        Let us help you make your Hong Kong dream a reality!
       </p>
       <p style={{ marginBottom: "20px", fontWeight: "bold", fontSize: "15px" }}>
         Call us at +91-9160449000 or email info@vjcoverseas.com to schedule a

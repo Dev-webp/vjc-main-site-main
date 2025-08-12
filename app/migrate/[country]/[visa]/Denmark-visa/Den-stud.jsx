@@ -14,24 +14,31 @@ const Denstud = () => {
     >
       <div style={{ marginBottom: "5%" }}>
         <h3 className="text-2xl mt-4 font-semibold text-black text-center">
-          Denmark Student Visa - VJC Overseas
-          <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+          Denmark Student Visa - <b style={{ color: "black" }}>VJC Overseas</b>
+          <span style={{ color: "rgb(220, 4, 4)" }}>
+            <b style={{ color: "black" }}>VJC Overseas</b>
+          </span>
         </h3>
       </div>
 
       <p className="mb-6">
         Studying in Denmark offers students an excellent opportunity to
         experience world-class education, a high standard of living, and an
-        internationally recognized degree. At VJC Overseas, we guide you through
-        every step of obtaining a Denmark student visa, ensuring a smooth
-        application process so you can focus on your academic journey.
+        internationally recognized degree. At{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          VJC Overseas
+        </a>
+        , we guide you through every step of obtaining a student visa, ensuring a smooth application process so you can focus on your academic journey.
       </p>
       <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <Image
             src="/assets/Denstud.png"
             alt="Australia Business Visa"
-            width={500} // Replace with your image's actual width
+            width={500}
             height={300}
             priority
             unoptimized
@@ -59,8 +66,14 @@ const Denstud = () => {
       <p className="mb-6">
         To study in Denmark, you need to apply for a student visa, officially
         known as the "Residence Permit for Studies." This permit allows you to
-        live and study in Denmark for the duration of your course. At VJC
-        Overseas, we make the process as easy as possible by providing
+        live and study in Denmark for the duration of your course. At{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Best Visa Immigration Consultants
+        </a>
+        , we make the process as easy as possible by providing
         step-by-step guidance on documentation, eligibility, and submission.
       </p>
 
@@ -95,7 +108,7 @@ const Denstud = () => {
         <li>Language proficiency proof (if applicable)</li>
       </ul>
       <p className="mb-6">
-        Our team at VJC Overseas will help you prepare all the necessary
+        Our team at <b style={{ color: "black" }}>VJC Overseas</b> will help you prepare all the necessary
         documents, ensuring they meet the requirements set by the Danish
         Immigration Service.
       </p>
@@ -122,9 +135,16 @@ const Denstud = () => {
       </ul>
       <p className="mb-6">
         It’s important to check with your specific institution for the exact
-        fees for your chosen program. VJC Overseas can provide you with detailed
+        fees for your chosen program. <b style={{ color: "black" }}>VJC Overseas</b> can provide you with detailed
         information about the tuition costs for the colleges and universities
-        you’re interested in.
+        you’re interested in. For personalized guidance, explore our{" "}
+        <a
+          href="https://vjcoverseas.com/study-abroad/denmark"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Study in Denmark
+        </a>{" "}
+        services today.
       </p>
       <p className="text-sky-800 mb-6 italic">Living Expenses:</p>
       <p className="mb-6">
@@ -146,7 +166,13 @@ const Denstud = () => {
         date to ensure you have enough time for any unforeseen delays.
       </p>
       <p className="mb-6">
-        At VJC Overseas, we assist you with all aspects of the visa application
+        At <a
+          href="https://www.vjcoverseas.com/migrate/denmark"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Migrate to Denmark
+        </a>
+        , we assist you with all aspects of the visa application
         process, from ensuring that you have the correct documents to submitting
         your application on time.
       </p>
@@ -167,7 +193,7 @@ const Denstud = () => {
         Why Choose VJC Overseas for Your Denmark Student Visa?
       </p>
       <p className="mb-6">
-        At VJC Overseas, we offer personalized services to help you navigate the
+        At <b style={{ color: "black" }}>VJC Overseas</b>, we offer personalized services to help you navigate the
         complexities of the student visa process. Our expert team will provide
         you with:
       </p>
@@ -187,7 +213,7 @@ const Denstud = () => {
         </li>
       </ul>
       <p className="mb-6">
-        Let VJC Overseas help you take the first step toward your education in
+        Let <b style={{ color: "black" }}>VJC Overseas</b> help you take the first step toward your education in
         Denmark. With our expert services, we ensure that your application is
         completed smoothly and without hassle, so you can focus on what truly
         matters: your studies!
@@ -197,7 +223,13 @@ const Denstud = () => {
       <p className="mb-6">
         For more information about applying for a Denmark student visa, tuition
         fees, living expenses, or the visa application process, get in touch
-        with VJC Overseas today. Our experienced consultants are ready to help
+        with <a
+          href="https://www.vjcoverseas.com/migrate/denmark/work-permit-visa"
+          style={{ color: "orange", fontWeight: "bold" }}
+        >
+          Denmark Work Permit Visa
+        </a>{" "}
+        specialists at <b style={{ color: "black" }}>VJC Overseas</b> today. Our experienced consultants are ready to help
         you every step of the way!
       </p>
       <p>
@@ -213,7 +245,7 @@ const Denstud = () => {
         <b>Address:</b>HYDERABAD | BENGALURU | USA
       </p>
       <p className="mb-6">
-        Explore the opportunities waiting for you in Denmark with VJC Overseas –
+        Explore the opportunities waiting for you in Denmark with <b style={{ color: "black" }}>VJC Overseas</b> – 
         your gateway to a brighter academic future!
       </p>
     </div>

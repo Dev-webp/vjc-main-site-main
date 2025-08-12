@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const UAEwork = () => {
   return (
@@ -24,14 +25,29 @@ const UAEwork = () => {
       </h3>
 
       <p className="mb-6">
-        At VJC Overseas, we help skilled professionals and workers secure
-        employment opportunities in the UAE, one of the most dynamic and
-        prosperous regions in the world. If you're planning to move to the UAE
-        for work, understanding the work visa process, living expenses,
-        lifestyle, and visa fees is essential. Our comprehensive guide will
-        provide you with all the information you need to make an informed
-        decision.
+        At <b style={{ color: "black" }}>VJC Overseas</b>, we assist skilled
+        professionals, entrepreneurs, and workers in building their future in
+        the UAE — one of the fastest-growing economies in the world. With our
+        expertise, you can navigate the{" "}
+        <b style={{ color: "black" }}>Migrate To UAE</b>{" "}
+        Work Visa process smoothly, from understanding requirements to settling
+        into your new life. Whether you are aiming for long-term career growth
+        or seeking global exposure, our team will guide you at every step. It’s
+        no wonder many of our clients regard us as one of the{" "}
+        <Link href="https://vjcoverseas.com/" legacyBehavior>
+          <a
+            style={{
+              color: "orange",
+              fontWeight: "bold",
+              textDecoration: "none",
+            }}
+          >
+            Best Visa Immigration Consultants
+          </a>
+        </Link>{" "}
+        for the UAE.
       </p>
+
       <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <Image
@@ -50,11 +66,12 @@ const UAEwork = () => {
           </h3>
           <p className="mb-6">
             A UAE Work Visa, also known as a residence visa, allows foreign
-            nationals to work and live in the UAE for a specified period,
-            usually linked to the duration of your employment contract. To
-            obtain a work visa, you must have a job offer from a company that is
-            registered in the UAE. Your employer will initiate the visa
-            application on your behalf.
+            nationals to work and live in the UAE for a fixed period, usually
+            tied to your employment contract. To obtain one, you must secure a
+            job offer from a UAE-registered employer who will sponsor your visa
+            application. The process is highly structured, ensuring that all
+            expatriates meet legal, medical, and professional requirements
+            before starting their employment.
           </p>
         </div>
       </div>
@@ -65,107 +82,131 @@ const UAEwork = () => {
 
       <ul className="mb-6 ml-8 list-decimal">
         <li>
-          <b>Employment Visa: </b>Issued to foreign nationals with a confirmed
-          job offer.
+          <b>Employment Visa: </b>For individuals with a confirmed job offer
+          from a UAE company.
         </li>
         <li>
-          <b>Freelancer Visa: </b>For self-employed professionals or independent
-          contractors.
+          <b>Freelancer Visa: </b>For self-employed professionals and
+          contractors working independently.
         </li>
         <li>
-          <b>Investor Visa: </b>For entrepreneurs and business owners.
+          <b>Investor Visa: </b>For entrepreneurs and business owners who want
+          to establish or expand their operations.
         </li>
       </ul>
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Process of Obtaining a UAE Work Visa
-      </h3>
-
       <p className="mb-6">
-        The process to obtain a UAE work visa typically involves the following
-        steps:
+        Some professionals also explore other residency options such as the{" "}
+        <Link href="https://vjcoverseas.com/migrate/uae/golden-visa" legacyBehavior>
+          <a style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}>
+            UAE Golden Visa
+          </a>
+        </Link>{" "}
+        for long-term residency and the{" "}
+        <Link href="https://www.vjcoverseas.com/migrate/uae/green-visa" legacyBehavior>
+          <a style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}>
+            UAE Green Visa
+          </a>
+        </Link>{" "}
+        designed for skilled workers and freelancers.
       </p>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-6">
+        Steps to Obtain a UAE Work Visa
+      </h3>
 
       <ol className="mb-6 ml-8 list-decimal">
         <li>
-          <b>Job Offer:</b> Secure a job with a UAE-based employer who will
-          sponsor your visa application.
+          <b>Secure a Job Offer:</b> Your UAE employer initiates the visa
+          sponsorship process.
         </li>
         <li>
-          <b>Medical Test:</b> Complete a medical examination at an approved
-          health centre.
+          <b>Medical Examination:</b> Complete tests at an approved UAE health
+          facility.
         </li>
         <li>
-          <b>Application Submission:</b> Your employer will submit the necessary
-          documents and application to the UAE immigration authorities.
+          <b>Application Submission:</b> Your employer submits the application
+          to immigration authorities.
         </li>
         <li>
-          <b>Entry Permit:</b> Once approved, you will receive an entry permit,
-          which allows you to enter the UAE and complete further steps.
+          <b>Entry Permit:</b> Once approved, this allows you to enter the UAE
+          for the final steps.
         </li>
         <li>
-          <b>Residence Visa Stamping:</b> After entering the UAE, you will
-          complete the stamping process, which includes biometric data
-          collection and visa issuance.
+          <b>Visa Stamping:</b> Biometric data is collected, and your visa is
+          officially stamped in your passport.
         </li>
         <li>
-          <b>Emirates ID:</b> Receive your Emirates ID, which is essential for
-          access to services and facilities in the UAE.
+          <b>Emirates ID:</b> This card is essential for accessing government
+          and private services.
         </li>
       </ol>
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">Processing Time</h3>
-
       <p className="mb-6">
-        The processing time for a UAE Work Visa can vary, but generally, it
-        takes about 2 to 4 weeks from the submission of your application.
-        However, this can depend on factors such as the type of work visa, your
-        nationality, and the workload of the UAE immigration authorities.
-        Expedited processing services may also be available at an additional
-        cost.
+        The UAE Work Visa opens the door to excellent career prospects in
+        industries ranging from finance and technology to tourism and
+        construction. Whether you have a confirmed job offer or are exploring
+        employment options, our team provides end-to-end assistance to make
+        your relocation smooth and hassle-free. Take the next step in your
+        career and{" "}
+        <Link href="https://vjcoverseas.com/migrate/uae" legacyBehavior>
+          <a
+            style={{
+              color: "orange",
+              fontWeight: "bold",
+              textDecoration: "none",
+            }}
+          >
+            Migrate To UAE
+          </a>
+        </Link>{" "}
+        for rewarding professional growth.
       </p>
 
       <h3 className="text-black m-2 font-bold text-lg mb-6">
-        UAE Work Visa Fees
+        Processing Time for a UAE Work Visa
       </h3>
 
       <p className="mb-6">
-        The fees for a UAE Work Visa can vary depending on the type of visa,
-        your job, and the length of the contract. Below is an estimate of the
-        visa fees:
+        The UAE Work Visa typically takes 2 to 4 weeks to process, depending on
+        the visa category, your nationality, and the workload of the immigration
+        office. For urgent requirements, expedited processing is sometimes
+        available. At <b style={{ color: "black" }}>VJC Overseas</b>, we ensure
+        your application is accurate and complete, reducing delays and making
+        the process stress-free.
+      </p>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-6">UAE Work Visa Fees</h3>
+
+      <p className="mb-6">
+        The cost of obtaining a UAE Work Visa depends on the category and
+        duration of employment:
       </p>
 
       <ul className="list-decimal mb-6 ml-8">
         <li>
-          <b>Employment Visa Fees:</b> Between AED 3,000 to AED 5,000 (including
-          medical, visa stamping, and government charges).
+          <b>Employment Visa:</b> AED 3,000 to AED 5,000 (including medical,
+          visa stamping, and government charges).
         </li>
         <li>
-          <b>Freelancer Visa Fees:</b> AED 6,000 to AED 12,000 per year
-          (depending on the emirate).
+          <b>Freelancer Visa:</b> AED 6,000 to AED 12,000 annually.
         </li>
         <li>
-          <b>Investor Visa Fees:</b> AED 10,000 to AED 20,000 (depending on the
-          type of investment and business).
+          <b>Investor Visa:</b> AED 10,000 to AED 20,000 depending on the
+          business scale.
         </li>
       </ul>
-
-      <p className="mb-6">Additional costs may include:</p>
-      <ul className="list-decimal mb-6 ml-8">
-        <li>Medical examination fees: AED 300 – AED 500</li>
-        <li>Emirates ID fee: AED 200 – AED 400</li>
-        <li>Visa renewal (annually): AED 1,000 – AED 2,000</li>
-      </ul>
-
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Cost of Living in the UAE
-      </h3>
 
       <p className="mb-6">
-        Living in the UAE offers a unique lifestyle, with modern amenities, a
-        tax-free income, and a high standard of living. However, the cost of
-        living can vary depending on the city you choose to live in. Here’s a
-        general overview:
+        Additional costs include medical exams (AED 300–500), Emirates ID fees
+        (AED 200–400), and annual renewal charges (AED 1,000–2,000).
+      </p>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-6">Cost of Living in the UAE</h3>
+
+      <p className="mb-6">
+        Living in the UAE means enjoying a high standard of living with
+        world-class infrastructure, but expenses vary depending on your city:
       </p>
 
       <ul className="list-disc mb-6 ml-8">
@@ -173,16 +214,8 @@ const UAEwork = () => {
           <b>Accommodation:</b>
           <ul className="list-decimal ml-8">
             <li>
-              Dubai: Rent for a one-bedroom apartment in the city centre ranges
-              from AED 4,000 to AED 7,000 per month.
-            </li>
-            <li>
-              Abu Dhabi: A one-bedroom apartment in the city center costs about
-              AED 3,500 to AED 6,000 per month.
-            </li>
-            <li>
-              Sharjah: More affordable, with one-bedroom apartments averaging
-              AED 2,000 to AED 3,500 per month.
+              Dubai (AED 4,000–7,000/month for 1-bedroom), Abu Dhabi (AED
+              3,500–6,000), Sharjah (AED 2,000–3,500).
             </li>
           </ul>
         </li>
@@ -190,22 +223,17 @@ const UAEwork = () => {
           <b>Utilities & Internet:</b>
           <ul className="list-decimal ml-8">
             <li>
-              Utilities (electricity, water, and cooling) cost around AED 300 to
-              AED 600 per month.
+              AED 300–600/month for utilities; AED 300–500 for high-speed
+              internet.
             </li>
-            <li>High-speed internet costs AED 300 to AED 500 per month.</li>
           </ul>
         </li>
         <li>
           <b>Transportation:</b>
           <ul className="list-decimal ml-8">
             <li>
-              Public transportation: A monthly metro/bus pass costs about AED
-              300 to AED 400.
-            </li>
-            <li>
-              Private car (fuel costs): Gasoline prices are relatively low,
-              averaging AED 2.5 per liter.
+              Public transport passes cost AED 300–400/month; fuel is affordable
+              at around AED 2.5/litre.
             </li>
           </ul>
         </li>
@@ -213,12 +241,8 @@ const UAEwork = () => {
           <b>Groceries & Dining:</b>
           <ul className="list-decimal ml-8">
             <li>
-              Groceries for a single person may cost around AED 800 to AED 1,500
-              per month.
-            </li>
-            <li>
-              Dining out in mid-range restaurants costs around AED 50 to AED 100
-              per meal.
+              AED 800–1,500/month for groceries; AED 50–100 per person for
+              mid-range dining.
             </li>
           </ul>
         </li>
@@ -226,84 +250,75 @@ const UAEwork = () => {
           <b>Healthcare:</b>
           <ul className="list-decimal ml-8">
             <li>
-              While healthcare is of a high standard, health insurance is
-              mandatory for all residents. The cost of health insurance varies
-              by plan, but it typically starts from AED 500 to AED 1,500 per
-              month.
+              Mandatory insurance starting from AED 500–1,500/month depending
+              on coverage.
             </li>
           </ul>
         </li>
       </ul>
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Lifestyle in the UAE
-      </h3>
+      <p className="mb-6">
+        For students aiming to work part-time while studying,{" "}
+        <Link href="https://vjcoverseas.com/study-abroad/uae" legacyBehavior>
+          <a
+            style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}
+          >
+            Study In UAE
+          </a>
+        </Link>{" "}
+        programs can be a gateway to professional experience.
+      </p>
+
+      <h3 className="text-black m-2 font-bold text-lg mb-6">Lifestyle in the UAE</h3>
 
       <ul className="list-disc mb-6 ml-8">
         <li>
-          <b>Weather:</b> The UAE experiences a desert climate, with scorching
-          summers (temperatures above 40°C) and mild winters. Most buildings are
-          air-conditioned to ensure comfort indoors.
+          <b>Climate:</b> Hot summers above 40°C and mild winters.
         </li>
         <li>
-          <b>Cultural Diversity:</b> The UAE is a melting pot of cultures, with
-          expatriates making up over 80% of the population. English is widely
-          spoken, but Arabic is the official language.
+          <b>Cultural Diversity:</b> Over 200 nationalities live and work here.
         </li>
         <li>
-          <b>Shopping and Entertainment:</b> The UAE is home to some of the
-          world’s largest shopping malls, luxury boutiques, and a variety of
-          entertainment options like desert safaris, theme parks, and indoor
-          skiing.
+          <b>Recreation:</b> From desert adventures to luxury shopping malls and
+          theme parks.
         </li>
         <li>
-          <b>Safety and Security:</b> The UAE is considered one of the safest
-          countries in the world, with low crime rates and stringent law
-          enforcement.
-        </li>
-        <li>
-          <b>Tax-Free Income:</b> One of the major attractions of living in the
-          UAE is the tax-free income, which allows professionals to keep more of
-          their earnings.
+          <b>Tax-Free Income:</b> One of the biggest draws for expatriates.
         </li>
       </ul>
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Why Choose VJC Overseas?
-      </h3>
+      <h3 className="text-black m-2 font-bold text-lg mb-6">Why Choose VJC Overseas for Your UAE Work Visa?</h3>
 
       <p className="mb-6">
-        At VJC Overseas, we make the process of obtaining a UAE Work Visa as
-        simple as possible. We provide expert guidance, personalized assistance,
-        and comprehensive support to ensure your transition to the UAE is smooth
-        and hassle-free.
+        Choosing the right consultant can be the difference between a smooth
+        visa process and endless delays. At <b style={{ color: "black" }}>VJC Overseas</b>, we provide:
       </p>
 
       <ul className="list-disc mb-6 ml-8">
-        <li>
-          <b>Assistance with visa applications and documentation</b>
-        </li>
-        <li>
-          <b>Employer coordination</b>
-        </li>
-        <li>
-          <b>
-            Guidance on medical tests, Emirates ID, and residency formalities
-          </b>
-        </li>
-        <li>
-          <b>Advice on cost of living, housing, and lifestyle</b>
-        </li>
+        <li>End-to-end documentation and application support.</li>
+        <li>Coordination with UAE employers.</li>
+        <li>Medical, Emirates ID, and residency formalities guidance.</li>
+        <li>Transparent cost breakdowns and timelines.</li>
       </ul>
 
-      <h3 className="text-black m-2 font-bold text-lg mb-6">
-        Start your journey today with VJC Overseas!
-      </h3>
+      <h3 className="text-black m-2 font-bold text-lg mb-6">Start Your UAE Career Journey Today</h3>
       <p className="mb-6">
-        For more information or to begin your UAE Work Visa application, contact
-        us today and let our experts guide you to a successful career in the
-        UAE.
+        If you’re ready to explore professional opportunities in the UAE, let{" "}
+        <Link href="https://vjcoverseas.com" legacyBehavior>
+          <a
+            style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}
+          >
+            VJC Overseas
+          </a>
+        </Link>{" "}
+        guide you through the UAE
+        Work Visa process with unmatched expertise and personal attention. We
+        are committed to helping you transition to your new life with ease.
       </p>
+      <p className="mb-6">
+        Call: +91 9160449000&nbsp;&nbsp; Email: info@vjcoverseas.com
+      </p>
+
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <p className="mb-6">
         Feel free to adjust the fees and processing time based on the most

@@ -1,108 +1,206 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Content = () => {
-    return (
-        <div style={{
-            position: 'relative',
-            padding: '10px',
-            boxSizing: 'border-box',
-            backgroundColor: 'white',
-            fontFamily: 'Times New Roman',
-            overflow: 'hidden',
-          }}>
-           
-          <div style={{ marginBottom: '40px' }}>
-            <h3 className="text-2xl font-semibold text-black text-center">
-            Hong Kong Bussiness Visa - <span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
-            </h3>
-          </div>
-      
-          
-    
+  return (
+    <div
+      style={{
+        position: "relative",
+        padding: "10px",
+        boxSizing: "border-box",
+        backgroundColor: "white",
+        fontFamily: "Times New Roman",
+        overflow: "hidden",
+      }}
+    >
+      <div style={{ marginBottom: "40px" }}>
+        <h3 className="text-2xl font-semibold text-black text-center">
+          Hong Kong Business Visa -{" "}
+          <span style={{ color: "rgb(220, 4, 4)" }}>
+            VJC Overseas
+          </span>
+        </h3>
+      </div>
 
-    <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>
-      A Comprehensive Guide for VJC Overseas
-    </h3>
-    <p style={{ marginBottom: '20px' }}>
-      Hong Kong, renowned as one of the worlds leading international business hubs, offers an ideal environment for entrepreneurs, professionals, and investors. Whether youre looking to explore business opportunities, attend meetings, or establish a company, obtaining a Hong Kong Business Visa is crucial to facilitate smooth and legal operations in the region.
-    </p>
-    <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-  <div className="flex-shrink-0 mx-auto lg:mx-0">
-    <Image
-      src="/businessvisa.jpg"
-      alt="Image description"
-      width={500} // Replace with your image's actual width
-      height={300}
-      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
-      priority
-      unoptimized
-    />
-  </div>
-  <div className="px-4 lg:px-0">
-    <p style={{ marginBottom: '20px' }}>
-      At VJC Overseas, we help individuals and businesses navigate the complexities of obtaining a Hong Kong Business Visa. Here’s an in-depth guide to understanding the process, the types of visas available, processing time, and visa fees.
-    </p>
-    <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Types of Hong Kong Business Visas</h3>
-    <ul style={{ marginBottom: '20px' }}>
-    <li><strong style={{ color: 'rgb(3, 60, 65)' }}>1.General Employment Visa (Business Purpose):</strong> This visa is for individuals planning to work in Hong Kong for a specific employer or set of business activities. It is suitable for entrepreneurs, managers, and professionals who have secured a job or business-related activity.</li>
-    </ul>
+      <p style={{ marginBottom: "20px" }}>
+        Hong Kong stands as one of the world’s most influential international
+        business hubs, attracting entrepreneurs, investors, and professionals
+        eager to tap into its thriving economy. Known for its strategic
+        location, world-class infrastructure, and robust financial systems, it
+        offers an ideal environment for building and expanding business
+        ventures. Whether you’re a start-up founder, an established investor,
+        or a corporate executive, securing a Hong Kong Business Visa is a key
+        step in ensuring your activities in the region are legal, smooth, and
+        strategically aligned with your goals.
+      </p>
+
+      <p style={{ marginBottom: "20px" }}>
+        At{" "}
+        <Link
+          href="https://vjcoverseas.com/"
+          className="text-orange-600 font-bold"
+          style={{ textDecoration: "none" }}
+        >
+          Best Visa Immigration Consultants
+        </Link>
+        , we specialise in guiding clients through every stage of the
+        application process. As one of the best in the industry, our expertise
+        ensures your application is accurate, complete, and approved with
+        minimal delays, enabling you to focus on growing your business in one
+        of Asia’s most competitive markets.
+      </p>
+
+      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
+        Why Hong Kong is the Right Choice for Business
+      </h3>
+      <ul style={{ marginBottom: "20px" }}>
+        <li>Global Connectivity – Direct access to Mainland China and Southeast Asian markets.</li>
+        <li>Business-Friendly Policies – Low corporate tax rates and transparent regulations.</li>
+        <li>Talent Availability – Skilled professionals in finance, technology, trade, and logistics.</li>
+        <li>International Recognition – A stable economy, free market principles, and world-class legal framework.</li>
+      </ul>
+
+      <p style={{ marginBottom: "20px" }}>
+        For business owners who also plan to send their children abroad, the
+        opportunity to{" "}
+        <Link
+          href="https://www.vjcoverseas.com/study-abroad/hongkong"
+          className="text-orange-600 font-bold"
+          style={{ textDecoration: "none" }}
+        >
+          Study in Hong Kong
+        </Link>{" "}
+        ensures access to high-quality education alongside business expansion.
+      </p>
+
+      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
+        Types of Hong Kong Business Visas
+      </h3>
+      <ul style={{ marginBottom: "20px" }}>
+        <li>
+          <strong>General Employment Visa (Business Purpose):</strong> Suitable
+          for professionals, managers, and entrepreneurs employed for specific
+          business roles in Hong Kong.
+        </li>
+        <li>
+          <strong>Investment Visa:</strong> For those planning to establish or
+          invest in a Hong Kong business. Applicants must prove their
+          investment will benefit the economy, create jobs, and support local
+          industries.
+        </li>
+        <li>
+          <strong>Entrepreneur Visa:</strong> Designed for individuals starting
+          a new company in Hong Kong, requiring a sustainable business plan and
+          potential to create local employment.
+        </li>
+        <li>
+          <strong>Visiting Visa for Business Meetings:</strong> Ideal for
+          short-term business trips such as meetings, negotiations, or
+          conferences.
+        </li>
+      </ul>
+
+      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
+        Eligibility Criteria
+      </h3>
+      <ul style={{ marginBottom: "20px" }}>
+        <li>Valid passport with at least 6 months’ remaining validity.</li>
+        <li>Proof of financial capacity to support your stay.</li>
+        <li>
+          Evidence of business activities (business plan, investment proof,
+          employment contracts).
+        </li>
+        <li>Compliance with health and character requirements.</li>
+        <li>Relevant qualifications or experience, depending on visa type.</li>
+      </ul>
+
+      <p style={{ marginBottom: "20px" }}>
+        For those who wish to relocate for work opportunities,{" "}
+        <Link
+          href="https://www.vjcoverseas.com/migrate/hong-kong/employment-visa"
+          className="text-orange-600 font-bold"
+          style={{ textDecoration: "none" }}
+        >
+          Migrate to Hong Kong Employment Visa
+        </Link>{" "}
+        options are also available, making it possible to combine professional
+        and entrepreneurial ambitions.
+      </p>
+
+      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
+        Processing Time and Fees
+      </h3>
+      <p style={{ marginBottom: "20px" }}>
+        The Hong Kong Business Visa typically takes 4–6 weeks for processing,
+        depending on the complexity of your case. Investment or
+        entrepreneur-related applications may take longer due to additional
+        documentation reviews.
+      </p>
+
+      <ul style={{ marginBottom: "20px" }}>
+        <li>
+          <strong>General Employment Visa:</strong> HKD 230–HKD 450
+        </li>
+        <li>
+          <strong>Investment Visa:</strong> HKD 230–HKD 450
+        </li>
+        <li>
+          <strong>Entrepreneur Visa:</strong> HKD 230–HKD 450
+        </li>
+        <li>
+          <strong>Visiting Visa:</strong> HKD 230–HKD 450
+        </li>
+      </ul>
+
+      <p style={{ marginBottom: "20px" }}>
+        (All fees are subject to change by Hong Kong Immigration.)
+      </p>
+
+      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
+        How VJC Overseas Supports You
+      </h3>
+      <ul style={{ marginBottom: "20px" }}>
+        <li>Visa Consultation – Advising on the best visa type for your business plans.</li>
+        <li>Document Preparation – Organising complete and compliant application paperwork.</li>
+        <li>Employer & Partner Coordination – Liaising with Hong Kong-based entities for accurate submissions.</li>
+        <li>Application Submission – Handling the entire process to save your time and effort.</li>
+        <li>Follow-Up – Monitoring your application progress and responding to immigration queries.</li>
+      </ul>
+
+      <h3 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
+        Final Thoughts
+      </h3>
+      <p style={{ marginBottom: "20px" }}>
+        Whether you’re attending high-level business meetings, expanding your
+        company, or starting a new venture, having the right visa is essential
+        for success. The journey to{" "}
+        <Link
+          href="https://www.vjcoverseas.com/migrate/hong-kong/"
+          className="text-orange-600 font-bold"
+          style={{ textDecoration: "none" }}
+        >
+          Migrate to Hong Kong
+        </Link>{" "}
+        for business purposes can be seamless when managed by experienced
+        professionals.
+      </p>
+
+      <p style={{ marginBottom: "20px" }}>
+        With{" "}
+        <Link
+          href="https://vjcoverseas.com/"
+          className="text-orange-600 font-bold"
+          style={{ textDecoration: "none" }}
+        >
+          VJC Overseas
+        </Link>
+        , you gain not just a consultant, but a partner who ensures every step
+        is handled with precision. Let us help you unlock the limitless
+        business opportunities Hong Kong offers.
+      </p>
     </div>
-  </div>
-
-   
-    <ul style={{ marginBottom: '20px' }}>
-     
-      <li><strong style={{ color: 'rgb(3, 60, 65)' }}>2. Investment Visa:</strong> If youre planning to set up or invest in a business in Hong Kong, the Investment Visa allows you to reside and work in the region as a business owner or investor. Applicants must demonstrate that their investment will benefit the local economy, create employment, and contribute to Hong Kong’s business environment.</li>
-      <li><strong style={{ color: 'rgb(3, 60, 65)' }}>3. Entrepreneur Visa:</strong> For individuals planning to start their own businesses in Hong Kong, this visa enables you to establish a new company. You must prove that the business will be viable and sustainable, offering employment opportunities to local residents.</li>
-      <li><strong style={{ color: 'rgb(3, 60, 65)' }}>4. Visiting Visa for Business Meetings:</strong> This visa is ideal for individuals who wish to attend business meetings, conferences, or negotiations in Hong Kong. It allows short-term stays for business purposes without the need to establish a long-term residence.</li>
-    </ul>
-
-    <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Eligibility Requirements</h3>
-    <ul style={{ marginBottom: '20px' }}>
-      <li>A valid passport with at least six months of validity remaining.</li>
-      <li>Proof of financial capability to support yourself during your stay.</li>
-      <li>Proof of business activities including a detailed business plan, investment records, or employment contracts.</li>
-      <li>Health and character requirements to demonstrate that you are a fit individual to enter the region.</li>
-      <li>Educational and professional qualifications may be required depending on the type of visa.</li>
-    </ul>
-
-    <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Processing Time</h3>
-    <p style={{ marginBottom: '20px' }}>
-      The processing time for a Hong Kong Business Visa typically ranges between 4 to 6 weeks. However, the duration can vary depending on the type of visa, the applicant’s specific case, and the completeness of the application. For business visas related to investments or setting up a new company, the processing time may take slightly longer as additional documentation and evaluation are required.
-    </p>
-
-    <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Visa Fees</h3>
-    <ul style={{ marginBottom: '20px' }}>
-      <li><strong style={{ color: 'rgb(3, 60, 65)' }}>General Employment Visa:</strong> HKD 230 to HKD 450 (for the application).</li>
-      <li><strong style={{ color: 'rgb(3, 60, 65)' }}>Investment Visa:</strong> HKD 230 to HKD 450 (for the application).</li>
-      <li><strong style={{ color: 'rgb(3, 60, 65)' }}>Entrepreneur Visa:</strong> HKD 230 to HKD 450 (for the application).</li>
-      <li><strong style={{ color: 'rgb(3, 60, 65)' }}>Visiting Visa:</strong> HKD 230 to HKD 450 (for short-term business visits).</li>
-    </ul>
-    <p style={{ marginBottom: '20px' }}>
-      These fees are subject to change, and additional costs may be incurred if supplementary documents are requested, or if a visa extension is necessary.
-    </p>
-
-    <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>How VJC Overseas Can Help</h3>
-    <ul style={{ marginBottom: '20px' }}>
-      <li>Visa Consultation: Helping you choose the right visa category based on your business goals.</li>
-      <li>Document Preparation: Ensuring your application is complete, accurate, and in line with Hong Kong immigration policies.</li>
-      <li>Application Submission: Submitting your application on your behalf and liaising with immigration authorities.</li>
-      <li>Follow-Up and Status Updates: Monitoring your application’s progress and providing regular updates.</li>
-    </ul>
-
-    <h3 style={{ color: "black", fontWeight: "bold", marginBottom: '20px' }}>Final Thoughts</h3>
-    <p style={{ marginBottom: '20px' }}>
-      Whether youre seeking to start a business, expand your operations, or attend meetings in Hong Kong, securing a business visa is essential to ensure smooth entry and legal status in the region. With VJC Overseas, you gain the support of seasoned professionals who can guide you through every aspect of the visa process.
-    </p>
-    <p style={{ marginBottom: '20px', fontWeight: 'bold', fontSize: '15px' }}>
-      For more information or to begin your Hong Kong Business Visa application, get in touch with VJC Overseas today!
-    </p>
-  </div>
-       
-      );
-      
- 
+  );
 };
 
 export default Content;

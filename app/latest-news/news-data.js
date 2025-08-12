@@ -388,6 +388,94 @@ export const allNews = [
 
 
 {
+  "title": "India’s Passport Climbs Several Ranks in World's Most Powerful Passports Rankings; US, UK No Longer Powerhouses - Top Points to Know",
+  "summary": "India has made a significant leap in the global passport rankings, surpassing several countries. Meanwhile, the US and UK have dropped from their long-held dominance. Here’s what this means and the key factors behind the change.",
+  "image": "/indian-passports-rank-highs-in-us-and-uk.jpg",
+  "tag": "Global Rankings",
+  "readTime": "2 min read",
+  "content": `
+    <p>
+      In the latest global passport rankings, <strong>India’s passport</strong> has climbed multiple spots, offering its holders visa-free or visa-on-arrival access to more countries than ever before. This shift reflects both India's growing diplomatic influence and changing travel policies worldwide.
+    </p>
+
+    <h2>India’s New Position</h2>
+    <p>India’s improved rank now places it ahead of several countries in Asia and beyond. The exact position marks a steady upward trend over recent years.</p>
+
+    <h2>What’s Behind the Rise?</h2>
+    <ul>
+      <li>Strengthened diplomatic relations</li>
+      <li>New visa waiver agreements</li>
+      <li>Growing global mobility for Indian citizens</li>
+    </ul>
+
+    <h2>US and UK Drop from Top Spots</h2>
+    <p>Once consistent leaders in the rankings, both the United States and United Kingdom have slipped due to stricter visa policies and reduced travel freedom in certain regions.</p>
+
+    <h2>Top-Ranked Passports (2025)</h2>
+    <ul>
+      <li>Singapore</li>
+      <li>Japan</li>
+      <li>Germany</li>
+      <li>Spain</li>
+      <li>Italy</li>
+    </ul>
+
+    <blockquote>
+      “The world of global mobility is shifting, with Asian countries increasingly dominating the rankings.” – Travel Analyst
+    </blockquote>
+
+    <h2>Why This Matters</h2>
+    <ul>
+      <li>Greater travel freedom for business and tourism</li>
+      <li>Improved global perception of India</li>
+      <li>Potential boost to international trade and education opportunities</li>
+    </ul>
+
+    <p>
+      Whether for work, study, or leisure, the Indian passport is becoming a more powerful travel document. This trend could continue if diplomatic outreach remains strong.
+    </p>
+  `
+}, 
+{
+  "title": "Australia Lifts Foreign Student Cap by 9%, Prioritises Southeast Asian Applicants",
+  "summary": "Australia has raised its international student intake by 9% to 295,000 for 2026, and is now prioritising applicants from Southeast Asia to strengthen regional ties and address migration and housing concerns.",
+  "image": "/australia-lifts-foreign-student-cap.jpg",
+  "tag": "Study in Australia",
+  "readTime": "2 min read",
+  "content": `
+    <p>
+      The Australian government has announced a <strong>9% increase</strong> in its cap on international student placements for 2026, raising the number to <strong>295,000</strong> from the current 270,000. This move aims to manage growth sustainably while addressing national priorities.:contentReference[oaicite:0]{index=0}
+    </p>
+
+    <h2>Key Changes and Rationale</h2>
+    <ul>
+      <li>Applications from <strong>Southeast Asian</strong> students will be prioritized, reflecting Australia's strategic focus on the region.:contentReference[oaicite:1]{index=1}</li>
+      <li>Universities must demonstrate access to <strong>safe and secure housing</strong> and deeper engagement with Southeast Asia to secure increased allocations.:contentReference[oaicite:2]{index=2}</li>
+      <li>About two-thirds of the allocated slots go to universities and one-third to vocational training providers.:contentReference[oaicite:3]{index=3}</li>
+    </ul>
+
+    <h2>Sector Impact & Reactions</h2>
+    <p>
+      This policy shift has received a mixed response: while universities welcomed the promise of stability and growth, concerns over housing pressure, sector fairness, and potential visa system misuse remain.:contentReference[oaicite:4]{index=4}
+    </p>
+
+    <blockquote>
+      “This is about making sure international education grows in a way that supports students, universities and the national interest.” – Education Minister Jason Clare:contentReference[oaicite:5]{index=5}
+    </blockquote>
+
+    <h2>What It Means for Students</h2>
+    <ul>
+      <li>Increased opportunities for Southeast Asian students, with priority admission frameworks.</li>
+      <li>Stronger emphasis on housing infrastructure as part of institutional eligibility for additional placements.</li>
+      <li>A more regulated and strategic growth approach balancing educational, economic, and national interests.</li>
+    </ul>
+
+    <p>
+      If you're planning to study in Australia or represent an institution, this update signals both opportunity and responsibility. Stay informed and align your approach with these evolving policy priorities.
+    </p>
+  `
+},
+{
   "title": "USA Government Offers Full Scholarships for International Students (2025): Bachelor’s, Master’s, and PhD Programs",
   "summary": "In 2025, the U.S. Government is offering fully funded scholarships for international students to study at the top 16 universities in the USA. Here's everything you need to know about eligibility, benefits, and how to apply.",
   "image": "/usa-phd-free-scholorships.png",
