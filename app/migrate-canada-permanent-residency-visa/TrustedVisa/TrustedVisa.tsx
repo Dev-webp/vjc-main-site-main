@@ -3,7 +3,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function TrustedVisaSection({ setIsOpen }) {
+interface TrustedVisaSectionProps {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function TrustedVisaSection({ setIsOpen }: TrustedVisaSectionProps) {
   return (
     <section className="relative bg-white py- px-6 md:pl-20 md:px-16 overflow-hidden">
       {/* Background Image */}
@@ -11,9 +15,10 @@ export default function TrustedVisaSection({ setIsOpen }) {
         <div className="relative w-full h-full">
           <Image
             src="/assets/canadapr/trustedbg.png"
-            alt="Earth Background"
+            alt="canada pr explore"
             fill
             className="object-left-top object-contain"
+            unoptimized
           />
         </div>
       </div>
@@ -90,6 +95,7 @@ export default function TrustedVisaSection({ setIsOpen }) {
               alt="Happy PR Clients"
               fill
               className="object-cover z-30"
+              unoptimized
             />
           </div>
         </motion.div>
