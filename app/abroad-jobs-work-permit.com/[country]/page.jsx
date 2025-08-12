@@ -1,10 +1,10 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { Filter } from "lucide-react";
+import { Filter, X } from "lucide-react";
 import dummyJobs from "./jobData";
 import JobCard from "./JobCard";
+import Form from "./Form";
 
 const countryStyles = {
   UAE: { cardBg: "bg-white", titleColor: "text-blue-700", tagColor: "bg-yellow-100 text-yellow-800 border-yellow-300" },
@@ -21,7 +21,7 @@ const countryStyles = {
 };
 
 const filterData = {
-  UAE: { cities: ["Dubai"], domains: ["Semiconductor", "AI", "IT", "Finance", "Administration", "Front Office"] },
+  UAE: { cities: ["Dubai"], domains: ["Semiconductor", "AI", "IT", "Finance", "Administration", "Front Office", "Healthcare", "Education", "Construction",  "Retail", "Marketing", "Engineering", "Aviation", "Oil & Gas"] },
   Germany: { cities: ["Berlin"], domains: ["Sales", "Supply Chain", "Healthcare", "Manufacturing", "Automobile", "IT", "Electrical", "HVAC", "Industrial Safety", "Business Development"] },
   Canada: { cities: ["Toronto"], domains: ["Banking", "Food Services", "Retail", "Operations", "IT", "Administration", "Engineering", "Sales", "Marketing", "Healthcare", "Construction", "Airlines", "Insurance"] },
   Australia: { cities: ["Melbourne"], domains: ["IT & Software Testing", "IT & Software Development", "Manufacturing & Engineering", "Automotive", "ICT Sales"] },
@@ -48,6 +48,7 @@ const CountryJobsPage = () => {
   const [searchKeyword, setSearchKeyword] = useState("");
   const [showFilters, setShowFilters] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const jobsPerPage = 6;
 
@@ -75,7 +76,10 @@ const CountryJobsPage = () => {
 
   const keywordFilteredJobs = dummyJobs.filter(
     (job) =>
-      (!searchKeyword || job.title.toLowerCase().includes(searchKeyword.toLowerCase()) || job.company.toLowerCase().includes(searchKeyword.toLowerCase()) || job.domain.toLowerCase().includes(searchKeyword.toLowerCase())) &&
+      (!searchKeyword ||
+        job.title.toLowerCase().includes(searchKeyword.toLowerCase()) ||
+        job.company.toLowerCase().includes(searchKeyword.toLowerCase()) ||
+        job.domain.toLowerCase().includes(searchKeyword.toLowerCase())) &&
       job.country === selectedCountry &&
       (!selectedCity || job.city === selectedCity) &&
       (!selectedDomain || job.domain === selectedDomain) &&
@@ -101,16 +105,37 @@ const CountryJobsPage = () => {
         </div>
       )}
 
+      {/* Contact Form Modal */}
+      {showContactForm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-fadeIn">
+          <div className="relative w-full max-w-lg animate-slideUp">
+            <button
+              className="absolute top-3 right-3 text-blue-400 hover:text-red-500 z-10"
+              onClick={() => setShowContactForm(false)}
+            >
+              <X size={24} />
+            </button>
+            <Form />
+          </div>
+        </div>
+      )}
+
       <div className="flex justify-between items-center mb-6">
-       
-        <button className="lg:hidden flex items-center gap-2 text-blue-700 text-sm font-medium" onClick={() => setShowFilters(!showFilters)}>
+        <button
+          className="lg:hidden flex items-center gap-2 text-blue-700 text-sm font-medium"
+          onClick={() => setShowFilters(!showFilters)}
+        >
           <Filter size={18} /> Filters
         </button>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6">
-        {/* Filters (Sticky) */}
-        <aside className={`sticky top-28 bg-white shadow-md rounded-xl lg:ml-10 p-4 space-y-4 w-full max-w-sm mx-auto lg:mx-0 lg:w-1/4 h-fit ${showFilters ? "block" : "hidden lg:block"}`}>
+        {/* Filters */}
+        <aside
+          className={`sticky top-28 bg-white shadow-md rounded-xl lg:ml-10 p-4 space-y-4 w-full max-w-sm mx-auto lg:mx-0 lg:w-1/4 h-fit ${
+            showFilters ? "block" : "hidden lg:block"
+          }`}
+        >
           <h2 className="text-lg font-semibold flex justify-between items-center">
             Filters
             <button className="lg:hidden text-blue-700" onClick={() => setShowFilters(!showFilters)}>
@@ -188,9 +213,12 @@ const CountryJobsPage = () => {
           </div>
         </aside>
 
-        {/* Job Cards Stack */}
+        {/* Job Cards */}
         <div className="w-full lg:w-3/4 flex flex-col gap-4">
-         <h1 className="text-3xl text-center font-bold text-blue-800 capitalize">Jobs in {selectedCountry || "Select Country"}</h1>
+          <h1 className="text-3xl text-center font-bold text-blue-800 capitalize">
+            Jobs in {selectedCountry || "Select Country"}
+          </h1>
+
           <div className="mb-4">
             <input
               type="text"
@@ -211,6 +239,8 @@ const CountryJobsPage = () => {
                   showSuccess={handleShowSuccess}
                 />
               ))}
+
+              {/* Pagination */}
               <div className="flex justify-center items-center gap-4 mt-8">
                 <button
                   onClick={() => {
@@ -222,7 +252,9 @@ const CountryJobsPage = () => {
                 >
                   Previous
                 </button>
-                <span className="text-sm font-medium text-gray-600">Page {currentPage} of {totalPages}</span>
+                <span className="text-sm font-medium text-gray-600">
+                  Page {currentPage} of {totalPages}
+                </span>
                 <button
                   onClick={() => {
                     scrollToTop();
@@ -236,10 +268,33 @@ const CountryJobsPage = () => {
               </div>
             </>
           ) : (
-            <p className="text-gray-500 text-center mt-8 text-lg">😢 No jobs found. Try adjusting filters or search terms.</p>
+            <div className="text-center mt-8">
+              <p className="text-gray-500 text-lg mb-4">😢 No jobs found.</p>
+              <p className="text-gray-700 font-medium mb-4">For more details, contact us!</p>
+              <button
+                onClick={() => setShowContactForm(true)}
+                className="px-6 py-2 bg-blue-600 hover:bg-orange-500 text-white rounded-full text-sm font-semibold shadow-md transition"
+              >
+                Contact Us
+              </button>
+            </div>
           )}
         </div>
       </div>
+
+      {/* Animation Styles */}
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        @keyframes slideUp {
+          from { transform: translateY(40px); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
+        }
+        .animate-fadeIn { animation: fadeIn 0.3s ease forwards; }
+        .animate-slideUp { animation: slideUp 0.3s ease forwards; }
+      `}</style>
     </div>
   );
 };

@@ -108,7 +108,7 @@ const JobPortalPage = () => {
 
       <div className="px-4 pt-6 pb-16 max-w-7xl mx-auto">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-6 text-blue-900">
-          Explore Global Job Opportunities with <span className="text-orange-500">VJC Overseas</span>
+          A World of Opportunities, A Future of Success – Abroad is Calling! 
         </h1>
 
         {user && (
