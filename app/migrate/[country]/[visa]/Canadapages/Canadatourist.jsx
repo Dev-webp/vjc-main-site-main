@@ -25,9 +25,8 @@ const Canadatourist = () =>{
           <p style={{ marginBottom: "20px" }}>
             Whether you`re exploring Canada`s breathtaking landscapes, visiting
             friends or family, or experiencing the country`s vibrant culture, the
-            Canada Tourist Visa is your essential travel document. At VJC Overseas,
-            we guide you through a seamless application process, making your travel
-            to Canada stress-free and enjoyable.
+            Canada Tourist Visa is your essential travel document. At <strong style={{ color: "black", fontWeight: "bold" }}>VJC Overseas</strong>, we guide you through a seamless application process, making your travel
+            to Canada stress-free and enjoyable with the support of <a href="https://www.vjcoverseas.com/" style={{ color: "orange", textDecoration: "none" }}>Best Visa Immigration Consultants</a>.
           </p>
     
           <h3
@@ -36,14 +35,14 @@ const Canadatourist = () =>{
             Canada Tourist Visa Overview
           </h3>
           
-          
           <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
   {/* Image Section */}
   <div className="flex-shrink-0 mx-auto lg:mx-0">
     <Image
       src="/canadaimg2.jpg"
-      alt="Image description"
-      width={500} // Replace with your image's actual width
+      alt="Canada Torist Visa - Vjc Overseas"
+                  
+      width={500}
       height={300}
       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
       priority
@@ -55,7 +54,7 @@ const Canadatourist = () =>{
   <div className="flex flex-col space-y-4 px-4 lg:px-0">
     <p style={{ marginBottom: "20px" }}>
       The Canada Visitor Visa allows foreign nationals to enter Canada for
-      tourism, leisure, or business purposes. Here’s an overview:
+      tourism, leisure, or business purposes. Here’s an overview and how you could <a href="https://vjcoverseas.com/study-abroad/canada" style={{ color: "orange", textDecoration: "none" }}>Study in Canada</a> during your visit if you plan accordingly.
     </p>
     <ul className="list-disc pl-6 space-y-2">
       <li>
@@ -86,6 +85,9 @@ const Canadatourist = () =>{
           >
             Required Documents for Canada Tourist Visa
           </h3>
+          <p style={{ marginBottom: "20px" }}>
+            Many applicants choose to <a href="https://www.vjcoverseas.com/migrate/canada/" style={{ color: "orange", textDecoration: "none" }}>Migrate to Canada</a> after experiencing its opportunities and lifestyle during their tourist visit.
+          </p>
           <ul style={{ marginBottom: "20px", listStyleType: "disc", paddingLeft: "20px" }}>
             <li>
               <strong style={{ color: "rgb(3, 60, 65)", fontWeight: "bold" }}>
@@ -164,8 +166,7 @@ const Canadatourist = () =>{
             The processing time for a Canada Tourist Visa generally ranges
             between 10 to 30 days from the date of submission, but this can vary
             depending on the volume of applications and the specifics of your
-            case. It’s always best to apply well in advance of your planned
-            travel dates.
+            case. For those considering <a href="https://www.vjcoverseas.com/pr-visas" style={{ color: "orange", textDecoration: "none" }}>Canada Permanent Residency</a>, timelines and requirements will differ.
           </p>
           <ul style={{ marginBottom: "20px", listStyleType: "disc", paddingLeft: "20px" }}>
             <li>The complexity of your application.</li>
@@ -195,7 +196,7 @@ const Canadatourist = () =>{
           </h3>
           <p style={{ marginBottom: "20px" }}>
             To ensure your application is complete and processed without delays,
-            use this checklist to prepare your documents before submission:
+            use this checklist to prepare your documents before submission.
           </p>
           <ol
             style={{
@@ -259,14 +260,14 @@ const Canadatourist = () =>{
             Why Choose VJC Overseas?
           </h3>
           <p style={{ marginBottom: "20px" }}>
-            At VJC Overseas, our experienced team ensures your Canada Tourist Visa
+            At <a href="https://www.vjcoverseas.com/" style={{ color: "orange", textDecoration: "none" }}>VJC Overseas</a>, our experienced team ensures your Canada Tourist Visa
             application is seamless. With personalized consultations, document
             verification, and step-by-step assistance, we help you embark on your
             journey to Canada with confidence.
           </p>
           <p style={{ marginBottom: "20px" }}>
             Contact us today to begin your Canada Tourist Visa application and let
-            us help turn your Canadian travel dreams into reality.
+            us help turn your Canadian travel dreams into reality with the guidance of <strong>Best Visa Immigration Consultants</strong>.
           </p>
         </div>
       );

@@ -20,7 +20,7 @@ const canadafs = () =>{
           </div>
           <header>
             
-           
+            
           </header>
     
           <article>
@@ -31,14 +31,14 @@ const canadafs = () =>{
               <p style={{ marginBottom: "20px" }}>
                 To be eligible for the Canada Family Sponsorship Visa, both the
                 sponsor and the person being sponsored must meet certain criteria.
-                Below is an overview of the key eligibility requirements:
+                Below is an overview of the key eligibility requirements: For expert guidance, consult <a href="https://www.vjcoverseas.com/" style={{ color: "orange", textDecoration: "none" }}>VJC Overseas</a>.
               </p>
               <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
 
    <div className="flex-shrink-0 my-4 mx-auto lg:mx-0">
       <Image
         src="/canadaimg4.jpg"
-        alt="Image description"
+        alt="Canada Family Sponsorship Visa - Vjc Overseas"
         width={500} // Replace with your image's actual width
         height={300}
         className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
@@ -85,7 +85,7 @@ const canadafs = () =>{
                 Document Checklist for Canada Family Sponsorship Visa
               </h2>
               <p style={{ marginBottom: "20px" }}>
-                A complete and accurate application is crucial to ensure the success of your Family Sponsorship Visa application.
+                A complete and accurate application is crucial to ensure the success of your Family Sponsorship Visa application. This is especially important if your long-term goal is <a href="https://www.vjcoverseas.com/pr-visas" style={{ color: "orange", textDecoration: "none" }}>Canada Permanent Residency</a>.
               </p>
               <h3 style={{ fontWeight: "bold", marginBottom: "10px" }}>For the Sponsor:</h3>
               <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginBottom: "20px" }}>
@@ -126,19 +126,22 @@ const canadafs = () =>{
                 Why Choose VJC Overseas for Your Family Sponsorship Visa?
               </h2>
               <p style={{ marginBottom: "20px" }}>
-                Navigating Canadian immigration laws can be overwhelming. At VJC Overseas, we provide expert guidance, assess your case, and help you gather the correct documents to maximize your success.
+                Navigating Canadian immigration laws can be overwhelming. At <b style={{ color: "black" }}>VJC Overseas</b>, we provide expert guidance, assess your case, and help you gather the correct documents to maximize your success. As one of the <a href="https://www.vjcoverseas.com/" style={{ color: "orange", textDecoration: "none" }}>Best Visa Immigration Consultants</a>, we tailor strategies to your family’s needs.
               </p>
               <h3 style={{ fontWeight: "bold", marginBottom: "10px" }}>
                 Ready to Bring Your Family Together in Canada?
               </h3>
               <p>
-                Contact VJC Overseas today for a personalized consultation, and let us help you begin your Family Sponsorship Visa journey!
+                Contact <b style={{ color: "black" }}>VJC Overseas</b> today for a personalized consultation, and let us help you begin your Family Sponsorship Visa journey! If you also plan to <a href="https://www.vjcoverseas.com/migrate/canada/" style={{ color: "orange", textDecoration: "none" }}>Migrate to Canada</a>, we’ll guide you on the right pathway.
               </p>
             </section>
           </article>
     
           <footer style={{ marginTop: "30px", color: "gray" }}>
-            <p>Disclaimer: The information provided is for general informational purposes only and does not constitute legal advice. Always consult a certified immigration consultant for your specific case.</p>
+            <p style={{ color: "#222222" }}>
+  Disclaimer: The information provided is for general informational purposes only and does not constitute legal advice. Always consult a certified immigration consultant for your specific case. For education-focused pathways, explore <a href="https://vjcoverseas.com/study-abroad/canada" style={{ color: "orange", textDecoration: "none" }}>Study in Canada</a>.
+</p>
+
           </footer>
         </section>
     );

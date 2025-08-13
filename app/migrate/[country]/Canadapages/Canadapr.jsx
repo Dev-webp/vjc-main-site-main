@@ -1,153 +1,171 @@
-import React from 'react';
-import Image from 'next/image';
-const Canadapr = () =>{
-    return (
-        <section
-          style={{
-            position: "relative",
-            padding: "50px",
-            boxSizing: "border-box",
-            backgroundColor: "white",
-            fontFamily: "Times New Roman",
-            overflow: "hidden",
-          }}
-        >
-            <div style={{ marginBottom: "40px" }}>
-            <h3 className="text-2xl font-semibold text-black text-center">
-            Canada Permanent Residence Visa: Your Pathway to a New Life in Canada - <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
-            </h3>
-          </div>
-          
-    
-          <article>
-            <section style={{ marginBottom: "30px" }}>
-              <h2 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-                Why Choose Canada for Permanent Residency?
-              </h2>
-              <p style={{ marginBottom: "20px" }}>
-                Canada is renowned for its strong economy, political stability, and
-                diverse, inclusive culture. As a permanent resident, you’ll enjoy
-                access to world-class healthcare, education, and social services.
-                Whether you’re seeking better career opportunities, a high standard
-                of living, or a safe environment to raise your family, Canada offers
-                all that and more.
-              </p>
-            </section>
-    
-            <section style={{ marginBottom: "30px" }}>
-              <h2 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-                Living Expenses and Lifestyle in Canada
-              </h2>
-              <p style={{ marginBottom: "20px" }}>
-                Canada’s living costs can vary significantly depending on the
-                province and city. On average, you can expect to pay:
-              </p>
-              <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-  <div className="flex-shrink-0 mx-auto lg:mx-0">
-    <Image
-      src="/canadaimg3.jpg"
-      alt="Image description"
-      width={500} // Replace with your image's actual width
-      height={300}
-      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
-    />
-  </div>
-              
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginBottom: "20px" }}>
-                <li>
-                  <strong>Housing:</strong> Monthly rent for a one-bedroom apartment
-                  can range from CAD 1,200 to CAD 2,500 in major cities like Toronto
-                  and Vancouver. Smaller cities or towns may offer more affordable
-                  options.
-                </li>
-                <li>
-                  <strong>Groceries:</strong> A monthly grocery bill for a single
-                  person is typically CAD 300 to CAD 500.
-                </li>
-               
-              </ul>
-              </div>
-              <li>
-                  <strong>Transportation:</strong> Public transport costs range from
-                  CAD 100 to CAD 150 per month in urban areas. Alternatively, owning
-                  a car can cost around CAD 500 to CAD 700 monthly, including
-                  insurance and fuel.
-                </li>
-                <li>
-                  <strong>Utilities:</strong> Utilities (electricity, heating, water,
-                  garbage) average CAD 150 to CAD 250 per month.
-                </li>
-              <p style={{ marginBottom: "20px" }}>
-                Canada also offers a balanced work-life culture with plenty of
-                opportunities for outdoor activities like skiing, hiking, and
-                cycling, which is perfect for those who enjoy a healthy and active
-                lifestyle.
-              </p>
-            </section>
-    
-            <section style={{ marginBottom: "30px" }}>
-              <h2 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-                Processing Time for Canada PR Visa
-              </h2>
-              <p style={{ marginBottom: "20px" }}>
-                The processing time for a Canada Permanent Residence visa can vary
-                depending on the immigration program you apply under (Express Entry,
-                Provincial Nominee Program, Family Sponsorship, etc.). Typically,
-                Express Entry applications are processed in approximately 6 to 8
-                months, while other pathways like the Provincial Nominee Program may
-                take around 12 to 18 months. However, processing times can be
-                affected by various factors such as your country of origin and
-                application completeness. VJC Overseas ensures that your application
-                is handled efficiently, helping you navigate all the necessary steps
-                and paperwork.
-              </p>
-            </section>
-    
-            <section style={{ marginBottom: "30px" }}>
-              <h2 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-                Visa Fees
-              </h2>
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px", marginBottom: "20px" }}>
-                <li>
-                  <strong>Principal applicant fee:</strong> CAD 1,365
-                </li>
-                <li>
-                  <strong>Spouse or common-law partner fee:</strong> CAD 1,365
-                </li>
-                <li>
-                  <strong>Dependent child fee:</strong> CAD 230 per child
-                </li>
-              </ul>
-              <p style={{ marginBottom: "20px" }}>
-                Additional costs may include medical exams, police certificates, and
-                biometrics, which vary by individual circumstances. At VJC Overseas,
-                we provide transparent and accurate estimates to ensure you are
-                prepared for all costs involved.
-              </p>
-            </section>
-    
-            <section>
-              <h2 style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}>
-                Get Started with VJC Overseas
-              </h2>
-              <p>
-                The process of applying for a Canada PR visa can be complex, but with
-                the expert guidance of VJC Overseas, you can streamline your
-                application and maximize your chances of success. Our experienced
-                consultants provide tailored advice and support, helping you
-                understand your eligibility, navigate the paperwork, and ensure that
-                your application is submitted correctly and on time.
-              </p>
-              <p>
-                Are you ready to begin your journey to Canada? Contact VJC Overseas
-                today to start your application process and take the first step
-                toward making Canada your new home!
-              </p>
-            </section>
-          </article>
-        </section>
-      );
+const CanadaMigration = () => {
+  return (
+    <div
+      style={{
+        fontFamily: "Times New Roman, serif",
+        fontSize: "1.1rem",
+      }}
+      className="px-0 py-8 lg:p-[2rem]"
+    >
+      <h1 className="text-2xl text-center font-bold mb-6 text-orange-600">
+  Migrate to Canada – Live, Work & Thrive in the Land of Opportunities
+</h1>
 
+
+      <p className="mb-4 text-base">
+        Looking to begin a new chapter in a country that offers exceptional
+        quality of life, world-class healthcare, and a strong sense of
+        community? Canada welcomes over 400,000 newcomers annually through a
+        range of immigration pathways — and you could be one of them. Whether
+        you’re seeking global education, career growth, or a safe environment
+        for your family, Canada offers unmatched
+        opportunities to turn your aspirations into reality.
+      </p>
+
+      <p className="mb-4 text-base">
+        As one of the{" "}
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-bold">
+          Best Visa Immigration Consultants
+        </Link>
+        ,{" "}
+        <b className="text-black font-bold">VJC Overseas</b> specializes in
+        helping individuals and families navigate the Canadian immigration
+        system with ease. From eligibility checks to post-landing assistance,
+        we ensure your move is smooth, stress-free, and successful.
+      </p>
+
+      <div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+        <Image
+          src="/migrate/migrate-canada.png"
+          alt="Migrate - Apply Now"
+          width={900}
+          height={630}
+          className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+          priority
+          unoptimized
+        />
+      </div>
+
+      <h2 className="text-1xl font-semibold mb-2 text-black">Why Move to Canada?</h2>
+      <ul className="list-disc mb-4 text-base">
+        <li>
+          <strong>High Demand for Skilled Workers –</strong> Canada’s thriving
+          industries, from technology to healthcare, are always seeking global
+          talent.
+        </li>
+        <li>
+          <strong>Free Public Healthcare –</strong> Enjoy access to top-tier
+          medical services at no cost.
+        </li>
+        <li>
+          <strong>Education Excellence –</strong> Affordable, globally
+          recognized institutions make it the ideal destination to{" "}
+          <Link href="https://vjcoverseas.com/study-abroad/canada" className="text-orange-600 font-bold">
+            Study in Canada
+          </Link>
+          .
+        </li>
+        <li>
+          <strong>Safe & Welcoming Society –</strong> Consistently ranked among
+          the safest countries in the world.
+        </li>
+        <li>
+          <strong>Clear PR & Citizenship Pathway –</strong> Multiple immigration
+          programs make it easier to transition from temporary to permanent
+          residency.
+        </li>
+      </ul>
+
+      <h2 className="text-1xl font-semibold mb-2 text-black">
+        Popular Canadian Immigration Pathways
+      </h2>
+      <ul className="list-disc mb-4 text-base">
+        <li>
+          <span className="font-bold text-black">Express Entry</span> – A competitive points-based system for skilled professionals.
+        </li>
+        <li>
+          <span className="font-bold text-black">Provincial Nominee Program (PNP)</span> – Provincial governments nominate skilled candidates for permanent residency.
+        </li>
+        <li>
+          <span className="font-bold text-black">Student Visa</span> – A direct path for those who want to study and later transition to PR.
+        </li>
+        <li>
+          <span className="font-bold text-black">Canada Work Permit</span> – Work legally in Canada through employer sponsorship or LMIA.
+        </li>
+        <li>
+          <span className="font-bold text-black">Family Sponsorship</span> – Bring your spouse, children, or parents to join you in Canada.
+        </li>
+        <li>
+          <span className="font-bold text-black">Start-Up Visa</span> – For entrepreneurs with innovative business ventures.
+        </li>
+      </ul>
+
+      <h2 className="text-1xl font-semibold mb-2 text-black">
+        Who Should Consider Migrating to Canada?
+      </h2>
+      <ul className="list-disc mb-4 text-base">
+        <li>IT professionals, engineers, and healthcare experts seeking global career opportunities.</li>
+        <li>Students and graduates who want to combine education with work experience.</li>
+        <li>Families aiming for a safer, more prosperous future.</li>
+        <li>Entrepreneurs eager to expand internationally.</li>
+        <li>
+          Whether your aim is temporary employment, higher education, or{" "}
+          <Link href="https://www.vjcoverseas.com/pr-visas" className="text-orange-600 font-bold">
+            Canada Permanent Residency
+          </Link>
+          , there’s a pathway suited to your ambitions.
+        </li>
+      </ul>
+
+      <h2 className="text-1xl font-semibold mb-2 text-black">How VJC Overseas Can Help</h2>
+      <p className="mb-4 text-base">
+        Migrating to a new country can be complex — but it doesn’t have to be
+        overwhelming. At{" "}
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-bold">
+          VJC Overseas
+        </Link>
+        , our comprehensive services include:
+      </p>
+      <ul className="list-disc mb-4 text-base">
+        <li>Free Eligibility Assessment to identify the best immigration stream for you.</li>
+        <li>Customized visa strategy aligned with your personal and professional goals.</li>
+        <li>Complete document preparation and application support.</li>
+        <li>IELTS guidance and test preparation.</li>
+        <li>Post-landing assistance to help you settle smoothly in Canada.</li>
+      </ul>
+
+      <p className="text-base">
+        We take the guesswork out of immigration, ensuring that your journey from
+        application to arrival is seamless.
+      </p>
+
+      <h2 className="text-1xl font-semibold mb-2 text-black">Your Canadian Dream Starts Now</h2>
+      <p className="text-base">
+        Whether your goal is to secure a{" "}
+        <Link href="https://www.vjcoverseas.com/migrate/canada/work-permit" className="text-orange-600 font-bold">
+          Canada Work Permit
+        </Link>
+        , enroll in a top-ranked university, or apply for{" "}
+        <b className="text-black font-bold">Canada Permanent Residency</b>,{" "}
+        Canada offers life-changing
+        opportunities for individuals and families worldwide.
+      </p>
+      <p className="text-base">
+        With the expertise of{" "}
+        <b className="text-black font-bold">VJC Overseas</b>, you can take confident steps
+        toward your future in Canada — a country where safety, diversity, and
+        opportunity are part of everyday life.
+      </p>
+      <p className="text-base">
+        Contact us today to start your journey and turn your dream of living in{" "}
+        Canada into reality.
+      </p>
+    </div>
+  );
 };
-export default Canadapr;
+
+export default CanadaMigration;

@@ -384,8 +384,113 @@ export const allNews = [
   },
 
 
-  
 
+
+
+
+  
+ {
+    "title": "US Plans Fixed-Term Student Visas, Impacting Over 4 Lakh Indian Students",
+    "summary": "The US is considering replacing open-ended F-1 and J-1 student visas with fixed-term visas. This could disrupt the plans of over 420,000 Indian students currently in or planning to study in the US.",
+    "image": "/trump-new-us-visa-impact-4-lakh-indian-students.png",
+    "tag": "Visa Policy Update",
+    "readTime": "2 min read",
+    "content": `
+      <p>
+        The United States government is reviewing a proposal to replace the current
+        <strong>duration of status</strong> system for F-1 and J-1 student visas with
+        <strong>fixed-term visas</strong>. This change would set a pre-defined visa validity
+        period instead of allowing students to remain for as long as their academic program lasts.
+      </p>
+
+      <h2>Who Will Be Affected?</h2>
+      <p>
+        More than <strong>420,000 Indian students</strong> studying in the US could be affected
+        by the new policy if implemented. Shorter visa validity periods might require
+        multiple renewals during study programs.
+      </p>
+
+      <h2>Why the Change?</h2>
+      <ul>
+        <li>Stricter immigration oversight</li>
+        <li>Efforts to prevent overstaying after program completion</li>
+        <li>Alignment with other non-immigrant visa policies</li>
+      </ul>
+
+      <blockquote>
+        “Fixed-term visas will make it harder for students in long academic programs
+        to complete studies without costly renewals.” – Immigration Expert
+      </blockquote>
+
+      <h2>What Students Should Do</h2>
+      <ul>
+        <li>Stay updated on official announcements</li>
+        <li>Plan for possible renewals during studies</li>
+        <li>Budget for additional visa application fees</li>
+      </ul>
+
+      <p>
+        The proposal is still under review. Students and universities are lobbying for
+        flexible terms that won’t disrupt ongoing academic programs.
+      </p>
+    `
+  },
+  {
+    "title": "US H-1B Shake-Up: Wage-Based Selection and End of Dropbox Interviews",
+    "summary": "The US is moving toward a wage-based H-1B visa allocation system while also scrapping the Dropbox interview waiver for most visa categories starting September 2.",
+    "image": "/usa-hands-off-for-h1b.avif",
+    "tag": "Work Visa Update",
+    "readTime": "3 min read",
+    "content": `
+      <p>
+        Two major changes in US visa policy are set to impact Indian professionals
+        and students. First, the H-1B lottery system may be replaced by a
+        <strong>wage-based selection process</strong>, favoring higher-paying job offers.
+      </p>
+
+      <h2>1. Wage-Based H-1B Allocation</h2>
+      <p>
+        The proposed system will prioritize applicants with higher salaries, potentially
+        disadvantaging entry-level professionals and fresh graduates from non-STEM fields.
+      </p>
+
+      <ul>
+        <li>Higher salaries = higher priority in selection</li>
+        <li>Entry-level positions may face more rejections</li>
+        <li>May encourage US companies to offer competitive pay to hire foreign talent</li>
+      </ul>
+
+      <h2>2. End of Dropbox Interview Waiver</h2>
+      <p>
+        Effective <strong>September 2</strong>, the US will remove the Dropbox facility
+        for most visa categories including H-1B, L-1, and F-1. Applicants will now
+        be required to attend <strong>in-person interviews</strong>.
+      </p>
+
+      <ul>
+        <li>Possible increase in wait times for visa appointments</li>
+        <li>Travel plans could be delayed due to interview backlogs</li>
+        <li>Applicants should prepare for additional documentation checks</li>
+      </ul>
+
+      <blockquote>
+        “This marks the end of one of the most convenient features for repeat visa holders,
+        and will likely slow down processing times.” – Visa Consultant
+      </blockquote>
+
+      <h2>Impact on Indian Applicants</h2>
+      <ul>
+        <li>More competitive environment for H-1B applicants</li>
+        <li>Higher costs and longer timelines for visa processing</li>
+        <li>Potential delays for business and academic travel</li>
+      </ul>
+
+      <p>
+        These changes reflect a broader tightening of US immigration policy and will require
+        applicants to plan travel and work authorizations far in advance.
+      </p>
+    `
+  },
 
 {
   "title": "India’s Passport Climbs Several Ranks in World's Most Powerful Passports Rankings; US, UK No Longer Powerhouses - Top Points to Know",

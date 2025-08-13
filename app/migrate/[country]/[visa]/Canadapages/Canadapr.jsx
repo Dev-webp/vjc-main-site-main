@@ -16,7 +16,7 @@ const Canadapr = () => {
       <div style={{ marginBottom: "40px" }}>
         <h3 className="text-2xl font-semibold text-black text-center">
           Canada Permanent Residence Visa: Your Pathway to a New Life in Canada
-          - <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
+          - <span style={{ color: "red", fontWeight: "bold" }}>VJC Overseas</span>
         </h3>
       </div>
 
@@ -33,7 +33,14 @@ const Canadapr = () => {
             access to world-class healthcare, education, and social services.
             Whether you’re seeking better career opportunities, a high standard
             of living, or a safe environment to raise your family, Canada offers
-            all that and more.
+            all that and more. Many people consult{" "}
+            <a
+              href="https://www.vjcoverseas.com/"
+              style={{ color: "orange", fontWeight: "bold" }}
+            >
+              Best Visa Immigration Consultants
+            </a>{" "}
+            to make this dream a reality.
           </p>
         </section>
 
@@ -45,15 +52,22 @@ const Canadapr = () => {
           </h2>
           <p style={{ marginBottom: "20px" }}>
             Canada’s living costs can vary significantly depending on the
-            province and city. On average, you can expect to pay:
+            province and city. On average, you can expect to pay. For those who{" "}
+            <a
+              href="https://www.vjcoverseas.com/migrate/canada/"
+              style={{ color: "orange", fontWeight: "bold" }}
+            >
+              Migrate to Canada
+            </a>
+            , understanding these costs is crucial.
           </p>
 
           <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
             <div className="flex-shrink-0 mx-auto lg:mx-0">
               <Image
                 src="/migrate/migratesub/canadaimg3.png"
-                alt="Image description"
-                width={500} // Replace with your image's actual width
+                alt="Canada Pr Visa - Vjc Overseas"
+                width={500}
                 height={300}
                 className="w-full max-w-xs mb-4 sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
                 priority
@@ -93,7 +107,14 @@ const Canadapr = () => {
             Canada also offers a balanced work-life culture with plenty of
             opportunities for outdoor activities like skiing, hiking, and
             cycling, which is perfect for those who enjoy a healthy and active
-            lifestyle.
+            lifestyle. Many students who{" "}
+            <a
+              href="https://vjcoverseas.com/study-abroad/canada"
+              style={{ color: "orange", fontWeight: "bold" }}
+            >
+              Study in Canada
+            </a>{" "}
+            also enjoy this lifestyle.
           </p>
         </section>
 
@@ -104,16 +125,23 @@ const Canadapr = () => {
             Processing Time for Canada PR Visa
           </h2>
           <p style={{ marginBottom: "20px" }}>
-            The processing time for a Canada Permanent Residence visa can vary
-            depending on the immigration program you apply under (Express Entry,
-            Provincial Nominee Program, Family Sponsorship, etc.). Typically,
-            Express Entry applications are processed in approximately 6 to 8
-            months, while other pathways like the Provincial Nominee Program may
-            take around 12 to 18 months. However, processing times can be
-            affected by various factors such as your country of origin and
-            application completeness. VJC Overseas ensures that your application
-            is handled efficiently, helping you navigate all the necessary steps
-            and paperwork.
+            The processing time for a{" "}
+            <a
+              href="https://www.vjcoverseas.com/pr-visas"
+              style={{ color: "orange", fontWeight: "bold" }}
+            >
+              Canada Permanent Residency
+            </a>{" "}
+            visa can vary depending on the immigration program you apply under
+            (Express Entry, Provincial Nominee Program, Family Sponsorship,
+            etc.). Typically, Express Entry applications are processed in
+            approximately 6 to 8 months, while other pathways like the
+            Provincial Nominee Program may take around 12 to 18 months. However,
+            processing times can be affected by various factors such as your
+            country of origin and application completeness.{" "}
+            <b style={{ color: "black" }}>VJC Overseas</b> ensures that your
+            application is handled efficiently, helping you navigate all the
+            necessary steps and paperwork.
           </p>
         </section>
 
@@ -142,9 +170,10 @@ const Canadapr = () => {
           </ul>
           <p style={{ marginBottom: "20px" }}>
             Additional costs may include medical exams, police certificates, and
-            biometrics, which vary by individual circumstances. At VJC Overseas,
-            we provide transparent and accurate estimates to ensure you are
-            prepared for all costs involved.
+            biometrics, which vary by individual circumstances. At{" "}
+            <b style={{ color: "black" }}>VJC Overseas</b>, we provide
+            transparent and accurate estimates to ensure you are prepared for
+            all costs involved.
           </p>
         </section>
 
@@ -152,20 +181,28 @@ const Canadapr = () => {
           <h2
             style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}
           >
-            Get Started with VJC Overseas
+            Get Started with <b style={{ color: "black" }}>VJC Overseas</b>
           </h2>
           <p>
             The process of applying for a Canada PR visa can be complex, but
-            with the expert guidance of VJC Overseas, you can streamline your
-            application and maximize your chances of success. Our experienced
-            consultants provide tailored advice and support, helping you
-            understand your eligibility, navigate the paperwork, and ensure that
-            your application is submitted correctly and on time.
+            with the expert guidance of{" "}
+            <a
+              href="https://www.vjcoverseas.com/"
+              style={{ color: "orange", fontWeight: "bold" }}
+            >
+              VJC Overseas
+            </a>
+            , you can streamline your application and maximize your chances of
+            success. Our experienced consultants provide tailored advice and
+            support, helping you understand your eligibility, navigate the
+            paperwork, and ensure that your application is submitted correctly
+            and on time.
           </p>
           <p>
-            Are you ready to begin your journey to Canada? Contact VJC Overseas
-            today to start your application process and take the first step
-            toward making Canada your new home!
+            Are you ready to begin your journey to Canada? Contact{" "}
+            <b style={{ color: "black" }}>VJC Overseas</b> today to start your
+            application process and take the first step toward making Canada
+            your new home!
           </p>
         </section>
       </article>
