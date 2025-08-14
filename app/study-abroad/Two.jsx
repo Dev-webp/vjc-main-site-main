@@ -61,23 +61,16 @@ const Migrate = () => {
 
   return (
     <div className="relative pt-10 w-full min-h-screen">
-      {/* Background Animated GIF with Next.js Image */}
-     <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="w-full h-full object-cover"
-  >
-    <source src="/jobseeker.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
-</div>
-
+      {/* Background Animated GIF */}
+      <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
+        <video autoPlay loop muted playsInline className="w-full h-full object-cover">
+          <source src="/jobseeker.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
-      
+      </div>
+
+      <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
 
       {/* Page Content */}
       <div className="relative z-10 px-4 sm:px-6 lg:px-12 py-10">
@@ -88,45 +81,46 @@ const Migrate = () => {
               Study Abroad
             </h2>
             <Swiper
-  modules={[Navigation, Pagination, Autoplay]}
-  navigation
-  pagination={{ clickable: true }}
-  autoplay={{ delay: 3000 }}
-  loop={true}
-  spaceBetween={0}
-  slidesPerView={1.6}
-  centeredSlides={true}
-  grabCursor={true}
-  onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
->
-  {visaData.map((visa, index) => {
-    const isActive = index === activeIndex;
-    return (
-      <SwiperSlide key={visa.path}>
-        <Link href={visa.path}>
-          <div
-            className={`relative w-full h-[420px] md:h-[440px] lg:h-[460px] transform transition-all duration-700 overflow-hidden shadow-xl border-4 cursor-pointer ${
-              isActive ? "scale-105 opacity-100 z-30" : "scale-90 opacity-80 z-10"
-            }`}
-          >
-            <Image
-              src={visa.image}
-              alt={visa.name}
-              fill
-              className="object-cover object-center"
-              quality={100}
-              priority
-            />
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center text-white font-bold text-2xl sm:text-3xl text-center p-6">
-              {visa.name}
-            </div>
-          </div>
-        </Link>
-      </SwiperSlide>
-    );
-  })}
-</Swiper>
-
+              modules={[Navigation, Pagination, Autoplay]}
+              navigation
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000 }}
+              loop={true}
+              spaceBetween={0}
+              slidesPerView={1.6}
+              centeredSlides={true}
+              grabCursor={true}
+              onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+            >
+              {visaData.map((visa, index) => {
+                const isActive = index === activeIndex;
+                return (
+                  <SwiperSlide key={visa.path}>
+                    <Link href={visa.path}>
+                      <div
+                        className={`relative w-full h-[420px] md:h-[440px] lg:h-[460px] transform transition-all duration-700 overflow-hidden shadow-xl border-4 cursor-pointer ${
+                          isActive
+                            ? "scale-105 opacity-100 z-30"
+                            : "scale-90 opacity-80 z-10"
+                        }`}
+                      >
+                        <Image
+                          src={visa.image}
+                          alt="study Abroad"
+                          fill
+                          className="object-cover object-center"
+                          quality={100}
+                          priority
+                        />
+                        <div className="absolute inset-0 bg-black/20 flex items-center justify-center text-white font-bold text-2xl sm:text-3xl text-center p-6">
+                          {visa.name}
+                        </div>
+                      </div>
+                    </Link>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
 
           {/* Form Section */}
@@ -138,19 +132,26 @@ const Migrate = () => {
         {/* Bottom Section */}
         <div className="mt-16 bg-gradient-to-r from-white/50 to-white/50 p-8 rounded-2xl shadow-lg text-center">
           <h3 className="text-2xl font-bold text-black mb-4">
-            Study Abroad with <span className="text-orange-500">VJC Overseas:</span> Your Global Education Partner
+            Study Abroad with <span className="text-orange-500">VJC Overseas</span>: Your Global Education Partner
           </h3>
+
           <p className="text-black text-lg max-w-4xl mx-auto mb-4">
-            At VJC Overseas, we believe that education is not just about textbooks — it's about experiencing the world, broadening your horizons, and preparing for a global future.
-          </p>
-          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
-            Our Study Abroad services are designed to guide students through every step of their international education journey, ensuring a seamless and enriching experience.
-          </p>
-          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
-            We collaborate with top universities and educational institutions across the world, offering you access to a wide range of undergraduate, postgraduate, and diploma programs in:
+            At <Link href="https://www.vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link>, we believe that education is a transformative journey that goes far beyond textbooks and classrooms. It’s about immersing yourself in a new culture, gaining global exposure, and building skills that prepare you for a competitive international career.
           </p>
 
-          {/* 20 Countries List */}
+          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
+            Our dedicated team works as experienced <Link href="https://www.vjcoverseas.com/study-abroad/canada" className="text-orange-500">Student Visa Consultants</Link>, guiding students from the moment they start researching options to the day they step onto a foreign campus. Whether your goal is a short-term exchange program or a full-fledged degree, we provide comprehensive, personalized support at every stage.
+          </p>
+
+          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
+            Recognized among the <Link href="https://www.vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</Link>, our approach is built on a track record of success, transparent guidance, and strong partnerships with world-class institutions. We tailor our recommendations to match your academic background, budget, and career goals.
+          </p>
+
+          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
+            We collaborate with top universities across the globe, offering access to undergraduate, postgraduate, and diploma programs in destinations such as:
+          </p>
+
+          {/* Countries List */}
           <div className="grid grid-cols-2 bg-white sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mb-6 text-lg text-left list-disc list-inside">
             {visaData.map((visa) => (
               <li key={visa.path}>
@@ -164,18 +165,27 @@ const Migrate = () => {
             ))}
           </div>
 
-          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
-            Our team of experienced counsellors provides personalized guidance throughout the process. From choosing the right course and university to visa
-            applications and pre-departure orientations, we are with you every step of the way. Our goal is to make your transition to studying abroad as smooth as possible, so you can focus on your studies and make the most of your time overseas.
+          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
+            As professional <Link href="https://www.vjcoverseas.com/study-abroad/usa" className="text-orange-500">Study Abroad Consultants</Link>, we provide more than just a list of universities. We offer in-depth advice on admission requirements, scholarship opportunities, course selection, and future career pathways, and we help you plan finances effectively by considering tuition fees, living expenses, and available funding options.
           </p>
-          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
-            Beyond academics, we also understand the importance of cultural integration. We help you connect with student communities, providing support 
-            with accommodation, travel, and local resources, ensuring you feel at home no matter where you go.
+
+          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
+            Opting to <Link href="https://www.vjcoverseas.com/study-abroad/australia" className="text-orange-500">Study in Abroad</Link> locations opens the door to countless opportunities — from accessing advanced research facilities to learning from globally recognized faculty. International exposure helps students develop adaptability, cross-cultural communication skills, and a strong professional network that can be leveraged anywhere in the world.
           </p>
-          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
-            Studying abroad is an investment in your future, and with VJC Overseas, you’re not just applying for a course—you’re embarking on a life-changing adventure. Let us help you take the first step 
-            towards a world-class education and an exciting new chapter in your life.
+
+          {/* Student Visa Process (replaces any previous Germany Opportunity Card content) */}
+          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
+            We understand that the <Link href="https://www.vjcoverseas.com/study-abroad/italy" className="text-orange-500">Student Visa Process</Link> can seem daunting, with multiple forms, interviews, and financial proofs involved. Our team ensures you meet all requirements and deadlines without stress — from preparing documents and booking visa interviews to offering mock interview sessions — so you feel confident and ready.
           </p>
+
+          <p className="text-black text-lg max-w-4xl mx-auto mb-4">
+            Your study abroad experience doesn’t end with receiving your visa. We assist with finding suitable accommodation, understanding local culture, and connecting you with student communities. Whether it’s a bustling city campus or a quiet university town, we help you adapt smoothly to your new environment.
+          </p>
+
+          <p className="text-black text-lg max-w-4xl mx-auto mb-6">
+            Studying abroad is more than just an academic step — it’s a life-changing investment in your future. With <b className="text-black">VJC Overseas</b> by your side, you gain a partner who is as committed to your success as you are. From your first consultation to your first day in class, we ensure your journey is rewarding, memorable, and stress-free.
+          </p>
+
           <h3 className="text-2xl font-bold text-white mb-4">
             Start your global education journey with VJC Overseas today!
           </h3>

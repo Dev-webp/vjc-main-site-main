@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-
 const mcqQuestions = {
   Germany: [
     { question: "Select your age", options: ["Below 18", "18 to 35", "35 to 40", "Above 40"] },
@@ -52,7 +51,6 @@ const mcqQuestions = {
   ]
 };
 
-// Extract common transporter config
 const createTransporter = () => nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -68,7 +66,7 @@ export async function POST(request: Request) {
   if (contentType?.includes('application/json')) {
     const data = await request.json();
 
-    // Auth Welcome
+    // Auth Welcome Email
     if (data.type === 'auth-welcome' && data.email) {
       const name = data.name ?? 'VJC User';
       const welcomeMessage = `Welcome ${name},\n\nThank you for signing in to VJC Overseas Jobs Portal!\nWe're excited to help you explore global career and visa opportunities.\n\nVisit us at: https://vjc-overseas.com\n\nBest regards,\nVJC Overseas Team`;
@@ -80,14 +78,13 @@ export async function POST(request: Request) {
           subject: 'Welcome to VJC Overseas Jobs Portal 🎉',
           text: welcomeMessage,
         });
-
         return NextResponse.json({ message: 'Welcome email sent successfully' });
       } catch (error: any) {
         return NextResponse.json({ error: 'Error sending welcome email', details: error.message }, { status: 500 });
       }
     }
 
-    // Job Application (confirmation email to user)
+    // Job Application Confirmation to User
     if (data.type === 'job-application' && data.email) {
       const name = data.name ?? 'VJC User';
       const jobTitle = data.appliedJob?.title ?? 'a job';
@@ -102,14 +99,13 @@ export async function POST(request: Request) {
           subject: `Your Application to ${jobTitle} at VJC Overseas`,
           text: message,
         });
-
         return NextResponse.json({ message: 'Application email sent successfully' });
       } catch (error: any) {
         return NextResponse.json({ error: 'Error sending application email', details: error.message }, { status: 500 });
       }
     }
 
-    // Job Apply (admin + user email)
+    // Job Apply - Send to Admin & User
     if (data.type === 'job-apply' && data.name && data.email && data.appliedJob) {
       const { name, email, country, skills, appliedJob } = data;
       const html = `
@@ -152,24 +148,20 @@ export async function POST(request: Request) {
       }
     }
 
-    // Generic Form (MCQ / Contact / Resume-based)
+    // Generic Form - MCQ / Contact
     const landingPage = data.landingPage ?? '';
     let details = `Landing Page: ${landingPage}\n\n`;
 
-    if (
-  typeof data.selectedCountry === "string" &&
-  data.selectedCountry in mcqQuestions &&
-  data.mcqAnswers
-) {
-  const country = data.selectedCountry as keyof typeof mcqQuestions;
-  const questions = mcqQuestions[country];
+    let countryForEmail = data.country ?? '';
+    if (typeof data.selectedCountry === "string" && data.selectedCountry in mcqQuestions) {
+      countryForEmail = data.selectedCountry; // Always prefer MCQ country
+      const questions = mcqQuestions[data.selectedCountry as keyof typeof mcqQuestions];
+      questions.forEach((q, idx) => {
+        details += `Q${idx + 1}: ${q.question}\nA: ${data.mcqAnswers?.[idx] ?? ''}\n`;
+      });
+    }
 
-  questions.forEach((q, idx) => {
-    details += `Q${idx + 1}: ${q.question}\nA: ${data.mcqAnswers[idx] ?? ''}\n`;
-  });
-}
-
-    details += `\nName: ${data.name ?? ''}\nEmail: ${data.email ?? ''}\nPhone: ${data.phone ?? ''}\nCountry: ${data.country ?? ''}\nAge: ${data.age ?? ''}\nExperience: ${data.experience ?? ''}\nQualification: ${data.qualification ?? ''}\nMessage: ${data.message ?? ''}`;
+    details += `\nName: ${data.name ?? ''}\nEmail: ${data.email ?? ''}\nPhone: ${data.phone ?? ''}\nCountry: ${countryForEmail}\nAge: ${data.age ?? ''}\nExperience: ${data.experience ?? ''}\nQualification: ${data.qualification ?? ''}\nMessage: ${data.message ?? ''}`;
 
     try {
       await createTransporter().sendMail({
@@ -178,14 +170,13 @@ export async function POST(request: Request) {
         subject: `New Submission - ${landingPage}`,
         text: details,
       });
-
       return NextResponse.json({ message: 'Form email sent successfully' });
     } catch (error: any) {
       return NextResponse.json({ error: 'Error sending form email', details: error.message }, { status: 500 });
     }
   }
 
-  // File Upload Handler (Resume)
+  // Resume Upload Handling
   if (contentType?.includes('multipart/form-data')) {
     const formData = await request.formData();
     const name = formData.get('name') as string;
@@ -203,7 +194,7 @@ export async function POST(request: Request) {
       attachment = { filename: resumeFile.name, content: buffer };
     }
 
-    const jobDetails = `New Job Application:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nJob Title: ${selectedJob}\nMessage: ${message}\nLanding Page: ${landingPage}`;
+    const jobDetails = `New Job Application:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\ncountry: ${country}v\nJob Title: ${selectedJob}\nMessage: ${message}\nLanding Page: ${landingPage}`;
 
     try {
       await createTransporter().sendMail({
@@ -213,7 +204,6 @@ export async function POST(request: Request) {
         text: jobDetails,
         attachments: attachment ? [attachment] : [],
       });
-
       return NextResponse.json({ message: 'Resume email sent successfully' });
     } catch (error: any) {
       return NextResponse.json({ error: 'Error sending resume email', details: error.message }, { status: 500 });

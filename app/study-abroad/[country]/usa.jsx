@@ -14,12 +14,26 @@ const USAStudyVisa = () => {
 
       <p className="mb-6">
         Are you planning to study in the United States?{" "}
-        <span className="text-orange-500">VJC Overseas</span> is here to guide
-        you through the entire process of securing a USA Study Visa, from
-        understanding the financial aspects to navigating the visa application
-        process. Whether you're aiming for an undergraduate degree, a master's
-        program, or even a specialized course, we provide all the necessary
-        information and support to help you achieve your academic goals.
+        <a
+          href="https://www.vjcoverseas.com/"
+          className="text-orange-500"
+          style={{ textDecoration: "none" }}
+        >
+          VJC Overseas
+        </a>{" "}
+        is here to guide you through the entire process of securing a{" "}
+        <a
+          href="https://vjcoverseas.com/migrate/united-states/student-visa"
+          className="text-orange-500"
+          style={{ textDecoration: "none" }}
+        >
+          USA student visa
+        </a>
+        , from understanding the financial aspects to navigating the visa
+        application process. Whether you're aiming for an undergraduate degree,
+        a master's program, or even a specialized course, we provide all the
+        necessary information and support to help you achieve your academic
+        goals.
       </p>
 
       <h2 className="text-xl font-semibold mb-2">Why Study in the USA?</h2>
@@ -45,7 +59,15 @@ const USAStudyVisa = () => {
             cutting-edge resources and global recognition. With diverse
             cultures, state-of-the-art research facilities, and a wide range of
             academic programs, the USA offers students unparalleled
-            opportunities for personal and professional growth.
+            opportunities for personal and professional growth. Choosing to{" "}
+            <a
+              href="https://vjcoverseas.com/study-abroad"
+              className="text-orange-500"
+              style={{ textDecoration: "none" }}
+            >
+              Study Abroad
+            </a>{" "}
+            in the USA opens doors to global career pathways.
           </p>
 
           <div>
@@ -62,8 +84,8 @@ const USAStudyVisa = () => {
               appropriate.
               <br />
               Regardless of the type of visa,{" "}
-              <span className="text-orange-500 font-semibold">
-                VJC Overseas
+              <span className="font-bold text-black">
+                Best Visa Immigration Consultants
               </span>{" "}
               will help you determine the right one based on your course of
               study.
@@ -103,19 +125,36 @@ const USAStudyVisa = () => {
         Living expenses can vary based on the location of your university. Major
         cities such as New York, San Francisco, and Los Angeles tend to have
         higher living costs, while smaller towns and cities offer more
-        affordable options.
+        affordable options. Exploring{" "}
+        <a
+          href="https://vjcoverseas.com/work-abroad"
+          className="text-orange-500"
+          style={{ textDecoration: "none" }}
+        >
+          Work Abroad Opportunities
+        </a>{" "}
+        can help offset these expenses in the long run.
       </p>
       <ul className="list-disc list-inside mb-4">
         <li>Off-campus accommodation: Around $8,000 to $20,000 per year.</li>
-        <li>On-campus accommodation: Generally between $6,000 and $15,000 per year.</li>
+        <li>
+          On-campus accommodation: Generally between $6,000 and $15,000 per
+          year.
+        </li>
         <li>Food & Utilities: Expect to spend about $3,000 to $5,000 per year.</li>
-        <li>Transportation: Depending on the city, transportation costs can range from $1,000 to $2,000 annually.</li>
+        <li>
+          Transportation: Depending on the city, transportation costs can range
+          from $1,000 to $2,000 annually.
+        </li>
       </ul>
 
       <h3 className="font-semibold mb-1 text-blue-400">3. Other Expenses</h3>
       <ul className="list-disc list-inside mb-4">
         <li>Books & Supplies: Approximately $1,000 to $1,500 annually.</li>
-        <li>Health Insurance: Many universities require students to have health insurance, which can cost between $500 to $2,000 per year.</li>
+        <li>
+          Health Insurance: Many universities require students to have health
+          insurance, which can cost between $500 to $2,000 per year.
+        </li>
       </ul>
 
       <h2 className="text-xl font-semibold mb-2">Lifestyle in the USA</h2>
@@ -127,13 +166,6 @@ const USAStudyVisa = () => {
         networking and career development. The USA's large international student
         community ensures a multicultural environment where you can make
         lifelong friends and broaden your worldview.
-      </p>
-      <p className="mb-4">
-        Moreover, US universities often have resources to support international
-        students, including student clubs, cultural events, and career services.
-        Many institutions also offer opportunities for internships, research
-        assistantships, and part-time jobs that can help you gain valuable work
-        experience and offset living costs.
       </p>
 
       <h2 className="text-xl font-semibold mb-2">
@@ -208,9 +240,16 @@ const USAStudyVisa = () => {
         We understand how overwhelming it can be to plan your studies abroad,
         and our experienced team is committed to making your journey smooth and
         successful. Reach out to{" "}
-        <span className="text-orange-500">VJC Overseas</span> today to start
-        your application process for a USA Study Visa and take the first step
-        toward your dream education.
+        <span className="font-bold text-black">VJC Overseas</span>, one of the{" "}
+        <a
+          href="https://www.vjcoverseas.com/"
+          className="text-orange-500"
+          style={{ textDecoration: "none" }}
+        >
+          Best Visa Immigration Consultants
+        </a>{" "}
+        today to start your application process for a USA Study Visa and take
+        the first step toward your dream education.
       </p>
 
       <p className="text-sm italic">

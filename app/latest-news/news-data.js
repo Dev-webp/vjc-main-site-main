@@ -387,8 +387,119 @@ export const allNews = [
 
 
 
+{
+  "title": "Europe is getting tough on tourists with rules you can’t ignore",
+  "summary": "New EU travel policies, including stricter entry checks and mandatory pre-travel authorizations, are set to impact millions of tourists planning trips to Europe.",
+  "image": "/new-rules-europe-tourist-visas.jpeg",
+  "tag": "Travel Policy Update",
+  "readTime": "2 min read",
+  "content": `
+    <p>
+      The European Union is introducing new regulations aimed at increasing
+      <strong>border security</strong> and <strong>tourist management</strong>. 
+      From 2025, visitors from many non-EU countries will need to complete additional
+      entry requirements before traveling.
+    </p>
 
-  
+    <h2>Who Will Be Affected?</h2>
+    <p>
+      Millions of tourists from countries such as <strong>India, the US, Australia, and the UK</strong> 
+      will be required to apply for pre-travel authorization under the upcoming 
+      <strong>ETIAS (European Travel Information and Authorization System)</strong>.
+    </p>
+
+    <h2>Why the Change?</h2>
+    <ul>
+      <li>Enhanced security to monitor and manage tourist inflows</li>
+      <li>Prevent overstaying and unauthorized work during visits</li>
+      <li>Better tracking of cross-border travel within the Schengen area</li>
+    </ul>
+
+    <blockquote>
+      “The new rules aren’t meant to discourage visitors, but to ensure safer 
+      and more controlled travel across European countries.” – EU Policy Spokesperson
+    </blockquote>
+
+    <h2>What Tourists Should Do</h2>
+    <ul>
+      <li>Check if your country requires ETIAS authorization</li>
+      <li>Apply online well before your travel date</li>
+      <li>Be prepared for additional checks at entry points</li>
+    </ul>
+
+    <p>
+      These changes are part of Europe’s broader strategy to balance tourism growth
+      with security and sustainable travel. Authorities recommend all travelers stay informed 
+      to avoid last-minute disruptions to their holiday plans.
+    </p>
+  `
+},
+{
+  "title": "Schengen visa issued? Check these details to avoid issues",
+  "summary": "Many travelers make costly mistakes even after getting their Schengen visa approved. Here’s a checklist to avoid entry issues, trip delays, or cancellations.",
+  "image": "/Flight-Ticket-Visa-Europe.jpg",
+  "tag": "Visa Travel Guide",
+  "readTime": "4 min read",
+  "content": `
+    <p>
+      Getting your <strong>Schengen visa</strong> approved is a big relief, but your journey isn't secure until you clear immigration at the port of entry. 
+      Every year, travelers are <strong>denied entry</strong> despite having a valid visa due to overlooked details or missing documents.
+    </p>
+
+    <h2>Why Post-Visa Checks Are Important</h2>
+    <p>
+      A Schengen visa is <em>not</em> a guarantee of entry — border officers have the authority to refuse you if 
+      documentation or travel plans do not match your application. Proper preparation avoids stress and last-minute surprises.
+    </p>
+
+    <h2>Key Details to Verify After Visa Approval</h2>
+    <ul>
+      <li><strong>Visa Validity Dates:</strong> Ensure your travel falls within the visa’s “From” and “Until” dates.</li>
+      <li><strong>Number of Entries:</strong> Check if you have a <em>Single</em> or <em>Multiple Entry</em> visa.</li>
+      <li><strong>Passport Validity:</strong> Must be valid for at least 3 months beyond your intended return date.</li>
+      <li><strong>Personal Details:</strong> Verify spelling of your name, passport number, and nationality.</li>
+      <li><strong>Duration of Stay:</strong> Do not overstay the number of days allowed, even if your visa is valid for longer.</li>
+    </ul>
+
+    <h2>Common Reasons for Entry Denial</h2>
+    <ul>
+      <li>Travel insurance not covering the full trip or lacking €30,000 medical coverage.</li>
+      <li>No proof of accommodation for your stay.</li>
+      <li>Insufficient financial proof at the border.</li>
+      <li>Entry at a country different from the one that issued your visa (without proper justification).</li>
+      <li>Inconsistent travel purpose compared to your application.</li>
+    </ul>
+
+    <blockquote>
+      “Having a Schengen visa means you’ve been pre-approved for travel, 
+      but border control is the final authority.” – European Border Official
+    </blockquote>
+
+    <h2>Documents to Keep Handy While Traveling</h2>
+    <ul>
+      <li>Valid passport with Schengen visa</li>
+      <li>Return flight tickets</li>
+      <li>Hotel booking confirmations or invitation letters</li>
+      <li>Proof of sufficient funds (bank statements, cash, credit cards)</li>
+      <li>Comprehensive travel insurance certificate</li>
+      <li>Trip itinerary and tour confirmations</li>
+    </ul>
+
+    <h2>Extra Tips for Smooth Entry</h2>
+    <ul>
+      <li>Arrive early at immigration to avoid long queues.</li>
+      <li>Answer border questions confidently and truthfully.</li>
+      <li>Ensure your first entry point matches your visa’s main destination country.</li>
+      <li>Have digital copies of all documents on your phone and email for backup.</li>
+      <li>Dress neatly — first impressions at border checks can matter.</li>
+    </ul>
+
+    <p>
+      With the right preparation, your Schengen trip can start smoothly without unnecessary stress.
+      Double-check your documents and understand the entry rules before you fly.
+    </p>
+  `
+},
  {
     "title": "US Plans Fixed-Term Student Visas, Impacting Over 4 Lakh Indian Students",
     "summary": "The US is considering replacing open-ended F-1 and J-1 student visas with fixed-term visas. This could disrupt the plans of over 420,000 Indian students currently in or planning to study in the US.",

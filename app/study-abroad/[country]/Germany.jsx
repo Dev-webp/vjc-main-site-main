@@ -14,7 +14,7 @@ const GermanyStudyVisa = () => {
           <p>
             Are you dreaming of studying in Germany, one of the most prestigious countries for higher education worldwide?
             With its world-class universities, innovative research, and diverse culture, Germany is an excellent destination
-            for international students. Whether you are applying for free or paid education, <span className="text-orange-500">VJC Overseas</span> is here to guide you through the entire process, making your journey smooth and hassle-free.
+            for international students. Whether you are applying for free or paid education, <span className="text-orange-500 font-bold text-black"><a href="https://vjcoverseas.com/">VJC Overseas</a></span> is here to guide you through the entire process, making your journey smooth and hassle-free.
           </p>
         </div>
         <div className="w-full md:w-1/3">
@@ -23,7 +23,7 @@ const GermanyStudyVisa = () => {
             alt="Study in Germany"
             width={500}
             height={500}
-           priority
+            priority
             unoptimized
           />
         </div>
@@ -41,7 +41,7 @@ const GermanyStudyVisa = () => {
         </ul>
 
         <h3 className="text-xl font-semibold mt-4">Free Education in Germany – Eligibility, Benefits, and Advantages</h3>
-        <p>Germany is well-known for offering free education at public universities. As of 2024, public universities in Germany still charge minimal administrative fees but no tuition fees for most UG/PG programs.</p>
+        <p>Germany is well-known for offering free education at public universities. As of 2024, public universities in Germany still charge minimal administrative fees but no tuition fees for most UG/PG programs. Students looking to <span className="text-orange-500 font-bold text-black"><a href="https://vjcoverseas.com/study-abroad/germany">Study Abroad in Germany</a></span> also benefit from a strong job market, high living standards, and central location in Europe.</p>
 
         <h4 className="font-semibold">Eligibility for Free Education:</h4>
         <ul className="list-disc pl-5">
@@ -88,6 +88,11 @@ const GermanyStudyVisa = () => {
           <li>€800–€1,200/month for accommodation, food, transport, etc.</li>
         </ul>
 
+        <h3 className="text-xl font-semibold mt-4">Work and Immigration Opportunities</h3>
+        <p>
+          In addition to studying, students can explore career prospects through work permits and immigration schemes. The <span className="text-orange-500 font-bold text-black"><a href="https://www.vjcoverseas.com/germany-opportunity-card">Germany Opportunity Card</a></span> allows skilled professionals to live and work in Germany while searching for suitable employment. Graduates can extend their stay beyond studies using this option.
+        </p>
+
         <h3 className="text-xl font-semibold mt-4">Germany Study Visa Process from India</h3>
         <ol className="list-decimal pl-5">
           <li><strong>Get Accepted:</strong> Into a recognized German university.</li>
@@ -101,7 +106,8 @@ const GermanyStudyVisa = () => {
               <li>Language Proficiency Scores (TOEFL, IELTS, etc.)</li>
             </ul>
           </li>
-          <li><strong>Apply for the Study Visa:</strong> Submit your application at the German Embassy/Consulate in India.</li>
+          <li><strong>Apply for the Study Visa:</strong> Submit your application at the German Embassy/Consulate in India <span className="text-orange-500 font-bold text-black"><a href="https://vjcoverseas.com/migrate/germany/student-visa">Germany Student visa</a></span>.</li>
+
           <li><strong>Visa Processing Time:</strong> 6–8 weeks on average.</li>
           <li><strong>Attend Visa Interview:</strong> Be prepared with answers about your plans and finances.</li>
           <li><strong>Visa Approval:</strong> Once approved, you’ll receive your German student visa.</li>
@@ -109,16 +115,15 @@ const GermanyStudyVisa = () => {
 
         <p className="mt-2"><strong>Approximate Visa Fees:</strong> €75–€100 (~₹7,000–₹9,000)</p>
 
-        <h3 className="text-xl font-semibold mt-4">Why Choose <span className="text-orange-500">VJC Overseas</span>?</h3>
+        <h3 className="text-xl font-semibold mt-4">Why Choose <span className="text-orange-500 font-bold text-black"><a href="https://vjcoverseas.com/">Best Visa Immigration Consultants</a></span>?</h3>
         <p>
-          At <span className="text-orange-500">VJC Overseas</span>, we specialize in helping Indian students navigate the entire process of studying in Germany.
-          From selecting the right university to visa processing and finding accommodation, we provide complete support and ensure you have the best experience.
-          Our team is dedicated to making your dream of studying in Germany a reality.
+          Studying in Germany is a major decision. With the support of <span className="text-orange-500 font-bold text-black"><a href="https://vjcoverseas.com/study-abroad/">Study Visa Consultants</a></span>, you can ensure your application is complete, your course selection aligns with career goals, and your transition abroad is seamless.
         </p>
 
         <p className="mt-2">
-          For more information on the study visa process, eligibility, and support for studying in Germany, contact <span className="text-orange-500">VJC Overseas</span> today!
-        </p>
+  At <strong>VJC Overseas</strong>, we combine in-depth knowledge of German education policies with personalized counselling, helping students achieve their academic dreams every year.
+</p>
+
       </div>
     </div>
   );
