@@ -2,10 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { Filter, X } from "lucide-react";
-import dummyJobs from "./jobData";
 import JobCard from "./JobCard";
 import Form from "./Form";
-
+import jobData from "./jobData";
 const countryStyles = {
   UAE: { cardBg: "bg-white", titleColor: "text-blue-700", tagColor: "bg-yellow-100 text-yellow-800 border-yellow-300" },
   Germany: { cardBg: "bg-blue-50", titleColor: "text-blue-900", tagColor: "bg-blue-100 text-blue-700 border-blue-300" },
@@ -21,12 +20,12 @@ const countryStyles = {
 };
 
 const filterData = {
-  UAE: { cities: ["Dubai"], domains: ["Semiconductor", "AI", "IT", "Finance", "Administration", "Front Office", "Healthcare", "Education", "Construction",  "Retail", "Marketing", "Engineering", "Aviation", "Oil & Gas"] },
+  UAE: { cities: ["Dubai"], domains: ["Semiconductor", "AI", "IT", "Finance", "Administration", "Front Office", "Healthcare", "Education", "Construction", "Retail", "Marketing", "Engineering", "Aviation", "Oil & Gas"] },
   Germany: { cities: ["Berlin"], domains: ["Sales", "Supply Chain", "Healthcare", "Manufacturing", "Automobile", "IT", "Electrical", "HVAC", "Industrial Safety", "Business Development"] },
   Canada: { cities: ["Toronto"], domains: ["Banking", "Food Services", "Retail", "Operations", "IT", "Administration", "Engineering", "Sales", "Marketing", "Healthcare", "Construction", "Airlines", "Insurance"] },
   Australia: { cities: ["Melbourne"], domains: ["IT & Software Testing", "IT & Software Development", "Manufacturing & Engineering", "Automotive", "ICT Sales"] },
   Luxembourg: { cities: ["Luxembourg City"], domains: ["IT & Software Development", "Mechanical Engineering", "Finance & Banking", "Healthcare", "Sales & Business Development", "Electrical Engineering", "Data & Analytics", "HVAC"] },
-  UK: { cities: ["London"], domains: ["Travel", "Media", "Marketing", "Finance", "Hospitality", "Sales", "Education", "E-commerce","IT",] },
+  UK: { cities: ["London"], domains: ["Travel", "Media", "Marketing", "Finance", "Hospitality", "Sales", "Education", "E-commerce", "IT"] },
   Ireland: { cities: ["Dublin"], domains: ["IT & Software Development", "Healthcare", "Mechanical Engineering", "Business & Consulting", "Sales & Marketing", "HVAC", "Data & Analytics", "Electrical Engineering", "Digital Marketing"] },
   Singapore: { cities: ["Singapore"], domains: ["IT & Software Development", "Biomedical Engineering", "Finance & Banking", "Design & User Experience", "Logistics & Supply Chain", "Cybersecurity", "Urban Development & Planning", "Maritime & Port Management", "Artificial Intelligence"] },
   Malaysia: { cities: ["Kuala Lumpur"], domains: ["Information Technology", "Finance & Accounting", "Marketing & Advertising", "Human Resources", "Data & Analytics", "Construction & Engineering", "Customer Service", "Creative Design", "Cybersecurity", "Logistics & Supply Chain"] },
@@ -40,6 +39,7 @@ const CountryJobsPage = () => {
   const params = useParams();
   const router = useRouter();
 
+  const [jobs, setJobs] = useState([]); // 🔥 jobs will now come from JSON
   const [selectedCountry, setSelectedCountry] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedDomain, setSelectedDomain] = useState("");
@@ -51,6 +51,23 @@ const CountryJobsPage = () => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const jobsPerPage = 6;
+
+  // 🔥 Fetch jobs.json on mount
+useEffect(() => {
+  fetch("/api/jobs")
+    .then((res) => res.json())
+    .then((data) => {
+      // Combine local + API jobs
+      setJobs([...jobData, ...data]);
+    })
+    .catch((err) => {
+      console.error("Error loading jobs:", err);
+      // Even if API fails, use local jobdata
+      setJobs([...jobdata]);
+    });
+}, []);
+
+
 
   useEffect(() => {
     const current = params?.country?.replace(/-/g, "");
@@ -74,7 +91,7 @@ const CountryJobsPage = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const keywordFilteredJobs = dummyJobs.filter(
+  const keywordFilteredJobs = jobs.filter(
     (job) =>
       (!searchKeyword ||
         job.title.toLowerCase().includes(searchKeyword.toLowerCase()) ||

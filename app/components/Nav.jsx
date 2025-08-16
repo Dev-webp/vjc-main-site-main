@@ -36,10 +36,12 @@ const [mobileSubSubMenu, setMobileSubSubMenu] = useState({});
   ];
 
   const extraItems = [
+    { name: "Jobs Abroad ", path: "/abroad-jobs-work-permit.com" },
     { name: "About us", path: "/about-us" },
     { name: "Services", path: "/services" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact-us" },
+    
   ];
    const getSubMenu = (itemName) => {
     switch (itemName) {
@@ -574,15 +576,20 @@ const toggleMobileSubSubMenu = (itemName) => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-4 mr-6">
-            {extraItems.map((item, index) => (
-              <Link key={index} href={item.path}>
-                <div className="flex items-center space-x-1 hover:text-orange-500 cursor-pointer">
-                  <FaChevronRight size={12} />
-                  <span>{item.name}</span>
-                </div>
-              </Link>
-            ))}
-          </div>
+  {extraItems.map((item, index) => (
+    <Link key={index} href={item.path}>
+      <div className="flex items-center space-x-1 hover:text-orange-500 cursor-pointer">
+        <FaChevronRight size={12} />
+        <span
+          className={item.name === "Jobs Abroad " ? "font-semibold text-blue-400" : ""}
+        >
+          {item.name}
+        </span>
+      </div>
+    </Link>
+  ))}
+</div>
+
  {/* Social Media Icons */}
           <div className="hidden lg:flex items-center px-5 space-x-2">
             <a
