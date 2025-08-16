@@ -1,26 +1,38 @@
 import React from "react";
 import Image from 'next/image';
+import Link from "next/link";
 
 const StudyInMalaysia = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
-                 <h1 className="flex justify-center text-lg sm:text-2xl md:text-2xl font-bold mb-8 text-center whitespace-nowrap">
-                Study in the Malaysia - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+      
+      <h1 className="flex justify-center text-lg sm:text-2xl md:text-2xl font-bold mb-8 text-center whitespace-nowrap">
+        Study in the Malaysia - <span className="text-orange-500">&nbsp;VJC Overseas</span>
       </h1>
 
       <p>
-        Welcome to <span className="text-orange-500">VJC Overseas</span>, your gateway to pursuing higher education in Malaysia, a rising destination known for quality education, global exposure, and affordability. Whether you're looking for top-ranked universities, vibrant student life, or cost-effective tuition, Malaysia is the perfect blend of all.
+        Are you looking for a destination that offers world-class education, vibrant culture, and affordability all in one?{" "}
+        <strong>VJC Overseas</strong>{" "}
+        is here to make that dream a reality. Recognized among the{" "}
+        <span className="text-orange-500">
+          <Link href="https://vjcoverseas.com/">Best Visa Immigration Consultants</Link>
+        </span>
+        , we specialize in helping students explore academic opportunities across the globe, and Malaysia stands out as one of the most promising options. With its growing reputation as a global education hub, Malaysia offers a unique blend of quality academics, cultural diversity, and career prospects. Many students who connect with our{" "}
+        <span className="text-orange-500">
+          <Link href="https://vjcoverseas.com/study-abroad/">Study Visa Consultants</Link>
+        </span>{" "}
+        find that Malaysia strikes the perfect balance between modern facilities and affordable living.
       </p>
 
-      <h2 className="text-xl font-semibold">Why Choose to Study in Malaysia?</h2>
+      <h2 className="text-xl font-semibold mt-4">Why Choose to Study in Malaysia?</h2>
 
       <h3 className="text-xl mb-2 font-semibold mt-4">1. Top-Ranked Universities and Colleges</h3>
       <ul className="list-disc ml-6 space-y-1">
-        <li><strong>University of Malaya (UM)</strong> – The oldest and highest-ranking university in Malaysia.</li>
-        <li><strong>Monash University Malaysia</strong> – A global leader in education.</li>
-        <li><strong>Universiti Teknologi Malaysia (UTM)</strong> – Known for excellence in engineering and technology.</li>
-        <li><strong>Taylor's University</strong> – Ranked among the top 100 universities in Asia.</li>
-        <li><strong>Asia Pacific University (APU)</strong> – A leading institution for IT, design, and business programs.</li>
+        <li><strong>University of Malaya (UM)</strong> – Malaysia’s oldest and highest-ranking university.</li>
+        <li><strong>Monash University Malaysia</strong> – A world-recognized institution offering top-tier programs.</li>
+        <li><strong>Universiti Teknologi Malaysia (UTM)</strong> – Famous for engineering and technology excellence.</li>
+        <li><strong>Taylor's University</strong> – Consistently ranked among Asia’s top universities.</li>
+        <li><strong>Asia Pacific University (APU)</strong> – Renowned for IT, business, and design programs.</li>
       </ul>
 
       <h3 className="text-xl mb-2 font-semibold mt-4">2. Affordable Tuition Fees</h3>
@@ -30,46 +42,61 @@ const StudyInMalaysia = () => {
         <li><strong>Diploma Programs:</strong> MYR 10,000 – MYR 15,000 per year</li>
       </ul>
 
-      <h3 className="text-xl mb-2 font-semibold mt-4">3. High-Quality Education with International Recognition</h3>
+      <h3 className="text-xl mb-2 font-semibold mt-4">3. Globally Recognized Degrees</h3>
       <p>
-        Many universities in Malaysia offer internationally recognized degrees through collaborations with institutions from the UK, Australia, and the US, ensuring global mobility and career prospects.
+        Many institutions collaborate with universities from the UK, Australia, and the US, enabling students to earn internationally recognized qualifications without leaving Malaysia.
       </p>
 
-      <h2 className="text-xl mb-2 font-semibold mt-4">Top Courses to Study in Malaysia</h2>
+      <h2 className="text-xl mb-2 font-semibold mt-4">Popular Study Programs</h2>
+      <p>
+        Malaysia offers a wide range of academic opportunities for international students. At{" "}
+        <span className="text-orange-500">
+          <Link href="https://vjcoverseas.com/study-abroad/malaysia">Study Programs in Malaysia</Link>
+        </span>
+        , we guide you in exploring the best study programs including:
+      </p>
       <ul className="list-disc ml-6 space-y-1">
-        <li><strong>Engineering and Technology:</strong> Civil Engineering, Computer Science, AI, Software Engineering</li>
-        <li><strong>Business and Management:</strong> Marketing, Finance, International Business</li>
-        <li><strong>Medical and Health Sciences:</strong> Medicine, Pharmacy, Nursing</li>
-        <li><strong>Law:</strong> LLB, Corporate Law, International Law</li>
-        <li><strong>Arts and Humanities:</strong> Psychology, Social Sciences, History</li>
-        <li><strong>Design and Creative Arts:</strong> Graphic Design, Animation, Film Production</li>
+        <li><strong>Engineering & Technology:</strong> Civil, Computer Science, Artificial Intelligence, and Software Engineering</li>
+        <li><strong>Business & Management:</strong> Marketing, International Business, and Finance</li>
+        <li><strong>Medical & Health Sciences:</strong> Medicine, Pharmacy, Nursing</li>
+        <li><strong>Law:</strong> Corporate Law, International Law, and LLB programs</li>
+        <li><strong>Arts & Humanities:</strong> Psychology, History, and Social Sciences</li>
+        <li><strong>Creative Fields:</strong> Graphic Design, Animation, and Film Production</li>
       </ul>
-                                     <Image
-                                      src="/study-in-malaysia.webp"
-                                      alt="Study in Singapore"
-                                      width={500}
-                                      height={600}
-                                      priority
-                                      unoptimized
-                                     
-                                    />
+
+      <Image
+        src="/study-in-malaysia.webp"
+        alt="Study in Malaysia"
+        width={500}
+        height={600}
+        priority
+        unoptimized
+      />
+
       <h2 className="text-xl mb-2 font-semibold mt-4">Cost of Living in Malaysia</h2>
       <p>
-        Malaysia is known for its low cost of living compared to Western countries. Students can expect monthly expenses to range between MYR 1,200 to MYR 2,500, including accommodation, food, transportation, and leisure.
+        One of the biggest attractions for international students in Malaysia is affordability. Monthly living expenses typically range between MYR 1,200 and MYR 2,500, covering accommodation, food, transportation, and leisure activities. This makes{" "}
+        <span className="text-orange-500">
+          <Link href="https://vjcoverseas.com/study-abroad/malaysia">Malaysia Student Visa</Link>
+        </span>{" "}
+        a cost-effective choice compared to many other destinations.
       </p>
 
-      <h2 className="text-xl mb-2 font-semibold mt-4">Benefits of Studying in Malaysia with <span className="text-orange-500">VJC Overseas</span></h2>
+      <h2 className="text-xl mb-2 font-semibold mt-4">How We Help You Secure a Student Visa</h2>
       <ul className="list-disc ml-6 space-y-1">
-        <li><strong>Expert Guidance:</strong> End-to-end consultation for students.</li>
-        <li><strong>Visa Assistance:</strong> Hassle-free visa processing.</li>
-        <li><strong>University Placement:</strong> Matching students with the right programs.</li>
-        <li><strong>Pre-Departure and On-Arrival Support:</strong> Flight bookings, accommodation, and on-ground assistance.</li>
-        <li><strong>Scholarships and Financial Aid:</strong> Assistance in securing scholarships for eligible students.</li>
+        <li><strong>University Placement:</strong> Matching you with programs that suit your academic goals.</li>
+        <li><strong>Visa Support:</strong> Expert help for smooth, hassle-free application processes.</li>
+        <li><strong>Pre-Departure & Arrival Assistance:</strong> From booking flights to settling into your new city.</li>
+        <li><strong>Scholarship Guidance:</strong> Helping eligible students reduce costs through financial aid.</li>
       </ul>
 
-      <h2 className="textxl mb-2 font-semibold mt-4">Start Your Journey to Study in Malaysia with <span className="text-orange-500">VJC Overseas</span></h2>
+      <h2 className="text-xl mb-2 font-bold mt-4">Start Your Academic Journey with VJC Overseas</h2>
       <p>
-        Let <span className="text-orange-500">VJC Overseas</span> be your trusted partner in navigating your academic journey in Malaysia. Contact us today and take the first step toward a bright and promising future!
+        If you’re ready to take your education to the next level, Malaysia could be your ideal destination. With the guidance of{" "}
+        <span className="text-orange-500">
+          <Link href="https://vjcoverseas.com/">VJC Overseas</Link>
+        </span>
+        , your pathway to success becomes clearer and more achievable. Contact us today and take the first step toward a brighter future!
       </p>
     </div>
   );

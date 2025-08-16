@@ -1,18 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
+
 const StudyInFrance = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
       <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
         Study in France - <span className="text-orange-500">&nbsp;VJC Overseas</span>
       </h1>
+
       {/* Image and Intro Text Side by Side */}
       <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
         {/* Image */}
         <div className="md:w-1/2 w-full">
           <Image
             src="/study-in-france.png"
-            alt="france Student Visa"
+            alt="Study in France - Vjc Overseas"
             width={500}
             height={300}
             className=" w-full object-cover"
@@ -21,28 +23,36 @@ const StudyInFrance = () => {
           />
         </div>
         <div className="md:w-1/2 text-justify">
-      <p className="mb-6">
-        Welcome to <span className="text-orange-500">VJC Overseas</span>, your trusted partner in achieving your dream of studying in France.
-        France, celebrated for its world-class education, art, and culture, offers a premium academic experience for international students.
-      </p>
+          <p className="mb-6">
+            Welcome to <strong>VJC Overseas</strong>, one of the <a href="https://vjcoverseas.com/" className="text-orange-500 font-bold">Best Visa Immigration Consultants</a> helping students achieve their dream of studying abroad. 
+            France, celebrated for its world-class education, art, and culture, offers a premium academic experience for international students. 
+            As trusted <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-bold">Study Visa Consultants</a>, we ensure you get expert guidance for every step of your journey.
+          </p>
+        </div>
       </div>
-      </div>
+
       <h2 className="text-xl font-bold mt-4 mb-2">Why Study in France?</h2>
+      <p className="mb-6 text-justify">
+        France is not only famous for its heritage and lifestyle but also for being a global hub of higher education. Here’s why you should consider pursuing your education here:
+      </p>
       <ul className="list-disc list-outside ml-6 space-y-2 mb-6 text-justify">
-        <li><strong>World-Class Education:</strong> France is home to globally renowned institutions and research facilities.</li>
-        <li><strong>Affordable Tuition Fees:</strong> Public universities offer subsidized tuition for international students.</li>
-        <li><strong>Cultural & Linguistic Experience:</strong> Immerse yourself in French language, cuisine, and heritage.</li>
-        <li><strong>Strong Industry Links:</strong> French institutions maintain robust ties with global industries for internships and placements.</li>
-        <li><strong>Post-Study Work Opportunities:</strong> France allows international graduates to stay and work up to two years post-graduation.</li>
-        <li><strong>Quality of Life:</strong> Enjoy a beautiful and vibrant lifestyle while pursuing your studies.</li>
+        <li><strong>World-Class Education:</strong> Home to globally renowned institutions and advanced research facilities.</li>
+        <li><strong>Affordable Tuition Fees:</strong> Public universities offer subsidized tuition for international students, making quality education more accessible.</li>
+        <li><strong>Cultural & Linguistic Experience:</strong> A chance to immerse yourself in French language, cuisine, and heritage while living in one of the most beautiful countries in the world.</li>
+        <li><strong>Strong Industry Links:</strong> French universities maintain robust ties with global industries, offering excellent opportunities for internships and placements.</li>
+        <li><strong>Post-Study Work Opportunities:</strong> With a <a href="https://vjcoverseas.com/study-abroad/france" className="text-orange-500 font-bold">France study visa</a>, international graduates can stay and work in France for up to two years post-graduation.</li>
+        <li><strong>Quality of Life:</strong> A vibrant, safe, and scenic environment for both academic and personal growth.</li>
       </ul>
 
       <h2 className="text-xl font-bold mt-4 mb-2">Top French Universities & Grandes Écoles</h2>
+      <p className="mb-6 text-justify">
+        As <a href="https://vjcoverseas.com/study-abroad/france" className="text-orange-500 font-bold">France Student Visa Consultants</a>, we guide you in selecting the right institution that matches your academic goals. Some top choices include:
+      </p>
       <ul className="list-disc list-outside ml-6 space-y-2 mb-6 text-justify">
-        <li><strong>Sorbonne University:</strong> A historic and prestigious university in Paris.</li>
+        <li><strong>Sorbonne University:</strong> Historic and prestigious, located in Paris.</li>
         <li><strong>Université PSL (Paris Sciences et Lettres):</strong> Known for innovation and academic excellence.</li>
-        <li><strong>University of Grenoble Alpes:</strong> Offers strong programs in tech, business, and research.</li>
-        <li><strong>HEC Paris:</strong> One of the leading business schools in Europe.</li>
+        <li><strong>University of Grenoble Alpes:</strong> Offers top programs in technology, business, and research.</li>
+        <li><strong>HEC Paris:</strong> A leading business school in Europe.</li>
         <li><strong>École Normale Supérieure:</strong> Renowned for elite academic training in humanities and sciences.</li>
       </ul>
 
@@ -55,7 +65,7 @@ const StudyInFrance = () => {
 
       <h2 className="text-xl font-bold mt-4 mb-2">Living Expenses</h2>
       <p className="mb-6 text-justify">
-        Estimated monthly cost of living in France ranges from €800 to €1,200, including accommodation, food, transportation, and other essentials.
+        The estimated monthly cost of living in France ranges from €800 to €1,200, including accommodation, food, transportation, and other essentials.
       </p>
 
       <h2 className="text-xl font-bold  mt-4 mb-2">Scholarships & Financial Aid</h2>
@@ -66,6 +76,9 @@ const StudyInFrance = () => {
       </ul>
 
       <h2 className="text-xl font-bold  mt-4 mb-2">Why Choose <span className="text-orange-500">VJC Overseas</span>?</h2>
+      <p className="mb-6 text-justify">
+        As one of the <strong>Best Visa Immigration Consultants</strong>, we provide expert support at every stage of your journey:
+      </p>
       <ul className="list-disc list-outside ml-6 space-y-2 mb-6 text-justify">
         <li>Personalized Counseling</li>
         <li>University Application Assistance</li>
@@ -77,7 +90,7 @@ const StudyInFrance = () => {
 
       <h2 className="text-xl font-bold mt-4 mb-2">Get Started Today!</h2>
       <p className="text-justify">
-        Ready to study in France? <span className="text-orange-500">VJC Overseas</span> is here to guide you every step of the way. Contact us today to explore your options, secure scholarships, and build your dream academic journey in France.
+        Your dream to study in France is just a step away. With <a href="https://vjcoverseas.com/" className="text-orange-500 font-bold">VJC Overseas</a> by your side, you’ll receive expert guidance from the application stage to settling in your new academic life. Contact us today and take the first step towards a successful career in France.
       </p>
     </div>
   );

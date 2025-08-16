@@ -386,7 +386,109 @@ export const allNews = [
 
 
 
+{
+  "title": "UAE Launches 10-Year Golden Visa for Skilled Tech Professionals",
+  "summary": "The UAE has unveiled a new 10-year Golden Visa program aimed at attracting skilled professionals in technology, AI, and innovation sectors, strengthening its position as a global hub for talent and innovation.",
+  "image": "/uae-golden-visas.avif",
+  "tag": "Residency Policy Update",
+  "readTime": "3 min read",
+  "content": `
+    <p>
+      The United Arab Emirates has announced a landmark expansion of its 
+      <strong>Golden Visa program</strong>, offering a <strong>10-year residency</strong> 
+      for highly skilled professionals in sectors such as artificial intelligence, 
+      blockchain, cybersecurity, and advanced engineering.
+    </p>
 
+    <h2>Who Qualifies for the Golden Visa?</h2>
+    <p>
+      The program is open to <strong>tech entrepreneurs, researchers, 
+      startup founders, and experienced professionals</strong> working in 
+      high-demand industries. Applicants must demonstrate proven expertise, 
+      significant contributions to innovation, or employment with 
+      recognized UAE-based companies.
+    </p>
+
+    <h2>Why the Change?</h2>
+    <ul>
+      <li>Boost the UAE’s reputation as a global technology and business hub</li>
+      <li>Attract long-term investment in digital transformation and innovation</li>
+      <li>Retain top international talent to support Vision 2030 goals</li>
+    </ul>
+
+    <blockquote>
+      “The Golden Visa expansion reflects our commitment to building a 
+      knowledge-driven economy powered by innovation and technology.” – UAE Government Official
+    </blockquote>
+
+    <h2>Benefits for Professionals</h2>
+    <ul>
+      <li>10-year renewable residency without the need for a sponsor</li>
+      <li>Ability to bring immediate family members under the same visa</li>
+      <li>Access to UAE’s thriving tech ecosystem and global business network</li>
+    </ul>
+
+    <p>
+      Analysts believe this move will accelerate the UAE’s transformation into 
+      a <strong>leading global tech hub</strong>. For skilled professionals, 
+      it represents not just residency but an opportunity to participate 
+      in one of the fastest-growing innovation economies in the world.
+    </p>
+  `
+},
+{
+  "title": "Canada Eases PR Pathways for Healthcare Workers",
+  "summary": "Canada has introduced simplified permanent residency pathways for doctors, nurses, and caregivers to address labor shortages in the healthcare sector.",
+  "image": "/Simard-webpage-Graphics-New-Canada-PR-Pathway-for-Home-Care-Workers-Opens-March-31-2025.webp",
+  "tag": "Immigration Update",
+  "readTime": "3 min read",
+  "content": `
+    <p>
+      Canada has rolled out new measures to make it easier for 
+      <strong>healthcare professionals</strong> to obtain 
+      <strong>permanent residency (PR)</strong>. The initiative 
+      comes as the country faces critical labor shortages in 
+      hospitals, clinics, and aged-care facilities.
+    </p>
+
+    <h2>Who Will Benefit?</h2>
+    <p>
+      The policy is targeted at <strong>doctors, nurses, 
+      caregivers, and other frontline medical staff</strong>. 
+      Applicants with international qualifications will have 
+      simplified documentation requirements and faster processing 
+      times compared to the traditional PR streams.
+    </p>
+
+    <h2>Why the Change?</h2>
+    <ul>
+      <li>Canada is experiencing rising demand for healthcare services</li>
+      <li>Staffing shortages have intensified post-pandemic</li>
+      <li>Attracting global talent helps strengthen the public health system</li>
+    </ul>
+
+    <blockquote>
+      “This is a win-win: healthcare workers gain faster access 
+      to permanent residency, while Canada strengthens its 
+      healthcare workforce.” – Canadian Immigration Minister
+    </blockquote>
+
+    <h2>Key Advantages for Applicants</h2>
+    <ul>
+      <li>Priority processing for PR applications</li>
+      <li>Streamlined recognition of foreign medical qualifications</li>
+      <li>Ability to settle permanently with family members</li>
+    </ul>
+
+    <p>
+      Experts say this move will make Canada one of the most 
+      attractive destinations for global healthcare talent. 
+      The government expects thousands of workers to benefit 
+      from the updated PR pathways in the coming years, 
+      helping bridge the gap in critical services.
+    </p>
+  `
+},
 {
   "title": "Europe is getting tough on tourists with rules you can’t ignore",
   "summary": "New EU travel policies, including stricter entry checks and mandatory pre-travel authorizations, are set to impact millions of tourists planning trips to Europe.",
