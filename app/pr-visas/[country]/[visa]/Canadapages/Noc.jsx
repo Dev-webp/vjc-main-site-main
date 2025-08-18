@@ -88,21 +88,22 @@ export default function NocCanada2025WithAllLevels() {
 
   return (
     <section className="noc-2025-section" style={{ padding: "2rem", background: "#f8fafc" }}>
-      {/* Only the 1st paragraph above the table */}
-      
-          <h1 style={{
-  marginBottom: "1rem",
-  color: "#d32f2f",
-  fontWeight: "bold",      // makes text bold
-  fontSize: "2rem"       // adjust size as you want, e.g. 2.5rem or "32px"
-}}>
-  NOC Canada 2025 – Find Your Occupation In-Demand List
-</h1>
+      {/* Main Heading */}
+      <h1 style={{
+        marginBottom: "1rem",
+        color: "#d32f2f",
+        fontWeight: "bold",
+        fontSize: "2rem"
+      }}>
+        NOC Canada 2025 – Find Your Occupation In-Demand List
+      </h1>
+
+      {/* Intro Section */}
       <div className="noc-2025-container" style={{ display: "flex", flexWrap: "wrap", gap: "2rem", alignItems: "flex-start", marginBottom: "1.5rem" }}>
         <div className="noc-2025-image" style={{ flex: "0 0 280px", maxWidth: "320px", minWidth: "220px" }}>
           <Image
             src="/find-my-national-occupation-classification-canada-vjc.webp"
-            alt="Canada Immigration"
+            alt="National Occupational Codes List - Vjc Overseas"
             width={320}
             height={240}
             style={{ borderRadius: "12px", objectFit: "cover", width: "100%", height: "auto", boxShadow: "0 2px 8px rgba(0,0,0,0.09)" }}
@@ -110,22 +111,33 @@ export default function NocCanada2025WithAllLevels() {
             unoptimized
           />
         </div>
-        
+
         <div className="noc-2025-content" style={{ flex: "1 1 340px", minWidth: "260px" }}>
-         
           <h2 style={{ marginTop: 0, color: "#333", fontWeight: 500 }}>
             Explore Your Canadian Immigration Path with the Latest NOC Updates
           </h2>
           <p style={{ fontSize: "1.1rem", margin: "1rem 0 0.7rem 0" }}>
-            Are you planning to move to Canada in 2025? The first step is to check whether your profession is in demand under the updated NOC (National Occupation Classification) Canada 2025 list. Canada welcomes skilled professionals who meet its growing labor market needs—and your dream job might be on the list!
+            Canada continues to be a top destination for skilled professionals who want to build a secure future abroad. If you are planning to apply for Canadian immigration in 2025, the first step is to check where your profession stands in the updated <strong style={{color:"#000"}}>Canada NOC Code List</strong>. This system identifies occupations that are in demand across the country, helping immigrants align their skills with the needs of the Canadian economy.
           </p>
+         <p style={{ 
+    fontSize: "1.1rem", 
+    margin: "0.7rem 0", 
+    color: "#333", 
+    lineHeight: 1.6 
+  }}>
+    At <strong style={{color:"#000"}}>VJC Overseas</strong>, we specialize in evaluating your eligibility, identifying the right NOC code for your profile, and guiding you throughout the visa application process. Whether you’re applying through <a href="https://vjcoverseas.com" style={{color:"orange"}}><strong>Best Visa Immigration Consultants</strong></a>, Express Entry, a Provincial Nominee Program (PNP), or other pathways, our experts simplify the journey and help you secure a bright future in Canada.
+  </p>
+
+
         </div>
       </div>
-      {/* NOC 2025 Table */}
+
+      {/* NOC 2025 Table Section */}
       <div style={{ margin: "2.5rem auto 0", maxWidth: "1100px" }}>
         <h2 style={{ color: "#d32f2f", marginBottom: "1rem" }}>
           NOC 2025 – All Levels, Codes, and Class Titles
         </h2>
+
         <div style={{padding:"1rem 0"}}>
           <label style={{marginRight: 8}}>Filter items</label>
           <input
@@ -141,13 +153,13 @@ export default function NocCanada2025WithAllLevels() {
           </select>
           entries
         </div>
+
         <div style={{
           overflowX: "auto",
           background: "#fff",
           boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
           borderRadius: "8px"
         }}>
-          {/* Custom table CSS for hover effect */}
           <style>{`
             .noc-table-custom thead th {
               background:rgb(255, 136, 0);
@@ -157,10 +169,10 @@ export default function NocCanada2025WithAllLevels() {
               transition: background 0.2s;
             }
             .noc-table-custom tbody tr:hover {
-              background: #fde68a; /* orange-100 */
+              background: #fde68a;
             }
             .noc-table-custom tbody tr:active {
-              background: #bfdbfe; /* blue-200 */
+              background: #bfdbfe;
             }
           `}</style>
           <table className="noc-table-custom" style={{
@@ -209,6 +221,7 @@ export default function NocCanada2025WithAllLevels() {
             </tbody>
           </table>
         </div>
+
         {/* Pagination */}
         <div style={{display: "flex", justifyContent: "center", alignItems: "center", margin: "1.5rem 0"}}>
           <button onClick={() => gotoPage(page-1)} disabled={page===1} style={{padding:"0.3rem 0.9rem", marginRight:4, borderRadius:4, border:"1px solid #bbb", background:"#fafafa", cursor:page===1?"not-allowed":"pointer"}}>{"<"}</button>
@@ -242,52 +255,65 @@ export default function NocCanada2025WithAllLevels() {
           <button onClick={() => gotoPage(page+1)} disabled={page===totalPages} style={{padding:"0.3rem 0.9rem", marginLeft:4, borderRadius:4, border:"1px solid #bbb", background:"#fafafa", cursor:page===totalPages?"not-allowed":"pointer"}}>{">"}</button>
         </div>
       </div>
-      {/* All remaining content below the table */}
+
+      {/* Content Below Table */}
       <div style={{ margin: "2.5rem auto 0", maxWidth: "900px" }}>
         <p style={{ fontSize: "1.08rem", color: "#444" }}>
-          At <strong>[VJC Overseas]</strong>, we specialize in helping professionals like you identify your NOC code, assess your eligibility, and guide you through every step of the immigration process—whether it’s Express Entry, PNP (Provincial Nominee Program), or job-based visas.
+          For applicants planning to apply for a <a href="https://vjcoverseas.com/pr-visas/canada-pr" style={{color:"orange"}}><strong>Canada PR Visa</strong></a>, understanding the NOC classification is the foundation of a successful immigration plan. With expert guidance from <a href="https://vjcoverseas.com" style={{color:"orange"}}><strong>VJC Overseas</strong></a>, you can identify your best opportunities and proceed with confidence.
         </p>
+
         <div style={{ margin: "1.5rem 0" }}>
-          <strong>Why the NOC 2025 List Matters</strong>
+          <strong>Why the NOC 2025 Update is Important</strong>
           <p style={{ margin: "0.3rem 0 0 0" }}>
-            Canada’s immigration system uses the NOC to evaluate whether your skills and work experience match the country’s labor demands. The NOC 2025 update includes new occupations, reclassified roles, and better alignment with Canada’s economic priorities.
+            Canada uses the NOC system to assess whether your job role and experience meet labor market requirements. The 2025 update brings significant changes, including restructured classifications and newly added occupations. This updated list is a key tool in determining eligibility for skilled workers planning to apply for permanent residency.
           </p>
         </div>
+
         <div style={{ margin: "1.5rem 0" }}>
-          <strong>Top features of NOC 2025:</strong>
+          <strong>Key Highlights of the NOC 2025:</strong>
           <ul style={{ marginLeft: "1.5rem" }}>
-            <li>Updated job titles and classifications</li>
-            <li>High-demand occupations for 2025</li>
-            <li>More opportunities for skilled professionals</li>
-            <li>Better pathways through Express Entry &amp; PNP</li>
+            <li>Updated job categories and industry alignments</li>
+            <li>More opportunities for skilled workers</li>
+            <li>Expanded roles in healthcare, IT, trades, and services</li>
+            <li>Enhanced pathways through <strong style={{color:"#000"}}>Express Entry PR Visa Process</strong> and PNP programs</li>
           </ul>
         </div>
+
         <div style={{ margin: "1.5rem 0" }}>
-          <strong>Is Your Occupation In Demand in Canada 2025?</strong>
+          <strong>Who Can Benefit From the 2025 NOC List?</strong>
           <p style={{ margin: "0.3rem 0 0 0" }}>
-            We help you quickly check your job title against the latest NOC list and understand your immigration chances. Whether you’re an IT professional, healthcare worker, engineer, tradesperson, or manager—your opportunity could be waiting.
+            Professionals in industries experiencing labor shortages will benefit the most. Our <a href="https://vjcoverseas.com/pr-visas" style={{color:"orange"}}><strong>PR Visa Consultants</strong></a> can help match your qualifications with the right code to improve your CRS score and strengthen your profile.
           </p>
         </div>
+
         <div style={{ margin: "1.5rem 0" }}>
-          <strong>Industries Hiring in Canada (2025 Focus):</strong>
+          <strong>In-Demand Occupations for 2025 Include:</strong>
           <ul style={{ marginLeft: "1.5rem" }}>
-            <li>Healthcare &amp; Nursing</li>
-            <li>Information Technology &amp; Software</li>
-            <li>Engineering &amp; Construction</li>
-            <li>Finance &amp; Accounting</li>
-            <li>Education &amp; Social Services</li>
-            <li>Logistics &amp; Supply Chain</li>
+            <li>Healthcare & Nursing Professionals</li>
+            <li>IT & Software Developers</li>
+            <li>Engineers & Construction Specialists</li>
+            <li>Finance & Accounting Experts</li>
+            <li>Educators & Social Service Providers</li>
+            <li>Logistics & Supply Chain Managers</li>
           </ul>
         </div>
+
         <div style={{ margin: "1.5rem 0" }}>
-          <strong>How We Help You</strong>
+          <strong>How We Help You Navigate the NOC System</strong>
           <ul style={{ marginLeft: "1.5rem" }}>
-            <li>Personalized NOC code identification</li>
-            <li>Occupation eligibility assessment</li>
-            <li>Points calculation &amp; profile building</li>
-            <li>Step-by-step visa process guidance</li>
-            <li>Job matching support (if applicable)</li>
+            <li>Personalized identification of your correct NOC code</li>
+            <li>Occupation-based eligibility assessment</li>
+            <li>Profile building and CRS points calculation</li>
+            <li>Guidance for the complete application process</li>
+            <li>Support for job-matching and career alignment in Canada</li>
           </ul>
+        </div>
+
+        <div style={{ margin: "1.5rem 0" }}>
+          <strong>Start Your Canadian Immigration Journey Today</strong>
+          <p style={{ margin: "0.3rem 0 0 0" }}>
+           Understanding the NOC classification is the foundation of a successful immigration plan With <a href="https://vjcoverseas.com/pr-visas/canada-pr/national-occupational-codes-list" style={{color:"orange"}}><strong>Canada NOC Code List</strong></a> and guidance from <strong style={{color:"#000"}}>VJC Overseas</strong>, you can identify your opportunities and proceed confidently. Partner with us today and let us help you secure your future in Canada through the right immigration pathway.
+          </p>
         </div>
       </div>
     </section>

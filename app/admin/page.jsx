@@ -1,13 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
 import News from "./News";
+
 export default function AdminJobs() {
-  // 🔑 Simple login state
+  // 🔑 Login state
   const [loggedIn, setLoggedIn] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
-  // ✅ Change these values to your own credentials
   const ADMIN_USER = "admin";
   const ADMIN_PASS = "1234";
 
@@ -20,12 +19,10 @@ export default function AdminJobs() {
     }
   };
 
-  // --------------------------------------
-  // 🔽 Your original Job Manager code below
-  // --------------------------------------
-
+  // ------------------ Job Manager -------------------
   const [jobs, setJobs] = useState({});
   const [form, setForm] = useState({
+    id: null,
     title: "",
     company: "",
     location: "",
@@ -40,10 +37,10 @@ export default function AdminJobs() {
     type: "",
     level: "",
   });
+  const [deleteId, setDeleteId] = useState("");
+  const [editId, setEditId] = useState(null); // ✅ track edit mode
 
-  const [deleteId, setDeleteId] = useState(""); // ✅ new state for manual deletion
-
-  // ✅ Allowed countries, cities & domains
+  // Allowed countries & domains
   const filterData = {
     UAE: {
       cities: ["Dubai"],
@@ -139,8 +136,8 @@ export default function AdminJobs() {
     },
   };
 
-  // ✅ Fetch jobs.json (flat array → regroup by country)
-  useEffect(() => {
+  // Fetch jobs
+  const loadJobs = () => {
     fetch("/api/jobs")
       .then((res) => res.json())
       .then((data) => {
@@ -151,9 +148,13 @@ export default function AdminJobs() {
         setJobs(grouped);
       })
       .catch((err) => console.error("Fetch error:", err));
+  };
+
+  useEffect(() => {
+    loadJobs();
   }, []);
 
-  // ✅ Add job
+  // Add new job
   const addJob = async () => {
     if (!form.country) {
       alert("Please select a country!");
@@ -162,7 +163,7 @@ export default function AdminJobs() {
 
     const newJob = {
       ...form,
-      id: Date.now(), // always number
+      id: Date.now(),
       minExperience: Number(form.minExperience),
       tags: form.tags ? form.tags.split(",").map((t) => t.trim()) : [],
     };
@@ -178,47 +179,49 @@ export default function AdminJobs() {
       return;
     }
 
-    const saved = await res.json();
-
-    setJobs((prev) => ({
-      ...prev,
-      [saved.country]: [...(prev[saved.country] || []), saved],
-    }));
-
-    setForm({
-      title: "",
-      company: "",
-      location: "",
-      country: "",
-      city: "",
-      domain: "",
-      experience: "",
-      minExperience: "",
-      time: "",
-      tags: "",
-      salary: "",
-      type: "",
-      level: "",
-    });
+    await loadJobs();
+    resetForm();
   };
 
-  // ✅ Delete job (country + id)
+  // Update existing job
+  const updateJob = async () => {
+    const updatedJob = {
+      ...form,
+      id: Number(editId),
+      minExperience: Number(form.minExperience),
+      tags: form.tags ? form.tags.split(",").map((t) => t.trim()) : [],
+    };
+
+    const res = await fetch("/api/jobs", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedJob),
+    });
+
+    if (!res.ok) {
+      console.error("Error updating job", await res.text());
+      return;
+    }
+
+    await loadJobs();
+    resetForm();
+  };
+
+  // Delete job
   const deleteJob = async (country, id) => {
     const idNum = Number(id);
-
     await fetch("/api/jobs", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: idNum, country }),
     });
-
     setJobs((prev) => ({
       ...prev,
       [country]: (prev[country] || []).filter((job) => Number(job.id) !== idNum),
     }));
   };
 
-  // ✅ Delete by ID (search job across countries)
+  // Delete by ID
   const deleteById = async () => {
     const idNum = Number(deleteId);
     if (!idNum) {
@@ -243,7 +246,37 @@ export default function AdminJobs() {
     alert(`Deleted job ${idNum} from ${foundCountry}`);
   };
 
-  // 🚪 If not logged in → show login form
+  // Start edit mode
+  const startEdit = (job) => {
+    setForm({
+      ...job,
+      tags: job.tags ? job.tags.join(", ") : "",
+    });
+    setEditId(job.id);
+  };
+
+  // Reset form
+  const resetForm = () => {
+    setForm({
+      id: null,
+      title: "",
+      company: "",
+      location: "",
+      country: "",
+      city: "",
+      domain: "",
+      experience: "",
+      minExperience: "",
+      time: "",
+      tags: "",
+      salary: "",
+      type: "",
+      level: "",
+    });
+    setEditId(null);
+  };
+
+  // 🚪 Login UI
   if (!loggedIn) {
     return (
       <div className="flex items-center justify-center h-screen bg-gray-100">
@@ -277,15 +310,13 @@ export default function AdminJobs() {
     );
   }
 
-  // ✅ After login → show Admin Job Manager
+  // ✅ Admin dashboard
   return (
     <div className="p-4 mt-24 ml-12 mr-8 sm:p-6">
-       <h1 className="text-xl font-bold mb-4">Admin Dashboard</h1>
+      <h1 className="text-xl font-bold mb-4">Admin Dashboard</h1>
+      <News />
 
-    {/* 🔹 NEWS SECTION */}
-    <News />
-
-      <h1 className="text-xl font-bold mb-4">Abroad Job Manager Adding-new-jobs</h1>
+      <h1 className="text-xl font-bold mb-4">Abroad Job Manager</h1>
 
       {/* Job Form */}
       <div className="mb-6 mt-12 grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -299,9 +330,7 @@ export default function AdminJobs() {
         >
           <option value="">Select Country</option>
           {Object.keys(filterData).map((c) => (
-            <option key={c} value={c}>
-              {c}
-            </option>
+            <option key={c} value={c}>{c}</option>
           ))}
         </select>
 
@@ -315,9 +344,7 @@ export default function AdminJobs() {
           <option value="">Select City</option>
           {form.country &&
             filterData[form.country]?.cities.map((city) => (
-              <option key={city} value={city}>
-                {city}
-              </option>
+              <option key={city} value={city}>{city}</option>
             ))}
         </select>
 
@@ -331,24 +358,14 @@ export default function AdminJobs() {
           <option value="">Select Domain</option>
           {form.country &&
             filterData[form.country]?.domains.map((d) => (
-              <option key={d} value={d}>
-                {d}
-              </option>
+              <option key={d} value={d}>{d}</option>
             ))}
         </select>
 
         {/* Other fields */}
         {[
-          "title",
-          "company",
-          "location",
-          "experience",
-          "minExperience",
-          "time",
-          "tags",
-          "salary",
-          "type",
-          "level",
+          "title","company","location","experience","minExperience",
+          "time","tags","salary","type","level"
         ].map((field) => (
           <input
             key={field}
@@ -361,14 +378,23 @@ export default function AdminJobs() {
         ))}
 
         <button
-          onClick={addJob}
+          onClick={editId ? updateJob : addJob}
           className="bg-blue-600 text-white px-4 py-2 rounded col-span-1 sm:col-span-2"
         >
-          Add Job
+          {editId ? "Update Job" : "Add Job"}
         </button>
+
+        {editId && (
+          <button
+            onClick={resetForm}
+            className="bg-gray-500 text-white px-4 py-2 rounded col-span-1 sm:col-span-2"
+          >
+            Cancel Edit
+          </button>
+        )}
       </div>
 
-      {/* ✅ Delete by ID */}
+      {/* Delete by ID */}
       <div className="mb-8 flex flex-col sm:flex-row gap-2 sm:items-center">
         <input
           type="text"
@@ -385,28 +411,42 @@ export default function AdminJobs() {
         </button>
       </div>
 
-      {/* Jobs List grouped by country */}
+      {/* Jobs List (each country shows only 3 items visible; rest scroll) */}
       {Object.keys(jobs).map((country) => (
         <div key={country} className="mb-6">
           <h2 className="text-lg font-bold mb-2">{country}</h2>
-          <ul className="space-y-2">
-            {(jobs[country] || []).map((job) => (
-              <li
-                key={job.id}
-                className="flex flex-col sm:flex-row sm:justify-between sm:items-center border p-3 rounded"
-              >
-                <span>
-                  {job.title} - {job.company} ({job.id})
-                </span>
-                <button
-                  onClick={() => deleteJob(country, job.id)}
-                  className="bg-red-500 text-white px-3 py-1 rounded mt-2 sm:mt-0"
+
+          {/* 👇 Scroll container sized for exactly 3 rows */}
+          <div className="max-h-[18rem] overflow-y-auto border rounded p-2 bg-white">
+            <ul className="space-y-2">
+              {(jobs[country] || []).map((job) => (
+                <li
+                  key={job.id}
+                  className="flex flex-col sm:flex-row sm:justify-between sm:items-center border p-3 rounded"
                 >
-                  Delete
-                </button>
-              </li>
-            ))}
-          </ul>
+                  {/* Keep item height reasonable so 3 fit cleanly */}
+                  <span className="truncate">
+                    {job.title} - {job.company} ({job.id})
+                  </span>
+                  <div className="flex gap-2 mt-2 sm:mt-0">
+                    <button
+                      onClick={() => startEdit(job)}
+                      className="bg-yellow-500 text-white px-3 py-1 rounded"
+                    >
+                      Edit
+                    </button>
+                    <button
+                      onClick={() => deleteJob(country, job.id)}
+                      className="bg-red-500 text-white px-3 py-1 rounded"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* max-h-[18rem] = 18rem ≈ 288px. With compact items, that’s ~3 rows visible. */}
         </div>
       ))}
     </div>

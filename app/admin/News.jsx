@@ -13,6 +13,7 @@ export default function AdminNews() {
     readTime: "",
     content: "",
   });
+  const [editSlug, setEditSlug] = useState(null); // ✅ Track if editing
 
   // Load all news
   const loadNews = async () => {
@@ -35,16 +36,21 @@ export default function AdminNews() {
       body: JSON.stringify(newNews),
     });
 
-    setForm({
-      title: "",
-      summary: "",
-      image: "",
-      tag: "",
-      time: "",
-      readTime: "",
-      content: "",
+    resetForm();
+    loadNews();
+  };
+
+  // Update news
+  const handleUpdate = async () => {
+    const updatedNews = { ...form, slug: editSlug || slugify(form.title) };
+
+    await fetch("/api/news", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedNews),
     });
 
+    resetForm();
     loadNews();
   };
 
@@ -57,6 +63,34 @@ export default function AdminNews() {
     });
 
     loadNews(); // refresh list after delete
+  };
+
+  // Populate form for editing
+  const handleEdit = (n) => {
+    setForm({
+      title: n.title,
+      summary: n.summary,
+      image: n.image,
+      tag: n.tag,
+      time: n.time,
+      readTime: n.readTime,
+      content: n.content,
+    });
+    setEditSlug(n.slug);
+  };
+
+  // Reset form
+  const resetForm = () => {
+    setForm({
+      title: "",
+      summary: "",
+      image: "",
+      tag: "",
+      time: "",
+      readTime: "",
+      content: "",
+    });
+    setEditSlug(null);
   };
 
   return (
@@ -109,12 +143,29 @@ export default function AdminNews() {
           className="border p-2 w-full rounded"
         />
 
-        <button
-          onClick={handleAdd}
-          className="bg-blue-600 text-white px-4 py-2 rounded w-fit"
-        >
-          ➕ Add News
-        </button>
+        {editSlug ? (
+          <div className="flex gap-2">
+            <button
+              onClick={handleUpdate}
+              className="bg-green-600 text-white px-4 py-2 rounded"
+            >
+              ✅ Update News
+            </button>
+            <button
+              onClick={resetForm}
+              className="bg-gray-400 text-white px-4 py-2 rounded"
+            >
+              ❌ Cancel
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={handleAdd}
+            className="bg-blue-600 text-white px-4 py-2 rounded w-fit"
+          >
+            ➕ Add News
+          </button>
+        )}
       </div>
 
       {/* LIST with scrollable limit */}
@@ -132,12 +183,20 @@ export default function AdminNews() {
                   {n.tag} • {n.time} • {n.readTime}
                 </p>
               </div>
-              <button
-                onClick={() => handleDelete(n.slug)}
-                className="bg-red-500 text-white px-3 py-1 rounded"
-              >
-                🗑 Delete
-              </button>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => handleEdit(n)}
+                  className="bg-yellow-500 text-white px-3 py-1 rounded"
+                >
+                  ✏️ Edit
+                </button>
+                <button
+                  onClick={() => handleDelete(n.slug)}
+                  className="bg-red-500 text-white px-3 py-1 rounded"
+                >
+                  🗑 Delete
+                </button>
+              </div>
             </li>
           ))}
         </ul>

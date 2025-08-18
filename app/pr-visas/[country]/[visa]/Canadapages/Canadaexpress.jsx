@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Next() {
   return (
@@ -23,28 +24,25 @@ export default function Next() {
       </Head>
 
       <div className="max-w-8xl mx-auto  py-8 bg-white">
-      <h1 className="text-3xl font-bold text-black mb-4">
-              Express Entry – Your Fast Track to Canadian Immigration
-            </h1>
+        <h1 className="text-3xl font-bold text-black mb-4">
+          Express Entry – Your Fast Track to Canadian Immigration
+        </h1>
         <div className="flex flex-col lg:flex-row gap-10 items-center">
-        
           <div className="lg:w-1/2 w-full overflow-hidden rounded-xl">
-  <Image
-    src="/canadapr-express-entry.png"
-    alt="Express Entry Canada Immigration - VJC Overseas"
-    title="Express Entry Canada Immigration - VJC Overseas"
-    width={600}
-    height={400}
-    className="w-full object-cover transform transition duration-500 hover:scale-105"
-    unoptimized
-  />
-</div>
-
+            <Image
+              src="/canadapr-express-entry.png"
+              alt="Express Entry Canada Immigration - VJC Overseas"
+              title="Express Entry Canada Immigration - VJC Overseas"
+              width={600}
+              height={400}
+              className="w-full object-cover transform transition duration-500 hover:scale-105"
+              unoptimized
+            />
+          </div>
 
           <div className="lg:w-1/2 w-full">
-            
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Canada is one of the most welcoming countries for immigrants, offering a high standard of living, excellent healthcare, and world-class education. Among the various immigration pathways, Express Entry stands out as the most efficient and streamlined process for skilled workers seeking permanent residency in Canada. At VJC Overseas, we specialize in guiding clients through every step of the Express Entry system to make their Canadian dream a reality.
+              Canada continues to be one of the most welcoming destinations for skilled professionals, offering a high quality of life, advanced healthcare, and world-class education. Among the various immigration options, the <Link href="https://vjcoverseas.com/pr-visas/canada-pr/canada-express-entry" className="text-orange-600 font-bold">Express Entry Program</Link> is recognized as the most efficient pathway for qualified individuals seeking long-term settlement. At <span className="font-bold">VJC Overseas</span>, we provide complete guidance on how to navigate this system successfully and turn your dream of Canadian immigration into reality.
             </p>
           </div>
         </div>
@@ -52,7 +50,7 @@ export default function Next() {
         <div className="mt-10 space-y-6 text-gray-800 text-lg leading-relaxed">
           <h2 className="text-2xl font-semibold text-orange-700">What is Express Entry?</h2>
           <p>
-            Express Entry is an online immigration application system introduced by the Government of Canada to manage applications for permanent residence under three federal economic immigration programs:
+            Express Entry is an online application management system created by the Government of Canada to oversee applications for permanent residence under three economic immigration programs:
           </p>
           <ul className="list-disc pl-6">
             <li>Federal Skilled Worker Program (FSWP)</li>
@@ -60,44 +58,35 @@ export default function Next() {
             <li>Canadian Experience Class (CEC)</li>
           </ul>
           <p>
-            Each of these programs targets skilled individuals who can contribute to the Canadian economy. Express Entry uses a points-based system, known as the Comprehensive Ranking System (CRS), to evaluate and rank candidates based on age, education, language proficiency, work experience, and other key factors.
+            Each pathway is designed to attract skilled individuals who can contribute to Canada’s economy. Applications are evaluated using the Comprehensive Ranking System (CRS), which assigns points based on education, age, work experience, language skills, and other factors.
           </p>
 
-          <h2 className="text-2xl font-semibold text-orange-700">How Express Entry Works</h2>
+          <h2 className="text-2xl font-semibold text-orange-700">How the Process Works</h2>
           <ol className="list-decimal pl-6">
-            <li>
-              <strong>Creating an Online Profile:</strong> Applicants submit an online profile detailing their qualifications, work history, language test results (IELTS or CELPIP), and educational credentials. Profiles are entered into the Express Entry pool.
-            </li>
-            <li>
-              <strong>Receiving an Invitation to Apply (ITA):</strong> Candidates with the highest CRS scores are issued Invitations to Apply for permanent residence in regular draws conducted by Immigration, Refugees and Citizenship Canada (IRCC).
-            </li>
+            <li><strong>Profile Creation:</strong> Applicants create an online profile including personal details, test scores, education, and work experience. Eligible profiles are then placed in the Express Entry pool.</li>
+            <li><strong>Invitation to Apply (ITA):</strong> Regular draws are conducted by Immigration, Refugees and Citizenship Canada (IRCC), and candidates with the highest CRS scores receive an ITA.</li>
+            <li><strong>Submitting the PR Application:</strong> Once invited, applicants have 60 days to submit all documents and complete their <Link href="https://vjcoverseas.com/pr-visas/canada-pr" className="text-orange-600 font-bold">Canada PR Visa</Link> application.</li>
           </ol>
-          <p>
-            Once invited, applicants have 60 days to submit a complete PR application with supporting documents.
-          </p>
 
           <h2 className="text-2xl font-semibold text-orange-700">Boosting Your CRS Score</h2>
           <p>
-            A strong CRS score increases your chances of receiving an ITA. Our expert consultants help you maximize your score through various strategies, including:
+            A strong CRS score is the key to success in Express Entry. Our consultants suggest proven strategies such as:
           </p>
           <ul className="list-disc pl-6">
-            <li>Improving your language test results</li>
-            <li>Getting Educational Credential Assessments (ECA) for additional degrees</li>
-            <li>Securing a valid job offer from a Canadian employer</li>
-            <li>Applying with your spouse to take advantage of additional points</li>
+            <li>Improving English or French language test results.</li>
+            <li>Completing additional Educational Credential Assessments (ECA).</li>
+            <li>Obtaining a valid Canadian job offer.</li>
+            <li>Applying with your spouse to maximize available points.</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-orange-700">Why Choose Us?</h2>
-          <ul className="list-disc pl-6">
-            <li><strong>Free Eligibility Assessment:</strong> Discover your chances of success before committing.</li>
-            <li><strong>Personalized Immigration Strategy:</strong> Every applicant is unique. We design a plan tailored to your profile.</li>
-            <li><strong>Document Preparation and Review:</strong> We ensure your application is accurate, complete, and submitted on time.</li>
-            <li><strong>Ongoing Support:</strong> From profile creation to post-landing services, we’re with you at every step.</li>
-          </ul>
-
-          <h2 className="text-2xl font-semibold text-orange-700">Start Your Journey Today</h2>
+          <h2 className="text-2xl font-semibold text-orange-700">Why Work With Experts?</h2>
           <p>
-            The Express Entry system is dynamic, and CRS cut-off scores can change frequently. Acting early and smartly can make all the difference. Let us help you build a future in Canada — a land of opportunities, diversity, and stability.
+            As one of the <Link href="https://vjcoverseas.com" className="text-orange-600 font-bold">Best Visa Immigration Consultants</Link>, our goal is to simplify the complex process for you. From initial evaluation to post-landing support, we handle every detail. Our <Link href="https://vjcoverseas.com/pr-visas" className="text-orange-600 font-bold">PR Visa Consultants</Link> ensure that your documents are complete, your strategy is personalized, and your chances of approval are maximized.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-orange-700">Start Your Canadian Journey Today</h2>
+          <p>
+            The Express Entry system is highly competitive, and CRS cut-off scores may change with every draw. Early preparation is crucial if you want to stay ahead in the process. With the expertise of <Link href="https://vjcoverseas.com" className="text-orange-600">VJC Overseas</Link>, you can confidently move one step closer to Canadian Permanent Residency PR Visa for Canada and a brighter future abroad.
           </p>
         </div>
       </div>

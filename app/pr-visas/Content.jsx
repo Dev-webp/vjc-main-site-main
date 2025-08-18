@@ -9,78 +9,81 @@ const Content = ({ selectedVisa }) => {
       </h1>
 
       <p>
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we understand that securing permanent residency in a new country is a significant milestone in your life. It represents new opportunities, stability, and a fresh start. Whether you’re looking to move for work, education, family reunification, or personal growth, we are committed to helping you navigate the complex visa process with ease and confidence.
+        At <span className="text-orange-500 font-semibold"><a href="https://vjcoverseas.com">VJC Overseas</a></span>, we understand that securing permanent residency in a new country is a life-changing milestone. It opens the door to new opportunities, stability, and a brighter future. Whether you plan to move for work, higher education, family reunification, or personal growth, our team ensures that the complex immigration process becomes smooth and stress-free.
       </p>
 
       <h3 className="text-xl font-semibold mt-4 mb-2">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Permanent Resident Visa?</h3>
       <p>
-        With years of experience and expertise in immigration law, <span className="text-orange-500">VJC Overseas</span> stands as a trusted partner for individuals and families looking to become permanent residents in some of the world’s most desirable destinations. Our team of immigration consultants works closely with you to ensure that your application is thorough, accurate, and meets all legal requirements.
-      </p>
-      <p>
-        We specialize in various immigration pathways, including skilled migration, family sponsorships, business investment visas, and more. Our in-depth knowledge of the latest immigration policies and procedures ensures that we can guide you through the complexities of each process to maximize your chances of approval.
+        As one of the <span className="text-orange-500 font-semibold"><a href="https://vjcoverseas.com">Best Visa Immigration Consultants</a></span>, we have years of experience in helping individuals and families settle abroad successfully. Our expertise lies in delivering tailored immigration solutions, ensuring that every application is handled with precision and compliance. Our professional <span className="text-orange-500 font-semibold"><a href="https://vjcoverseas.com/pr-visas">PR Visa Consultants</a></span> guide you step-by-step, from evaluating your eligibility to preparing documents and representing your application with confidence. We specialize in multiple immigration categories, making us a trusted choice for people aspiring to migrate permanently.
       </p>
 
       <h3 className="text-xl font-semibold mt-4 mb-2">Permanent Residency – A Gateway to Your Future</h3>
       <ul className="list-disc list-inside pl-4 space-y-1">
-        <li><strong>Long-Term Stability:</strong> Live, work, and study in your new country indefinitely, without the need for frequent visa renewals.</li>
-        <li><strong>Access to Healthcare and Social Benefits:</strong> Many countries offer permanent residents access to essential healthcare and social services.</li>
-        <li><strong>Pathway to Citizenship:</strong> Permanent residency often leads to citizenship with added rights like voting and passport privileges.</li>
-        <li><strong>Family Reunification:</strong> Sponsor your loved ones and build your future together in your new home country.</li>
+        <li><strong>Long-Term Stability:</strong> Live, work, and study in your chosen country without worrying about frequent visa renewals.</li>
+        <li><strong>Healthcare & Social Benefits:</strong> Gain access to essential health and social services offered to permanent residents.</li>
+        <li><strong>Pathway to Citizenship:</strong> Many PR programs serve as a stepping stone toward citizenship, giving you rights such as voting and passport privileges.</li>
+        <li><strong>Family Reunification:</strong> Sponsor your spouse, children, or parents and start building your new life together.</li>
       </ul>
 
-      {/* Expertise Section with Image */}
       <div className="flex flex-col md:flex-row items-start gap-6 mt-8">
-        {/* Text Content */}
         <div className="md:w-2/3">
           <h3 className="text-xl font-semibold mt-4 mb-2">
             Our Expertise: Permanent Resident Visa Categories
           </h3>
           <ol className="list-decimal list-inside pl-4 space-y-1">
-            <li><strong>Skilled Worker Visa:</strong> For professionals with in-demand skills in destination countries.</li>
-            <li><strong>Family Sponsorship Visa:</strong> Reunite with your spouse, children, or parents easily and legally.</li>
-            <li><strong>Investment & Entrepreneur Visas:</strong> Leverage your business acumen or investments to secure residency.</li>
-            <li><strong>Student to PR Pathway:</strong> Transition from student visa to permanent residency after your studies.</li>
-            <li><strong>Refugee and Humanitarian Visa:</strong> Get support for immigration on humanitarian grounds.</li>
+            <li><strong>Skilled Worker Visa:</strong> Designed for professionals with in-demand skills in different countries.</li>
+            <li><strong>Family Sponsorship Visa:</strong> Reunite with your loved ones through legal and hassle-free sponsorship programs.</li>
+            <li><strong>Investment & Entrepreneur Visas:</strong> For those looking to invest or establish businesses abroad.</li>
+            <li><strong>Student to PR Pathway:</strong> Support for international graduates transitioning from study visas to permanent residency.</li>
+            <li><strong>Refugee & Humanitarian Visa:</strong> Assistance for individuals migrating on humanitarian grounds.</li>
           </ol>
 
-          <h3 className="text-xl font-semibold mt-4 mb-2">
-            How <span className="text-orange-500">VJC Overseas</span> Can Help
-          </h3>
+          <h3 className="text-xl font-semibold mt-4 mb-2">Country-Specific PR Options</h3>
+          <p>
+            Our consultants also specialize in country-focused PR programs that open doors to some of the world’s top destinations. For individuals targeting Canada, the <span className="text-orange-500 font-semibold"><a href="https://vjcoverseas.com/pr-visas/canada-pr/canada-express-entry">Express Entry PR Visa</a></span> is one of the fastest and most efficient immigration systems. It is highly popular among skilled professionals who want a transparent and merit-based selection process.
+          </p>
+          <p>
+            If you are looking at opportunities in Australia, the <span className="text-orange-500 font-semibold"><a href="https://www.vjcoverseas.com/pr-visas/australia-pr">Australia PR Visa</a></span> remains a strong choice for candidates with specialized skills, offering long-term settlement benefits and career growth prospects.
+          </p>
+          <p>
+            On the other hand, families and professionals who aspire to enjoy global exposure often explore the <span className="text-orange-500 font-semibold"><a href="https://www.vjcoverseas.com/pr-visas/canada-pr">Canada PR Visa</a></span>, which provides a wide range of benefits including healthcare, social services, and a pathway to citizenship.
+          </p>
+
+          <h3 className="text-xl font-semibold mt-4 mb-2">How <span className="text-orange-500">VJC Overseas</span> Can Help You</h3>
           <ul className="list-disc list-inside pl-4 space-y-1">
-            <li><strong>Eligibility Assessment:</strong> We evaluate your profile and recommend suitable PR programs.</li>
-            <li><strong>Visa Strategy:</strong> We craft a tailored immigration strategy based on your background and goals.</li>
-            <li><strong>Application Preparation:</strong> Accurate, timely and professional documentation handling.</li>
-            <li><strong>Document Guidance:</strong> Assistance in gathering and presenting required documents.</li>
-            <li><strong>Ongoing Support:</strong> Stay informed and supported throughout your visa journey.</li>
+            <li><strong>Eligibility Assessment:</strong> We evaluate your profile and suggest the best PR pathways.</li>
+            <li><strong>Visa Strategy:</strong> A customized immigration plan based on your goals.</li>
+            <li><strong>Application Preparation:</strong> Professional and timely documentation support.</li>
+            <li><strong>Document Guidance:</strong> Assistance in compiling all required paperwork accurately.</li>
+            <li><strong>Ongoing Support:</strong> Regular updates and continued guidance throughout your immigration journey.</li>
           </ul>
         </div>
 
-        {/* Image Section */}
-        <div className=" ">
+        <div className="lg:mt-8 ">
           <Image
-            src="/permanent residency.png" // Make sure this image exists in /public
+            src="/pr-visa-vjc-overseas.jpg"
             alt="PR Visa Support"
             width={500}
             height={450}
-           unoptimized
-          
-          
+            unoptimized
           />
         </div>
       </div>
 
-      <h3 className="text-xl font-semibold mt-4 mb-2">Start Your Journey Today</h3>
+      <h3 className="text-xl font-semibold mt-4 mb-2">PR Visa Support – Start Your Journey Today</h3>
       <p>
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we believe that everyone deserves the chance to build a better future. Our Permanent Resident Visa services are designed to make the immigration process as smooth and hassle-free as possible.
+        At <span className="font-bold">VJC Overseas</span>, we believe that everyone deserves the chance to create a secure future abroad. Our services are designed to simplify the immigration process, ensuring you feel supported at every step.
       </p>
       <p>
-        Whether you're just starting your immigration journey or need assistance with an ongoing application, our team is ready to help you every step of the way. Get in touch with us today to schedule your consultation and take the first step toward securing your permanent residency!
+        Whether you are applying for the first time or need expert help with an ongoing application, our consultants are here to guide you.
       </p>
 
       <h3 className="text-xl font-semibold mt-4 mb-2">Contact Us Today!</h3>
       <p>
-        Let <span className="text-orange-500 font-semibold">VJC Overseas</span> be your trusted guide to permanent residency. Reach out to our expert immigration consultants now and start your journey towards a new chapter in life.
+        Let <span className="font-bold">VJC Overseas</span> be your trusted partner in achieving permanent residency. Reach out to our team now and take your first step toward a successful migration journey.
       </p>
+
+     
     </div>
   );
 };

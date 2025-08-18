@@ -2,18 +2,22 @@ import React from "react";
 import Image from "next/image";
 const StudyInDubai = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
+    <div
+      className="max-w-6xl mx-auto px-4 py-10 -mt-10"
+      style={{ fontFamily: "Times New Roman, serif" }}
+    >
       {/* Heading */}
       <h1 className="flex justify-center text-lg sm:text-2xl md:text-2xl font-bold mb-4 text-center whitespace-nowrap">
         Study in Dubai - <span className="text-orange-500">&nbsp;VJC Overseas</span>
       </h1>
+
       {/* Image and Intro Text Side by Side */}
       <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
         {/* Image */}
         <div className="mt-8 md:w-1/2 w-full">
           <Image
             src="/study-in-dubai.webp"
-            alt="Canada Student Visa"
+            alt="Study in Dubai - Vjc Overseas"
             width={600}
             height={400}
             className=" w-full object-cover"
@@ -25,85 +29,203 @@ const StudyInDubai = () => {
         {/* Text */}
         <div className="md:w-1/2 mt-8 text-justify">
           <p className="mb-4">
-            Are you considering studying abroad? Dubai, the hub of global education, is calling you! With world-class
-            universities, a vibrant multicultural environment, and limitless opportunities, Dubai is the ideal destination
-            for international students. <span className="text-orange-500">VJC Overseas</span> is here to guide you through
-            every step of your academic journey in this thriving city.
+            Are you considering studying abroad? Dubai, the hub of global
+            education, is calling you! With world-class universities, a vibrant
+            multicultural environment, and limitless opportunities,{" "}
+            <a
+              href="https://vjcoverseas.com/study-abroad/dubai"
+              className="text-orange-500"
+            >
+              Study in Dubai
+            </a>{" "}
+            is one of the best decisions for international students.{" "}
+            <b>VJC Overseas</b> is here to
+            guide you through every step of your academic journey in this
+            thriving city, making your overseas education pathway smooth and
+            hassle-free.
           </p>
         </div>
       </div>
+
       <h2 className="text-xl font-semibold mb-2 mt-4">Why Study in Dubai?</h2>
       <ul className="list-disc ml-6 space-y-1">
-        <li><strong>World-Class Education:</strong> Dubai is home to prestigious universities such as the University of Wollongong in Dubai, the American University in Dubai, and Dubai University of Science and Technology.</li>
-        <li><strong>International Recognition:</strong> Degrees awarded by Dubai’s universities are globally recognized, offering you ample career opportunities worldwide.</li>
-        <li><strong>Cultural Diversity:</strong> Study alongside students from various nationalities, experiencing the best of both Eastern and Western cultures.</li>
-        <li><strong>Thriving Job Market:</strong> Dubai’s growing economy offers abundant job opportunities, internships, and hands-on learning experiences for students.</li>
+        <li>
+          <strong>World-Class Education:</strong> Dubai is home to prestigious
+          institutions such as the University of Wollongong in Dubai, the
+          American University in Dubai, and Dubai University of Science and
+          Technology. These rank among the{" "}
+          <a
+            href="https://vjcoverseas.com/study-abroad/dubai"
+            className="text-orange-500"
+          >
+            Top Universities in Dubai
+          </a>
+          , attracting students from all over the globe.
+        </li>
+        <li>
+          <strong>International Recognition:</strong> Degrees awarded by Dubai’s
+          universities are globally recognized, opening doors to worldwide
+          career opportunities.
+        </li>
+        <li>
+          <strong>Cultural Diversity:</strong> Experience both Eastern and
+          Western cultures while studying with peers from more than 100
+          nationalities.
+        </li>
+        <li>
+          <strong>Thriving Job Market:</strong> Dubai’s booming economy offers
+          abundant internships, part-time jobs, and post-study employment
+          opportunities.
+        </li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Universities and Colleges in Dubai</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2">
+        Universities and Colleges in Dubai
+      </h2>
       <ul className="list-disc ml-6 space-y-1">
-        <li><strong>University of Wollongong in Dubai (UOWD):</strong> Offers internationally recognized degrees in fields like business, engineering, and IT.</li>
-        <li><strong>American University in Dubai (AUD):</strong> Known for its diverse range of academic programs and globally recognized American-style education.</li>
-        <li><strong>Hult International Business School Dubai:</strong> A leading business school offering a dynamic MBA program and business courses.</li>
-        <li><strong>University of Dubai:</strong> Offers a wide range of programs in business, IT, law, and engineering.</li>
-        <li><strong>Dubai Medical College:</strong> The first private medical school in the UAE, providing top-notch medical education.</li>
+        <li>
+          <strong>University of Wollongong in Dubai (UOWD):</strong> Known for
+          top programs in IT, business, and engineering.
+        </li>
+        <li>
+          <strong>American University in Dubai (AUD):</strong> Offers a wide
+          range of globally recognized American-style degrees.
+        </li>
+        <li>
+          <strong>Hult International Business School Dubai:</strong> Leading
+          business school with MBA and business management programs.
+        </li>
+        <li>
+          <strong>University of Dubai:</strong> Popular for courses in business,
+          IT, law, and engineering.
+        </li>
+        <li>
+          <strong>Dubai Medical College:</strong> First private medical school
+          in the UAE offering world-class medical education.
+        </li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">College and University Fees in Dubai</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2">
+        College and University Fees in Dubai
+      </h2>
       <ul className="list-disc ml-6 space-y-1">
-        <li><strong>Undergraduate Programs:</strong> Fees typically range from AED 30,000 to AED 80,000 per year, depending on the course and university.</li>
-        <li><strong>Postgraduate Programs:</strong> Fees for master's programs range from AED 40,000 to AED 100,000 per year.</li>
-        <li><strong>Doctoral Programs:</strong> Doctoral program fees can vary, usually between AED 70,000 to AED 150,000 per year.</li>
+        <li>
+          <strong>Undergraduate Programs:</strong> AED 30,000 – AED 80,000 per
+          year.
+        </li>
+        <li>
+          <strong>Postgraduate Programs:</strong> AED 40,000 – AED 100,000 per
+          year.
+        </li>
+        <li>
+          <strong>Doctoral Programs:</strong> AED 70,000 – AED 150,000 per year.
+        </li>
       </ul>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Living Costs in Dubai</h2>
       <ul className="list-disc ml-6 space-y-1">
-        <li><strong>Accommodation:</strong> Rent for a student apartment or shared accommodation can range from AED 2,500 to AED 6,000 per month.</li>
-        <li><strong>Food:</strong> Monthly food expenses are approximately AED 1,000 to AED 1,500.</li>
-        <li><strong>Transportation:</strong> Public transportation in Dubai is affordable, with a monthly metro pass costing around AED 300.</li>
-        <li><strong>Miscellaneous:</strong> Entertainment and leisure activities may cost an additional AED 1,000 per month.</li>
-      </ul>
-
-      <h2 className="text-xl font-semibold mt-4 mb-2">Work Opportunities for International Students in Dubai</h2>
-      <ul className="list-disc ml-6 space-y-1">
-        <li><strong>Part-Time Jobs:</strong> Students can work up to 20 hours per week during term time and full-time during holidays.</li>
-        <li><strong>Internships:</strong> Many universities have partnerships with leading companies in Dubai, offering students the chance to gain industry experience.</li>
-        <li><strong>Post-Graduation Employment:</strong> Dubai has a rapidly expanding job market with opportunities in various sectors.</li>
-      </ul>
-
-      <h2 className="text-xl font-semibold mt-4 mb-2">Benefits of Studying in Dubai</h2>
-      <ul className="list-disc ml-6 space-y-1">
-        <li><strong>Global Networking Opportunities:</strong> Connect with students from all over the world.</li>
-        <li><strong>High Quality of Life:</strong> Safe environment, modern infrastructure, and excellent healthcare.</li>
-        <li><strong>Tax-Free Income:</strong> Maximize your earnings while studying and working.</li>
-        <li><strong>Cultural Experience:</strong> Experience diverse cultures, cuisines, and traditions.</li>
-        <li><strong>Visa Benefits:</strong> Student-friendly visa policies make it easier to study in Dubai.</li>
+        <li>
+          <strong>Accommodation:</strong> AED 2,500 – AED 6,000 per month.
+        </li>
+        <li>
+          <strong>Food:</strong> AED 1,000 – AED 1,500 monthly.
+        </li>
+        <li>
+          <strong>Transportation:</strong> Affordable metro passes around AED
+          300/month.
+        </li>
+        <li>
+          <strong>Miscellaneous:</strong> AED 1,000 for leisure, entertainment,
+          and other needs.
+        </li>
       </ul>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">
-        Why Choose <span className="text-orange-500">VJC Overseas</span>?
+        Work Opportunities for International Students in Dubai
+      </h2>
+      <ul className="list-disc ml-6 space-y-1">
+        <li>
+          <strong>Part-Time Jobs:</strong> Students can work up to 20 hours
+          weekly during semesters and full-time during breaks.
+        </li>
+        <li>
+          <strong>Internships:</strong> Universities collaborate with leading
+          companies, offering practical industry exposure.
+        </li>
+        <li>
+          <strong>Post-Graduation Careers:</strong> Dubai’s expanding job market
+          welcomes skilled graduates across sectors.
+        </li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mt-4 mb-2">Visa Benefits</h2>
+      <p className="text-justify mb-2">
+        Getting a{" "}
+        <a
+          href="https://vjcoverseas.com/study-abroad/dubai"
+          className="text-orange-500"
+        >
+          Dubai Student Visa
+        </a>{" "}
+        is straightforward, thanks to student-friendly policies. It allows
+        international students to stay, study, and explore employment
+        opportunities in the region. With proper guidance, the visa process
+        becomes seamless and stress-free.
+      </p>
+
+      <h2 className="text-xl font-semibold mt-4 mb-2">
+        Why Choose <b>VJC Overseas</b>?
       </h2>
       <p className="text-justify mb-2 mt-4">
-        At <span className="text-orange-500">VJC Overseas</span>, we are committed to helping you achieve your academic
-        and professional dreams in Dubai. Our experienced consultants will guide you through every step, from selecting
-        the right university to managing your visa and accommodation.
+        <b>VJC Overseas</b> stands among the{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          className="text-orange-500"
+        >
+          Best Visa Immigration Consultants
+        </a>{" "}
+        providing expert guidance for students aspiring to build their future
+        abroad. Our team also specializes as trusted{" "}
+        <a
+          href="https://vjcoverseas.com/study-abroad/"
+          className="text-orange-500"
+        >
+          Study Visa Consultants
+        </a>
+        , ensuring that you select the right program, university, and country
+        for your academic growth.
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Services We Offer:</h2>
       <ul className="list-disc ml-6 space-y-1">
-        <li>University and Program Selection</li>
-        <li>Visa Guidance and Application</li>
+        <li>University & Program Selection</li>
+        <li>Visa Guidance & Application Support</li>
         <li>Accommodation Assistance</li>
-        <li>Post-Graduation Career Counseling</li>
-        <li>Cultural Integration Support</li>
+        <li>Career Counseling after Graduation</li>
+        <li>Cultural Integration Guidance</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Contact Us</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-2">Final Thoughts</h2>
       <p className="text-justify">
-        Ready to begin your journey in Dubai? Reach out to{" "}
-        <span className="text-orange-500">VJC Overseas</span> today and let us help you find the perfect university and
-        program for your future success.
+        Dubai is more than just a destination—it’s a gateway to world-class
+        education, global networking, and exciting career prospects. With{" "}
+        <a
+          href="https://vjcoverseas.com/"
+          className="text-orange-500"
+        >
+          VJC Overseas
+        </a>{" "}
+        by your side, your
+        study abroad journey becomes simpler, clearer, and more rewarding. Start
+        your application today and step into a brighter future in Dubai!
       </p>
+
+      {/* Bold Keywords for Entire Page */}
+      <div className="hidden">
+        <b>Study in Dubai</b> <b>Top Universities in Dubai</b>{" "}
+        <b>Dubai Student Visa</b> <b>Best Visa Immigration Consultants</b>{" "}
+        <b>Study Visa Consultants</b> <b>VJC Overseas</b>
+      </div>
     </div>
   );
 };

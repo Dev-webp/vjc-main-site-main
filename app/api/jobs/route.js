@@ -20,6 +20,9 @@ export async function POST(req) {
     const data = await fs.readFile(filePath, "utf8");
     const jobs = JSON.parse(data || "[]");
 
+    // ensure each job has unique id
+    newJob.id = newJob.id || Date.now().toString();
+
     jobs.push(newJob);
 
     await fs.writeFile(filePath, JSON.stringify(jobs, null, 2));
@@ -29,14 +32,39 @@ export async function POST(req) {
   }
 }
 
+// PUT edit/update a job
+export async function PUT(req) {
+  try {
+    const updatedJob = await req.json();
+    const data = await fs.readFile(filePath, "utf8");
+    let jobs = JSON.parse(data || "[]");
+
+    const index = jobs.findIndex((job) => job.id === updatedJob.id);
+    if (index === -1) {
+      return new Response(JSON.stringify({ error: "Job not found" }), { status: 404 });
+    }
+
+    jobs[index] = { ...jobs[index], ...updatedJob };
+
+    await fs.writeFile(filePath, JSON.stringify(jobs, null, 2));
+    return new Response(JSON.stringify(jobs[index]), { status: 200 });
+  } catch (err) {
+    return new Response(JSON.stringify({ error: err.message }), { status: 500 });
+  }
+}
+
 // DELETE a job
 export async function DELETE(req) {
-  const { id } = await req.json();
-  const data = await fs.readFile(filePath, "utf8");
-  let jobs = JSON.parse(data || "[]");
+  try {
+    const { id } = await req.json();
+    const data = await fs.readFile(filePath, "utf8");
+    let jobs = JSON.parse(data || "[]");
 
-  jobs = jobs.filter((job) => job.id !== id);
+    jobs = jobs.filter((job) => job.id !== id);
 
-  await fs.writeFile(filePath, JSON.stringify(jobs, null, 2));
-  return new Response(JSON.stringify({ success: true }), { status: 200 });
+    await fs.writeFile(filePath, JSON.stringify(jobs, null, 2));
+    return new Response(JSON.stringify({ success: true }), { status: 200 });
+  } catch (err) {
+    return new Response(JSON.stringify({ error: err.message }), { status: 500 });
+  }
 }

@@ -50,7 +50,38 @@ export async function POST(req) {
   }
 }
 
-// DELETE news by title
+// PUT update news by slug
+export async function PUT(req) {
+  try {
+    const body = await req.json();
+    const { slug } = body; // now take slug from object
+
+    if (!slug) {
+      return NextResponse.json({ error: "Slug required" }, { status: 400 });
+    }
+
+    let newsData = readNewsFile();
+    const index = newsData.findIndex((n) => n.slug === slug);
+
+    if (index === -1) {
+      return NextResponse.json({ error: "News not found" }, { status: 404 });
+    }
+
+    // overwrite with new object
+    newsData[index] = body;
+
+    writeNewsFile(newsData);
+
+    return NextResponse.json(
+      { message: "Updated successfully", data: newsData[index] },
+      { status: 200 }
+    );
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}
+
+
 // DELETE news by slug
 export async function DELETE(req) {
   try {
@@ -70,5 +101,4 @@ export async function DELETE(req) {
   } catch (err) {
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
-
 }

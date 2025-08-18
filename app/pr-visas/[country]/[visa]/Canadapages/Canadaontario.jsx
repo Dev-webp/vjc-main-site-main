@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OntarioPNP() {
   return (
@@ -33,8 +34,8 @@ export default function OntarioPNP() {
 
       {/* Introduction */}
       <p>
-        Ontario, Canada’s most populous and economically dynamic province, offers exciting immigration opportunities through the Ontario Immigrant Nominee Program (OINP). If you're dreaming of a new life in Canada — whether you're a skilled worker, international graduate, or entrepreneur — Ontario could be your ideal destination. At{" "}
-        <span className="text-orange-500 font-semibold">VJC Overseas</span>, we specialize in helping applicants navigate the OINP process with expert guidance and personalized support from start to finish.
+        Ontario, Canada’s most populous and economically dynamic province, offers exciting immigration opportunities through the{" "}
+         <Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program/canada-ontario" className="text-orange-500 font-semibold">Ontario PNP</Link>. If you're dreaming of a new life in Canada — whether you're a skilled worker, international graduate, or entrepreneur — Ontario could be your ideal destination. At <strong className="text-black">VJC Overseas</strong>, we specialize in helping applicants navigate the OINP process with expert guidance and personalized support from start to finish.
       </p>
 
       {/* Why Ontario */}
@@ -43,15 +44,20 @@ export default function OntarioPNP() {
         <p>
           Ontario is home to major cities like Toronto and Ottawa, top-ranked universities, and one of North America’s strongest job markets. The province offers excellent healthcare, education, and infrastructure, making it a top choice for immigrants worldwide. Ontario continues to attract global talent to support its growing economy and fill labor shortages across key sectors such as healthcare, IT, engineering, finance, and skilled trades.
         </p>
+        <p className="mt-2">
+          Many newcomers look for the{" "}
+          <Link href="https://vjcoverseas.com" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</Link> when exploring Canadian opportunities. That’s because the process can be complex, and professional guidance ensures a smoother journey toward success.
+        </p>
       </section>
 
       {/* What is OINP */}
       <section className="mt-6">
         <h2 className="text-xl sm:text-1xl font-bold text-black mb-2">What is the Ontario Immigrant Nominee Program (OINP)?</h2>
         <p>
-          The OINP is Ontario’s official immigration pathway under Canada’s Provincial Nominee Program (PNP). It allows the provincial government to nominate eligible foreign nationals for permanent residence based on Ontario’s labor market and economic needs.
+          The OINP is Ontario’s official immigration pathway under the{" "}
+          <Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program" className="text-orange-500 font-semibold">Canada PNP Program</Link>. It allows the provincial government to nominate eligible foreign nationals for permanent residence based on Ontario’s labor market and economic needs.
         </p>
-        <p className="mt-2">There are several streams under the OINP:</p>
+        <p className="mt-2">There are several streams under the OINP, each catering to different candidate profiles:</p>
 
         <ul className="list-disc list-inside ml-4 mt-2 space-y-2">
           <li>
@@ -83,7 +89,7 @@ export default function OntarioPNP() {
       <section className="mt-6">
         <h2 className="text-xl sm:text-1xl font-bold text-black mb-2">Why Apply Through <span className="text-orange-500">VJC Overseas</span>?</h2>
         <p>
-          At VJC Overseas, we believe immigration is not just about moving to another country — it’s about transforming your future. Our experienced consultants are well-versed in the OINP’s latest requirements and selection criteria.
+          At <strong className="text-black">VJC Overseas</strong>, we believe immigration is not just about moving to another country — it’s about transforming your future. Our experienced <Link href="https://vjcoverseas.com/pr-visas" className="text-orange-500 font-semibold">PR Visa Consultants</Link> are well-versed in the OINP’s latest requirements and selection criteria.
         </p>
         <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
           <li>We assess your profile and recommend the right stream.</li>
@@ -91,17 +97,19 @@ export default function OntarioPNP() {
           <li>Guide you throughout the process to maximize success chances.</li>
           <li>Keep you informed with the latest OINP changes and policies.</li>
         </ul>
+        <p className="mt-2">
+          If you’re aiming for a <Link href="https://vjcoverseas.com/pr-visas/canada-pr" className="text-orange-500 font-semibold">Canada PR Visa</Link>, our team ensures that you take the right approach, avoiding delays and rejections.
+        </p>
       </section>
 
       {/* Final Call */}
       <section className="mt-6">
         <h2 className="text-xl sm:text-1xl font-bold text-black mb-2">Take the First Step Toward a Brighter Future</h2>
         <p>
-          Ontario’s vibrant job market, world-class education, and high quality of life make it one of the most attractive provinces in Canada for newcomers. With the OINP and the expert guidance of{" "}
-          <span className="text-orange-500 font-semibold">VJC Overseas</span>, your path to Canadian permanent residency is clearer than ever.
+          Ontario’s vibrant job market, world-class education, and high quality of life make it one of the most attractive provinces in Canada for newcomers. With the OINP and the expert guidance of <strong className="text-black">VJC Overseas</strong>, your path to Canadian permanent residency is clearer than ever.
         </p>
         <p className="mt-2 font-semibold">
-          Contact VJC Overseas today for a free consultation and start your journey to Ontario, Canada — where opportunities await, and your dreams can take root.
+          Contact <span className="text-orange-500 font-semibold"><Link href="https://vjcoverseas.com">VJC Overseas</Link></span> today for a free consultation and start your journey to Ontario, Canada — where opportunities await, and your dreams can take root.
         </p>
       </section>
     </div>
