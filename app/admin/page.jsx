@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-
+import News from "./News";
 export default function AdminJobs() {
   // 🔑 Simple login state
   const [loggedIn, setLoggedIn] = useState(false);
@@ -280,7 +280,12 @@ export default function AdminJobs() {
   // ✅ After login → show Admin Job Manager
   return (
     <div className="p-4 mt-24 ml-12 mr-8 sm:p-6">
-      <h1 className="text-xl font-bold mb-4">Admin Job Manager</h1>
+       <h1 className="text-xl font-bold mb-4">Admin Dashboard</h1>
+
+    {/* 🔹 NEWS SECTION */}
+    <News />
+
+      <h1 className="text-xl font-bold mb-4">Abroad Job Manager Adding-new-jobs</h1>
 
       {/* Job Form */}
       <div className="mb-6 mt-12 grid grid-cols-1 sm:grid-cols-2 gap-3">

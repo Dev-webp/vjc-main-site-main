@@ -3,27 +3,35 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { allNews } from './news-data';
+import { allNews as staticNews } from './news-data';
 import slugify from './slugify';
 import Form from './Form';
 
-const mainStory = allNews[0];
-const nextStories = allNews.slice(1, 5);
-const visaNews = allNews.slice(5, 9);
-
-const allLatestUpdates = allNews.slice(9); 
-const tickerNews = allNews.slice(5, 9);
+// ✅ Fetch from API (news-data.json)
+const fetchNewData = async () => {
+  try {
+    const res = await fetch('/api/news', { cache: 'no-store' });
+    if (!res.ok) return [];
+    return await res.json();
+  } catch (err) {
+    console.error('Error loading new-data.json:', err);
+    return [];
+  }
+};
 
 function NewsTickerBar({ news }) {
   const [active, setActive] = useState(0);
   const intervalRef = useRef(null);
 
   useEffect(() => {
+    if (news.length === 0) return;
     intervalRef.current = setInterval(() => {
       setActive((prev) => (prev + 1) % news.length);
     }, 4000);
     return () => intervalRef.current && clearInterval(intervalRef.current);
   }, [news.length]);
+
+  if (news.length === 0) return null;
 
   return (
     <div className="w-full flex justify-center px-2 z-10 mt-20 relative">
@@ -72,17 +80,35 @@ function NewsTickerBar({ news }) {
 }
 
 export default function LatestNewsMagazine() {
+  const [dynamicNews, setDynamicNews] = useState([]);
   const [visibleCount, setVisibleCount] = useState(4);
-  const hasMore = visibleCount < allLatestUpdates.length;
 
+  useEffect(() => {
+    (async () => {
+      const jsonNews = await fetchNewData();
+      if (jsonNews.length > 0) setDynamicNews(jsonNews);
+    })();
+  }, []);
+
+  // ✅ Only static for everything except "Latest Global Immigration Updates"
+  const mainStory = staticNews[0] || {};
+  const nextStories = staticNews.slice(1, 5);
+  const visaNews = staticNews.slice(5, 9);
+  const tickerNews = staticNews.slice(5, 9);
+
+  // ✅ Combined static + dynamic for "Latest Global Immigration Updates"
+  const immigrationUpdates = [...dynamicNews, ...staticNews];
+
+  const hasMore = visibleCount < immigrationUpdates.length;
   const showMore = () => setVisibleCount((prev) => prev + 4);
 
   return (
     <main className="min-h-screen w-full bg-gradient-to-b from-[#f7fafc] to-white">
+      {/* 🔥 News Ticker */}
       <NewsTickerBar news={tickerNews} />
 
       <div className="max-w-6xl mx-auto flex flex-col gap-10 w-full pt-6 px-2 md:px-0">
-        {/* Main Story */}
+        {/* ✅ Main Story (only static) */}
         <section className="flex flex-col md:flex-row gap-6 bg-white rounded-2xl shadow-lg border border-[#dbeafe] overflow-hidden relative">
           <div className="md:w-[340px] flex-shrink-0 relative">
             <Image
@@ -109,73 +135,71 @@ export default function LatestNewsMagazine() {
           </div>
         </section>
 
-      {/* 🔥 Latest Updates Section */}
-<div>
-  <div className="flex items-center justify-between mb-4 mt-6">
-    <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Latest Global Immigration Updates</h2>
-    <Link href="/latest-news" className="text-[#ff9000] text-sm font-semibold hover:underline">View All</Link>
-  </div>
-
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-    {allLatestUpdates.slice(0, visibleCount).map((item, i) => (
-      <motion.div
-        key={i}
-        initial={{ opacity: 0, x: 80 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: i * 0.1 }}
-      >
-        <Link
-          href={`/latest-news/${slugify(item.title)}`}
-          className="flex flex-col h-full bg-gradient-to-br from-[#1681c4]/5 to-[#ff9000]/10 rounded-xl shadow-md border border-[#dbeafe] hover:shadow-xl transition group overflow-hidden"
-        >
-          <div className="relative">
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={400}
-              height={150}
-              className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
-              unoptimized
-            />
-            <span className="absolute top-2 right-2 bg-white text-[#1681c4] px-2 py-0.5 rounded text-xs font-semibold shadow border border-[#1681c4]">
-              {item.tag}
-            </span>
+        {/* 🔥 Latest Global Immigration Updates (✅ static + dynamic combined) */}
+        <div>
+          <div className="flex items-center justify-between mb-4 mt-6">
+            <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Latest Global Immigration Updates</h2>
+            <Link href="/latest-news" className="text-[#ff9000] text-sm font-semibold hover:underline">View All</Link>
           </div>
-          <div className="flex-1 flex flex-col justify-between px-3 py-2 bg-white min-h-[160px] max-h-[180px]">
-            <div>
-              <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
-              <p className="text-xs text-gray-500 mb-1 line-clamp-2">{item.summary}</p>
-            </div>
-            <div className="flex gap-2 text-xs text-gray-400">{item.time} &middot; {item.readTime}</div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {immigrationUpdates.slice(0, visibleCount).map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: 80 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link
+                  href={`/latest-news/${slugify(item.title)}`}
+                  className="flex flex-col h-full bg-gradient-to-br from-[#1681c4]/5 to-[#ff9000]/10 rounded-xl shadow-md border border-[#dbeafe] hover:shadow-xl transition group overflow-hidden"
+                >
+                  <div className="relative">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={400}
+                      height={150}
+                      className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      unoptimized
+                    />
+                    <span className="absolute top-2 right-2 bg-white text-[#1681c4] px-2 py-0.5 rounded text-xs font-semibold shadow border border-[#1681c4]">
+                      {item.tag}
+                    </span>
+                  </div>
+                  <div className="flex-1 flex flex-col justify-between px-3 py-2 bg-white min-h-[160px] max-h-[180px]">
+                    <div>
+                      <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
+                      <p className="text-xs text-gray-500 mb-1 line-clamp-2">{item.summary}</p>
+                    </div>
+                    <div className="flex gap-2 text-xs text-gray-400">{item.time} &middot; {item.readTime}</div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
-        </Link>
-      </motion.div>
-    ))}
-  </div>
 
-  {/* Show More / Show Less */}
-  <div className="flex justify-center mt-6">
-    {visibleCount < allLatestUpdates.length ? (
-      <button
-        onClick={showMore}
-        className="px-5 py-2 bg-[#1681c4] text-white text-sm font-medium rounded hover:bg-[#0f5e91] transition"
-      >
-        Show More
-      </button>
-    ) : (
-      <button
-        onClick={() => setVisibleCount(4)}
-        className="px-5 py-2 bg-[#ff9000] text-white text-sm font-medium rounded hover:bg-[#e07d00] transition"
-      >
-        Show Less
-      </button>
-    )}
-  </div>
-</div>
+          {/* Show More / Show Less */}
+          <div className="flex justify-center mt-6">
+            {visibleCount < immigrationUpdates.length ? (
+              <button
+                onClick={showMore}
+                className="px-5 py-2 bg-[#1681c4] text-white text-sm font-medium rounded hover:bg-[#0f5e91] transition"
+              >
+                Show More
+              </button>
+            ) : (
+              <button
+                onClick={() => setVisibleCount(4)}
+                className="px-5 py-2 bg-[#ff9000] text-white text-sm font-medium rounded hover:bg-[#e07d00] transition"
+              >
+                Show Less
+              </button>
+            )}
+          </div>
+        </div>
 
-
-
-        {/* More Top Stories */}
+        {/* More Top Stories (only static) */}
         <div>
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">More Top Stories</h2>
@@ -208,7 +232,7 @@ export default function LatestNewsMagazine() {
           </div>
         </div>
 
-        {/* Visa News */}
+        {/* Visa News (only static) */}
         <div>
           <div className="flex items-center justify-between mb-4 mt-4">
             <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Visa & Immigration Updates</h2>
