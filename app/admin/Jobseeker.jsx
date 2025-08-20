@@ -16,6 +16,7 @@ export default function VisaDashboard() {
     metaTitle: "",
     metaDescription: "",
     metaKeywords: "",
+    image: "", // <-- add image field here
   });
   const [file, setFile] = useState(null);
   const [descFile, setDescFile] = useState(null);
@@ -45,6 +46,7 @@ export default function VisaDashboard() {
     let imageUrl = form.image || "";
     let descriptionImageUrl = form.descriptionImage || "";
 
+    // If a new image is uploaded, use it
     if (file) {
       const formData = new FormData();
       formData.append("file", file);
@@ -56,6 +58,7 @@ export default function VisaDashboard() {
       imageUrl = data.url;
     }
 
+    // If a new description image is uploaded, use it
     if (descFile) {
       const formData = new FormData();
       formData.append("file", descFile);
@@ -69,7 +72,7 @@ export default function VisaDashboard() {
 
     const visaData = {
       ...form,
-      image: imageUrl || (visas[editingIndex]?.image || ""),
+      image: imageUrl, // <-- always use the latest imageUrl
       descriptionImage: descriptionImageUrl,
     };
 
@@ -101,12 +104,14 @@ export default function VisaDashboard() {
       metaTitle: "",
       metaDescription: "",
       metaKeywords: "",
+      image: "",
     });
     setFile(null);
     setDescFile(null);
     setEditingIndex(null);
   };
 
+  // Show current image in the form when editing
   const handleEdit = (index) => {
     const v = visas[index];
     setForm({
@@ -121,8 +126,10 @@ export default function VisaDashboard() {
       metaTitle: v.metaTitle || "",
       metaDescription: v.metaDescription || "",
       metaKeywords: v.metaKeywords || "",
+      image: v.image || "",
     });
     setEditingIndex(index);
+    setFile(null); // reset file input
   };
 
   const handleDelete = async (index) => {
@@ -186,6 +193,20 @@ export default function VisaDashboard() {
           onChange={handleChange}
           className="w-full p-2 border rounded"
         />
+        {/* Show current image if editing */}
+        {form.image && (
+          <div className="mb-2">
+            <Image
+              src={form.image}
+              alt="Current Visa"
+              width={120}
+              height={80}
+              style={{ objectFit: "cover", borderRadius: "8px" }}
+              unoptimized
+            />
+            <div className="text-xs text-gray-500">Current Image</div>
+          </div>
+        )}
         <input
           type="file"
           accept="image/*"

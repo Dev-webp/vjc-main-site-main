@@ -15,63 +15,100 @@ export default function AdminNews() {
   });
   const [editSlug, setEditSlug] = useState(null);
 
-  // Load all news
+  // ✅ Load all news
   const loadNews = async () => {
-    const res = await fetch("/api/news");
-    const data = await res.json();
+    try {
+      const res = await fetch("/api/news");
+      const data = await res.json();
 
-    // ✅ ensure content field exists
-    const fixedData = data.map((n) => ({
-      ...n,
-      content: n.content || n.description || "",
-    }));
+      // ensure content exists
+      const fixedData = data.map((n) => ({
+        ...n,
+        content: n.content || n.description || "",
+      }));
 
-    setNews(fixedData);
+      setNews(fixedData);
+    } catch (err) {
+      console.error("Failed to load news:", err);
+    }
   };
 
   useEffect(() => {
     loadNews();
   }, []);
 
-  // Add news
+  // ✅ Validation helper
+  const isValid = (obj) => {
+    if (!obj.title?.trim()) return false;
+    if (!obj.content?.trim()) return false;
+    return true;
+  };
+
+  // ✅ Add news
   const handleAdd = async () => {
     const newNews = { ...form, slug: slugify(form.title) };
 
-    await fetch("/api/news", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newNews),
-    });
+    if (!isValid(newNews)) {
+      alert("⚠️ Title and Content are required.");
+      return;
+    }
 
-    resetForm();
-    loadNews();
+    try {
+      await fetch("/api/news", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newNews),
+      });
+
+      resetForm();
+      loadNews();
+    } catch (err) {
+      console.error("Add failed:", err);
+    }
   };
 
-  // Update news
+  // ✅ Update news
   const handleUpdate = async () => {
     const updatedNews = { ...form, slug: editSlug || slugify(form.title) };
 
-    await fetch("/api/news", {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(updatedNews),
-    });
+    if (!isValid(updatedNews)) {
+      alert("⚠️ Title and Content are required.");
+      return;
+    }
 
-    resetForm();
-    loadNews();
+    try {
+      await fetch("/api/news", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedNews),
+      });
+
+      resetForm();
+      loadNews();
+    } catch (err) {
+      console.error("Update failed:", err);
+    }
   };
 
-  // Delete news
+  // ✅ Delete news
   const handleDelete = async (slug) => {
-    await fetch("/api/news", {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ slug }),
-    });
-    loadNews();
+    if (!slug) return;
+
+    if (!confirm("Are you sure you want to delete this news?")) return;
+
+    try {
+      await fetch("/api/news", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ slug }),
+      });
+      loadNews();
+    } catch (err) {
+      console.error("Delete failed:", err);
+    }
   };
 
-  // Edit news
+  // ✅ Edit news
   const handleEdit = (n) => {
     setForm({
       title: n.title,
@@ -85,7 +122,7 @@ export default function AdminNews() {
     setEditSlug(n.slug);
   };
 
-  // Reset form
+  // ✅ Reset form
   const resetForm = () => {
     setForm({
       title: "",
@@ -108,7 +145,7 @@ export default function AdminNews() {
         <input
           value={form.title}
           onChange={(e) => setForm({ ...form, title: e.target.value })}
-          placeholder="Title"
+          placeholder="Title *"
           className="border p-2 w-full rounded"
         />
         <textarea
@@ -126,25 +163,25 @@ export default function AdminNews() {
         <input
           value={form.tag}
           onChange={(e) => setForm({ ...form, tag: e.target.value })}
-          placeholder="Tag (e.g. Breaking News)"
+          placeholder="Tag"
           className="border p-2 w-full rounded"
         />
         <input
           value={form.time}
           onChange={(e) => setForm({ ...form, time: e.target.value })}
-          placeholder="Time (e.g. 16m ago)"
+          placeholder="Time"
           className="border p-2 w-full rounded"
         />
         <input
           value={form.readTime}
           onChange={(e) => setForm({ ...form, readTime: e.target.value })}
-          placeholder="Read Time (e.g. 2 min read)"
+          placeholder="Read Time"
           className="border p-2 w-full rounded"
         />
         <textarea
           value={form.content}
           onChange={(e) => setForm({ ...form, content: e.target.value })}
-          placeholder="Full Content (HTML allowed)"
+          placeholder="Full Content (HTML allowed) *"
           rows={6}
           className="border p-2 w-full rounded"
         />
@@ -188,7 +225,6 @@ export default function AdminNews() {
                 <p className="text-xs text-gray-400">
                   {n.tag} • {n.time} • {n.readTime}
                 </p>
-                {/* ✅ show content snippet */}
                 {n.content && (
                   <p className="text-xs text-gray-500 mt-1 line-clamp-2">
                     {n.content.replace(/<[^>]+>/g, "").slice(0, 100)}...

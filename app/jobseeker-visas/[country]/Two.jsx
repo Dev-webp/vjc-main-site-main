@@ -110,11 +110,17 @@ export default function Migrate() {
               </div>
             </div>
           </div>
-        ) : (
-          <div className="flex items-center justify-center min-h-[40vh]">
-            <h2 className="text-2xl text-gray-500">
-              No visa found for this country.
+       ) : (
+          <div className="flex flex-col items-center justify-center min-h-[40vh]">
+            <h2 className="text-2xl text-red-600 font-bold mb-4">
+              Wrong URL! No visa found for this country.
             </h2>
+            <button
+              onClick={() => router.push("/jobseeker-visas")}
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded font-semibold shadow transition"
+            >
+              Go Home
+            </button>
           </div>
         )}
 
