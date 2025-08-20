@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import News from "./News";
-
+import Jobseeker from "./Jobseeker"
 export default function AdminJobs() {
   // 🔑 Login state
   const [loggedIn, setLoggedIn] = useState(false);
@@ -151,8 +151,8 @@ export default function AdminJobs() {
   };
 
   useEffect(() => {
-    loadJobs();
-  }, []);
+  loadJobs();
+}, []);
 
   // Add new job
   const addJob = async () => {
@@ -315,7 +315,7 @@ export default function AdminJobs() {
     <div className="p-4 mt-24 ml-12 mr-8 sm:p-6">
       <h1 className="text-xl font-bold mb-4">Admin Dashboard</h1>
       <News />
-
+      <Jobseeker />
       <h1 className="text-xl font-bold mb-4">Abroad Job Manager</h1>
 
       {/* Job Form */}

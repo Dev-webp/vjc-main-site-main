@@ -13,13 +13,20 @@ export default function AdminNews() {
     readTime: "",
     content: "",
   });
-  const [editSlug, setEditSlug] = useState(null); // ✅ Track if editing
+  const [editSlug, setEditSlug] = useState(null);
 
   // Load all news
   const loadNews = async () => {
     const res = await fetch("/api/news");
     const data = await res.json();
-    setNews(data);
+
+    // ✅ ensure content field exists
+    const fixedData = data.map((n) => ({
+      ...n,
+      content: n.content || n.description || "",
+    }));
+
+    setNews(fixedData);
   };
 
   useEffect(() => {
@@ -54,18 +61,17 @@ export default function AdminNews() {
     loadNews();
   };
 
-  // Delete news by slug
+  // Delete news
   const handleDelete = async (slug) => {
     await fetch("/api/news", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ slug }),
     });
-
-    loadNews(); // refresh list after delete
+    loadNews();
   };
 
-  // Populate form for editing
+  // Edit news
   const handleEdit = (n) => {
     setForm({
       title: n.title,
@@ -74,7 +80,7 @@ export default function AdminNews() {
       tag: n.tag,
       time: n.time,
       readTime: n.readTime,
-      content: n.content,
+      content: n.content || n.description || "",
     });
     setEditSlug(n.slug);
   };
@@ -168,7 +174,7 @@ export default function AdminNews() {
         )}
       </div>
 
-      {/* LIST with scrollable limit */}
+      {/* LIST */}
       <div className="max-h-64 overflow-y-auto border rounded p-2 bg-white">
         <ul className="space-y-3">
           {news.map((n) => (
@@ -182,6 +188,12 @@ export default function AdminNews() {
                 <p className="text-xs text-gray-400">
                   {n.tag} • {n.time} • {n.readTime}
                 </p>
+                {/* ✅ show content snippet */}
+                {n.content && (
+                  <p className="text-xs text-gray-500 mt-1 line-clamp-2">
+                    {n.content.replace(/<[^>]+>/g, "").slice(0, 100)}...
+                  </p>
+                )}
               </div>
               <div className="flex gap-2">
                 <button
