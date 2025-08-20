@@ -16,10 +16,8 @@ export default function VisaDashboard() {
     metaTitle: "",
     metaDescription: "",
     metaKeywords: "",
-    image: "", // <-- add image field here
+    image: "", // now always URL
   });
-  const [file, setFile] = useState(null);
-  const [descFile, setDescFile] = useState(null);
   const [editingIndex, setEditingIndex] = useState(null);
 
   useEffect(() => {
@@ -31,9 +29,6 @@ export default function VisaDashboard() {
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleFileChange = (e) => setFile(e.target.files[0]);
-  const handleDescFileChange = (e) => setDescFile(e.target.files[0]);
-
   const handleInfoHtmlFileChange = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -43,38 +38,8 @@ export default function VisaDashboard() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let imageUrl = form.image || "";
-    let descriptionImageUrl = form.descriptionImage || "";
 
-    // If a new image is uploaded, use it
-    if (file) {
-      const formData = new FormData();
-      formData.append("file", file);
-      const res = await fetch("/api/upload", {
-        method: "POST",
-        body: formData,
-      });
-      const data = await res.json();
-      imageUrl = data.url;
-    }
-
-    // If a new description image is uploaded, use it
-    if (descFile) {
-      const formData = new FormData();
-      formData.append("file", descFile);
-      const res = await fetch("/api/upload", {
-        method: "POST",
-        body: formData,
-      });
-      const data = await res.json();
-      descriptionImageUrl = data.url;
-    }
-
-    const visaData = {
-      ...form,
-      image: imageUrl, // <-- always use the latest imageUrl
-      descriptionImage: descriptionImageUrl,
-    };
+    const visaData = { ...form };
 
     if (editingIndex !== null) {
       await fetch("/api/visas", {
@@ -106,12 +71,9 @@ export default function VisaDashboard() {
       metaKeywords: "",
       image: "",
     });
-    setFile(null);
-    setDescFile(null);
     setEditingIndex(null);
   };
 
-  // Show current image in the form when editing
   const handleEdit = (index) => {
     const v = visas[index];
     setForm({
@@ -129,7 +91,6 @@ export default function VisaDashboard() {
       image: v.image || "",
     });
     setEditingIndex(index);
-    setFile(null); // reset file input
   };
 
   const handleDelete = async (index) => {
@@ -193,26 +154,29 @@ export default function VisaDashboard() {
           onChange={handleChange}
           className="w-full p-2 border rounded"
         />
-        {/* Show current image if editing */}
+
+        {/* Image URL field */}
+        <input
+          type="text"
+          name="image"
+          placeholder="Main Image URL"
+          value={form.image}
+          onChange={handleChange}
+          className="w-full p-2 border rounded"
+        />
         {form.image && (
           <div className="mb-2">
             <Image
               src={form.image}
-              alt="Current Visa"
+              alt="Visa Image"
               width={120}
               height={80}
               style={{ objectFit: "cover", borderRadius: "8px" }}
               unoptimized
             />
-            <div className="text-xs text-gray-500">Current Image</div>
           </div>
         )}
-        <input
-          type="file"
-          accept="image/*"
-          onChange={handleFileChange}
-          className="w-full p-2 border rounded"
-        />
+
         <textarea
           name="description"
           placeholder="Main Heading Description"
@@ -221,11 +185,29 @@ export default function VisaDashboard() {
           className="w-full p-2 border rounded"
           rows="2"
         />
+
+        {/* Description image URL */}
         <input
-          type="file"
-          onChange={handleDescFileChange}
+          type="text"
+          name="descriptionImage"
+          placeholder="Description Image URL"
+          value={form.descriptionImage}
+          onChange={handleChange}
           className="w-full p-2 border rounded"
         />
+        {form.descriptionImage && (
+          <div className="mb-2">
+            <Image
+              src={form.descriptionImage}
+              alt="Description Image"
+              width={120}
+              height={80}
+              style={{ objectFit: "cover", borderRadius: "8px" }}
+              unoptimized
+            />
+          </div>
+        )}
+
         <textarea
           name="info"
           placeholder="Bottom Info Box Content (HTML allowed)"

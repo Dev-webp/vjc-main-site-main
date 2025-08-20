@@ -5,14 +5,19 @@ import path from "path";
 // Path to JSON file in project root
 const filePath = path.join(process.cwd(), "news-data.json");
 
-// Utility: read file
+// Utility: read file + auto-clean invalid entries
 function readNewsFile() {
   try {
     if (!fs.existsSync(filePath)) {
       fs.writeFileSync(filePath, JSON.stringify([])); // create file if missing
     }
     const data = fs.readFileSync(filePath, "utf-8");
-    return JSON.parse(data || "[]");
+    const parsed = JSON.parse(data || "[]");
+
+    // ✅ Clean out empty/bad entries
+    return parsed.filter(
+      (n) => n && typeof n === "object" && n.title?.trim() && n.slug?.trim()
+    );
   } catch (err) {
     console.error("Read error:", err);
     return [];
@@ -38,11 +43,20 @@ export async function GET() {
 export async function POST(req) {
   try {
     const body = await req.json();
+
+    if (!body.title?.trim() || !body.slug?.trim()) {
+      return NextResponse.json(
+        { error: "Title and slug are required" },
+        { status: 400 }
+      );
+    }
+
     let newsData = readNewsFile();
     newsData.push(body);
     writeNewsFile(newsData);
+
     return NextResponse.json(
-      { message: "News added", data: newsData },
+      { message: "News added", data: body },
       { status: 201 }
     );
   } catch (err) {
@@ -54,9 +68,9 @@ export async function POST(req) {
 export async function PUT(req) {
   try {
     const body = await req.json();
-    const { slug } = body; // now take slug from object
+    const { slug } = body;
 
-    if (!slug) {
+    if (!slug?.trim()) {
       return NextResponse.json({ error: "Slug required" }, { status: 400 });
     }
 
@@ -67,9 +81,7 @@ export async function PUT(req) {
       return NextResponse.json({ error: "News not found" }, { status: 404 });
     }
 
-    // overwrite with new object
-    newsData[index] = body;
-
+    newsData[index] = body; // overwrite
     writeNewsFile(newsData);
 
     return NextResponse.json(
@@ -81,21 +93,27 @@ export async function PUT(req) {
   }
 }
 
-
-// DELETE news by slug
+// DELETE news by slug (also removes empties)
 export async function DELETE(req) {
   try {
     const { slug } = await req.json();
-    if (!slug) {
-      return NextResponse.json({ error: "Slug required" }, { status: 400 });
-    }
 
     let newsData = readNewsFile();
-    newsData = newsData.filter((n) => n.slug !== slug);
+
+    if (slug?.trim()) {
+      // Normal delete by slug
+      newsData = newsData.filter((n) => n.slug !== slug);
+    } else {
+      // ✅ If no slug, remove ALL invalid/empty ones
+      newsData = newsData.filter(
+        (n) => n.title?.trim() && n.slug?.trim()
+      );
+    }
+
     writeNewsFile(newsData);
 
     return NextResponse.json(
-      { message: "Deleted", data: newsData },
+      { message: "Deleted successfully", data: newsData },
       { status: 200 }
     );
   } catch (err) {

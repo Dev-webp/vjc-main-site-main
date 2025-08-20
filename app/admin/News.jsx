@@ -13,19 +13,21 @@ export default function AdminNews() {
     readTime: "",
     content: "",
   });
-  const [editSlug, setEditSlug] = useState(null);
+  const [editSlug, setEditSlug] = useState(null); // original slug (for PUT)
 
   // ✅ Load all news
   const loadNews = async () => {
     try {
       const res = await fetch("/api/news");
-      const data = await res.json();
+      let data = await res.json();
 
-      // ensure content exists
-      const fixedData = data.map((n) => ({
-        ...n,
-        content: n.content || n.description || "",
-      }));
+      // ✅ ensure content + filter invalids
+      const fixedData = data
+        .map((n) => ({
+          ...n,
+          content: n.content || n.description || "",
+        }))
+        .filter((n) => n.title?.trim() && n.slug?.trim());
 
       setNews(fixedData);
     } catch (err) {
@@ -69,12 +71,15 @@ export default function AdminNews() {
 
   // ✅ Update news
   const handleUpdate = async () => {
-    const updatedNews = { ...form, slug: editSlug || slugify(form.title) };
-
-    if (!isValid(updatedNews)) {
+    if (!isValid(form)) {
       alert("⚠️ Title and Content are required.");
       return;
     }
+
+    const updatedNews = {
+      ...form,
+      slug: editSlug, // always keep original slug
+    };
 
     try {
       await fetch("/api/news", {
@@ -92,9 +97,12 @@ export default function AdminNews() {
 
   // ✅ Delete news
   const handleDelete = async (slug) => {
-    if (!slug) return;
-
-    if (!confirm("Are you sure you want to delete this news?")) return;
+    if (!slug) {
+      // cleanup of junk entries
+      if (!confirm("Delete empty/invalid entries?")) return;
+    } else {
+      if (!confirm("Are you sure you want to delete this news?")) return;
+    }
 
     try {
       await fetch("/api/news", {
@@ -119,7 +127,7 @@ export default function AdminNews() {
       readTime: n.readTime,
       content: n.content || n.description || "",
     });
-    setEditSlug(n.slug);
+    setEditSlug(n.slug); // store original slug
   };
 
   // ✅ Reset form
@@ -216,7 +224,7 @@ export default function AdminNews() {
         <ul className="space-y-3">
           {news.map((n) => (
             <li
-              key={n.slug}
+              key={n.slug || Math.random()} // safe fallback
               className="flex justify-between items-start border p-3 rounded bg-gray-50 shadow-sm"
             >
               <div>
