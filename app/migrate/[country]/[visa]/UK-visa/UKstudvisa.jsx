@@ -71,7 +71,7 @@ const Content = () => {
           </ul>
           <p className="mt-4 text-sm sm:text-base">
             For students looking to eventually{" "}
-            <Link href="https://vjcoverseas.com/migrate/united-kingdom" style={{ color: "orange", fontWeight: "bold" }}>
+            <Link href="https://www.vjcoverseas.com/migrate/united-kingdom" style={{ color: "orange", fontWeight: "bold" }}>
               Migrate to United Kingdom
             </Link>, the student visa can be a strategic first step toward building a future in the UK through work permits or{" "}
             <b style={{ color: "black" }}>skilled immigration</b>.

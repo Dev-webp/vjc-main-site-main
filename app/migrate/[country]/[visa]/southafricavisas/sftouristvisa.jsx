@@ -11,7 +11,7 @@ const Newzebusiness = () => {
           
           <p className="mb-4">
             Welcome to <b className="text-black font-semibold">VJC Overseas</b>, your trusted partner in obtaining a South Africa Tourist Visa with ease and efficiency. Whether you’re planning a short getaway, a thrilling adventure, or an immersive cultural experience, our expert services will ensure you meet all the requirements for a seamless travel experience. As one of the{" "}
-            <Link href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">
+            <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">
               Best Visa Immigration Consultants
             </Link>
             , we pride ourselves on delivering professional, reliable, and client-focused visa solutions.
@@ -32,7 +32,7 @@ const Newzebusiness = () => {
           <h2 className="text-1xl font-semibold mt-6">Why Visit South Africa?</h2>
           <p className="mb-4">
             South Africa is a destination that blends stunning natural beauty, rich cultural heritage, and thrilling activities. Whether you want to enjoy its bustling cities or peaceful landscapes, there’s something for every traveler. Many visitors eventually choose to{" "}
-            <Link href="https://vjcoverseas.com/migrate/south-africa/" className="text-orange-500 font-semibold">
+            <Link href="https://www.vjcoverseas.com/migrate/south-africa/" className="text-orange-500 font-semibold">
               Migrate to South Africa
             </Link>{" "}
             after experiencing its vibrant lifestyle and diverse opportunities.
@@ -61,7 +61,7 @@ const Newzebusiness = () => {
           <h2 className="text-1xl font-semibold mt-6">Job Opportunities in South Africa for Tourists</h2>
           <p className="mb-4">
             Some travelers explore short-term or seasonal work during their visit, often applying for a{" "}
-            <Link href="https://vjcoverseas.com/migrate/south-africa/general-work-visa" className="text-orange-500 font-semibold">
+            <Link href="https://www.vjcoverseas.com/migrate/south-africa/general-work-visa" className="text-orange-500 font-semibold">
               South Africa Work Visa
             </Link>{" "}
             if they decide to extend their stay.
@@ -100,7 +100,7 @@ const Newzebusiness = () => {
           <h2 className="text-1xl font-semibold mt-6">Ready to Explore South Africa?</h2>
           <p className="mb-4">
             Let{" "}
-            <Link href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">
+            <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">
               VJC Overseas
             </Link>{" "}
             handle the complexities of the visa process so you can focus on creating unforgettable memories. Whether you’re visiting for leisure, scouting business opportunities, or planning a longer stay, we ensure a smooth journey from start to finish.

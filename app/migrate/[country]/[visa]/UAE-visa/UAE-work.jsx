@@ -34,7 +34,7 @@ const UAEwork = () => {
         into your new life. Whether you are aiming for long-term career growth
         or seeking global exposure, our team will guide you at every step. It’s
         no wonder many of our clients regard us as one of the{" "}
-        <Link href="https://vjcoverseas.com/" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/" legacyBehavior>
           <a
             style={{
               color: "orange",
@@ -97,7 +97,7 @@ const UAEwork = () => {
 
       <p className="mb-6">
         Some professionals also explore other residency options such as the{" "}
-        <Link href="https://vjcoverseas.com/migrate/uae/golden-visa" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/migrate/uae/golden-visa" legacyBehavior>
           <a style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}>
             UAE Golden Visa
           </a>
@@ -149,7 +149,7 @@ const UAEwork = () => {
         employment options, our team provides end-to-end assistance to make
         your relocation smooth and hassle-free. Take the next step in your
         career and{" "}
-        <Link href="https://vjcoverseas.com/migrate/uae" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/migrate/uae" legacyBehavior>
           <a
             style={{
               color: "orange",
@@ -259,7 +259,7 @@ const UAEwork = () => {
 
       <p className="mb-6">
         For students aiming to work part-time while studying,{" "}
-        <Link href="https://vjcoverseas.com/study-abroad/uae" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/study-abroad/uae" legacyBehavior>
           <a
             style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}
           >
@@ -304,7 +304,7 @@ const UAEwork = () => {
       <h3 className="text-black m-2 font-bold text-lg mb-6">Start Your UAE Career Journey Today</h3>
       <p className="mb-6">
         If you’re ready to explore professional opportunities in the UAE, let{" "}
-        <Link href="https://vjcoverseas.com" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com" legacyBehavior>
           <a
             style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}
           >

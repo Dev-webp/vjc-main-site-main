@@ -36,7 +36,7 @@ const Newzebusiness = () => {
 
             <p className="mb-6">
                 At <Keyword>VJC Overseas</Keyword>, we not only specialize in General Work Visa applications but are also recognized among the{" "}
-                <Link href="https://vjcoverseas.com/" className="text-orange-500">
+                <Link href="https://www.vjcoverseas.com/" className="text-orange-500">
                     <Keyword>Best Visa Immigration Consultants</Keyword>
                 </Link>{" "}
                 for South Africa and other global destinations. Our team ensures that every applicant receives personalized attention, helping them navigate the complex visa process with ease.
@@ -45,7 +45,7 @@ const Newzebusiness = () => {
             <h3 className="text-black m-2 font-bold text-lg mb-6">What is the <Keyword>South Africa General Work Visa</Keyword>?</h3>
             <p className="mb-6">
                 The <Keyword>South Africa General Work Visa</Keyword> allows foreign nationals to work in the country for up to five years. It is best suited for professionals with specialized skills that are in high demand by South African employers. Many applicants also explore alternative routes such as the{" "}
-                <Link href="https://vjcoverseas.com/migrate/south-africa/critical-skills-visa" className="text-orange-500">
+                <Link href="https://www.vjcoverseas.com/migrate/south-africa/critical-skills-visa" className="text-orange-500">
                     <Keyword>South Africa Critical Skills Visa</Keyword>
                 </Link>
                 , depending on their profession and qualifications.
@@ -99,7 +99,7 @@ const Newzebusiness = () => {
 
             <p className="mb-6">
                 If your long-term goal is to{" "}
-                <Link href="https://vjcoverseas.com/migrate/south-africa/" className="text-orange-500">
+                <Link href="https://www.vjcoverseas.com/migrate/south-africa/" className="text-orange-500">
                     <Keyword>Migrate to South Africa</Keyword>
                 </Link>
                 , the <Keyword>General Work Visa</Keyword> can be a crucial first step toward permanent residency and career advancement.
@@ -108,7 +108,7 @@ const Newzebusiness = () => {
             <h3 className="text-black m-2 font-bold text-lg mb-6">Start Your Career in South Africa Today</h3>
             <p className="mb-6">
                 South Africa offers a strong economy, promising career prospects, and a high quality of life.{" "}
-                <Link href="https://vjcoverseas.com/" className="text-orange-500">
+                <Link href="https://www.vjcoverseas.com/" className="text-orange-500">
                     <Keyword>VJC Overseas</Keyword>
                 </Link>{" "}
                 is committed to turning your professional dreams into reality with unmatched guidance and transparent services.

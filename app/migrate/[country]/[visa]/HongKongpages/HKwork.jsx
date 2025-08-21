@@ -193,7 +193,7 @@ const Content = () => {
         Please note that fees are subject to change, and there may be additional
         charges depending on the processing requirements. For trusted advice,
         consult the{" "}
-        <KeywordLink href="https://vjcoverseas.com/">
+        <KeywordLink href="https://www.vjcoverseas.com/">
           Best Visa Immigration Consultants
         </KeywordLink>
         .
@@ -228,7 +228,7 @@ const Content = () => {
       <p style={{ marginBottom: "20px" }}>
         Are you ready to take the next step in your career by working in Hong
         Kong? Contact{" "}
-        <KeywordLink href="https://vjcoverseas.com/">VJC Overseas</KeywordLink>{" "}
+        <KeywordLink href="https://www.vjcoverseas.com/">VJC Overseas</KeywordLink>{" "}
         today for expert assistance with your Hong Kong work visa application.
         Let us help you make your Hong Kong dream a reality!
       </p>

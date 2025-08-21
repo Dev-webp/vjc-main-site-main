@@ -16,7 +16,7 @@ const Newzebusiness = () => {
                     VJC Overseas
                 </span>
                 , your trusted partner in navigating the process of obtaining a South Africa Business Visa. Whether you're an investor, entrepreneur, or business professional looking to expand your operations or launch a venture in South Africa, we are here to guide you every step of the way. As one of the{" "}
-                <Link href="https://vjcoverseas.com/" className="text-orange-500">
+                <Link href="https://www.vjcoverseas.com/" className="text-orange-500">
                     Best Visa Immigration Consultants
                 </Link>
                 , we combine expertise with personalized service to ensure your visa journey is seamless.
@@ -25,7 +25,7 @@ const Newzebusiness = () => {
             <h2 className="text-1xl font-semibold mt-6">Why Choose South Africa for Your Business?</h2>
             <p className="mb-4">
                 South Africa is one of the most dynamic economies on the African continent and a gateway to opportunities across the Southern African Development Community (SADC). As a thriving hub for international trade, innovation, and industry, South Africa offers unmatched potential for business growth and expansion. Many entrepreneurs also consider options to{" "}
-                <Link href="https://vjcoverseas.com/migrate/south-africa/" className="text-orange-500">
+                <Link href="https://www.vjcoverseas.com/migrate/south-africa/" className="text-orange-500">
                     Migrate to South Africa
                 </Link>{" "}
                 to secure long-term residency while building their enterprises.
@@ -46,7 +46,7 @@ const Newzebusiness = () => {
             <h2 className="text-1xl font-semibold mt-6">South Africa Business Visa Overview</h2>
             <p className="mb-4">
                 The South African Business Visa is designed for foreign nationals who wish to enter South Africa for the purpose of running or investing in a business. This visa is granted to entrepreneurs, investors, and those who plan to start or buy a business in the country. In some cases, applicants transition from a{" "}
-                <Link href="https://vjcoverseas.com/migrate/south-africa/general-work-visa" className="text-orange-500">
+                <Link href="https://www.vjcoverseas.com/migrate/south-africa/general-work-visa" className="text-orange-500">
                     South Africa Work Visa
                 </Link>{" "}
                 to a Business Visa as their career and investment goals evolve.
@@ -112,7 +112,7 @@ const Newzebusiness = () => {
             <h2 className="text-1xl font-semibold mt-6">Start Your Journey to Success</h2>
             <p className="mb-4">
                 Ready to take your business to the next level?{" "}
-                <Link href="https://vjcoverseas.com/" className="text-orange-500">
+                <Link href="https://www.vjcoverseas.com/" className="text-orange-500">
                     VJC Overseas
                 </Link>{" "}
                 is committed to helping entrepreneurs achieve their dreams in South Africa. From initial consultation to business launch, we provide expert guidance every step of the way.

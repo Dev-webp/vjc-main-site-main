@@ -20,7 +20,7 @@ const USAstud = () => {
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <h3 className="text-2xl font-bold text-center text-black mb-4">
         <b>USA Student Visa</b> –{" "}
-        <Link href="https://vjcoverseas.com/" className="text-orange-600">
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-600">
           VJC Overseas
         </Link>
       </h3>
@@ -122,7 +122,7 @@ const USAstud = () => {
       </ul>
       <p className="mb-6 m-2">
         Our experts at{" "}
-        <Link href="https://vjcoverseas.com/" className="text-orange-600">
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-600">
           VJC Overseas
         </Link>{" "}
         help students identify cost-effective programs and explore scholarships,
@@ -192,7 +192,7 @@ const USAstud = () => {
         If you're not yet ready to study but want to explore academic events in
         the U.S., you can apply for a{" "}
         <Link
-          href="https://vjcoverseas.com/visit-visas/usa"
+          href="https://www.vjcoverseas.com/visit-visas/usa"
           className="text-orange-600"
         >
           USA Visit Visa
@@ -204,7 +204,7 @@ const USAstud = () => {
         Why Trust VJC Overseas?
       </h3>
       <p className="mb-6 m-2">
-        <Link href="https://vjcoverseas.com/" className="text-orange-600">
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-600">
           Best Visa Immigration Consultants
         </Link>{" "}
         like <b>VJC Overseas</b> offer:

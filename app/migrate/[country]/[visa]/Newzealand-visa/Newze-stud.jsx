@@ -29,7 +29,7 @@ const Newzestud = () => {
       </p>
 
       <p>
-        At <a href="https://vjcoverseas.com/" style={{ color: "orange" }}>VJC Overseas</a>, we understand the significance of a smooth visa
+        At <a href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>VJC Overseas</a>, we understand the significance of a smooth visa
         application process. Our experienced team is here to guide you through
         every step of applying for a New Zealand Student Visa, ensuring that you
         meet all the requirements and increase your chances of approval.
@@ -81,7 +81,7 @@ const Newzestud = () => {
       </h3>
       <p className="mb-6">
         There are several types of student visas based on the duration of your
-        course and other factors. Many students who later aim for <a href="https://vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>New Zealand Permanent Residency</a> start with these visa types:
+        course and other factors. Many students who later aim for <a href="https://www.vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>New Zealand Permanent Residency</a> start with these visa types:
       </p>
       <ul className="list-decimal mb-6 ml-8">
         <li>
@@ -185,7 +185,7 @@ const Newzestud = () => {
       </p>
       <h3 className="text-black m-2 font-bold text-lg mb-6">Processing Time</h3>
       <p className="mb-6">
-        The processing time for a <a href="https://vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>Migrate to New Zealand</a> Permanent Resident Visa typically
+        The processing time for a <a href="https://www.vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>Migrate to New Zealand</a> Permanent Resident Visa typically
         takes between 4 to 6 months from the date of submission, depending on
         the complexity of your application and the volume of applications being
         processed at that time. While processing times may vary, our experienced
@@ -196,7 +196,7 @@ const Newzestud = () => {
         Why Choose VJC Overseas?
       </h3>
       <p className="mb-6">
-        Choosing the <a href="https://vjcoverseas.com/" style={{ color: "orange" }}>Best Visa Immigration Consultants</a> can make all the difference in your
+        Choosing the <a href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>Best Visa Immigration Consultants</a> can make all the difference in your
         success rate.
       </p>
       <ul className="list-decimal mb-6 ml-8">

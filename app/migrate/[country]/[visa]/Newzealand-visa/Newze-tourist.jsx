@@ -29,7 +29,7 @@ const Newzetourist = () => {
         or immerse yourself in the rich Maori heritage, a New Zealand Tourist
         Visa is the first step toward making your dream vacation come true.{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", textDecoration: "none" }}
         >
           Best Visa Immigration Consultants
@@ -39,7 +39,7 @@ const Newzetourist = () => {
       <p className="mb-6">
         At{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", textDecoration: "none" }}
         >
           VJC Overseas
@@ -70,7 +70,7 @@ const Newzetourist = () => {
         New Zealand offers a range of visas based on the nature of your visit,
         including:{" "}
         <a
-          href="https://vjcoverseas.com/pr-visas/new-zealand-pr"
+          href="https://www.vjcoverseas.com/pr-visas/new-zealand-pr"
           style={{ color: "orange", textDecoration: "none" }}
         >
           New Zealand Permanent Residency
@@ -147,7 +147,7 @@ const Newzetourist = () => {
         approximate fees are as follows. Many migrants choose this visa before
         they{" "}
         <a
-          href="https://vjcoverseas.com/migrate/new-zealand"
+          href="https://www.vjcoverseas.com/migrate/new-zealand"
           style={{ color: "orange", textDecoration: "none" }}
         >
           Migrate to New Zealand

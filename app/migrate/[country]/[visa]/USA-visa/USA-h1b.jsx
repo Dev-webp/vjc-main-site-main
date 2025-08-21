@@ -119,10 +119,10 @@ const USAh1b = () => {
         </ul>
 
         <h3 className="font-bold text-lg mb-2">Considering Other Visa Options?</h3>
-        <p className="mb-4">If you're planning a short visit or business trip to the U.S., explore the <Link href="https://vjcoverseas.com/visit-visas/usa"><span style={{ color: "orange" }}>USA Visit Visa</span></Link>. For those looking to pursue education, check the <Link href="https://vjcoverseas.com/migrate/united-states/student-visa"><span style={{ color: "orange" }}>USA Study Visa</span></Link> page for detailed guidance on F1 and M1 visas.</p>
+        <p className="mb-4">If you're planning a short visit or business trip to the U.S., explore the <Link href="https://www.vjcoverseas.com/visit-visas/usa"><span style={{ color: "orange" }}>USA Visit Visa</span></Link>. For those looking to pursue education, check the <Link href="https://www.vjcoverseas.com/migrate/united-states/student-visa"><span style={{ color: "orange" }}>USA Study Visa</span></Link> page for detailed guidance on F1 and M1 visas.</p>
 
         <h3 className="font-bold text-lg mb-2">Why Choose Best Visa Immigration Consultants?</h3>
-        <p className="mb-4">As one of the <Link href="https://vjcoverseas.com/"><span style={{ color: "orange" }}>Best Visa Immigration Consultants</span></Link> in the field, <b>VJC Overseas</b> ensures every detail of your <b>H1B</b> application is thoroughly handled. We offer:</p>
+        <p className="mb-4">As one of the <Link href="https://www.vjcoverseas.com/"><span style={{ color: "orange" }}>Best Visa Immigration Consultants</span></Link> in the field, <b>VJC Overseas</b> ensures every detail of your <b>H1B</b> application is thoroughly handled. We offer:</p>
         <ul className="list-disc ml-6 mb-4">
           <li>Step-by-step document preparation</li>
           <li>Filing and registration support</li>

@@ -13,7 +13,7 @@ const UAEgolden = () => {
       }}
     >
       <div style={{ marginBottom: "5%" }}>
-        <h3 className="text-2xl mt-4 font-semibold text-black text-center font-bold">
+        <h3 className="text-2xl mt-4  text-black text-center font-bold">
           UAE Golden Visa: Everything You Need to Know -{" "}
           <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
         </h3>
@@ -25,7 +25,7 @@ const UAEgolden = () => {
         navigate the process of securing long-term residency in one of the most
         dynamic and prosperous regions in the world – the{" "}
         <a
-          href="https://vjcoverseas.com/migrate/uae"
+          href="https://www.vjcoverseas.com/migrate/uae"
           style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}
         >
           Migrate To UAE
@@ -38,7 +38,7 @@ const UAEgolden = () => {
       <p className="mb-6 m-2">
         If you are seeking expert guidance, partnering with the{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}
         >
           Best Visa Immigration Consultants
@@ -63,7 +63,7 @@ const UAEgolden = () => {
         This initiative aligns with the UAE’s vision of becoming a leading
         global hub for business, innovation, and talent. For individuals who{" "}
         <a
-          href="https://vjcoverseas.com/study-abroad/uae"
+          href="https://www.vjcoverseas.com/study-abroad/uae"
           style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}
         >
           Study In UAE
@@ -170,7 +170,7 @@ const UAEgolden = () => {
       <p className="mb-6 m-2">
         For those considering long-term employment, securing a{" "}
         <a
-          href="https://vjcoverseas.com/migrate/uae/work-visa"
+          href="https://www.vjcoverseas.com/migrate/uae/work-visa"
           style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}
         >
           UAE Work Visa
@@ -260,7 +260,7 @@ const UAEgolden = () => {
       <p className="mb-6 m-2">
         Secure your future in the UAE today with{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}
         >
           VJC Overseas

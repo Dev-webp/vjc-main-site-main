@@ -75,7 +75,7 @@ const Content = () => {
 
       <p style={{ marginBottom: "20px", fontSize: "18px", color: "rgb(3, 60, 65)" }}>
         Looking for global career growth, world-class living, and access to Asia’s top financial hub? Migrating to Hong Kong gives you a unique advantage — blending vibrant city life, robust economic opportunity, and excellent public services in one of the safest and most modern cities in the world. Partnering with{" "}
-        <Link href="https://vjcoverseas.com/" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/" legacyBehavior>
           <a
             style={{
               color: "#ea580c",
@@ -270,7 +270,7 @@ const Content = () => {
       </h3>
       <p style={{ fontSize: "18px", color: "rgb(3, 60, 65)" }}>
         Whether your goal is career advancement, entrepreneurship, or education,{" "}
-        <KeywordLink href="https://vjcoverseas.com/">
+        <KeywordLink href="https://www.vjcoverseas.com/">
           VJC Overseas
         </KeywordLink>{" "}
         can guide you from application to arrival. Begin your migration process today and step into a future of opportunities in one of the most dynamic cities in the world. Explore more about{" "}

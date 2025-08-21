@@ -29,7 +29,7 @@ const Content = () => {
         Kingdom stands as one of the most attractive destinations for
         entrepreneurs, investors, and corporate professionals. A{" "}
         <Link
-          href="https://vjcoverseas.com/migrate/united-kingdom"
+          href="https://www.vjcoverseas.com/migrate/united-kingdom"
           style={{ color: "orange" }}
         >
           Migrate to United Kingdom

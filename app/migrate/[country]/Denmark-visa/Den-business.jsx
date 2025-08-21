@@ -25,7 +25,7 @@ const Denbusiness = () => {
         lifestyle that blends excellent career opportunities with a strong
         sense of community. At{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{
             color: "rgb(220, 4, 4)",
             fontWeight: "bold",
@@ -129,7 +129,7 @@ const Denbusiness = () => {
         <p className="mb-6">
           For international students,{" "}
           <a
-            href="https://vjcoverseas.com/study-abroad/denmark"
+            href="https://www.vjcoverseas.com/study-abroad/denmark"
             style={{
               color: "rgb(220, 4, 4)",
               fontWeight: "bold",
@@ -216,7 +216,7 @@ const Denbusiness = () => {
         <p className="mb-6">
           As one of the{" "}
           <a
-            href="https://vjcoverseas.com/"
+            href="https://www.vjcoverseas.com/"
             style={{
               color: "rgb(220, 4, 4)",
               fontWeight: "bold",

@@ -32,7 +32,7 @@ const Newzedepen = () => {
         beautiful country while you continue your stay. For expert assistance,
         trust{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", fontWeight: "bold" }}
           target="_blank"
           rel="noopener noreferrer"
@@ -120,7 +120,7 @@ const Newzedepen = () => {
           <b>Pathway to Residency: </b>For many families, the Dependant Visa is
           a first step towards permanent residency in{" "}
           <a
-            href="https://vjcoverseas.com/pr-visas/new-zealand-pr"
+            href="https://www.vjcoverseas.com/pr-visas/new-zealand-pr"
             style={{ color: "orange", fontWeight: "bold" }}
             target="_blank"
             rel="noopener noreferrer"
@@ -183,7 +183,7 @@ const Newzedepen = () => {
         accurate fee information, consult with an immigration advisor or visit
         the official New Zealand Immigration website. If you want to{" "}
         <a
-          href="https://vjcoverseas.com/pr-visas/new-zealand-pr"
+          href="https://www.vjcoverseas.com/pr-visas/new-zealand-pr"
           style={{ color: "orange", fontWeight: "bold" }}
           target="_blank"
           rel="noopener noreferrer"
@@ -192,7 +192,7 @@ const Newzedepen = () => {
         </a>{" "}
         or explore opportunities to{" "}
         <a
-          href="https://vjcoverseas.com/migrate/new-zealand"
+          href="https://www.vjcoverseas.com/migrate/new-zealand"
           style={{ color: "orange", fontWeight: "bold" }}
           target="_blank"
           rel="noopener noreferrer"
@@ -270,7 +270,7 @@ const Newzedepen = () => {
       <p className="mb-6">
         At{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", fontWeight: "bold" }}
           target="_blank"
           rel="noopener noreferrer"

@@ -210,7 +210,7 @@ const Content = () => {
         startup or grow an existing business, the UK provides a platform to
         transform your vision into reality. If your long-term plan is to{" "}
         <a
-          href="https://vjcoverseas.com/migrate/united-kingdom"
+          href="https://www.vjcoverseas.com/migrate/united-kingdom"
           style={{ color: "orange", fontWeight: "bold" }}
         >
           Migrate to United Kingdom

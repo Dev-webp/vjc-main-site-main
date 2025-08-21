@@ -26,18 +26,18 @@ const Newzework = () => {
         your career in a country renowned for its innovative industries, strong
         economy, and welcoming people. Whether your goal is temporary employment,
         long-term work, or even a pathway to{" "}
-        <Link href="https://vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>
           New Zealand Permanent Residency
         </Link>
         , our expert team can guide you at every stage.
       </p>
       <p className="mb-6">
         At{" "}
-        <Link href="https://vjcoverseas.com/" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>
           VJC Overseas
         </Link>
         , recognized as one of the{" "}
-        <Link href="https://vjcoverseas.com/" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>
           Best Visa Immigration Consultants
         </Link>
         , we make the visa application process smooth, straightforward, and
@@ -88,7 +88,7 @@ const Newzework = () => {
         <li className="mb-6">
           <b>Residence Visa (Skilled Migrant Category) </b>
           – For skilled workers seeking to{" "}
-          <Link href="https://vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>
+          <Link href="https://www.vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>
             Migrate to New Zealand
           </Link>{" "}
           permanently.

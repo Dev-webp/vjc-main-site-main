@@ -26,11 +26,11 @@ const Newzepr = () => {
         attracted by the stunning landscapes, the vibrant culture, or the high quality of life, a{" "}
         <b style={{ color: "black" }}>New Zealand Permanent Residency visa</b>
         {" "}allows you to live, work, and study indefinitely in this beautiful country. At{" "}
-        <Link href="https://vjcoverseas.com/" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>
           <b>VJC Overseas</b>
         </Link>
         , recognized among the{" "}
-        <Link href="https://vjcoverseas.com/" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>
           <b>Best Visa Immigration Consultants</b>
         </Link>
         , we guide you through the entire process, ensuring a smooth and hassle-free application.
@@ -82,7 +82,7 @@ const Newzepr = () => {
         </li>
         <li>
           <b>Ongoing Commitment: </b>You must show your commitment to{" "}
-          <Link href="https://vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>
+          <Link href="https://www.vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>
             <b>Migrate to New Zealand</b>
           </Link>
           , such as having spent time in the country and maintaining a stable job or business.
@@ -114,7 +114,7 @@ const Newzepr = () => {
       <h3 className="text-black m-2 font-bold text-lg mb-6">Visa Fees</h3>
       <p className="mb-6">
         The application fees for the{" "}
-        <Link href="https://vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>
           <b>New Zealand Permanent Resident Visa</b>
         </Link>{" "}
         can vary depending on the specific circumstances of your application. As of now, the typical fee structure is as

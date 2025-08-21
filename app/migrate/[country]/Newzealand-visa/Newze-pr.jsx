@@ -16,18 +16,18 @@ const Newzepr = () => {
 
       <p className="mb-4 text-gray-700">
         Dreaming of a fresh start in a peaceful, progressive, and naturally stunning country?{" "}
-        <Link href="https://vjcoverseas.com/pr-visas/new-zealand-pr" className="text-orange-600 font-semibold">
+        <Link href="https://www.vjcoverseas.com/pr-visas/new-zealand-pr" className="text-orange-600 font-semibold">
           New Zealand Permanent Residency
         </Link>{" "}
         opens the door to world-class career opportunities, excellent education, and a safe lifestyle for you and your family. New Zealand offers more than just breathtaking landscapes — it’s a place to build a future, raise a family, and grow your career.
       </p>
       <p className="mb-4 text-gray-700">
         If you’re looking for guidance from{" "}
-        <Link href="https://vjcoverseas.com/" className="text-orange-600 font-semibold">
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-semibold">
           Best Visa Immigration Consultants
         </Link>
         , our experts at{" "}
-        <Link href="https://vjcoverseas.com/" className="text-orange-600 font-semibold">
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-semibold">
           VJC Overseas
         </Link>{" "}
         ensure your migration journey is smooth, transparent, and stress-free from start to finish.
@@ -109,7 +109,7 @@ const Newzepr = () => {
       <h3 className='text-orange-600 font-bold text-lg mb-3'>Ready to Migrate to New Zealand?</h3>
       <p className='mb-4 text-gray-700'>
         Whether you are applying for skilled migration, a student visa, or a{" "}
-        <Link href="https://vjcoverseas.com/migrate/new-zealand/work-visa" className="text-orange-600 font-semibold">
+        <Link href="https://www.vjcoverseas.com/migrate/new-zealand/work-visa" className="text-orange-600 font-semibold">
           New Zealand Work visa
         </Link>
         , our experienced team will guide you at every step. Now is the perfect time to begin your journey to a better life in New Zealand. Get a <b className="text-sky-600">free eligibility check</b>, explore your best visa options, and let our experts take care of the rest.

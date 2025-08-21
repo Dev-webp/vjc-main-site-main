@@ -18,7 +18,7 @@ const USAinvestor = () => {
         The USA offers several visa options for individuals wishing to invest in its economy, create jobs, and live in the United States. One of the most popular options for foreign investors is the <b>EB-5 Immigrant Investor Visa Program</b>. This program allows eligible foreign nationals to obtain a <Link href="https://www.vjcoverseas.com/pr-visas/usa-green-card" className="text-orange-600">U.S. Permanent Residency</Link> by making a qualifying investment in a U.S. business that creates or preserves jobs for U.S. workers.
       </p>
       <p className="text-black m-2 mb-6">
-        At <Link href="https://vjcoverseas.com/" className="text-orange-600"><b>VJC Overseas</b></Link>, we provide expert guidance and support to investors looking to navigate the complexities of the EB-5 visa process, ensuring a smooth and successful immigration journey.
+        At <Link href="https://www.vjcoverseas.com/" className="text-orange-600"><b>VJC Overseas</b></Link>, we provide expert guidance and support to investors looking to navigate the complexities of the EB-5 visa process, ensuring a smooth and successful immigration journey.
       </p>
 
       <div className="flex mb-6 flex-col justify-center lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -44,7 +44,7 @@ const USAinvestor = () => {
       </ul>
 
       <h4 className="mb-6 m-2 text-sky-700">USA Investor Visa Eligibility Requirements</h4>
-      <p>To qualify for the USA Investor Visa (EB-5), applicants must meet specific criteria and unlike the <Link href="https://vjcoverseas.com/visit-visas/usa" className="text-orange-600">USA Visit Visa</Link>, this visa is focused on long-term investments and immigration.</p>
+      <p>To qualify for the USA Investor Visa (EB-5), applicants must meet specific criteria and unlike the <Link href="https://www.vjcoverseas.com/visit-visas/usa" className="text-orange-600">USA Visit Visa</Link>, this visa is focused on long-term investments and immigration.</p>
       <ul className='ml-8 mb-6 list-decimal'>
         <li><b>Investment Amount:</b></li>
         <ul style={{listStyleType:"circle"}} className='m-2 mb-6 ml-8'>
@@ -113,7 +113,7 @@ const USAinvestor = () => {
         <li><b>Expert Guidance:</b> With years of experience, our team at <b>VJC Overseas</b> provides tailored guidance to ensure you understand every step of the EB-5 process.</li>
         <li><b>Full-Service Support:</b> From document preparation and investment analysis to post-visa assistance, we help manage the entire process.</li>
         <li><b>Success Track Record:</b> We pride ourselves on our strong track record of helping clients successfully navigate the complex U.S. immigration system.</li>
-        <li><b>Comprehensive Legal Assistance:</b>We collaborate with trusted U.S. immigration attorneys to ensure your petition is as strong as possible. If you’re searching for <Link href="https://vjcoverseas.com/" className="text-orange-600">Best Visa Immigration Consultants</Link>, we’re here to help.</li>
+        <li><b>Comprehensive Legal Assistance:</b>We collaborate with trusted U.S. immigration attorneys to ensure your petition is as strong as possible. If you’re searching for <Link href="https://www.vjcoverseas.com/" className="text-orange-600">Best Visa Immigration Consultants</Link>, we’re here to help.</li>
       </ul>
 
       <p className='mb-6 m-2'>At <b>VJC Overseas</b>, we are committed to helping you achieve your U.S. residency goals through investment. Whether you are an experienced investor or a first-time applicant, we will guide you through the entire EB-5 visa process with confidence.</p>

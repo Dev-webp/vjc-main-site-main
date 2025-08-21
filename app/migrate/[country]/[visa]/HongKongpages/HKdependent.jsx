@@ -43,7 +43,7 @@ const Content = () => {
           <p style={{ marginBottom: "20px" }}>
             With years of expertise and recognition as one of the{" "}
             <Link
-              href="https://vjcoverseas.com/"
+              href="https://www.vjcoverseas.com/"
               className={noUnderlineLinkClass}
               target="_blank"
               rel="noopener noreferrer"
@@ -294,7 +294,7 @@ const Content = () => {
           >
             Call us today at +91-9160449000 or visit our website{" "}
             <Link
-              href="https://vjcoverseas.com/"
+              href="https://www.vjcoverseas.com/"
               className={noUnderlineLinkClass}
               target="_blank"
               rel="noopener noreferrer"

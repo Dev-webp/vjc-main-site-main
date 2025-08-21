@@ -33,7 +33,7 @@ const UAEstud = () => {
           <b className="font-bold text-black">VJC Overseas</b>
           , one of the{" "}
           <a
-            href="https://vjcoverseas.com/"
+            href="https://www.vjcoverseas.com/"
             className="font-bold text-orange-600 no-underline"
           >
             Best Visa Immigration Consultants
@@ -95,7 +95,7 @@ const UAEstud = () => {
           explore study options, such as enrolling in top universities under
           the{" "}
           <a
-            href="https://vjcoverseas.com/study-abroad/uae"
+            href="https://www.vjcoverseas.com/study-abroad/uae"
             className="font-bold text-orange-600 no-underline"
           >
             Study in UAE
@@ -131,7 +131,7 @@ const UAEstud = () => {
         <p className="mb-4 text-gray-800">
           If your goal is career advancement, the{" "}
           <a
-            href="https://vjcoverseas.com/migrate/uae/work-visa"
+            href="https://www.vjcoverseas.com/migrate/uae/work-visa"
             className="font-bold text-orange-600 no-underline"
           >
             UAE Work Visa
@@ -218,7 +218,7 @@ const UAEstud = () => {
         <p className="mb-4 text-gray-800">
           The UAE is more than a destination — it’s a platform for success.{" "}
           <a
-            href="https://vjcoverseas.com/"
+            href="https://www.vjcoverseas.com/"
             className="font-bold text-orange-600 no-underline"
           >
             VJC Overseas

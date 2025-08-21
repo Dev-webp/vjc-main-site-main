@@ -28,7 +28,7 @@ const Content = () => {
         Kong Student Visa is your ticket to a truly international academic
         experience. When applying through{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-600 font-bold"
           style={{ textDecoration: "none" }}
         >
@@ -139,7 +139,7 @@ const Content = () => {
         <li>
           Submit your application to the{" "}
           <Link
-            href="https://vjcoverseas.com/migrate/hong-kong"
+            href="https://www.vjcoverseas.com/migrate/hong-kong"
             className="text-orange-600 font-bold"
             style={{ textDecoration: "none" }}
           >
@@ -243,7 +243,7 @@ const Content = () => {
       >
         Ready to take the next step? With{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-600 font-bold"
           style={{ textDecoration: "none" }}
         >

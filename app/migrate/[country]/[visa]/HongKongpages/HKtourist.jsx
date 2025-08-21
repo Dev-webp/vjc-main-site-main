@@ -44,7 +44,7 @@ const Content = () => {
       <p style={{ marginBottom: "20px" }}>
         Recognized among the{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className={noUnderlineLinkClass}
           target="_blank"
           rel="noopener noreferrer"
@@ -192,7 +192,7 @@ const Content = () => {
         Your Hong Kong adventure starts with a well-prepared visa application.
         Contact{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-600 font-bold  hover:no-underline"
           target="_blank"
           rel="noopener noreferrer"

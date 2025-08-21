@@ -19,7 +19,7 @@ const Content = () => {
           Hong Kong Employment Visa -{" "}
           <span style={{ color: "rgb(220, 4, 4)" }}>
             <Link
-              href="https://vjcoverseas.com/"
+              href="https://www.vjcoverseas.com/"
               className="text-orange-600 font-bold"
               style={{ textDecoration: "none" }}
             >
@@ -36,7 +36,7 @@ const Content = () => {
         technology, or another field, obtaining an Employment Visa for Hong Kong
         is an essential step. At{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-600 font-bold"
           style={{ textDecoration: "none" }}
         >
@@ -83,7 +83,7 @@ const Content = () => {
         specialised fields. For those who wish to settle long-term, an
         Employment Visa can be the first step before deciding to{" "}
         <Link
-          href="https://vjcoverseas.com/migrate/hong-kong"
+          href="https://www.vjcoverseas.com/migrate/hong-kong"
           className="text-orange-600 font-bold"
           style={{ textDecoration: "none" }}
         >
@@ -237,7 +237,7 @@ const Content = () => {
         Securing a Hong Kong Employment Visa is a rewarding step toward building
         a successful international career. With the expert guidance of{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-600 font-bold"
           style={{ textDecoration: "none" }}
         >

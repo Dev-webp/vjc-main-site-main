@@ -15,7 +15,7 @@ const USAbusiness = () => {
             </div>
             <h3 className='mb-6 m-2 font-bold'>USA Business Visa: Your Gateway to Global Opportunities</h3>
             <p className="text-black m-2  mb-6">
-                At <Link href="https://vjcoverseas.com/"><span style={{ color: 'orange' }}><b>VJC Overseas</b></span></Link>, we understand the immense value of international business opportunities. If you are a business professional, entrepreneur, or investor looking to expand your reach in the United States, a U.S. Business Visa is essential for accessing the vast market and exploring new commercial avenues. Our expert team is here to guide you through every step of the application process to ensure a smooth and successful visa approval.
+                At <Link href="https://www.vjcoverseas.com/"><span style={{ color: 'orange' }}><b>VJC Overseas</b></span></Link>, we understand the immense value of international business opportunities. If you are a business professional, entrepreneur, or investor looking to expand your reach in the United States, a U.S. Business Visa is essential for accessing the vast market and exploring new commercial avenues. Our expert team is here to guide you through every step of the application process to ensure a smooth and successful visa approval.
             </p>
 
             <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -129,7 +129,7 @@ const USAbusiness = () => {
 
             <h4 className="mb-6 m-2 font-bold text-black">How VJC Overseas Can Help</h4>
             <p className='m-2 mb-6'>
-                Navigating the process of obtaining a USA Business Visa can be complex and time-consuming. At <b style={{ color: "black" }}>VJC Overseas</b>, we specialize in providing comprehensive visa consultation services, helping you identify the best visa option for your business needs. From assisting with paperwork and documentation to preparing for interviews and ensuring compliance with U.S. immigration policies, we are committed to supporting you every step of the way. We are among the <Link href="https://vjcoverseas.com/"><span style={{ color: 'orange' }}>Best visa immigration consultants</span></Link> trusted by thousands.
+                Navigating the process of obtaining a USA Business Visa can be complex and time-consuming. At <b style={{ color: "black" }}>VJC Overseas</b>, we specialize in providing comprehensive visa consultation services, helping you identify the best visa option for your business needs. From assisting with paperwork and documentation to preparing for interviews and ensuring compliance with U.S. immigration policies, we are committed to supporting you every step of the way. We are among the <Link href="https://www.vjcoverseas.com/"><span style={{ color: 'orange' }}>Best visa immigration consultants</span></Link> trusted by thousands.
             </p>
             <p className='m-2 mb-6 font-bold'>Contact <b style={{ color: "black" }}>VJC Overseas</b> today to begin your journey toward new business opportunities in the United States!</p>
         </div>

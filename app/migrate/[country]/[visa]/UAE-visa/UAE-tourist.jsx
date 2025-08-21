@@ -27,7 +27,7 @@ const UAEtourist = () => {
         meeting, or exploring educational opportunities such as{" "}
         <b style={{ color: "darkorange", fontWeight: "bold" }}>
           <a
-            href="https://vjcoverseas.com/study-abroad/uae"
+            href="https://www.vjcoverseas.com/study-abroad/uae"
             style={{ color: "darkorange", textDecoration: "none" }}
           >
             Study in UAE
@@ -124,7 +124,7 @@ const UAEtourist = () => {
         possibilities to{" "}
         <b style={{ color: "darkorange", fontWeight: "bold" }}>
           <a
-            href="https://vjcoverseas.com/migrate/uae"
+            href="https://www.vjcoverseas.com/migrate/uae"
             style={{ color: "darkorange", textDecoration: "none" }}
           >
             Migrate to UAE
@@ -165,7 +165,7 @@ const UAEtourist = () => {
         such as obtaining a{" "}
         <b style={{ color: "darkorange", fontWeight: "bold" }}>
           <a
-            href="https://vjcoverseas.com/migrate/uae/work-visa"
+            href="https://www.vjcoverseas.com/migrate/uae/work-visa"
             style={{ color: "darkorange", textDecoration: "none" }}
           >
             UAE Work Visa
@@ -174,7 +174,7 @@ const UAEtourist = () => {
         for career growth or applying for the prestigious{" "}
         <b style={{ color: "darkorange", fontWeight: "bold" }}>
           <a
-            href="https://vjcoverseas.com/migrate/uae/golden-visa"
+            href="https://www.vjcoverseas.com/migrate/uae/golden-visa"
             style={{ color: "darkorange", textDecoration: "none" }}
           >
             UAE Golden Visa
@@ -188,7 +188,7 @@ const UAEtourist = () => {
         As one of the{" "}
         <b style={{ color: "darkorange", fontWeight: "bold" }}>
           <a
-            href="https://vjcoverseas.com/"
+            href="https://www.vjcoverseas.com/"
             style={{ color: "darkorange", textDecoration: "none" }}
           >
             Best Visa Immigration Consultants
@@ -223,7 +223,7 @@ const UAEtourist = () => {
         Embark on your UAE journey with confidence. Contact{" "}
         <b style={{ color: "darkorange", fontWeight: "bold" }}>
           <a
-            href="https://vjcoverseas.com/"
+            href="https://www.vjcoverseas.com/"
             style={{ color: "darkorange", textDecoration: "none" }}
           >
             VJC Overseas

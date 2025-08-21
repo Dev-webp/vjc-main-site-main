@@ -260,7 +260,7 @@ const Content = () => {
         you every step of the way, ensuring a successful application. Contact us
         today and let us help you{" "}
         <Link
-          href="https://vjcoverseas.com/migrate/united-kingdom"
+          href="https://www.vjcoverseas.com/migrate/united-kingdom"
           style={{ color: "orange" }}
         >
           Migrate to United Kingdom

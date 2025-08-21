@@ -36,7 +36,7 @@ const UAEstud = () => {
         Student Visa and successfully transition into their academic journey.
         Recognized among the{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="font-bold no-underline"
           style={{
             color: "rgb(234,88,12)",
@@ -56,7 +56,7 @@ const UAEstud = () => {
         innovation. Its strategic location between Europe, Asia, and Africa
         makes it a global education hub. Choosing to{" "}
         <a
-          href="https://vjcoverseas.com/study-abroad/uae"
+          href="https://www.vjcoverseas.com/study-abroad/uae"
           className="font-bold no-underline"
           style={{
             color: "rgb(234,88,12)",
@@ -101,7 +101,7 @@ const UAEstud = () => {
         guidance on the application process, documentation, and eligibility,
         our experts can help you seamlessly transition and{" "}
         <a
-          href="https://vjcoverseas.com/migrate/uae"
+          href="https://www.vjcoverseas.com/migrate/uae"
           className="font-bold no-underline"
           style={{
             color: "rgb(234,88,12)",
@@ -320,7 +320,7 @@ const UAEstud = () => {
         A degree from the UAE opens doors to exciting career prospects. Many
         students transition from study to work by applying for a{" "}
         <a
-          href="https://vjcoverseas.com/migrate/uae/work-visa"
+          href="https://www.vjcoverseas.com/migrate/uae/work-visa"
           className="font-bold no-underline"
           style={{
             color: "rgb(234,88,12)",
@@ -362,7 +362,7 @@ const UAEstud = () => {
         The UAE is ready to offer you a world-class education, vibrant lifestyle,
         and endless opportunities. Contact{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="font-bold no-underline"
           style={{
             color: "rgb(234,88,12)",

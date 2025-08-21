@@ -37,7 +37,7 @@ const UAEgreen = () => {
 
       <p className="mb-6">
         As one of the{" "}
-        <Link href="https://vjcoverseas.com/" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/" legacyBehavior>
           <a
             style={{
               color: "orange",
@@ -80,7 +80,7 @@ const UAEgreen = () => {
 
       <p className="mb-6">
         Unlike the traditional{" "}
-        <Link href="https://vjcoverseas.com/migrate/uae/work-visa" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/migrate/uae/work-visa" legacyBehavior>
           <a
             style={{
               color: "orange",
@@ -104,7 +104,7 @@ const UAEgreen = () => {
       <p className="mb-6">
         The UAE is not just a hub for skilled professionals—it’s also a
         world-class education destination. Many international students choose to{" "}
-        <Link href="https://vjcoverseas.com/study-abroad/uae" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/study-abroad/uae" legacyBehavior>
           <a
             style={{
               color: "orange",
@@ -129,7 +129,7 @@ const UAEgreen = () => {
         an excellent pathway for those who wish to work and live independently
         in the Emirates. With our expert guidance, you can complete the process
         efficiently and{" "}
-        <Link href="https://vjcoverseas.com/migrate/uae" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/migrate/uae" legacyBehavior>
           <a
             style={{
               color: "orange",
@@ -241,7 +241,7 @@ const UAEgreen = () => {
 
       <p className="mb-6">
         Many clients ask about the difference between the{" "}
-        <Link href="https://vjcoverseas.com/migrate/uae/golden-visa" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/migrate/uae/golden-visa" legacyBehavior>
           <a
             style={{
               color: "orange",
@@ -293,7 +293,7 @@ const UAEgreen = () => {
       <p className="mb-6">
         Choosing the right consultancy is key to a stress-free immigration
         process. At{" "}
-        <Link href="https://vjcoverseas.com" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com" legacyBehavior>
           <a
             style={{
               color: "orange",

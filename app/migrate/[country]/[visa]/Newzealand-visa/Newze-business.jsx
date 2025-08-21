@@ -13,9 +13,9 @@ const Newzebusiness = () => {
                 </h3>
             </div>
             
-            <p className='mb-6'>New Zealand is a hub of innovation, investment opportunities, and a business-friendly environment that attracts entrepreneurs, investors, and business professionals from across the globe. If you're looking to establish or grow your business in this vibrant country, the <a href="https://vjcoverseas.com/" style={{ color: 'orange' }}>Best Visa Immigration Consultants</a> can guide you to success.</p>
+            <p className='mb-6'>New Zealand is a hub of innovation, investment opportunities, and a business-friendly environment that attracts entrepreneurs, investors, and business professionals from across the globe. If you're looking to establish or grow your business in this vibrant country, the <a href="https://www.vjcoverseas.com/" style={{ color: 'orange' }}>Best Visa Immigration Consultants</a> can guide you to success.</p>
 
-            <p>At <a href="https://vjcoverseas.com/" style={{ color: 'orange' }}>VJC Overseas</a>, we guide you through the entire process of applying for a New Zealand Business Visa, ensuring a smooth, efficient, and successful application. Whether you are looking to invest, establish a new business, or manage an existing one, we have the expertise to help you every step of the way.</p>
+            <p>At <a href="https://www.vjcoverseas.com/" style={{ color: 'orange' }}>VJC Overseas</a>, we guide you through the entire process of applying for a New Zealand Business Visa, ensuring a smooth, efficient, and successful application. Whether you are looking to invest, establish a new business, or manage an existing one, we have the expertise to help you every step of the way.</p>
             <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
                 <div className="flex-shrink-0 mx-auto lg:mx-0">
                     <Image
@@ -74,7 +74,7 @@ const Newzebusiness = () => {
             <h3 className='text-black m-2 font-bold text-lg mb-6'>
             Visa Fees and Processing Time</h3>
             
-            <p className='mb-6'>The application fees for New Zealand Business Visas vary depending on the type of visa you are applying for. For those aiming for <a href="https://vjcoverseas.com/migrate/new-zealand" style={{ color: 'orange' }}>Migrate to New Zealand</a> opportunities, certain investment and residency pathways may have different fee structures.</p>
+            <p className='mb-6'>The application fees for New Zealand Business Visas vary depending on the type of visa you are applying for. For those aiming for <a href="https://www.vjcoverseas.com/migrate/new-zealand" style={{ color: 'orange' }}>Migrate to New Zealand</a> opportunities, certain investment and residency pathways may have different fee structures.</p>
             <ul className='list-decimal mb-6 ml-8'>
                 <li><b>Entrepreneur Work Visa:  </b>NZD 2,490 (including the application fee and immigration levy)</li>
                 <li><b>Investor Visa:  </b>NZD 3,700 - NZD 4,500 (depending on the investment amount and the complexity of the application)</li>
@@ -84,7 +84,7 @@ const Newzebusiness = () => {
             </ul>
 
             <h3 className='text-black m-2 font-bold text-lg mb-6'>Processing Time</h3>
-            <p className='mb-6'>The processing time for New Zealand Business Visas can vary based on the complexity of your application and the specific visa category. On average, the processing time is: If you are also considering <a href="https://vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: 'orange' }}>New Zealand Permanent Residency</a>, the timeframe may differ depending on the pathway chosen.</p>
+            <p className='mb-6'>The processing time for New Zealand Business Visas can vary based on the complexity of your application and the specific visa category. On average, the processing time is: If you are also considering <a href="https://www.vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: 'orange' }}>New Zealand Permanent Residency</a>, the timeframe may differ depending on the pathway chosen.</p>
             <ul className='mb-6 ml-8 list-disc'>
                 <li><b>Entrepreneur Work Visa: </b>NZD 330 - NZD 500</li>
                 <li><b>Investor Visa:</b> NZD 100 - NZD 250 (if applicable)</li>.

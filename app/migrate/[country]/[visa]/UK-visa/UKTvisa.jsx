@@ -33,7 +33,7 @@ const Content = () => {
         the picturesque landscapes of the Scottish Highlands, or immersing
         yourself in the rich cultural history of the UK, this visa allows you to
         experience all that the country has to offer. If you are planning to{" "}
-        <Link href="https://vjcoverseas.com/migrate/united-kingdom" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/migrate/united-kingdom" style={{ color: "orange" }}>
           Migrate to United Kingdom
         </Link>{" "}
         in the future, starting with a tourist visit can help you understand the country better.

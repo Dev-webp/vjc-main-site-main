@@ -23,7 +23,7 @@ const Newzeskillwork = () => {
       </h3>
       <p className="mb-6">
         Looking to start a new chapter in{" "}
-        <Link href="https://vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/migrate/new-zealand" style={{ color: "orange" }}>
           Migrate to New Zealand
         </Link>{" "}
         with a career that matches your skills and qualifications? The Skilled Work Visa provides you with
@@ -74,7 +74,7 @@ const Newzeskillwork = () => {
         <li>
           <b>Pathway to Residency: </b>After holding a Skilled Work Visa for 2 years and meeting certain
           conditions, you may be eligible to apply for a Resident Visa under the{" "}
-          <Link href="https://vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>
+          <Link href="https://www.vjcoverseas.com/pr-visas/new-zealand-pr" style={{ color: "orange" }}>
             New Zealand Permanent Residency
           </Link>{" "}
           category.
@@ -152,7 +152,7 @@ const Newzeskillwork = () => {
       <p className="mb-6">
         Navigating the visa application process can be complex, but with the right guidance, you can
         significantly improve your chances of success. At{" "}
-        <Link href="https://vjcoverseas.com/" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>
           Best Visa Immigration Consultants
         </Link>
         , we specialize in New Zealand visa applications and offer personalized
@@ -177,7 +177,7 @@ const Newzeskillwork = () => {
       <p className="mb-6">
         If you're ready to take the next step in your career and life, the Skilled Work Visa can help you
         unlock the door to New Zealand's exciting job market. Contact{" "}
-        <Link href="https://vjcoverseas.com/" style={{ color: "orange" }}>
+        <Link href="https://www.vjcoverseas.com/" style={{ color: "orange" }}>
           VJC Overseas
         </Link>{" "}
         today to start your application process. Our experts are here to assist you every step of the way!

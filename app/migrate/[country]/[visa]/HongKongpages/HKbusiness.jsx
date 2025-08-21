@@ -38,7 +38,7 @@ const Content = () => {
       <p style={{ marginBottom: "20px" }}>
         At{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-600 font-bold"
           style={{ textDecoration: "none" }}
         >
@@ -189,7 +189,7 @@ const Content = () => {
       <p style={{ marginBottom: "20px" }}>
         With{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-600 font-bold"
           style={{ textDecoration: "none" }}
         >

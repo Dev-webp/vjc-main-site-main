@@ -10,10 +10,10 @@ const Newzebusiness = () => {
           <strong>Migrate to South Africa – Live Where Culture, Opportunity, and Nature Meet</strong>
         </h2>
         <p className="mb-6 leading-relaxed text-lg text-black">
-          Looking for a life filled with sunshine, cultural richness, career opportunities, and world-class landscapes? Migrating to South Africa offers a vibrant lifestyle and an exciting gateway to the African continent. Partnering with the <a href="https://vjcoverseas.com/" className="text-orange-600" target="_blank">Best Visa Immigration Consultants</a> ensures that every stage of your migration is handled with expert precision and up-to-date guidance.
+          Looking for a life filled with sunshine, cultural richness, career opportunities, and world-class landscapes? Migrating to South Africa offers a vibrant lifestyle and an exciting gateway to the African continent. Partnering with the <a href="https://www.vjcoverseas.com/" className="text-orange-600" target="_blank">Best Visa Immigration Consultants</a> ensures that every stage of your migration is handled with expert precision and up-to-date guidance.
         </p>
         <p className="mb-6 leading-relaxed text-lg text-black">
-          Whether you're seeking new career paths, entrepreneurial opportunities, or a peaceful retirement, <a href="https://vjcoverseas.com/" className="text-orange-600" target="_blank">VJC Overseas</a> welcomes skilled professionals, investors, families, and students from around the world.
+          Whether you're seeking new career paths, entrepreneurial opportunities, or a peaceful retirement, <a href="https://www.vjcoverseas.com/" className="text-orange-600" target="_blank">VJC Overseas</a> welcomes skilled professionals, investors, families, and students from around the world.
         </p>
         <div className="relative p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
                 <Image
@@ -38,7 +38,7 @@ const Newzebusiness = () => {
 
         <h3 className="text-xl font-semibold mb-4 text-orange-600"><strong>Popular South African Visa Categories</strong></h3>
         <p className="mb-6 leading-relaxed text-lg text-black">
-          One of the most in-demand pathways for skilled professionals is the <a href="https://vjcoverseas.com/migrate/south-africa/critical-skills-visa" className="text-orange-600" target="_blank">South Africa Critical Skills Visa</a>, which targets occupations listed on the nation’s Critical Skills List. If you have a confirmed employment offer, the <a href="https://vjcoverseas.com/migrate/south-africa/general-work-visa" className="text-orange-600" target="_blank">South Africa Work Visa</a> is another excellent option for building your career while experiencing the country’s diverse culture.
+          One of the most in-demand pathways for skilled professionals is the <a href="https://www.vjcoverseas.com/migrate/south-africa/critical-skills-visa" className="text-orange-600" target="_blank">South Africa Critical Skills Visa</a>, which targets occupations listed on the nation’s Critical Skills List. If you have a confirmed employment offer, the <a href="https://www.vjcoverseas.com/migrate/south-africa/general-work-visa" className="text-orange-600" target="_blank">South Africa Work Visa</a> is another excellent option for building your career while experiencing the country’s diverse culture.
         </p>
         <ul className="list-disc list-inside mb-6 space-y-2 text-gray-700">
           <li><strong>Business Visa:</strong> For investors or entrepreneurs who wish to start or acquire a business</li>

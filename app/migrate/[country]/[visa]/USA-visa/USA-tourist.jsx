@@ -25,7 +25,7 @@ const USAtourist = () => {
       <p className="text-center text-gray-600 mb-6">
         Planning to explore the United States for tourism, visit family or friends, or attend a short business meeting? The{" "}
         <Link
-          href="https://vjcoverseas.com/visit-visas/usa"
+          href="https://www.vjcoverseas.com/visit-visas/usa"
           className="text-orange-600 font-bold"
         >
           USA Tourist Visa
@@ -129,7 +129,7 @@ const USAtourist = () => {
       <p className="mb-4">
         If your travel is related to academics, be sure to check the appropriate{" "}
         <Link
-          href="https://vjcoverseas.com/migrate/united-states/student-visa"
+          href="https://www.vjcoverseas.com/migrate/united-states/student-visa"
           className="text-orange-600 font-bold"
         >
           USA Study Visa
@@ -173,7 +173,7 @@ const USAtourist = () => {
       <p className="mb-4">
         Also, if your travel is short-term but includes meetings or client visits, you might fall under a business purpose, which still falls under the B-1 portion of the{" "}
         <Link
-          href="https://vjcoverseas.com/visit-visas/usa"
+          href="https://www.vjcoverseas.com/visit-visas/usa"
           className="text-orange-600 font-bold"
         >
           USA Visit Visa
@@ -197,7 +197,7 @@ const USAtourist = () => {
       <p className="mb-4">
         If you're still unsure which visa suits your travel plan, you can explore more about your options by connecting with the{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-600 font-bold"
         >
           Best Visa Immigration Consultants
@@ -208,7 +208,7 @@ const USAtourist = () => {
       <h4 className="mb-4 font-bold text-lg text-black">Contact Us Today</h4>
       <p className="mb-6 m-2">
         Ready to explore the U.S.? Let{" "}
-        <Link href="https://vjcoverseas.com/" className="text-orange-600 font-bold">
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-bold">
           VJC Overseas
         </Link>{" "}
         help you secure your Tourist Visa with ease and confidence.
