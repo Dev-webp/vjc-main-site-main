@@ -25,7 +25,7 @@ const Dentourist = () => {
         it easier for you to obtain a Denmark Tourist Visa so you can experience
         the best of this beautiful Scandinavian country. Whether you’re visiting
         for leisure, tourism, or short business activities, we’re here to guide
-        you through every step of the application process. Our team is among the <a href="https://vjcoverseas.com/" style={{ color: "orange", fontWeight: "bold" }}>Best Visa Immigration Consultants</a> in the industry.
+        you through every step of the application process. Our team is among the <a href="https://www.vjcoverseas.com/" style={{ color: "orange", fontWeight: "bold" }}>Best Visa Immigration Consultants</a> in the industry.
       </p>
       <div className="flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex justify-center m-6 flex-shrink-0 mx-auto lg:mx-0 ">

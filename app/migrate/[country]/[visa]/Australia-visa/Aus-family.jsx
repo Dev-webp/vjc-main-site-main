@@ -39,7 +39,7 @@ const Ausfamily = () => {
           Whether you want to sponsor a spouse, child, parent, or other
           dependent relatives,{" "}
           <Link
-            href="https://vjcoverseas.com/"
+            href="https://www.vjcoverseas.com/"
             className="text-orange-500 font-semibold"
           >
             VJC Overseas
@@ -190,7 +190,7 @@ const Ausfamily = () => {
         <p className="mb-6">
           For those who wish to{" "}
           <Link
-            href="https://vjcoverseas.com/migrate/australia"
+            href="https://www.vjcoverseas.com/migrate/australia"
             className="text-orange-500 font-semibold"
           >
             Migrate to Australia
@@ -203,7 +203,7 @@ const Ausfamily = () => {
           Families who pursue educational opportunities for their children can
           also explore the{" "}
           <Link
-            href="https://vjcoverseas.com/migrate/australia/student-visa"
+            href="https://www.vjcoverseas.com/migrate/australia/student-visa"
             className="text-orange-500 font-semibold"
           >
             Study in Australia
@@ -247,7 +247,7 @@ const Ausfamily = () => {
         <p className="mb-6">
           As one of the{" "}
           <Link
-            href="https://vjcoverseas.com/"
+            href="https://www.vjcoverseas.com/"
             className="text-orange-500 font-semibold"
           >
             Best Visa Immigration Consultants

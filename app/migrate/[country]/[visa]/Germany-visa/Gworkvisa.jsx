@@ -26,7 +26,7 @@ const Content = () => {
 
       <p style={{ marginBottom: "20px" }}>
         At <strong style={{ color: "black" }}>VJC Overseas</strong>, we are committed to turning your dreams of working in Germany into reality. As{" "}
-        <Link href="https://vjcoverseas.com/">
+        <Link href="https://www.vjcoverseas.com/">
           <strong style={{ color: "orange" }}>Best Visa Immigration Consultants</strong>
         </Link>
         , we understand the complexities of securing a Germany Work Visa and the
@@ -84,7 +84,7 @@ const Content = () => {
           <strong>Knowledge of the Latest Immigration Changes:</strong> Germany’s
           policies are evolving. We stay updated so your application aligns with
           the latest requirements, including pathways like the{" "}
-          <Link href="https://vjcoverseas.com/pr-visas/germany-blue-card">
+          <Link href="https://www.vjcoverseas.com/pr-visas/germany-blue-card">
             <strong style={{ color: "orange" }}>Germany PR Visa</strong>
           </Link>
           , which offers fast-track residence for highly skilled professionals.
@@ -117,7 +117,7 @@ const Content = () => {
         <li>Faster processing to attract global talent.</li>
         <li>
           Flexible entry via the{" "}
-          <Link href="https://vjcoverseas.com/work-abroad/germany-work-permit/job-seeker-visa">
+          <Link href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/job-seeker-visa">
             <strong style={{ color: "orange" }}>Germany Job Seeker Visa</strong>
           </Link>
           , letting candidates enter Germany to find a job.
@@ -147,7 +147,7 @@ const Content = () => {
       </h4>
       <p style={{ marginBottom: "20px" }}>
         From job search assistance to post-landing services,{" "}
-        <Link href="https://vjcoverseas.com/">
+        <Link href="https://www.vjcoverseas.com/">
           <strong style={{ color: "orange" }}>VJC Overseas</strong>
         </Link>{" "}
         offers a complete ecosystem to support your migration and settlement in Germany.
@@ -190,7 +190,7 @@ const Content = () => {
       </p>
       <p style={{ marginTop: "20px" }}>
         You can also explore options to{" "}
-        <Link href="https://vjcoverseas.com/study-abroad/germany">
+        <Link href="https://www.vjcoverseas.com/study-abroad/germany">
           <strong style={{ color: "orange" }}>Study in Germany</strong>
         </Link>
         , which offers world-class education and long-term settlement benefits.

@@ -44,7 +44,7 @@ const Content = () => {
                 The visa is issued under the German Residence Act and is typically valid for up to three years. It provides you with the freedom to live, work, and even hire employees in Germany while contributing to the country`s thriving economy.
             </p>
             <p>
-                If your goal is to eventually qualify for the <span style={{ color: 'orange' }}><Link href="https://vjcoverseas.com/pr-visas/germany-blue-card"><b>Germany PR Visa</b></Link></span>, this pathway lays a strong foundation through business residency.
+                If your goal is to eventually qualify for the <span style={{ color: 'orange' }}><Link href="https://www.vjcoverseas.com/pr-visas/germany-blue-card"><b>Germany PR Visa</b></Link></span>, this pathway lays a strong foundation through business residency.
             </p>
 
             <h4 className="text-black font-semibold mb-2 text-md sm:text-lg mt-3">
@@ -85,7 +85,7 @@ const Content = () => {
                 <li><strong>Adequate Business Plan:</strong> Outline goals, market analysis, financial projections, and other details in a comprehensive business plan.</li>
             </ul>
             <p>
-                Planning to transition from a job-seeker visa or a <span style={{ color: 'orange' }}><Link href="https://vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa"><b>Germany Skilled Worker Visa</b></Link></span>? The self-employment path is a great next step for career independence.
+                Planning to transition from a job-seeker visa or a <span style={{ color: 'orange' }}><Link href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa"><b>Germany Skilled Worker Visa</b></Link></span>? The self-employment path is a great next step for career independence.
             </p>
 
             <h4 className="text-black font-semibold mb-2 text-md sm:text-lg mt-3">
@@ -108,7 +108,7 @@ const Content = () => {
                 <li><strong>High Quality of Life:</strong> Enjoy Germany`s world-class infrastructure, healthcare, and education systems.</li>
             </ul>
             <p>
-                Are you a graduate or academic professional planning to <span style={{ color: 'orange' }}><Link href="https://vjcoverseas.com/study-abroad/germany"><b>Study in Germany</b></Link></span> first and later explore self-employment? This visa provides a bridge to your professional independence.
+                Are you a graduate or academic professional planning to <span style={{ color: 'orange' }}><Link href="https://www.vjcoverseas.com/study-abroad/germany"><b>Study in Germany</b></Link></span> first and later explore self-employment? This visa provides a bridge to your professional independence.
             </p>
 
             <h4 className="text-black font-semibold mb-2 text-md sm:text-lg mt-3">
@@ -118,14 +118,14 @@ const Content = () => {
                 At <b style={{ color: 'black' }}>VJC Overseas</b>, we understand that relocating to a new country and starting a business can be a daunting task. Our expert team will guide you step by step, ensuring you meet all necessary criteria and submit a flawless application. With comprehensive services, including visa consultations, business plan preparation, and document handling, we ensure your best chance of success in securing your Germany Self-Employment Visa.
             </p>
             <p className="text-base">
-                As one of the most <span style={{ color: 'orange' }}><Link href="https://vjcoverseas.com/"><b>Best Visa Immigration Consultants</b></Link></span> in the industry, we pride ourselves on results-driven service and transparency.
+                As one of the most <span style={{ color: 'orange' }}><Link href="https://www.vjcoverseas.com/"><b>Best Visa Immigration Consultants</b></Link></span> in the industry, we pride ourselves on results-driven service and transparency.
             </p>
 
             <h4 className="text-black font-bold mt-3 text-lg sm:text-xl">
                 Start Your Journey Today
             </h4>
             <p className="text-base">
-                Ready to make Germany your new business home? <span style={{ color: 'orange' }}><Link href="https://vjcoverseas.com/"><b>VJC Overseas</b></Link></span> is here to help you every step of the way. Contact us today for a consultation and take the first step towards achieving your self-employment dreams in Germany.
+                Ready to make Germany your new business home? <span style={{ color: 'orange' }}><Link href="https://www.vjcoverseas.com/"><b>VJC Overseas</b></Link></span> is here to help you every step of the way. Contact us today for a consultation and take the first step towards achieving your self-employment dreams in Germany.
             </p>
             <p>Let us guide you toward a brighter future!</p>
         </div>

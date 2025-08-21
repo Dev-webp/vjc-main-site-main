@@ -23,7 +23,7 @@ const Denbusiness = () => {
         We specialize in helping professionals, entrepreneurs, and investors enter Denmark with ease, ensuring a hassle-free process from application to approval.
       </p>
       <p className="mb-6">
-        Recognized among the <a href="https://vjcoverseas.com/" style={{ color: "orange", fontWeight: "bold" }}>Best Visa Immigration Consultants</a> in the industry, we bring unmatched expertise in handling all Denmark visa categories. Whether your trip is short-term for a conference or long-term for a strategic project, our team ensures your application meets all Schengen requirements while reflecting your professional intent clearly.
+        Recognized among the <a href="https://www.vjcoverseas.com/" style={{ color: "orange", fontWeight: "bold" }}>Best Visa Immigration Consultants</a> in the industry, we bring unmatched expertise in handling all Denmark visa categories. Whether your trip is short-term for a conference or long-term for a strategic project, our team ensures your application meets all Schengen requirements while reflecting your professional intent clearly.
       </p>
 
       <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -51,7 +51,7 @@ const Denbusiness = () => {
 
           <p className="mb-6">
             Many business travelers also see Denmark as a stepping stone to other goals — for example, exploring educational prospects such as{" "}
-            <a href="https://vjcoverseas.com/study-abroad/denmark" style={{ color: "orange", fontWeight: "bold" }}>Study in Denmark</a>, 
+            <a href="https://www.vjcoverseas.com/study-abroad/denmark" style={{ color: "orange", fontWeight: "bold" }}>Study in Denmark</a>, 
             or even transitioning to long-term settlement options like <b style={{ color: "black" }}>Migrate to Denmark</b>. 
             The country’s open approach to talent ensures that international professionals can integrate smoothly into its vibrant business culture.
           </p>
@@ -152,7 +152,7 @@ const Denbusiness = () => {
         <h4 className="mb-6 text-sky-700">Get Started Today</h4>
 
         <p className="mb-6">
-          Your professional opportunities in Denmark are just one application away. Let <a href="https://vjcoverseas.com" style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</a> guide you with precision and care, from your Denmark Business Visa application to any future immigration goals.
+          Your professional opportunities in Denmark are just one application away. Let <a href="https://www.vjcoverseas.com" style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</a> guide you with precision and care, from your Denmark Business Visa application to any future immigration goals.
         </p>
 
         <p className="font-bold mb-6">

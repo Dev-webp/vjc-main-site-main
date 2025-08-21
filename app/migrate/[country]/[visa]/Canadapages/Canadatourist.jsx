@@ -54,7 +54,7 @@ const Canadatourist = () =>{
   <div className="flex flex-col space-y-4 px-4 lg:px-0">
     <p style={{ marginBottom: "20px" }}>
       The Canada Visitor Visa allows foreign nationals to enter Canada for
-      tourism, leisure, or business purposes. Here’s an overview and how you could <a href="https://vjcoverseas.com/study-abroad/canada" style={{ color: "orange", textDecoration: "none" }}>Study in Canada</a> during your visit if you plan accordingly.
+      tourism, leisure, or business purposes. Here’s an overview and how you could <a href="https://www.vjcoverseas.com/study-abroad/canada" style={{ color: "orange", textDecoration: "none" }}>Study in Canada</a> during your visit if you plan accordingly.
     </p>
     <ul className="list-disc pl-6 space-y-2">
       <li>

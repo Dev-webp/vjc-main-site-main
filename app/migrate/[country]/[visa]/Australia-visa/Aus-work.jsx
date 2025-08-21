@@ -27,7 +27,7 @@ const Auswork = () => {
       </p>
 
       <p className="m-2">
-        At <Link href="https://vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link>, we specialize in helping individuals make this dream a reality by offering expert visa guidance, tailored solutions, and end-to-end support.
+        At <Link href="https://www.vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link>, we specialize in helping individuals make this dream a reality by offering expert visa guidance, tailored solutions, and end-to-end support.
       </p>
 
       <div className="flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
@@ -154,7 +154,7 @@ const Auswork = () => {
       </ul>
       <p className="mb-6">
         We also offer student advisory services for those looking to{" "}
-        <Link href="https://vjcoverseas.com/migrate/australia/student-visa" className="text-orange-500">
+        <Link href="https://www.vjcoverseas.com/migrate/australia/student-visa" className="text-orange-500">
           Study in Australia
         </Link>{" "}
         and transition into the workforce later.
@@ -170,14 +170,14 @@ const Auswork = () => {
       </p>
       <p className="mb-6">
         Whether your goal is temporary employment or building a life Down Under,{" "}
-        <Link href="https://vjcoverseas.com/migrate/australia" className="text-orange-500">
+        <Link href="https://www.vjcoverseas.com/migrate/australia" className="text-orange-500">
           Migrate to Australia
         </Link>{" "}
         with the help of <b className="text-black">VJC Overseas</b>.
       </p>
       <p className="mb-6">
         Want to ensure you're working with the right team? Discover why we’re known as one of the{" "}
-        <Link href="https://vjcoverseas.com/" className="text-orange-500">
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-500">
           Best Visa Immigration Consultants
         </Link>{" "}
         in the industry.

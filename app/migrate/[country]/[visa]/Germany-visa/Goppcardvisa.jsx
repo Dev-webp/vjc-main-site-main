@@ -16,7 +16,7 @@ const Content = () => {
       {/* Intro Paragraph */}
       <p className="mb-6 leading-relaxed">
         At{" "}
-        <Link href="https://vjcoverseas.com/">
+        <Link href="https://www.vjcoverseas.com/">
           <span style={{ color: "orange" }}><strong>VJC Overseas</strong></span>
         </Link>
         , we take immense pride in offering one of the most promising immigration
@@ -53,7 +53,7 @@ const Content = () => {
           </h2>
           <p className="leading-relaxed">
             The <strong style={{ color: "#000000" }}>Germany Opportunity Card</strong> is a strategic immigration pathway designed for highly skilled professionals from outside the European Union to live and work in Germany. Introduced as part of Germany’s new points-based immigration system, it offers a flexible and faster route to residency — especially in fields experiencing critical skill shortages like IT, engineering, and healthcare. Whether you're aiming to expand your professional journey or looking to settle in one of the world’s most developed countries, this card provides the ideal path to{" "}
-            <Link href="https://vjcoverseas.com/migrate-to-germany/">
+            <Link href="https://www.vjcoverseas.com/migrate-to-germany/">
               <span style={{ color: "orange" }}><strong>Migrate to Germany</strong></span>
             </Link>{" "}
             and explore abundant opportunities.
@@ -67,7 +67,7 @@ const Content = () => {
       </h2>
       <p className="mb-6 leading-relaxed">
         At <strong style={{ color: "#000000" }}>VJC Overseas</strong>, we understand that applying for an international visa can feel overwhelming. Our mission is to simplify the process for skilled professionals and ensure that each stage of the application is completed with precision, clarity, and speed. As one of the leading consultancies in India with offices in Hyderabad and Bangalore, we bring unmatched experience in guiding applicants through the <strong style={{ color: "#000000" }}>Germany Opportunity Card</strong> process. If you're looking for trusted professionals, we are among the{" "}
-        <Link href="https://vjcoverseas.com/">
+        <Link href="https://www.vjcoverseas.com/">
           <span style={{ color: "orange" }}><strong>Best Visa Immigration Consultants</strong></span>
         </Link>
         .
@@ -98,7 +98,7 @@ const Content = () => {
       </h2>
       <p className="mb-6 leading-relaxed">
         As leading Germany visa consultants, we take pride in offering full-spectrum guidance from consultation to visa approval. With a success rate that includes approvals every alternate day, our process speaks for itself. Our team ensures top-notch advice whether you're applying from Hyderabad, Bangalore, or across India. You can begin by checking your{" "}
-        <Link href="https://vjcoverseas.com/assessment">
+        <Link href="https://www.vjcoverseas.com/assessment">
           <span style={{ color: "orange" }}><strong>Eligibility for the Germany Opportunity Card</strong></span>
         </Link>
         .
@@ -125,7 +125,7 @@ const Content = () => {
       <h2 className="text-xl font-bold text-black mt-6 mb-3">Success Stories</h2>
       <p className="mb-6 leading-relaxed">
         I never thought that applying for the{" "}
-        <Link href="https://vjcoverseas.com/germany-opportunity-card">
+        <Link href="https://www.vjcoverseas.com/germany-opportunity-card">
           <span style={{ color: "orange" }}><strong>Germany Opportunity Card</strong></span>
         </Link>{" "}
         would be this easy. Thanks to <strong style={{ color: "#000000" }}>VJC Overseas</strong>, my visa was approved quickly, and I found a great job within just a few months. — Anjali S., Software Developer

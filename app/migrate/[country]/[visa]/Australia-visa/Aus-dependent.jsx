@@ -25,7 +25,7 @@ const Ausdependent = () => {
         economy, continues to be one of the top destinations for families around
         the world. For individuals working or studying in{" "}
         <Link
-          href="https://vjcoverseas.com/migrate/australia"
+          href="https://www.vjcoverseas.com/migrate/australia"
           className="text-orange-500 font-semibold"
         >
           Migrate to Australia
@@ -40,7 +40,7 @@ const Ausdependent = () => {
         you’ve come to the right place. Here’s everything you need to know about
         the process, eligibility criteria, and how{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-500 font-semibold"
         >
           VJC Overseas
@@ -84,7 +84,7 @@ const Ausdependent = () => {
           <b>• Stay with Primary Visa Holder: </b>Dependent visa holders are
           allowed to live, study, and work in{" "}
           <Link
-            href="https://vjcoverseas.com/migrate/australia/student-visa"
+            href="https://www.vjcoverseas.com/migrate/australia/student-visa"
             className="text-orange-500 font-semibold"
           >
             Study in Australia
@@ -234,7 +234,7 @@ const Ausdependent = () => {
         Navigating the complexities of the Australian visa system can be
         overwhelming, but{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-500 font-semibold"
         >
           Best Visa Immigration Consultants

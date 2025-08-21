@@ -13,7 +13,7 @@ const Aussponsor = () => {
                     Australia Sponsorship Visa - <span style={{ color: 'rgb(220, 4, 4)' }}>VJC Overseas</span>
                 </h3>
             </div>
-            <h3 className="text-black m-2 font-bold mb-4 text-lg sm:text-xl mb-6">
+            <h3 className="text-black m-2 font-bold  text-lg sm:text-xl mb-6">
                 Australia Sponsorship Visa: Unlock Your Path to Opportunities with VJC Overseas
             </h3>
 

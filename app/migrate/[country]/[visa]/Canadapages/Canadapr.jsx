@@ -109,7 +109,7 @@ const Canadapr = () => {
             cycling, which is perfect for those who enjoy a healthy and active
             lifestyle. Many students who{" "}
             <a
-              href="https://vjcoverseas.com/study-abroad/canada"
+              href="https://www.vjcoverseas.com/study-abroad/canada"
               style={{ color: "orange", fontWeight: "bold" }}
             >
               Study in Canada

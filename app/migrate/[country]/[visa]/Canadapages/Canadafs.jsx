@@ -139,7 +139,7 @@ const canadafs = () =>{
     
           <footer style={{ marginTop: "30px", color: "gray" }}>
             <p style={{ color: "#222222" }}>
-  Disclaimer: The information provided is for general informational purposes only and does not constitute legal advice. Always consult a certified immigration consultant for your specific case. For education-focused pathways, explore <a href="https://vjcoverseas.com/study-abroad/canada" style={{ color: "orange", textDecoration: "none" }}>Study in Canada</a>.
+  Disclaimer: The information provided is for general informational purposes only and does not constitute legal advice. Always consult a certified immigration consultant for your specific case. For education-focused pathways, explore <a href="https://www.vjcoverseas.com/study-abroad/canada" style={{ color: "orange", textDecoration: "none" }}>Study in Canada</a>.
 </p>
 
           </footer>

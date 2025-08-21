@@ -22,13 +22,13 @@ const Aussponsor = () => {
 
       <p className="m-2 mb-6">
         Are you looking to{" "}
-        <Link href="https://vjcoverseas.com/migrate/australia" className="text-orange-600 font-semibold">
+        <Link href="https://www.vjcoverseas.com/migrate/australia" className="text-orange-600 font-semibold">
           Migrate to Australia
         </Link>{" "}
         for work, study, or long-term settlement? One of the most sought-after pathways is through an
         Australia Sponsorship Visa, a system that enables individuals to live,
         work, and thrive in one of the world’s most dynamic countries. At{" "}
-        <Link href="https://vjcoverseas.com/" className="text-orange-600 font-semibold">
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-semibold">
           VJC Overseas
         </Link>
         , we are committed to helping you navigate the complexities of Australia’s immigration process, ensuring that you find the right
@@ -197,7 +197,7 @@ const Aussponsor = () => {
             ever-evolving regulations and strict documentation requirements. At{" "}
             <b className="text-black font-semibold">VJC Overseas</b>, we offer expert guidance to help you through every
             step of the process, whether you want to{" "}
-            <Link href="https://vjcoverseas.com/migrate/australia/student-visa" className="text-orange-600 font-semibold">
+            <Link href="https://www.vjcoverseas.com/migrate/australia/student-visa" className="text-orange-600 font-semibold">
               Study in Australia
             </Link>{" "}
             or settle permanently.
@@ -253,7 +253,7 @@ const Aussponsor = () => {
             <b className="text-black font-semibold">VJC Overseas</b> be your trusted partner. With years of experience and a
             deep understanding of the Australian immigration system, we will
             work tirelessly to help you achieve your goals with the{" "}
-            <Link href="https://vjcoverseas.com/" className="text-orange-600 font-semibold">
+            <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-semibold">
               Best Visa Immigration Consultants
             </Link>
             .

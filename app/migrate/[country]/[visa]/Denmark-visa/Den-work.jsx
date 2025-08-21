@@ -28,7 +28,7 @@ const Denwork = () => {
         goals in one of the happiest and most progressive countries in Europe.
         We are recognized among the{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", fontWeight: "bold" }}
         >
           Best Visa Immigration Consultants
@@ -93,7 +93,7 @@ const Denwork = () => {
         team at <b>VJC Overseas</b> will help you determine which work permit
         option is best for your skills and career aspirations. Many clients who{" "}
         <a
-          href="https://vjcoverseas.com/study-abroad/denmark"
+          href="https://www.vjcoverseas.com/study-abroad/denmark"
           style={{ color: "orange", fontWeight: "bold" }}
         >
           Study in Denmark
@@ -218,7 +218,7 @@ const Denwork = () => {
       <p className="mb-6">
         Take the first step toward your career in Denmark today. Contact{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", fontWeight: "bold" }}
         >
           VJC Overseas

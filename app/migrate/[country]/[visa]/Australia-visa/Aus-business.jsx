@@ -19,7 +19,7 @@ const Ausbusiness = () => {
           <span style={{ color: "rgb(220, 4, 4)" }}>VJC Overseas</span>
         </h3>
       </div>
-      <h3 className="text-black text-center m-2 text-blue-600 mb-4 text-lxl sm:text-xl mb-6">
+      <h3 className="text-black text-center m-2  text-lxl sm:text-xl mb-6">
         <b className="text-black">Australia Business Visa: Your Gateway to Entrepreneurial Success in Australia</b>
       </h3>
 
@@ -29,7 +29,7 @@ const Ausbusiness = () => {
 
       <p className="mb-6">
         At{" "}
-        <Link href="https://vjcoverseas.com/" className="text-black font-bold">
+        <Link href="https://www.vjcoverseas.com/" className="text-black font-bold">
           VJC Overseas
         </Link>
         , we specialize in helping clients navigate the complexities of obtaining the right visa to build and scale their businesses in Australia. In this guide, we will provide key insights into Australia’s Business Visa categories, eligibility criteria, and the application process to ensure that your business aspirations are on the right track.
@@ -68,7 +68,7 @@ const Ausbusiness = () => {
         </p>
 
         <p>
-          At <b className="text-black"><Link href="https://vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link></b>, we empower ambitious professionals like you to explore, plan, and secure your future in Australia through expert visa consulting, end-to-end documentation, and personalized immigration pathways.
+          At <b className="text-black"><Link href="https://www.vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link></b>, we empower ambitious professionals like you to explore, plan, and secure your future in Australia through expert visa consulting, end-to-end documentation, and personalized immigration pathways.
         </p>
 
         <p>
@@ -82,7 +82,7 @@ const Ausbusiness = () => {
         <p>
           If you're already exploring options to{" "}
           <Link
-            href="https://vjcoverseas.com/migrate/australia"
+            href="https://www.vjcoverseas.com/migrate/australia"
             className="text-orange-500"
           >
             Migrate to Australia
@@ -187,7 +187,7 @@ const Ausbusiness = () => {
 
         <p>
           As one of the{" "}
-          <Link href="https://vjcoverseas.com/" className="text-orange-500">
+          <Link href="https://www.vjcoverseas.com/" className="text-orange-500">
             Best Visa Immigration Consultants
           </Link>,{" "}
           <b className="text-black">VJC Overseas</b> has decades of expertise in guiding professionals, investors, and entrepreneurs toward successful visa outcomes. Here's how we stand out:

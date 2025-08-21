@@ -29,7 +29,7 @@ const Content = () => {
       <p style={{ marginBottom: "20px" }}>
         Are you dreaming of{" "}
         <a
-          href="https://vjcoverseas.com/study-abroad/germany"
+          href="https://www.vjcoverseas.com/study-abroad/germany"
           target="_blank"
           style={{ fontWeight: "bold", color: "orange" }}
         >
@@ -63,7 +63,7 @@ const Content = () => {
           <p className="mb-4 text-sm sm:text-base">
             Germany has made a few changes to its{" "}
             <a
-              href="https://vjcoverseas.com/migrate/germany/student-visa"
+              href="https://www.vjcoverseas.com/migrate/germany/student-visa"
               target="_blank"
               style={{ fontWeight: "bold", color: "orange" }}
             >
@@ -341,7 +341,7 @@ const Content = () => {
       <p>
         The processing time for a{" "}
         <a
-          href="https://vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa"
+          href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa"
           target="_blank"
           style={{ fontWeight: "bold", color: "orange" }}
         >
@@ -380,7 +380,7 @@ const Content = () => {
         processing, and finding accommodation, we provide complete support and
         ensure you have the best experience. Recognized as the{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           target="_blank"
           style={{ fontWeight: "bold", color: "orange" }}
         >

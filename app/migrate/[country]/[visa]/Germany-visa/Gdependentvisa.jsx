@@ -23,7 +23,7 @@ const Content = () => {
       </h3>
       <p>
         At{" "}
-        <Link href="https://vjcoverseas.com/" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/" legacyBehavior>
           <a target="_blank" className="text-orange-600 font-bold">
             VJC Overseas
           </a>
@@ -71,7 +71,7 @@ const Content = () => {
       </p>
       <p>
         If you're planning to apply for the{" "}
-        <Link href="https://vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/work-permit-visa" legacyBehavior>
           <a target="_blank" className="text-orange-600 font-bold">
             Germany Skilled Worker Visa
           </a>
@@ -124,7 +124,7 @@ const Content = () => {
         <li>
           Pathway to Permanent Residency: A dependent visa is a crucial step
           toward eventually obtaining permanent residency in Germany. Many families use this pathway to transition to the{" "}
-          <Link href="https://vjcoverseas.com/pr-visas/germany-blue-card" legacyBehavior>
+          <Link href="https://www.vjcoverseas.com/pr-visas/germany-blue-card" legacyBehavior>
             <a target="_blank" className="text-orange-600 font-bold">
               Germany PR Visa
             </a>
@@ -227,7 +227,7 @@ const Content = () => {
 
       <p>
         If your family member is planning to{" "}
-        <Link href="https://vjcoverseas.com/study-abroad/germany" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/study-abroad/germany" legacyBehavior>
           <a target="_blank" className="text-orange-600 font-bold">
             Study in Germany
           </a>
@@ -247,7 +247,7 @@ const Content = () => {
       </p>
       <p>
         As one of the{" "}
-        <Link href="https://vjcoverseas.com/" legacyBehavior>
+        <Link href="https://www.vjcoverseas.com/" legacyBehavior>
           <a target="_blank" className="text-orange-600 font-bold">
             Best Visa Immigration Consultants
           </a>

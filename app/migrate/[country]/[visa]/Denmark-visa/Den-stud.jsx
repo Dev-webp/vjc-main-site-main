@@ -26,7 +26,7 @@ const Denstud = () => {
         experience world-class education, a high standard of living, and an
         internationally recognized degree. At{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", fontWeight: "bold" }}
         >
           VJC Overseas
@@ -68,7 +68,7 @@ const Denstud = () => {
         known as the "Residence Permit for Studies." This permit allows you to
         live and study in Denmark for the duration of your course. At{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           style={{ color: "orange", fontWeight: "bold" }}
         >
           Best Visa Immigration Consultants
@@ -139,7 +139,7 @@ const Denstud = () => {
         information about the tuition costs for the colleges and universities
         you’re interested in. For personalized guidance, explore our{" "}
         <a
-          href="https://vjcoverseas.com/study-abroad/denmark"
+          href="https://www.vjcoverseas.com/study-abroad/denmark"
           style={{ color: "orange", fontWeight: "bold" }}
         >
           Study in Denmark

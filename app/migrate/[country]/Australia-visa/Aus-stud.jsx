@@ -28,7 +28,7 @@ const Ausstud = () => {
         market, and vibrant multicultural environment. With multiple immigration
         pathways and a transparent points-based system, migrating to Australia
         has never been more accessible. At{" "}
-        <Link href="https://vjcoverseas.com/" target="_blank">
+        <Link href="https://www.vjcoverseas.com/" target="_blank">
           <span className="text-orange-600 font-semibold">VJC Overseas</span>
         </Link>
         , we help you understand the best visa options suited to your profile and guide you through every
@@ -255,7 +255,7 @@ const Ausstud = () => {
           </h4>
           <p>
             With thousands of successful visa approvals and years of experience,{" "}
-            <Link href="https://vjcoverseas.com/" target="_blank">
+            <Link href="https://www.vjcoverseas.com/" target="_blank">
               <span className="text-orange-600">
                 Best Visa Immigration Consultants
               </span>

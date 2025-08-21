@@ -21,7 +21,7 @@ const Ausstud = () => {
 
       </div>
 
-      <h3 className="text-black m-2  mb-4 text-lxl sm:text-xl text-blue-500">
+      <h3 className=" m-2  mb-4 text-lxl sm:text-xl text-blue-500">
         Affordable Education at Top-Ranked Universities
       </h3>
 
@@ -32,7 +32,7 @@ const Ausstud = () => {
         pursue undergraduate, postgraduate, or vocational courses, Australia
         provides an array of high-quality academic opportunities at competitive
         tuition rates. At{" "}
-        <Link href="https://vjcoverseas.com/">
+        <Link href="https://www.vjcoverseas.com/">
           <span className="text-orange-500">VJC Overseas</span>
         </Link>
         , we help you navigate the process of obtaining an Australian Study Visa
@@ -251,7 +251,7 @@ const Ausstud = () => {
             circumstances and the time of year. It’s advisable to apply well in
             advance, at least 3-4 months before your course start date, to avoid
             any last-minute issues. If you're also considering long-term options, look into{" "}
-            <Link href="https://vjcoverseas.com/pr-visas/australia-pr">
+            <Link href="https://www.vjcoverseas.com/pr-visas/australia-pr">
               <span className="text-orange-500">Australia Permanent Residency</span>
             </Link>
             .
@@ -276,7 +276,7 @@ const Ausstud = () => {
               <b>3. Prepare Documents:</b> Gather all necessary documents,
               including proof of funds, English proficiency, and health
               insurance. Our{" "}
-              <Link href="https://vjcoverseas.com/">
+              <Link href="https://www.vjcoverseas.com/">
                 <span className="text-orange-500">Best Visa Immigration Consultants</span>
               </Link>{" "}
               can guide you through this process smoothly.
@@ -323,7 +323,7 @@ const Ausstud = () => {
           </p>
           <p className="mb-6">
             Interested in long-term settlement?{" "}
-            <Link href="https://vjcoverseas.com/migrate/australia">
+            <Link href="https://www.vjcoverseas.com/migrate/australia">
               <span className="text-orange-500">Migrate to Australia</span>
             </Link>{" "}
             with expert help.
