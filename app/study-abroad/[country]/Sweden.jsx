@@ -21,8 +21,8 @@ const StudyInSweden = () => {
 
       <p className="mb-6">
         Sweden is renowned for its high-quality education, innovative research, and diverse cultural experiences. 
-        As one of the most desirable study destinations in Europe, <a href="https://vjcoverseas.com/study-abroad/sweden" className="text-orange-500 font-semibold">Study in Sweden</a> opens doors to globally recognized degrees and career-building opportunities. 
-        At <span className="text-orange-500 font-semibold"><a href="https://vjcoverseas.com/">VJC Overseas</a></span>, we guide you through every step of the process—from understanding tuition fees to preparing for life in this Nordic hub.
+        As one of the most desirable study destinations in Europe, <a href="https://www.vjcoverseas.com/study-abroad/sweden" className="text-orange-500 font-semibold">Study in Sweden</a> opens doors to globally recognized degrees and career-building opportunities. 
+        At <span className="text-orange-500 font-semibold"><a href="https://www.vjcoverseas.com/">VJC Overseas</a></span>, we guide you through every step of the process—from understanding tuition fees to preparing for life in this Nordic hub.
       </p>
 
       <h2 className="text-xl font-semibold mb-2 mt-4">Why Study in Sweden?</h2>
@@ -107,22 +107,22 @@ const StudyInSweden = () => {
         <li>Safe, inclusive, and student-friendly society</li>
       </ul>
 
-      <h2 className="text-xl font-bold text-black mb-2 mt-4">How <span className="text-orange-500 font-semibold"><a href="https://vjcoverseas.com/">VJC Overseas</a></span> Can Help You</h2>
+      <h2 className="text-xl font-bold text-black mb-2 mt-4">How <span className="text-orange-500 font-semibold"><a href="https://www.vjcoverseas.com/">VJC Overseas</a></span> Can Help You</h2>
       <p className="mb-4">
-        Choosing the right country, university, and course is not easy, but with the support of trusted <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</a> like us, your path becomes clearer. 
+        Choosing the right country, university, and course is not easy, but with the support of trusted <a href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</a> like us, your path becomes clearer. 
         <span className="font-bold text-black"> VJC Overseas</span> provides expert guidance for every stage of your study abroad journey.
       </p>
       <ul className="list-disc list-inside space-y-1">
         <li>Personalized university and program selection based on your profile and career goals.</li>
         <li>Assistance with applications to top Swedish universities.</li>
         <li>Guidance on scholarships like the Swedish Institute Scholarships for Global Professionals.</li>
-        <li>Step-by-step support with the <a href="https://vjcoverseas.com/study-abroad/sweden" className="text-orange-500 font-semibold">Sweden Student Visa</a> process, including residence permits and documentation.</li>
+        <li>Step-by-step support with the <a href="https://www.vjcoverseas.com/study-abroad/sweden" className="text-orange-500 font-semibold">Sweden Student Visa</a> process, including residence permits and documentation.</li>
         <li>Help with accommodation, part-time work options, and pre-departure orientation tailored for Sweden.</li>
       </ul>
 
       <h2 className="text-2xl font-semibold mt-4 mb-2">Start Your Journey Today</h2>
       <p>
-        Taking the first step toward an international education is easier when you have the support of the <a href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</a> by your side. 
+        Taking the first step toward an international education is easier when you have the support of the <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</a> by your side. 
         Contact <span className="font-bold text-black">VJC Overseas</span> today and begin your academic journey in Sweden with confidence.
       </p>
     </div>

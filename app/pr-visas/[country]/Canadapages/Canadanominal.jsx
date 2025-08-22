@@ -16,13 +16,13 @@ export default function NextPNP() {
           {/* Text Block */}
           <div className="lg:w-1/2 text-base text-gray-700 leading-relaxed">
             <p>
-              Immigrating to Canada has become a dream for many skilled professionals and families worldwide. Among the various immigration routes, the <a href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program" className="text-orange-500 font-semibold">Canada PNP Program</a> stands out as one of the most promising pathways to secure permanent residency.
+              Immigrating to Canada has become a dream for many skilled professionals and families worldwide. Among the various immigration routes, the <a href="https://www.vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program" className="text-orange-500 font-semibold">Canada PNP Program</a> stands out as one of the most promising pathways to secure permanent residency.
             </p>
             <p className="mt-4">
               This program is designed to allow Canadian provinces and territories to nominate individuals based on their skills, work experience, and ability to contribute to the local economy. If you are planning to build a secure future in Canada, choosing expert guidance makes all the difference.
             </p>
             <p className="mt-4">
-              At <strong className="text-black font-bold">VJC Overseas</strong>, we take pride in being among the <a href="https://vjcoverseas.com" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</a>, providing end-to-end assistance to candidates aiming for Canada PR through the Provincial Nominee Program.
+              At <strong className="text-black font-bold">VJC Overseas</strong>, we take pride in being among the <a href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</a>, providing end-to-end assistance to candidates aiming for Canada PR through the Provincial Nominee Program.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export default function NextPNP() {
               The PNP allows provinces and territories in Canada to nominate candidates who wish to settle in their specific region. Each province operates its own program with unique eligibility criteria tailored to meet labor market and demographic needs. Participating regions include Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Saskatchewan, Northwest Territories, and Yukon. Quebec, however, manages its own independent selection system.
             </p>
             <p className="mt-2">
-              When working with reliable <a href="https://vjcoverseas.com/pr-visas" className="text-orange-500 font-semibold">PR Visa Consultants</a> like <strong className="text-black font-bold">VJC Overseas</strong>, applicants gain a better understanding of which province best aligns with their profile, occupation demand, and long-term goals.
+              When working with reliable <a href="https://www.vjcoverseas.com/pr-visas" className="text-orange-500 font-semibold">PR Visa Consultants</a> like <strong className="text-black font-bold">VJC Overseas</strong>, applicants gain a better understanding of which province best aligns with their profile, occupation demand, and long-term goals.
             </p>
           </section>
 
@@ -71,7 +71,7 @@ export default function NextPNP() {
               </li>
             </ul>
             <p className="mt-2">
-              For many international professionals, the <a href="https://vjcoverseas.com/pr-visas/canada-pr" className="text-orange-500 font-semibold">Canada PR Visa</a> becomes easier to secure through the Provincial Nominee Program, especially for those targeting specific in-demand occupations.
+              For many international professionals, the <a href="https://www.vjcoverseas.com/pr-visas/canada-pr" className="text-orange-500 font-semibold">Canada PR Visa</a> becomes easier to secure through the Provincial Nominee Program, especially for those targeting specific in-demand occupations.
             </p>
           </section>
 
@@ -113,7 +113,7 @@ export default function NextPNP() {
               The Canada Provincial Nominee Program is a flexible and highly rewarding pathway for skilled workers, entrepreneurs, tradespeople, and graduates who want to settle permanently in Canada.
             </p>
             <p className="mt-2">
-              With the right planning and expert guidance, your journey to becoming a permanent resident can be smooth and stress-free. Take the first step today with <a href="https://vjcoverseas.com" className="text-orange-500 font-semibold">VJC Overseas</a>, your trusted partner in immigration success.
+              With the right planning and expert guidance, your journey to becoming a permanent resident can be smooth and stress-free. Take the first step today with <a href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">VJC Overseas</a>, your trusted partner in immigration success.
             </p>
             <p className="mt-2">
               Whether you are exploring Express Entry, PNP, or direct routes to PR, our team is here to help you achieve your Canadian dream with confidence. Connect with <strong className="text-black font-bold">PR Visa Consultants</strong> for a personalized consultation.

@@ -95,7 +95,7 @@ const StudyInPhilippines = () => {
 
       <h2 className="font-semibold text-xl mt-4 mb-2">Why Choose VJC Overseas?</h2>
       <p>
-        At <Link href="https://vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link>, we provide comprehensive support for your study abroad plans. From selecting the best universities and programs to assisting with a <Link href="https://www.vjcoverseas.com/study-abroad/philippines" className="text-orange-500">Philippines Study Visa</Link> and accommodation, we ensure that your journey is seamless. For students aiming to explore global education opportunities, our expertise also covers <Link href="https://www.vjcoverseas.com/study-abroad/philippines" className="text-orange-500">Study Abroad in Philippines</Link>, providing guidance on scholarships, living arrangements, and pre-departure preparation.
+        At <Link href="https://www.vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link>, we provide comprehensive support for your study abroad plans. From selecting the best universities and programs to assisting with a <Link href="https://www.vjcoverseas.com/study-abroad/philippines" className="text-orange-500">Philippines Study Visa</Link> and accommodation, we ensure that your journey is seamless. For students aiming to explore global education opportunities, our expertise also covers <Link href="https://www.vjcoverseas.com/study-abroad/philippines" className="text-orange-500">Study Abroad in Philippines</Link>, providing guidance on scholarships, living arrangements, and pre-departure preparation.
       </p>
 
       <p>

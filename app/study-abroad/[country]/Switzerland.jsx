@@ -31,7 +31,7 @@ const StudyInSwitzerland = () => {
 
       <p className="text-justify mt-4 mb-2">
         Choosing the right pathway can feel overwhelming, which is why working with 
-        <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold"> Study Visa Consultants </a> 
+        <a href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold"> Study Visa Consultants </a> 
         can make the process smoother and more organized.
       </p>
 
@@ -43,7 +43,7 @@ const StudyInSwitzerland = () => {
       </ul>
 
       <p className="text-justify mt-4 mb-2">
-        The <a href="https://vjcoverseas.com/study-abroad/switzerland" className="text-orange-500 font-semibold">Swiss Student Visa Process</a> also requires students to show proof of sufficient financial means to cover these costs.
+        The <a href="https://www.vjcoverseas.com/study-abroad/switzerland" className="text-orange-500 font-semibold">Swiss Student Visa Process</a> also requires students to show proof of sufficient financial means to cover these costs.
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Benefits of Studying in Switzerland</h2>
@@ -56,7 +56,7 @@ const StudyInSwitzerland = () => {
 
       <p className="text-justify mt-4 mb-2">
         For students aspiring to succeed globally, connecting with 
-        <a href="https://vjcoverseas.com/" className="text-orange-500 font-semibold"> Best Visa Immigration Consultants </a> 
+        <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold"> Best Visa Immigration Consultants </a> 
         ensures that every step of the application and relocation journey is handled professionally.
       </p>
 
@@ -81,7 +81,7 @@ const StudyInSwitzerland = () => {
       </p>
 
       <p className="text-justify mt-4 mb-2">
-        Pursuing <a href="https://vjcoverseas.com/study-abroad/switzerland" className="text-orange-500 font-semibold">Study Abroad in Switzerland</a> also provides exposure to some of the most innovative academic environments, where students learn in a setting that emphasizes both knowledge and practical experience.
+        Pursuing <a href="https://www.vjcoverseas.com/study-abroad/switzerland" className="text-orange-500 font-semibold">Study Abroad in Switzerland</a> also provides exposure to some of the most innovative academic environments, where students learn in a setting that emphasizes both knowledge and practical experience.
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Conclusion: Take the First Step Towards Your Swiss Education</h2>
@@ -90,7 +90,7 @@ const StudyInSwitzerland = () => {
       </p>
 
       <p className="text-justify mt-4 mb-2">
-        Are you ready to take the next step in your academic journey? Get in touch with <a href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</a> today to learn how we can assist you in applying to top universities in Switzerland. Let our expertise guide you toward your dream education in one of the most prestigious academic destinations in the world.
+        Are you ready to take the next step in your academic journey? Get in touch with <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</a> today to learn how we can assist you in applying to top universities in Switzerland. Let our expertise guide you toward your dream education in one of the most prestigious academic destinations in the world.
       </p>
     </div>
   );

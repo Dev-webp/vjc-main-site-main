@@ -28,40 +28,49 @@ const UsaGreenCard = () => {
         {/* Text */}
         <div className="md:w-1/2 text-justify">
           <p className="mb-4 mt-4">
-            Are you ready to embark on a life-changing journey to the United States? With a Green Card, you can enjoy permanent residency in the USA and open doors to unlimited opportunities in work, education, and lifestyle. At <span className="text-orange-600 font-semibold">VJC Overseas</span>, we specialize in helping you navigate the Green Card visa process, ensuring a smooth and successful application journey.
+            Are you ready to embark on a life-changing journey to the United States? Securing a <span className="text-orange-600 font-semibold"><a href="https://www.vjcoverseas.com/pr-visas/germany-blue-card">U.S. Green Card</a></span> is the first major step toward achieving your American dream. With this card, you gain the right to live, study, and work in the USA permanently, enjoying stability and security. Many aspiring immigrants consult the <span className="text-orange-600 font-semibold"><a href="https://www.vjcoverseas.com">Best Visa Immigration Consultants</a></span> to ensure that their application is smooth and stress-free, and that’s where <strong>VJC Overseas</strong> makes the difference.
           </p>
         </div>
       </div>
 
       <h3 className="text-xl font-semibold mb-2 mt-4">What is a USA Green Card Visa?</h3>
       <p className="mb-4">
-        The USA Green Card is an official immigration visa that grants permanent residency to foreign nationals in the United States. With a Green Card, you gain the right to live and work permanently in the USA, access social services, and eventually apply for citizenship if you choose. It's a crucial step toward building a future in one of the world’s most dynamic and prosperous countries.
+        The US Permanent Residency card, also known as the <span className="text-orange-600 font-semibold"><a href="https://www.vjcoverseas.com/pr-visas/usa-green-card">US Permanent Residency</a></span>, is an official immigration document that grants foreign nationals the right to live and work in the United States indefinitely. It also opens the pathway to U.S. citizenship for those who want to make America their forever home. With expert guidance from <strong>PR Visa Consultants</strong>, applicants can avoid errors, delays, and confusion while going through this complex process.
       </p>
 
       <h3 className="text-xl font-semibold mb-2 mt-4">Lifestyle in the USA with a Green Card</h3>
       <ul className="list-disc list-inside space-y-1 mb-4">
-        <li><strong>Employment Opportunities:</strong> Work for any employer or start your own business.</li>
-        <li><strong>Healthcare:</strong> Access high-quality medical services.</li>
-        <li><strong>Education:</strong> Free public schools & in-state college tuition.</li>
-        <li><strong>Social Security Benefits:</strong> Qualify for retirement and other benefits after certain years of work.</li>
+        <li><strong>Employment Opportunities:</strong> Work freely for any employer or even start your own business.</li>
+        <li><strong>Healthcare Benefits:</strong> Access one of the world’s best medical systems.</li>
+        <li><strong>Education:</strong> Children get access to free public schools and reduced in-state tuition fees at colleges.</li>
+        <li><strong>Social Security:</strong> Enjoy retirement and other government-backed benefits after completing the required work period.</li>
       </ul>
+      <p className="mb-4">
+        With the support of <strong>VJC Overseas</strong>, immigrants can plan better and adapt quickly to their new life in the United States.
+      </p>
 
       <h3 className="text-xl font-semibold mb-2 mt-4">Living Expenses in the USA</h3>
       <ul className="list-disc list-inside space-y-1 mb-4">
-        <li><strong>Housing:</strong> Rent ranges from $800 to $2,500 based on city.</li>
-        <li><strong>Groceries and Utilities:</strong> $400–$900/month total.</li>
-        <li><strong>Transportation:</strong> Public transport is city-based; cars common in suburbs.</li>
+        <li><strong>Housing:</strong> Rent can range from $800 to $2,500 depending on the city.</li>
+        <li><strong>Groceries & Utilities:</strong> Typically $400–$900 per month.</li>
+        <li><strong>Transportation:</strong> Public transport is common in big cities, while cars are more essential in suburbs.</li>
       </ul>
+      <p className="mb-4">
+        Being guided by experienced consultants such as <strong>Best Visa Immigration Consultants</strong> allows you to plan finances realistically.
+      </p>
 
-      <h3 className="text-xl font-semibold mb-2 mt-4">Processing Time for USA Green Card Visa</h3>
+      <h3 className="text-xl font-semibold mb-2 mt-4">Processing Time for USA Green Card</h3>
       <p className="mb-2">
-        Processing time ranges from <strong>12 months to 2 years</strong>, depending on visa category and applicant origin.
+        The time taken for a US Permanent Residency visa depends on your category:
       </p>
       <ul className="list-disc list-inside space-y-1 mb-4">
-        <li><strong>Family-based Green Cards:</strong> Depends on relation and nationality.</li>
-        <li><strong>Employment-based:</strong> Faster for professionals in high-demand fields.</li>
-        <li><strong>Diversity Lottery:</strong> Competitive but quicker if selected.</li>
+        <li><strong>Family-Based Green Cards:</strong> Duration varies depending on relation and country of origin.</li>
+        <li><strong>Employment-Based Green Cards:</strong> Faster processing if you belong to a high-demand profession.</li>
+        <li><strong>Diversity Lottery:</strong> Quicker if selected, but highly competitive.</li>
       </ul>
+      <p className="mb-4">
+        On average, processing takes between 12 months to 2 years. With <span className="text-orange-600 font-semibold"><a href="https://www.vjcoverseas.com/pr-visas">PR Visa Consultants</a></span>, your paperwork and documentation are handled efficiently to reduce unnecessary delays.
+      </p>
 
       <h3 className="text-xl font-semibold mb-2 mt-4">USA Green Card Visa Fees</h3>
       <ul className="list-disc list-inside space-y-1 mb-4">
@@ -81,43 +90,31 @@ const UsaGreenCard = () => {
         </li>
         <li><strong>Diversity Visa Lottery:</strong>
           <ul className="ml-5 list-disc space-y-1">
-            <li>No fee to enter</li>
-            <li>Processing fees apply post-selection</li>
+            <li>Free entry but processing charges apply if selected</li>
           </ul>
         </li>
       </ul>
-
       <p className="mb-4">
-        Additional charges may apply for medical exams, translations, and documentation. <span className="text-orange-600 font-semibold">VJC Overseas</span> ensures complete clarity.
+        Additional costs may arise for medical exams, translations, and document authentication. <strong>VJC Overseas</strong> ensures complete transparency regarding all fees.
       </p>
 
-      <h3 className="text-xl font-semibold mb-2 mt-4">How <span className="text-orange-600 font-semibold">VJC Overseas</span> Can Help You</h3>
-      <p className="mb-4">
-        Our consultants help with every step — eligibility, paperwork, interviews — ensuring a smooth journey.
-      </p>
-
-      <h3 className="text-xl font-semibold mb-2 mt-4">Why Choose <span className="text-orange-600 font-semibold">VJC Overseas</span>?</h3>
+      <h3 className="text-xl font-semibold mb-2 mt-4">Why Choose VJC Overseas?</h3>
       <ul className="list-disc list-inside space-y-1 mb-4">
-        <li>Expert legal support</li>
-        <li>Complete guidance for all categories</li>
-        <li>Regular updates and fast processing</li>
-        <li>Personalized approach</li>
+        <li>Expert legal and documentation support</li>
+        <li>Step-by-step guidance for each Green Card category</li>
+        <li>Regular updates throughout the process</li>
+        <li>Personalized strategies for a successful application</li>
       </ul>
+    <p className="mb-4">
+  When it comes to <strong>PR Visa Consultants</strong>, trust only the team that has consistently delivered results for countless immigrants.
+</p>
 
-      <h3 className="text-xl font-semibold mb-2 mt-4">Start Your Green Card Journey Today</h3>
+
+      <h3 className="text-xl font-semibold mb-2 mt-4">Start Your U.S. Green Card Journey Today</h3>
       <p className="mb-4">
-        Contact <span className="text-orange-600 font-semibold">VJC Overseas</span> now and take the first step toward your dream life in the USA.
+        The path to a brighter future in the USA begins with the right guidance. Contact <span className="text-orange-600 font-semibold"><a href="https://www.vjcoverseas.com">VJC Overseas</a></span> today to take the first step toward permanent residency and a secure future.
       </p>
 
-      <h3 className="text-xl font-semibold mb-2 mt-4">Contact Us</h3>
-      <p className="mb-6">
-        📞 <strong>+91-9160449000</strong><br />
-        🌐 <strong>www.vjcoverseas.com</strong>
-      </p>
-
-      <p className="text-sm text-gray-600 italic">
-        *Visa regulations and fees are subject to change. Please verify with U.S. immigration or <span className="text-orange-600">VJC Overseas</span>.
-      </p>
     </div>
   );
 };

@@ -35,13 +35,13 @@ export default function NovaScotiaPNP() {
       {/* Intro */}
       <p>
         Nova Scotia, one of Canada's most picturesque and opportunity-rich provinces, offers an excellent pathway to permanent residence through the Nova Scotia Provincial Nominee Program (NSPNP). This program is specially designed to attract skilled workers, international graduates, and entrepreneurs who can strengthen the province’s economy while building a secure future in Canada. With expert guidance from <span className="text-orange-500">
-          <Link href="https://vjcoverseas.com">VJC Overseas</Link>
+          <Link href="https://www.vjcoverseas.com">VJC Overseas</Link>
         </span>, individuals can explore this opportunity with confidence.
       </p>
 
       <p className="mt-2">
         If you are planning to settle in Canada, the <span className="text-orange-500">
-          <Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program">Canada PNP Program</Link>
+          <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program">Canada PNP Program</Link>
         </span> is one of the most reliable options. Nova Scotia’s immigration streams are efficient, targeted, and tailored to meet the needs of both the applicants and the local labour market.
       </p>
 
@@ -50,12 +50,12 @@ export default function NovaScotiaPNP() {
         <h2 className="text-xl font-bold text-black mb-2">What is the Nova Scotia PNP (NSPNP)?</h2>
         <p>
           The Nova Scotia Nominee Program allows the province to nominate candidates for permanent residence who fulfill specific economic and demographic requirements. Once nominated, applicants can apply to Immigration, Refugees and Citizenship Canada (IRCC) for a <span className="text-orange-500">
-            <Link href="https://vjcoverseas.com/pr-visas/canada-pr">Canada PR Visa</Link>
+            <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr">Canada PR Visa</Link>
           </span>.
         </p>
         <p className="mt-2">
           The NSPNP operates through both Express Entry-aligned and non-Express Entry streams, offering flexibility for applicants with different skill levels, professional backgrounds, and qualifications. Many applicants work with <span className="text-orange-500">
-            <Link href="https://vjcoverseas.com/pr-visas">PR Visa Consultants</Link>
+            <Link href="https://www.vjcoverseas.com/pr-visas">PR Visa Consultants</Link>
           </span> to ensure they apply under the most suitable stream.
         </p>
       </section>
@@ -82,7 +82,7 @@ export default function NovaScotiaPNP() {
         </ul>
         <p className="mt-2">
           For those considering long-term settlement, the <span className="text-orange-500">
-            <Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program/canada-nova-scotia">Canada Nova Scotia PR</Link>
+            <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program/canada-nova-scotia">Canada Nova Scotia PR</Link>
           </span> pathway is highly appealing due to its balance of lifestyle, affordability, and career opportunities.
         </p>
       </section>
@@ -110,7 +110,7 @@ export default function NovaScotiaPNP() {
         </ul>
         <p className="mt-2">
           Whether you’re applying independently or through the help of <span className="text-orange-500">
-            <Link href="https://vjcoverseas.com">Best Visa Immigration Consultants</Link>
+            <Link href="https://www.vjcoverseas.com">Best Visa Immigration Consultants</Link>
           </span>, the Nova Scotia PNP opens doors to long-term success in Canada.
         </p>
       </section>

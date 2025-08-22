@@ -10,7 +10,7 @@ const StudyInNorway = () => {
 
       <p className="mt-4 text-lg" style={{ fontFamily: 'Times New Roman' }}>
         Norway is not only known for its breathtaking landscapes and high standard of living, but it also offers exceptional education that attracts students from across the world. For many aspiring international students, choosing the right destination is a crucial decision, and 
-        <a href="https://vjcoverseas.com/study-abroad/norway" style={{ color: 'orange' }}> Study Abroad in Norway</a> has become one of the most popular options because of its affordability, quality, and global recognition. 
+        <a href="https://www.vjcoverseas.com/study-abroad/norway" style={{ color: 'orange' }}> Study Abroad in Norway</a> has become one of the most popular options because of its affordability, quality, and global recognition. 
         At <b>VJC Overseas</b>, we understand that planning your education in a foreign country can be overwhelming. That’s why we provide complete guidance for students who want to explore higher education opportunities in Norway. From the application process to living arrangements, our role is to ensure a smooth transition into your academic journey.
       </p>
 
@@ -35,7 +35,7 @@ const StudyInNorway = () => {
       </ul>
 
       <p className="mt-4 text-lg">
-        For students seeking guidance, connecting with <a href="https://vjcoverseas.com/study-abroad/" style={{ color: 'orange' }}>Study Visa Consultants</a> can make a huge difference. Professional consultants provide insights into university selection, documentation, and visa requirements.
+        For students seeking guidance, connecting with <a href="https://www.vjcoverseas.com/study-abroad/" style={{ color: 'orange' }}>Study Visa Consultants</a> can make a huge difference. Professional consultants provide insights into university selection, documentation, and visa requirements.
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2" style={{ fontFamily: 'Times New Roman' }}>Cost of Studying in Norway</h2>
@@ -49,12 +49,12 @@ const StudyInNorway = () => {
       </ul>
       <p className="mt-2 text-lg">
         When compared with other destinations, Norway provides significant value since students benefit from free education and only have to manage their cost of living. For families who want professional support, 
-        <a href="https://vjcoverseas.com/" style={{ color: 'orange' }}> Best Visa Immigration Consultants</a> play an important role in ensuring the process is efficient and stress-free.
+        <a href="https://www.vjcoverseas.com/" style={{ color: 'orange' }}> Best Visa Immigration Consultants</a> play an important role in ensuring the process is efficient and stress-free.
       </p>
 
       <h2 className="text-xl font-semibold text-black mt-4 mb-2">Visa & Admission Information</h2>
       <p className="mb-4">
-        Non-EU/EEA students must apply for a <a href="https://vjcoverseas.com/study-abroad/norway" style={{ color: 'orange' }}>Norway Student Visa</a>, also referred to as a student residence permit. Requirements typically include an admission letter from a recognized university, proof of accommodation, and sufficient funds (approx. NOK 137,907/year) to cover living expenses. Applications are reviewed by the Norwegian Directorate of Immigration (UDI), and students are advised to start their application process early to avoid delays. Many students seek help from <b>VJC Overseas</b> to streamline this process and ensure that all documents meet the requirements.
+        Non-EU/EEA students must apply for a <a href="https://www.vjcoverseas.com/study-abroad/norway" style={{ color: 'orange' }}>Norway Student Visa</a>, also referred to as a student residence permit. Requirements typically include an admission letter from a recognized university, proof of accommodation, and sufficient funds (approx. NOK 137,907/year) to cover living expenses. Applications are reviewed by the Norwegian Directorate of Immigration (UDI), and students are advised to start their application process early to avoid delays. Many students seek help from <b>VJC Overseas</b> to streamline this process and ensure that all documents meet the requirements.
       </p>
 
       <h2 className="text-xl font-semibold text-black mt-4 mb-2">Work Opportunities for Students</h2>
@@ -78,7 +78,7 @@ const StudyInNorway = () => {
 
       <h2 className="text-xl font-semibold mt-4 mb-2" style={{ fontFamily: 'Times New Roman' }}>Apply Now with <span style={{ color: 'orange' }}>VJC Overseas</span></h2>
       <p className="text-lg" style={{ fontFamily: 'Times New Roman' }}>
-        Making the right choice for your study abroad journey requires professional guidance. <a href="https://vjcoverseas.com/" style={{ color: 'orange' }}>VJC Overseas</a> provides personalized counseling, application support, and complete visa assistance to students who dream of studying in Norway. From university selection to preparing for life in a new country, our team ensures that you are confident at every step. If you are ready to take the first step towards your future, connect with us today. With expert guidance from trusted consultants, your journey to Norway can be smooth and successful.
+        Making the right choice for your study abroad journey requires professional guidance. <a href="https://www.vjcoverseas.com/" style={{ color: 'orange' }}>VJC Overseas</a> provides personalized counseling, application support, and complete visa assistance to students who dream of studying in Norway. From university selection to preparing for life in a new country, our team ensures that you are confident at every step. If you are ready to take the first step towards your future, connect with us today. With expert guidance from trusted consultants, your journey to Norway can be smooth and successful.
       </p>
 
       {/* Bold mentions without links */}

@@ -25,7 +25,7 @@ const StudyInSouthAfrica = () => {
                                </div>
       <h2 className="text-xl md-2 font-semibold mt-4">Why Study in South Africa?</h2>
       <p>
-        South Africa is home to several institutions ranked among the world’s best. The <span className="text-orange-500"><Link href="https://vjcoverseas.com/">Best Visa Immigration Consultants</Link></span> will tell you that this country combines strong academic credentials with a welcoming international environment. Here’s why it stands out:
+        South Africa is home to several institutions ranked among the world’s best. The <span className="text-orange-500"><Link href="https://www.vjcoverseas.com/">Best Visa Immigration Consultants</Link></span> will tell you that this country combines strong academic credentials with a welcoming international environment. Here’s why it stands out:
       </p>
       <ul className="list-disc ml-6 space-y-1 mt-2">
         <li><strong>World-Class Education:</strong> Universities like the University of Cape Town, University of the Witwatersrand, and Stellenbosch University are recognized globally for academic excellence.</li>
@@ -73,7 +73,7 @@ const StudyInSouthAfrica = () => {
 
       <h2 className="text-xl md-2 font-semibold mt-4">Post-Study Opportunities</h2>
       <p>
-        One attractive aspect of studying in South Africa is the option to gain work experience after graduation. With expert guidance from <span className="text-orange-500"><Link href="https://vjcoverseas.com/study-abroad/">Study Visa Consultants</Link></span>, you can understand pathways for a <span className="text-orange-500"><Link href="https://vjcoverseas.com/migrate/south-africa/general-work-visa">South Africa Work Visa</Link></span> that may allow you to remain in the country and build professional experience.
+        One attractive aspect of studying in South Africa is the option to gain work experience after graduation. With expert guidance from <span className="text-orange-500"><Link href="https://www.vjcoverseas.com/study-abroad/">Study Visa Consultants</Link></span>, you can understand pathways for a <span className="text-orange-500"><Link href="https://www.vjcoverseas.com/migrate/south-africa/general-work-visa">South Africa Work Visa</Link></span> that may allow you to remain in the country and build professional experience.
       </p>
 
       <h2 className="text-xl md-2 font-bold mt-4 text-black">Benefits of Choosing VJC Overseas</h2>

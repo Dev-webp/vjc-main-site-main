@@ -33,20 +33,22 @@ export default function Australia191Visa() {
 
       {/* Introduction */}
       <p>
-        If you're a skilled worker who has lived and worked in regional Australia on a temporary visa and are now looking to make Australia your permanent home, the Australia 191 Permanent Residence (Skilled Regional) Visa offers the perfect opportunity.
+        If you are a skilled worker who has been living and working in regional Australia on a temporary visa, the Australia Subclass 191 Visa provides an excellent opportunity to secure permanent residency. With this visa, professionals who contribute to regional development can make Australia their permanent home and enjoy the benefits that come with it.
       </p>
       <p className="mt-2">
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we specialize in helping skilled professionals navigate the complexities of this visa, ensuring a seamless transition to permanent residency in one of the most vibrant and diverse regions in the world.
+         At <span className="font-bold text-black">VJC Overseas</span>, we take pride in guiding skilled professionals through this process with step-by-step support. As one of the{" "}
+        <a href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</a>, we ensure your application is handled with precision and care, making your transition to permanent residency smooth and stress-free.
       </p>
 
       {/* What is Subclass 191 */}
       <section className="mt-6">
         <h2 className="text-xl font-bold text-black mb-2">What is the Subclass 191 Permanent Residence (Skilled Regional) Visa?</h2>
         <p>
-          The Subclass 191 Visa is a permanent residency visa for individuals who have lived and worked in designated regional areas of Australia on a provisional Skilled Regional visa (Subclass 489, 491, or 494).
+          The Subclass 191 Visa is designed for individuals who have already held a provisional Skilled Regional visa (Subclass 489, 491, or 494) and have lived and worked in designated regional areas of Australia. This visa rewards your contribution to regional development and grants you full permanent resident status after meeting the required conditions.
         </p>
         <p className="mt-2">
-          This visa supports regional development by retaining skilled workers in regional zones, granting them permanent residency after fulfilling certain residency and employment criteria.
+          Applying with the help of professional{" "}
+          <a href="https://www.vjcoverseas.com/pr-visas" className="text-orange-500 font-semibold">PR Visa Consultants</a> increases your chances of approval and ensures compliance with every stage of the application.
         </p>
       </section>
 
@@ -54,12 +56,16 @@ export default function Australia191Visa() {
       <section className="mt-6">
         <h2 className="text-xl font-bold text-black mb-2">Key Benefits of the Subclass 191 Visa</h2>
         <ul className="list-disc list-inside ml-4 space-y-2">
-          <li><strong>Permanent Residency:</strong> Live, work, and study in Australia with full permanent resident status.</li>
-          <li><strong>Work and Study Rights:</strong> No limitations on where or how you work or study once you obtain PR.</li>
-          <li><strong>Healthcare Access:</strong> Access to Medicare, Australia’s world-class public healthcare system.</li>
-          <li><strong>Pathway to Citizenship:</strong> Eligible to apply for Australian citizenship after four years.</li>
-          <li><strong>Family Inclusion:</strong> Include your spouse and dependent children in the same visa application.</li>
+          <li><strong>Permanent Residency:</strong> Secure your future by gaining the right to live, work, and study in Australia as a permanent resident.</li>
+          <li><strong>Work & Study Rights:</strong> Freedom to work or study anywhere without restrictions.</li>
+          <li><strong>Healthcare Access:</strong> Benefit from Medicare, Australia’s trusted public healthcare system.</li>
+          <li><strong>Pathway to Citizenship:</strong> Apply for Australian citizenship after four years of residence.</li>
+          <li><strong>Family Inclusion:</strong> Bring your spouse and dependent children under the same visa application.</li>
         </ul>
+        <p className="mt-2">
+          Choosing an{" "}
+          <a href="https://www.vjcoverseas.com/pr-visas/australia-pr" className="text-orange-500 font-semibold">Australia PR Visa</a> pathway like the Subclass 191 ensures you and your family can settle securely with long-term benefits.
+        </p>
       </section>
 
       {/* Eligibility */}
@@ -79,24 +85,31 @@ export default function Australia191Visa() {
       <section className="mt-6">
         <h2 className="text-xl font-bold text-black mb-2">How VJC Overseas Can Help You</h2>
         <ul className="list-disc list-inside ml-4 space-y-2">
-          <li><strong>Eligibility Check:</strong> We assess your provisional visa history and ensure you meet all 191 visa criteria.</li>
-          <li><strong>Document Guidance:</strong> Help in compiling work history, income evidence, and regional residence proof.</li>
-          <li><strong>Full Application Support:</strong> From start to finish, our team manages your 191 visa submission process.</li>
-          <li><strong>Compliance Monitoring:</strong> We ensure all visa conditions were followed and well-documented.</li>
-          <li><strong>Settlement Services:</strong> We provide post-visa assistance for accommodation, schools, jobs, and more.</li>
+          <li><strong>Eligibility Assessment:</strong> Detailed review of your provisional visa history.</li>
+          <li><strong>Document Preparation:</strong> Guidance in compiling income records, work history, and residency proof.</li>
+          <li><strong>Application Support:</strong> Full end-to-end assistance with your Subclass 191 application.</li>
+          <li><strong>Compliance Check:</strong> Ensuring all provisional visa conditions are properly documented.</li>
+          <li><strong>Post-Visa Services:</strong> Help with settlement, job search, education, and accommodation.</li>
         </ul>
+        <p className="mt-2">
+          With years of expertise, we are recognized as one of the most reliable teams in{" "}
+          <a href="https://www.vjcoverseas.com/pr-visas/australia-pr/191-permanent-residence-visa" className="text-orange-500 font-semibold">Australia Subclass 191 Visa</a> immigration guidance.
+        </p>
       </section>
 
       {/* CTA */}
       <section className="mt-6">
         <h2 className="text-xl font-bold text-black mb-2">Start Your Journey to Permanent Residency Today</h2>
         <p>
-          The Subclass 191 Visa is your reward for contributing to regional Australia. If you’re ready to make your stay permanent, <span className="text-orange-500 font-semibold">VJC Overseas</span> is your trusted partner to make it happen.
+          The Australia Subclass 191 Visa is more than just a visa—it’s a reward for your contribution to regional Australia. By working with{" "}
+          <a href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">VJC Overseas</a>, you gain a trusted partner who ensures your application is accurate and efficient, giving you the best chance of success.
         </p>
         <p className="mt-2">
-          Contact us today to confirm your eligibility and begin your path to Australian permanent residency under the Subclass 191 visa.
+          Take the first step with the support of experienced consultants who specialize in Australian immigration pathways. Reach out today and secure your future with a permanent residency in Australia.
         </p>
       </section>
+
+     
     </div>
   );
 }

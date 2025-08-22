@@ -35,7 +35,7 @@ const Denmark = () => {
             Studying in Denmark offers students an excellent opportunity to experience
             world-class education, a high standard of living, and an internationally
             recognized degree. At{" "}
-            <Link href="https://vjcoverseas.com/" className="text-orange-500">
+            <Link href="https://www.vjcoverseas.com/" className="text-orange-500">
               VJC Overseas
             </Link>
             , we guide you through every step of obtaining a Denmark student visa, ensuring a
@@ -56,7 +56,7 @@ const Denmark = () => {
       <p className="mt-2">
         Exploring{" "}
         <Link
-          href="https://vjcoverseas.com/study-abroad/denmark"
+          href="https://www.vjcoverseas.com/study-abroad/denmark"
           className="text-orange-500"
         >
           Study Opportunities in Denmark
@@ -76,7 +76,7 @@ const Denmark = () => {
       <p className="mt-2">
         Understanding the{" "}
         <Link
-          href="https://vjcoverseas.com/study-abroad/denmark"
+          href="https://www.vjcoverseas.com/study-abroad/denmark"
           className="text-orange-500"
         >
           Denmark Student Visa Process
@@ -115,7 +115,7 @@ const Denmark = () => {
       <p className="mt-2">
         This process can feel overwhelming, which is why many students rely on{" "}
         <Link
-          href="https://vjcoverseas.com/study-abroad/"
+          href="https://www.vjcoverseas.com/study-abroad/"
           className="text-orange-500"
         >
           Study Visa Consultants
@@ -187,7 +187,7 @@ const Denmark = () => {
       <p className="mt-2">
         For many students, consulting the{" "}
         <Link
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-500"
         >
           Best Visa Immigration Consultants

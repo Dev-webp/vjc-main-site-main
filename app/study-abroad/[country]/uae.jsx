@@ -26,14 +26,14 @@ const UAEStudentVisa = () => {
         {/* Content Section */}
         <div className="md:w-2/3 w-full">
           <p className="mb-2">
-            Studying in the United Arab Emirates (UAE) opens doors to a world-class education system, modern infrastructure, and a multicultural learning environment. For students seeking global exposure and career opportunities, the UAE has emerged as one of the most preferred destinations in recent years. Whether you’re looking to pursue undergraduate or postgraduate studies, <strong>VJC Overseas</strong> provides complete guidance on choosing the right university, applying for your <a href="https://vjcoverseas.com/study-abroad/uae" className="text-orange-500 font-semibold">UAE Student Visa</a>, and making your transition seamless.
+            Studying in the United Arab Emirates (UAE) opens doors to a world-class education system, modern infrastructure, and a multicultural learning environment. For students seeking global exposure and career opportunities, the UAE has emerged as one of the most preferred destinations in recent years. Whether you’re looking to pursue undergraduate or postgraduate studies, <strong>VJC Overseas</strong> provides complete guidance on choosing the right university, applying for your <a href="https://www.vjcoverseas.com/study-abroad/uae" className="text-orange-500 font-semibold">UAE Student Visa</a>, and making your transition seamless.
           </p>
         </div>
       </div>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Why Choose the UAE for Higher Education?</h2>
       <p>
-        The UAE is home to some of the fastest-growing universities in the Middle East, offering a mix of innovation and tradition. The country has positioned itself as a hub for global education, attracting thousands of international students each year. From advanced research opportunities to international faculty, studying here ensures that you gain the skills needed to thrive in today’s competitive world. For students who are looking for trusted advice, approaching <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</a> can make the process much easier. Expert consultants ensure that every step of the admission and visa journey is handled professionally, saving both time and effort.
+        The UAE is home to some of the fastest-growing universities in the Middle East, offering a mix of innovation and tradition. The country has positioned itself as a hub for global education, attracting thousands of international students each year. From advanced research opportunities to international faculty, studying here ensures that you gain the skills needed to thrive in today’s competitive world. For students who are looking for trusted advice, approaching <a href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</a> can make the process much easier. Expert consultants ensure that every step of the admission and visa journey is handled professionally, saving both time and effort.
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Top Universities and Colleges in the UAE</h2>
@@ -65,7 +65,7 @@ const UAEStudentVisa = () => {
 
       <h2 className="text-xl font-semibold mt-4 mb-2">UAE Student Visa – Step-by-Step Process</h2>
       <p>
-        The process of securing a <strong>UAE Student Visa</strong> is straightforward when guided by the <a href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</a> like VJC Overseas. 
+        The process of securing a <strong>UAE Student Visa</strong> is straightforward when guided by the <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</a> like VJC Overseas. 
       </p>
       <ul className="list-decimal ml-6">
         <li><strong>Admission Offer:</strong> Get an acceptance letter from a recognized UAE institution.</li>
@@ -83,12 +83,12 @@ const UAEStudentVisa = () => {
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Why VJC Overseas?</h2>
       <p>
-        Navigating admissions and visa procedures on your own can feel overwhelming. That’s where <strong>VJC Overseas</strong> steps in. Recognized among the <strong>Best Visa Immigration Consultants</strong>, our team specializes in guiding students who wish to <a href="https://vjcoverseas.com/study-abroad/uae" className="text-orange-500 font-semibold">Study in UAE</a>. From university shortlisting to documentation and visa approvals, our experts ensure a smooth journey.
+        Navigating admissions and visa procedures on your own can feel overwhelming. That’s where <strong>VJC Overseas</strong> steps in. Recognized among the <strong>Best Visa Immigration Consultants</strong>, our team specializes in guiding students who wish to <a href="https://www.vjcoverseas.com/study-abroad/uae" className="text-orange-500 font-semibold">Study in UAE</a>. From university shortlisting to documentation and visa approvals, our experts ensure a smooth journey.
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Conclusion – Begin Your UAE Education Journey Today</h2>
       <p>
-        Choosing to <strong>Study in UAE</strong> is more than just pursuing higher education – it’s about building a successful global future. With professional guidance from trusted <strong>Study Visa Consultants</strong>, you can simplify the process and focus on achieving your academic dreams. If you’re ready to take the next step, connect with <a href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</a> today and let us help you start your journey with confidence.
+        Choosing to <strong>Study in UAE</strong> is more than just pursuing higher education – it’s about building a successful global future. With professional guidance from trusted <strong>Study Visa Consultants</strong>, you can simplify the process and focus on achieving your academic dreams. If you’re ready to take the next step, connect with <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</a> today and let us help you start your journey with confidence.
       </p>
     </div>
   );

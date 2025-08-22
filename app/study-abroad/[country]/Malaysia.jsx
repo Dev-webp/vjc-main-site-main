@@ -15,11 +15,11 @@ const StudyInMalaysia = () => {
         <strong>VJC Overseas</strong>{" "}
         is here to make that dream a reality. Recognized among the{" "}
         <span className="text-orange-500">
-          <Link href="https://vjcoverseas.com/">Best Visa Immigration Consultants</Link>
+          <Link href="https://www.vjcoverseas.com/">Best Visa Immigration Consultants</Link>
         </span>
         , we specialize in helping students explore academic opportunities across the globe, and Malaysia stands out as one of the most promising options. With its growing reputation as a global education hub, Malaysia offers a unique blend of quality academics, cultural diversity, and career prospects. Many students who connect with our{" "}
         <span className="text-orange-500">
-          <Link href="https://vjcoverseas.com/study-abroad/">Study Visa Consultants</Link>
+          <Link href="https://www.vjcoverseas.com/study-abroad/">Study Visa Consultants</Link>
         </span>{" "}
         find that Malaysia strikes the perfect balance between modern facilities and affordable living.
       </p>
@@ -51,7 +51,7 @@ const StudyInMalaysia = () => {
       <p>
         Malaysia offers a wide range of academic opportunities for international students. At{" "}
         <span className="text-orange-500">
-          <Link href="https://vjcoverseas.com/study-abroad/malaysia">Study Programs in Malaysia</Link>
+          <Link href="https://www.vjcoverseas.com/study-abroad/malaysia">Study Programs in Malaysia</Link>
         </span>
         , we guide you in exploring the best study programs including:
       </p>
@@ -77,7 +77,7 @@ const StudyInMalaysia = () => {
       <p>
         One of the biggest attractions for international students in Malaysia is affordability. Monthly living expenses typically range between MYR 1,200 and MYR 2,500, covering accommodation, food, transportation, and leisure activities. This makes{" "}
         <span className="text-orange-500">
-          <Link href="https://vjcoverseas.com/study-abroad/malaysia">Malaysia Student Visa</Link>
+          <Link href="https://www.vjcoverseas.com/study-abroad/malaysia">Malaysia Student Visa</Link>
         </span>{" "}
         a cost-effective choice compared to many other destinations.
       </p>
@@ -94,7 +94,7 @@ const StudyInMalaysia = () => {
       <p>
         If you’re ready to take your education to the next level, Malaysia could be your ideal destination. With the guidance of{" "}
         <span className="text-orange-500">
-          <Link href="https://vjcoverseas.com/">VJC Overseas</Link>
+          <Link href="https://www.vjcoverseas.com/">VJC Overseas</Link>
         </span>
         , your pathway to success becomes clearer and more achievable. Contact us today and take the first step toward a brighter future!
       </p>

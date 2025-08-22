@@ -33,7 +33,7 @@ const StudyInDubai = () => {
             education, is calling you! With world-class universities, a vibrant
             multicultural environment, and limitless opportunities,{" "}
             <a
-              href="https://vjcoverseas.com/study-abroad/dubai"
+              href="https://www.vjcoverseas.com/study-abroad/dubai"
               className="text-orange-500"
             >
               Study in Dubai
@@ -55,7 +55,7 @@ const StudyInDubai = () => {
           American University in Dubai, and Dubai University of Science and
           Technology. These rank among the{" "}
           <a
-            href="https://vjcoverseas.com/study-abroad/dubai"
+            href="https://www.vjcoverseas.com/study-abroad/dubai"
             className="text-orange-500"
           >
             Top Universities in Dubai
@@ -162,7 +162,7 @@ const StudyInDubai = () => {
       <p className="text-justify mb-2">
         Getting a{" "}
         <a
-          href="https://vjcoverseas.com/study-abroad/dubai"
+          href="https://www.vjcoverseas.com/study-abroad/dubai"
           className="text-orange-500"
         >
           Dubai Student Visa
@@ -179,7 +179,7 @@ const StudyInDubai = () => {
       <p className="text-justify mb-2 mt-4">
         <b>VJC Overseas</b> stands among the{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-500"
         >
           Best Visa Immigration Consultants
@@ -187,7 +187,7 @@ const StudyInDubai = () => {
         providing expert guidance for students aspiring to build their future
         abroad. Our team also specializes as trusted{" "}
         <a
-          href="https://vjcoverseas.com/study-abroad/"
+          href="https://www.vjcoverseas.com/study-abroad/"
           className="text-orange-500"
         >
           Study Visa Consultants
@@ -210,7 +210,7 @@ const StudyInDubai = () => {
         Dubai is more than just a destination—it’s a gateway to world-class
         education, global networking, and exciting career prospects. With{" "}
         <a
-          href="https://vjcoverseas.com/"
+          href="https://www.vjcoverseas.com/"
           className="text-orange-500"
         >
           VJC Overseas

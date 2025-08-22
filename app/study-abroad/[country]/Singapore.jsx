@@ -11,13 +11,13 @@ const StudyInSingapore = () => {
       <div className="flex flex-col md:flex-row items-center gap-10 mb-10">
         <div className="w-full md:w-2/3">
           <p>
-            Are you aiming to pursue higher education in one of Asia’s most dynamic academic destinations? Welcome to <a href="https://vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</a>, your trusted partner for international education guidance. We take pride in being among the <span className="font-bold text-black">Best Visa Immigration Consultants</span>, helping students achieve their dreams of global study opportunities.
+            Are you aiming to pursue higher education in one of Asia’s most dynamic academic destinations? Welcome to <a href="https://www.vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</a>, your trusted partner for international education guidance. We take pride in being among the <span className="font-bold text-black">Best Visa Immigration Consultants</span>, helping students achieve their dreams of global study opportunities.
           </p>
           <p className="mt-3">
-            If you are considering <a href="https://vjcoverseas.com/study-abroad/singapore" className="text-orange-500">Study Abroad in Singapore</a>, you’ll find it to be a country known for innovation, world-class universities, and a rich cultural experience. Our team of experienced consultants will walk you through every stage of the process, from selecting the right course to submitting your application.
+            If you are considering <a href="https://www.vjcoverseas.com/study-abroad/singapore" className="text-orange-500">Study Abroad in Singapore</a>, you’ll find it to be a country known for innovation, world-class universities, and a rich cultural experience. Our team of experienced consultants will walk you through every stage of the process, from selecting the right course to submitting your application.
           </p>
           <p className="mt-3">
-            When it comes to obtaining a <a href="https://vjcoverseas.com/study-abroad/singapore" className="text-orange-500">Singapore Study Visa</a>, we provide step-by-step assistance to make your transition smooth and stress-free. From admission guidance to scholarship support, our services are tailored to ensure you get the most out of your academic journey.
+            When it comes to obtaining a <a href="https://www.vjcoverseas.com/study-abroad/singapore" className="text-orange-500">Singapore Study Visa</a>, we provide step-by-step assistance to make your transition smooth and stress-free. From admission guidance to scholarship support, our services are tailored to ensure you get the most out of your academic journey.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ const StudyInSingapore = () => {
 
       <h2 className="mt-4 mb-2 text-xl font-semibold">Study in Singapore with VJC Overseas</h2>
       <p>
-        At <a href="https://vjcoverseas.com/" className="text-orange-500">VJC Overseas</a>, we’re committed to helping you achieve your academic goals. Our services include: <span className="font-bold text-black">VJC Overseas</span>
+        At <a href="https://www.vjcoverseas.com/" className="text-orange-500">VJC Overseas</a>, we’re committed to helping you achieve your academic goals. Our services include: <span className="font-bold text-black">VJC Overseas</span>
       </p>
       <ul className="list-disc ml-6 space-y-1">
         <li>University & College Admission Guidance</li>
@@ -88,7 +88,7 @@ const StudyInSingapore = () => {
 
       <h2 className="mt-4 mb-2 text-xl font-semibold">Take the First Step Toward Your Future Today</h2>
       <p>
-        Your academic journey in Singapore starts with expert planning and the right support. With <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</a>, you’re not just applying to a university—you’re opening doors to a world of opportunities.
+        Your academic journey in Singapore starts with expert planning and the right support. With <a href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</a>, you’re not just applying to a university—you’re opening doors to a world of opportunities.
       </p>
     </div>
   );

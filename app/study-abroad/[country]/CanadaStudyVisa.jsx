@@ -113,7 +113,7 @@ const CanadaStudentVisa = () => {
         Why Choose <span className="text-orange-600">VJC Overseas</span>?
       </h2>
       <p className="mb-4">
-        At <strong className="text-black">VJC Overseas</strong>, we understand that the process of applying for a Canadian student visa can be overwhelming. Our experts offer step-by-step guidance, personalized counselling, and help you choose the right course and institution in Canada. We are recognized as one of the <a href="https://vjcoverseas.com/" className="text-orange-600">Best Visa Immigration Consultants</a> with years of proven experience. We also assist with <a href="https://vjcoverseas.com/work-abroad/canada-work-permit" className="text-orange-600">Canada Work permit visa</a> guidance for students planning to work after graduation.
+        At <strong className="text-black">VJC Overseas</strong>, we understand that the process of applying for a Canadian student visa can be overwhelming. Our experts offer step-by-step guidance, personalized counselling, and help you choose the right course and institution in Canada. We are recognized as one of the <a href="https://vjcoverseas.com/" className="text-orange-600">Best Visa Immigration Consultants</a> with years of proven experience. We also assist with <a href="https://www.vjcoverseas.com/work-abroad/canada-work-permit" className="text-orange-600">Canada Work permit visa</a> guidance for students planning to work after graduation.
       </p>
 
       {/* Call to Action */}
@@ -121,7 +121,7 @@ const CanadaStudentVisa = () => {
         Get in Touch Today!
       </h2>
       <p>
-        Start your journey to studying in Canada with the trusted experts at <a href="https://vjcoverseas.com/study-abroad" className="text-orange-600">Study Visa Consultants</a>. Contact us today for a consultation and take the first step toward your Canadian dream!
+        Start your journey to studying in Canada with the trusted experts at <a href="https://www.vjcoverseas.com/study-abroad" className="text-orange-600">Study Visa Consultants</a>. Contact us today for a consultation and take the first step toward your Canadian dream!
       </p>
 
       {/* New Final Paragraph */}

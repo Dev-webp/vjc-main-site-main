@@ -34,7 +34,7 @@ const StudyNetherlands = () => {
         <li><strong>Innovative and Practical Approach:</strong> Dutch education emphasizes critical thinking, teamwork, and hands-on learning, preparing students for the global job market.</li>
       </ul>
       <p className="text-justify mb-6">
-        For students looking for the right path, consulting experienced <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-bold">Study Visa Consultants</a> can make the application and admission process more effective, helping you focus on your academic goals.
+        For students looking for the right path, consulting experienced <a href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-bold">Study Visa Consultants</a> can make the application and admission process more effective, helping you focus on your academic goals.
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Top Universities and Colleges in the Netherlands</h2>
@@ -47,7 +47,7 @@ const StudyNetherlands = () => {
         <li><strong>Rotterdam School of Management, Erasmus University</strong> - One of the top business schools in Europe.</li>
       </ol>
       <p className="text-justify mb-6">
-        Exploring these institutions helps students discover multiple <a href="https://vjcoverseas.com/study-abroad/netherlands" className="text-orange-500 font-bold">Study Opportunities in Netherlands</a>, ranging from technical education to business and cultural studies.
+        Exploring these institutions helps students discover multiple <a href="https://www.vjcoverseas.com/study-abroad/netherlands" className="text-orange-500 font-bold">Study Opportunities in Netherlands</a>, ranging from technical education to business and cultural studies.
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Tuition Fees in the Netherlands</h2>
@@ -57,7 +57,7 @@ const StudyNetherlands = () => {
         <li><strong>PhD Programs:</strong> Fees vary depending on the university and research program.</li>
       </ul>
       <p className="text-justify mb-6">
-        The cost of education may feel like a challenge for international students, but proper planning and <a href="https://vjcoverseas.com/study-abroad/netherlands" className="text-orange-500 font-bold">Netherlands Student Visa</a> helps in understanding financial requirements, scholarships, and visa rules effectively.
+        The cost of education may feel like a challenge for international students, but proper planning and <a href="https://www.vjcoverseas.com/study-abroad/netherlands" className="text-orange-500 font-bold">Netherlands Student Visa</a> helps in understanding financial requirements, scholarships, and visa rules effectively.
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Living Costs and Accommodation in the Netherlands</h2>
@@ -95,7 +95,7 @@ const StudyNetherlands = () => {
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Conclusion</h2>
       <p className="text-justify">
-        Studying in the Netherlands offers a unique opportunity to experience world-class education while enjoying a vibrant, multicultural environment. At <a href="https://vjcoverseas.com/" className="text-orange-500 font-bold">VJC Overseas</a>, we are here to help you navigate every step of your journey with the right information and professional support. Connect with us today to begin your path toward higher education in the Netherlands.
+        Studying in the Netherlands offers a unique opportunity to experience world-class education while enjoying a vibrant, multicultural environment. At <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">VJC Overseas</a>, we are here to help you navigate every step of your journey with the right information and professional support. Connect with us today to begin your path toward higher education in the Netherlands.
       </p>
     </div>
   );

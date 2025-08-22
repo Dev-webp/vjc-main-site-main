@@ -125,7 +125,7 @@ export default function NocCanada2025WithAllLevels() {
     color: "#333", 
     lineHeight: 1.6 
   }}>
-    At <strong style={{color:"#000"}}>VJC Overseas</strong>, we specialize in evaluating your eligibility, identifying the right NOC code for your profile, and guiding you throughout the visa application process. Whether you’re applying through <a href="https://vjcoverseas.com" style={{color:"orange"}}><strong>Best Visa Immigration Consultants</strong></a>, Express Entry, a Provincial Nominee Program (PNP), or other pathways, our experts simplify the journey and help you secure a bright future in Canada.
+    At <strong style={{color:"#000"}}>VJC Overseas</strong>, we specialize in evaluating your eligibility, identifying the right NOC code for your profile, and guiding you throughout the visa application process. Whether you’re applying through <a href="https://www.vjcoverseas.com" style={{color:"orange"}}><strong>Best Visa Immigration Consultants</strong></a>, Express Entry, a Provincial Nominee Program (PNP), or other pathways, our experts simplify the journey and help you secure a bright future in Canada.
   </p>
 
 
@@ -259,7 +259,7 @@ export default function NocCanada2025WithAllLevels() {
       {/* Content Below Table */}
       <div style={{ margin: "2.5rem auto 0", maxWidth: "900px" }}>
         <p style={{ fontSize: "1.08rem", color: "#444" }}>
-          For applicants planning to apply for a <a href="https://vjcoverseas.com/pr-visas/canada-pr" style={{color:"orange"}}><strong>Canada PR Visa</strong></a>, understanding the NOC classification is the foundation of a successful immigration plan. With expert guidance from <a href="https://vjcoverseas.com" style={{color:"orange"}}><strong>VJC Overseas</strong></a>, you can identify your best opportunities and proceed with confidence.
+          For applicants planning to apply for a <a href="https://www.vjcoverseas.com/pr-visas/canada-pr" style={{color:"orange"}}><strong>Canada PR Visa</strong></a>, understanding the NOC classification is the foundation of a successful immigration plan. With expert guidance from <a href="https://www.vjcoverseas.com" style={{color:"orange"}}><strong>VJC Overseas</strong></a>, you can identify your best opportunities and proceed with confidence.
         </p>
 
         <div style={{ margin: "1.5rem 0" }}>
@@ -282,7 +282,7 @@ export default function NocCanada2025WithAllLevels() {
         <div style={{ margin: "1.5rem 0" }}>
           <strong>Who Can Benefit From the 2025 NOC List?</strong>
           <p style={{ margin: "0.3rem 0 0 0" }}>
-            Professionals in industries experiencing labor shortages will benefit the most. Our <a href="https://vjcoverseas.com/pr-visas" style={{color:"orange"}}><strong>PR Visa Consultants</strong></a> can help match your qualifications with the right code to improve your CRS score and strengthen your profile.
+            Professionals in industries experiencing labor shortages will benefit the most. Our <a href="https://www.vjcoverseas.com/pr-visas" style={{color:"orange"}}><strong>PR Visa Consultants</strong></a> can help match your qualifications with the right code to improve your CRS score and strengthen your profile.
           </p>
         </div>
 
@@ -312,7 +312,7 @@ export default function NocCanada2025WithAllLevels() {
         <div style={{ margin: "1.5rem 0" }}>
           <strong>Start Your Canadian Immigration Journey Today</strong>
           <p style={{ margin: "0.3rem 0 0 0" }}>
-           Understanding the NOC classification is the foundation of a successful immigration plan With <a href="https://vjcoverseas.com/pr-visas/canada-pr/national-occupational-codes-list" style={{color:"orange"}}><strong>Canada NOC Code List</strong></a> and guidance from <strong style={{color:"#000"}}>VJC Overseas</strong>, you can identify your opportunities and proceed confidently. Partner with us today and let us help you secure your future in Canada through the right immigration pathway.
+           Understanding the NOC classification is the foundation of a successful immigration plan With <a href="https://www.vjcoverseas.com/pr-visas/canada-pr/national-occupational-codes-list" style={{color:"orange"}}><strong>Canada NOC Code List</strong></a> and guidance from <strong style={{color:"#000"}}>VJC Overseas</strong>, you can identify your opportunities and proceed confidently. Partner with us today and let us help you secure your future in Canada through the right immigration pathway.
           </p>
         </div>
       </div>

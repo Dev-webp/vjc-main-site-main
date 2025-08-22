@@ -10,7 +10,7 @@ export default function StudyInSpain() {
     </h1>
 
       <p className="text-justify mb-4">
-        Are you considering studying abroad? Spain is an incredible destination for international students seeking high-quality education in a culturally vibrant environment. At <strong>VJC Overseas</strong>, we guide you through every step of your academic journey. From understanding tuition fees to exploring universities and scholarship opportunities, our team ensures that your study abroad experience is smooth and rewarding. For students looking for professional advice, our experts provide reliable <Link href="https://vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</Link> services to help you plan effectively.
+        Are you considering studying abroad? Spain is an incredible destination for international students seeking high-quality education in a culturally vibrant environment. At <strong>VJC Overseas</strong>, we guide you through every step of your academic journey. From understanding tuition fees to exploring universities and scholarship opportunities, our team ensures that your study abroad experience is smooth and rewarding. For students looking for professional advice, our experts provide reliable <Link href="https://www.vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</Link> services to help you plan effectively.
       </p>
 
       <div className="ml-14">
@@ -53,7 +53,7 @@ export default function StudyInSpain() {
 
       <h2 className="text-xl font-bold mt-4 mb-2">Study in Spain with <span className="text-orange-500">VJC Overseas</span></h2>
       <p className="text-justify mb-4">
-        At <span className="text-orange-500"><Link href="https://vjcoverseas.com/">VJC Overseas</Link></span>, we provide personalized counseling and expert guidance to help you navigate your study abroad journey in Spain. Our team will assist in selecting the best university, applying for scholarships, and securing your student visa. Those interested in <Link href="https://www.vjcoverseas.com/study-abroad/spain" className="text-orange-500">Spanish Student Visa Process</Link> can benefit from our personalized support to ensure smooth processing and compliance with embassy requirements.
+        At <span className="text-orange-500"><Link href="https://www.vjcoverseas.com/">VJC Overseas</Link></span>, we provide personalized counseling and expert guidance to help you navigate your study abroad journey in Spain. Our team will assist in selecting the best university, applying for scholarships, and securing your student visa. Those interested in <Link href="https://www.vjcoverseas.com/study-abroad/spain" className="text-orange-500">Spanish Student Visa Process</Link> can benefit from our personalized support to ensure smooth processing and compliance with embassy requirements.
       </p>
 
       <h2 className="text-xl font-bold mb-2">
@@ -88,7 +88,7 @@ export default function StudyInSpain() {
 
       <h2 className="text-xl font-bold mt-4 mb-2">Start Your Journey Today!</h2>
       <p className="text-justify mb-4">
-        Studying in Spain provides not only a world-class education but also a vibrant cultural experience and international career opportunities. If you’re ready to study in Spain, <span className="text-orange-500"><Link href="https://vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link></span> at <strong>VJC Overseas</strong> are here to make your dream a reality. Contact us today to get started!
+        Studying in Spain provides not only a world-class education but also a vibrant cultural experience and international career opportunities. If you’re ready to study in Spain, <span className="text-orange-500"><Link href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link></span> at <strong>VJC Overseas</strong> are here to make your dream a reality. Contact us today to get started!
       </p>
     </div>
   );

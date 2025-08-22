@@ -19,7 +19,7 @@ const Content = ({ selectedVisa }) => {
       <p>
         At{" "}
         <span className="text-orange-500 font-semibold">
-          <a href="https://vjcoverseas.com">VJC Overseas</a>
+          <a href="https://www.vjcoverseas.com">VJC Overseas</a>
         </span>
         , we understand that securing permanent residency in a new country is a
         life-changing milestone. It opens the door to new opportunities,
@@ -36,14 +36,14 @@ const Content = ({ selectedVisa }) => {
       <p>
         As one of the{" "}
         <span className="text-orange-500 font-semibold">
-          <a href="https://vjcoverseas.com">Best Visa Immigration Consultants</a>
+          <a href="https://www.vjcoverseas.com">Best Visa Immigration Consultants</a>
         </span>
         , we have years of experience in helping individuals and families settle
         abroad successfully. Our expertise lies in delivering tailored
         immigration solutions, ensuring that every application is handled with
         precision and compliance. Our professional{" "}
         <span className="text-orange-500 font-semibold">
-          <a href="https://vjcoverseas.com/pr-visas">PR Visa Consultants</a>
+          <a href="https://www.vjcoverseas.com/pr-visas">PR Visa Consultants</a>
         </span>{" "}
         guide you step-by-step, from evaluating your eligibility to preparing
         documents and representing your application with confidence. We
@@ -110,7 +110,7 @@ const Content = ({ selectedVisa }) => {
             open doors to some of the world’s top destinations. For individuals
             targeting Canada, the{" "}
             <span className="text-orange-500 font-semibold">
-              <a href="https://vjcoverseas.com/pr-visas/canada-pr/canada-express-entry">
+              <a href="https://www.vjcoverseas.com/pr-visas/canada-pr/canada-express-entry">
                 Express Entry PR Visa
               </a>
             </span>{" "}

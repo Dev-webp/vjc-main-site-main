@@ -24,9 +24,9 @@ const StudyInFrance = () => {
         </div>
         <div className="md:w-1/2 text-justify">
           <p className="mb-6">
-            Welcome to <strong>VJC Overseas</strong>, one of the <a href="https://vjcoverseas.com/" className="text-orange-500 font-bold">Best Visa Immigration Consultants</a> helping students achieve their dream of studying abroad. 
+            Welcome to <strong>VJC Overseas</strong>, one of the <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">Best Visa Immigration Consultants</a> helping students achieve their dream of studying abroad. 
             France, celebrated for its world-class education, art, and culture, offers a premium academic experience for international students. 
-            As trusted <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-bold">Study Visa Consultants</a>, we ensure you get expert guidance for every step of your journey.
+            As trusted <a href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-bold">Study Visa Consultants</a>, we ensure you get expert guidance for every step of your journey.
           </p>
         </div>
       </div>
@@ -40,13 +40,13 @@ const StudyInFrance = () => {
         <li><strong>Affordable Tuition Fees:</strong> Public universities offer subsidized tuition for international students, making quality education more accessible.</li>
         <li><strong>Cultural & Linguistic Experience:</strong> A chance to immerse yourself in French language, cuisine, and heritage while living in one of the most beautiful countries in the world.</li>
         <li><strong>Strong Industry Links:</strong> French universities maintain robust ties with global industries, offering excellent opportunities for internships and placements.</li>
-        <li><strong>Post-Study Work Opportunities:</strong> With a <a href="https://vjcoverseas.com/study-abroad/france" className="text-orange-500 font-bold">France study visa</a>, international graduates can stay and work in France for up to two years post-graduation.</li>
+        <li><strong>Post-Study Work Opportunities:</strong> With a <a href="https://www.vjcoverseas.com/study-abroad/france" className="text-orange-500 font-bold">France study visa</a>, international graduates can stay and work in France for up to two years post-graduation.</li>
         <li><strong>Quality of Life:</strong> A vibrant, safe, and scenic environment for both academic and personal growth.</li>
       </ul>
 
       <h2 className="text-xl font-bold mt-4 mb-2">Top French Universities & Grandes Écoles</h2>
       <p className="mb-6 text-justify">
-        As <a href="https://vjcoverseas.com/study-abroad/france" className="text-orange-500 font-bold">France Student Visa Consultants</a>, we guide you in selecting the right institution that matches your academic goals. Some top choices include:
+        As <a href="https://www.vjcoverseas.com/study-abroad/france" className="text-orange-500 font-bold">France Student Visa Consultants</a>, we guide you in selecting the right institution that matches your academic goals. Some top choices include:
       </p>
       <ul className="list-disc list-outside ml-6 space-y-2 mb-6 text-justify">
         <li><strong>Sorbonne University:</strong> Historic and prestigious, located in Paris.</li>
@@ -90,7 +90,7 @@ const StudyInFrance = () => {
 
       <h2 className="text-xl font-bold mt-4 mb-2">Get Started Today!</h2>
       <p className="text-justify">
-        Your dream to study in France is just a step away. With <a href="https://vjcoverseas.com/" className="text-orange-500 font-bold">VJC Overseas</a> by your side, you’ll receive expert guidance from the application stage to settling in your new academic life. Contact us today and take the first step towards a successful career in France.
+        Your dream to study in France is just a step away. With <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">VJC Overseas</a> by your side, you’ll receive expert guidance from the application stage to settling in your new academic life. Contact us today and take the first step towards a successful career in France.
       </p>
     </div>
   );

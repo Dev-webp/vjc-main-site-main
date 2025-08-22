@@ -12,7 +12,7 @@ const HongKongStudentVisa = () => {
       <p className="mb-4">
         Studying in Hong Kong offers a unique opportunity to experience world-class education in one of the most dynamic cities in Asia. 
         Whether you’re pursuing undergraduate, postgraduate, or language studies, a{' '}
-        <Link href="https://vjcoverseas.com/study-abroad/hongkong" className="text-orange-500 font-semibold">Hong Kong Student Visa</Link>{' '}
+        <Link href="https://www.vjcoverseas.com/study-abroad/hongkong" className="text-orange-500 font-semibold">Hong Kong Student Visa</Link>{' '}
         is your ticket to a truly international academic experience. Choosing the right{' '}
         <strong className="font-bold text-black">Study Visa Consultants</strong>{' '}
         can make the entire application process smooth and stress-free, ensuring you focus on your academic journey instead of complex paperwork.
@@ -24,9 +24,9 @@ const HongKongStudentVisa = () => {
         The city is a vibrant blend of East meets West, offering a rich cultural experience, cutting-edge research opportunities, and a thriving 
         international student community. With its diverse range of study programs and career-oriented courses, students aiming for a successful future 
         find Hong Kong an ideal destination. Many aspiring students who wish to{' '}
-        <Link href="https://vjcoverseas.com/study-abroad/hongkong" className="text-orange-500 font-semibold">Study in Hong Kong</Link>{' '}
+        <Link href="https://www.vjcoverseas.com/study-abroad/hongkong" className="text-orange-500 font-semibold">Study in Hong Kong</Link>{' '}
         also look for professional guidance from the{' '}
-        <Link href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</Link>, 
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</Link>, 
         who can provide expert advice on eligibility, visa applications, and admission procedures.
       </p>
 
@@ -76,7 +76,7 @@ const HongKongStudentVisa = () => {
       <p className="mb-4">
         The standard processing time for a Hong Kong Student Visa is between 4 to 8 weeks from the date of application. 
         Students are advised to apply early to avoid last-minute delays. Professional guidance from{' '}
-        <Link href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</Link>{' '}
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</Link>{' '}
         ensures that all documentation is submitted correctly, helping you avoid unnecessary delays or rejections.
       </p>
 
@@ -97,7 +97,7 @@ const HongKongStudentVisa = () => {
       <p className="mb-4">
         Deciding to study abroad is a big step, and choosing the right consultants plays a vital role in your success. 
         As trusted{' '}
-        <Link href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</Link>, 
+        <Link href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</Link>, 
         we at <strong>VJC Overseas</strong> provide complete end-to-end guidance on admissions, visa applications, and settling abroad. 
         With our expertise, students can confidently apply to their dream universities and achieve their academic goals. 
         So, if you’re ready to explore global opportunities, reach out to <strong>VJC Overseas</strong> today – your pathway to studying in Hong Kong and beyond.

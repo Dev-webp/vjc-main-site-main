@@ -23,7 +23,7 @@ const USAStudyVisa = () => {
         </a>{" "}
         is here to guide you through the entire process of securing a{" "}
         <a
-          href="https://vjcoverseas.com/migrate/united-states/student-visa"
+          href="https://www.vjcoverseas.com/migrate/united-states/student-visa"
           className="text-orange-500"
           style={{ textDecoration: "none" }}
         >
@@ -61,7 +61,7 @@ const USAStudyVisa = () => {
             academic programs, the USA offers students unparalleled
             opportunities for personal and professional growth. Choosing to{" "}
             <a
-              href="https://vjcoverseas.com/study-abroad"
+              href="https://www.vjcoverseas.com/study-abroad"
               className="text-orange-500"
               style={{ textDecoration: "none" }}
             >
@@ -127,7 +127,7 @@ const USAStudyVisa = () => {
         higher living costs, while smaller towns and cities offer more
         affordable options. Exploring{" "}
         <a
-          href="https://vjcoverseas.com/work-abroad"
+          href="https://www.vjcoverseas.com/work-abroad"
           className="text-orange-500"
           style={{ textDecoration: "none" }}
         >

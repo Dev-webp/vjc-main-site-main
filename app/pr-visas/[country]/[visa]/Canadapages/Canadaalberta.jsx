@@ -35,7 +35,7 @@ export default function AlbertaPNP() {
       {/* Intro */}
       <p>
         If you’re planning to build a successful future abroad, working with the{" "}
-        <Link href="https://vjcoverseas.com" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</Link> can make your journey smooth and stress-free. Among the various Canadian immigration pathways, Alberta stands out for offering diverse opportunities through its Alberta Advantage Immigration Program (AAIP), formerly known as the Alberta Immigrant Nominee Program (AINP). Alberta is not only rich in natural resources and economic growth but also provides a welcoming environment for skilled workers, entrepreneurs, and international graduates. With{" "}
+        <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</Link> can make your journey smooth and stress-free. Among the various Canadian immigration pathways, Alberta stands out for offering diverse opportunities through its Alberta Advantage Immigration Program (AAIP), formerly known as the Alberta Immigrant Nominee Program (AINP). Alberta is not only rich in natural resources and economic growth but also provides a welcoming environment for skilled workers, entrepreneurs, and international graduates. With{" "}
         <span className="font-bold">VJC Overseas</span> by your side, you get expert guidance and a clear roadmap for your Canada PR journey.
       </p>
 
@@ -47,7 +47,7 @@ export default function AlbertaPNP() {
         </p>
         <p className="mt-2">
           The benefits of choosing Alberta go beyond just jobs. With affordable housing, low provincial taxes, and an excellent quality of life, it is no wonder why many people plan to{" "}
-          <Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program/canada-alberta" className="text-orange-500 font-semibold">Move to Alberta</Link> for permanent settlement. Families also find Alberta ideal, thanks to its education system, healthcare facilities, and family-friendly environment.
+          <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program/canada-alberta" className="text-orange-500 font-semibold">Move to Alberta</Link> for permanent settlement. Families also find Alberta ideal, thanks to its education system, healthcare facilities, and family-friendly environment.
         </p>
       </section>
 
@@ -55,8 +55,8 @@ export default function AlbertaPNP() {
       <section className="mt-6">
         <h2 className="text-xl font-bold text-black mb-2">What is the Alberta Advantage Immigration Program (AAIP)?</h2>
         <p>
-          The AAIP is part of the <Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program" className="text-orange-500 font-semibold">Canada PNP Program</Link>, which enables provinces to nominate candidates for permanent residency. Through AAIP, Alberta can select individuals who match its labor market and economic needs. Receiving a nomination gives candidates a significant boost in their Express Entry profile, increasing the chances of obtaining an Invitation to Apply (ITA) for{" "}
-          <Link href="https://vjcoverseas.com/pr-visas/canada-pr" className="text-orange-500 font-semibold">Canada PR Visa</Link>.
+          The AAIP is part of the <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program" className="text-orange-500 font-semibold">Canada PNP Program</Link>, which enables provinces to nominate candidates for permanent residency. Through AAIP, Alberta can select individuals who match its labor market and economic needs. Receiving a nomination gives candidates a significant boost in their Express Entry profile, increasing the chances of obtaining an Invitation to Apply (ITA) for{" "}
+          <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr" className="text-orange-500 font-semibold">Canada PR Visa</Link>.
         </p>
 
         <ul className="list-disc list-inside ml-4 mt-2 space-y-2">
@@ -115,7 +115,7 @@ export default function AlbertaPNP() {
         <h2 className="text-xl font-bold text-black mb-2">Start Your Alberta Immigration Journey Today</h2>
         <p>
           Alberta continues to attract immigrants worldwide because of its growing economy and welcoming environment. Whether you are a skilled worker, entrepreneur, or student graduate, the Alberta Advantage Immigration Program offers a pathway tailored to your background. With{" "}
-          <Link href="https://vjcoverseas.com" className="text-orange-500 font-semibold">VJC Overseas</Link>, you gain trusted expertise and proven results to help you take this important step toward a better future.
+          <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">VJC Overseas</Link>, you gain trusted expertise and proven results to help you take this important step toward a better future.
         </p>
         <p className="mt-2 font-semibold">
           Contact us today for a consultation and discover how you can successfully settle in Alberta through the <span className="font-bold">AAIP</span>.

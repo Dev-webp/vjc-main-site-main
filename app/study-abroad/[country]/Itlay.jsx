@@ -13,7 +13,7 @@ const StudyInItaly = () => {
           <p className="mb-6">
             Welcome to <span className="font-bold text-black">VJC Overseas</span>, your trusted partner in making your dream of studying in Italy a reality. 
             Known for its rich heritage, breathtaking architecture, and top-tier education system, Italy has long been a favorite choice for students worldwide. 
-            Partnering with <a href="https://vjcoverseas.com/" className="text-orange-500 font-bold">Best Visa Immigration Consultants</a> ensures that your journey is smooth, guided, and successful from start to finish.
+            Partnering with <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">Best Visa Immigration Consultants</a> ensures that your journey is smooth, guided, and successful from start to finish.
           </p>
         </div>
         <div className="w-full md:w-1/3">
@@ -30,7 +30,7 @@ const StudyInItaly = () => {
 
       <h2 className="text-xl font-semibold mt-2 mb-2">Why Study in Italy?</h2>
       <p className="leading-relaxed mb-4">
-        Choosing to <a href="https://vjcoverseas.com/study-abroad/italy" className="text-orange-500 font-bold">Study Abroad in Italy</a> is more than just earning a degree—it’s about experiencing a lifestyle enriched with history, art, and modern innovation. 
+        Choosing to <a href="https://www.vjcoverseas.com/study-abroad/italy" className="text-orange-500 font-bold">Study Abroad in Italy</a> is more than just earning a degree—it’s about experiencing a lifestyle enriched with history, art, and modern innovation. 
         Italy is home to universities that have shaped education for centuries and continues to inspire students worldwide.
       </p>
       <ul className="list-disc list-inside leading-relaxed space-y-1">
@@ -44,7 +44,7 @@ const StudyInItaly = () => {
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Top Italian Universities & Colleges</h2>
       <p className="leading-relaxed mb-4">
-        When working with <a href="https://vjcoverseas.com/study-abroad/italy" className="text-orange-500 font-bold">Italy Study Visa Consultants</a>, you gain guidance in selecting the right institution for your goals. Some of the best universities include:
+        When working with <a href="https://www.vjcoverseas.com/study-abroad/italy" className="text-orange-500 font-bold">Italy Study Visa Consultants</a>, you gain guidance in selecting the right institution for your goals. Some of the best universities include:
       </p>
       <ul className="list-disc list-inside leading-relaxed space-y-1">
         <li><strong>University of Bologna:</strong> The oldest university in the world, offering diverse programs.</li>
@@ -72,7 +72,7 @@ const StudyInItaly = () => {
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Scholarships & Financial Aid</h2>
       <p className="leading-relaxed mb-4">
-        Working with experienced <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-bold">Study Visa Consultants</a> ensures you don’t miss opportunities for financial support. Popular options include:
+        Working with experienced <a href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-bold">Study Visa Consultants</a> ensures you don’t miss opportunities for financial support. Popular options include:
       </p>
       <ul className="list-disc list-inside leading-relaxed space-y-1">
         <li>Regional Scholarships</li>

@@ -32,7 +32,7 @@ const StudyInPoland = () => {
             to access quality programs at an affordable cost while experiencing a vibrant and multicultural environment. 
             At <strong>VJC Overseas</strong>, we guide students through every step, from selecting the right university 
             to assisting with visa and accommodation processes. If you are searching for the 
-            <Link href="https://vjcoverseas.com/" className="text-orange-500"> Best Visa Immigration Consultants</Link>, 
+            <Link href="https://www.vjcoverseas.com/" className="text-orange-500"> Best Visa Immigration Consultants</Link>, 
             VJC Overseas provides professional guidance to ensure a seamless and successful study abroad journey.
           </p>
         </div>
@@ -48,7 +48,7 @@ const StudyInPoland = () => {
         <li><strong>Safe and Vibrant Student Life:</strong> Affordable living costs and a welcoming atmosphere make Poland ideal for international learners.</li>
       </ul>
       <p className="mt-2">
-        Our <Link href="https://vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link> can help you understand eligibility criteria 
+        Our <Link href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link> can help you understand eligibility criteria 
         and guide you through the application process.
       </p>
 
@@ -117,7 +117,7 @@ const StudyInPoland = () => {
         and global opportunities, Poland provides an excellent platform for international students.
       </p>
      <p>
-  Contact <Link href="https://vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link> today to begin your journey toward 
+  Contact <Link href="https://www.vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link> today to begin your journey toward 
   <span className="font-bold text-black"> Higher Education in Poland</span> and secure your <span className="font-bold text-black">Poland Student Visa</span>.
 </p>
 

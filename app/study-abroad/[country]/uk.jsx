@@ -26,7 +26,7 @@ const UKStudyGuide = () => {
         {/* Content Section */}
         <div className="md:w-2/3 w-full">
           <p className="mb-2">
-            The UK has long been a favourite destination for international students seeking world-class education, cultural diversity, and outstanding career opportunities. With its rich history, vibrant cities, and renowned institutions, it’s no wonder that the UK remains one of the top choices for students worldwide. If you’re considering studying in the UK, this guide provides an overview of the UK study visa process, some top universities, their fee structures, and the admission process to help you navigate your journey from application to graduation. As one of the <a href="https://vjcoverseas.com/" style={{ color: "orange", textDecoration: "none" }}>Best Visa Immigration Consultants</a>, we offer complete guidance for students planning their UK education, ensuring a smooth transition from application to arrival.
+            The UK has long been a favourite destination for international students seeking world-class education, cultural diversity, and outstanding career opportunities. With its rich history, vibrant cities, and renowned institutions, it’s no wonder that the UK remains one of the top choices for students worldwide. If you’re considering studying in the UK, this guide provides an overview of the UK study visa process, some top universities, their fee structures, and the admission process to help you navigate your journey from application to graduation. As one of the <a href="https://www.vjcoverseas.com/" style={{ color: "orange", textDecoration: "none" }}>Best Visa Immigration Consultants</a>, we offer complete guidance for students planning their UK education, ensuring a smooth transition from application to arrival.
           </p>
         </div>
       </div>
@@ -91,7 +91,7 @@ const UKStudyGuide = () => {
         </li>
         <li>Attend Interview (if required)</li>
         <li>Receive and Accept Offer Letter</li>
-        <li>Apply for Student Visa (with CAS). When it comes to student visa applications, our <a href="https://vjcoverseas.com/study-abroad/uk" style={{ color: "orange", textDecoration: "none" }}>UK Student Visa Consultants</a> ensure you meet all the criteria and avoid any delays in processing.</li>
+        <li>Apply for Student Visa (with CAS). When it comes to student visa applications, our <a href="https://www.vjcoverseas.com/study-abroad/uk" style={{ color: "orange", textDecoration: "none" }}>UK Student Visa Consultants</a> ensure you meet all the criteria and avoid any delays in processing.</li>
       </ol>
 
       {/* Cost of Living */}
@@ -106,11 +106,11 @@ const UKStudyGuide = () => {
       {/* Conclusion */}
       <h2 className="text-xl font-bold text-blue-500 mt-4 mb-2">Conclusion</h2>
       <p className="mb-4">
-        Studying in the UK offers not just an academic challenge but also an opportunity to immerse yourself in a rich cultural experience. With a well-structured visa process, world-renowned universities, and a diverse student community, the UK is an excellent choice for international students. If you’re unsure about which university is right for you, our team of experienced <a href="https://vjcoverseas.com/study-abroad" style={{ color: "orange", textDecoration: "none" }}>Study Visa Consultants</a> can help you compare courses, locations, and budgets to make an informed decision.
+        Studying in the UK offers not just an academic challenge but also an opportunity to immerse yourself in a rich cultural experience. With a well-structured visa process, world-renowned universities, and a diverse student community, the UK is an excellent choice for international students. If you’re unsure about which university is right for you, our team of experienced <a href="https://www.vjcoverseas.com/study-abroad" style={{ color: "orange", textDecoration: "none" }}>Study Visa Consultants</a> can help you compare courses, locations, and budgets to make an informed decision.
       </p>
 
       <p className="mb-4" style={{ color: "black" }}>
-  At <a href="https://vjcoverseas.com/" style={{ color: "orange", textDecoration: "none" }}>VJC Overseas</a>, we specialize in helping students navigate every step of the study abroad process—from selecting the right university to obtaining your visa and arriving in the UK. Contact us today to get started on your path to studying in the UK!
+  At <a href="https://www.vjcoverseas.com/" style={{ color: "orange", textDecoration: "none" }}>VJC Overseas</a>, we specialize in helping students navigate every step of the study abroad process—from selecting the right university to obtaining your visa and arriving in the UK. Contact us today to get started on your path to studying in the UK!
 </p>
 
     </div>

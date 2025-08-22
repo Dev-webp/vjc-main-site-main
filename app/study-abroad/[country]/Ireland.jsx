@@ -14,7 +14,7 @@ const StudyInIreland = () => {
           <p className="mb-4">
             Are you dreaming of studying abroad? Ireland is one of the most popular destinations for international students due to its
             world-class education system, rich culture, and welcoming environment. At <b>VJC Overseas</b>, we provide professional guidance to help you explore every opportunity for your academic journey. Whether you are seeking expert advice from{" "}
-            <Link href="https://vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</Link> or looking for end-to-end support for your student visa, our team ensures a seamless experience.
+            <Link href="https://www.vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</Link> or looking for end-to-end support for your student visa, our team ensures a seamless experience.
           </p>
         </div>
         <div className="w-full md:w-1/3">
@@ -35,7 +35,7 @@ const StudyInIreland = () => {
         undergraduate to postgraduate studies. The country is renowned for its rich cultural heritage, modern infrastructure, and a strong
         focus on research and innovation. Ireland also has a booming economy, creating abundant opportunities for international students
         in terms of work and career growth. For students seeking professional assistance, our{" "}
-        <Link href="https://vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link> can help you understand the application process, requirements, and documentation for studying in Ireland.
+        <Link href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link> can help you understand the application process, requirements, and documentation for studying in Ireland.
       </p>
 
       <h2 className="text-xl font-bold mt-4 mb-2">Top Universities and Colleges in Ireland</h2>
@@ -105,7 +105,7 @@ const StudyInIreland = () => {
       <h2 className="text-xl font-bold mt-4 mb-2">Start Your Journey to Ireland Today</h2>
       <p className="mb-4">
         Studying in Ireland provides a world-class education and excellent career prospects. Contact{" "}
-        <Link href="https://vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link> today to take the first step toward your dream of studying abroad and explore the best <b>Study Abroad Programs</b> with expert guidance on your <b>Ireland Student Visa Assistance</b>.
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link> today to take the first step toward your dream of studying abroad and explore the best <b>Study Abroad Programs</b> with expert guidance on your <b>Ireland Student Visa Assistance</b>.
       </p>
 
       {/* Dark bold keywords without links */}

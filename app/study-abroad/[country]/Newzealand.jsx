@@ -11,7 +11,7 @@ const NewZealand = () => {
 
       <h2 className="text-xl font-semibold mb-2 mt-4">Study in New Zealand – Your Path to a World-Class Education</h2>
       <p className="mb-4">
-        Study in New Zealand – <span className="font-bold">VJC Overseas</span> New Zealand is a land of stunning landscapes, friendly communities, and a world-class education system that attracts students from every corner of the globe. Whether you dream of studying in lively cities like Auckland and Wellington or prefer the peaceful charm of smaller towns, this country offers academic excellence alongside unmatched natural beauty. If you are looking for the <Link href="https://vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</Link> who understand the intricacies of moving to New Zealand for studies, we are here to make that journey as smooth as possible. Our focus is on tailoring your path so you can achieve both academic and personal success.
+        Study in New Zealand – <span className="font-bold">VJC Overseas</span> New Zealand is a land of stunning landscapes, friendly communities, and a world-class education system that attracts students from every corner of the globe. Whether you dream of studying in lively cities like Auckland and Wellington or prefer the peaceful charm of smaller towns, this country offers academic excellence alongside unmatched natural beauty. If you are looking for the <Link href="https://www.vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</Link> who understand the intricacies of moving to New Zealand for studies, we are here to make that journey as smooth as possible. Our focus is on tailoring your path so you can achieve both academic and personal success.
       </p>
 
       <h2 className="text-xl font-semibold mb-2 mt-4">Why Choose New Zealand?</h2>
@@ -25,7 +25,7 @@ const NewZealand = () => {
         <li><strong>Post-Study Work Visas:</strong> Pathways to remain and gain professional experience after graduation.</li>
       </ul>
       <p className="mb-4">
-        If you are seeking professional support to manage the complex paperwork, our <Link href="https://vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link> can help you navigate the entire process with confidence.
+        If you are seeking professional support to manage the complex paperwork, our <Link href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link> can help you navigate the entire process with confidence.
       </p>
 
       <div className="mt-3 ml-14">
@@ -54,7 +54,7 @@ const NewZealand = () => {
 
       <h2 className="text-xl font-semibold mb-2 mt-4">Application Process & Costs</h2>
       <p className="mb-4">
-        The application process involves gathering essential documents—such as an offer letter from a recognized institution, proof of funds, health insurance, and a valid passport—before submitting your application online or via a Visa Application Centre. Processing fees generally range between NZD 330 and NZD 500, with additional costs for medical exams and police clearance where applicable. Processing times can vary from 2 to 8 weeks depending on the time of year and the completeness of your application. If your plan includes long-term prospects, our specialists can also advise on pathways from a <Link href="https://vjcoverseas.com/migrate/new-zealand/student-work-visa" className="text-orange-500">New Zealand Student Visa</Link> to future work or residence options.
+        The application process involves gathering essential documents—such as an offer letter from a recognized institution, proof of funds, health insurance, and a valid passport—before submitting your application online or via a Visa Application Centre. Processing fees generally range between NZD 330 and NZD 500, with additional costs for medical exams and police clearance where applicable. Processing times can vary from 2 to 8 weeks depending on the time of year and the completeness of your application. If your plan includes long-term prospects, our specialists can also advise on pathways from a <Link href="https://www.vjcoverseas.com/migrate/new-zealand/student-work-visa" className="text-orange-500">New Zealand Student Visa</Link> to future work or residence options.
       </p>
 
       <h2 className="text-xl font-semibold mb-2 mt-4">Why VJC Overseas is the Right Choice</h2>
@@ -118,7 +118,7 @@ const NewZealand = () => {
 
       <h2 className="text-xl font-semibold mb-2 mt-4">Get Started Today</h2>
       <p className="mb-4">
-        Ready to take the first step toward studying in New Zealand? Contact <Link href="https://vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link> today, and our team will help you with every aspect of your Student Visa application. We’re here to make your journey smooth, hassle-free, and successful!
+        Ready to take the first step toward studying in New Zealand? Contact <Link href="https://www.vjcoverseas.com/" className="text-orange-500">VJC Overseas</Link> today, and our team will help you with every aspect of your Student Visa application. We’re here to make your journey smooth, hassle-free, and successful!
       </p>
     </div>
   );

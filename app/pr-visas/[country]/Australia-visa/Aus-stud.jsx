@@ -27,25 +27,29 @@ const AustraliaPRVisa = () => {
         {/* Text */}
         <div className="w-full md:w-1/2 text-justify">
           <h2 className=" font-bold">
-            Welcome to <span className="text-orange-500">VJC Overseas</span>,
+            Welcome to Vjc Overseas
           </h2>
           <p>
-            • <b>Your trusted partner</b> in obtaining Australia Permanent Residency (PR). Whether you're looking to settle in Australia's bustling cities, picturesque coastal regions, or tranquil rural areas, 
-         </p>
+            • Your trusted partner in obtaining <a href="https://www.vjcoverseas.com/pr-visas/australia-pr" className="text-orange-500 font-bold">Australia Permanent Residency</a>. Whether you're looking to settle in Australia's bustling cities, picturesque coastal regions, or tranquil rural areas, 
+          </p>
         </div>
       </div>
-      <p className=" -mt-8">this visa offers you the opportunity to enjoy a high quality of life, lucrative job opportunities, and a stable future.</p>
+
+      <p className="-mt-8">
+        this visa offers you the opportunity to enjoy a high quality of life, lucrative job opportunities, and a stable future.
+      </p>
+
       <h2 className="font-bold mt-6">• What is an Australia Permanent Residency Visa?</h2>
       <p>
-        • <b>A gateway for skilled individuals</b> and families to live and work in Australia. PR holders enjoy access to healthcare, education, and a path to Australian citizenship.
+        • The <a href="https://www.vjcoverseas.com/pr-visas/australia-pr" className="text-orange-500 font-bold">Australia PR Visa Process</a> allows skilled individuals and their families to live and work in Australia permanently. PR holders enjoy access to healthcare, education, and a path to Australian citizenship.
       </p>
       <p>
-        • <b>VJC Overseas</b> guides you through the application process, helping you meet all criteria confidently.
+        • With the support of <b>VJC Overseas</b> and experienced <a href="https://www.vjcoverseas.com/pr-visas" className="text-orange-500 font-bold">PR Visa Consultants</a>, applicants can confidently navigate every stage of the process.
       </p>
 
       <h2 className="font-bold mt-6">• Why Choose Australia?</h2>
       <p>
-        • <b>World-class living standards</b>, strong economy, diverse culture, and excellent public infrastructure make Australia a top migration destination.
+        • <b>World-class living standards</b>, strong economy, diverse culture, and excellent public infrastructure make Australia a top migration destination. PR holders can enjoy the best of urban lifestyles while also accessing the serene beauty of Australia’s natural landscapes.
       </p>
 
       <h2 className="font-bold mt-6">• Job Opportunities in Australia for PR Holders</h2>
@@ -77,17 +81,24 @@ const AustraliaPRVisa = () => {
         <li>Eligibility for Australian citizenship</li>
       </ul>
 
-      <h2 className="font-bold mt-6">• How <span className="text-orange-500">VJC Overseas</span> Can Help</h2>
+      <h2 className="font-bold mt-6">• How <b>VJC Overseas</b> Can Help</h2>
       <p>
-        • <b>Expert advice and personal guidance</b> for skilled migration, family sponsorship, and employer-sponsored visa pathways.
+        • As one of the <a href="https://www.vjcoverseas.com" className="text-orange-500 font-bold">Best Visa Immigration Consultants</a>, <b>VJC Overseas</b> provides expert advice and personal guidance for skilled migration, family sponsorship, and employer-sponsored visa pathways.
       </p>
       <p>
-        • We ensure <b>your application is accurate</b> and aligns with Australian immigration requirements.
+        • We ensure your application is accurate and aligns with Australian immigration requirements.
+      </p>
+      <p>
+        • We also help with: <br />
+        <b>Eligibility Assessment:</b> Checking your profile against visa requirements. <br />
+        <b>Document Preparation:</b> Ensuring all paperwork meets the standards of Australian immigration. <br />
+        <b>Application Submission:</b> Managing the complete PR application process to minimize delays. <br />
+        <b>Post-Approval Guidance:</b> Advice on settling in Australia, including accommodation, schools, and community resources.
       </p>
 
       <h2 className="font-bold mt-6">• Get Started Today</h2>
       <p>
-        • Don’t wait to begin your Australian PR journey. <b>Contact VJC Overseas</b> now for a free consultation and unlock a prosperous future!
+        • Don’t wait to begin your Australian PR journey. Contact <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">VJC Overseas</a> now for a free consultation and unlock a prosperous future!
       </p>
       <p>
         • We’re here to make your <b>dreams of Australian living a reality</b> — reach out today!

@@ -39,20 +39,20 @@ export default function SaskatchewanPNP() {
       </p>
 
       <p className="mt-2">
-        As one of the <span className="text-orange-500 font-semibold"><Link href="https://vjcoverseas.com">Best Visa Immigration Consultants</Link></span>, we ensure that your journey to Canada is handled with expertise and precision. Many applicants often face challenges with documentation, eligibility, and timelines, but with the right guidance, your application can move faster and with higher success.
+        As one of the <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com">Best Visa Immigration Consultants</Link></span>, we ensure that your journey to Canada is handled with expertise and precision. Many applicants often face challenges with documentation, eligibility, and timelines, but with the right guidance, your application can move faster and with higher success.
       </p>
 
       {/* Why Saskatchewan */}
       <section className="mt-6">
         <h2 className="text-xl sm:text-1xl font-bold text-black mb-2">Why Choose Saskatchewan?</h2>
         <p>
-          Located in western Canada, Saskatchewan is known for its strong economy, abundant natural resources, and thriving industries such as agriculture, mining, healthcare, and information technology. With affordable housing, a low cost of living, and a high quality of life, the province is an attractive choice for newcomers who want to secure permanent residency through a <span className="text-orange-500 font-semibold"><Link href="https://vjcoverseas.com/pr-visas/canada-pr">Canada PR Visa</Link></span>.
+          Located in western Canada, Saskatchewan is known for its strong economy, abundant natural resources, and thriving industries such as agriculture, mining, healthcare, and information technology. With affordable housing, a low cost of living, and a high quality of life, the province is an attractive choice for newcomers who want to secure permanent residency through a <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com/pr-visas/canada-pr">Canada PR Visa</Link></span>.
         </p>
         <p className="mt-2">
-          The province continues to welcome skilled immigrants who can contribute to its labor force. The <span className="text-orange-500 font-semibold"><Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program">Canada PNP Program</Link></span> is designed to help provinces like Saskatchewan select candidates who match their economic needs, making immigration smoother and more direct.
+          The province continues to welcome skilled immigrants who can contribute to its labor force. The <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program">Canada PNP Program</Link></span> is designed to help provinces like Saskatchewan select candidates who match their economic needs, making immigration smoother and more direct.
         </p>
         <p className="mt-2">
-          Saskatchewan is an ideal place for families who dream of long-term settlement in Canada, offering excellent healthcare, education, and career prospects. If your goal is to <span className="text-orange-500 font-semibold"><Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program/canada-saskatchewan">Move to Saskatchewan</Link></span>, the SINP is one of the most effective options.
+          Saskatchewan is an ideal place for families who dream of long-term settlement in Canada, offering excellent healthcare, education, and career prospects. If your goal is to <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program/canada-saskatchewan">Move to Saskatchewan</Link></span>, the SINP is one of the most effective options.
         </p>
       </section>
 
@@ -102,7 +102,7 @@ export default function SaskatchewanPNP() {
       <section className="mt-6">
         <h2 className="text-xl sm:text-1xl font-bold text-black mb-2">Begin Your Journey With <span className="text-orange-500">VJC Overseas</span></h2>
         <p>
-          Saskatchewan is welcoming skilled professionals, entrepreneurs, and graduates who are ready to contribute to its economic growth. If you are serious about starting a new life in Canada, the SINP gives you one of the most reliable opportunities to achieve permanent residency. With the dedicated support of <span className="text-orange-500 font-semibold"><Link href="https://vjcoverseas.com">VJC Overseas</Link></span>, you can make the complex process simpler and more efficient.
+          Saskatchewan is welcoming skilled professionals, entrepreneurs, and graduates who are ready to contribute to its economic growth. If you are serious about starting a new life in Canada, the SINP gives you one of the most reliable opportunities to achieve permanent residency. With the dedicated support of <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com">VJC Overseas</Link></span>, you can make the complex process simpler and more efficient.
         </p>
         
       </section>

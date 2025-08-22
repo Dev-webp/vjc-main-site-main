@@ -33,7 +33,7 @@ export default function PEIPNP() {
        
           <p>
           <br />
-          Prince Edward Island (PEI), one of Canada's most picturesque provinces, offers a unique pathway for skilled professionals, entrepreneurs, and graduates. At <Link href="https://vjcoverseas.com" className="text-orange-500 font-semibold">VJC Overseas</Link>, we guide applicants through every step of the PEI PNP process with expert support and personalized attention.
+          Prince Edward Island (PEI), one of Canada's most picturesque provinces, offers a unique pathway for skilled professionals, entrepreneurs, and graduates. At <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">VJC Overseas</Link>, we guide applicants through every step of the PEI PNP process with expert support and personalized attention.
           <h2 className="text-xl sm:text-1xl mt-3 font-bold text-black mb-2">Why Choose Prince Edward Island?</h2>
           <p>
             Despite being Canada’s smallest province, PEI boasts high quality of life, scenic beauty, a low cost of living, and a supportive 
@@ -41,7 +41,7 @@ export default function PEIPNP() {
         </p>
       </div>
       <p className="mb-2 -mt-3">
-           government actively encouraging immigration to fill labor shortages and fuel economic development. Many trust <Link href="https://vjcoverseas.com/pr-visas" className="text-orange-500">PR Visa Consultants</Link> for expert guidance.
+           government actively encouraging immigration to fill labor shortages and fuel economic development. Many trust <Link href="https://www.vjcoverseas.com/pr-visas" className="text-orange-500">PR Visa Consultants</Link> for expert guidance.
       </p>
       <div className="space-y-6">
        
@@ -52,7 +52,7 @@ export default function PEIPNP() {
         <section>
           <h2 className="text-xl sm:text-1xl font-bold text-black mb-2">What is the PEI PNP?</h2>
           <p>
-            The PEI Provincial Nominee Program enables the province to nominate qualified candidates for Canadian permanent residency based on their ability to meet local labor market needs and successfully settle in the province. This is part of the broader <Link href="https://vjcoverseas.com/pr-visas/canada-pr" className="text-orange-500">Canada PR Visa</Link> pathways available for immigrants.
+            The PEI Provincial Nominee Program enables the province to nominate qualified candidates for Canadian permanent residency based on their ability to meet local labor market needs and successfully settle in the province. This is part of the broader <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr" className="text-orange-500">Canada PR Visa</Link> pathways available for immigrants.
           </p>
           <p className="mt-2">There are three main PEI PNP pathways:</p>
           <ul className="list-disc list-inside ml-4 mt-1">
@@ -72,7 +72,7 @@ export default function PEIPNP() {
             </li>
           </ul>
           <p className="mt-2">
-            Learn more about the <Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program" className="text-orange-500">Canada PNP Program</Link> to understand all eligibility requirements.
+            Learn more about the <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program" className="text-orange-500">Canada PNP Program</Link> to understand all eligibility requirements.
           </p>
         </section>
 
@@ -94,10 +94,10 @@ export default function PEIPNP() {
         <section>
           <h2 className="text-xl sm:text-1xl font-bold text-black mb-2">Start Your Journey Today</h2>
           <p>
-            Whether you're a skilled professional, graduate, or entrepreneur, PEI offers a welcoming gateway to Canadian permanent residency. If you are ready to <Link href="https://vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program/canada-prince-edward-island" className="text-orange-500">Move to PEI Canada</Link>, let <strong>VJC Overseas</strong> guide you through the PEI PNP process and help make your dream a reality.
+            Whether you're a skilled professional, graduate, or entrepreneur, PEI offers a welcoming gateway to Canadian permanent residency. If you are ready to <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr-provincial-nominee-program/canada-prince-edward-island" className="text-orange-500">Move to PEI Canada</Link>, let <strong>VJC Overseas</strong> guide you through the PEI PNP process and help make your dream a reality.
           </p>
           <p className="mt-2 font-semibold">
-            Contact us today to schedule your free consultation and start your Canadian immigration journey with confidence. Trusted by <Link href="https://vjcoverseas.com" className="text-orange-500">Best Visa Immigration Consultants</Link> across India.
+            Contact us today to schedule your free consultation and start your Canadian immigration journey with confidence. Trusted by <Link href="https://www.vjcoverseas.com" className="text-orange-500">Best Visa Immigration Consultants</Link> across India.
           </p>
         </section>
       </div>

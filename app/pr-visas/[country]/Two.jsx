@@ -4,18 +4,14 @@ import { useRouter, useParams, usePathname } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 
 import Goppcardvisa from "./Germany-visa/Goppcardvisa";
-import Canadapr from "./Canadapages/Canadawork";
-import Ausstud from "./Australia-visa/Aus-stud";
+import Canadapr from "./Canadapages/Canadapr";
 import USAstud from "./USA-visa/USA-stud";
 import UKBvisa from "./UK-visa/UKBvisa";
-import HKstudentvisa from "./HongKongpages/HKstudentvisa";
-import Newzepr from "./Newzealand-visa/Newze-pr";
+import Newzepr from "./Newzealand-visa/Newzepr";
 import Link from "next/link";
-
-import UAEstud from "./UAE-visa/UAE-stud";
-import Canadanominal from "./Canadapages/Canadanominal";
 import Form from "../Form";
-
+import Ausstud from "./Australia-visa/Aus-stud";
+import Canadanominal from "./Canadapages/Canadanominal";
 const countryVisaData = {
   "germany-blue-card": [
     { name: "Canada Permanent Residency Visa", path: "/pr-visas/canada-pr", image: "/1.jpg" },
@@ -87,13 +83,11 @@ const visaComponents = {
   "germany-blue-card": Goppcardvisa,
   "canada-pr": Canadapr,
   "usa-green-card": USAstud,
-  "australia-pr": Ausstud,
   "uk-pr": UKBvisa,
   "new-zealand-pr": Newzepr,
-  "canada-pr-provincial-nominee-program": Canadanominal,
-  "hong-kong": HKstudentvisa,
+  "australia-pr": Ausstud,
+    "canada-pr-provincial-nominee-program": Canadanominal,
 
-  uae: UAEstud,
 };
 
 const backgroundImages = {
@@ -103,9 +97,7 @@ const backgroundImages = {
   "australia-pr": "/Australia-PR.jpg",
   "uk-pr": "/dmbusi.jpg",
   "new-zealand-pr": "/nzpr.jpg",
-  "south-africa": "/sa666.png",
   "canada-pr-provincial-nominee-program": "/canadapr-Provincial-Nominee-Program.jpg",
- 
 };
 
 const MigrateCountry = () => {

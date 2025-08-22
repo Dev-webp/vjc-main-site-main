@@ -13,7 +13,7 @@ export default function Next() {
         <meta property="og:title" content="Express Entry - Canada PR | VJC Overseas" />
         <meta property="og:description" content="Fast-track your Canadian immigration through Express Entry with expert help from VJC Overseas." />
         <meta property="og:image" content="/canadapr-express-entry.png" />
-        <meta property="og:url" content="https://vjcoverseas.com/pr-visas/canadapr/canada-express-entry" />
+        <meta property="og:url" content="https://www.vjcoverseas.com/pr-visas/canadapr/canada-express-entry" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
@@ -42,7 +42,7 @@ export default function Next() {
 
           <div className="lg:w-1/2 w-full">
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Canada continues to be one of the most welcoming destinations for skilled professionals, offering a high quality of life, advanced healthcare, and world-class education. Among the various immigration options, the <Link href="https://vjcoverseas.com/pr-visas/canada-pr/canada-express-entry" className="text-orange-600 font-bold">Express Entry Program</Link> is recognized as the most efficient pathway for qualified individuals seeking long-term settlement. At <span className="font-bold">VJC Overseas</span>, we provide complete guidance on how to navigate this system successfully and turn your dream of Canadian immigration into reality.
+              Canada continues to be one of the most welcoming destinations for skilled professionals, offering a high quality of life, advanced healthcare, and world-class education. Among the various immigration options, the <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr/canada-express-entry" className="text-orange-600 font-bold">Express Entry Program</Link> is recognized as the most efficient pathway for qualified individuals seeking long-term settlement. At <span className="font-bold">VJC Overseas</span>, we provide complete guidance on how to navigate this system successfully and turn your dream of Canadian immigration into reality.
             </p>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Next() {
           <ol className="list-decimal pl-6">
             <li><strong>Profile Creation:</strong> Applicants create an online profile including personal details, test scores, education, and work experience. Eligible profiles are then placed in the Express Entry pool.</li>
             <li><strong>Invitation to Apply (ITA):</strong> Regular draws are conducted by Immigration, Refugees and Citizenship Canada (IRCC), and candidates with the highest CRS scores receive an ITA.</li>
-            <li><strong>Submitting the PR Application:</strong> Once invited, applicants have 60 days to submit all documents and complete their <Link href="https://vjcoverseas.com/pr-visas/canada-pr" className="text-orange-600 font-bold">Canada PR Visa</Link> application.</li>
+            <li><strong>Submitting the PR Application:</strong> Once invited, applicants have 60 days to submit all documents and complete their <Link href="https://www.vjcoverseas.com/pr-visas/canada-pr" className="text-orange-600 font-bold">Canada PR Visa</Link> application.</li>
           </ol>
 
           <h2 className="text-2xl font-semibold text-orange-700">Boosting Your CRS Score</h2>
@@ -81,7 +81,7 @@ export default function Next() {
 
           <h2 className="text-2xl font-semibold text-orange-700">Why Work With Experts?</h2>
           <p>
-            As one of the <Link href="https://vjcoverseas.com" className="text-orange-600 font-bold">Best Visa Immigration Consultants</Link>, our goal is to simplify the complex process for you. From initial evaluation to post-landing support, we handle every detail. Our <Link href="https://vjcoverseas.com/pr-visas" className="text-orange-600 font-bold">PR Visa Consultants</Link> ensure that your documents are complete, your strategy is personalized, and your chances of approval are maximized.
+            As one of the <Link href="https://www.vjcoverseas.com" className="text-orange-600 font-bold">Best Visa Immigration Consultants</Link>, our goal is to simplify the complex process for you. From initial evaluation to post-landing support, we handle every detail. Our <Link href="https://vjcoverseas.com/pr-visas" className="text-orange-600 font-bold">PR Visa Consultants</Link> ensure that your documents are complete, your strategy is personalized, and your chances of approval are maximized.
           </p>
 
           <h2 className="text-2xl font-semibold text-orange-700">Start Your Canadian Journey Today</h2>

@@ -27,7 +27,7 @@ const AustraliaStudentVisa = () => {
         <div className="md:w-1/2 text-justify">
           <p className="mb-4">
             Australia has long been a popular destination for international students, offering world-class education, diverse cultural experiences, and a safe environment to study and live. Whether you're planning to pursue undergraduate, postgraduate, or vocational courses, Australia provides an array of high-quality academic opportunities at competitive tuition rates. At{" "}
-            <a href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</a>, we help you navigate the process of obtaining an Australian Study Visa and finding universities with affordable fees and strong global rankings.
+            <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</a>, we help you navigate the process of obtaining an Australian Study Visa and finding universities with affordable fees and strong global rankings.
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ const AustraliaStudentVisa = () => {
       {/* Why Choose Australia */}
       <h2 className="text-xl md:text-xl font-semibold mb-2 mt-4">
         <strong>Why Choose </strong>
-        <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Australia Student Visa Consultants</a>
+        <a href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Australia Student Visa Consultants</a>
         <strong> at VJC Overseas?</strong>
       </h2>
       <ul className="list-disc list-inside mb-4 space-y-2">
@@ -48,7 +48,7 @@ const AustraliaStudentVisa = () => {
       {/* Added extra paragraph with Best Visa Immigration Consultants */}
       <p className="mb-4">
         For many students, working with{" "}
-        <a href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</a> ensures a smooth, error-free application process. Our expert team provides end-to-end guidance for your Australian Study Visa journey.
+        <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</a> ensures a smooth, error-free application process. Our expert team provides end-to-end guidance for your Australian Study Visa journey.
       </p>
 
       {/* Top Universities */}
@@ -99,13 +99,13 @@ const AustraliaStudentVisa = () => {
       {/* Paragraph with Study Visa Consultants keyword */}
       <p className="mb-4">
         To simplify your study abroad journey, working with{" "}
-        <a href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</a> ensures proper guidance, accurate documentation, and increases your chances of obtaining a visa successfully.
+        <a href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</a> ensures proper guidance, accurate documentation, and increases your chances of obtaining a visa successfully.
       </p>
 
       {/* Work Opportunities */}
       <p className="mb-4">
         In addition to studying, international students in Australia can work up to 48 hours per fortnight during the semester and full-time during breaks. For those planning to extend their stay for employment, our team can also guide you through the{" "}
-        <a href="https://vjcoverseas.com/work-abroad/australia-work-permit" className="text-orange-500 font-semibold">Australia Work permit visa</a> process, ensuring you meet eligibility criteria and deadlines.
+        <a href="https://www.vjcoverseas.com/work-abroad/australia-work-permit" className="text-orange-500 font-semibold">Australia Work permit visa</a> process, ensuring you meet eligibility criteria and deadlines.
       </p>
 
       {/* Why VJC Overseas */}

@@ -13,10 +13,10 @@ const StudyInLuxembourg = () => {
         Luxembourg, a small yet dynamic country at the heart of Europe, offers world-class education, a rich cultural heritage,
         and unique work opportunities that make it a top destination for international students. Choosing the right guidance is important,
         and many learners prefer to connect with{' '}
-        <Link href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</Link>{' '}
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</Link>{' '}
         who can provide step-by-step support for applications and admissions. Studying in Luxembourg not only provides access to some
         of the best universities and colleges but also allows you to experience an unparalleled lifestyle. With the expertise of{' '}
-        <Link href="https://vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</Link>, students can explore a smooth
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-semibold">VJC Overseas</Link>, students can explore a smooth
         admission process and long-term opportunities.
       </p>
 
@@ -36,7 +36,7 @@ const StudyInLuxembourg = () => {
         Luxembourg boasts a robust education system with institutions offering a wide range of programs in English, French, and German.
         The country has an impressive international student community and a reputation for advanced research opportunities. If you’re planning
         higher education, consulting trusted{' '}
-        <Link href="https://vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</Link>{' '}
+        <Link href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500 font-semibold">Study Visa Consultants</Link>{' '}
         can help you navigate the process and find the best program suited to your goals. Luxembourg provides not just academic growth but also
         an excellent environment for personal development.
       </p>
@@ -56,7 +56,7 @@ const StudyInLuxembourg = () => {
       <p className="mb-6">
         Tuition fees for non-EU international students range from €2,000 to €6,000 per year. Scholarships such as the Luxembourg Government Scholarship
         are available to reduce costs. Guidance in securing financial aid can be crucial, and professionals with experience in the{' '}
-        <Link href="https://vjcoverseas.com/study-abroad/luxembourg" className="text-orange-500 font-semibold">Luxembourg Student Visa</Link>{' '}
+        <Link href="https://www.vjcoverseas.com/study-abroad/luxembourg" className="text-orange-500 font-semibold">Luxembourg Student Visa</Link>{' '}
         process can provide clarity on eligibility and documentation.
       </p>
 
@@ -101,7 +101,7 @@ const StudyInLuxembourg = () => {
         Luxembourg offers an unbeatable combination of high-quality education, a strong job market, and a multicultural learning environment.
         Whether it’s about selecting the right course, applying to top universities, or preparing for visa documentation,{' '}
         <strong>VJC Overseas</strong> ensures a hassle-free process. If you are ready to expand your horizons and{' '}
-        <Link href="https://vjcoverseas.com/study-abroad/luxembourg" className="text-orange-500 font-semibold">Study in Luxembourg</Link>, start preparing
+        <Link href="https://www.vjcoverseas.com/study-abroad/luxembourg" className="text-orange-500 font-semibold">Study in Luxembourg</Link>, start preparing
         early and get expert guidance to secure your future.
       </p>
 
