@@ -4,8 +4,8 @@ import Two from "./Two";
 
 // Dynamic metadata for each country
 export async function generateMetadata({ params }) {
-  const country = params.country?.toLowerCase();
-  const data = metaData[country];
+  const { country } = await params; // ✅ await params
+  const data = metaData[country?.toLowerCase()];
 
   return {
      title: 'Permanent Residency PR Visa for Canada Australia Express Entry PR Visa Process Requirements',

@@ -1,40 +1,20 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import Nav from "./Nav";
-import Content from "./Content";
-import Two from "./Two";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
 
-
-const textContainerVariants = {
- 
-   
-};
-
-
+// Lazy load Two component
+const Two = dynamic(() => import("./Two"), {
+  ssr: false, // optional: avoids server-side render cost if it's client-only
+  loading: () => <p className="text-center py-10">Loading...</p>,
+});
 
 const ContactPage = () => {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
-  };
-
   return (
     <>
-      {/* Navbar */}
-      <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
-      </div>
-
-      {/* Main Section */}
-      
-      {/* Other Sections */}
-      <Two />
-
-
-
+      <Suspense fallback={<p className="text-center py-10">Loading Content...</p>}>
+        <Two />
+      </Suspense>
     </>
   );
 };

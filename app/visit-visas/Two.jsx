@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Globe, ArrowRight } from "lucide-react";
 import Content from "./Content";
 import Link from "next/link"; 
+import Image from "next/image";
 const visaData = [
   { name: "USA Visit Visa", path: "/visit-visas/usa", bg: "/usavisvitvisa.jpg" },
   { name: "USA B1/B2 Visa", path: "/visit-visas/usa-b1-b2-visa", bg: "/usabgh1h2.jpg" },
@@ -119,13 +120,17 @@ const Migrate = () => {
       <div className="w-full min-h-screen bg-white text-black">
         {/* Hero Section */}
         <div className="relative h-[70vh] w-full overflow-hidden">
-          <img
-            key={currentVisa.bg}
-            src={currentVisa.bg}
-            alt={`VJC Overseas - ${currentVisa.name} Background`}
-            className="absolute inset-0 w-full h-full object-cover brightness-75 transition-all duration-1000 will-change-transform"
-            style={{ objectPosition: "center", objectFit: "cover" }}
-          />
+         
+
+<Image
+  key={currentVisa.bg}
+  src={currentVisa.bg}
+  alt={`VJC Overseas - ${currentVisa.name} Background`}
+  fill
+  priority
+  className="absolute inset-0 w-full h-full object-cover brightness-75 transition-all duration-1000 will-change-transform"
+/>
+
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
             <AnimatePresence mode="wait">
               <motion.h1

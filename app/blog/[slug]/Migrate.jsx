@@ -47,7 +47,7 @@ const MigrationProcess = () => {
       clearInterval(countryInterval);
       clearInterval(partnerInterval);
     };
-  }, []);
+  }, [maxMigrants, maxCountries, maxPartners]);
 
   const bgImages = [
     "/study-abroad-vjc.jpg",
@@ -63,7 +63,7 @@ const MigrationProcess = () => {
       setCurrentBg((prev) => (prev + 1) % bgImages.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [bgImages.length]);
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 text-gray-800">

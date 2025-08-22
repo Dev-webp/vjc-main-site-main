@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { FaGlobeAsia, FaSearch } from "react-icons/fa";
 
@@ -13,18 +13,22 @@ const JobSubNavbar = ({
   setSelectedCountry,
   searchKeyword,
   setSearchKeyword,
-  onSearchClick, // 🔥 new prop
+  onSearchClick,
 }) => {
   const router = useRouter();
   const [showBar, setShowBar] = useState(true);
-  let lastScrollY = 0;
+  const lastScrollY = useRef(0); // ✅ useRef to persist scroll value
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) setShowBar(false);
-      else setShowBar(true);
-      lastScrollY = window.scrollY;
+      if (window.scrollY > lastScrollY.current) {
+        setShowBar(false);
+      } else {
+        setShowBar(true);
+      }
+      lastScrollY.current = window.scrollY; // ✅ update ref
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -37,7 +41,7 @@ const JobSubNavbar = ({
 
   const handleSearchClick = () => {
     if (onSearchClick) {
-      onSearchClick(); // 🔥 Call parent scroll function
+      onSearchClick();
     }
   };
 

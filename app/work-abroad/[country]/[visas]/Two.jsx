@@ -215,6 +215,7 @@ const WorkabroadCountry = () => {
   const router = useRouter();
   const { country, visas } = useParams();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const visasList = countryVisaData[country] || [];
   const defaultVisaTitle = visasList.length ? visasList[0].name : '';
 

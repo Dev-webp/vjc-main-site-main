@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Nav from "./Nav";
+
 import Two from "./Two";
 import Content from "./Content";
 import Form from "./Form";
@@ -19,9 +19,7 @@ const ContactPage = () => {
     <>
       {/* Navbar */}
       <div className="bg-white">
-        <div className="mt-10 z-20 relative">
-          <Nav />
-        </div>
+       
 
         {/* Main Section */}
         <div className="mt-16 mb-16">

@@ -65,6 +65,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             width="1"
             style={{ display: 'none' }}
             src="https://www.facebook.com/tr?id=2003555746606868&ev=PageView&noscript=1"
+            alt=""
+
           />
         </noscript>
       </body>

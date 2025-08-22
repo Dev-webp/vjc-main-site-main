@@ -26,7 +26,7 @@ const MigrationProcess = () => {
       setCurrentBg((prev) => (prev + 1) % bgImages.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [bgImages.length]);
 
   return (
     <>

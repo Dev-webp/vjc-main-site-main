@@ -558,6 +558,7 @@ const toggleMobileSubSubMenu = (itemName) => {
     alt="News"
     className="object-contain"
     autoPlay
+
     loop
     muted
     playsInline
@@ -641,6 +642,7 @@ const toggleMobileSubSubMenu = (itemName) => {
     muted
     playsInline
     style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+  
   />
 </div>
             <span className="text-custom-blue">+91 9160449000</span>
@@ -785,7 +787,7 @@ const toggleMobileSubSubMenu = (itemName) => {
     "Coaching/Training",
     "Tours/Ticketing",
   ].includes(item.name) && (
-   <div className="absolute left-0 top-full mt-4 invisible opacity-0 group-hover:visible group-hover:opacity-100 
+   <div className="absolute left-0 top-full mt-4 invisible   
   opacity-0 bg-gradient-to-br from-orange-500/60 to-black group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100
   backdrop-blur-lg border border-white/20 
   shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl 

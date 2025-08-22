@@ -45,7 +45,7 @@ const WorkPermitProcess = () => {
       clearInterval(countryInterval);
       clearInterval(companyInterval);
     };
-  }, []);
+  }, [maxCountries, maxCompanies, maxWorkers]);
 
   const bgImages = [
    "/study-abroad-vjc.jpg",

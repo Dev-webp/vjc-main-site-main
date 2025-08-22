@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 
@@ -15,18 +15,7 @@ const JobCard = ({ job, styles, showSuccess }) => {
 
   const jobKey = `${job.title}_${job.company}`.replace(/\s+/g, "_");
 
-  useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem("vjcUser"));
-    setUser(storedUser);
-
-    const returningJobKey = sessionStorage.getItem("resume_submitted_for");
-    if (returningJobKey === jobKey) {
-      applyForJob();
-      sessionStorage.removeItem("resume_submitted_for");
-    }
-  }, []);
-
-  const applyForJob = async () => {
+  const applyForJob = useCallback(async () => {
     const user = JSON.parse(localStorage.getItem("vjcUser"));
     const resume = localStorage.getItem(`resume_uploaded_${user?.email}`);
     const profile = JSON.parse(localStorage.getItem(`resume_data_${user?.email}`));
@@ -67,7 +56,18 @@ const JobCard = ({ job, styles, showSuccess }) => {
     } else {
       alert("Failed to apply for job.");
     }
-  };
+  }, [job, showSuccess]);
+
+  useEffect(() => {
+    const storedUser = JSON.parse(localStorage.getItem("vjcUser"));
+    setUser(storedUser);
+
+    const returningJobKey = sessionStorage.getItem("resume_submitted_for");
+    if (returningJobKey === jobKey) {
+      applyForJob();
+      sessionStorage.removeItem("resume_submitted_for");
+    }
+  }, [jobKey, applyForJob]);
 
   const handleApply = () => {
     const storedUser = JSON.parse(localStorage.getItem("vjcUser"));
@@ -87,14 +87,17 @@ const JobCard = ({ job, styles, showSuccess }) => {
   };
 
   // Merge keywords from job.tags into the JD naturally
-  const keywordString = Array.isArray(job.tags) && job.tags.length
-    ? job.tags.map(tag => `• ${tag}`).join("\n")
-    : "";
+  const keywordString =
+    Array.isArray(job.tags) && job.tags.length
+      ? job.tags.map((tag) => `• ${tag}`).join("\n")
+      : "";
 
-const fullDescription = `
+  const fullDescription = `
 Join **${job.company}** as a **${job.title}** in **${job.location}**, **${job.country}**. 
 We are on the lookout for a highly skilled professional with **${job.minExperience}+ years** of proven expertise in the field of **${job.domain}**. 
-The ideal candidate will bring strong technical skills, leadership qualities, and the ability to work with cutting-edge tools and technologies, including ${job.tags.join(", ")}, as well as other advanced engineering resources.
+The ideal candidate will bring strong technical skills, leadership qualities, and the ability to work with cutting-edge tools and technologies, including ${job.tags.join(
+    ", "
+  )}, as well as other advanced engineering resources.
 
 Your role will require you to take ownership of a variety of high-impact tasks, such as:
 - Managing and executing complex electrical circuit design projects from start to finish.
@@ -135,7 +138,6 @@ ${keywordString}
 If you are ready to take the next big step in your career, apply via 
 **[VJC-Overseas](https://www.vjcoverseas.com/)** and become an integral part of an innovative engineering team that values skill, dedication, and forward-thinking solutions.
 `;
-
 
   const formatDescription = (text) => {
     return text

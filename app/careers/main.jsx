@@ -1,5 +1,5 @@
 "use client"; // This directive marks the component as a Client Component
-
+import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from 'firebase/auth';
@@ -9,6 +9,7 @@ export default function App() {
   // Rely solely on Canvas globals or hardcoded defaults, as process.env is not available in client-side React in this environment.
   const appId = typeof __app_id !== 'undefined' && __app_id ? __app_id : 'default-app-id';
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   let firebaseConfig = {};
   try {
     if (typeof __firebase_config !== 'undefined' && __firebase_config) {
@@ -671,12 +672,18 @@ export default function App() {
       <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-xl w-full max-w-2xl lg:max-w-3xl border border-gray-200 mx-auto flex flex-col h-[90vh]"> {/* Added flex-col and height for chat layout */}
         {/* Header */}
         <div className="flex justify-center items-center mb-6 flex-shrink-0">
-          <img
-            src="/logo.png" // Path to your uploaded logo
-            alt="VJC Overseas Logo"
-            className="h-16 sm:h-20 object-contain mr-3" // Responsive height, maintain aspect ratio
-            onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/150x60/cccccc/333333?text=VJC+Logo"; }} // Fallback image
-          />
+      
+
+<Image
+  src="/logo.png" // Path to your uploaded logo
+  alt="VJC Overseas Logo"
+  width={150} // must provide width
+  height={60} // must provide height
+  className="h-16 sm:h-20 object-contain mr-3"
+  onError={(e) => { 
+    e.currentTarget.src = "https://placehold.co/150x60/cccccc/333333?text=VJC+Logo"; 
+  }}
+/>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-800">
             VJC Overseas AI Assistant
           </h1>
@@ -713,12 +720,16 @@ export default function App() {
               {messages.map((msg, index) => (
                 <div key={index} className={`flex items-start gap-3 ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
                   {msg.sender === 'ai' && (
-                    <img
-                      src="/logo.png"
-                      alt="VJC AI Avatar"
-                      className="h-8 w-8 rounded-full object-contain flex-shrink-0"
-                      onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/32x32/cccccc/333333?text=AI"; }}
-                    />
+                    <Image
+  src="/logo.png"
+  alt="VJC AI Avatar"
+  width={32}
+  height={32}
+  className="h-8 w-8 rounded-full object-contain flex-shrink-0"
+  onError={(e) => { 
+    e.currentTarget.src = "https://placehold.co/150x60/cccccc/333333?text=VJC+Logo"; 
+  }}
+/>
                   )}
                   <div className={`p-3 rounded-xl max-w-[75%] ${
                     msg.sender === 'user'

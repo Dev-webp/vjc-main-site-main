@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Nav from "./Nav";
+
 import Content from "./Content";
 import Two from "./Two";
 
@@ -22,10 +22,7 @@ const ContactPage = () => {
 
   return (
     <>
-      {/* Navbar */}
-      <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
-      </div>
+  
 
       {/* Main Section */}
       

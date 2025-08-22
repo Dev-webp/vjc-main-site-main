@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { useState, useEffect } from "react";
 import News from "./News";
 import Jobseeker from "./Jobseeker"
+import { useMemo } from "react";
 export default function AdminJobs() {
   // 🔑 Login state
   const [loggedIn, setLoggedIn] = useState(false);
@@ -41,7 +43,7 @@ export default function AdminJobs() {
   const [editId, setEditId] = useState(null); // ✅ track edit mode
 
   // Allowed countries & domains
-  const filterData = {
+  const filterData = useMemo(() => ({
     UAE: {
       cities: ["Dubai"],
       domains: [
@@ -134,7 +136,8 @@ export default function AdminJobs() {
         "Healthcare Technology",
       ],
     },
-  };
+}), []);
+
 
   // Fetch jobs
   const loadJobs = () => {

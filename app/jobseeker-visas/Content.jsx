@@ -1,58 +1,141 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const paragraphs = [
   {
-    text: "At VJC Overseas, we specialize in guiding aspiring professionals through the Job Seeker Visa process. Our experts evaluate your profile and identify the best-fit countries like Germany, Austria, and Sweden based on your qualifications and goals. We provide a detailed consultation to help you understand which country aligns best with your industry. Our team also educates you about the legal requirements, visa success rates, and current employment trends in each destination.",
+    text: (
+      <>
+        At{" "}
+        <Link
+          href="https://www.vjcoverseas.com"
+          className="font-bold text-orange-600 hover:underline"
+        >
+          VJC Overseas
+        </Link>
+        , we specialize in guiding professionals through the Job Seeker Visa
+        process. Our consultants carefully evaluate your profile and recommend
+        the most suitable countries like Germany, Austria, and Sweden based on
+        your career goals. We also explain visa success rates, employment
+        trends, and legal requirements in detail. This ensures you have complete
+        clarity about where your skills are in the highest demand. Choosing us
+        means getting reliable insights and strategies that save you time,
+        effort, and unnecessary rejections.
+      </>
+    ),
     image: "/Job-Seeker-Visa-Guide.jpg",
   },
   {
-    text: "We provide personalized resume and cover letter creation services as per international standards. Our team helps you create a CV that stands out in European and global job markets. We ensure your resume highlights relevant skills, uses ATS-friendly formats, and aligns with employer expectations. Cover letters are customized to specific roles, industries, and countries, making your application more compelling.",
+    text: (
+      <>
+        Our team of{" "}
+        <Link
+          href="https://www.vjcoverseas.com/jobseeker-visas"
+          className="font-bold text-orange-600 hover:underline"
+        >
+          Job Seeker Visa Consultants
+        </Link>{" "}
+        helps you craft resumes and cover letters that meet international hiring
+        standards. We highlight your skills using ATS-friendly formats so your
+        CV passes recruiter filters easily. Each cover letter is customized to
+        fit the role, country, and industry you’re applying for. With expert
+        guidance, your application stands out to global employers. This tailored
+        approach gives you a competitive edge and makes recruiters notice you
+        faster.
+      </>
+    ),
     image: "/job_seeker_visa_1.png",
   },
   {
-    text: "With VJC Overseas, you get full support in application documentation, embassy appointments, and interview scheduling. Our dedicated case managers help you compile all necessary paperwork including educational, professional, and financial documents. We ensure that your file meets embassy standards, guide you through online submissions, and coordinate timely interview slot bookings.",
+    text: (
+      <>
+        From documentation to interview scheduling, we manage everything under
+        one roof. Applying through{" "}
+        <Link
+          href="https://www.vjcoverseas.com/jobseeker-visas"
+          className="font-bold text-orange-600 hover:underline"
+        >
+          Job Seeker Visas
+        </Link>{" "}
+        becomes seamless when our experts handle your file. We assist in
+        compiling educational, professional, and financial documents that meet
+        embassy standards. Our team also coordinates embassy appointments and
+        interview slots without hassle. This reduces rejection risks and speeds
+        up your migration timeline, giving you peace of mind at every step.
+      </>
+    ),
     image: "/JOB-SEEKER-VISA.png",
   },
   {
-    text: "We assist with job portal access, employer outreach strategies, and offer mock interview preparation to boost your confidence and communication skills during job interviews. You’ll get guidance on creating profiles on leading job boards, writing attention-grabbing emails to recruiters, and participating in career fairs. Our mock interviews simulate real employer questions, helping you prepare effectively.",
+    text: (
+      <>
+        Unlock exclusive{" "}
+        <Link
+          href="https://www.vjcoverseas.com/work-abroad"
+          className="font-bold text-orange-600 hover:underline"
+        >
+          Work Abroad Opportunities
+        </Link>{" "}
+        with our employer outreach and job portal access services. We guide you
+        on building strong profiles on international platforms and writing
+        recruiter-focused emails. To boost your confidence, we also conduct mock
+        interviews that simulate real employer scenarios. With these strategies,
+        you build meaningful professional connections and stand out in
+        competitive global markets.
+      </>
+    ),
     image: "/jobseeker1.png",
   },
   {
-    text: "Even after landing abroad, our post-arrival services include accommodation guidance, local tips, and continued support until you're comfortably settled in your new career journey. We help you find affordable and safe housing options, explain local transportation, and support you in registering with local authorities. You’ll also receive cultural orientation and professional networking tips for a smooth transition.",
+    text: (
+      <>
+        As one of the{" "}
+        <Link
+          href="https://www.vjcoverseas.com"
+          className="font-bold text-orange-600 hover:underline"
+        >
+          Best Visa Immigration Consultants
+        </Link>
+        , our support doesn’t stop once you land abroad. We help you with
+        accommodation search, transportation guidance, and cultural orientation.
+        From registering with local authorities to finding networking
+        opportunities, we stay with you throughout your transition. This
+        post-arrival support ensures you feel confident, safe, and ready to
+        start your career abroad successfully.
+      </>
+    ),
     image: "/jobseekwe.avif",
   },
 ];
 
 const JobSeekerHelp = () => {
   const refs = useRef([]);
-useEffect(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const el = entry.target;
-        if (entry.isIntersecting) {
-          el.classList.add("animate-scroll-text");
-          el.classList.remove("before-scroll");
-        } else {
-          el.classList.remove("animate-scroll-text");
-          el.classList.add("before-scroll");
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
 
-  const elements = [...refs.current]; // ✅ snapshot copy
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const el = entry.target;
+          if (entry.isIntersecting) {
+            el.classList.add("animate-scroll-text");
+            el.classList.remove("before-scroll");
+          } else {
+            el.classList.remove("animate-scroll-text");
+            el.classList.add("before-scroll");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-  elements.forEach((ref) => ref && observer.observe(ref));
+    const elements = [...refs.current]; // ✅ snapshot copy
+    elements.forEach((ref) => ref && observer.observe(ref));
 
-  return () => {
-    elements.forEach((ref) => ref && observer.unobserve(ref));
-  };
-}, []);
-
+    return () => {
+      elements.forEach((ref) => ref && observer.unobserve(ref));
+    };
+  }, []);
 
   return (
     <div className="py-10 px-4 md:px-12 font-times">
@@ -96,7 +179,7 @@ useEffect(() => {
                 alt={`Job Seeker Help ${index + 1}`}
                 width={600}
                 height={350}
-                className="object-cover object-center w-full h-[250px] max-w-[400px]"
+                className="object-cover object-center w-full h-[250px] max-w-[400px] rounded-md"
                 unoptimized
               />
             </div>
