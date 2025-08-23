@@ -10,25 +10,21 @@ export default function CanadaVisitVisa() {
       {/* Two-column layout with image tag */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 items-center">
         <div>
-          
-           <Image src="/canada-visitor-visa.jpg" alt="USA B1 Visa" width={300} height={250} className="" unoptimized/>
+          <Image src="/canada-visitor-visa.jpg" alt="Canada Visitor Visa" width={300} height={250} className="" unoptimized/>
         </div>
         <div>
           <p>
-            Dreaming of witnessing the majestic Rockies, exploring vibrant cities like Toronto and Vancouver, or visiting
-            friends and family in Canada? The Canada Visit Visa (also known as a Temporary Resident Visa - TRV) is your
-            gateway to a memorable journey. Whether you're planning a short vacation,a business trip, 
+            Dreaming of witnessing the majestic Rockies, exploring vibrant cities like Toronto and Vancouver, or visiting friends and family in Canada? The <a href="https://www.vjcoverseas.com/visit-visas/canada" className="text-blue-900 font-bold">Canada Visit visa</a> is your gateway to a memorable journey. Whether you're planning a short vacation or a business trip, 
           </p>
         </div>
       </div>
-      <p> or a family visit,
-            VJC Overseas simplifies the process for Indian citizens to apply for and obtain their Canada Tourist Visa
-            hassle-free. </p>
+      <p>
+        or a family visit, <span className="text-orange-500">VJC Overseas</span> simplifies the process for Indian citizens to apply for and obtain their Canada Tourist Visa hassle-free.
+      </p>
+
       <h2 className="text-xl mt-4 mb-2 font-semibold"> What is a Canada Visit Visa?</h2>
       <p>
-        A Canada Visit Visa is a short-term entry permit that allows foreign nationals, including Indians, to enter
-        Canada for tourism, family visits, or business purposes. It is typically issued for up to 6 months, but the final
-        duration is at the discretion of the Canadian border officer.
+        A Canada Visit Visa is a short-term entry permit that allows foreign nationals, including Indians, to enter Canada for tourism, family visits, or business purposes. It is typically issued for up to 6 months, but the final duration is at the discretion of the Canadian border officer.
       </p>
 
       <h2 className="text-xl mt-4 mb-2 font-semibold"> Key Features:</h2>
@@ -50,8 +46,8 @@ export default function CanadaVisitVisa() {
           <li>Entertainment & Sightseeing: ₹10,000 – ₹30,000</li>
           <li>Travel Insurance: ₹3,000 – ₹6,000</li>
         </ul>
-        <p className="mt-2 font-semibold text-blue-700">
-           Pro Tip: Opt for a travel insurance plan that covers medical expenses, trip cancellations, and baggage loss.
+        <p className="mt-2 font-semibold text-orange-400">
+          Pro Tip: Opt for a travel insurance plan that covers medical expenses, trip cancellations, and baggage loss. Contact our <a href="https://www.vjcoverseas.com/tours-ticketing" className="text-blue-900 font-bold">Visa & Travel Consultants</a> for expert advice.
         </p>
       </div>
 
@@ -69,8 +65,7 @@ export default function CanadaVisitVisa() {
 
       <h2 className="text-xl mt-4 mb-2 font-semibold"> Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Canada Tourist Visa?</h2>
       <p>
-        At VJC Overseas, we understand that international travel involves careful planning. Our experienced visa
-        consultants assist you at every step – from documentation to visa interview prep.
+        At <span className="text-orange-500">VJC Overseas</span>, we understand that international travel involves careful planning. Our experienced <a href="https://www.vjcoverseas.com" className="text-blue-900 font-bold">Best Visa Immigration Consultants</a> assist you at every step – from documentation to visa interview prep.
       </p>
       <ul className="list-disc list-inside">
         <li>Personalized consultation for Canada Visitor Visa</li>
@@ -81,9 +76,17 @@ export default function CanadaVisitVisa() {
       </ul>
 
       <h2 className="text-xl mt-4 mb-2 font-semibold"> Frequently Asked Questions (FAQ)</h2>
-      <p><strong>Q. Can I extend my Canada Visit Visa?</strong><br />Yes, you can apply for an extension while you’re in Canada, ideally 30 days before your status expires.</p>
-      <p><strong>Q. How much bank balance is required for a Canada tourist visa from India?</strong><br />Generally, a minimum of ₹3–5 lakhs should be shown, but the amount may vary depending on your trip duration and expenses.</p>
-      <p><strong>Q. Is travel insurance mandatory?</strong><br />Yes, though not strictly mandatory for all, it is highly recommended, especially for medical emergencies.</p>
+      <p>
+        <strong>Q. Can I extend my Canada Visit Visa?</strong><br />
+        Yes, you can apply for an extension while you’re in Canada, ideally 30 days before your status expires.
+      </p>
+      <p>
+        <strong>Q. How much bank balance is required for a Canada tourist visa from India?</strong><br />
+        Generally, a minimum of ₹3–5 lakhs should be shown, but the amount may vary depending on your trip duration and expenses. Seek help from <a href="https://www.vjcoverseas.com/visit-visas" className="text-blue-900 font-bold">Visit Visa Consultants</a> for clarity.
+      </p>
+      <p>
+        <strong>Q. Is travel insurance mandatory?</strong><br />Yes, though not strictly mandatory for all, it is highly recommended, especially for medical emergencies.
+      </p>
 
       <h2 className="text-xl mt-4 mb-2 font-semibold"> Top Attractions to Explore in Canada</h2>
       <ul className="list-disc list-inside">
@@ -96,13 +99,12 @@ export default function CanadaVisitVisa() {
 
       <h2 className="text-xl mt-4 mb-2 font-semibold"> Start Your Canada Journey with <span className="text-orange-500">VJC Overseas</span></h2>
       <p>
-        Don’t let paperwork and process delays slow down your travel dreams. VJC Overseas ensures a smooth, transparent,
-        and success-oriented visa process for Indian citizens.
+        Don’t let paperwork and process delays slow down your travel dreams. <span className="text-orange-500">VJC Overseas</span> ensures a smooth, transparent, and success-oriented visa process for Indian citizens.
       </p>
       <p>
          Visit us at your nearest branch or <br />
-         Call now for a FREE consultation: <a href="tel:+919160449000" className="text-blue-600 underline">+91-9160449000</a> <br />
-        Or apply online at: <a href="https://www.vjcoverseas.com" className="text-blue-600 underline">www.vjcoverseas.com</a>
+         Call now for a FREE consultation: <a href="tel:+919160449000" className="text-blue-900 font-bold">+91-9160449000</a> <br />
+        Or apply online at: <a href="https://www.vjcoverseas.com" className="text-blue-900 font-bold">www.vjcoverseas.com</a>
       </p>
     </div>
   );

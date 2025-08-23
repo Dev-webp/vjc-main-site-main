@@ -24,7 +24,7 @@ const visaData = [
  
   { name: "USA B1/B2 Visa", path: "/visit-visas/usa-b1-b2-visa", image: "/visit1.webp" },
   { name: "Canada Visit Visa", path: "/visit-visas/canada" , image: "/canada.webp"},
-  { name: "Australia Visit Visa", path: "/visit-visas/australia" , image: "/australiabgimg.jpg"},
+  { name: "Australia Visit Visa", path: "/visit-visas/australia" , image: "/australia-visitor-visa.webp"},
   { name: "UK Visit Visa", path: "/visit-visas/uk" , image: "/uk1.webp"},
   { name: "Dubai Visit Visa", path: "/visit-visas/dubai", image: "/du.webp" },
   { name: "Denmark Visit Visa", path: "/visit-visas/denmark", image: "/44.webp" },

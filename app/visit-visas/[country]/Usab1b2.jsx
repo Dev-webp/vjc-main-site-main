@@ -1,29 +1,40 @@
 'use client';
-
 import Image from 'next/image';
 
 export default function USAB1B2Visa() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 font-[Times_New_Roman]">
-      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">USA B1/B2 Visa – Your Gateway to Explore America with VJC Overseas</h1>
-          <h2 className="text-xl mt-4 font-semibold text-orange-500 mb-2">Discover the Land of Opportunities – Travel to the USA with a B1/B2 Visa</h2>
-          <div className="flex flex-col md:flex-row md:items-start md:space-x-4">
-          
-          <p>Are you an Indian citizen planning to travel to the United States for business meetings, conferences, tourism, or to visit family and friends? The USA B1/B2 Visa is your all-access pass to experience the American dream – temporarily. At <span className="text-orange-500">VJC Overseas</span>, we help you navigate the complexities of the B1/B2 visa process with unmatched expertise and personalized guidance.</p>
-          </div>
-        <div className=" mt-8 md:mt-0">
-          <Image src="/b1b2usa.webp" alt="USA B1/B2 Visa" width={550} height={250} className="ml-14 shadow-md" unoptimized />
-        </div>
-     
+      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+        USA B1/B2 Visa – Your Gateway to Explore America with VJC Overseas
+      </h1>
+
+      <h2 className="text-xl mt-4 font-semibold text-orange-500 mb-2">
+        Discover the Land of Opportunities – Travel to the USA with a B1/B2 Visa
+      </h2>
+
+      <div className="flex flex-col md:flex-row md:items-start md:space-x-4">
+        <p>
+          Are you an Indian citizen planning to travel to the United States for business meetings, conferences, tourism, or to visit family and friends? The USA B1/B2 Visa is your all-access pass to experience the American dream – temporarily. At <span className="text-orange-500">VJC Overseas</span>, we help you navigate the complexities of the B1/B2 visa process with unmatched expertise and personalized guidance.  
+          <a href="https://www.vjcoverseas.com" className="font-bold text-blue-900 ml-1">Best Visa Immigration Consultants</a>
+        </p>
+      </div>
+
+      <div className="mt-8 md:mt-0">
+        <Image src="/b1b2usa.webp" alt="USA B1/B2 Visa" width={550} height={250} className="ml-14 shadow-md" unoptimized />
+      </div>
 
       <section>
         <h3 className="text-xl mt-4 mb-2 font-bold"> What is a USA B1/B2 Visa?</h3>
-        <p>The B1/B2 Visa is a non-immigrant, temporary visitor visa that combines:</p>
+        <p>
+          The B1/B2 Visa is a non-immigrant, temporary visitor visa that combines:
+        </p>
         <ul className="list-disc ml-6">
           <li><strong>B1 Visa (Business):</strong> For attending conferences, meetings, negotiations, or settling estates.</li>
           <li><strong>B2 Visa (Tourism/Medical):</strong> For vacations, visiting relatives, or seeking medical treatment.</li>
         </ul>
-        <p>It’s one of the most commonly issued visas for Indian travellers wanting short-term entry to the USA.</p>
+        <p>It’s one of the most commonly issued visas for Indian travellers wanting short-term entry to the USA.  
+          <a href="https://www.vjcoverseas.com" className="font-bold text-blue-900 ml-1">VJC Overseas</a>
+        </p>
       </section>
 
       <section>
@@ -33,6 +44,10 @@ export default function USAB1B2Visa() {
           <li>Stay per visit: Up to 6 months per entry (subject to approval at the port of entry).</li>
           <li>The visa doesn’t guarantee entry – the final duration is decided by CBP (Customs and Border Protection) officials.</li>
         </ul>
+        <p>
+          Planning ahead helps avoid unnecessary travel disruptions.  
+          <a href="https://www.vjcoverseas.com/visit-visas" className="font-bold text-blue-900 ml-1">Visit Visa Consultants</a>
+        </p>
       </section>
 
       <section>
@@ -55,18 +70,25 @@ export default function USAB1B2Visa() {
             </tbody>
           </table>
         </div>
-        <p className="text-sm mt-2"> Tip: Cities like New York, San Francisco, and LA are costlier. Opt for suburbs or mid-sized cities for a budget-friendly stay.</p>
+        <p className="text-sm mt-2">
+          Tip: Cities like New York, San Francisco, and LA are costlier. Opt for suburbs or mid-sized cities for a budget-friendly stay.  
+          <a href="https://www.vjcoverseas.com/tours-ticketing" className="font-bold text-blue-900 ml-1">Visa & Travel Consultants</a>
+        </p>
       </section>
 
       <section>
         <h3 className="text-xl mt-4 mb-2 font-bold"> Why Apply for a B1/B2 Visa with VJC Overseas?</h3>
         <ul className="list-disc ml-6">
-          <li> Expert Visa Consultation – 15+ years of success with USA visa applications</li>
-          <li> Mock Interview Prep – Ace your visa interview with confidence</li>
-          <li> Complete Documentation Support – Zero errors, higher approval rate</li>
-          <li> Transparent Guidance – No false promises, only results</li>
-          <li> Fast-Track Appointments (Subject to availability)</li>
+          <li>Expert Visa Consultation – 15+ years of success with USA visa applications</li>
+          <li>Mock Interview Prep – Ace your visa interview with confidence</li>
+          <li>Complete Documentation Support – Zero errors, higher approval rate</li>
+          <li>Transparent Guidance – No false promises, only results</li>
+          <li>Fast-Track Appointments (Subject to availability)</li>
         </ul>
+        <p>
+          Maximize your chances of approval with our experts.  
+          <a href="https://www.vjcoverseas.com/visit-visas/usa-b1-b2-visa" className="font-bold text-blue-900 ml-1">USA B1/B2 Visa</a>
+        </p>
       </section>
 
       <section>

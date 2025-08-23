@@ -4,13 +4,7 @@ export default function USAVisaPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 font-[Times_New_Roman]">
       <h1 className="flex justify-center text-xl sm:text-xl md:text-2xl font-bold mb-8 text-center">
-        <a
-          href="https://www.vjcoverseas.com"
-          className="font-xl text-blue-900"
-        >
-          Best Visa Immigration Consultants
-        </a>{" "}
-        from India – Your Gateway to Explore the United States.
+        USA Visit Visa from India – Your Gateway to Explore the United States.
       </h1>
 
       <div className="flex flex-col md:flex-row gap-6 items-center">
@@ -31,25 +25,26 @@ export default function USAVisaPage() {
           >
             VJC Overseas
           </a>
-          , we simplify the process of obtaining a{" "}
-         USA Visit Visas
-          from India. Whether you're planning a vacation, visiting family, or exploring educational and business opportunities, our expert visa consultants are here to guide you every step of the way.
-        </p>
-      </div>
-      
-      <section>
-        <h2 className="text-xl font-semibold mt-4 mb-2">
-          What is a{" "}
+          , we simplify the process of obtaining a USA Visit Visa from India. Whether you're planning a vacation, visiting family, or exploring educational and business opportunities, our expert visa consultants are here to guide you every step of the way. Check out{" "}
           <a
             href="https://www.vjcoverseas.com/visit-visas"
             className="font-bold text-blue-900"
           >
             Visit Visa Consultants
-          </a>
-          ?
-        </h2>
+          </a>{" "}
+          for detailed guidance.
+        </p>
+      </div>
+      
+      <section>
+        <h2 className="text-xl font-semibold mt-4 mb-2">What is a USA Visit Visa?</h2>
         <p className="leading-relaxed">
-          The USA Visit Visa, commonly referred to as the B1/B2 Visa, is a non-immigrant visa designed for Indian citizens who wish to travel temporarily to the United States for:
+          <a
+            href="https://www.vjcoverseas.com/visit-visas/usa"
+            className="font-bold text-blue-900"
+          >
+            USA Visit Visa
+          </a>, commonly referred to as the B1/B2 Visa, is a non-immigrant visa designed for Indian citizens who wish to travel temporarily to the United States for:
         </p>
         <ul className="list-disc pl-6 mt-2 space-y-1">
           <li>Tourism (B2 Visa)</li>
@@ -115,12 +110,7 @@ export default function USAVisaPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold mt-4 mb-2">
-          Documents Required for <a
-            href="https://www.vjcoverseas.com/visit-visas/usa"
-            className="font-bold text-blue-900"
-          >USA Visitor Visa</a> (B1/B2) from India
-        </h2>
+        <h2 className="text-xl font-semibold mt-4 mb-2">Documents Required for USA Visitor Visa (B1/B2) from India</h2>
         <ul className="list-disc pl-6 space-y-1">
           <li>Valid passport (with at least 6 months validity)</li>
           <li>DS-160 confirmation page</li>
@@ -131,19 +121,29 @@ export default function USAVisaPage() {
           <li>Ties to India (job, property, family)</li>
           <li>Invitation letter (if visiting family or friends)</li>
         </ul>
+        <p className="mt-2">
+          For expert guidance, check{" "}
+          <a
+            href="https://www.vjcoverseas.com/visit-visas/usa"
+            className="font-bold text-blue-900"
+          >
+            USA Visit Visa
+          </a>.
+        </p>
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold mt-4 mb-2">
-          Why Choose{" "}
+        <h2 className="text-xl font-semibold mt-4 mb-2">Why Choose Trusted Consultants?</h2>
+        <p>
+          Work with top{" "}
           <a
             href="https://www.vjcoverseas.com/tours-ticketing"
             className="font-bold text-blue-900"
           >
             Visa & Travel Consultants
           </a>{" "}
-          for Your US Visa?
-        </h2>
+          for complete visa assistance and travel planning.
+        </p>
         <ul className="list-disc pl-6 space-y-1">
           <li>20+ Years of Visa Consulting Expertise</li>
           <li>Personalized Documentation Support</li>
@@ -154,9 +154,7 @@ export default function USAVisaPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold mt-4 mb-2">
-          Planning to Visit the USA from India?
-        </h2>
+        <h2 className="text-xl font-semibold mt-4 mb-2">Planning Your Trip to the USA?</h2>
         <p>
           Now is the best time to apply! U.S. travel is picking up, and with a valid US tourist visa, you can experience iconic places like:
         </p>
@@ -174,7 +172,7 @@ export default function USAVisaPage() {
         <p>
           Get in touch with{" "}
           <a
-            href="https://wwww.vjcoverseas.com"
+            href="https://www.vjcoverseas.com"
             className="font-bold text-blue-900"
           >
             VJC Overseas
@@ -189,9 +187,7 @@ export default function USAVisaPage() {
       </section>
 
       <h2 className="text-center text-xl font-semibold mt-4 mb-2">
-        Your American Dream Starts with{" "}
-       
-          VJC Overseas !<br />
+        Your American Dream Starts Here!<br />
         <span className="text-base font-normal">Fast. Reliable. Trusted.</span>
       </h2>
     </div>

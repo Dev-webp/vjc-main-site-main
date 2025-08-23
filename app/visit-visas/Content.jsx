@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
@@ -59,7 +59,7 @@ const VisitVisas = () => {
             Your Gateway to Global Adventures Starts Here
           </p>
           <p className="text-lg text-gray-700 mt-4 max-w-3xl mx-auto">
-            Dreaming of exploring the world? Whether it’s the Eiffel Tower in Paris, the cherry blossoms in Japan, or the skyscrapers of Dubai, VJC Overseas is your trusted partner for seamless Visit Visa services from India.
+            Dreaming of exploring the world? Whether it’s the Eiffel Tower in Paris, the cherry blossoms in Japan, or the skyscrapers of Dubai, <a href="https://vjcoverseas.com" className="font-bold text-blue-900 ml-1">Best Visa Immigration Consultants</a> is your trusted partner for seamless Visit Visa services from India.
           </p>
         </SectionWrapper>
 
@@ -68,7 +68,7 @@ const VisitVisas = () => {
           <div className="mb-10 ml-8">
             <h2 className="text-3xl font-semibold mb-4">What is a Visit Visa?</h2>
             <p className="text-lg text-gray-700">
-              A Visit Visa is a temporary travel document that allows you to enter and stay in a foreign country for leisure, tourism, family visits, or short business trips.
+              A Visit Visa is a temporary travel document that allows you to enter and stay in a foreign country for leisure, tourism, family visits, or short business trips. <a href="https://vjcoverseas.com" className="font-bold text-blue-900 ml-1">VJC Overseas</a>
             </p>
             <p className=" text-gray-700 mt-4 text-xl">
               We specialize in providing Visit Visa assistance for over 15+ countries, including:
@@ -111,6 +111,9 @@ const VisitVisas = () => {
             <li>✅ Fast-tracked processing for urgent travel needs</li>
             <li>✅ End-to-end assistance: From application to travel tips</li>
           </ul>
+          <p className="mt-4 text-center">
+            Get the best guidance for <a href="https://vjcoverseas.com/visit-visas" className="font-bold text-blue-900 ml-1">USA B1/B2 Visa</a> applications today.
+          </p>
         </SectionWrapper>
 
         {/* Cost of Living & Form */}
@@ -120,7 +123,7 @@ const VisitVisas = () => {
               Cost of Living in Top Destinations & Free Visa Assessment
             </h2>
             <p className="text-lg text-gray-600 mt-2">
-              Know how much you need and get a free consultation before you fly!
+              Know how much you need and get a free consultation before you fly! <a href="https://vjcoverseas.com/visit-visas" className="font-bold text-blue-900 ml-1">Visit Visa Consultants</a>
             </p>
           </div>
 
@@ -132,7 +135,7 @@ const VisitVisas = () => {
                   Get Your Free Tourist Visa Assessment
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  Fill out the form below and our team will get back to you within 24 hours with the best visa guidance.
+                  Fill out the form below and our team will get back to you within 24 hours with the best visa guidance. <a href="https://vjcoverseas.com/tours-ticketing" className="font-bold text-blue-900 ml-1">Tourist Visa Process</a>
                 </p>
                 <Form />
               </div>
@@ -219,7 +222,7 @@ const VisitVisas = () => {
         <SectionWrapper className="bg-gradient-to-br from-orange-500 via-blue-200 to-black text-white py-8 text-center rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold text-black mb-4">Ready to Travel the World?</h2>
           <p className="text-lg text-black mb-4">
-            With VJC Overseas, your dream of international travel is just a step away.
+            With VJC Overseas, your dream of international travel is just a step away. <a href="https://vjcoverseas.com/visit-visas" className="font-bold text-blue-900 ml-1">Schengen Visit Visa</a>
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
