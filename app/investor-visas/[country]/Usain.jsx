@@ -4,11 +4,12 @@ import Image from "next/image";
 const USAInvestorVisa = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
-    <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
-      USA Investor Visa - <span className="text-orange-500">&nbsp;VJC Overseas</span>
-    </h1>
-       
+      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+        USA Investor Visa - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+      </h1>
+
       <p className=" text-xl font-bold mt-4 mb-6">Introduction to the USA Investor Visa</p>
+
       {/* Image and Intro Text Side by Side */}
       <div className="flex flex-col md:flex-row items-center gap-6 mb-10">
         {/* Image */}
@@ -26,19 +27,19 @@ const USAInvestorVisa = () => {
 
         {/* Text */}
         <div className="md:w-3/4">
-  <p className="mb-4">
-        The USA offers several visa options for individuals wishing to invest in its economy, create jobs,
-        and live in the United States. One of the most popular options is the{" "}
-        <strong>EB-5 Immigrant Investor Visa Program</strong>. This program allows eligible foreign nationals
-        to obtain a U.S. Green Card (Permanent Residency) by making a qualifying investment in a U.S. business
-        that creates or preserves jobs for U.S. workers.
-      </p>
-     
-      <p className="mt-2">
-        At <span className="text-orange-500">VJC Overseas</span>, we provide expert guidance and support to investors
-        navigating the complexities of the EB-5 visa process, ensuring a smooth and successful immigration journey.
-      </p>
-      </div>
+          <p className="mb-4">
+            The USA offers several visa options for individuals wishing to invest in its economy,
+            create jobs, and live in the United States. One of the most popular options is the{" "}
+            <a href="https://www.vjcoverseas.com/investor-visas" className="font-bold text-blue-900">Investor Visa Program</a>. 
+            This program allows eligible foreign nationals to obtain a U.S. Green Card (Permanent Residency)
+            by making a qualifying investment in a U.S. business that creates or preserves jobs for U.S. workers.
+          </p>
+
+          <p className="mt-2">
+            At <span className="text-orange-500">VJC Overseas</span>, we provide expert guidance and support
+            to investors navigating the complexities of the EB-5 visa process, ensuring a smooth and successful immigration journey.
+          </p>
+        </div>
       </div>
 
       <p className=" text-xl font-bold mt-4 mb-2">Key Features of the USA Investor Visa (EB-5)</p>
@@ -85,6 +86,12 @@ const USAInvestorVisa = () => {
         </li>
       </ul>
 
+      <p className="mb-4">
+        The EB-5 visa process requires thorough documentation and compliance with U.S. immigration law.
+        Our team at <a href="https://www.vjcoverseas.com" className="font-bold text-blue-900">VJC Overseas</a> 
+        ensures every detail is handled with precision for your success.
+      </p>
+
       <p className=" text-xl font-bold mt-4 mb-2">EB-5 Processing Time</p>
       <ul className="list-disc list-inside space-y-1">
         <li><strong>Form I-526 Processing:</strong> 12–18 months</li>
@@ -100,16 +107,29 @@ const USAInvestorVisa = () => {
         <li>✔ <strong>Comprehensive Legal Assistance:</strong> Working with trusted U.S. immigration attorneys</li>
       </ul>
 
+      <p className="mb-4">
+        The USA remains a top destination for global entrepreneurs. Many even explore alternatives like{" "}
+        <a href="https://www.vjcoverseas.com/investor-visas" className="font-bold text-blue-900">Golden Visa Programs</a> 
+        worldwide, but the EB-5 stands out for its pathway to a Green Card.
+      </p>
+
       <p className=" text-xl font-bold mt-4 mb-2">• Start Your USA Investor Visa Journey Today!</p>
       <p>
         Contact us today for a personalized consultation and take the first step toward securing your U.S. residency
-        through the EB-5 Investor Visa Program. Let <span className="text-orange-500">VJC Overseas</span> help you make
-        your investment in the American Dream a reality!
+        through the EB-5 Investor Visa Program. Let{" "}
+        <a href="https://www.vjcoverseas.com/investor-visas/usa" className="font-bold text-blue-900">USA Investor Visa</a> 
+        help you make your investment in the American Dream a reality!
       </p>
 
-      <p className="text-xl mt-6 text-sm">
+      <p className=" mt-6 text-sm">
         • <strong>Disclaimer:</strong> The content provided above is for informational purposes only and should not be considered legal advice.
         Please consult with an immigration attorney for specific guidance on your case.
+      </p>
+
+      <p className="mt-4">
+        For trusted support and personalized guidance, partner with{" "}
+        <a href="https://www.vjcoverseas.com" className="font-bold text-blue-900">Best Visa Immigration Consultants</a> 
+        and begin your investment journey with confidence.
       </p>
     </div>
   );

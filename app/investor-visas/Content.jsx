@@ -4,7 +4,7 @@ import Form from './Form'; // adjust your import if it's from another path
 
 export default function InvestorVisaSection() {
   return (
-    <div className="relative z-10 mt-[100px] w-full max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12 px-4">
+    <div className="relative z-10 mt-[100px] w-full max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12 px-6">
       {/* LEFT SIDE: Image + Form */}
       <div className="w-full md:w-1/2 flex flex-col gap-8 order-2 md:order-1">
         {/* Image Section */}
@@ -26,7 +26,7 @@ export default function InvestorVisaSection() {
 
       {/* RIGHT SIDE: Text Content */}
       <div
-        className="w-full md:w-1/2 max-w-full h-[140vh] overflow-y-auto pr-2 md:pr-4 order-1 md:order-2"
+        className="w-full md:w-1/2 max-w-full h-[150vh] overflow-y-auto pr-4 order-1 md:order-2"
         style={{ fontFamily: 'Times New Roman, serif' }}
       >
         <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800">
@@ -35,12 +35,14 @@ export default function InvestorVisaSection() {
 
         <p className="text-base sm:text-lg mb-3 text-gray-800 flex items-start gap-2">
           <FaRegLightbulb className="text-orange-500 mt-1" />
-          We specialize in turning migration dreams into reality through investment-led visa solutions tailored to your profile.
+          We specialize in turning migration dreams into reality through investment-led visa solutions tailored to your profile. 
+          Recognized as <a href="https://www.vjcoverseas.com" className="font-bold text-blue-900">Best Visa Immigration Consultants</a>.
         </p>
 
         <p className="text-base sm:text-lg mb-3 text-gray-800 flex items-start gap-2">
           <FaCheckCircle className="text-orange-500 mt-1" />
-          Fill out the form and let our consultants guide you through every step of the investor visa process.
+          Fill out the form and let our consultants guide you through every step of the investor visa process with the trusted support of 
+          <a href="https://www.vjcoverseas.com" className="font-bold text-blue-900"> VJC Overseas</a>.
         </p>
 
         <ul className="list-disc list-inside space-y-2 mb-4 text-gray-800 pl-5">
@@ -52,8 +54,13 @@ export default function InvestorVisaSection() {
 
         <p className="text-base sm:text-lg text-gray-800 italic">Global Visions. Trusted Guidance.</p>
         <p className="text-base sm:text-lg text-gray-800 italic">Your Bridge to a Brighter Future.</p>
-        <p className="text-base sm:text-lg text-gray-800 font-semibold">Seamless Migration Starts with <span className="text-orange-600">VJC Overseas</span>.</p>
-        <p className="mt-4 font-medium text-gray-700">Trusted by thousands of investors worldwide.</p>
+        <p className="text-base sm:text-lg text-gray-800 font-semibold">
+          Seamless Migration Starts with <span className="text-orange-600">VJC Overseas</span>.
+        </p>
+        <p className="mt-4 font-medium text-gray-700">
+          Trusted by thousands of investors worldwide through 
+          <a href="https://www.vjcoverseas.com/investor-visas" className="font-bold text-blue-900"> Investor Visa Services</a>.
+        </p>
 
         {/* Detailed Content */}
         <div className="mt-6 space-y-4 text-base sm:text-lg text-gray-800">
@@ -62,11 +69,13 @@ export default function InvestorVisaSection() {
           </h3>
 
           <p>
-            We are one of India’s most trusted Investor Visa consultants, empowering clients to invest, live, and work globally.
+            We are one of India’s most trusted Investor Visa consultants, empowering clients to invest, live, and work globally 
+            with access to exclusive <a href="https://www.vjcoverseas.com/investor-visas" className="font-bold text-blue-900"> Golden Visa Programs</a>.
           </p>
 
           <p>
-            Whether you're in <FaMapMarkerAlt className="inline text-orange-600" /> Hyderabad, Bengaluru, or any other city, our experts are ready to help.
+            Whether you're in <FaMapMarkerAlt className="inline text-orange-600" /> Hyderabad, Bengaluru, or any other city, our experts are ready to help you with tailored 
+            <a href="https://www.vjcoverseas.com/investor-visas" className="font-bold text-blue-900"> Investor Visa Program</a> options.
           </p>
 
           <h4 className="text-lg font-semibold mt-4">Why Choose Us?</h4>
@@ -97,20 +106,12 @@ export default function InvestorVisaSection() {
           </ol>
 
           <p className="mt-4">
-            <strong>Contact Us Today!</strong> Your gateway to international investment begins with <span className="text-orange-600">VJC Overseas</span>.
+            <strong>Contact Us Today!</strong> Your gateway to international investment begins with 
+            <a href="https://www.vjcoverseas.com" className="font-bold text-blue-900"> VJC Overseas</a>.
           </p>
           <p>Get in touch for a free consultation and let us help you expand globally.</p>
           <p className="font-semibold text-orange-600">VJC Overseas – Empowering Your Global Dreams, One Visa at a Time.</p>
         </div>
-
-        {/* Optional CTA */}
-        {/* 
-        <div className="flex justify-start mt-6">
-          <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-lg transition-all duration-300">
-            Book Your Consultation
-          </button>
-        </div> 
-        */}
       </div>
     </div>
   );

@@ -1,22 +1,49 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 export default function CanadaInvestorVisa() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
-    <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">Canada Investor Visa – Invest in Your Future with <span className="text-orange-500">VJC Overseas</span></h1>
-        <p className="mb-6">Start Your Global Journey with a Canada Investor Visa</p>
-        <p>At <span className="text-orange-500">VJC Overseas</span>, we help ambitious entrepreneurs, high-net-worth individuals, and visionary investors unlock the potential of Canada through the Canada Investor Visa. This unique immigration pathway is your gateway to establishing a business presence in one of the world’s most stable and prosperous economies. With expert guidance from <span className="text-orange-500">VJC Overseas</span>, your dream of living, working, and investing in Canada becomes a well-planned reality.</p>
-      
+      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+        Canada Investor Visa – Invest in Your Future with <span className="text-orange-500">VJC Overseas</span>
+      </h1>
+
+      <p className="mb-6">
+        Start Your Global Journey with a Canada Investor Visa. For complete guidance, trust{" "}
+        <Link href="https://www.vjcoverseas.com" className="font-bold text-blue-900">
+          Best Visa Immigration Consultants
+        </Link>.
+      </p>
+
+      <p>
+        At <span className="text-orange-500">VJC Overseas</span>, we help ambitious entrepreneurs, high-net-worth individuals, and visionary investors unlock the potential of Canada through the Canada Investor Visa. This unique immigration pathway is your gateway to establishing a business presence in one of the world’s most stable and prosperous economies. With expert guidance from{" "}
+        <Link href="https://www.vjcoverseas.com" className="font-bold text-blue-900">
+          VJC Overseas
+        </Link>, your dream of living, working, and investing in Canada becomes a well-planned reality.
+      </p>
 
       <div className="mb-8">
         <h2 className="text-xl mt-4 font-semibold mb-2"> What is the Canada Investor Visa?</h2>
         <div className="md:flex gap-6">
           <div className="md:w-1/2">
-            <p className="mb-4">The Canada Investor Visa, also referred to as the Canada Business Immigration Program, allows foreign nationals with significant business experience and personal net worth to obtain Permanent Residency (PR) by investing in Canada's economy. This visa is not just an immigration program — it's a path to global business expansion, lifestyle enhancement, and long-term security in a top-tier nation.</p>
+            <p className="mb-4">
+              The Canada Investor Visa, also referred to as the Canada Business Immigration Program, allows foreign nationals with significant business experience and personal net worth to obtain Permanent Residency (PR) by investing in Canada's economy. This visa is not just an immigration program — it's a path to global business expansion, lifestyle enhancement, and long-term security in a top-tier nation. You can also explore our{" "}
+              <Link href="https://www.vjcoverseas.com/investor-visas" className="font-bold text-blue-900">
+                Investor Visa Program
+              </Link>.
+            </p>
           </div>
-          <div className="md:w-1/2 flex justify-center items-center">
-            <Image src="/contentinvestorcontent.webp" alt="Canada Investor Visa" width={500} height={400} unoptimized />
-          </div>
+<div className="md:w-1/2 flex justify-center items-center">
+  <Image
+    src="/contentinvestorcontent.webp"
+    alt="Canada Investor Visa"
+    width={500}
+    height={400}
+    className="w-[280px] h-auto md:w-[300px]" // 👈 responsive smaller width
+    unoptimized
+  />
+</div>
+
         </div>
       </div>
 
@@ -49,7 +76,12 @@ export default function CanadaInvestorVisa() {
           <li>Educational credentials and relevant work experience documents</li>
           <li>Statement of intent to invest and/or business incorporation papers</li>
         </ul>
-        <p className="mb-4">Note: Documents vary by program – <span className="text-orange-500">VJC Overseas</span> will help you create a tailor-fit checklist.</p>
+        <p className="mb-4">
+          Note: Documents vary by program – <span className="text-orange-500">VJC Overseas</span> will help you create a tailor-fit checklist. Some applicants also consider{" "}
+          <Link href="https://www.vjcoverseas.com/investor-visas" className="font-bold text-blue-900">
+          Golden Visa Programs
+          </Link> for alternate routes.
+        </p>
 
         <h2 className="text-xl mt-4 font-semibold mb-2"> Visa Validity & Processing Time</h2>
         <ul className="list-disc list-inside mb-4">
@@ -66,12 +98,23 @@ export default function CanadaInvestorVisa() {
           <li> End-to-End Documentation & Legal Support</li>
           <li> Post-Landing Support in Canada</li>
         </ul>
-        <p className="mb-4">From assessing your eligibility to establishing your business in Canada, <span className="text-orange-500">VJC Overseas</span> stays by your side through every step of your immigration journey.</p>
+        <p className="mb-4">
+          From assessing your eligibility to establishing your business in Canada, <span className="text-orange-500">VJC Overseas</span> stays by your side through every step of your immigration journey. Begin your path now with{" "}
+          <Link href="https://www.vjcoverseas.com/investor-visas/canada" className="font-bold text-blue-900">
+            Canada Investor Visa
+          </Link>.
+        </p>
 
         <h2 className="text-xl mt-4 font-semibold mb-2"> Get Expert Help – Invest Smart, Immigrate Confidently</h2>
-        <p className="mb-4">Canada is calling! Whether you're looking to expand your business horizons or secure a better future for your family, the Canada Investor Visa is your strategic solution.</p>
-        <p className="font-semibold"> Contact <span className="text-orange-500">VJC Overseas</span> today for a free consultation and begin your immigration journey with confidence.</p>
-        <p className="italic mt-2"> Your dream, our direction – <span className="text-orange-500">VJC Overseas</span>.</p>
+        <p className="mb-4">
+          Canada is calling! Whether you're looking to expand your business horizons or secure a better future for your family, the Canada Investor Visa is your strategic solution.
+        </p>
+        <p className="font-semibold">
+          Contact <span className="text-orange-500">VJC Overseas</span> today for a free consultation and begin your immigration journey with confidence.
+        </p>
+        <p className="italic mt-2">
+          Your dream, our direction – <span className="text-orange-500">VJC Overseas</span>.
+        </p>
       </div>
     </div>
   );

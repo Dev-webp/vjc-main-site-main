@@ -3,16 +3,27 @@ import Image from 'next/image';
 export default function AustriaInvestorVisa() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
-    <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">Austria Investor Visa - Unlock European Opportunities</h1>
-        <p className="mb-6">Begin your European investment journey with <span className="text-orange-500">VJC Overseas</span>.</p>
-        <p className="mb-4">The Austria Investor Visa offers an exciting chance to invest, reside, and thrive in one of Europe’s most business-friendly nations. With <span className="text-orange-500">VJC Overseas</span>, navigating the investor visa process becomes smooth, guided, and result-oriented.</p>
-      
+      <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
+        Austria Investor Visa - Unlock European Opportunities
+      </h1>
+      <p className="mb-6">
+        Begin your European investment journey with <span className="text-orange-500">VJC Overseas</span>. 
+        Trusted as the <a href="https://www.vjcoverseas.com" className="font-bold text-blue-900">Best Visa Immigration Consultants</a>, we make the process seamless.
+      </p>
+
+      <p className="mb-4">
+        The Austria Investor Visa offers an exciting chance to invest, reside, and thrive in one of Europe’s most business-friendly nations. With <span className="text-orange-500">VJC Overseas</span>, navigating the investor visa process becomes smooth, guided, and result-oriented. Explore more with our 
+        <a href="https://www.vjcoverseas.com" className="font-bold text-blue-900"> VJC Overseas</a> expertise.
+      </p>
 
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-2">What is the Austria Investor Visa?</h2>
         <div className="md:flex gap-6">
           <div className="md:w-1/2">
-            <p className="mb-4">The Austria Investor Visa is tailored for high-net-worth individuals looking to contribute to the Austrian economy. It allows for establishing or expanding a business, or investing in projects that stimulate growth and job creation. Investors gain residency rights and access to the EU’s single market.</p>
+            <p className="mb-4">
+              The Austria Investor Visa is tailored for high-net-worth individuals looking to contribute to the Austrian economy. It allows for establishing or expanding a business, or investing in projects that stimulate growth and job creation. Investors gain residency rights and access to the EU’s single market through programs like the 
+              <a href="https://www.vjcoverseas.com/investor-visas" className="font-bold text-blue-900"> Investor Visa Program</a>.
+            </p>
           </div>
           <div className=" md:w-1/2 flex justify-center items-center">
             <Image src="/austriainvestbg.png" alt="Austria Investor Visa" width={200} height={100} unoptimized />
@@ -63,13 +74,21 @@ export default function AustriaInvestorVisa() {
         <li>Stable economy with high standards of living.</li>
         <li>Strategic business location in Europe.</li>
         <li>Family members can be included in application.</li>
-        <li>Comprehensive healthcare and education systems.</li>
+        <li>Comprehensive healthcare and education systems through special 
+          <a href="https://www.vjcoverseas.com/investor-visas" className="font-bold text-blue-900"> Golden Visa Programs</a>.
+        </li>
       </ul>
+
       <h2 className="text-xl mt-4 font-semibold mb-2"> Why Choose Austria for Your Investment?</h2>
-      <p className="mb-4">Austria provides an unmatched environment for entrepreneurs with its supportive infrastructure, transparent regulations, and investment-friendly policies. From real estate to technology, Austria offers incredible potential for global investors looking to diversify.</p>
+      <p className="mb-4">
+        Austria provides an unmatched environment for entrepreneurs with its supportive infrastructure, transparent regulations, and investment-friendly policies. From real estate to technology, Austria offers incredible potential for global investors looking to diversify. Learn more about the
+        <a href="https://www.vjcoverseas.com/investor-visas/austria" className="font-bold text-blue-900"> Austria Investor Visa</a>.
+      </p>
 
       <h2 className="text-xl mt-4 font-semibold mb-2">Start Your Austria Investment Journey Today!</h2>
-      <p className="mb-4">Let <span className="text-orange-500">VJC Overseas</span> help you navigate your path to Austrian residency and success. Contact us now to explore your eligibility and begin a prosperous chapter in Austria.</p>
+      <p className="mb-4">
+        Let <span className="text-orange-500">VJC Overseas</span> help you navigate your path to Austrian residency and success. Contact us now to explore your eligibility and begin a prosperous chapter in Austria.
+      </p>
     </div>
   );
 }

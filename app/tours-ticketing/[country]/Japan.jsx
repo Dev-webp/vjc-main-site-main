@@ -5,95 +5,119 @@ import Image from 'next/image';
 const JapanTour = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 -mt-8 font-[Times_New_Roman]">
+      {/* Title */}
       <h1 className="flex justify-center text-lg sm:text-xl md:text-xl font-bold mb-6 text-center">
-        Japan Tourist Visa Process with Affordable Tour Packages – Discover Japan with <span className="text-orange-500">&nbsp;VJC Overseas</span>
+        Japan Tourist Visa Process with Affordable Tour Packages – Discover Japan with 
+        <span className="text-orange-500">&nbsp;VJC Overseas</span>
       </h1>
 
+      {/* Intro + Image */}
       <div className="flex flex-col md:flex-row items-start gap-6 mb-8">
         <div className="md:w-1/2 text-base text-justify leading-snug">
           <p>
-            Japan, the Land of the Rising Sun, is a fascinating blend of tradition and modernity. From ancient temples and cherry blossom gardens to futuristic cities and high-speed bullet trains, Japan offers travelers a once-in-a-lifetime experience. Whether you dream of exploring Tokyo’s vibrant nightlife, walking through Kyoto’s serene shrines, or enjoying the stunning view of Mount Fuji, <span className="text-orange-500">VJC Overseas</span> ensures a smooth Japan tourist visa process along with budget-friendly travel packages tailored just for you.
+            Japan, the Land of the Rising Sun, is where timeless traditions meet futuristic innovation. 
+            From the serene temples of Kyoto and vibrant streets of Tokyo to cherry blossoms, Mount Fuji, 
+            and advanced bullet trains, Japan offers an unforgettable journey of culture and modernity. 
+            Whether you are a history lover, foodie, anime enthusiast, or adventure seeker, Japan has 
+            something for everyone.
           </p>
           <p className="mt-0">
-            As a trusted immigration consultancy, we simplify your Japan tourist visa application and provide end-to-end support, ensuring your trip is stress-free and unforgettable.
+            Planning your dream trip? <span className="text-orange-500">VJC Overseas</span> 
+            is here to simplify your Japan tourist visa process and provide affordable and customizable 
+            Japan tour packages designed for Indian travelers.
           </p>
         </div>
-        <div className="md:w-1/2 w-full rounded-lg overflow-hidden">
-          <Image
-            src="/japan-tour.jpg"
-            alt="Japan Tour by VJC Overseas"
-            width={600}
-            height={350}
-            className="w-full h-auto object-cover rounded-lg"
-            priority
-            unoptimized
-          />
-        </div>
+        <div className="md:w-1/2 rounded-lg overflow-hidden relative h-[280px] w-full">
+  <Image
+    src="/japan-tour.jpg"
+    alt="Japan Tour by VJC Overseas"
+    fill
+    className="object-cover rounded-lg"
+    priority
+    unoptimized
+  />
+</div>
+
       </div>
 
+      {/* Visa Info */}
       <h2 className="text-xl font-bold mb-3 text-[#0D5BA8]">What is the Japan Tourist Visa?</h2>
       <p className="mb-5 text-base text-justify leading-snug">
-        A Japan Tourist Visa (Short-term Stay Visa) allows travelers to visit Japan for leisure, sightseeing, cultural experiences, or visiting friends and family. For Indian nationals, this visa is usually granted for 15 to 30 days, depending on the applicant’s travel plan. Although Japan does not provide a visa-on-arrival for Indians, the application process is straightforward when guided by experts like <span className="text-orange-500">VJC Overseas</span>.
+        A Japan Tourist Visa is a short-term visa that allows travelers to visit Japan for leisure, sightseeing, 
+        family visits, and cultural exploration. Indian citizens require a tourist visa before departure, 
+        typically valid for stays up to 90 days. With the right documentation, the process is simple and efficient.
+      </p>
+      <p className="mb-5 text-base text-justify leading-snug">
+        At <span className="text-orange-500">VJC Overseas</span>, we provide step-by-step guidance to ensure your 
+        Japan visa application is accurate, complete, and approved quickly.
       </p>
 
+      {/* Requirements */}
       <h2 className="text-xl font-bold mb-3 text-[#0D5BA8]">Japan Tourist Visa Requirements</h2>
       <ul className="list-disc list-inside mb-5 text-base text-justify space-y-1.5">
-        <li>A valid passport with at least six months validity</li>
+        <li>Valid passport with at least 6 months validity</li>
         <li>Completed Japan visa application form</li>
-        <li>Recent passport-size photographs (as per Japan visa specifications)</li>
-        <li>Confirmed return flight tickets</li>
-        <li>Proof of accommodation (hotel booking or invitation letter if staying with family/friends)</li>
-        <li>Bank statements / financial proof to show sufficient funds</li>
-        <li>Detailed travel itinerary for Japan</li>
-        <li>Income Tax Returns (ITR) of the last 2–3 years</li>
+        <li>Recent passport-sized photographs</li>
+        <li>Confirmed flight tickets (round trip)</li>
+        <li>Proof of accommodation (hotel booking or invitation letter)</li>
+        <li>Bank statements and proof of sufficient funds</li>
+        <li>Travel itinerary (day-wise plan)</li>
+        <li>Travel insurance (recommended)</li>
       </ul>
       <p className="mb-5 text-base text-justify leading-snug">
-        With <span className="text-orange-500">VJC Overseas</span>, we ensure your documentation is accurate, complete, and submission-ready, minimizing the chances of rejection.
+        With our expertise, <span className="text-orange-500">VJC Overseas</span> ensures you are 
+        fully prepared with all required documents, increasing your chances of quick visa approval.
       </p>
 
-      <h2 className="text-xl font-bold mb-3 text-[#0D5BA8]">How VJC Overseas Simplifies Your Japan Visa and Travel Process</h2>
+      {/* Simplification */}
+      <h2 className="text-xl font-bold mb-3 text-[#0D5BA8]">
+        How VJC Overseas Simplifies Your Japan Visa and Travel Process
+      </h2>
       <ul className="list-disc list-inside mb-5 text-base text-justify space-y-1.5">
-        <li>Step-by-step guidance on Japan tourist visa application</li>
-        <li>Assistance in preparing accurate financial documents and travel itinerary</li>
-        <li>Support with bookings – flights, hotels, and JR Rail Pass</li>
-        <li>Travel insurance and forex exchange guidance</li>
-        <li>Expert advice on Japan’s cultural etiquette and travel tips</li>
+        <li>One-on-one consultation to explain visa rules</li>
+        <li>Assistance with application form filling and document preparation</li>
+        <li>Personalized Japan travel itineraries (Tokyo, Kyoto, Osaka, Hiroshima & more)</li>
+        <li>Support with hotel bookings, JR Pass, and local transport</li>
+        <li>Travel insurance & forex guidance</li>
+        <li>Regular updates on Japan travel advisories and embassy requirements</li>
       </ul>
-      <p className="mb-5 text-base text-justify leading-snug">
-        Our experts make your visa process smooth and provide travel solutions for a hassle-free experience in Japan.
-      </p>
 
-      <h2 className="text-xl font-bold mb-3 text-[#0D5BA8]">Affordable Japan Tourist Packages</h2>
+      {/* Packages */}
+      <h2 className="text-xl font-bold mb-3 text-[#0D5BA8]">Affordable Japan Tour Packages</h2>
       <p className="mb-5 text-base text-justify leading-snug">
-        Apart from visa services, <span className="text-orange-500">VJC Overseas</span> offers affordable Japan tour packages designed to let you explore the best of Japan at your own pace. From cherry blossom season tours to adventure-filled itineraries, we’ve got you covered.
+        In addition to visa guidance, <span className="text-orange-500">VJC Overseas</span> offers 
+        budget-friendly and luxury Japan tour packages that include cultural highlights, 
+        modern experiences, and unforgettable memories.
       </p>
       <ul className="list-disc list-inside mb-5 text-base text-justify space-y-1.5">
-        <li>Customized itineraries for Tokyo, Kyoto, Osaka, Hiroshima, and more</li>
-        <li>Guided city tours, temple visits, and cultural experiences</li>
-        <li>Bullet train (Shinkansen) pass arrangements</li>
-        <li>Seasonal tours – cherry blossoms, autumn leaves, and snow festivals</li>
-        <li>Honeymoon packages and family-friendly travel plans</li>
-        <li>Complete support from visa to return journey</li>
+        <li>Tokyo city tours – Shibuya, Shinjuku, Akihabara, and Tokyo Skytree</li>
+        <li>Kyoto cultural tours – Temples, Geisha district, and tea ceremonies</li>
+        <li>Mount Fuji and Hakone day trips</li>
+        <li>Osaka nightlife and Universal Studios packages</li>
+        <li>Cherry blossom (Sakura) & autumn foliage seasonal trips</li>
+        <li>Anime & technology experiences (Ghibli Museum, Akihabara, TeamLab)</li>
       </ul>
-      <p className="mb-5 text-base text-justify leading-snug">
-        Whether you want an affordable trip or a luxury Japanese experience, our packages cater to all travelers.
-      </p>
 
+      {/* Why VJC */}
       <h2 className="text-xl font-bold mb-3 text-[#0D5BA8]">Why Choose <span className="text-orange-500">VJC Overseas</span>?</h2>
       <ul className="list-disc list-inside mb-5 text-base text-justify space-y-1.5">
-        <li>Trusted visa and immigration consultants in India</li>
-        <li>High success rate in Japan tourist visa approvals</li>
-        <li>Affordable Japan tour packages customized to your needs</li>
-        <li>Transparent process with no hidden charges</li>
-        <li>End-to-end support from application to your return</li>
+        <li>Trusted immigration consultancy with years of experience</li>
+        <li>Complete support – from visa filing to travel planning</li>
+        <li>Tailored packages for solo, family, or group travel</li>
+        <li>Transparent pricing without hidden charges</li>
+        <li>Dedicated team ensuring smooth communication with embassies</li>
       </ul>
 
-      <h2 className="text-xl font-bold mb-3 text-[#0D5BA8]">Start Your Japan Journey Today</h2>
+      {/* Call to Action */}
+      <h2 className="text-xl font-bold mb-3 text-[#0D5BA8]">Begin Your Japan Journey Today</h2>
       <p className="mb-5 text-base text-justify leading-snug">
-        With <span className="text-orange-500">VJC Overseas</span>, your Japan tourist visa application becomes stress-free, and your travel dreams come true. Contact us today to begin your Japan visa process and explore our budget-friendly Japan tour packages.
+        With <span className="text-orange-500">VJC Overseas</span>, your Japan tourist visa and 
+        travel planning are stress-free. Contact us today to begin your application and discover 
+        our curated Japan tour packages designed to suit every traveler’s dream.
       </p>
       <p className="text-base font-semibold text-center md:text-left text-orange-600">
-        Get in touch with us now and make your Japan travel dreams a reality!
+        Start your Japan adventure now – let <span className="text-orange-500">VJC Overseas</span> 
+        turn your travel dreams into reality!
       </p>
     </div>
   );
