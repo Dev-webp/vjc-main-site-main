@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const DubaiWorkVisa = () => {
   return (
@@ -12,14 +13,14 @@ const DubaiWorkVisa = () => {
       <div className="flex flex-col md:flex-row md:items-start md:gap-6 mb-2">
         <div className="flex-1">
           <p>
-            Planning to work in Dubai? The Dubai Standard Work Visa is your official route to secure
-            employment in one of the world's most dynamic economies. Whether you're a skilled
-            professional, technician, or an aspiring executive, this visa enables you to live and work
-            legally in the UAE.
+            Planning to work in Dubai? The <strong className="text-black">Standard Work Visa for Dubai</strong> is your official route to secure employment in one of the world's most dynamic economies. Whether you're a skilled professional, technician, or an aspiring executive, this visa enables you to live and work legally in the UAE.
           </p>
           <p className="mt-2">
-            At <strong>VJC Overseas</strong>, we specialize in helping Indian professionals achieve their
-            dream of working in Dubai by providing expert visa consultation and end-to-end 
+            At <strong className="text-black">VJC Overseas</strong>, recognized as one of the{" "}
+            <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-bold">
+              Best Visa Immigration Consultants
+            </Link>{" "}
+            in India, we specialize in helping professionals achieve their dream of working abroad. Our team provides expert guidance, ensuring your application is handled smoothly and efficiently.
           </p>
         </div>
         <Image
@@ -31,32 +32,37 @@ const DubaiWorkVisa = () => {
           unoptimized
         />
       </div>
-      <p>assistance.
-      Let’s dive into everything you need to know about the Standard Dubai Work Visa for Indians.</p>
+
+      <p>
+        Assistance. Let’s dive into everything you need to know about the <strong className="text-black">Dubai Work Permit Visa</strong> for Indians.
+      </p>
+
       <h2 className="text-xl font-bold mt-4 mb-2 text-black">🧾 What is a Dubai Standard Work Visa?</h2>
       <p>
-        The Dubai Standard Work Visa, also known as the UAE Employment Visa, is issued to foreign nationals
-        who have secured a job with a UAE-based employer. The company sponsors your visa and work permit,
-        allowing you to live and work legally in Dubai for the duration of your employment contract
-        (typically 2-3 years).
+        The Dubai Standard Work Visa, also called the <strong className="text-black">Dubai Work Permit Visa</strong> or UAE Employment Visa, is issued to foreign nationals who have secured a job with a registered UAE employer. Your company sponsors the visa and work permit, granting you legal rights to live and work in Dubai for the duration of your contract (usually 2–3 years).
       </p>
       <ul className="list-disc pl-6 mt-2">
         <li>Sponsored by a registered UAE company</li>
         <li>Includes a work permit (Labour Card)</li>
         <li>Renewable after expiration</li>
-        <li>Eligibility for family sponsorship (spouse & children)</li>
+        <li>Eligibility to sponsor spouse and children</li>
       </ul>
 
       <h2 className="text-xl font-bold mt-4 mb-2 text-black">✅ Benefits of Applying for a Dubai Work Visa Through VJC Overseas</h2>
       <ul className="list-disc pl-6">
         <li><strong>Fast-Track Processing:</strong> Expert consultants for accurate, fast submissions.</li>
         <li><strong>End-to-End Support:</strong> Guidance from documentation to Emirates ID registration.</li>
-        <li><strong>Top Job Opportunities:</strong> Access jobs in IT, healthcare, hospitality & more.</li>
+        <li>
+          <strong>Top Job Opportunities:</strong> Access jobs in IT, healthcare, hospitality & more including{" "}
+          <Link href="https://www.vjcoverseas.com/work-abroad" className="text-orange-500 font-bold">
+            Work Abroad Opportunities
+          </Link>
+        </li>
         <li><strong>Visa Renewal & Sponsorship:</strong> We help with extensions and family visas.</li>
         <li><strong>Transparent Fees:</strong> Affordable visa packages with no hidden charges.</li>
       </ul>
 
-      <h2 className="text-xl font-bold mt-4 mb-2 text-black">💰 Cost of Living in Dubai for Indians (2025 Update)</h2>
+      <h2 className="text-xl font-bold mt-4 mb-2 text-black"> Cost of Living in Dubai for Indians (2025 Update)</h2>
       <div className="border border-blue-300 rounded-lg p-4 bg-blue-50">
         <ul className="list-disc pl-6">
           <li><strong>Shared Accommodation:</strong> ₹30,000 – ₹50,000</li>
@@ -66,11 +72,11 @@ const DubaiWorkVisa = () => {
           <li><strong>Entertainment:</strong> ₹5,000 – ₹10,000</li>
         </ul>
         <p className="mt-2 text-sm text-blue-800 font-semibold">
-          💡 Pro Tip: Many employers offer free accommodation, transport, and insurance – saving ₹50,000+/month!
+           Pro Tip: Many employers offer free accommodation, transport, and insurance – saving ₹50,000+/month!
         </p>
       </div>
 
-      <h2 className="text-xl font-bold mt-4 mb-2 text-black"> Why Indians Love Working in Dubai</h2>
+      <h2 className="text-xl font-bold mt-4 mb-2 text-black">Why Indians Love Working in Dubai</h2>
       <ul className="list-disc pl-6">
         <li>Tax-Free Income</li>
         <li>Strong Indian Community & Cultural Familiarity</li>
@@ -79,7 +85,7 @@ const DubaiWorkVisa = () => {
         <li>Safe, Clean, and Modern City</li>
       </ul>
 
-      <h2 className="text-xl font-bold mt-4 mb-2 text-black">📌 Top Industries Hiring in Dubai in 2025</h2>
+      <h2 className="text-xl font-bold mt-4 mb-2 text-black"> Top Industries Hiring in Dubai in 2025</h2>
       <ul className="list-disc pl-6">
         <li>Information Technology (Developers, AI Specialists)</li>
         <li>Healthcare (Doctors, Nurses, Pharmacists)</li>
@@ -88,7 +94,7 @@ const DubaiWorkVisa = () => {
         <li>Finance & Accounting</li>
       </ul>
 
-      <h2 className="text-xl font-bold mt-4 mb-2 text-black">📋 Dubai Work Visa Requirements for Indian Citizens</h2>
+      <h2 className="text-xl font-bold mt-4 mb-2 text-black"> Dubai Work Visa Requirements for Indian Citizens</h2>
       <ul className="list-disc pl-6">
         <li>Valid Passport (min 6 months)</li>
         <li>Offer Letter from UAE Employer</li>
@@ -98,28 +104,37 @@ const DubaiWorkVisa = () => {
         <li>Emirates ID Registration</li>
       </ul>
 
-      <h2 className="text-xl font-bold mt-4 mb-2 text-black">🧭 How VJC Overseas Helps You Get a Dubai Work Visa</h2>
+      <h2 className="text-xl font-bold mt-4 mb-2 text-black"> How VJC Overseas Helps You Get a Dubai Work Visa</h2>
       <ul className="list-disc pl-6">
         <li>Free Consultation & Eligibility Check</li>
-        <li>Job Assistance with Top UAE Companies</li>
+        <li>
+          Job Assistance with Top UAE Companies including{" "}
+          <Link href="https://www.vjcoverseas.com/work-abroad/dubai-work-permit" className="text-orange-500 font-bold">
+            Dubai Work Permit Visa
+          </Link>
+        </li>
         <li>Verified Documentation</li>
         <li>Visa Filing, Tracking & Updates</li>
-        <li>Post-Visa Services like Flight, Stay, and Orientation</li>
+        <li>
+          Post-Visa Services like Flight, Stay, and Orientation including{" "}
+          <Link href="https://www.vjcoverseas.com/work-abroad/dubai-work-permit/dubai-standard-work-visa" className="text-orange-500 font-bold">
+            Standard Work Visa for Dubai
+          </Link>
+        </li>
       </ul>
 
-      <h2 className="text-xl font-bold mt-4 mb-2 text-black">🕐 Average Processing Time</h2>
+      <h2 className="text-xl font-bold mt-4 mb-2 text-black"> Average Processing Time</h2>
       <p>Job offer to visa: Typically 2 to 4 weeks based on employer and documentation.</p>
 
-      <h2 className="text-xl font-bold mt-4 mb-2 text-black">📞 Ready to Work in Dubai? Let’s Get You There!</h2>
+      <h2 className="text-xl font-bold mt-4 mb-2 text-black"> Ready to Work in Dubai? Let’s Get You There!</h2>
       <p>
-        Start your Dubai Work Visa journey with <strong>VJC Overseas</strong>. Thousands of Indian professionals
-        are already living their dream. Now it's your turn!
-      </p>
-      <p className="mt-2">
-        📞 <strong>Call:</strong> +91-9160449000 <br />
-        📩 <strong>Email:</strong> info@vjcoverseas.com <br />
-        🗓️ <strong>Book a Free Consultation Today!</strong>
-      </p>
+  Start your Dubai Work Visa journey with{" "}
+  <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-bold">
+    VJC Overseas
+  </Link>
+  . Thousands of Indian professionals are already living their dream. Now it's your turn!
+</p>
+
     </div>
   );
 };

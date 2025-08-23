@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const DubaiGoldenVisa = () => {
   return (
@@ -12,54 +13,51 @@ const DubaiGoldenVisa = () => {
       <div className="flex flex-col md:flex-row md:items-start md:gap-6">
         <div className="flex-1">
           <p>
-            Unlock the Power of Residency with the Dubai Golden Visa – Exclusively with VJC Overseas.
+            Unlock the power of long-term residency with the <strong className="text-black">Dubai Golden Visa</strong> – exclusively with <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">VJC Overseas</Link>, one of the <strong className="text-black">Best Visa Immigration Consultants</strong> in India.
           </p>
           <p className="mt-2">
-            Are you an Indian professional, entrepreneur, investor, or student dreaming of a secure, long-term future in the UAE? The Dubai Golden Visa offers the perfect solution for those looking to live, work, study, or do business in Dubai – without the constant worry of renewing visas every couple of years.
+            Are you an Indian professional, entrepreneur, investor, or student dreaming of a secure, long-term future in Dubai? The <strong className="text-black">Dubai Golden Visa</strong> is a unique opportunity that allows you to live, work, study, or do business in Dubai without the hassle of frequent visa renewals. It provides stability, growth, and a chance to explore new <Link href="https://www.vjcoverseas.com/work-abroad" className="text-orange-500 font-semibold">Work Abroad Opportunities</Link> in one of the world’s most dynamic economies.
           </p>
-          
         </div>
-         <div className="w-full md:w-[300px] h-auto mt-4 md:mt-0 relative">
-    <Image
-      src="/dubaigoldenvisa.jpg"
-      alt="Dubai Golden Visa"
-      width={300}
-      height={200}
-      className="w-full h-auto object-cover"
-      unoptimized
-    />
-  </div>
+        <div className="w-full md:w-[300px] h-auto mt-4 md:mt-0 relative">
+          <Image
+            src="/dubaigoldenvisa.jpg"
+            alt="Dubai Golden Visa"
+            width={300}
+            height={200}
+            className="w-full h-auto object-cover"
+            unoptimized
+          />
+        </div>
       </div>
-      <p className="mt-2">
-            At VJC Overseas, we help you turn that dream into reality. Our expert Dubai Golden Visa consultants guide you through every step – from eligibility assessment to final approval.
-          </p>
+
       <h2 className="text-xl font-bold mt-6 mb-2 text-black">What is the Dubai Golden Visa?</h2>
       <p>
-        The Dubai Golden Visa is a long-term residency visa issued by the United Arab Emirates (UAE) government. Designed to attract global talent and investment, the visa offers 5-year and 10-year residency options for foreign nationals who meet specific criteria, including:
+        The Golden Visa is a long-term residency visa introduced by the UAE government to attract global talent and investment. Depending on eligibility, it offers 5-year and 10-year residency options for foreign nationals. Categories include:
       </p>
       <ul className="list-disc pl-6 mt-2">
         <li>Investors in real estate or businesses</li>
-        <li>Entrepreneurs launching innovative start-ups</li>
-        <li>Professionals in science, engineering, healthcare, IT, and education</li>
+        <li>Entrepreneurs starting innovative ventures</li>
+        <li>Professionals in IT, science, healthcare, engineering, and education</li>
         <li>Outstanding students and academic achievers</li>
-        <li>Skilled workers earning AED 30,000+ per month</li>
+        <li>Skilled workers with high salaries (AED 30,000+ per month)</li>
       </ul>
       <p className="mt-2">
-        This visa grants you and your family uninterrupted residency, giving you the freedom to build a stable and prosperous life in Dubai.
+        Unlike a regular <Link href="https://www.vjcoverseas.com/work-abroad/dubai-work-permit" className="text-orange-500 font-semibold">Dubai Work Permit Visa</Link>, this visa gives you uninterrupted residency rights, creating long-term security for you and your family.
       </p>
 
-      <h2 className="text-xl font-bold mt-6 mb-2 text-black">Top Benefits of the Dubai Golden Visa for Indians</h2>
+      <h2 className="text-xl font-bold mt-6 mb-2 text-black">Key Benefits of the Dubai Golden Visa for Indians</h2>
       <ul className="list-disc pl-6">
-        <li>✅ Long-Term Residency: Enjoy up to 10 years of secure stay without needing a local sponsor.</li>
-        <li>✅ Family Inclusion: Sponsor your spouse, children, and even domestic help under your visa.</li>
-        <li>✅ Work, Live, and Study Freely: No restrictions on employment or business ownership in Dubai.</li>
-        <li>✅ Tax-Free Income: Benefit from Dubai's zero income tax policy.</li>
-        <li>✅ World-Class Infrastructure: Access premium healthcare, education, and real estate options.</li>
-        <li>✅ Multiple Entry Visa: Travel in and out of the UAE with ease during the visa validity period.</li>
-        <li>✅ Opportunity for Citizenship: Lay the foundation for potential UAE citizenship through long-term contribution.</li>
+        <li>✅ Long-term residency of up to 10 years with no need for a local sponsor</li>
+        <li>✅ Family sponsorship, including spouse, children, and domestic staff</li>
+        <li>✅ Freedom to work, live, and study in Dubai without restrictions</li>
+        <li>✅ Tax-free income and access to one of the world’s strongest economies</li>
+        <li>✅ Multiple entry benefits for easy travel in and out of the UAE</li>
+        <li>✅ Access to world-class infrastructure in education, healthcare, and housing</li>
+        <li>✅ A pathway that can potentially lead to UAE citizenship in the future</li>
       </ul>
 
-      <h2 className="text-xl font-bold mt-6 mb-2 text-black">Cost of Living in Dubai for Indian Expats on Golden Visa</h2>
+      <h2 className="text-xl font-bold mt-6 mb-2 text-black">Cost of Living in Dubai for Indian Golden Visa Holders</h2>
       <div className="border border-blue-200 rounded-lg p-4 bg-blue-50">
         <table className="w-full text-left border-collapse">
           <thead>
@@ -98,29 +96,29 @@ const DubaiGoldenVisa = () => {
           </tbody>
         </table>
         <p className="text-sm mt-2 italic">
-          💡 Tip: With smart budgeting, Dubai can be affordable even for Indian middle-class families, especially with the tax-free income advantage.
+           Tip: With smart budgeting, Dubai can be affordable even for Indian middle-class families, especially with the tax-free income advantage.
         </p>
       </div>
 
-      <h2 className="text-xl font-bold mt-6 mb-2 text-black">Why Indians Should Apply for Dubai Golden Visa Through VJC Overseas</h2>
+      <h2 className="text-xl font-bold mt-6 mb-2 text-black">Why Choose VJC Overseas for the Dubai Golden Visa?</h2>
+      <p>
+  As one of the <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">Best Visa Immigration Consultants</Link>, VJC Overseas has built a reputation for simplifying complex visa processes. Here’s why Indians prefer applying through us:
+</p>
+
       <ul className="list-disc pl-6">
-        <li>✅ 100% Success Rate for Eligible Candidates</li>
-        <li>✅ Personalized Document Support & Application Guidance</li>
-        <li>✅ Trusted Visa Consultants for UAE Residency</li>
-        <li>✅ End-to-End Assistance: From Investment Advisory to Family Visa Processing</li>
-        <li>✅ Affordable, Transparent Pricing – No Hidden Fees!</li>
+        <li>High success rate for eligible candidates</li>
+        <li>Step-by-step assistance from document preparation to final approval</li>
+        <li>Expertise in <strong className="text-black">Work Abroad Opportunities</strong> including UAE, Europe, and more</li>
+        <li>Affordable and transparent pricing with no hidden charges</li>
+        <li>Family visa processing support and investment advisory</li>
       </ul>
 
-      <h2 className="text-xl font-bold mt-6 mb-2 text-black">Get Started Today – Book Your Free Consultation with VJC Overseas!</h2>
+      <h2 className="text-xl font-bold mt-6 mb-2 text-black">Take the Next Step Toward Your Future in Dubai</h2>
       <p>
-        Moving to Dubai is more than a visa – it’s a lifestyle upgrade. Whether you're a high-earning professional, a start-up founder, or a family seeking a better future, the Dubai Golden Visa opens doors to endless possibilities.
+        Moving to Dubai is more than securing a visa—it’s a lifestyle upgrade. With the <strong className="text-black">Dubai Work Permit Visa</strong> or the <strong className="text-black">Dubai Golden Visa</strong>, you gain access to financial growth, professional success, and unmatched global exposure. Explore more opportunities with <Link href="https://www.vjcoverseas.com/work-abroad/dubai-work-permit/dubai-golden-visa" className="text-orange-500 font-semibold">Dubai Golden Visa</Link>.
       </p>
 
-      <p className="mt-2">
-        📞 <strong>Call us now:</strong> +91-9160449000 <br />
-        📩 <strong>Email:</strong> info@vjcoverseas.com <br />
-        🗓️ <strong>Schedule a FREE Consultation Today</strong>
-      </p>
+      
 
       <p className="mt-4 font-bold">VJC Overseas – Your Trusted Partner for Dubai Golden Visa Success!</p>
     </div>

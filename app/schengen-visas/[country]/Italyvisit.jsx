@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Italyvisit = () => {
-    return(
-
-        <div className="text-black space-y-6">
+  return (
+    <div className="text-black space-y-6">
       <h1 className="text-2xl font-bold">
         Italy Visit/Tourist Visa – Everything You Need to Know
       </h1>
@@ -14,25 +14,27 @@ const Italyvisit = () => {
       </p>
 
       <p>
-        At VJC Overseas, we specialize in helping you obtain your Italy Visit/Tourist Visa smoothly and quickly. Let’s walk you through the essential details, documents, eligibility, and other important information to make your application process as easy as possible.
+        At <strong>VJC Overseas</strong>, we specialize in helping you obtain your Italy Visit/Tourist Visa smoothly and quickly. Let’s walk you through the essential details, documents, eligibility, and other important information to make your application process as easy as possible. Apply with{" "}
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">Best Visa Immigration Consultants</Link> for expert guidance.
       </p>
 
       <h2 className="text-xl font-semibold">What is an Italy Visit/Tourist Visa?</h2>
-       <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-                                                      
-                                                        <div className="flex-shrink-0 mx-auto lg:mx-0">
-                                                          <Image
-                                                            src="/italytimg.jpg"
-                                                            alt="Image description"
-                                                            width={500} // Replace with your image's actual width
-                                                            height={300}
-                                                            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
-                                                            unoptimized
-                                                          />
-                                                        </div>
-      <p>
-        An Italy Visit/Tourist Visa is a Schengen short-stay visa that allows you to stay in Italy for up to 90 days within a 180-day period. This visa is for tourists who are planning to visit Italy for leisure, tourism, or to visit family and friends. It also allows you to travel freely within the Schengen Area, which includes other European countries.
-      </p>
+
+      <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
+        <div className="flex-shrink-0 mx-auto lg:mx-0">
+          <Image
+            src="/italytimg.jpg"
+            alt="Scenic Of Italy"
+            width={500}
+            height={300}
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
+            unoptimized
+          />
+        </div>
+        <p>
+          An Italy Visit/Tourist Visa is a Schengen short-stay visa that allows you to stay in Italy for up to 90 days within a 180-day period. This visa is for tourists who are planning to visit Italy for leisure, tourism, or to visit family and friends. It also allows you to travel freely within the Schengen Area, which includes other European countries. Learn more about{" "}
+          <Link href="https://www.vjcoverseas.com/schengen-visas" className="text-orange-500 font-bold">Schengen Visit Visa</Link>.
+        </p>
       </div>
 
       <h2 className="text-xl font-semibold">Italy Visit/Tourist Visa Validity</h2>
@@ -91,14 +93,18 @@ const Italyvisit = () => {
         <li><strong>Document Review & Assistance:</strong> Help with collecting and verifying required documents.</li>
         <li><strong>Application Submission:</strong> Support submitting to the consulate or visa center.</li>
         <li><strong>Tracking & Updates:</strong> Stay updated with real-time visa status.</li>
-        <li><strong>Visa Collection:</strong> Assistance in collecting your approved visa.</li>
+        <li><strong>Visa Collection:</strong> Assistance in collecting your approved visa. Get your{" "}
+          <Link href="https://www.vjcoverseas.com/schengen-visas/italy" className="text-orange-500 font-bold">Italy Schengen Visa</Link>.
+        </li>
       </ul>
 
       <h2 className="text-xl font-semibold">Additional Useful Information</h2>
       <ul className="list-disc ml-6 space-y-2">
         <li><strong>Visa Fees:</strong> Approximately €80 (may vary by nationality/age)</li>
         <li><strong>Visa Rejection:</strong> We assist in reapplication if denied</li>
-        <li><strong>Visa Extension:</strong> Not extendable – apply for a different visa before expiry</li>
+        <li><strong>Visa Extension:</strong> Not extendable – apply for a different visa before expiry. Follow the{" "}
+          <Link href="https://www.vjcoverseas.com/visit-visas" className="text-orange-500 font-bold">Visit Visa Process</Link>.
+        </li>
       </ul>
 
       <h2 className="text-xl font-semibold">Why Choose VJC Overseas for Your Italy Tourist Visa?</h2>
@@ -106,17 +112,25 @@ const Italyvisit = () => {
         <li><strong>Expert Guidance:</strong> Accurate and compliant application assistance</li>
         <li><strong>Quick & Efficient Service:</strong> Fast processing and constant updates</li>
         <li><strong>Personalized Support:</strong> Tailored guidance for your unique case</li>
-        <li><strong>Global Reach:</strong> Trusted by clients worldwide</li>
+        <li><strong>Global Reach:</strong> Trusted by clients worldwide. Learn more about <strong>VJC Overseas</strong>.</li>
+
       </ul>
 
       <h2 className="text-xl font-semibold">Get Started with Your Italy Visit/Tourist Visa Today!</h2>
       <p>
-        Ready to experience the charm and beauty of Italy? VJC Overseas is here to make your dream trip a reality. Contact us today to begin your Italy Visit/Tourist Visa application and get expert assistance in every step of the process.
-      </p>
-      <p className="font-semibold">Call Us Now or Fill Out Our Online Form to Begin Your Application!</p>
-    </div>
+  Ready to experience the charm and beauty of Italy? <strong>VJC Overseas</strong> is here to make your dream trip a reality. Contact us today to begin your Italy Visit/Tourist Visa application and get expert assistance in every step of the process. Partner with <strong>Best Visa Immigration Consultants</strong> to ensure a smooth journey.
+</p>
 
-    )
-}
+
+      <p className="font-semibold">Call Us Now or Fill Out Our Online Form to Begin Your Application!</p>
+
+      <h2 className="text-xl font-bold">Final Thoughts</h2>
+      <p>
+        Italy, with its timeless beauty, historic cities, and picturesque countryside, continues to attract millions of visitors every year. From exploring the ancient ruins of Rome and the romantic canals of Venice to admiring Florence’s art treasures and relaxing on the Amalfi Coast, Italy is a destination that promises unforgettable experiences. Securing your Italy Tourist Visa doesn’t have to be complicated — with{" "}
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">VJC Overseas</Link>, your application is handled with professionalism and care. Start your journey today and let us guide you through the process with confidence.
+      </p>
+    </div>
+  );
+};
 
 export default Italyvisit;

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const DenmarkPayLimitScheme = () => {
   return (
@@ -12,15 +13,21 @@ const DenmarkPayLimitScheme = () => {
       <div className="flex flex-col md:flex-row md:items-start md:gap-6">
         <div className="flex-1">
           <p>
-            Are you an Indian professional looking for high-paying job
-            opportunities in Denmark? The Denmark Pay Limit Scheme Visa could be
-            your gateway to a fulfilling career and a new life in Denmark!
+            Are you an Indian professional looking for high-paying job{" "}
+            <Link
+              href="https://www.vjcoverseas.com/work-abroad"
+              className="text-orange-500 font-semibold"
+            >
+              Work Abroad Opportunities
+            </Link>{" "}
+            in Denmark? The Denmark Pay Limit Scheme Visa could be your gateway
+            to a fulfilling career and a new life in Denmark! we assist ambitious individuals in fulfilling their global career aspirations. Our expert team ensures that every step of your application is carefully managed, making the process smooth and stress-free.
           </p>
         </div>
 
         <div className="w-full md:w-[300px] h-auto mt-4 md:mt-0 rounded-md shadow-lg overflow-hidden relative">
           <Image
-            src="/denmarkpaylimit.jpg" // make sure this image is in the /public folder
+            src="/denmarkpaylimit.jpg"
             alt="Denmark Visa Information"
             width={300}
             height={200}
@@ -32,60 +39,74 @@ const DenmarkPayLimitScheme = () => {
 
       <p className="mt-4">
         At{" "}
-        <span className="font-semibold text-orange-500">VJC Overseas</span>, we
-        help skilled professionals navigate their visa journey with ease. In
-        this guide, we’ll explain everything you need to know about the Denmark
-        Pay Limit Scheme Visa – from its benefits to eligibility, cost of
-        living, and more.
+        <Link
+          href="https://www.vjcoverseas.com"
+          className="text-orange-500 font-semibold"
+        >
+          VJC Overseas
+        </Link>
+        , we help skilled professionals navigate their visa journey with ease.
+        In this guide, we’ll explain everything you need to know about the
+        Denmark Pay Limit Scheme Visa – from its benefits to eligibility, cost
+        of living, and more.
       </p>
 
       <h2 className="text-xl font-bold mt-6 text-black">
         What is the Denmark Pay Limit Scheme Visa?
       </h2>
-      <p>
-        The Denmark Pay Limit Scheme Visa is a special visa designed for highly
-        skilled foreign workers in professions that require advanced expertise.
-        It is tailored to attract professionals in high-demand sectors like
-        technology, healthcare, finance, and engineering.
+      <p className="mt-2">
+        The{" "}
+        <Link
+          href="https://www.vjcoverseas.com/work-abroad/denmark-work-permit"
+          className="text-orange-500 font-semibold"
+        >
+          Denmark Work Permit Visa
+        </Link>{" "}
+        under the Pay Limit Scheme is a special category created for highly
+        skilled foreign professionals. It is designed to attract top talent in
+        industries such as information technology, healthcare, engineering,
+        research, and finance.
       </p>
+
       <ul className="list-disc pl-6 mt-2">
         <li>
-          <strong>High Salary Threshold:</strong> Applicants must have a job
-          offer with a salary above a certain threshold (varies annually).
+          <strong>High Salary Requirement:</strong> Applicants must secure a
+          job offer with an annual salary above the threshold set by Danish
+          authorities (reviewed annually).
         </li>
         <li>
-          <strong>Skilled Professionals:</strong> Ideal for those with
-          experience in key sectors.
+          <strong>Skilled Workforce:</strong> Best suited for candidates with
+          advanced expertise and professional experience.
         </li>
         <li>
-          <strong>Work & Residency Benefits:</strong> Allows you to work and
-          live in Denmark, with the option for permanent residency after 4
-          years.
+          <strong>Work & Residency Rights:</strong> Grants you the ability to
+          live and work in Denmark, with a pathway to permanent residency after
+          four years.
         </li>
       </ul>
 
       <h2 className="text-xl font-bold mt-6 text-black">
         Benefits of Applying for the Denmark Pay Limit Scheme Visa
       </h2>
-      <ul className="list-disc pl-6">
+      <ul className="list-disc pl-6 mt-2">
         <li>
-          <strong>Lucrative Salary Packages:</strong> Earn a competitive salary
-          that supports career growth and financial well-being.
+          <strong>Attractive Salary Packages:</strong> Competitive pay scales
+          ensure strong career and financial growth.
         </li>
         <li>
-          <strong>Pathway to Permanent Residency:</strong> Become eligible for
-          permanent residency after 4 years of working in Denmark.
+          <strong>Permanent Residency Pathway:</strong> Opportunity to apply
+          for PR after completing four years.
         </li>
         <li>
-          <strong>Access to Social Security and Healthcare:</strong> Enjoy the
-          same healthcare and benefits as Danish citizens.
+          <strong>Healthcare & Social Security:</strong> Access to free or
+          subsidized healthcare, education, and welfare systems.
         </li>
         <li>
-          <strong>High Quality of Life:</strong> Live in one of the happiest,
-          safest, and most progressive countries in the world.
+          <strong>High Standard of Living:</strong> Denmark is consistently
+          ranked among the happiest nations worldwide.
         </li>
         <li>
-          <strong>Family Benefits:</strong> Bring your spouse and children to
+          <strong>Family Benefits:</strong> Your spouse and children can also
           live, study, and work in Denmark.
         </li>
       </ul>
@@ -93,95 +114,104 @@ const DenmarkPayLimitScheme = () => {
       <h2 className="text-xl font-bold mt-6 text-black">
         Eligibility Criteria for the Denmark Pay Limit Scheme Visa
       </h2>
-      <ul className="list-disc pl-6">
+      <ul className="list-disc pl-6 mt-2">
         <li>
-          <strong>Job Offer:</strong> You must have a valid job offer from a
-          Danish employer that meets the salary threshold.
+          <strong>Valid Job Offer:</strong> Must have an employment contract
+          with a Danish employer.
         </li>
         <li>
-          <strong>Salary Threshold:</strong> Ensure the job pays the minimum
-          salary set by the Danish government (updated annually).
+          <strong>Salary Threshold:</strong> The job offer must meet the
+          minimum salary standards defined annually.
         </li>
         <li>
-          <strong>Qualifications:</strong> Hold relevant qualifications or work
-          experience for the offered job.
+          <strong>Relevant Qualifications:</strong> Degrees, certifications,
+          or work experience in the job role are mandatory.
         </li>
         <li>
-          <strong>Residence:</strong> You can live and work in Denmark for up to
-          4 years, with extensions possible.
+          <strong>Residence & Renewal:</strong> Initial stay up to four years
+          with possible extensions.
         </li>
       </ul>
+
       <p className="mt-2">
-        💡 Tip: Salary thresholds are updated annually.{" "}
-        <span className="text-orange-500 font-semibold">VJC Overseas</span> will
-        keep you informed and help ensure compliance.
+        💡 Tip: With expert assistance from{" "}
+        <Link
+          href="https://www.vjcoverseas.com"
+          className="text-orange-500 font-semibold"
+        >
+          Best Visa Immigration Consultants
+        </Link>
+        , you will always stay updated on eligibility rules and salary
+        thresholds.
       </p>
 
       <h2 className="text-xl font-bold mt-6 text-black">
         Cost of Living in Denmark: What to Expect
       </h2>
-      <ul className="list-disc pl-6">
+      <ul className="list-disc pl-6 mt-2">
         <li>
           <strong>Accommodation:</strong> DKK 7,000–12,000/month in Copenhagen;
-          DKK 5,000–9,000 outside.
+          cheaper outside.
         </li>
         <li>
-          <strong>Food & Groceries:</strong> Monthly grocery expenses range from
-          DKK 2,000 to DKK 3,500. Dining out can cost DKK 200–350 per meal.
+          <strong>Groceries & Dining:</strong> Average monthly groceries range
+          between DKK 2,000–3,500. Dining out can cost DKK 200–350 per meal.
         </li>
         <li>
-          <strong>Transportation:</strong> Monthly public transport passes cost
-          DKK 400–800. Petrol costs DKK 12–15/liter.
+          <strong>Transport:</strong> Public transport passes cost DKK 400–800
+          monthly.
         </li>
         <li>
-          <strong>Health Insurance:</strong> Public healthcare is covered.
-          Private insurance (optional) costs DKK 500–1,500/month.
+          <strong>Healthcare:</strong> Public healthcare is covered; private
+          insurance costs between DKK 500–1,500/month.
         </li>
       </ul>
 
       <h2 className="text-xl font-bold mt-6 text-black">
-        Useful Information for Indians Moving to Denmark
+        Life & Work Culture in Denmark
       </h2>
-      <ul className="list-disc pl-6">
+      <ul className="list-disc pl-6 mt-2">
         <li>
-          <strong>Language:</strong> Danish is official, but English is widely
-          spoken. Learning Danish is helpful.
+          <strong>Language:</strong> English is widely spoken; however,
+          learning Danish is beneficial for integration.
         </li>
         <li>
-          <strong>Work Culture:</strong> Work-life balance is prioritized.
-          Standard hours are 9 AM–4:30 PM with ample vacation time.
+          <strong>Work-Life Balance:</strong> Danish companies emphasize
+          employee well-being and flexible work hours.
         </li>
         <li>
-          <strong>Taxation:</strong> Taxes range from 30% to 50%, offset by
-          world-class public services.
+          <strong>Taxation & Benefits:</strong> Though income tax rates are
+          high, citizens benefit from world-class public services.
         </li>
         <li>
-          <strong>Cultural Integration:</strong> Denmark is multicultural.
-          Indian communities, restaurants, and temples are accessible.
+          <strong>Cultural Diversity:</strong> Indian communities, cultural
+          associations, and restaurants help expats feel at home.
         </li>
       </ul>
 
       <h2 className="text-xl font-bold mt-6 text-black">
-        Why Choose <span className="text-orange-500">VJC Overseas</span> for
-        Your Denmark Pay Limit Scheme Visa?
-      </h2>
-      <p>
-        At{" "}
-        <span className="text-orange-500 font-semibold">VJC Overseas</span>, we
-        specialize in assisting Indian professionals in securing their Denmark
-        Pay Limit Scheme Visa. Our end-to-end support includes job placement,
-        documentation guidance, and visa application processing – all tailored
-        to ensure a seamless transition to Denmark.
+  Why Choose <span className="text-orange-500 font-bold">VJC Overseas</span> for Your Denmark Pay Limit Scheme Visa?
+</h2>
+
+      <p className="mt-2">
+        At <strong>VJC Overseas</strong>, we specialize in guiding professionals
+        through the Pay Limit Scheme Visa Denmark application process. Our
+        services include job search support, documentation review, application
+        filing, and post-landing assistance. Being one of the{" "}
+        <strong>Best Visa Immigration Consultants</strong>, our focus is on
+        providing reliable and transparent services that ensure your move abroad
+        is smooth.
       </p>
 
       <h2 className="text-xl font-bold mt-6 text-black">
-        Ready to start your journey?
+        Start Your Denmark Journey Today
       </h2>
-      <p>
-        Contact{" "}
-        <span className="text-orange-500 font-semibold">VJC Overseas</span>{" "}
-        today for expert guidance and personalized support. Let us help turn
-        your dream of living and working in Denmark into a reality!
+      <p className="mt-2">
+        Your dream of working and living in Denmark can become a reality. With
+        expert guidance from <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-semibold">VJC Overseas</Link>, securing the{" "}
+        <strong>Pay Limit Scheme Visa Denmark</strong> is easier and stress-free.
+        Contact us today and take the first step towards a brighter future in
+        Denmark!
       </p>
     </div>
   );

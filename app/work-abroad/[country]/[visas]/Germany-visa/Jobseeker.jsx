@@ -1,6 +1,6 @@
 // pages/germany-jobseeker-visa.jsx
 import Image from "next/image";
-
+import Link from "next/link";
 
 export default function GermanyJobseekerVisa() {
   return (
@@ -13,96 +13,159 @@ export default function GermanyJobseekerVisa() {
       }}
       className="text-black"
     >
-      <h1 className="text-2xl"
+      <h1
+        className="text-2xl"
         style={{ marginBottom: "10px", fontWeight: "bold", textAlign: "center" }}
       >
         Germany Jobseeker Visa – Your Gateway to a New Career in Germany
       </h1>
 
       <p className="mb-3">
-        Are you looking to take the next step in your career by working in Germany? The Germany Jobseeker Visa offers an exciting opportunity for skilled professionals to live and work in one of Europe’s strongest economies. At{" "}
-        <span className="text-orange-500 font-bold">VJC Overseas</span>, we specialize in guiding you through every step of the application process, helping you unlock a world of career opportunities in Germany.
+        Are you ready to take the next step in your professional journey and explore career opportunities in Europe? The{" "}
+        <Link href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/job-seeker-visa">
+          <span className="text-orange-500 font-bold">Germany Job Seeker Visa</span>
+        </Link>{" "}
+        offers a unique chance for skilled individuals to live in Germany and actively search for employment. At{" "}
+        <span className="font-bold text-black">VJC Overseas</span>, we specialize in guiding professionals through every stage of this process, ensuring that your path to working abroad is smooth, transparent, and result-oriented. As one of the{" "}
+        <Link href="https://www.vjcoverseas.com/">
+          <span className="text-orange-500 font-bold">Best Visa Immigration Consultants</span>
+        </Link>
+        , we have successfully assisted thousands of clients who wanted to explore work abroad opportunities.
       </p>
 
-      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>What is the Germany Jobseeker Visa?</h2>
+      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>
+        What is the Germany Job Seeker Visa?
+      </h2>
+
       <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-      
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <Image
             src="/gjsvisaimg.jpg"
-            alt="Image description"
-            width={500} // Replace with your image's actual width
+            alt="Germany Job Seeker Visa"
+            width={500}
             height={300}
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
             unoptimized
           />
         </div>
-      <p className="mb-2">
-        The Germany Jobseeker Visa allows qualified professionals from non-EU countries to travel to Germany for up to six months to search for a job. This visa is designed for individuals who have the skills and qualifications that are in demand in Germany’s labour market but don’t yet have a concrete job offer.
-      </p>
+        <p className="mb-2">
+          The Germany Job Seeker Visa is designed for non-EU professionals who have the skills and qualifications needed in Germany’s labor market but do not yet have a confirmed job offer. With this visa, you can enter Germany for up to six months to attend interviews, meet potential employers, and explore suitable industries. Once you secure employment, you can transition into a residence permit or a{" "}
+          <Link href="https://www.vjcoverseas.com/work-abroad/germany-work-permit">
+            <span className="text-orange-500 font-bold">Germany work permit Visa</span>
+          </Link>
+          , making it the ideal pathway for long-term settlement.
+        </p>
       </div>
+
       <p className="mt-2">
-        During the visa’s validity, you can attend interviews, network with potential employers, and explore job prospects in various industries. Once you secure a job offer, you can apply for a residence permit to live and work in Germany.
+        During your stay, you can attend interviews, network with potential employers, and explore job prospects across industries. Once you secure a job offer, you can transition into a residence permit or a{" "}
+        <span className="font-bold text-black">Germany Job Seeker Visa</span> work permit, opening doors to long-term career opportunities.
       </p>
-      
 
-      <h2 className="text-1xl font-bold " style={{ marginTop: "10px", marginBottom: "15px" }}>Who Can Apply for the Germany Jobseeker Visa?</h2>
+      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>
+        Who Can Apply for the Germany Job Seeker Visa?
+      </h2>
+
       <ul style={{ marginBottom: "25px", paddingLeft: "20px" }}>
-        <li><strong>Qualifications:</strong> You must hold a recognized university degree or equivalent qualification.</li>
-        <li><strong>Work Experience:</strong> Relevant professional experience in your field can increase your chances of securing a job.</li>
-        <li><strong>Financial Stability:</strong> Proof of sufficient funds to support yourself during your stay in Germany.</li>
-        <li><strong>Language Skills:</strong> While German language skills are not mandatory, proficiency in German can improve your chances of finding a job. English-speaking jobs are also available, especially in multinational companies.</li>
+        <li>
+          <strong>Educational Qualifications:</strong> A recognized university degree or equivalent qualification is required.
+        </li>
+        <li>
+          <strong>Work Experience:</strong> Professional experience relevant to your field significantly improves your chances of employment.
+        </li>
+        <li>
+          <strong>Financial Proof:</strong> Evidence of sufficient funds to support yourself during your stay.
+        </li>
+        <li>
+          <strong>Language Skills:</strong> While German is not mandatory, knowledge of the language increases job prospects. English-speaking roles are also available, especially in multinational companies.
+        </li>
       </ul>
 
-      <h2 className="text-1xl font-bold " style={{ marginTop: "10px", marginBottom: "15px" }}>Living Expenses and Lifestyle in Germany</h2>
+      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>
+        Living in Germany as a Jobseeker
+      </h2>
+
       <ul style={{ marginBottom: "25px", paddingLeft: "20px" }}>
-        <li><strong>Cost of Living:</strong> The average monthly living costs in Germany range from €700 to €1,200, depending on the city and lifestyle.</li>
-        <li><strong>Accommodation:</strong> Rent is a significant part of living expenses. In cities like Munich, the rent for a one-bedroom apartment in the city centre can cost around €1,200–€1,500 per month. Outside the city centre, prices are lower, with rents around €800–€1,100.</li>
-        <li><strong>Health Insurance:</strong> Health insurance is mandatory for all residents in Germany. If you’re employed, your employer will share the cost of statutory health insurance. If you’re a jobseeker, you’ll need to arrange for private health insurance during your stay.</li>
-        <li><strong>Public Transport:</strong> Germany has an efficient and well-connected public transportation system. Monthly passes typically cost around €70–€100, depending on the city.</li>
-        <li><strong>Food and Utilities:</strong> Monthly utility bills (electricity, water, heating) typically cost €150–€250, and groceries can average around €150–€300 per month, depending on your lifestyle.</li>
+        <li>
+          <strong>Cost of Living:</strong> €700–€1,200 per month depending on the city.
+        </li>
+        <li>
+          <strong>Accommodation:</strong> Rents vary widely. In Munich, a one-bedroom apartment in the city center costs around €1,200–€1,500, while outside the center it ranges between €800–€1,100.
+        </li>
+        <li>
+          <strong>Healthcare:</strong> Health insurance is mandatory. Jobseekers must arrange private coverage until they are employed.
+        </li>
+        <li>
+          <strong>Transport & Utilities:</strong> Public transport passes cost around €70–€100 monthly, while utilities average €150–€250.
+        </li>
+        <li>
+          <strong>Food Expenses:</strong> Groceries typically range from €150–€300 monthly depending on lifestyle.
+        </li>
       </ul>
 
-      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>Processing Time for the Germany Jobseeker Visa</h2>
+      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>
+        Processing Time & Visa Fees
+      </h2>
+
       <p style={{ marginBottom: "10px" }}>
-        The processing time for the Germany Jobseeker Visa can vary depending on the country from which you are applying, the completeness of your application, and the specific visa office handling your case. However, on average, the processing time is around 4 to 12 weeks.
-      </p>
-      <p style={{ marginBottom: "25px" }}>
-        It is important to submit a complete application with all required documents to avoid delays. In some cases, you may be asked to attend an interview or provide additional information.
+        On average, the processing time for the Germany Job Seeker Visa ranges from 4 to 12 weeks, depending on the embassy and completeness of your application. The visa fee is usually €75, and you must also provide proof of funds—around €1,000 per month, totaling approximately €6,000 for six months.
       </p>
 
-      <h2  className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>Visa Fees</h2>
-      <p style={{ marginBottom: "20px" }}>
-        The Germany Jobseeker Visa comes with a processing fee, which is typically €75. This fee may vary depending on your nationality or any specific conditions applied to your application.
-      </p>
       <p style={{ marginBottom: "25px" }}>
-        Additionally, applicants are required to show proof of sufficient funds to cover living expenses for the duration of their stay in Germany. This is generally around €1,000 per month, which adds up to around €6,000 for six months.
+        It is important to submit a complete application to avoid delays. In some cases, you may be asked to attend an interview or provide additional information. You can also explore the{" "}
+        <Link href="https://www.vjcoverseas.com/germany-opportunity-card">
+          <span className="text-orange-500 font-bold">Germany Opportunity Card</span>
+        </Link>{" "}
+        as an alternative pathway for skilled workers seeking flexible career options.
       </p>
 
-      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>How <span className="text-orange-500 font-bold">VJC Overseas</span> Can Help You</h2>
+      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>
+        How <span className="font-bold text-black">VJC Overseas</span> Can Help You
+      </h2>
+
       <ul style={{ marginBottom: "25px", paddingLeft: "20px" }}>
-        <li><strong>Visa Application:</strong> We assist with gathering the necessary documents and ensuring your application is complete and accurate.</li>
-        <li><strong>Job Search Assistance:</strong> We provide valuable tips on how to search for jobs in Germany and improve your CV to attract potential employers.</li>
-        <li><strong>Accommodation and Living Guidance:</strong> We offer advice on finding housing and understanding the cost of living in different regions of Germany.</li>
-        <li><strong>Ongoing Support:</strong> From preparing for your visa interview to securing a job, we are here to support you every step of the way.</li>
+        <li>
+          <strong>Application Support:</strong> Assistance with preparing and verifying all documents.
+        </li>
+        <li>
+          <strong>Job Search Guidance:</strong> Professional CV building, networking tips, and insights into the German job market.
+        </li>
+        <li>
+          <strong>Accommodation Advice:</strong> Helping you understand rental markets and cost-effective housing.
+        </li>
+        <li>
+          <strong>Ongoing Assistance:</strong> From visa interview preparation to transitioning into employment, we support you at every stage.
+        </li>
+        <li>
+          <strong>Work Abroad Opportunities:</strong> Explore multiple international options through our consultation services. <Link href="https://www.vjcoverseas.com/work-abroad">
+            <span className="text-orange-500 font-bold">Work Abroad Opportunities</span>
+          </Link>
+        </li>
       </ul>
 
-      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>Conclusion</h2>
+      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>
+        Why Choose Germany?
+      </h2>
+
       <p style={{ marginBottom: "20px" }}>
-        The Germany Jobseeker Visa offers an incredible opportunity to advance your career in one of Europe’s most dynamic job markets. With its high standard of living, excellent professional opportunities, and vibrant cultural scene, Germany is the perfect destination for skilled professionals looking for new challenges.
-      </p>
-      <p style={{ marginBottom: "30px" }}>
-        Start your journey today with <span className="text-orange-500 font-bold">VJC Overseas</span>—we are committed to helping you succeed in your career and make Germany your new home.
+        Germany is Europe’s largest economy and a welcoming destination for international professionals. Its thriving job market, high standard of living, and cultural diversity make it the perfect place to build a long-term career. Whether you are exploring the{" "}
+       Chancenkarte program or applying for a work visa, Germany provides a structured pathway for global talent.
       </p>
 
-      <h3 style={{ fontSize: "22px", fontWeight: "bold", marginBottom: "15px" }}>
-        Contact <span className="text-orange-500 font-bold">VJC Overseas</span> Today
-      </h3>
-      <p>
-        <strong>Phone:</strong> +91-9160449000<br />
-        <strong>Email:</strong> info@vjcoverseas.com<br />
-        <strong>Visit Our Office:</strong> 10AM–7PM
+      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>
+        Conclusion
+      </h2>
+
+      <p style={{ marginBottom: "20px" }}>
+  The <span className="font-bold text-black">Germany Job Seeker Visa</span> is one of the most effective ways to start your professional journey in Europe. With strong demand for skilled workers, a supportive immigration system, and excellent living standards, Germany has become the ideal destination for ambitious individuals.
+</p>
+
+
+      <p style={{ marginBottom: "30px" }}>
+        At <Link href="https://www.vjcoverseas.com/"><span className="text-orange-500 font-bold">VJC Overseas</span></Link>, we are committed to turning your dream of working in Germany into reality. Whether you’re applying for a jobseeker visa, a work permit, or the Opportunity Card, our team ensures that your application stands out.
       </p>
+
+      
     </div>
   );
 }

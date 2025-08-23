@@ -1,48 +1,61 @@
 "use client";
-
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Germany = () => {
   return (
-    <div style={{
-      position: 'relative', 
-      padding: '10px', 
-      boxSizing: 'border-box',
-      backgroundColor: 'white', 
-      fontFamily:'Times New Roman',
-      position: 'relative',
-      fontSize: "16px", // reduced font size
-        
-overflow: 'hidden',
-    }}>
-    <div className="mt-4"></div>
+    <div
+      style={{
+        position: 'relative',
+        padding: '10px',
+        boxSizing: 'border-box',
+        backgroundColor: 'white',
+        fontFamily:'Times New Roman',
+        position: 'relative',
+        fontSize: "16px", // reduced font size
+        overflow: 'hidden',
+      }}
+    >
+      <div className="mt-4"></div>
+
       <h2 className="text-2xl font-bold mb-4">
         Germany Blue Card Visa: Your Path to Work and Live in Germany
       </h2>
+<p className="text-base mt-3">
+  Germany, a global leader in innovation, technology, and culture, attracts skilled professionals from around the world. <strong>Germany Blue Card visa</strong> is a special residence permit designed for highly qualified workers who wish to live and work in Germany. If you are looking to advance your career, experience rich cultural heritage, and enjoy an excellent quality of life — this visa is your gateway. For those looking for{" "}
+  <span className="text-orange-500 font-semibold">
+    <Link href="https://www.vjcoverseas.com/work-abroad">Work Abroad Opportunities</Link>
+  </span>, Germany offers one of the most promising career paths. For professional guidance, you can also consult the{" "}
+  <span className="text-orange-500 font-semibold">
+    <Link href="https://www.vjcoverseas.com/">Best Visa Immigration Consultants</Link>
+  </span>.
+</p>
 
-      <p className="text-base mt-3">
-        Germany, a global leader in innovation, technology, and culture, attracts skilled professionals from around the world. The <strong>Germany Blue Card</strong> is a special residence permit designed for highly qualified workers who wish to live and work in Germany. If you are looking to advance your career, experience rich cultural heritage, and enjoy an excellent quality of life — this visa is your gateway.
-      </p>
 
       <h3 className="text-lg font-semibold mt-3">What is the Germany Blue Card Visa?</h3>
       <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-      
+
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <Image
             src="/gbcvisaimg.webp"
-            alt="Image description"
+            alt="Germany Blue Card Visa"
             width={500} // Replace with your image's actual width
             height={300}
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
             unoptimized
           />
         </div>
-      <p>
-        The Germany Blue Card is a work and residence permit for highly skilled non-EU nationals. It’s tailored for professionals in engineering, IT, healthcare, research, and more. It also provides benefits like family reunification and a path to permanent residency in as little as 21–33 months.
-      </p>
-</div>
+
+        <p>
+          The Germany Blue Card is a work and residence permit for highly skilled non-EU nationals. It’s tailored for professionals in engineering, IT, healthcare, research, and more. It also provides benefits like family reunification and a path to permanent residency in as little as 21–33 months. If you are considering the{" "}
+          <span className="text-orange-500 font-semibold">
+            <Link href="https://www.vjcoverseas.com/work-abroad/germany-work-permit">Germany work permit Visa</Link>
+          </span>, the Blue Card is often the fastest option.
+        </p>
+      </div>
+
       <h3 className="text-lg font-semibold mt-3">Key Benefits of the Germany Blue Card</h3>
       <ul className="list-disc list-inside space-y-2">
         <li><strong>Work and Live in Germany:</strong> Enjoy high standards of living, infrastructure, and opportunities.</li>
@@ -61,7 +74,10 @@ overflow: 'hidden',
 
       <h3 className="text-lg font-semibold mt-4 text-green-600">Processing Time</h3>
       <p>
-        Processing usually takes <strong>4 to 12 weeks</strong>, depending on application volume and personal circumstances. Apply early to avoid delays.
+        Processing usually takes <strong>4 to 12 weeks</strong>, depending on application volume and personal circumstances. Apply early to avoid delays. VJC Overseas also guides on the{" "}
+        <span className="text-orange-500 font-semibold">
+          <Link href="https://www.vjcoverseas.com/germany-opportunity-card">Germany Opportunity Card</Link>
+        </span>.
       </p>
 
       <h3 className="text-lg font-semibold mt-4 text-blue-900">Germany Blue Card Visa Fees</h3>
@@ -93,22 +109,18 @@ overflow: 'hidden',
         How <span className="text-orange-600 font-semibold">VJC Overseas</span> Can Help
       </h3>
       <p>
-        With years of experience and a team of experts,{" "}
-        <span className="text-orange-600 font-semibold">VJC Overseas</span> simplifies your Germany Blue Card application. From document checks to submission and follow-ups, we offer end-to-end support.
+        With years of experience and a team of experts, <span className="text-black font-semibold">VJC Overseas</span> simplifies your Germany Blue Card application. From document checks to submission and follow-ups, we offer end-to-end support. We also help with the <span className="text-orange-500 font-semibold">
+          <Link href="https://www.vjcoverseas.com/">VJC Overseas</Link>
+        </span> guidance for work and settlement.
       </p>
 
-      <h3 className="text-lg font-semibold mt-4">
-        Contact <span className="text-orange-600 font-semibold">VJC Overseas</span>
-      </h3>
-      <p>
-        📞 <strong>+91-9160449000</strong><br />
-        ✉️ <strong>info@vjcoverseas.com</strong>
-      </p>
 
-      <p className="text-sm text-gray-600 italic">
-        *Information is subject to change based on German immigration policies. Always verify with official sources or consult our team.
+      <p className="mt-4">
+        For other visa options, you can also explore the <span className="text-orange-500 font-semibold">
+          <Link href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/blue-visa">Germany Blue Card Visa</Link>
+        </span>.
       </p>
-      </div>
+    </div>
   );
 };
 

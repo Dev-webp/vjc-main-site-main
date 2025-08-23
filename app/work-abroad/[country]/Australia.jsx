@@ -1,30 +1,32 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AustraliaWorkVisa = () => {
   return (
     <div className="p-6 md:p-12 bg-white text-black" style={{ fontFamily: 'Times New Roman, serif' }}>
       <h1 className="text-2xl font-bold mb-4">Australia Work Visa: Your Pathway to Opportunities Down Under</h1>
       <p className="mb-4 text-base">
-        Are you considering expanding your career horizons by working in Australia? The Australia Work Visa offers a world of opportunities in a country renowned for its high quality of life, vibrant job market, and diverse landscapes. Whether you're seeking a temporary job, a skilled profession, or a long-term career in Australia, the right work visa can help you achieve your goals.
+        Are you considering expanding your career horizons by working in Australia? The <strong>Australia Work Permit Visa</strong> offers a world of opportunities in a country renowned for its high quality of life, vibrant job market, and diverse landscapes. Whether you're seeking a temporary job, a skilled profession, or a long-term career in Australia, the right visa can help you achieve your goals.
       </p>
-      <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-              
-                <div className="flex-shrink-0 mx-auto lg:mx-0">
-                  <Image
-                    src="/awvisaimg.jpg"
-                    alt="Image description"
-                    width={500} // Replace with your image's actual width
-                    height={300}
-                    className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
-                    unoptimized
-                  />
-                </div>
-      <p className="mb-4 text-base">
-        At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we are dedicated to helping individuals navigate the complex visa application process and provide tailored advice for a seamless migration experience. In this guide, we’ll take you through the different 
-      </p>
+      <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">                               
+        <div className="flex-shrink-0 mx-auto lg:mx-0">
+          <Image
+            src="/awvisaimg.jpg"
+            alt="Australia Work Visa"
+            width={500}
+            height={300}
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
+            unoptimized
+          />
+        </div>
+        <p className="mb-4 text-base">
+          At <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com" target="_blank">VJC Overseas</Link></span>, we are dedicated to helping individuals navigate the complex visa application process and provide tailored advice for a seamless migration experience. In this guide, we’ll take you through the different
+        </p>
       </div>
-      <p>types of work visas available in Australia, their requirements, and how <span className="text-orange-500 font-semibold">VJC Overseas</span> can assist you every step of the way.</p>
+      <p>
+        types of work visas available in Australia, their requirements, and how <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com/work-abroad" target="_blank">Work Abroad Opportunities</Link></span> can assist you every step of the way.
+      </p>
 
       <h2 className="text-2xl font-bold mt-6 mb-3">Types of Australia Work Visas</h2>
       <p className="mb-4 text-base">
@@ -81,6 +83,11 @@ const AustraliaWorkVisa = () => {
         • Sufficient funds to support yourself at the start of your stay.
       </p>
 
+      <h2 className="text-xl font-bold mt-6 mb-3">Australia PR Visa</h2>
+      <p className="mb-4">
+        Many professionals start with a temporary work visa and later transition into <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com/pr-visas/australia-pr" target="_blank">Australia PR Visa</Link></span> pathways. Permanent residency in Australia offers long-term stability, access to public benefits, and the opportunity to eventually apply for citizenship.
+      </p>
+
       <h2 className="text-xl font-bold mt-6 mb-3">Why Choose Australia for Work?</h2>
       <p className="mb-4">
         Australia is one of the world’s most desirable destinations for skilled professionals. The country offers a strong economy, diverse job opportunities, a high standard of living, and a unique culture. Here are some key reasons why working in Australia could be your next big career move:
@@ -92,9 +99,9 @@ const AustraliaWorkVisa = () => {
         <li><strong>Cultural Diversity:</strong> Multicultural and inclusive environment promoting innovation and global networking.</li>
       </ul>
 
-      <h2 className="text-xl font-bold mt-6 mb-3">How <span className="text-orange-500 font-semibold">VJC Overseas</span> Can Help</h2>
+      <h2 className="text-xl font-bold mt-6 mb-3">How <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com" target="_blank">VJC Overseas</Link></span> Can Help</h2>
       <p className="mb-4">
-        The process of applying for an Australian work visa can be complex and time-consuming, but with the right guidance, you can navigate it successfully. At <span className="text-orange-500 font-semibold">VJC Overseas</span>, our team of migration experts is here to assist you with every step of the process, from assessing your eligibility to submitting your application and preparing you for your new life in Australia.
+        The process of applying for an Australian work visa can be complex and time-consuming, but with the right guidance, you can navigate it successfully. At <strong>VJC Overseas</strong>, our team of migration experts is here to assist you with every step of the process, from assessing your eligibility to submitting your application and preparing you for your new life in Australia. Rely on <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com" target="_blank">Best Visa Immigration Consultants</Link></span> for expert assistance throughout.
       </p>
       <p className="mb-4"><strong>Our services include:</strong><br />
         • Visa Eligibility Assessment<br />
@@ -103,15 +110,16 @@ const AustraliaWorkVisa = () => {
         • Post-Visa Settlement Services
       </p>
 
+      <p className="mb-4">
+        Exploring <span className="text-orange-500 font-semibold"><Link href="https://www.vjcoverseas.com/work-abroad/australia-work-permit" target="_blank">Work Permit for Australia</Link></span> can help ensure that your documents are accurate and your application is strong.
+      </p>
+
       <h2 className="text-xl font-bold mt-6 mb-3">Ready to Take the Leap?</h2>
       <p className="mb-4">
         Australia’s booming job market awaits skilled professionals like you. Whether you're looking to work temporarily or make Australia your long-term home, the right visa can open doors to exciting career opportunities.
       </p>
       <p className="mb-4">
-        Contact <span className="text-orange-500 font-semibold">VJC Overseas</span> today to begin your journey toward securing an Australia Work Visa. Let us help you turn your professional dreams into reality with expert advice, tailored services, and support every step of the way.
-      </p>
-      <p>
-        For more information or to schedule a consultation, visit <a href="https://www.vjcoverseas.com" target="_blank" className="text-orange-500 underline">www.vjcoverseas.com</a> or call us today! Your Australian adventure begins now.
+        Contact <strong>VJC Overseas</strong> today to begin your journey toward securing an <span className="text-orange-500 font-semibold"><Link href="https://vjcoverseas.com/work-abroad/australia-work-permit" target="_blank">Australia Work Permit Visa</Link></span>. Let us help you turn your professional dreams into reality with expert advice, tailored services, and support every step of the way.
       </p>
     </div>
   );
