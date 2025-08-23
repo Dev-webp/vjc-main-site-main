@@ -70,13 +70,13 @@ const VisitVisas = () => {
             <p className="text-lg text-gray-700">
               A Visit Visa is a temporary travel document that allows you to enter and stay in a foreign country for leisure, tourism, family visits, or short business trips.
             </p>
-            <p className="text-lg text-gray-700 mt-4 text-xl">
+            <p className=" text-gray-700 mt-4 text-xl">
               We specialize in providing Visit Visa assistance for over 15+ countries, including:
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 ml-8 items-start">
-            <ul className="list-disc list-inside text-lg text-gray-700 text-xl">
+            <ul className="list-disc list-inside  text-gray-700 text-xl">
               <li> USA Visit Visa (B2)</li>
               <li> UK Standard Visitor Visa</li>
               <li>Canada Visitor Visa (TRV)</li>
