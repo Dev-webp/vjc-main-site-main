@@ -26,6 +26,7 @@ const destinations = [
   { name: "Azerbaijan", image: "/Tourist-Attractions-in-Azerbaijan.png" },
   { name: "Austria", image: "/austriavisit.jpg" },
   { name: "South Africa", image: "/south-africa-tour-packages.jpg" },
+  { name: "Japan", image: "/japan-tourist-places.jpg" },
 ];
 
 export default function ToursPage() {

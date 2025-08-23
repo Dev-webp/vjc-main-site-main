@@ -29,6 +29,7 @@ import Thailand from "./Thailand";
 import Maldives from "./Maldives";
 import Azerbaijan from "./Azerbaijan";
 import Southafrica from "./Southafrica";
+import Japan from "./Japan";
 const visaData = [
     { name: "Europe Tours and Ticketing", image: "/europe-tour.jpg", path: "/tours-ticketing/europe" },
     { name: "USA Tours and Ticketing", image: "/usa-tour-places.jpeg", path: "/tours-ticketing/usa" },
@@ -51,6 +52,7 @@ const visaData = [
     { name: "Azerbaijan Tours and Ticketing", image: "/Tourist-Attractions-in-Azerbaijan.png", path: "/tours-ticketing/azerbaijan" }, 
     { name: "Austria Tours and Ticketing", image: "/austriavisit.jpg", path: "/tours-ticketing/austria" },
     { name: "South Africa Tours and Ticketing", image: "/south-africa-tour-packages.jpg", path: "/tours-ticketing/south-africa" },
+    { name: "Japan Tours and Ticketing", image: "/japan-tourist-places.jpg", path: "/tours-ticketing/japan" },
 ];
 const defaultVisa = {
   name: "Tours and Ticketing",
@@ -156,7 +158,7 @@ const Migrate = () => {
           {/* Visa Info Content Box */}
           <div
             className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative md:-mt-32 sm:-mt-20 mt-0"
-            style={{ maxHeight: "1750px", minHeight: "1200px", overflowY: "auto" }}
+            style={{ maxHeight: "1800px", minHeight: "1300px", overflowY: "auto" }}
           >
             {selectedVisa.path === defaultVisa.path ? (
               <div className="text-gray-700 text-lg leading-relaxed">
@@ -205,6 +207,8 @@ const Migrate = () => {
               <Fiji />
             ) : selectedVisa.path === "/tours-ticketing/azerbaijan" ? (
               <Azerbaijan />
+            ) : selectedVisa.path === "/tours-ticketing/japan" ? (
+            <Japan />
             ): selectedVisa.path === "/tours-ticketing/south-africa" ? (
               <Southafrica />
             ) : (
