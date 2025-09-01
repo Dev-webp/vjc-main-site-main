@@ -267,10 +267,10 @@ const Footer = () => {
 
         {/* Bangalore Address */}
         <div className="mb-8 md:mb-0 text-center md:w-1/3">
-   <Link href="/banglore" passHref>
+   <Link href="/bangalore" passHref>
   <div className="cursor-pointer">
     <h3 className="text-lg font-bold uppercase mb-1 text-orange-500">
-      VJC Overseas-Banglore
+      VJC Overseas-Bangalore
     </h3>
    
   </div>

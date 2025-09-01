@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
-
+import Link from "next/link";
 const FeatureItem = ({ id, title, description, advantages, icon, image }) => {
     return (
         <div className={`flex flex-col md:items-center gap-10 lg:gap-14 ${id % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
@@ -40,26 +40,46 @@ import { FaGlobe, FaFileAlt, FaHandsHelping } from 'react-icons/fa';
 const features = [
     {
         id: 1,
-        title: "Permanent Residency Visas:",
-        icon: <FaGlobe className="h-10 w-10" />,
-        description: "We expertise in processing Permanent Residency Visa services to individuals and families seeking to establish long-term residency in countries such as Canada, Australia, and New Zealand. ",
-        advantages: [
-            { id: 1, text: "We guide you through the entire process, from eligibility assessment to documentation submission. " },
-            { id: 2, text: "Ensuring that your application stands the best chance of success. " },
-            { id: 3, text: "Our team stays updated with the latest immigration policies and provides personalised advice to help you make informed decisions.." }
-        ],
+  title: "Permanent Residency Visas:",
+  icon: <FaGlobe className="h-10 w-10" />,
+  description: (
+    <>
+      We expertise in processing <a href="https://www.vjcoverseas.com/pr-visas" className="text-blue-600  font-semibold" target="_blank" rel="noopener noreferrer">PR Visa Consultants</a> services to individuals and families seeking to establish long-term residency in countries such as Canada, Australia, and New Zealand.
+    </>
+  ),
+  advantages: [
+    { id: 1, text: "We guide you through the entire process, from eligibility assessment to documentation submission." },
+    { id: 2, text: "Ensuring that your application stands the best chance of success." },
+    { id: 3, text: "Our team stays updated with the latest immigration policies and provides personalised advice to help you make informed decisions." }
+  ],
         image: "/b1.webp"
     },
     {
         id: 2,
-        title: "Student Visas:",
-        icon: <FaFileAlt className="h-10 w-10" />,
-        description: "At VJC Overseas, we specialise in assisting students who wish to pursue education abroad. Our Student Visa services cover a range of destinations, including the United States, Canada, Australia, the UK, and more. ",
-        advantages: [
-            { id: 1, text: "We provide guidance on university selection, visa documentation, and interview preparation " },
-            { id: 2, text: "Ensure a smooth transition from application to arrival at your chosen educational institution." },
-            { id: 3, text: "Our focus on client satisfaction has earned us the trust of hundreds of students and professionals who have successfully achieved their goals abroad." }
-        ],
+title: "Student Visas:",
+icon: <FaFileAlt className="h-10 w-10" />,
+description: (
+  <>
+    At VJC Overseas, we specialise in assisting students who wish to pursue education abroad. 
+    Our Student Visa services cover a range of destinations, including the United States, Canada, 
+    Australia, the UK, and more. As trusted{" "}
+    <a 
+      href="https://www.vjcoverseas.com/study-abroad" 
+      className="text-blue-600 font-semibold" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      Study Abroad Consultants
+    </a>, 
+    we ensure a smooth journey for students worldwide.
+  </>
+),
+advantages: [
+  { id: 1, text: "We provide guidance on university selection, visa documentation, and interview preparation." },
+  { id: 2, text: "Ensure a smooth transition from application to arrival at your chosen educational institution." },
+  { id: 3, text: "Our focus on client satisfaction has earned us the trust of hundreds of students and professionals who have successfully achieved their goals abroad." }
+],
+
         image: "/b2.webp"
     },
     {
@@ -88,6 +108,7 @@ const Features = () => {
                     objectFit="cover"
                     quality={75} // Adjust quality for performance
                     priority // Ensures the image loads quickly
+                    unoptimized
                 />
             </div>
             <div className="max-w-7xl mx-auto px-5 -mt-0 md:-mt-0 sm:px-0 md:px-12 lg:px-5">
@@ -98,7 +119,14 @@ const Features = () => {
                         </h1>
 
                         <p className="text-gray-700 max-w-xl mx-auto">
-                        At VJC Overseas, we offer a wide range of services designed to support individuals and businesses in achieving their international goals. Our expertise and experience in immigration, travel, and financial services allow us to provide comprehensive solutions for those looking to explore new opportunities abroad. Here&apos;s a breakdown of our key services:
+                        At {" "}
+      <Link 
+        href="https://www.vjcoverseas.com" 
+        target="_blank" 
+        className="font-semibold text-blue-600 hover:text-orange-500"
+      >
+        VJC Overseas
+      </Link>, we offer a wide range of services designed to support individuals and businesses in achieving their international goals. Our expertise and experience in immigration, travel, and financial services allow us to provide comprehensive solutions for those looking to explore new opportunities abroad. Here&apos;s a breakdown of our key services:
                         </p>
 
                     </div>

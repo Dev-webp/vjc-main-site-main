@@ -110,7 +110,7 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
               </div>
 
               {/* Text Overlay on Background Image */}
-              <div className="hidden md:block md:absolute top-6 left-6 md:top-64 md:left-10 z-10 max-w-[85%] sm:max-w-[40%] rounded-2xl bg-black/10  border border-white/30 shadow-xl p-6">
+              <div className="hidden md:block md:absolute top-6 left-6 md:top-64 lg:-mt-12 md:left-10 z-10 max-w-[85%] sm:max-w-[40%] rounded-2xl bg-black/10  border border-white/30 shadow-xl p-6">
                 {customContent || <ImageContent />}
 
               </div>

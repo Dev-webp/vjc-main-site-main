@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaRocket, FaHandshake, FaTrophy } from 'react-icons/fa';
+import Link from "next/link";
 
 const Why = () => {
   const roadmap = [
@@ -24,12 +25,21 @@ const Why = () => {
     },
     {
       title: "Recognised Excellence",
-      icon: <FaTrophy className="text-saffron text-3xl" />,
-      description: [
-        "Our commitment to excellence has been recognised through numerous awards.",
-        "These accolades reflect our unwavering dedication to providing the best service to our clients.",
-        "In 2022, 2023, and 2024, we were honoured with the title of India’s Most Trusted Brand of the Year, awarded to us consecutively in Delhi and Bengaluru."
-      ]
+  icon: <FaTrophy className="text-saffron text-3xl" />,
+  description: [
+    <>
+      Our commitment to excellence has been recognised through numerous awards.{" "}
+      <Link 
+        href="https://www.vjcoverseas.com" 
+        target="_blank" 
+        className="font-semibold text-blue-600 hover:text-orange-500"
+      >
+        Best Visa Immigration Consultants
+      </Link>
+    </>,
+    "These accolades reflect our unwavering dedication to providing the best service to our clients.",
+    "In 2022, 2023, and 2024, we were honoured with the title of India’s Most Trusted Brand of the Year, awarded to us consecutively in Delhi and Bengaluru."
+  ]
     }
   ];
 

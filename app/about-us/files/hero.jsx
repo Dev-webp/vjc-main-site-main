@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { containerVariants, titleVariants, desVariants } from "../../animation";
 import Nav from "@/app/components/Nav";
 import Form from "@/app/components/Form";
-
+import Link from "next/link";
 const CompOne = () => {
   return (
     <>
@@ -41,12 +41,22 @@ const CompOne = () => {
                 About Us <br />VJC Overseas
               </span>
             </motion.h1>
-            <motion.p
-              variants={desVariants}
-              className="text-gray-300 tracking-tight text-center md:font-medium max-w-xl mx-auto lg:max-w-lg"
-            >
-              Welcome to VJC Overseas, a trusted name in the field of overseas education and immigration services. Founded in 2009, we began as a local firm with a simple yet powerful goal: to provide the highest quality services to students aspiring to study abroad and professionals seeking to build their careers overseas. Over the years, our commitment to excellence has transformed us into a leading name in the industry.
-            </motion.p>
+             <motion.p
+      variants={desVariants}
+      className="text-gray-300 tracking-tight text-center md:font-medium max-w-xl mx-auto lg:max-w-lg"
+    >
+      Welcome to VJC Overseas, a trusted name in the field of overseas education and{" "}
+      <Link
+        href="https://www.vjcoverseas.com/services"
+        className="font-bold text-orange-400  hover:text-orange-500 transition-colors duration-300"
+      >
+        Immigration Support Services
+      </Link>
+      . Founded in 2009, we began as a local firm with a simple yet powerful goal: to provide
+      the highest quality services to students aspiring to study abroad and professionals seeking
+      to build their careers overseas. Over the years, our commitment to excellence has transformed
+      us into a leading name in the industry.
+    </motion.p>
           </motion.div>
 
           {/* Right Section (Form) */}
