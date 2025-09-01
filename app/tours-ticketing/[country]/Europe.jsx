@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
 
 const EuropeTour = () => {
   return (
@@ -9,8 +10,9 @@ const EuropeTour = () => {
         Europe Tourist Visa Process with Affordable Europe Tour Packages
       </h1>
       <p className="text-lg md:text-xl font-medium text-center mb-6">
-        Travel Made Easy with <span className="text-orange-500">VJC Overseas</span>
-      </p>
+  Travel Made Easy with <span className="text-orange-500 font-bold">VJC Overseas</span>
+</p>
+
 
       {/* Image and text side by side */}
       <div className="flex flex-col md:flex-row md:items-start gap-6 mb-6">
@@ -27,25 +29,25 @@ const EuropeTour = () => {
             unoptimized
           />
           <div className="absolute inset-0  flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <p className="text-white text-lg font-semibold">Europe Tour by VJC Overseas</p>
+            <p className="text-white text-lg font-semibold">Europe Tour by <strong className="text-black">VJC Overseas</strong></p>
           </div>
         </div>
 
         {/* Text Content */}
         <div className="md:w-1/2 text-justify">
           <p>
-            Dreaming of a European getaway filled with iconic cities, charming villages, scenic landscapes, and rich cultural experiences? At <span className="text-orange-500">VJC Overseas</span>, we offer more than just tourist visa assistance — we provide complete travel support with affordable Europe tour packages tailored to your budget, preferences, and travel goals.
+            Dreaming of a European getaway filled with iconic cities, charming villages, scenic landscapes, and rich cultural experiences? At <strong className="text-black">VJC Overseas</strong>, we provide more than just visa support — we deliver end-to-end travel assistance with <Link href="https://www.vjcoverseas.com/tours-ticketing/europe"><span className="text-orange-500 font-bold">European Holiday Packages</span></Link> designed to suit your preferences, budget, and schedule.
           </p>
           <p className="mt-4">
-            Whether it’s the Eiffel Tower in Paris, gondola rides in Venice, or the snow-covered Alps in Switzerland, Europe offers unforgettable experiences for every traveler. Our experienced visa consultants and travel advisors make the Europe tourist visa process easy, smooth, and budget-friendly for individuals, couples, and families.
+            From Paris to Prague, Rome to Amsterdam, Europe is a destination that promises diverse experiences for every kind of traveler. Whether it’s exploring historic castles, indulging in authentic cuisine, or enjoying the snow-capped Alps, we make sure your journey is seamless and stress-free.
           </p>
         </div>
       </div>
 
-      {/* Remaining Section (unchanged but formatted) */}
+      {/* Remaining Section */}
       <h2 className="text-xl mt-4 font-semibold text-orange-700">Your Gateway to Europe: Tourist Visa Assistance</h2>
       <p>
-        To travel across Europe legally, most Indian travelers require a <strong>Schengen Visa</strong>, which allows entry to 27 countries in the Schengen Zone with a single visa. Our expert team guides you through the visa process from start to finish:
+        To travel across Europe legally, most Indian travelers require a  Visa, which allows entry to 27 countries in the Schengen Zone with a single visa. Our team of <Link href="https://www.vjcoverseas.com/visit-visas"><span className="text-orange-500 font-bold">Visit Visa Consultants</span></Link> ensures that your visa application process is smooth, accurate, and quick.
       </p>
       <ul className="list-disc list-inside space-y-1 mt-2">
         <li>Valid passport (at least 6 months validity)</li>
@@ -58,55 +60,64 @@ const EuropeTour = () => {
         <li>Visa application form and cover letter</li>
       </ul>
       <p className="mt-2">
-        At <span className="text-orange-500">VJC Overseas</span>, we ensure your documents are well-prepared, error-free, and compliant with embassy guidelines to maximize approval chances.
+        At <strong className="text-black">VJC Overseas</strong>, we meticulously prepare and verify your documents to maximize approval chances and avoid unnecessary delays.
       </p>
 
-      <h2 className="text-xl mt-4 font-semibold text-orange-700">Step-by-Step Visa Process with <span className="text-orange-500">VJC Overseas</span></h2>
+      <h2 className="text-xl mt-4 font-semibold text-orange-700">Step-by-Step Visa Guidance</h2>
       <ul className="list-disc list-inside space-y-1 mt-2">
         <li>Free Travel & Visa Consultation</li>
         <li>Customized Document Checklist</li>
-        <li>Filling and Reviewing Your Application</li>
-        <li>Booking Visa Appointment</li>
-        <li>Mock Interview Support (if required)</li>
-        <li>Visa Tracking & Real-time Updates</li>
+        <li>Application Form Filling & Review</li>
+        <li>Embassy Appointment Scheduling</li>
+        <li>Mock Interview Guidance (if required)</li>
+        <li>Visa Tracking with Real-time Updates</li>
       </ul>
       <p className="mt-2">
-        Our consultants have in-depth knowledge of embassy protocols and timelines. With our hands-on guidance, you can be confident your visa application is in safe hands.
+        Our consultants are recognized among the <Link href="https://www.vjcoverseas.com"><span className="text-orange-500 font-bold">Best Visa Immigration Consultants</span></Link> for their expertise and attention to detail. With in-depth knowledge of embassy procedures, we make sure your application is always in safe hands.
       </p>
 
-      <h2 className="text-xl mt-4 font-semibold text-orange-700">Affordable Europe Tour Packages – Customized & Cost-Effective</h2>
-      <p className="mt-2">Along with visa support, we offer exclusive and affordable Europe tour packages that include:</p>
+      <h2 className="text-xl mt-4 font-semibold text-orange-700">Affordable Europe Tour Packages – Tailored for You</h2>
+      <p className="mt-2">
+        Traveling is not just about reaching a destination — it’s about the experience. Along with visa support, we also provide complete <Link href="https://www.vjcoverseas.com/tours-ticketing"><span className="text-orange-500 font-bold">Tours and Ticketing Services</span></Link> that include:
+      </p>
       <ul className="list-disc list-inside space-y-1 mt-2">
-        <li>Round-trip airfare options</li>
-        <li>3-star to 5-star hotel bookings</li>
-        <li>Local transportation & inter-country transfers</li>
-        <li>Sightseeing tours and city passes</li>
-        <li>Travel insurance and currency exchange support</li>
-        <li>Itinerary planning based on your interests</li>
+        <li>Round-trip flight booking assistance</li>
+        <li>Hotel stays from budget to luxury options</li>
+        <li>Inter-country transfers and local transport</li>
+        <li>Guided sightseeing tours and city passes</li>
+        <li>Currency exchange and travel insurance support</li>
+        <li>Personalized itinerary planning</li>
       </ul>
       <p className="mt-2">
-        Whether you're planning a 7-day trip to Italy and France, or a 10-day multi-country Europe adventure, we offer budget-friendly and flexible packages that cover all essentials without compromising on experience.
+        Whether you are planning a romantic trip to Paris, a family adventure across Italy and Switzerland, or cultural explorations through Spain and Germany, our exclusive packages cover every detail.
       </p>
 
-      <h2 className="text-xl mt-4 font-semibold text-orange-700">Why Choose <span className="text-orange-500">VJC Overseas</span>?</h2>
+      <h2 className="text-xl mt-4 font-semibold text-orange-700">Why Choose <strong className="text-black">VJC Overseas</strong>?</h2>
       <ul className="list-disc list-inside space-y-1 mt-2">
         <li>Visa + Travel Package in One Place</li>
         <li>High Visa Approval Rate</li>
-        <li>Custom Tour Packages at Best Prices</li>
-        <li>End-to-End Support from Experts</li>
-        <li>Personalized Guidance for Every Traveler</li>
+        <li>Cost-effective and customizable packages</li>
+        <li>End-to-end assistance from travel to ticketing</li>
+        <li>Experienced advisors with a personal touch</li>
       </ul>
       <p className="mt-2">
-        Our goal is not just to get your visa approved, but to help you experience Europe stress-free with no surprises or hidden costs. We believe that world travel should be accessible to everyone — and we work hard to make that happen.
+        When it comes to international travel, planning with professionals ensures peace of mind. That’s why so many travelers trust <strong className="text-black">VJC Overseas</strong> to create memorable experiences.
       </p>
 
-      <h2 className="text-xl mt-4 font-semibold text-orange-700">Start Your European Journey Today</h2>
+      <h2 className="text-xl mt-4 font-semibold text-orange-700">Explore Beyond – A Taste of New York City</h2>
       <p className="mt-2">
-        Europe is calling — and your adventure starts here. Let <span className="text-orange-500">VJC Overseas</span> handle the paperwork and planning, while you enjoy the journey of a lifetime.
+        While Europe is a dream destination, many travelers also combine it with iconic cities like New York. From New York City sightseeing tours to exploring Europe’s cultural heart, we can plan multi-destination trips that give you the best of both worlds.
       </p>
-      <p className="font-medium text-orange-600 mt-4">
-        Reach out today to get your Europe tourist visa and explore our affordable tour packages. The world is waiting for you!
-      </p>
+
+      <h2 className="text-xl mt-4 font-semibold text-orange-700">Start Your Journey Today</h2>
+      <p className="mt-2">
+  The world is waiting, and Europe is calling. With <strong className="text-black">European Holiday Packages</strong> from <Link href="https://www.vjcoverseas.com"><span className="text-orange-500 font-bold">VJC Overseas</span></Link>, you don’t just travel — you create memories that last a lifetime.
+</p>
+
+      <p className="mt-4">
+  Get in touch with us today to explore visa guidance, affordable tours, and complete travel solutions. Let our expert <strong className="text-black font-bold">Visit Visa Consultants</strong> handle the paperwork while you enjoy the adventure.
+</p>
+
     </div>
   );
 };

@@ -42,6 +42,7 @@ export default function HyderabadPage() {
           layout="fill"
           objectFit="cover"
           className="z-0"
+          unoptimized
         />
         <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="relative z-20 flex flex-col justify-center items-center h-full text-white px-6 text-center">
@@ -91,6 +92,7 @@ export default function HyderabadPage() {
                     height={200}
                     alt="Gallery"
                     className="rounded-xl group-hover:brightness-75 transition duration-300"
+                    unoptimized
                   />
                 </motion.div>
               ))}
@@ -105,15 +107,15 @@ export default function HyderabadPage() {
         </ScrollFadeIn>
         <div className="grid md:grid-cols-5  gap-6 max-w-6xl mx-auto text-center">
           {[
-            { icon: FaPlane, title: "Study Abroad", link: "/studyabroad" },
-            { icon: FaBriefcase, title: "Work Visa", link: "/workabroad" },
+            { icon: FaPlane, title: "Study Abroad", link: "/study-abroad" },
+            { icon: FaBriefcase, title: "Work Visa", link: "/work-abroad" },
             { icon: FaPassport, title: "PR & Immigration", link: "/pr-visas" },
             { icon: FaUniversity, title: "IELTS / PTE ", link: "/ielts" },
-            { icon: FaGlobeAmericas, title: "Visit Visas ", link: "/visitvisas" },
+            { icon: FaGlobeAmericas, title: "Visit Visas ", link: "/visit-visas" },
           ].map(({ icon: Icon, title, link }, index) => (
             <ScrollFadeIn key={index} delay={index * 0.1}>
               <Link href={link}>
-                <div className="p-6 bg-white rounded-lg bg-blue-200 shadow hover:shadow-xl transition cursor-pointer hover:bg-orange-50">
+                <div className="p-6 rounded-lg bg-blue-200 shadow hover:shadow-xl transition cursor-pointer hover:bg-orange-50">
                   <Icon className="text-4xl text-orange-500 mx-auto mb-4" />
                   <h4 className="text-lg font-semibold">{title}</h4>
                 </div>
@@ -148,6 +150,7 @@ export default function HyderabadPage() {
                   width={450}
                   height={100}
                   className="mx-auto"
+                  unoptimized
                 />
               </div>
               <div className="mt-6 text-center">

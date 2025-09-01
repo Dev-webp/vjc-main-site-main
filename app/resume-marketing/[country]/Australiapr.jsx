@@ -1,31 +1,38 @@
 import Head from 'next/head';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AustraliaResumeMarketing() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
       <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
-      Australia Resume Marketing Services - <span className="text-orange-500">&nbsp;VJC Overseas</span>
+        Australia Resume Marketing Services - <span className="text-orange-500">&nbsp;VJC Overseas</span>
       </h1>
-     
-        
-          <p>
-            At <span className="text-orange-500 font-semibold">VJC Overseas</span>, we specialize in Resume Marketing Services tailored for the Australian job market. Whether you're a skilled professional, a fresh graduate, or planning to relocate, our customized strategies ensure that your resume doesn’t just get noticed — it gets shortlisted.
-          </p>
-  
- <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
-             <Image
-               src="/resume/resume4.png"
-               alt="Migrate - Apply Now"
-               width={900}
-               height={630}
-               className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
-               priority
-               unoptimized
-             />
-           </div>
+
+     <p>
+  At <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-bold">VJC Overseas</Link>, we specialize in  tailored for the Australian job market. Whether you're a skilled professional, a fresh graduate, or planning to relocate, our customized strategies ensure that your resume doesn’t just get noticed — it gets shortlisted. This includes effective <Link href="https://www.vjcoverseas.com/resume-marketing" className="text-orange-500 font-bold"> Resume marketing services </Link>guidance for professionals targeting international roles.
+</p>
+
+<p className="mb-4">
+  We are recognized as a leading <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-bold">Best Visa Immigration Consultants</Link> for helping professionals achieve overseas career opportunities successfully.
+</p>
+
+      <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+        <Image
+          src="/resume/resume4.png"
+          alt="Australia Resume Marketing Services - Vjc Overseas"
+          width={900}
+          height={630}
+          className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+          priority
+          unoptimized
+        />
+      </div>
+
       {/* Why Choose Section */}
-      <h3 className="text-lg font-semibold mt-8 mb-2 text-black">Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Resume Marketing?</h3>
+      <h3 className="text-lg font-semibold mt-8 mb-2 text-black">
+        Why Choose <span className="text-orange-500">VJC Overseas</span> for Your Resume Marketing?
+      </h3>
       <ul className="list-disc list-inside space-y-1">
         <li><strong>Expert Resume Writers:</strong> Industry-experienced professionals craft your resume.</li>
         <li><strong>Tailored to Australian Standards:</strong> We align your CV with local job market expectations.</li>
@@ -34,7 +41,7 @@ export default function AustraliaResumeMarketing() {
         <li><strong>Job Portal Distribution:</strong> Share your resume across top Australian job sites.</li>
         <li><strong>Real-time Feedback:</strong> Get iterative improvements through feedback loops.</li>
       </ul>
-      
+
       {/* Salary Section */}
       <h3 className="text-lg font-semibold mt-8 mb-2 text-black">Average Salary Structure in Australia</h3>
       <ul className="list-disc list-inside space-y-1">
@@ -49,7 +56,7 @@ export default function AustraliaResumeMarketing() {
       {/* Work Opportunities */}
       <h3 className="text-lg font-semibold mt-8 mb-2 text-black">Work Opportunities in Australia</h3>
       <ul className="list-disc list-inside space-y-1">
-        <li><strong>Technology:</strong> Demand for cybersecurity, AI, and cloud professionals.</li>
+        <li><strong>Technology:</strong> Demand for cybersecurity, AI, and cloud professionals. This is ideal for those leveraging guidance in their career strategy.</li>
         <li><strong>Healthcare:</strong> Doctors, nurses, and aged care professionals are in high demand.</li>
         <li><strong>Engineering:</strong> Civil, mechanical, and mining engineers are sought after.</li>
         <li><strong>Skilled Trades:</strong> Plumbers, electricians, and carpenters are urgently needed.</li>
@@ -67,7 +74,7 @@ export default function AustraliaResumeMarketing() {
       </ul>
 
       {/* Our Services */}
-      <h3 className="text-lg font-semibold mt-8 mb-2 text-black">How <span className="text-orange-500">VJC Overseas</span> Can Help You</h3>
+      <h3 className="text-lg font-semibold mt-8 mb-2 text-black">How <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-bold">VJC Overseas</Link> Can Help You</h3>
       <ul className="list-disc list-inside space-y-1">
         <li><strong>Professional Resume Writing:</strong> Tailored to your industry and goals.</li>
         <li><strong>LinkedIn Profile Revamp:</strong> Improve visibility and recruiter reach.</li>
@@ -75,20 +82,16 @@ export default function AustraliaResumeMarketing() {
         <li><strong>Job Search Support:</strong> Regular job alerts and company match suggestions.</li>
         <li><strong>Interview Coaching:</strong> One-on-one mock sessions and expert tips.</li>
         <li><strong>Networking Guidance:</strong> Helping you connect with Australian professionals.</li>
+        <li>We also provide insight into <Link href="https://www.vjcoverseas.com/pr-visas/australia-pr" className="text-orange-500 font-bold">Australia PR Visa</Link> opportunities when applying overseas.</li>
       </ul>
 
       {/* Contact Section */}
       <h3 className="text-lg font-semibold mt-8 mb-2 text-black">Contact Us Today</h3>
       <p className="mb-2">
-        Ready to take the next big step in your Australian career? Let <span className="text-orange-500 font-semibold">VJC Overseas</span> guide you through a professionally tailored resume marketing experience.
+        Ready to take the next big step in your Australian career? Let <Link href="https://www.vjcoverseas.com/resume-marketing" className="text-orange-500 font-bold">Professional CV Marketing</Link> and <strong className="text-black font-bold">VJC Overseas</strong> guide you through a professionally tailored resume marketing experience.
       </p>
 
-      {/* Contact Details */}
-      <div className="mt-4 space-y-1 text-sm md:text-base">
-        <p><strong>Phone:</strong> +91-9160449000</p>
-        <p><strong>Email:</strong> info@vjcoverseas.com</p>
-        <p><strong>Website:</strong> <a href="https://www.vjcoverseas.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">www.vjcoverseas.com</a></p>
-      </div>
+     
     </div>
   );
 }

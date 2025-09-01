@@ -19,7 +19,9 @@ const ContactPage = () => {
     <>
       {/* Navbar */}
       <div className="bg-white">
-       
+        <div className="mt-10 z-20 relative">
+          
+        </div>
 
         {/* Main Section */}
         <div className="mt-16 mb-16">

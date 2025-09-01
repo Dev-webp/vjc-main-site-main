@@ -27,12 +27,12 @@ const ContactPage = () => {
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
         <Nav />
       </div>
-
+       
       {/* Main Section */}
       
       {/* Other Sections */}
       <Two />
-    
+      
 
     </>
   );

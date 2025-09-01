@@ -1,59 +1,71 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 const BusinessVisaContent = () => {
   return (
     <div className="w-full flex justify-start px-1 mb-20">
       <div className="w-full text-black px-1 md:px-16">
+
         <h1 className="text-2xl font-bold mb-6 text-center text-black">
           GMAT Training at <span className="text-orange-500">VJC Overseas</span>: Your Pathway to Success
         </h1>
-        
-        <p className="text-lxl leading-relaxed mb-6 mt-10">
-          Welcome to VJC Overseas, where we specialize in providing expert GMAT training to help you achieve your dream score and secure your place in the top business schools worldwide.
+
+        <p className="text-lg leading-relaxed mb-6 mt-10">
+          Welcome to <Link href="https://www.vjcoverseas.com"><span className="text-orange-500 font-bold">VJC Overseas</span></Link>, where we specialize in providing expert GMAT training to help you achieve your dream score and secure your place in the top business schools worldwide. As one of the <strong className="text-black">Best Visa Immigration Consultants</strong>, we not only specialize in visa guidance but also provide world-class <Link href="https://www.vjcoverseas.com/coaching-training"><span className="text-orange-500 font-bold">Coaching & Training Services</span></Link> to help candidates excel in global entrance exams like the GMAT.
         </p>
-    
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-orange-600">Why Choose VJC Overseas for GMAT Training?</h2>
-        <ul className="list-disc list-inside space-y-2 font-bold text-gray-700">
-          <li><strong className="text-orange-600">Expert Trainers:</strong> Our trainers have years of GMAT teaching experience and deep knowledge of the exam pattern.</li>
-          <li><strong className="text-orange-600">Comprehensive Study Material:</strong> We provide top-tier materials covering all GMAT sections, continuously updated for the latest trends.</li>
-          <li><strong className="text-orange-600">Personalized Coaching:</strong> Tailored training programs focusing on your strengths and addressing your weaknesses.</li>
-          <li><strong className="text-orange-600">Real GMAT Practice Tests:</strong> Simulated exam environment with full-length tests to track progress.</li>
-          <li><strong className="text-orange-600">Flexible Scheduling:</strong> Online and offline class options to fit your busy schedule.</li>
-        </ul>
-    
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">GMAT Training Curriculum: What You Will Learn</h2>
-        <ul className="list-disc list-inside space-y-2 font-bold text-gray-700">
-          <li><strong className="text-orange-600">Quantitative Reasoning:</strong> Master data sufficiency, problem-solving, and mathematical concepts.</li>
-          <li><strong className="text-orange-600">Verbal Reasoning:</strong> Develop expertise in reading comprehension, critical reasoning, and sentence correction.</li>
-          <li><strong className="text-orange-600">Integrated Reasoning:</strong> Learn to analyze data from multiple sources for complex problem-solving.</li>
-          <li><strong className="text-orange-600">Analytical Writing:</strong> Improve essay structuring, argument analysis, and effective communication skills.</li>
-        </ul>
-    
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Benefits of GMAT Training at VJC Overseas</h2>
-        <ul className="list-disc list-inside space-y-2 font-bold text-gray-700">
-          <li><strong>Achieve Your Target Score:</strong> Expert guidance to help you reach 700+ scores.</li>
-          <li><strong>Access to Premium Resources:</strong> Get comprehensive study materials and practice exams.</li>
-          <li><strong>Effective Test Strategies:</strong> Learn time management and stress-handling techniques.</li>
-          <li><strong>Boost Confidence:</strong> Practice under real test conditions to ensure success.</li>
-        </ul>
-    
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Start Your GMAT Journey with VJC Overseas</h2>
-        <p className="text-black">
-          Enroll today in our GMAT training program and take the first step toward your business school dream. Contact us now!
+
+        <p className="text-lg mt-4 leading-relaxed">
+          Our dedicated <Link href="https://www.vjcoverseas.com/coaching-training/gmat"><span className="text-orange-500 font-bold">GMAT Coaching Services</span></Link> are designed to prepare you with the right strategies, techniques, and practice material so that you can achieve your target score and secure admission to top-ranked international business schools.
         </p>
-    
-        <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Contact Us</h2>
-        <p className="text-gray-600">
-          Phone: +91-9160449000 | Email: info@vjcoverseas.com | Website: www.vjcoverseas.com
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Why Choose VJC Overseas for GMAT Training?</h2>
+        <p className="text-lg leading-relaxed">
+          At <strong className="text-black">VJC Overseas</strong>, we go beyond just classroom learning. Our GMAT training program is carefully curated to match international standards, ensuring you stay ahead in the competitive environment.
         </p>
+        <ul className="list-disc list-inside space-y-2 font-bold text-gray-700">
+          <li><strong className="text-black">Expert Trainers:</strong> Our faculty consists of highly qualified trainers with years of experience in preparing students for the GMAT.</li>
+          <li><strong className="text-black">Comprehensive Study Material:</strong> We provide exclusive resources covering Quantitative, Verbal, Integrated Reasoning, and Analytical Writing, updated regularly.</li>
+          <li><strong className="text-black">Personalized Approach:</strong> Each student has unique strengths and weaknesses, which is why our sessions are customized to suit individual learning styles.</li>
+          <li><strong className="text-black">Real Exam Practice:</strong> Full-length mock tests create a simulated GMAT environment, helping you analyze your progress.</li>
+          <li><strong className="text-black">Flexible Learning Options:</strong> Both online and classroom sessions are available, allowing professionals and students to choose what fits their schedule best.</li>
+        </ul>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">GMAT Training Curriculum: What You Will Learn</h2>
+        <p className="text-lg leading-relaxed">
+          Our <strong className="text-black">GMAT Coaching Services</strong> are structured to cover every aspect of the exam:
+        </p>
+        <ul className="list-disc list-inside space-y-2 font-bold text-gray-700">
+          <li><strong className="text-black">Quantitative Reasoning:</strong> Learn advanced problem-solving, algebra, geometry, and data sufficiency techniques.</li>
+          <li><strong className="text-black">Verbal Reasoning:</strong> Build accuracy in sentence correction, critical reasoning, and reading comprehension.</li>
+          <li><strong className="text-black">Integrated Reasoning:</strong> Develop the skill to analyze charts, tables, and graphs for multi-source reasoning.</li>
+          <li><strong className="text-black">Analytical Writing:</strong> Practice constructing well-structured essays, strengthening argument analysis, and improving clarity in writing.</li>
+        </ul>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Additional Benefits of Training with VJC Overseas</h2>
+        <p className="text-lg leading-relaxed">
+          Apart from structured learning, students also gain access to premium resources, proven test-taking strategies, doubt-clearing sessions, and mentorship. Our extensive <strong className="text-black">Coaching & Training Services</strong> provide support for other exams like GRE, IELTS, TOEFL, and PTE—making <strong className="text-black">VJC Overseas</strong> a one-stop solution for global education needs.
+        </p>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Free Assessment Coaching – Know Where You Stand</h2>
+        <p className="text-lg leading-relaxed">
+          Before starting your GMAT journey, we offer <Link href="https://www.vjcoverseas.com/coaching-training"><span className="text-orange-500 font-bold">Free Assessment Coaching</span></Link> sessions to evaluate your current level. This helps us identify your strengths, weaknesses, and readiness for the exam. Based on this assessment, our experts guide you with a personalized study plan to maximize your score.
+        </p>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Start Your GMAT Journey with VJC Overseas</h2>
+        <p className="text-lg leading-relaxed">
+          Choosing the right training partner makes all the difference. With <strong className="text-black">VJC Overseas</strong>, you don’t just prepare for an exam—you prepare for success. From expert mentorship to structured test preparation, our GMAT program has helped countless students secure admission into world-renowned business schools.
+        </p>
+
+        <p className="text-lg leading-relaxed">
+          Take the first step toward your international MBA dream today. Enroll in our GMAT program and experience why we are recognized as one of the <Link href="https://www.vjcoverseas.com"><span className="text-orange-500 font-bold">Best Visa Immigration Consultants</span></Link>.
+        </p>
+
+       
       </div>
     </div>
   );
-  
-  
-  
 };
 
 export default BusinessVisaContent;

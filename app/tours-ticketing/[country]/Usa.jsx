@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
 
 const USATour = () => {
   return (
@@ -27,14 +28,18 @@ const USATour = () => {
         </div>
         <div className="md:w-1/2 text-justify">
           <p>
-            Planning to visit the United States for a vacation, family trip, or an adventure of a lifetime? The USA is home to some of the world’s most iconic destinations – from New York’s towering skyline to the natural beauty of the Grand Canyon, the magic of Disney World, and the charm of San Francisco. At <span className="text-orange-500">VJC Overseas</span>, we simplify the USA tourist visa process and offer affordable USA tour packages to make your journey memorable and stress-free.
+            Planning to visit the United States for a vacation, family trip, or an adventure of a lifetime? The USA is home to some of the world’s most iconic destinations – from New York’s towering skyline to the natural beauty of the Grand Canyon, the magic of Disney World, and the charm of San Francisco. At <strong className="text-black font-semi bold">VJC Overseas</strong>, we simplify the USA tourist visa process and offer affordable USA tour packages to make your journey memorable and stress-free.
           </p>
           <p>
-            As a trusted immigration consultancy, we specialize in helping individuals and families obtain their B-2 tourist
+            As one of the <Link href="https://www.vjcoverseas.com" className="text-orange-500 font-bold">Best Visa Immigration Consultants</Link> in India, we not only assist with the visa but also take care of complete travel arrangements. Our services include ticket booking, hotel reservations, customized itineraries, and guided tours across the U.S., making your travel hassle-free.
           </p>
         </div>
       </div>
-      <p> visa for the USA while providing budget-friendly travel solutions that include flights, accommodation, and sightseeing itineraries.</p>
+
+      <p>
+        Visa for the USA while providing budget-friendly travel solutions that include flights, accommodation, and sightseeing itineraries.
+      </p>
+
       <h2 className="text-xl mt-4 font-semibold text-[#B22234]">
         Understanding the USA Tourist Visa (B-2 Visa)
       </h2>
@@ -56,7 +61,7 @@ const USATour = () => {
         <li>Invitation letter (if visiting family/friends)</li>
       </ul>
       <p>
-        At <span className="text-orange-500">VJC Overseas</span>, we provide complete support in preparing all documents, filling forms accurately, and getting ready for the visa interview.
+        At <strong className="text-black">VJC Overseas</strong>, our expert team provides complete support in preparing your documents, ensuring error-free forms, and preparing you for the visa interview.
       </p>
 
       <h2 className="text-xl mt-4 font-semibold text-[#B22234]">
@@ -64,48 +69,63 @@ const USATour = () => {
       </h2>
       <ul className="list-disc list-inside space-y-1">
         <li>Free Initial Consultation – Understanding your travel goals</li>
-        <li>Form DS-160 Assistance – Error-free and complete submission</li>
-        <li>Visa Fee & Appointment Scheduling – We guide you through the payment and booking</li>
-        <li>Document Checklist – Personalized list as per your profile</li>
-        <li>Mock Interview Training – Confidence-building sessions for your US Consulate interview</li>
-        <li>Status Tracking & Final Updates – Stay informed at every step</li>
+        <li>Form DS-160 Assistance – Accurate and complete submission</li>
+        <li>Visa Fee & Appointment Scheduling – Guidance through payments and bookings</li>
+        <li>Document Checklist – Personalized requirements based on your profile</li>
+        <li>Mock Interview Training – Confidence-building practice for the U.S. Consulate interview</li>
+        <li>Status Tracking & Updates – Stay informed at every stage</li>
       </ul>
       <p>
-        With years of expertise, we ensure a high success rate for B-2 visa applications.
+        With years of expertise as trusted <Link href="https://www.vjcoverseas.com/visit-visas" className="text-orange-500 font-bold">Visit Visa Consultants</Link>, we ensure a high success rate for U.S. tourist visa applications.
       </p>
 
       <h2 className="text-xl mt-4 font-semibold text-[#B22234]">
-        Affordable USA Tour Packages – Tailored for Your Budget
+        Affordable USA Tour Packages – Tailored for Every Traveler
       </h2>
-      <p>We don’t just help you get your visa; we plan your trip too! Our affordable USA tour packages are designed to match your budget and travel preferences.</p>
+      <p>
+        We don’t just help you get your visa; we make sure your entire journey is comfortable. Through our dedicated <Link href="https://www.vjcoverseas.com/tours-ticketing" className="text-orange-500 font-bold">Tours and Ticketing Services</Link>, we arrange flights, accommodations, and curated travel experiences.
+      </p>
       <ul className="list-disc list-inside space-y-1">
         <li>Round-trip flights and airport transfers</li>
-        <li>3-star and 4-star hotel bookings</li>
-        <li>Sightseeing tours in cities like New York, Las Vegas, Los Angeles, Washington DC</li>
-        <li>Theme park entries (Disneyland, Universal Studios, etc.)</li>
-        <li>Customized itinerary planning</li>
-        <li>Travel insurance and forex assistance</li>
+        <li>3-star & 4-star hotel accommodations</li>
+        <li>Sightseeing tours in iconic cities like Los Angeles, Las Vegas, and Washington DC</li>
+        <li>Theme park entries (Disneyland, Universal Studios, SeaWorld)</li>
+        <li>Travel insurance & forex assistance</li>
+        <li>Customized itineraries for solo travelers, families, and groups</li>
       </ul>
       <p>
-        Whether you’re traveling solo, with family, or in a group, we ensure your US travel experience is smooth, comfortable, and cost-effective.
+        One of the most popular experiences is <Link href="https://www.vjcoverseas.com/tours-ticketing/usa" className="text-orange-500 font-bold">New York City Sightseeing</Link>, where travelers can explore the Statue of Liberty, Times Square, Central Park, and world-class museums. Our team ensures that you don’t miss any of the must-visit attractions across the U.S.
       </p>
 
       <h2 className="text-xl mt-4 font-semibold text-[#B22234]">
-        Why Choose <span className="text-orange-500">VJC Overseas</span>?
+        Why Choose <strong className="text-black">VJC Overseas</strong>?
       </h2>
       <ul className="list-disc list-inside space-y-1">
-        <li>Expert USA visa consultants with high approval rates</li>
-        <li>Affordable, transparent tour packages</li>
-        <li>End-to-end support: Visa + Flights + Hotels + Tours</li>
-        <li>Personalized service for every traveler</li>
-        <li>Proven track record with happy clients across India</li>
+        <li>Recognized among the <strong className="text-black">Best Visa Immigration Consultants</strong> in India</li>
+        <li>Complete end-to-end assistance: visa, flights, hotels, and guided tours</li>
+        <li>Affordable and transparent pricing for all packages</li>
+        <li>Expert guidance from seasoned professionals</li>
+        <li>Proven track record of successful U.S. visa approvals</li>
+        <li>Personalized service tailored to your travel needs</li>
       </ul>
 
       <h2 className="text-xl mt-4 font-semibold text-[#B22234]">
         Ready to Explore America?
       </h2>
+      import Link from "next/link";
+
+<p>
+  Make your dream of visiting the USA a reality with{" "}
+  <Link href="https://www.vjcoverseas.com">
+    <span className="text-orange-500 font-bold">VJC Overseas</span>
+  </Link>
+  . From guiding you through the USA tourist visa process to designing
+  budget-friendly travel packages, we are your trusted travel and immigration
+  partner.
+</p>
+
       <p>
-        Make your dream of visiting the USA a reality with <span className="text-orange-500">VJC Overseas</span>. From guiding you through the USA tourist visa process to curating budget-friendly USA travel packages, we are your trusted partner for a successful and joyful journey.
+        Whether it’s a family vacation, business visit, or leisure holiday, we ensure you enjoy a seamless travel experience. Contact us today to start planning your U.S. trip with confidence and expert guidance.
       </p>
       <p className="font-medium text-orange-600">
         Contact us today to start your USA travel plan with expert guidance and great savings!

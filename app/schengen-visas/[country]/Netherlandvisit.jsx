@@ -1,109 +1,168 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
-  title: "Netherlands Tourist Visa from India – Apply with VJC Overseas",
-  description: "Planning a trip to the Netherlands? Apply for your Netherlands Tourist Visa with VJC Overseas. Expert guidance, fast processing & complete documentation support.",
+  title: "Malta Tourist Visa for Indian Nationals – Requirements, Fees & Top Attractions",
+  description: "Planning a trip to Malta from India? Learn about Malta tourist visa requirements, fees, documentation, and must-see attractions like Valletta, Gozo, and St. John's Co-Cathedral.",
 };
 
-export default function NetherlandsTouristVisa() {
+export default function MaltaTouristVisa() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
       
       {/* Heading */}
       <h1 className="flex flex-col items-center text-lg sm:text-2xl md:text-2xl font-bold mb-6 text-center">
-        <span>Explore the Netherlands with a Tourist Visa – <span className="text-orange-500">VJC Overseas</span></span>
+        <span>Explore Malta with a Tourist Visa – <span className="text-orange-500 font-bold">VJC Overseas</span></span>
       </h1>
 
       {/* Introduction Section */}
       <div className="grid md:grid-cols-2 gap-10 items-center">
         {/* Left Text */}
         <div>
-          <h2 className="text-xl font-bold mt-4 mb-2">Discover the Charm of the Netherlands</h2>
+          <h2 className="text-xl font-bold mt-4 mb-2">Discover the Magic of Malta</h2>
           <p className="mb-6">
-            The Netherlands, often referred to as Holland, is a captivating country in Western Europe known for its picturesque canals, iconic windmills, vibrant tulip fields, and rich cultural heritage.
+            Malta, an enchanting Mediterranean archipelago, beckons travellers
+            with its rich history, stunning landscapes, and vibrant culture. As
+            a member of the{" "}
+            <Link
+              href="https://www.vjcoverseas.com/schengen-visas"
+              className="text-orange-500 font-bold"
+            >
+              Schengen Visit Visa
+            </Link>{" "}
+            area, Malta offers Indian nationals the opportunity to explore its treasures with a short-stay Schengen visa. Known for its warm climate, crystal-clear waters, and UNESCO World Heritage sites, Malta is a must-visit for travellers across the globe.
           </p>
         </div>
-         
+
         {/* Right Image */}
         <div className="flex justify-center">
           <Image
-            src="/netherlandtouristcontent.png" // Make sure this is added to your /public folder
-            alt="Netherlands Tourist Attractions"
+            src="/maltatouristcontent.jpg"
+            alt="Neatherland Tourist Attractions"
             width={500}
             height={700}
-            className="object-cover  shadow-lg"
+            className="object-cover shadow-lg"
             unoptimized
           />
         </div>
       </div>
-      <p className="-mt-4"> From the art-filled streets of Amsterdam to the medieval charm of Utrecht and the coastal beauty of The Hague, the Netherlands is a top destination for travellers seeking a perfect blend of history, modernity, and natural beauty.</p>
-      {/* Visa Overview */}
-      <h2 className="text-xl font-semibold mt-4 mb-2">Netherlands Tourist Visa (Schengen Visa) – At a Glance</h2>
-      <p className="mb-6">
-        If you're planning a short-term visit to explore the Netherlands for tourism, sightseeing, or visiting family or friends, you’ll need to apply for a Netherlands Schengen Tourist Visa. This visa allows non-EU citizens to travel across all 27 Schengen countries, including the Netherlands.
+
+      <p className="-mt-4">
+        From the historic streets of Valletta to the serene landscapes of Gozo and the stunning interiors of St. John's Co-Cathedral, Malta is a top destination for travellers seeking a perfect blend of history, culture, and Mediterranean beauty.
+      </p>
+
+      {/* Visa Requirements */}
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Malta Tourist Visa Requirements</h2>
+      <ul className="list-disc list-inside mb-6">
+        <li>Valid Passport (at least two blank pages, valid three months beyond departure)</li>
+        <li>Completed Visa Application Form</li>
+        <li>Recent Passport-sized Photographs (as per Schengen specifications)</li>
+        <li>Travel Itinerary (Flight and hotel bookings)</li>
+        <li>Travel Insurance (Coverage of €30,000 for medical expenses)</li>
+        <li>Proof of Financial Means (Bank statements, pay slips, income tax returns)</li>
+        <li>Cover Letter (Purpose of visit and travel plans)</li>
+        <li>Visa Fee Payment Proof</li>
+      </ul>
+
+      {/* Visa Fees */}
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Malta Tourist Visa Fees</h2>
+      <ul className="list-disc list-inside mb-6">
+        <li>Standard Schengen Visa Fee: €80 (~₹7,200)</li>
+      </ul>
+      <p className="italic mb-6">
+        Note: Additional service charges may apply when applying through a visa application centre.
       </p>
 
       {/* Visa Validity */}
-      <h2 className="text-xl font-semibold mt-4 mb-2"> Visa Validity</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Visa Validity</h2>
       <p className="mb-6">
-        Short-Stay Visa (Type C): Valid for up to 90 days within a 180-day period. Single-entry / Multiple-entry options available based on purpose and travel history.
+        Malta tourist visas are usually issued for short stays up to 90 days within a 180-day period. The final validity depends on your travel itinerary and supporting documents.
       </p>
 
-      {/* Visa Fees */}
-      <h2 className="text-xl font-semibold mt-4 mb-2"> Netherlands Visa Fees</h2>
+      {/* Top Attractions */}
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Must-See Attractions in Malta</h2>
       <ul className="list-disc list-inside mb-6">
-        <li><strong>Adults (12 years and above):</strong> €80 (~₹7,200)</li>
-        <li><strong>Children (6-11 years):</strong> €40 (~₹3,600)</li>
-        <li><strong>Children below 6:</strong> Free</li>
-      </ul>
-      <p className="mb-6 italic">Note: VFS service charges and courier fees may apply additionally.</p>
-
-    
-      <h2 className="text-xl font-semibold mt-4 mb-2"> Required Documents for Netherlands Tourist Visa</h2>
-      <ul className="list-disc list-inside mb-6">
-        <li>Valid Passport (Minimum 3 months validity beyond return date, at least 2 blank pages)</li>
-        <li>Visa Application Form (Duly filled and signed)</li>
-        <li>Recent Passport-size Photos (White background, as per Schengen standards)</li>
-        <li>Travel Itinerary (Flight reservations and hotel bookings)</li>
-        <li>Travel Insurance (Minimum €30,000 coverage for medical emergencies)</li>
-        <li>Proof of Financial Means (Bank statements for last 3–6 months, ITR, or sponsorship letter)</li>
-        <li>Cover Letter (Explaining the purpose of visit)</li>
-        <li>Proof of Employment / Business / Studies</li>
-        <li>NOC from Employer/Institute, if applicable</li>
-        <li><em>Additional documents may be required based on personal circumstances.</em></li>
+        <li><strong>Valletta:</strong> UNESCO World Heritage capital with Baroque architecture, Grand Master's Palace, and National Museum of Archaeology.</li>
+        <li><strong>Gozo Island:</strong> Scenic countryside and Ġgantija Temples, older than the pyramids of Egypt.</li>
+        <li><strong>St. John's Co-Cathedral:</strong> Stunning Baroque interior featuring works by Caravaggio.</li>
+        <li><strong>Mdina:</strong> The medieval "Silent City" offering panoramic views and ancient architecture.</li>
+        <li><strong>St. Paul's Catacombs:</strong> Early Christian underground burial site located in Rabat.</li>
       </ul>
 
-      {/* Top Places to Visit */}
-      <h2 className="text-xl font-semibold mt-4 mb-2"> Top Places to Visit in the Netherlands</h2>
+      {/* Travel Tips */}
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Travel Tips for Indian Tourists</h2>
       <ul className="list-disc list-inside mb-6">
-        <li><strong>Amsterdam:</strong> Explore the world-famous canals, Rijksmuseum, Anne Frank House, and Van Gogh Museum.</li>
-        <li><strong>Keukenhof Gardens:</strong> A springtime paradise of over 7 million tulips in bloom.</li>
-        <li><strong>Zaanse Schans:</strong> Traditional windmills, wooden houses, and Dutch cheese factories.</li>
-        <li><strong>Rotterdam:</strong> Known for its futuristic architecture and vibrant nightlife.</li>
-        <li><strong>Giethoorn:</strong> A fairytale village with no roads, just canals!</li>
-        <li><strong>The Hague:</strong> Home to the Dutch Royal Family and the International Court of Justice.</li>
-        <li><strong>Utrecht:</strong> A medieval city with unique canal wharves and gothic architecture.</li>
-        <li><strong>Maastricht:</strong> A charming town with cobbled streets and Roman ruins.</li>
+        <li><strong>Best Time to Visit:</strong> April to June and September to October</li>
+        <li><strong>Currency:</strong> Euro (€)</li>
+        <li><strong>Language:</strong> Maltese and English</li>
+        <li><strong>Transportation:</strong> Public buses and taxis are widely available</li>
       </ul>
 
       {/* Why Choose */}
-      <h2 className="text-xl font-semibold mt-4 mb-2"> Why Choose VJC Overseas for Your Netherlands Visa?</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2"> Why Choose VJC Overseas for Your Malta Visa?</h2>
       <ul className="list-disc list-inside mb-6">
-        <li> Expert Visa Assistance</li>
-        <li> End-to-End Documentation Support</li>
-        <li> Visa Interview Guidance</li>
-        <li> Proven Track Record with High Approval Rates</li>
-        <li> Transparent Process & Timely Updates</li>
+        <li> Expert Guidance and Personalized Assistance</li>
+        <li> Complete Documentation Support</li>
+        <li> High Success Rate with Fast Processing</li>
+        <li> Transparent Fees and No Hidden Charges</li>
       </ul>
 
+      {/* Additional Keywords in content with internal linking */}
+      <p className="mb-6">
+        When it comes to international travel, working with{" "}
+        <Link
+          href="https://www.vjcoverseas.com/"
+          className="text-orange-500 font-bold"
+        >
+          Best Visa Immigration Consultants
+        </Link>{" "}
+        ensures a smooth visa application experience.
+      </p>
+
+      <p className="mb-6">
+        Applying for a Malta Schengen Visa is easier with guidance from{" "}
+        <Link
+          href="https://www.vjcoverseas.com/schengen-visas/malta"
+          className="text-orange-500 font-bold"
+        >
+          Malta Schengen Visa
+        </Link>
+        .
+      </p>
+
+      <p className="mb-6">
+        Follow the{" "}
+        <Link
+          href="https://www.vjcoverseas.com/visit-visas"
+          className="text-orange-500 font-bold"
+        >
+          Visit Visa Services
+        </Link>{" "}
+        process to ensure all documents are properly prepared.
+      </p>
+
       {/* Contact CTA */}
-      <p className="text-lg font-semibold text-orange-600 mt-6">
-        📞 Contact Us Today!
+      <p className="text-lg font-semibold text-black mt-6">
+         Contact Us Today!
       </p>
       <p className="mt-4">
-        Start your Netherlands tourist visa process now with <span className="text-orange-500 font-bold">VJC Overseas</span>. Our expert team is ready to assist you every step of the way.
+  Start your Malta tourist visa application with <strong className="text-black font-bold">VJC Overseas</strong>. Let our experienced team make your dream Mediterranean trip a reality.
+</p>
+
+
+      {/* Summary CTA */}
+      <p className="mt-6">
+        With the right support, your dream of exploring Malta and Europe
+        can become a reality. Begin your application today with{" "}
+        <Link
+          href="https://www.vjcoverseas.com/"
+          className="text-orange-500 font-bold"
+        >
+          VJC Overseas
+        </Link>{" "}
+        – your trusted partner for global travel.
       </p>
 
     </div>

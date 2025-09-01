@@ -1,96 +1,121 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
 
 const LithuaniaTouristVisa = () => {
   return (
     <div className="text-black px-4 sm:px-8 py-8 max-w-5xl mx-auto">
-      <h1 className="text-2xl font-bold mb-6">Lithuania Visit/Tourist Visa – Your Complete Guide to Exploring Lithuania</h1>
+      <h1 className="text-2xl font-bold mb-6">
+        Lithuania Visit/Tourist Visa – Your Complete Guide to Exploring Lithuania
+      </h1>
 
       <p className="mb-4">
         Are you dreaming of exploring the beautiful landscapes, rich culture, and historical landmarks of Lithuania?
         Whether you're planning a short vacation, sightseeing tour, or family trip, obtaining a Lithuania Visit/Tourist Visa is the first step to making your dream a reality.
-        <strong> VJC Overseas</strong> offers expert visa services to ensure your travel plans go smoothly.
+        <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold"> VJC Overseas</Link> offers expert visa services to ensure your travel plans go smoothly.
         Here’s everything you need to know about the Lithuania Visit/Tourist Visa.
+      </p>
+
+      <p className="mb-4">
+        Are you planning a trip to the Baltic gem of Europe? Lithuania, with its charming old towns, stunning natural beauty, and vibrant culture, is a destination worth exploring. 
+        From the cobbled streets of Vilnius to the UNESCO-protected Curonian Spit, the country offers unforgettable experiences for travelers. 
+        To make your trip hassle-free, obtaining the right visa is essential. At <strong>VJC Overseas</strong>, we guide you step by step in applying for a Lithuania Visit/Tourist Visa so you can enjoy a smooth journey.
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-3">What is the Lithuania Visit/Tourist Visa?</h2>
       <div className="flex flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
-                                                                      
-                                                                        <div className="flex-shrink-0 mx-auto lg:mx-0">
-                                                                          <Image
-                                                                            src="/lithunatimg.jpg"
-                                                                            alt="Image description"
-                                                                            width={500} // Replace with your image's actual width
-                                                                            height={300}
-                                                                            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg" 
-                                                                            unoptimized
-                                                                          />
-                                                                        </div>
-      <p className="mb-4">
-        The Lithuania Visit/Tourist Visa is a short-term Schengen visa that allows you to travel to Lithuania for tourism, leisure, or business purposes.
-        This visa permits stays of up to 90 days within a 180-day period in Lithuania and other Schengen Area countries.
-        Whether you want to admire the medieval architecture of Vilnius or experience the scenic beauty of Curonian 
-      </p>
+        <div className="flex-shrink-0 mx-auto lg:mx-0">
+          <Image
+            src="/lithunatimg.jpg"
+            alt="Lithuania Tourist Visa"
+            width={500}
+            height={300}
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-80 lg:h-70 object-contain shadow-lg rounded-lg"
+            unoptimized
+          />
+        </div>
+        <p className="mb-4">
+          The Lithuania Visit/Tourist Visa is a short-term Schengen visa that allows you to travel to Lithuania for tourism, leisure, or business purposes.
+          This visa permits stays of up to 90 days within a 180-day period in Lithuania and other Schengen Area countries.
+          Whether you want to admire the medieval architecture of Vilnius or experience the scenic beauty of Curonian Spit, this visa is your gateway.
+        </p>
       </div>
-      <p>Spit, the Lithuania tourist visa is your gateway to a memorable European experience.</p>
+
+      <p className="mb-4">
+        Valid for up to 90 days within a 180-day period, this visa also grants entry into other Schengen countries, giving you the freedom to explore more than just one nation. 
+        With a <Link href="https://www.vjcoverseas.com/schengen-visas" className="text-orange-500 font-bold">Schengen Visit Visa</Link>, you can experience a multi-country European holiday while making Lithuania your main destination. 
+        For travelers whose primary goal is to explore Lithuania, applying specifically for the <Link href="https://www.vjcoverseas.com/schengen-visas/lithuania" className="text-orange-500 font-bold">Lithuania Schengen Visa</Link> ensures a streamlined process.
+      </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-3">Lithuania Visit/Tourist Visa Validity</h2>
-      <p className="mb-2"><strong>Duration of Stay:</strong> The Lithuania Visit Visa allows you to stay for up to 90 days within a 180-day period. This is typically granted as a single-entry or multiple-entry visa, depending on your travel needs.</p>
-      <p className="mb-4"><strong>Multiple-Entry Visa:</strong> If you plan to travel frequently to Lithuania or other Schengen countries, a multiple-entry visa can be granted, allowing you to re-enter the Schengen Area multiple times during its validity.</p>
+      <p className="mb-2"><strong>Duration of Stay:</strong> The Lithuania Visit Visa allows you to stay for up to 90 days within a 180-day period.</p>
+      <p className="mb-4"><strong>Multiple-Entry Visa:</strong> If you plan to travel frequently to Lithuania or other Schengen countries, a multiple-entry visa can be granted.</p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-3">Documents Required for Lithuania Visit/Tourist Visa</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-3">Eligibility Criteria</h2>
       <ul className="list-disc list-inside space-y-2 mb-4">
-        <li><strong>Visa Application Form:</strong> Complete the standard Schengen visa application form. Ensure all details are accurate.</li>
-        <li><strong>Passport:</strong> Your passport must be valid for at least 3 months beyond your planned departure from Lithuania. It should also have at least two blank pages.</li>
-        <li><strong>Passport-Sized Photographs:</strong> Two recent passport-sized color photographs (meet the Schengen visa photo requirements).</li>
-        <li><strong>Travel Itinerary:</strong> A detailed itinerary of your travel plans, including flight reservations and hotel bookings.</li>
-        <li><strong>Travel Insurance:</strong> Proof of valid Schengen travel insurance with coverage of at least €30,000 for medical emergencies.</li>
-        <li><strong>Proof of Accommodation:</strong> Hotel bookings, rental agreements, or an invitation letter from a host in Lithuania.</li>
-        <li><strong>Proof of Funds:</strong> Bank statements for the last three months showing sufficient funds to cover your stay in Lithuania (around €50 per day).</li>
-        <li><strong>Return Ticket:</strong> A confirmed return flight ticket to your home country.</li>
-        <li><strong>Visa Fee:</strong> Payment of the applicable visa fee (varies based on nationality and visa type).</li>
+        <li>Valid passport (3 months beyond intended stay).</li>
+        <li>Proof of accommodation and travel insurance.</li>
+        <li>Proof of sufficient funds.</li>
+        <li>Clean visa and travel history.</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6 mb-3">Lithuania Visit/Tourist Visa Eligibility Criteria</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-3">Required Documents</h2>
+      <p className="mb-4">
+        When applying with <Link href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">Best Visa Immigration Consultants</Link>, preparing the right documents is crucial:
+      </p>
       <ul className="list-disc list-inside space-y-2 mb-4">
-        <li><strong>Nationality:</strong> Applicants must be nationals of countries outside the Schengen Area, requiring a visa to enter Lithuania.</li>
-        <li><strong>Purpose of Travel:</strong> You must be traveling for tourism, leisure, or business purposes.</li>
-        <li><strong>Valid Passport:</strong> Your passport must meet the validity requirements as specified above.</li>
-        <li><strong>No Criminal Record:</strong> Applicants should not have any criminal records or be involved in any activities that may lead to visa denial.</li>
+        <li>Completed Schengen visa application form.</li>
+        <li>Valid passport with at least two blank pages.</li>
+        <li>Two recent passport-sized photos.</li>
+        <li>Confirmed travel itinerary (flights + accommodation).</li>
+        <li>Proof of accommodation or host invitation.</li>
+        <li>Travel insurance with €30,000 coverage.</li>
+        <li>Proof of funds (bank statements, income slips).</li>
+        <li>Return flight ticket.</li>
+        <li>Visa fee payment.</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6 mb-3">How to Apply for Lithuania Visit/Tourist Visa?</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-3">Application Process</h2>
       <ol className="list-decimal list-inside space-y-2 mb-4">
-        <li><strong>Fill Out the Application Form:</strong> Complete the visa application form accurately and make sure to attach all required documents.</li>
-        <li><strong>Schedule an Appointment:</strong> Book an appointment at the nearest Lithuanian embassy or consulate.</li>
-        <li><strong>Attend the Visa Interview:</strong> Submit your documents and attend a visa interview if required. During the interview, you may be asked about the purpose of your visit, travel plans, and financial stability.</li>
-        <li><strong>Pay the Visa Fee:</strong> Pay the visa processing fee and any additional service charges.</li>
-        <li><strong>Wait for Visa Processing:</strong> Visa processing usually takes 7 to 15 business days. It may take longer if additional documents or information are required.</li>
-        <li><strong>Receive Your Visa:</strong> Once approved, you will receive your Lithuania Visit/Tourist Visa, allowing you to explore the country for up to 90 days.</li>
+        <li>Fill in the visa application form carefully.</li>
+        <li>Collect and prepare all required documents.</li>
+        <li>Schedule an appointment at the Lithuanian embassy.</li>
+        <li>Submit documents, provide biometric data.</li>
+        <li>Pay the visa processing fee.</li>
+        <li>Wait 7–15 working days for decision.</li>
       </ol>
 
-      <h2 className="text-xl font-semibold mt-6 mb-3">Tips for a Smooth Lithuania Tourist Visa Application</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-3">Tips for a Smooth Application</h2>
       <ul className="list-disc list-inside space-y-2 mb-4">
-        <li><strong>Apply in Advance:</strong> It’s recommended to apply for your Lithuania tourist visa at least 15 days before your planned departure, but no more than 6 months in advance.</li>
-        <li><strong>Provide Accurate Information:</strong> Double-check the accuracy of your documents, as errors or inconsistencies can delay the process.</li>
-        <li><strong>Travel Insurance is a Must:</strong> Ensure your travel insurance meets Schengen requirements to avoid delays in the visa approval process.</li>
-        <li><strong>Stay Within Visa Limits:</strong> Make sure you comply with the 90 days within 180 days rule. Overstaying your visa can result in fines, deportation, and a ban from future visits.</li>
+        <li>Apply early (at least 15 days before travel).</li>
+        <li>Check documents for accuracy.</li>
+        <li>Ensure Schengen-compliant travel insurance.</li>
+        <li>Proof of funds should clearly show financial stability.</li>
+        <li>Avoid overstays to prevent bans.</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6 mb-3">Why Choose VJC Overseas for Your Lithuania Tourist Visa?</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-3">Why Choose Us?</h2>
+      <p className="mb-4">
+        At <strong>VJC Overseas</strong>, we make visa applications simple and stress-free. Our expert visa consultants are experienced in handling complex applications, ensuring accuracy and fast results.
+        We also provide guidance on <Link href="https://www.vjcoverseas.com/work-abroad" className="text-orange-500 font-bold">Work Abroad Opportunities</Link> and other pathways for global travel.
+      </p>
+
       <ul className="list-disc list-inside space-y-2 mb-4">
-        <li><strong>Expert Guidance:</strong> Our experienced visa consultants guide you through every step of the application process, ensuring all paperwork is in order.</li>
-        <li><strong>Quick and Easy Application:</strong> We make your visa application hassle-free with our streamlined service, helping you get your visa quickly and without stress.</li>
-        <li><strong>Personalized Assistance:</strong> Every applicant is unique, and we provide tailored services to meet your specific needs.</li>
-        <li><strong>Track Your Application:</strong> Stay informed with real-time updates about your application status.</li>
+        <li>Expert consultants with years of experience.</li>
+        <li>Accurate documentation to reduce rejections.</li>
+        <li>Fast and reliable processing.</li>
+        <li>Personalized assistance for each applicant.</li>
       </ul>
 
       <h2 className="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
       <p className="mb-4">
-        Getting a Lithuania Visit/Tourist Visa doesn’t have to be complicated. With <strong>VJC Overseas</strong>, you can rest assured that your visa application will be handled efficiently and professionally.
-        Whether you're going for a short vacation or a longer exploration of Lithuania, our team will make sure you have all the necessary documents and information to ensure a successful application.
+       Applying for a Lithuania Visit/Tourist Visa doesn’t have to be overwhelming. With <strong className="text-black font-bold">VJC Overseas</strong>, your application is handled by professionals who ensure every step is clear, accurate, and smooth. Whether you are planning a short vacation, visiting family, or combining your trip with other Schengen countries, we provide complete support to make your journey stress-free.
+       Start your Lithuania adventure today—contact <strong className="text-black font-bold">VJC Overseas</strong> and let us help you secure your visa quickly and confidently.
+</p>
+
+
+      <p className="mb-4 font-semibold">
+        Start your Lithuania adventure today—contact <strong>VJC Overseas</strong> and let us help you secure your visa quickly and confidently!
       </p>
-      <p className="mb-4 font-semibold">Ready to start your journey? Contact VJC Overseas today and let us help you plan your Lithuania adventure!</p>
     </div>
   );
 };

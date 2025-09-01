@@ -53,8 +53,63 @@ export default function ServicesCTA() {
   ];
 
   return (
-    <section className="bg-white py-6 sm:py-10 px-6 sm:px-12 -mb-0">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start -mt-10">
+    <section className="bg-white py-6 sm:py-10 px-6 sm:px-12 -mt-8">
+      <div className="max-w-6xl mx-auto space-y-6 mb-10">
+        {/* Top SEO paragraphs */}
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-lg text-gray-700"
+        >
+          Choosing the{" "}
+          <Link
+            href="https://www.vjcoverseas.com"
+            className="text-blue-600 font-semibold hover:text-orange-500"
+          >
+            Best Visa Immigration Consultants
+          </Link>{" "}
+          ensures that your application process is handled professionally,
+          increasing your chances of success whether you are moving for studies,
+          work, or permanent residency.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-lg text-gray-700"
+        >
+          With decades of trusted service,{" "}
+          <Link
+            href="https://www.vjcoverseas.com"
+            className="text-blue-600 font-semibold hover:text-orange-500"
+          >
+            VJC Overseas
+          </Link>{" "}
+          is a leading consultancy providing expert guidance for study abroad,
+          jobseeker visas, and PR visas across top destinations worldwide.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-lg text-gray-700"
+        >
+          Our dedicated{" "}
+          <Link
+            href="https://www.vjcoverseas.com/services"
+            className="text-blue-600 font-semibold hover:text-orange-500"
+          >
+            Immigration Support Services
+          </Link>{" "}
+          include eligibility assessments, documentation review, and visa filing
+          assistance to ensure a smooth and stress-free application process.
+        </motion.p>
+      </div>
+
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start -mt-4">
         {/* Left Side - Form */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -86,7 +141,62 @@ export default function ServicesCTA() {
         </div>
       </div>
 
-      {/* CTA Section */}
+     
+
+      {/* Bottom SEO paragraphs */}
+      <div className="max-w-6xl mx-auto space-y-6 mt-10">
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-lg text-gray-700"
+        >
+          Our{" "}
+          <Link
+            href="https://www.vjcoverseas.com/visit-visas"
+            className="text-blue-600 font-semibold hover:text-orange-500"
+          >
+            Visit Visa Consultants
+          </Link>{" "}
+          provide specialized support for travelers, tourists, and families
+          planning short-term stays across multiple destinations.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-lg text-gray-700"
+        >
+          Alongside visa guidance, we also offer{" "}
+          <Link
+            href="https://www.vjcoverseas.com/tours-ticketing"
+            className="text-blue-600 font-semibold hover:text-orange-500"
+          >
+            Travel and Tourism Packages
+          </Link>{" "}
+          designed to make your international journeys seamless, affordable, and
+          memorable.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-lg text-gray-700"
+        >
+          For students aspiring to build global careers, our{" "}
+          <Link
+            href="https://www.vjcoverseas.com/study-abroad"
+            className="text-blue-600 font-semibold hover:text-orange-500"
+          >
+            Study Abroad Consultants
+          </Link>{" "}
+          guide you through university selection, admission processes, and visa
+          filing for a smooth education abroad experience.
+        </motion.p>
+      </div>
+       {/* CTA Section */}
       <div className="relative mt-16 rounded-lg overflow-hidden">
         {/* Background and overlay */}
         <div className="absolute inset-0 bg-[url('/studyinuk/c1.png')] bg-cover bg-center">

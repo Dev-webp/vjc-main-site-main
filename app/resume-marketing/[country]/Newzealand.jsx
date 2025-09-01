@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NewZealandResumeServices() {
   return (
@@ -9,22 +10,24 @@ export default function NewZealandResumeServices() {
       </h1>
 
       <p>
-        Welcome to <span className="text-orange-500">VJC Overseas</span>, your trusted partner in navigating career opportunities and marketing your resume for a successful job search in New Zealand. Our specialized resume marketing services are designed to help you stand out and unlock the doors to your dream job in one of the most sought-after work destinations worldwide.
+        Welcome to <strong className="text-black">VJC Overseas</strong>, your trusted partner in navigating career opportunities and marketing your resume for a successful job search in New Zealand. Our specialized <Link href="https://www.vjcoverseas.com/resume-marketing/new-zealand" className="text-orange-500">New-Zealand Resume Marketing Services</Link> are designed to help you stand out and unlock the doors to your dream job in one of the most sought-after work destinations worldwide.
       </p>
-<div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
-                   <Image
-                     src="/resume/resume11.png"
-                     alt="Migrate - Apply Now"
-                     width={900}
-                     height={630}
-                     className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
-                     priority
-                     unoptimized
-                   />
-                 </div>
-      <h2 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">Why Choose <span className="text-orange-500">VJC Overseas</span> for New Zealand Resume Marketing?</h2>
+
+      <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
+        <Image
+          src="/resume/resume11.png"
+          alt="New-Zealand Resume Marketing Services"
+          width={900}
+          height={630}
+          className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
+          priority
+          unoptimized
+        />
+      </div>
+
+      <h2 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">Why Choose <strong className="text-black">VJC Overseas</strong> for New Zealand Resume Marketing?</h2>
       <p>
-        As experts in career services for New Zealand, we understand the nuances of the local job market. From crafting a tailored resume that aligns with New Zealand's job requirements to offering valuable insights into salary structures, living standards, work opportunities, and more, we are here to ensure your success.
+        As experts in career services for New Zealand, we understand the nuances of the local job market. From crafting a tailored resume that aligns with New Zealand's job requirements to offering valuable insights into salary structures, living standards, work opportunities, and more, we are here to ensure your success. Our guidance comes from <Link href="https://www.vjcoverseas.com" className="text-orange-500">Best Visa Immigration Consultants</Link> experience.
       </p>
 
       <h2 className="text-xl mt-4 mb-2 text-black font-semibold">Key Features of Our New Zealand Resume Marketing Services:</h2>
@@ -39,7 +42,7 @@ export default function NewZealandResumeServices() {
       <div>
         <h3 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">In-depth Knowledge of New Zealand’s Salary Structures</h3>
         <p>
-          Understanding salary expectations is crucial for a successful job search. At <span className="text-orange-500">VJC Overseas</span>, we provide accurate and up-to-date insights into the salary structure in New Zealand across various industries. Whether you're in healthcare, engineering, IT, or hospitality, we guide you in setting realistic salary expectations and negotiating your pay package effectively.
+          Understanding salary expectations is crucial for a successful job search. At <strong className="text-black">VJC Overseas</strong>, we provide accurate and up-to-date insights into the salary structure in New Zealand across various industries. Whether you're in healthcare, engineering, IT, or hospitality, we guide you in setting realistic salary expectations and negotiating your pay package effectively. Explore our <Link href="https://www.vjcoverseas.com/resume-marketing" className="text-orange-500">Resume Marketing Services</Link> to maximize results.
         </p>
       </div>
 
@@ -54,7 +57,7 @@ export default function NewZealandResumeServices() {
           <li>Healthcare, education, and public transport systems in New Zealand.</li>
         </ul>
         <p>
-          Our goal is to help you transition smoothly into the New Zealand lifestyle and understand how far your salary can stretch in this beautiful country.
+          Our goal is to help you transition smoothly into the New Zealand lifestyle and understand how far your salary can stretch in this beautiful country. Our team also specializes in <Link href="https://www.vjcoverseas.com/resume-marketing" className="text-orange-500">Professional CV Marketing</Link>.
         </p>
       </div>
 
@@ -71,7 +74,7 @@ export default function NewZealandResumeServices() {
           <li>Finance and Accounting</li>
         </ul>
         <p>
-          We provide job market insights, listing the top in-demand skills in New Zealand, helping you target roles that align with your career aspirations. With our connections and expertise, we’ll guide you through the process of finding work in New Zealand and securing the job you deserve.
+          We provide job market insights, listing the top in-demand skills in New Zealand, helping you target roles that align with your career aspirations.
         </p>
       </div>
 
@@ -82,7 +85,7 @@ export default function NewZealandResumeServices() {
           <li>Healthcare: Access to high-quality healthcare services, with options for public and private health coverage.</li>
           <li>Visa Support: We help you understand the work visa process for New Zealand, ensuring you have the right documentation to live and work legally.</li>
           <li>Superannuation: Get familiar with New Zealand’s pension system and how it benefits your retirement planning.</li>
-          <li>Social security: Enjoy a strong social safety net with support for sickness, disability, and unemployment.</li>
+          <li>Social security: Enjoy a strong social safety net with support for sickness, disability, and unemployment. Learn more about <strong className="text-black">New-Zealand Resume Marketing Services</strong> benefits.</li>
         </ul>
       </div>
 
@@ -96,7 +99,7 @@ export default function NewZealandResumeServices() {
       <div>
         <h2 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">Get Started Today!</h2>
         <p>
-          If you’re ready to take the next step in your career journey and explore the exciting opportunities waiting for you in New Zealand, <span className="text-orange-500">VJC Overseas</span> is here to help. Let our resume marketing services for New Zealand open the doors to your ideal job.
+          If you’re ready to take the next step in your career journey and explore the exciting opportunities waiting for you in New Zealand, <Link href="https://www.vjcoverseas.com" className="text-orange-500">VJC Overseas</Link> is here to help. Let our resume marketing services for New Zealand open the doors to your ideal job.
         </p>
         <p>
           Contact us now to get started with your tailored resume strategy and take advantage of our professional guidance to land your dream job in New Zealand.

@@ -1,72 +1,75 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 const BusinessVisaContent = () => {
   return (
     <div className="w-full flex justify-start px-1 mb-20">
-    <div className="w-full text-black px-1 md:px-16">
-      <h1 className="text-2xl font-bold mb-6 text-center text-black">
-        IELTS Training at <span className="text-orange-500">VJC Overseas</span>: Your Path to Success
-      </h1>
-      
-      <p className="text-lxl leading-relaxed mb-6 mt-10">
-        Welcome to VJC Overseas, where we provide comprehensive IELTS training that ensures you’re fully prepared to achieve your desired score. Whether you’re planning to study abroad, migrate, or enhance your career prospects, our expert IELTS coaching is designed to help you succeed with confidence.
-      </p>
-  
-      <h2 className="text-1xl font-bold mt-8 mb-4 text-orange-600">Why Choose VJC Overseas for Your IELTS Preparation?</h2>
-      <ul className="list-disc list-inside space-y-2 font-bold text-gray-700">
-        <li><strong className="text-orange-600">Personalized IELTS Coaching:</strong> Our certified trainers offer tailored IELTS preparation courses based on your current proficiency level, ensuring maximum improvement.</li>
-        <li><strong className="text-orange-600">Comprehensive IELTS Modules:</strong> We cover all four sections of the IELTS exam – Listening, Reading, Writing, and Speaking – in-depth to ensure a well-rounded preparation.</li>
-        <li><strong className="text-orange-600">Proven Success Rate:</strong> Our students consistently achieve high IELTS band scores, with many surpassing their target goals.</li>
-        <li><strong className="text-orange-600">Flexible Training Options:</strong> Whether you prefer online IELTS training or face-to-face classes, we offer both, allowing you to learn at your convenience.</li>
-        <li><strong className="text-orange-600">Regular Mock Tests:</strong> We conduct regular IELTS mock tests to familiarize you with the exam format, boost your time management skills, and reduce test anxiety.</li>
-      </ul>
-  
-      <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Our IELTS Training Approach</h2>
-      <ul className="list-disc list-inside space-y-2 font-bold text-gray-700">
-        <li><strong className="text-orange-600">Expert IELTS Trainers:</strong> Learn from highly qualified and experienced trainers who know the ins and outs of the IELTS exam.</li>
-        <li><strong className="text-orange-600">Interactive Classes:</strong> Participate in interactive sessions designed to enhance your understanding of exam strategies, improve your English proficiency, and refine your exam-taking skills.</li>
-        <li><strong className="text-orange-600">Real-World Practice:</strong> Our training program includes real-world speaking sessions, writing exercises, and listening practice that mirror the actual IELTS exam.</li>
-        <li><strong className="text-orange-600">Test-Taking Strategies:</strong> Learn essential test-taking strategies that will help you answer questions more effectively and manage your time efficiently during the exam.</li>
-        <li><strong className="text-orange-600">Feedback & Improvement:</strong> Receive constructive feedback on your performance, allowing you to continuously improve your weak areas and build on your strengths.</li>
-      </ul>
-  
-      <h2 className="text-1xl font-bold mt-8 mb-4 text-black">IELTS Training for All Band Scores</h2>
-      <p className="text-gray-600">
-        Whether you're aiming for a 7 band IELTS score or higher, or need a specific score for university admission or visa purposes, we have the expertise to guide you. Our IELTS trainers will work with you to create a study plan that helps you achieve your target IELTS band score.
-      </p>
-  
-      <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Online IELTS Training: Flexibility at Its Best</h2>
-      <p className="text-gray-600">
-        In today’s fast-paced world, flexibility is key. Our online IELTS coaching gives you the convenience to study from anywhere, at any time. With our virtual IELTS training platform, you can:
-      </p>
-      <ul className="list-disc list-inside space-y-2 font-bold text-gray-700">
-        <li>Access study materials, practice tests, and video lessons.</li>
-        <li>Participate in live interactive sessions with our experienced trainers.</li>
-        <li>Get personalized feedback on your progress, just like in our physical classrooms.</li>
-      </ul>
-  
-      <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Key Benefits of Choosing VJC Overseas for IELTS Preparation:</h2>
-      <ul className="list-disc list-inside space-y-2 font-bold text-gray-700">
-        <li><strong>Expert Trainers with In-Depth Knowledge:</strong> Our IELTS experts are highly trained, with years of experience in the field.</li>
-        <li><strong>Affordable IELTS Coaching:</strong> We offer competitive pricing for our high-quality IELTS coaching programs.</li>
-        <li><strong>Focus on Your Weaknesses:</strong> We pinpoint your weaknesses and provide targeted support to ensure you improve in all areas.</li>
-        <li><strong>Proven Results:</strong> Our track record of students achieving higher IELTS band scores speaks for itself.</li>
-      </ul>
-  
-      <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Start Your IELTS Journey Today!</h2>
-      <p className="text-black">
-        Take the first step towards IELTS success and study abroad with VJC Overseas. Our comprehensive IELTS training program is the key to unlocking your future. Contact us today to book your free consultation or join one of our upcoming IELTS coaching batches.
-      </p>
-  
-      <h2 className="text-1xl font-bold mt-8 mb-4 text-black">Contact Us</h2>
-      <p className="text-gray-600">
-        Phone: +91-9160449000 | Email: info@vjcoverseas.com | Website: www.vjcoverseas.com
-      </p>
+      <div className="w-full text-black px-1 md:px-16">
+
+        <h1 className="text-2xl font-bold mb-6 text-center text-black">
+          IELTS Training at <span className="text-orange-500">VJC Overseas</span>: Your Path to Success
+        </h1>
+
+        <p className="text-lg leading-relaxed mb-6 mt-10">
+          Welcome to <span className="font-bold text-black">VJC Overseas</span>, where we provide comprehensive IELTS training that ensures you’re fully prepared to achieve your desired score. Whether you’re planning to study abroad, migrate, or enhance your career prospects, our expert IELTS coaching is designed to help you succeed with confidence.
+        </p>
+
+        <p className="text-lg mt-4 leading-relaxed">
+          If you are searching for the <Link href="https://www.vjcoverseas.com"><span className="text-orange-500">Best Visa Immigration Consultants</span></Link> who also provide expert IELTS training, <span className="font-bold text-black">VJC Overseas</span> is your trusted partner. We not only help you prepare for the exam but also guide you through your overall study abroad and immigration journey.
+        </p>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Why Choose VJC Overseas for IELTS Preparation?</h2>
+        <ul className="list-disc list-inside space-y-2 text-gray-700">
+          <p className="text-lg mt-4 leading-relaxed">
+            Our IELTS coaching is a part of our broader <Link href="https://www.vjcoverseas.com/coaching-training"><span className="text-orange-500">Coaching & Training Services</span></Link> that support candidates with step-by-step learning. Whether you aim to study, work, or migrate, our approach ensures that your IELTS training aligns with your long-term goals.
+          </p>
+
+          <li>
+            <strong className="text-black font-bold">Personalized Coaching Plans:</strong> Tailored lessons based on your current English proficiency level.
+          </li>
+          <li>
+            <strong className="text-black font-bold">Comprehensive Modules:</strong> Detailed practice across Listening, Reading, Writing, and Speaking.
+          </li>
+          <li>
+            <strong className="text-black font-bold">Expert Guidance:</strong> Learn from certified trainers with years of experience.
+          </li>
+          <li>
+            <strong className="text-black font-bold">Flexible Training Options:</strong> Both classroom and online modes available.
+          </li>
+          <li>
+            <strong className="text-black font-bold">Mock Tests & Feedback:</strong> Regular practice sessions to improve accuracy and time management.
+          </li>
+        </ul>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Our IELTS Success Coaching Approach</h2>
+        <p className="text-lg mt-2 leading-relaxed">
+          The foundation of our training lies in result-oriented strategies. Through <Link href="https://www.vjcoverseas.com/coaching-training/ielts"><span className="text-orange-500">IELTS Success Coaching</span></Link>, students benefit from interactive classes, constructive feedback, access to updated study materials, and strategic techniques to boost performance in each exam section.
+        </p>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Online & Classroom Training Options</h2>
+        <p className="text-lg mt-2 leading-relaxed">
+          Our IELTS training can be accessed through both in-person classes and online platforms. With our online training, you can attend live interactive sessions, access recorded lessons and practice modules, and receive trainer feedback remotely.
+        </p>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Free Assessment Coaching & Support</h2>
+        <p className="text-lg mt-2 leading-relaxed">
+          Before beginning your IELTS journey, <Link href="https://www.vjcoverseas.com/coaching-training"><span className="text-orange-500">Free Assessment Coaching</span></Link> helps us design a personalized training roadmap focusing on your improvement areas, including level-based English evaluation and guidance on the IELTS score required for your study abroad or migration plans.
+        </p>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Why VJC Overseas Stands Out</h2>
+        <p className="text-lg mt-2 leading-relaxed">
+          As one of the most trusted names in overseas education and immigration, <span className="font-bold text-black">VJC Overseas</span> combines expertise in visas and admissions with high-quality IELTS training. Our unique advantage is that we prepare you not just for the test, but for your entire journey abroad.
+        </p>
+
+        <h2 className="text-xl font-bold mt-8 mb-4 text-black">Start Your IELTS Journey with VJC Overseas</h2>
+        <p className="text-lg mt-2 leading-relaxed">
+          Your dream of studying, working, or settling abroad starts with the right IELTS score. With <Link href="https://www.vjcoverseas.com"><span className="text-orange-500">VJC Overseas</span></Link>, you gain more than just coaching—you gain a complete support system for your global journey. Contact us today and join our upcoming IELTS training batches to begin your preparation with the right experts.
+        </p>
+
+      </div>
     </div>
-  </div>
-  
   );
 };
 

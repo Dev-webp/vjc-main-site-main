@@ -11,6 +11,7 @@ import FreeAssessment from "./FreeAssessment";
 import FreeCounselling from "./FreeCounselling";
 import Form from "./Form";
 import Link from "next/link";
+import Hero from "./Hero";
 const services = [
   { key: "passport-services", title: "Passport Services", image: "/passport.webp", icon: <Globe size={20} /> },
   { key: "air-ticketing", title: "Air Ticketing", image: "/airtecket.png", icon: <Plane size={20} /> },
@@ -64,13 +65,13 @@ export default function ServicePage() {
       </motion.h2>
 
       {/* Main Layout */}
-      <div className="flex flex-col md:flex-row items-center w-full max-w-6xl px-4 gap-10 relative bg-cover bg-center bg-no-repeat  shadow-xl p-8"
-        style={{ backgroundImage: "url('/images/your-background.jpg')" }}>
+      <div className="flex flex-col md:flex-row items-center w-full max-w-7xl px-4 gap-10 relative bg-cover bg-center bg-no-repeat  shadow-xl p-8"
+        >
         <div className="absolute inset-0 bg-gradient-to-b from-blue-400/60 via-white to-orange-500/80 "></div>
         
         {/* Left Section */}
         <motion.div className="md:w-1/4 text-left relative z-10">
-          <h3 className="text-3xl font-bold text-white mb-4 ml-44">{selectedService.title}</h3>
+          <h3 className="text-3xl font-bold text-white mb-4 ">{selectedService.title}</h3>
           <Image src={selectedService.image} alt={selectedService.title} width={500} height={300} className=" shadow-md mx-auto mb-4" />
         </motion.div>
 
@@ -104,7 +105,7 @@ export default function ServicePage() {
 </div>
 
       {/* Content Section */}
-      <div className="flex flex-col items-start w-full max-w-6xl gap-8 mt-10">
+      <div className="flex flex-col items-start w-full max-w-7xl gap-8 mt-10">
         <motion.div className="w-full p-6 bg-gradient-to-b from-blue-400 to-orange-500/80 backdrop-blur-lg text-center max-h-[700px] overflow-y-auto">
           <h3 className="text-2xl font-bold text-black mb-2">{selectedService.title}</h3>
           

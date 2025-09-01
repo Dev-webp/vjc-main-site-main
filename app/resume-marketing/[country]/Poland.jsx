@@ -1,28 +1,39 @@
 import React from "react";
 import { Briefcase, Globe, Home, HeartPulse, Users } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const PolandResumeMarketing = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 font-[Times_New_Roman]">
       <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
         Poland Resume Marketing Services –{" "}
-        <span className="text-orange-500">VJC Overseas</span>
+        <span className="text-orange-500">
+          <Link href="https://www.vjcoverseas.com">VJC Overseas</Link>
+        </span>
       </h1>
 
       <p className="text-lg mt-4" style={{ fontFamily: "Times New Roman" }}>
-        Welcome to <span className="text-orange-500">VJC Overseas</span>, your
-        trusted partner in advancing your career in Poland! Our Poland Resume
-        Marketing Services are designed to help you stand out in the competitive
-        job market and secure your dream role. Whether you're a seasoned
-        professional or a recent graduate, we specialize in creating
-        high-quality, tailored resumes that highlight your skills and
-        experience, making sure you land interviews and job offers in Poland.
+        Welcome to{" "}
+        <span className="text-orange-500">
+          <Link href="https://www.vjcoverseas.com">VJC Overseas</Link>
+        </span>
+        , your trusted partner in advancing your career in Poland! With years of
+        experience in guiding international job seekers, we offer{" "}
+        <strong className="text-black font-bold">
+          Poland Resume Marketing Services
+        </strong>{" "}
+        designed to help you stand out in the highly competitive Polish job
+        market. Whether you're a seasoned professional or a recent graduate, our
+        services ensure that your skills and expertise are highlighted
+        effectively, giving you the best chance to secure interviews and land
+        your dream role.
       </p>
+
       <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
         <Image
           src="/resume/resume13.png"
-          alt="Migrate - Apply Now"
+          alt="PolandResume Marketing Services"
           width={900}
           height={630}
           className="w-[22rem] lg:w-[31rem] h-[16rem] lg:h-[20rem] items-center rounded-xl"
@@ -32,24 +43,28 @@ const PolandResumeMarketing = () => {
       </div>
 
       <h2 className="mt-6 text-xl font-bold text-blue-400 flex items-center gap-2">
-        Why Choose <span className="text-orange-500">VJC Overseas</span> for
-        Your Poland Resume Marketing?
+        Why Choose <strong className="text-black font-bold">VJC Overseas</strong> for
+        Your Resume Support?
       </h2>
       <p className="text-lg mt-2" style={{ fontFamily: "Times New Roman" }}>
-        At <span className="text-orange-500">VJC Overseas</span>, we understand
-        that finding a job in Poland can be challenging, but with the right
-        tools and expertise, you can unlock incredible opportunities. Our Poland
-        Resume Marketing Services offer you a competitive edge by showcasing
-        your strengths, skills, and experiences in the best light possible. Our
-        team of experts works with you to craft a professional, ATS-optimized
-        (Applicant Tracking System) resume and cover letter that will get
-        noticed by top Polish employers. We also provide job application
-        strategies, interview coaching, and career advice to ensure you stand
-        out in your job search.
+        Finding a job abroad is never easy, especially when you are competing
+        with local candidates. At{" "}
+        <strong className="text-black font-bold">VJC Overseas</strong>, we make
+        this journey smoother with specialized{" "}
+        <span className="text-orange-500">
+          <Link href="https://www.vjcoverseas.com/resume-marketing">
+            Resume Marketing Services
+          </Link>
+        </span>
+        . Our team understands the Polish recruitment process and works with you
+        to build a strong, ATS-optimized resume that appeals to international
+        employers. Unlike generic resume writing, our service focuses on{" "}
+        <strong className="text-black font-bold">Professional CV Marketing</strong> by tailoring your
+        profile for your target industry.
       </p>
 
       <h2 className="mt-6 text-xl font-bold text-blue-400 flex items-center gap-2">
-        Salary Structure in Poland: What to Expect
+        Salary Structure in Poland: What You Can Expect
       </h2>
       <ul
         className="list-disc pl-6 text-lg mt-2"
@@ -72,8 +87,19 @@ const PolandResumeMarketing = () => {
         </li>
       </ul>
 
+      <p className="text-lg mt-4" style={{ fontFamily: "Times New Roman" }}>
+        These numbers show why Poland is becoming an attractive career
+        destination for expats. With proper{" "}
+        <span className="text-orange-500">
+          <Link href="https://www.vjcoverseas.com/resume-marketing/poland">
+            Poland Resume Marketing Services
+          </Link>
+        </span>
+        , your chances of reaching these roles increase significantly.
+      </p>
+
       <h2 className="mt-6 text-xl font-bold text-blue-400 flex items-center gap-2">
-        Living in Poland: A High Quality of Life
+        Living in Poland: A Balance of Work and Lifestyle
       </h2>
       <ul
         className="list-disc pl-6 text-lg mt-2"
@@ -101,36 +127,23 @@ const PolandResumeMarketing = () => {
         Work Opportunities & Benefits in Poland
       </h2>
       <p className="text-lg mt-2" style={{ fontFamily: "Times New Roman" }}>
-        Poland has a robust economy and is home to a wide variety of industries,
-        including IT, engineering, finance, healthcare, manufacturing, and more.
-        Expats often find work in Poland because of the country’s growing
-        international presence and the demand for skilled workers.
+        Poland’s economy is expanding rapidly, creating jobs in IT, finance,
+        engineering, manufacturing, and healthcare. For skilled workers, there
+        are plenty of roles with benefits such as attractive annual leave and
+        paid vacation, employer-provided health insurance, performance bonuses,
+        and increasing English-speaking roles in international companies. To
+        complement these opportunities, our{" "}
+        <span className="text-orange-500">
+          <Link href="https://www.vjcoverseas.com/resume-marketing">
+            Professional CV Marketing
+          </Link>
+        </span>{" "}
+        ensures that your application meets the standards employers expect,
+        giving you a real advantage in the hiring process.
       </p>
-      <ul
-        className="list-disc pl-6 text-lg mt-2"
-        style={{ fontFamily: "Times New Roman" }}
-      >
-        <li>
-          <strong>Expanding Job Market:</strong> Numerous opportunities in large
-          cities and smaller towns.
-        </li>
-        <li>
-          <strong>Attractive Work Benefits:</strong> Paid vacation (up to 26
-          days/year), health insurance, bonuses, and more.
-        </li>
-        <li>
-          <strong>English-Speaking Roles:</strong> Increasing demand in
-          international companies across Poland.
-        </li>
-        <li>
-          <strong>Work Visa Assistance:</strong>{" "}
-          <span className="text-orange-500">VJC Overseas</span> helps with visa
-          applications and compliance.
-        </li>
-      </ul>
 
       <h2 className="mt-6 text-xl font-bold text-blue-400 flex items-center gap-2">
-        How Our Resume Marketing Services Work
+        How Our Poland Resume Marketing Services Work
       </h2>
       <ul
         className="list-disc pl-6 text-lg mt-2"
@@ -158,21 +171,42 @@ const PolandResumeMarketing = () => {
         </li>
       </ul>
 
+      <h2 className="mt-6 text-xl font-bold text-blue-400 flex items-center gap-2">
+        Why Choose the Best?
+      </h2>
+      <p className="text-lg mt-2" style={{ fontFamily: "Times New Roman" }}>
+        When planning an overseas career, it’s essential to work with the{" "}
+        <span className="text-orange-500">
+          <Link href="https://www.vjcoverseas.com">Best Visa Immigration Consultants</Link>
+        </span>
+        . At <strong className="text-black font-bold">VJC Overseas</strong>, we not
+        only provide resume marketing services but also assist with visa
+        guidance, job application support, and professional career advice. By
+        choosing us, you are ensuring that your career transition to Poland is
+        handled by experts who understand both recruitment and immigration
+        processes.
+      </p>
+
       <h2 className="mt-6 text-xl font-bold text-center text-blue-400">
-        Get Started with <span className="text-orange-500">VJC Overseas</span>{" "}
+        Get Started with <strong className="text-black font-bold">VJC Overseas</strong>{" "}
         Today!
       </h2>
       <p
         className="mt-4 text-lg text-center"
         style={{ fontFamily: "Times New Roman" }}
       >
-        Let us help you take the next step in your career in Poland. With our
-        Poland Resume Marketing Services, you’ll gain access to professional
-        resume writing, job search assistance, and expert advice tailored to the
-        Polish job market. Whether you are just starting your job search or
-        looking for your next career move,{" "}
-        <span className="text-orange-500">VJC Overseas</span> is here to support
-        your success.
+        If you are looking to establish your career in Europe, Poland offers
+        immense opportunities. With our specialized{" "}
+        <strong className="text-black font-bold">
+          Poland Resume Marketing Services
+        </strong>
+        , you gain a competitive edge in job applications and interviews.
+        Whether you are a fresh graduate or an experienced professional,{" "}
+        <strong className="text-black font-bold">VJC Overseas</strong> is
+        committed to helping you every step of the way. Take the first step
+        towards your global career with our expert-driven{" "}
+        <strong className="text-black font-bold">Resume Marketing Services</strong>. Contact
+        us today and let us help you achieve your dream of working in Poland.
       </p>
     </div>
   );

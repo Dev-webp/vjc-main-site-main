@@ -109,14 +109,15 @@ const Content = () => {
           {/* Bottom Text */}
           <div className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-center w-full max-w-md rounded text-sm font-[Times_New_Roman]">
             <p>
-              Whether you're targeting jobs in <strong>USA, UK, Canada, Australia, Germany, or UAE</strong>, our resume
-              marketing ensures you’re seen by the right recruiters.
-              <span className="text-orange-600"> VJC Overseas </span> is your trusted global career accelerator.
+              Whether you're targeting jobs in <strong>USA, UK, Canada, Australia, Germany, or UAE</strong>, our 
+              <Link href="https://www.vjcoverseas.com/resume-marketing" className="text-orange-600 font-bold"> Resume Marketing Services </Link> 
+              ensure you’re seen by the right recruiters.
+              <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-bold"> VJC Overseas </Link> is your trusted global career accelerator.
             </p>
           </div>
  
           {/* CTA Button */}
-          <Link href="/contact-us">
+          <Link href="/contact">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -139,9 +140,11 @@ const Content = () => {
           >
             <div className="backdrop-blur-md bg-white/80 border border-gray-300 p-4 text-center w-full sm:max-w-3xl rounded shadow-lg">
               <p className="text-base font-[Times_New_Roman]">
-                <strong className="text-orange-600">VJC Overseas</strong> crafts resumes that align with global hiring
-                standards and trends. A powerful resume unlocks interviews and builds confidence.
-              </p>
+  <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-bold">VJC Overseas</Link> crafts resumes that align with global hiring
+  standards and trends. A powerful resume unlocks interviews and builds confidence. We specialize in 
+  <Link href="https://www.vjcoverseas.com/resume-marketing-services" className="text-orange-600 font-bold"> Resume Marketing Services</Link>, helping professionals highlight their strengths and land their dream opportunities abroad.
+</p>
+
             </div>
           </motion.div>
  
@@ -185,6 +188,7 @@ const Content = () => {
               width={256}
               height={256}
               className="rounded-full border-4 border-orange-600 shadow-xl object-cover"
+              unoptimized
             />
           </motion.div>
  
@@ -224,9 +228,13 @@ const Content = () => {
           >
             <div className="flex flex-col items-center">
               <p className="text-sm font-[Times_New_Roman] text-center max-w-2xl mb-4 backdrop-blur-md bg-white/80 border border-gray-300 p-4 rounded shadow">
-                Whether you're targeting jobs in <strong>USA, UK, Canada, Australia, Germany, or UAE</strong>, our resume marketing ensures you’re seen by the right recruiters. <span className="text-orange-600">VJC Overseas</span> is your trusted global career accelerator.
+                With our 
+                <Link href="https://www.vjcoverseas.com/resume-marketing" className="text-orange-600 font-bold"> Global Career Services </Link>, 
+                job seekers gain an edge in overseas job markets. <strong>VJC Overseas</strong> doesn’t just create resumes—we market your profile to recruiters worldwide.
+                Recognized among the <Link href="https://www.vjcoverseas.com/" className="text-orange-600 font-bold">Best Visa Immigration Consultants</Link>, we maximize your chances of success through 
+                <Link href="https://www.vjcoverseas.com/resume-marketing" className="text-orange-600 font-bold"> Professional CV Marketing</Link>.
               </p>
-              <Link href="/contact">
+              <Link href="/contact-us">
                 <button className="bg-orange-600 text-white px-6 py-2 rounded shadow-md hover:bg-orange-700">
                   Get Resume Help Now
                 </button>
@@ -240,4 +248,3 @@ const Content = () => {
 };
  
 export default Content;
- 
