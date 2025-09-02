@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import { FaCheckCircle } from 'react-icons/fa'; 
+import { FaCheckCircle } from "react-icons/fa";
+import Link from "next/link";
 
 // Variants for the content
 const contentVariants = {
@@ -11,7 +12,7 @@ const contentVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1, // Sequential animations for children
+      staggerChildren: 0.1,
     },
   },
 };
@@ -22,18 +23,18 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
 };
 
-// Variants for the image (delayed until content is fully visible)
+// Variants for the image
 const imageVariants = {
   hidden: { opacity: 0, scale: 0.95 },
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.4, delay: 0.1 }, // Delays after content fades in
+    transition: { duration: 0.4, delay: 0.1 },
   },
 };
 
 const ContentSection = () => {
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 }); // triggerOnce set to false
+  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
   return (
     <motion.section
@@ -45,17 +46,21 @@ const ContentSection = () => {
       <div
         className="max-w-[85rem] mx-auto px-5 sm:px-8 tablet:px-8 md:px-12 lg:px-10 flex flex-col md:flex-row gap-12 py-10 rounded-2xl bg-gradient-to-bl from-orange-50 to-orange-50"
         style={{
-          backgroundImage: 'url(/comp-22.webp)',  
+          backgroundImage: "url(/comp-22.webp)",
         }}
       >
         {/* Image Section */}
-        <motion.div variants={imageVariants} className="flex md:flex-1 justify-center">
+        <motion.div
+          variants={imageVariants}
+          className="flex md:flex-1 justify-center"
+        >
           <Image
             src="/vjc-1.jpg"
             alt="Visa consultation services"
             width={1000}
             height={1000}
             className="w-full md:h-full object-cover rounded-lg"
+            unoptimized
           />
         </motion.div>
 
@@ -72,16 +77,70 @@ const ContentSection = () => {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-justify">
-            With our wide spectrum of services, you may be wondering, &quot;What can VJC Overseas do for me?&quot; And the answer will be very simple: we are here to help you take the next step in your journey—whether you are here to study abroad, migrate to some other country, work overseas, or are investing in new opportunities.
+            With our wide spectrum of services,{" "}
+            <Link
+              href="https://www.vjcoverseas.com"
+              className="text-orange-500 font-bold hover:text-orange-600"
+            >
+              VJC Overseas
+            </Link>{" "}
+            stands as one of India’s most trusted partners for global
+            aspirations. Whether you’re planning to study abroad, migrate for
+            work, or secure permanent residency, we provide expert{" "}
+            <Link
+              href="https://www.vjcoverseas.com/services"
+              className="text-orange-500 font-bold hover:text-orange-600"
+            >
+              Immigration Support Services
+            </Link>{" "}
+            tailored to your needs. Families, professionals, and students trust
+            us for end-to-end guidance in fulfilling their international goals.
           </motion.p>
 
-          <motion.ul variants={contentVariants} className="space-y-4 text-left">
+          <motion.ul
+            variants={contentVariants}
+            className="space-y-4 text-left"
+          >
             {[
-              "Study - right guidance and visa support for studying at the top universities of the world",
-              "Migrate - secure path to Permanent Residency and settling down in your dream destination",
-              "Work- Explore global job opportunities with professional work visa services",
-              "Invest - Get expert assistance with investor visas to kick-start your international business journey",
-              "Visit - Obtain tourist and visitor visas for hassle-free travelling",
+              <>
+                Study – Our{" "}
+                <Link
+                  href="https://www.vjcoverseas.com/study-abroad"
+                  className="text-orange-500 font-bold hover:text-orange-600"
+                >
+                  Study Abroad Consultants
+                </Link>{" "}
+                provide expert counseling and visa support for admission to top
+                universities worldwide.
+              </>,
+              <>
+                Migrate – Get a secure pathway to Permanent Residency with our{" "}
+                <Link
+                  href="https://www.vjcoverseas.com/pr-visas"
+                  className="text-orange-500 font-bold hover:text-orange-600"
+                >
+                  PR Visa Consultants
+                </Link>{" "}
+                and settle down in your dream destination with ease.
+              </>,
+              <>
+                Work – Explore global opportunities with professional visa
+                assistance from our expert team.
+              </>,
+              <>
+                Invest – Kick-start your international business journey with
+                investor visa support from our specialists.
+              </>,
+              <>
+                Visit – Travel without stress with the help of our{" "}
+                <Link
+                  href="https://www.vjcoverseas.com/visit-visas"
+                  className="text-orange-500 font-bold hover:text-orange-600"
+                >
+                  Visit Visa Consultants
+                </Link>{" "}
+                who make your holiday or business travel completely hassle-free.
+              </>,
             ].map((item, index) => (
               <motion.li
                 key={index}
@@ -89,13 +148,12 @@ const ContentSection = () => {
                 className="flex items-center gap-x-2"
               >
                 <span className="text-2xl text-orange-600 mb-2">
-                  <FaCheckCircle /> {/* Larger, more attractive check circle icon */}
+                  <FaCheckCircle />
                 </span>
                 <span>{item}</span>
               </motion.li>
             ))}
           </motion.ul>
-
         </motion.div>
       </div>
     </motion.section>
@@ -103,14 +161,3 @@ const ContentSection = () => {
 };
 
 export default ContentSection;
-
-
-          {/* Optional button (Uncomment to use) */}
-          {/* <motion.div variants={itemVariants} className="flex">
-            <Link
-              href="#"
-              className="px-5 h-11 flex items-center bg-orange-600 rounded-lg text-white"
-            >
-              Get a Free Consultation
-            </Link>
-          </motion.div> */}

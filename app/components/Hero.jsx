@@ -14,7 +14,7 @@ export default function HeroSection() {
         {/* Background Image */}
         <motion.div
   className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0"
-  style={{ backgroundImage: "url(/airplane.png)" }}
+  style={{ backgroundImage: "url(/airplane.webp)" }}
   animate={{ backgroundPositionY: ["0%", "5%"] }} // Moves the background instead of the entire div
   transition={{
     backgroundPositionY: { repeat: Infinity, repeatType: "reverse", duration: 10, ease: "easeInOut" }

@@ -529,28 +529,34 @@ const toggleMobileSubSubMenu = (itemName) => {
       <div className="bg-white py-0 px-2  shadow-md z-50 fixed top-0 w-screen">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           {/* Logo */}
-          <div className="flex items-center -ml-5">
-            <Link href="/" className="text-lg font-bold">
-              <div className="relative h-14 w-24">
-                <Image
-                  src="/logo-1.webp"
-                  alt="Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </Link>
-            <Link href="/" className="text-lg font-bold">
-              <div className="relative h-14 w-28 -ml-6">
-                <Image
-                  src="/logo-2.webp"
-                  alt="Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </Link>
-          </div>
+        <div className="flex items-center -ml-5 relative">
+  <Link href="/" className="text-lg font-bold">
+    <div className="relative h-14 w-24">
+      <Image
+        src="/logo-1.webp"
+        alt="Logo"
+        fill
+        sizes="96px"
+        className="object-contain"
+        unoptimized
+      />
+    </div>
+  </Link>
+  <Link href="/" className="text-lg font-bold">
+    <div className="relative h-14 w-28 -ml-6">
+      <Image
+        src="/logo-2.webp"
+        alt="Logo"
+        fill
+        sizes="112px"
+        className="object-contain"
+        unoptimized
+      />
+    </div>
+  </Link>
+</div>
+
+
 
           <div className="hidden md:flex items-center ml-3">
             <div className="relative h-10 w-10">
