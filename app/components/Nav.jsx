@@ -555,6 +555,22 @@ const toggleMobileSubSubMenu = (itemName) => {
     </div>
   </Link>
 </div>
+{/* Work Abroad Link (Only Mobile) */}
+<div className="flex md:hidden items-center ml-4 mr-4">
+  <Link
+    href="/work-abroad"
+    className="flex items-center space-x-1 cursor-pointer"
+  >
+    {/* Arrow */}
+    <span className="text-black text-sm">›</span>
+
+    {/* Two-line Text */}
+    <span className="flex flex-col leading-tight">
+      <span className="text-[11px] font-bold text-blue-500">Jobs</span>
+      <span className="text-[11px] font-bold text-blue-500">Abroad</span>
+    </span>
+  </Link>
+</div>
 
 
 
