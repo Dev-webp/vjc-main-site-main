@@ -393,7 +393,7 @@ const Content = () => {
       <h4>
         For more information on the study visa process, eligibility, and support
         for studying in Germany, contact{" "}
-        <Link href="/contact">
+        <Link href="/">
           <strong style={{ color: "orange" }}>VJC Overseas</strong>
         </Link>{" "}
         today!

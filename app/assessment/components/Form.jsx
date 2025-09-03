@@ -23,7 +23,7 @@ const Form = () => {
       { question: "Select your age", options: ["Below 18", "18 to 35", "35 to 40", "Above 40"] },
       { question: "Qualification", options: ["Is your qualification and University fully recognized", "Is your qualification and University Partially recognized"] },
       { question:"Relevant Work Experience", options:["5 years in the last 7 years","2 Years in the last 5 years"] },
-      { question:"German Language Proficiency", options:["A2 level","B1 Level","B2 and above"] },
+      { question:"German Language Proficiency", options:["A2 level","B1 Level","B2 and above","No language proficiency "] },
       { question:"English Language Proficiency: C1 Level", options:["Yes","No"] },
       { question:"Previous Legal Stay in Germany", options:["Yes","No"] },
       { question:"Spouse Qualifying", options:["Yes","No"] },

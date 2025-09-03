@@ -53,7 +53,7 @@ const Content = () => {
           </h2>
           <p className="leading-relaxed">
             The <strong style={{ color: "#000000" }}>Germany Opportunity Card</strong> is a strategic immigration pathway designed for highly skilled professionals from outside the European Union to live and work in Germany. Introduced as part of Germany’s new points-based immigration system, it offers a flexible and faster route to residency — especially in fields experiencing critical skill shortages like IT, engineering, and healthcare. Whether you're aiming to expand your professional journey or looking to settle in one of the world’s most developed countries, this card provides the ideal path to{" "}
-            <Link href="https://www.vjcoverseas.com/migrate-to-germany/">
+            <Link href="https://www.vjcoverseas.com/migrate/germany/">
               <span style={{ color: "orange" }}><strong>Migrate to Germany</strong></span>
             </Link>{" "}
             and explore abundant opportunities.
