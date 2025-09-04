@@ -12,7 +12,7 @@ const StudyNetherlands = () => {
         Are you considering pursuing higher education in the Netherlands? Known for its high academic standards, diverse cultural environment, and excellent quality of life, the Netherlands is one of the top destinations for international students. At <span className="font-bold">VJC Overseas</span>, we are committed to guiding you through every step of the process, from selecting the right college or university to understanding the costs and benefits of studying in this vibrant country.
       </p>
       <p className="text-justify mb-4">
-        Choosing the right support is important for any student planning to study abroad. Many students prefer working with the <a href="https://vjcoverseas.com/" className="text-orange-500 font-bold">Best Visa Immigration Consultants</a> to get professional assistance in documentation, applications, and overall guidance. This ensures a smooth transition into the academic journey.
+        Choosing the right support is important for any student planning to study abroad. Many students prefer working with the <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">Best Visa Immigration Consultants</a> to get professional assistance in documentation, applications, and overall guidance. This ensures a smooth transition into the academic journey.
       </p>
       </div>
        <div className="w-full md:w-1/3">

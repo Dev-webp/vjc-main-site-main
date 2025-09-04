@@ -106,7 +106,7 @@ const GermanyStudyVisa = () => {
               <li>Language Proficiency Scores (TOEFL, IELTS, etc.)</li>
             </ul>
           </li>
-          <li><strong>Apply for the Study Visa:</strong> Submit your application at the German Embassy/Consulate in India <span className="text-orange-500 font-bold"><a href="https://vjcoverseas.com/migrate/germany/student-visa">Germany Student visa</a></span>.</li>
+          <li><strong>Apply for the Study Visa:</strong> Submit your application at the German Embassy/Consulate in India <span className="text-orange-500 font-bold"><a href="https://www.vjcoverseas.com/migrate/germany/student-visa">Germany Student visa</a></span>.</li>
 
           <li><strong>Visa Processing Time:</strong> 6–8 weeks on average.</li>
           <li><strong>Attend Visa Interview:</strong> Be prepared with answers about your plans and finances.</li>

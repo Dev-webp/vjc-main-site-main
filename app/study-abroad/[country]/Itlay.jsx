@@ -93,7 +93,7 @@ const StudyInItaly = () => {
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Get Started Today!</h2>
       <p className="leading-relaxed">
-        Your academic dreams deserve expert support. Whether you’re aiming for a degree, specialized training, or language studies, <a href="https://vjcoverseas.com/" className="text-orange-500 font-bold">VJC Overseas</a> will help you every step of the way. Partner with the <strong>Best Visa Immigration Consultants</strong> to make your Italy education journey smooth, stress-free, and rewarding.
+        Your academic dreams deserve expert support. Whether you’re aiming for a degree, specialized training, or language studies, <a href="https://www.vjcoverseas.com/" className="text-orange-500 font-bold">VJC Overseas</a> will help you every step of the way. Partner with the <strong>Best Visa Immigration Consultants</strong> to make your Italy education journey smooth, stress-free, and rewarding.
       </p>
     </div>
   );

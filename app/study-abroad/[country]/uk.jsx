@@ -55,7 +55,7 @@ const UKStudyGuide = () => {
         </li>
         <li>Attend Biometrics Appointment</li>
         <li>Wait for Visa Decision (typically up to 3 weeks)</li>
-        <li>Arrival in the UK: Visa is valid for the course duration plus extra time. For students who wish to work after their studies, we also provide assistance with the <a href="https://vjcoverseas.com/work-abroad/united-kingdom-work-permit" style={{ color: "orange", textDecoration: "none" }}>UK Skilled Worker Visa</a>, ensuring you understand the eligibility requirements and pathways to long-term employment in the UK.</li>
+        <li>Arrival in the UK: Visa is valid for the course duration plus extra time. For students who wish to work after their studies, we also provide assistance with the <a href="https://www.vjcoverseas.com/work-abroad/united-kingdom-work-permit" style={{ color: "orange", textDecoration: "none" }}>UK Skilled Worker Visa</a>, ensuring you understand the eligibility requirements and pathways to long-term employment in the UK.</li>
       </ol>
 
       {/* Universities */}

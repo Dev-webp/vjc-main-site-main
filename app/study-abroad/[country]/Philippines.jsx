@@ -27,7 +27,7 @@ const StudyInPhilippines = () => {
         {/* Text */}
         <div className="mt-8 md:w-1/2 text-justify">
           <p>
-            Studying abroad opens the door to global education and cultural experiences, and the Philippines has become a popular destination for international students. Known for its high-quality education, affordability, and vibrant culture, the Philippines offers a unique opportunity to pursue your academic dreams. At <span className="font-bold text-black">VJC Overseas</span>, we guide students through the entire process, from choosing the right program to assisting with accommodation and visa applications. If you are looking for <Link href="https://vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</Link> who understand the requirements for studying overseas, <span className="font-bold text-black">VJC Overseas</span> provides personalized guidance to ensure a smooth and successful journey.
+            Studying abroad opens the door to global education and cultural experiences, and the Philippines has become a popular destination for international students. Known for its high-quality education, affordability, and vibrant culture, the Philippines offers a unique opportunity to pursue your academic dreams. At <span className="font-bold text-black">VJC Overseas</span>, we guide students through the entire process, from choosing the right program to assisting with accommodation and visa applications. If you are looking for <Link href="https://www.vjcoverseas.com/" className="text-orange-500">Best Visa Immigration Consultants</Link> who understand the requirements for studying overseas, <span className="font-bold text-black">VJC Overseas</span> provides personalized guidance to ensure a smooth and successful journey.
           </p>
         </div>
       </div>
@@ -82,7 +82,7 @@ const StudyInPhilippines = () => {
 
       <h3 className="font-semibold text-xl mt-4 mb-2">Pathway to Global Careers</h3>
       <p>
-        Studying in the Philippines connects students to a global alumni network and international career opportunities. Our <Link href="https://vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link> can assist with understanding program requirements and securing the right visa to begin your academic journey.
+        Studying in the Philippines connects students to a global alumni network and international career opportunities. Our <Link href="https://www.vjcoverseas.com/study-abroad/" className="text-orange-500">Study Visa Consultants</Link> can assist with understanding program requirements and securing the right visa to begin your academic journey.
       </p>
 
       <h2 className="font-semibold text-xl mt-4 mb-2">Key Factors to Consider When Choosing a University</h2>
