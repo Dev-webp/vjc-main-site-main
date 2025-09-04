@@ -120,8 +120,7 @@ const backgroundImages = {
 };
 
 const MigrateCountry = () => {
-  const router = useRouter();
-  const { country, visa } = useParams();
+  const { country } = useParams();
   const visas = countryVisaData[country] || [];
   const DefaultVisaComponent = visaComponents[country] || null;
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -137,90 +136,99 @@ const MigrateCountry = () => {
         isImageLoaded ? "bg-loaded" : "bg-loading"
       }`}
     >
-      {/* IMAGE SECTION WITH BLACK OVERLAY */}
+      {/* IMAGE + OVERLAY */}
       <div
-        className="relative flex flex-col lg:flex-row items-center justify-between p-10 gap-10 min-h-screen"
+        className="relative flex flex-col lg:flex-row items-center justify-between p-6 sm:p-10 gap-10 min-h-screen"
         style={{
           backgroundImage: `url(${backgroundImages[country]})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        {/* BLACK OVERLAY ONLY ON IMAGE */}
-        <div className="absolute inset-0 bg-black/50 pointer-events-none z-0"></div>
+        <div className="absolute inset-0 bg-black/50 z-0" />
 
-        {/* SHINING HEADING AND TEXT */}
-        <div className="w-full lg:w-1/2 lg:ml-16 text-center lg:text-left relative z-10">
-          <div
-            className="relative inline-block px-2 py-2 rounded-lg overflow-hidden"
-           
+        {/* HEADING + TEXT */}
+        <div className="w-full lg:w-1/2 text-center lg:ml-8 lg:text-left relative z-10">
+          <h1
+            className="font-extrabold uppercase leading-tight  text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-yellow-300 to-teal-400 text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] mt-20 sm:mt-20 drop-shadow-[0_2px_8px_rgba(0,0,0,0.15)]"
+            style={{ fontFamily: "Times New Roman, serif" }}
           >
-            <h1
-              className="font-extrabold uppercase leading-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-yellow-300 to-teal-400 text-3xl sm:text-4xl md:text-5xl lg:text-[3.50rem] mt-20 sm:mt-12 drop-shadow-[0_2px_8px_rgba(0,0,0,0.10)]"
-              style={{ fontFamily: "Times New Roman, serif" }}
-            >
-              Migrate to {country.charAt(0).toUpperCase() + country.slice(1)}
-            </h1>
-            <p
-              className="flex text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-sky-400 to-orange-200 tracking-tight text-center lg:text-left md:font-semibold max-w-xl lg:max-w-lg mt-6 font-bold drop-shadow-[0_1px_4px_rgba(0,0,0,0.12)]"
-              style={{ fontFamily: "Times New Roman, serif" }}
-            >
-              Discover endless opportunities with our expert immigration services.
-              Whether you’re looking to study or work abroad, we help make your
-              dreams a reality.
-            </p>
-          </div>
-          <div className="flex  mb-6">
+            Migrate to {country.charAt(0).toUpperCase() + country.slice(1)}
+          </h1>
+          <p
+            className="mt-6 text-base sm:text-lg md:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-sky-400 to-orange-200 drop-shadow-[0_1px_4px_rgba(0,0,0,0.15)] max-w-xl mx-auto lg:mx-0"
+            style={{ fontFamily: "Times New Roman, serif" }}
+          >
+            Discover endless opportunities with our expert immigration services.
+            Whether you’re looking to study or work abroad, we help make your
+            dreams a reality.
+          </p>
+
+          <div className="mt-8 flex justify-center lg:justify-start">
             <button
               type="button"
               onClick={() => setIsOpen(true)}
-              className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition duration-300"
             >
               <span className="relative z-10">Apply Now</span>
-              <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine pointer-events-none" />
+              <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine" />
             </button>
           </div>
         </div>
 
         {/* FORM */}
-        <div className="w-full lg:w-1/2 lg:mr-16 lg:mt-14 relative z-10">
+        <div className="w-full lg:w-1/2 relative z-10 lg:mt-14">
           <Form />
         </div>
       </div>
 
-      {/* VISA OPTIONS SECTION BELOW */}
-      <div className="flex flex-col lg:flex-row bg-gradient-to-bl from-white to-orange-50 px-8 py-10 items-center lg:items-start">
-        <div className="w-full lg:w-[350px] flex-shrink-0 px-4 mb-8 lg:mb-0">
-          <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent mb-8 text-center">
+      {/* VISA OPTIONS + CONTENT */}
+      <div className="flex flex-col lg:flex-row bg-gradient-to-bl from-white to-orange-50 px-6 sm:px-10 py-10 items-center lg:items-start gap-8">
+        {/* Dynamic Content */}
+        <div className="w-full lg:flex-1 overflow-y-auto max-h-[800px] px-6 sm:px-8 py-6 rounded-xl shadow-md border border-gray-200 order-first lg:order-last">
+          {DefaultVisaComponent ? (
+            <DefaultVisaComponent />
+          ) : (
+            <p className="text-center text-gray-600">Select a visa option to view details.</p>
+          )}
+        </div>
+
+        {/* Visa Options */}
+        <div className="w-full lg:w-[350px] flex-shrink-0 order-last lg:order-first">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent mb-6 text-center">
             Visa Options for {country.charAt(0).toUpperCase() + country.slice(1)}
           </h2>
-
-          {/* Centered Apply Now Button */}
-          
-
+          <div className="mt-4 mb-10 flex justify-center lg:hidden">
+    <button
+      type="button"
+      onClick={() => setIsOpen(true)}
+      className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition duration-300"
+    >
+      <span className="relative z-10">Apply Now</span>
+      <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine" />
+    </button>
+  </div>
           <div className="flex flex-col gap-4 items-center">
             {visas.map(({ name, path }) => (
               <Link
                 key={path}
                 href={path}
-                className="w-full sm:w-[350px] flex items-center justify-between text-lg font-semibold bg-white text-black border border-orange-500 px-6 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:bg-orange-500 hover:text-white transform hover:scale-105 transition duration-300"
+                className="w-full sm:w-[320px] lg:w-[350px] flex items-center justify-between text-base sm:text-lg font-semibold bg-white text-black border border-orange-500 px-5 py-4 rounded-xl shadow-md hover:shadow-xl hover:bg-orange-500 hover:text-white transform hover:scale-105 transition duration-300"
               >
                 {name}
-                <ArrowRight className="w-6 h-6 text-black transition duration-300" />
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
               </Link>
             ))}
           </div>
         </div>
-
-        <div className="w-full lg:flex-1 ml-10 overflow-y-auto max-h-[800px] px-8 rounded-xl shadow-md border border-gray-200 mt-8 lg:mt-0">
-          {DefaultVisaComponent ? (
-            <DefaultVisaComponent />
-          ) : (
-            <p>Select a visa option to view details.</p>
-          )}
-        </div>
       </div>
-      <ModalFormWithPopup isOpen={isOpen} setIsOpen={setIsOpen} customContent={<MigrateImageContent />} />
+
+      {/* POPUP FORM */}
+      <ModalFormWithPopup
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        customContent={<MigrateImageContent />}
+      />
     </div>
   );
 };

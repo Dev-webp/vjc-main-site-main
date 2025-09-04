@@ -22,7 +22,7 @@ const USAbusiness = () => {
                 <div className="flex-shrink-0 mx-auto lg:mx-0">
                     <Image
                         src="/assets/USAbusiness.png"
-                        alt="Australia Business Visa"
+                        alt="USA Business Visa"
                         width={500}
                         height={300}
                         className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-full lg:h-60 object-contain shadow-lg rounded-lg"
@@ -49,7 +49,7 @@ const USAbusiness = () => {
 
             <h4 className="mb-6 m-2 font-bold text-black">Eligibilty Criteria</h4>
             <p className="mb-6 m-2">
-                The eligibility requirements for each U.S. business visa vary depending on the type of visa you are applying for. However, there are common factors that apply to most business visa categories. If you're planning a short-term business visit, consider checking your <Link href="https://vjcoverseas.com/visit-visas/usa"><span style={{ color: 'orange' }}>USA Visit Visa</span></Link> options with expert help.
+                The eligibility requirements for each U.S. business visa vary depending on the type of visa you are applying for. However, there are common factors that apply to most business visa categories. If you're planning a short-term business visit, consider checking your <Link href="https://www.vjcoverseas.com/visit-visas/usa"><span style={{ color: 'orange' }}>USA Visit Visa</span></Link> options with expert help.
             </p>
 
             <ul className='ml-8 mb-6 list-decimal'>

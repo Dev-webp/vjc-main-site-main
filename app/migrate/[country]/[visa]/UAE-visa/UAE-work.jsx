@@ -315,9 +315,6 @@ const UAEwork = () => {
         Work Visa process with unmatched expertise and personal attention. We
         are committed to helping you transition to your new life with ease.
       </p>
-      <p className="mb-6">
-        Call: +91 9160449000&nbsp;&nbsp; Email: info@vjcoverseas.com
-      </p>
 
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <p className="mb-6">

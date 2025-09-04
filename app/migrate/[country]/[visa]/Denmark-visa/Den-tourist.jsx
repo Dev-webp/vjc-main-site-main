@@ -173,7 +173,7 @@ const Dentourist = () => {
         <li>
           <b>Consultation: </b>Reach out to <b style={{ color: "black" }}>VJC Overseas</b> for a consultation. Our
           team will assess your eligibility and provide guidance on the
-          documentation required. If you plan to <a href="https://vjcoverseas.com/study-abroad/denmark" style={{ color: "orange", fontWeight: "bold" }}>Study in Denmark</a>, we can also guide you through that process.
+          documentation required. If you plan to <a href="https://www.vjcoverseas.com/study-abroad/denmark" style={{ color: "orange", fontWeight: "bold" }}>Study in Denmark</a>, we can also guide you through that process.
         </li>
         <li>
           <b>Document Submission: </b>Gather all necessary documents, including
@@ -192,22 +192,12 @@ const Dentourist = () => {
       <hr style={{ borderColor: "black" }} className="mb-6" />
       <h3 className="mb-6 text-sky-800 italic">Contact Us</h3>
       <p className="mb-6">
-        Ready to start your journey to Denmark? Contact <a href="https://vjcoverseas.com/" style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</a> today for a
+        Ready to start your journey to Denmark? Contact <a href="https://www.vjcoverseas.com/" style={{ color: "orange", fontWeight: "bold" }}>VJC Overseas</a> today for a
         hassle-free visa application process. Our experienced consultants will
         make sure your Denmark Tourist Visa application is handled
         efficiently and professionally.
       </p>
-      <div className="mb-6 ml-8">
-        <p>
-          <b>Phone:</b>+91-9160449000
-        </p>
-        <p>
-          <b>Email:</b>info@vjcoverseas.com
-        </p>
-        <p>
-          <b>Website: </b>www.vjcoverseas.com
-        </p>
-      </div>
+     
       <p className="mb-8">
         Let <b style={{ color: "black" }}>VJC Overseas</b> be your trusted partner in exploring the magic of
         Denmark!

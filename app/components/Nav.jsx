@@ -558,7 +558,7 @@ const toggleMobileSubSubMenu = (itemName) => {
 {/* Work Abroad Link (Only Mobile) */}
 <div className="flex md:hidden items-center ml-4 mr-4">
   <Link
-    href="/work-abroad"
+    href="/abroad-jobs-work-permit.com"
     className="flex items-center space-x-1 cursor-pointer"
   >
     {/* Arrow */}
@@ -914,15 +914,26 @@ const toggleMobileSubSubMenu = (itemName) => {
             </a>
           </div>
 
-          {/* Hamburger Menu */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex flex-col items-end justify-end text-xs space-y-1"
-          >
-            <span className="block h-1 w-8 bg-white rounded"></span>
-            <span className="block h-1 w-6 bg-white rounded"></span>
-            <span className="block h-1 w-4 bg-white rounded"></span>
-          </button>
+        {/* Hamburger Menu */}
+<button
+  onClick={() => setIsMenuOpen(!isMenuOpen)}
+  className="flex flex-col items-end justify-end text-xs space-y-1 relative w-8 h-8"
+>
+  {isMenuOpen ? (
+    // ❌ X icon when menu is open
+    <span className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
+      ✕
+    </span>
+  ) : (
+    // 🍔 Hamburger icon when menu is closed
+    <>
+      <span className="block h-1 w-8 bg-white rounded"></span>
+      <span className="block h-1 w-6 bg-white rounded"></span>
+      <span className="block h-1 w-4 bg-white rounded"></span>
+    </>
+  )}
+</button>
+
         </nav>
         {/* Mobile Menu with submenus */}
         {isMenuOpen && (

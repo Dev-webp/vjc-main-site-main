@@ -53,23 +53,23 @@ const Ausstud = () => {
         </h3>
         <ul className="list-disc pl-4 mb-6 text-gray-800">
           <li>
-            <b className="text-orange-600">High Quality of Life:</b> Australia
+            <b className="text-black">High Quality of Life:</b> Australia
             ranks high for safety, healthcare, education, and work-life balance.
           </li>
           <li>
-            <b className="text-orange-600">Thriving Job Market:</b> Great
+            <b className="text-black">Thriving Job Market:</b> Great
             opportunities in healthcare, IT, engineering, and more.
           </li>
           <li>
-            <b className="text-orange-600">Permanent Residency Pathways:</b>{" "}
+            <b className="text-black">Permanent Residency Pathways:</b>{" "}
             Pathways like Subclass 189, 190, and 491 visas lead to PR.
           </li>
           <li>
-            <b className="text-orange-600">Multicultural Society:</b> A
+            <b className="text-black">Multicultural Society:</b> A
             welcoming, diverse, and inclusive community.
           </li>
           <li>
-            <b className="text-orange-600">Free Education and Healthcare:</b> PR
+            <b className="text-black">Free Education and Healthcare:</b> PR
             holders enjoy subsidized services.
           </li>
         </ul>
@@ -176,19 +176,19 @@ const Ausstud = () => {
           </h4>
           <ul className="list-disc ml-6">
             <li>
-              <b className="text-orange-600">
+              <b className="text-black">
                 Robust Economy & Job Market:
               </b>{" "}
               With booming industries like IT, engineering, construction, and
               healthcare, there is high demand for skilled workers.
             </li>
             <li>
-              <b className="text-orange-600">High Quality of Life:</b> Excellent
+              <b className="text-black">High Quality of Life:</b> Excellent
               healthcare, world-class education, safety, and a strong work-life
               balance make it a top choice for families.
             </li>
             <li>
-              <b className="text-orange-600">Pathways to PR & Citizenship:</b>{" "}
+              <b className="text-black">Pathways to PR & Citizenship:</b>{" "}
               Migrating to Australia can be your gateway to{" "}
               <Link
                 href="https://www.vjcoverseas.com/pr-visas/australia-pr"
@@ -201,7 +201,7 @@ const Ausstud = () => {
               and eventually, Australian citizenship.
             </li>
             <li>
-              <b className="text-orange-600">Multicultural Society:</b>{" "}
+              <b className="text-black">Multicultural Society:</b>{" "}
               Australia is welcoming, diverse, and inclusive—perfect for a fresh
               start.
             </li>

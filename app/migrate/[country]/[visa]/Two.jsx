@@ -4,7 +4,8 @@ import { useMemo } from "react";
 import { useRouter, useParams } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
 import Link from "next/link";
-
+import ModalFormWithPopup from "../../../Popup/Popup";
+import MigrateImageContent from "../../../Popup/MigrateImageContent";
 
 import Goppcardvisa from './Germany-visa/Goppcardvisa';
 import Gworkvisa from './Germany-visa/Gworkvisa';
@@ -298,7 +299,12 @@ export default function MigrateCountry() {
   const [selectedVisaTitle, setSelectedVisaTitle] = useState(defaultVisaTitle);
   
   const VisaComponent = visa ? visaComponents[`${country}-${visa}`] : (country === 'germany' ? Goppcardvisa : null);
-
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+   const [isOpen, setIsOpen] = useState(false);
+ 
+   useEffect(() => {
+     setIsImageLoaded(true);
+   }, []);
   useEffect(() => {
     if (visa) {
       const matchedVisa = visasList.find(v => v.path === `/migrate/${country}/${visa}`);
@@ -332,45 +338,78 @@ export default function MigrateCountry() {
   }}
 >
 
-          <div className="w-full lg:w-1/2 flex flex-col lg:items-start items-center lg:text-left text-center mt-12 lg:mt-8 lg:ml-16">
+          <div className="w-full lg:w-1/2 flex flex-col lg:items-start items-center lg:text-left text-center mt-12   lg:ml-16">
             <h1 className="font-semibold uppercase bg-gradient-to-r from-white to-gray-500 inset-0 bg-black/60 bg-clip-text text-transparent text-4xl lg:text-6xl lg:mb-4 lg:mt-4">
               Migrate to {selectedVisaTitle}
             </h1>
             <p className="text-white mt-4 lg:mt-2 font-bold">
               Discover endless opportunities with our expert immigration services.
             </p>
+            <div className="mt-8 flex justify-center lg:justify-start">
+            <button
+              type="button"
+              onClick={() => setIsOpen(true)}
+              className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition duration-300"
+            >
+              <span className="relative z-10">Apply Now</span>
+              <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine" />
+            </button>
           </div>
+          </div>
+          
           <div className="w-full lg:w-1/2 lg:mr-16">
             <Form />
           </div>
         </div>
   
-        <div className="flex flex-col lg:flex-row bg-gradient-to-bl from-white to-orange-50 px-8 py-10">
-          <div className="w-full lg:w-[350px] flex-shrink-0 px-4 flex flex-col items-center">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent mb-8 text-center">
-              Visa Options for {country?.toUpperCase()}
-            </h2>
-            <div className="flex flex-col gap-4 items-center w-full">
-             {visasList.map((visa) => (
-  <Link
-    key={visa.path}
-    href={visa.path}
-    className={`w-full lg:w-[350px] flex items-center justify-between text-lg font-semibold border border-orange-500 px-6 py-4 rounded-xl shadow-lg transition hover:bg-orange-500 hover:text-white
-      ${selectedVisaPath === visa.path ? 'bg-orange-500 text-white' : 'bg-white text-black'}`}
-  >
-    {visa.name}
-    <ArrowRight className="w-6 h-6" />
-  </Link>
-))}
+     <div className="flex flex-col lg:flex-row bg-gradient-to-bl from-white to-orange-50 px-8 py-10">
+  {/* Visa Options (order changed with Tailwind) */}
+  <div className="w-full lg:w-[350px] flex-shrink-0 px-4 flex flex-col items-center order-2 lg:order-1">
+    <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent mt-8 mb-8 text-center">
+      Visa Options for {country?.toUpperCase()}
+    </h2>
+         <div className=" mb-6 flex justify-center lg:hidden">
+    <button
+      type="button"
+      onClick={() => setIsOpen(true)}
+      className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition duration-300"
+    >
+      <span className="relative z-10">Apply Now</span>
+      <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine" />
+    </button>
+  </div>
+    <div className="flex flex-col gap-4 items-center w-full">
+      {visasList.map((visa) => (
+        <Link
+          key={visa.path}
+          href={visa.path}
+          className={`w-full lg:w-[350px] flex items-center justify-between text-lg font-semibold border border-orange-500 px-6 py-4 rounded-xl shadow-lg transition hover:bg-orange-500 hover:text-white
+            ${selectedVisaPath === visa.path ? 'bg-orange-500 text-white' : 'bg-white text-black'}`}
+        >
+          {visa.name}
+          <ArrowRight className="w-6 h-6" />
+        </Link>
+      ))}
+    </div>
+  </div>
 
-            </div>
-          </div>
-  
-          <div className="w-full lg:flex-1 overflow-y-auto max-h-[800px] px-8 rounded-xl shadow-md border border-gray-200 mt-8 lg:mt-0 lg:ml-9">
-            {VisaComponent ? <VisaComponent /> : <p>Select a visa option to view details.</p>}
-          </div>
-        </div>
+ {/* Content */}
+<div className="w-full lg:flex-1 overflow-y-auto lg:max-h-[800px] max-h-[800px] px-8 rounded-xl shadow-md border border-gray-200 lg:mt-8 lg:ml-9 order-1 lg:order-2">
+  {VisaComponent ? <VisaComponent /> : (
+    <p className="text-center text-gray-600">Select a visa option to view details.</p>
+  )}
+</div>
+
+</div>
+
+        {/* POPUP FORM */}
+      <ModalFormWithPopup
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        customContent={<MigrateImageContent />}
+      />
       </div>
+
     );
   
 }

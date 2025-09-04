@@ -250,13 +250,6 @@ const UAEgolden = () => {
         team will be with you at every step – from initial consultation to the
         moment you receive your residency permit.
       </p>
-
-      <p className="mb-6 m-2">
-        Phone: +91 9160449000
-        <br />
-        Email: info@vjcoverseas.com
-      </p>
-
       <p className="mb-6 m-2">
         Secure your future in the UAE today with{" "}
         <a

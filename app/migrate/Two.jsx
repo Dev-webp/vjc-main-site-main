@@ -4,12 +4,13 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Form from "./Form";
 import Content from "./Content";
-import ModalFormWithPopup from "../Popup/Popup"; // adjust path if needed
+import ModalFormWithPopup from "../Popup/Popup";
 import MigrateImageContent from "../Popup/MigrateImageContent";
-import Link from "next/link";
 
+// 🔹 Animation Variants
 const textContainerVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -37,6 +38,7 @@ const descriptionVariants = {
   },
 };
 
+// 🔹 Countries Data
 const countriesData = [
   { name: "Migrate to Germany", path: "/migrate/germany" },
   { name: "Migrate to Canada", path: "/migrate/canada" },
@@ -52,8 +54,8 @@ const countriesData = [
 
 const Migrate = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
   const [background, setBackground] = useState("/migratepageimg.avif");
+  const router = useRouter();
 
   const handleCountryClick = (path, image) => {
     setBackground(image || "/migratepageimg.avif");
@@ -63,18 +65,16 @@ const Migrate = () => {
   return (
     <>
       {/* 🔷 Hero Section with Background + Overlay */}
-          <section
+      <section
         className="relative bg-cover bg-center min-h-[600px] lg:h-[680px] flex items-center"
-        style={{
-          backgroundImage: `url(${background})`,
-        }}
+        style={{ backgroundImage: `url(${background})` }}
       >
         {/* Black Transparent Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 w-full">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            {/* Text Section */}
+            {/* 🔹 Text Section */}
             <motion.div
               className="w-full lg:w-1/2 text-center lg:text-left"
               variants={textContainerVariants}
@@ -104,15 +104,15 @@ const Migrate = () => {
 
               <button
                 type="button"
-                className="relative mt-6 overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
                 onClick={() => setIsOpen(true)}
+                className="relative mt-6 overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
               >
                 <span className="relative z-10">Apply Now</span>
                 <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine pointer-events-none" />
               </button>
             </motion.div>
 
-            {/* Form Section */}
+            {/* 🔹 Form Section */}
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
               <Form />
             </div>
@@ -120,20 +120,31 @@ const Migrate = () => {
         </div>
       </section>
 
-      {/* 🔶 Content Section with White Background */}
-      <section className="bg-white py-16">
+      {/* 🔷 Content + Buttons Section */}
+      <div className="bg-white py-4">
         <div className="max-w-screen-xl mx-auto px-4">
-          {/* Title */}
-          <div className="flex flex-col items-center lg:items-start text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
-              Migrate to Your Dream Country
-            </h2>
-          </div>
+          {/* 📌 Switch order: buttons left (lg), content right (lg); content first (sm) */}
+          <div className="flex flex-col lg:flex-row md:items-start md:justify-between gap-8">
+            
+            {/* Buttons (Left on lg, Below on sm) */}
+            <div className="w-full lg:w-1/3 order-2 lg:order-1">
+          <div className="flex flex-col items-center text-center mb-8">
+  <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
+    Migrate to Your Dream Country
+  </h2>
+      <div className="mt-4 mb-10 flex justify-center lg:hidden">
+    <button
+      type="button"
+      onClick={() => setIsOpen(true)}
+      className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition duration-300"
+    >
+      <span className="relative z-10">Apply Now</span>
+      <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine" />
+    </button>
+  </div>
+</div>
 
-          {/* Buttons + Content */}
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
-            {/* Country Buttons */}
-            <div className="w-full md:w-1/3">
+
               {countriesData.map(({ name, path }) => (
                 <div key={path} className="mb-4 w-full flex justify-center">
                   <Link
@@ -149,15 +160,15 @@ const Migrate = () => {
               ))}
             </div>
 
-            {/* Dynamic Content */}
-            <div className="w-full md:w-2/3 lg:-mt-24 overflow-y-auto max-h-[900px] bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            {/* Content (Right on lg, Top on sm) */}
+            <div className="w-full lg:w-2/3 order-1 lg:order-2 overflow-y-auto max-h-[900px] bg-white p-6 rounded-xl shadow-md border border-gray-200">
               <Content />
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Modal */}
+      {/* 🔷 Modal */}
       <ModalFormWithPopup
         isOpen={isOpen}
         setIsOpen={setIsOpen}

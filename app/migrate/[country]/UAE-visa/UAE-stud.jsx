@@ -237,10 +237,6 @@ const UAEstud = () => {
           Contact us today for a free consultation and take your first step
           toward thriving in the UAE!
         </p>
-
-        <p className="mt-4 text-gray-800">
-          Call us at +91-9160449000 or visit www.vjcoverseas.com to get started.
-        </p>
       </div>
     </div>
   );
