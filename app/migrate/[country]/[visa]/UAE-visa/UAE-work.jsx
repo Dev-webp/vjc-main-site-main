@@ -51,7 +51,7 @@ const UAEwork = () => {
       <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <Image
-            src="/dubai-Work-Visa.jpg"
+            src="/dubai-Work-Visa.png"
             alt="dubai work Visa"
             width={500}
             height={300}
