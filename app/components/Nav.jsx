@@ -542,18 +542,18 @@ const toggleMobileSubSubMenu = (itemName) => {
       />
     </div>
   </Link>
-  <Link href="/" className="text-lg font-bold">
-    <div className="relative h-14 w-28 -ml-6">
-      <Image
-        src="/logo-2.webp"
-        alt="Logo"
-        fill
-        sizes="112px"
-        className="object-contain"
-        unoptimized
-      />
-    </div>
-  </Link>
+ <Link href="/" className="text-lg font-bold">
+  <div className="relative h-14 w-28 -ml-6">
+    <Image
+      src="/logo-2.webp"
+      alt="Logo"
+      fill
+      sizes="112px"
+      className="object-contain"
+    
+    />
+  </div>
+</Link>
 </div>
 {/* Work Abroad Link (Only Mobile) */}
 <div className="flex md:hidden items-center ml-4 mr-4">

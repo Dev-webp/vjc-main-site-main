@@ -18,7 +18,7 @@ const AustraliaEmployer186 = () => {
 
       <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
         <Image
-          src="/Aus-186 visa.png"
+          src="/australia-186-visa.jpg"
           alt="Australia Employer 186 Visa"
           width={900}
           height={630}

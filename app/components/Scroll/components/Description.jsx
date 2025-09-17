@@ -34,7 +34,7 @@ export default function Description() {
   <div
     className="relative bg-cover bg-center group hover:translate-y-[-10px] transition-all mx-auto"
     style={{
-      backgroundImage: "url('/canada.png')",
+      backgroundImage: "url('/canada1.webp')",
       width: '250px',
       height: '500px',
     }}

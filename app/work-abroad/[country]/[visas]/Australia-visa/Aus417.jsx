@@ -15,7 +15,7 @@ const Australia417Visa = () => {
 
       <div className="relative lg:p-4 bg-gradient-to-r my-10 from-orange-100 to-sky-100 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-fit mx-auto">
         <Image
-          src="/australia-417-visa.png"
+          src="/australia-working-417-visa.jpg"
           alt="Australia Working Holiday 417 Visa"
           width={900}
           height={630}
