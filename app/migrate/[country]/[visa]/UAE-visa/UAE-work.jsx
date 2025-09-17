@@ -51,8 +51,8 @@ const UAEwork = () => {
       <div className="flex mb-6 flex-col lg:flex-row items-start h-auto lg:space-x-6 space-y-4 lg:space-y-0">
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <Image
-            src="/dubai-Work-Visa.png"
-            alt="dubai work Visa"
+            src="/assets/dubaiworkvisa.png"
+            alt="Australia Business Visa"
             width={500}
             height={300}
             priority
@@ -73,22 +73,6 @@ const UAEwork = () => {
             expatriates meet legal, medical, and professional requirements
             before starting their employment.
           </p>
-           <p className="mb-6">
-        Some professionals also explore other residency options such as the{" "}
-        <Link href="https://www.vjcoverseas.com/migrate/uae/golden-visa" legacyBehavior>
-          <a style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}>
-            UAE Golden Visa
-          </a>
-        </Link>{" "}
-        for long-term residency and the{" "}
-        <Link href="https://www.vjcoverseas.com/migrate/uae/green-visa" legacyBehavior>
-          <a style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}>
-            UAE Green Visa
-          </a>
-        </Link>{" "}
-        designed for skilled workers and freelancers.
-      </p>
-
         </div>
       </div>
 
@@ -111,7 +95,22 @@ const UAEwork = () => {
         </li>
       </ul>
 
-     
+      <p className="mb-6">
+        Some professionals also explore other residency options such as the{" "}
+        <Link href="https://www.vjcoverseas.com/migrate/uae/golden-visa" legacyBehavior>
+          <a style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}>
+            UAE Golden Visa
+          </a>
+        </Link>{" "}
+        for long-term residency and the{" "}
+        <Link href="https://www.vjcoverseas.com/migrate/uae/green-visa" legacyBehavior>
+          <a style={{ color: "orange", fontWeight: "bold", textDecoration: "none" }}>
+            UAE Green Visa
+          </a>
+        </Link>{" "}
+        designed for skilled workers and freelancers.
+      </p>
+
       <h3 className="text-black m-2 font-bold text-lg mb-6">
         Steps to Obtain a UAE Work Visa
       </h3>
