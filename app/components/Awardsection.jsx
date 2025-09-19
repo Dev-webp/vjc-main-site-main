@@ -31,6 +31,8 @@ export default function AwardCarouselSliding() {
                   fill
                   sizes="(max-width: 768px) 100vw, 220px"
                   className="object-contain"
+                  priority
+                  unoptimized
                 />
               </div>
               <p className="mt-4 text-center text-sm font-bold text-gray-800">

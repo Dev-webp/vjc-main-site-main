@@ -15,15 +15,9 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative py-4 lg:py-0 mt-20 md:-mt-20 lg:mt-20 bg-gradient-to-bl from-white to-white">
-      {/* Background Image */}
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0"
-        style={{ backgroundImage: "url(/airplane.webp)" }}
-      />
-      {/* Semi-transparent black overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10" />
-
+    <section 
+      className="relative py-4 lg:py-0 mt-20 md:-mt-20 lg:mt-20 bg-black"
+    >
       {/* Content */}
       <div className="relative z-20 mx-auto max-w-7xl w-full px-2 sm:px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-y-8 gap-x-6">
         {/* Left Section */}
