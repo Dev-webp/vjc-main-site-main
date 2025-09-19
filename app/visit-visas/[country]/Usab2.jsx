@@ -6,7 +6,7 @@ export default function USAB2Visa() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 font-[Times_New_Roman]">
       <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">USA B2 Tourist Visa – Your Gateway to Explore the United States</h1>
-      <h2 className="text-xl mt-4 mb-2 font-semibold text-orange-500 mb-2">Plan Your Dream Visit with <span className="text-orange-500">VJC Overseas</span> – Expert Visa Guidance for Indian Travelers</h2>
+      <h2 className="text-xl mt-4  font-semibold text-orange-500 mb-2">Plan Your Dream Visit with <span className="text-orange-500">VJC Overseas</span> – Expert Visa Guidance for Indian Travelers</h2>
           <div className="flex flex-col md:flex-row md:items-start md:space-x-4">
           <div className="md:w-1/2">
          <p>Are you dreaming of exploring the bustling streets of New York, witnessing the magic of Hollywood, or visiting family in the USA? The USA B2 Visa is your ticket to experiencing America’s iconic landmarks, rich culture, and unforgettable adventures. At <span className="text-orange-500">VJC Overseas</span>, we specialize in helping Indian citizens navigate the USA B2 Visa application process with ease, accuracy, and expert care.</p>

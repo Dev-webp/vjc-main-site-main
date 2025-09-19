@@ -30,7 +30,7 @@ import Azerbaijan from "./Azerbaijan";
 import Southafrica from "./Southafrica";
 import Japan from "./Japan";
 import ModalFormWithPopup from "../../Popup/Popup"; // adjust path if needed
-
+import Vietnam from "./Vietnam";
 import MaltaImageContent from "../../Popup/Toursandtickeing";
 
 const visaData = [
@@ -56,6 +56,7 @@ const visaData = [
     { name: "Austria Tours and Ticketing", image: "/austriavisit.jpg", path: "/tours-ticketing/austria" },
     { name: "South Africa Tours and Ticketing", image: "/south-africa-tour-packages.jpg", path: "/tours-ticketing/south-africa" },
     { name: "Japan Tours and Ticketing", image: "/japan-tourist-places.jpg", path: "/tours-ticketing/japan" },
+    { name: "Vietnam Tours and Ticketing", image: "/Vietnam-trips-tour-packages-from-India.jpg", path: "/tours-ticketing/vietnam" },
 ];
 
 const defaultVisa = {
@@ -224,6 +225,8 @@ const Migrate = () => {
               <Japan />
             ) : selectedVisa.path === "/tours-ticketing/south-africa" ? (
               <Southafrica />
+            ) : selectedVisa.path === "/tours-ticketing/vietnam" ? (
+              <Vietnam />
             ) : (
               <div className="text-gray-700 text-lg leading-relaxed">
                 Information about <strong>{selectedVisa.name}</strong> will be displayed here.

@@ -101,11 +101,6 @@ export default function CanadaVisitVisa() {
       <p>
         Don’t let paperwork and process delays slow down your travel dreams. <span className="text-orange-500">VJC Overseas</span> ensures a smooth, transparent, and success-oriented visa process for Indian citizens.
       </p>
-      <p>
-         Visit us at your nearest branch or <br />
-         Call now for a FREE consultation: <a href="tel:+919160449000" className="text-blue-900 font-bold">+91-9160449000</a> <br />
-        Or apply online at: <a href="https://www.vjcoverseas.com" className="text-blue-900 font-bold">www.vjcoverseas.com</a>
-      </p>
     </div>
   );
 }

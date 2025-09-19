@@ -112,8 +112,7 @@ export default function SchengenVisitVisa() {
       <p>
         Contact <a href="https://www.vjcoverseas.com" className="text-orange-500 font-bold">VJC Overseas</a> – your trusted Visa & Travel Consultants and <a href="https://www.vjcoverseas.com/visit-visas" className="text-blue-900 font-bold">Visit Visa Consultants</a> in India for personalized Schengen visa assistance.
       </p>
-      <p className="mt-2">Email: <a href="mailto:info@vjcoverseas.com">info@vjcoverseas.com</a></p>
-      <p>Phone: +91-9160449000</p>
+   
     </div>
   );
 }

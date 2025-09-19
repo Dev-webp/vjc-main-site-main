@@ -108,11 +108,6 @@ export default function AustraliaVisitVisa() {
       <p>
         Don’t let paperwork hold you back. Contact <strong className="text-blue-900"><a href="https://www.vjcoverseas.com">Best Visa Immigration Consultants</a></strong> to start your visa application today.
       </p>
-      <p>
-         Call us now at <a href="tel:+919160449000" className="text-blue-600 underline">+91-9160449000</a><br />
-         Email: <a href="mailto:info@vjcoverseas.com" className="text-blue-600 underline">info@vjcoverseas.com</a><br />
-         <a href="https://www.vjcoverseas.com" className="text-blue-600 underline">www.vjcoverseas.com</a>
-      </p>
       <p className="mt-2">Your journey begins here. Let’s make Australia happen!</p>
     </div>
   );

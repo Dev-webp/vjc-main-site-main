@@ -179,11 +179,7 @@ export default function USAVisaPage() {
           </a>{" "}
           – India’s Trusted USA Visa Consultant.
         </p>
-        <ul className="mt-2">
-          <li>Visit our offices across Hyderabad, Bangalore.</li>
-          <li>Email: <a href="mailto:info@vjcoverseas.com">info@vjcoverseas.com</a></li>
-          <li>Call/WhatsApp: <a href="tel:+919160449000">+91-9160449000</a></li>
-        </ul>
+      
       </section>
 
       <h2 className="text-center text-xl font-semibold mt-4 mb-2">

@@ -125,8 +125,7 @@ export default function USAB1B2Visa() {
       <section className="text-center">
         <h3 className="text-xl mt-4 mb-2 font-bold"> Start Your Journey to the USA Today</h3>
         <p>At <span className="text-orange-500">VJC Overseas</span>, we’ve helped thousands of Indian travellers successfully obtain their USA B1/B2 Visas. Whether you're a business leader, globetrotter, or simply want to meet loved ones in the States – we’re here to help, every step of the way.</p>
-        <p className="mt-2"> Call Now: +91-9160449000</p>
-        <p> Visit Us: www.vjcoverseas.com</p>
+  
         <p className="mt-2 font-semibold"> Walk into your nearest VJC Overseas office today!</p>
       </section>
     </div>

@@ -95,7 +95,7 @@ export default function DenmarkVisitVisa() {
       </p>
       <p> Start your Denmark Visit Visa application now!</p>
       <p> Visit our offices in Hyderabad, Chennai, Bangalore & more</p>
-      <p> Call us at +91-9160449000</p>
+   
     </div>
   );
 }

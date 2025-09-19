@@ -108,11 +108,7 @@ const USAB1Visa = () => {
           <section>
             <h2 className="text-xl mt-4 mb-2 font-semibold">Apply for Your USA B1 Visa with <span className="text-orange-500">VJC Overseas</span> Today</h2>
             <p>Don’t let documentation slow you down. Step confidently into the world of international business with our support.</p>
-            <p className="mt-2">
-              📞 Call: +91-9160449000<br />
-              📧 Email: info@vjcoverseas.com<br />
-              🌐 Website: www.vjcoverseas.com
-            </p>
+       
           </section>
         </div>
       </div>

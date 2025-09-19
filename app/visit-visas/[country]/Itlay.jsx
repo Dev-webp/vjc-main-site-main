@@ -83,8 +83,7 @@ export default function ItalyVisitVisa() {
         Partner with the <a href="https://www.vjcoverseas.com" className="text-blue-900 font-bold">Best Visa Immigration Consultants</a> to make your Italy trip smooth and memorable.
       </p>
       <p className="mt-2">Contact us today for a free consultation or fill out the enquiry form to start your Italy Visa process now!</p>
-      <p>Email: info@vjcoverseas.com</p>
-      <p>Phone: +91-9160449000</p>
+    
     </div>
   );
 }

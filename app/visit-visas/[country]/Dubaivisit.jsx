@@ -92,8 +92,7 @@ export default function DubaiVisitVisa() {
       <p>
         Ready to explore the city of superlatives? Let <span className="text-orange-500">VJC Overseas</span> be your guide from visa to vacation. Contact us today to start your Dubai Visit Visa application with ease and confidence.
       </p>
-      <p>Call Now: +91-9160449000</p>
-      <p>Email: info@vjcoverseas.com</p>
+      
     </div>
   );
 }

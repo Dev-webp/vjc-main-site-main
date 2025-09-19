@@ -85,7 +85,7 @@ export default function AustriaVisitVisa() {
         Whether it’s strolling through Vienna’s imperial streets or hiking the Tyrolean Alps, Austria promises a journey of elegance and adventure. Let <span className="text-orange-500">VJC Overseas</span> turn your European dream into reality!
       </p>
       <p className="mb-2">Contact us now for a free visa consultation and start your Austria travel journey the right way.</p>
-      <p>📧 info@vjcoverseas.com | ☎️ +91-9160449000</p>
+
     </div>
   );
 }
