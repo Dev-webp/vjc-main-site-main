@@ -3,7 +3,19 @@ import React, { useState, useEffect, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-const sliderData = [
+type Service = {
+  text: string;
+  link: string;
+};
+
+type Slide = {
+  services: Service[];
+  backgroundImage: string;
+  title: string;
+  gradient: string;
+};
+
+const sliderData: Slide[] = [
   {
     services: [
       { text: "Apply For Canada Permanent Residency", link: "/migrate-canada-permanent-residency-visa" },
@@ -45,12 +57,6 @@ const sliderData = [
   },
 ];
 
-type Slide = {
-  services: { text: string; link: string }[];
-  backgroundImage: string;
-  title: string;
-  gradient: string;
-};
 const SlideContent = memo(({ slide }: { slide: Slide }) => (
   <div className="relative z-10 text-center px-4 py-0 select-none">
     <h2 className={`text-xl lg:text-3xl font-extrabold uppercase text-transparent bg-clip-text ${slide.gradient}`}>
@@ -59,7 +65,10 @@ const SlideContent = memo(({ slide }: { slide: Slide }) => (
     <ul className={`space-y-1 ${slide.title === "United Kingdom" || slide.title === "Malta" ? "mt-3" : ""}`}>
       {slide.services.map((service, index) => (
         <li key={index}>
-          <Link href={service.link} className="text-sm lg:text-base underline text-white hover:text-orange-400 transition-colors">
+          <Link
+            href={service.link}
+            className="text-sm lg:text-base underline text-white hover:text-orange-400 transition-colors"
+          >
             {service.text}
           </Link>
         </li>
@@ -69,7 +78,7 @@ const SlideContent = memo(({ slide }: { slide: Slide }) => (
 ));
 SlideContent.displayName = "SlideContent";
 
-const Slider = () => {
+const Slider: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -78,9 +87,15 @@ const Slider = () => {
       const interval = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % sliderData.length);
       }, 5000);
+
       return () => clearInterval(interval);
     }
   }, [isHovered]);
+
+  const goToSlide = (index: number) => {
+    if (index === currentSlide) return;
+    setCurrentSlide(index);
+  };
 
   return (
     <div
@@ -88,8 +103,9 @@ const Slider = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       aria-live="polite"
-      style={{ position: "relative" }} // fixes warning!
+      style={{ position: "relative" }}
     >
+      {/* Background Image with Gradient Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${sliderData[currentSlide].backgroundImage})` }}
@@ -98,6 +114,7 @@ const Slider = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80" />
       </div>
 
+      {/* Animated Slide Content */}
       <AnimatePresence mode="wait">
         <motion.div
           key={sliderData[currentSlide].title}
@@ -111,13 +128,16 @@ const Slider = () => {
         </motion.div>
       </AnimatePresence>
 
+      {/* Navigation Dots */}
       <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-1 z-30">
         {sliderData.map((_, idx) => (
           <button
             key={idx}
-            className={`w-3 h-3 rounded-full focus:outline-none ${idx === currentSlide ? "bg-orange-500 scale-110" : "bg-gray-400"} transition-transform duration-200`}
+            className={`w-3 h-3 rounded-full focus:outline-none ${
+              idx === currentSlide ? "bg-orange-500 scale-110" : "bg-gray-400"
+            } transition-transform duration-200`}
             aria-label={`Go to slide ${idx + 1}`}
-            onClick={() => setCurrentSlide(idx)}
+            onClick={() => goToSlide(idx)}
             type="button"
           />
         ))}

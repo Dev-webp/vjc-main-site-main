@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
  
 const ServicesDec = () => {
-  const [currentImage, setCurrentImage] = useState("/ser.png");
+  const [currentImage, setCurrentImage] = useState("/service.png");
  
   const boxData = [
     {
@@ -116,13 +116,13 @@ const ServicesDec = () => {
     src={currentImage}
     alt="Services"
     className={`object-cover rounded-full transition-transform duration-500 ${
-      currentImage === "/ser.png" ? "w-[24rem] h-[28rem]" : "w-[30rem] h-[30rem]"
+      currentImage === "/service.png" ? "w-[24rem] h-[28rem]" : "w-[30rem] h-[30rem]"
     }`}
     whileHover={{ scale: 1.1 }} // Zoom effect
     transition={{ duration: 0.4, ease: "easeInOut" }}
   />
  
-  {currentImage === "/ser.png" && (
+  {currentImage === "/service.png" && (
     <div className="absolute inset-0 flex flex-col mt-52 ml-4 items-center justify-center text-black text-center">
 
 
@@ -163,7 +163,7 @@ const ServicesDec = () => {
       src={currentImage}
       alt="Services"
       className={`object-cover rounded-full mx-auto transition-transform duration-500 ${
-        currentImage === "/ser.png"
+        currentImage === "/service.png"
           ? "w-80 h-[26rem] -mt-28"
           : "w-[50%] h-auto -mt-28"
       }`}
@@ -171,7 +171,7 @@ const ServicesDec = () => {
       transition={{ duration: 0.4, ease: "easeInOut" }}
     />
  
-    {currentImage === "/ser.png" && (
+    {currentImage === "/service.png" && (
       <div className="absolute inset-0 mt-[90px] ml-5 flex flex-col items-center justify-center text-black text-center px-6">
         <h2 className="text-2xl font-bold leading-tight">Our Services</h2>
         <p className="mt-3 text-sm leading-snug">

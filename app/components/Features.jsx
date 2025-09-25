@@ -72,6 +72,8 @@ const FeatureCard = ({ image, title, description, buttonLabel }) => {
     width={500} // Set an appropriate width
     height={160} // Set an appropriate height to match h-40 (40 * 4 = 160px)
     className="w-full h-40 object-cover rounded-t-lg"
+    unoptimized
+    priority
   />
       <h3 className="mt-4 text-lg font-bold text-gray-800 uppercase">{title}</h3>
       <p className="mt-2 text-gray-600 text-center line-clamp-3">

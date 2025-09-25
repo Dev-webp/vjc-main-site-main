@@ -6,19 +6,7 @@ import Link from 'next/link';
 export default function Description() {
     return (
         <div className="relative flex flex-col justify-center items-center mt-0 md:mt-0 lg:mt-0 py-8 md:py-32 lg:py-14 bg-gradient-to-br from-orange-500 to-red-600 text-white overflow-hidden">
-    <div className="absolute inset-0 opacity-30">
-        <svg
-            className="w-full h-full"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 800 600"
-            fill="none"
-        >
-            <path
-                d="M400 200C550 250 650 150 700 300C750 450 600 500 400 500C200 500 50 450 100 300C150 150 250 150 400 200Z"
-                fill="rgba(255,255,255,0.3)"
-            />
-        </svg>
-    </div>
+   
     <div className="relative text-center -mb-6">
         <h1 className="text-[6vw] lg:text-[4vw] font-bold uppercase leading-tight">
             Turn Dreams Into Destinations
