@@ -23,7 +23,7 @@ const availableJobs = [
     ]
   },
   {
-    id: 2,
+    id: 7,
     title: "Immigration Counselor",
     type: "Full-time",
     location: "Bangalore",
@@ -40,58 +40,23 @@ const availableJobs = [
       "Client handling with professionalism"
     ]
   },
-  {
-    id: 3,
-    title: "Branch Manager",
-    type: "Full-time",
-    location: "Bangalore",
-    description: "Oversee operations of our Bangalore branch",
-    skills: ["Management", "Leadership", "Sales"],
-    salary: "₹60,000 - ₹75,000",
-    details: [
-      "Lead and manage the branch team",
-      "Achieve monthly sales targets",
-      "Conduct performance reviews",
-      "Ensure smooth operations",
-      "Client relationship management",
-      "Implement new strategies",
-      "Coordinate with HO and regional teams"
-    ]
-  },
-  {
-    id: 4,
-    title: "Digital Marketing Executive (Freshers)",
-    type: "Full-time",
-    location: "Bangalore / Hyderabad",
-    description: "Assist in managing social media, SEO, and online campaigns",
-    skills: ["SEO", "Social Media", "Analytics", "Email Marketing"],
-    salary: "₹20,000 - ₹25,000",
-    details: [
-      "Execute marketing tasks under guidance",
-      "Basic SEO & ad optimization tasks",
-      "Email campaign support",
-      "Create and post social media content",
-      "Monitor campaign metrics",
-      "Reporting using basic analytics tools",
-      "Freshers welcome, training provided"
-    ]
-  },
+ 
   {
     id: 5,
-    title: "Sales Executive",
+    title: "Receptionist",
     type: "Full-time",
-    location: "Bangalore / Hyderabad",
+    location: "Bangalore",
     description: "Promote and sell services related to study abroad consulting",
-    skills: ["Sales", "CRM", "Target Achievement", "Client Handling"],
+    skills: ["Sales", "CRM", "Client Handling"],
     salary: "₹30,000 - ₹40,000",
     details: [
-      "Generate interest through calls and meetings",
-      "Follow up on warm leads",
-      "Achieve monthly sales targets",
-      "Coordinate with counseling team",
-      "Ensure top-notch customer service",
-      "Prepare basic reports",
-      "Prior sales experience is a plus"
+      "Greet and welcome visitors professionally and courteously",
+      "Handle incoming calls and direct them to the appropriate departments",
+      "Manage appointment scheduling and coordinate meeting rooms",
+      "Provide excellent customer service and address visitor inquiries",
+      "Collaborate with counseling and administrative teams efficiently",
+      "Maintain records and prepare basic reports as required",
+      "Collaborate with counseling and administrative teams efficiently"
     ]
   },
   {
