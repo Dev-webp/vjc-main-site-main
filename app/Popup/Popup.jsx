@@ -1,5 +1,3 @@
-// ModalFormWithPopup.js
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -21,8 +19,7 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
   const [message, setMessage] = useState("");
   const [formStatus, setFormStatus] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [popupVisible, setPopupVisible] = useState(false);
-  const [landingPage, setLandingPage] = useState('');
+  const [landingPage, setLandingPage] = useState("");
 
   // Capture current page URL
   useEffect(() => {
@@ -31,20 +28,10 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
     }
   }, []);
 
-  // Timer for the success popup
-  useEffect(() => {
-    if (popupVisible) {
-      const timeout = setTimeout(() => {
-        setPopupVisible(false);
-      }, 4000);
-      return () => clearTimeout(timeout);
-    }
-  }, [popupVisible]);
-  
   // Lock body scroll when modal is open
   useEffect(() => {
     if (typeof document !== 'undefined') {
-      if (isOpen || popupVisible) {
+      if (isOpen) {
         document.body.style.overflow = 'hidden';
       } else {
         document.body.style.overflow = '';
@@ -55,7 +42,7 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
         document.body.style.overflow = '';
       }
     };
-  }, [isOpen, popupVisible]);
+  }, [isOpen]);
 
 
   const handleSubmit = async (e) => {
@@ -91,8 +78,12 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
         setQualification("");
         setCountry("");
         setMessage("");
-        setPopupVisible(true);
         setIsOpen(false); // Close modal after submission
+        // Redirect to /thankyou page appended to current path
+        if (typeof window !== 'undefined') {
+          const currentPath = window.location.pathname;
+          window.location.href = `${currentPath.replace(/\/$/, '')}/thankyou`;
+        }
       } else {
         setFormStatus("error");
       }
@@ -104,12 +95,13 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
     }
   };
 
+
   return (
     <>
       <AnimatePresence>
         {isOpen && (
           // 🔑 PORTAL IMPLEMENTATION: This renders the modal outside the component hierarchy.
-          <Portal> 
+          <Portal>
             <motion.div
               // We keep the highest z-index here
               className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 px-4"
@@ -118,7 +110,7 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
               exit={{ opacity: 0, scale: 0.8, y: 100 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
               // Backdrop click handler
-              onClick={() => setIsOpen(false)} 
+              onClick={() => setIsOpen(false)}
             >
               {/* Stop propagation on the inner modal content */}
               <motion.div
@@ -127,7 +119,7 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 80 }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
-                onClick={(e) => e.stopPropagation()} 
+                onClick={(e) => e.stopPropagation()}
               >
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0 -z-10">
@@ -143,7 +135,6 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
                 {/* Text Overlay on Background Image */}
                 <div className="hidden md:block md:absolute top-6 left-6 md:top-64 lg:-mt-12 md:left-10 z-10 max-w-[85%] sm:max-w-[40%] rounded-2xl bg-black/10 border border-white/30 shadow-xl p-6">
                   {customContent || <ImageContent />}
-
                 </div>
 
                 {/* Form Panel */}
@@ -155,11 +146,11 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
                   transition={{ duration: 0.7, ease: "easeOut" }}
                 >
                   <button
-    onClick={() => setIsOpen(false)}
-    className="absolute top-3 right-4 text-white hover:text-red-500 z-20" // <- Ensure z-20 is here
-  >
-    <FaTimes size={24} /> 
-  </button>
+                    onClick={() => setIsOpen(false)}
+                    className="absolute top-3 right-4 text-white hover:text-red-500 z-20"
+                  >
+                    <FaTimes size={24} />
+                  </button>
 
                   <h2 className="text-xl font-bold text-center mb-4 bg-gradient-to-r from-sky-300 to-orange-300 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,165,0,0.8)] flex items-center justify-center gap-2">
                     <span className="text-yellow-400 text-2xl">📝</span>
@@ -311,31 +302,7 @@ const ModalFormWithPopup = ({ isOpen, setIsOpen, customContent }) => {
         )}
       </AnimatePresence>
 
-      {/* ✅ Success Message Popup - ALSO WRAPPED IN PORTAL */}
-      <AnimatePresence>
-        {popupVisible && (
-          <Portal>
-            <motion.div
-              className="fixed inset-0 flex items-center justify-center z-[9999] bg-black/60"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-            >
-              <motion.div
-                className="bg-white text-black px-6 py-4 rounded-2xl shadow-lg text-center"
-                initial={{ scale: 0.6, opacity: 0, y: 60 }}
-                animate={{ scale: 1, opacity: 1, y: 0 }}
-                exit={{ scale: 0.6, opacity: 0, y: 60 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-              >
-                <p className="text-lg font-semibold">
-                  🎉 Thank you! We’ll contact you soon!
-                </p>
-              </motion.div>
-            </motion.div>
-          </Portal>
-        )}
-      </AnimatePresence>
+      {/* Removed the popup section as per your request */}
     </>
   );
 };

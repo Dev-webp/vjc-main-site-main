@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
+// The import for 'next/router' has been removed to resolve the compilation error.
 
 const Form = () => {
+  // We no longer need to initialize the router here.
+  
+  // Form state
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -9,28 +13,25 @@ const Form = () => {
   const [qualification, setQualification] = useState('');
   const [country, setCountry] = useState('');
   const [message, setMessage] = useState('');
-  const [formStatus, setFormStatus] = useState(null);
+  
+  // UI state
+  const [formStatus, setFormStatus] = useState(null); // 'success', 'error', or null
   const [loading, setLoading] = useState(false);
-  const [popupVisible, setPopupVisible] = useState(false);
-  const [landingPage, setLandingPage] = useState('');
-  // Capture current page URL
-    useEffect(() => {
-      if (typeof window !== 'undefined') {
-        setLandingPage(window.location.href);
-      }
-    }, []);
+  
+  // State to capture the page URL for the form data
+  const [landingPage, setLandingPage] = useState(''); 
+
+  // Capture current page URL (for form data submission)
   useEffect(() => {
-    if (popupVisible) {
-      const timeout = setTimeout(() => {
-        setPopupVisible(false);
-      }, 4000);
-      return () => clearTimeout(timeout);
+    if (typeof window !== 'undefined') {
+      setLandingPage(window.location.href);
     }
-  }, [popupVisible]);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setFormStatus(null); // Reset status on new submission attempt
 
     const formData = {
       name,
@@ -44,15 +45,16 @@ const Form = () => {
       landingPage,
     };
 
+    let response;
     try {
-      const response = await fetch('/api/send-email', {
+      response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setFormStatus('success');
+        // 1. Clear form fields (optional, but good practice)
         setName('');
         setEmail('');
         setPhone('');
@@ -61,28 +63,59 @@ const Form = () => {
         setQualification('');
         setCountry('');
         setMessage('');
-        setPopupVisible(true);
+
+        // 2. *** REDIRECT LOGIC FOR GOOGLE ADS TRACKING ***
+        // Get the current path (e.g., /products/visa)
+        const currentPathname = window.location.pathname;
+        
+        // Construct the new path (e.g., /products/visa/thankyou)
+        // We use window.location.replace() to redirect and prevent the user
+        // from hitting 'back' to see the form again, achieving the same result as router.replace().
+        const redirectPath = `${currentPathname}/thankyou`;
+        window.location.replace(redirectPath);
+
+        // Note: Execution stops here as the browser navigates to the new URL.
+        
       } else {
+        // Handle API errors (e.g., 400, 500)
         setFormStatus('error');
+        setLoading(false);
       }
     } catch (error) {
-      console.error('Error:', error.message);
+      // Handle network errors (e.g., no internet)
+      console.error('Network Error:', error.message);
       setFormStatus('error');
-    } finally {
       setLoading(false);
     }
   };
+  
+  // Determine button text based on status
+  let buttonText = 'Submit for Free Assessment';
+  if (loading) {
+    buttonText = 'Submitting...';
+  } else if (formStatus === 'error') {
+    buttonText = 'Submission Failed! Please Try Again.';
+  }
+
 
   return (
     <div
-      className="bg-gradient-to-b from-blue-400/60 to-black/80 p-6 py-4  shadow-2xl max-w-md mx-auto w-full mb-6 rounded-lg shadow-gray-500"
+      className="bg-gradient-to-b from-blue-400/60 to-black/80 p-6 py-4 shadow-2xl max-w-md mx-auto w-full mb-6 rounded-lg shadow-gray-500"
       style={{ fontFamily: 'Times New Roman, serif' }}
     >
-      <h2 className="text-2xl font-semibold text-center  text-white mt-0">
+      <h2 className="text-2xl font-semibold text-center text-white mt-0">
         Sign up <span style={{ color: 'rgb(220, 4, 4)' }}> &</span> Get Free Assessment
       </h2>
+      
+      {/* Display error message if submission failed */}
+      {formStatus === 'error' && (
+          <p className="text-red-300 text-center font-bold mt-2">
+            There was an error submitting the form. Please check your connection.
+          </p>
+      )}
 
       <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+        {/* Input fields */}
         <input
           type="text"
           name="name"
@@ -176,21 +209,12 @@ const Form = () => {
           <button
             type="submit"
             disabled={loading}
-           className="w-full bg-gray-950 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 shadow-lg mt-2 sm:mt-0 -mb-2 sm:mb-0"
+            className="w-full bg-gray-950 text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 shadow-lg mt-2 sm:mt-0 -mb-2 sm:mb-0"
           >
-            {formStatus === 'success' ? 'Form Submitted!' : loading ? 'Submitting...' : 'Submit for Free Assessment'}
+            {buttonText}
           </button>
         </div>
       </form>
-
-      {/* Success Popup */}
-      {popupVisible && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-4 rounded-lg shadow-lg max-w-md w-full text-center">
-            <p className="text-xl font-semibold">Submission received, we’ll get back to you shortly!</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

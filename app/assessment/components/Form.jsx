@@ -114,10 +114,12 @@ const Form = () => {
       });
 
       if (response.ok) {
-        setPopupVisible(true);
-        setTimeout(() => setPopupVisible(false), 5000);
+        // Redirect to current URL + /thankyou instead of popup
+        if (typeof window !== 'undefined') {
+          const currentPath = window.location.pathname;
+          window.location.href = `${currentPath.replace(/\/$/, '')}/thankyou`;
+        }
       }
-
     } catch (error) {
       console.error('Error:', error.message);
       setFormStatus('error');
@@ -134,13 +136,14 @@ const Form = () => {
       {currentStep === 0 ? (
         <div className='-mt-32'>
           <h3 className="text-xl font-semibold">Select a Country for free Evaluation</h3>
-          <div className="flex flex-wrap gap-3 ">
+          <div className="flex flex-wrap gap-3">
             {Object.keys(mcqQuestions).map((country) => (
               <button
                 key={country}
-                onClick={() => setSelectedCountry(country)}
-                className={`px-3 py-3 border border-orange-700 hover:bg-gray-700 h-12  
-                  ${selectedCountry === country ? 'bg-gray-700 text-white' : 'bg-white text-black'}`}
+                onClick={() => handleCountrySelection(country)}
+                className={`px-3 py-3 border border-orange-700 hover:bg-gray-700 h-12 ${
+                  selectedCountry === country ? 'bg-gray-700 text-white' : 'bg-white text-black'
+                }`}
               >
                 {country}
               </button>
@@ -148,15 +151,14 @@ const Form = () => {
           </div>
           {selectedCountry && (
             <button
-              className={`px-6 py-3 h-12 w-28 mt-4 text-white flex items-center justify-center gap-2 transition duration-300 ease-in-out 
-                ${selectedCountry ? 'bg-orange-500 hover:bg-gray-900' : 'bg-orange-500 hover:bg-orange-600'}`}
+              className="px-6 py-3 h-12 w-28 mt-4 text-white flex items-center justify-center gap-2 transition duration-300 ease-in-out bg-orange-500 hover:bg-gray-900"
               onClick={handleNext}
             >
               Next <span className="text-white text-2xl mb-1">›</span>
             </button>
           )}
         </div>
-      ) : currentStep <= mcqQuestions[selectedCountry].length ? (
+      ) : currentStep <= mcqQuestions[selectedCountry]?.length ? (
         <div className='-mt-32'>
           <h3 className="text-xl font-semibold">
             {mcqQuestions[selectedCountry][currentStep - 1].question}
@@ -166,22 +168,25 @@ const Form = () => {
               <button
                 key={option}
                 onClick={() => handleMcqChange(currentStep - 1, option)}
-                className={`px-3 py-3 h-12 border border-slate-700 ${mcqAnswers[currentStep - 1] === option ? 'bg-gray-700 text-white' : 'bg-white text-black'}`}
+                className={`px-3 py-3 h-12 border border-slate-700 ${
+                  mcqAnswers[currentStep - 1] === option ? 'bg-gray-700 text-white' : 'bg-white text-black'
+                }`}
               >
                 {option}
               </button>
             ))}
           </div>
           <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 flex justify-between w-[300px] px-4">
-            <button 
-              className="px-6 py-3 h-12 w-28 bg-gray-500 text-white flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:bg-orange-600" 
+            <button
+              className="px-6 py-3 h-12 w-28 bg-gray-500 text-white flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:bg-orange-600"
               onClick={handlePrevious}
             >
               <span className="text-white text-2xl mb-1">‹</span> Back
             </button>
             <button
-              className={`px-6 py-3 h-12 w-28 text-white flex items-center justify-center gap-2 transition duration-300 ease-in-out 
-                ${mcqAnswers[currentStep - 1] ? 'bg-orange-500 hover:bg-orange-600' : 'bg-gray-300 cursor-not-allowed'}`}
+              className={`px-6 py-3 h-12 w-28 text-white flex items-center justify-center gap-2 transition duration-300 ease-in-out ${
+                mcqAnswers[currentStep - 1] ? 'bg-orange-500 hover:bg-orange-600' : 'bg-gray-300 cursor-not-allowed'
+              }`}
               onClick={handleNext}
               disabled={!mcqAnswers[currentStep - 1]}
             >
@@ -195,23 +200,23 @@ const Form = () => {
             <div className="flex space-x-4">
               <div className="w-full sm:w-1/3">
                 <label className="block text-gray-700 font-medium">Your Name</label>
-                <input 
-                  type="text" 
-                  placeholder="Enter your name" 
-                  value={name} 
-                  onChange={(e) => setName(e.target.value)} 
-                  required 
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
                   className="w-full px-4 py-3 border rounded-lg shadow-sm focus:ring focus:ring-orange-200"
                 />
               </div>
               <div className="w-full sm:w-1/3">
                 <label className="block text-gray-700 font-medium">Your Email</label>
-                <input 
-                  type="email" 
-                  placeholder="Enter your email" 
-                  value={email} 
-                  onChange={(e) => setEmail(e.target.value)} 
-                  required 
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                   className="w-full px-4 py-3 border rounded-lg shadow-sm focus:ring focus:ring-orange-200"
                 />
               </div>
@@ -222,10 +227,8 @@ const Form = () => {
                   placeholder="Enter your phone number"
                   value={phone}
                   onChange={(e) => {
-                    const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
-                    if (value.length <= 10) {
-                      setPhone(value);
-                    }
+                    const value = e.target.value.replace(/\D/g, '');
+                    if (value.length <= 10) setPhone(value);
                   }}
                   maxLength="10"
                   required
@@ -236,48 +239,46 @@ const Form = () => {
             <div className="flex space-x-4">
               <div className="w-full sm:w-1/3">
                 <label className="block text-gray-700 font-medium">Age</label>
-                <input 
-                  type="number" 
-                  placeholder="Enter your age" 
-                  value={age} 
-                  onChange={(e) => setAge(e.target.value)} 
-                  required 
+                <input
+                  type="number"
+                  placeholder="Enter your age"
+                  value={age}
+                  onChange={(e) => setAge(e.target.value)}
+                  required
                   className="w-full px-4 py-3 border rounded-lg shadow-sm focus:ring focus:ring-orange-200"
                 />
               </div>
               <div className="w-full sm:w-1/2">
                 <label className="block text-gray-700 font-medium">Your Message</label>
-                <textarea 
-                  placeholder="Write your message here..." 
-                  value={message} 
-                  onChange={(e) => setMessage(e.target.value)} 
-                  required 
+                <textarea
+                  placeholder="Write your message here..."
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
                   className="w-full px-4 py-3 border rounded-lg shadow-sm focus:ring focus:ring-orange-200 resize-none h-24"
                 />
               </div>
             </div>
           </div>
           <div className="flex justify-center gap-x-6 sm:gap-x-8 md:gap-x-28 lg:gap-x-96">
-            <button 
-              className="px-6 py-3 h-12 w-28 bg-gray-500 text-white flex items-center justify-center transition duration-300 ease-in-out hover:bg-orange-600 mr-4" 
+            <button
+              className="px-6 py-3 h-12 w-28 bg-gray-500 text-white flex items-center justify-center transition duration-300 ease-in-out hover:bg-orange-600 mr-4"
               onClick={handlePrevious}
               type="button"
             >
               <span className="text-white text-2xl mb-1">‹</span> Back
             </button>
-            <button type="submit" className="px-6 py-3 h-12 w-28 bg-orange-500 text-white flex items-center transition duration-300 ease-in-out hover:bg-orange-600" disabled={loading}>
+            <button
+              type="submit"
+              className="px-6 py-3 h-12 w-28 bg-orange-500 text-white flex items-center transition duration-300 ease-in-out hover:bg-orange-600"
+              disabled={loading}
+            >
               {loading ? 'Submitting...' : 'Submit'}
             </button>
           </div>
         </form>
       )}
-      {popupVisible && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">
-            <p className="text-xl font-semibold">Submission received, we’ll get back to you shortly!</p>
-          </div>
-        </div>
-      )}
+      {/* popupVisible removed because redirect replaces popup */}
     </div>
   );
 };

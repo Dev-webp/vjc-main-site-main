@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AnimateHeader from "./AnimateHeader";
 
-
-
 const Form = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -14,8 +12,7 @@ const Form = () => {
   const [message, setMessage] = useState('');
   const [formStatus, setFormStatus] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [popupVisible, setPopupVisible] = useState(false);
-const [landingPage, setLandingPage] = useState('');
+  const [landingPage, setLandingPage] = useState('');
 
   // Capture the full landing URL on component mount
   useEffect(() => {
@@ -23,16 +20,6 @@ const [landingPage, setLandingPage] = useState('');
       setLandingPage(window.location.href);
     }
   }, []);
-  // Close the success popup after 4 seconds
-  useEffect(() => {
-    if (popupVisible) {
-      const timeout = setTimeout(() => {
-        setPopupVisible(false);
-      }, 4000);
-
-      return () => clearTimeout(timeout); // Cleanup timeout
-    }
-  }, [popupVisible]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,7 +35,7 @@ const [landingPage, setLandingPage] = useState('');
       qualification,
       country,  // Include country in formData
       message,
-       landingPage,
+      landingPage,
     };
 
     try {
@@ -70,7 +57,11 @@ const [landingPage, setLandingPage] = useState('');
         setQualification('');
         setCountry('');  // Clear country
         setMessage('');
-        setPopupVisible(true); // Show success popup
+        // Redirect to /thankyou URL appended to current pathname
+        if (typeof window !== 'undefined') {
+          const currentPath = window.location.pathname;
+          window.location.href = `${currentPath.replace(/\/$/, '')}/thankyou`;
+        }
       } else {
         setFormStatus('error');
       }
@@ -86,7 +77,7 @@ const [landingPage, setLandingPage] = useState('');
     <div className="bg-white p-4 py-2 rounded-lg shadow-sm max-w-md mx-auto w-full h-[31rem] md:h-[31rem] lg:h-[33rem] tablet:h-[36rem] shadow-orange-300 mb-6 lg:mb-2">
       {/* <h2 className="text-2xl font-bold text-center uppercase text-gray-800 mt-0 lg:mt-3">Sign up & Get Free Assessment</h2> */}
       <h2 className="text-2xl font-bold text-center uppercase text-gray-800 mt-0 lg:mt-1"></h2>
-       <AnimateHeader/>
+       <AnimateHeader />
 
       <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-3 mt-2 lg:mt-2">
         <div>
@@ -222,20 +213,8 @@ const [landingPage, setLandingPage] = useState('');
           {formStatus === 'success' ? 'Form Submitted!' : loading ? 'Submitting...' : 'Submit for Free Assessment'}
         </button>
       </form>
-
-      {/* Success Popup */}
-      {popupVisible && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">
-            <p className="text-xl font-semibold">Submission received, we’ll get back to you shortly!</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
 
 export default Form;
-
-
-
