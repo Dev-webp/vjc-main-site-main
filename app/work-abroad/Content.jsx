@@ -63,13 +63,7 @@ export default function WorkAbroad() {
             abroad.
           </p>
 
-          <a
-            href="/assessment"
-            className="relative inline-block px-8 py-3 rounded-full bg-blue-400 text-black font-semibold overflow-hidden transition duration-300 max-w-max group"
-          >
-            <span className="relative z-10">Get Started</span>
-            <span className="absolute inset-0 bg-orange-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out rounded-full"></span>
-          </a>
+      
         </div>
 
         {/* Right - Form */}

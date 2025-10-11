@@ -243,7 +243,7 @@ const VisitVisas = () => {
           <p className="text-lg text-black mb-4">
             With VJC Overseas, your dream of international travel is just a step away. <a href="https://www.vjcoverseas.com/visit-visas" className="font-bold text-blue-900 ml-1">Schengen Visit Visa</a>
           </p>
-       
+         
         </SectionWrapper>
 
         {/* Footer */}
