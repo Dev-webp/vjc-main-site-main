@@ -46,7 +46,7 @@ export default async function ThankYou({ params }) {
                 href="mailto:vjcbanglore@vjcoversesa.com"
                 className="text-orange-500 hover:text-blue-400 transition-colors text-lg underline"
               >
-                Email: vjcbanglore@vjcoversesa.com
+                Email: info@vjcoverseas.com
               </a>
             </div>
           </div>

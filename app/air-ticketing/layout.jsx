@@ -1,5 +1,4 @@
 import Script from 'next/script';
-
 export default function ContactLayout({ children }) {
   return (
     <>
@@ -17,7 +16,6 @@ export default function ContactLayout({ children }) {
           gtag('config', 'AW-16767451796');
         `}
       </Script>
-
       {children}
     </>
   );
