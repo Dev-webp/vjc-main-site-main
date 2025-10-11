@@ -153,7 +153,7 @@ const VisitVisas = () => {
                    Carry a portable power bank for long flights or layovers.
                 </p>
                 <p className="text-gray-700 text-sm">
-                  💳 Notify your bank before international travel to avoid blocked cards.
+                 💳 Notify your bank before international travel to avoid blocked cards.
                 </p>
               </div>
             </div>
@@ -243,26 +243,7 @@ const VisitVisas = () => {
           <p className="text-lg text-black mb-4">
             With VJC Overseas, your dream of international travel is just a step away. <a href="https://www.vjcoverseas.com/visit-visas" className="font-bold text-blue-900 ml-1">Schengen Visit Visa</a>
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="tel:+919160449000"
-              className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-green-400"
-            >
-              📞 Call Now
-            </a>
-            <a
-              href="/contact-us"
-              className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-orange-400"
-            >
-              📍 Visit Our Office
-            </a>
-            <a
-              href="/assessment"
-              className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-blue-300"
-            >
-              📩 Quick Visa Form
-            </a>
-          </div>
+       
         </SectionWrapper>
 
         {/* Footer */}
