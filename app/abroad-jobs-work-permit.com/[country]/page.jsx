@@ -17,6 +17,9 @@ const countryStyles = {
   Malaysia: { cardBg: "bg-orange-50", titleColor: "text-orange-800", tagColor: "bg-orange-100 text-orange-700 border-orange-300" },
   Southafrica: { cardBg: "bg-yellow-50", titleColor: "text-yellow-800", tagColor: "bg-yellow-100 text-yellow-700 border-yellow-300" },
   Denmark: { cardBg: "bg-indigo-50", titleColor: "text-indigo-800", tagColor: "bg-indigo-100 text-indigo-700 border-indigo-300" },
+  Netherlands: { cardBg: "bg-teal-50", titleColor: "text-teal-800", tagColor: "bg-teal-100 text-teal-700 border-teal-300" },
+  Spain: { cardBg: "bg-red-50", titleColor: "text-red-800", tagColor: "bg-red-100 text-red-700 border-red-300" },
+  Portugal: { cardBg: "bg-green-50", titleColor: "text-green-800", tagColor: "bg-green-100 text-green-700 border-green-300" },
 };
 
 const filterData = {
@@ -31,6 +34,9 @@ const filterData = {
   Malaysia: { cities: ["Kuala Lumpur"], domains: ["Information Technology", "Finance & Accounting", "Marketing & Advertising", "Human Resources", "Data & Analytics", "Construction & Engineering", "Customer Service", "Creative Design", "Cybersecurity", "Logistics & Supply Chain"] },
   Southafrica: { cities: ["Johannesburg"], domains: ["Information Technology", "Mining & Engineering", "Finance & Banking", "Healthcare & Nursing", "Energy & Utilities", "Marketing & Branding", "Customer Support", "Infrastructure & Construction", "Cybersecurity", "Logistics & Supply Chain"] },
   Denmark: { cities: ["Copenhagen"], domains: ["Information Technology", "Renewable Energy", "Pharmaceuticals", "Product Design", "Robotics & Automation", "Shipping & Maritime", "Life Sciences", "Supply Chain & Logistics", "Cloud & DevOps", "Healthcare Technology"] },
+  Netherlands: { cities: ["Amsterdam"], domains: ["Information Technology", "Agriculture & Food Tech", "Logistics & Supply Chain", "Creative Industries", "Sustainable Energy", "Fintech", "Life Sciences & Health Tech", "Cybersecurity", "Cloud Computing", "Engineering & Manufacturing"] },
+  Spain: { cities: ["Madrid"], domains: ["Tourism & Hospitality", "Renewable Energy", "Information Technology", "Agriculture & Food Tech", "Creative Industries", "Logistics & Supply Chain", "Fintech", "Life Sciences & Health Tech", "Cybersecurity", "Cloud Computing"] },
+  Portugal: { cities: ["Lisbon"], domains: ["Information Technology", "Tourism & Hospitality", "Renewable Energy", "Creative Industries", "Logistics & Supply Chain", "Fintech", "Life Sciences & Health Tech", "Cybersecurity", "Cloud Computing", "Engineering & Manufacturing"] },
 };
 
 const experienceOptions = ["Entry level", "Mid career", "Senior", "Experienced", "Management", "Director/Head", "Internship"];

@@ -12,7 +12,7 @@ const companyLogos = [
 
 const countries = [
   "UAE", "Luxembourg", "UK", "Ireland", "Singapore",
-  "Malaysia", "Germany", "Canada", "Australia", "South Africa", "Denmark",
+  "Malaysia", "Germany", "Canada", "Australia", "South Africa", "Denmark", "Netherlands", "Spain", "Portugal",
 ];
 
 const newsTickerMessages = [
@@ -107,7 +107,7 @@ const JobPortalPage = () => {
       )}
 
       <div className="px-4 pt-6 pb-16 max-w-7xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-center mb-6 text-blue-900">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 text-blue-900">
           A World of Opportunities, A Future of Success – Abroad is Calling! 
         </h1>
 
