@@ -136,6 +136,18 @@ export default function AdminJobs() {
         "Healthcare Technology",
       ],
     },
+   Netherlands: {
+      cities: ["Amsterdam"],
+      domains: ["Information Technology", "Agriculture & Food Tech", "Logistics & Supply Chain", "Creative Industries", "Sustainable Energy", "Fintech", "Life Sciences & Health Tech"],
+    },
+    Spain: {
+      cities: ["Madrid"],
+      domains: ["Tourism & Hospitality", "Renewable Energy", "Information Technology", "Agriculture & Food Tech", "Creative Industries", "Logistics & Supply Chain", "Fintech", "Life Sciences & Health Tech", "Cybersecurity", "Cloud Computing"],
+    },
+    Portugal: {
+      cities: ["Lisbon"],
+      domains: ["Information Technology", "Tourism & Hospitality", "Renewable Energy", "Creative Industries", "Logistics & Supply Chain", "Fintech", "Life Sciences & Health Tech", "Cybersecurity", "Cloud Computing", "Engineering & Manufacturing"],
+    },
 }), []);
 
 
