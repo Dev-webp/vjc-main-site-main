@@ -142,11 +142,15 @@ export default function AdminJobs() {
     },
     Spain: {
       cities: ["Madrid"],
-      domains: ["Tourism & Hospitality", "Renewable Energy", "Information Technology", "Agriculture & Food Tech", "Creative Industries", "Logistics & Supply Chain", "Fintech", "Life Sciences & Health Tech", "Cybersecurity", "Cloud Computing"],
+      domains: ["Tourism & Hospitality", "Renewable Energy", "Information Technology", "Agriculture & Food Tech", "Creative Industries", "Logistics & Supply Chain", "Fintech", "Life Sciences & Health Tech", "Cybersecurity", "Cloud Computing" , "Software Developer" ,"Artificial Intelligence Engineer","Cybersecurity Specialist" , "Data Analyst" ,"Data Scientist" , "Cloud Architect" , " DevOps Engineer" , "UX/UI Designer" , "Industrial Automation Technician" , "IT Support Technician" , "Computer Security Analyst" , " FinTech Engineer" , "Digital Project Manager" , "Lawyer Specializing in Data Protection" , " Solar Panel Installation Technician" , "Renewable Energy Engineer" , " Sustainability Consultant" , " Industrial Maintenance Technician" , "Nurse" , "Physiotherapist" , "Nursing Assistant" , "Psychologist Specializing in Mental Health" , "Logistics Coordinator" , " Last-Mile Delivery Driver" , "Digital Customer Service Manager"],
     },
     Portugal: {
       cities: ["Lisbon"],
       domains: ["Information Technology", "Tourism & Hospitality", "Renewable Energy", "Creative Industries", "Logistics & Supply Chain", "Fintech", "Life Sciences & Health Tech", "Cybersecurity", "Cloud Computing", "Engineering & Manufacturing"],
+    },
+    Austria: {
+      cities: ["Vienna"],
+      domains: ["Software Developer ", "Artificial Intelligence Engineer ", "Cybersecurity Specialist ", "Data Analyst ", "Data Scientist" ,"Data Scientist" , "Cloud Architect" , " DevOps Engineer" , "UX/UI Designer" , "Industrial Automation Technician" , "IT Support Technician" , "Computer Security Analyst" , " FinTech Engineer" , "Digital Project Manager" , "Lawyer Specializing in Data Protection" , " Solar Panel Installation Technician" , "Renewable Energy Engineer" , " Sustainability Consultant" , " Industrial Maintenance Technician" , "Nurse" , "Physiotherapist" , "Nursing Assistant" , "Psychologist Specializing in Mental Health" , "Logistics Coordinator" , " Last-Mile Delivery Driver" , "Digital Customer Service Manager"],
     },
 }), []);
 

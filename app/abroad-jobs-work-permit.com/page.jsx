@@ -12,7 +12,7 @@ const companyLogos = [
 
 const countries = [
   "UAE", "Luxembourg", "UK", "Ireland", "Singapore",
-  "Malaysia", "Germany", "Canada", "Australia", "South Africa", "Denmark", "Netherlands", "Spain", "Portugal",
+  "Malaysia", "Germany", "Canada", "Australia", "South Africa", "Denmark", "Netherlands", "Spain", "Portugal", "Austria"
 ];
 
 const newsTickerMessages = [

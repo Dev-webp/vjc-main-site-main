@@ -5,7 +5,7 @@ import { FaGlobeAsia, FaSearch } from "react-icons/fa";
 
 const countries = [
   "UAE", "Luxembourg", "UK", "Ireland", "Singapore",
-  "Malaysia", "Germany", "Canada", "Australia", "South Africa", "Denmark" , "Netherlands", "Spain", "Portugal",
+  "Malaysia", "Germany", "Canada", "Australia", "South Africa", "Denmark" , "Netherlands", "Spain", "Portugal","Austria"
 ];
 
 const JobSubNavbar = ({
