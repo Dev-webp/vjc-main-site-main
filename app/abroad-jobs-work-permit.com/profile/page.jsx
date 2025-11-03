@@ -13,7 +13,7 @@ const skillOptions = [
 
 const countryOptions = [
   "UAE", "Luxembourg", "UK", "Ireland", "Singapore",
-  "Malaysia", "Germany", "Canada", "Australia", "South Africa", "Denmark"
+  "Malaysia", "Germany", "Canada", "Australia", "South Africa", "Denmark", "Netherlands", "Spain", "Portugal", "Austria"
 ];
 
 const Page = () => {
