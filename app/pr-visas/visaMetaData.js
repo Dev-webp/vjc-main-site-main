@@ -1,6 +1,6 @@
 export const visaMetaData = {
-  germany: {
-    "opportunity-card": {
+  "canada-pr-provincial-nominee-program": {
+    "canada-prince-edward-island": {
       title: " Germany Opportunity Card by VJC Overseas – Chancekarte",
       description: "Explore Germany’s Opportunity Card – Chancekarte with VJC Overseas. Your opportunity to live, work, and grow in Germany starts here.",
       keywords: "chancekarte, germany opportunity card, germany job seeker visa, germany work visa, opportunity card Germany, germany work permit, job search visa Germany, germany work visa from india, germany job visa, germany work permit visa, germany employment visa, germany work permit from india, work permit germany requirements,apply Germany opportunity card, Germany work seeker visa",

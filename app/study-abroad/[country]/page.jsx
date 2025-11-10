@@ -126,7 +126,10 @@ const metaData = {
     description: "Start your study journey in Switzerland with VJC Overseas. Get expert help with top universities, scholarships, student visa process & application guidance.",
     keywords: "Study Opportunities in Switzerland, Top Colleges in Switzerland, Swiss Education For International Students, Study in Lausanne, Study in Basel, Low Cost Universities Switzerland, Study And Work in Switzerland, Swiss Higher Education, Study Visa Process Switzerland, PhD in Switzerland For International Students, MBA in Switzerland, Switzerland Student Life, Part Time Jobs in Switzerland, Switzerland Admission Requirements, Apply to Swiss Universities, Public Universities in Switzerland, Private Universities in Switzerland, Best Courses in Switzerland, VJC Overseas, Best Visa Immigration Consultants"
   }
-
+ 
+ 
+ 
+ 
 };
  
 export async function generateMetadata({ params }) {
@@ -145,3 +148,4 @@ export async function generateMetadata({ params }) {
 export default function CountryPage({ params }) {
   return <CountryClient country={params.country} />;
 }
+ 

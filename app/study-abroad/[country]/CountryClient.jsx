@@ -32,6 +32,7 @@ const metaData = {
   uae: { },
   norway: { },
   sweden: { },
+  
 };
 
 export default function CountryClient({ country }) {
