@@ -1,5 +1,12 @@
 import Script from 'next/script';
 
+export const metadata = {
+  title: 'GMAT Coaching and Training Services Expert Exam Preparation for Top Business Schools',
+  
+  keywords: 'GMAT coaching, GMAT exam preparation, GMAT training services, GMAT test preparation, GMAT online classes, GMAT mock tests, GMAT strategies, GMAT study material, GMAT verbal reasoning, GMAT quantitative reasoning, GMAT integrated reasoning, GMAT analytical writing, GMAT practice tests, GMAT coaching center, GMAT coaching in India, GMAT coaching in Hyderabad, GMAT coaching in Bangalore, GMAT coaching in USA, GMAT coaching for study abroad, Best Visa Immigration Consultants, VJC Overseas',
+};
+
+
 export default function ContactLayout({ children }) {
   return (
     <>
