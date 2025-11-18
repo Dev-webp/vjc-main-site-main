@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Edit3, Trash2 } from 'lucide-react'; // Import icons for a cleaner look
+import { Edit3, Trash2 } from 'lucide-react';
+
 export default function VisaDashboard() {
   const [visas, setVisas] = useState([]);
   const [form, setForm] = useState({
@@ -29,7 +30,9 @@ export default function VisaDashboard() {
       .then(setVisas);
   }, []);
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
   const handleInfoHtmlFileChange = async (e) => {
     const file = e.target.files[0];
@@ -87,27 +90,17 @@ export default function VisaDashboard() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (editingIndex !== null) {
-      await fetch("/api/visas", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-    } else {
-      await fetch("/api/visas", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-    }
-
+    const method = editingIndex !== null ? "PUT" : "POST";
+    await fetch("/api/visas", {
+      method,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
     const updated = await fetch("/api/visas").then((r) => r.json());
     setVisas(updated);
     resetForm();
   };
 
-  // Set form exactly to selected visa data (do not clear addon fields)
   const handleEdit = (index) => {
     const v = visas[index];
     setForm({ ...v });
@@ -126,81 +119,78 @@ export default function VisaDashboard() {
   };
 
   return (
-    <div className="p-6 max-w-7xl mx-auto">
-      <h1 className="text-2xl font-bold mb-6 text-center">Visa Dashboard</h1>
+    <div className="p-6 max-w-7xl mx-auto bg-white rounded-lg shadow-md">
+      <h1 className="text-2xl font-bold mb-6 text-center text-gray-800">Visa Dashboard</h1>
 
-      <form onSubmit={handleSubmit} className="space-y-6 bg-gray-100 p-6 rounded-lg shadow-md max-w-3xl mx-auto">
-        {/* Name */}
-        <div>
-          <label className="block font-semibold mb-1" htmlFor="name">Visa Name*</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Visa Name"
-            value={form.name}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-          />
+      <form onSubmit={handleSubmit} className="space-y-6 bg-gray-50 p-6 rounded-lg shadow-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label className="block font-semibold mb-1" htmlFor="name">Visa Name*</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Visa Name"
+              value={form.name}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+              required
+            />
+          </div>
+          <div>
+            <label className="block font-semibold mb-1" htmlFor="slug">Slug / Path*</label>
+            <input
+              type="text"
+              name="slug"
+              id="slug"
+              placeholder="Unique path slug"
+              value={form.slug}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+              required
+            />
+          </div>
         </div>
 
-        {/* Slug */}
-        <div>
-          <label className="block font-semibold mb-1" htmlFor="slug">Slug / Path*</label>
-          <input
-            type="text"
-            name="slug"
-            id="slug"
-            placeholder="Unique path slug"
-            value={form.slug}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-          />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label className="block font-semibold mb-1" htmlFor="metaTitle">Meta Title</label>
+            <input
+              type="text"
+              name="metaTitle"
+              id="metaTitle"
+              placeholder="Meta Title"
+              value={form.metaTitle}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
+          </div>
+          <div>
+            <label className="block font-semibold mb-1" htmlFor="metaDescription">Meta Description</label>
+            <input
+              type="text"
+              name="metaDescription"
+              id="metaDescription"
+              placeholder="Meta Description"
+              value={form.metaDescription}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
+          </div>
+          <div>
+            <label className="block font-semibold mb-1" htmlFor="metaKeywords">Meta Keywords</label>
+            <input
+              type="text"
+              name="metaKeywords"
+              id="metaKeywords"
+              placeholder="e.g. visa, job seeker, work"
+              value={form.metaKeywords}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
+          </div>
         </div>
 
-        {/* Meta Fields */}
-        <div>
-          <label className="block font-semibold mb-1" htmlFor="metaTitle">Meta Title</label>
-          <input
-            type="text"
-            name="metaTitle"
-            id="metaTitle"
-            placeholder="Meta Title"
-            value={form.metaTitle}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-          />
-        </div>
-
-        <div>
-          <label className="block font-semibold mb-1" htmlFor="metaDescription">Meta Description</label>
-          <input
-            type="text"
-            name="metaDescription"
-            id="metaDescription"
-            placeholder="Meta Description"
-            value={form.metaDescription}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-          />
-        </div>
-
-        <div>
-          <label className="block font-semibold mb-1" htmlFor="metaKeywords">Meta Keywords (comma separated)</label>
-          <input
-            type="text"
-            name="metaKeywords"
-            id="metaKeywords"
-            placeholder="e.g. visa, job seeker, work"
-            value={form.metaKeywords}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-          />
-        </div>
-
-        {/* Main Image Upload */}
         <div>
           <label className="block font-semibold mb-2">Main Image Upload</label>
           <input type="file" accept="image/*" onChange={handleMainImageUpload} />
@@ -211,7 +201,6 @@ export default function VisaDashboard() {
           )}
         </div>
 
-        {/* Description */}
         <div>
           <label className="block font-semibold mb-1">Main Heading Description</label>
           <textarea
@@ -224,7 +213,6 @@ export default function VisaDashboard() {
           />
         </div>
 
-        {/* Description Image */}
         <div>
           <label className="block font-semibold mb-2">Description Image Upload</label>
           <input type="file" accept="image/*" onChange={handleDescriptionImageUpload} />
@@ -235,46 +223,42 @@ export default function VisaDashboard() {
           )}
         </div>
 
-        {/* Description Image sizing */}
-        <div>
-          <div className="flex gap-2">
-            <div>
-              <label className="block text-xs font-semibold">Image Width</label>
-              <input
-                type="number"
-                name="descriptionImageWidth"
-                value={form.descriptionImageWidth}
-                onChange={handleChange}
-                className="p-1 border rounded w-20"
-              />
-            </div>
-            <div>
-              <label className="block text-xs font-semibold">Image Height</label>
-              <input
-                type="number"
-                name="descriptionImageHeight"
-                value={form.descriptionImageHeight}
-                onChange={handleChange}
-                className="p-1 border rounded w-20"
-              />
-            </div>
-            <div>
-              <label className="block text-xs font-semibold">Position</label>
-              <select
-                name="descriptionImagePosition"
-                value={form.descriptionImagePosition}
-                onChange={handleChange}
-                className="p-1 border rounded"
-              >
-                <option value="left">Left</option>
-                <option value="center">Center</option>
-                <option value="right">Right</option>
-              </select>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label className="block text-xs font-semibold">Image Width</label>
+            <input
+              type="number"
+              name="descriptionImageWidth"
+              value={form.descriptionImageWidth}
+              onChange={handleChange}
+              className="p-1 border rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-semibold">Image Height</label>
+            <input
+              type="number"
+              name="descriptionImageHeight"
+              value={form.descriptionImageHeight}
+              onChange={handleChange}
+              className="p-1 border rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-semibold">Position</label>
+            <select
+              name="descriptionImagePosition"
+              value={form.descriptionImagePosition}
+              onChange={handleChange}
+              className="p-1 border rounded w-full"
+            >
+              <option value="left">Left</option>
+              <option value="center">Center</option>
+              <option value="right">Right</option>
+            </select>
           </div>
         </div>
 
-        {/* Bottom Info Content */}
         <div>
           <label className="block font-semibold mb-1" htmlFor="info">Bottom Info Box Content (HTML allowed)</label>
           <textarea
@@ -293,7 +277,6 @@ export default function VisaDashboard() {
           />
         </div>
 
-        {/* Addon fields */}
         <div>
           <label className="block font-semibold mb-1" htmlFor="addonHeading">Addon Heading (bold)</label>
           <input
@@ -318,13 +301,15 @@ export default function VisaDashboard() {
           />
         </div>
 
-        <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold w-full">
+        <button
+          type="submit"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold w-full"
+        >
           {editingIndex !== null ? "Update Visa" : "+ Add Visa"}
         </button>
       </form>
 
-      {/* List of Visas */}
-      <h2 className="text-xl font-semibold my-6 dark:text-gray-800 text-center">All Visas</h2>
+      <h2 className="text-xl font-semibold my-6 text-center text-gray-800">All Visas</h2>
       {visas.length === 0 ? (
         <p className="text-center text-gray-500">No visas added yet.</p>
       ) : (
@@ -362,49 +347,24 @@ export default function VisaDashboard() {
                       />
                     )}
                   </td>
-                  <td 
-  className="p-2 border border-gray-200"
->
-  <div 
-    // FLEXBOX:
-    // flex-col (stack vertically) by default for mobile
-    // sm:flex-row (side-by-side) starting from small breakpoint
-    // space-y-2 (vertical space) on mobile
-    // sm:space-y-0 sm:space-x-2 (horizontal space) on desktop
-    className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-2"
-  >
-    {/* --- Edit Button (Yellow/Amber) --- */}
-    <button
-      onClick={() => handleEdit(index)}
-      // Wide button on mobile, smaller on desktop
-      className="
-        flex items-center justify-center gap-1 w-full sm:w-auto 
-        bg-amber-500 hover:bg-amber-600 text-white 
-        px-3 py-2 rounded-lg 
-        font-medium text-sm transition-all duration-300
-        shadow-md hover:shadow-lg
-      "
-    >
-      <Edit3 className="w-4 h-4" />
-      <span className="hidden sm:inline">Edit</span> {/* Hide text on smallest mobile screens for compactness, keep it on sm: and up */}
-    </button>
-    
-    {/* --- Delete Button (Red) --- */}
-    <button
-      onClick={() => handleDelete(index)}
-      className="
-        flex items-center justify-center gap-1 w-full sm:w-auto
-        bg-red-600 hover:bg-red-700 text-white 
-        px-3 py-2 rounded-lg 
-        font-medium text-sm transition-all duration-300
-        shadow-md hover:shadow-lg
-      "
-    >
-      <Trash2 className="w-4 h-4" />
-      <span className="hidden sm:inline">Delete</span> {/* Hide text on smallest mobile screens for compactness */}
-    </button>
-  </div>
-</td>
+                  <td className="p-2 border border-gray-200">
+                    <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-2">
+                      <button
+                        onClick={() => handleEdit(index)}
+                        className="flex items-center justify-center gap-1 w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-white px-3 py-2 rounded-lg font-medium text-sm transition-all duration-300 shadow-md hover:shadow-lg"
+                      >
+                        <Edit3 className="w-4 h-4" />
+                        <span className="hidden sm:inline">Edit</span>
+                      </button>
+                      <button
+                        onClick={() => handleDelete(index)}
+                        className="flex items-center justify-center gap-1 w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-lg font-medium text-sm transition-all duration-300 shadow-md hover:shadow-lg"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                        <span className="hidden sm:inline">Delete</span>
+                      </button>
+                    </div>
+                  </td>
                 </tr>
               ))}
             </tbody>

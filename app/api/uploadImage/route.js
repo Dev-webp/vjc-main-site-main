@@ -1,35 +1,41 @@
-import fs from "fs";
-import path from "path";
+import { NextResponse } from "next/server";
 
-// Set config for Next.js to not parse the body automatically
-export const config = {
-  api: { bodyParser: false },
-};
-
+/**
+ * Handles POST requests to process a file upload.
+ * It takes a file from FormData, converts it to a Base64 Data URI,
+ * and returns the URI in the JSON response.
+ * @param {Request} req The incoming request object.
+ * @returns {NextResponse} The JSON response containing the data URI or an error.
+ */
 export async function POST(req) {
-  // Use req.formData() for App Router
-  const formData = await req.formData();
-  const file = formData.get("file");
+  try {
+    // 1. Get the FormData from the request
+    const formData = await req.formData();
+    const file = formData.get("file");
 
-  if (!file) {
-    return new Response(JSON.stringify({ error: "No file uploaded" }), { status: 400 });
+    if (!file) {
+      // Handle case where no file is provided
+      return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
+    }
+
+    // 2. Convert the file object into a Node.js Buffer
+    const bytes = await file.arrayBuffer();
+    const buffer = Buffer.from(bytes);
+
+    // 3. Determine MIME type (default to image/jpeg if not found)
+    const mimeType = file.type || "image/jpeg";
+    
+    // 4. Convert the buffer to a Base64 string
+    const base64Data = buffer.toString("base64");
+    
+    // 5. Construct the Data URI format
+    const dataUri = `data:${mimeType};base64,${base64Data}`;
+
+    // 6. Return the Base64 Data URI URL to the client
+    return NextResponse.json({ url: dataUri }, { status: 200 });
+
+  } catch (error) {
+    console.error("Image processing failed:", error);
+    return NextResponse.json({ error: "Image processing failed on server." }, { status: 500 });
   }
-
-  // Convert File to Buffer
-  const bytes = await file.arrayBuffer();
-  const buffer = Buffer.from(bytes);
-
-  // Setup directory and filename
-  const uploadDir = path.join(process.cwd(), "public", "uploads");
-  fs.mkdirSync(uploadDir, { recursive: true });
-
-  // Sanitize filename and add timestamp for uniqueness
-  const fileName = Date.now() + "-" + file.name.replace(/[^a-zA-Z0-9.\-_]/g, "_");
-  const filePath = path.join(uploadDir, fileName);
-  
-  // Write the file to disk
-  fs.writeFileSync(filePath, buffer);
-
-  // Return the public URL for the news admin component to save
-  return new Response(JSON.stringify({ url: `/uploads/${fileName}` }), { status: 200 });
 }

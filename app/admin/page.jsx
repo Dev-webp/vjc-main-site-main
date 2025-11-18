@@ -74,7 +74,7 @@ export default function Page() {
 
   // --- DASHBOARD LAYOUT (POST-LOGIN - Orange/White Theme with Right Sidebar) ---
   return (
-    <div className="min-h-screen flex bg-gray-100 font-sans">
+    <div className="min-h-screen flex bg-gray-100 mt-14 times-new-roman">
       
       {/* --- Main Content Area (Now on the Left) --- */}
       <main className="flex-1 p-8 md:p-8 lg:p-20 overflow-y-auto">
