@@ -1,4 +1,4 @@
-import Nav from "./Nav";
+
 import Two from "./Two";
 import { headers } from "next/headers";
 
@@ -30,7 +30,7 @@ export default async function Page({ params }) {
   return (
     <>
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
+       
       </div>
       <Two />
     </>

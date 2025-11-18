@@ -10,44 +10,32 @@ export const visaMetaData = {
      
       keywords: "Canada NOC List, National Occupational Classification Canada, NOC Codes for Express Entry, TEER Levels Canada, NOC Occupation Framework, Express Entry Occupation Codes, Canadian NOC Search, Job Titles NOC Canada, NOC Hierarchy Canada, NOC Skill Requirements, NOC Job Duties Canada, Search NOC by Code Canada, NOC by Job Title Canada, NOC Concordance Canada, NOC Unit Groups Canada, NOC Broad Categories Canada, VJC Overseas, Best Visa Immigration Consultants",
     },
-   
-  
 
     "canada-quebec-selected-workers-program": {
-      title: "Quebec Skilled Worker Program CSQ Arrima Expression of Interest Permanent Residency",
-      
+      title: "Quebec Skilled Worker Program CSQ Arrima Expression of Interest Permanent Residency", 
       keywords:
         "Quebec Skilled Worker Program, Quebec CSQ, Quebec Selection Certificate, Quebec PR Process, Quebec Immigration Grid, French Language Advantage Quebec, Skilled Worker Assessment Quebec, Quebec EOI Portal, Quebec PR Processing, Quebec IRCC Stage, Quebec Immigration Eligibility, Quebec Processing Time, Quebec Immigration Fees, Quebec Skilled Worker Streams, Apply Quebec QSWP, Quebec Immigration Requirements, VJC Overseas, Best Visa Immigration Consultants",
     },
     "canada-ict-program": {
-      title: "Canada ICT Program Intra Company Transfer LMIA Exempt Work Permit PR Pathway",
-      
-      keywords:
-        "Canada ICT Program, Intra Company Transfer Canada, ICT LMIA Exempt Work Permit, ICT Work Permit Canada, Specialized Knowledge ICT, Executive Transfer Canada, Manager ICT Canada, Multinational Corporation ICT, Physical Office Canada ICT, ICT Eligibility Canada, Canada ICT PR, ICT Renewal Canada, Canadian CSR Benefit ICT, ICT Temporary Work Canada, Employee Transfer Canada, ICT Documentation Requirements, Canada ICT Regulations, VJC Overseas, Best Visa Immigration Consultants",
+      title: "Canada ICT Program Intra Company Transfer LMIA Exempt Work Permit PR Pathway",    
+     keywords: "Canada ICT Program, Intra Company Transfer Canada, ICT LMIA Exempt Work Permit, ICT Work Permit Canada, Specialized Knowledge ICT, Executive Transfer Canada, Manager ICT Canada, Multinational Corporation ICT, Physical Office Canada ICT, ICT Eligibility Canada, Canada ICT PR, ICT Renewal Canada, Canadian CSR Benefit ICT, ICT Temporary Work Canada, Employee Transfer Canada, ICT Documentation Requirements, Canada ICT Regulations, VJC Overseas, Best Visa Immigration Consultants",
     },
     
     "canada-fstp": {
   title: "Canada FSTP Federal Skilled Trades Program Eligibility NOC List Processing Time",
- 
-  keywords:
-    "Canada FSTP, Federal Skilled Trades Program, FSTP eligibility, NOC list FSTP, FSTP processing time, skilled trades Canada, trades immigration Canada, FSTP language requirements, Canadian work experience, FSTP job offer, FSTP application process, trades occupations Canada, FSTP CRS score, FSTP PR, FSTP requirements, FSTP application steps, FSTP documentation, FSTP Express Entry, VJC Overseas, Best Visa Immigration Consultants",
+  keywords: "Canada FSTP, Federal Skilled Trades Program, FSTP eligibility, NOC list FSTP, FSTP processing time, skilled trades Canada, trades immigration Canada, FSTP language requirements, Canadian work experience, FSTP job offer, FSTP application process, trades occupations Canada, FSTP CRS score, FSTP PR, FSTP requirements, FSTP application steps, FSTP documentation, FSTP Express Entry, VJC Overseas, Best Visa Immigration Consultants",
 },
 "canada-fswp":{
       title:"Apply for Germany Student Visa | Complete Guide for Requirements and Application Process",
-     
       keywords:"Study in Germany, Germany Study Visa, Germany Student Visa, Student Visa Germany, Germany Study Visa Guide, Study Abroad in Germany Blocked Account Germany, Germany Student Visa Requirements, Language Requirement Germany Study, Germany Study Visa Process, Apply Germany Student Visa, Good universities in Germany, Universities in Germany, Germany Education, Best Visa Immigration Consultants, VJC Overseas",
     },
     "canada-family-sponsorship": {
-      title: "Canada Family Sponsorship Visa Spouse Parents Grandparents PR Application Immigration",
-      
-      keywords:
-        "Canada family sponsorship, spousal sponsorship Canada, parents and grandparents program, family class sponsorship, PR processing time Canada, sponsorship eligibility, family reunification Canada, sponsorship requirements, IRCC family sponsorship, Quebec family sponsorship, sponsorship income requirements, sponsorship documents checklist, medical exam family sponsorship, police certificates Canada, sponsorship agreement and undertaking, sponsorship application process, sponsorship fees Canada, VJC Overseas, Best Visa Immigration Consultants",
+      title: "Canada Family Sponsorship Visa Spouse Parents Grandparents PR Application Immigration", 
+      keywords: "Canada family sponsorship, spousal sponsorship Canada, parents and grandparents program, family class sponsorship, PR processing time Canada, sponsorship eligibility, family reunification Canada, sponsorship requirements, IRCC family sponsorship, Quebec family sponsorship, sponsorship income requirements, sponsorship documents checklist, medical exam family sponsorship, police certificates Canada, sponsorship agreement and undertaking, sponsorship application process, sponsorship fees Canada, VJC Overseas, Best Visa Immigration Consultants",
     },
     "canada-investor-program": {
-      title: "Canada Investor Program Permanent Residency Investment Requirements Provincial Nominee",
-      
-      keywords:
-        "Canada investor program, investor visa Canada, permanent residency by investment, provincial nominee investor stream, business immigration Canada, Quebec investor program, British Columbia investor visa, Alberta investor program, Manitoba business investor stream, Nova Scotia investor program, personal net worth requirements, investment amount Canada, business experience Canada, Canadian citizenship by investment, PR through investment, settlement funds Canada, investor visa processing time, Canada golden visa, business immigration, VJC Overseas, Best Visa Immigration Consultants",
+      title: "Canada Investor Program Permanent Residency Investment Requirements Provincial Nominee",  
+      keywords: "Canada investor program, investor visa Canada, permanent residency by investment, provincial nominee investor stream, business immigration Canada, Quebec investor program, British Columbia investor visa, Alberta investor program, Manitoba business investor stream, Nova Scotia investor program, personal net worth requirements, investment amount Canada, business experience Canada, Canadian citizenship by investment, PR through investment, settlement funds Canada, investor visa processing time, Canada golden visa, business immigration, VJC Overseas, Best Visa Immigration Consultants",
     },
     
     "canada-atlantic-immigration-pilot-program": {

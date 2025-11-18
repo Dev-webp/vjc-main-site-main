@@ -1,61 +1,114 @@
 import { NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
+import db from "../../../lib/db"; // Adjust this path if needed
 
-const DATA_PATH = path.join(process.cwd(), "visas.json");
-
-// Read visas from JSON file
-async function readVisas() {
-  try {
-    const data = await fs.readFile(DATA_PATH, "utf-8");
-    return JSON.parse(data);
-  } catch {
-    return [];
-  }
-}
-
-// Write visas to JSON file
-async function writeVisas(visas) {
-  await fs.writeFile(DATA_PATH, JSON.stringify(visas, null, 2), "utf-8");
-}
-
-// GET: Return all visas
+// GET all visas
 export async function GET() {
-  const visas = await readVisas();
-  return NextResponse.json(visas);
-}
-
-// POST: Add a new visa (supports metaTitle, metaDescription, metaKeywords, etc.)
-export async function POST(req) {
-  const visa = await req.json();
-  const visas = await readVisas();
-  visas.push(visa);
-  await writeVisas(visas);
-  return NextResponse.json({ message: "Visa added", visas });
-}
-
-// PUT: Update a visa by index
-export async function PUT(req) {
-  const { index, visa } = await req.json();
-  const visas = await readVisas();
-  if (visas[index]) {
-    visas[index] = visa;
-    await writeVisas(visas);
-    return NextResponse.json({ message: "Visa updated", visas });
-  } else {
-    return NextResponse.json({ message: "Visa not found", visas }, { status: 404 });
+  try {
+    const visas = db.prepare("SELECT * FROM visas").all();
+    return NextResponse.json(visas);
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
 
-// DELETE: Remove a visa by index
+// POST add a new visa
+export async function POST(req) {
+  try {
+    const visa = await req.json();
+
+    const stmt = db.prepare(`
+      INSERT INTO visas 
+      (name, slug, description, descriptionImage, descriptionImageWidth, descriptionImageHeight, descriptionImagePosition,
+       info, metaTitle, metaDescription, metaKeywords, image, addonHeading, addonDescription) 
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+
+    const result = stmt.run(
+      visa.name,
+      visa.slug,
+      visa.description,
+      visa.descriptionImage,
+      visa.descriptionImageWidth,
+      visa.descriptionImageHeight,
+      visa.descriptionImagePosition,
+      visa.info,
+      visa.metaTitle,
+      visa.metaDescription,
+      visa.metaKeywords,
+      visa.image,
+      visa.addonHeading || "",
+      visa.addonDescription || ""
+    );
+
+    const insertedVisa = db.prepare("SELECT * FROM visas WHERE id = ?").get(result.lastInsertRowid);
+    return NextResponse.json({ message: "Visa added", visa: insertedVisa });
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}
+
+// PUT update a visa by id
+export async function PUT(req) {
+  try {
+    const visa = await req.json();
+    if (!visa.id) {
+      return NextResponse.json({ error: "Visa ID missing" }, { status: 400 });
+    }
+
+    const stmt = db.prepare(`
+      UPDATE visas SET
+        name = ?, slug = ?, description = ?, descriptionImage = ?, descriptionImageWidth = ?, descriptionImageHeight = ?, 
+        descriptionImagePosition = ?, info = ?, metaTitle = ?, metaDescription = ?, metaKeywords = ?, image = ?, 
+        addonHeading = ?, addonDescription = ?
+      WHERE id = ?
+    `);
+
+    const result = stmt.run(
+      visa.name,
+      visa.slug,
+      visa.description,
+      visa.descriptionImage,
+      visa.descriptionImageWidth,
+      visa.descriptionImageHeight,
+      visa.descriptionImagePosition,
+      visa.info,
+      visa.metaTitle,
+      visa.metaDescription,
+      visa.metaKeywords,
+      visa.image,
+      visa.addonHeading || "",
+      visa.addonDescription || "",
+      visa.id
+    );
+
+    if (result.changes === 0) {
+      return NextResponse.json({ error: "Visa not found" }, { status: 404 });
+    }
+
+    const updatedVisa = db.prepare("SELECT * FROM visas WHERE id = ?").get(visa.id);
+    return NextResponse.json({ message: "Visa updated", visa: updatedVisa });
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}
+
+// DELETE a visa by id
 export async function DELETE(req) {
-  const { index } = await req.json();
-  const visas = await readVisas();
-  if (visas[index]) {
-    visas.splice(index, 1);
-    await writeVisas(visas);
-    return NextResponse.json({ message: "Visa deleted", visas });
-  } else {
-    return NextResponse.json({ message: "Visa not found", visas }, { status: 404 });
+  try {
+    const { id } = await req.json();
+    if (!id) {
+      return NextResponse.json({ error: "Visa ID missing" }, { status: 400 });
+    }
+
+    const stmt = db.prepare("DELETE FROM visas WHERE id = ?");
+    const result = stmt.run(id);
+
+    if (result.changes === 0) {
+      return NextResponse.json({ error: "Visa not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ message: "Visa deleted" });
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
