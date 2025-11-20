@@ -27,7 +27,7 @@ const GermanyJobseekerVisa = () => {
             <div className="md:w-1/2 text-justify">
               <p className="mb-4 ">
         Are you looking to take the next step in your career by working in Germany? The Germany Jobseeker Visa offers an exciting
-        opportunity for skilled professionals to live and work in one of Europe’s strongest economies. At <span className="text-orange-500">VJC Overseas</span>,
+        opportunity fo skilled professionals to live and work in one of Europe’s strongest economies. At <span className="text-orange-500">VJC Overseas</span>,
         we specialize in guiding you through every step of the application process, helping you unlock a world of career opportunities in Germany.
       </p>
       </div>
