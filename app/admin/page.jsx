@@ -1,23 +1,27 @@
 "use client";
 import { useState } from "react";
-// Assuming these components exist in the same directory
+// Import your dashboard components
 import AdminLogin from "./AdminLogin";
 import News from "./News";
 import Jobseeker from "./Jobseeker";
 import AdminJobs from "./AdminJobs";
-import { Menu, X, Briefcase, Users, Newspaper, LogOut } from 'lucide-react'; // Import icons
+import InvestorVisas from "./InvestorVisas"; // <-- New import
+import { Menu, X, Briefcase, Users, Newspaper, LogOut, DollarSign } from 'lucide-react'; // Import icons
 
 // Mapping icons to keys for the tabs
 const TAB_ICONS = {
   news: Newspaper,
   jobseeker: Users,
   adminjobs: Briefcase,
+  investor: DollarSign, // <-- icon for Investor Visa
 };
 
+// Define tabs
 const TABS = [
   { key: "news", label: "News" },
   { key: "jobseeker", label: "Jobseeker Management" },
   { key: "adminjobs", label: "Job Postings" },
+  { key: "investor", label: "Investor Visas" }, // <-- New tab
 ];
 
 // --- Helper Component for the Orange & White Tab Button ---
@@ -48,23 +52,29 @@ const TabButton = ({ tab, activeTab, setActiveTab }) => {
 export default function Page() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [activeTab, setActiveTab] = useState("news");
-  // State for mobile menu / Right Sidebar visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Main content renderer
   function renderContent() {
-    if (activeTab === "news") return <News />;
-    if (activeTab === "jobseeker") return <Jobseeker />;
-    if (activeTab === "adminjobs") return <AdminJobs />;
-    return null;
+    switch (activeTab) {
+      case "news":
+        return <News />;
+      case "jobseeker":
+        return <Jobseeker />;
+      case "adminjobs":
+        return <AdminJobs />;
+      case "investor":
+        return <InvestorVisas />; // <-- render Investor Visa dashboard
+      default:
+        return null;
+    }
   }
 
   // --- LOGIN SCREEN ---
   if (!loggedIn) {
-    // Orange/White Login Screen
     return (
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-white to-amber-600">
-        <div className=" p-12 w-full max-w-md transition-all duration-500">
+        <div className="p-12 w-full max-w-md transition-all duration-500">
           <h1 className="text-4xl font-extrabold text-center text-black mb-8">Portal Access</h1>
           <AdminLogin onLogin={() => setLoggedIn(true)} />
         </div>
@@ -72,21 +82,19 @@ export default function Page() {
     );
   }
 
-  // --- DASHBOARD LAYOUT (POST-LOGIN - Orange/White Theme with Right Sidebar) ---
+  // --- DASHBOARD LAYOUT ---
   return (
     <div className="min-h-screen flex bg-gray-100 mt-14 times-new-roman">
       
-      {/* --- Main Content Area (Now on the Left) --- */}
+      {/* Main Content */}
       <main className="flex-1 p-8 md:p-8 lg:p-20 overflow-y-auto">
         <div className="w-full max-w-7xl mx-auto">
-            
-          {/* Header Bar for Mobile Menu and Title */}
+          {/* Header Bar */}
           <header className="flex justify-between items-center mb-6 md:mb-10 bg-white p-4 rounded-xl shadow-sm md:shadow-none">
             <h2 className="text-3xl font-extrabold text-gray-800 capitalize">
               {TABS.find(t => t.key === activeTab)?.label}
             </h2>
 
-            {/* Mobile/Tablet Menu Button - Aligned Right */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-3 text-white bg-orange-500 rounded-lg hover:bg-orange-600 transition md:hidden shadow-md"
@@ -95,19 +103,13 @@ export default function Page() {
             </button>
           </header>
 
-          {/* Content Container */}
-          <div className="
-            min-h-[70vh] w-full 
-            bg-white rounded-2xl 
-            shadow-lg border border-gray-200
-            p-6 md:p-10 lg:p-12
-          ">
+          <div className="min-h-[70vh] w-full bg-white rounded-2xl shadow-lg border border-gray-200 p-6 md:p-10 lg:p-12">
             {renderContent()}
           </div>
         </div>
       </main>
-      
-      {/* --- Right Sidebar (The New Look) --- */}
+
+      {/* Right Sidebar */}
       <aside 
         className={`
           fixed inset-y-0 right-0 z-30 
@@ -122,10 +124,10 @@ export default function Page() {
         <div className="text-3xl font-black text-orange-600 border-b border-gray-200 pb-4 flex justify-between items-center">
           Admin <span className="text-gray-800">Panel</span>
           <button 
-             onClick={() => setIsMenuOpen(false)}
-             className="md:hidden text-gray-500 hover:text-orange-500"
+            onClick={() => setIsMenuOpen(false)}
+            className="md:hidden text-gray-500 hover:text-orange-500"
           >
-             <X size={24} />
+            <X size={24} />
           </button>
         </div>
         
@@ -138,13 +140,13 @@ export default function Page() {
               activeTab={activeTab} 
               setActiveTab={(key) => {
                 setActiveTab(key);
-                setIsMenuOpen(false); // Close menu on mobile after selection
+                setIsMenuOpen(false);
               }} 
             />
           ))}
         </nav>
 
-        {/* Logout Button */}
+        {/* Logout */}
         <button
           onClick={() => setLoggedIn(false)}
           className="flex items-center justify-center gap-2 p-3 mt-4 text-white font-semibold rounded-lg bg-gray-700 hover:bg-gray-600 transition-all duration-300 shadow-md"
@@ -152,8 +154,8 @@ export default function Page() {
           <LogOut size={20} /> Sign Out
         </button>
       </aside>
-      
-      {/* Mobile Menu Overlay */}
+
+      {/* Mobile Overlay */}
       {isMenuOpen && (
         <div 
           className="fixed inset-0 bg-black/50 z-20 md:hidden" 
