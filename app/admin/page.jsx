@@ -6,6 +6,7 @@ import News from "./News";
 import Jobseeker from "./Jobseeker";
 import AdminJobs from "./AdminJobs";
 import InvestorVisas from "./InvestorVisas"; // <-- New import
+import Visitvisas from "./Visitvisas";
 import { Menu, X, Briefcase, Users, Newspaper, LogOut, DollarSign } from 'lucide-react'; // Import icons
 
 // Mapping icons to keys for the tabs
@@ -14,6 +15,7 @@ const TAB_ICONS = {
   jobseeker: Users,
   adminjobs: Briefcase,
   investor: DollarSign, // <-- icon for Investor Visa
+  visitvisas: DollarSign,
 };
 
 // Define tabs
@@ -22,6 +24,7 @@ const TABS = [
   { key: "jobseeker", label: "Jobseeker Management" },
   { key: "adminjobs", label: "Job Postings" },
   { key: "investor", label: "Investor Visas" }, // <-- New tab
+  { key: "visitvisas", label: "Visit Visas" },
 ];
 
 // --- Helper Component for the Orange & White Tab Button ---
@@ -65,6 +68,8 @@ export default function Page() {
         return <AdminJobs />;
       case "investor":
         return <InvestorVisas />; // <-- render Investor Visa dashboard
+      case "visitvisas":
+        return <Visitvisas />;
       default:
         return null;
     }
