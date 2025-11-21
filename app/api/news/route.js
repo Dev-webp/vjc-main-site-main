@@ -1,38 +1,104 @@
-import { NextResponse } from 'next/server';
-import path from 'path';
-import fs from 'fs/promises';
+import { NextResponse } from "next/server";
+import db from "../../../lib/db"; // Adjust path if needed
 
-const uploadDir = path.join(process.cwd(), 'public', 'uploads');
+// Helper to get news by slug
+const getNewsBySlug = (slug) => {
+  return db.prepare("SELECT * FROM news WHERE slug = ?").get(slug);
+};
 
+// GET all news
+export async function GET() {
+  try {
+    const news = db.prepare("SELECT * FROM news ORDER BY id DESC").all();
+    return NextResponse.json(news);
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}
+
+// POST add news
 export async function POST(req) {
   try {
-    // Parse the incoming FormData
-    const formData = await req.formData();
-    const file = formData.get('file');
+    const news = await req.json();
 
-    if (!file) {
-      return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
+    if (!news.title?.trim() || !news.slug?.trim()) {
+      return NextResponse.json({ error: "Title and slug are required" }, { status: 400 });
     }
 
-    // Ensure the upload directory exists
-    await fs.mkdir(uploadDir, { recursive: true });
+    const stmt = db.prepare(`
+      INSERT INTO news (title, slug, summary, image, tag, time, readTime, content)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    `);
 
-    // Generate safe, unique filename with extension
-    const mimeType = file.type || 'image/jpeg';
-    const ext = mimeType.split('/')[1] || 'jpg';
-    const safeName = `${Date.now()}_${Math.random().toString(36).slice(2)}.${ext}`;
+    stmt.run(
+      news.title,
+      news.slug,
+      news.summary || "",
+      news.image || "",
+      news.tag || "",
+      news.time || "",
+      news.readTime || "",
+      news.content || ""
+    );
 
-    // Write file to /public/uploads
-    const bytes = await file.arrayBuffer();
-    await fs.writeFile(path.join(uploadDir, safeName), Buffer.from(bytes));
+    return NextResponse.json({ message: "News added", data: news }, { status: 201 });
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}
 
-    // Public accessible relative URL
-    const publicUrl = `/uploads/${safeName}`;
+// PUT update news by slug
+export async function PUT(req) {
+  try {
+    const news = await req.json();
+    if (!news.slug?.trim()) {
+      return NextResponse.json({ error: "Slug is required" }, { status: 400 });
+    }
 
-    // Return the new image URL to the frontend
-    return NextResponse.json({ url: publicUrl }, { status: 200 });
-  } catch (error) {
-    console.error("Upload error:", error);
-    return NextResponse.json({ error: "Image upload failed." }, { status: 500 });
+    const existing = getNewsBySlug(news.slug);
+    if (!existing) {
+      return NextResponse.json({ error: "News not found" }, { status: 404 });
+    }
+
+    const stmt = db.prepare(`
+      UPDATE news SET title = ?, summary = ?, image = ?, tag = ?, time = ?, readTime = ?, content = ?
+      WHERE slug = ?
+    `);
+
+    stmt.run(
+      news.title,
+      news.summary || "",
+      news.image || "",
+      news.tag || "",
+      news.time || "",
+      news.readTime || "",
+      news.content || "",
+      news.slug
+    );
+
+    return NextResponse.json({ message: "News updated", data: news });
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}
+
+// DELETE news by slug
+export async function DELETE(req) {
+  try {
+    const { slug } = await req.json();
+    if (!slug?.trim()) {
+      return NextResponse.json({ error: "Slug required" }, { status: 400 });
+    }
+
+    const stmt = db.prepare("DELETE FROM news WHERE slug = ?");
+    const result = stmt.run(slug);
+
+    if (result.changes === 0) {
+      return NextResponse.json({ error: "News not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ message: "News deleted" });
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
