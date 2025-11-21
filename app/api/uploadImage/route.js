@@ -1,38 +1,38 @@
-import db from '@/lib/db';
+import { NextResponse } from 'next/server';
+import path from 'path';
+import fs from 'fs/promises';
 
-// GET: /api/metas?slug=/your-route
-export async function GET(request) {
-  const { searchParams } = new URL(request.url);
-  const slug = searchParams.get('slug');
-  if (!slug) {
-    const metas = db.prepare("SELECT * FROM metas").all();
-    return Response.json(metas);
-  } else {
-    const meta = db.prepare("SELECT * FROM metas WHERE route = ?").get(slug);
-    return Response.json(meta ?? {});
-  }
-}
+const uploadDir = path.join(process.cwd(), 'public', 'uploads');
 
-// POST: Create/update meta for route
-export async function POST(request) {
-  const { slug, title, description, keywords } = await request.json();
-  if (!slug) {
-    return Response.json({ error: "Missing slug" }, { status: 400 });
-  }
-  db.prepare(`
-    INSERT INTO metas (route, title, description, keywords)
-    VALUES (?, ?, ?, ?)
-    ON CONFLICT(route) DO UPDATE SET title=?, description=?, keywords=?
-  `).run(slug, title, description, keywords, title, description, keywords);
-  return Response.json({ ok: true });
-}
+export async function POST(req) {
+  try {
+    // Parse the incoming FormData
+    const formData = await req.formData();
+    const file = formData.get('file');
 
-// DELETE: Remove meta for route
-export async function DELETE(request) {
-  const { slug } = await request.json();
-  if (!slug) {
-    return Response.json({ error: "Missing slug" }, { status: 400 });
+    if (!file) {
+      return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
+    }
+
+    // Ensure the upload directory exists
+    await fs.mkdir(uploadDir, { recursive: true });
+
+    // Generate safe, unique filename with extension
+    const mimeType = file.type || 'image/jpeg';
+    const ext = mimeType.split('/')[1] || 'jpg';
+    const safeName = `${Date.now()}_${Math.random().toString(36).slice(2)}.${ext}`;
+
+    // Write file to /public/uploads
+    const bytes = await file.arrayBuffer();
+    await fs.writeFile(path.join(uploadDir, safeName), Buffer.from(bytes));
+
+    // Public accessible relative URL
+    const publicUrl = `/uploads/${safeName}`;
+
+    // Return the new image URL to the frontend
+    return NextResponse.json({ url: publicUrl }, { status: 200 });
+  } catch (error) {
+    console.error("Upload error:", error);
+    return NextResponse.json({ error: "Image upload failed." }, { status: 500 });
   }
-  db.prepare("DELETE FROM metas WHERE route = ?").run(slug);
-  return Response.json({ ok: true });
 }
