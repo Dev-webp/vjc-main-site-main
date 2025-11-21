@@ -1,38 +1,41 @@
-import { NextResponse } from 'next/server';
-import path from 'path';
-import fs from 'fs/promises';
+import { NextResponse } from "next/server";
 
-const uploadDir = path.join(process.cwd(), 'public', 'uploads');
-
+/**
+ * Handles POST requests to process a file upload.
+ * It takes a file from FormData, converts it to a Base64 Data URI,
+ * and returns the URI in the JSON response.
+ * @param {Request} req The incoming request object.
+ * @returns {NextResponse} The JSON response containing the data URI or an error.
+ */
 export async function POST(req) {
   try {
-    // Parse the incoming FormData
+    // 1. Get the FormData from the request
     const formData = await req.formData();
-    const file = formData.get('file');
+    const file = formData.get("file");
 
     if (!file) {
+      // Handle case where no file is provided
       return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
     }
 
-    // Ensure the upload directory exists
-    await fs.mkdir(uploadDir, { recursive: true });
-
-    // Generate safe, unique filename with extension
-    const mimeType = file.type || 'image/jpeg';
-    const ext = mimeType.split('/')[1] || 'jpg';
-    const safeName = `${Date.now()}_${Math.random().toString(36).slice(2)}.${ext}`;
-
-    // Write file to /public/uploads
+    // 2. Convert the file object into a Node.js Buffer
     const bytes = await file.arrayBuffer();
-    await fs.writeFile(path.join(uploadDir, safeName), Buffer.from(bytes));
+    const buffer = Buffer.from(bytes);
 
-    // Public accessible relative URL
-    const publicUrl = `/uploads/${safeName}`;
+    // 3. Determine MIME type (default to image/jpeg if not found)
+    const mimeType = file.type || "image/jpeg";
+    
+    // 4. Convert the buffer to a Base64 string
+    const base64Data = buffer.toString("base64");
+    
+    // 5. Construct the Data URI format
+    const dataUri = `data:${mimeType};base64,${base64Data}`;
 
-    // Return the new image URL to the frontend
-    return NextResponse.json({ url: publicUrl }, { status: 200 });
+    // 6. Return the Base64 Data URI URL to the client
+    return NextResponse.json({ url: dataUri }, { status: 200 });
+
   } catch (error) {
-    console.error("Upload error:", error);
-    return NextResponse.json({ error: "Image upload failed." }, { status: 500 });
+    console.error("Image processing failed:", error);
+    return NextResponse.json({ error: "Image processing failed on server." }, { status: 500 });
   }
 }
