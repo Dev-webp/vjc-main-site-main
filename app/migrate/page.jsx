@@ -1,5 +1,5 @@
 import Two from "./Two";
-import db from "../../../lib/db"; // Adjust to your db path
+import db from "../../lib/db"; // Adjust to your db path
 
 const defaultMeta = {
   title: "Migrate With Canada Permanent Residence PR Visa Australia PR Visa Germany Opportunity Card Visa USA",
