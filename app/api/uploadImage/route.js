@@ -29,7 +29,7 @@ export async function POST(req) {
     await fs.writeFile(filePath, buffer);
 
     // Return URL served by Nginx pointing to uploads folder (adjust domain as needed)
-    const url = `https://www.vjcoveaseas.com/uploads/${filename}`;
+    const url = `https://www.vjcoverseas.com/uploads/${filename}`;
 
     return NextResponse.json({ url }, { status: 200 });
   } catch (error) {
