@@ -5,24 +5,32 @@ import path from "path";
 export async function POST(req) {
   try {
     const formData = await req.formData();
-    const file = formData.get("file"); // Make sure your form key is "file"
+    const file = formData.get("file"); // Your form key must be "file"
     if (!file) {
       return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
     }
 
-    // Get the file name or generate a unique one
+    // Use original filename or fallback to unique timestamp
     const filename = file.name || `file_${Date.now()}`;
-    // Ensure the uploads directory exists
-    const uploadDir = path.join(process.cwd(), "public/uploads");
+
+    // Upload directory outside your Next.js app (IMPORTANT for persistence)
+    const uploadDir = "/var/www/uploads";
+
+    // Create uploads folder if it doesn't exist
     await fs.mkdir(uploadDir, { recursive: true });
 
-    // Save the file to public/uploads
+    // Convert file to buffer
     const buffer = Buffer.from(await file.arrayBuffer());
+    
+    // Complete filepath to save
     const filePath = path.join(uploadDir, filename);
+
+    // Write file to disk
     await fs.writeFile(filePath, buffer);
 
-    // Return the public URL
-    const url = `/uploads/${filename}`;
+    // Return URL served by Nginx pointing to uploads folder (adjust domain as needed)
+    const url = `https://www.vjcoveaseas.com/uploads/${filename}`;
+
     return NextResponse.json({ url }, { status: 200 });
   } catch (error) {
     console.error("Image processing failed:", error);
