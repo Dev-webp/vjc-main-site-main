@@ -156,7 +156,7 @@ export default function Migrate() {
             <div
               className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative"
               style={{
-                maxHeight: "700px",
+                maxHeight: "1100px",
                 minHeight: "450px",
                 overflowY: "auto",
               }}

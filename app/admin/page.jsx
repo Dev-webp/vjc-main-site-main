@@ -8,6 +8,7 @@ import AdminJobs from "./AdminJobs";
 import InvestorVisas from "./InvestorVisas"; 
 import Visitvisas from "./Visitvisas";
 import Resume from "./Resume";
+import Schengenvisas from "./Schengenvisas";
 import Metas from "./Metas";
 // Import icons
 import { Menu, X, Briefcase, Users, Newspaper, LogOut, DollarSign, BarChart3, FileText, Globe } from 'lucide-react'; 
@@ -19,8 +20,10 @@ const TAB_ICONS = {
   adminjobs: Briefcase,
   investor: DollarSign, 
   visitvisas: Globe, 
+  schengenvisas: Globe,
   resume: FileText, 
   metas: BarChart3, 
+
 };
 
 // Define tabs
@@ -30,6 +33,7 @@ const TABS = [
   { key: "adminjobs", label: "Job Postings" },
   { key: "investor", label: "Investor Visas" }, 
   { key: "visitvisas", label: "Visit Visas" },
+  { key: "schengenvisas", label: "Schengen Visas" },
   { key: "resume", label: "Resume Management" },
   { key: "metas", label: "Site Meta Management" },
 ];
@@ -79,6 +83,8 @@ export default function Page() {
         return <InvestorVisas />; 
       case "visitvisas":
         return <Visitvisas />;
+      case "schengenvisas":
+        return <Schengenvisas />;
       case "resume":
         return <Resume />;
       case "metas":
