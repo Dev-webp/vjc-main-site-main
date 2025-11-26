@@ -63,7 +63,7 @@ export default function Migrate() {
 
   const handleVisaClick = (visa) => {
     setSelectedVisa(visa);
-    router.push(`/visit-visas/${visa.slug}`);
+    router.push(`/investor-visas/${visa.slug}`);
   };
 
   return (
