@@ -84,7 +84,7 @@ export default function Migrate() {
         {/* TOP SECTION */}
         {selectedVisa ? (
           <div
-            className="relative w-full min-h-[80vh] mt-6 bg-cover bg-center"
+            className="relative w-full min-h-[80vh] bg-cover bg-center"
             style={{ backgroundImage: `url(${selectedVisa.image})` }}
           >
             <div className="absolute inset-0 bg-black/50 z-0" />

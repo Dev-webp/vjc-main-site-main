@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Edit3, Trash2 } from 'lucide-react';
 
-export default function InvestorVisaDashboard() {
+export default function VisaDashboard() {
   const [visas, setVisas] = useState([]);
   const [form, setForm] = useState({
     id: null,
@@ -25,7 +25,7 @@ export default function InvestorVisaDashboard() {
   const [editingIndex, setEditingIndex] = useState(null);
 
   useEffect(() => {
-    fetch("/api/schengen-visas") // <-- updated URL
+    fetch("/api/schengenvisas")
       .then((res) => res.json())
       .then(setVisas);
   }, []);
@@ -91,12 +91,12 @@ export default function InvestorVisaDashboard() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const method = editingIndex !== null ? "PUT" : "POST";
-    await fetch("/api/schengen-visas", { // <-- updated URL
+    await fetch("/api/schengenvisas", {
       method,
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
     });
-    const updated = await fetch("/api/schengen-visas").then((r) => r.json()); // <-- updated URL
+    const updated = await fetch("/api/schengenvisas").then((r) => r.json());
     setVisas(updated);
     resetForm();
   };
@@ -109,28 +109,28 @@ export default function InvestorVisaDashboard() {
 
   const handleDelete = async (index) => {
     const idToDelete = visas[index].id;
-    await fetch("/api/schengen-visas", { // <-- updated URL
+    await fetch("/api/schengenvisas", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: idToDelete }),
     });
-    const updated = await fetch("/api/schengen-visas").then((r) => r.json()); // <-- updated URL
+    const updated = await fetch("/api/schengenvisas").then((r) => r.json());
     setVisas(updated);
   };
 
   return (
     <div className="p-6 max-w-7xl mx-auto bg-white rounded-lg shadow-md">
-     
+      
 
       <form onSubmit={handleSubmit} className="space-y-6 bg-gray-50 p-6 rounded-lg shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block font-semibold mb-1" htmlFor="name">Schengen Visa Name*</label>
+            <label className="block font-semibold mb-1" htmlFor="name">Visa Name*</label>
             <input
               type="text"
               name="name"
               id="name"
-              placeholder="Schengen Visa Name"
+              placeholder="Visa Name"
               value={form.name}
               onChange={handleChange}
               className="w-full p-2 border rounded"
@@ -183,7 +183,7 @@ export default function InvestorVisaDashboard() {
               type="text"
               name="metaKeywords"
               id="metaKeywords"
-              placeholder="e.g. Schengen visa, business, investment"
+              placeholder="e.g. visa, job seeker, work"
               value={form.metaKeywords}
               onChange={handleChange}
               className="w-full p-2 border rounded"
@@ -303,15 +303,15 @@ export default function InvestorVisaDashboard() {
 
         <button
           type="submit"
-          className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded font-semibold w-full"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold w-full"
         >
-          {editingIndex !== null ? "Update Schengen Visa" : "+ Add Schengen Visa"}
+          {editingIndex !== null ? "Update Visa" : "+ Add Visa"}
         </button>
       </form>
 
-      <h2 className="text-xl font-semibold my-6 text-center text-gray-800">All Schengen Visas</h2>
+      <h2 className="text-xl font-semibold my-6 text-center text-gray-800">All Visas</h2>
       {visas.length === 0 ? (
-        <p className="text-center text-gray-500">No Schengen visas added yet.</p>
+        <p className="text-center text-gray-500">No visas added yet.</p>
       ) : (
         <div className="overflow-x-auto max-w-8xl mx-auto">
           <table className="min-w-full border border-gray-300 rounded-md overflow-hidden">

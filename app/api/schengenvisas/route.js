@@ -1,23 +1,22 @@
 import { NextResponse } from "next/server";
-import db from "../../../lib/db"; // Adjust this path if needed
+import db from "../../../lib/db"; // Adjust path if needed
 
-// GET all visas
+// GET all visitvisas
 export async function GET() {
   try {
-    const visas = db.prepare("SELECT * FROM schengenvisas").all();
-    return NextResponse.json(visas);
+    const schengenvisas = db.prepare("SELECT * FROM schengenvisas").all();
+    return NextResponse.json(schengenvisas);
   } catch (err) {
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
 
-// POST add a new visa
 export async function POST(req) {
   try {
     const visa = await req.json();
 
     const stmt = db.prepare(`
-      INSERT INTO schengenvisas 
+      INSERT INTO schengenvisas
       (name, slug, description, descriptionImage, descriptionImageWidth, descriptionImageHeight, descriptionImagePosition,
        info, metaTitle, metaDescription, metaKeywords, image, addonHeading, addonDescription) 
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -47,7 +46,7 @@ export async function POST(req) {
   }
 }
 
-// PUT update a visa by id
+// PUT update a visitvisa by id
 export async function PUT(req) {
   try {
     const visa = await req.json();
@@ -56,7 +55,7 @@ export async function PUT(req) {
     }
 
     const stmt = db.prepare(`
-      UPDATE visas SET
+      UPDATE schengenvisas SET
         name = ?, slug = ?, description = ?, descriptionImage = ?, descriptionImageWidth = ?, descriptionImageHeight = ?, 
         descriptionImagePosition = ?, info = ?, metaTitle = ?, metaDescription = ?, metaKeywords = ?, image = ?, 
         addonHeading = ?, addonDescription = ?
@@ -92,7 +91,7 @@ export async function PUT(req) {
   }
 }
 
-// DELETE a visa by id
+// DELETE a visitvisa by id
 export async function DELETE(req) {
   try {
     const { id } = await req.json();

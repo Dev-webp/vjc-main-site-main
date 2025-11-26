@@ -48,7 +48,7 @@ export default function Migrate() {
   useEffect(() => {
     async function fetchVisas() {
       try {
-        const res = await fetch("/api/schengen-visas");
+        const res = await fetch("/api/schengenvisas");
         const data = await res.json();
         setVisas(data);
         const slug = pathname.split("/").pop();
@@ -84,7 +84,7 @@ export default function Migrate() {
         {/* TOP SECTION */}
         {selectedVisa ? (
           <div
-            className="relative w-full min-h-[80vh] mt-6 bg-cover bg-center"
+            className="relative w-full min-h-[80vh] mt-14 bg-cover bg-center"
             style={{ backgroundImage: `url(${selectedVisa.image})` }}
           >
             <div className="absolute inset-0 bg-black/50 z-0" />
@@ -128,7 +128,7 @@ export default function Migrate() {
           <div className="flex justify-center md:justify-start mb-8 ml-0 md:ml-16">
             <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
               <span className="block md:text-left text-center">Secure Dream Job,</span>
-              <span className="block text-center">Through Seeker Visa</span>
+              <span className="block text-center"> Resume Marketing</span>
             </h2>
           </div>
 
@@ -138,7 +138,7 @@ export default function Migrate() {
               {visas.map((visa, i) => (
                 <div key={i} className="mb-4 w-full">
                   <Link
-                    href={`/schengen-visas/${visa.slug}`}
+                    href={`/resume-marketing/${visa.slug}`}
                     className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg cursor-pointer ${
                       selectedVisa && selectedVisa.slug === visa.slug
                         ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
@@ -156,7 +156,7 @@ export default function Migrate() {
             <div
               className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative"
               style={{
-                maxHeight: "700px",
+                maxHeight: "1100px",
                 minHeight: "450px",
                 overflowY: "auto",
               }}
