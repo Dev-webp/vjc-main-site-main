@@ -297,7 +297,12 @@ const Footer = () => {
 
          {/* Copyright Section */}
          <div className="border-t border-gray-700 pt-6 flex flex-col items-center space-y-4 mt-4">
-            <p>&copy; 2025 VJC Overseas. All Rights Reserved.Privacy & Policy</p>
+            <p>&copy; 2025 VJC Overseas. All Rights Reserved.<Link 
+      href="/privacy-policy" 
+      
+    >
+      Privacy & Policy
+    </Link></p>
             
         </div>
 
