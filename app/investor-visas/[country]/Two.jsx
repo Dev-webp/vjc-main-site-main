@@ -115,7 +115,7 @@ export default function Migrate() {
               Wrong URL! No visa found for this country.
             </h2>
             <button
-              onClick={() => router.push("/visit-visas")}
+              onClick={() => router.push("/investor-visas")}
               className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded font-semibold shadow transition"
             >
               Go Home
@@ -138,7 +138,7 @@ export default function Migrate() {
               {visas.map((visa, i) => (
                 <div key={i} className="mb-4 w-full">
                   <Link
-                    href={`/visit-visas/${visa.slug}`}
+                    href={`/investor-visas/${visa.slug}`}
                     className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg cursor-pointer ${
                       selectedVisa && selectedVisa.slug === visa.slug
                         ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
