@@ -30,9 +30,11 @@ export default async function Page({ params }) {
   return (
     <>
      
-       
+       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
+        <Two />
+      </div>
 
-      <Two />
+     
     </>
   );
 }
