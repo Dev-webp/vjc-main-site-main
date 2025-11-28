@@ -152,15 +152,11 @@ export default function Migrate() {
               ))}
             </div>
 
-            {/* Visa Info Box: description HTML/text left, image top right but text flows beneath */}
-            <div
-              className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative"
-              style={{
-                maxHeight: "1100px",
-                minHeight: "450px",
-                overflowY: "auto",
-              }}
-            >
+           <div
+  className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative min-h-[1300px] max-h-[1650px]"
+  style={{ overflowY: "auto" }}
+>
+
               <div className="flex flex-col gap-4">
                 {/* Image and Addon description container */}
                 <div className="flex items-start gap-4">

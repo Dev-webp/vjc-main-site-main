@@ -10,6 +10,7 @@ import Visitvisas from "./Visitvisas";
 import Resume from "./Resume";
 import Schengenvisas from "./Schengenvisas";
 import Metas from "./Metas";
+import Studyabroad from "./Studyabroad";
 // Import icons
 import { Menu, X, Briefcase, Users, Newspaper, LogOut, DollarSign, BarChart3, FileText, Globe } from 'lucide-react'; 
 
@@ -23,6 +24,7 @@ const TAB_ICONS = {
   schengenvisas: Globe,
   resume: FileText, 
   metas: BarChart3, 
+  studyabroad: Globe,
 
 };
 
@@ -36,6 +38,7 @@ const TABS = [
   { key: "schengenvisas", label: "Schengen Visas" },
   { key: "resume", label: "Resume Management" },
   { key: "metas", label: "Site Meta Management" },
+  { key: "studyabroad", label: "Study Abroad Visas" },
 ];
 
 // --- Helper Component for the Sexy Tab Button ---
@@ -87,6 +90,8 @@ export default function Page() {
         return <Schengenvisas />;
       case "resume":
         return <Resume />;
+      case "studyabroad":
+        return <Studyabroad />;
       case "metas":
         return <Metas />;
       default:
