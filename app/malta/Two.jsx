@@ -11,30 +11,7 @@ const Migrate = () => {
   const searchParams = useSearchParams();
   const [metaData, setMetaData] = useState({});
   const [htmlContent, setHtmlContent] = useState(
-    // Placeholder HTML content for demonstration
-    `<section class="mt-8 text-black">
-        <h2 class="text-3xl font-bold mb-4 text-center">Your Bridge to Global Opportunities</h2>
-        <p class="text-lg mb-6">Cyprus offers more than just a visa; it offers a Mediterranean lifestyle, favourable tax regimes, and seamless access to the entire European Union. Our comprehensive visa program is designed for serious investors and their families.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="p-4 bg-gray-100 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-orange-600 mb-2">Investment Highlights</h3>
-                <ul class="list-disc list-inside space-y-1">
-                    <li>Minimum investment of EUR 300,000+ in brand new real estate.</li>
-                    <li>Fast processing time for residency status.</li>
-                    <li>Inclusion of spouse, dependent children, and parents.</li>
-                </ul>
-            </div>
-            <div class="p-4 bg-gray-100 rounded-lg shadow-sm">
-                <h3 class="text-xl font-semibold text-orange-600 mb-2">Key Benefits</h3>
-                <ul class="list-disc list-inside space-y-1">
-                    <li>Visa-free travel to 170+ countries.</li>
-                    <li>Access to high-quality EU education and healthcare.</li>
-                    <li>Highly competitive corporate tax rates.</li>
-                </ul>
-            </div>
-        </div>
-        <p class="mt-6 text-center text-xl font-medium text-gray-700">Let VJC Overseas be your trusted partner in securing your European future.</p>
-    </section>`
+   
   );
   const backgroundImage = "/maltaimg.webp";
 
@@ -68,16 +45,7 @@ const Migrate = () => {
 
   return (
     <div className="relative w-full flex flex-col items-center text-white bg-white">
-      {/* Dynamic Meta Title */}
-      {metaData.title && (
-        <title>{metaData.title} | VJC Overseas</title>
-      )}
-      {metaData.description && (
-        <meta name="description" content={metaData.description} />
-      )}
-      {metaData.keywords && (
-        <meta name="keywords" content={metaData.keywords} />
-      )}
+      
 
       {/* Background Image with Motion Text */}
       <div
