@@ -1,40 +1,45 @@
-"use client";
-
-import { useState } from "react";
-import { motion } from "framer-motion";
-import Nav from "./Nav";
-import Form from "./Form";
 import Two from "./Two";
+import { headers } from "next/headers";
 
+// Fetch meta data using YOUR API
+async function fetchMetaFromAPI(route, host, protocol) {
+  const res = await fetch(`${protocol}://${host}/api/metas?slug=${route}`, { 
+    cache: "no-store" 
+  });
+  return await res.json();
+}
 
-const textContainerVariants = {
- 
-   
-};
+// Next.js Metadata API - uses YOUR API
+export async function generateMetadata() {
+  const host = headers().get("host");
+  const protocol = host.includes("localhost") ? "http" : "https";
+  const route = "/study";
+  
+  const meta = await fetchMetaFromAPI(route, host, protocol);
 
-
-
-const ContactPage = () => {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
+  return {
+    title: meta?.title || "",
+    description: meta?.description || "",
+    keywords: meta?.keywords || "",
   };
+}
+
+// Page Component - uses YOUR API
+export default async function Page() {
+  const host = headers().get("host");
+  const protocol = host.includes("localhost") ? "http" : "https";
+  const route = "/study";
+  
+  const meta = await fetchMetaFromAPI(route, host, protocol);
 
   return (
     <>
-      {/* Navbar */}
-      <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
+      <div style={{ marginTop: "3%", zIndex: 20, position: "relative" }}>
+        <Two />
       </div>
 
-      {/* Main Section */}
-      
-      {/* Other Sections */}
-      <Two />
-
+     
+     
     </>
   );
-};
-
-export default ContactPage;
+}

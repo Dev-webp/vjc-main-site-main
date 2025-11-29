@@ -1,46 +1,45 @@
-"use client";
-
-import { useState } from "react";
-import Nav from "./Nav";
 import Two from "./Two";
+import { headers } from "next/headers";
 
+// Fetch meta data using YOUR API
+async function fetchMetaFromAPI(route, host, protocol) {
+  const res = await fetch(`${protocol}://${host}/api/metas?slug=${route}`, { 
+    cache: "no-store" 
+  });
+  return await res.json();
+}
 
-const ContactPage = () => {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
+// Next.js Metadata API - uses YOUR API
+export async function generateMetadata() {
+  const host = headers().get("host");
+  const protocol = host.includes("localhost") ? "http" : "https";
+  const route = "/malta";
+  
+  const meta = await fetchMetaFromAPI(route, host, protocol);
 
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
+  return {
+    title: meta?.title || "",
+    description: meta?.description || "",
+    keywords: meta?.keywords || "",
   };
+}
+
+// Page Component - uses YOUR API
+export default async function Page() {
+  const host = headers().get("host");
+  const protocol = host.includes("localhost") ? "http" : "https";
+  const route = "/malta";
+  
+  const meta = await fetchMetaFromAPI(route, host, protocol);
 
   return (
     <>
-      {/* Navbar */}
-      <div className="mt-10 z-20 relative">
-        <Nav />
-      </div>
-
-      {/* Main Section */}
-      <div className="mt-16 mb-16">
+      <div style={{ marginTop: "3%", zIndex: 20, position: "relative" }}>
         <Two />
-         
-        
-        
       </div>
 
-      <div className=" -mt-16" >
-       
-   
-
-      </div>
- 
-
-
-      
-
-      {/* Footer Section */}
-       
+     
+     
     </>
   );
-};
-
-export default ContactPage;
+}
