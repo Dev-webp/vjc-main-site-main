@@ -11,6 +11,7 @@ import Resume from "./Resume";
 import Schengenvisas from "./Schengenvisas";
 import Metas from "./Metas";
 import Studyabroad from "./Studyabroad";
+import Tours from "./Tours";
 // Import icons
 import { Menu, X, Briefcase, Users, Newspaper, LogOut, DollarSign, BarChart3, FileText, Globe } from 'lucide-react'; 
 
@@ -25,6 +26,7 @@ const TAB_ICONS = {
   resume: FileText, 
   metas: BarChart3, 
   studyabroad: Globe,
+  tours: Globe,
 
 };
 
@@ -39,6 +41,7 @@ const TABS = [
   { key: "resume", label: "Resume Management" },
   { key: "metas", label: "Site Meta Management" },
   { key: "studyabroad", label: "Study Abroad Visas" },
+  { key: "tours", label: "Tours & Ticketing" },
 ];
 
 // --- Helper Component for the Sexy Tab Button ---
@@ -94,6 +97,8 @@ export default function Page() {
         return <Studyabroad />;
       case "metas":
         return <Metas />;
+      case "tours":
+        return <Tours />;
       default:
         return null;
     }

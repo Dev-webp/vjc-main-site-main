@@ -1,38 +1,38 @@
-"use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-
-import Form from "./Form";
 import Two from "./Two";
+import { headers } from "next/headers";
 
+// Fetch visa data from your API or file
+async function fetchVisa(slug, host, protocol) {
+  const res = await fetch(`${protocol}://${host}/api/tours`, { cache: "no-store" });
+  const visas = await res.json();
+  return visas.find(v => v.slug === slug);
+}
 
-const textContainerVariants = {
- 
-   
-};
+// Next.js Metadata API for SSR meta tags
+export async function generateMetadata({ params }) {
+  const { country } = params; // ✅ no await here
 
+  const host = headers().get("host");
+  const protocol = host.includes("localhost") ? "http" : "https";
 
+  const visa = await fetchVisa(country, host, protocol);
 
-const ContactPage = () => {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
+  return {
+    title: visa?.metaTitle || visa?.name || "Visa Not Found",
+    description:
+      visa?.metaDescription || visa?.description || "No visa found for this country",
   };
 
+}
+
+export default async function Page({ params }) {
   return (
     <>
-      {/* Navbar */}
-     
-      {/* Main Section */}
-      
-      {/* Other Sections */}
+      <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
+       
+      </div>
       <Two />
-  
-
     </>
   );
-};
-
-export default ContactPage;
+}
