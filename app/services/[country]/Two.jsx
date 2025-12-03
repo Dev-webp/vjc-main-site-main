@@ -1,151 +1,223 @@
 "use client";
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { Plane, Globe, DollarSign, ClipboardCheck, Users } from "lucide-react";
-import PassportServices from "./PassportServices";
-import AirTicketing from "./AirTicketing";
-import ForexServices from "./ForexServices";
-import FreeAssessment from "./FreeAssessment";
-import FreeCounselling from "./FreeCounselling";
+import { ArrowRight } from "lucide-react";
+import Head from "next/head";
+import Image from "next/image";
 import Form from "./Form";
 import Link from "next/link";
-import Hero from "./Hero";
-const services = [
-  { key: "passport-services", title: "Passport Services", image: "/passport.webp", icon: <Globe size={20} /> },
-  { key: "air-ticketing", title: "Air Ticketing", image: "/airtecket.png", icon: <Plane size={20} /> },
-  { key: "forex-services", title: "Forex Services", image: "/forex.png", icon: <DollarSign size={20} /> },
-  { key: "free-assessment", title: "Free Assessment", image: "/freeassignment.webp", icon: <ClipboardCheck size={20} /> },
-  { key: "free-counselling", title: "Free Counselling", image: "/freeass.jpg", icon: <Users size={20} /> },
-];
 
-export default function ServicePage() {
+// Helper to render optional links inside text
+function renderInfoWithLinks(info, infoLinks) {
+  if (!infoLinks || infoLinks.length === 0) return info;
+  let result = [];
+  let lastIndex = 0;
+  infoLinks.forEach((link, idx) => {
+    const labelIndex = info.indexOf(link.label, lastIndex);
+    if (labelIndex !== -1) {
+      if (labelIndex > lastIndex) {
+        result.push(info.substring(lastIndex, labelIndex));
+      }
+      result.push(
+        <a
+          key={link.label + idx}
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded font-semibold mx-1 transition"
+        >
+          {link.label}
+        </a>
+      );
+      lastIndex = labelIndex + link.label.length;
+    }
+  });
+  if (lastIndex < info.length) {
+    result.push(info.substring(lastIndex));
+  }
+  return result;
+}
+
+export default function Migrate() {
   const router = useRouter();
   const pathname = usePathname();
-  const currentKey = pathname.split("/").pop();
-
-  const serviceComponents = {
-    "passport-services": <PassportServices />,
-    "air-ticketing": <AirTicketing />,
-    "forex-services": <ForexServices />,
-    "free-assessment": <FreeAssessment />,
-    "free-counselling": <FreeCounselling />,
-  };
-
-  const [selectedService, setSelectedService] = useState(services[0]);
+  const [visas, setVisas] = useState([]);
+  const [selectedVisa, setSelectedVisa] = useState(null);
 
   useEffect(() => {
-    const foundService = services.find((service) => service.key === currentKey);
-    if (foundService) {
-      setSelectedService(foundService);
+    async function fetchVisas() {
+      try {
+        const res = await fetch("/api/services");
+        const data = await res.json();
+        setVisas(data);
+        const slug = pathname.split("/").pop();
+        const found = data.find((v) => v.slug === slug);
+        setSelectedVisa(found || null);
+      } catch (err) {
+        console.error(err);
+      }
     }
-  }, [currentKey]);
+    fetchVisas();
+  }, [pathname]);
+
+  const handleVisaClick = (visa) => {
+    setSelectedVisa(visa);
+    router.push(`/services/${visa.slug}`);
+  };
 
   return (
-    <section className="min-h-screen flex flex-col bg-white items-center py-4 text-oranage mt-16 md:mt-0  shadow-orange-500/30">
-      {/* Moving Text Below Navbar */}
-      <div className="w-full bg-white py-2 overflow-hidden">
-        <marquee className="flex items-center text-lg font-bold text-black space-x-8">
-          <Image src="/logo.png" alt="Company Logo" width={80} height={120} className="inline-block mx-2" />
-          {services.map((service, index) => (
-            <span key={index} className="mx-4">{service.title} |</span>
-          ))}
-        </marquee>
-      </div>
+    <>
+      <Head>
+        <title>{selectedVisa?.metaTitle || selectedVisa?.name || "Visa Not Found"}</title>
+        <meta
+          name="description"
+          content={
+            selectedVisa?.metaDescription ||
+            selectedVisa?.description ||
+            "No visa found for this country."
+          }
+        />
+      </Head>
 
-      {/* Heading Section */}
-      <motion.h2 
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-5xl font-extrabold text-center mb-6 text-black drop-shadow-lg"
-      >
-        Explore Our Services
-      </motion.h2>
-
-      {/* Main Layout */}
-      <div className="flex flex-col md:flex-row items-center w-full max-w-7xl px-4 gap-10 relative bg-cover bg-center bg-no-repeat  shadow-xl p-8"
-        >
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-400/60 via-white to-orange-500/80 "></div>
-        
-        {/* Left Section */}
-        <motion.div className="md:w-1/4 text-left relative z-10">
-          <h3 className="text-3xl font-bold text-white mb-4 ">{selectedService.title}</h3>
-          <Image src={selectedService.image} alt={selectedService.title} width={500} height={300} className=" shadow-md mx-auto mb-4" />
-        </motion.div>
-
-        {/* Right Section */}
-
-
-
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:w-3/4 relative z-10">
-  {services.map((service) => (
-    <Link
-      key={service.key}
-      href={`/services/${service.key}`}
-      scroll={false}
-      className="w-full"
-    >
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className={`flex items-center justify-center  min-h-32 w-42 text-lg font-semibold transition-all duration-300 shadow-md cursor-pointer ${
-          selectedService.key === service.key
-            ? "bg-orange-700 text-white scale-105"
-            : "bg-white bg-opacity-10 backdrop-blur-lg hover:bg-opacity-30"
-        }`}
-      >
-        {service.icon} {service.title}
-      </motion.div>
-    </Link>
-  ))}
-</div>
-
-</div>
-
-      {/* Content Section */}
-      <div className="flex flex-col items-start w-full max-w-7xl gap-8 mt-10">
-        <motion.div className="w-full p-6 bg-gradient-to-b from-blue-400 to-orange-500/80 backdrop-blur-lg text-center max-h-[700px] overflow-y-auto">
-          <h3 className="text-2xl font-bold text-black mb-2">{selectedService.title}</h3>
-          
-          <div className="text-gray-200">{serviceComponents[selectedService.key]}</div>
-        </motion.div>
-
-        {/* CTA & Form Section */}
-        <div className="w-full flex flex-col md:flex-row gap-6 p-4">
-          {/* Left: Call-to-Action Box with Background Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative text-white p-6  shadow-lg md:w-1/2 flex flex-col justify-center items-center text-center"
-            style={{
-              backgroundImage: "url('/bar.jpeg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
+      <div className="w-full min-h-screen flex flex-col">
+        {/* TOP SECTION */}
+        {selectedVisa ? (
+          <div
+            className="relative w-full min-h-[80vh] bg-cover bg-center"
+            style={{ backgroundImage: `url(${selectedVisa.image})` }}
           >
-            <div className="absolute inset-0 bg-black bg-opacity-50 "></div> {/* Dark Overlay */}
-            <h3 className="text-3xl font-bold mb-2 relative z-10">Get Started Today!</h3>
-            <p className="text-lg relative z-10">Unlock exclusive benefits and hassle-free services with us.</p>
-            <div className="mt-4 bg-white text-orange-700 px-4 py-2  font-semibold relative z-10">
-              Limited Offer: Free Consultation!
+            <div className="absolute inset-0 bg-black/50 z-0" />
+            <div className="relative z-10 w-full h-full flex items-center justify-center px-6 lg:px-12 ">
+              <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
+                <motion.div
+                  className="w-full lg:w-1/2 text-white text-center lg:text-left pt-24 sm:pt-32 lg:pt-0 lg:pl-10"
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3rem] font-semibold uppercase leading-tight">
+                    {selectedVisa.name}
+                  </h1>
+                  <p className="mt-4 text-base sm:text-lg lg:text-xl max-w-xl">
+                    {selectedVisa.description}
+                  </p>
+                </motion.div>
+                <div className="w-full lg:w-1/2 mt-8 lg:mt-12">
+                  <Form />
+                </div>
+              </div>
             </div>
-          </motion.div>
+          </div>
+        ) : (
+          <div className="flex flex-col items-center justify-center min-h-[40vh]">
+            <h2 className="text-2xl text-red-600 font-bold mb-4">
+              Wrong URL! No visa found for this country.
+            </h2>
+            <button
+              onClick={() => router.push("/services")}
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded font-semibold shadow transition"
+            >
+              Go Home
+            </button>
+          </div>
+        )}
 
-          {/* Right: Form Component */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="md:w-1/2"
-          >
-            <Form />
-          </motion.div>
+        {/* BOTTOM SECTION */}
+        <div className="relative z-10 w-full bg-white px-4 sm:px-6 lg:px-12 pt-10 pb-16">
+          <div className="flex justify-center md:justify-start mb-8 ml-0 md:ml-16">
+            <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
+              <span className="block md:text-left text-center">Explore,</span>
+              <span className="block text-center">Our Services</span>
+            </h2>
+          </div>
+
+          <div className="w-full flex flex-col md:flex-row gap-8 md:gap-10 items-start">
+            {/* Visa Buttons */}
+            <div className="w-full md:w-1/3">
+              {visas.map((visa, i) => (
+                <div key={i} className="mb-4 w-full">
+                  <Link
+                    href={`/services/${visa.slug}`}
+                    className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg cursor-pointer ${
+                      selectedVisa && selectedVisa.slug === visa.slug
+                        ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
+                        : "bg-transparent text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
+                    }`}
+                  >
+                    {visa.name}
+                    <ArrowRight className="w-6 h-6" />
+                  </Link>
+                </div>
+              ))}
+            </div>
+
+            {/* Visa Info Box: description HTML/text left, image top right but text flows beneath */}
+            <div
+              className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative"
+              style={{
+                maxHeight: "700px",
+                minHeight: "450px",
+                overflowY: "auto",
+              }}
+            >
+              <div className="flex flex-col gap-4">
+                {/* Image and Addon description container */}
+                <div className="flex items-start gap-4">
+                  {/* Image on top right */}
+                  {selectedVisa?.descriptionImage && (
+                    <div className="max-w-[50%]">
+                      <Image
+                        src={selectedVisa.descriptionImage}
+                        alt={selectedVisa.name + " Description"}
+                        width={
+                          selectedVisa.descriptionImageWidth
+                            ? parseInt(selectedVisa.descriptionImageWidth)
+                            : 120
+                        }
+                        height={
+                          selectedVisa.descriptionImageHeight && selectedVisa.descriptionImageHeight !== "auto"
+                            ? parseInt(selectedVisa.descriptionImageHeight)
+                            : 80
+                        }
+                        style={{
+                          objectFit: "cover",
+                          borderRadius: "8px",
+                          boxShadow: "0 2px 10px rgba(0,0,0,.12)",
+                          display: "block",
+                        }}
+                        unoptimized
+                        draggable={false}
+                      />
+                    </div>
+                  )}
+
+                  {/* Dynamic Addon heading and description */}
+                  <div className="flex-1">
+                    {selectedVisa?.addonHeading && (
+                      <h3 className="font-bold text-xl mb-2">{selectedVisa.addonHeading}</h3>
+                    )}
+                    {selectedVisa?.addonDescription && (
+                      <div
+                        className="text-gray-700 text-lg leading-relaxed"
+                        dangerouslySetInnerHTML={{ __html: selectedVisa.addonDescription }}
+                      />
+                    )}
+                  </div>
+                </div>
+
+                {/* Info Content (HTML Or Text) placed below image and addon */}
+                <div
+                  className="text-gray-700 text-lg leading-relaxed"
+                  dangerouslySetInnerHTML={{
+                    __html: selectedVisa ? selectedVisa.info : "No visa found for this country.",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }

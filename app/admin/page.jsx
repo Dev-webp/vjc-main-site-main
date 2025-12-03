@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 // Import your dashboard components
 import AdminLogin from "./AdminLogin";
 import News from "./News";
@@ -12,8 +12,9 @@ import Schengenvisas from "./Schengenvisas";
 import Metas from "./Metas";
 import Studyabroad from "./Studyabroad";
 import Tours from "./Tours";
+import Services from "./Services";
 // Import icons
-import { Menu, X, Briefcase, Users, Newspaper, LogOut, DollarSign, BarChart3, FileText, Globe } from 'lucide-react'; 
+import { Menu, X, Briefcase, Users, Newspaper, LogOut, DollarSign, BarChart3, FileText, Globe, ChevronLeft, ChevronRight } from 'lucide-react'; 
 
 // Mapping icons to keys for the tabs
 const TAB_ICONS = {
@@ -27,7 +28,7 @@ const TAB_ICONS = {
   metas: BarChart3, 
   studyabroad: Globe,
   tours: Globe,
-
+  services: Globe,
 };
 
 // Define tabs
@@ -42,6 +43,7 @@ const TABS = [
   { key: "metas", label: "Site Meta Management" },
   { key: "studyabroad", label: "Study Abroad Visas" },
   { key: "tours", label: "Tours & Ticketing" },
+  { key: "services", label: "Services Management" },
 ];
 
 // --- Helper Component for the Sexy Tab Button ---
@@ -51,7 +53,6 @@ const TabButton = ({ tab, activeTab, setActiveTab }) => {
 
   return (
     <button
-      key={tab.key}
       className={`
         flex items-center gap-4 w-full p-3 rounded-xl transition-all duration-200 ease-in-out
         font-semibold text-base cursor-pointer transform hover:scale-[1.01]
@@ -75,6 +76,27 @@ export default function Page() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [activeTab, setActiveTab] = useState("news");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  
+  const ITEMS_PER_PAGE = 8;
+  const totalPages = Math.ceil(TABS.length / ITEMS_PER_PAGE);
+
+  const visibleTabs = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return TABS.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [currentPage]);
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
 
   // Main content renderer
   function renderContent() {
@@ -99,6 +121,8 @@ export default function Page() {
         return <Metas />;
       case "tours":
         return <Tours />;
+      case "services":
+        return <Services />;
       default:
         return null;
     }
@@ -118,11 +142,9 @@ export default function Page() {
 
   // --- REVERSED DASHBOARD LAYOUT (Main Content Left, Sidebar Right) ---
   return (
-    // The main container uses `flex` which naturally orders elements left-to-right.
-    // We reverse the order using `flex-row-reverse` on medium screens and up.
     <div className="min-h-screen flex md:flex-row-reverse bg-gray-50 antialiased">
       
-      {/* 1. Right Sidebar (Navigation Buttons) */}
+      {/* 1. Right Sidebar (Navigation Buttons with Pagination) */} 
       <aside 
         className={`
           fixed inset-y-0 right-0 z-40 
@@ -134,7 +156,6 @@ export default function Page() {
           w-64
         `}
       >
-        
         {/* Logo/Title */}
         <div className="text-3xl font-extrabold text-gray-900 border-b-4 border-orange-600 pb-4 flex justify-between items-center tracking-tight">
           <span className="text-orange-600">Portal</span> <span className="text-gray-800">Admin</span>
@@ -146,43 +167,78 @@ export default function Page() {
           </button>
         </div>
         
-        {/* Navigation */}
-        <nav className="flex flex-col gap-2 flex-1">
-          {TABS.map(tab => (
-            <TabButton 
-              key={tab.key} 
-              tab={tab} 
-              activeTab={activeTab} 
-              setActiveTab={(key) => {
-                setActiveTab(key);
-                setIsMenuOpen(false); 
-              }} 
-            />
-          ))}
-        </nav>
+        {/* Navigation with Pagination */}
+        <div className="flex flex-col gap-4 flex-1">
+          {/* Visible Tabs (7 items max) */}
+          <nav className="flex flex-col gap-2">
+            {visibleTabs.map(tab => (
+              <TabButton 
+                key={tab.key} 
+                tab={tab} 
+                activeTab={activeTab} 
+                setActiveTab={(key) => {
+                  setActiveTab(key);
+                  setIsMenuOpen(false); 
+                }} 
+              />
+            ))}
+          </nav>
+
+          {/* Pagination Controls */}
+          <div className="flex items-center justify-between pt-2 border-t border-gray-200">
+            <button
+              onClick={handlePrevPage}
+              disabled={currentPage === 1}
+              className={`
+                flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200
+                ${currentPage === 1 
+                  ? 'text-gray-400 cursor-not-allowed' 
+                  : 'text-gray-700 hover:bg-orange-50 hover:text-orange-600'
+                }
+              `}
+            >
+              <ChevronLeft size={18} />
+              Previous
+            </button>
+
+            <span className="text-xs text-gray-500">
+              Page {currentPage} of {totalPages}
+            </span>
+
+            <button
+              onClick={handleNextPage}
+              disabled={currentPage === totalPages}
+              className={`
+                flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200
+                ${currentPage === totalPages 
+                  ? 'text-gray-400 cursor-not-allowed' 
+                  : 'text-gray-700 hover:bg-orange-50 hover:text-orange-600'
+                }
+              `}
+            >
+              Next
+              <ChevronRight size={18} />
+            </button>
+          </div>
+        </div>
 
         {/* Logout */}
         <button
           onClick={() => setLoggedIn(false)}
-          className="flex items-center justify-center gap-2 p-3 text-white font-semibold rounded-xl bg-gray-700 hover:bg-gray-800 transition-all duration-200 shadow-lg mt-auto"
+          className="flex items-center justify-center gap-2 p-3 text-white font-semibold rounded-xl bg-gray-700 hover:bg-gray-800 transition-all duration-200 shadow-lg"
         >
           <LogOut size={20} /> Sign Out
         </button>
       </aside>
 
-      {/* 2. Main Content Area (Left Side) 
-          - Remains flex-1 to take up all remaining space.
-          - Added mt-8 for top margin.
-      */}
+      {/* 2. Main Content Area (Left Side) */}
       <main className="flex-1 p-4 md:p-8 overflow-y-auto">
         <div className="w-full max-w-full mx-auto mt-8"> 
           
-          {/* Header Bar (Mobile Menu Button and Title) 
-              - The mobile menu button is moved to the left side of the header for symmetry/access.
-          */}
+          {/* Header Bar (Mobile Menu Button and Title) */}
           <header className="flex justify-between items-center mb-6 md:mb-10 bg-white p-4 rounded-xl shadow-md border-t-4 border-orange-600">
             
-            {/* Mobile Menu Toggle (Now on the left for mobile) */}
+            {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 text-white bg-orange-600 rounded-lg hover:bg-orange-700 transition md:hidden shadow-lg"
@@ -194,7 +250,6 @@ export default function Page() {
               {TABS.find(t => t.key === activeTab)?.label}
             </h2>
             
-            {/* Empty element to help justify content on desktop if needed, or remove completely */}
             <div className="hidden md:block w-8" />
           </header>
 
