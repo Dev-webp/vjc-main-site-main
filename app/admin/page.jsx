@@ -13,6 +13,8 @@ import Metas from "./Metas";
 import Studyabroad from "./Studyabroad";
 import Tours from "./Tours";
 import Services from "./Services";
+import Migrate from "./Migrate";
+import Migratechild from "./Migratechild";
 // Import icons
 import { Menu, X, Briefcase, Users, Newspaper, LogOut, DollarSign, BarChart3, FileText, Globe, ChevronLeft, ChevronRight } from 'lucide-react'; 
 
@@ -29,6 +31,8 @@ const TAB_ICONS = {
   studyabroad: Globe,
   tours: Globe,
   services: Globe,
+  migrate: Globe,
+  migratechild: Globe,
 };
 
 // Define tabs
@@ -44,6 +48,8 @@ const TABS = [
   { key: "studyabroad", label: "Study Abroad Visas" },
   { key: "tours", label: "Tours & Ticketing" },
   { key: "services", label: "Services Management" },
+  { key: "migrate", label: "Migration Services" },
+  { key: "migratechild", label: "Migration Sub-Services" },
 ];
 
 // --- Helper Component for the Sexy Tab Button ---
@@ -123,6 +129,10 @@ export default function Page() {
         return <Tours />;
       case "services":
         return <Services />;
+      case "migrate":
+        return <Migrate />;
+      case "migratechild":
+        return <Migratechild />;
       default:
         return null;
     }
