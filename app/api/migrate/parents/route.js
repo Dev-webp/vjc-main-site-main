@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import db from "../../../../lib/db"; // Adjust path if needed
+import db from "../../../../lib/db";
 
 // GET all unique parent slugs (entries where parentSlug is NULL or empty)
 export async function GET() {
