@@ -26,6 +26,7 @@ export default function VisaDashboard() {
   });
   const [editingIndex, setEditingIndex] = useState(null);
   const [expandedParents, setExpandedParents] = useState({});
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetchVisas();
@@ -33,15 +34,23 @@ export default function VisaDashboard() {
   }, []);
 
   const fetchVisas = async () => {
-    const res = await fetch("/api/migrate");
-    const data = await res.json();
-    setVisas(data);
+    try {
+      const res = await fetch("/api/migrate");
+      const data = await res.json();
+      setVisas(data);
+    } catch (err) {
+      console.error('Fetch visas error:', err);
+    }
   };
 
   const fetchParentSlugs = async () => {
-    const res = await fetch("/api/migrate/parents");
-    const data = await res.json();
-    setParentSlugs(data);
+    try {
+      const res = await fetch("/api/migrate/parents");
+      const data = await res.json();
+      setParentSlugs(data);
+    } catch (err) {
+      console.error('Fetch parents error:', err);
+    }
   };
 
   const handleChange = (e) => {
@@ -105,32 +114,82 @@ export default function VisaDashboard() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    
+    console.log('📤 SENDING FORM:', JSON.stringify(form, null, 2));
+    
     const method = editingIndex !== null ? "PUT" : "POST";
-    await fetch("/api/migrate", {
-      method,
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
-    fetchVisas();
-    fetchParentSlugs();
-    resetForm();
+    
+    try {
+      const response = await fetch("/api/migrate", {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          id: form.id,
+          parentSlug: form.parentSlug || null,
+          name: form.name,
+          slug: form.slug,
+          description: form.description,
+          descriptionImage: form.descriptionImage,
+          descriptionImageWidth: form.descriptionImageWidth,
+          descriptionImageHeight: form.descriptionImageHeight,
+          descriptionImagePosition: form.descriptionImagePosition,
+          info: form.info,
+          metaTitle: form.metaTitle,
+          metaDescription: form.metaDescription,
+          metaKeywords: form.metaKeywords,
+          image: form.image,
+          addonHeading: form.addonHeading || "",
+          addonDescription: form.addonDescription || ""
+        })
+      });
+      
+      const text = await response.text();
+      console.log('📥 RESPONSE:', response.status, text);
+      
+      if (response.ok) {
+        await fetchVisas();
+        await fetchParentSlugs();
+        resetForm();
+        alert('✅ Success! ' + (method === 'POST' ? 'Added' : 'Updated'));
+      } else {
+        alert(`❌ Error ${response.status}: ${text}`);
+      }
+    } catch (err) {
+      console.error('❌ FETCH ERROR:', err);
+      alert('❌ Network error: ' + err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
-  const handleEdit = (index) => {
-    const v = visas[index];
-    setForm({ ...v });
-    setEditingIndex(index);
+  const handleEdit = (visaId) => {
+    const visa = visas.find(v => v.id === visaId);
+    if (visa) {
+      setForm({ ...visa });
+      setEditingIndex(visas.findIndex(v => v.id === visaId));
+    }
   };
 
-  const handleDelete = async (index) => {
-    const idToDelete = visas[index].id;
-    await fetch("/api/migrate", {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ id: idToDelete }),
-    });
-    fetchVisas();
-    fetchParentSlugs();
+  const handleDelete = async (visaId) => {
+    if (!confirm('Delete this visa?')) return;
+    
+    try {
+      const response = await fetch("/api/migrate", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: visaId }),
+      });
+      
+      if (response.ok) {
+        await fetchVisas();
+        await fetchParentSlugs();
+      } else {
+        alert('Delete failed');
+      }
+    } catch (err) {
+      console.error('Delete error:', err);
+    }
   };
 
   const toggleParent = (parentSlug) => {
@@ -157,10 +216,11 @@ export default function VisaDashboard() {
               onChange={handleChange}
               className="w-full p-2 border rounded"
               required
+              disabled={loading}
             >
               <option value="">Select Parent (migrate/*)</option>
               {parentSlugs.map((parent) => (
-                <option key={parent.slug} value={parent.slug}>
+                <option key={parent.id} value={parent.slug}>
                   /{parent.slug}
                 </option>
               ))}
@@ -177,6 +237,7 @@ export default function VisaDashboard() {
               onChange={handleChange}
               className="w-full p-2 border rounded"
               required
+              disabled={loading}
             />
           </div>
         </div>
@@ -193,6 +254,7 @@ export default function VisaDashboard() {
               onChange={handleChange}
               className="w-full p-2 border rounded"
               required
+              disabled={loading}
             />
           </div>
           <div>
@@ -217,6 +279,7 @@ export default function VisaDashboard() {
               value={form.metaTitle}
               onChange={handleChange}
               className="w-full p-2 border rounded"
+              disabled={loading}
             />
           </div>
           <div>
@@ -229,6 +292,7 @@ export default function VisaDashboard() {
               value={form.metaDescription}
               onChange={handleChange}
               className="w-full p-2 border rounded"
+              disabled={loading}
             />
           </div>
           <div>
@@ -241,13 +305,14 @@ export default function VisaDashboard() {
               value={form.metaKeywords}
               onChange={handleChange}
               className="w-full p-2 border rounded"
+              disabled={loading}
             />
           </div>
         </div>
 
         <div>
           <label className="block font-semibold mb-2">Main Image Upload</label>
-          <input type="file" accept="image/*" onChange={handleMainImageUpload} />
+          <input type="file" accept="image/*" onChange={handleMainImageUpload} disabled={loading} />
           {form.image && (
             <div className="mt-2 w-32 h-20 relative rounded overflow-hidden shadow">
               <Image src={form.image} alt="Main Image" fill style={{ objectFit: "cover" }} unoptimized />
@@ -264,12 +329,13 @@ export default function VisaDashboard() {
             onChange={handleChange}
             className="w-full p-2 border rounded"
             rows="3"
+            disabled={loading}
           />
         </div>
 
         <div>
           <label className="block font-semibold mb-2">Description Image Upload</label>
-          <input type="file" accept="image/*" onChange={handleDescriptionImageUpload} />
+          <input type="file" accept="image/*" onChange={handleDescriptionImageUpload} disabled={loading} />
           {form.descriptionImage && (
             <div className="mt-2 w-32 h-20 relative rounded overflow-hidden shadow">
               <Image src={form.descriptionImage} alt="Description Image" fill style={{ objectFit: "cover" }} unoptimized />
@@ -286,6 +352,7 @@ export default function VisaDashboard() {
               value={form.descriptionImageWidth}
               onChange={handleChange}
               className="p-1 border rounded w-full"
+              disabled={loading}
             />
           </div>
           <div>
@@ -296,6 +363,7 @@ export default function VisaDashboard() {
               value={form.descriptionImageHeight}
               onChange={handleChange}
               className="p-1 border rounded w-full"
+              disabled={loading}
             />
           </div>
           <div>
@@ -305,6 +373,7 @@ export default function VisaDashboard() {
               value={form.descriptionImagePosition}
               onChange={handleChange}
               className="p-1 border rounded w-full"
+              disabled={loading}
             >
               <option value="left">Left</option>
               <option value="center">Center</option>
@@ -322,12 +391,14 @@ export default function VisaDashboard() {
             value={form.info}
             onChange={handleChange}
             className="w-full p-3 border rounded h-28"
+            disabled={loading}
           />
           <input
             type="file"
             accept=".html,.htm,.txt"
             onChange={handleInfoHtmlFileChange}
             className="w-full p-2 border rounded mt-2"
+            disabled={loading}
           />
         </div>
 
@@ -341,6 +412,7 @@ export default function VisaDashboard() {
             value={form.addonHeading}
             onChange={handleChange}
             className="w-full p-2 border rounded"
+            disabled={loading}
           />
         </div>
         <div>
@@ -352,14 +424,16 @@ export default function VisaDashboard() {
             value={form.addonDescription}
             onChange={handleChange}
             className="w-full p-3 border rounded h-20"
+            disabled={loading}
           />
         </div>
 
         <button
           type="submit"
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold w-full"
+          disabled={loading || !form.name || !form.slug}
+          className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white px-6 py-2 rounded font-semibold w-full disabled:cursor-not-allowed"
         >
-          {editingIndex !== null ? "Update Child Visa" : "+ Add Child Visa"}
+          {loading ? "⏳ Saving..." : (editingIndex !== null ? "Update Child Visa" : "+ Add Child Visa")}
         </button>
       </form>
 
@@ -371,7 +445,7 @@ export default function VisaDashboard() {
           {parentSlugs.map((parent) => {
             const children = getChildVisas(parent.slug);
             return (
-              <div key={parent.slug} className="bg-gray-50 rounded-lg p-4 border">
+              <div key={parent.id} className="bg-gray-50 rounded-lg p-4 border">
                 <div
                   className="flex items-center justify-between cursor-pointer mb-3"
                   onClick={() => toggleParent(parent.slug)}
@@ -399,7 +473,7 @@ export default function VisaDashboard() {
                         </tr>
                       </thead>
                       <tbody>
-                        {children.map((visa, index) => (
+                        {children.map((visa) => (
                           <tr key={visa.id} className="hover:bg-gray-50">
                             <td className="border p-2 font-medium">{visa.name}</td>
                             <td className="border p-2">/migrate/{visa.parentSlug}/{visa.slug}</td>
@@ -420,14 +494,14 @@ export default function VisaDashboard() {
                             <td className="p-2 border border-gray-200">
                               <div className="flex space-x-2">
                                 <button
-                                  onClick={() => handleEdit(visas.findIndex(v => v.id === visa.id))}
+                                  onClick={() => handleEdit(visa.id)}
                                   className="flex items-center gap-1 bg-amber-500 hover:bg-amber-600 text-white px-3 py-2 rounded-lg font-medium text-sm transition-all duration-300 shadow-md hover:shadow-lg"
                                 >
                                   <Edit3 className="w-4 h-4" />
                                   <span>Edit</span>
                                 </button>
                                 <button
-                                  onClick={() => handleDelete(visas.findIndex(v => v.id === visa.id))}
+                                  onClick={() => handleDelete(visa.id)}
                                   className="flex items-center gap-1 bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-lg font-medium text-sm transition-all duration-300 shadow-md hover:shadow-lg"
                                 >
                                   <Trash2 className="w-4 h-4" />
