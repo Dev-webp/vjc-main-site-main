@@ -1,223 +1,187 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import Head from "next/head";
-import Image from "next/image";
 import Form from "./Form";
+import CanadaPR from "./CanadaPR";
+import Australiapr from "./Australiapr";
+import UKpr from "./UKpr";
+
+import Germanybluecard from "./Germanybluecard";
+import UsaStudy from "./UsaStudy";
+import Denmark from "./Denmark";
+import Ireland from "./Ireland";
+import Dubai from "./Dubai";
+import Austria from "./Austria";
+import Singapore from "./Singapore";
+import Newzealand from "./Newzealand";
+import Malaysia from "./Malaysia";
+import Poland from "./Poland";
+import Malta from "./Malta";
 import Link from "next/link";
+import Spain from "./Spain";
+import Sweden from "./Sweden";
 
-// Helper to render optional links inside text
-function renderInfoWithLinks(info, infoLinks) {
-  if (!infoLinks || infoLinks.length === 0) return info;
-  let result = [];
-  let lastIndex = 0;
-  infoLinks.forEach((link, idx) => {
-    const labelIndex = info.indexOf(link.label, lastIndex);
-    if (labelIndex !== -1) {
-      if (labelIndex > lastIndex) {
-        result.push(info.substring(lastIndex, labelIndex));
-      }
-      result.push(
-        <a
-          key={link.label + idx}
-          href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded font-semibold mx-1 transition"
-        >
-          {link.label}
-        </a>
-      );
-      lastIndex = labelIndex + link.label.length;
-    }
-  });
-  if (lastIndex < info.length) {
-    result.push(info.substring(lastIndex));
-  }
-  return result;
-}
+const visaData = [
+  { name: "Canada Resume Marketing", image: "/canadaresume1.webp", path: "/resume-marketing/canada" },
+  { name: "Germany Resume Marketing", image: "/germanyresume.jpeg", path: "/resume-marketing/germany" },
+  { name: "USA Resume Marketing", image: "/usaresume.jpg", path: "/resume-marketing/usa" },
+  { name: "Australia Resume Marketing", image: "/australiaresume.jpg", path: "/resume-marketing/australia" },
+  { name: "UK Resume Marketing", image: "/ukresume.jpg", path: "/resume-marketing/uk" },
+  { name: "Denmark Resume Marketing", image: "/denmarkresume.jpg", path: "/resume-marketing/denmark" },
+  { name: "Ireland Resume Marketing", image: "/irelandresume.jpg", path: "/resume-marketing/ireland" },
+  { name: "Dubai Resume Marketing", image: "/uaeresume.jpg", path: "/resume-marketing/dubai" },
+  { name: "Austria Resume Marketing", image: "/austriaresume.jpg", path: "/resume-marketing/austria" },
+  { name: "Singapore Resume Marketing", image: "/singaporeresume.jpg", path: "/resume-marketing/singapore" },
+  { name: "New Zealand Resume Marketing", image: "/nzresume.jpg", path: "/resume-marketing/new-zealand" },
+  { name: "Malaysia Resume Marketing", image: "/malaysiaresume.jpg", path: "/resume-marketing/malaysia" },
+  { name: "Poland Resume Marketing", image: "/polandresume.jpg", path: "/resume-marketing/poland" },
+  { name: "Malta Resume Marketing", image: "/maltaresume.jpg", path: "/resume-marketing/malta" },
+   { name: "Spain Resume Marketing", image: "/spainresume.jpg", path: "/resume-marketing/spain" },
+    { name: "Sweden Resume Marketing", image: "/swedenresume.jpg", path: "/resume-marketing/sweden" },
+];
+const defaultVisa = {
+  name: "Permanent Residency Visa",
+  path: "/Jobseeker",
+  image: "/1.jpg",
+};
 
-export default function Migrate() {
+const Migrate = () => {
   const router = useRouter();
   const pathname = usePathname();
-  const [visas, setVisas] = useState([]);
-  const [selectedVisa, setSelectedVisa] = useState(null);
+  const [selectedVisa, setSelectedVisa] = useState(defaultVisa);
 
   useEffect(() => {
-    async function fetchVisas() {
-      try {
-        const res = await fetch("/api/resume");
-        const data = await res.json();
-        setVisas(data);
-        const slug = pathname.split("/").pop();
-        const found = data.find((v) => v.slug === slug);
-        setSelectedVisa(found || null);
-      } catch (err) {
-        console.error(err);
-      }
+    const foundVisa = visaData.find((visa) => visa.path === pathname);
+    if (foundVisa) {
+      setSelectedVisa(foundVisa);
+    } else {
+      setSelectedVisa(defaultVisa);
     }
-    fetchVisas();
   }, [pathname]);
 
   const handleVisaClick = (visa) => {
     setSelectedVisa(visa);
-    router.push(`/resume-marketing/${visa.slug}`);
+    router.push(visa.path);
   };
 
   return (
-    <>
-      <Head>
-        <title>{selectedVisa?.metaTitle || selectedVisa?.name || "Visa Not Found"}</title>
-        <meta
-          name="description"
-          content={
-            selectedVisa?.metaDescription ||
-            selectedVisa?.description ||
-            "No visa found for this country."
-          }
-        />
-      </Head>
-
-      <div className="w-full min-h-screen flex flex-col">
-        {/* TOP SECTION */}
-        {selectedVisa ? (
-          <div
-            className="relative w-full min-h-[80vh] mt-14 bg-cover bg-center"
-            style={{ backgroundImage: `url(${selectedVisa.image})` }}
-          >
-            <div className="absolute inset-0 bg-black/50 z-0" />
-            <div className="relative z-10 w-full h-full flex items-center justify-center px-6 lg:px-12 ">
-              <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
-                <motion.div
-                  className="w-full lg:w-1/2 text-white text-center lg:text-left pt-24 sm:pt-32 lg:pt-0 lg:pl-10"
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                >
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3rem] font-semibold uppercase leading-tight">
-                    {selectedVisa.name}
-                  </h1>
-                  <p className="mt-4 text-base sm:text-lg lg:text-xl max-w-xl">
-                    {selectedVisa.description}
-                  </p>
-                </motion.div>
-                <div className="w-full lg:w-1/2 mt-8 lg:mt-12">
-                  <Form />
-                </div>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div className="flex flex-col items-center justify-center min-h-[40vh]">
-            <h2 className="text-2xl text-red-600 font-bold mb-4">
-              Wrong URL! No visa found for this country.
-            </h2>
-            <button
-              onClick={() => router.push("/resume-marketing")}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded font-semibold shadow transition"
+    <div className="w-full min-h-screen flex flex-col">
+      {/* ===== TOP SECTION ===== */}
+      <div
+        className="relative w-full min-h-[90vh] bg-cover bg-center"
+        style={{ backgroundImage: `url(${selectedVisa.image})` }}
+      >
+        <div className="absolute inset-0 bg-black/50 z-0" />
+        <div className="relative z-10 w-full h-full flex items-center justify-center px-6 lg:px-12 py-8">
+          <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
+            <motion.div
+              className="w-full lg:w-1/2 text-white text-center lg:text-left pt-24 sm:pt-32 lg:pt-0 lg:pl-10"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              Go Home
-            </button>
-          </div>
-        )}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3rem] font-semibold uppercase leading-tight">
+                {selectedVisa.name}
+              </h1>
+              <p className="mt-4 text-base sm:text-lg lg:text-xl max-w-xl">
+              Kickstart your career abroad with the perfect resume marketing strategy. Select your destination, and let us help you stand out to top employers!
+              </p>
+            </motion.div>
 
-        {/* BOTTOM SECTION */}
-        <div className="relative z-10 w-full bg-white px-4 sm:px-6 lg:px-12 pt-10 pb-16">
-          <div className="flex justify-center md:justify-start mb-8 ml-0 md:ml-16">
-            <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
-              <span className="block md:text-left text-center">Secure Dream Job,</span>
-              <span className="block text-center"> Resume Marketing</span>
-            </h2>
-          </div>
-
-          <div className="w-full flex flex-col md:flex-row gap-8 md:gap-10 items-start">
-            {/* Visa Buttons */}
-            <div className="w-full md:w-1/3">
-              {visas.map((visa, i) => (
-                <div key={i} className="mb-4 w-full">
-                  <Link
-                    href={`/resume-marketing/${visa.slug}`}
-                    className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg cursor-pointer ${
-                      selectedVisa && selectedVisa.slug === visa.slug
-                        ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
-                        : "bg-transparent text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
-                    }`}
-                  >
-                    {visa.name}
-                    <ArrowRight className="w-6 h-6" />
-                  </Link>
-                </div>
-              ))}
-            </div>
-
-            {/* Visa Info Box: description HTML/text left, image top right but text flows beneath */}
-            <div
-              className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative"
-              style={{
-                maxHeight: "1100px",
-                minHeight: "450px",
-                overflowY: "auto",
-              }}
-            >
-              <div className="flex flex-col gap-4">
-                {/* Image and Addon description container */}
-                <div className="flex items-start gap-4">
-                  {/* Image on top right */}
-                  {selectedVisa?.descriptionImage && (
-                    <div className="max-w-[50%]">
-                      <Image
-                        src={selectedVisa.descriptionImage}
-                        alt={selectedVisa.name + " Description"}
-                        width={
-                          selectedVisa.descriptionImageWidth
-                            ? parseInt(selectedVisa.descriptionImageWidth)
-                            : 120
-                        }
-                        height={
-                          selectedVisa.descriptionImageHeight && selectedVisa.descriptionImageHeight !== "auto"
-                            ? parseInt(selectedVisa.descriptionImageHeight)
-                            : 80
-                        }
-                        style={{
-                          objectFit: "cover",
-                          borderRadius: "8px",
-                          boxShadow: "0 2px 10px rgba(0,0,0,.12)",
-                          display: "block",
-                        }}
-                        unoptimized
-                        draggable={false}
-                      />
-                    </div>
-                  )}
-
-                  {/* Dynamic Addon heading and description */}
-                  <div className="flex-1">
-                    {selectedVisa?.addonHeading && (
-                      <h3 className="font-bold text-xl mb-2">{selectedVisa.addonHeading}</h3>
-                    )}
-                    {selectedVisa?.addonDescription && (
-                      <div
-                        className="text-gray-700 text-lg leading-relaxed"
-                        dangerouslySetInnerHTML={{ __html: selectedVisa.addonDescription }}
-                      />
-                    )}
-                  </div>
-                </div>
-
-                {/* Info Content (HTML Or Text) placed below image and addon */}
-                <div
-                  className="text-gray-700 text-lg leading-relaxed"
-                  dangerouslySetInnerHTML={{
-                    __html: selectedVisa ? selectedVisa.info : "No visa found for this country.",
-                  }}
-                />
-              </div>
+            <div className="w-full lg:w-1/2 mt-8 lg:mt-24">
+              <Form />
             </div>
           </div>
         </div>
       </div>
-    </>
+
+      {/* ===== BOTTOM SECTION ===== */}
+      <div className="relative z-10 w-full bg-white px-4 sm:px-6 lg:px-12 pt-10 pb-16">
+        <div className="flex justify-center md:justify-start mb-8 mr-8 md:ml-16">
+          <h2 className="text-2xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
+            <span className="block md:text-left text-center">Get Hired Faster</span>
+            <span className="block text-center"> with Resume Marketing!</span>
+          </h2>
+        </div>
+
+        <div className="w-full flex flex-col md:flex-row gap-8 md:gap-10 items-start">
+          {/* Visa Buttons Section */}
+          <div className="w-full md:w-1/3">
+           {visaData.map((visa) => (
+  <Link
+    key={visa.path}
+    href={visa.path}
+    className={`block mb-4 w-full no-underline`}
+  >
+    <div
+      className={`w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg ${
+        selectedVisa.path === visa.path
+          ? "bg-orange-500 text-white border-orange-500 shadow-orange-400"
+          : "bg-transparent text-black border border-orange-500 hover:bg-orange-500 hover:text-white"
+      } transform hover:scale-105`}
+    >
+      {visa.name}
+      <ArrowRight className="w-6 h-6" />
+    </div>
+  </Link>
+))}
+          </div>
+
+          {/* Visa Info Content Box */}
+          <div
+            className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative md:-mt-32 sm:-mt-20 mt-0"
+            style={{ maxHeight: "1200px", minHeight: "900px", overflowY: "auto" }}
+          >
+            {selectedVisa.path === defaultVisa.path ? (
+              <div className="text-gray-700 text-lg leading-relaxed">
+              Kickstart your career abroad with the perfect resume marketing strategy. Select your destination, and let us help you stand out to top employers!
+              </div>
+            ) : selectedVisa.path === "/resume-marketing/canada" ? (
+              <CanadaPR />
+            ) : selectedVisa.path === "/resume-marketing/australia" ? (
+              <Australiapr />
+            ) : selectedVisa.path === "/resume-marketing/uk" ? (
+              <UKpr />
+            
+            ) : selectedVisa.path === "/resume-marketing/germany" ? (
+              <Germanybluecard />
+            ) : selectedVisa.path === "/resume-marketing/usa" ? (
+              <UsaStudy />
+            ) : selectedVisa.path === "/resume-marketing/denmark" ? (
+              <Denmark />
+            ) : selectedVisa.path === "/resume-marketing/ireland" ? (
+              <Ireland />
+            ) : selectedVisa.path === "/resume-marketing/dubai" ? (
+              <Dubai />
+            ) : selectedVisa.path === "/resume-marketing/austria" ? (
+              <Austria />
+            ) : selectedVisa.path === "/resume-marketing/singapore" ? (
+              <Singapore />
+            ) : selectedVisa.path === "/resume-marketing/new-zealand" ? (
+              <Newzealand />
+            ) : selectedVisa.path === "/resume-marketing/malaysia" ? (
+              <Malaysia />
+            ) : selectedVisa.path === "/resume-marketing/poland" ? (
+              <Poland />
+            ) : selectedVisa.path === "/resume-marketing/malta" ? (
+              <Malta />
+              ) : selectedVisa.path === "/resume-marketing/spain" ? (
+              <Spain />
+               ) : selectedVisa.path === "/resume-marketing/sweden" ? (
+              <Sweden /> 
+            ) : (
+              <div className="text-gray-700 text-lg leading-relaxed">
+                Information about <strong>{selectedVisa.name}</strong> will be displayed here.
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default Migrate;
