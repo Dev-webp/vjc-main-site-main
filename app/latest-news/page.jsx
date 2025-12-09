@@ -1,21 +1,20 @@
 'use client';
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-// ✅ Keep the static data import for sections other than "Latest Global Immigration Updates"
 import { allNews as staticNews } from './news-data';
 import slugify from './slugify';
 import Form from './Form';
 
-// ✅ Fetch from API (news-data.json is now handled via /api/news)
+// ✅ Fetch from API (news-data.json)
 const fetchNewData = async () => {
   try {
     const res = await fetch('/api/news', { cache: 'no-store' });
     if (!res.ok) return [];
     return await res.json();
   } catch (err) {
-    console.error('Error loading new-data from API:', err);
+    console.error('Error loading new-data.json:', err);
     return [];
   }
 };
@@ -26,21 +25,10 @@ function NewsTickerBar({ news }) {
 
   useEffect(() => {
     if (news.length === 0) return;
-    
-    // Clear previous interval
-    if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-    }
-    
     intervalRef.current = setInterval(() => {
       setActive((prev) => (prev + 1) % news.length);
     }, 4000);
-    
-    return () => {
-        if (intervalRef.current) {
-            clearInterval(intervalRef.current);
-        }
-    };
+    return () => intervalRef.current && clearInterval(intervalRef.current);
   }, [news.length]);
 
   if (news.length === 0) return null;
@@ -94,188 +82,77 @@ function NewsTickerBar({ news }) {
 export default function LatestNewsMagazine() {
   const [dynamicNews, setDynamicNews] = useState([]);
   const [visibleCount, setVisibleCount] = useState(4);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     (async () => {
-      setIsLoading(true);
       const jsonNews = await fetchNewData();
       if (jsonNews.length > 0) setDynamicNews(jsonNews);
-      setIsLoading(false);
     })();
   }, []);
-
-  // ✅ All sections below use staticNews or combined data, exactly as in your original file's logic
 
   // ✅ Only static for everything except "Latest Global Immigration Updates"
   const mainStory = staticNews[0] || {};
   const nextStories = staticNews.slice(1, 5);
   const visaNews = staticNews.slice(5, 9);
-  const tickerNews = staticNews.slice(5, 9); // Still using static for the Ticker
+  const tickerNews = staticNews.slice(5, 9);
 
   // ✅ Combined static + dynamic for "Latest Global Immigration Updates"
-  // API news appears first, followed by static news.
-  const immigrationUpdates = useMemo(() => [...dynamicNews, ...staticNews], [dynamicNews]);
+  const immigrationUpdates = [...dynamicNews, ...staticNews];
 
   const hasMore = visibleCount < immigrationUpdates.length;
   const showMore = () => setVisibleCount((prev) => prev + 4);
 
-  // Fallback check to avoid errors if staticNews is empty
-  if (staticNews.length === 0 && dynamicNews.length === 0) {
-      if (isLoading) {
-          return <div className="min-h-screen w-full flex items-center justify-center">Loading News...</div>;
-      }
-      return <div className="min-h-screen w-full flex items-center justify-center">No news data available.</div>;
-  }
-
   return (
     <main className="min-h-screen w-full bg-gradient-to-b from-[#f7fafc] to-white">
-      {/* 🔥 News Ticker (Uses static data slice) */}
+      {/* 🔥 News Ticker */}
       <NewsTickerBar news={tickerNews} />
 
       <div className="max-w-6xl mx-auto flex flex-col gap-10 w-full pt-6 px-2 md:px-0">
-        {/* ✅ Main Story (uses static data) */}
-        {mainStory.title && (
-          <section className="flex flex-col md:flex-row gap-6 bg-white rounded-2xl shadow-lg border border-[#dbeafe] overflow-hidden relative">
-            <div className="md:w-[340px] flex-shrink-0 relative">
-              <Image
-                src={mainStory.image}
-                alt={mainStory.title}
-                width={340}
-                height={240}
-                className="h-[220px] md:h-full w-full object-cover object-center"
-                style={{ minHeight: 200, borderRadius: 0 }}
-                unoptimized
-              />
-            </div>
-            <div className="flex-1 px-6 py-7 flex flex-col justify-center">
-              <div className="mb-1 text-xs text-gray-400">{mainStory.tag} &middot; {mainStory.time} &middot; {mainStory.readTime}</div>
-              <Link href={`/latest-news/${slugify(mainStory.title)}`}>
-                <h1 className="text-2xl md:text-3xl font-bold mb-2 leading-tight hover:text-[#ff9000] transition-colors cursor-pointer">
-                  {mainStory.title}
-                </h1>
-              </Link>
-              <p className="text-gray-600 text-base mb-3">{mainStory.summary}</p>
-              <Link href={`/latest-news/${slugify(mainStory.title)}`}>
-                <button className="mt-1 bg-[#1681c4] hover:bg-[#ff9000] text-white text-sm font-semibold px-4 py-2 rounded-full shadow transition">Read Full Story</button>
-              </Link>
-            </div>
-          </section>
-        )}
+        {/* ✅ Main Story (only static) */}
+        <section className="flex flex-col md:flex-row gap-6 bg-white rounded-2xl shadow-lg border border-[#dbeafe] overflow-hidden relative">
+          <div className="md:w-[340px] flex-shrink-0 relative">
+            <Image
+              src={mainStory.image}
+              alt={mainStory.title}
+              width={340}
+              height={240}
+              className="h-[220px] md:h-full w-full object-cover object-center"
+              style={{ minHeight: 200, borderRadius: 0 }}
+              unoptimized
+            />
+          </div>
+          <div className="flex-1 px-6 py-7 flex flex-col justify-center">
+            <div className="mb-1 text-xs text-gray-400">{mainStory.tag} &middot; {mainStory.time} &middot; {mainStory.readTime}</div>
+            <Link href={`/latest-news/${slugify(mainStory.title)}`}>
+              <h1 className="text-2xl md:text-3xl font-bold mb-2 leading-tight hover:text-[#ff9000] transition-colors cursor-pointer">
+                {mainStory.title}
+              </h1>
+            </Link>
+            <p className="text-gray-600 text-base mb-3">{mainStory.summary}</p>
+            <Link href={`/latest-news/${slugify(mainStory.title)}`}>
+              <button className="mt-1 bg-[#1681c4] hover:bg-[#ff9000] text-white text-sm font-semibold px-4 py-2 rounded-full shadow transition">Read Full Story</button>
+            </Link>
+          </div>
+        </section>
 
         {/* 🔥 Latest Global Immigration Updates (✅ static + dynamic combined) */}
-        {immigrationUpdates.length > 0 && (
-          <div>
-            <div className="flex items-center justify-between mb-4 mt-6">
-              <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Latest Global Immigration Updates</h2>
-              <Link href="/latest-news" className="text-[#ff9000] text-sm font-semibold hover:underline">View All</Link>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-              {immigrationUpdates.slice(0, visibleCount).map((item, i) => (
-                <motion.div
-                  key={item.slug || i} // Use slug or a unique ID if available for stability
-                  initial={{ opacity: 0, x: 80 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                >
-                  <Link
-                    href={`/latest-news/${slugify(item.title)}`}
-                    className="flex flex-col h-full bg-gradient-to-br from-[#1681c4]/5 to-[#ff9000]/10 rounded-xl shadow-md border border-[#dbeafe] hover:shadow-xl transition group overflow-hidden"
-                  >
-                    <div className="relative">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        width={400}
-                        height={150}
-                        className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        unoptimized
-                      />
-                      <span className="absolute top-2 right-2 bg-white text-[#1681c4] px-2 py-0.5 rounded text-xs font-semibold shadow border border-[#1681c4]">
-                        {item.tag}
-                      </span>
-                    </div>
-                    <div className="flex-1 flex flex-col justify-between px-3 py-2 bg-white min-h-[160px] max-h-[180px]">
-                      <div>
-                        <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
-                        <p className="text-xs text-gray-500 mb-1 line-clamp-2">{item.summary}</p>
-                      </div>
-                      <div className="flex gap-2 text-xs text-gray-400">{item.time} &middot; {item.readTime}</div>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Show More / Show Less */}
-            <div className="flex justify-center mt-6">
-              {visibleCount < immigrationUpdates.length ? (
-                <button
-                  onClick={showMore}
-                  className="px-5 py-2 bg-[#1681c4] text-white text-sm font-medium rounded hover:bg-[#0f5e91] transition"
-                >
-                  Show More
-                </button>
-              ) : (
-                <button
-                  onClick={() => setVisibleCount(4)}
-                  className="px-5 py-2 bg-[#ff9000] text-white text-sm font-medium rounded hover:bg-[#e07d00] transition"
-                >
-                  Show Less
-                </button>
-              )}
-            </div>
+        <div>
+          <div className="flex items-center justify-between mb-4 mt-6">
+            <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Latest Global Immigration Updates</h2>
+            <Link href="/latest-news" className="text-[#ff9000] text-sm font-semibold hover:underline">View All</Link>
           </div>
-        )}
 
-        {/* More Top Stories (Uses static data slice) */}
-        {nextStories.length > 0 && (
-          <div>
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">More Top Stories</h2>
-              <Link href="/latest-news" className="text-[#ff9000] text-sm font-semibold hover:underline">See all</Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-              {nextStories.map((story, i) => (
-                <Link
-                  href={`/latest-news/${slugify(story.title)}`}
-                  key={i}
-                  className="flex flex-col bg-white rounded-xl shadow border border-[#dbeafe] hover:shadow-md transition group overflow-hidden"
-                >
-                  <div className="relative">
-                    <Image
-                      src={story.image}
-                      alt={story.title}
-                      width={400}
-                      height={150}
-                      className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      unoptimized
-                    />
-                    <span className="absolute bottom-2 left-2 bg-[#1681c4] text-white px-2 py-0.5 rounded text-xs font-semibold shadow">{story.tag}</span>
-                  </div>
-                  <div className="flex-1 flex flex-col px-3 py-2">
-                    <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{story.title}</div>
-                    <div className="flex gap-2 text-xs text-gray-400 mt-auto">{story.time} &middot; {story.readTime}</div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Visa News (Uses static data slice) */}
-        {visaNews.length > 0 && (
-          <div>
-            <div className="flex items-center justify-between mb-4 mt-4">
-              <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Visa & Immigration Updates</h2>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-              {visaNews.map((item, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {immigrationUpdates.slice(0, visibleCount).map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: 80 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
                 <Link
                   href={`/latest-news/${slugify(item.title)}`}
-                  key={i}
-                  className="flex flex-col bg-white rounded-xl shadow border border-[#dbeafe] hover:shadow-md transition group overflow-hidden"
+                  className="flex flex-col h-full bg-gradient-to-br from-[#1681c4]/5 to-[#ff9000]/10 rounded-xl shadow-md border border-[#dbeafe] hover:shadow-xl transition group overflow-hidden"
                 >
                   <div className="relative">
                     <Image
@@ -286,18 +163,107 @@ export default function LatestNewsMagazine() {
                       className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
                       unoptimized
                     />
-                    <span className="absolute bottom-2 left-2 bg-[#1681c4] text-white px-2 py-0.5 rounded text-xs font-semibold shadow">{item.tag}</span>
+                    <span className="absolute top-2 right-2 bg-white text-[#1681c4] px-2 py-0.5 rounded text-xs font-semibold shadow border border-[#1681c4]">
+                      {item.tag}
+                    </span>
                   </div>
-                  <div className="flex-1 flex flex-col px-3 py-2">
-                    <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
-                    <div className="text-xs text-gray-500 mb-1 line-clamp-2">{item.summary}</div>
-                    <div className="flex gap-2 text-xs text-gray-400 mt-auto">{item.time} &middot; {item.readTime}</div>
+                  <div className="flex-1 flex flex-col justify-between px-3 py-2 bg-white min-h-[160px] max-h-[180px]">
+                    <div>
+                      <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
+                      <p className="text-xs text-gray-500 mb-1 line-clamp-2">{item.summary}</p>
+                    </div>
+                    <div className="flex gap-2 text-xs text-gray-400">{item.time} &middot; {item.readTime}</div>
                   </div>
                 </Link>
-              ))}
-            </div>
+              </motion.div>
+            ))}
           </div>
-        )}
+
+          {/* Show More / Show Less */}
+          <div className="flex justify-center mt-6">
+            {visibleCount < immigrationUpdates.length ? (
+              <button
+                onClick={showMore}
+                className="px-5 py-2 bg-[#1681c4] text-white text-sm font-medium rounded hover:bg-[#0f5e91] transition"
+              >
+                Show More
+              </button>
+            ) : (
+              <button
+                onClick={() => setVisibleCount(4)}
+                className="px-5 py-2 bg-[#ff9000] text-white text-sm font-medium rounded hover:bg-[#e07d00] transition"
+              >
+                Show Less
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* More Top Stories (only static) */}
+        <div>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">More Top Stories</h2>
+            <Link href="/latest-news" className="text-[#ff9000] text-sm font-semibold hover:underline">See all</Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {nextStories.map((story, i) => (
+              <Link
+                href={`/latest-news/${slugify(story.title)}`}
+                key={i}
+                className="flex flex-col bg-white rounded-xl shadow border border-[#dbeafe] hover:shadow-md transition group overflow-hidden"
+              >
+                <div className="relative">
+                  <Image
+                    src={story.image}
+                    alt={story.title}
+                    width={400}
+                    height={150}
+                    className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    unoptimized
+                  />
+                  <span className="absolute bottom-2 left-2 bg-[#1681c4] text-white px-2 py-0.5 rounded text-xs font-semibold shadow">{story.tag}</span>
+                </div>
+                <div className="flex-1 flex flex-col px-3 py-2">
+                  <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{story.title}</div>
+                  <div className="flex gap-2 text-xs text-gray-400 mt-auto">{story.time} &middot; {story.readTime}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Visa News (only static) */}
+        <div>
+          <div className="flex items-center justify-between mb-4 mt-4">
+            <h2 className="font-bold text-xl md:text-2xl text-[#1681c4]">Visa & Immigration Updates</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {visaNews.map((item, i) => (
+              <Link
+                href={`/latest-news/${slugify(item.title)}`}
+                key={i}
+                className="flex flex-col bg-white rounded-xl shadow border border-[#dbeafe] hover:shadow-md transition group overflow-hidden"
+              >
+                <div className="relative">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={400}
+                    height={150}
+                    className="h-32 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    unoptimized
+                  />
+                  <span className="absolute bottom-2 left-2 bg-[#1681c4] text-white px-2 py-0.5 rounded text-xs font-semibold shadow">{item.tag}</span>
+                </div>
+                <div className="flex-1 flex flex-col px-3 py-2">
+                  <div className="font-semibold text-base mb-1 group-hover:text-[#1681c4] transition">{item.title}</div>
+                  <div className="text-xs text-gray-500 mb-1">{item.summary}</div>
+                  <div className="flex gap-2 text-xs text-gray-400 mt-auto">{item.time} &middot; {item.readTime}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Form & Why Choose Us */}
