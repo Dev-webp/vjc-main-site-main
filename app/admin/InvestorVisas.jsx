@@ -25,7 +25,7 @@ export default function InvestorVisaDashboard() {
   const [editingIndex, setEditingIndex] = useState(null);
 
   useEffect(() => {
-    fetch("/api/investor_visas") // <-- updated URL
+    fetch("/api/investor_visa") // <-- updated URL
       .then((res) => res.json())
       .then(setVisas);
   }, []);
@@ -91,12 +91,12 @@ export default function InvestorVisaDashboard() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const method = editingIndex !== null ? "PUT" : "POST";
-    await fetch("/api/investor_visas", { // <-- updated URL
+    await fetch("/api/investor_visa", { // <-- updated URL
       method,
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
     });
-    const updated = await fetch("/api/investor_visas").then((r) => r.json()); // <-- updated URL
+    const updated = await fetch("/api/investor_visa").then((r) => r.json()); // <-- updated URL
     setVisas(updated);
     resetForm();
   };
@@ -109,12 +109,12 @@ export default function InvestorVisaDashboard() {
 
   const handleDelete = async (index) => {
     const idToDelete = visas[index].id;
-    await fetch("/api/investor_visas", { // <-- updated URL
+    await fetch("/api/investor_visa", { // <-- updated URL
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: idToDelete }),
     });
-    const updated = await fetch("/api/investor_visas").then((r) => r.json()); // <-- updated URL
+    const updated = await fetch("/api/investor_visa").then((r) => r.json()); // <-- updated URL
     setVisas(updated);
   };
 
