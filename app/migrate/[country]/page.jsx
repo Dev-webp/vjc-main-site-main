@@ -1,38 +1,27 @@
-
+import { metaData } from "../metaData"; // Adjust path if needed
 import Two from "./Two";
-import { headers } from "next/headers";
 
-// Fetch visa data from your API or file
-async function fetchVisa(slug, host, protocol) {
-  const res = await fetch(`${protocol}://${host}/api/migrate`, { cache: "no-store" });
-  const visas = await res.json();
-  return visas.find(v => v.slug === slug);
-}
 
-// Next.js Metadata API for SSR meta tags
+// Dynamic metadata for each country
 export async function generateMetadata({ params }) {
-  const { country } = params; // ✅ no await here
-
-  const host = headers().get("host");
-  const protocol = host.includes("localhost") ? "http" : "https";
-
-  const visa = await fetchVisa(country, host, protocol);
+  const country = params.country?.toLowerCase();
+  const data = metaData[country];
 
   return {
-    title: visa?.metaTitle || visa?.name || "Visa Not Found",
-    description:
-      visa?.metaDescription || visa?.description || "No visa found for this country",
+    title: data?.title || "Migrate Abroad – Explore Global Opportunities | VJC Overseas",
+    description: data?.description || "Expert migration services to work, study, or settle abroad.",
+    keywords: data?.keywords || "study abroad, work visa, PR, VJC Overseas, global education",
   };
-
 }
 
-export default async function Page({ params }) {
+const ContactPage = () => {
   return (
     <>
-     
-       
-
+    
       <Two />
+     
     </>
   );
-}
+};
+
+export default ContactPage;

@@ -1,217 +1,415 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { useRouter, useParams } from "next/navigation";
-import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import Head from "next/head";
-import Image from "next/image";
-import Form from "../../Form";
+import React, { useState, useEffect } from 'react';
+import { useMemo } from "react";
+import { useRouter, useParams } from 'next/navigation';
+import { ArrowRight } from 'lucide-react';
 import Link from "next/link";
+import ModalFormWithPopup from "../../../Popup/Popup";
+import MigrateImageContent from "../../../Popup/MigrateImageContent";
 
-function renderInfoWithLinks(info, infoLinks) {
-  if (!infoLinks || infoLinks.length === 0) return info;
-  let result = [];
-  let lastIndex = 0;
-  infoLinks.forEach((link, idx) => {
-    const labelIndex = info.indexOf(link.label, lastIndex);
-    if (labelIndex !== -1) {
-      if (labelIndex > lastIndex) {
-        result.push(info.substring(lastIndex, labelIndex));
-      }
-      result.push(
-        <a
-          key={link.label + idx}
-          href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded font-semibold mx-1 transition"
-        >
-          {link.label}
-        </a>
-      );
-      lastIndex = labelIndex + link.label.length;
-    }
-  });
-  if (lastIndex < info.length) {
-    result.push(info.substring(lastIndex));
-  }
-  return result;
-}
+import Goppcardvisa from './Germany-visa/Goppcardvisa';
+import Gworkvisa from './Germany-visa/Gworkvisa';
+import Gstudentvisa from './Germany-visa/Gstudentvisa';
+import Gtouristvisa from './Germany-visa/Gtouristvisa';
+import Gdependentvisa from './Germany-visa/Gdependentvisa';
+import Gselfempvisa from './Germany-visa/Gselfempvisa';
 
-export default function MigrateChildVisa() {
+import Canadastudent from "./Canadapages/Canadastudent";
+import Canadatourist from "./Canadapages/Canadatourist";
+import Canadapr from "./Canadapages/Canadapr";
+import Canadafs from "./Canadapages/Canadafs";
+import Canadawork from "./Canadapages/Canadawork"
+import Form from '../../Form';
+
+import USAstud from "./USA-visa/USA-stud";
+import USAbusiness from "./USA-visa/USA-business"
+import USAh1b from "./USA-visa/USA-h1b"
+import USAinvestor from "./USA-visa/USA-investor"
+import USAtourist from "./USA-visa/USA-tourist"
+
+import Ausstud from "./Australia-visa/Aus-stud"
+import Ausfamily from "./Australia-visa/Aus-family"
+import Ausdependent from "./Australia-visa/Aus-dependent"
+import Ausbusiness from "./Australia-visa/Aus-business"
+import Aussponser from "./Australia-visa/Aus-sponsor";
+import Auswork from "./Australia-visa/Aus-work"
+// import Austourist from "./Australia-visa/Aus-tourist";
+
+import UKBvisa from "./UK-visa/UKBvisa";
+import UKTvisa from "./UK-visa/UKTvisa";
+import UKinnovatorvisa from "./UK-visa/UKinnovatorvisa";
+import UKsponvisa from "./UK-visa/UKsponvisa";
+import UKstudvisa from "./UK-visa/UKstudvisa";
+
+import HKtourist from "./HongKongpages/HKtourist";
+import HKemployee from "./HongKongpages/HKemployee";
+import HKstudentvisa from "./HongKongpages/HKstudentvisa";
+import HKbusiness from "./HongKongpages/HKbusiness";
+import HKdependent from "./HongKongpages/HKdependent";
+import HKwork from "./HongKongpages/HKwork";
+
+import Denbusiness from "./Denmark-visa/Den-business"
+import Denstud from "./Denmark-visa/Den-stud"
+import Denwork from "./Denmark-visa/Den-work"
+import Dentourist from "./Denmark-visa/Den-tourist"
+
+import Newzepr from "./Newzealand-visa/Newze-pr"
+import Newzedepen from "./Newzealand-visa/Newze-Depen"
+import Newzeskillwork from "./Newzealand-visa/Newze-skillwork"
+import Newzestud from "./Newzealand-visa/Newze-stud"
+import Newzetourist from "./Newzealand-visa/Newze-tourist"
+import Newzebusiness from "./Newzealand-visa/Newze-business"
+import Newzework from "./Newzealand-visa/Newze-work"
+
+import UAEstud from "./UAE-visa/UAE-stud";
+import UAEgolden from "./UAE-visa/UAE-golden";
+import UAEwork from "./UAE-visa/UAE-work";
+import UAEgreen from "./UAE-visa/UAE-green";
+import UAEtourist from "./UAE-visa/UAE-tourist";
+
+import sfgerneralskilledvisa from "./southafricavisas/sfgerneralskilledvisa";
+import sfgerenalworkvisa from "./southafricavisas/sfgerenalworkvisa";
+import sfbusinessvisa from "./southafricavisas/sfbusinessvisa";
+import sftouristvisa from "./southafricavisas/sftouristvisa"
+
+
+
+const countryVisaData = {
+  germany: [
+    { name: "Germany Opportunity Card", path: "/migrate/germany/opportunity-card" },
+    { name: "Germany Work Visa", path: "/migrate/germany/work-visa" },
+    { name: "Germany Student Visa", path: "/migrate/germany/student-visa" },
+    { name: "Germany Tourist Visa", path: "/migrate/germany/tourist-visa" },
+    { name: "Germany Dependent Visa", path: "/migrate/germany/dependent-visa" },
+    { name: "Germany Self Employment Visa", path: "/migrate/germany/self-employment-visa" },
+  ],
+  canada: [
+    { name: "Canada Work Permit", path: "/migrate/canada/work-permit" },
+    { name: "Canada Student Visa", path: "/migrate/canada/student-visa" },
+    { name: "Canada Tourist Visa", path: "/migrate/canada/tourist-visa" },
+    { name: "Canada PR Visa", path: "/migrate/canada/pr-visa" },
+    { name: "Canada Family Sponsorship Visa", path: "/migrate/canada/family-sponsorship-visa" },
+  ],
+  "united-states": [
+    { name: "USA Student Visa", path: "/migrate/united-states/student-visa" },
+    { name: "USA Tourist Visa", path: "/migrate/united-states/tourist-visa" },
+    { name: "USA Business Visa", path: "/migrate/united-states/business-visa" },
+    { name: "USA H1B Visa", path: "/migrate/united-states/H1B-visa" },
+    { name: "USA Investor Visa", path: "/migrate/united-states/investor-visa" }
+  ],
+  australia: [
+    { name: "Australia Student Visa", path: "/migrate/australia/student-visa" },
+    // { name: "Australia Tourist Visa", path: "/migrate/australia/tourist-visa" },
+    { name: "Australia Business Visa", path: "/migrate/australia/business-visa" },
+    { name: "Australia Work Visa", path: "/migrate/australia/work-visa" },
+    { name: "Australia Family Visa", path: "/migrate/australia/family-visa" },
+    { name: "Australia Dependent Visa", path: "/migrate/australia/dependent-visa" },
+    { name: "Australia Sponsorship Visa", path: "/migrate/australia/sponsorship-visa" },
+   
+  ],
+  "united-kingdom": [
+    { name: "UK Student Visa", path: "/migrate/united-kingdom/student-visa" },
+    { name: "UK Tourist Visa", path: "/migrate/united-kingdom/tourist-visa" },
+    { name: "UK business Visa", path: "/migrate/united-kingdom/business-visa" },
+    { name: "UK Innovator Visa", path: "/migrate/united-kingdom/innovator-visa" },
+    { name: "UK Sponsorship Visa", path: "/migrate/united-kingdom/sponsorship-visa" }
+  ],
+  "new-zealand": [
+    { name: "New Zealand Permanent Resident Visa", path: "/migrate/new-zealand/permanent-resident-visa" },
+    { name: "New Zealand Work Visa", path: "/migrate/new-zealand/work-visa" },
+    { name: "New Zealand Student Visa", path: "/migrate/new-zealand/student-work-visa" },
+    { name: "New Zealand Skilled Work Visa", path: "/migrate/new-zealand/skilled-work-visa" },
+    { name: "New Zealand Business Visa", path: "/migrate/new-zealand/business-visa" },
+    { name: "New Zealand Tourist Visa", path: "/migrate/new-zealand/tourist-visa" },
+    { name: "New Zealand Dependent Visa", path: "/migrate/new-zealand/dependent-visa" },
+  ],
+  "south-africa": [
+    { name: "South Africa Critical Skills Visa", path: "/migrate/south-africa/critical-skills-visa" },
+    { name: "South Africa General Work Visa", path: "/migrate/south-africa/general-work-visa" },
+    { name: "South Africa Business Visa", path: "/migrate/south-africa/business-visa" },
+    { name: "South Africa Tourist Visa", path: "/migrate/south-africa/tourist-visa" },
+  ],
+  "hong-kong": [
+    { name: "Hong Kong Student Visa", path: "/migrate/hong-kong/student-visa" },
+    { name: "Hong Kong Employment Visa", path: "/migrate/hong-kong/employment-visa" },
+    { name: "Hong Kong Business Visa", path: "/migrate/hong-kong/business-visa" },
+    { name: "Hong Kong Tourist Visa", path: "/migrate/hong-kong/tourist-visa" },
+    { name: "Hong Kong Dependent Visa", path: "/migrate/hong-kong/dependent-visa" },
+    { name: "Hong Kong Work Visa", path: "/migrate/hong-kong/work-visa" },
+  ],
+  denmark: [
+    { name: "Denmark Student Visa", path: "/migrate/denmark/student-visa" },
+    { name: "Denmark Work Permit Visa", path: "/migrate/denmark/work-permit-visa" },
+    { name: "Denmark Tourist Visa", path: "/migrate/denmark/tourist-visa" },
+    { name: "Denmark Business Visa", path: "/migrate/denmark/business-visa" },
+  ],
+  uae: [
+    { name: "UAE Student Visa", path: "/migrate/uae/student-visa" },
+    { name: "UAE Golden Visa", path: "/migrate/uae/golden-visa" },
+  { name: "UAE Work Visa", path: "/migrate/uae/work-visa" },
+  { name: "UAE Green Visa", path: "/migrate/uae/green-visa" },
+  { name: "UAE Tourist Visa", path: "/migrate/uae/tourist-visa" },
+],
+};
+
+const visaComponents = {
+  'germany-opportunity-card': Goppcardvisa,
+  'germany-work-visa': Gworkvisa,
+  'germany-student-visa': Gstudentvisa,
+  'germany-tourist-visa': Gtouristvisa,
+  'germany-dependent-visa': Gdependentvisa,
+  'germany-self-employment-visa': Gselfempvisa,
+
+  'canada-pr-visa': Canadapr,
+  'canada-work-permit': Canadawork,
+  'canada-student-visa':Canadastudent,
+  'canada-tourist-visa': Canadatourist,
+  'canada-family-sponsorship-visa': Canadafs,
+
+  'united-states-student-visa':USAstud,
+  'united-states-tourist-visa':USAtourist,
+  'united-states-business-visa':USAbusiness,
+ 'united-states-H1B-visa':USAh1b,
+ 'united-states-investor-visa':USAinvestor,
+
+ 'australia-student-visa':Ausstud,
+//  'australia-tourist-visa':Austourist,
+ 'australia-business-visa':Ausbusiness,
+ 'australia-work-visa':Auswork,
+ 'australia-family-visa':Ausfamily,
+ 'australia-dependent-visa':Ausdependent,
+ 'australia-sponsorship-visa':Aussponser,
+
+ 'united-kingdom-student-visa':UKstudvisa,
+ 'united-kingdom-tourist-visa':UKTvisa,
+ 'united-kingdom-business-visa':UKBvisa,
+ 'united-kingdom-innovator-visa':UKinnovatorvisa,
+ 'united-kingdom-sponsorship-visa':UKsponvisa,
+
+ 'new-zealand-permanent-resident-visa':Newzepr,
+ 'new-zealand-work-visa':Newzework,
+ 'new-zealand-student-work-visa':Newzestud,
+ 'new-zealand-skilled-work-visa':Newzeskillwork,
+ 'new-zealand-business-visa':Newzebusiness,
+ 'new-zealand-tourist-visa':Newzetourist,
+ 'new-zealand-dependent-visa':Newzedepen,
+
+ 'hong-kong-student-visa':HKstudentvisa,
+ 'hong-kong-employment-visa':HKemployee,
+ 'hong-kong-business-visa':HKbusiness,
+ 'hong-kong-tourist-visa':HKtourist,
+ 'hong-kong-dependent-visa':HKdependent,
+ 'hong-kong-work-visa':HKwork,
+
+ 'denmark-student-visa':Denstud,
+ 'denmark-work-permit-visa':Denwork,
+ 'denmark-tourist-visa':Dentourist,
+ 'denmark-business-visa':Denbusiness,
+
+ 'uae-student-visa':UAEstud,
+ 'uae-golden-visa':UAEgolden,
+ 'uae-work-visa':UAEwork,
+ 'uae-green-visa':UAEgreen,
+ 'uae-tourist-visa':UAEtourist,
+
+ 'south-africa-critical-skills-visa':sfgerneralskilledvisa,
+ 'south-africa-general-work-visa':sfgerenalworkvisa,
+ 'south-africa-business-visa':sfbusinessvisa,
+ 'south-africa-tourist-visa':sftouristvisa,
+
+};
+
+const defaultBackgroundImages = {
+  germany: '/germanyimg.jpg',
+  canada: '/canadabgimg.jpg',
+  "united-states": '/usabgimg.jpg',
+  australia: '/australiabgimg.jpg',
+  // add other countries as needed
+};
+
+
+ const visaBackgroundImages = {
+  "/migrate/germany/opportunity-card": "/vjc-gop.png",
+  "/migrate/germany/work-visa": "/vjc-gwvisa.jpg",
+  "/migrate/germany/student-visa":"/vjc-gsvisa.jpg",
+  "/migrate/germany/tourist-visa":"/vjc-gtvisa.jpg",
+  "/migrate/germany/dependent-visa":"/vjc-gdvisa.jpg",
+  "/migrate/germany/self-employment-visa":"/vjc-gsevisa.jpg",
+  "/migrate/canada/work-permit":"/vjc-cwpvisa.webp",
+  "/migrate/canada/student-visa":"/vjc-csvisa.webp",
+  "/migrate/canada/tourist-visa":"/vjc-ctvisa.jpeg",
+  "/migrate/canada/pr-visa":"/vjc-cprvisa.webp",
+  "/migrate/canada/family-sponsorship-visa":"/vjc-cfsvisa.webp", 
+  "/migrate/united-states/student-visa":"/vjc-usasvisa.jpg",
+  "/migrate/united-states/tourist-visa":"/vjc-usatvisa.jpg",
+  "/migrate/united-states/business-visa":"/vjc-usabvisa.jpeg",
+  "/migrate/united-states/H1B-visa":"/vjc-usahb1visa.jpg",
+  "/migrate/united-states/investor-visa":"/vjc-usainvestorvisa.jpg",
+  "/migrate/australia/student-visa":"/vjc-aussvisa.avif",
+  "/migrate/australia/business-visa":"/vjc-ausbvisa.jpg",
+  "/migrate/australia/work-visa":"/vjc-ausworkvisa.jpg",
+  "/migrate/australia/family-visa":"/vjc-ausfvisa.jpg",
+  "/migrate/australia/dependent-visa":"/vjc-ausdvisa.jpg",
+  "/migrate/australia/sponsorship-visa":"/vjc-aussponvisa.jpg",
+  "/migrate/united-kingdom/student-visa":"/vjc-uksvisa.jpg",
+  "/migrate/united-kingdom/tourist-visa":"/vjc-uktvisa.jpg",
+  "/migrate/australia/sponsorship-visa":"/vjc-aussponvisa.jpeg",
+  "/migrate/united-kingdom/student-visa":"/vjc-studentvisa.jpg",
+  "/migrate/united-kingdom/business-visa":"/UKBusinesVisa.webp",
+  "/migrate/united-kingdom/innovator-visa":"/Ukinvestorvisa.webp",
+  "/migrate/united-kingdom/sponsorship-visa":"/uksponser.jpg",
+  "/migrate/new-zealand/permanent-resident-visa":"/nz.webp",
+  "/migrate/new-zealand/work-visa":"/nzwork.jpg",
+  "/migrate/new-zealand/student-work-visa":"/nzstudent.jpg",
+  "/migrate/new-zealand/skilled-work-visa":"/nzskilled.jpg",
+  "/migrate/new-zealand/business-visa":"/nzbusiness.avif",
+  "/migrate/new-zealand/tourist-visa":"/nztour.avif",
+  "/migrate/new-zealand/dependent-visa":"/nzdepend.jpg",
+  "/migrate/south-africa/critical-skills-visa":"/sacritical.webp",
+  "/migrate/south-africa/general-work-visa":"/sawork.avif",
+  "/migrate/south-africa/business-visa":"/sabusines.webp",
+  "/migrate/south-africa/tourist-visa":"/satour.avif",
+  "/migrate/hong-kong/student-visa":"/hk-student.png",
+  "/migrate/hong-kong/employment-visa":"/hkemp.jpg",
+  "/migrate/hong-kong/business-visa":"/hkbusines.jpg",
+  "/migrate/hong-kong/tourist-visa":"/hktour.avif",
+  "/migrate/hong-kong/dependent-visa":"/hkwork.avif",
+  "/migrate/hong-kong/work-visa":"/hkdepend.webp",
+  "/migrate/denmark/student-visa":"/dmstudent.jpg",
+  "/migrate/denmark/work-permit-visa":"/dmwork.jpg",
+  "/migrate/denmark/tourist-visa":"/dmtour.jpg",
+  "/migrate/denmark/business-visa":"/dmbusi.jpg",
+  "/migrate/uae/student-visa":"/uaestudent.avif",
+  "/migrate/uae/golden-visa":"/uae-golden-visa-vjc-overseas.webp",
+  "/migrate/uae/work-visa":"/uaework.webp",
+  "/migrate/uae/green-visa":"/greenvisa.png",
+  "/migrate/uae/tourist-visa":"/uaetour.jpg",
+
+  // If a visa path does not have a specific image, fallback to the country background.
+};
+
+
+export default function MigrateCountry() {
   const router = useRouter();
-  const params = useParams();
-  const [allVisas, setAllVisas] = useState([]);
-  const [childVisa, setChildVisa] = useState(null);
-  const [parentVisa, setParentVisa] = useState(null);
-
+  const { country, visa } = useParams();
+  const visasList = useMemo(() => countryVisaData[country] || [], [country]);
+  
+  const defaultVisaTitle = visasList.length ? visasList[0].name : '';
+  const [selectedVisaPath, setSelectedVisaPath] = useState(null);
+  const [selectedVisaTitle, setSelectedVisaTitle] = useState(defaultVisaTitle);
+  
+  const VisaComponent = visa ? visaComponents[`${country}-${visa}`] : (country === 'germany' ? Goppcardvisa : null);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+   const [isOpen, setIsOpen] = useState(false);
+ 
+   useEffect(() => {
+     setIsImageLoaded(true);
+   }, []);
   useEffect(() => {
-    async function fetchVisas() {
-      try {
-        const res = await fetch("/api/migrate");
-        const data = await res.json();
-        setAllVisas(data);
-
-        const countrySlug = params.country;
-        const visaSlug = params.visa;
-        
-        // Find child visa
-        const foundChild = data.find((v) => v.slug === visaSlug && v.parentSlug === countrySlug);
-        setChildVisa(foundChild || null);
-
-        // Find parent
-        const foundParent = data.find((v) => v.slug === countrySlug && (!v.parentSlug || v.parentSlug === ""));
-        setParentVisa(foundParent || null);
-      } catch (err) {
-        console.error(err);
+    if (visa) {
+      const matchedVisa = visasList.find(v => v.path === `/migrate/${country}/${visa}`);
+      if (matchedVisa) {
+        setSelectedVisaTitle(matchedVisa.name);
+        setSelectedVisaPath(matchedVisa.path);
       }
     }
-    if (params.country && params.visa) {
-      fetchVisas();
-    }
-  }, [params.country, params.visa]);
+  }, [visa, country, visasList]);
 
-  if (!childVisa || !parentVisa) {
+  const handleButtonClick = (visa) => {
+    console.log('Button clicked:', visa);
+    setSelectedVisaPath(visa.path);
+    setSelectedVisaTitle(visa.name);
+    router.push(visa.path);
+  };
+  
+  const currentBackgroundImage =
+    (selectedVisaPath && visaBackgroundImages[selectedVisaPath]) ||
+    defaultBackgroundImages[country];
+  
     return (
-      <div className="flex flex-col items-center justify-center min-h-[40vh]">
-        <h2 className="text-2xl text-red-600 font-bold mb-4">
-          Visa page not found!
-        </h2>
-        <Link
-          href={`/migrate/${params.country}`}
-          className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded font-semibold shadow transition"
-        >
-          ← Back to {params.country}
-        </Link>
-      </div>
-    );
-  }
-
-  return (
-    <>
-      <Head>
-        <title>{childVisa.metaTitle || childVisa.name || "Visa Not Found"}</title>
-        <meta
-          name="description"
-          content={childVisa.metaDescription || childVisa.description || "No visa information available."}
-        />
-      </Head>
-
-      <div className="w-full min-h-screen flex flex-col">
-        {/* TOP SECTION - Child Visa Hero */}
+      <div>
+        {/* Dynamic Background Image with heading */}
         <div
-          className="relative w-full min-h-[80vh] mt-14 bg-cover bg-center"
-          style={{ backgroundImage: `url(${childVisa.image})` }}
+  className="relative flex flex-col lg:flex-row items-center justify-between p-10 gap-10 min-h-screen"
+  style={{
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${currentBackgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
+
+          <div className="w-full lg:w-1/2 flex flex-col lg:items-start items-center lg:text-left text-center mt-12   lg:ml-16">
+            <h1 className="font-semibold uppercase bg-gradient-to-r from-white to-gray-500 inset-0 bg-black/60 bg-clip-text text-transparent text-4xl lg:text-6xl lg:mb-4 lg:mt-4">
+              Migrate to {selectedVisaTitle}
+            </h1>
+            <p className="text-white mt-4 lg:mt-2 font-bold">
+              Discover endless opportunities with our expert immigration services.
+            </p>
+            <div className="mt-8 flex justify-center lg:justify-start">
+            <button
+              type="button"
+              onClick={() => setIsOpen(true)}
+              className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition duration-300"
+            >
+              <span className="relative z-10">Apply Now</span>
+              <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine" />
+            </button>
+          </div>
+          </div>
+          
+          <div className="w-full lg:w-1/2 lg:mr-16">
+            <Form />
+          </div>
+        </div>
+  
+     <div className="flex flex-col lg:flex-row bg-gradient-to-bl from-white to-orange-50 px-8 py-10">
+  {/* Visa Options (order changed with Tailwind) */}
+  <div className="w-full lg:w-[350px] flex-shrink-0 px-4 flex flex-col items-center order-2 lg:order-1">
+    <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent mt-8 mb-8 text-center">
+      Visa Options for {country?.toUpperCase()}
+    </h2>
+         <div className=" mb-6 flex justify-center lg:hidden">
+    <button
+      type="button"
+      onClick={() => setIsOpen(true)}
+      className="relative overflow-hidden bg-gradient-to-r from-sky-400 to-orange-500 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition duration-300"
+    >
+      <span className="relative z-10">Apply Now</span>
+      <span className="absolute top-0 left-[-100%] w-full h-full bg-white/30 animate-shine" />
+    </button>
+  </div>
+    <div className="flex flex-col gap-4 items-center w-full">
+      {visasList.map((visa) => (
+        <Link
+          key={visa.path}
+          href={visa.path}
+          className={`w-full lg:w-[350px] flex items-center justify-between text-lg font-semibold border border-orange-500 px-6 py-4 rounded-xl shadow-lg transition hover:bg-orange-500 hover:text-white
+            ${selectedVisaPath === visa.path ? 'bg-orange-500 text-white' : 'bg-white text-black'}`}
         >
-          <div className="absolute inset-0 bg-black/50 z-0" />
-          <div className="relative z-10 w-full h-full flex items-center justify-center px-6 lg:px-12">
-            <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
-              <motion.div
-                className="w-full lg:w-1/2 text-white text-center lg:text-left pt-24 sm:pt-32 lg:pt-0 lg:pl-10"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3rem] font-semibold uppercase leading-tight">
-                  {childVisa.name}
-                </h1>
-                <p className="mt-4 text-base sm:text-lg lg:text-xl max-w-xl">
-                  {childVisa.description}
-                </p>
-              </motion.div>
-              <div className="w-full lg:w-1/2 mt-8 lg:mt-12">
-                <Form />
-              </div>
-            </div>
-          </div>
-        </div>
+          {visa.name}
+          <ArrowRight className="w-6 h-6" />
+        </Link>
+      ))}
+    </div>
+  </div>
 
-        {/* BOTTOM SECTION */}
-        <div className="relative z-10 w-full bg-white px-4 sm:px-6 lg:px-12 pt-10 pb-16">
-          <div className="flex justify-center md:justify-start mb-8 ml-0 md:ml-16">
-            <h2 className="text-3xl font-bold text-gray-800 bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
-              <span className="block md:text-left text-center">{childVisa.name} Details</span>
-            </h2>
-          </div>
+ {/* Content */}
+<div className="w-full lg:flex-1 overflow-y-auto lg:max-h-[800px] max-h-[800px] px-8 rounded-xl shadow-md border border-gray-200 lg:mt-8 lg:ml-9 order-1 lg:order-2">
+  {VisaComponent ? <VisaComponent /> : (
+    <p className="text-center text-gray-600">Select a visa option to view details.</p>
+  )}
+</div>
 
-          <div className="w-full flex flex-col md:flex-row gap-8 md:gap-10 items-start">
-            {/* LEFT SIDE - Parent & Sibling Navigation */}
-            <div className="w-full md:w-1/3">
-              <div className="mb-6">
-                <Link
-                  href={`/migrate/${parentVisa.slug}`}
-                  className="w-full flex items-center justify-center text-lg font-semibold px-6 py-4 rounded-xl bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700 text-white shadow-lg transition duration-300"
-                >
-                  ← Back to {parentVisa.name}
-                </Link>
-              </div>
-              
-              {/* Other children buttons */}
-              {allVisas
-                .filter((v) => v.parentSlug === parentVisa.slug && v.id !== childVisa.id)
-                .map((sibling) => (
-                  <div key={sibling.id} className="mb-4 w-full">
-                    <Link
-                      href={`/migrate/${parentVisa.slug}/${sibling.slug}`}
-                      className="w-full flex items-center justify-between text-lg font-semibold px-6 py-4 rounded-xl transition duration-300 shadow-lg cursor-pointer bg-transparent text-black border border-blue-500 hover:bg-blue-500 hover:text-white"
-                    >
-                      {sibling.name}
-                      <ArrowRight className="w-6 h-6" />
-                    </Link>
-                  </div>
-                ))}
-            </div>
+</div>
 
-            {/* RIGHT SIDE - Child Visa Content */}
-            <div className="w-full md:w-2/3 p-4 md:p-6 rounded-xl border border-gray-300 shadow-md relative min-h-[1300px] max-h-[1650px]" style={{ overflowY: "auto" }}>
-              <div className="flex flex-col gap-4">
-                {/* Image and Addon description container */}
-                <div className="flex items-start gap-4">
-                  {childVisa?.descriptionImage && (
-                    <div className="max-w-[50%]">
-                      <Image
-                        src={childVisa.descriptionImage}
-                        alt={childVisa.name + " Description"}
-                        width={parseInt(childVisa.descriptionImageWidth || 120)}
-                        height={parseInt(childVisa.descriptionImageHeight || 80)}
-                        style={{
-                          objectFit: "cover",
-                          borderRadius: "8px",
-                          boxShadow: "0 2px 10px rgba(0,0,0,.12)",
-                          display: "block",
-                        }}
-                        unoptimized
-                        draggable={false}
-                      />
-                    </div>
-                  )}
-
-                  <div className="flex-1">
-                    {childVisa?.addonHeading && (
-                      <h3 className="font-bold text-xl mb-2">{childVisa.addonHeading}</h3>
-                    )}
-                    {childVisa?.addonDescription && (
-                      <div
-                        className="text-gray-700 text-lg leading-relaxed"
-                        dangerouslySetInnerHTML={{ __html: childVisa.addonDescription }}
-                      />
-                    )}
-                  </div>
-                </div>
-
-                {/* Child Info Content */}
-                <div
-                  className="text-gray-700 text-lg leading-relaxed"
-                  dangerouslySetInnerHTML={{
-                    __html: childVisa ? childVisa.info : "No visa information available.",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* POPUP FORM */}
+      <ModalFormWithPopup
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        customContent={<MigrateImageContent />}
+      />
       </div>
-    </>
-  );
+
+    );
+  
 }
