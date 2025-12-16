@@ -43,7 +43,7 @@
     "app/threedhuman/page.jsx",
     "app/api/jobs/route.js",
     ".next/dev/types/**/*.ts"
-  ],
+, "lib/firebaseClient.js"  ],
   "exclude": [
     "node_modules"
   ]
