@@ -54,12 +54,13 @@ const metaData = {
   },
   
 };
- 
+
+
 export async function generateMetadata({ params }) {
-    const resolvedParams = await params;
-  const country = params.country.toLowerCase();
+  const resolvedParams = await params;
+  const country = resolvedParams.country?.toLowerCase();
   const data = metaData[country];
- 
+
   return {
     title: data?.title || "Visit Visa – Travel Abroad with Ease | VJC Immigration Services",
 description: data?.description || "Apply for your visit visa with VJC Immigration Services and explore the world without hassle. Get expert guidance for visa documentation, application processing, and travel planning.",
@@ -68,8 +69,9 @@ keywords: data?.keywords || "visit visa, tourist visa, travel visa, short-term v
   };
 }
 
- 
- 
-export default function CountryPage({ params }) {
-  return <CountryClient country={params.country} />;
+export default async function CountryPage({ params }) {
+  const resolvedParams = await params;
+  const country = resolvedParams.country;
+
+  return <CountryClient country={country} />;
 }

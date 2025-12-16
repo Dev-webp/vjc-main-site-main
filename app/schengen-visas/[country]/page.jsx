@@ -148,22 +148,23 @@ const metaData = {
     keywords: "Switzerland Schengen visa, Switzerland visa, Switzerland tourist visa, Switzerland business visa, Switzerland family visit visa, Switzerland short-stay visa, Switzerland visa requirements, Switzerland visa documents, Switzerland visa processing time, Switzerland visa appointment, Switzerland visa application form, Switzerland embassy visa, Switzerland travel visa, Switzerland visa fees, Switzerland visa approval rate, Switzerland visa interview, Switzerland visa biometric requirements, Switzerland visa appointment slots, Switzerland visa VFS, Europe visa experts, Schengen visa consultants, Best Visa Immigration Consultants, VJC Overseas, Switzerland travel permits",
   },
 };
- 
+
 export async function generateMetadata({ params }) {
-    const resolvedParams = await params;
-  const country = params.country.toLowerCase();
+  const resolvedParams = await params;
+  const country = resolvedParams.country?.toLowerCase();
   const data = metaData[country];
- 
+
   return {
-    title: data?.title || "Schengen Visa – Travel Across Europe with Ease | VJC Travel Services",
+      title: data?.title || "Schengen Visa – Travel Across Europe with Ease | VJC Travel Services",
 description: data?.description || "Apply for your Schengen Visa effortlessly with VJC Travel Services. We assist with documentation, appointment booking, and guidance for smooth travel across 27 European countries.",
 keywords: data?.keywords || "Schengen visa, Europe visa, tourist visa, business visa, visa consultancy, Schengen visa assistance, travel to Europe, visa application, visa services, VJC Travel Services"
 
   };
 }
 
- 
- 
-export default function CountryPage({ params }) {
-  return <CountryClient country={params.country} />;
+export default async function CountryPage({ params }) {
+  const resolvedParams = await params;
+  const country = resolvedParams.country;
+
+  return <CountryClient country={country} />;
 }

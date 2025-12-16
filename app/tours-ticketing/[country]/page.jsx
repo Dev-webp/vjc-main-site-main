@@ -119,12 +119,13 @@ const metaData = {
   },
   
 };
- 
+
+
 export async function generateMetadata({ params }) {
-    const resolvedParams = await params;
-  const country = params.country.toLowerCase();
+  const resolvedParams = await params;
+  const country = resolvedParams.country?.toLowerCase();
   const data = metaData[country];
- 
+
   return {
     title: data?.title || "Tours & Ticketing – Explore the World with Ease | VJC Travel Services",
 description: data?.description || "Discover seamless tours and ticketing solutions with VJC Travel Services. From flight bookings to customized holiday packages, we make your travel planning effortless and affordable.",
@@ -132,8 +133,9 @@ keywords: data?.keywords || "tours and ticketing, travel booking, flight tickets
   };
 }
 
- 
- 
-export default function CountryPage({ params }) {
-  return <CountryClient country={params.country} />;
+export default async function CountryPage({ params }) {
+  const resolvedParams = await params;
+  const country = resolvedParams.country;
+
+  return <CountryClient country={country} />;
 }
