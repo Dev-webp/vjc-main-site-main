@@ -7,9 +7,6 @@ import ClientWidgets from '@/app/components/ClientWidgets';
 import Script from 'next/script';
 import type { Metadata } from 'next';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-const ptSerif = PT_Serif({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-pt-serif', display: 'swap' });
-const playfairDisplay = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair-display', display: 'swap' });
 
 export const metadata: Metadata = {
   title: 'Best Visa Immigration Consultants in Hyderabad Bangalore PR Visa | Study Visa | Job Seeker Visa | Visit Visa | Investor Visa | Tourist Visa | Dependent Visa | Work Permit Visa',
@@ -19,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${ptSerif.variable} ${playfairDisplay.variable}`}>
+    <html lang="en" >
       <head>
          <meta
           name="google-site-verification"
