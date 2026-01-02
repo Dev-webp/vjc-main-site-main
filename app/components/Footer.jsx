@@ -296,15 +296,38 @@ const Footer = () => {
         </div>
 
          {/* Copyright Section */}
-         <div className="border-t border-gray-700 pt-6 flex flex-col items-center space-y-4 mt-4">
-            <p>&copy; 2026 VJC Overseas. All Rights Reserved.<Link 
-      href="/privacy-policy" 
-      
-    >
-      Privacy Policy
-    </Link></p>
-            
-        </div>
+       <div className="border-t border-gray-700 pt-6 mt-4">
+  <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+    
+    {/* Left */}
+    <div className="text-center sm:text-left">
+      &copy; 2026 VJC Overseas
+    </div>
+
+    {/* Middle */}
+    <div className="text-center">
+      All Rights Reserved
+    </div>
+
+    {/* Right */}
+    <div className="flex gap-4 text-center sm:text-right">
+      <Link
+        href="/privacy-policy"
+        className="hover:text-white underline"
+      >
+        Privacy Policy
+      </Link>
+      <Link
+        href="/terms-and-conditions"
+        className="hover:text-white underline"
+      >
+        Terms & Conditions
+      </Link>
+    </div>
+
+  </div>
+</div>
+
 
        
         </div>
