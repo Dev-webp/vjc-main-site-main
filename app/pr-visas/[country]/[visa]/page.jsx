@@ -3,10 +3,9 @@ import Two from "./Two";
 
 
 export async function generateMetadata({ params }) {
-  const country = params?.country?.toLowerCase();
-  const visa = params?.visa?.toLowerCase();
+  const { country, visa } = await params;
 
-  const visaData = visaMetaData[country]?.[visa];
+  const visaData = visaMetaData[country?.toLowerCase()]?.[visa?.toLowerCase()];
 
   return {
     title: visaData?.title || "Explore Visa Options | VJC Overseas",

@@ -1,5 +1,11 @@
 import Script from 'next/script';
-
+export const metadata = {
+  title: "Contact VJC Overseas | Visa & Immigration Consultants",
+  description:
+    "Contact VJC Overseas for expert guidance on study visas, PR, work permits, visitor visas, and immigration services.",
+  keywords:
+    "Contact VJC Overseas, Immigration Consultants, Visa Consultants, Study Visa, PR Visa, Work Visa, Hyderabad, Bangalore",
+};
 export default function ContactLayout({ children }) {
   return (
     <>

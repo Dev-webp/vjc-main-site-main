@@ -30,7 +30,7 @@ export default function HyderabadPage() {
   return (
     <div className="min-h-screen bg-white text-black">
       <Head>
-        <title>VJC Overseas - Hyderabad Office</title>
+        <title>Best Immigration Consultants in Hyderabad | VJC Overseas</title>
         <meta name="description" content="Visit VJC Overseas Hyderabad office for expert visa consultancy in study abroad, PR, job seeker, and IELTS coaching." />
         <meta name="keywords" content="Hyderabad study abroad, PR visa Hyderabad, IELTS coaching SR Nagar, VJC Overseas Hyderabad" />
       </Head>

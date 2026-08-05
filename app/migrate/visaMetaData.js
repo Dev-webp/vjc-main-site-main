@@ -6,7 +6,7 @@ export const visaMetaData = {
       keywords: "Germany Opportunity Card, Chancenkarte Visa, Germany Job Search Visa, Work Permit Germany, Germany Visa Consultants, German Job Seeker Visa, Work in Germany, Migrate to Germany, Germany Skilled Immigration, VJC Overseas, Best Visa Immigration Consultants, Germany points-based visa, Germany PR Process, Germany Visa Eligibility",
     },
     "work-visa": {
-      title: "Germany Work Visa Requirements | Eligibility | Application Process and Job Opportunities",
+      title: "Germany Work Visa Process 2026 | VJC Overseas",
       description: "Apply for Germany Work Visa 2025 with VJC Overseas. Get expert guidance on job search, visa process, and your pathway to work and live in Germany",
       keywords: "Germany Work Visa, Germany Work Visa Requirements, Germany Work Visa Eligibility, Germany Work Visa Application Process, Germany Work Permit, Germany Skilled Worker Visa, Germany Job Opportunities, Germany Immigration Visa, Germany Visa Consultants, Work in Germany, Best Visa Immigration Consultants, VJC Overseas, Germany Employment Visa, Germany Job Seeker Visa, Germany Work Seeker Visa, Germany Job Visa, Germany Visa Application",
     },
@@ -51,7 +51,7 @@ export const visaMetaData = {
       keywords: "Migrate to Canada, Canada work permit, Apply for Canada work permit, employer specific work permit Canada, open work permit Canada, Canada temporary work visa, Canada LMIA work permit, Work visa Canada, Canada temporary foreign worker permit, Canada work permit eligibility, Canada work visa requirements, Canada immigration work permit, Canada skilled worker visa, Canada PR work permit, Canada job visa, work in Canada legally, Canada visa consultants, Canada temporary foreign worker permit, Canada work permit eligibility, Study in Canada",
     },
     "tourist-visa": {
-      title: "Canada Tourist Visa – Multiple Entry | Processing Time | Requirements and Apply Online",
+      title: "Canada Tourist Visa Process 2026 | VJC Overseas",
       description: "Begin your study journey in Canada with VJC guidance.",
       keywords: "Canada tourist visa, Canada visitor visa, Study in Canada, apply visitor visa Canada, Canada tourist visa requirements, tourist visa Canada process, Canada travel visa, Canada short stay visa, Canada tourist visa from India, Canada tourist visa fees, Canada tourist visa documents, Canada visa for tourism, Canada visa application, Canada tourist visa eligibility, Canada visitor visa processing time, Canada tourism visa multiple entry, Canada travel permit, Canada visa consultants, Best Visa Immigration Consultants, VJC Overseas",
     },
@@ -127,7 +127,7 @@ export const visaMetaData = {
   },
   "united-kingdom":{
     "student-visa":{
-      title:"United Kingdom Student Visa – Your Guide to Studying in the UK with Study Permit Visa",
+      title:"UK Student Visa Process & Requirements | VJC Overseas",
       description:"Apply For The UK Student Visa With Expert Guidance. Study In UK’s Top Universities, Access Globally Recognized Degrees, And Build A Pathway Toward UK Skilled Immigration And Permanent Residency. Get Professional Counseling For A Smooth Admission And Visa Process",
       keywords:"UK student visa, United Kingdom student visa, student visa UK, study in the UK, UK study permit, apply UK student visa, UK student visa requirements, UK student visa process, UK student visa eligibility, UK student visa documents, UK student visa application, UK student visa application form, UK student visa consultants, UK student visa for Indians, UK CAS requirement, UK student visa processing time, UK graduate route visa, UK student visa IELTS requirement, Best Visa Immigration Consultants, VJC Overseas",
     },
@@ -170,7 +170,7 @@ export const visaMetaData = {
       keywords:"New Zealand Student Work Visa, Student Work Visa NZ, Post-Study Work Visa NZ, work while studying in NZ, New Zealand work rights for students, NZ student visa work rights, New Zealand student visa work permit, NZ post-study work rights, New Zealand international student work visa, NZ student visa employment, NZ Student Work Visa requirements, Apply New Zealand student work visa, VJC Overseas, Best Visa Immigration Consultants, NZ part-time work visa student, NZ internship student visa",
    },
    "skilled-work-visa":{
-      title:"New Zealand Skilled Work Visa – Skilled Migrant Essential Skills and Work-to-Residence",
+      title:"New Zealand Skilled Work Visa 2026 | VJC Overseas",
       description:"",
       keywords:"New Zealand Skilled Work Visa, NZ Skilled Migrant Category, New Zealand Essential Skills Work Visa, Work to Residence Visa NZ, NZ Accredited Employer Work Visa, NZ work visa skilled migrant, New Zealand skilled worker visa, work visa New Zealand requirements, apply skilled work visa NZ, NZ skilled visa consultants, New Zealand skilled residency visa, migrate to NZ skilled work, work in New Zealand visa, NZ work permit skilled, New Zealand job offer visa, NZ work to residence pathways, VJC Overseas, Best Visa Immigration Consultants, NZ skilled work visa processing, NZ work visa eligibility",
    },
@@ -230,7 +230,7 @@ export const visaMetaData = {
      keywords:"Hong Kong Dependent Visa, HK spouse dependent visa, HK child dependent visa, HK parent dependent visa, dependent rights Hong Kong, HK dependent visa work rights, study on dependent visa Hong Kong, HK sponsor dependent visa, apply dependent visa Hong Kong, Hong Kong family visa, Hong Kong dependent visa eligibility, HK dependent visa process, dependent visa extension Hong Kong, Hong Kong dependent visa consultants, VJC Overseas, Best Visa Immigration Consultants, Hong Kong dependent visa documents, live in Hong Kong on dependent visa",
    },
     "work-visa":{
-     title:"Hong Kong Work Visa helps skilled professionals build careers through GEP QMAS or TechTAS",
+     title:"Hong Kong Work Visa Process 2026 | VJC Overseas",
      keywords:"Hong Kong Work Visa, Hong Kong Employment Visa, General Employment Policy HK, TechTAS visa Hong Kong, QMAS visa HK, IANG visa Hong Kong, Admission Scheme for Mainland Talents, Hong Kong skilled worker visa, apply work visa Hong Kong, Hong Kong work visa requirements, job offer Hong Kong work visa, work permit Hong Kong, HK employment visa process, Hong Kong visa consultants, VJC Overseas, Best Visa Immigration Consultants, migrate to HK for work, Hong Kong work visa eligibility, Hong Kong work visa processing time",
    },
   },
@@ -244,7 +244,7 @@ export const visaMetaData = {
      keywords:"Denmark Work Permit Visa, Denmark work visa, Positive List Scheme Denmark, Pay Limit Scheme Denmark, Start-up Denmark visa, Fast-Track Denmark work visa, Denmark work permit requirements, Denmark work visa fees, Denmark employer job offer visa, Work in Denmark visa, Denmark visa processing time, Denmark work permit eligibility, Denmark work visa application, Denmark work permit points system, Denmark migrant work visa, Denmark job permit visa, Denmark work permit consultants, VJC Overseas, Best Visa Immigration Consultants, migrate to Denmark for work",
    }, 
     "tourist-visa":{
-     title:"Denmark Tourist Visa for Exploring Denmark Visiting Family and Enjoying European Getaways",
+     title:"Denmark Tourist Visa | VJC Overseas",
      keywords:"Denmark Tourist Visa, Denmark Visit Visa, Schengen tourist visa Denmark, Denmark short stay visa, visit Denmark visa, travel to Copenhagen visa, Denmark tourist visa requirements, Denmark tourist visa process, Denmark tourist visa documents, Denmark tourist visa fees, Denmark tourist visa validity, Denmark tourist visa from India, Denmark visa application, Denmark visa insurance requirement, stay in Denmark 90 days visa, Denmark visa for family visit, Denmark tourist visa appointment, visit Scandinavia via Denmark visa, VJC Overseas, Best Visa Immigration Consultants",
    }, 
     "business-visa":{

@@ -9,7 +9,10 @@ import type { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: 'Best Visa Immigration Consultants in Hyderabad Bangalore PR Visa | Study Visa | Job Seeker Visa | Visit Visa | Investor Visa | Tourist Visa | Dependent Visa | Work Permit Visa',
+  title: {
+    default: 'Top Visa Consultants in Hyderabad & Bangalore | VJC Overseas',
+    template: '%s',
+  },
   description: 'Best Visa Immigration Consultants in Hyderabad and Bangalore Process for PR Visa, Study Visa, Job Seeker Visa, Visit Visa, Investor Visa, Tourist Visa, Dependent Visa, Work Permit Visa and much more...',
   keywords: 'Best Visa Immigration Consultants in Hyderabad, Best Immigration Visa Consultants in Bangalore, PR Visa, Germany Opportunity Card, Study Visa, Job Seeker Visa, Work Permit Visa',
 };

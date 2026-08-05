@@ -90,7 +90,7 @@ export const visaMetaData = {
       keywords: "Australia Subclass 190 Skilled Nominated Visa, State nominated visa Australia, Permanent residency 190 visa, Subclass 190 visa points requirements, Australia PR nomination visa, 190 visa eligibility criteria, State Nominated Migration Program, Apply for subclass 190 visa, Australia PR visa 190, Skilled worker state nominated visa, Australia immigration subclass 190, Visa 190 processing time, Skilled Nominated Visa, Subclass 190, Skilled Nominated Visa Subclass 190, Regional nomination subclass 190, Australia permanent residency visa subclass 190, 190 visa application process, Australia state sponsorship visa, VJC Overseas, Best Visa Immigration Consultants",
     },
     "191-permanent-residence-visa": {
-      title: "Australia Subclass 191 Permanent Residence Visa PR Pathway for Skilled Regional Migration to Australia",
+      title: "Australia Subclass 191 Visa 2026 | VJC Overseass",
       
       keywords: "Australia Subclass 191 Permanent Residence Visa, Regional Australia visa 191 program, Permanent residency Australia, 191 visa eligibility requirements, Australia PR 191 visa, Regional migration visa Australia, Permanent residence regional Australia, Subclass 191 migration criteria, Australia 191 visa processing time, Australia PR regional employment visa, 191 visa application process Australia, Australia migration regional workforce visa, Australian citizenship via 191, Australia PR regional zones visa, Australia visa for regional skilled workers, Visa subclass 191 documentation, Australia state regional nomination, Australia territory regional nomination, VJC Overseas, Best Visa Immigration Consultants",
     },

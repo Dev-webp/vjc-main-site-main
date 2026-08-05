@@ -1,5 +1,10 @@
 import Script from "next/script";
 
+export const metadata = {
+  title: "Job Seeker Visa Services 2026 | VJC Overseas",
+  description: "Job Seeker Visa Services by VJC Overseas",
+};
+
 export default function ContactLayout({ children }) {
   return (
     <>

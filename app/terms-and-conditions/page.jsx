@@ -1,5 +1,11 @@
 import Link from 'next/link';
-
+export const metadata = {
+  title: "Terms & Conditions | VJC Overseas",
+  description:
+    "Read the Terms & Conditions of VJC Overseas for visa consultancy, immigration services, and website usage.",
+  keywords:
+    "Terms and Conditions, VJC Overseas, Visa Consultancy, Immigration Services",
+};
 export default function TermsPage() {
   return (
     <div className="w-full px-6 sm:px-10 mt-16 lg:px-20 py-10 text-gray-800 leading-relaxed font-sans">

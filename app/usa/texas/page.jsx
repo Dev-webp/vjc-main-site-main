@@ -20,7 +20,7 @@ export default function UsaPage() {
   return (
     <div className="min-h-screen bg-white text-black">
       <Head>
-        <title>VJC Overseas - USA Office (Plano, TX)</title>
+        <title>Best Visa Consultants in Texas, USA | VJC Overseas</title>
         <meta
           name="description"
           content="Visit VJC Overseas USA office in Plano, TX for expert visa consultancy in study abroad, PR, job seeker, and IELTS coaching."
