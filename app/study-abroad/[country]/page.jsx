@@ -3,32 +3,32 @@ import CountryClient from "./CountryClient";
 // Metadata map
 const metaData = {
   usa: {
-    title: "Study Abroad in the USA Learn at World-Class Universities and Explore American Education Scholarships and Student Life",
+    title: "Study in USA: Universities & Student Visa | VJC",
     description: "Get USA Student Visa F1 Process and Study in USA with Best Abroad Universities to settle in America also know the Study Documents Check list and Requirements to F1 Study Abroad in USA with Best USA Student Study Visa Consultants in Hyderabad also Find Top Most Universities in USA and Apply Online for USA Study Visa Process with Fast Admissions at Lowest Tuition Courses Fees with Top International Educational Consultants in Hyderabad Bangalore",
     keywords:" Study Abroad USA, Study in USA, USA student visa, Study Abroad in the USA, Study USA programs, US study destinations, Study in America, US universities for international students, Study abroad consultants USA, Study in USA scholarships, Study Abroad application USA, Study Abroad colleges USA, Student travel to USA, USA academic opportunities, Study in the USA requirements, Study in USA career paths, Study Abroad advisors, Study in USA culture, VJC Overseas, Best Visa Immigration Consultants",
   },
   canada: {
-    title: "Study Abroad in Canada with Canadian Universities Offering World Class Education",
+    title: "Study in Canada: Universities & Student Visa | VJC",
     description: "Explore studying in Canada with VJC Overseas. Get expert support on top universities, scholarships, visa process & PR pathways. Start your journey now!",
     keywords: "  Study Abroad in Canada, Study in Canada, Canada study abroad, Canada education for international students, Study abroad Canada universities, Study in Canada programs, Canada study permit, Canada student visa, Canada PGWP, Study in Canada work permit, Canada study admission, Canada study scholarship, Canada student life, Canadian universities for international students, Study abroad consultants Canada, Study abroad services Canada, VJC Overseas, Best Visa Immigration Consultants",
   },
   uk: {
-    title: " Study Abroad in UK Experience World Class Education and Leading Universities",
+    title: " Study in UK: Universities & Student Visa | VJC",
     description: "Study in the UK with VJC Overseas. Explore top universities, scholarships, visa process & post-study work options. Get expert guidance and support today.",
     keywords: "Study Abroad in UK, Study in UK, UK study abroad, UK student programs, UK universities for international students, study overseas UK, UK education abroad, UK college admission, UK student application, study uk programs, student visa UK, UK campus experience, UK student life, UK academic opportunities, study uk guide, British universities abroad, VJC Overseas, Best Visa Immigration Consultants",
   },
   australia: {
-    title: "Study Abroad in Australia Explore Top Australian Universities and Quality Education",
+    title: "Study in Australia: Universities & Student Visa | VJC",
     description: "Study in Australia with VJC Overseas. Get expert guidance on top universities, scholarships, visa process & post-study work opportunities. Start now!",
     keywords: "Study Abroad in Australia, Study in Australia, Australia Study Abroad, Australian Universities, Australia Education, Study in Australia for International Students, Study in Australia Programs, Australia Student Visa, Australia Study Permit, Australia Higher Education, Study in Australia Admission, Study in Australia Scholarships, Study in Australia Guide, Study in Australia Application, Study in Australia Opportunities, Study in Australia Colleges, VJC Overseas, Best Visa Immigration Consultants",
   },
   germany: {
-    title: "Study in Germany with German Universities and Study Abroad in Germany Programs",
+    title: "Study in Germany: Universities & Student Visa | VJC",
     keywords:"study in germany, immigration consultants, germany study visa, germany study abroad, top universities in germany, top universities in germany, best universities in germany, masters in germany, student visa in germany, top rated universities in germany, germany visa for students, best immigration consultants in Hyderabad, best immigration consultants in Bangalore, germany visa, germany opportunity card, germany study visa",
     description: "Study Abroad in Germany, Germany Study Abroad, Study in Germany, Study in Germany Education, Germany Education, International study Germany, Germany student visa, Study in Germany programs, German universities, Germany higher education, Study Germany scholarships, Germany tuition free universities, Germany education for international students, Germany Masters study abroad, Study in Germany guide, Germany study permit, Study in Germany applications, Study in Germany admissions, VJC Overseas, Best Visa Immigration Consultants",
   },
   italy: {
-    title: "Study Abroad in Italy with Italian Education and Leading Universities in Italy  ",
+    title: "Study in Italy: Universities & Student Visa | VJC",
     keywords:"Study Abroad in Italy, Study in Italy, Italian Education, Universities in Italy, Italy Study Abroad, Study at Italian Universities, Italy Student Visa, Study in Italy Programs, Italian Higher Education, Study Abroad Italy Scholarships, Study in Italy Courses, Study Abroad Italy Admission, Italy Study Application, Study in Italy Requirements, Italy International Students, Study in Italy Universities, Study Abroad Italy Consultants, VJC Overseas, Best Visa Immigration Consultants",
     description: "Study in Italy with VJC Overseas – trusted consultants in India for 2025 admissions, scholarships, top universities, and complete visa support.",
   },
@@ -58,7 +58,7 @@ const metaData = {
     keywords: "Study Abroad in South Africa, Study in South Africa, South Africa Study Abroad, South African Universities, South Africa Education, Study in SA Programs, South Africa Student Visa, Study Abroad South Africa Admissions, South Africa Higher Education, Study in South Africa Scholarships, Study in South African Universities, South Africa Education Abroad, Study in South Africa Courses, South Africa Study Permit, South Africa Study Application, South Africa Education Opportunities, Study Abroad South Africa Consultants, VJC Overseas, Best Visa Immigration Consultants",
   },
   newzealand: {
-    title: "Study Abroad in New Zealand with Leading Universities and International Education",
+    title: "Study in New Zealand: Universities & Student Visa | VJC",
     description: "Begin your study abroad journey in New Zealand with VJC Overseas. Expert guidance on top universities, visas, scholarships, and admission support.",
     keywords: "Study Abroad in New Zealand, Study in New Zealand, New Zealand Study Abroad, New Zealand Universities, New Zealand Education, International Education New Zealand, NZ student visa, Study in NZ programs, New Zealand higher education, Study in New Zealand scholarships, NZ admission process, New Zealand study permit, Study in New Zealand opportunities, Study in NZ consultants, VJC Overseas, Best Visa Immigration Consultants",
   },
@@ -73,7 +73,7 @@ const metaData = {
     keywords: "Study Abroad in Poland, Study in Poland, Polish Universities, Poland Education, Study in Poland Programs, Polish Higher Education, Study in Poland Scholarships, Poland Student Visa, Study in Poland Opportunities, Study in Poland Admissions, Poland Study Permit, Study in Poland Courses, Study in Poland Application, Study in Poland Universities, Affordable Education Poland, Study in Poland Consultants, VJC Overseas, Best Visa Immigration Consultants",
   },
   denmark: {
-    title: "Study in Denmark Masters Bachelors PhD Living Cost Admission Student Life Insights English Programs Scholarships Visa Requirements",
+    title: "Study in Denmark: Courses & Student Visa | VJC",
     description: "Explore world-class education in Denmark through VJC Overseas. Get expert help with university selection, student visas, scholarships, and easy admissions",
     keywords: "Study in Denmark, Study Abroad Denmark, Denmark Universities, Danish Higher Education, Study in Copenhagen, Study in Aarhus, English Programs Denmark, Bachelor in Denmark, Masters in Denmark, PhD in Denmark, Denmark Scholarships, Denmark Student Visa, Tuition Fees in Denmark, Cost of Living in Denmark, Work and Study in Denmark, Admission Requirements Denmark, International Students Denmark, Student Life in Denmark, VJC Overseas, Best Visa Immigration Consultants",
   },
@@ -84,7 +84,7 @@ const metaData = {
   },
  
   hongkong: {
-    title: "Study in Hong Kong Top Universities Scholarships Student Visa Tuition Fees Living Expenses",
+    title: "Study in Hong Kong: Universities & Visa | VJC",
     description: "Study in Hong Kong with VJC Overseas. Explore top universities, courses, scholarships, visa process, and how to start your study in Hong Kong journey.",
     keywords: "Study in Hong Kong, Study Abroad Hong Kong, Hong Kong Universities, Higher Education in Hong Kong, Study in Hong Kong City, Bachelor in Hong Kong, Masters in Hong Kong, PhD in Hong Kong, Hong Kong Scholarships, Hong Kong Student Visa, Tuition Fees in Hong Kong, Cost of Living in Hong Kong, Work and Study in Hong Kong, Admission Requirements Hong Kong, International Students Hong Kong, Student Life in Hong Kong, Campus Facilities Hong Kong, VJC Overseas, Best Visa Immigration Consultants",
   },

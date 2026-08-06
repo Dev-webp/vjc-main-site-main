@@ -18,7 +18,7 @@ const metaData = {
    dubai: { },
    austria: { },
    singapore: { },
-   newzealand:{ },
+   "new-zealand":{ },
    malaysia:{ },
     poland:{ },
     malta:{ },

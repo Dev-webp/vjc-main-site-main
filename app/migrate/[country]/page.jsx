@@ -1,11 +1,11 @@
-import { metaData } from "../metaData"; // Adjust path if needed
+import { metaData } from "../metaData";
 import Two from "./Two";
-
 
 // Dynamic metadata for each country
 export async function generateMetadata({ params }) {
-  const country = params.country?.toLowerCase();
-  const data = metaData[country];
+  const { country } = await params;
+
+  const data = metaData[country.toLowerCase()];
 
   return {
     title: data?.title || "Migrate Abroad – Explore Global Opportunities | VJC Overseas",
@@ -15,13 +15,7 @@ export async function generateMetadata({ params }) {
 }
 
 const ContactPage = () => {
-  return (
-    <>
-    
-      <Two />
-     
-    </>
-  );
+  return <Two />;
 };
 
 export default ContactPage;

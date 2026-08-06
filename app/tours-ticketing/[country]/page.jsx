@@ -32,8 +32,8 @@ const metaData = {
     title: "Italy Vacation Packages Holiday Tours Family Trips Honeymoon Tours Group Travel Adventures ",
     keywords:"Italy Vacation packages, Italy Holiday tours, Italy Family trips, Italy Honeymoon tours, Italy Group travel, Italy Sightseeing tours, Italy Cultural tours, Italy tours, Italy Adventure tours, Italy Historical tours, Italy Luxury tours, Italy Budget packages, Italy Guided tours, Italy City tours, Italy Countryside tours, Italy Beach holidays, Italy Visa, Italy travel deals, Italy trip itineraries, VJC Overseas, Best Visa Immigration Consultants",
   },
-  swizerland: {
-    title: "Switzerland Vacation Packages Holiday Tours Family Trips Honeymoon Adventures Group Travel",
+  switzerland: {
+    title: "Switzerland Tour Packages & Travel Services | VJC",
    
     keywords: "Switzerland Vacation packages, Switzerland Holiday tours, Switzerland Family trips, Switzerland Honeymoon adventures, Switzerland Group travel, Switzerland Sightseeing tours, Swiss Alps tours, Switzerland Cultural tours, Switzerland Culinary tours, Switzerland Adventure trips, Switzerland Luxury tours, Switzerland Budget tours, Switzerland Guided tours, Switzerland City tours, Switzerland Countryside tours, Switzerland Beach holidays, Switzerland tours, Switzerland tour itineraries, Switzerland travel deals, VJC Overseas, Best Visa Immigration Consultants",
   },
@@ -87,8 +87,8 @@ const metaData = {
     
     keywords: "Maldives tours, Maldives travel packages, Maldives overwater villas, Maldives snorkeling, Maldives cruises, Maldives honeymoon packages, Maldives family holidays, Maldives island hopping, Maldives beach resorts, Maldives adventure tours, Maldives luxury holidays, Maldives cultural experiences, Maldives day trips, Maldives guided tours, Maldives water sports, Maldives spa resorts, Maldives diving packages, Maldives romantic getaways, Maldives vacation deals, Maldives travel guide, VJC Overseas, Best Visa Immigration Consultants",
   },
-  fijiisland: {
-    title: "Fiji Island Tours Discover Beaches Snorkeling Adventures Coral Reefs and Island Escapes",
+  "fiji-island": {
+    title: "Fiji Island Tour Packages & Travel Services | VJC",
     
     keywords: "Fiji Island tours, Fiji snorkeling packages, Yasawa Islands Fiji, Fiji coral reefs, Fiji beach resorts, Fiji adventure tours, Fiji honeymoon packages, Fiji family holidays, Fiji cultural experiences, Fiji day trips, Fiji guided tours, Fiji vacation packages, Fiji island hopping, Fiji diving tours, Fiji luxury resorts, Fiji travel deals, Fiji nature tours, Fiji cruise packages, Fiji spa resorts, Fiji wildlife experiences, VJC Overseas, Best Visa Immigration Consultants",
   },
@@ -102,8 +102,8 @@ const metaData = {
     
     keywords: "Austria tours, Vienna sightseeing, Salzburg travel packages, Innsbruck city tours, Hallstatt village, Austria holiday deals, Austria vacation packages, Austria cultural experiences, Austria guided tours, Austria adventure tours, Austria family holidays, Austria honeymoon packages, Austria day trips, Austria nature tours, Austria luxury holidays, Austria historical sites, Austria UNESCO sites, Austria music heritage, Austria alpine resorts, Austria culinary tours, VJC Overseas, Best Visa Immigration Consultants",
   },
-  southafrica: {
-    title: "South Africa Travel Tours Discover Cape Town Safari Kruger National Park Adventure Trips",
+  "south-africa": {
+    title: "South Africa Tour Packages & Travel Services | VJC",
     
     keywords: "South Africa tours, Cape Town sightseeing, Kruger National Park safari, Garden Route trips, Johannesburg city tours, Stellenbosch wine tours, Robben Island visit, Table Mountain hiking, Boulders Beach penguins, Cape of Good Hope tour, Addo Elephant Park, Drakensberg adventure, Knysna lagoon, Hermanus whale watching, Durban beaches, Pretoria city tours, Soweto cultural tours, Apartheid Museum visit, South Africa luxury tours, VJC Overseas, Best Visa Immigration Consultants",
   },
