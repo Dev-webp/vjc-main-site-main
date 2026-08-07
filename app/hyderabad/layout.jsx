@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Best Immigration Consultants in Hyderabad | VJC Overseas",
+  title: "PR & Study Visa Consultants Hyderabad | VJC Overseas",
   description:
     "Visit VJC Overseas Hyderabad office for expert visa consultancy in study abroad, PR, job seeker, and IELTS coaching.",
   keywords:

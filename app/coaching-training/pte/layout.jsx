@@ -1,7 +1,7 @@
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'PTE Coaching & Training for High Scores | VJC',
+  title: 'PTE Coaching Hyderabad | VJC Overseas',
   keywords: 'PTE coaching, PTE exam preparation, professional PTE training, online PTE classes, PTE mock tests, PTE High score, PTE study abroad, visa PTE requirement, Pearson Test of English training, PTE strategies, fluency PTE, PTE success tips, exam readiness PTE, PTE academic coaching, skill based PTE, PTE test prep, English proficiency PTE, Best Visa Immigration Consultants, VJC Overseas',
 };
 

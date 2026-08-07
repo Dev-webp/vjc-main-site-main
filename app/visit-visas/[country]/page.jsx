@@ -3,22 +3,22 @@ import CountryClient from "./CountryClient";
 // Metadata map
 const metaData = {
   usa: {
-    title: "USA Visit Visa USA Canada Australia UK Dubai Denmark and Europe Tourist and Business Visa Process and Requirements",
+    title: "USA Visit Visa Process & Requirements for Indians",
     
     keywords:" USA visit visa, Visit visa, B1/B2 visa application, Tourist visa USA, Business visit USA, Apply USA visitor visa, DS-160 visa form USA, Proof of funds USA visa, Passport validity USA travel visa, Interview US embassy, USA visa processing time, Stay duration USA visitor visa, Intent to return visa USA, Travel insurance USA visa, USA visa documents checklist, USA visitor visa requirements, VJC Overseas, Best Visa Immigration Consultants",
   },
   "usab1/b2": {
-    title: "USA Visit Visa B1 B2 Tourist and Business Visa Application Process and Requirements",
+    title: "USA B1 B2 Visit Visa Process & Requirements",
     
     keywords: " USA visit visa, B1/B2 visa application, Tourist visa USA, Business visit USA, Apply USA visitor visa, DS-160 visa form USA, Proof of funds USA visa, Passport validity USA travel visa, Interview US embassy, USA visa processing time, USA visitor visa Stay duration, Travel insurance USA visa, USA visa documents checklist, USA visitor visa requirements, VJC Overseas, Best Visa Immigration Consultants",
   },
   canada: {
-    title: "Canada Visitor Visa Apply Tourist Business and Family Temporary Resident Visa TRV Canada",
+    title: "Canada Visitor Visa Process & Requirements",
     
     keywords: "Canada visitor visa, visa visa, Apply Canada Visa, Tourist visa Canada, Business visa Canada, Family visitor visa Canada, Canada visa requirements, Canada visa process, Canada visitor visa fees, Canada visitor visa documents, Canada visitor visa eligibility, Canada temporary resident application, Canada short stay visa, Visit Canada for tourism, Canada temporary resident visa, Canada visa appointment, VJC Overseas, Best Visa Immigration Consultants, Canada embassy visa application, Canada multiple entry visitor visa, Canada visitor visa consultants",
   },
   australia: {
-    title: "Australia Visitor Visa Tourist Business or Family Visit Without Sponsor",
+    title: "Australia Visitor Visa Hyderabad | VJC Overseas",
     
     keywords: "Australia visit visa, Visit visa, Australia visitor visa, Tourist visa Australia, Business visit Australia, Family visit visa Australia, Subclass 600 visitor visa, Australia visitor visa application, Australia tourist visa documents, How to apply visit visa Australia, Proof of funds Australia visa, Australia visa for visitors, Passport validity Australia, Visit visa duration Australia, Visitor Stream Australia, Australia visa process, Australia Immigration Consultants, VJC Overseas, Best Visa Immigration Consultants",
   },
@@ -29,7 +29,7 @@ const metaData = {
     
   },
   dubai: {
-    title: "Dubai Visit Visa for Tourist Business and Family Visitors Easily Without Sponsor ",
+    title: "Dubai Visit Visa Process & Requirements | VJC ",
     keywords:"Dubai visit visa, Visit visa, Dubai Tourist visa, Dubai Business visit visa, Dubai Family visit visa, Apply Dubai visitor visa, Dubai visa application process, Dubai visa requirements, Dubai visa documents, Dubai visa eligibility, Dubai visa fees, Dubai visa processing time, Dubai visa for tourism, Dubai visa for business, Dubai visa for family visits, Dubai visa consultants, VJC Overseas, Best Visa Immigration Consultants",
   },
   denmark: {
@@ -48,7 +48,7 @@ const metaData = {
     keywords: "TItaly visit visa, Visit visa, Italy Schengen visa, Italy visa, Italy tourist visa, Italy business visit, Italy family visit, Apply Italy visitor visa, Italy visa documents, Proof of funds Italy visa, travel insurance Schengen, Italy passport validity, Italy accommodation proof, Italy tourist, Italy visa processing, Italy visitor visa requirements, Italy visa eligibility, VJC Overseas, Best Visa Immigration Consultants",
   },
   schengen: {
-    title: "Schengen Tourist Business Family Visa Europe Without Sponsor Short Stay",
+    title: "Schengen Visit Visa Process & Requirements",
     
     keywords: "Schengen visit visa, Visit visa, Schengen tourist visa, Europe business visit visa, Schengen family visit visa, Apply Schengen visa, Stay 90 days Europe visa, Travel insurance Schengen visa, Schengen visa documents, Flight reservation Europe, Schengen Proof of accommodation, Valid passport Schengen visa, Funds proof Schengen visa, visa interview Schengen, Europe visa processing time, Multiple entry Schengen visa, VJC Overseas, Best Visa Immigration Consultants",
   },

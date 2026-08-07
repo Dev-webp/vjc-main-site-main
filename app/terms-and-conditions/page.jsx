@@ -1,6 +1,6 @@
 import Link from 'next/link';
 export const metadata = {
-  title: "Terms & Conditions | VJC Overseas",
+  title: "VJC Overseas Terms & Conditions",
   description:
     "Read the Terms & Conditions of VJC Overseas for visa consultancy, immigration services, and website usage.",
   keywords:

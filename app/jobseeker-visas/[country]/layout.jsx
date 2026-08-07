@@ -7,11 +7,11 @@ export async function generateMetadata({ params }) {
       description: "Apply for Germany Job Seeker Visa with VJC Overseas.",
     },
     austria: {
-      title: "Apply for Austria Job Seeker Visa 2026",
+      title: "Job Seeker Visa Consultants | VJC Overseas",
       description: "Apply for Austria Job Seeker Visa with VJC Overseas.",
     },
     portugal: {
-      title: "Apply for Portugal Job Seeker Visa 2026 ",
+      title: "Portugal Job Seeker Visa Process & Requirements ",
     },
     sweden: {
       title: "Apply for Sweden Job Seeker Visa 2026 ",
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
       title: "Apply for Norway Job Seeker Visa 2026",
     },
     uae: {
-      title: "Apply for UAE Job Seeker Visa 2026",
+      title: "UAE Job Seeker Visa Process & Requirements",
     },
   };
 

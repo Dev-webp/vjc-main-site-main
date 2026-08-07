@@ -1,41 +1,9 @@
-"use client";
+import JobSeekerClient from "./JobSeekerClient";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import Nav from "./Nav";
-import Form from "./Form";
-import Two from "./Two";
-
-
-const textContainerVariants = {
- 
-   
+export const metadata = {
+  title: "Job Seeker Visa Services Hyderabad | VJC Overseas",
 };
 
-
-
-const ContactPage = () => {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
-  };
-
-  return (
-    <>
-      {/* Navbar */}
-      <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        <Nav />
-      </div>
-
-      {/* Main Section */}
-      
-      {/* Other Sections */}
-      <Two />
-     
-
-    </>
-  );
-};
-
-export default ContactPage;
+export default function Page() {
+  return <JobSeekerClient />;
+}

@@ -9,7 +9,7 @@ const metaData = {
   },
   canada: {
     title:
-      "Canada Investor Visa Start-Up Business and Entrepreneur Visa Routes for Permanent Residency",
+      "Canada Investor Visa Hyderabad | VJC Overseas",
     keywords:
       "Canada Investor visa, Start-Up Visa Canada, Entrepreneur visa Canada, Business investment visa Canada, Investor PR program Canada, Canada residency by investment, Provincial nominee investor streams, Quebec Investor visa, Canadian Investor visa requirements, proof of funds Canada Investment, Startup business support Canada, Investor visa for dependents Canada, Business plan requirement Canada, Canada investor visa documents, Investor visa processing time Canada, Canada PR investor route, Canada immigration by investment, VJC Overseas, Best Visa Immigration Consultants",
   },
@@ -21,13 +21,13 @@ const metaData = {
   },
   australia: {
     title:
-      "Australia Investor and Entrepreneur Visa Invest Business Permanent Residency",
+      "Australia Investor Visa & Business Migration Guide",
     keywords:
       "Australia Investor visa, Business Investment visa Australia, Investor visa, Australia residency by investment, Entrepreneur visa Australia, Subclass 188 Australia, Subclass 888 Australia, AUD 1.5 million investor stream, AUD 5 million investor stream, Investment visa documents Australia, Prove funds Australia investor, Business plan Australia visa, Investor visa eligibility Australia, Australia Investor visa requirements, Australia Investor processing time, Australia Immigration by Investment, VJC Overseas, Best Visa Immigration Consultants",
   },
   uk: {
     title:
-      "UK Investor Visa Tier 1 Route High Value £2 Million Investment to Secure Residency",
+      "UK Investor Visa Process & Requirements",
     keywords:
       "UK Investor visa, Tier 1 Investor UK, £2 million Investment visa UK, Permanent Residency UK Investment, UK ILR for investors, UK settlement through Investment, Funds proof UK investor visa, Investment UK visa, UK visa documents Investor, Existing Tier 1 investor extension, UK Investor visa benefits, Business investment UK, Immigration by investment UK, UK residence permit by Investor, UK Investor visa eligibility, VJC Overseas, Best Visa Immigration Consultants",
   },

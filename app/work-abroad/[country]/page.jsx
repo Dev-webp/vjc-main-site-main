@@ -28,15 +28,15 @@ export async function generateMetadata({ params }) {
   };
   case "germany-work-permit":
   return {
-    title: "Germany Work Permit Process & Requirements | VJC",
+    title: "Germany Work Permit Visa Process & Requirements",
   };
 case "united-kingdom-work-permit":
   return {
-    title: "UK Work Permit Process & Requirements | VJC",
+    title: "UK Work Permit Visa Process & Requirements",
   };
   case "usa-h1b-visa":
   return {
-    title: "USA H1B Visa Process & Requirements | VJC",
+    title: "USA H1B Work Visa Process & Requirements",
   };
 case "canada-work-permit":
   return {
@@ -44,7 +44,7 @@ case "canada-work-permit":
   };
   case "australia-work-permit":
   return {
-    title: "Australia Work Permit Process & Requirements | VJC",
+    title: "Skilled Work Permit Visa Nurses Jobs in Canada Germany2026",
   };
   case "dubai-work-permit":
   return {

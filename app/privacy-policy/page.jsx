@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata = {
   title:
-    "Privacy Policy VJC Overseas – Best Immigration Consultancy for PR & Study Abroad",
+    "VJC Overseas Privacy Policy",
   description:
     "Read how VJC Overseas, one of the best immigration and overseas education consultancies, collects, uses, and protects your data for PR, study, work and visit visa services.",
 };

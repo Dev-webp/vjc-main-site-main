@@ -1,18 +1,9 @@
+import PrVisasClient from "./PrVisasClient";
 
-
-import Two from "./Two";
-// import Footer from "./Footer";
-
-const ContactPage = () => {
-  return (
-    <>
-      <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
-        {/* <Nav /> */}
-      </div>
-      <Two />
- 
-    </>
-  );
+export const metadata = {
+  title: "Canada Australia PR Visa Hyderabad | VJC Overseas",
 };
 
-export default ContactPage;
+export default function Page() {
+  return <PrVisasClient />;
+}

@@ -18,40 +18,40 @@ export async function generateMetadata({ params }) {
       };
      case "australia-work-permit-work-visa-subclass-189":
     return {
-      title: "Australia 189 Work Visa Process & Requirements | VJC",
+      title: "International Work Permit Visa | VJC Overseas",
     };
 
 case "dubai-work-permit-dubai-standard-work-visa":
   return {
-    title: "Dubai Work Visa Process & Requirements | VJC",
+    title: "Work Permit Visa for Nurses | VJC Overseas",
   };
   case "united-kingdom-work-permit-uk-long-term-work-visa":
   return {
-    title: "UK Long Term Work Visa Process & Requirements | VJC",
+    title: "Work Permit Visa Consultants | VJC Overseas",
   };
   case "united-kingdom-work-permit-uk-skilled-worker-visa":
   return {
-    title: "UK Skilled Worker Visa Process & Requirements | VJC",
+    title: "Work Permit Visa for IT Professionals | VJC Overseas",
   };
   case "australia-work-permit-employer-186-visa":
   return {
-    title: "Australia 186 Employer Visa Process & Requirements | VJC",
+    title: "Skilled Work Permit Visa | VJC Overseas",
   };
 case "germany-work-permit-blue-visa":
   return {
-    title: "Germany Blue Card Work Visa Process & Requirements | VJC",
+    title: "Work Permit Visa Consultants Hyderabad | VJC Overseas",
   };
   case "australia-work-permit-482-visa":
   return {
-    title: "Australia 482 Work Visa Process & Requirements | VJC",
+    title: "Work Permit Visa for IT Professionals | VJC Overseas",
   };
 case "denmark-work-permit":
   return {
-    title: "Denmark Work Permit Process & Requirements | VJC",
+    title: "Denmark Work Permit Visa Process & Guide",
   };
   case "denmark-work-permit-denmark-pay-limit-scheme-visa":
   return {
-    title: "Denmark Pay Limit Scheme Visa Process | VJC",
+    title: "Denmark Pay Limit Scheme Visa Guide",
   };
 case "united-kingdom-work-permit-uk-health-and-care-worker-visa":
   return {
@@ -59,28 +59,28 @@ case "united-kingdom-work-permit-uk-health-and-care-worker-visa":
   };
   case "united-kingdom-work-permit-uk-tire-4-visa":
   return {
-    title: "UK Tier 4 Student Visa Process & Requirements | VJC",
+    title: "UK Tier 4 Student Visa Process",
   };
   case "germany-work-permit-employment-visa":
   return {
-    title: "Germany Employment Visa Process & Requirements | VJC",
+    title: "Germany Employment Visa Process & Guide",
   };
 
   case "canada-work-permit-open-work-permit":
   return {
-    title: "Canada Open Work Permit Process & Requirements | VJC",
+    title: "Canada Open Work Permit Visa Guide",
   };
   case "dubai-work-permit-dubai-golden-visa":
   return {
-    title: "Dubai Golden Visa Process & Requirements | VJC",
+    title: "Dubai Golden Visa Process & Eligibility Guide",
   };
   case "denmark-work-permit-denmark-employment-visa":
   return {
-    title: "Denmark Employment Visa Process & Requirements | VJC",
+    title: "Denmark Employment Visa Process & Requirements",
   };
   case "canada-work-permit-w1-visa":
   return {
-    title: "Canada W1 Work Visa Process & Requirements | VJC",
+    title: "Canada Work Permit Visa Process & Requirements",
   };
   case "germany-work-permit-freelance-visa":
   return {
@@ -136,7 +136,7 @@ case "canada-work-permit-lmia":
   };
 case "australia-work-permit-work-visa-subclass-189":
   return {
-    title: "Australia 189 Work Visa Process & Requirements | VJC",
+    title: "International Work Permit Visa | VJC Overseas",
   };
   case "germany-work-permit-job-seeker-visa":
   return {

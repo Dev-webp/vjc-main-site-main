@@ -1,7 +1,7 @@
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'GRE Coaching & Training for Exam Preparation | VJC',
+  title: 'GRE Coaching Hyderabad | VJC Overseas',
   
   keywords: 'GRE coaching, GRE exam preparation, GRE training programs, GRE test preparation, GRE study abroad, Top university admission, quantitative verbal writing, GRE analytical writing, GRE mock tests, GRE strategies, GRE high score, GRE online classes, GRE classroom course, GRE admissions test, GRE global universities, GRE skill development, GRE success plan, Best Visa Immigration Consultants, VJC Overseas',
 };

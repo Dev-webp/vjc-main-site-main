@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Study Abroad Consultants in Hyderabad & Bangalore | VJC Overseas",
+  title: "Study Abroad Hyderabad | VJC Overseas",
   description:
     "Study Student Visa Immigration Consultants for UK Canada Australia Germany USA Italy France New Zealand Switzerland Singapore Malaysia South Africa New Zealand Philippines Poland Ireland Spain Netherlands Switzerland Denmark Dubai Luxembourg Hongkong UAE Norway Sweden with Best Student Visa Immigration Consultants in Hyderabad Bangalore",
   keywords:
