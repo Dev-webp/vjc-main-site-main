@@ -6,7 +6,7 @@ export async function generateMetadata({ params }) {
   switch (country) {
     case "australia-work-permit":
       return {
-        title: "Australia Work Permit Process & Requirements | VJC",
+        title: "Australia Work Permit Visa | VJC Overseas",
       };
 
     case "canada-work-permit":
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
       };
     case "denmark-work-permit":
   return {
-    title: "Denmark Work Permit Process & Requirements | VJC",
+    title: "Denmark Work Permit Visa | VJC Overseas",
   };
   case "dubai-work-permit":
   return {
@@ -40,23 +40,23 @@ case "united-kingdom-work-permit":
   };
 case "canada-work-permit":
   return {
-    title: "Canada Work Permit Process & Requirements | VJC",
+    title: "Canada Work Permit Visa Requirements & Process Guide",
   };
   case "australia-work-permit":
   return {
-    title: "Skilled Work Permit Visa Nurses Jobs in Canada Germany2026",
+    title: "Australia Work Permit Visa for Skilled Professionals",
   };
   case "dubai-work-permit":
   return {
-    title: "Dubai Work Permit Process & Requirements | VJC",
+    title: "Dubai Work Visa Process for Skilled Professionals",
   };
   case "usa-h1b-visa":
   return {
-    title: "USA H1B Work Visa Process & Requirements | VJC",
+    title: "USA H1B Work Visa Process & Requirements Guide",
   };
   case "united-kingdom-work-permit":
   return {
-    title: "UK Work Permit Visa Process & Requirements | VJC",
+    title: "UK Work Permit Visa Process for Skilled Workers",
   };
     default:
       return {};

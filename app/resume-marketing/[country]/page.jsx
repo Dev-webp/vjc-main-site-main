@@ -5,7 +5,7 @@ import SpainResumeMarketing from "./Spain";
 const metaData = {
   canada: {
     title:
-      "Canada Resume Marketing Services ATS-Optimized Resumes for Canadian Job Market",
+      "Canada Resume Marketing Services for Overseas Jobs",
     keywords:
       " Canada resume marketing, Canadian job market, ATS-compliant resumes, resume optimization, Canadian immigration, IT resume services, LinkedIn profile optimization, Canadian employers, job application support, professional resume writing, Canada work permit, Canada PR visa, Canada Express Entry, Canadian job seekers, resume distribution, job search assistance, resume branding, career advancement, Best Visa Immigration Consultants, VJC Overseas",
   },
@@ -23,7 +23,7 @@ const metaData = {
   },
   australia: {
     title:
-      "Australia Resume Marketing Services ATS Optimized Resumes for Australian Job Market",
+      "Australia Resume Marketing & CV Writing Services",
     keywords:
       "Australia resume services, Australia resume marketing, ATS resumes Australia, Australia IT resume writing, Australia LinkedIn profile, Australia professional CV, Australia job application support, Australia career services, Australian job opportunities, Australia work visa, Australia PR visa, Australia skilled migration, Australia resume distribution, Australia job search, Australia executive CV, Australia skill based resume, Australia resume branding, Australia career growth, Best Visa Immigration Consultants, VJC Overseas",
   },
@@ -35,19 +35,19 @@ const metaData = {
   },
   denmark: {
     title:
-      "Denmark Resume Marketing Services ",
+      "Denmark Resume Marketing Services | VJC Overseas ",
     keywords:
       "Denmark resume marketing, Danish job market, ATS compliant resumes, Resume optimization, Denmark immigration, IT resume services Denmark, LinkedIn profile optimization, Danish employers, Job application support, Professional resume writing, Denmark work permit, Denmark PR visa, Denmark job seekers, Resume distribution, Job search assistance, Resume branding, Career advancement, Executive resume services, Best Visa Immigration Consultants, VJC Overseas",
   },
   ireland: {
     title:
-      "Ireland Resume Marketing Hyderabad | VJC Overseas",
+      "Ireland Resume Marketing Services | VJC Overseas",
     keywords:
       "Ireland resume marketing, Ireland resume services, ATS resumes Ireland, Ireland resume writing, Ireland LinkedIn optimization, Ireland job application support, Irish employers, Ireland career services, Ireland work visa, Ireland PR visa, Ireland skilled migration, Ireland resume distribution, Irish job opportunities, Ireland executive resume, Ireland skill based resumes, Ireland resume branding, Ireland career growth, Ireland professional CV, Best Visa Immigration Consultants, VJC Overseas",
   },
   dubai: {
     title:
-      "Dubai Resume Marketing & CV Writing Services",
+      "Dubai Resume Marketing Services for Job Opportunities",
     keywords:
       "Dubai resume marketing, Dubai resume services, ATS Dubai resumes, Dubai resume writing, Dubai LinkedIn optimization, Dubai Job application, Dubai professional CV, Dubai career services, Dubai job opportunities, Dubai work visa, UAE resume marketing, Dubai skilled migration, Dubai resume distribution, Dubai job search, Dubai executive resume, Dubai skill based resumes, Dubai resume branding, Dubai career growth, Best Visa Immigration Consultants, VJC Overseas",
   },
@@ -59,7 +59,7 @@ const metaData = {
   },
   singapore: {
     title:
-      "Singapore Resume Marketing Services Professional CV Writing and Job Market Advantage",
+      "Singapore Resume Marketing Services",
     keywords:
       "Singapore resume marketing, Singapore resume services, ATS resumes Singapore, Singapore resume writing, Singapore LinkedIn optimization, Singapore career services, Singapore job opportunities, Singapore work visa, Singapore skilled migration, Singapore resume distribution, Singapore executive resume, Singapore skill based resumes, Singapore resume branding, Singapore employers, Singapore job search, Singapore professional CV, Singapore career growth, Singapore professional resume, Best Visa Immigration Consultants, VJC Overseas",
   },
@@ -71,30 +71,30 @@ const metaData = {
   },
   malaysia: {
     title:
-      "Malaysia Resume Marketing Services Professional CV Writing for Career Success",
+      "Malaysia Resume Marketing Services for Jobs",
     keywords:
       "Malaysia resume marketing, Malaysia resume services, ATS Malaysia resumes, Malaysia resume writing, Malaysia LinkedIn profile, Malaysia job search, Malaysia career services, Malaysia work visa, Malaysia skilled migration, Malaysia resume distribution, Malaysian job opportunities, Malaysia executive resume, Malaysia skill based resumes, Malaysia resume branding, Malaysian employers, Malaysia professional CV, Malaysia career growth, Malaysia employment opportunities, Best Visa Immigration Consultants, VJC Overseas",
   },
   poland: {
     title:
-      "Poland Resume Marketing Services | VJC",
+      "Poland Resume Marketing Services | VJC Overseas",
     keywords:
       "Poland resume marketing, Poland CV services, ATS Poland resumes, Poland professional resume writing, Poland LinkedIn profile, Poland job search, Poland career services, Poland work visa, Poland skilled migration, Poland resume distribution, Poland job opportunities, Polish employers, Poland executive CV, Poland skill based resumes, Poland resume branding, Polandcareer growth, employment in Poland, Poland professional CV, Best Visa Immigration Consultants, VJC Overseas",
   },
   malta: {
     title:
-      "Malta Resume Marketing Services Professional CV Writing and Career Opportunities",
+      "Malta Resume Marketing Services",
     keywords:
       "Malta resume marketing, Malta resume services, ATS Malta resumes, Malta resume writing, Malta LinkedIn optimization, Malta job opportunities, Malta career services, Malta work visa, Malta skilled migration, Malta resume distribution, Malta executive CV, Malta skill based resumes, Malta resume branding, Malta employers, Malta job search, Malta professional CV, Malta career growth, Malta employment, Malta international resume, Best Visa Immigration Consultants, VJC Overseas",
   },
    spain: {
     title:
-      "Resume Marketing Hyderabad | VJC Overseas",
+      "Spain Resume Marketing Services | VJC Overseas",
    
   },
    sweden: {
     title:
-      "Resume Marketing for Overseas Jobs | VJC Overseas",
+      "Sweden Resume Marketing Services | VJC Overseas",
     
   },
 };

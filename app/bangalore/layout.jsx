@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Best Immigration Consultants in Bangalore | VJC Overseas",
+  title: "Best Visa Consultants in Bangalore | VJC Overseas",
   description:
     "Visit VJC Overseas Bangalore office for expert visa consultancy in study abroad, PR, job seeker visa, and immigration services.",
   keywords:

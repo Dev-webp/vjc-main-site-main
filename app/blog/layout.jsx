@@ -1,7 +1,7 @@
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'Blog | VJC Overseas',
+  title: 'Visa & Immigration Blog Updates | VJC Overseas',
   description:
     "Connect with VJC Overseas for expert guidance on visas, immigration, and study abroad services. We're here to help you start your journey smoothly.",
   keywords:

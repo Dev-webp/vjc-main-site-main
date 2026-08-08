@@ -1,7 +1,7 @@
 import UsaTexasClient from "./UsaTexasClient";
 
 export const metadata = {
-  title: "USA Visa Consultants Texas",
+  title: "Best Visa Consultants in Texas, USA | VJC Overseas",
 };
 
 export default function Page() {

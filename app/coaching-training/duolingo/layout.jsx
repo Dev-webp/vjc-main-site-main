@@ -1,7 +1,7 @@
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'Duolingo Test Preparation Coaching Improve English Skills and Achieve Top Scores',
+  title: 'Duolingo Test Preparation Coaching Services',
   keywords: 'Duolingo coaching, Duolingo test preparation, DET training, Duolingo practice tests, English skills improvement, Duolingo speaking practice, Duolingo writing practice, Duolingo reading practice, Duolingo listening practice, online Duolingo coaching, Duolingo exam strategies, Study abroad English test, visa English test, Duolingo high score tips, Duolingo mock exams, Professional Duolingo training, Duolingo exam readiness, Duolingo test success, Best Visa Immigration Consultants, VJC Overseas',
 };
 
