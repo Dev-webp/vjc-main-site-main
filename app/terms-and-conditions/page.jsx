@@ -2,7 +2,7 @@ import Link from 'next/link';
 export const metadata = {
   title: "VJC Overseas Terms & Conditions",
   description:
-    "Read the Terms & Conditions of VJC Overseas for visa consultancy, immigration services, and website usage.",
+    "Read VJC Overseas Terms & Conditions to understand our policies, service guidelines, responsibilities, and terms related to visa, immigration, study abroad, and travel services.",
   keywords:
     "Terms and Conditions, VJC Overseas, Visa Consultancy, Immigration Services",
 };

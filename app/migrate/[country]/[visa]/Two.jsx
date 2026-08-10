@@ -94,7 +94,7 @@ const countryVisaData = {
     { name: "USA Student Visa", path: "/migrate/united-states/student-visa" },
     { name: "USA Tourist Visa", path: "/migrate/united-states/tourist-visa" },
     { name: "USA Business Visa", path: "/migrate/united-states/business-visa" },
-    { name: "USA H1B Visa", path: "/migrate/united-states/H1B-visa" },
+    { name: "USA H1B Visa", path: "/migrate/united-states/h1b-visa" },
     { name: "USA Investor Visa", path: "/migrate/united-states/investor-visa" }
   ],
   australia: [
@@ -169,7 +169,7 @@ const visaComponents = {
   'united-states-student-visa':USAstud,
   'united-states-tourist-visa':USAtourist,
   'united-states-business-visa':USAbusiness,
- 'united-states-H1B-visa':USAh1b,
+ 'united-states-h1b-visa':USAh1b,
  'united-states-investor-visa':USAinvestor,
 
  'australia-student-visa':Ausstud,
@@ -243,7 +243,7 @@ const defaultBackgroundImages = {
   "/migrate/united-states/student-visa":"/vjc-usasvisa.jpg",
   "/migrate/united-states/tourist-visa":"/vjc-usatvisa.jpg",
   "/migrate/united-states/business-visa":"/vjc-usabvisa.jpeg",
-  "/migrate/united-states/H1B-visa":"/vjc-usahb1visa.jpg",
+  "/migrate/united-states/h1b-visa":"/vjc-usahb1visa.jpg",
   "/migrate/united-states/investor-visa":"/vjc-usainvestorvisa.jpg",
   "/migrate/australia/student-visa":"/vjc-aussvisa.avif",
   "/migrate/australia/business-visa":"/vjc-ausbvisa.jpg",

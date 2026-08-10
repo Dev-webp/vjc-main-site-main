@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Best Visa Consultants in Bangalore | VJC Overseas",
   description:
-    "Visit VJC Overseas Bangalore office for expert visa consultancy in study abroad, PR, job seeker visa, and immigration services.",
+    "VJC Overseas provides trusted visa consultancy services in Bangalore. Get expert guidance for PR visas, study visas, work permits, tourist visas, and immigration solutions.",
   keywords:
     "Bangalore Immigration Consultants, Bangalore Visa Consultants, Study Abroad Bangalore, PR Visa Bangalore, VJC Overseas",
 };

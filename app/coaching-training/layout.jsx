@@ -2,6 +2,7 @@ import Script from 'next/script';
 
 export const metadata = {
   title: 'IELTS, PTE, TOEFL & GRE Coaching | VJC Overseas',
+  description: "Get IELTS, GRE, GMAT, and PTE coaching services with VJC Overseas. Learn with expert trainers, practice materials, and exam strategies to achieve higher scores for your goals.",
   keywords: 'Coaching and training, IELTS preparation, GMAT coaching, GRE coaching, TOEFL training, PTE practice, Duolingo test preparation, Visa interview training, Study abroad coaching, Exam strategies, Language proficiency tests, Visa test coaching, Professional test preparation, Student coaching services, Overseas education training, Best Visa Immigration Consultants, VJC Overseas, Visa interview skills, Study test readiness, Exam success coaching',
 };
 

@@ -37,7 +37,7 @@ const countryVisaData = {
     { name: "USA Student Visa", path: "/migrate/united-states/student-visa" },
     { name: "USA Tourist Visa", path: "/migrate/united-states/tourist-visa" },
     { name: "USA Business Visa", path: "/migrate/united-states/business-visa" },
-    { name: "USA H1B Visa", path: "/migrate/united-states/H1B-visa" },
+    { name: "USA h1b Visa", path: "/migrate/united-states/h1b-visa" },
     { name: "USA Investor Visa", path: "/migrate/united-states/investor-visa" },
   ],
   australia: [

@@ -2,6 +2,7 @@ import Script from 'next/script';
 
 export const metadata = {
   title: 'TOEFL Coaching & Study Abroad Preparation',
+  description: "Get TOEFL coaching with VJC Overseas. Improve your English skills with expert training, practice tests, study materials, and exam strategies for successful study abroad admissions.",
   keywords: 'TOEFL coaching, TOEFL training, TOEFL exam preparation, TOEFL test strategies, TOEFL online classes, TOEFL practice tests, TOEFL reading practice, TOEFL writing practice, TOEFL speaking practice, TOEFL listening practice, TOEFL study tips, TOEFL score improvement, study abroad TOEFL, visa TOEFL preparation, professional TOEFL coaching, TOEFL skill development, TOEFL academic coaching, TOEFL mock exams, Best Visa Immigration Consultants, VJC Overseas',
 };
 

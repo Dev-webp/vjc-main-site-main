@@ -12,7 +12,7 @@ export const metaData = {
     
     "united-states": {
       title: "Migrate to USA Process & Visa Options | VJC",
-      description: "Migrate to USA America with H1B B1B2 Visa Student Visit Tourist Business Visa and Settle your life in USA with Best Immigration Visa Consultants in Hyderabad and Bangalore Get Top Most Universities List for Study in USA also Explore the USA with B1B2 Visa and invest your business with USA eb5 or Business Visa and for IT Professionals grab USA H1b Visa in Lucky Draw also make eligible for USA Green Card and Enjoy the Benefits",
+      description: "Explore USA immigration process with VJC Overseas. Learn about visa options, eligibility, required documents, work visas, study visas, Green Card pathways, and expert application guidance.",
       keywords: "Migrate to USA, USA H1b Visa, USA B1B2 Visa, USA Student Visa, Study in USA, USA Tourist Visa, USA Visit Visa, USA Business Visa, USA Investor Visa, USA Green Card, IT Professionals, Top Most Universities List, Best Immigration Visa Consultants in Hyderabad, Best Immigration Visa Consultants, Immigration Visa Consultants, America Visa, Green Card, USA  B1B2 Visa Process, USA H1b Visa Process, USA lucky Draw, USA Green Card Benefits"
     },
      australia:{
@@ -27,7 +27,7 @@ export const metaData = {
     },
      "new-zealand":{
      title:"New Zealand Immigration Process & Visa Options | VJC",
-     description:"Start Your Journey To New Zealand With Expert Guidance On New Zealand PR Visa, Skilled Migration, Work Visa, Student Visa, And Family Visa Options. Enjoy A Peaceful Lifestyle, Excellent Education, And Career Growth Opportunities. Get Personalized Assistance From Best Visa Immigration Consultants For A Smooth Migration To New Zealand.",
+     description:"Explore New Zealand immigration process with VJC Overseas. Learn about visa options, eligibility, required documents, work visas, study visas, PR pathways, and expert application guidance.",
      keywords:"Migrate to New Zealand, New Zealand immigration, New Zealand visa, skilled migrant category NZ, NZ student visa, student visa New Zealand, family visa NZ, New Zealand spouse visa, New Zealand business visa, New Zealand investor visa, Active Investor Plus visa, NZ entrepreneur visa, New Zealand skilled work visa, New Zealand PR visa, migrate to NZ skilled worker, migrate to NZ as student, New Zealand family reunion visa, New Zealand migration consultants, VJC Overseas, Best Visa Immigration Consultants",
     },
      "south-africa":{
@@ -47,7 +47,7 @@ export const metaData = {
     },
      uae:{
      title:"UAE Immigration Process & Visa Options | VJC",
-     description:"",
+     description:"Explore UAE immigration process with VJC Overseas. Get expert guidance on visa options, eligibility, documentation, application procedures, work visas, residency, and settlement opportunities in UAE.",
      keywords:"Migrate to the UAE, UAE immigration, UAE work visa, remote work visa UAE, Golden Visa UAE, UAE investor visa, study in UAE visa, UAE student visa, UAE retirement visa, UAE freelance visa, UAE family visa, UAE residence visa, move to UAE, UAE Golden Visa, remote work permit UAE, UAE employment visa, UAE visa consultants, VJC Overseas, Best Visa Immigration Consultants",
     },
   };

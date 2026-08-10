@@ -31,7 +31,7 @@ export const metaData = {
     },
      "usa-green-card": {
       title: "USA Green Card Process & Requirements | VJC",
-      
+      description: "Get expert guidance for USA Green Card and PR requirements with VJC Overseas. Learn about eligibility, visa options, documentation, application process, and permanent residency pathways in the USA.",
       keywords: "USA Green Card visa, US permanent residency, Green Card eligibility USA, US lawful permanent resident, family-sponsored Green Card, Employment-based Green Card USA, How to get US Green Card, USA Green Card cost and fees, USA Green Card documentation, USA Green Card processing time, US Green Card renewal, Green Card holders rights USA, US citizenship after Green Card, USA residency requirements, Green Card eligibility criteria, VJC Overseas, Best Visa Immigration Consultants"
     },
     // Add more countries here

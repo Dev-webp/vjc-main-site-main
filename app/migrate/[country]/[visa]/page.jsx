@@ -1,6 +1,6 @@
 import { visaMetaData } from "../../visaMetaData";
 import Two from "./Two";
-
+import { redirect } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const { country, visa } = await params;
@@ -13,7 +13,13 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const VisaPage = () => {
+const VisaPage = async ({ params }) => {
+  const { country, visa } = await params;
+
+  if (country === "united-states" && visa === "H1B-visa") {
+    redirect("/migrate/united-states/h1b-visa");
+  }
+
   return (
     <>
       <div style={{ marginTop: "5%", zIndex: 20, position: "relative" }}>
