@@ -94,7 +94,12 @@ const Ausstud = () => {
             <li><b>2. Confirmation of Enrolment (CoE):</b> You must provide a CoE from an Australian education provider for your chosen course.</li>
             <li><b>3. Financial Evidence:</b> Proof of sufficient funds to cover your tuition fees, living expenses, and return travel costs. This can include bank statements, scholarship letters, or financial guarantee documents.</li>
             <li><b>4. Genuine Temporary Entrant (GTE) Statement:</b> A personal statement demonstrating your intent to stay in Australia temporarily for the purpose of studying.</li>
-            <li><b>5. English Proficiency Test Scores:</b> Provide results from an accepted English language test (e.g., IELTS, TOEFL, PTE), unless you are exempt.</li>
+           <li>
+  <b>5. English Proficiency Test Scores:</b>
+  Provide results from an accepted English language test (e.g., IELTS, TOEFL, PTE), unless you are exempt. Every university sets a minimum band score. Take a few
+  <a href="https://www.gurully.com/ielts-practice-test" target="_blank" rel="noopener noreferrer">IELTS practice tests</a>
+  before your exam so you feel ready and confident.
+</li>
             <li><b>6. Academic Transcripts and Certificates:</b> Copies of your academic qualifications (high school, college, or university transcripts).</li>
             <li><b>7. Health Insurance:</b> You must have Overseas Student Health Cover (OSHC) for the duration of your stay in Australia.</li>
             <li><b>8. Police Clearance:</b> A police certificate if required, depending on your country of origin.</li>
