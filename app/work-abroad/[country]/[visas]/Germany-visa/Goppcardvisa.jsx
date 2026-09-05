@@ -1,8 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Content = () => {
+  // State to track which FAQ is open (null means none are open)
+  const [openIndex, setOpenIndex] = useState(null);
+
+  // Function to open/close FAQ boxes
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  // All FAQ questions and answers
+  const faqs = [
+    {
+      question: "What is the Germany Opportunity Card?",
+      answer: "The Germany Opportunity Card (Chancenkarte) allows eligible qualified professionals from countries outside the EU to enter Germany for the purpose of looking for suitable employment, even without having a job offer in advance. Opportunity Card Germany is generally issued for up to 12 months for job searching."
+    },
+    {
+      question: "Who is eligible for the Germany Opportunity Card?",
+      answer: <>Applicants can qualify for the Germany Opportunity Card through one of two routes. If their foreign academic or vocational qualification is fully recognised in Germany, they may apply as a skilled worker without using the points system. Otherwise, applicants generally need a recognised qualification, the required language level, and at least 6 points under the points system, along with proof of sufficient financial resources. These are some of the key Germany Opportunity Card eligibility requirements applicants need to meet. For more details, visit <a href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/opportunity-card" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Opportunity Card</a>.</>
+    },
+    {
+      question: "How many points are required for the Germany Opportunity Card?",
+      answer: <>Applicants applying through the points-based route generally need to achieve a minimum of 6 points. The Germany Opportunity Card points system considers factors such as professional experience, language skills, age, qualification recognition, shortage occupations, previous stays in Germany and certain partner-related criteria. Applicants can use the official eligibility criteria to understand how their profile may qualify for the required 6 points Germany Opportunity Card threshold. For more details, visit <a href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/opportunity-card" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Opportunity Card</a>.</>
+    },
+    {
+      question: "What are the language requirements for the Germany Opportunity Card?",
+      answer: "For the points-based route, applicants generally need German language skills of at least A1 or English language skills of at least B2. These are key Germany Opportunity Card language requirements for applicants applying through the points-based route. Higher German language levels can provide additional points. Applicants applying as recognised skilled workers generally do not need to provide language proof for the Opportunity Card, although German language skills can improve employment prospects."
+    },
+    {
+      question: "How much money is required for the Germany Opportunity Card?",
+      answer: <>Applicants must demonstrate that they can financially support themselves during their stay in Germany. For 2026, the standard Germany Opportunity Card financial requirement 2026 is €1,091 net per month, which can generally be demonstrated through an Opportunity Card blocked account or other accepted means to meet the overall Germany Opportunity Card funds criteria. For more details, visit <a href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/opportunity-card" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Opportunity Card</a>.</>
+    },
+    {
+      question: "Can I apply for the Germany Opportunity Card without a job offer?",
+      answer: <>Yes, in principle. Germany Opportunity Card is specifically designed for eligible applicants who want to enter Germany to search for suitable employment without already having a qualified job offer. However, applicants must meet the applicable eligibility and financial requirements. A primary benefit of the Germany Opportunity Card without job offer scheme is that candidates are not required to hold an employment contract in advance. For more details, visit <a href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/opportunity-card" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Opportunity Card</a>.</>
+    },
+    {
+      question: "What qualifications are required for the Germany Opportunity Card?",
+      answer: <>Applicants using the points-based route generally need a university degree or a state-recognised vocational qualification, with vocational training generally requiring at least two years of full-time training. These are key Germany Opportunity Card degree requirements for applicants applying through the points-based route. Applicants whose foreign qualification is fully recognised in Germany can use the skilled-worker route instead of the points system, depending on the Germany Opportunity Card qualification criteria. For more details, visit <a href="https://www.vjcoverseas.com/work-abroad/germany-work-permit/opportunity-card" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Opportunity Card</a>.</>
+    },
+    {
+      question: "What documents are required for the Germany Opportunity Card?",
+      answer: "Common Germany Opportunity Card documents can include a valid passport, proof of academic or vocational qualification, applicable recognition/comparability documents, language proof where required, proof of financial resources, health insurance and the relevant application forms. This Germany Opportunity Card checklist can vary depending on the applicant's individual circumstances. The responsible German mission may request additional documents depending on the individual case."
+    },
+    {
+      question: "Can I work in Germany with an Opportunity Card?",
+      answer: "Yes. The Job Search Opportunity Card allows holders to undertake secondary employment for up to 20 hours per week on average and certain trial employment arrangements, subject to the applicable rules. These Germany Opportunity Card work rights mean holders can take up Opportunity Card part time work while searching for suitable qualified employment. Once suitable qualified employment is secured, the applicant may be able to switch to an appropriate residence title."
+    },
+    {
+      question: "How long is the Germany Opportunity Card valid?",
+      answer: "The Job Search Opportunity Card is initially issued for up to 12 months. In certain circumstances, the Germany Opportunity Card validity may be extended through a follow-up Opportunity Card for up to two additional years if the relevant conditions are met and the person has found qualified employment but does not yet qualify for another residence title. This means the Germany Opportunity Card duration can vary depending on the applicant's circumstances and eligibility."
+    }
+  ];
   return (
     <div
       style={{
@@ -255,6 +306,90 @@ const Content = () => {
   Contact us today for a free consultation and let us guide you toward
   securing your Germany Opportunity Card.
 </h3>
+
+      {/* Frequently Asked Questions Section */}
+      <h3
+        style={{
+          color: "black",
+          fontWeight: "bold",
+          marginBottom: "30px",
+          fontSize: "22px",
+          textAlign: "center",
+        }}
+      >
+        Frequently Asked <span style={{ color: "rgb(238, 91, 43)" }}>Questions</span> – Germany Opportunity Card
+      </h3>
+
+      {/* FAQ Boxes - Each question has its own separate box */}
+      <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            style={{
+              border: "1px solid #d1d5db",
+              borderRadius: "8px",
+              marginBottom: "12px",
+              backgroundColor: "white",
+              boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
+            }}
+          >
+            {/* Question Button - Click to open/close */}
+            <button
+              onClick={() => toggleFAQ(index)}
+              style={{
+                width: "100%",
+                padding: "16px 20px",
+                textAlign: "left",
+                backgroundColor: openIndex === index ? "#f0f7ff" : "white",
+                border: "none",
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                fontSize: "16px",
+                fontWeight: "600",
+                color: "#1a1a1a",
+                borderRadius: "8px",
+              }}
+            >
+              <span>{faq.question}</span>
+              <span
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  color: "#6b7280",
+                  transform: openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                +
+              </span>
+            </button>
+
+            {/* Answer Box - Shows when question is clicked */}
+            <div
+              style={{
+                maxHeight: openIndex === index ? "500px" : "0",
+                overflow: "hidden",
+                transition: "max-height 0.3s ease",
+                backgroundColor: "white",
+              }}
+            >
+              <p
+                style={{
+                  padding: "0 20px 16px 20px",
+                  margin: 0,
+                  color: "#333333",
+                  lineHeight: "1.6",
+                  fontSize: "14px",
+                }}
+              >
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
 
 
 
