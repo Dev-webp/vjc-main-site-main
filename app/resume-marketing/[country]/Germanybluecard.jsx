@@ -1,8 +1,52 @@
-
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from 'react';
 
 export default function GermanyResumeMarketing() {
+
+  // State to track which FAQ is open (null means none are open)
+  const [openIndex, setOpenIndex] = useState(null);
+
+  // Function to open/close FAQ boxes
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  // All FAQ questions and answers
+  const faqs = [
+    {
+      question: "What is Germany Resume Marketing and how can it help me get a job in Germany?",
+      answer: <>Germany Resume Marketing helps job seekers create a professional CV and application profile tailored to the German job market. A well-structured Germany job resume can highlight your skills, qualifications, experience, and relevant keywords to make your profile more suitable for German employers. For more details, visit <a href="https://www.vjcoverseas.com/resume-marketing/germany" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Resume Marketing</a>.</>
+    },
+    {
+      question: "Do I need a German CV format to apply for jobs in Germany?",
+      answer: <>Yes, using an appropriate German CV format can help present your professional experience and qualifications in a way that aligns with German recruitment practices. A professional German Lebenslauf generally follows a clear, structured and reverse-chronological format. For more details, visit <a href="https://www.vjcoverseas.com/resume-marketing/germany" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Resume Marketing</a>.</>
+    },
+    {
+      question: "Can you create an ATS-friendly CV for Germany jobs?",
+      answer: <>Yes. An ATS-friendly CV for Germany jobs can be structured with clear headings, relevant job-specific keywords, readable formatting, and professionally presented skills and experience. This can help your CV work effectively with Applicant Tracking Systems and remain easy for recruiters to review. For more details, visit <a href="https://www.vjcoverseas.com/resume-marketing/germany" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Resume Marketing</a>.</>
+    },
+    {
+      question: "What should I include in a CV for Germany jobs?",
+      answer: <>A CV for Germany jobs should generally include your contact details, professional experience, education, relevant certifications, skills, and language proficiency. Your work experience should normally be presented with the most recent position first and clearly describe your responsibilities and achievements. For more details, visit <a href="https://www.vjcoverseas.com/resume-marketing/germany" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Resume Marketing</a>.</>
+    },
+    {
+      question: "Do you provide professional Germany CV writing services for Indian job seekers?",
+      answer: "Yes. Germany CV writing services can help Indian professionals create a Germany-focused resume that presents their international experience, qualifications, technical skills, and career achievements professionally. The CV can be tailored to the type of job and industry they are targeting in Germany."
+    },
+    {
+      question: "Can you optimize my CV for German employers and international companies?",
+      answer: "Yes. Our Germany resume writing services can help optimize your CV according to the target role, industry, experience level, and job description. The content can be structured to clearly communicate your professional strengths and relevant keywords to German employers."
+    },
+    {
+      question: "Is a cover letter required along with a Germany CV?",
+      answer: "A cover letter can be an important part of a German job application, particularly when the employer requests one. A tailored cover letter should explain your interest in the position, relevant strengths, and why you are a suitable candidate for the role."
+    },
+    {
+      question: "Can Germany Resume Marketing help me apply for jobs from India?",
+      answer: <>Yes. Germany Resume Marketing from India can help job seekers prepare a professional Germany-focused CV and supporting application documents before applying to suitable vacancies. A properly prepared Germany job application can help present your qualifications and experience more effectively to potential employers. For more details, visit <a href="https://www.vjcoverseas.com/resume-marketing/germany" target="_blank" style={{ color: "rgb(238, 91, 43)", fontWeight: "bold" }}>Germany Resume Marketing</a>.</>
+    }
+  ];
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
       <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
@@ -181,7 +225,7 @@ export default function GermanyResumeMarketing() {
 
       <h2 className="text-xl font-semibold black mt-4 mb-2">Get Started Today</h2>
       <p className="mb-4">
-        If you’re ready to make the leap,{" "}
+        If you're ready to make the leap,{" "}
         <Link
           href="https://www.vjcoverseas.com/resume-marketing/germany"
           className="text-orange-600 font-bold"
@@ -195,6 +239,82 @@ export default function GermanyResumeMarketing() {
         Contact Us today to schedule a consultation and start your journey to
         success in Germany!
       </p>
+
+      {/* Frequently Asked Questions Section */}
+      <h2 className="text-xl font-semibold text-blue-400 mt-4 mb-2">
+        Frequently Asked <span className="text-orange-500">Questions</span> – Germany Resume Marketing
+      </h2>
+
+      {/* FAQ Boxes - Each question has its own separate box */}
+      <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            style={{
+              border: "1px solid #d1d5db",
+              borderRadius: "8px",
+              marginBottom: "12px",
+              backgroundColor: "white",
+              boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
+            }}
+          >
+            {/* Question Button - Click to open/close */}
+            <button
+              onClick={() => toggleFAQ(index)}
+              style={{
+                width: "100%",
+                padding: "16px 20px",
+                textAlign: "left",
+                backgroundColor: openIndex === index ? "#f0f7ff" : "white",
+                border: "none",
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                fontSize: "16px",
+                fontWeight: "600",
+                color: "#1a1a1a",
+                borderRadius: "8px",
+              }}
+            >
+              <span>{faq.question}</span>
+              <span
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  color: "#6b7280",
+                  transform: openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                +
+              </span>
+            </button>
+
+            {/* Answer Box - Shows when question is clicked */}
+            <div
+              style={{
+                maxHeight: openIndex === index ? "500px" : "0",
+                overflow: "hidden",
+                transition: "max-height 0.3s ease",
+                backgroundColor: "white",
+              }}
+            >
+              <p
+                style={{
+                  padding: "0 20px 16px 20px",
+                  margin: 0,
+                  color: "#333333",
+                  lineHeight: "1.6",
+                  fontSize: "14px",
+                }}
+              >
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
