@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 const AustraliaVisa189 = () => {
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
   return (
     <div className="p-6 max-w-4xl mx-auto" style={{ fontFamily: "Times New Roman, serif" }}>
       <h1 className="text-2xl font-bold text-center mb-4">
@@ -79,6 +82,84 @@ const AustraliaVisa189 = () => {
       <p className="text-base">
         If you are ready to take the next step toward working and living permanently in Australia, contact <span className="text-orange-500 font-bold"><Link href="https://www.vjcoverseas.com">VJC Overseas</Link></span>. Let our experienced team guide you through the <span className="font-bold">Australia Work Permit Visa</span> process and help turn your professional dreams into reality.
       </p>
+
+      {/* Australia Work Permit FAQ Section */}
+      <div className="mt-10">
+        <h2 className="text-xl font-bold text-center mb-4">Australia Work Permit FAQ</h2>
+
+
+
+        <div className="max-w-3xl mx-auto">
+          {[
+            {
+              question: "What are the Australia Subclass 189 visa requirements?",
+              answer: `To apply for the Australia Subclass 189 visa, applicants generally need an eligible skilled occupation, a suitable skills assessment, competent English, and enough points to meet the points threshold. Applicants must first submit an Expression of Interest (EOI) through SkillSelect and receive an invitation before applying. The minimum points threshold is currently 65 points, but meeting 65 points does not guarantee an invitation.`,
+              link: "https://www.vjcoverseas.com/work-abroad/australia-work-permit/work-visa-subclass-189",
+              linkText: "Australia Subclass 189 visa requirements"
+            },
+            {
+              question: "How many points are required for an Australia 189 visa?",
+              answer: `The minimum threshold for the Australia 189 visa is currently 65 points. Points can be awarded for factors such as age, skilled employment experience, educational qualifications and English language proficiency. However, the actual points required to receive an invitation can be higher depending on the occupation and invitation round.`,
+              link: "https://www.vjcoverseas.com/work-abroad/australia-work-permit/work-visa-subclass-189",
+              linkText: "points required for an Australia 189 visa"
+            },
+            {
+              question: "How can I calculate my Subclass 189 visa points?",
+              answer: `You can use the Australian Government's points calculator to estimate your Subclass 189 visa points based on factors such as age, qualifications, work experience and English proficiency. Your SkillSelect EOI will also generate an indicative points score based on the information you provide. A higher points score may improve your competitiveness for an invitation, but there is no guaranteed invitation score.`,
+              link: "https://www.vjcoverseas.com/work-abroad/australia-work-permit/work-visa-subclass-189",
+              linkText: "Subclass 189 visa points calculator"
+            },
+            {
+              question: "What are the English language requirements for the Australia 189 visa?",
+              answer: `Applicants generally need to demonstrate at least competent English for the points-tested Subclass 189 pathway. Higher levels of English, such as proficient or superior English, may provide additional points. The accepted tests and score requirements have changed since 7 August 2025, so applicants should check the current Australian English-language requirements before taking a test.`,
+              link: "https://www.vjcoverseas.com/work-abroad/australia-work-permit/work-visa-subclass-189",
+              linkText: "English language requirements for the Australia 189 visa"
+            },
+            {
+              question: "Do I need a skills assessment for the Australia Subclass 189 visa?",
+              answer: `Yes. Applicants generally need a skills assessment for their nominated occupation before submitting their Expression of Interest for the Subclass 189 visa. The assessment is conducted by the relevant Australian assessing authority, and the EOI requires details such as the assessing authority and assessment reference information.`
+            },
+            {
+              question: "Can I get Australian PR through the Subclass 189 visa without employer sponsorship?",
+              answer: `Yes. The Skilled Independent visa Subclass 189 is a permanent visa for invited skilled workers and does not require employer sponsorship or state/territory nomination. Successful applicants can live, work and study anywhere in Australia and may be eligible to become Australian citizens later, subject to the applicable requirements.`
+            },
+            {
+              question: "How long does the Australia Subclass 189 visa take to process?",
+              answer: `Subclass 189 visa processing time can vary depending on the application, documentation, health and character checks, and Department of Home Affairs priorities. The Department recommends using its processing-time guide because published processing times are indicative rather than guarantees. Current skilled-visa processing priorities also apply to Subclass 189 applications.`
+            },
+            {
+              question: "How do I apply for the Australia Subclass 189 visa from India?",
+              answer: `To apply for an Australia Subclass 189 visa from India, eligible applicants generally need to obtain a suitable skills assessment, meet the English requirements, calculate their points, and submit an EOI through SkillSelect. If invited, they have 60 days to submit the visa application online through ImmiAccount with the required documents and application charge.`,
+              link: "https://www.vjcoverseas.com/work-abroad/australia-work-permit/work-visa-subclass-189",
+              linkText: "Australia Subclass 189 visa from India"
+            }
+          ].map((item, index) => (
+            <div key={index} className="border border-orange-500 p-5 mb-4 rounded-lg shadow-md bg-white">
+              <div
+                className="flex justify-between items-center cursor-pointer"
+                onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
+              >
+                <span className="text-lg font-bold">{item.question}</span>
+                <span className="text-orange-500">
+                  {openFaqIndex === index ? <AiOutlineMinus /> : <AiOutlinePlus />}
+                </span>
+              </div>
+              {openFaqIndex === index && (
+                <div className="mt-2 text-black text-base">
+                  <p>{item.answer}</p>
+                  {item.link && (
+                    <p className="mt-2">
+                      <Link href={item.link} className="text-orange-500 font-bold hover:underline">
+                        Learn more about {item.linkText} →
+                      </Link>
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
