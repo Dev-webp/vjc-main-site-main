@@ -1,8 +1,175 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Content = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What are the different ways to migrate to Germany from India?",
+      answer: (
+        <>
+          There are several ways to{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            migrate to Germany from India
+          </Link>
+          , including the Germany Opportunity Card, Germany Skilled Worker Visa,
+          Student Visa, Job Seeker Visa, and Family Reunion Visa. The right
+          Germany immigration pathway depends on your education, work
+          experience, language skills, and career goals.
+        </>
+      ),
+    },
+    {
+      question: "What is the Germany Opportunity Card?",
+      answer:
+        "The Germany Opportunity Card is a points-based immigration pathway that allows eligible skilled professionals to enter Germany and look for employment without having a prior job offer. It is a popular option for professionals planning to work in Germany.",
+    },
+    {
+      question: "Can I move to Germany without a job offer?",
+      answer: (
+        <>
+          Yes, eligible professionals may be able to{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            move to Germany
+          </Link>{" "}
+          without a job offer through the Germany Opportunity Card. This pathway
+          allows qualified applicants to enter Germany and search for suitable
+          employment based on their qualifications and professional experience.
+        </>
+      ),
+    },
+    {
+      question: "What are the eligibility requirements for the Germany Opportunity Card?",
+      answer: (
+        <>
+          The Germany Opportunity Card eligibility criteria can include your
+          educational qualification, professional experience, language skills,
+          age, and other applicable requirements. An individual assessment can
+          help determine whether you meet the requirements for this{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            Germany visa
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      question: "What is the Germany Skilled Worker Visa?",
+      answer: (
+        <>
+          The Germany Skilled Worker Visa is designed for qualified
+          professionals who have recognized qualifications and a suitable
+          employment opportunity in Germany. It is an important pathway for
+          skilled professionals who want to{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            work in Germany
+          </Link>{" "}
+          and build their careers.
+        </>
+      ),
+    },
+    {
+      question: "Can I apply for a Germany Job Seeker Visa from India?",
+      answer:
+        "Eligible professionals can explore the Germany Job Seeker Visa from India to enter Germany and search for employment. Applicants must meet the applicable qualification, professional experience, financial, and other requirements before applying for this Germany work visa.",
+    },
+    {
+      question: "Is German language knowledge required to migrate to Germany?",
+      answer: (
+        <>
+          German language requirements depend on the visa category, profession,
+          and individual circumstances. Some pathways may accept English
+          proficiency, while certain professions may require German. Checking
+          your Germany visa eligibility is important before starting your{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            Germany immigration process
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      question: "What documents are required to migrate to Germany?",
+      answer: (
+        <>
+          Documents depend on the selected visa category. Generally, applicants
+          may need a valid passport, educational certificates, work experience
+          documents, proof of funds, language certificates where applicable, and
+          other supporting documents required for the{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            Germany visa process
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      question: "How much does it cost to migrate to Germany from India?",
+      answer: (
+        <>
+          The cost to{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            migrate to Germany
+          </Link>{" "}
+          from India varies depending on the visa category, application fees,
+          documentation, financial requirements, travel, and other expenses. The
+          overall Germany immigration cost can therefore differ for each
+          applicant.
+        </>
+      ),
+    },
+    {
+      question: "How long does the Germany visa process take?",
+      answer: (
+        <>
+          The Germany visa processing time can vary depending on the visa
+          category, application volume, document completeness, and the relevant
+          authorities. Providing complete and accurate documents can help avoid
+          unnecessary delays during the{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            Germany visa process
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      question: "Can I bring my family to Germany after moving there?",
+      answer: (
+        <>
+          Depending on your residence status and circumstances, you may be
+          eligible to bring your family through family reunification. A{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            Germany Family Reunion Visa
+          </Link>{" "}
+          may allow eligible family members to join you, subject to the
+          applicable immigration requirements.
+        </>
+      ),
+    },
+    {
+      question: "Can I get Permanent Residency in Germany after working there?",
+      answer: (
+        <>
+          Yes, eligible individuals may qualify for{" "}
+          <Link href="https://vjcoverseas.com/migrate/germany" className="font-bold text-orange-500 hover:underline">
+            Germany Permanent Residency
+          </Link>{" "}
+          after meeting the required residence, employment, financial, language,
+          and other conditions. The pathway to Germany PR depends on your
+          residence status and individual circumstances.
+        </>
+      ),
+    },
+  ];
+
   return (
     <div className="relative px-6 py-12 bg-white font-[Times_New_Roman] overflow-hidden">
       {/* Title */}
@@ -161,6 +328,54 @@ const Content = () => {
           priority
           unoptimized
         />
+      </div>
+
+      {/* Germany Migration FAQs */}
+      <h3 className="text-xl sm:text-2xl font-bold text-orange-600 mb-3 text-center">
+        Germany Migration FAQs – Keyword-Optimized Answers
+      </h3>
+      <div className="max-w-4xl mx-auto mb-10">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border border-gray-300 rounded-lg mb-3 bg-white"
+            style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.08)" }}
+          >
+            <button
+              type="button"
+              onClick={() => toggleFAQ(index)}
+              className="w-full px-5 py-4 text-left flex justify-between items-center gap-4 text-base font-semibold text-gray-800 rounded-lg"
+              style={{
+                backgroundColor: openIndex === index ? "#fff7ed" : "white",
+                cursor: "pointer",
+                border: "none",
+              }}
+            >
+              <span>{faq.question}</span>
+              <span
+                className="text-orange-500 text-2xl font-bold shrink-0"
+                style={{
+                  transform: openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                +
+              </span>
+            </button>
+            <div
+              style={{
+                maxHeight: openIndex === index ? "600px" : "0",
+                overflow: "hidden",
+                transition: "max-height 0.3s ease",
+                backgroundColor: "white",
+              }}
+            >
+              <p className="px-5 pb-4 m-0 text-gray-700 leading-relaxed text-sm sm:text-base">
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Closing */}
