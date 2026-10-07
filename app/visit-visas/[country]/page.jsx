@@ -7,7 +7,7 @@ const metaData = {
     description: "Apply for USA Visit Visa with VJC Overseas. Learn about tourist and business visa eligibility, required documents, fees, application process, and travel requirements for USA.",
     keywords:" USA visit visa, Visit visa, B1/B2 visa application, Tourist visa USA, Business visit USA, Apply USA visitor visa, DS-160 visa form USA, Proof of funds USA visa, Passport validity USA travel visa, Interview US embassy, USA visa processing time, Stay duration USA visitor visa, Intent to return visa USA, Travel insurance USA visa, USA visa documents checklist, USA visitor visa requirements, VJC Overseas, Best Visa Immigration Consultants",
   },
-  "usab1/b2": {
+  "usa-b1-b2-visa": {
     title: "USA B1 B2 Visit Visa Process & Requirements",
     description: "Apply for USA B1/B2 Visitor Visa with VJC Overseas. Learn about eligibility, required documents, fees, application process, and travel requirements for tourist and business visits to USA.",
     keywords: " USA visit visa, B1/B2 visa application, Tourist visa USA, Business visit USA, Apply USA visitor visa, DS-160 visa form USA, Proof of funds USA visa, Passport validity USA travel visa, Interview US embassy, USA visa processing time, USA visitor visa Stay duration, Travel insurance USA visa, USA visa documents checklist, USA visitor visa requirements, VJC Overseas, Best Visa Immigration Consultants",

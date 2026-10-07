@@ -10,7 +10,7 @@ import { notFound } from "next/navigation";
 const metaData = {
    
     usa: { },
-    "usab1/b2":{ },
+    "usa-b1-b2-visa":{ },
     canada: { },
     australia: { },
     uk:{ },

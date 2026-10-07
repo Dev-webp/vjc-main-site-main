@@ -1,7 +1,104 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Canadapr = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "How can I apply for Canada PR from India?",
+      answer: (
+        <>
+          You can{" "}
+          <Link href="https://vjcoverseas.com/migrate/canada/pr-visa" style={{ color: "orange", fontWeight: "bold" }}>
+            apply for Canada PR from India
+          </Link>{" "}
+          through immigration pathways such as Express Entry or a Provincial
+          Nominee Program (PNP). Your eligibility depends on factors such as age,
+          education, work experience, language proficiency, and other program
+          requirements.
+        </>
+      ),
+    },
+    {
+      question: "What are the eligibility requirements for Canada PR?",
+      answer: (
+        <>
+          <Link href="https://vjcoverseas.com/migrate/canada/pr-visa" style={{ color: "orange", fontWeight: "bold" }}>
+            Canada PR eligibility
+          </Link>{" "}
+          depends on your age, education, skilled work experience, language
+          proficiency, and other factors. A profile assessment can help
+          determine which Canadian immigration pathway may be suitable for you.
+        </>
+      ),
+    },
+    {
+      question: "What is Canada Express Entry?",
+      answer: (
+        <>
+          <Link href="https://vjcoverseas.com/migrate/canada/pr-visa" style={{ color: "orange", fontWeight: "bold" }}>
+            Canada Express Entry
+          </Link>{" "}
+          is an online immigration system used to manage applications for
+          several economic immigration programs. Eligible candidates create a
+          profile and are ranked based on the applicable selection criteria
+          before receiving an invitation to apply.
+        </>
+      ),
+    },
+    {
+      question: "What is the Canada Provincial Nominee Program (PNP)?",
+      answer:
+        "The Canada Provincial Nominee Program allows participating provinces and territories to nominate eligible candidates based on their skills, education, work experience, and regional labour-market needs. A provincial nomination can support your pathway to Canadian permanent residence.",
+    },
+    {
+      question: "How long does the Canada PR process take?",
+      answer: (
+        <>
+          The{" "}
+          <Link href="https://vjcoverseas.com/migrate/canada/pr-visa" style={{ color: "orange", fontWeight: "bold" }}>
+            Canada PR processing time
+          </Link>{" "}
+          varies depending on the immigration program, application completeness,
+          and other factors. Your selected pathway, such as Express Entry or
+          PNP, can affect the overall processing timeline.
+        </>
+      ),
+    },
+    {
+      question: "How much does Canada PR cost from India?",
+      answer: (
+        <>
+          The{" "}
+          <Link href="https://vjcoverseas.com/migrate/canada/pr-visa" style={{ color: "orange", fontWeight: "bold" }}>
+            Canada PR cost
+          </Link>{" "}
+          depends on factors such as government application fees, biometrics,
+          medical examinations, police certificates, and other expenses. The
+          applicable fees can also vary depending on the number of family
+          members included in the application.
+        </>
+      ),
+    },
+    {
+      question: "What documents are required for Canada PR?",
+      answer:
+        "Documents for a Canada PR application may include your passport, educational certificates, work experience documents, language test results, proof of funds where applicable, police certificates, medical examination records, and other supporting documents required for your immigration program.",
+    },
+    {
+      question: "Can I move to Canada with my family after getting PR?",
+      answer:
+        "Yes, eligible applicants can include qualifying family members in their Canada PR application, subject to the requirements of the selected immigration program. Permanent residence can provide access to healthcare, education, and other benefits available to eligible residents in Canada.",
+    },
+  ];
+
   return (
     <section
       style={{
@@ -175,6 +272,84 @@ const Canadapr = () => {
             transparent and accurate estimates to ensure you are prepared for
             all costs involved.
           </p>
+        </section>
+
+        {/* Canada PR Visa FAQs */}
+        <section style={{ marginBottom: "30px" }}>
+          <h2
+            style={{ color: "black", fontWeight: "bold", marginBottom: "20px" }}
+          >
+            Canada PR Visa – Frequently Asked Questions
+          </h2>
+          <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                style={{
+                  border: "1px solid #d1d5db",
+                  borderRadius: "8px",
+                  marginBottom: "12px",
+                  backgroundColor: "white",
+                  boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
+                }}
+              >
+                <button
+                  type="button"
+                  onClick={() => toggleFAQ(index)}
+                  style={{
+                    width: "100%",
+                    padding: "16px 20px",
+                    textAlign: "left",
+                    backgroundColor: openIndex === index ? "#fff7ed" : "white",
+                    border: "none",
+                    cursor: "pointer",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    gap: "16px",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    color: "#1a1a1a",
+                    borderRadius: "8px",
+                  }}
+                >
+                  <span>{faq.question}</span>
+                  <span
+                    style={{
+                      fontSize: "24px",
+                      fontWeight: "bold",
+                      color: openIndex === index ? "#f97316" : "#6b7280",
+                      transform:
+                        openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                      transition: "transform 0.3s ease",
+                    }}
+                  >
+                    +
+                  </span>
+                </button>
+                <div
+                  style={{
+                    maxHeight: openIndex === index ? "600px" : "0",
+                    overflow: "hidden",
+                    transition: "max-height 0.3s ease",
+                    backgroundColor: "white",
+                  }}
+                >
+                  <p
+                    style={{
+                      padding: "0 20px 16px 20px",
+                      margin: 0,
+                      color: "#333333",
+                      lineHeight: "1.6",
+                      fontSize: "15px",
+                    }}
+                  >
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section>

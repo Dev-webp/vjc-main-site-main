@@ -1,7 +1,105 @@
 'use client';
+import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function USAB1B2Visa() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is a USA B1/B2 Visa?",
+      answer:
+        "The USA B1/B2 Visa is a nonimmigrant visitor visa for eligible travelers visiting the United States temporarily for business or tourism. B-1 generally covers business activities, while B-2 is used for tourism and visits.",
+    },
+    {
+      question: "How can I apply for a USA B1/B2 Visa from India?",
+      answer: (
+        <>
+          To{" "}
+          <Link href="/visit-visas/usa-b1-b2-visa" className="font-bold text-orange-500 hover:underline">
+            apply for a USA B1/B2 Visa from India
+          </Link>
+          , applicants generally need to complete the DS-160, pay the applicable
+          visa fee, schedule the required appointment, and attend a visa
+          interview when required.
+        </>
+      ),
+    },
+    {
+      question: "What are the eligibility requirements for a USA Tourist Visa?",
+      answer: (
+        <>
+          <Link href="/visit-visas/usa-b1-b2-visa" className="font-bold text-orange-500 hover:underline">
+            USA Tourist Visa eligibility
+          </Link>{" "}
+          depends on your individual circumstances and the purpose of your
+          temporary visit. Applicants should be prepared to demonstrate their
+          intended travel purpose and meet the applicable requirements for a B-2
+          visitor visa.
+        </>
+      ),
+    },
+    {
+      question: "What documents are required for a USA B1/B2 Visa?",
+      answer: (
+        <>
+          For a{" "}
+          <Link href="/visit-visas/usa-b1-b2-visa" className="font-bold text-orange-500 hover:underline">
+            USA B1/B2 Visa application
+          </Link>
+          , applicants generally need a valid passport, DS-160 confirmation
+          page, visa fee payment receipt where applicable, and other supporting
+          documents relevant to their circumstances and travel purpose.
+        </>
+      ),
+    },
+    {
+      question: "Is an interview required for a USA B1/B2 Visa?",
+      answer:
+        "In general, USA B1/B2 Visa interview requirements apply to nonimmigrant visa applicants, with limited exceptions. Even where an interview waiver may be available, a consular officer can require an in-person interview on a case-by-case basis.",
+    },
+    {
+      question: "How much does a USA B1/B2 Visa cost?",
+      answer: (
+        <>
+          The{" "}
+          <Link href="/visit-visas/usa-b1-b2-visa" className="font-bold text-orange-500 hover:underline">
+            USA B1/B2 Visa fee
+          </Link>{" "}
+          depends on the applicable U.S. visa fee rules and the applicant's
+          circumstances. The U.S. Department of State currently lists the
+          visitor visa application fee at $185, with additional issuance fees
+          potentially applicable depending on nationality.
+        </>
+      ),
+    },
+    {
+      question: "How long does the USA B1/B2 Visa process take?",
+      answer: (
+        <>
+          The{" "}
+          <Link href="/visit-visas/usa-b1-b2-visa" className="font-bold text-orange-500 hover:underline">
+            USA B1/B2 Visa processing time
+          </Link>{" "}
+          can vary depending on the interview location, appointment
+          availability, season, visa category, and individual case. Applicants
+          are advised to apply early because interview wait times vary by
+          location.
+        </>
+      ),
+    },
+    {
+      question: "Can I travel to the USA for both business and tourism with a B1/B2 Visa?",
+      answer:
+        "Yes, a B1/B2 Visa for USA combines the B-1 business and B-2 visitor classifications. It may cover eligible temporary business activities and tourism/visit purposes, subject to the specific rules and conditions of the visa.",
+    },
+  ];
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 font-[Times_New_Roman]">
       <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
@@ -120,6 +218,57 @@ export default function USAB1B2Visa() {
           <li><strong>Q: Can I study on a B2 Visa?</strong> <br />Short-term recreational courses may be allowed, but full-time academic study is not.</li>
           <li><strong>Q: Can I convert my B1/B2 visa to another visa in the USA?</strong> <br />Change of status is possible but subject to strict USCIS guidelines.</li>
         </ul>
+      </section>
+
+      {/* USA B1/B2 Visa FAQs */}
+      <section>
+        <h3 className="text-xl mt-4 mb-2 font-bold">
+          USA B1/B2 Visa – Frequently Asked Questions
+        </h3>
+        <div className="max-w-4xl mx-auto mb-6">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border border-gray-300 rounded-lg mb-3 bg-white"
+              style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.08)" }}
+            >
+              <button
+                type="button"
+                onClick={() => toggleFAQ(index)}
+                className="w-full px-5 py-4 text-left flex justify-between items-center gap-4 text-base font-semibold text-gray-800 rounded-lg"
+                style={{
+                  backgroundColor: openIndex === index ? "#fff7ed" : "white",
+                  cursor: "pointer",
+                  border: "none",
+                }}
+              >
+                <span>{faq.question}</span>
+                <span
+                  className="text-orange-500 text-2xl font-bold shrink-0"
+                  style={{
+                    transform:
+                      openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                    transition: "transform 0.3s ease",
+                  }}
+                >
+                  +
+                </span>
+              </button>
+              <div
+                style={{
+                  maxHeight: openIndex === index ? "600px" : "0",
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease",
+                  backgroundColor: "white",
+                }}
+              >
+                <p className="px-5 pb-4 m-0 text-gray-700 leading-relaxed text-sm sm:text-base">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="text-center">
