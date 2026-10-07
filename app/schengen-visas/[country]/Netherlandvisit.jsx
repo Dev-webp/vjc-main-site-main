@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +10,102 @@ export const metadata = {
 };
 
 export default function MaltaTouristVisa() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "How can I apply for a Netherlands Schengen Visa from India?",
+      answer: (
+        <>
+          To{" "}
+          <Link href="/schengen-visas/netherlands" className="text-orange-500 font-bold">
+            apply for a Netherlands Schengen Visa from India
+          </Link>
+          , you generally need to complete the application, prepare the
+          required documents, book an appointment at a VFS Global application
+          centre, and submit your application in person.
+        </>
+      ),
+    },
+    {
+      question: "What are the eligibility requirements for a Netherlands Schengen Visa?",
+      answer: (
+        <>
+          <Link href="/schengen-visas/netherlands" className="text-orange-500 font-bold">
+            Netherlands Schengen Visa eligibility
+          </Link>{" "}
+          depends on your travel purpose, financial situation, accommodation,
+          travel plans, and ability to demonstrate your ties to your country of
+          residence. Applicants must provide the documents required for their
+          specific visa category.
+        </>
+      ),
+    },
+    {
+      question: "What documents are required for a Netherlands Tourist Visa?",
+      answer: (
+        <>
+          Documents for a{" "}
+          <Link href="/schengen-visas/netherlands" className="text-orange-500 font-bold">
+            Netherlands Tourist Visa
+          </Link>{" "}
+          generally include a valid passport, completed application form,
+          travel reservations, accommodation proof, financial documents, travel
+          medical insurance, and other supporting documents based on your
+          circumstances.
+        </>
+      ),
+    },
+    {
+      question: "How much does a Netherlands Schengen Visa cost?",
+      answer: (
+        <>
+          The{" "}
+          <Link href="/schengen-visas/netherlands" className="text-orange-500 font-bold">
+            Netherlands Schengen Visa fee
+          </Link>{" "}
+          depends on the applicable consular fee category. Applicants in India
+          also need to pay the applicable VFS Global service costs. The exact
+          fee should be checked before submitting the application.
+        </>
+      ),
+    },
+    {
+      question: "How long does the Netherlands Schengen Visa process take?",
+      answer: (
+        <>
+          The{" "}
+          <Link href="/schengen-visas/netherlands" className="text-orange-500 font-bold">
+            Netherlands Schengen Visa processing time
+          </Link>{" "}
+          can vary depending on the application, documents submitted, and
+          processing circumstances. It is advisable to apply well in advance;
+          applications can generally be submitted up to six months before
+          travel.
+        </>
+      ),
+    },
+    {
+      question: "Do I need travel insurance for a Netherlands Schengen Visa?",
+      answer:
+        "Yes, applicants generally need Schengen travel insurance covering the entire Schengen Area for the duration of their stay. The insurance must provide at least €30,000 in medical coverage, including eligible emergency medical expenses and repatriation.",
+    },
+    {
+      question: "Can I visit other Schengen countries with a Netherlands Schengen Visa?",
+      answer:
+        "A Netherlands Schengen Visa can allow travel within the Schengen Area, subject to the visa's validity and conditions. If you plan to visit multiple Schengen countries, you must apply to the appropriate country based on the applicable Schengen visa rules.",
+    },
+    {
+      question: "Where can I apply for a Netherlands Schengen Visa in India?",
+      answer:
+        "Applicants can submit a Netherlands Visa application in India through designated VFS Global application centres, including locations such as Hyderabad, Bangalore, Chennai, Mumbai, New Delhi and other listed cities.",
+    },
+  ];
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10" style={{ fontFamily: 'Times New Roman, serif' }}>
       
@@ -142,6 +239,55 @@ export default function MaltaTouristVisa() {
         </Link>{" "}
         process to ensure all documents are properly prepared.
       </p>
+
+      {/* Netherlands Schengen Visa FAQs */}
+      <h2 className="text-xl font-semibold mt-8 mb-2">
+        Netherlands Schengen Visa – Frequently Asked Questions
+      </h2>
+      <div className="max-w-4xl mx-auto mb-6">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border border-gray-300 rounded-lg mb-3 bg-white"
+            style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.08)" }}
+          >
+            <button
+              type="button"
+              onClick={() => toggleFAQ(index)}
+              className="w-full px-5 py-4 text-left flex justify-between items-center gap-4 text-base font-semibold text-gray-800 rounded-lg"
+              style={{
+                backgroundColor: openIndex === index ? "#fff7ed" : "white",
+                cursor: "pointer",
+                border: "none",
+              }}
+            >
+              <span>{faq.question}</span>
+              <span
+                className="text-orange-500 text-2xl font-bold shrink-0"
+                style={{
+                  transform:
+                    openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                +
+              </span>
+            </button>
+            <div
+              style={{
+                maxHeight: openIndex === index ? "600px" : "0",
+                overflow: "hidden",
+                transition: "max-height 0.3s ease",
+                backgroundColor: "white",
+              }}
+            >
+              <p className="px-5 pb-4 m-0 text-gray-700 leading-relaxed text-sm sm:text-base">
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       {/* Contact CTA */}
       <p className="text-lg font-semibold text-black mt-6">
