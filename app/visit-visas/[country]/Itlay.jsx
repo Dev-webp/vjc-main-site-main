@@ -1,6 +1,108 @@
+"use client";
+import { useState } from "react";
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ItalyVisitVisa() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "How can I apply for an Italy Visit Visa from India?",
+      answer: (
+        <>
+          To apply for an Italy Visit Visa from India, prepare your passport,
+          visa application form, travel itinerary, accommodation details,
+          financial proof, and travel insurance. Following the correct{" "}
+          <Link href="/visit-visas/italy" className="text-orange-500 font-bold">
+            Italy Tourist Visa application process
+          </Link>{" "}
+          can help you submit a complete application.
+        </>
+      ),
+    },
+    {
+      question: "What are the eligibility requirements for an Italy Tourist Visa?",
+      answer: (
+        <>
+          To meet the{" "}
+          <Link href="/visit-visas/italy" className="text-orange-500 font-bold">
+            Italy Tourist Visa eligibility requirements
+          </Link>
+          , applicants generally need a valid passport, a genuine travel
+          purpose, sufficient financial resources, accommodation details, and
+          evidence of plans to leave the Schengen Area before the authorized
+          stay expires.
+        </>
+      ),
+    },
+    {
+      question: "What documents are required for an Italy Tourist Visa from India?",
+      answer: (
+        <>
+          The{" "}
+          <Link href="/visit-visas/italy" className="text-orange-500 font-bold">
+            Italy Tourist Visa documents
+          </Link>{" "}
+          generally include a valid passport, completed application form,
+          photographs, flight itinerary, hotel booking or invitation, bank
+          statements, employment proof where applicable, a cover letter, and
+          travel medical insurance. Additional documents may be required
+          depending on your circumstances.
+        </>
+      ),
+    },
+    {
+      question: "How much does an Italy Visit Visa cost from India?",
+      answer: (
+        <>
+          The{" "}
+          <Link href="/visit-visas/italy" className="text-orange-500 font-bold">
+            Italy Visit Visa fee from India
+          </Link>{" "}
+          depends on the applicable consular visa fee, applicant category, and
+          service charges. Applicants should check the latest official fee
+          information and account for any additional Italy visa application
+          costs before applying.
+        </>
+      ),
+    },
+    {
+      question: "How long does Italy Schengen Visa processing take?",
+      answer: (
+        <>
+          The{" "}
+          <Link href="/visit-visas/italy" className="text-orange-500 font-bold">
+            Italy Schengen Visa processing time
+          </Link>{" "}
+          can vary depending on the application, season, and consular
+          assessment. Apply well before your intended departure and check the
+          latest processing guidance when planning your Italy Tourist Visa
+          application.
+        </>
+      ),
+    },
+    {
+      question: "Can I travel to other European countries with an Italy Schengen Visa?",
+      answer:
+        "An approved Italy Schengen Visa may allow you to visit other Schengen countries during its validity, subject to the visa's entry conditions and permitted duration of stay. If you plan to visit several countries, provide a clear itinerary with your Italy visa application.",
+    },
+    {
+      question: "Do I need travel insurance for an Italy Tourist Visa?",
+      answer:
+        "Yes, Schengen travel insurance for an Italy Tourist Visa is generally required for short-stay visa applications. The policy must meet the applicable Schengen requirements for medical emergencies and repatriation throughout the intended travel period.",
+    },
+    {
+      question: "Can VJC Overseas help me apply for an Italy Visit Visa?",
+      answer:
+        "VJC Overseas provides Italy Visit Visa assistance from India, including document guidance, application support, and travel-plan preparation. Contact our team for personalized Italy Tourist Visa consultancy based on your travel purpose and individual circumstances.",
+    },
+  ];
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 font-[Times_New_Roman]">
       <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
@@ -77,6 +179,55 @@ export default function ItalyVisitVisa() {
         <li>Language Tip: Basic Italian phrases go a long way—“Grazie” (Thank you), “Per favore” (Please)</li>
         <li>Currency: Euro (€) – Carry some cash for small towns and local shops</li>
       </ul>
+
+      {/* Italy Visit Visa FAQs */}
+      <h2 className="text-xl mt-6 mb-2 font-semibold">
+        Italy Visit Visa – Frequently Asked Questions
+      </h2>
+      <div className="max-w-4xl mx-auto mb-6">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border border-gray-300 rounded-lg mb-3 bg-white"
+            style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.08)" }}
+          >
+            <button
+              type="button"
+              onClick={() => toggleFAQ(index)}
+              className="w-full px-5 py-4 text-left flex justify-between items-center gap-4 text-base font-semibold text-gray-800 rounded-lg"
+              style={{
+                backgroundColor: openIndex === index ? "#fff7ed" : "white",
+                cursor: "pointer",
+                border: "none",
+              }}
+            >
+              <span>{faq.question}</span>
+              <span
+                className="text-orange-500 text-2xl font-bold shrink-0"
+                style={{
+                  transform:
+                    openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                +
+              </span>
+            </button>
+            <div
+              style={{
+                maxHeight: openIndex === index ? "600px" : "0",
+                overflow: "hidden",
+                transition: "max-height 0.3s ease",
+                backgroundColor: "white",
+              }}
+            >
+              <p className="px-5 pb-4 m-0 text-gray-700 leading-relaxed text-sm sm:text-base">
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2 className="text-xl mt-6 mb-2 font-semibold"> Ready to Explore Italy? Let’s Get Started!</h2>
       <p>

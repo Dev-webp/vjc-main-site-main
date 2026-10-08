@@ -1,8 +1,105 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function AustriaResumeMarketing() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is Austria Resume Marketing, and how can it help me find a job in Austria?",
+      answer:
+        "Austria Resume Marketing helps job seekers present their skills, qualifications, and work experience to potential employers. Professional Austria resume marketing services can help improve your CV, cover letter, and LinkedIn profile for your job search in Austria.",
+    },
+    {
+      question: "How can I find a job in Austria from India?",
+      answer: (
+        <>
+          To{" "}
+          <Link href="/resume-marketing/austria" className="text-orange-500 font-bold">
+            find a job in Austria from India
+          </Link>
+          , prepare a professional CV, identify suitable job openings, and
+          apply to employers matching your qualifications. Austria job search
+          assistance can help you improve your profile and target relevant
+          opportunities.
+        </>
+      ),
+    },
+    {
+      question: "What is the best resume format for jobs in Austria?",
+      answer: (
+        <>
+          The best{" "}
+          <Link href="/resume-marketing/austria" className="text-orange-500 font-bold">
+            Austria resume format
+          </Link>{" "}
+          is clear, structured, and tailored to the job description. An Austria
+          professional CV should highlight your education, work experience,
+          relevant skills, achievements, and language abilities.
+        </>
+      ),
+    },
+    {
+      question: "Are ATS-friendly resumes important for Austrian jobs?",
+      answer: (
+        <>
+          Yes, an{" "}
+          <Link href="/resume-marketing/austria" className="text-orange-500 font-bold">
+            ATS-friendly resume for Austria
+          </Link>{" "}
+          uses clear formatting and relevant keywords from the job description.
+          Austria CV writing services can help organize your qualifications and
+          experience so employers can easily review your profile.
+        </>
+      ),
+    },
+    {
+      question: "Can freshers apply for jobs in Austria from India?",
+      answer: (
+        <>
+          Yes, freshers can explore entry-level jobs in Austria based on their
+          qualifications, skills, and the employer’s requirements. A
+          well-prepared{" "}
+          <Link href="/resume-marketing/austria" className="text-orange-500 font-bold">
+            Austria job application CV
+          </Link>{" "}
+          can help showcase academic projects, internships, certifications, and
+          transferable skills.
+        </>
+      ),
+    },
+    {
+      question: "Do I need a cover letter when applying for jobs in Austria?",
+      answer: (
+        <>
+          A tailored cover letter can strengthen your{" "}
+          <Link href="/resume-marketing/austria" className="text-orange-500 font-bold">
+            job application in Austria
+          </Link>{" "}
+          by explaining your qualifications and interest in the role.
+          Professional Austria resume and cover letter services can help align
+          your application with the specific vacancy.
+        </>
+      ),
+    },
+    {
+      question: "Can LinkedIn optimization help me get job opportunities in Austria?",
+      answer:
+        "An optimized LinkedIn profile can improve your professional presentation and help recruiters understand your experience. LinkedIn profile optimization for Austria jobs can support your Austria job search when combined with targeted applications and networking.",
+    },
+    {
+      question: "How can VJC Overseas help with Austria Resume Marketing?",
+      answer:
+        "VJC Overseas offers Austria Resume Marketing Services, including customized CV preparation, cover letter support, LinkedIn profile optimization, and job-search guidance. Contact VJC Overseas for a professional CV marketing assessment for Austria and personalized guidance based on your career profile.",
+    },
+  ];
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
       <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
@@ -131,6 +228,55 @@ export default function AustriaResumeMarketing() {
       <p className="mb-4">
         Our services also extend to career coaching, interview preparation, and relocation assistance, making your journey to Austria seamless and successful. By leveraging our <span className="text-orange-500 font-bold"><Link href="https://www.vjcoverseas.com/resume-marketing"> Proffesional CV marketing </Link></span>, you gain maximum exposure to Austrian employers.
       </p>
+
+      {/* Austria Resume Marketing FAQs */}
+      <h2 className="text-xl mt-4 mb-2 text-black font-bold">
+        Austria Resume Marketing – Frequently Asked Questions
+      </h2>
+      <div className="max-w-4xl mx-auto mb-6">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border border-gray-300 rounded-lg mb-3 bg-white"
+            style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.08)" }}
+          >
+            <button
+              type="button"
+              onClick={() => toggleFAQ(index)}
+              className="w-full px-5 py-4 text-left flex justify-between items-center gap-4 text-base font-semibold text-gray-800 rounded-lg"
+              style={{
+                backgroundColor: openIndex === index ? "#fff7ed" : "white",
+                cursor: "pointer",
+                border: "none",
+              }}
+            >
+              <span>{faq.question}</span>
+              <span
+                className="text-orange-500 text-2xl font-bold shrink-0"
+                style={{
+                  transform:
+                    openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                +
+              </span>
+            </button>
+            <div
+              style={{
+                maxHeight: openIndex === index ? "600px" : "0",
+                overflow: "hidden",
+                transition: "max-height 0.3s ease",
+                backgroundColor: "white",
+              }}
+            >
+              <p className="px-5 pb-4 m-0 text-gray-700 leading-relaxed text-sm sm:text-base">
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2 className="text-xl mt-4 mb-2 text-black font-bold">Take the First Step Toward Your Dream Job in Austria!</h2>
       <p className="mb-4">
