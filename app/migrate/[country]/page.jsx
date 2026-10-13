@@ -8,7 +8,7 @@ export async function generateMetadata({ params }) {
   const data = metaData[country.toLowerCase()];
 
   return {
-    title: data?.title || "Migrate Abroad – Explore Global Opportunities | VJC Overseas",
+    title: data?.title || "USA Green Card Eligibility & Process | VJC",
     description: data?.description || "Expert migration services to work, study, or settle abroad.",
     keywords: data?.keywords || "study abroad, work visa, PR, VJC Overseas, global education",
   };

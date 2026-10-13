@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   const data = metaData[country.toLowerCase()];
 
   return {
-    title: data?.title || "Migrate Abroad – Explore Global Opportunities | VJC Overseas",
+    title: data?.title || "UK Permanent Residency Routes & Requirements | VJC",
     description:
       data?.description || "Expert migration services to work, study, or settle abroad.",
     keywords:

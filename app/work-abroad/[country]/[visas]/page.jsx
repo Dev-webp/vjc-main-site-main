@@ -31,7 +31,7 @@ case "dubai-work-permit-dubai-standard-work-visa":
   };
   case "united-kingdom-work-permit-uk-skilled-worker-visa":
   return {
-    title: "Work Permit Visa for IT Professionals | VJC Overseas",
+    title: "UK Skilled Worker Visa Eligibility & Process | VJC",
   };
   case "australia-work-permit-employer-186-visa":
   return {
@@ -45,7 +45,7 @@ case "germany-work-permit-blue-visa":
   };
   case "australia-work-permit-482-visa":
   return {
-    title: "Work Permit Visa for IT Professionals | VJC Overseas",
+    title: "Australia Subclass 482 Visa Requirements | VJC",
     description: "Apply for Australia 482 Work Visa with VJC Overseas. Learn eligibility, visa requirements, documents, application process and employer sponsorship details.",
   };
 case "denmark-work-permit":
@@ -105,7 +105,7 @@ case "australia-work-permit-working-holiday-417-visa":
   };
   case "germany-work-permit-work-permit-visa":
   return {
-    title: "Germany Work Permit Visa Process & Requirements",
+    title: "Germany Work Permit Visa Application Process | VJC",
     description: "Understand Germany Work Visa eligibility, required documents, application steps, and opportunities for skilled professionals. Get trusted visa support from VJC Overseas for your Germany employment journey.",
   };
   case "denmark-work-permit-denmark-positive-list-visa":

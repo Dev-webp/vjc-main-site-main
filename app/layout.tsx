@@ -10,7 +10,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Top Visa Consultants in Hyderabad & Bangalore | VJC Overseas',
+    default: 'IELTS Coaching & Exam Preparation | VJC Overseas',
     template: '%s',
   },
   description: 'Best Visa Immigration Consultants in Hyderabad and Bangalore Process for PR Visa, Study Visa, Job Seeker Visa, Visit Visa, Investor Visa, Tourist Visa, Dependent Visa, Work Permit Visa and much more...',

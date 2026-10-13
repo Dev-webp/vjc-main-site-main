@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
   };
   case "germany-work-permit":
   return {
-    title: "Germany Work Permit Visa Process & Requirements",
+    title: "Germany Work Permit Visa Requirements | VJC",
     description: "Learn about Germany Work Permit Visa eligibility, requirements, documents, and application process for skilled professionals. Get expert guidance from VJC Overseas for your Germany career opportunities.",
   };
 case "united-kingdom-work-permit":

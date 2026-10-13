@@ -1,6 +1,6 @@
 export const metaData = {
    "canada-pr": {
-      title: "Canada PR Visa Process & Requirements | VJC",
+      title: "Canada Permanent Residency Visa Guide | VJC",
       
       keywords: "Canada Permanent Residency Visa, Express Entry Canada, Provincial Nominee Program Canada, StartUp Visa Canada, Atlantic Immigration Pilot, Family Sponsorship Canada, Fast Permanent Residency Canada, Canada PR Requirements, Canada PR Processing Time, CRS Score Canada, Canada Permanent Residency, Medical Exam Canada PR, IELTS Canada PR, ECA Canada PR, PR Pathways Canada, Healthcare Professionals Canada PR, Skilled Worker PR Canada, Immigration News Canada PR, VJC Overseas, Best Visa Immigration Consultants"
     },
@@ -20,7 +20,7 @@ export const metaData = {
       keywords: "UK PR visa, How to Apply for UK permanent residence, UK Indefinite leave to remain ILR, Skilled worker visa to PR in UK, Family visa route to UK PR, UK PR Eligibility and Requirements, Life in the UK, English language test for UK PR, Continuous Residence for UK Permanent Residency, cost of UK PR Visa and fees, UK PR process for international students, Documents needed for UK, UK immigration consultants for PR, UK PR application timeline, sponsorship options for UK PR, steps to get UK ILR, Permanent Residency in UK for Indians, VJC Overseas, Best Visa Immigration Consultants"
     },
      "new-zealand-pr": {
-      title: "New Zealand PR Visa Process & Requirements | VJC",
+      title: "New Zealand PR Visa Eligibility & Process | VJC",
       
       keywords: "New Zealand PR visa, New Zealand permanent residence, Skilled Migrant Resident Visa NZ, Work to Residence visa New Zealand, Green List occupations NZ, New Zealand PR requirements, New Zealand PR eligibility, New Zealand PR process, New Zealand PR Points system, Accredited employer work visa to PR NZ, Job offer for New Zealand PR, New Zealand PR for skilled workers, Documents required for New Zealand PR, Cost of New Zealand PR visa, Settle permanently in New Zealand, Immigration Consultants for New Zealand PR, VJC Overseas, Best Visa Immigration Consultants"
     },

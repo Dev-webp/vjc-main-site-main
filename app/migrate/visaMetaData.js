@@ -155,7 +155,7 @@ export const visaMetaData = {
   },
   "new-zealand":{
    "permanent-resident-visa":{
-    title:"New Zealand PR Visa Process & Requirements | VJC",
+    title:"New Zealand Permanent Residency Guide | VJC",
     description:"Explore New Zealand PR Visa with VJC. Learn 2026 eligibility criteria, visa requirements, documents, application process, and pathway to permanent residency in New Zealand.",
     keywords:"New Zealand Permanent Resident Visa, New Zealand PR Visa, NZ permanent residency, Permanent resident NZ, NZ PR requirements, NZ permanent resident benefits, live work in NZ permanently, settle in New Zealand, NZ residency visa process, apply for NZ PR visa, NZ PR visa eligibility, New Zealand resident visa, migrate to New Zealand PR, NZ permanent residence application, NZ PR consultants, VJC Overseas, Best Visa Immigration Consultants, NZ PR travel rights, New Zealand immigration PR visa",
    },
