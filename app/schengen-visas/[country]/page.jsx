@@ -3,7 +3,7 @@ import CountryClient from "./CountryClient";
 // Metadata map
 const metaData = {
   austria: {
-    title: "Austria Schengen Visa Tourist Business Visit Multiple Entry Requirements Documents",
+    title: "Austria Schengen Visa | VJC Overseas",
     description: "Apply for Austria Schengen Visa with VJC Overseas. Learn about eligibility, required documents, fees, application process, and travel requirements for a smooth Austria visa journey.",
     keywords:" Austria Schengen visa, Schengen visa, Schengen visa consultants, Europe visa experts, Austria visa for Indians, Austria visa application, Austria tourist visa, Austria business visa, Austria family visit visa, Austria visa requirements, Austria visa documents, Austria visa, Austria visa processing time, Austria visa appointment, Austria visa application form, Austria visa VFS, Austria tourist visa, Austria business visa, Austria short-stay visa, Austria embassy visa, Austria travel visa, Best Visa Immigration Consultants, VJC Overseas",
   },

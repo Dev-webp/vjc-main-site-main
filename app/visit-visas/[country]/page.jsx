@@ -63,7 +63,7 @@ export async function generateMetadata({ params }) {
   const data = metaData[country];
 
   return {
-    title: data?.title || "Visit Visa – Travel Abroad with Ease | VJC Immigration Services",
+    title: data?.title || "USA B1/B2 Visa Consultants | VJC Overseas",
 description: data?.description || "Apply for your visit visa with VJC Immigration Services and explore the world without hassle. Get expert guidance for visa documentation, application processing, and travel planning.",
 keywords: data?.keywords || "visit visa, tourist visa, travel visa, short-term visa, family visit visa, business visit visa, visa application, travel abroad, visa consultancy, VJC Immigration Services, international travel"
 
