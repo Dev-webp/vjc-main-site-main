@@ -19,7 +19,7 @@ const metaData = {
   },
   usa: {
     title:
-      " USA Resume Marketing Services",
+      "USA Resume Marketing | VJC Overseas",
       description: "Get USA Resume Marketing Services with VJC Overseas. Improve your job search with professional CV creation, resume promotion, and expert guidance for career opportunities in the USA.",
     keywords:
       "USA resume marketing, Resume marketing Services, US job market, ATS compliant resumes, resume optimization, USA IT resume services, USA LinkedIn optimization, USA professional resume writing, USA job application support, USA career growth, US employers, USA work permit, H1B visa USA, USA PR visa, USA resume distribution, USA job search, USA executive resume, USA skill based resumes, USA resume branding, Best Visa Immigration Consultants, VJC Overseas",
