@@ -95,7 +95,7 @@ export const visaMetaData = {
   },
   australia: {
    "student-visa":{
-      title :"Australia Student Visa Process & Requirements | VJC Overseas",
+      title :"Australia Student Visa | VJC Overseas",
       description:"Apply for Australia Student Visa with VJC. Learn 2026 visa requirements, eligibility, documents, application process, fees, and expert guidance to study at top Australian universities.",
       keywords:"Australia student visa, student visa Australia, Subclass 500 visa, study in Australia visa, Australia student visa requirements, Australia student visa process, apply student visa Australia, Australia student visa consultants, Australia student visa fees, Australia student visa eligibility, Australia study permit, international students Australia, Subclass 500 student visa application, Best Visa Immigration Consultants, VJC Overseas",
    },
