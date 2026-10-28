@@ -1,8 +1,124 @@
 // pages/germany-jobseeker-visa.jsx
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function GermanyJobseekerVisa() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What is the Germany Job Seeker Visa?",
+      answer:
+        "Germany’s Opportunity Card (Chancenkarte) allows eligible skilled professionals from non-EU countries to enter Germany to search for qualified employment, subject to the applicable requirements. VJC Overseas helps applicants understand the available immigration pathways and prepare for the application process.",
+    },
+    {
+      question: "Where can I find Germany Job Seeker Visa Consultants in Hyderabad?",
+      answer: (
+        <>
+          If you are planning to explore employment opportunities in Germany,{" "}
+          <Link
+            href="/work-abroad/germany-work-permit/job-seeker-visa"
+            className="text-orange-500 font-bold"
+          >
+            Germany Job Seeker Visa Consultants in Hyderabad
+          </Link>{" "}
+          can help you understand the Opportunity Card requirements, review your
+          profile, and organise supporting documents. VJC Overseas provides
+          immigration guidance based on individual eligibility.
+        </>
+      ),
+    },
+    {
+      question: "Are there Germany Job Seeker Visa Consultants in Bangalore?",
+      answer:
+        "Applicants looking for Germany Job Seeker Visa Consultants in Bangalore can seek guidance on Germany’s Opportunity Card, qualification requirements, language criteria, and application documentation. VJC Overseas helps candidates understand the relevant process before applying.",
+    },
+    {
+      question: "What are the eligibility requirements for Germany’s Opportunity Card?",
+      answer: (
+        <>
+          Applicants may qualify through a recognised qualification or, under
+          the points-based route, by meeting the basic requirements and scoring
+          at least six points. Qualification recognition, language proficiency,
+          professional experience, age, and sufficient financial resources may
+          be relevant. VJC Overseas can help applicants understand these{" "}
+          <Link
+            href="/work-abroad/germany-work-permit/job-seeker-visa"
+            className="text-orange-500 font-bold"
+          >
+            eligibility requirements
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      question: "Can I apply for a Germany Job Seeker Visa without a job offer?",
+      answer: (
+        <>
+          Yes. Germany’s Opportunity Card is designed for eligible applicants
+          who want to{" "}
+          <Link
+            href="/work-abroad/germany-work-permit/job-seeker-visa"
+            className="text-orange-500 font-bold"
+          >
+            search for employment without already having a qualified job offer
+          </Link>
+          . VJC Overseas can help you understand the eligibility criteria and
+          documentation needed for the relevant route.
+        </>
+      ),
+    },
+    {
+      question: "What documents are required for Germany’s Opportunity Card?",
+      answer: (
+        <>
+          Depending on your application route, documents may include a valid
+          passport, educational or vocational qualification certificates, proof
+          of qualification recognition where applicable, language evidence,
+          financial proof, and supporting documents for the points system. VJC
+          Overseas can guide applicants on{" "}
+          <Link
+            href="/work-abroad/germany-work-permit/job-seeker-visa"
+            className="text-orange-500 font-bold"
+          >
+            preparing the required documents
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      question: "How long can I stay in Germany with the Opportunity Card?",
+      answer: (
+        <>
+          The Opportunity Card is{" "}
+          <Link
+            href="/work-abroad/germany-work-permit/job-seeker-visa"
+            className="text-orange-500 font-bold"
+          >
+            generally issued initially for up to one year for job searching
+          </Link>
+          . Eligible holders may work part-time for up to 20 hours per week and
+          undertake job trials of up to two weeks per employer, subject to the
+          applicable rules. VJC Overseas can explain the general process and
+          conditions.
+        </>
+      ),
+    },
+    {
+      question: "Does getting a Germany Job Seeker Visa guarantee employment?",
+      answer:
+        "No. The Opportunity Card allows eligible applicants to search for employment but does not guarantee a job offer or visa approval for subsequent employment. VJC Overseas can provide immigration guidance, while hiring decisions remain with employers and residence permit decisions with the relevant German authorities.",
+    },
+  ];
+
   return (
     <div
       style={{
@@ -165,7 +281,55 @@ export default function GermanyJobseekerVisa() {
         At <Link href="https://www.vjcoverseas.com/"><span className="text-orange-500 font-bold">VJC Overseas</span></Link>, we are committed to turning your dream of working in Germany into reality. Whether you’re applying for a jobseeker visa, a work permit, or the Opportunity Card, our team ensures that your application stands out.
       </p>
 
-      
+      {/* Germany Job Seeker Visa FAQs */}
+      <h2 className="text-1xl font-bold" style={{ marginTop: "10px", marginBottom: "15px" }}>
+        Germany Job Seeker Visa – Frequently Asked Questions
+      </h2>
+      <div className="max-w-4xl mx-auto mb-6">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border border-gray-300 rounded-lg mb-3 bg-white"
+            style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.08)" }}
+          >
+            <button
+              type="button"
+              onClick={() => toggleFAQ(index)}
+              className="w-full px-5 py-4 text-left flex justify-between items-center gap-4 text-base font-semibold text-gray-800 rounded-lg"
+              style={{
+                backgroundColor: openIndex === index ? "#fff7ed" : "white",
+                cursor: "pointer",
+                border: "none",
+              }}
+            >
+              <span>{faq.question}</span>
+              <span
+                className="text-orange-500 text-2xl font-bold shrink-0"
+                style={{
+                  transform:
+                    openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                +
+              </span>
+            </button>
+            <div
+              style={{
+                maxHeight: openIndex === index ? "600px" : "0",
+                overflow: "hidden",
+                transition: "max-height 0.3s ease",
+                backgroundColor: "white",
+              }}
+            >
+              <p className="px-5 pb-4 m-0 text-gray-700 leading-relaxed text-sm sm:text-base">
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 }

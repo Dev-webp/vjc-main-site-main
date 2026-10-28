@@ -1,8 +1,105 @@
-
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function NewZealandResumeServices() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "What are New Zealand Resume Marketing Services?",
+      answer: (
+        <>
+          <Link href="/resume-marketing/new-zealand" className="text-orange-500 font-bold">
+            New Zealand Resume Marketing Services
+          </Link>{" "}
+          help job seekers present their qualifications, skills, and
+          professional experience to potential employers in New Zealand. VJC
+          Overseas provides resume marketing support to help candidates prepare
+          their profiles for international job opportunities.
+        </>
+      ),
+    },
+    {
+      question: "Where can I find New Zealand Resume Marketing Consultants in Hyderabad?",
+      answer: (
+        <>
+          If you are planning to explore job opportunities in New Zealand,{" "}
+          <Link href="/resume-marketing/new-zealand" className="text-orange-500 font-bold">
+            New Zealand Resume Marketing Consultants in Hyderabad
+          </Link>{" "}
+          can help you improve your CV, highlight relevant experience, and
+          understand resume marketing strategies. VJC Overseas provides
+          guidance to candidates seeking international career opportunities.
+        </>
+      ),
+    },
+    {
+      question: "Are there New Zealand Resume Marketing Consultants in Bangalore?",
+      answer: (
+        <>
+          Yes, candidates looking for{" "}
+          <Link href="/resume-marketing/new-zealand" className="text-orange-500 font-bold">
+            New Zealand Resume Marketing Consultants in Bangalore
+          </Link>{" "}
+          can explore professional resume marketing services to improve their
+          CV presentation and prepare for the overseas job search. VJC Overseas
+          helps candidates understand how to present their skills and
+          experience effectively.
+        </>
+      ),
+    },
+    {
+      question: "How can VJC Overseas help with New Zealand resume marketing?",
+      answer:
+        "VJC Overseas provides resume marketing support, including CV improvement, professional profile presentation, and guidance on preparing application documents for potential opportunities in New Zealand. Services depend on the candidate's profile and selected package.",
+    },
+    {
+      question: "Who can benefit from New Zealand Resume Marketing Services?",
+      answer:
+        "Fresh graduates and experienced professionals who want to explore career opportunities in New Zealand may benefit from resume marketing support. VJC Overseas helps candidates present their qualifications, skills, and work experience in a professional format.",
+    },
+    {
+      question: "How do I prepare a CV for New Zealand employers?",
+      answer: (
+        <>
+          A{" "}
+          <Link href="/resume-marketing/new-zealand" className="text-orange-500 font-bold">
+            New Zealand CV
+          </Link>{" "}
+          should be clear, concise, and tailored to the role. Include relevant
+          qualifications, professional experience, key achievements, and
+          skills. VJC Overseas can guide candidates on presenting their
+          profiles according to common recruitment practices.
+        </>
+      ),
+    },
+    {
+      question: "Does New Zealand resume marketing guarantee a job?",
+      answer: (
+        <>
+          No.{" "}
+          <Link href="/resume-marketing/new-zealand" className="text-orange-500 font-bold">
+            Resume marketing
+          </Link>{" "}
+          does not guarantee interviews, job offers, or work visas. VJC
+          Overseas helps candidates present their professional profiles
+          effectively, while employers make their own recruitment decisions.
+        </>
+      ),
+    },
+    {
+      question: "Do I need a work visa to work in New Zealand?",
+      answer:
+        "Most overseas applicants need an appropriate visa or work authorisation to work legally in New Zealand. Requirements depend on the job, employer, and visa category. Candidates should check the latest guidance from Immigration New Zealand before applying.",
+    },
+  ];
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 -mt-10 font-[Times_New_Roman]">
       <h1 className="flex justify-center text-xl sm:text-2xl md:text-2xl font-bold mb-8 text-center">
@@ -94,6 +191,55 @@ export default function NewZealandResumeServices() {
         <p>
           Even after your job search is over, our commitment to your success doesn’t stop. We provide continued support with career counseling, interview preparation, and negotiation strategies, ensuring that you start your new role with confidence.
         </p>
+      </div>
+
+      {/* New Zealand Resume Marketing FAQs */}
+      <h2 className="text-xl mt-4 mb-2 text-blue-400 font-semibold">
+        New Zealand Resume Marketing Services – Frequently Asked Questions
+      </h2>
+      <div className="max-w-4xl mx-auto mb-6">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border border-gray-300 rounded-lg mb-3 bg-white"
+            style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.08)" }}
+          >
+            <button
+              type="button"
+              onClick={() => toggleFAQ(index)}
+              className="w-full px-5 py-4 text-left flex justify-between items-center gap-4 text-base font-semibold text-gray-800 rounded-lg"
+              style={{
+                backgroundColor: openIndex === index ? "#fff7ed" : "white",
+                cursor: "pointer",
+                border: "none",
+              }}
+            >
+              <span>{faq.question}</span>
+              <span
+                className="text-orange-500 text-2xl font-bold shrink-0"
+                style={{
+                  transform:
+                    openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                +
+              </span>
+            </button>
+            <div
+              style={{
+                maxHeight: openIndex === index ? "600px" : "0",
+                overflow: "hidden",
+                transition: "max-height 0.3s ease",
+                backgroundColor: "white",
+              }}
+            >
+              <p className="px-5 pb-4 m-0 text-gray-700 leading-relaxed text-sm sm:text-base">
+                {faq.answer}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div>
