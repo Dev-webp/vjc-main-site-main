@@ -93,7 +93,7 @@ const blogs = [
     title: 'Germany Opportunity Card Guide for Bangalore IT Professionals',
     slug: 'germany-opportunity-card-bangalore-it-professionals',
     description: 'Eligibility, points system, documents and application process for Bangalore IT professionals.',
-    image: '/germany.jpg',
+     image: '/bangalore-it-professionals.jpg',
     category: 'Visa Guide',
     component: <Germany />
   },
