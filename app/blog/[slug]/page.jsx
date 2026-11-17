@@ -14,6 +14,7 @@ import RecentBlogs from './RecentBlogs';
 import Migrate from './Migrate';
 import Services from './Servies';
 import Coaching from './Coaching';
+import Germany from './Germany';
 const blogs = [
   {
     id: 1,
@@ -85,8 +86,17 @@ const blogs = [
   description: 'Ace your embassy interviews and entrance exams with expert-led coaching and personalized training.',
   image: '/Start-an-Overseas-Education-Consultancy-vjc.jpg', // Replace with a relevant coaching image
   category: 'Coaching & Support',
-  component: <Coaching />
+    component: <Coaching />
 },
+  {
+    id: 9,
+    title: 'Germany Opportunity Card Guide for Bangalore IT Professionals',
+    slug: 'germany-opportunity-card-bangalore-it-professionals',
+    description: 'Eligibility, points system, documents and application process for Bangalore IT professionals.',
+    image: '/germany.jpg',
+    category: 'Visa Guide',
+    component: <Germany />
+  },
 ];
 
 const BlogDetails = () => {

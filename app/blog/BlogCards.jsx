@@ -66,7 +66,7 @@ const blogs = [
     image: '/migratepageimg.avif',
     category: 'Migrate',
   },
-  {
+    {
   id: 8,
   title: 'Coaching & Test Prep Services We Offer',
   slug: 'coaching-test-prep-services',
@@ -74,6 +74,14 @@ const blogs = [
   image: '/coaching-for-study-abraod.jpg', // Replace with a relevant coaching image
   category: 'Coaching & Support',
 },
+  {
+    id: 9,
+    title: 'Germany Opportunity Card Guide for Bangalore IT Professionals',
+    slug: 'germany-opportunity-card-bangalore-it-professionals',
+    description: 'Eligibility, points system, documents and application process for Bangalore IT professionals.',
+    image: '/bangalore-it-professionals.jpg',
+        category: 'Visa Guide',
+  },
 ];
 
 export default function BlogCards({ search = '', category = 'All' }) {
@@ -85,12 +93,12 @@ export default function BlogCards({ search = '', category = 'All' }) {
     return matchesCategory && matchesSearch;
   });
 
-  const germanyCard =
-    filteredBlogs.find(b =>
-      b.title.toLowerCase().includes('germany opportunity card')
-    ) || blogs[1];
-
-  const otherBlogs = filteredBlogs.filter(blog => blog.id !== germanyCard.id);
+      const germanyCard =
+    filteredBlogs.find(b => b.id === 9) || blogs[8];
+  const otherBlogs = [
+    ...filteredBlogs.filter(blog => blog.id !== germanyCard.id && blog.id !== 2),
+    ...filteredBlogs.filter(blog => blog.id === 2),
+  ];
   const visibleBlogs = showAll ? otherBlogs : otherBlogs.slice(0, 5);
 
   return (
