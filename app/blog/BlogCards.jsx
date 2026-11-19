@@ -9,6 +9,14 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 const blogs = [
   {
+    id: 10,
+    title: 'Study in UK and Germany from Bangalore for 2027 Intakes: Courses, Universities, Fees and Visa Guide',  
+    slug: 'study-in-uk-germany-from-bangalore-2027-intakes',
+    description: 'A complete guide for Indian students planning to study in the UK and Germany from Bangalore for the 2027 intakes.',
+     image: '/study-uk-germany-bangalore-2027.png',
+    category: 'Study Tips',
+  },
+  {
     id: 1,
     title: 'Invest in your dream Country',
     slug: 'investor-visas',
@@ -93,8 +101,8 @@ export default function BlogCards({ search = '', category = 'All' }) {
     return matchesCategory && matchesSearch;
   });
 
-      const germanyCard =
-    filteredBlogs.find(b => b.id === 9) || blogs[8];
+            const germanyCard =
+    filteredBlogs.find(b => b.id === 9) || blogs.find(b => b.id === 9);
   const otherBlogs = [
     ...filteredBlogs.filter(blog => blog.id !== germanyCard.id && blog.id !== 2),
     ...filteredBlogs.filter(blog => blog.id === 2),
