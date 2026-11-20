@@ -99,10 +99,10 @@ export default function ServicesCTA() {
         >
           Our dedicated{" "}
           <Link
-            href="https://www.vjcoverseas.com/services"
+            href="https://www.vjcoverseas.com/immigration-consultants-in-bangalore"
             className="text-blue-600 font-semibold hover:text-orange-500"
           >
-            Immigration Support Services
+            Immigration Consultants In Bangalore
           </Link>{" "}
           include eligibility assessments, documentation review, and visa filing
           assistance to ensure a smooth and stress-free application process.
@@ -187,10 +187,10 @@ export default function ServicesCTA() {
         >
           For students aspiring to build global careers, our{" "}
           <Link
-            href="https://www.vjcoverseas.com/study-abroad"
+            href="https://www.vjcoverseas.com/study-abroad-consultants-in-Bangalore"
             className="text-blue-600 font-semibold hover:text-orange-500"
           >
-            Study Abroad Consultants
+            Study Abroad Consultants In Bangalore
           </Link>{" "}
           guide you through university selection, admission processes, and visa
           filing for a smooth education abroad experience.

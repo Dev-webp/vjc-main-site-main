@@ -30,11 +30,11 @@ const Why = () => {
     <>
       Our commitment to excellence has been recognised through numerous awards.{" "}
       <Link 
-        href="https://www.vjcoverseas.com" 
+        href="https://www.vjcoverseas.com/immigration-consultants-in-bangalore" 
         target="_blank" 
         className="font-semibold text-blue-600 hover:text-orange-500"
       >
-        Best Visa Immigration Consultants
+        Vjc Overseas Bangalore Office
       </Link>
     </>,
     "These accolades reflect our unwavering dedication to providing the best service to our clients.",

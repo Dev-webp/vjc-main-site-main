@@ -64,12 +64,12 @@ description: (
     Our Student Visa services cover a range of destinations, including the United States, Canada, 
     Australia, the UK, and more. As trusted{" "}
     <a 
-      href="https://www.vjcoverseas.com/study-abroad" 
+      href="https://www.vjcoverseas.com/study-abroad-consultants-in-Bangalore" 
       className="text-blue-600 font-semibold" 
       target="_blank" 
       rel="noopener noreferrer"
     >
-      Study Abroad Consultants
+      Bangalore Study Abroad And Immigration Services
     </a>, 
     we ensure a smooth journey for students worldwide.
   </>

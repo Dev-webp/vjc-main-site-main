@@ -67,8 +67,8 @@ const Content = () => {
       </h2>
       <p className="mb-6 leading-relaxed">
         At <strong style={{ color: "#000000" }}>VJC Overseas</strong>, we understand that applying for an international visa can feel overwhelming. Our mission is to simplify the process for skilled professionals and ensure that each stage of the application is completed with precision, clarity, and speed. As one of the leading consultancies in India with offices in Hyderabad and Bangalore, we bring unmatched experience in guiding applicants through the <strong style={{ color: "#000000" }}>Germany Opportunity Card</strong> process. If you're looking for trusted professionals, we are among the{" "}
-        <Link href="https://www.vjcoverseas.com/">
-          <span style={{ color: "orange" }}><strong>Best Visa Immigration Consultants</strong></span>
+        <Link href="https://www.vjcoverseas.com/immigration-consultants-in-bangalore">
+          <span style={{ color: "orange" }}><strong>Best Visa Immigration Consultants in Bangalore</strong></span>
         </Link>
         .
       </p>

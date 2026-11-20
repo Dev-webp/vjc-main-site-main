@@ -372,7 +372,7 @@ export default function Migrate() {
                   after: ", our approach is built on a track record of success, transparent guidance, and strong partnerships with world-class institutions.",
                 },
                 {
-                  link: { href: "https://www.vjcoverseas.com/study-abroad/usa", text: "Study Abroad Consultants" },
+                  link: { href: "https://www.vjcoverseas.com/study-abroad-consultants-in-Bangalore", text: "Study Abroad Consultants In Bangalore" },
                   before: "As professional ",
                   after: ", we provide in-depth advice on admission requirements, scholarship opportunities, course selection, future career pathways, and help you plan finances effectively.",
                 },

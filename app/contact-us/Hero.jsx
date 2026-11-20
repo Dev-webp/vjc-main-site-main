@@ -9,7 +9,7 @@ const links = [
     title: "Best Visa Immigration Consultants",
     href: "https://www.vjcoverseas.com",
     icon: <FaUserTie className="text-4xl text-orange-500 mb-4" />,
-    desc: "Trusted experts guiding you with the right path for a brighter future abroad.",
+    desc: <>Trusted experts guiding you with the right path for a brighter future abroad. Explore our <a href="https://www.vjcoverseas.com/immigration-consultants-in-bangalore" className="text-orange-500 hover:underline">Bangalore Immigration Consultation</a> services.</>,
   },
   {
     title: "VJC Overseas",
@@ -39,7 +39,7 @@ const links = [
     title: "Study Abroad Consultants",
     href: "https://www.vjcoverseas.com/study-abroad",
     icon: <FaBook className="text-4xl text-yellow-500 mb-4" />,
-    desc: "Shape your career with world-class education opportunities abroad.",
+    desc: <>Shape your career with world-class education opportunities abroad. Explore our <a href="https://www.vjcoverseas.com/study-abroad-consultants-in-Bangalore" className="text-orange-500 hover:underline">Study Abroad Guidance in Bangalore</a> services.</>,
   },
 ];
 

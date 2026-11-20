@@ -88,10 +88,10 @@ const ContentSection = () => {
             aspirations. Whether you’re planning to study abroad, migrate for
             work, or secure permanent residency, we provide expert{" "}
             <Link
-              href="https://www.vjcoverseas.com/services"
+              href="https://www.vjcoverseas.com/immigration-consultants-in-bangalore"
               className="text-orange-500 font-bold hover:text-orange-600"
             >
-              Immigration Support Services
+              Immigration Consultants In Bangalore
             </Link>{" "}
             tailored to your needs. Families, professionals, and students trust
             us for end-to-end guidance in fulfilling their international goals.
@@ -105,10 +105,10 @@ const ContentSection = () => {
               <>
                 Study – Our{" "}
                 <Link
-                  href="https://www.vjcoverseas.com/study-abroad"
+                  href="https://www.vjcoverseas.com/study-abroad-consultants-in-Bangalore"
                   className="text-orange-500 font-bold hover:text-orange-600"
                 >
-                  Study Abroad Consultants
+                  Study Abroad Consultants In Bangalore
                 </Link>{" "}
                 provide expert counseling and visa support for admission to top
                 universities worldwide.
